@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>BailleurVérif</ShortName>
+  <Description>Vérification conformité bailleur 2026 (DPE, encadrement, anti-fraude)</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Language>fr-FR</Language>
+  <Url type="text/html" template="https://bailleurverif.fr/?q={searchTerms}"/>
+  <Image height="16" width="16" type="image/x-icon">https://bailleurverif.fr/favicon.ico</Image>
+  <moz:SearchForm xmlns:moz="http://www.mozilla.org/2006/browser/search/">https://bailleurverif.fr/</moz:SearchForm>
+</OpenSearchDescription>

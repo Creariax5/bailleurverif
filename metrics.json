@@ -1,0 +1,203 @@
+{
+  "_meta": {
+    "last_updated": "2026-05-16T16:35Z",
+    "last_run": "run-123",
+    "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14",
+    "parallel_runs_today": [
+      "run-121 (PID 828515, 16:10-16:13Z, incident discovery + GSC unblock at 16:24Z via christian@mobula.io)",
+      "run-122 (PID 828653, 16:11-16:17Z, artefacts remediation)",
+      "run-123 (this wake, 16:30-now, post-jalon capitalization + SMTP research)"
+    ]
+  },
+  "kpis": {
+    "users_total": 0,
+    "users_target": 5000,
+    "signups_24h": 0,
+    "signups_required_per_day": 55,
+    "humans_engaged_lifetime": 0,
+    "humans_actions_engaged_lifetime": 1,
+    "humans_actions_engaged_details": "Florian 5 min navigation GSC + saisie nom fichier verif dans conversation agent run-121 ≈ 16:23Z",
+    "wakes_executifs_nouvelle_mission": 27,
+    "wakes_total_lifetime": 123
+  },
+  "milestone_2026_05_16_gsc_verified": {
+    "achieved_at": "2026-05-16T16:24Z (run-121 action)",
+    "wakes_to_unblock": 41,
+    "since_run": "run-80 (TODO-17 first ★ raise)",
+    "owner_account": "christian@mobula.io (pivot post bailleurverif.contact@gmail.com disabled 2026-05-15)",
+    "verification_method": "URL prefix HTML file",
+    "verification_file_on_vps": "wedge-tool/static/googleadcc8fd7871ecbd5.html (DO NOT DELETE)",
+    "sitemap_submitted": true,
+    "sitemap_urls_discovered_initial": 103,
+    "sitemap_resubmission_required": "Yes, 1st attempt cache-failed pre-verify, 2nd attempt OK",
+    "expected_indexation_latency_days": "7-30",
+    "expected_traffic_unblock_fr_pct": 92,
+    "critic_agent_measurement_schedule": "J+1 2026-05-17 / J+3 2026-05-19 / J+7 2026-05-23 / J+30 2026-06-15",
+    "j0_empirical_baseline_post_verify": {
+      "ddg_html_site_bailleurverif": 0,
+      "bing_direct": "indeterminable (captcha datacenter IP)",
+      "google_websearch": "operator unsupported by tool",
+      "google_websearch_fr_websearch_check_time": "2026-05-16T16:35Z (T+11min post-verify)"
+    }
+  },
+  "incident_2026_05_15_gmail_disabled": {
+    "discovered_at": "2026-05-16T16:08Z (run-121 via browser-bridge GSC tab challenge)",
+    "account": "bailleurverif.contact@gmail.com",
+    "google_disabled_date": "2026-05-15",
+    "google_motive": "Multiple accounts violated policies / created or used with computer program or bot",
+    "google_deletion_deadline": "2027-04-10",
+    "appeal_flow_state": "Step 2 of 3 (textarea 1000 chars accessible)",
+    "appeal_attempted": false,
+    "cause_probable": "119 wakes activité agent autonome depuis IP datacenter OVH 217.182.171.135 (signups multi-plateformes, recaptcha récurrents, navigation browser-bridge)",
+    "impacts_dead": [
+      "TODO-18 Gmail MCP create_draft scope",
+      "TODO-20 Gmail App Password SMTP (replaced by TODO-21 OVH Email Pro)",
+      "SMTP outreach presse FR via ce mail (5 templates run-112 — Florian sender pivot required)",
+      "Signups OAuth-Google futurs sur ce mail",
+      "Recovery email de plateformes tierces (audit à faire post run-123)"
+    ],
+    "impacts_intacts": [
+      "TODO-17 GSC ✅ pivoté christian@mobula.io et DONE 16:24Z",
+      "Wayback Machine snapshots (DR 93 backlinks préservés)",
+      "IndexNow clé serveur (indépendante Gmail)",
+      "Domain bailleurverif.fr + VPS + wedge-tool",
+      "Repo Creariax5/bailleurverif (gh CLI Florian perso)",
+      "Open-data CSV/JSON/README CC-BY-4.0",
+      "Dataset Search markup schema.org/Dataset",
+      "Sitemap 99 URLs + referral program + 53 pages signup form"
+    ],
+    "florian_options_proposees_run121": {
+      "A_christian_mobula_gsc": "5 min, ★★★ recommandé — ✅ DONE 16:24Z",
+      "B_appeal_google_step2of3": "<30% proba succès empirique, bonus pas blocage, non tenté",
+      "C_google_workspace_contact_bailleurverif_fr": "~6€/mois, ~15 min, pro-grade, pas urgent — superseded by TODO-21 OVH Email Pro (3x moins cher)"
+    },
+    "self_discipline_post_incident": "Agent ne tentera plus AUCUN nouveau signup automatisé sur quelque plateforme avec quelque email jusqu'à validation explicite Florian par TODO dédié. Pattern bot-detection trop coûteux."
+  },
+  "structure": {
+    "pages_total_live": 90,
+    "data_hub_pages_live": 1,
+    "pages_with_signup_form_live": 53,
+    "signup_form_topics_live": 4,
+    "endpoints_api_count": 13,
+    "sitemap_urls": 99,
+    "gsc_urls_discovered_initial": 103,
+    "viral_assets_count": 2,
+    "referral_program_live": true,
+    "opensource_artifacts_ready": true,
+    "open_data_release_live": true,
+    "open_data_files": [
+      "https://bailleurverif.fr/data/encadrement-loyer-france-2026.csv",
+      "https://bailleurverif.fr/data/encadrement-loyer-france-2026.json",
+      "https://bailleurverif.fr/data/README.md",
+      "https://bailleurverif.fr/data/"
+    ],
+    "open_data_license": "CC-BY-4.0",
+    "open_data_rows": 31,
+    "data_hub_html_page_live": true,
+    "dataset_search_markup_live": true,
+    "schema_org_dataset_properties_count": 26,
+    "schema_org_dataset_distribution_count": 3,
+    "schema_org_dataset_variable_measured_count": 8,
+    "schema_org_dataset_keywords_count": 17,
+    "homepage_alternate_links_count": 4,
+    "readme_lines": 87,
+    "license": "MIT",
+    "gitignore_sensitive_patterns_count": 14
+  },
+  "distribution_autonome": {
+    "indexnow_rounds_total_lifetime": 20,
+    "wayback_machine_seed_lifetime": 1,
+    "wayback_seed_complete": true,
+    "wayback_seed_coverage": "95/95 sitemap URLs natif + 8/8 resubmit + 3/3 data files run-118 + 2/2 data hub URLs run-119 OK",
+    "yandex_sitemap_ping_lifetime": 1,
+    "google_pubsubhubbub_publish_lifetime": 2,
+    "superfeedr_pubsubhubbub_publish_lifetime": 1,
+    "websub_hub_declared_in_atom_feed": true,
+    "google_dataset_search_markup_deployed_at": "2026-05-16T15:35Z",
+    "google_dataset_search_expected_latency_days": "7-30",
+    "gsc_verified_at": "2026-05-16T16:24Z (run-121 via christian@mobula.io)",
+    "empirical_index_test_run117": {
+      "google_site_bailleurverif": 0,
+      "google_quote_bailleurverif": "top10_lexique_generic_0_link",
+      "ddg_html_site_bailleurverif": 0,
+      "verdict": "structurellement_bloque_sans_gsc_ou_backlink_dofollow_fort_externe"
+    },
+    "empirical_index_test_run120": {
+      "ddg_html_site_web_archive_bailleurverif": 0,
+      "google_site_bailleurverif_encadrement_loyer": 0,
+      "verdict_wayback_to_google_T_plus_26h": "REJECTED_empirically"
+    },
+    "empirical_index_test_run123_j0_post_gsc": {
+      "test_time": "2026-05-16T16:35Z (T+11min post-GSC-verify)",
+      "ddg_html_site_bailleurverif": 0,
+      "bing_direct_blocked_captcha_datacenter": true,
+      "verdict_j0": "baseline_0_attendue_normal_indexation_24-72h_lag"
+    }
+  },
+  "distribution_humain_required": {
+    "presse_outreach_kit_ready": true,
+    "presse_outreach_emails_envoyes_lifetime": 0,
+    "presse_outreach_medias_cibles": 5,
+    "presse_outreach_smtp_status_post_incident": "BLOCKED — TODO-21 OVH Email Pro pending Florian (1,91€/mo) ou catch-all forward christian@mobula.io",
+    "showhn_draft_ready": true,
+    "showhn_posted": false,
+    "github_creariax5_gh_cli_configured": true,
+    "github_creariax5_token_valid": false,
+    "github_creariax5_reauth_required_for_autonomous_push": true,
+    "todo_17_gsc_verification": "✅ DONE 2026-05-16T16:24Z via christian@mobula.io",
+    "todo_18_gmail_mcp_scope": "DEAD_dependent_account_disabled",
+    "todo_19_findly_tools_submit": "open (email pivot to christian@mobula.io + agent self-discipline = no autonomous signup)",
+    "todo_20_gmail_app_password": "DEAD_dependent_account_disabled (replaced by TODO-21)",
+    "todo_21_ovh_email_pro_or_forward": "NEW OPEN — option A 1,91€/mo OR option B 0€ forward — debloque outbound presse FR + branding contact@bailleurverif.fr",
+    "smtp_autonome_status": "DEAD via Gmail — TODO-21 to bootstrap via OVH (Florian UI)",
+    "datacenter_ip_signup_blocked_canaux": ["huggingface (AWS WAF challenge)", "codeberg (Anubis PoW)", "gitlab (reCAPTCHA invisible)", "sourcehut (paid)"]
+  },
+  "smtp_alternatives_cartography_run123": {
+    "documented_at": "2026-05-16T16:35Z (research-notes.md)",
+    "providers_compared": 5,
+    "recommendation_tier1": {
+      "provider": "OVH Email Pro",
+      "price_eur_ttc_mo": 1.91,
+      "hosting_country": "France",
+      "rgpd_native": true,
+      "smtp_daily_limit": "none documented",
+      "domain_setup": "DNS auto (domaine déjà chez OVH)",
+      "florian_action_minutes": 5
+    },
+    "recommendation_tier2_future": {
+      "provider": "Brevo (ex-SendinBlue)",
+      "trigger": "signups_24h > 50",
+      "free_tier_daily": 300,
+      "hosting_country": "France",
+      "rgpd_native": true
+    },
+    "tier_zero_immediate_free": {
+      "provider": "OVH catch-all email forward",
+      "price_eur_mo": 0,
+      "destination": "christian@mobula.io",
+      "florian_action_minutes": 2
+    },
+    "rejected_alternatives": [
+      "Resend (US, 100/j, 3000/mo, devex good but non-EU)",
+      "Mailjet (FR but free tier domain DKIM unconfirmed)",
+      "SendGrid (US Twilio, 100/j perpetual)"
+    ]
+  },
+  "couverture_leviers": {
+    "a_seo_programmatique": "cyclé (run-96/98/106)",
+    "b_distribution_social": "cyclé (run-113/114/115 wayback + indexnow universal ; run-118 data URLs IndexNow round-19 ; run-119 NEW canal Google Dataset Search via schema.org/Dataset markup ; run-121 GSC verified ★★★)",
+    "c_multi_wedge": "cyclé (run-97)",
+    "d_outreach": "cyclé (run-112 presse kit + run-117 README narrative + run-118 open-data accroche) — SMTP autonome mort post-incident, TODO-21 unblocks",
+    "e_optim_conversion": "cyclé (run-108/109/110)",
+    "f_veille": "cyclé (run-107 + run-123 cartographie SMTP)",
+    "g_viralite": "cyclé (run-100/107/111)",
+    "h_content_authority": "cyclé (run-99 méga-guide + run-117 README + run-118 open-data CC-BY-4.0 + run-119 dataset hub HTML + schema.org/Dataset markup)"
+  },
+  "discipline": {
+    "depenses_lifetime_eur": 0,
+    "regressions_lifetime": 0,
+    "bugs_latents_fixés_lifetime": 8,
+    "critic_feedback_run114_applied": "1 synthesis inbox / 6h max — 0 nouvelle entrée inbox.md run-118/119/120/122/123 (5 wakes consécutifs respectés ; run-121 exception escalade incident + jalon GSC légitime)",
+    "self_discipline_post_incident_2026_05_15": "Aucun nouveau signup automatisé sur quelque plateforme avec quelque email sans validation explicite Florian par TODO dédié"
+  }
+}

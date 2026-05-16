@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SaaS Florian — Étude de marché Propriétaires Bailleurs</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #0a0a0f; color: #e5e7eb; }
+  .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.08); }
+  .stat-num { font-variant-numeric: tabular-nums; }
+  .gradient-text { background: linear-gradient(135deg, #6366f1, #ec4899); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .border-subtle { border-color: rgba(255,255,255,0.08); }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  th { font-weight: 600; color: #9ca3af; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  td { font-size: 0.9rem; }
+  .pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; }
+  .pill-green { background: rgba(16,185,129,0.15); color: #6ee7b7; }
+  .pill-red   { background: rgba(239,68,68,0.15);  color: #fca5a5; }
+  .pill-amber { background: rgba(245,158,11,0.15); color: #fcd34d; }
+  .pill-blue  { background: rgba(59,130,246,0.15); color: #93c5fd; }
+  .pill-purple{ background: rgba(168,85,247,0.15); color: #d8b4fe; }
+  .quote { border-left: 3px solid #6366f1; padding-left: 1rem; font-style: italic; color: #cbd5e1; }
+  details summary { cursor: pointer; user-select: none; }
+  details[open] summary { margin-bottom: 0.75rem; }
+  .nav-link { transition: color 0.15s; }
+  .nav-link:hover { color: #c4b5fd; }
+  .scroll-mt { scroll-margin-top: 80px; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-40 glass border-b border-subtle px-6 py-3 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+  <span class="font-bold text-base">📊 SaaS Florian</span>
+  <a class="nav-link text-gray-400" href="#tldr">TL;DR</a>
+  <a class="nav-link text-gray-400" href="#market">Marché</a>
+  <a class="nav-link text-gray-400" href="#compet">Concurrence</a>
+  <a class="nav-link text-gray-400" href="#pain">Pain</a>
+  <a class="nav-link text-gray-400" href="#reg">Régul.</a>
+  <a class="nav-link text-gray-400" href="#pricing">Pricing</a>
+  <a class="nav-link text-gray-400" href="#funding">Funding</a>
+  <a class="nav-link text-gray-400" href="#angles">Angles</a>
+  <a class="nav-link text-gray-400" href="#plan">Plan</a>
+  <span class="ml-auto text-xs text-gray-500">2026-05-13</span>
+</nav>
+
+<!-- HERO -->
+<header class="px-6 pt-12 pb-8 max-w-6xl mx-auto">
+  <div class="text-xs text-gray-500 uppercase tracking-widest mb-3">Étude de marché poussée</div>
+  <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+    SaaS pour <span class="gradient-text">propriétaires bailleurs</span> particuliers
+  </h1>
+  <p class="text-gray-400 text-lg max-w-3xl">
+    Analyse complète : TAM, concurrence, pain réels, tailwinds réglementaires, distribution, pricing, et 3 angles d'attaque encore ouverts.
+  </p>
+</header>
+
+<!-- TL;DR -->
+<section id="tldr" class="px-6 py-8 max-w-6xl mx-auto scroll-mt">
+  <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">⚡ TL;DR — verdict honnête</h2>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase tracking-widest mb-2">Marché</div>
+      <div class="stat-num text-3xl font-bold text-emerald-400">5,9M</div>
+      <div class="text-sm text-gray-400">foyers fiscaux bailleurs en France</div>
+    </div>
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase tracking-widest mb-2">Concurrence</div>
+      <div class="stat-num text-3xl font-bold text-rose-400">Saturé</div>
+      <div class="text-sm text-gray-400">8+ acteurs sur la gestion locative générique</div>
+    </div>
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase tracking-widest mb-2">Verdict</div>
+      <div class="stat-num text-3xl font-bold text-amber-400">Niche</div>
+      <div class="text-sm text-gray-400">Place uniquement avec vrai angle de différenciation</div>
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6 mt-6">
+    <h3 class="font-semibold text-lg mb-3">Recommandation</h3>
+    <p class="text-gray-300 leading-relaxed">
+      <strong class="text-rose-400">NE PAS</strong> faire un nieme "logiciel de gestion locative" générique.
+      <strong class="text-emerald-400">OUI</strong>, attaquer un sous-segment ultra spécifique encore mal servi
+      (3 angles détaillés en bas).
+      <br><br>
+      Plafond réaliste à 18 mois : <strong>$1-3M ARR</strong> avec un bon angle.
+      $5M+ très difficile sans levée de fonds.
+    </p>
+  </div>
+</section>
+
+<!-- MARKET SIZING -->
+<section id="market" class="px-6 py-12 max-w-6xl mx-auto scroll-mt">
+  <h2 class="text-2xl font-bold mb-6">📈 Taille du marché</h2>
+
+  <div class="grid md:grid-cols-4 gap-4 mb-8">
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase mb-1">Bailleurs particuliers</div>
+      <div class="stat-num text-2xl font-bold">~10M</div>
+      <div class="text-xs text-gray-500">individus / 5,9M foyers</div>
+    </div>
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase mb-1">% population</div>
+      <div class="stat-num text-2xl font-bold">11%</div>
+      <div class="text-xs text-rose-400">↓ vs 13% en 2022</div>
+    </div>
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase mb-1">Auto-gestion</div>
+      <div class="stat-num text-2xl font-bold">50%</div>
+      <div class="text-xs text-rose-400">↓ vs 59% en 2022</div>
+    </div>
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase mb-1">SOM 18 mois</div>
+      <div class="stat-num text-2xl font-bold text-emerald-400">$0,7-2M</div>
+      <div class="text-xs text-gray-500">ARR atteignable</div>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-4">Segmentation par nombre de biens</h3>
+      <canvas id="chartBiens" height="200"></canvas>
+    </div>
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-4">Type de location</h3>
+      <canvas id="chartTypeLoc" height="200"></canvas>
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6 mt-6">
+    <h3 class="font-semibold mb-4">TAM / SAM / SOM</h3>
+    <table>
+      <thead>
+        <tr><th>Niveau</th><th>Description</th><th>Volume</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="pill pill-blue">TAM</span></td><td>Auto-gérants × $39/mois × 12</td><td class="font-mono">$1,4 Md/an</td></tr>
+        <tr><td><span class="pill pill-purple">SAM</span></td><td>Urbains 25-65 ans, 1-3 biens</td><td class="font-mono">$700M/an</td></tr>
+        <tr><td><span class="pill pill-green">SOM 3 ans</span></td><td>1% du SAM (15k clients)</td><td class="font-mono">$7M/an</td></tr>
+        <tr><td><span class="pill pill-green">SOM 18 mois</span></td><td>0,1-0,3% du SAM</td><td class="font-mono">$0,7-2M/an</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="glass rounded-xl p-6 mt-6">
+    <h3 class="font-semibold mb-4">Profil socio-démo des bailleurs</h3>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+      <div><div class="stat-num text-2xl font-bold">62%</div><div class="text-xs text-gray-500">actifs pro</div></div>
+      <div><div class="stat-num text-2xl font-bold">75%</div><div class="text-xs text-gray-500">en couple</div></div>
+      <div><div class="stat-num text-2xl font-bold">53%</div><div class="text-xs text-gray-500">RP sans crédit</div></div>
+      <div><div class="stat-num text-2xl font-bold">39%</div><div class="text-xs text-gray-500">patrimoine &gt;100k€</div></div>
+      <div><div class="stat-num text-2xl font-bold">49%</div><div class="text-xs text-gray-500">grandes villes</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONCURRENCE -->
+<section id="compet" class="px-6 py-12 max-w-6xl mx-auto scroll-mt">
+  <h2 class="text-2xl font-bold mb-6">⚔️ Mapping concurrentiel</h2>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <h3 class="font-semibold mb-4">Densité concurrentielle par segment</h3>
+    <canvas id="chartDensite" height="220"></canvas>
+  </div>
+
+  <div class="glass rounded-xl p-6 mb-6 overflow-x-auto">
+    <h3 class="font-semibold mb-4">Logiciels de gestion locative B2C (segment principal)</h3>
+    <table>
+      <thead>
+        <tr><th>Acteur</th><th>Cible</th><th>Pricing</th><th>Force</th><th>Faiblesse</th><th>Trustpilot</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Smartloc</strong></td><td>Particuliers + GLI</td><td>6,50€/mois</td><td>100k bailleurs, IA anti-fraude</td><td>Pas de SCI avancée, écart Google/Trustpilot suspect</td><td><span class="pill pill-amber">2,9</span></td></tr>
+        <tr><td><strong>BailFacile</strong></td><td>Conformité juridique</td><td>9,99€/mois</td><td>70+ procédures, signature SES illimitée</td><td>Pas de réconciliation bancaire</td><td><span class="pill pill-green">4,7</span></td></tr>
+        <tr><td><strong>Rentila</strong></td><td>Low-cost</td><td>49€/an</td><td>Le moins cher, jusqu'à 5 biens</td><td>Features basiques, pas d'IA</td><td><span class="pill pill-green">4,6</span></td></tr>
+        <tr><td><strong>GererSeul</strong></td><td>Compta</td><td>117€/an</td><td>Réconciliation bancaire ACPR</td><td>Interface vieillotte</td><td><span class="pill pill-green">4,8 ⭐</span></td></tr>
+        <tr><td><strong>FairePlace</strong></td><td>Reg-tech</td><td>14,90€/mois</td><td>Vérif encadrement loyer (9 territoires)</td><td>Plus cher, plus complexe</td><td>—</td></tr>
+        <tr><td><strong>MonsieurHugo</strong></td><td>Premium IA</td><td>29,90€/mois</td><td>État des lieux IA, support juridique</td><td>Cher</td><td><span class="pill pill-green">4,0</span></td></tr>
+        <tr><td><strong>PropManager</strong></td><td>IA-first</td><td>NC</td><td>"Nouvelle gen IA", 2000 utilisateurs</td><td>Petit, peu visible</td><td>—</td></tr>
+        <tr><td><strong>Manda/Qlower/Maslow</strong></td><td>Hybride service</td><td>2-4% loyer</td><td>Moitié prix d'une agence</td><td>Pas pure SaaS</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <details class="glass rounded-xl p-6 mb-6">
+    <summary class="font-semibold">Comptables LMNP en ligne (cliquer pour déplier)</summary>
+    <table class="mt-2">
+      <thead>
+        <tr><th>Acteur</th><th>Pricing</th><th>Force</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>JD2M</strong> 🥇</td><td>289-799€/an</td><td>94k clients, 170k déclarations, 4,8/5 sur 7000 avis</td></tr>
+        <tr><td><strong>LMNP.AI</strong></td><td>179€/an</td><td>IA-first, le moins cher, illimité</td></tr>
+        <tr><td><strong>Decla.fr</strong></td><td>219-249€/an</td><td>Bon rapport qualité/prix</td></tr>
+        <tr><td><strong>Indy Premium</strong></td><td>346€/an</td><td>Marque connue, écosystème freelance</td></tr>
+        <tr><td><strong>Ownily</strong></td><td>299-355€/an</td><td>Multi-statut LMNP+SCI</td></tr>
+        <tr><td><strong>Amarris Solo</strong></td><td>210-310€/an</td><td>Cabinet expert-comptable</td></tr>
+      </tbody>
+    </table>
+  </details>
+</section>
+
+<!-- PAIN -->
+<section id="pain" class="px-6 py-12 max-w-6xl mx-auto scroll-mt">
+  <h2 class="text-2xl font-bold mb-6">😡 Pain points utilisateurs</h2>
+
+  <div class="grid md:grid-cols-3 gap-4 mb-6">
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase mb-1">Frein principal</div>
+      <div class="stat-num text-3xl font-bold">32%</div>
+      <div class="text-sm text-gray-400">citent la fiscalité</div>
+    </div>
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase mb-1">Complexité gestion</div>
+      <div class="stat-num text-3xl font-bold">25%</div>
+      <div class="text-sm text-gray-400">des bailleurs en témoignent</div>
+    </div>
+    <div class="glass rounded-xl p-5">
+      <div class="text-xs text-gray-500 uppercase mb-1">Désengagement à 5 ans</div>
+      <div class="stat-num text-3xl font-bold text-rose-400">25%</div>
+      <div class="text-sm text-gray-400">prévoient de vendre</div>
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <h3 class="font-semibold mb-4">Citations directes (Forum Finary)</h3>
+    <div class="space-y-3">
+      <div class="quote">"Le filtre des candidatures: beaucoup repondent avec des messages generiques"</div>
+      <div class="quote">"[candidats qui] ne disent pas bonjour, répondent mal ou ne répondent pas"</div>
+      <div class="quote">"[candidats] sans dossier complet de prêt"</div>
+      <div class="quote">"une après-midi de visites lors du changement de locataire"</div>
+      <div class="quote">"la gestion c'est chronophage"</div>
+      <div class="quote">"les travaux, la copropriété, les petits problèmes courant"</div>
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <h3 class="font-semibold mb-4">Citations CommentCaMarche / Que Choisir</h3>
+    <div class="space-y-3">
+      <div class="quote">"J'en ai vraiment marre de ces locataires qui ne paient pas leurs loyers"</div>
+      <div class="quote">"Tous les mois, tu doit cavaler après ton argent"</div>
+      <div class="quote">"prend énormément de temps et d'énergie" (procédures impayés)</div>
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6 overflow-x-auto">
+    <h3 class="font-semibold mb-4">Pain points opérationnels mappés</h3>
+    <table>
+      <thead>
+        <tr><th>Pain</th><th>Fréquence</th><th>Coût pour bailleur</th><th>Solution actuelle</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Filtrage candidats</td><td>Chaque rotation</td><td>1 après-midi visites + tri 50 dossiers</td><td>DossierFacile (gratuit, basique)</td></tr>
+        <tr><td>Vérif faux papiers</td><td>Chaque rotation</td><td>Risque impayé majeur</td><td><span class="pill pill-red">Aucune solution simple</span></td></tr>
+        <tr><td>Génération bail</td><td>Chaque rotation</td><td>30 min + risque erreur</td><td>Modèles statiques</td></tr>
+        <tr><td>État des lieux</td><td>Chaque rotation</td><td>1-2h + litiges</td><td>MonsieurHugo (premium)</td></tr>
+        <tr><td>Quittances</td><td>Mensuel</td><td>5 min/mois</td><td>Tous les SaaS</td></tr>
+        <tr><td>Réconciliation bancaire</td><td>Mensuel</td><td>15 min/mois</td><td>GererSeul, Smartloc</td></tr>
+        <tr><td>Relance impayé</td><td>4-5% des cas</td><td>Énorme stress</td><td>GLI ou rien</td></tr>
+        <tr><td>Déclaration fiscale</td><td>1×/an</td><td>2-8h selon régime</td><td>JD2M, expert-comptable</td></tr>
+        <tr><td>Conformité encadrement</td><td>Chaque révision</td><td>Amende jusqu'à 5000€</td><td>FairePlace</td></tr>
+        <tr><td>Conformité DPE</td><td>1×/relocation</td><td>Impossibilité de louer</td><td>Diagnostiqueur</td></tr>
+        <tr><td>Travaux / urgences</td><td>Aléatoire</td><td>Stress + temps</td><td><span class="pill pill-red">Aucun outil</span></td></tr>
+        <tr><td>Suivi parc multi-bien</td><td>Continu</td><td>Excel maison</td><td><span class="pill pill-red">Aucun bon outil 2-5 biens</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- REGUL -->
+<section id="reg" class="px-6 py-12 max-w-6xl mx-auto scroll-mt">
+  <h2 class="text-2xl font-bold mb-6">⚖️ Tailwinds réglementaires</h2>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <h3 class="font-semibold mb-4">Calendrier interdiction location DPE (loi Climat & Résilience)</h3>
+    <canvas id="chartDPE" height="200"></canvas>
+    <p class="text-sm text-gray-400 mt-3">
+      <strong class="text-rose-400">3,9M de logements</strong> seront progressivement interdits à la location (12,7% du parc).
+      Concerne nouveaux baux + renouvellements + reconductions tacites.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-3">📍 Encadrement des loyers</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>• <strong>9 territoires</strong>, 69 communes (Paris, Lyon, Lille, Bordeaux, Montpellier, Pays Basque, Grenoble…)</li>
+        <li>• Amende jusqu'à <strong class="text-rose-400">5 000€</strong> personne physique, 15 000€ moral</li>
+        <li>• <strong>41% non-conformité</strong> à Plaine Commune</li>
+        <li>• <strong>FairePlace</strong> est le seul à automatiser la vérification</li>
+      </ul>
+    </div>
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-3">🚨 Fraude documentaire locataire</h3>
+      <div class="text-center my-4">
+        <div class="stat-num text-4xl font-bold text-rose-400">10%</div>
+        <div class="text-sm text-gray-400">des dossiers locataires falsifiés en 2025</div>
+        <div class="text-xs text-rose-300 mt-1">↑ +40% en 1 an (vs 6% en 2024)</div>
+      </div>
+      <p class="text-sm text-gray-400">DossierFacile certifie les vrais mais reste optionnel. Smartloc a une "IA anti-fraude" peu défensible.</p>
+    </div>
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-3">💸 Marché GLI (Garantie Loyers Impayés)</h3>
+      <canvas id="chartGLI" height="160"></canvas>
+      <p class="text-sm text-gray-400 mt-3">Coût : 2,15-5% du loyer annuel. Distribué surtout par agences → opportunité d'upsell SaaS.</p>
+    </div>
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-3">🧮 Réformes fiscales LMNP 2025</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>• Suppression réduction OGA/CGA</li>
+        <li>• Ré-intégration des amortissements dans la plus-value à la revente</li>
+        <li>• Complexité accrue → demande pour outils + comptables ↑</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="px-6 py-12 max-w-6xl mx-auto scroll-mt">
+  <h2 class="text-2xl font-bold mb-6">💰 Pricing benchmark</h2>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <h3 class="font-semibold mb-4">Pricing mensuel des concurrents (€)</h3>
+    <canvas id="chartPricing" height="220"></canvas>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-3">Pricing par tier auto-gestion</h3>
+      <table>
+        <thead><tr><th>Tier</th><th>Prix</th><th>Acteurs</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill pill-blue">Free</span></td><td>0€</td><td>DossierFacile, Rentila (1 bien)</td></tr>
+          <tr><td><span class="pill pill-blue">Low</span></td><td>4-10€/mois</td><td>Rentila, Smartloc, BailFacile</td></tr>
+          <tr><td><span class="pill pill-purple">Mid</span></td><td>10-20€/mois</td><td>FairePlace</td></tr>
+          <tr><td><span class="pill pill-purple">Premium</span></td><td>25-35€/mois</td><td>MonsieurHugo</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-3">Concurrence indirecte (délégation)</h3>
+      <table>
+        <thead><tr><th>Type</th><th>Coût</th></tr></thead>
+        <tbody>
+          <tr><td>Agence traditionnelle</td><td><strong>6-10% du loyer</strong> (~$60-150/mois)</td></tr>
+          <tr><td>Agence digitale (Manda, Qlower)</td><td>2-4% du loyer</td></tr>
+          <tr><td>GLI (assurance)</td><td>2,15-5% du loyer annuel</td></tr>
+        </tbody>
+      </table>
+      <p class="text-sm text-gray-400 mt-4">
+        💡 Sur un loyer $1000, l'agence prend $80/mois. Notre cible $19-39/mois = <strong class="text-emerald-400">économie de $500-700/an</strong> pour le bailleur.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FUNDING -->
+<section id="funding" class="px-6 py-12 max-w-6xl mx-auto scroll-mt">
+  <h2 class="text-2xl font-bold mb-6">💼 Funding & exits proptech FR</h2>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <h3 class="font-semibold mb-4">Levées récentes</h3>
+    <table>
+      <thead><tr><th>Acteur</th><th>Levée</th><th>Année</th><th>Investisseurs</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Garantme</strong></td><td>15M€ Série B</td><td>2023</td><td>Bpifrance Digital, Bonsaï, 115K</td></tr>
+        <tr><td><strong>Kaliz</strong></td><td>20M€ Série A</td><td>2022</td><td>NC</td></tr>
+        <tr><td><strong>Masteos</strong></td><td>40M€</td><td>2022</td><td>DST Global, Daphni</td></tr>
+        <tr><td><strong>Smartloc</strong></td><td>NC, 100k bailleurs</td><td>—</td><td>NC</td></tr>
+        <tr><td><strong>JD2M</strong></td><td>NC, 94k clients</td><td>—</td><td>Probable bootstrap</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="glass rounded-xl p-6">
+    <h3 class="font-semibold mb-2">Tendance investisseurs 2025-2026</h3>
+    <p class="text-gray-300">
+      <strong class="text-emerald-400">70% des investissements PropTech</strong> vont à l'IA (source : Telescop).
+      Les VCs cherchent activement des plays IA-natives → <strong>financement disponible si play crédible</strong>.
+    </p>
+  </div>
+</section>
+
+<!-- ANGLES -->
+<section id="angles" class="px-6 py-12 max-w-6xl mx-auto scroll-mt">
+  <h2 class="text-2xl font-bold mb-6">🎯 3 angles d'attaque encore ouverts</h2>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <h3 class="font-semibold mb-4">Comparaison radar</h3>
+    <canvas id="chartRadar" height="280"></canvas>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- A -->
+    <div class="glass rounded-xl p-6">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="pill pill-purple">Angle A</span>
+        <span class="text-sm text-gray-500">Multi-bien</span>
+      </div>
+      <h3 class="font-bold text-lg mb-3">Copilote IA du bailleur multi-bien (2-5 biens)</h3>
+      <p class="text-sm text-gray-400 mb-4"><strong>Insight</strong> : segment 2-5 biens mal servi (trop complexe pour mono, trop léger pour pros).</p>
+      <ul class="text-sm text-gray-300 space-y-1 mb-4">
+        <li>• Vue patrimoniale globale</li>
+        <li>• Optimisation stratégique (vendre/garder, LMNP, travaux)</li>
+        <li>• Alertes proactives multi-échéances</li>
+        <li>• Déclarations fiscales tout le portefeuille</li>
+      </ul>
+      <div class="text-xs text-gray-500 space-y-1">
+        <div><strong class="text-emerald-400">Pricing</strong> : $39/mois</div>
+        <div><strong class="text-emerald-400">Cible</strong> : 1,5M propriétaires multi-bien</div>
+        <div><strong class="text-emerald-400">ARR 18 mois</strong> : ~$936k</div>
+      </div>
+    </div>
+
+    <!-- B -->
+    <div class="glass rounded-xl p-6 border-2 border-emerald-500/30">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="pill pill-green">Angle B 🥇</span>
+        <span class="text-sm text-emerald-400">Recommandé</span>
+      </div>
+      <h3 class="font-bold text-lg mb-3">Conformité-as-a-Service pour bailleurs</h3>
+      <p class="text-sm text-gray-400 mb-4"><strong>Insight</strong> : DPE + encadrement + Alur + anti-fraude = mille-feuille reg que personne n'agrège bien.</p>
+      <ul class="text-sm text-gray-300 space-y-1 mb-4">
+        <li>• Scan DPE → alerte + plan rénovation</li>
+        <li>• Vérif loyer face à l'encadrement</li>
+        <li>• Anti-fraude IA dossiers locataires</li>
+        <li>• Génération baux conformes auto</li>
+        <li>• Suivi échéances légales</li>
+      </ul>
+      <div class="text-xs text-gray-500 space-y-1">
+        <div><strong class="text-emerald-400">Pricing</strong> : $19-39/mois</div>
+        <div><strong class="text-emerald-400">Cible</strong> : 2M+ biens en zones tendues / DPE F-G</div>
+        <div><strong class="text-emerald-400">ARR 18 mois</strong> : ~$900k</div>
+      </div>
+    </div>
+
+    <!-- C -->
+    <div class="glass rounded-xl p-6">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="pill pill-blue">Angle C</span>
+        <span class="text-sm text-gray-500">LMNP IA</span>
+      </div>
+      <h3 class="font-bold text-lg mb-3">JD2M killer LMNP IA-native</h3>
+      <p class="text-sm text-gray-400 mb-4"><strong>Insight</strong> : JD2M cher (289-799€/an), interface vieille. LMNP.AI prouve qu'un challenger peut entrer.</p>
+      <ul class="text-sm text-gray-300 space-y-1 mb-4">
+        <li>• Connexion bancaire auto</li>
+        <li>• Classification charges IA</li>
+        <li>• Amortissements + liasse fiscale auto</li>
+        <li>• Chatbot conseil fiscal 24/7</li>
+        <li>• Télétransmission</li>
+      </ul>
+      <div class="text-xs text-gray-500 space-y-1">
+        <div><strong class="text-emerald-400">Pricing</strong> : $99-199/an</div>
+        <div><strong class="text-emerald-400">Cible</strong> : ~500k bailleurs LMNP régime réel</div>
+        <div><strong class="text-emerald-400">ARR 18 mois</strong> : ~$750k</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section id="plan" class="px-6 py-12 max-w-6xl mx-auto scroll-mt">
+  <h2 class="text-2xl font-bold mb-6">🚀 Plan validation 7 jours</h2>
+
+  <div class="glass rounded-xl p-6">
+    <ol class="space-y-4">
+      <li class="flex gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">J0-2</span>
+        <div>
+          <strong>Identifier 30 propriétaires bailleurs</strong> via Finary + LinkedIn (filtre "investisseur immobilier") + ton réseau
+        </div>
+      </li>
+      <li class="flex gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">J3-5</span>
+        <div>
+          <strong>10 RDV téléphone de 20 min</strong>, 3 questions :
+          <ul class="text-sm text-gray-400 mt-2 space-y-1">
+            <li>1. "Quelles sont vos 3 plus grosses galères de bailleur ?"</li>
+            <li>2. "Vous payez quoi aujourd'hui pour gérer (agence, comptable, GLI) ?"</li>
+            <li>3. "Si je vous propose un agent IA qui surveille votre DPE, votre conformité loyer et vos échéances pour 19€/mois, vous prenez ?"</li>
+          </ul>
+        </div>
+      </li>
+      <li class="flex gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">J5-6</span>
+        <div>
+          <strong>Post sur Finary + r/vosfinances</strong> : "Je code un agent IA pour bailleurs, voilà la promesse, qui veut beta-tester ?"
+        </div>
+      </li>
+      <li class="flex gap-4">
+        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">J7</span>
+        <div>
+          <strong>Décision go/no-go</strong>
+          <div class="text-sm text-gray-400 mt-1">
+            Critère : <strong class="text-emerald-400">5+ sur 10</strong> disent "où je signe" → on y va. Sinon on pivote.
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="px-6 py-8 max-w-6xl mx-auto text-center text-xs text-gray-500 border-t border-subtle mt-12">
+  <p>Étude générée le 2026-05-13 — Document complet : <code class="text-gray-400">/home/deploy/saas-florian/etude-marche.md</code></p>
+  <p class="mt-2">30+ sources référencées : INSEE, ANIL, Finary, Trustpilot, FrenchWeb, Telescop, Service Public, etc.</p>
+</footer>
+
+<script>
+// Theme commun pour Chart.js dark
+Chart.defaults.color = '#9ca3af';
+Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
+Chart.defaults.font.family = "Inter, system-ui, sans-serif";
+
+// Doughnut: nombre de biens
+new Chart(document.getElementById('chartBiens'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Mono-propriétaire (1 bien)', '2 biens', '3+ biens'],
+    datasets: [{
+      data: [70, 17, 13],
+      backgroundColor: ['#6366f1', '#a855f7', '#ec4899'],
+      borderWidth: 0
+    }]
+  },
+  options: { plugins: { legend: { position: 'bottom' } } }
+});
+
+// Doughnut: type location
+new Chart(document.getElementById('chartTypeLoc'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Location nue', 'Location meublée (LMNP)', 'Location saisonnière'],
+    datasets: [{
+      data: [56, 30, 14],
+      backgroundColor: ['#10b981', '#3b82f6', '#f59e0b'],
+      borderWidth: 0
+    }]
+  },
+  options: { plugins: { legend: { position: 'bottom' } } }
+});
+
+// Bar: densité concurrentielle
+new Chart(document.getElementById('chartDensite'), {
+  type: 'bar',
+  data: {
+    labels: [
+      'Logiciel gestion locative',
+      'Compta LMNP en ligne',
+      'Détection encadrement',
+      'État des lieux IA',
+      'Anti-fraude dossier IA',
+      'Outil multi-bien stratégique',
+      'Conformité all-in-one',
+      'Agent IA proactif'
+    ],
+    datasets: [{
+      label: 'Nombre d\'acteurs établis',
+      data: [8, 6, 1, 1, 2, 0, 0, 0],
+      backgroundColor: (ctx) => {
+        const v = ctx.raw;
+        if (v >= 6) return '#ef4444';
+        if (v >= 3) return '#f59e0b';
+        if (v >= 1) return '#3b82f6';
+        return '#10b981';
+      }
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    plugins: { legend: { display: false } },
+    scales: { x: { beginAtZero: true, max: 10 } }
+  }
+});
+
+// Bar: pricing
+new Chart(document.getElementById('chartPricing'), {
+  type: 'bar',
+  data: {
+    labels: ['Rentila','Smartloc','BailFacile','GererSeul','FairePlace','MonsieurHugo','Notre cible'],
+    datasets: [{
+      label: '€ / mois',
+      data: [4, 6.5, 9.99, 9.75, 14.9, 29.9, 22],
+      backgroundColor: ['#64748b','#64748b','#64748b','#64748b','#64748b','#64748b','#10b981']
+    }]
+  },
+  options: {
+    plugins: { legend: { display: false } },
+    scales: { y: { beginAtZero: true, ticks: { callback: v => v + '€' } } }
+  }
+});
+
+// Bar: DPE timeline
+new Chart(document.getElementById('chartDPE'), {
+  type: 'bar',
+  data: {
+    labels: ['2025 — DPE G interdit','2028 — DPE F interdit','2034 — DPE E interdit'],
+    datasets: [{
+      label: 'Logements concernés (millions)',
+      data: [0.6, 1.8, 3.9],
+      backgroundColor: ['#fb923c', '#ef4444', '#dc2626']
+    }]
+  },
+  options: {
+    plugins: { legend: { display: false } },
+    scales: { y: { beginAtZero: true, ticks: { callback: v => v + 'M' } } }
+  }
+});
+
+// Line: GLI growth
+new Chart(document.getElementById('chartGLI'), {
+  type: 'line',
+  data: {
+    labels: ['2020','2021','2022','2023','2024'],
+    datasets: [{
+      label: '% loyers couverts par GLI',
+      data: [6.12, 9, 13, 16.5, 20],
+      borderColor: '#10b981',
+      backgroundColor: 'rgba(16,185,129,0.1)',
+      tension: 0.3,
+      fill: true
+    }]
+  },
+  options: {
+    plugins: { legend: { display: false } },
+    scales: { y: { beginAtZero: true, ticks: { callback: v => v + '%' } } }
+  }
+});
+
+// Radar: comparaison angles
+new Chart(document.getElementById('chartRadar'), {
+  type: 'radar',
+  data: {
+    labels: ['TAM', 'TTR (rapidité)', 'Defensibility', 'Agent-operability', 'Match Florian', 'ARR potentiel'],
+    datasets: [
+      {
+        label: 'A — Multi-bien',
+        data: [4, 3, 3, 5, 5, 4],
+        borderColor: '#a855f7',
+        backgroundColor: 'rgba(168,85,247,0.15)'
+      },
+      {
+        label: 'B — Conformité-aaS 🥇',
+        data: [5, 4, 5, 5, 4, 4],
+        borderColor: '#10b981',
+        backgroundColor: 'rgba(16,185,129,0.2)',
+        borderWidth: 2.5
+      },
+      {
+        label: 'C — JD2M killer LMNP',
+        data: [3, 5, 2, 4, 4, 3],
+        borderColor: '#3b82f6',
+        backgroundColor: 'rgba(59,130,246,0.15)'
+      }
+    ]
+  },
+  options: {
+    scales: {
+      r: {
+        min: 0, max: 5,
+        angleLines: { color: 'rgba(255,255,255,0.08)' },
+        grid: { color: 'rgba(255,255,255,0.08)' },
+        pointLabels: { font: { size: 12 } },
+        ticks: { display: false }
+      }
+    },
+    plugins: { legend: { position: 'bottom' } }
+  }
+});
+</script>
+</body>
+</html>

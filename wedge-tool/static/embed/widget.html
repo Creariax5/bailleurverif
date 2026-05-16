@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,follow">
+<title>BailleurVérif Widget</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:transparent;color:#0f172a;-webkit-font-smoothing:antialiased}
+.widget{height:100%;width:100%;background:linear-gradient(135deg,#0f172a 0%,#312e81 100%);color:#f1f5f9;padding:14px 16px;display:flex;flex-direction:column;font-size:13px;line-height:1.4;border-radius:8px;overflow:hidden;position:relative}
+.brand{display:flex;align-items:center;gap:6px;margin-bottom:8px;font-weight:600;font-size:12px;color:#cbd5e1}
+.brand-dot{width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 8px #10b98180}
+.title{font-size:14px;font-weight:700;margin-bottom:6px;color:#fff;letter-spacing:-0.01em}
+.ville{font-size:11px;color:#a5b4fc;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px}
+.verdict{flex:1;display:flex;flex-direction:column;justify-content:center}
+.val{font-size:24px;font-weight:800;color:#fff;margin-bottom:4px;letter-spacing:-0.02em}
+.unit{font-size:12px;font-weight:500;color:#cbd5e1}
+.info{font-size:11px;color:#cbd5e1;margin-top:6px;line-height:1.4}
+.cta{margin-top:10px;padding:8px 12px;background:#fff;color:#0f172a;text-decoration:none;font-weight:600;font-size:12px;text-align:center;border-radius:6px;transition:transform 0.15s;display:block}
+.cta:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+.foot{margin-top:8px;font-size:10px;text-align:center;color:#94a3b8}
+.foot a{color:#cbd5e1;text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.badge{display:inline-block;padding:2px 6px;border-radius:4px;font-size:10px;font-weight:600;margin-bottom:6px;letter-spacing:0.03em;text-transform:uppercase}
+.b-ok{background:#10b98133;color:#6ee7b7}
+.b-warn{background:#f59e0b33;color:#fcd34d}
+.b-danger{background:#ef444433;color:#fca5a5}
+.placeholder{text-align:center;padding:8px 0}
+.placeholder .val{font-size:18px}
+</style>
+</head>
+<body>
+<div class="widget" id="w">
+  <div class="brand"><span class="brand-dot"></span>BailleurVérif</div>
+  <div id="content" class="verdict">
+    <div class="placeholder">
+      <div class="val">Diagnostic bailleur</div>
+      <div class="info">DPE · Encadrement loyer · Anti-fraude</div>
+    </div>
+  </div>
+  <a class="cta" id="cta" href="https://bailleurverif.fr/?utm_source=embed&utm_medium=widget" target="_blank" rel="noopener">Vérifier mon bien gratuitement</a>
+  <div class="foot"><a href="https://bailleurverif.fr/?utm_source=embed&utm_medium=widget" target="_blank" rel="noopener">bailleurverif.fr</a> · MAJ 2026</div>
+</div>
+<script>
+(function(){
+"use strict";
+var ENC={"paris":{nu:33.3,m:40.0},"lille":{nu:19.5,m:23.4},"hellemmes":{nu:19.5,m:23.4},"lomme":{nu:19.5,m:23.4},"lyon":{nu:16.8,m:20.2},"villeurbanne":{nu:16.5,m:19.8},"bordeaux":{nu:17.4,m:20.9},"montpellier":{nu:17.0,m:20.4},"saint-ouen":{nu:25.2,m:30.2},"aubervilliers":{nu:23.4,m:28.1},"saint-denis":{nu:23.4,m:28.1},"pierrefitte-sur-seine":{nu:22.1,m:26.5},"epinay-sur-seine":{nu:22.1,m:26.5},"stains":{nu:22.1,m:26.5},"villetaneuse":{nu:22.1,m:26.5},"ile-saint-denis":{nu:23.4,m:28.1},"la-courneuve":{nu:22.1,m:26.5},"bagnolet":{nu:24.0,m:28.8},"bondy":{nu:22.5,m:27.0},"bobigny":{nu:22.5,m:27.0},"le-pre-saint-gervais":{nu:24.0,m:28.8},"les-lilas":{nu:24.0,m:28.8},"montreuil":{nu:24.0,m:28.8},"noisy-le-sec":{nu:22.5,m:27.0},"pantin":{nu:24.0,m:28.8},"romainville":{nu:23.0,m:27.6},"grenoble":{nu:14.5,m:17.4},"echirolles":{nu:13.5,m:16.2},"eybens":{nu:13.5,m:16.2},"fontaine":{nu:13.5,m:16.2},"saint-martin-d-heres":{nu:13.5,m:16.2}};
+var DPE={"A":["b-ok","Conforme"],"B":["b-ok","Conforme"],"C":["b-ok","Conforme"],"D":["b-ok","Conforme"],"E":["b-warn","Interdit 2034"],"F":["b-warn","Interdit 2028"],"G":["b-danger","Interdit depuis 2025"]};
+function qs(k){var m=new RegExp("[?&]"+k+"=([^&]+)").exec(location.search);return m?decodeURIComponent(m[1].replace(/\+/g," ")):"";}
+function norm(s){return (s||"").toLowerCase().trim().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/\s+/g,"-").replace(/[^a-z0-9-]/g,"");}
+var tool=qs("tool"),ville=qs("ville"),dpe=qs("dpe"),type=qs("type")||"nu",ref=document.referrer||"";
+var content=document.getElementById("content"),cta=document.getElementById("cta"),utm="?utm_source=embed&utm_medium=widget&utm_campaign="+encodeURIComponent(tool||"home");
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];});}
+function render(html,href){content.innerHTML=html;if(href)cta.href="https://bailleurverif.fr"+href+(href.indexOf("?")>-1?"&":"?")+"utm_source=embed&utm_medium=widget";}
+if(tool==="encadrement"&&ville){
+  var v=norm(ville),d=ENC[v];
+  if(d){
+    var key=type==="meuble"?"m":"nu",max=d[key];
+    render('<div class="ville">'+escapeHtml(ville)+'</div><span class="badge b-warn">Loyer encadré</span><div class="val">'+max.toFixed(1)+' €<span class="unit">/m² · '+(type==="meuble"?"meublé":"nu")+'</span></div><div class="info">Loyer de référence majoré 2026. Dépassement = amende jusqu\'à 5 000 € (15 000 € pers. morale).</div>',"/encadrement-loyer-"+v+"-2026.html");
+  } else {
+    render('<div class="ville">'+escapeHtml(ville)+'</div><span class="badge b-ok">Non encadrée</span><div class="val">Liberté tarifaire</div><div class="info">Cette commune n\'est pas en zone tendue d\'encadrement. Vérifiez le DPE et le permis de louer local.</div>',"/?ville="+encodeURIComponent(ville));
+  }
+} else if(tool==="dpe"&&ville){
+  var vn=norm(ville),dr=dpe?DPE[dpe.toUpperCase()]:null;
+  if(dr){
+    render('<div class="ville">'+escapeHtml(ville)+'</div><span class="badge '+dr[0]+'">DPE '+dpe.toUpperCase()+'</span><div class="val">'+dr[1]+'</div><div class="info">Loi Climat &amp; Résilience. Aide MaPrimeRénov\' jusqu\'à 70 000 € + déficit foncier majoré 21 400 €/an.</div>',"/"+vn+"-dpe-f-g-interdit-location.html");
+  } else {
+    render('<div class="ville">'+escapeHtml(ville)+'</div><span class="badge b-warn">DPE</span><div class="val">F · G interdits</div><div class="info">F interdit 2028 · G interdit depuis 2025. 5,2 M passoires en France.</div>',"/"+vn+"-dpe-f-g-interdit-location.html");
+  }
+} else if(tool==="preavis"){
+  render('<span class="badge b-warn">Préavis</span><div class="val">1 · 2 · 3 mois</div><div class="info">Durée variable selon zone tendue, motif, type de bail. Calculez votre cas exact + modèle LRAR.</div>',"/preavis-bail.html");
+} else if(tool==="encadrement"){
+  render('<span class="badge b-warn">31 communes</span><div class="val">Loyer encadré 2026</div><div class="info">Paris, Lille, Lyon, Bordeaux, Montpellier, Grenoble, Est-Ensemble, Plaine Commune. Saisissez votre commune sur l\'outil.</div>',"/?tool=encadrement");
+} else if(tool==="dpe"){
+  render('<span class="badge b-warn">Calendrier DPE</span><div class="val">G·F·E interdits</div><div class="info">G 2025 · F 2028 · E 2034. 5,2 M logements concernés. Vérifiez le calendrier exact.</div>',"/?tool=dpe");
+}
+// Tracking impression
+try{
+  fetch("https://bailleurverif.fr/api/embed/view",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({tool:tool||"home",ville:ville||"",referrer:ref,ts:Date.now()}),mode:"no-cors",keepalive:true}).catch(function(){});
+}catch(e){}
+})();
+</script>
+</body>
+</html>

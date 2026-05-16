@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>BailleurVérif — Votre location est-elle conforme à la loi en 2026 ?</title>
+<meta name="description" content="Vérifiez en 30 secondes si votre logement loué est conforme à la loi française 2026 : DPE, encadrement des loyers, obligations bailleur. Gratuit, sans inscription.">
+<link rel="canonical" href="https://bailleurverif.fr/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="search" type="application/opensearchdescription+xml" title="BailleurVérif" href="/opensearch.xml">
+<link rel="alternate" type="application/atom+xml" title="BailleurVérif — Articles" href="/atom.xml">
+<link rel="alternate" type="application/feed+json" title="BailleurVérif — Articles" href="/feed.json">
+<link rel="alternate" type="text/csv" title="Open data — Encadrement des loyers France 2026 (CSV)" href="/data/encadrement-loyer-france-2026.csv">
+<link rel="alternate" type="application/json" title="Open data — Encadrement des loyers France 2026 (JSON)" href="/data/encadrement-loyer-france-2026.json">
+<meta property="og:title" content="BailleurVérif — Conformité location 2026">
+<meta property="og:description" content="DPE, encadrement, amendes 5 000€ : vérifiez votre bien en 30 secondes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bailleurverif.fr/">
+<meta property="og:site_name" content="BailleurVérif">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BailleurVérif — Conformité location 2026">
+<meta name="twitter:description" content="DPE, encadrement, amendes 5 000€ : vérifiez votre bien en 30 secondes. Gratuit, sans inscription.">
+<link rel="stylesheet" href="/css/main.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --bg: #ffffff;
+    --panel: #ffffff;
+    --panel-2: #f8fafc;
+    --text: #0f172a;
+    --text-dim: #475569;
+    --warn: #d97706;
+    --danger: #dc2626;
+  }
+  .pill { background: var(--accent-soft); border: 1px solid var(--accent); color: var(--accent); }
+  button.choice { transition: all .15s ease; background: var(--bg-card); }
+  button.choice:hover { background: var(--bg-secondary); border-color: var(--accent) !important; }
+  button.choice.selected { background: var(--accent-soft); border-color: var(--accent) !important; color: var(--accent); }
+  .verdict-ok { background: var(--success-soft); border: 1px solid var(--success); color: var(--success); }
+  .verdict-warn { background: var(--warning-soft); border: 1px solid var(--warning); color: var(--warning); }
+  .verdict-danger { background: var(--danger-soft); border: 1px solid var(--danger); color: var(--danger); }
+  .progress-bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--accent); transition: width .3s ease; }
+  .step { display: none; }
+  .step.active { display: block; }
+  .fade-in { animation: fadeIn .4s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .accent { color: var(--accent); }
+</style>
+</head>
+<body class="min-h-screen">
+
+<header class="bv-header">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="bv-logo">
+      <span class="bv-logo-mark">✓</span>
+      <span>BailleurVérif</span>
+    </a>
+    <nav class="flex items-center gap-4 text-sm">
+      <a href="/blog/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">Guides</a>
+      <a href="/preavis-bail.html" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Préavis</a>
+      <a href="#about" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">À propos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <section id="hero" class="mb-6 sm:mb-8">
+    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-3">
+      Votre location est-elle <span class="accent">conforme</span> à la loi en 2026 ?
+    </h1>
+    <p class="text-[color:var(--text-secondary)] text-lg">
+      DPE, encadrement des loyers, obligations bailleur : <strong>vérification en 30 secondes</strong>.
+      Gratuit, anonyme, sans création de compte.
+    </p>
+  </section>
+
+  <aside class="bv-trust-bar mb-8" aria-label="Sources officielles">
+    <span><strong>Sources officielles :</strong> LOI n°2026-103 du 19 février 2026 · Décret encadrement · <a href="https://www.ademe.fr" rel="noopener" target="_blank">ADEME</a> (DPE) · <a href="https://www.service-public.fr" rel="noopener" target="_blank">Service-Public.fr</a></span>
+    <span class="bv-lock">🔒 Aucun compte · Aucun cookie tiers · RGPD</span>
+  </aside>
+
+  <section id="quiz" class="glass rounded-2xl p-5 sm:p-8 mb-6">
+
+    <div class="flex items-center justify-between mb-6">
+      <div class="text-sm text-[color:var(--text-dim)]" id="step-counter">Question 1 / 5</div>
+      <div class="text-xs text-[color:var(--text-dim)]"><span id="time-left">~30s</span></div>
+    </div>
+    <div class="progress-bar mb-8"><div class="progress-fill" id="progress" style="width: 20%"></div></div>
+
+    <!-- Step 1: Ville -->
+    <div class="step active" data-step="1">
+      <h2 class="text-xl font-semibold mb-2">Dans quelle ville se trouve votre bien ?</h2>
+      <p class="text-sm text-[color:var(--text-dim)] mb-4">L'encadrement des loyers s'applique dans 31 communes en 2026.</p>
+      <input id="q-ville" list="villes-list" autocomplete="off" placeholder="Ex : Paris, Lyon, Lille…" class="w-full px-4 py-3 rounded-xl text-base">
+      <datalist id="villes-list"></datalist>
+      <button class="mt-5 w-full sm:w-auto bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl hover:opacity-90" onclick="next(1)">Suivant →</button>
+    </div>
+
+    <!-- Step 2: Type -->
+    <div class="step" data-step="2">
+      <h2 class="text-xl font-semibold mb-2">Le logement est loué…</h2>
+      <p class="text-sm text-[color:var(--text-dim)] mb-4">Le régime juridique (et l'encadrement) diffère.</p>
+      <div class="grid grid-cols-2 gap-3">
+        <button class="choice border border-[color:var(--border)] rounded-xl px-4 py-4 text-left" data-val="nu" onclick="selectChoice(this, 'q-type')">
+          <div class="font-semibold">Nu / vide</div>
+          <div class="text-xs text-[color:var(--text-dim)]">Bail 3 ans, loi 1989</div>
+        </button>
+        <button class="choice border border-[color:var(--border)] rounded-xl px-4 py-4 text-left" data-val="meuble" onclick="selectChoice(this, 'q-type')">
+          <div class="font-semibold">Meublé</div>
+          <div class="text-xs text-[color:var(--text-dim)]">Bail 1 an (ou 9 mois étudiant)</div>
+        </button>
+      </div>
+      <div class="flex gap-2 mt-5">
+        <button class="text-[color:var(--text-dim)] px-4 py-3" onclick="prev()">← Retour</button>
+        <button id="btn-2" class="flex-1 sm:flex-none bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl opacity-50 cursor-not-allowed" disabled onclick="next(2)">Suivant →</button>
+      </div>
+    </div>
+
+    <!-- Step 3: Surface -->
+    <div class="step" data-step="3">
+      <h2 class="text-xl font-semibold mb-2">Quelle est la surface (m²) ?</h2>
+      <p class="text-sm text-[color:var(--text-dim)] mb-4">Surface habitable selon le bail.</p>
+      <input id="q-surface" type="number" min="5" max="500" inputmode="numeric" placeholder="Ex : 35" class="w-full px-4 py-3 rounded-xl text-base">
+      <div class="flex gap-2 mt-5">
+        <button class="text-[color:var(--text-dim)] px-4 py-3" onclick="prev()">← Retour</button>
+        <button class="flex-1 sm:flex-none bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl" onclick="next(3)">Suivant →</button>
+      </div>
+    </div>
+
+    <!-- Step 4: Loyer -->
+    <div class="step" data-step="4">
+      <h2 class="text-xl font-semibold mb-2">Quel est le loyer mensuel hors charges (€) ?</h2>
+      <p class="text-sm text-[color:var(--text-dim)] mb-4">Le loyer principal seul, sans les charges récupérables.</p>
+      <input id="q-loyer" type="number" min="100" max="20000" inputmode="numeric" placeholder="Ex : 850" class="w-full px-4 py-3 rounded-xl text-base">
+      <div class="flex gap-2 mt-5">
+        <button class="text-[color:var(--text-dim)] px-4 py-3" onclick="prev()">← Retour</button>
+        <button class="flex-1 sm:flex-none bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl" onclick="next(4)">Suivant →</button>
+      </div>
+    </div>
+
+    <!-- Step 5: DPE -->
+    <div class="step" data-step="5">
+      <h2 class="text-xl font-semibold mb-2">Quelle est la classe DPE du logement ?</h2>
+      <p class="text-sm text-[color:var(--text-dim)] mb-4">Indiquée sur le diagnostic de performance énergétique (validité 10 ans).</p>
+      <div class="grid grid-cols-7 gap-2">
+        <button class="choice border border-[color:var(--border)] rounded-xl py-3 font-bold" data-val="A" onclick="selectChoice(this, 'q-dpe')">A</button>
+        <button class="choice border border-[color:var(--border)] rounded-xl py-3 font-bold" data-val="B" onclick="selectChoice(this, 'q-dpe')">B</button>
+        <button class="choice border border-[color:var(--border)] rounded-xl py-3 font-bold" data-val="C" onclick="selectChoice(this, 'q-dpe')">C</button>
+        <button class="choice border border-[color:var(--border)] rounded-xl py-3 font-bold" data-val="D" onclick="selectChoice(this, 'q-dpe')">D</button>
+        <button class="choice border border-[color:var(--border)] rounded-xl py-3 font-bold" data-val="E" onclick="selectChoice(this, 'q-dpe')">E</button>
+        <button class="choice border border-[color:var(--border)] rounded-xl py-3 font-bold" data-val="F" onclick="selectChoice(this, 'q-dpe')">F</button>
+        <button class="choice border border-[color:var(--border)] rounded-xl py-3 font-bold" data-val="G" onclick="selectChoice(this, 'q-dpe')">G</button>
+      </div>
+      <p class="text-xs text-[color:var(--text-dim)] mt-3">Je ne sais pas ? <button class="underline" onclick="document.getElementById('q-dpe').value='unknown'; next(5);">Continuer sans le DPE</button></p>
+      <div class="flex gap-2 mt-5">
+        <button class="text-[color:var(--text-dim)] px-4 py-3" onclick="prev()">← Retour</button>
+        <button id="btn-5" class="flex-1 sm:flex-none bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl opacity-50 cursor-not-allowed" disabled onclick="next(5)">Voir mon verdict →</button>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <div class="step" data-step="result">
+      <div id="verdict-card" class="rounded-2xl p-5 sm:p-6 mb-5 fade-in"></div>
+
+      <div id="details" class="space-y-3 mb-6 fade-in"></div>
+
+      <div id="email-gate" class="glass rounded-xl p-5 mt-6">
+        <h3 class="font-semibold mb-1">📩 Recevez votre rapport détaillé + plan d'action personnalisé</h3>
+        <p class="text-sm text-[color:var(--text-dim)] mb-4">Liens vers les barèmes officiels de votre ville, échéances exactes, démarches à entreprendre. Gratuit, 1 email, on ne spamme pas.</p>
+        <form id="email-form" onsubmit="captureEmail(event, 'report')" class="flex flex-col sm:flex-row gap-2">
+          <input type="email" required placeholder="votre@email.fr" class="flex-1 px-4 py-3 rounded-xl">
+          <button type="submit" class="bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl whitespace-nowrap">Recevoir le rapport</button>
+        </form>
+        <p id="email-form-msg" class="text-sm mt-2"></p>
+      </div>
+
+      <div id="watch-gate" class="glass rounded-xl p-5 mt-3">
+        <h3 class="font-semibold mb-1">🔔 Surveillance automatique de vos obligations bailleur</h3>
+        <p class="text-sm text-[color:var(--text-dim)] mb-4">DPE, encadrement, échéances Alur, déclaration fiscale : on vous prévient avant l'amende. <span class="accent">Bientôt disponible.</span></p>
+        <form id="watch-form" onsubmit="captureEmail(event, 'watch')" class="flex flex-col sm:flex-row gap-2">
+          <input type="email" required placeholder="votre@email.fr" class="flex-1 px-4 py-3 rounded-xl">
+          <button type="submit" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-6 py-3 rounded-xl whitespace-nowrap">Prévenez-moi au lancement</button>
+        </form>
+        <p id="watch-form-msg" class="text-sm mt-2"></p>
+      </div>
+
+      <div id="share-block" class="glass rounded-xl p-5 mt-6">
+        <h3 class="font-semibold mb-1">📤 Un ami bailleur en a besoin ? Partagez en 1 clic</h3>
+        <p class="text-sm text-[color:var(--text-dim)] mb-4">Les amendes encadrement loyer atteignent 5 000 €. La plupart des propriétaires particuliers ignorent les nouvelles règles 2026.</p>
+        <div class="flex flex-wrap gap-2">
+          <button onclick="share('whatsapp')" class="flex items-center gap-2 bg-[color:var(--panel-2)] border border-[color:var(--border)] hover:border-[color:var(--accent)] px-4 py-3 rounded-xl text-sm font-medium">
+            <span>💬</span> WhatsApp
+          </button>
+          <button onclick="share('email')" class="flex items-center gap-2 bg-[color:var(--panel-2)] border border-[color:var(--border)] hover:border-[color:var(--accent)] px-4 py-3 rounded-xl text-sm font-medium">
+            <span>✉️</span> Email
+          </button>
+          <button onclick="share('sms')" class="flex items-center gap-2 bg-[color:var(--panel-2)] border border-[color:var(--border)] hover:border-[color:var(--accent)] px-4 py-3 rounded-xl text-sm font-medium sm:inline-flex">
+            <span>📱</span> SMS
+          </button>
+          <button onclick="share('copy')" class="flex items-center gap-2 bg-[color:var(--panel-2)] border border-[color:var(--border)] hover:border-[color:var(--accent)] px-4 py-3 rounded-xl text-sm font-medium">
+            <span id="copy-icon">🔗</span> <span id="copy-label">Copier le lien</span>
+          </button>
+        </div>
+        <p id="share-msg" class="text-sm mt-3"></p>
+      </div>
+
+      <div id="feedback-block" class="glass rounded-xl p-5 mt-6">
+        <h3 class="font-semibold mb-1">💬 Une question, une remarque, un cas pas couvert ?</h3>
+        <p class="text-sm text-[color:var(--text-dim)] mb-3">Le tool est en construction. Ton retour fait évoluer le calcul. <span class="text-white">Anonyme — email facultatif</span> si tu veux qu'on te réponde.</p>
+        <form id="feedback-form" onsubmit="submitFeedback(event)">
+          <textarea id="fb-message" required minlength="3" maxlength="1500" rows="3" placeholder="Ex : « ma colocation meublée est-elle concernée ? » ou « le verdict ne tient pas compte de… »" class="w-full px-4 py-3 rounded-xl text-sm"></textarea>
+          <div class="flex flex-col sm:flex-row gap-2 mt-2">
+            <input id="fb-email" type="email" placeholder="email (facultatif)" class="flex-1 px-4 py-2 rounded-xl text-sm">
+            <button type="submit" class="bg-[color:var(--panel-2)] border border-[color:var(--border)] hover:border-[color:var(--accent)] px-5 py-2 rounded-xl text-sm font-medium">Envoyer</button>
+          </div>
+        </form>
+        <p id="fb-msg" class="text-sm mt-2"></p>
+      </div>
+
+      <div class="text-center mt-6">
+        <button class="text-sm text-[color:var(--text-dim)] underline" onclick="restart()">↻ Refaire la vérification pour un autre bien</button>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="outils" class="mt-10 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">📐 Calculateur de préavis bail (nouveau)</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">1 mois ou 3 mois ? Zone tendue, bail nu/meublé, motif locataire ou bailleur. Modèle de lettre LRAR fourni.</p>
+      </div>
+      <a href="/preavis-bail.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Calculer mon préavis →</a>
+    </div>
+  </section>
+
+  <section id="dpe-cities" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6">
+      <h3 class="text-lg font-semibold mb-1">🏠 DPE F &amp; G interdits — calendrier par ville</h3>
+      <p class="text-sm text-[color:var(--text-dim)] mb-3">G interdit depuis 2025 · F interdit en 2028 · E en 2034. Sélectionnez votre ville pour estimer le parc local et vos obligations bailleur.</p>
+      <div class="flex flex-wrap gap-2">
+        <a href="/paris-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Paris</a>
+        <a href="/marseille-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Marseille</a>
+        <a href="/lyon-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Lyon</a>
+        <a href="/toulouse-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Toulouse</a>
+        <a href="/nice-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Nice</a>
+        <a href="/nantes-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Nantes</a>
+        <a href="/bordeaux-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Bordeaux</a>
+        <a href="/lille-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Lille</a>
+        <a href="/strasbourg-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Strasbourg</a>
+        <a href="/grenoble-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Grenoble</a>
+        <a href="/rennes-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Rennes</a>
+        <a href="/montpellier-dpe-f-g-interdit-location.html" class="text-xs px-3 py-1.5 rounded-lg border border-[color:var(--accent)] accent hover:opacity-90">Montpellier</a>
+        <span class="text-xs text-[color:var(--text-dim)] px-2 py-1.5">+ 38 villes</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="guides" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">📚 Guides 2026 pour bailleurs particuliers</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">DPE F en location, encadrement des loyers, anti-fraude dossier : tout ce qu'il faut savoir, sources légales à l'appui.</p>
+      </div>
+      <a href="/blog/" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Lire les guides →</a>
+    </div>
+  </section>
+
+  <aside id="alerte-maj" class="glass rounded-2xl p-5 sm:p-6 mt-8">
+    <div class="text-[11px] uppercase tracking-widest mb-2 accent">Veille loyer légal · Gratuit</div>
+    <h3 class="text-lg font-semibold mb-2" style="color:var(--text-primary)">Bailleur ? Soyez prévenu si l'encadrement change</h3>
+    <p class="text-sm mb-4" style="color:var(--text-secondary)">
+      Nouveau décret, prolongation d'encadrement, jurisprudence Cour de cassation, mise à jour des barèmes préfectoraux :
+      recevez un email <strong>uniquement</strong> en cas d'évolution réglementaire qui touche votre bail. 0 spam, 0 partage,
+      désinscription un clic. Stockage en France, conforme RGPD.
+    </p>
+    <form id="bv-subscribe-form" class="flex flex-col gap-3" novalidate>
+      <input type="hidden" name="topic" value="loyer-legal">
+      <input type="hidden" name="source" value="/">
+      <div class="flex flex-col sm:flex-row gap-2">
+        <label class="sr-only" for="bv-subscribe-email">Votre email</label>
+        <input id="bv-subscribe-email" name="email" type="email" required autocomplete="email"
+               placeholder="votre.email@exemple.fr"
+               class="flex-1 px-4 py-3 rounded-xl text-base">
+        <button id="bv-subscribe-submit" type="submit"
+                class="bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl whitespace-nowrap">
+          Recevoir les alertes
+        </button>
+      </div>
+      <label class="flex items-start gap-2 text-xs" style="color:var(--text-secondary)">
+        <input id="bv-subscribe-consent" name="consent" type="checkbox" required class="mt-0.5">
+        <span>J'accepte de recevoir des emails uniquement en cas de mise à jour réglementaire sur l'encadrement et la conformité de mon bail. Je peux me désinscrire à tout moment.
+          Voir la <a href="/politique-confidentialite.html" class="underline accent">politique de confidentialité</a>.</span>
+      </label>
+    </form>
+    <div id="bv-subscribe-status" class="mt-3 text-sm" role="status" aria-live="polite"></div>
+  </aside>
+
+  <script>
+  (function(){
+    var form = document.getElementById('bv-subscribe-form');
+    var statusEl = document.getElementById('bv-subscribe-status');
+    var submitBtn = document.getElementById('bv-subscribe-submit');
+    if (!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      statusEl.className = 'mt-3 text-sm';
+      statusEl.style.color = '';
+      statusEl.textContent = 'Envoi en cours…';
+      submitBtn.disabled = true;
+      var email = document.getElementById('bv-subscribe-email').value.trim();
+      var consent = document.getElementById('bv-subscribe-consent').checked;
+      if (!email || !consent) {
+        statusEl.className = 'mt-3 text-sm text-rose-700';
+        statusEl.textContent = 'Merci de renseigner votre email et de cocher la case de consentement.';
+        submitBtn.disabled = false;
+        return;
+      }
+      fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({email: email, topic: 'loyer-legal', source: '/', consent: true, referrer_token: (new URLSearchParams(location.search).get('ref') || '').slice(0,96)})
+      }).then(function(r){ return r.json().then(function(j){ return {status: r.status, body: j}; }); })
+      .then(function(res){
+        submitBtn.disabled = false;
+        if (res.status === 200 && res.body.ok && res.body.already_confirmed) {
+          statusEl.className = 'mt-3 text-sm text-emerald-700';
+          statusEl.textContent = 'Votre email est déjà inscrit aux alertes loyer légal. Merci.';
+          return;
+        }
+        if (res.status === 200 && res.body.ok && res.body.confirm_url) {
+          statusEl.className = 'mt-3 text-sm text-emerald-700';
+          statusEl.innerHTML = '✓ Merci. Pour activer votre inscription, cliquez ce lien de confirmation : <a class="underline font-semibold accent" href="' + res.body.confirm_url + '" rel="noopener">Confirmer mon inscription</a>.';
+          form.reset();
+          return;
+        }
+        if (res.status === 429) {
+          statusEl.className = 'mt-3 text-sm text-amber-700';
+          statusEl.textContent = 'Trop de demandes récentes. Réessayez dans une minute.';
+          return;
+        }
+        statusEl.className = 'mt-3 text-sm text-rose-700';
+        statusEl.textContent = (res.body && res.body.error) ? ('Erreur : ' + res.body.error) : 'Une erreur est survenue. Réessayez.';
+      }).catch(function(){
+        submitBtn.disabled = false;
+        statusEl.className = 'mt-3 text-sm text-rose-700';
+        statusEl.textContent = 'Erreur réseau. Réessayez dans un instant.';
+      });
+    });
+  })();
+  </script>
+
+  <section id="about" class="mt-12 text-sm space-y-3" style="color:var(--text-secondary)">
+    <h2 class="text-lg font-semibold" style="color:var(--text-primary)">À propos de BailleurVérif</h2>
+    <p><strong>Qui ?</strong> Florian, propriétaire bailleur particulier, équipé d'un assistant IA (Anthropic Claude) pour la veille juridique quotidienne. L'objectif : rendre accessible aux particuliers les règles 2026 souvent diffuses entre Légifrance, Service-Public, arrêtés préfectoraux et DREAL.</p>
+    <p><strong>Quoi ?</strong> Cet outil gratuit croise vos données avec les barèmes officiels 2026 : décret n°2017-1198 (encadrement des loyers), loi Climat &amp; Résilience (calendrier DPE), loi ALUR, loi n°2026-103 du 19 février 2026 (Jeanbrun). Les calculs sont <strong>indicatifs</strong> ; la valeur juridique appartient aux arrêtés préfectoraux et au diagnostic DPE officiel.</p>
+    <p><strong>Engagement transparence</strong> : aucune donnée n'est revendue, aucun cookie tiers, les saisies du quiz restent sur votre navigateur. Seul l'email (si vous le laissez) est stocké pour vous envoyer le rapport — supprimable à la demande sous 30 jours.</p>
+    <p>Sources : <a href="https://www.service-public.fr" target="_blank" rel="noopener">service-public.fr</a> · <a href="https://www.legifrance.gouv.fr" target="_blank" rel="noopener">Légifrance</a> · <a href="https://reference-loyers.din.developpement-durable.gouv.fr" target="_blank" rel="noopener">référence loyers DREAL</a> · <a href="https://www.ademe.fr" target="_blank" rel="noopener">ADEME</a></p>
+  </section>
+
+</main>
+
+<footer class="bv-footer mt-16 py-8">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+      <div class="h-card">
+        <div><strong>BailleurVérif</strong> — Outil gratuit · Mis à jour le 2026-05-16</div>
+        <div class="text-xs mt-1" style="color:var(--text-muted)">Aucune création de compte · Aucun cookie tiers · RGPD</div>
+        <a class="u-url" href="https://bailleurverif.fr/" hidden>https://bailleurverif.fr/</a>
+        <a class="u-email" href="mailto:bailleurverif.contact@gmail.com" hidden>bailleurverif.contact@gmail.com</a>
+        <span class="p-name p-org" hidden>BailleurVérif</span>
+        <span class="p-country-name" hidden>France</span>
+        <span class="p-category" hidden>Conformité bailleur · DPE · encadrement loyer · Alur</span>
+      </div>
+      <nav class="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+        <a href="/mentions-legales.html">Mentions légales</a>
+        <a href="/politique-confidentialite.html">Confidentialité</a>
+        <a href="/cgu.html">CGU</a>
+        <a href="mailto:bailleurverif.contact@gmail.com">Contact</a>
+      </nav>
+    </div>
+    <div class="text-xs mt-4 pt-4" style="border-top:1px solid var(--border); color:var(--text-muted)">
+      © 2026 BailleurVérif — Cet outil est informatif et ne se substitue pas à un conseil juridique. <span id="visit-counter"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

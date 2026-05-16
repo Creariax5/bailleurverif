@@ -1,0 +1,48 @@
+# Env / secrets
+.env
+.env.*
+*.key
+*.secret
+*.pem
+.indexnow_key
+
+# Runtime data — never commit
+data/
+wedge-tool/data/
+wedge-tool/data/subscribers.jsonl
+wedge-tool/visits.jsonl
+
+# Logs (catch-all)
+*.log
+server.log
+wedge-tool/server.log
+dashboard/server.log
+wayback-submissions.log
+
+# Backups & history
+*.bak
+*-history.md
+ledger-history.md
+research-notes-history.md
+florian-todos-history.md.bak
+
+# Lead / prospect / activity data
+leads.jsonl
+geo-baseline-*.jsonl
+*.jsonl
+
+# Agent browser — entire dir (cookies / profile / storage)
+agent-browser/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv-browser/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp

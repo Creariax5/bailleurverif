@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SaaS Florian — Live</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background:#0a0a0f; color:#e5e7eb; }
+  .glass { background:rgba(255,255,255,0.04); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.08); }
+  .stat-num { font-variant-numeric:tabular-nums; }
+  .pill { display:inline-block; padding:2px 10px; border-radius:12px; font-size:0.75rem; font-weight:500; }
+  .pill-green { background:rgba(16,185,129,0.15); color:#6ee7b7; }
+  .pill-amber { background:rgba(245,158,11,0.15); color:#fcd34d; }
+  .pill-red { background:rgba(239,68,68,0.15); color:#fca5a5; }
+  .gradient-text { background:linear-gradient(135deg,#6366f1,#ec4899); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  .progress-bar { background:rgba(255,255,255,0.08); border-radius:9999px; overflow:hidden; height:6px; }
+  .progress-fill { background:linear-gradient(90deg,#10b981,#6366f1); height:100%; transition:width 0.4s; }
+  a { color:#a5b4fc; }
+</style>
+</head>
+<body class="min-h-screen px-6 py-6">
+<div class="max-w-5xl mx-auto">
+
+  <header class="flex items-center justify-between mb-6 flex-wrap gap-2">
+    <div>
+      <div class="text-xs text-gray-500 uppercase tracking-widest">SaaS Florian — Live</div>
+      <h1 class="text-2xl md:text-3xl font-bold"><span class="gradient-text">État opérationnel</span></h1>
+    </div>
+    <div class="text-xs text-gray-500">
+      Auto-refresh 30s — <a href="./">étude de marché</a> — <a href="./blog/">blog</a> — <a href="http://217.182.171.135:8102" target="_blank">outil</a> — <a href="./metrics.json">metrics.json</a>
+    </div>
+  </header>
+
+  <div id="banner" class="glass rounded-xl p-4 mb-6 flex items-center gap-3 flex-wrap">
+    <span id="phase-pill" class="pill pill-amber">Phase ?</span>
+    <span id="angle" class="text-sm text-gray-300">angle ?</span>
+    <span class="text-sm text-gray-400">·</span>
+    <span id="pricing" class="text-sm text-gray-400">pricing ?</span>
+    <span class="ml-auto text-xs text-gray-500" id="gen">généré ?</span>
+  </div>
+
+  <h2 class="text-lg font-semibold mb-3 flex items-center gap-2">
+    Wedge tool — <a class="underline" href="http://217.182.171.135:8102" target="_blank">BailleurVérif</a>
+    <span id="wedge-status" class="pill pill-amber">…</span>
+  </h2>
+  <div class="grid md:grid-cols-4 gap-3 mb-3">
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-gray-500 uppercase">Visiteurs uniques</div>
+      <div class="stat-num text-2xl font-bold text-indigo-300" id="w-vu">—</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-gray-500 uppercase">Verdicts générés</div>
+      <div class="stat-num text-2xl font-bold text-blue-300" id="w-rs">—</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-gray-500 uppercase">Emails capturés</div>
+      <div class="stat-num text-2xl font-bold text-emerald-400" id="w-cap">—</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-gray-500 uppercase">Conv. email (cible ≥20%)</div>
+      <div class="stat-num text-2xl font-bold text-fuchsia-400" id="w-conv">—</div>
+    </div>
+  </div>
+  <div class="glass rounded-xl p-4 mb-6 text-sm">
+    <div class="flex flex-wrap gap-x-6 gap-y-2">
+      <div><span class="text-gray-400">Conforme :</span> <span class="text-emerald-400 font-bold" id="w-ok">—</span></div>
+      <div><span class="text-gray-400">À risque :</span> <span class="text-amber-400 font-bold" id="w-warn">—</span></div>
+      <div><span class="text-gray-400">Interdiction :</span> <span class="text-red-400 font-bold" id="w-danger">—</span></div>
+      <div><span class="text-gray-400">Statut go/no-go :</span> <span class="font-bold" id="w-gng">—</span></div>
+    </div>
+    <div class="text-xs text-gray-500 mt-3" id="w-villes">Top villes : —</div>
+    <div class="text-xs text-gray-500 mt-1" id="w-dist">Distribution : <span id="w-articles">—</span> articles publiés avec CTA — <a href="./blog/" class="underline">blog</a></div>
+    <div class="text-xs text-gray-500 mt-1" id="w-shares">Partages : <span id="w-shr">0</span> total · <span id="w-shr-rate">0%</span> taux · arrivées via partage : <span id="w-shr-ref">0</span> · canaux : <span id="w-shr-ch">—</span></div>
+    <div class="text-xs text-gray-500 mt-1" id="w-feedbacks">Feedbacks libres : <span id="w-fb">0</span> total · <span id="w-fb-em">0</span> avec email</div>
+  </div>
+
+  <h2 class="text-lg font-semibold mb-3">Phase 1 — Validation</h2>
+  <div class="grid md:grid-cols-4 gap-3 mb-4">
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-gray-500 uppercase">Leads sourcés</div>
+      <div class="stat-num text-2xl font-bold text-emerald-400" id="ls">—</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-gray-500 uppercase">Contactés</div>
+      <div class="stat-num text-2xl font-bold text-amber-400" id="lc">—</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-gray-500 uppercase">Calls faits</div>
+      <div class="stat-num text-2xl font-bold text-blue-400" id="cd">—</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-gray-500 uppercase">"Où je signe" /10</div>
+      <div class="stat-num text-2xl font-bold text-fuchsia-400" id="cp">—</div>
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-4 mb-6">
+    <div class="text-sm text-gray-400 mb-2">Progrès vers seuil go (5/10 positifs)</div>
+    <div class="progress-bar"><div class="progress-fill" id="progress" style="width:0%"></div></div>
+    <div class="text-xs text-gray-500 mt-1" id="progress-label">0 / 5</div>
+  </div>
+
+  <h2 class="text-lg font-semibold mb-3">Leads en stock</h2>
+  <div id="leads-table" class="glass rounded-xl p-4 mb-6 text-sm text-gray-300">chargement…</div>
+
+  <h2 class="text-lg font-semibold mb-3">Florian-TODOs ouverts</h2>
+  <div class="glass rounded-xl p-4 mb-6 text-sm">
+    <div class="flex justify-between mb-2">
+      <span class="text-gray-400">Ouverts</span>
+      <span class="text-amber-400 font-bold" id="todo-open">—</span>
+    </div>
+    <div class="flex justify-between">
+      <span class="text-gray-400">Faits</span>
+      <span class="text-emerald-400 font-bold" id="todo-done">—</span>
+    </div>
+    <div class="text-xs text-gray-500 mt-3">Détail : <code>/home/deploy/saas-florian/florian-todos.md</code></div>
+  </div>
+
+  <div class="text-xs text-gray-600 mt-8 mb-4">
+    <a href="./metrics.json" class="hover:text-gray-300">metrics.json</a> ·
+    <a href="./" class="hover:text-gray-300">étude de marché</a> ·
+    dernière fenêtre wake : <span id="last-wake">—</span>
+  </div>
+</div>
+
+<script>
+async function tick() {
+  try {
+    const r = await fetch('./metrics.json?t=' + Date.now());
+    const m = await r.json();
+
+    const pill = document.getElementById('phase-pill');
+    pill.textContent = 'Phase ' + (m.phase || '?');
+    pill.className = 'pill ' + (m.phase && m.phase.startsWith('1') ? 'pill-amber' : m.phase && m.phase.startsWith('3') ? 'pill-green' : 'pill-amber');
+
+    document.getElementById('angle').textContent = 'angle: ' + (m.angle || '?');
+    document.getElementById('pricing').textContent = 'test: ' + (m.pricing_test?.single_bien_eur_month || '?') + '€ / ' + (m.pricing_test?.multi_bien_eur_month || '?') + '€/mois';
+    document.getElementById('gen').textContent = 'généré ' + m.generated_at;
+
+    const p1 = m.phase1 || {};
+    document.getElementById('ls').textContent = p1.leads_sourced ?? 0;
+    document.getElementById('lc').textContent = p1.leads_contacted ?? 0;
+    document.getElementById('cd').textContent = p1.calls_done ?? 0;
+    document.getElementById('cp').textContent = (p1.calls_positive ?? 0) + ' / ' + (p1.target_positive_for_go ?? 5);
+
+    const pct = Math.min(100, ((p1.calls_positive ?? 0) / (p1.target_positive_for_go ?? 5)) * 100);
+    document.getElementById('progress').style.width = pct + '%';
+    document.getElementById('progress-label').textContent = (p1.calls_positive ?? 0) + ' / ' + (p1.target_positive_for_go ?? 5);
+
+    const leads = m.leads || [];
+    document.getElementById('leads-table').innerHTML = leads.length === 0
+      ? '<span class="text-gray-500">aucun lead</span>'
+      : '<table class="w-full"><thead><tr class="text-gray-500 text-xs uppercase"><th class="text-left py-1">ID</th><th class="text-left">Handle</th><th class="text-left">Source</th><th class="text-left">Statut</th></tr></thead><tbody>' +
+        leads.map(l => '<tr><td class="py-1">'+l.id+'</td><td>'+l.handle+'</td><td>'+l.source+'</td><td><span class="pill pill-amber">'+l.status+'</span></td></tr>').join('') +
+        '</tbody></table>';
+
+    document.getElementById('todo-open').textContent = m.florian_todos_open ?? 0;
+    document.getElementById('todo-done').textContent = m.florian_todos_done ?? 0;
+    document.getElementById('last-wake').textContent = m.last_wake || '—';
+
+    const w = m.wedge || {};
+    const ws = document.getElementById('wedge-status');
+    if (w.online) {
+      ws.textContent = 'live';
+      ws.className = 'pill pill-green';
+      document.getElementById('w-vu').textContent = w.visits_unique ?? 0;
+      document.getElementById('w-rs').textContent = w.results_total ?? 0;
+      document.getElementById('w-cap').textContent = w.captures_total ?? 0;
+      document.getElementById('w-conv').textContent = (w.conv_email_pct ?? 0) + '%';
+      const sev = w.severity || {};
+      document.getElementById('w-ok').textContent = sev.ok ?? 0;
+      document.getElementById('w-warn').textContent = sev.warn ?? 0;
+      document.getElementById('w-danger').textContent = sev.danger ?? 0;
+      const gng = w.go_no_go_status || 'collecting';
+      const gngEl = document.getElementById('w-gng');
+      gngEl.textContent = gng;
+      gngEl.className = 'font-bold ' + (gng === 'go' ? 'text-emerald-400' : gng === 'pivot' ? 'text-red-400' : 'text-amber-400');
+      const villes = (w.top_villes || []).map(v => v[0] + ' ('+v[1]+')').join(' · ');
+      document.getElementById('w-villes').textContent = 'Top villes : ' + (villes || '—');
+      document.getElementById('w-articles').textContent = m.phase2?.articles_published ?? 0;
+      document.getElementById('w-shr').textContent = w.shares_total ?? 0;
+      document.getElementById('w-shr-rate').textContent = (w.share_rate_pct ?? 0) + '%';
+      document.getElementById('w-shr-ref').textContent = w.referrals_from_share ?? 0;
+      const channels = (w.share_channels || []).map(c => c[0] + ' ('+c[1]+')').join(' · ');
+      document.getElementById('w-shr-ch').textContent = channels || '—';
+      document.getElementById('w-fb').textContent = w.feedbacks_total ?? 0;
+      document.getElementById('w-fb-em').textContent = w.feedbacks_with_email ?? 0;
+    } else {
+      ws.textContent = 'offline';
+      ws.className = 'pill pill-red';
+      ['w-vu','w-rs','w-cap','w-conv','w-ok','w-warn','w-danger','w-gng','w-shr','w-shr-rate','w-shr-ref','w-shr-ch','w-fb','w-fb-em'].forEach(id => document.getElementById(id).textContent = '—');
+      document.getElementById('w-villes').textContent = 'Top villes : —';
+    }
+  } catch (e) {
+    document.getElementById('banner').innerHTML = '<span class="pill pill-red">offline</span><span class="text-sm text-gray-400">metrics.json indisponible</span>';
+  }
+}
+tick();
+setInterval(tick, 30000);
+</script>
+</body>
+</html>

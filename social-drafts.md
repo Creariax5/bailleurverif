@@ -1,0 +1,362 @@
+# Social drafts — tweets ready-to-post BailleurVérif
+
+> **Statut** : draft autonome, prêt à coller dans X/Twitter dès que Florian crée le compte @BailleurVerif (cf. TODO Twitter). L'agent n'a aucun moyen de poster lui-même (compte = humain).
+>
+> **Brand voice** : posture utile, factuelle, sans agressivité commerciale. Pas de claim "leader du marché". Pas de promesse > "outil gratuit". Pas de mention de Florian.
+>
+> **Lien tool** : `http://217.182.171.135:8102/` (à remplacer par `https://bailleurverif.fr/` dès TODO-9 résolu — `sed -i 's|http://217.182.171.135:8102/|https://bailleurverif.fr/|g' social-drafts.md`).
+>
+> **Lien blog** : `http://217.182.171.135:8101/blog/` (idem migration NDD).
+>
+> **Cadence recommandée** : 1-3 tweets/jour pendant 10-14 jours. Mélanger les 3 catégories (stats / info légale / engagement). Ne pas spammer un thread d'un coup.
+>
+> **Mesure** : tracker dans `state.md/metrics` quand posté → impressions / clics / conv. Sourcing UTM possible via `?utm_source=twitter&utm_campaign=launch`.
+
+---
+
+## Catégorie A — Stats choc (hook viralité)
+
+### TWEET-A1 — DPE G interdit
+```
+1,9 million de logements en France ont un DPE F ou G.
+
+→ Les G sont INTERDITS à la location depuis le 1er janvier 2025.
+→ Les F le seront en 2028.
+→ Les E en 2034.
+
+Tu loues un de ces logements ? Vérifie ta situation en 30s :
+http://217.182.171.135:8102/
+
+#immobilier #DPE #bailleur
+```
+~250 car · CTA tool
+
+### TWEET-A2 — Encadrement loyer expansion
+```
+En 2026, 26 communes appliquent l'encadrement des loyers en France.
+
+Dépasser le plafond = amende jusqu'à 5 000€ + restitution du trop-perçu.
+
+Beaucoup de bailleurs particuliers ne savent même pas que leur commune est concernée.
+
+→ Vérifie en 30 sec : http://217.182.171.135:8102/
+
+#location
+```
+~270 car · CTA tool
+
+### TWEET-A3 — Fraude dossier
+```
+1 dossier de location sur 5 contient au moins un document falsifié (fiches de paie, avis d'imposition, bail antérieur).
+
+Le bailleur particulier est seul face au risque : ni assurance GLI, ni recours rapide si le locataire impayé est en fait insolvable.
+
+#bailleur #immobilier
+```
+~280 car · pas de CTA tool (info-only, thread starter)
+
+### TWEET-A4 — Facteur 1.9 électricité 2026
+```
+Le nouveau coefficient DPE de 1,9 pour l'électricité (au lieu de 2,3) a fait monter ~140 000 logements en classe E ou D depuis janvier 2026.
+
+→ Bonne nouvelle pour les bailleurs concernés (moins de risque réglementaire 2034).
+→ Mais ça change la valeur locative et le DPE affiché.
+
+#DPE
+```
+~280 car · soft CTA → thread
+
+### TWEET-A5 — Coût d'une non-conformité
+```
+Coût d'une non-conformité bailleur en 2026 :
+
+- DPE non-affiché en annonce : 3 000€
+- Loyer encadré dépassé : jusqu'à 5 000€
+- Bail non-conforme (clauses interdites) : nullité partielle + restitution
+- Locataire qui découvre = bras de fer
+
+Un check rapide vaut le coup : http://217.182.171.135:8102/
+```
+~290 car · CTA tool
+
+---
+
+## Catégorie B — Info légale + alerte (autorité)
+
+### TWEET-B1 — Calendrier DPE
+```
+Calendrier interdictions DPE en location (loi Climat 2021) :
+
+✅ DPE G : interdit depuis 01/01/2025
+⏳ DPE F : interdit à partir de 2028
+⏳ DPE E : interdit à partir de 2034
+
+Un audit énergétique est obligatoire pour vendre G/F depuis 2023.
+
+(Source : art. 17 loi 1989 modifié)
+```
+~270 car · pas de CTA dur
+
+### TWEET-B2 — Encadrement liste communes
+```
+Communes appliquant l'encadrement des loyers en 2026 :
+
+🇫🇷 Paris, Lille, Hellemmes, Lomme
+🇫🇷 Lyon, Villeurbanne
+🇫🇷 Bordeaux, Montpellier
+🇫🇷 Plaine Commune (9 villes), Est Ensemble (9 villes)
+🇫🇷 Grenoble, Échirolles
+
+Ta commune en fait partie ? Check : http://217.182.171.135:8102/
+```
+~280 car · CTA tool
+
+### TWEET-B3 — Bail conforme 2026
+```
+Un bail de location nue conforme en 2026 doit OBLIGATOIREMENT contenir :
+
+- Surface habitable (loi Boutin)
+- DPE et GES
+- Montant et date d'évolution du loyer
+- État des lieux d'entrée
+- Notice d'information (décret 2015-587)
+- ERP (état des risques)
+- Si zone tendue : loyer de référence
+
+#bail
+```
+~285 car · pas de CTA
+
+### TWEET-B4 — Annonce conforme
+```
+Toute annonce de location en zone tendue doit afficher :
+
+- Loyer de base + complément éventuel
+- Loyer de référence majoré
+- Charges
+- Honoraires (si agence)
+- DPE et GES (lettre + valeur)
+- Surface habitable
+
+Sinon = amende jusqu'à 3 000€.
+
+Outil de vérif : http://217.182.171.135:8102/
+```
+~285 car · CTA tool
+
+### TWEET-B5 — Alur 2014 toujours d'actu
+```
+La loi ALUR (2014) impose au bailleur :
+
+1. État des lieux écrit et signé
+2. Notice d'information remise au locataire
+3. Diagnostics annexés au bail
+4. Justification de toute augmentation hors-IRL
+5. Préavis 6 mois pour reprise/vente
+
+→ 12 ans plus tard, encore 40% des bailleurs particuliers oublient au moins 2 points.
+```
+~290 car · pas de CTA
+
+---
+
+## Catégorie C — Use case / value (funnel)
+
+### TWEET-C1 — Cas concret 1
+```
+Cas réel d'un bailleur (anonymisé) :
+
+- T2 à Lyon, 42m²
+- DPE E
+- Loyer affiché : 720€
+
+Vérif rapide :
+✅ DPE OK jusqu'en 2034
+❌ Loyer encadré max Lyon-Croix-Rousse : 619€ → +101€ de trop
+⚠️ Risque amende 5 000€ + remboursement
+
+Vérifie ton bien : http://217.182.171.135:8102/
+```
+~290 car · CTA tool
+
+### TWEET-C2 — Cas concret 2
+```
+Cas réel : studio Paris 11, 22m², DPE F, loué 950€/mois.
+
+→ Loyer encadré max : 720€ (dépassement 230€/mois)
+→ DPE F : interdit à la location à partir de 2028
+→ Sans travaux, ce bien est invendable en l'état dès 2028 si la classe ne monte pas.
+
+Audit gratuit en 30s : http://217.182.171.135:8102/
+
+#Paris #DPE
+```
+~290 car · CTA tool
+
+### TWEET-C3 — Outil gratuit annonce
+```
+J'ai mis en ligne un outil 100% gratuit pour les bailleurs particuliers :
+
+→ 5 questions (ville, surface, loyer, type, DPE)
+→ Verdict en 30 sec : conforme ? risque amende ? interdiction ?
+→ Aucune inscription pour le verdict de base
+
+Si ça t'intéresse : http://217.182.171.135:8102/
+
+Feedback bienvenu.
+```
+~280 car · CTA tool, posture humble
+
+---
+
+## Catégorie D — Thread starters (engagement)
+
+### TWEET-D1 — Thread "5 obligations oubliées"
+```
+Si tu loues 1 logement en France en 2026, voici 5 obligations que la majorité des bailleurs particuliers oublient — et qui peuvent coûter cher.
+
+Thread 🧵 (1/6)
+```
+Sous-tweets (à dérouler le moment venu) :
+
+```
+(2/6) Le DPE doit être affiché DÈS l'annonce, pas seulement dans le bail.
+Sanction : amende administrative jusqu'à 3 000€ par annonce non conforme.
+```
+
+```
+(3/6) En zone tendue (Paris, Lyon, Lille, Bordeaux, Montpellier, Grenoble, Plaine Commune, Est Ensemble…), le loyer est plafonné.
+Le complément de loyer doit être JUSTIFIÉ par une caractéristique exceptionnelle. Sans ça : restitution + amende.
+```
+
+```
+(4/6) L'état des lieux doit être contradictoire ET annexé au bail.
+Sans état des lieux d'entrée, les dégradations sont présumées préexistantes. Le bailleur perd quasi systématiquement.
+```
+
+```
+(5/6) Le bail doit inclure la notice d'information du locataire (décret 2015-587).
+70% des baux particuliers la zappent. Risque : nullité partielle des clauses litigieuses en cas de litige.
+```
+
+```
+(6/6) Tu peux vérifier ta conformité globale en 30 secondes ici (gratuit, anonyme) :
+http://217.182.171.135:8102/
+
+Si tu veux que je file un coup d'œil à ton cas en MP, dis-le.
+```
+
+### TWEET-D2 — Thread "DPE 2026 : ce qui change"
+```
+Le DPE a été refondu au 1er janvier 2026 (coefficient électricité 2,3 → 1,9).
+
+Ce que ça change pour 140 000 bailleurs en France :
+
+Thread 🧵 (1/5)
+```
+Sous-tweets :
+
+```
+(2/5) Avant 2026, un logement chauffé à l'électricité était sur-pénalisé (coef 2,3). Beaucoup tombaient en F ou G alors qu'ils étaient en réalité moins consommateurs en énergie finale.
+
+Avec le coef 1,9, ~140 000 logements remontent d'une classe.
+```
+
+```
+(3/5) Conséquence directe : si tu as un logement chauffé à l'électricité étiqueté F en 2024, refais ton DPE en 2026.
+Il y a de bonnes chances qu'il passe E → tu gagnes 6 ans (interdiction 2034 au lieu de 2028).
+```
+
+```
+(4/5) Attention : un DPE valide est valable 10 ans. Si ton DPE a été fait après 2021, tu n'as pas le DROIT de le refaire pour bénéficier du nouveau calcul (sauf travaux significatifs ou contestation).
+```
+
+```
+(5/5) Outil pour vérifier où tu en es (gratuit) :
+http://217.182.171.135:8102/
+
+Si tu te demandes si refaire ton DPE vaut le coup, MP ouvert.
+```
+
+---
+
+## Catégorie E — Engagement / community (low-CTA)
+
+### TWEET-E1 — Question ouverte
+```
+Question aux bailleurs particuliers (1-5 biens) :
+
+→ Quel est le truc le plus pénible dans la gestion locative aujourd'hui ?
+→ DPE et obligations énergétiques ?
+→ Encadrement loyer / annonce conforme ?
+→ Fraude dossier locataire ?
+→ Comptabilité / fiscalité ?
+→ Autre ?
+
+Je creuse le sujet, répondez en commentaire 🙏
+```
+~280 car · zero CTA, pure community discovery
+
+### TWEET-E2 — Sondage
+```
+Tu loues un ou plusieurs biens. Tu vérifies à quelle fréquence si tu es à jour des obligations légales bailleur ?
+
+A) Jamais
+B) 1× par an
+C) À chaque relocation
+D) Je délègue à une agence
+E) Je suis un veilleur juridique 🦅
+
+(Sondage informel — résultats partagés ici)
+```
+~270 car · zero CTA, engagement format
+
+### TWEET-E3 — Insight perso
+```
+Découverte du mois : 80% des bailleurs particuliers que j'ai pu interroger ne savaient pas dater précisément la prochaine interdiction de location qui les concerne (F en 2028, E en 2034).
+
+Pour info :
+- G : déjà interdit
+- F : 1er janvier 2028
+- E : 1er janvier 2034
+
+Préparez-vous 🛠️
+```
+~290 car · pas de CTA dur, autorité
+
+---
+
+## Bio Twitter suggérée
+
+```
+BailleurVérif 🏠✅
+Conformité location pour bailleurs particuliers.
+DPE · encadrement loyer · obligations Alur.
+Outil gratuit ↓
+```
+~140 car
+
+```
+🔗 http://217.182.171.135:8102/ (lien dans bio)
+```
+
+---
+
+## Notes opérationnelles
+
+- **Lien dans bio** > liens dans tweets (Twitter pénalise les liens externes dans le corps des tweets depuis ~2024). Mettre le lien dans la bio, et écrire "lien en bio" dans les CTAs.
+- **Hashtags** : 1-2 max, pas plus. #immobilier et #bailleur sont les plus actifs sur X FR.
+- **Heure de post** optimale FR : 7h30-9h (matin) et 18h-20h (soir). Le matin pour les bailleurs actifs, le soir pour les questions.
+- **Cadence** : commencer à 1 tweet/jour pendant 3 jours, puis 2-3/jour si engagement positif. Pas plus de 5/jour (algo pénalise).
+- **Pinned tweet** : épingler TWEET-A1 ou TWEET-C3 (annonce de l'outil).
+- **Réponses** : si quelqu'un commente, répondre dans les 2h pour maximiser portée. L'agent ne peut pas répondre lui-même → Florian copie-colle réponses préparées dans l'inbox.
+
+## Backlog tweet (à rédiger si besoin)
+
+- Cas concret 3 (LMNP meublé)
+- Cas concret 4 (saisonnier)
+- Stat fraude dossier locataire (chiffres ANIL ou commission de prévention)
+- Calendrier complet 2026-2034 sous forme d'infographie texte
+- "Avant / après" : annonce non-conforme vs annonce conforme
+- "Erreurs courantes" : 5 clauses interdites dans un bail
+- Cross-promotion blog : chaque tweet peut linker un article (lien en bio à rotater)

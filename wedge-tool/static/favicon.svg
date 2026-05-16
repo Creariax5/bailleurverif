@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="BailleurVérif">
+  <rect width="32" height="32" rx="6" fill="#1d4ed8"/>
+  <path d="M16 6 L26 12 L26 22 L16 26 L6 22 L6 12 Z" fill="#ffffff" opacity="0.18"/>
+  <path d="M10 17 L14.5 21 L23 11" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

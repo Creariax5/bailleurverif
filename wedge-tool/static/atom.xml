@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr">
+  <title>BailleurVérif — Conformité bailleur 2026</title>
+  <subtitle>Guides pratiques pour propriétaires bailleurs particuliers : DPE, encadrement, anti-fraude, Alur.</subtitle>
+  <link href="https://bailleurverif.fr/blog/" />
+  <link rel="self" type="application/atom+xml" href="https://bailleurverif.fr/atom.xml" />
+  <link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+  <link rel="hub" href="https://pubsubhubbub.superfeedr.com/" />
+  <id>https://bailleurverif.fr/</id>
+  <updated>2026-05-16T14:49:54Z</updated>
+  <author><name>BailleurVérif</name></author>
+  <rights>© BailleurVérif</rights>
+  <entry>
+    <title>DPE F en location : que faire avant l&#x27;interdiction de 2028 ?</title>
+    <link href="https://bailleurverif.fr/blog/dpe-f-location-2026.html" />
+    <id>https://bailleurverif.fr/blog/dpe-f-location-2026.html</id>
+    <updated>2026-05-16T14:49:54Z</updated>
+    <published>2026-05-16T14:49:54Z</published>
+    <summary>Bailleur d&#x27;un logement classé F au DPE ? Voici ce que dit la loi en 2026, ce qui change au 1er janvier 2028, et les 4 options concrètes pour rester en location.</summary>
+  </entry>
+  <entry>
+    <title>Encadrement des loyers en 2026 : la carte des villes concernées et comment fixer un loyer conforme</title>
+    <link href="https://bailleurverif.fr/blog/encadrement-loyer-zones-tendues-2026.html" />
+    <id>https://bailleurverif.fr/blog/encadrement-loyer-zones-tendues-2026.html</id>
+    <updated>2026-05-16T14:49:54Z</updated>
+    <published>2026-05-16T14:49:54Z</published>
+    <summary>Bailleur à Paris, Lyon, Lille, Bordeaux ou Montpellier ? Voici la liste exacte des communes sous encadrement des loyers en 2026, la méthode pour calculer le loyer de référence majoré, et les sanctions encourues.</summary>
+  </entry>
+  <entry>
+    <title>Vérifier un dossier de location : comment détecter un faux bulletin de salaire en 2026</title>
+    <link href="https://bailleurverif.fr/blog/verifier-dossier-locataire-fraude.html" />
+    <id>https://bailleurverif.fr/blog/verifier-dossier-locataire-fraude.html</id>
+    <updated>2026-05-16T14:49:54Z</updated>
+    <published>2026-05-16T14:49:54Z</published>
+    <summary>10 à 20 % des dossiers de location contiennent au moins un document falsifié. Guide pratique 2026 pour vérifier bulletins de salaire, avis d&#x27;imposition, pièces d&#x27;identité et caution — sans outil payant.</summary>
+  </entry>
+  <entry>
+    <title>Obligations du bailleur particulier en 2026 : le guide complet</title>
+    <link href="https://bailleurverif.fr/blog/obligations-bailleur-particulier-2026.html" />
+    <id>https://bailleurverif.fr/blog/obligations-bailleur-particulier-2026.html</id>
+    <updated>2026-05-16T14:49:54Z</updated>
+    <published>2026-05-16T14:49:54Z</published>
+    <summary>Bailleur particulier en 2026 ? Le guide complet : DPE, encadrement, fiscalité, vérification locataire, échéances 2026-2034 et amendes encourues. Sources légales citées.</summary>
+  </entry>
+  <entry>
+    <title>Dispositif Jeanbrun 2026 : le nouveau régime d&#x27;amortissement pour bailleurs (LOI 2026-103 art. 47)</title>
+    <link href="https://bailleurverif.fr/blog/dispositif-jeanbrun-2026.html" />
+    <id>https://bailleurverif.fr/blog/dispositif-jeanbrun-2026.html</id>
+    <updated>2026-05-16T14:49:54Z</updated>
+    <published>2026-05-16T14:49:54Z</published>
+    <summary>Le dispositif Jeanbrun (LOI n° 2026-103 du 19 février 2026, art. 47) crée un nouveau régime d&#x27;amortissement pour la location nue résidence principale, neuf VEFA ou ancien ≥30 % de travaux. Conditions, plafonds, calcul, sources Legifrance.</summary>
+  </entry>
+  <entry>
+    <title>Passoires thermiques 2026 : rénover, vendre ou louer jusqu&#x27;au bout ? Le guide ROI bailleur</title>
+    <link href="https://bailleurverif.fr/blog/guide-passoires-thermiques-rentabilite-bailleur-2026.html" />
+    <id>https://bailleurverif.fr/blog/guide-passoires-thermiques-rentabilite-bailleur-2026.html</id>
+    <updated>2026-05-16T14:49:54Z</updated>
+    <published>2026-05-16T14:49:54Z</published>
+    <summary>Bailleur d&#x27;une passoire thermique (DPE F ou G) ? Calendrier 2025-2034, ROI des 6 stratégies (rénover, vendre, louer jusqu&#x27;au butoir, requalifier le DPE), aides 2026, cas concrets ville par ville. Décision en 25 minutes.</summary>
+  </entry>
+</feed>
