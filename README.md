@@ -6,9 +6,10 @@ Live site: **https://bailleurverif.fr**
 
 This repository contains the source code, content builders, and operational scaffolding for [bailleurverif.fr](https://bailleurverif.fr), a free tool helping French landlords and tenants check their rental compliance:
 
-- Energy class (DPE) restrictions on letting (F/G calendar 2025-2034)
-- Rent control caps in 31 French communes (Paris, Lille, Lyon, Bordeaux, Plaine Commune…)
+- Energy class (DPE) restrictions on letting (F/G calendar 2025-2034) — 50 city pages
+- Rent control caps in 31 French communes (Paris, Lille, Lyon, Bordeaux, Plaine Commune…) + [national hub `/encadrement-loyer-france-2026.html`](https://bailleurverif.fr/encadrement-loyer-france-2026.html) consolidating all 31 with CC-BY-4.0 [CSV](https://bailleurverif.fr/data/encadrement-loyer-france-2026.csv) / [JSON](https://bailleurverif.fr/data/encadrement-loyer-france-2026.json) downloads
 - Mandatory landlord obligations 2026 (DPE, ERP, surface Carrez, audit énergétique)
+- IRL rent revision, lease termination notice (préavis), déficit foncier 2026, JORF regulatory watch
 
 **0 cookies. 0 ads. 0 monetization. 0 signup required. RGPD-native.**
 
@@ -16,7 +17,7 @@ This repository contains the source code, content builders, and operational scaf
 
 ## What is unusual about this project
 
-The entire SaaS — codebase, SEO content, deployment, distribution, growth tactics, and bug fixes — is built and operated by a **Claude agent** running on a 60–300s self-scheduled wake loop. The human founder ([Florian Adam](https://mobula.io)) wrote a single mission brief in May 2026; everything else (architecture choices, copy decisions, distribution channel discovery, incident response) is the agent's autonomous output.
+The entire SaaS — codebase, SEO content, deployment, distribution, growth tactics, and bug fixes — is built and operated by a **Claude agent** running on a 60–300s self-scheduled wake loop. The human founder ([Florian Demartini](https://mobula.io)) wrote a single mission brief in May 2026; everything else (architecture choices, copy decisions, distribution channel discovery, incident response) is the agent's autonomous output.
 
 The agent maintains an honest, public-facing state log in `state.md`, `ledger.md`, and `runs/run-N.md` — including its own anti-patterns (e.g. "polish stérile" recognized run-112) and structural blockers it cannot resolve alone.
 
@@ -27,6 +28,27 @@ If you came here from a Show HN / press article: the most interesting files are 
 - [`runs/`](runs/) — full per-wake reports with `CONTEXT / ASSESS / PLAN / ACT / VERIFY / METRIC / NEXT`
 - [`inbox.md`](inbox.md) — bidirectional log Florian ↔ agent
 - [`florian-todos.md`](florian-todos.md) — the only things the agent can't do alone (signup captchas, SMS, GSC verification)
+
+---
+
+## Free embeddable widget for FR real estate blogs / sites
+
+Show the **DPE Loi Climat status** of any French city + DPE class on your site with one line:
+
+```html
+<script src="https://bailleurverif.fr/widget/dpe-status.js"
+        data-ville="paris" data-dpe="F"></script>
+```
+
+- ~4 KB vanilla JS, **0 dependencies, 0 cookies, 0 tracking**
+- 4 attributes: `data-ville` (slug), `data-dpe` (A-G), `data-theme` (light/dark), `data-compact` (true/false)
+- Verdicts based on Loi Climat & Résilience: A-D conforme, E interdit 2034, F interdit 2028, **G interdit depuis 2025**
+- Auto deep-link to the corresponding city page (50 cities covered)
+- RGPD-native: anonymous view pixel, no fingerprinting, no localStorage
+
+Demo + copy-paste snippets: **https://bailleurverif.fr/widget/**
+
+Feel free to embed it without asking. If you do, opening a PR here with a backlink lets us measure adoption.
 
 ---
 
@@ -47,11 +69,11 @@ Total source: ~7 000 lines Python + ~2 500 lines HTML/CSS/JS templates.
 ## Repository layout
 
 ```
-wedge-tool/        — wedge HTTP server (server.py) + 90 static pages
-dashboard/         — content builders (build_blog.py, build_dpe_pages.py, build_programmatic_pages.py)
+wedge-tool/        — wedge HTTP server (server.py) + 144 static pages, sitemap.xml 151 URLs
+dashboard/         — content builders (build_blog.py, build_dpe_pages.py, build_programmatic_pages.py, build_preavis_pages.py)
 content/           — long-form Markdown sources (5 guides, FAQ, glossary)
 agent-browser/     — autonomous distribution scripts (wayback_submit.sh, indexnow_push.py, …)
-runs/              — per-wake agent reports (117 entries at time of open-sourcing)
+runs/              — per-wake agent reports (140+ entries and counting)
 state.md           — agent live snapshot
 ledger.md          — chronological log of agent decisions
 inbox.md           — founder ↔ agent communication
@@ -88,8 +110,8 @@ The agent's logs (`runs/`, `state.md`, `ledger.md`, `inbox.md`) and the content 
 
 ## Contact
 
-Founder: Florian Adam — [florian@mobula.io](mailto:florian@mobula.io)
-Project mailbox: bailleurverif.contact@gmail.com
+Founder: Florian Demartini — [florian@mobula.io](mailto:florian@mobula.io)
+Project mailbox: contact@bailleurverif.fr
 Issues & PRs welcome.
 
 > *Built by a Claude agent. Operated by a Claude agent. Documented by a Claude agent. Florian wrote one prompt.*

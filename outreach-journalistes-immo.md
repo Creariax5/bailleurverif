@@ -39,7 +39,7 @@
 ```
 Bonjour [Prénom],
 
-Je suis Florian Adam, fondateur de Mobula.io (data crypto, équipe FR). En marge de Mobula, j'ai sponsorisé le développement d'un outil gratuit qui me semble pouvoir intéresser vos lecteurs locataires/bailleurs : BailleurVérif (https://bailleurverif.fr).
+Je suis Florian Demartini, fondateur de Mobula.io (data crypto, équipe FR). En marge de Mobula, j'ai sponsorisé le développement d'un outil gratuit qui me semble pouvoir intéresser vos lecteurs locataires/bailleurs : BailleurVérif (https://bailleurverif.fr).
 
 Le projet est apolitique, sans monétisation, sans collecte de données : il croise l'adresse + le DPE + le loyer + la surface, et indique en 30 secondes si un logement loué respecte les 3 axes réglementaires 2026 (interdiction DPE F/G, encadrement loyers 31 communes, loi Alur). Il intègre les loyers de référence officiels et les calendriers F/G/E 2028-2034.
 
@@ -53,7 +53,7 @@ Je peux vous fournir :
 Aucune attente, juste un signal en cas d'intérêt. Le site reste gratuit dans tous les cas.
 
 Bien à vous,
-Florian Adam
+Florian Demartini
 [lien LinkedIn ou signature mail habituelle]
 ```
 
@@ -80,7 +80,7 @@ Toutes les citations renvoient aux sources officielles (Légifrance, Service-Pub
 Si vous préparez un guide "préparer la mise en location 2026" ou un papier sur la loi Climat & Résilience, l'outil peut servir d'illustration concrète. Je suis disponible pour expliquer le périmètre exact et fournir les chiffres usage.
 
 Bien à vous,
-Florian Adam
+Florian Demartini
 [signature]
 ```
 
@@ -106,7 +106,7 @@ L'outil https://bailleurverif.fr lui-même est un calculateur gratuit (conformit
 Tout est en accès libre, donc citable/extractible. Si un papier "rentabilité rénovation 2026" ou "ROI travaux passoire thermique" est en préparation, je peux fournir données + cas concrets anonymisés.
 
 Bien à vous,
-Florian Adam
+Florian Demartini
 ```
 
 ---
@@ -133,7 +133,7 @@ L'outil donne un verdict 3 axes (DPE + encadrement + Alur) en 30 secondes, avec 
 Disponible pour un point téléphone ou un commentaire écrit si un sujet immo est programmé.
 
 Bien à vous,
-Florian Adam
+Florian Demartini
 ```
 
 ---
@@ -156,7 +156,7 @@ Audience cible : ~5M bailleurs particuliers FR + 40M locataires. Pas de monétis
 Si un dossier "outils gratuits patrimoine immo 2026" ou "loi Climat impact bailleurs" est en cours, je peux fournir données usage + chiffres marché.
 
 Bien à vous,
-Florian Adam
+Florian Demartini
 ```
 
 ---
@@ -180,7 +180,7 @@ Florian Adam
 
 ## Note éthique / brand transparency
 
-- Tous les emails sont signés `Florian Adam` (toi), pas l'agent. C'est ton outreach, l'agent l'a préparé.
+- Tous les emails sont signés `Florian Demartini` (toi), pas l'agent. C'est ton outreach, l'agent l'a préparé.
 - Aucun fait inventé : tous les chiffres (5,2M, 31 communes, etc.) sont sourcés Service-Public/Légifrance/ADEME et déjà dans le guide blog.
 - Le projet est bien gratuit + 0 monétisation + 0 PII storage : statement véridique.
 - Si un journaliste demande "pourquoi tu as fait ça ?" : réponse honnête = "j'ai sponsorisé un agent Claude qui a construit l'outil en autonomie comme expérience, c'est devenu un projet utile, je veux qu'il soit utilisé." Brand transparency = atout, pas handicap (originalité = angle journalistique en soi).
