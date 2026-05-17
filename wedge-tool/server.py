@@ -8,6 +8,8 @@ import json
 import os
 import re
 import secrets
+import smtplib
+import ssl
 import sys
 import time
 import unicodedata
@@ -15,6 +17,8 @@ import urllib.parse
 import urllib.request
 import urllib.error
 import logging
+from email.message import EmailMessage
+from email.utils import formatdate, make_msgid
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 from datetime import datetime, timezone
@@ -35,6 +39,34 @@ EMBED_COPIES_FILE = os.path.join(DATA_DIR, "embed-snippet-copies.jsonl")
 SUBSCRIBERS_FILE = os.path.join(DATA_DIR, "subscribers.jsonl")
 CHANGES_FILE = os.path.join(DATA_DIR, "reglementation-changes.jsonl")
 SIGNALEMENTS_FILE = os.path.join(DATA_DIR, "signalements-annonces.jsonl")
+OUTBOUND_EMAILS_FILE = os.path.join(DATA_DIR, "outbound-emails.jsonl")
+
+# OVH Zimbra SMTP — provisionné Florian 2026-05-17T13:55Z, mandated patch run-205.
+# Lu depuis ../.env au démarrage. Si absent, helper retombe sur fallback lien-inline.
+def _load_dotenv(path):
+    env = {}
+    try:
+        with open(path) as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                k, v = line.split("=", 1)
+                v = v.strip()
+                if (v.startswith("'") and v.endswith("'")) or (v.startswith('"') and v.endswith('"')):
+                    v = v[1:-1]
+                env[k.strip()] = v
+    except FileNotFoundError:
+        pass
+    return env
+
+_DOTENV = _load_dotenv(os.path.join(ROOT, "..", ".env"))
+SMTP_USERNAME = _DOTENV.get("BAILLEURVERIF_SMTP_USERNAME", "")
+SMTP_PASSWORD = _DOTENV.get("BAILLEURVERIF_SMTP_PASSWORD", "")
+SMTP_SERVER = _DOTENV.get("BAILLEURVERIF_SMTP_SERVER", "ssl0.ovh.net")
+SMTP_PORT = int(_DOTENV.get("BAILLEURVERIF_SMTP_PORT", "465"))
+SMTP_USE_SSL = _DOTENV.get("BAILLEURVERIF_SMTP_USE_SSL", "true").lower() == "true"
+SMTP_AVAILABLE = bool(SMTP_USERNAME and SMTP_PASSWORD)
 
 # Préfectures / services compétents pour signalement non-conformité location (encadrement + DPE F/G).
 # Source : https://www.service-public.fr (DRIHL Île-de-France ; DDETSPP en région ; Métropole de Lyon depuis 2021).
@@ -303,6 +335,61 @@ MIME = {
     ".md": "text/markdown; charset=utf-8",
     ".cff": "text/yaml; charset=utf-8",
 }
+
+def send_signup_confirmation(email, confirm_url, unsub_url, topic):
+    """Send confirmation email via OVH SMTP. Return (ok, error_or_msgid).
+    Florian-mandated patch run-205. Graceful degradation if SMTP down."""
+    if not SMTP_AVAILABLE:
+        return False, "smtp_unconfigured"
+    topic_label = {
+        "loyer-legal": "encadrement loyer",
+        "dpe-bailleur": "DPE bailleur",
+        "preavis": "préavis",
+        "veille-reglementaire": "veille réglementaire",
+        "deficit-foncier": "déficit foncier",
+        "mon-bien": "mon bien",
+        "aides-financieres": "aides financières",
+        "arnaques-location": "arnaques location",
+    }.get(topic, topic)
+    body = (
+        "Bonjour,\n\n"
+        f"Vous venez de demander l'inscription à BailleurVérif (sujet : {topic_label}).\n\n"
+        "Pour confirmer votre inscription, cliquez sur ce lien (ou copiez-le dans votre navigateur) :\n\n"
+        f"{confirm_url}\n\n"
+        "Ce lien expire dans 7 jours. Si vous n'êtes pas à l'origine de cette demande, ignorez ce message — "
+        "aucun email supplémentaire ne vous sera envoyé.\n\n"
+        "Pour vous désinscrire à tout moment, utilisez ce lien (un clic suffit, RGPD art. 17) :\n"
+        f"{unsub_url}\n\n"
+        "— L'équipe BailleurVérif\n"
+        "https://bailleurverif.fr — observatoire ouvert des annonces non-conformes\n"
+        "contact@bailleurverif.fr\n"
+    )
+    msg = EmailMessage()
+    msg["From"] = f"BailleurVérif <{SMTP_USERNAME}>"
+    msg["To"] = email
+    msg["Reply-To"] = SMTP_USERNAME
+    msg["Subject"] = f"Confirmez votre inscription BailleurVérif ({topic_label})"
+    msg["Date"] = formatdate(localtime=False)
+    msg["Message-ID"] = make_msgid(domain="bailleurverif.fr")
+    msg["List-Unsubscribe"] = f"<{unsub_url}>"
+    msg["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click"
+    msg["X-Mailer"] = "BailleurVerif-server/run-205"
+    msg.set_content(body)
+    try:
+        if SMTP_USE_SSL:
+            ctx = ssl.create_default_context()
+            with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, context=ctx, timeout=15) as smtp:
+                smtp.login(SMTP_USERNAME, SMTP_PASSWORD)
+                smtp.send_message(msg)
+        else:
+            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT, timeout=15) as smtp:
+                smtp.starttls(context=ssl.create_default_context())
+                smtp.login(SMTP_USERNAME, SMTP_PASSWORD)
+                smtp.send_message(msg)
+        return True, msg["Message-ID"]
+    except Exception as exc:
+        return False, f"{type(exc).__name__}: {exc}"
+
 
 def now_iso():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -1159,16 +1246,33 @@ class Handler(BaseHTTPRequestHandler):
             append_jsonl(SUBSCRIBERS_FILE, rec)
             confirm_url = f"{PUBLIC_BASE}/api/confirm?token={token}"
             unsub_url = f"{PUBLIC_BASE}/api/unsubscribe?token={token}"
-            sys.stdout.write("[%s] SUBSCRIBE_PENDING topic=%s email=%s confirm=%s\n"
-                             % (now_iso(), topic, email[:3] + "***", confirm_url))
+            email_sent_ok, email_info = send_signup_confirmation(email, confirm_url, unsub_url, topic)
+            append_jsonl(OUTBOUND_EMAILS_FILE, {
+                "ts": now_iso(),
+                "kind": "signup_confirm",
+                "to_hash": str(abs(hash(email)) % (10**10)),
+                "topic": topic,
+                "token": token,
+                "ok": email_sent_ok,
+                "info": email_info if not email_sent_ok else "sent",
+                "msgid": email_info if email_sent_ok else None,
+            })
+            sys.stdout.write("[%s] SUBSCRIBE_PENDING topic=%s email=%s email_sent=%s\n"
+                             % (now_iso(), topic, email[:3] + "***", email_sent_ok))
             sys.stdout.flush()
-            self._send(200, {
+            resp = {
                 "ok": True,
                 "pending": True,
-                "confirm_url": confirm_url,
                 "unsubscribe_url": unsub_url,
-                "message": "Cliquez sur le lien de confirmation pour valider votre inscription."
-            })
+                "email_sent": email_sent_ok,
+            }
+            if email_sent_ok:
+                resp["message"] = "Un email de confirmation vient de vous être envoyé. Cliquez sur le lien pour valider votre inscription."
+            else:
+                # Fallback inline-link si SMTP indisponible (degradation gracieuse Florian-mandated)
+                resp["confirm_url"] = confirm_url
+                resp["message"] = "Cliquez sur le lien de confirmation pour valider votre inscription."
+            self._send(200, resp)
             return
 
         if path == "/api/capture":

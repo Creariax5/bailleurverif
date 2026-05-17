@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
 <title>Observatoire annonces loyer — % de non-conformité encadrement par ville | BailleurVérif</title>
-<meta name="description" content="Mesure indépendante du taux de non-conformité de l'encadrement des loyers sur 7 villes FR (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux), sample N=160 annonces locservice.fr, 17 mai 2026. 36 / 61 = 59,0 % de violations parmi les annonces en zone tendue (95 % CI [46,5 %, 70,5 %], ±12 pts). 99 annonces hors zone en baseline. Méthodologie + caveats publics.">
+<meta name="description" content="Mesure indépendante du taux de non-conformité de l'encadrement des loyers sur 13 villes FR (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux, Strasbourg, Nice, Montpellier, Rennes, Grenoble, Toulon), sample N=215 annonces locservice.fr, 17 mai 2026. 52 / 84 = 61,9 % de violations parmi les annonces en zone tendue (95 % CI [51,2 %, 71,6 %], ±10 pts) — scoring v0.2.0 couverture 31/31 communes référentiel. 131 annonces hors zone en baseline. Méthodologie + caveats publics.">
 <link rel="canonical" href="https://bailleurverif.fr/observatoire-annonces-loyer.html">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<meta property="og:title" content="Observatoire annonces loyer — 59,0 % de violations encadrement sur 61 annonces in-scope (Paris/Lyon/Lille, mai 2026)">
-<meta property="og:description" content="Pipeline indépendant de scraping + scoring conformité encadrement (loi 89-462 art. 17 + décret zone tendue). Sample N=160 annonces, 7 villes, 95 % CI ±12 pts, méthodologie + caveats publics, donnée propriétaire.">
+<meta property="og:title" content="Observatoire annonces loyer — 61,9 % de violations encadrement sur 84 annonces in-scope (Paris/Lyon/Lille/Bordeaux/Montpellier/Grenoble, mai 2026)">
+<meta property="og:description" content="Pipeline indépendant de scraping + scoring conformité encadrement (loi 89-462 art. 17 + décret zone tendue). Sample N=215 annonces (84 in-scope, scoring v0.2.0 couverture 31/31 communes référentiel), 13 villes, 95 % CI ±10 pts, méthodologie + caveats publics, donnée propriétaire.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bailleurverif.fr/observatoire-annonces-loyer.html">
 <meta property="og:site_name" content="BailleurVérif">
@@ -17,10 +17,10 @@
 <meta property="og:image" content="https://bailleurverif.fr/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Observatoire BailleurVérif annonces loyer — 59,0 % de violations encadrement.">
+<meta property="og:image:alt" content="Observatoire BailleurVérif annonces loyer — 61,9 % de violations encadrement.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Observatoire annonces loyer — 59,0 % de violations encadrement (Paris/Lyon/Lille)">
-<meta name="twitter:description" content="Sample N=160 annonces locservice.fr (7 villes FR), 61 in-scope, scoring auto encadrement + DPE, 95 % CI ±12 pts, méthodologie publique.">
+<meta name="twitter:title" content="Observatoire annonces loyer — 61,9 % de violations encadrement (Paris/Lyon/Lille/Bordeaux/Montpellier/Grenoble)">
+<meta name="twitter:description" content="Sample N=215 annonces locservice.fr (13 villes FR), 84 in-scope (scoring v0.2.0 couvre 31/31 communes), 52 violations (61,9 %), 95 % CI ±10 pts, méthodologie publique.">
 <meta name="twitter:image" content="https://bailleurverif.fr/og-image.png">
 <link rel="stylesheet" href="/css/main.css">
 <script src="/css/tailwind-runtime.js"></script>
@@ -97,13 +97,13 @@
 
   <section id="headline" class="mb-8">
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-      <div class="stat-card"><div class="stat-num danger">59,0 %</div><div class="stat-label">violations encadrement (in-scope)</div></div>
-      <div class="stat-card"><div class="stat-num">61</div><div class="stat-label">annonces in-scope</div></div>
+      <div class="stat-card"><div class="stat-num danger">61,9 %</div><div class="stat-label">violations encadrement (in-scope)</div></div>
+      <div class="stat-card"><div class="stat-num">84</div><div class="stat-label">annonces in-scope</div></div>
       <div class="stat-card"><div class="stat-num">22</div><div class="stat-label">violations <em>clear</em> (+10 %)</div></div>
       <div class="stat-card"><div class="stat-num warn">14</div><div class="stat-label">violations <em>presumed</em> (&lt;+10 %)</div></div>
     </div>
     <p class="text-xs mt-2" style="color:var(--text-secondary)">
-      <strong>In-scope</strong> = annonces dont la commune est en zone d'encadrement (Paris, Lyon, Villeurbanne, Lille). 99 annonces hors zone en baseline comparative (banlieue Lyon, MEL périphérique, Marseille / Aix + 7 villes total avec Nantes / Toulouse / Bordeaux ajoutées round-3, hors arrêté préfectoral) — voir onglet ci-dessous. Sample brut total <strong>N = 160 annonces uniques</strong>, déduplication par <code>accommodation_id</code>, couverture <strong>7 villes / 6 départements</strong>. <strong>Intervalle de confiance binomial 95 %</strong> (Wilson) sur le 59,0 % : <strong>[46,5 %, 70,5 %], ±12 points</strong>.
+      <strong>In-scope</strong> = annonces dont la commune est en zone d'encadrement (Paris, Lyon, Villeurbanne, Lille MEL, Bordeaux Métropole, Montpellier 3M, Grenoble-Alpes Métropole — couverture scoring v0.2.0 alignée 31/31 communes du référentiel préfectoral). 131 annonces hors zone ou hors mapping en baseline comparative (banlieue Lyon non concernée, MEL périphérique, Marseille / Aix + Nantes / Toulouse + Strasbourg / Nice / Rennes (Ille-et-Vilaine 35, zone tendue mais pas dans référentiel encadrement v2026) / Toulon (Var 83, zone tendue mais hors référentiel encadrement v2026), hors arrêté préfectoral) — voir onglet ci-dessous. Sample brut total <strong>N = 215 annonces uniques</strong>, déduplication par <code>accommodation_id</code>, couverture <strong>13 villes / 13 départements</strong>. <strong>Intervalle de confiance binomial 95 %</strong> (Wilson) sur le 61,9 % : <strong>[51,2 %, 71,6 %], ±10 points</strong> (marge réduite vs ±12 pts avant extension scoring v0.2.0).
     </p>
   </section>
 
@@ -169,17 +169,17 @@
 
   <section id="caveats" class="mb-10">
     <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Caveats — à lire avant de citer ce chiffre</h2>
-    <div class="caveat"><strong>N = 61 in-scope</strong> (sample brut 160 annonces uniques / 7 villes, dont 99 hors zone tendue). Intervalle de confiance binomial 95 % (Wilson) sur le 59,0 % : <strong>[46,5 %, 70,5 %]</strong>, demi-largeur ± 12 points. Cette page sera ré-éditée à mesure que N grandit (objectif : N ≥ 200 in-scope sous 14 j, CI ± 7 pts).</div>
+    <div class="caveat"><strong>N = 84 in-scope</strong> (sample brut 215 annonces uniques / 13 villes / 13 départements, dont 131 hors zone tendue). Intervalle de confiance binomial 95 % (Wilson) sur le 61,9 % : <strong>[51,2 %, 71,6 %]</strong>, demi-largeur ± 10 points (marge réduite vs ± 12 pts grâce à l'extension scoring v0.2.0). Cette page sera ré-éditée à mesure que N grandit (objectif : N ≥ 200 in-scope sous 14 j, CI ± 7 pts).</div>
     <div class="caveat"><strong>Plafond appliqué = plafond_max meublé par commune</strong> (40 €/m² Paris, 20,20 €/m² Lyon, 23,40 €/m² Lille). Le vrai loyer médian majoré varie par arrondissement × type × époque. Conséquence : <strong>tout loyer &gt; plafond_max est quasi-certainement illégal</strong> ; un loyer &lt; plafond_max <em>n'est pas</em> automatiquement légal. V0 = <strong>lower bound</strong> sur le % réel de non-conformité.</div>
     <div class="caveat"><strong>"Meublé" inféré du titre</strong> (pattern FR "meublé/meublée/meublés"). Si non détecté, plafond meublé appliqué quand même (conservatif : sous-estime, plafond meublé &gt; plafond nu).</div>
-    <div class="caveat"><strong>0 violation DPE G sur 160 annonces du sample</strong> alors que les G représentent ~17 % du parc 2023. Probable biais Locservice : soit bailleurs G filtrent leurs annonces, soit la plateforme. À monitorer en croisant avec ADEME — cf. <a href="/observatoire-dpe-fg.html" class="underline" style="color:var(--accent)">observatoire DPE F/G</a>. Note : 5 DPE F observés (Paris/Lyon meublés) — futurs interdits 2028.</div>
+    <div class="caveat"><strong>0 violation DPE G sur 215 annonces du sample</strong> alors que les G représentent ~17 % du parc 2023. Probable biais Locservice : soit bailleurs G filtrent leurs annonces, soit la plateforme. À monitorer en croisant avec ADEME — cf. <a href="/observatoire-dpe-fg.html" class="underline" style="color:var(--accent)">observatoire DPE F/G</a>. Note : 5 DPE F observés (Paris/Lyon meublés) — futurs interdits 2028.</div>
     <div class="caveat"><strong>Pas de PII vendeur stockée</strong> : seuls le hash de l'URL annonce + ville + loyer + surface + DPE sont conservés. Conforme RGPD art. 6.1.e (intérêt général : observatoire de conformité légale).</div>
   </section>
 
   <section id="table" class="mb-10">
     <h2 class="text-xl font-bold mb-2" style="color:var(--text-primary)">Détail du sample</h2>
     <div class="scope-tabs">
-      <button class="scope-tab active" data-scope="in">In-scope (61)</button>
+      <button class="scope-tab active" data-scope="in">In-scope (84)</button>
       <button class="scope-tab" data-scope="out">Baseline hors zone (99)</button>
     </div>
 
@@ -255,7 +255,7 @@
     </div>
 
     <div id="tbl-out" class="hide">
-      <p class="text-sm mb-3" style="color:var(--text-secondary)">Annonces hors zone tendue encadrement (Aix-en-Provence, Marseille arrondissements non concernés en 2026, communes périphériques + <strong>round-3 villes baseline : Nantes 44, Toulouse 31, Bordeaux 33</strong> — préfectures sans arrêté préfectoral d'encadrement, ajoutées le 17 mai 2026 pour étendre la base de comparaison). Pas de plafond légal applicable. Données affichées à titre comparatif <strong>(99 annonces au total)</strong>.</p>
+      <p class="text-sm mb-3" style="color:var(--text-secondary)">Annonces hors zone tendue encadrement (Aix-en-Provence, Marseille arrondissements non concernés en 2026, communes périphériques + <strong>round-3 villes baseline : Nantes 44, Toulouse 31, Bordeaux 33</strong> + <strong>round-4 villes baseline : Strasbourg 67, Nice 06</strong> + <strong>round-5 villes baseline : Montpellier 34 (in-scope référentiel mais CP non encore mappés scoring v0.1.0), Rennes 35 (hors référentiel v2026)</strong> + <strong>round-6 villes baseline : Grenoble 38 (zone tendue mais hors référentiel encadrement v2026)</strong> + <strong>round-7 villes baseline : Toulon 83 (zone tendue mais hors référentiel encadrement v2026)</strong> — préfectures sans arrêté préfectoral d'encadrement, ajoutées le 17 mai 2026 pour étendre la base de comparaison). Pas de plafond légal applicable. Données affichées à titre comparatif <strong>(154 annonces au total)</strong>.</p>
       <table class="obs-tbl">
         <thead><tr><th>Ville</th><th>Surface</th><th>Loyer</th><th>€/m²</th><th>DPE</th></tr></thead>
         <tbody>
@@ -368,11 +368,11 @@
     <ol class="text-sm space-y-2 list-decimal pl-6" style="color:var(--text-primary)">
       <li><strong>Source primaire</strong> : <a href="https://www.locservice.fr/" rel="noopener" class="underline" style="color:var(--accent)">locservice.fr</a> — robots.txt permissif sur les pages publiques de listings (audit 17 mai 2026 in <a href="/observatoire-annonces-loyer.html#robots" class="underline" style="color:var(--accent)">cf. ci-dessous</a>). LeBonCoin, SeLoger et PAP disallow leurs pages d'annonces aux crawlers : non utilisés.</li>
       <li><strong>Crawler</strong> : <code>wedge-tool/crawler/locservice_v0.py</code>, Python stdlib only, User-Agent <code>BailleurVerifCompliance/0.1 (+https://bailleurverif.fr; contact@bailleurverif.fr) public-interest housing-compliance research</code>, pace 30 s entre requêtes, 0 PII vendeur (hash URL + ville + loyer + surface + DPE).</li>
-      <li><strong>Scoring</strong> : <code>wedge-tool/scoring/conformity_score.py</code> v0.1.0. Pour chaque annonce in-scope : (a) infère "meublé" via regex titre, (b) lookup commune → plafond €/m² depuis <a href="/data/encadrement-loyer-france-2026.json" class="underline" style="color:var(--accent)"><code>encadrement-loyer-france-2026.json</code></a> (31 communes), (c) compare €/m² au plafond_max : <strong>verdict "clear" si &gt; +10 %, "presumed" si 0 &lt; excess ≤ +10 %, "none" sinon</strong>.</li>
-      <li><strong>Échantillonnage 17 mai 2026</strong> : 3 vagues de crawls — vague 1 (~08:30Z) 5 Paris + 10 Lille (Nord 59) + 10 Lyon (Rhône 69) + 10 Marseille (Bouches-du-Rhône 13 hors zone) = 35 annonces. Vague 2 (~09:42Z) 30 Paris + 30 Lyon + 30 Lille = 90 annonces. <strong>Vague 3 (~10:13Z) 20 Nantes (Loire-Atlantique 44) + 20 Toulouse (Haute-Garonne 31) + 20 Bordeaux (Gironde 33) = 60 annonces baseline hors zone</strong>. <strong>Déduplication par <code>accommodation_id</code></strong> sur les 185 lignes brutes → <strong>160 annonces uniques (couverture 7 villes / 6 départements)</strong>. In-scope encadrement : 61 (30 Paris + 12 Lyon + 16 Lille MEL + 3 Villeurbanne). Hors zone : 99 (banlieue Lyon, MEL périph, Marseille / Aix, + Nantes / Toulouse / Bordeaux).</li>
+      <li><strong>Scoring</strong> : <code>wedge-tool/scoring/conformity_score.py</code> v0.2.0 (extension run-222 : couverture totale 31/31 communes référentiel = +14 communes vs v0.1.0 — ajout Bordeaux Métropole, Montpellier 3M, Grenoble-Alpes Métropole + secteurs OLAP, EPT Est Ensemble + Plaine Commune). Pour chaque annonce in-scope : (a) infère "meublé" via regex titre, (b) lookup commune → plafond €/m² depuis <a href="/data/encadrement-loyer-france-2026.json" class="underline" style="color:var(--accent)"><code>encadrement-loyer-france-2026.json</code></a> (31 communes), (c) compare €/m² au plafond_max : <strong>verdict "clear" si &gt; +10 %, "presumed" si 0 &lt; excess ≤ +10 %, "none" sinon</strong>.</li>
+      <li><strong>Échantillonnage 17 mai 2026</strong> : 6 vagues de crawls — vague 1 (~08:30Z) 5 Paris + 10 Lille (Nord 59) + 10 Lyon (Rhône 69) + 10 Marseille (Bouches-du-Rhône 13 hors zone) = 35 annonces. Vague 2 (~09:42Z) 30 Paris + 30 Lyon + 30 Lille = 90 annonces. Vague 3 (~10:13Z) 20 Nantes (Loire-Atlantique 44) + 20 Toulouse (Haute-Garonne 31) + 20 Bordeaux (Gironde 33) = 60 annonces baseline hors zone. <strong>Vague 4 (~16:30-16:41Z) 5 Strasbourg (Bas-Rhin 67) + 10 Nice (Alpes-Maritimes 06) = 15 annonces baseline hors zone</strong>. <strong>Vague 5 (~17:01-17:06Z) 10 Montpellier (Hérault 34) + 10 Rennes (Ille-et-Vilaine 35) = 20 annonces (Montpellier in-scope reference mais CP non mappés scoring v0.1.0 ; Rennes hors référentiel encadrement v2026 malgré classement zone tendue)</strong>. <strong>Vague 6 (~17:43-17:48Z) 10 Grenoble (Isère 38, zone tendue mais hors référentiel encadrement v2026) = 10 annonces baseline hors zone</strong>. <strong>Vague 7 (~18:29-18:34Z) 10 Toulon (Var 83, zone tendue mais hors référentiel encadrement v2026) = 10 annonces baseline hors zone</strong>. <strong>Déduplication par <code>accommodation_id</code></strong> sur les 240 lignes brutes → <strong>215 annonces uniques (couverture 13 villes / 13 départements)</strong>. In-scope encadrement effectif (scoring v0.2.0) : <strong>84</strong> (30 Paris + 16 Lille MEL + 12 Lyon + 3 Villeurbanne + 13 Bordeaux + 6 Montpellier + 2 Grenoble + 2 Fontaine). Hors zone : 131.</li>
       <li><strong>Hypothèse plafond</strong> : on applique le <strong>plafond_max</strong> de la commune (cas le plus favorable au bailleur). Plafond réel = loyer médian majoré pour la combinaison (arrondissement × type × époque) selon arrêté préfectoral. V0 = donc <strong>lower bound</strong> sur la non-conformité réelle.</li>
       <li><strong>Reproductibilité</strong> : code source intégral sur GitHub (<a href="https://github.com/Creariax5/bailleurverif" rel="noopener" class="underline" style="color:var(--accent)">Creariax5/bailleurverif</a>), JSONL brut et scoré téléchargeable.</li>
-      <li><strong>Téléchargement direct</strong> : <a href="/data/observatoire-annonces-loyer-2026-05-17.csv" rel="noopener" class="underline" style="color:var(--accent)" download><code>observatoire-annonces-loyer-2026-05-17.csv</code></a> (160 lignes × 23 colonnes, 25 KB, licence ouverte Etalab 2.0, prêt Excel/R/pandas). 0 PII vendeur (URL hashée).</li>
+      <li><strong>Téléchargement direct</strong> : <a href="/data/observatoire-annonces-loyer-2026-05-17.csv" rel="noopener" class="underline" style="color:var(--accent)" download><code>observatoire-annonces-loyer-2026-05-17.csv</code></a> (215 lignes × 23 colonnes, 32 KB, licence ouverte Etalab 2.0, prêt Excel/R/pandas). 0 PII vendeur (URL hashée).</li>
     </ol>
     <details class="mt-4">
       <summary id="robots">Audit robots.txt 4 sources FR (17 mai 2026)</summary>
@@ -494,7 +494,7 @@
       "@id": "https://bailleurverif.fr/observatoire-annonces-loyer.html#webpage",
       "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
       "name": "Observatoire annonces loyer — % de non-conformité encadrement par ville",
-      "description": "Pipeline open source de mesure de la non-conformité de l'encadrement des loyers sur 7 villes FR (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux). Sample N=160 annonces uniques (61 in-scope encadrement + 99 hors zone baseline), 95 % CI ±12 pts, scoring auto, méthodologie + caveats publics.",
+      "description": "Pipeline open source de mesure de la non-conformité de l'encadrement des loyers sur 13 villes FR (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux, Strasbourg, Nice, Montpellier, Rennes, Grenoble, Toulon). Sample N=215 annonces uniques (84 in-scope encadrement, scoring v0.2.0 couverture 31/31 communes référentiel + 131 hors zone), 95 % CI ±10 pts, scoring auto, méthodologie + caveats publics.",
       "inLanguage": "fr-FR",
       "datePublished": "2026-05-17",
       "dateModified": "2026-05-17",
@@ -514,16 +514,16 @@
       "@type": "Dataset",
       "@id": "https://bailleurverif.fr/observatoire-annonces-loyer.html#dataset",
       "name": "Observatoire BailleurVérif — annonces de location FR confrontées au plafond légal d'encadrement",
-      "description": "Sample d'annonces locservice.fr (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux — 17 mai 2026, N=160 annonces uniques après déduplication par accommodation_id) scoré contre le plafond légal d'encadrement des loyers (loi 89-462 art. 17 + décret zone tendue + arrêté préfectoral). 61 in-scope (Paris/Lyon/Villeurbanne/Lille MEL), 99 hors zone baseline (banlieue + Nantes/Toulouse/Bordeaux préfectures sans arrêté). Inclut violations clear (>+10%), presumed (0 à +10%), conformes. 95% CI Wilson sur taux global : ±12 points.",
+      "description": "Sample d'annonces locservice.fr (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux, Strasbourg, Nice, Montpellier, Rennes, Grenoble, Toulon — 17 mai 2026, N=215 annonces uniques après déduplication par accommodation_id) scoré contre le plafond légal d'encadrement des loyers (loi 89-462 art. 17 + décret zone tendue + arrêté préfectoral). 84 in-scope encadrement v0.2.0 (Paris/Lyon/Villeurbanne/Lille MEL/Bordeaux Métropole/Montpellier 3M/Grenoble-Alpes Métropole), 131 hors zone baseline (banlieue + Marseille + Nantes/Toulouse/Strasbourg/Nice/Rennes(hors référentiel)/Toulon(hors référentiel) préfectures sans arrêté ou hors mapping). Inclut violations clear (>+10%), presumed (0 à +10%), conformes. 95% CI Wilson sur taux global : ±10 points.",
       "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
       "distribution": [
         {
           "@type": "DataDownload",
           "encodingFormat": "text/csv",
           "contentUrl": "https://bailleurverif.fr/data/observatoire-annonces-loyer-2026-05-17.csv",
-          "contentSize": "24996",
+          "contentSize": "31610",
           "name": "Observatoire BailleurVérif — annonces locservice.fr scorées — 2026-05-17 (CSV)",
-          "description": "160 lignes × 23 colonnes. URL hashée (0 PII vendeur). Colonnes: ts_score, source, url_hash, accommodation_id, ville_label, code_postal, code_dept, in_scope_encadrement, surface_m2, loyer_eur_total, eur_per_m2, dpe_letter, ges_letter, meuble, commune_slug, plafond_applied_eur_m2, encadrement_violation, encadrement_excess_eur_m2, encadrement_excess_pct, dpe_violation, violation_type, violation_score, score_version."
+          "description": "215 lignes × 23 colonnes. URL hashée (0 PII vendeur). Colonnes: ts_score, source, url_hash, accommodation_id, ville_label, code_postal, code_dept, in_scope_encadrement, surface_m2, loyer_eur_total, eur_per_m2, dpe_letter, ges_letter, meuble, commune_slug, plafond_applied_eur_m2, encadrement_violation, encadrement_excess_eur_m2, encadrement_excess_pct, dpe_violation, violation_type, violation_score, score_version."
         }
       ],
       "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
@@ -541,16 +541,22 @@
         {"@type": "Place", "name": "Villeurbanne"},
         {"@type": "Place", "name": "Nantes"},
         {"@type": "Place", "name": "Toulouse"},
-        {"@type": "Place", "name": "Bordeaux"}
+        {"@type": "Place", "name": "Bordeaux"},
+        {"@type": "Place", "name": "Strasbourg"},
+        {"@type": "Place", "name": "Nice"},
+        {"@type": "Place", "name": "Montpellier"},
+        {"@type": "Place", "name": "Rennes"},
+        {"@type": "Place", "name": "Grenoble"},
+        {"@type": "Place", "name": "Toulon"}
       ],
-      "keywords": ["encadrement loyer", "non-conformité", "loi 89-462", "zone tendue", "Paris", "Lyon", "Lille", "Marseille", "Nantes", "Toulouse", "Bordeaux", "DPE", "Loi Climat", "open data"],
+      "keywords": ["encadrement loyer", "non-conformité", "loi 89-462", "zone tendue", "Paris", "Lyon", "Lille", "Marseille", "Nantes", "Toulouse", "Bordeaux", "Strasbourg", "Nice", "Montpellier", "Rennes", "Grenoble", "Toulon", "DPE", "Loi Climat", "open data"],
       "variableMeasured": [
         {"@type": "PropertyValue", "name": "violations clear encadrement (in-scope)", "value": 22, "unitText": "annonces"},
         {"@type": "PropertyValue", "name": "violations presumed encadrement (in-scope)", "value": 14, "unitText": "annonces"},
         {"@type": "PropertyValue", "name": "annonces in-scope", "value": 61, "unitText": "annonces"},
-        {"@type": "PropertyValue", "name": "annonces baseline hors zone", "value": 99, "unitText": "annonces"},
-        {"@type": "PropertyValue", "name": "annonces totales (sample dédupliqué)", "value": 160, "unitText": "annonces"},
-        {"@type": "PropertyValue", "name": "villes couvertes", "value": 7, "unitText": "villes"},
+        {"@type": "PropertyValue", "name": "annonces baseline hors zone", "value": 154, "unitText": "annonces"},
+        {"@type": "PropertyValue", "name": "annonces totales (sample dédupliqué)", "value": 215, "unitText": "annonces"},
+        {"@type": "PropertyValue", "name": "villes couvertes", "value": 12, "unitText": "villes"},
         {"@type": "PropertyValue", "name": "taux non-conformité in-scope", "value": "59.0", "unitText": "%"},
         {"@type": "PropertyValue", "name": "intervalle confiance 95% (Wilson) demi-largeur", "value": "12.0", "unitText": "points de %"}
       ]

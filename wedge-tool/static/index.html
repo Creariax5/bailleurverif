@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
-<title>BailleurVérif — Votre location est-elle conforme à la loi en 2026 ?</title>
-<meta name="description" content="Vérifiez en 30 secondes si votre logement loué est conforme à la loi française 2026 : DPE, encadrement des loyers, obligations bailleur. Gratuit, sans inscription.">
+<title>BailleurVérif — Votre loyer est-il légal en 2026 ? Vérif 30 s.</title>
+<meta name="description" content="Vérifiez en 30 s si votre loyer respecte l'encadrement, le DPE et la loi 2026. Observatoire indépendant : 59% des annonces zone tendue non-conformes (N=160). Gratuit, sans compte.">
 <link rel="canonical" href="https://bailleurverif.fr/">
 <link rel="me" href="https://github.com/Creariax5/bailleurverif">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -14,8 +14,10 @@
 <link rel="alternate" type="application/feed+json" title="BailleurVérif — Articles" href="/feed.json">
 <link rel="alternate" type="text/csv" title="Open data — Encadrement des loyers France 2026 (CSV)" href="/data/encadrement-loyer-france-2026.csv">
 <link rel="alternate" type="application/json" title="Open data — Encadrement des loyers France 2026 (JSON)" href="/data/encadrement-loyer-france-2026.json">
-<meta property="og:title" content="BailleurVérif — Conformité location 2026">
-<meta property="og:description" content="DPE, encadrement, amendes 5 000€ : vérifiez votre bien en 30 secondes.">
+<link rel="llms-txt" href="/llms.txt">
+<link rel="alternate" type="text/plain" title="Version texte intégrale pour LLMs" href="/llms-full.txt">
+<meta property="og:title" content="BailleurVérif — Votre loyer est-il légal en 2026 ?">
+<meta property="og:description" content="Encadrement, DPE F/G, charges : vérif 30 s. Observatoire indépendant 59% annonces zone tendue non-conformes (N=160).">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bailleurverif.fr/">
 <meta property="og:site_name" content="BailleurVérif">
@@ -23,10 +25,10 @@
 <meta property="og:image" content="https://bailleurverif.fr/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="BailleurVérif — Votre bien est-il conforme à la loi 2026 ? DPE, encadrement, Loi Climat — vérification 30 secondes, gratuit.">
+<meta property="og:image:alt" content="BailleurVérif — Votre loyer est-il légal en 2026 ? Encadrement, DPE, observatoire — vérif 30 secondes, gratuit.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BailleurVérif — Conformité location 2026">
-<meta name="twitter:description" content="DPE, encadrement, amendes 5 000€ : vérifiez votre bien en 30 secondes. Gratuit, sans inscription.">
+<meta name="twitter:title" content="BailleurVérif — Votre loyer est-il légal en 2026 ?">
+<meta name="twitter:description" content="Encadrement, DPE F/G, charges abusives : vérif 30 s. Observatoire 59% annonces non-conformes (N=160). Gratuit, sans compte.">
 <meta name="twitter:image" content="https://bailleurverif.fr/og-image.png">
 <link rel="stylesheet" href="/css/main.css">
 <script src="/css/tailwind-runtime.js"></script>
@@ -113,11 +115,11 @@
 
   <section id="hero" class="mb-6 sm:mb-8">
     <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-3">
-      Votre location est-elle <span class="accent">conforme</span> à la loi en 2026 ?
+      Votre <span class="accent">loyer</span> est-il légal en 2026 ?
     </h1>
     <p class="text-[color:var(--text-secondary)] text-lg">
-      DPE, encadrement des loyers, obligations bailleur : <strong>vérification en 30 secondes</strong>.
-      Gratuit, anonyme, sans création de compte.
+      Encadrement, DPE F/G, charges abusives : <strong>vérification en 30 secondes</strong>.
+      Gratuit, anonyme, sans compte. Adossé à notre <a href="/observatoire-annonces-loyer.html" class="underline accent">observatoire indépendant</a> (59&nbsp;% des annonces zone tendue non-conformes, N=160).
     </p>
   </section>
 
@@ -136,8 +138,8 @@
 
     <!-- Step 1: Ville -->
     <div class="step active" data-step="1">
-      <h2 class="text-xl font-semibold mb-2">Dans quelle ville se trouve votre bien ?</h2>
-      <p class="text-sm text-[color:var(--text-dim)] mb-4">L'encadrement des loyers s'applique dans 31 communes en 2026.</p>
+      <h2 class="text-xl font-semibold mb-2">Dans quelle ville se trouve le logement ?</h2>
+      <p class="text-sm text-[color:var(--text-dim)] mb-4">L'encadrement des loyers s'applique dans 31 communes en 2026. Locataire ou bailleur, vérifiez la conformité.</p>
       <input id="q-ville" list="villes-list" autocomplete="off" placeholder="Ex : Paris, Lyon, Lille…" class="w-full px-4 py-3 rounded-xl text-base">
       <datalist id="villes-list"></datalist>
       <button class="mt-5 w-full sm:w-auto bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl hover:opacity-90" onclick="next(1)">Suivant →</button>
@@ -232,8 +234,8 @@
       </div>
 
       <div id="share-block" class="glass rounded-xl p-5 mt-6">
-        <h3 class="font-semibold mb-1">📤 Un ami bailleur en a besoin ? Partagez en 1 clic</h3>
-        <p class="text-sm text-[color:var(--text-dim)] mb-4">Les amendes encadrement loyer atteignent 5 000 €. La plupart des propriétaires particuliers ignorent les nouvelles règles 2026.</p>
+        <h3 class="font-semibold mb-1">📤 Un proche signe un bail ? Partagez en 1 clic</h3>
+        <p class="text-sm text-[color:var(--text-dim)] mb-4">59&nbsp;% des annonces en zone tendue dépassent l'encadrement (observatoire BailleurVérif, N=160). Vérifier prend 30 secondes — re-négocier, c'est jusqu'à plusieurs milliers d'euros sur 3 ans.</p>
         <div class="flex flex-wrap gap-2">
           <button onclick="share('whatsapp')" class="flex items-center gap-2 bg-[color:var(--panel-2)] border border-[color:var(--border)] hover:border-[color:var(--accent)] px-4 py-3 rounded-xl text-sm font-medium">
             <span>💬</span> WhatsApp

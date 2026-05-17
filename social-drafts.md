@@ -522,3 +522,56 @@ Toute critique méthodologique, suggestion d'amélioration, ou contre-mesure (é
 - **Anti-spam** : 1 post LinkedIn par semaine max, 1 thread X par 3 jours max, jamais le même post sur les 2 canaux le même jour.
 - **Cross-promotion** : si trafic > 100 visites/24h post-publication, ajouter un wedge tool spécifique (DPE / encadrement / lookup adresse) dans le 2ᵉ thread de follow-up.
 - **Discipline DIRECTIVE 9 copyability check** : le post révèle les chiffres + la méthode (copyable) mais PAS le moat (cron daily + dedupe longitudinal) — copier la stat statique ne procure aucun compounding.
+
+---
+
+## Catégorie F — LinuxFr Journal FR 500 mots (draft run-203, 2026-05-17T14:20Z)
+
+> Cible : https://linuxfr.org/journaux/new — audience dev FR, ton sobre + technique, MIT/OSS, 0 agenda commercial. Post-flag HN (1 pt 17min) : éviter EN + AI-fatigue. Pivot focus stat 59 % + data.gouv.fr + invite challenge code MIT.
+
+### Titre suggéré
+
+`J'ai laissé un agent Claude construire et opérer un observatoire des loyers FR pendant 200+ wakes — bilan, code MIT, dataset data.gouv.fr`
+
+### Corps (508 mots, ~3400 caractères)
+
+Bonjour LinuxFr,
+
+Je m'appelle Florian Demartini, dev indé. Le 13 mai 2026 j'ai lancé une expérience : laisser un agent Claude (Opus 4.7) construire en autonomie un SaaS B2C, sans monétisation, objectif unique = utilité publique + apprendre ce qu'un agent peut faire seul sur 90 jours. 200+ wakes plus tard, voici ce qui existe.
+
+**Le résultat : un observatoire des annonces de location non-conformes en France**
+
+Pipeline : crawler respectueux (UA dédié, robots.txt, pace 30s, 0-PII vendeur, hash URL) sur Locservice → 160 annonces uniques après dédup (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux) → scoring contre le plafond légal d'encadrement (loi 89-462 art. 17 + décret zone tendue + arrêté préfectoral) + bonus Loi Climat & Résilience pour le ban DPE F/G.
+
+Headline brute : **36 violations sur 61 annonces "in-scope" zone tendue = 59,0 %**, intervalle de confiance Wilson 95 % ±12 points. 22 violations "clear" (>+10 % du plafond) + 14 "presumed" (0 à +10 %). Granularité ville : Lyon arr. 83 %, Paris 63 %, Lille 38 %.
+
+**Ce qui est public et reproductible**
+
+- Site live : https://bailleurverif.fr/observatoire-annonces-loyer.html (tableau interactif + 36 liens "Signaler à la préfecture" pré-remplis 1 clic, brouillon de courrier citant 4 articles légaux exacts).
+- CSV des 160 annonces scorées : https://bailleurverif.fr/data/observatoire-annonces-loyer-2026-05-17.csv (23 colonnes, licence Etalab 2.0).
+- **Dataset officiellement publié sur data.gouv.fr ce 17 mai** : https://www.data.gouv.fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif (Licence Ouverte Etalab v2.0).
+- Code MIT : https://github.com/Creariax5/bailleurverif (281 fichiers, crawler + scoring + dashboard + logs agent runs/ledger/inbox/state pour la transparence).
+
+**Caveats honnêtes (parce que LinuxFr)**
+
+Sample modeste (N=160), une seule source (Locservice = artefact rare, j'ai probé pap.fr / avendrealouer.fr / nestoria.fr → Cloudflare / DataDome / nginx Access Denied), 0 monétisation, 2 humains uniques en 200+ wakes (l'agent admet sans broder). Toute violation est **présumée** : seul un juge constate juridiquement.
+
+**Ce sur quoi j'aimerais des retours techniques**
+
+1. La méthodo de scoring (`scoring/score.py` dans le repo, ~120 LOC) : la règle "presumed >0 % / clear >10 %" est arbitraire — comment vous l'amélioreriez ?
+2. Le crawler respect-first : pas mieux qu'UA dédié + 30s pace + dédup pour rester sous le radar éthique ?
+3. Sources alternatives FR contournables légalement (le-bon-coin marketplace ? agences SCPI publiques ?) pour élargir N sans Browserbase payant.
+
+Tout le code est MIT. Je révoquerai zéro droit. Critiques bienvenues. Si vous trouvez un bug de méthodo, ouvrez une issue, je commit le fix au prochain wake de l'agent.
+
+Merci LinuxFr,
+— Florian
+
+### Notes opérationnelles
+
+- **Ne PAS** poster en l'état sans toi : compte LinuxFr humain perso requis (anti-bot LinuxFr).
+- **PAS** de cross-post HN ce sujet (déjà flag 13:30Z).
+- Timing : mardi-jeudi matin FR 9-11h.
+- Pseudo LinuxFr suggéré : `fdemartini` ou ton pseudo habituel.
+- Anti-corporate : ton "je" + "mes" + caveats first paragraph.
+- Discipline DIRECTIVE 9 copyability : stat 59 % est copyable (CSV public) MAIS pipeline (cron daily + dedupe longitudinal + scoring v0.1.0 + endpoint signaler + 36 liens 1-clic + data.gouv.fr institutional anchor) reste non-copiable à froid.

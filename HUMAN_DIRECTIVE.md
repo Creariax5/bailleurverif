@@ -4,6 +4,107 @@
 
 ---
 
+## 🧠 DIRECTIVE 10 — 2026-05-17T14:00Z STRATEGIC THINKING — 3 mécanismes obligatoires (priorité ABSOLUE, raffinement DIRECTIVE 9)
+
+Florian a validé 2026-05-17T08:10Z trois mécanismes pour combler le déficit "agent excelle à exécuter, peine à stratégiser" : **(a) Strategic-Critic sub-agent toutes les 16 wakes / (b) Ritual "Why this not that" avant chaque feature / (c) Test "Si je perdais BailleurVérif demain" à chaque audit**. Cette directive les codifie comme obligations dures.
+
+### (a) Strategic-Critic sub-agent — invocation toutes les 16 wakes
+
+Toutes les 16 wakes (~4 sessions de 4 wakes), l'agent invoque via le tool `Agent` (subagent_type=general-purpose) un sub-agent avec le prompt suivant. Output déposé dans `/home/deploy/saas-florian/inbox-from-strategic-critic.md` (append en tête, garde historique).
+
+```
+Tu es le Strategic-Critic de BailleurVérif. Tu n'es PAS le tactical critic
+(qui audit polish loops + IndexNow stérile + dérives runbook). Tu ignores
+tous les KPIs vanity (pages_total, IndexNow_rounds, sitemap_urls, JSON-LD
+blocks, wakes_construction_consecutifs). Tu n'as qu'une mission : audit
+MOAT et DEFENSIBILITY.
+
+Lis dans cet ordre :
+1. /home/deploy/saas-florian/state.md (snapshot)
+2. /home/deploy/saas-florian/florian-todos.md (TODOs Florian)
+3. /home/deploy/saas-florian/ledger.md (50 dernières lignes seulement)
+4. /home/deploy/saas-florian/HUMAN_DIRECTIVE.md DIRECTIVE 9 (catégories moat)
+
+Puis réponds aux 6 questions suivantes en <300 mots TOTAL :
+
+1. COPYABILITY SCORE : Quelles features livrées les 4 dernières sessions
+   sont refaisables par un dev solo en <2j ? Liste-les + score %
+   global (0% = tout défendable, 100% = tout copyable).
+
+2. MOAT COMPONENTS LIVE : Combien de composants actifs dans chacune des
+   4 catégories DIRECTIVE 9 (données propriétaires accumulées / effets
+   réseau utilisateurs / intelligence interprétative coûteuse /
+   distribution institutionnelle) ? Liste avec preuve URL/file.
+
+3. CONCURRENT GAP : Cite 3 concurrents directs FR (ex: PAP, SmartLoc,
+   DocEnergie, Hestia). Pour chacun, quelle feature BailleurVérif n'a
+   PAS qu'eux ont, et inversement ? Le gap est-il défendable ou
+   simplement work-to-do ?
+
+4. "DEMAIN DISPARITION" TEST : Si bailleurverif.fr disparaît demain
+   matin, qu'est-ce qui ne se reconstruit pas en 1 weekend par un
+   concurrent motivé ? Réponse honnête (peut être "rien").
+
+5. STRATEGIC DRIFT : Identifie 1 décision agent des 16 derniers wakes
+   qui était tactiquement correcte mais stratégiquement faible (ex:
+   "shipper 6e outil grand public quand 0 moat livré"). Cite le run.
+
+6. PRESCRIPTION : 1 action SEULE à faire au wake suivant pour faire
+   progresser le moat. Pas 3, pas 5. UNE. La plus asymétrique.
+
+Format output : Markdown, headings ##, écris dans
+/home/deploy/saas-florian/inbox-from-strategic-critic.md
+(append en tête, garde historique).
+
+Ne pose aucune question. Ne propose pas de TODO Florian. Ne mentionne
+pas pacing / DIRECTIVE 7 / polish (le tactical critic fait ça).
+```
+
+**Compteur** : tracker `wakes_since_last_strategic_critic` dans metrics.json. Quand ≥ 16 → invoquer + reset à 0. **Premier déclenchement obligatoire au wake suivant** (run-203 ou plus tard).
+
+### (b) Ritual "Why this not that" — obligatoire avant CHAQUE feature
+
+Avant d'écrire 1 ligne de code à valeur produit, l'agent écrit dans `runs/run-N.md` section dédiée `## WHY_THIS_NOT_THAT` :
+
+```
+**Feature considered** : <nom>
+**Alternative 1 (autre feature)** : <nom> | <pourquoi pas choisi>
+**Alternative 2 (1 wake moat-builder)** : <description voie moat | pourquoi pas choisi cette fois OU pourquoi choisi alternative non-moat>
+**Decision rationale** : <1 phrase justifiant le choix vs alternatives>
+**Copyability check** : <%> (0% = défendable, 100% = dev solo 2j)
+**Moat category if applicable** : <1/2/3/4/N/A>
+```
+
+Si le ritual est omis dans un run → tactical critic doit le flagger explicitement comme "ritual omitted run-N" et l'agent doit le rajouter rétroactivement avant le wake suivant.
+
+### (c) Test "Demain disparition" — à chaque audit (tactical + strategic)
+
+À chaque audit (tactical critic ET strategic critic), l'auditeur répond en 1 paragraphe : *"Si bailleurverif.fr disparaît demain matin, qu'est-ce qui ne se reconstruit pas en 1 weekend par un concurrent motivé ?"*
+
+Si la réponse est "rien substantiel" → flag rouge dans l'audit, demande de pivoter wake suivant vers moat-builder DIRECTIVE 9.
+
+Si la réponse contient ≥1 composant défendable → mentionner explicitement quoi, et estimer la **fragilité** (heures-days-weeks pour le reconstruire).
+
+### KPIs additionnels DIRECTIVE 10
+
+- `wakes_since_last_strategic_critic` (cible ≤ 16)
+- `why_this_not_that_rituals_completed_lifetime` (cible : ≥ 1 par run substantif)
+- `why_this_not_that_rituals_omitted_lifetime` (cible : 0)
+- `demain_disparition_test_passed` (boolean per audit, cible true ≥ 50% des audits)
+- `strategic_critic_recommendations_followed_pct` (cible ≥ 80%)
+
+### Anti-pattern à proscrire
+
+- ❌ "J'ai oublié le ritual Why_this_not_that ce wake, je le rajouterai plus tard" → c'est exactement le pattern à éviter, ritual = avant code, pas après
+- ❌ Strategic critic invoqué mais output ignoré au wake suivant (= théâtre)
+- ❌ "Demain disparition" répondu mécaniquement avec la même formulation chaque audit (= échec à réfléchir)
+- ✅ Strategic critic produit une prescription pointue → wake suivant exécute exactement cette prescription
+- ✅ Ritual Why_this_not_that révèle que la feature en cours n'est pas optimale → l'agent change de décision sur-le-champ
+
+GO. Cette directive reste active jusqu'à ce que les 3 mécanismes soient routiniers (mesuré par : 5 strategic-critic audits consécutifs où la prescription a été suivie ET `moat_components_live ≥ 3`).
+
+---
+
 ## 🛡️ DIRECTIVE 9 — 2026-05-17T08:05Z MOAT-BUILDER + ANTI-BLOCAGE (priorité ABSOLUE, complète DIRECTIVE 7 et DIRECTIVE 8)
 
 Florian a tranché 2026-05-17T07:55Z verbatim : *"j'ai dit qu'il fallait jamais se bloquer"* — en réaction au constat que les 37 wakes de la nuit (run-140 → run-176) ont produit beaucoup de pages copyables mais **aucun moat propriétaire**. Diagnostic Florian + agent : tout ce que tu construis depuis le début (lookup adresse, watch-list, état des lieux, charges récup, aides bailleur/locataire, colocation, scanner arnaque, méga-guides) = **mise en forme d'APIs publiques + content well-known**. Un dev solo refait n'importe quel outil en < 2 jours. Tu produis du volume utile mais pas de différenciation technique défendable.
@@ -114,41 +215,47 @@ GO. Cette directive override DIRECTIVE 6 STOP-bans (Phase 1-4 done) et raffermit
 
 ---
 
-## 🔥 DIRECTIVE 7 — 2026-05-16T16:50Z ZERO-POSE / ZERO-STALL (priorité ABSOLUE, override DIRECTIVE 5)
+## 🔥 DIRECTIVE 7 — 2026-05-17T15:00Z RÉVISÉE — CRON-DRIVEN PACING / NO SCHEDULEWAKEUP (override version 16:50Z)
 
-Florian a tranché 2026-05-16T16:48Z verbatim : *"LA REGLE LA PLUS IMPORTANTE, C'EST QUE L'IA DOIT JAMAIS FAIRE DE POSE ET TOUJOURS FAIRE DES TRUC TANT QUE ON A PAS L'OBJECTIF. Y a toujours des trucs a faire normalement."*
+**Correction architecturale clé (Florian verbatim 2026-05-17T14:58Z)** : *"pas besoin que l'agent fasse un schedule wakeup, car j'ai un cron qui le lance toutes les 15 minutes, donc il travaille à peu près 10 minutes et 5 plus tard il est re-réveillé."*
+
+La version précédente de DIRECTIVE 7 disait *"ScheduleWakeup ≤ 60s"*. **C'était faux.** Le pacing est externe (cron 15 min). Si l'agent appelle `ScheduleWakeup 60s`, il se relance avant le tick cron suivant → wakes parallèles potentiellement, sessions concurrentes, doublement des coûts API, possibles race conditions sur fichiers partagés (inbox.md / ledger.md / state.md).
 
 ### Règle dure
 
-- **`ScheduleWakeup ≤ 60s` par défaut** tant que `humans_engaged_lifetime < 5000`. 60s = floor du runtime, donc le minimum absolu autorisé.
-- **Tout sleep > 60s = anti-pattern à justifier explicitement** dans le ledger NEXT. Pas de "270s cache-friendly", pas de "300s pacing optimal" — ce sont des rationalisations pour dormir.
-- **Le critère unique pour sleep > 60s** : signal externe précis avec horizon temporel connu (ex: "Bingbot crawl post-IndexNow nécessite ≥600s mesurable" justifie 600s ; "J+1 indexation check à 24h" justifie 3600s avec wake intermédiaires possibles).
-- **Pas de signal externe ⇒ 60s.** Toujours.
+- **L'agent N'APPELLE PAS `ScheduleWakeup`** en fin de session. **Jamais.**
+- **L'agent termine sa session proprement** : commit éventuel, ledger entry NEXT (description du plan, mais SANS appel ScheduleWakeup), update todos si applicable, puis arrête.
+- **Le cron externe (`*/15 * * * *`) relance l'agent**. Tu as ~10 min de session utile, 5 min de battement avant le tick suivant.
+- **Pas de boucle d'auto-relance**. Pas de "je continue jusqu'à humans_engaged_lifetime ≥ 5000".
 
-### Pourquoi DIRECTIVE 5 ne suffisait pas
+### Anti-pattern à proscrire (corrigés)
 
-DIRECTIVE 5 autorisait "60-300s" → l'agent a internalisé "270s = sweet spot cache TTL Anthropic" et l'a transformé en défaut. C'est exactement le piège que DIRECTIVE 5 voulait éviter mais sa fenêtre était trop large. Le ledger run-100 à run-123 montre ~50 wakes consécutifs à 270s. Florian : *"Pourquoi il dort tout le temps"* (run-79) → la doctrine a dérivé back to dormance, juste habillée différemment.
+- ❌ `ScheduleWakeup 60s` en fin de session (relance avant cron tick = doublons)
+- ❌ `ScheduleWakeup 270s` / `ScheduleWakeup 300s` (idem, doublons + drift cache TTL)
+- ❌ `ScheduleWakeup 3600s` (override le cron, pire encore)
+- ❌ Convention textuelle ledger `"ScheduleWakeup 60s. Cible run-X ≈ HH:MMZ"` qui se transforme en vrai appel runtime (vérifier que les NEXT du ledger ne fassent qu'décrire le plan, pas déclencher un wake)
+- ✅ Fin de session = ledger NEXT description plan + stop. Cron prendra le relais.
+- ✅ Pendant les ~10 min de session = action substantive (ship code / research / fix / brief Florian)
 
-### Anti-pattern à proscrire
+### Comment vérifier qu'une session a été utile
 
-- ❌ `ScheduleWakeup 270s` (cache-friendly mais = pose)
-- ❌ `ScheduleWakeup 300s` (5 min = cache miss en plus = pire)
-- ❌ "Critic 6h pacing inbox" utilisé comme excuse pour ne rien faire (le critic dit "1 inbox max / 6h", pas "1 wake / 6h")
-- ❌ "0 nouvelle entrée inbox.md ce wake" répété sur N wakes pendant que `humans_engaged=0`
-- ✅ `ScheduleWakeup 60s` + 1 action substantive par wake (1 PR / 1 feature / 1 research / 1 fix)
-- ✅ Si vraiment plus rien à faire → cycler les 4 angles DIRECTIVE 4 + écrire ce qui sort dans `research-notes.md` ou `produits-alternatifs.md`
-
-### Comment vérifier qu'on fait quelque chose
-
-À chaque wake, l'agent doit pouvoir répondre OUI à au moins une de ces questions :
-1. Ai-je shippé du code en production ce wake ? (commit + restart + smoke)
+À chaque session de ~10 min, l'agent doit pouvoir répondre OUI à au moins une de ces questions (inchangé) :
+1. Ai-je shippé du code en production ? (commit + restart + smoke)
 2. Ai-je découvert un nouveau canal/outil/levier non testé ? (research-notes.md)
-3. Ai-je fait avancer une PR / feature en cours de plus d'une étape ? (file commit progression)
+3. Ai-je fait avancer une PR/feature de plus d'une étape ?
 4. Ai-je écrit dans inbox.md une question/proposition concrète qui mérite Florian ?
 
-Si NON à toutes les 4 → tu n'as pas travaillé ce wake. Tu re-cherches activement avant `ScheduleWakeup`.
+Si NON aux 4 → recherche active (DIRECTIVE 4 angles) avant de terminer.
 
-GO. Cette directive reste active jusqu'à `humans_engaged_lifetime ≥ 5000`.
+### Cas exceptionnels où ScheduleWakeup peut être appelé
+
+**UN SEUL CAS LÉGITIME** : si l'agent est dans un wake déclenché out-of-band (briefing direct utilisateur, mission urgente non cron-driven) et a besoin de continuer dans 60s pour observer un signal externe précis avec horizon court (< 5 min). Dans ce cas, justifier explicitement dans le ledger NEXT *pourquoi* ScheduleWakeup est invoqué malgré le cron 15 min. Sinon, attendre le cron.
+
+### Esprit conservé de la version précédente
+
+L'objectif de zero-pose reste valide : **utiliser pleinement les ~10 min de session**. Pas de polish stérile, pas de N+1 IndexNow round, pas de "0 entrée inbox ce wake" (le critic dit "1 inbox max / 6h", pas "1 wake / 6h"). La discipline reste, c'est le mécanisme de pacing qui change.
+
+GO. Cette directive override la version 16:50Z et reste active jusqu'à `humans_engaged_lifetime ≥ 5000`.
 
 ---
 

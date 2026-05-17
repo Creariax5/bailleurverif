@@ -42,21 +42,26 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-SCORE_VERSION = "0.1.0"
+SCORE_VERSION = "0.2.0"
 HERE = Path(__file__).resolve().parent
 REF_PATH = (
     HERE.parent / "static" / "data" / "encadrement-loyer-france-2026.json"
 )
 
-# Postal-code prefix → commune slug. V0 covers the 31 communes in the reference
-# dataset that are explicitly under encadrement préfectoral.
-# Paris (75) maps regardless of arrondissement; intercommunalités MEL/Lyon/etc
-# map by CP. Extend as the reference dataset grows.
+# Postal-code prefix → commune slug. v0.2.0 covers all 31 communes in the
+# reference dataset that are explicitly under encadrement préfectoral 2026.
+# Paris (75) maps regardless of arrondissement; intercommunalités MEL/Lyon/
+# Bordeaux Métropole/Montpellier 3M/Grenoble-Alpes Métropole/EPT 93 map by CP.
+# Extension run-222 (2026-05-17): +14 communes (Montpellier, Bordeaux,
+# Grenoble + 4 OLAP, 7 communes 93 EPT Est Ensemble + Plaine Commune).
 CP_TO_SLUG = {
+    # Paris (75) — handled by prefix fallback below
     "75": "paris",
+    # Métropole Européenne de Lille (MEL)
     "59000": "lille",
     "59260": "hellemmes",
     "59160": "lomme",
+    # Métropole de Lyon — lyon CP handled by prefix 690 fallback
     "69003": "lyon",
     "69001": "lyon",
     "69002": "lyon",
@@ -67,10 +72,36 @@ CP_TO_SLUG = {
     "69008": "lyon",
     "69009": "lyon",
     "69100": "villeurbanne",
+    # Bordeaux Métropole (ensemble de la commune Bordeaux)
+    "33000": "bordeaux",
+    "33100": "bordeaux",
+    "33200": "bordeaux",
+    "33300": "bordeaux",
+    "33800": "bordeaux",
+    # Montpellier Méditerranée Métropole (3M, ensemble de la commune)
+    "34000": "montpellier",
+    "34070": "montpellier",
+    "34080": "montpellier",
+    "34090": "montpellier",
+    # Grenoble-Alpes Métropole (ensemble Grenoble + secteurs OLAP)
+    "38000": "grenoble",
+    "38100": "grenoble",
+    "38130": "echirolles",
+    "38320": "eybens",
+    "38400": "saint-martin-d-heres",
+    "38600": "fontaine",
+    # Seine-Saint-Denis (93) — Plaine Commune + Est Ensemble + EPT divers
     "93000": "bobigny",
+    "93100": "montreuil",
+    "93120": "la-courneuve",
+    "93130": "noisy-le-sec",
+    "93140": "bondy",
+    "93170": "bagnolet",
     "93200": "saint-denis",
     "93220": "gagny",  # placeholder, not in zone tendue strict
+    "93230": "romainville",
     "93240": "stains",
+    "93260": "les-lilas",
     "93300": "aubervilliers",
     "93310": "le-pre-saint-gervais",
     "93330": "neuilly-sur-marne",

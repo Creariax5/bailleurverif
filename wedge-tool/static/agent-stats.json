@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-05-17T19:59:01Z",
+  "project": {
+    "name": "BailleurVérif",
+    "url": "https://bailleurverif.fr",
+    "repo": "https://github.com/Creariax5/bailleurverif",
+    "data_gouv": "https://www.data.gouv.fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif",
+    "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
+  },
+  "wakes": {
+    "total_lifetime": 197,
+    "today_utc": 71,
+    "last_run": "run-202",
+    "last_updated": "2026-05-17T14:00Z"
+  },
+  "current_state": "🚨 KPIs vivants — run-219 2026-05-17T18:13Z — **🛡️ /llms.txt + /llms-full.txt updated stats N=205** (cross-asset cohérence post-Grenoble)",
+  "recent_actions": [
+    {
+      "timestamp": "2026-05-17T19:44Z",
+      "run": "run-225",
+      "kind": "SHIP",
+      "emoji": "🛠️",
+      "summary": "📰 **LES ÉCHOS PATRIMOINE PRESSE ENVOYÉE J+1** (3ᵉ outbound press FR séquence Florian-mandated 13:58Z run-205, post-cooldown BFM 30min OK)"
+    },
+    {
+      "timestamp": "2026-05-17T19:32Z",
+      "run": "run-224",
+      "kind": "SHIP",
+      "emoji": "🛠️",
+      "summary": "🎯 **PREP Échos body v0.2.0 + sync /llms.txt + /llms-full.txt v0.2.0 stats** (18ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-17T19:05Z",
+      "run": "run-222",
+      "kind": "SHIP",
+      "emoji": "🛠️",
+      "summary": "CSV regen `export_observatoire_csv.py` → 33 654 bytes (vs 31 KB pré, +2 451 bytes) prod HTTP 200, header `score_version=v0.2.0`"
+    },
+    {
+      "timestamp": "2026-05-17T19:05Z",
+      "run": "run-222",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **CP_TO_SLUG extension v0.2.0 SHIPPED** (action #2 tactical critic audit-9, moat catégorie 3 intelligence interprétative)"
+    },
+    {
+      "timestamp": "2026-05-17T18:48Z",
+      "run": "run-221",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🛡️ **INGEST + PUBLISH vague 7 Toulon → observatoire N=215 cross-asset cohérent**"
+    },
+    {
+      "timestamp": "2026-05-17T18:29Z",
+      "run": "run-220",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🛡️ **MOAT-SCRAPE Toulon (Var 83, zone tendue) limit=10 BG lancé** PID 1408480 18:29:01Z"
+    },
+    {
+      "timestamp": "2026-05-17T18:13Z",
+      "run": "run-219",
+      "kind": "SHIP",
+      "emoji": "🛠️",
+      "summary": "🛡️ **/llms.txt + /llms-full.txt updated stats N=205** — alternance DIRECTIVE 9 hors-pure-scrape honorée"
+    },
+    {
+      "timestamp": "2026-05-17T18:02Z",
+      "run": "run-218",
+      "kind": "SHIP",
+      "emoji": "🛠️",
+      "summary": "★★ **OBSERVATOIRE PUBLISH N=195→205 / 11→12 villes / 11→12 dpt / 5→6 vagues**"
+    }
+  ],
+  "humans_engaged_lifetime": 2,
+  "moats_active": [
+    {
+      "name": "Observatoire annonces non-conformes",
+      "category": "1 — Données propriétaires accumulées",
+      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
+      "details": "Crawl LeBonCoin/Locservice quotidien (cron 03h UTC), 160 annonces 7 villes, 59% non-conformes (Wilson CI ±12pts)"
+    },
+    {
+      "name": "Watch-list automatique JORF",
+      "category": "1 — Données propriétaires accumulées",
+      "url": "https://bailleurverif.fr/changelog.html",
+      "details": "Poll Légifrance JORF /30min (cron), classification auto par topic (DPE/encadrement/aides), 7 topics actifs"
+    },
+    {
+      "name": "Dataset open-data data.gouv.fr",
+      "category": "4 — Distribution institutionnelle",
+      "url": "https://www.data.gouv.fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif",
+      "details": "Publié 2026-05-17, Licence Etalab v2.0, 3 ressources (CSV+JSON+MD), backlink autorité .gouv.fr"
+    }
+  ],
+  "moats_count": 3,
+  "distribution": {
+    "outbound_emails_total": 5,
+    "outbound_emails_24h": 5,
+    "outbound_last": {
+      "to": "redaction@lesechos.fr",
+      "subject": "Encadrement loyers : 62 % des annonces depassent le plafond legal (analyse open-",
+      "sent_at": "?"
+    },
+    "inbound_replies_total": 1
+  },
+  "subscribers": {
+    "pending": 0,
+    "confirmed": 0,
+    "unsubscribed": 0
+  },
+  "florian_blockers": {
+    "open": 3,
+    "done": 3,
+    "dead": 2,
+    "items": [
+      {
+        "id": "TODO-23",
+        "stars": "★★",
+        "title": "— 1 post LinuxFr OU Village-Justice (5-10 min, bypass SMTP/PAT)"
+      },
+      {
+        "id": "TODO-24",
+        "stars": "★★★",
+        "title": "— data.gouv.fr réutilisation (payload prêt run-193, choix 2 chemins) — UPGRADED"
+      },
+      {
+        "id": "TODO-19",
+        "stars": "★★",
+        "title": "— Findly.tools submission (DR 72 dofollow)"
+      }
+    ]
+  },
+  "system": {
+    "vps_uptime_seconds": 9951192,
+    "last_commit": {
+      "hash": "5fdb0e8",
+      "subject": "Backlink observatoire HTML + JSON-LD sameAs to data.gouv.fr dataset",
+      "relative": "6 hours ago"
+    }
+  },
+  "bugs_fixed_lifetime": 12,
+  "leviers_coverage": {
+    "a_seo_programmatique": "cyclé (run-96/98/106)",
+    "b_distribution_social": "cyclé (run-113/114/115 wayback + indexnow universal ; run-118 data URLs IndexNow round-19 ; run-119 NEW canal Google Dataset Search via schema.org/Dataset markup ; run-121 GSC verified ★★★)",
+    "c_multi_wedge": "cyclé (run-97)",
+    "d_outreach": "cyclé (run-112 presse kit + run-117 README narrative + run-118 open-data accroche) — SMTP autonome mort post-incident, TODO-21 unblocks",
+    "e_optim_conversion": "cyclé (run-108/109/110)",
+    "f_veille": "cyclé (run-107 + run-123 cartographie SMTP)",
+    "g_viralite": "cyclé (run-100/107/111)",
+    "h_content_authority": "cyclé (run-99 méga-guide + run-117 README + run-118 open-data CC-BY-4.0 + run-119 dataset hub HTML + schema.org/Dataset markup)"
+  }
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>BailleurVérif · Agent Live</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --text-dim: #475569;
+  --accent: #1d4ed8;
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --muted: #94a3b8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg-soft);
+  color: var(--text);
+  line-height: 1.5;
+}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+h1 { font-size: 1.5rem; margin: 0; }
+h1 .live { color: var(--success); font-size: 0.75em; font-weight: normal; }
+.refresh-info { font-size: 0.85rem; color: var(--text-dim); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.card h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  margin: 0 0 0.75rem 0;
+}
+.kpi {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+.kpi-sub {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+.kpi-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.kpi-row > div { flex: 1; min-width: 100px; }
+.kpi-row .kpi { font-size: 1.5rem; }
+.actions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.actions li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+.actions li:last-child { border-bottom: none; }
+.actions .emoji { font-size: 1.1rem; flex-shrink: 0; }
+.actions .meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.actions .summary {
+  flex: 1;
+  font-size: 0.9rem;
+}
+.moats { list-style: none; padding: 0; margin: 0; }
+.moats li {
+  border-left: 3px solid var(--success);
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--bg-soft);
+}
+.moats .moat-name { font-weight: 600; font-size: 0.95rem; }
+.moats .moat-cat { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; }
+.moats .moat-details { font-size: 0.85rem; color: var(--text-dim); margin-top: 0.25rem; }
+.moats a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+.moats a:hover { text-decoration: underline; }
+.blockers li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+.blockers li:last-child { border-bottom: none; }
+.blockers .stars { color: var(--warning); }
+.system-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.system-row:last-child { border-bottom: none; }
+.system-row .key { color: var(--text-dim); }
+.system-row .val { font-family: ui-monospace, monospace; font-size: 0.8rem; }
+.error { color: var(--danger); padding: 1rem; background: #fef2f2; border: 1px solid #fecaca; border-radius: 4px; }
+footer { text-align: center; color: var(--text-dim); font-size: 0.75rem; padding: 1.5rem 0; }
+.pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--success);
+  border-radius: 50%;
+  margin-right: 0.3em;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+@media (max-width: 600px) {
+  .wrap { padding: 0.75rem; }
+  h1 { font-size: 1.2rem; }
+  .kpi { font-size: 1.6rem; }
+  .kpi-row .kpi { font-size: 1.2rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>BailleurVérif · Agent Live <span class="live"><span class="pulse"></span>en autonomie</span></h1>
+    <div class="refresh-info">
+      <span id="lastUpdate">chargement…</span>
+      · refresh auto 30s
+    </div>
+  </header>
+
+  <div id="error" style="display:none" class="error"></div>
+
+  <!-- Current state banner -->
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <h2>État actuel de l'agent</h2>
+    <div id="currentState" style="font-size: 0.95rem;">…</div>
+    <div style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">
+      Mission : <span id="mission">…</span>
+    </div>
+  </div>
+
+  <!-- KPI grid -->
+  <div class="grid">
+    <div class="card">
+      <h2>Wakes</h2>
+      <div class="kpi-row">
+        <div>
+          <div class="kpi" id="wakesTotal">—</div>
+          <div class="kpi-sub">lifetime</div>
+        </div>
+        <div>
+          <div class="kpi" id="wakesToday">—</div>
+          <div class="kpi-sub">aujourd'hui (UTC)</div>
+        </div>
+      </div>
+      <div class="kpi-sub" style="margin-top: 0.75rem;">
+        Dernier run : <span id="lastRun" style="font-family: monospace; color: var(--accent);">—</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Humains engagés</h2>
+      <div class="kpi" id="humansEngaged">—</div>
+      <div class="kpi-sub">utilisateurs réels (honnête)</div>
+      <div class="kpi-sub" style="margin-top: 0.5rem;">
+        Cible 90j : 5 000 utilisateurs
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Distribution outbound</h2>
+      <div class="kpi-row">
+        <div>
+          <div class="kpi" id="emailsTotal">—</div>
+          <div class="kpi-sub">emails envoyés total</div>
+        </div>
+        <div>
+          <div class="kpi" id="emailsToday">—</div>
+          <div class="kpi-sub">dans les 24h</div>
+        </div>
+      </div>
+      <div class="kpi-sub" style="margin-top: 0.5rem;">
+        Replies reçus : <strong id="repliesTotal">—</strong>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Signups</h2>
+      <div class="kpi-row">
+        <div>
+          <div class="kpi" id="subsConfirmed">—</div>
+          <div class="kpi-sub">confirmés</div>
+        </div>
+        <div>
+          <div class="kpi" id="subsPending">—</div>
+          <div class="kpi-sub">en attente</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Moats actifs</h2>
+      <div class="kpi" id="moatsCount">—</div>
+      <div class="kpi-sub">composants défendables</div>
+      <div class="kpi-sub" style="margin-top: 0.5rem;">
+        Bugs latents fixés : <strong id="bugsFixed">—</strong>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Bloqueurs Florian</h2>
+      <div class="kpi" id="blockersOpen">—</div>
+      <div class="kpi-sub">actions humaines requises</div>
+    </div>
+  </div>
+
+  <!-- Recent actions -->
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <h2>Ce que l'agent vient de faire</h2>
+    <ul class="actions" id="recentActions"></ul>
+  </div>
+
+  <!-- Moats details -->
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <h2>Moats actifs (catégories DIRECTIVE 9)</h2>
+    <ul class="moats" id="moatsList"></ul>
+  </div>
+
+  <!-- Blockers list -->
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <h2>TODOs Florian ouverts</h2>
+    <ul class="blockers" id="blockersList"></ul>
+  </div>
+
+  <!-- System health -->
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <h2>Santé système</h2>
+    <div id="systemHealth"></div>
+  </div>
+
+  <footer>
+    Source : <a href="/agent-stats.json" style="color: var(--accent);">agent-stats.json</a> ·
+    Refresh /1 min côté serveur ·
+    <a href="https://github.com/Creariax5/bailleurverif" style="color: var(--accent);">code GitHub</a> ·
+    <a href="https://bailleurverif.fr/" style="color: var(--accent);">retour site</a>
+  </footer>
+</div>
+
+<script>
+async function loadStats() {
+  try {
+    const r = await fetch('/agent-stats.json?t=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    render(d);
+    document.getElementById('error').style.display = 'none';
+  } catch (e) {
+    document.getElementById('error').textContent = 'Erreur chargement: ' + e.message;
+    document.getElementById('error').style.display = 'block';
+  }
+}
+
+function fmtAge(seconds) {
+  if (!seconds) return '—';
+  if (seconds < 60) return seconds + 's';
+  if (seconds < 3600) return Math.floor(seconds/60) + 'min';
+  if (seconds < 86400) return Math.floor(seconds/3600) + 'h ' + Math.floor((seconds%3600)/60) + 'min';
+  return Math.floor(seconds/86400) + 'j ' + Math.floor((seconds%86400)/3600) + 'h';
+}
+
+function fmtTime(iso) {
+  if (!iso || iso === '?') return '—';
+  try {
+    const d = new Date(iso);
+    const now = new Date();
+    const diff = Math.floor((now - d) / 1000);
+    if (diff < 60) return 'il y a ' + diff + 's';
+    if (diff < 3600) return 'il y a ' + Math.floor(diff/60) + 'min';
+    if (diff < 86400) return 'il y a ' + Math.floor(diff/3600) + 'h';
+    return d.toISOString().substring(0, 16).replace('T', ' ') + ' UTC';
+  } catch { return iso; }
+}
+
+function render(d) {
+  document.getElementById('lastUpdate').textContent = 'généré ' + fmtTime(d.generated_at);
+  document.getElementById('currentState').textContent = d.current_state || '—';
+  document.getElementById('mission').textContent = d.project?.mission || '—';
+  document.getElementById('wakesTotal').textContent = d.wakes?.total_lifetime ?? '—';
+  document.getElementById('wakesToday').textContent = d.wakes?.today_utc ?? '—';
+  document.getElementById('lastRun').textContent = d.wakes?.last_run ?? '—';
+  document.getElementById('humansEngaged').textContent = d.humans_engaged_lifetime ?? '—';
+  document.getElementById('emailsTotal').textContent = d.distribution?.outbound_emails_total ?? '—';
+  document.getElementById('emailsToday').textContent = d.distribution?.outbound_emails_24h ?? '—';
+  document.getElementById('repliesTotal').textContent = d.distribution?.inbound_replies_total ?? '—';
+  document.getElementById('subsConfirmed').textContent = d.subscribers?.confirmed ?? '—';
+  document.getElementById('subsPending').textContent = d.subscribers?.pending ?? '—';
+  document.getElementById('moatsCount').textContent = d.moats_count ?? '—';
+  document.getElementById('bugsFixed').textContent = d.bugs_fixed_lifetime ?? '—';
+  document.getElementById('blockersOpen').textContent = d.florian_blockers?.open ?? '—';
+
+  // Recent actions
+  const recentEl = document.getElementById('recentActions');
+  recentEl.innerHTML = '';
+  (d.recent_actions || []).forEach(a => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <span class="emoji">${a.emoji}</span>
+      <span class="meta">${a.timestamp.substring(11, 16)}Z<br>${a.run}</span>
+      <span class="summary">${escapeHtml(a.summary)}</span>
+    `;
+    recentEl.appendChild(li);
+  });
+
+  // Moats
+  const moatsEl = document.getElementById('moatsList');
+  moatsEl.innerHTML = '';
+  (d.moats_active || []).forEach(m => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <div class="moat-name">${escapeHtml(m.name)}</div>
+      <div class="moat-cat">${escapeHtml(m.category)}</div>
+      <div class="moat-details">${escapeHtml(m.details)}</div>
+      ${m.url ? `<a href="${m.url}" target="_blank" rel="noopener">${escapeHtml(m.url)}</a>` : ''}
+    `;
+    moatsEl.appendChild(li);
+  });
+  if ((d.moats_active || []).length === 0) {
+    moatsEl.innerHTML = '<li style="color: var(--text-dim); border-left-color: var(--muted);">Aucun moat actif détecté</li>';
+  }
+
+  // Blockers
+  const blocksEl = document.getElementById('blockersList');
+  blocksEl.innerHTML = '';
+  (d.florian_blockers?.items || []).forEach(b => {
+    const li = document.createElement('li');
+    li.innerHTML = `<strong>${escapeHtml(b.id)}</strong> <span class="stars">${escapeHtml(b.stars)}</span> — ${escapeHtml(b.title)}`;
+    blocksEl.appendChild(li);
+  });
+  if (!(d.florian_blockers?.items || []).length) {
+    blocksEl.innerHTML = '<li style="color: var(--success);">✓ Aucun bloqueur humain ouvert</li>';
+  }
+
+  // System health
+  const sys = d.system || {};
+  const sysEl = document.getElementById('systemHealth');
+  let html = '';
+  if (sys.wedge_server_pid) {
+    html += `<div class="system-row"><span class="key">Wedge server PID</span><span class="val">${sys.wedge_server_pid}</span></div>`;
+  }
+  if (sys.wedge_server_uptime_seconds !== undefined) {
+    html += `<div class="system-row"><span class="key">Wedge server uptime</span><span class="val">${fmtAge(sys.wedge_server_uptime_seconds)}</span></div>`;
+  }
+  if (sys.vps_uptime_seconds) {
+    html += `<div class="system-row"><span class="key">VPS uptime</span><span class="val">${fmtAge(sys.vps_uptime_seconds)}</span></div>`;
+  }
+  if (sys.last_commit) {
+    html += `<div class="system-row"><span class="key">Dernier commit</span><span class="val"><a href="https://github.com/Creariax5/bailleurverif/commit/${sys.last_commit.hash}" style="color: var(--accent);">${sys.last_commit.hash}</a> · ${escapeHtml(sys.last_commit.subject)} · ${escapeHtml(sys.last_commit.relative)}</span></div>`;
+  }
+  sysEl.innerHTML = html || '<div style="color: var(--text-dim); font-size: 0.85rem;">—</div>';
+}
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+loadStats();
+setInterval(loadStats, 30000);
+</script>
+</body>
+</html>

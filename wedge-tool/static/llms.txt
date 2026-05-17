@@ -1,0 +1,58 @@
+# BailleurVérif
+
+> Plateforme indépendante française de vérification de la conformité légale des locations résidentielles (loi Jeanbrun 2026, encadrement des loyers en zones tendues, interdictions DPE F/G). Publie en open data le premier observatoire indépendant des annonces de location françaises non-conformes (215 annonces, 13 villes, 84 in-scope sur 8 métropoles scorées v0.2.0, dataset Etalab 2.0 sur data.gouv.fr).
+
+BailleurVérif est un outil gratuit, sans création de compte, sans cookies tiers, conforme RGPD. Le site est édité depuis la France et s'appuie sur les sources réglementaires officielles : LOI n°2026-103 du 19 février 2026 (Jeanbrun), décrets encadrement préfectoraux 2026, base ADEME (DPE), Service-Public.fr.
+
+Public cible : locataires français qui veulent vérifier la légalité de leur loyer / DPE / dépôt de garantie avant de signer ou pendant le bail ; bailleurs particuliers qui veulent s'assurer de leur conformité ; journalistes / chercheurs / pouvoirs publics qui consultent l'observatoire en open data.
+
+Dernière mise à jour observatoire : 2026-05-17 (N=215 annonces, 13 villes, 13 départements, 7 vagues de crawl, **scoring v0.2.0** sur 84 annonces in-scope 8 métropoles (Paris/Lyon/Lille/Villeurbanne/Bordeaux/Montpellier/Grenoble/Fontaine), taux de non-conformité encadrement **61,9 %**, IC 95 % Wilson [51,2 % ; 71,6 %] ± 10 pts).
+
+## Outils gratuits (verdict 30 secondes)
+
+- [Vérifier mon loyer (encadrement zone tendue)](https://bailleurverif.fr/): quiz 5 questions → verdict conforme / risque amende 5000€ / interdiction location, basé sur les barèmes préfectoraux Paris/Lyon/Lille/Plaine-Commune/Est-Ensemble et le DPE
+- [Calculateur préavis bail](https://bailleurverif.fr/preavis-bail.html): durée légale du préavis locataire (1 ou 3 mois) selon zone tendue, motif (mutation, perte d'emploi, premier emploi, RSA, santé), type de bail
+- [Charges récupérables 2026](https://bailleurverif.fr/charges-recuperables-2026.html): liste exhaustive ce que le bailleur peut refacturer au locataire (décret 87-713), simulateur
+- [Dépôt de garantie](https://bailleurverif.fr/depot-garantie-france-2026.html): plafonds légaux, délais de restitution, retenues autorisées, recours
+- [État des lieux](https://bailleurverif.fr/etat-des-lieux-2026.html): obligations, mentions obligatoires, vétusté, contestation
+- [Scanner d'arnaque location](https://bailleurverif.fr/arnaque-location-france-2026.html): détection des annonces frauduleuses (faux propriétaires, faux mandats, demandes de virement avant visite)
+- [Aides financières locataire 2026](https://bailleurverif.fr/aides-financieres-locataire-2026.html): APL, ALS, Locapass, FSL, garanties Visale, conditions et montants
+- [Aides financières bailleur 2026](https://bailleurverif.fr/aides-financieres-bailleur-2026.html): MaPrimeRénov', éco-PTZ, déficit foncier, Loc'Avantages
+- [Déficit foncier 2026](https://bailleurverif.fr/deficit-foncier-2026.html): mécanisme fiscal, plafonds, travaux éligibles, dispositif renforcé passoires thermiques
+
+## Observatoire indépendant (données ouvertes)
+
+- [Observatoire des annonces de location non-conformes](https://bailleurverif.fr/observatoire-annonces-loyer.html): page d'autorité — N=215 annonces classées, **scoring v0.2.0 sur 84 in-scope / 8 métropoles → 61,9 % en violation encadrement, IC 95 % ± 10 pts**, méthodologie publique, échantillonnage transparent, sources scrappées listées, premier publish Bordeaux / Montpellier / Grenoble
+- [Dataset open data (data.gouv.fr)](https://www.data.gouv.fr/fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif/): CSV téléchargeable, licence Etalab 2.0, mises à jour mensuelles annoncées, citation libre avec attribution
+- [Observatoire DPE F/G](https://bailleurverif.fr/observatoire-dpe-fg.html): focus passoires thermiques (DPE F interdit 2028, G interdit depuis 2025), évolutions par ville
+- [Fiabilité du DPE](https://bailleurverif.fr/dpe-fiabilite.html): analyse critique des limites méthodologiques DPE 2021, jurisprudence récente
+
+## Guides exhaustifs
+
+- [Guide locataire 2026](https://bailleurverif.fr/guide-locataire-2026.html): tous les droits du locataire FR mis à jour pour 2026
+- [Guide bailleur 2026](https://bailleurverif.fr/guide-bailleur-2026.html): obligations du bailleur particulier 2026, sanctions, recours
+- [Guide colocataire 2026](https://bailleurverif.fr/guide-colocataire-2026.html): bail unique vs baux individuels, solidarité, congé, garanties
+- [Colocation 2026](https://bailleurverif.fr/colocation-2026.html): cadre légal, fiscalité, charges, départ d'un colocataire
+- [Encadrement des loyers en zones tendues 2026](https://bailleurverif.fr/encadrement-loyer-france-2026.html): liste exhaustive des communes concernées, barèmes par préfecture, complément de loyer
+- [Loi Jeanbrun 2026 (LOI n°2026-103 du 19 février 2026)](https://bailleurverif.fr/blog/dispositif-jeanbrun-2026.html): explication article par article, impact bailleurs et locataires
+- [DPE F : interdictions de location 2026](https://bailleurverif.fr/blog/dpe-f-location-2026.html): calendrier interdictions, exceptions, recours
+
+## Référence réglementaire et légale
+
+- [Mentions légales](https://bailleurverif.fr/mentions-legales.html): éditeur, hébergeur, directeur publication, contact pour signaler une erreur juridique
+- [Politique de confidentialité (RGPD)](https://bailleurverif.fr/politique-confidentialite.html): données collectées, finalités, durée, droits, contact DPO
+- [Conditions générales d'utilisation](https://bailleurverif.fr/cgu.html): outil informatif ne remplace pas conseil juridique, responsabilité limitée, droit français
+- [Changelog](https://bailleurverif.fr/changelog.html): historique des évolutions réglementaires intégrées et des mises à jour du site
+
+## Sitemap et flux
+
+- [Sitemap XML](https://bailleurverif.fr/sitemap.xml): liste complète des 170 pages indexables
+- [Flux Atom (mises à jour)](https://bailleurverif.fr/atom.xml): nouvelles publications réglementaires et études
+- [Version texte intégrale pour LLMs](https://bailleurverif.fr/llms-full.txt): extraits texte des pages clés (~30 KB), pour intégration directe dans le contexte d'un assistant IA
+
+## Optional
+
+- [À propos / agent narrative](https://bailleurverif.fr/agent-live.html): le site est construit et maintenu de manière semi-autonome par un assistant IA Anthropic Claude supervisé par Florian Demartini (bailleur particulier français) — métriques de fonctionnement publiées en temps réel
+- [Articles de blog](https://bailleurverif.fr/blog/): analyses, scoops réglementaires, guides longs
+- [Pages préavis par ville](https://bailleurverif.fr/sitemap.xml): 30+ pages calculateur préavis par commune française (Paris, Lyon, Marseille, Lille, etc.)
+- [Pages DPE par ville](https://bailleurverif.fr/sitemap.xml): 50+ pages interdiction DPE F/G par commune
