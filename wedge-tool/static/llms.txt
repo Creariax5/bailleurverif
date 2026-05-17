@@ -1,12 +1,12 @@
 # BailleurVérif
 
-> Plateforme indépendante française de vérification de la conformité légale des locations résidentielles (loi Jeanbrun 2026, encadrement des loyers en zones tendues, interdictions DPE F/G). Publie en open data le premier observatoire indépendant des annonces de location françaises non-conformes (215 annonces, 13 villes, 84 in-scope sur 8 métropoles scorées v0.2.0, dataset Etalab 2.0 sur data.gouv.fr).
+> Plateforme indépendante française de vérification de la conformité légale des locations résidentielles (loi Jeanbrun 2026, encadrement des loyers en zones tendues, interdictions DPE F/G). Publie en open data le premier observatoire indépendant des annonces de location françaises non-conformes (230 annonces, 14 villes, 95 in-scope sur 17 communes scorées v0.2.0 dont 9 nouvelles EPT 93 Plaine Commune + Est Ensemble, dataset Etalab 2.0 sur data.gouv.fr).
 
 BailleurVérif est un outil gratuit, sans création de compte, sans cookies tiers, conforme RGPD. Le site est édité depuis la France et s'appuie sur les sources réglementaires officielles : LOI n°2026-103 du 19 février 2026 (Jeanbrun), décrets encadrement préfectoraux 2026, base ADEME (DPE), Service-Public.fr.
 
 Public cible : locataires français qui veulent vérifier la légalité de leur loyer / DPE / dépôt de garantie avant de signer ou pendant le bail ; bailleurs particuliers qui veulent s'assurer de leur conformité ; journalistes / chercheurs / pouvoirs publics qui consultent l'observatoire en open data.
 
-Dernière mise à jour observatoire : 2026-05-17 (N=215 annonces, 13 villes, 13 départements, 7 vagues de crawl, **scoring v0.2.0** sur 84 annonces in-scope 8 métropoles (Paris/Lyon/Lille/Villeurbanne/Bordeaux/Montpellier/Grenoble/Fontaine), taux de non-conformité encadrement **61,9 %**, IC 95 % Wilson [51,2 % ; 71,6 %] ± 10 pts).
+Dernière mise à jour observatoire : 2026-05-17 (N=230 annonces, 14 villes, 14 départements, 8 vagues de crawl, **scoring v0.2.0** sur 95 annonces in-scope 17 communes (Paris/Lyon/Lille/Villeurbanne/Bordeaux/Montpellier/Grenoble/Fontaine/Aubervilliers/Montreuil/Pantin/Saint-Denis/Saint-Ouen/Le Bourget/Drancy/Aulnay-sous-Bois/Epinay-sur-Seine — EPT 93 Plaine Commune + Est Ensemble vague-8), taux de non-conformité encadrement **60,0 %**, IC 95 % Wilson [49,9 % ; 69,3 %] ± 9,7 pts).
 
 ## Outils gratuits (verdict 30 secondes)
 
@@ -22,7 +22,7 @@ Dernière mise à jour observatoire : 2026-05-17 (N=215 annonces, 13 villes, 13 
 
 ## Observatoire indépendant (données ouvertes)
 
-- [Observatoire des annonces de location non-conformes](https://bailleurverif.fr/observatoire-annonces-loyer.html): page d'autorité — N=215 annonces classées, **scoring v0.2.0 sur 84 in-scope / 8 métropoles → 61,9 % en violation encadrement, IC 95 % ± 10 pts**, méthodologie publique, échantillonnage transparent, sources scrappées listées, premier publish Bordeaux / Montpellier / Grenoble
+- [Observatoire des annonces de location non-conformes](https://bailleurverif.fr/observatoire-annonces-loyer.html): page d'autorité — N=230 annonces classées, **scoring v0.2.0 sur 95 in-scope / 17 communes → 60,0 % en violation encadrement, IC 95 % Wilson [49,9 % ; 69,3 %] ± 9,7 pts**, méthodologie publique, échantillonnage transparent, sources scrappées listées, premier publish vague-8 Aubervilliers/Montreuil/Pantin/Saint-Denis/Saint-Ouen (EPT 93)
 - [Dataset open data (data.gouv.fr)](https://www.data.gouv.fr/fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif/): CSV téléchargeable, licence Etalab 2.0, mises à jour mensuelles annoncées, citation libre avec attribution
 - [Observatoire DPE F/G](https://bailleurverif.fr/observatoire-dpe-fg.html): focus passoires thermiques (DPE F interdit 2028, G interdit depuis 2025), évolutions par ville
 - [Fiabilité du DPE](https://bailleurverif.fr/dpe-fiabilite.html): analyse critique des limites méthodologiques DPE 2021, jurisprudence récente

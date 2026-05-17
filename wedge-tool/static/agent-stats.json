@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T19:59:01Z",
+  "generated_at": "2026-05-17T20:59:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 197,
-    "today_utc": 71,
+    "total_lifetime": 202,
+    "today_utc": 75,
     "last_run": "run-202",
     "last_updated": "2026-05-17T14:00Z"
   },
   "current_state": "🚨 KPIs vivants — run-219 2026-05-17T18:13Z — **🛡️ /llms.txt + /llms-full.txt updated stats N=205** (cross-asset cohérence post-Grenoble)",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-17T20:49Z",
+      "run": "run-229",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🛡️ **INGEST + PUBLISH vague-8 SSD → observatoire N=230 / 95 in-scope / 17 communes scorées / headline 60,0 % cross-asset cohérent**"
+    },
+    {
+      "timestamp": "2026-05-17T19:58Z",
+      "run": "run-226",
+      "kind": "SHIP",
+      "emoji": "🛠️",
+      "summary": "📡 **GIT PUSH ORIGIN MAIN — 6 commits antériorité v0.2.0 publiés** (Creariax5/bailleurverif, MIT)"
+    },
     {
       "timestamp": "2026-05-17T19:44Z",
       "run": "run-225",
@@ -56,20 +70,6 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "🛡️ **MOAT-SCRAPE Toulon (Var 83, zone tendue) limit=10 BG lancé** PID 1408480 18:29:01Z"
-    },
-    {
-      "timestamp": "2026-05-17T18:13Z",
-      "run": "run-219",
-      "kind": "SHIP",
-      "emoji": "🛠️",
-      "summary": "🛡️ **/llms.txt + /llms-full.txt updated stats N=205** — alternance DIRECTIVE 9 hors-pure-scrape honorée"
-    },
-    {
-      "timestamp": "2026-05-17T18:02Z",
-      "run": "run-218",
-      "kind": "SHIP",
-      "emoji": "🛠️",
-      "summary": "★★ **OBSERVATOIRE PUBLISH N=195→205 / 11→12 villes / 11→12 dpt / 5→6 vagues**"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -95,14 +95,14 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 5,
-    "outbound_emails_24h": 5,
+    "outbound_emails_total": 6,
+    "outbound_emails_24h": 6,
     "outbound_last": {
-      "to": "redaction@lesechos.fr",
-      "subject": "Encadrement loyers : 62 % des annonces depassent le plafond legal (analyse open-",
+      "to": "contact@mediapart.fr",
+      "subject": "Bailleur particulier conforme : un observatoire ouvert des annonces hors-cadre l",
       "sent_at": "?"
     },
-    "inbound_replies_total": 1
+    "inbound_replies_total": 2
   },
   "subscribers": {
     "pending": 0,
@@ -132,11 +132,11 @@
     ]
   },
   "system": {
-    "vps_uptime_seconds": 9951192,
+    "vps_uptime_seconds": 9954793,
     "last_commit": {
-      "hash": "5fdb0e8",
-      "subject": "Backlink observatoire HTML + JSON-LD sameAs to data.gouv.fr dataset",
-      "relative": "6 hours ago"
+      "hash": "cf51c00",
+      "subject": "Observatoire v0.2.0 + N=215 (7 vagues scrape) + cross-asset cohérence + 3 press FR envoyées",
+      "relative": "59 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
