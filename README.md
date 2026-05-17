@@ -100,6 +100,18 @@ No build step. No package manager. No CI yet (the agent does its own smoke tests
 
 ---
 
+## Open data on data.gouv.fr
+
+The aggregated rent-cap reference dataset (31 French communes, CSV + JSON + Markdown documentation) is officially published on the French open-data portal:
+
+**[`data.gouv.fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif`](https://www.data.gouv.fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif)**
+
+Licensed under **Licence Ouverte Etalab v2.0** (compatible with CC BY 4.0). Daily updates. Spatial coverage: France métropolitaine, commune-level granularity.
+
+This dataset references official sources: prefectural decrees published in JORF, ADEME DPE registry, and the loi Climat 2021-1104 calendar.
+
+---
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
