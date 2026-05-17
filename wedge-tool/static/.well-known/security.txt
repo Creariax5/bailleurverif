@@ -1,4 +1,4 @@
-Contact: mailto:bailleurverif.contact@gmail.com
+Contact: mailto:contact@bailleurverif.fr
 Expires: 2027-05-15T00:00:00Z
 Preferred-Languages: fr, en
 Canonical: https://bailleurverif.fr/.well-known/security.txt

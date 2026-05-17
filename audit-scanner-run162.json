@@ -1,0 +1,97 @@
+{
+  "ts": "2026-05-17T03:46:42Z",
+  "n_arnaque": 4,
+  "n_legit": 4,
+  "tp": 4,
+  "tn": 4,
+  "fp": 0,
+  "fn": 0,
+  "precision_arnaque": 1.0,
+  "recall_arnaque": 1.0,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "id": "A1_bailleur_etranger_western_union",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 95,
+      "flags_count": 3,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf)",
+        "Bailleur declare a l'etranger / en mission",
+        "Aucune adresse precise mentionnee"
+      ]
+    },
+    {
+      "id": "A2_prix_trop_bas_telegram",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 90,
+      "flags_count": 4,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf)",
+        "Ton d'urgence injustifie",
+        "Aucune adresse precise mentionnee",
+        "Photos envoyees hors plateforme"
+      ]
+    },
+    {
+      "id": "A3_studio_caution_avant_visite",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 75,
+      "flags_count": 3,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf)",
+        "Ton d'urgence injustifie",
+        "Aucune adresse precise mentionnee"
+      ]
+    },
+    {
+      "id": "A4_propriétaire_mission_photos_email",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 100,
+      "flags_count": 5,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf)",
+        "Bailleur declare a l'etranger / en mission",
+        "Ton d'urgence injustifie",
+        "Aucune adresse precise mentionnee",
+        "Photos envoyees hors plateforme"
+      ]
+    },
+    {
+      "id": "L1_appart_agence_paris_normal",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 0,
+      "flags_count": 0,
+      "flags_labels": []
+    },
+    {
+      "id": "L2_studio_etudiant_lyon",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 0,
+      "flags_count": 0,
+      "flags_labels": []
+    },
+    {
+      "id": "L3_t3_particulier_bordeaux",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 0,
+      "flags_count": 0,
+      "flags_labels": []
+    },
+    {
+      "id": "L4_t1_marseille_meuble",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 0,
+      "flags_count": 0,
+      "flags_labels": []
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "ts": "2026-05-17T04:19:18Z",
+  "scope": "edge_cases_ambiguous",
+  "n_arnaque": 3,
+  "n_legit": 3,
+  "tp": 2,
+  "tn": 3,
+  "fp": 0,
+  "fn": 1,
+  "precision_arnaque": 1.0,
+  "recall_arnaque": 0.6666666666666666,
+  "accuracy": 0.8333333333333334,
+  "verdict_success": true,
+  "results": [
+    {
+      "id": "AE1_urgence_faible_telegram_bas_prix",
+      "expected": "high",
+      "got_severity": "low",
+      "score": 10,
+      "flags_count": 1,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee"
+      ]
+    },
+    {
+      "id": "AE2_arnaque_langue_mixte_FR_EN",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 100,
+      "flags_count": 4,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf, international transfer)",
+        "Bailleur declare a l'etranger / en mission",
+        "Demande de caution / loyer AVANT visite",
+        "Aucune adresse precise mentionnee"
+      ]
+    },
+    {
+      "id": "AE3_arnaque_pas_de_crypto_juste_3_low_flags",
+      "expected": "medium",
+      "got_severity": "high",
+      "score": 80,
+      "flags_count": 4,
+      "flags_labels": [
+        "Demande de caution / loyer AVANT visite",
+        "Ton d'urgence injustifie",
+        "Aucune adresse precise mentionnee",
+        "Photos envoyees hors plateforme"
+      ]
+    },
+    {
+      "id": "LE1_legit_urgence_rentree_juin",
+      "expected": "safe",
+      "got_severity": "low",
+      "score": 15,
+      "flags_count": 1,
+      "flags_labels": [
+        "Ton d'urgence injustifie"
+      ]
+    },
+    {
+      "id": "LE2_legit_whatsapp_agence_contact",
+      "expected": "safe",
+      "got_severity": "low",
+      "score": 10,
+      "flags_count": 1,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee"
+      ]
+    },
+    {
+      "id": "LE3_legit_bailleur_expatrie_reel_via_gestionnaire",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 5,
+      "flags_count": 1,
+      "flags_labels": [
+        "Bailleur a l'etranger MAIS mandataire FR identifie (legitime probable)"
+      ]
+    }
+  ]
+}

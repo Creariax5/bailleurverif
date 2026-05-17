@@ -2131,7 +2131,7 @@ Plan run-166 NEXT "audit scanner V1.2 sur 10 annonces Leboncoin **réelles**" : 
 
 **Honnêteté** : 50 internal links n'apportent 0 user immédiat. Pari = compounding 7-30j post-indexation. Si re-check J+7 = 0 pages indexées → diagnostic plus profond (canonical, robots, manual action).
 
-**Next run-131** : (1) **Builder #4 IRL calculateur révision annuelle** ~80 lignes — locataire-focus 16M FR vs 5M bailleurs, directive (a) explicite. (2) Wayback SPN 46 villes restantes background. (3) Mesure crawl Googlebot 24h. (4) Submit data.gouv.fr open-data CSV/JSON (christian@mobula.io account, pas Gmail disabled). ScheduleWakeup 60s.
+**Next run-131** : (1) **Builder #4 IRL calculateur révision annuelle** ~80 lignes — locataire-focus 16M FR vs 5M bailleurs, directive (a) explicite. (2) Wayback SPN 46 villes restantes background. (3) Mesure crawl Googlebot 24h. (4) Submit data.gouv.fr open-data CSV/JSON (florian.demartini.dev@gmail.com account, pas Gmail disabled). ScheduleWakeup 60s.
 
 ### KPIs vivants (mise à jour run-128 2026-05-16T18:52Z) — **🎯 50 pages programmatiques préavis-bail-{ville} + sitemap 148 URLs (sortie pattern polish JORF)**
 
@@ -2308,14 +2308,14 @@ Plan run-166 NEXT "audit scanner V1.2 sur 10 annonces Leboncoin **réelles**" : 
 **Run-123 update** : 1ᵉʳ wake post-jalon GSC (run-121 16:24Z) + post-incident Gmail (run-121 16:10Z). Capitalisation propre sur fenêtre d'opportunité ouverte, sans bouger les pièces déjà jouées.
 
 **Actions substantives run-123** :
-1. **Baseline empirique J+0 post-GSC verification** : 2 probes externes immédiats. (a) DDG html `site:bailleurverif.fr` = "No results found" (verbatim, 0 hit, attendu). (b) Bing direct `site:bailleurverif.fr` = bloqué captcha datacenter IP (mesure indéterminable côté agent). Bing accessible via `christian@mobula.io` Bing Webmaster Tools côté Florian, mais TODO-17 Bing version pas urgent (Google = 92% trafic FR théorique). Baseline J+0 = **0 indexation Google empirique mesurée**. Critic agent mesurera J+1 (≈2026-05-17T16:24Z), J+3 (2026-05-19), J+7 (2026-05-23), J+30 (2026-06-15).
-2. **Research SMTP alternatives post-Gmail-disabled** (cartographie comparative 5 providers, sans signup). Substantive deliverable `research-notes.md` section run-123 : OVH Email Pro 1,91€/mo TTC France RGPD-native unlimited SMTP **★★★ recommandé** vs Brevo 300/j free FR vs Mailjet 200/j 6000/mo free FR vs Resend 100/j US vs SendGrid 100/j US. 2-tier strategy : Tier 1 OVH humain `contact@bailleurverif.fr` immédiat, Tier 2 transactionnel Brevo si signups_24h > 50 (futur). Tier zéro : OVH catch-all gratuit (forward `christian@mobula.io`).
+1. **Baseline empirique J+0 post-GSC verification** : 2 probes externes immédiats. (a) DDG html `site:bailleurverif.fr` = "No results found" (verbatim, 0 hit, attendu). (b) Bing direct `site:bailleurverif.fr` = bloqué captcha datacenter IP (mesure indéterminable côté agent). Bing accessible via `florian.demartini.dev@gmail.com` Bing Webmaster Tools côté Florian, mais TODO-17 Bing version pas urgent (Google = 92% trafic FR théorique). Baseline J+0 = **0 indexation Google empirique mesurée**. Critic agent mesurera J+1 (≈2026-05-17T16:24Z), J+3 (2026-05-19), J+7 (2026-05-23), J+30 (2026-06-15).
+2. **Research SMTP alternatives post-Gmail-disabled** (cartographie comparative 5 providers, sans signup). Substantive deliverable `research-notes.md` section run-123 : OVH Email Pro 1,91€/mo TTC France RGPD-native unlimited SMTP **★★★ recommandé** vs Brevo 300/j free FR vs Mailjet 200/j 6000/mo free FR vs Resend 100/j US vs SendGrid 100/j US. 2-tier strategy : Tier 1 OVH humain `contact@bailleurverif.fr` immédiat, Tier 2 transactionnel Brevo si signups_24h > 50 (futur). Tier zéro : OVH catch-all gratuit (forward `florian.demartini.dev@gmail.com`).
 3. **TODO-21 ★★ ajouté** dans `florian-todos.md` : 2 options (A=OVH Email Pro 1,91€/mo / B=catch-all forward 0€), 2-5 min Florian, débloque outbound presse FR + branding `contact@bailleurverif.fr`. TODO-20 marqué DEAD (remplacé par TODO-21). Self-discipline préservée : agent ne crée pas le compte, Florian via UI OVH.
 
 **KPIs run-123** :
 - **google_property_verified=true** ✅ (TODO-17 DONE depuis run-121 16:24Z)
 - **gsc_urls_discovered_initial=103** ✅ (sitemap.xml soumis 2ᵉ tentative OK)
-- **gsc_owner_account=christian@mobula.io** (pivot post-disabled bailleurverif.contact)
+- **gsc_owner_account=florian.demartini.dev@gmail.com** (pivot post-disabled bailleurverif.contact)
 - **gsc_verification_file_on_vps=googleadcc8fd7871ecbd5.html** (NE PAS SUPPRIMER)
 - **google_indexed_verified_j0_post_gsc=0** (probe DDG html 16:35Z = 0, baseline J+0)
 - **bing_indexed_verified_j0=indeterminable** (captcha datacenter)
@@ -2334,17 +2334,17 @@ Plan run-166 NEXT "audit scanner V1.2 sur 10 annonces Leboncoin **réelles**" : 
 **Run-122 update** : remédiation artefacts run-121. **🚨 INCIDENT run-121 (2026-05-16T16:08-16:10Z, parallel agent PID 828515)** : agent run-121 lancé en parallèle sur briefing utilisateur direct "débloque TODO-17 GSC en autonome" → poussé tab Chrome browser-bridge jusqu'à challenge SMS 2FA Google → écran « **Your account has been disabled** » sur `bailleurverif.contact@gmail.com`. **Compte désactivé par Google le 2026-05-15** pour "multi-account / policy violation / bot-like activity". Cause probable honnête : 119 wakes d'activité agent automatisée sur ce compte depuis IP datacenter OVH 217.182.171.135 (signups multi-plateformes, recaptcha récurrents, navigation browser-bridge). Limite suppression Google : 2027-04-10. Step 2/3 appeal flow accessible (textarea 1000 chars).
 
 **Impact incident** :
-- ❌ **TODO-17 GSC via ce compte = MORT** → pivot Option A : utiliser `christian@mobula.io` (compte perso Florian) pour propriété GSC (n'importe quel compte Google fonctionne).
+- ❌ **TODO-17 GSC via ce compte = MORT** → pivot Option A : utiliser `florian.demartini.dev@gmail.com` (compte perso Florian) pour propriété GSC (n'importe quel compte Google fonctionne).
 - ❌ **TODO-20 Gmail App Password SMTP = MORT** (archivé florian-todos.md).
 - ❌ **TODO-18 Gmail MCP create_draft = MORT** (archivé).
 - ⚠️ Signups OAuth-Google sur autres plateformes (NPM/Zenodo/etc.) potentiellement orphelins (audit Branche D run-123).
 - ✅ **INTACTS** : Wayback (DR 93 backlinks préservés), IndexNow clé serveur indépendante, domain `bailleurverif.fr` + VPS + wedge-tool, repo prêt Creariax5/bailleurverif, open-data CSV/JSON/README CC-BY-4.0, Dataset Search markup schema.org/Dataset, sitemap 99 URLs, referral program live, signup form 53 pages.
 
 **Action run-121** (parallel agent) :
-- ✅ Posté inbox.md 16:10Z (3 options A=christian@mobula.io ★★★, B=appeal flow Step 2/3 <30% proba, C=Google Workspace ~6€/mois).
+- ✅ Posté inbox.md 16:10Z (3 options A=florian.demartini.dev@gmail.com ★★★, B=appeal flow Step 2/3 <30% proba, C=Google Workspace ~6€/mois).
 - ✅ Écrit 6 entrées ledger.md run-121 (CONTEXT/ACT/METRIC/INCIDENT/IMPACT/PIVOT/DISCIPLINE/NEXT).
 - ✅ Sauvegardé memory entry `project_google_account_disabled.md` + index MEMORY.md.
-- ✅ Mis à jour `florian-todos.md` : TODO-17 reformulé via christian@mobula.io, TODO-18+20 marqués DEAD, garde gh auth login + Show HN + presse FR.
+- ✅ Mis à jour `florian-todos.md` : TODO-17 reformulé via florian.demartini.dev@gmail.com, TODO-18+20 marqués DEAD, garde gh auth login + Show HN + presse FR.
 - ❌ NON mis à jour : state.md, metrics.json, runs/run-N.md.
 - 🎯 Self-discipline déclarée : aucun nouveau signup automatisé sur quelque plateforme avec quelque email jusqu'à validation explicite Florian. À documenter HUMAN_DIRECTIVE si validé Florian.
 

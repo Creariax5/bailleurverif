@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Changelog réglementaire — alertes lois logement, bail, DPE, loyer | BailleurVérif</title>
+<meta name="description" content="Suivi automatique du Journal Officiel : tous les arrêtés, décrets, lois récents qui impactent les bailleurs et locataires (encadrement loyer, DPE, bail, préavis). Mise à jour quotidienne, source DILA gouv.fr.">
+<link rel="canonical" href="https://bailleurverif.fr/changelog.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Changelog réglementaire — JO logement bail DPE loyer | BailleurVérif">
+<meta property="og:description" content="Surveillance automatique du Journal Officiel pour bailleurs et locataires. Mise à jour quotidienne.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bailleurverif.fr/changelog.html">
+<meta property="og:site_name" content="BailleurVérif">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://bailleurverif.fr/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BailleurVérif — Conformité location 2026 : DPE, encadrement, Loi Climat">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Changelog réglementaire — JO logement bail DPE loyer | BailleurVérif">
+<meta name="twitter:description" content="Surveillance du Journal Officiel : arrêtés, décrets, lois impactant bailleurs/locataires. Mise à jour quotidienne.">
+<meta name="twitter:image" content="https://bailleurverif.fr/og-image.png">
+<link rel="stylesheet" href="/css/main.css">
+<script src="/css/tailwind-runtime.js"></script>
+<style>
+  .topic-pill { display:inline-block; padding:2px 9px; border-radius:999px; font-size:11px; font-weight:600; letter-spacing:.02em; text-transform:uppercase; border:1px solid var(--border); background:var(--bg-hover); color:var(--text-secondary); margin-right:4px; }
+  .topic-pill.dpe-bailleur { background:#fff5e1; color:#a55a00; border-color:#f0c98a; }
+  .topic-pill.loyer-legal { background:#e6f0ff; color:#0a4ea2; border-color:#a3c3ed; }
+  .topic-pill.preavis { background:#f0e8ff; color:#5b2a9a; border-color:#cab9ed; }
+  .topic-pill.veille-reglementaire { background:#e6f5ed; color:#0a6b3a; border-color:#a3d8b9; }
+  .topic-pill.mon-bien { background:#fde7f0; color:#a02457; border-color:#f3b3cc; }
+  .topic-pill.aides-financieres { background:#fef8d9; color:#7a5a00; border-color:#e8d272; }
+  .nature-badge { display:inline-block; padding:2px 8px; border-radius:6px; font-size:11px; font-weight:600; letter-spacing:.04em; background:var(--bg-secondary); color:var(--text-secondary); border:1px solid var(--border); }
+  .timeline-entry { padding:18px 0; border-bottom:1px solid var(--border); }
+  .timeline-entry:last-child { border-bottom:0; }
+  .timeline-date { font-size:13px; font-weight:600; color:var(--text-secondary); letter-spacing:.04em; }
+  .timeline-titre { font-size:15px; line-height:1.45; margin:6px 0; color:var(--text-primary); }
+  .timeline-meta { font-size:12px; color:var(--text-secondary); }
+  .timeline-meta a { color:var(--accent); text-decoration:underline; }
+  .filter-bar { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:14px; }
+  .filter-bar button { font-size:12.5px; padding:6px 12px; border-radius:999px; border:1px solid var(--border); background:var(--bg-card); color:var(--text-secondary); cursor:pointer; font-weight:600; }
+  .filter-bar button.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .filter-bar button:hover:not(.on) { background:var(--bg-hover); }
+  .poll-banner { display:flex; gap:8px; flex-wrap:wrap; align-items:baseline; font-size:12px; color:var(--text-secondary); padding:8px 12px; background:var(--bg-secondary); border:1px solid var(--border); border-radius:8px; margin-bottom:14px; }
+  .poll-banner .dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#16a34a; }
+  .skeleton { background: linear-gradient(90deg, #f1f5f9, #e2e8f0, #f1f5f9); background-size: 200% 100%; animation: skel 1.4s infinite linear; border-radius: 8px; }
+  @keyframes skel { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+</style>
+</head>
+<body class="min-h-screen">
+
+<header class="bv-header">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="bv-logo">
+      <span class="bv-logo-mark">✓</span>
+      <span>BailleurVérif</span>
+    </a>
+    <nav class="flex items-center gap-4 text-sm">
+      <a href="/mon-bien.html" class="text-[color:var(--accent)] hover:underline font-semibold">Mon bien</a>
+      <a href="/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">Quiz</a>
+      <a href="/blog/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Guides</a>
+      <a href="/preavis-bail.html" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Préavis</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <section id="hero" class="mb-6 sm:mb-8">
+    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-3" style="color:var(--text-primary)">
+      Changelog réglementaire
+    </h1>
+    <p class="text-lg" style="color:var(--text-secondary)">
+      Tous les arrêtés, décrets, lois publiés au <strong>Journal Officiel</strong> qui impactent
+      bailleurs et locataires. Surveillance automatique, filtré par mots-clés
+      (loyer, encadrement, DPE, bail, préavis, logement&nbsp;social, déficit&nbsp;foncier…). Source officielle&nbsp;: DILA gouv.fr.
+    </p>
+  </section>
+
+  <aside class="poll-banner" aria-label="État de la surveillance">
+    <span class="dot" aria-hidden="true"></span>
+    <span>Surveillance active</span>
+    <span>·</span>
+    <span id="poll-last-run">…</span>
+    <span>·</span>
+    <span id="poll-tarballs">…</span>
+    <span>·</span>
+    <a href="/api/changelog" class="underline" style="color:var(--accent)">JSON brut</a>
+  </aside>
+
+  <nav class="filter-bar" aria-label="Filtrer par sujet">
+    <button data-topic="all" class="on">Tous</button>
+    <button data-topic="dpe-bailleur">DPE bailleur</button>
+    <button data-topic="loyer-legal">Loyer / encadrement</button>
+    <button data-topic="preavis">Préavis / bail</button>
+    <button data-topic="veille-reglementaire">Veille générale</button>
+    <button data-topic="aides-financieres">Aides financières</button>
+    <button data-topic="mon-bien">Mon bien (fiscalité)</button>
+  </nav>
+
+  <section id="timeline" aria-live="polite">
+    <div class="skeleton" style="height:60px;margin-bottom:8px"></div>
+    <div class="skeleton" style="height:60px;margin-bottom:8px"></div>
+    <div class="skeleton" style="height:60px"></div>
+  </section>
+
+  <p id="empty-msg" class="hidden" style="font-size:14px;color:var(--text-secondary);background:var(--bg-secondary);padding:14px 16px;border-radius:10px;border:1px solid var(--border)">
+    Aucun texte du <em>Journal Officiel</em> n'a matché ce filtre dans la fenêtre courante (90 jours scannés).
+    Ce silence est normal&nbsp;: tous les jours, le JO publie 5 à 50 textes mais peu concernent l'immobilier locatif directement.
+    Revenez demain — la surveillance tourne chaque heure.
+  </p>
+
+  <section class="mt-10" style="background:var(--bg-secondary);padding:18px 20px;border-radius:14px;border:1px solid var(--border)">
+    <h2 style="font-size:1.05rem;font-weight:700;margin:0 0 8px;color:var(--text-primary)">
+      Recevez chaque mise à jour par email
+    </h2>
+    <p style="font-size:13.5px;margin:0 0 12px;color:var(--text-secondary)">
+      Un email par changement officiel pertinent. Pas de spam, pas de pub. Désinscription en 1 clic, droit à l'oubli RGPD&nbsp;30j.
+    </p>
+    <form id="bv-subscribe-form" data-topic="veille-reglementaire" data-source="changelog.html">
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <input type="email" name="email" required placeholder="vous@email.fr"
+               style="flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;color:var(--text-primary);background:var(--bg-card)">
+        <button type="submit"
+                style="padding:9px 18px;background:var(--accent);color:#fff;border:0;border-radius:8px;font-weight:600;font-size:14px;cursor:pointer">
+          M'abonner
+        </button>
+      </div>
+      <label style="display:flex;gap:8px;align-items:flex-start;font-size:12.5px;color:var(--text-secondary);margin-top:10px">
+        <input type="checkbox" name="consent" required style="margin-top:3px">
+        <span>J'accepte de recevoir un email à chaque changement réglementaire détecté. Je peux me désinscrire à tout moment via le lien en pied d'email. <a href="/politique-confidentialite.html" style="color:var(--accent);text-decoration:underline">Politique de confidentialité</a>.</span>
+      </label>
+      <p id="bv-sub-msg" style="margin:8px 0 0;font-size:13px"></p>
+    </form>
+  </section>
+
+  <section class="mt-8" style="font-size:13px;color:var(--text-secondary)">
+    <h2 style="font-size:1rem;font-weight:600;margin:0 0 8px;color:var(--text-primary)">Comment ça marche</h2>
+    <ol style="margin:0 0 0 18px;padding:0;line-height:1.6">
+      <li>BailleurVérif télécharge chaque jour les archives JORF publiées par la <a href="https://echanges.dila.gouv.fr/OPENDATA/JORF/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">DILA</a> (Direction de l'information légale et administrative).</li>
+      <li>Chaque texte (arrêté, décret, loi) est scanné par mots-clés couvrant loyer, encadrement, DPE, bail, préavis, copropriété, logement social, déficit foncier.</li>
+      <li>Les matches sont rangés par topic et persistés dans un journal append-only (déduplication CID + NOR).</li>
+      <li>Vous pouvez vous abonner par email à un ou plusieurs topics : un email automatique vous prévient à chaque nouveau changement.</li>
+    </ol>
+  </section>
+
+  <section class="mt-6" style="font-size:12.5px;color:var(--text-secondary);padding:12px 14px;background:var(--bg-secondary);border-radius:10px;border:1px solid var(--border)">
+    <strong>Limites de l'outil (honnêteté)</strong> :
+    Le JO est exhaustif sur les textes nationaux mais ne couvre pas les arrêtés municipaux/préfectoraux (publiés au BODI/BALO local).
+    Les modifications par incorporation d'articles ne déclenchent pas toujours d'entrée TITRE distincte dans le JO.
+    Les classifications par topic reposent sur des mots-clés — un texte ambigu peut être mal-classé.
+    En cas de doute, vérifiez la source officielle Légifrance avant d'agir.
+  </section>
+
+</main>
+
+<footer class="bv-footer mt-12">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-6 text-center" style="font-size:12px;color:var(--text-secondary)">
+    BailleurVérif — outil gratuit, sources publiques (DILA gouv.fr).
+    <a href="/" style="color:var(--accent);text-decoration:underline">Accueil</a> ·
+    <a href="/mon-bien.html" style="color:var(--accent);text-decoration:underline">Mon bien</a> ·
+    <a href="/preavis-bail.html" style="color:var(--accent);text-decoration:underline">Préavis</a> ·
+    <a href="/blog/" style="color:var(--accent);text-decoration:underline">Guides</a>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Dataset",
+  "name":"Changelog réglementaire bailleurs — Journal Officiel surveillé",
+  "description":"Dataset agrégeant les textes du Journal Officiel français impactant les bailleurs et locataires (DPE, encadrement loyer, préavis, aides rénovation). Détection automatique depuis DILA OPENDATA, mise à jour toutes les 30 minutes.",
+  "url":"https://bailleurverif.fr/changelog.html",
+  "sameAs":"https://bailleurverif.fr/api/changelog",
+  "inLanguage":"fr-FR",
+  "keywords":["DPE","encadrement loyer","bail","préavis","MaPrimeRénov","CEE","FEEBAT","PROFEEL","Journal Officiel","bailleur","locataire"],
+  "license":"https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+  "creator":{"@id":"https://bailleurverif.fr/#organization","@type":"Organization","name":"BailleurVérif","url":"https://bailleurverif.fr"},
+  "isBasedOn":{"@type":"Dataset","name":"DILA OPENDATA Journal Officiel","url":"https://echanges.dila.gouv.fr/OPENDATA/JORF/"},
+  "distribution":[{
+    "@type":"DataDownload",
+    "encodingFormat":"application/json",
+    "contentUrl":"https://bailleurverif.fr/api/changelog"
+  }],
+  "isPartOf":{"@id":"https://bailleurverif.fr/#website"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "@id":"https://bailleurverif.fr/#website",
+  "url":"https://bailleurverif.fr/",
+  "name":"BailleurVérif",
+  "alternateName":"BailleurVerif",
+  "description":"Vérification conformité bailleur 2026 + 17 outils gratuits FR (DPE, encadrement, anti-fraude, charges, colocation, aides)",
+  "inLanguage":"fr-FR",
+  "publisher":{"@id":"https://bailleurverif.fr/#organization"},
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":{"@type":"EntryPoint","urlTemplate":"https://bailleurverif.fr/?q={search_term_string}"},
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Changelog réglementaire — BailleurVérif",
+  "url":"https://bailleurverif.fr/changelog.html",
+  "description":"Surveillance automatique du Journal Officiel pour les bailleurs et locataires.",
+  "inLanguage":"fr-FR",
+  "isPartOf":{"@id":"https://bailleurverif.fr/#website"},
+  "publisher":{"@id":"https://bailleurverif.fr/#organization","@type":"Organization","name":"BailleurVérif"}
+}
+</script>
+
+<script>
+(function(){
+  var TOPIC_LABEL = {
+    'dpe-bailleur': 'DPE bailleur',
+    'loyer-legal': 'Loyer / encadrement',
+    'preavis': 'Préavis / bail',
+    'veille-reglementaire': 'Veille générale',
+    'aides-financieres': 'Aides financières',
+    'mon-bien': 'Mon bien',
+  };
+  var NATURE_LABEL = {
+    'LOI':'Loi','DECRET':'Décret','ARRETE':'Arrêté','ORDONNANCE':'Ordonnance','DECISION':'Décision','AVIS':'Avis','CIRCULAIRE':'Circulaire'
+  };
+  function escHtml(s){ return String(s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+  function fmtDate(s){ if(!s||s.length<10) return s||''; var p=s.split('-'); return p[2]+'/'+p[1]+'/'+p[0]; }
+
+  function render(entries, total){
+    var box = document.getElementById('timeline');
+    var empty = document.getElementById('empty-msg');
+    if (!entries.length){ box.innerHTML=''; empty.classList.remove('hidden'); return; }
+    empty.classList.add('hidden');
+    var html = '';
+    entries.forEach(function(e){
+      var pills = (e.topics||[]).map(function(t){
+        return '<span class="topic-pill '+escHtml(t)+'">'+escHtml(TOPIC_LABEL[t]||t)+'</span>';
+      }).join('');
+      var nat = NATURE_LABEL[e.nature] || e.nature || '—';
+      var link = e.eli_url ? '<a href="'+escHtml(e.eli_url)+'" target="_blank" rel="noopener nofollow">Texte officiel ↗</a>' : '';
+      var ministere = e.ministere ? ' · '+escHtml(e.ministere) : '';
+      html += '<article class="timeline-entry">'+
+        '<div class="timeline-date">'+escHtml(fmtDate(e.date_publi))+' · <span class="nature-badge">'+escHtml(nat)+'</span></div>'+
+        '<p class="timeline-titre">'+escHtml(e.titre)+'</p>'+
+        '<div>'+pills+'</div>'+
+        '<div class="timeline-meta">'+
+          (e.num_jo ? 'JORF n°'+escHtml(e.num_jo)+' · ' : '')+
+          (e.date_signature ? 'Signé le '+escHtml(fmtDate(e.date_signature))+' · ' : '')+
+          link+
+          ministere+
+        '</div>'+
+      '</article>';
+    });
+    box.innerHTML = html;
+  }
+
+  function renderPollState(p){
+    if(!p) return;
+    var last = p.last_run_at || '—';
+    var nice = last;
+    try {
+      var d = new Date(last);
+      if(!isNaN(d.getTime())){
+        var diff = Math.max(0, Math.round((Date.now()-d.getTime())/60000));
+        nice = diff<2 ? 'à l’instant' : diff<60 ? 'il y a '+diff+' min' : 'il y a '+Math.round(diff/60)+' h';
+      }
+    } catch(e){}
+    document.getElementById('poll-last-run').textContent = 'Dernier scan : '+nice;
+    document.getElementById('poll-tarballs').textContent = (p.tarballs_seen_lifetime||0)+' archives JORF surveillées';
+  }
+
+  function load(topic){
+    var url = '/api/changelog?limit=80'+(topic && topic!=='all' ? '&topic='+encodeURIComponent(topic) : '');
+    document.getElementById('timeline').innerHTML =
+      '<div class="skeleton" style="height:60px;margin-bottom:8px"></div>'+
+      '<div class="skeleton" style="height:60px;margin-bottom:8px"></div>'+
+      '<div class="skeleton" style="height:60px"></div>';
+    fetch(url).then(function(r){return r.json();}).then(function(j){
+      if(!j || !j.ok){ document.getElementById('timeline').innerHTML='<p style="color:#b91c1c">Erreur de chargement. Réessayez.</p>'; return; }
+      render(j.entries||[], j.total_matching);
+      renderPollState(j.poll_state);
+    }).catch(function(){
+      document.getElementById('timeline').innerHTML='<p style="color:#b91c1c">Erreur réseau. Réessayez.</p>';
+    });
+  }
+
+  document.querySelectorAll('.filter-bar button').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('.filter-bar button').forEach(function(x){x.classList.remove('on');});
+      b.classList.add('on');
+      load(b.dataset.topic);
+    });
+  });
+
+  // Subscribe form (réutilise infra run-108)
+  var form = document.getElementById('bv-subscribe-form');
+  if(form){
+    form.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      var msg = document.getElementById('bv-sub-msg');
+      var email = form.email.value.trim();
+      var consent = form.consent.checked;
+      if(!email || !consent){
+        msg.style.color='#b91c1c';
+        msg.textContent='Email et consentement requis.';
+        return;
+      }
+      msg.style.color='var(--text-secondary)';
+      msg.textContent='Inscription en cours…';
+      fetch('/api/subscribe', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({email:email, topic:form.dataset.topic, source:form.dataset.source, consent:true})
+      }).then(function(r){return r.json();}).then(function(j){
+        if(j.ok){
+          msg.style.color='#15803d';
+          msg.textContent='✓ Email envoyé. Cliquez sur le lien de confirmation que vous allez recevoir.';
+          form.reset();
+        } else {
+          msg.style.color='#b91c1c';
+          msg.textContent='Erreur : '+(j.error||'inconnue');
+        }
+      }).catch(function(){
+        msg.style.color='#b91c1c';
+        msg.textContent='Erreur réseau, réessayez.';
+      });
+    });
+  }
+
+  // Topic from URL query
+  var urlTopic = (new URLSearchParams(window.location.search)).get('topic') || 'all';
+  var btn = document.querySelector('.filter-bar button[data-topic="'+urlTopic+'"]') || document.querySelector('.filter-bar button[data-topic="all"]');
+  if(btn){ document.querySelectorAll('.filter-bar button').forEach(function(x){x.classList.remove('on');}); btn.classList.add('on'); }
+  load(urlTopic);
+})();
+</script>
+</body>
+</html>

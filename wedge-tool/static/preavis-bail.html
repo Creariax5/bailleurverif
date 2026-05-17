@@ -12,7 +12,12 @@
 <meta property="og:url" content="https://bailleurverif.fr/preavis-bail.html" />
 <meta property="og:site_name" content="BailleurVérif" />
 <meta property="og:locale" content="fr_FR" />
-<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="https://bailleurverif.fr/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="BailleurVérif — Conformité location 2026 : DPE, encadrement, Loi Climat" />
+<meta name="twitter:image" content="https://bailleurverif.fr/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Préavis bail 2026 — 1 mois ou 3 mois ?" />
 <meta name="twitter:description" content="Calculateur gratuit : durée préavis locataire/bailleur, zone tendue, bail nu/meublé. Modèle LRAR fourni." />
 <link rel="alternate" type="application/atom+xml" title="BailleurVérif — Articles" href="/atom.xml" />
@@ -35,13 +40,13 @@
 {"@type":"Question","name":"Le bailleur peut-il donner congé à tout moment ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le bailleur ne peut donner congé qu'à l'échéance du bail (3 ans pour un nu, 1 an pour un meublé), avec un préavis de 6 mois (nu) ou 3 mois (meublé) et un motif légitime : reprise, vente, ou motif sérieux."}},
 {"@type":"Question","name":"Quels motifs réduisent le préavis du locataire à 1 mois ?","acceptedAnswer":{"@type":"Answer","text":"Mutation professionnelle, perte d'emploi, nouvel emploi suite à perte d'emploi, premier emploi, état de santé exigeant un déménagement (sur certificat médical), bénéficiaires du RSA ou de l'AAH, et attribution d'un logement social."}}
 ]},
-{"@type":"Organization","@id":"https://bailleurverif.fr/#organization","name":"BailleurVérif","url":"https://bailleurverif.fr","logo":{"@type":"ImageObject","url":"https://bailleurverif.fr/logo.png"}},
-{"@type":"WebSite","@id":"https://bailleurverif.fr/#website","url":"https://bailleurverif.fr","name":"BailleurVérif","inLanguage":"fr-FR","publisher":{"@id":"https://bailleurverif.fr/#organization"}}
+{"@type":"Organization","@id":"https://bailleurverif.fr/#organization","name":"BailleurVérif","url":"https://bailleurverif.fr","logo":{"@type":"ImageObject","url":"https://bailleurverif.fr/logo.png"},"sameAs":["https://github.com/Creariax5/bailleurverif"]},
+{"@type":"WebSite","@id":"https://bailleurverif.fr/#website","url":"https://bailleurverif.fr","name":"BailleurVérif","inLanguage":"fr-FR","publisher":{"@id":"https://bailleurverif.fr/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://bailleurverif.fr/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
 ]}</script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="theme-color" content="#ffffff" />
 <link rel="stylesheet" href="/css/main.css" />
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="/css/tailwind-runtime.js"></script>
 <style>
   table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
   td, th { padding: 0.6rem; border: 1px solid var(--border); }
@@ -62,7 +67,7 @@
 <header class="border-b border-slate-200">
   <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-2">
     <a href="/" class="text-sm text-slate-600 hover:text-slate-900">← BailleurVérif</a>
-    <a href="/" class="text-xs px-3 py-1.5 rounded-lg bg-blue-700 hover:bg-blue-800 text-slate-900 font-semibold">
+    <a href="/" class="text-xs px-3 py-1.5 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold">
       Outils gratuits · 30 sec →
     </a>
   </div>
@@ -130,7 +135,7 @@
     <label class="block text-xs uppercase tracking-wider text-slate-600 mb-1">Date de réception de la LRAR par le destinataire</label>
     <input id="pb-date" type="date" class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 mb-4" />
 
-    <button id="pb-go" class="w-full px-4 py-3 rounded-lg bg-blue-700 hover:bg-blue-800 text-slate-900 font-semibold transition">
+    <button id="pb-go" class="w-full px-4 py-3 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold transition">
       Calculer mon préavis →
     </button>
   </div>
@@ -213,14 +218,71 @@
     <div class="text-[11px] uppercase tracking-widest text-blue-700 mb-2">Bonus · Outil gratuit · 30 sec</div>
     <p class="text-lg md:text-xl font-semibold text-slate-900 mb-3">Bailleur ? Vérifiez aussi la conformité de votre loyer en 30 secondes</p>
     <p class="text-sm text-slate-700 mb-4">5 questions : encadrement loyer, DPE, diagnostics Alur. Verdict immédiat ✅ / ⚠️ / 🚫. Aucune inscription requise.</p>
-    <a href="/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-700 hover:bg-blue-800 text-slate-900 font-semibold text-sm transition">
+    <a href="/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold text-sm transition">
       Vérifier mon bail →
     </a>
     <span class="text-xs text-slate-500 ml-3">gratuit · sans inscription</span>
   </aside>
 
+  <h2 class="text-2xl font-bold text-slate-900 mt-10 mb-3 leading-tight" id="par-ville">Préavis par ville · 50 communes</h2>
+  <p class="text-sm text-slate-600 mb-4">Page dédiée par commune (statut zone tendue, durée préavis, simulateur date butoir, modèle LRAR pré-rempli). <strong class="text-emerald-700">30</strong> villes en <strong>zone tendue</strong> (préavis locataire 1 mois) · <strong>20</strong> <strong>hors zone</strong> (3 mois).</p>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1 text-sm mb-8">
+    <a href="/preavis-bail-aix-en-provence.html" class="text-blue-700 hover:underline whitespace-nowrap">Aix-en-Provence <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-amiens.html" class="text-blue-700 hover:underline whitespace-nowrap">Amiens <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-angers.html" class="text-blue-700 hover:underline whitespace-nowrap">Angers <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-annecy.html" class="text-blue-700 hover:underline whitespace-nowrap">Annecy <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-argenteuil.html" class="text-blue-700 hover:underline whitespace-nowrap">Argenteuil <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-asnieres-sur-seine.html" class="text-blue-700 hover:underline whitespace-nowrap">Asnières-sur-Seine <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-aubervilliers.html" class="text-blue-700 hover:underline whitespace-nowrap">Aubervilliers <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-avignon.html" class="text-blue-700 hover:underline whitespace-nowrap">Avignon <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-besancon.html" class="text-blue-700 hover:underline whitespace-nowrap">Besançon <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-bordeaux.html" class="text-blue-700 hover:underline whitespace-nowrap">Bordeaux <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-boulogne-billancourt.html" class="text-blue-700 hover:underline whitespace-nowrap">Boulogne-Billancourt <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-brest.html" class="text-blue-700 hover:underline whitespace-nowrap">Brest <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-caen.html" class="text-blue-700 hover:underline whitespace-nowrap">Caen <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-clermont-ferrand.html" class="text-blue-700 hover:underline whitespace-nowrap">Clermont-Ferrand <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-colombes.html" class="text-blue-700 hover:underline whitespace-nowrap">Colombes <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-creteil.html" class="text-blue-700 hover:underline whitespace-nowrap">Créteil <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-dijon.html" class="text-blue-700 hover:underline whitespace-nowrap">Dijon <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-dunkerque.html" class="text-blue-700 hover:underline whitespace-nowrap">Dunkerque <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-grenoble.html" class="text-blue-700 hover:underline whitespace-nowrap">Grenoble <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-le-havre.html" class="text-blue-700 hover:underline whitespace-nowrap">Le Havre <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-le-mans.html" class="text-blue-700 hover:underline whitespace-nowrap">Le Mans <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-lille.html" class="text-blue-700 hover:underline whitespace-nowrap">Lille <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-limoges.html" class="text-blue-700 hover:underline whitespace-nowrap">Limoges <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-lyon.html" class="text-blue-700 hover:underline whitespace-nowrap">Lyon <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-marseille.html" class="text-blue-700 hover:underline whitespace-nowrap">Marseille <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-metz.html" class="text-blue-700 hover:underline whitespace-nowrap">Metz <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-montpellier.html" class="text-blue-700 hover:underline whitespace-nowrap">Montpellier <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-mulhouse.html" class="text-blue-700 hover:underline whitespace-nowrap">Mulhouse <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-nancy.html" class="text-blue-700 hover:underline whitespace-nowrap">Nancy <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-nantes.html" class="text-blue-700 hover:underline whitespace-nowrap">Nantes <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-nice.html" class="text-blue-700 hover:underline whitespace-nowrap">Nice <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-nimes.html" class="text-blue-700 hover:underline whitespace-nowrap">Nîmes <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-orleans.html" class="text-blue-700 hover:underline whitespace-nowrap">Orléans <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-paris.html" class="text-blue-700 hover:underline whitespace-nowrap">Paris <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-perpignan.html" class="text-blue-700 hover:underline whitespace-nowrap">Perpignan <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-poitiers.html" class="text-blue-700 hover:underline whitespace-nowrap">Poitiers <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-reims.html" class="text-blue-700 hover:underline whitespace-nowrap">Reims <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-rennes.html" class="text-blue-700 hover:underline whitespace-nowrap">Rennes <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-roubaix.html" class="text-blue-700 hover:underline whitespace-nowrap">Roubaix <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-rouen.html" class="text-blue-700 hover:underline whitespace-nowrap">Rouen <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-saint-denis.html" class="text-blue-700 hover:underline whitespace-nowrap">Saint-Denis <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-saint-etienne.html" class="text-blue-700 hover:underline whitespace-nowrap">Saint-Étienne <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-strasbourg.html" class="text-blue-700 hover:underline whitespace-nowrap">Strasbourg <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-toulon.html" class="text-blue-700 hover:underline whitespace-nowrap">Toulon <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-toulouse.html" class="text-blue-700 hover:underline whitespace-nowrap">Toulouse <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-tourcoing.html" class="text-blue-700 hover:underline whitespace-nowrap">Tourcoing <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-tours.html" class="text-blue-700 hover:underline whitespace-nowrap">Tours <span class="text-slate-500">·3mo</span></a>
+    <a href="/preavis-bail-versailles.html" class="text-blue-700 hover:underline whitespace-nowrap">Versailles <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-villeurbanne.html" class="text-blue-700 hover:underline whitespace-nowrap">Villeurbanne <span class="text-emerald-700 font-medium">·1mo</span></a>
+    <a href="/preavis-bail-vitry-sur-seine.html" class="text-blue-700 hover:underline whitespace-nowrap">Vitry-sur-Seine <span class="text-emerald-700 font-medium">·1mo</span></a>
+  </div>
+
   <h2 class="text-2xl font-bold text-slate-900 mt-10 mb-3 leading-tight">Outils complémentaires</h2>
   <ul class="text-sm text-slate-700 leading-relaxed list-disc pl-5 my-3 space-y-1">
+    <li><a href="/colocation-2026.html" class="text-blue-700 hover:underline font-semibold">👥 Colocation 2026 — quote-part + clause solidarité ALUR (6 mois) + avenant tripartite (nouveau)</a></li>
+    <li><a href="/irl-revision-loyer.html" class="text-blue-700 hover:underline font-semibold">📈 Calculateur IRL — révision annuelle de loyer (nouveau, T1 2026)</a></li>
     <li><a href="/encadrement-loyer-paris-2026.html" class="text-blue-700 hover:underline">Encadrement des loyers à Paris 2026</a></li>
     <li><a href="/encadrement-loyer-lyon-2026.html" class="text-blue-700 hover:underline">Encadrement des loyers à Lyon 2026</a></li>
     <li><a href="/encadrement-loyer-lille-2026.html" class="text-blue-700 hover:underline">Encadrement des loyers à Lille 2026</a></li>
@@ -479,7 +541,7 @@ Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distin
       <div class="text-xs uppercase tracking-widest text-blue-700 mb-2 mt-4">Modèle de lettre LRAR — à copier</div>
       <textarea readonly class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-gray-200 text-xs mb-3" rows="20">${letter}</textarea>
       <div class="flex gap-2 flex-wrap">
-        <button id="pb-copy" class="px-3 py-2 rounded-lg bg-blue-700 hover:bg-blue-800 text-slate-900 font-semibold text-sm">📋 Copier la lettre</button>
+        <button id="pb-copy" class="px-3 py-2 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold text-sm">📋 Copier la lettre</button>
         <a href="/" class="px-3 py-2 rounded-lg border border-slate-300 hover:border-blue-700 text-sm text-slate-700">Vérifier la conformité de mon bail →</a>
       </div>
       <p class="text-xs text-slate-500 mt-3">Information non contractuelle. En cas de doute, consultez l'ADIL de votre département (gratuit).</p>

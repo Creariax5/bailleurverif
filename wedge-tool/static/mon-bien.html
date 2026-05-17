@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Mon bien — Diagnostic adresse instantané (encadrement loyer + DPE voisinage) | BailleurVérif</title>
+<meta name="description" content="Saisissez l'adresse de votre logement : BailleurVérif croise en 5 secondes l'encadrement des loyers, la préfecture compétente et les DPE publics du voisinage (base ADEME). Gratuit, sources gouv.fr.">
+<link rel="canonical" href="https://bailleurverif.fr/mon-bien.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Mon bien — Diagnostic adresse en 5 secondes | BailleurVérif">
+<meta property="og:description" content="Saisissez votre adresse : encadrement loyer, préfecture, DPE voisinage (base ADEME). Gratuit, sources officielles.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bailleurverif.fr/mon-bien.html">
+<meta property="og:site_name" content="BailleurVérif">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://bailleurverif.fr/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BailleurVérif — Conformité location 2026 : DPE, encadrement, Loi Climat">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mon bien — Diagnostic adresse en 5 secondes | BailleurVérif">
+<meta name="twitter:description" content="Encadrement loyer + DPE voisinage croisés à partir de votre adresse. Gratuit, base gouv.fr.">
+<meta name="twitter:image" content="https://bailleurverif.fr/og-image.png">
+<link rel="stylesheet" href="/css/main.css">
+<script src="/css/tailwind-runtime.js"></script>
+<style>
+  .ac-suggest { position: absolute; left: 0; right: 0; top: calc(100% + 4px); background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; box-shadow: var(--shadow-md); max-height: 280px; overflow-y: auto; z-index: 20; }
+  .ac-suggest button { display: block; width: 100%; text-align: left; padding: 10px 14px; font-size: 14px; color: var(--text-primary); background: transparent; border: 0; border-bottom: 1px solid var(--border); cursor: pointer; }
+  .ac-suggest button:last-child { border-bottom: 0; }
+  .ac-suggest button:hover, .ac-suggest button:focus { background: var(--accent-soft); outline: none; }
+  .verdict { border-left: 4px solid; padding: 14px 16px; border-radius: 10px; margin-bottom: 12px; }
+  .verdict.ok { border-color: var(--success); background: var(--success-soft); }
+  .verdict.warn { border-color: var(--warning); background: var(--warning-soft); }
+  .verdict.danger { border-color: var(--danger); background: var(--danger-soft); }
+  .verdict.info { border-color: var(--accent); background: var(--accent-soft); }
+  .verdict h3 { font-size: 1rem; font-weight: 600; margin: 0 0 4px; color: var(--text-primary); }
+  .verdict p { font-size: 0.92rem; color: var(--text-secondary); margin: 0; }
+  .verdict a { color: var(--accent); text-decoration: underline; }
+  .dpe-grid { display: grid; gap: 6px; }
+  .dpe-row { display: grid; grid-template-columns: 36px 1fr 70px 70px; gap: 8px; align-items: center; font-size: 13px; padding: 8px 10px; background: var(--bg-secondary); border-radius: 8px; }
+  .dpe-row.head { background: transparent; font-weight: 600; color: var(--text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; padding-bottom: 0; }
+  .dpe-badge { display: inline-block; min-width: 22px; text-align: center; padding: 2px 6px; border-radius: 4px; font-weight: 700; font-size: 12px; color: #fff; }
+  .dpe-A { background: #1f7c1f; }
+  .dpe-B { background: #38a13c; }
+  .dpe-C { background: #80b14f; }
+  .dpe-D { background: #f0d000; color: #0f172a; }
+  .dpe-E { background: #f0a000; }
+  .dpe-F { background: #e26b3a; }
+  .dpe-G { background: #d92020; }
+  .skeleton { background: linear-gradient(90deg, #f1f5f9, #e2e8f0, #f1f5f9); background-size: 200% 100%; animation: skel 1.4s infinite linear; border-radius: 8px; }
+  @keyframes skel { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  .pill-source { display: inline-block; padding: 3px 9px; background: var(--bg-hover); border: 1px solid var(--border); border-radius: 999px; font-size: 11px; color: var(--text-secondary); margin: 2px 4px 2px 0; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<header class="bv-header">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="bv-logo">
+      <span class="bv-logo-mark">✓</span>
+      <span>BailleurVérif</span>
+    </a>
+    <nav class="flex items-center gap-4 text-sm">
+      <a href="/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">Quiz</a>
+      <a href="/blog/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">Guides</a>
+      <a href="/preavis-bail.html" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Préavis</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <section id="hero" class="mb-6 sm:mb-8">
+    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-3" style="color:var(--text-primary)">
+      Saisissez votre adresse, on vous dit tout.
+    </h1>
+    <p class="text-lg" style="color:var(--text-secondary)">
+      Croisement instantané : <strong>encadrement des loyers</strong>, préfecture compétente, et
+      <strong>DPE publics du voisinage</strong> (base ADEME).
+      Gratuit, sources gouv.fr, aucun cookie tiers.
+    </p>
+  </section>
+
+  <aside class="bv-trust-bar mb-6" aria-label="Sources officielles">
+    <span><strong>Sources&nbsp;:</strong>
+      <a href="https://adresse.data.gouv.fr" rel="noopener" target="_blank">BAN</a> (Etalab) ·
+      <a href="https://data.ademe.fr/datasets/dpe-v2-logements-existants" rel="noopener" target="_blank">ADEME DPE</a> ·
+      Arrêtés préfectoraux 2026 (<a href="/data/">open data</a>)
+    </span>
+    <span class="bv-lock">🔒 Sans compte · Sans cookie tiers · RGPD</span>
+  </aside>
+
+  <section id="lookup" class="bv-card p-5 sm:p-7 mb-6">
+    <form id="lookup-form" autocomplete="off" class="relative">
+      <label for="q-adresse" class="block text-sm font-semibold mb-2" style="color:var(--text-primary)">Adresse du bien</label>
+      <div class="relative">
+        <input id="q-adresse" name="q" type="text" required minlength="4" maxlength="200"
+               class="w-full px-4 py-3 text-base rounded-xl"
+               style="border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary)"
+               placeholder="Ex : 20 avenue de Ségur, 75007 Paris">
+        <div id="ac-suggest" class="ac-suggest" hidden role="listbox" aria-label="Suggestions d'adresses"></div>
+      </div>
+      <div class="mt-3 flex gap-2 items-center">
+        <button id="lookup-submit" type="submit" class="bv-btn">Analyser cette adresse</button>
+        <span class="text-xs" style="color:var(--text-muted)">5 secondes · Aucune sauvegarde côté serveur</span>
+      </div>
+    </form>
+  </section>
+
+  <section id="results" hidden class="mb-8">
+    <div id="results-skeleton" hidden>
+      <div class="skeleton" style="height:64px; margin-bottom:12px"></div>
+      <div class="skeleton" style="height:64px; margin-bottom:12px"></div>
+      <div class="skeleton" style="height:140px"></div>
+    </div>
+    <div id="results-body" hidden>
+      <div id="results-address" class="bv-card p-4 mb-4" style="font-size:0.95rem"></div>
+      <div id="results-verdicts" class="mb-4"></div>
+      <div id="results-dpe" class="bv-card p-4 mb-4" hidden>
+        <h2 class="text-lg font-semibold mb-3" style="color:var(--text-primary)">DPE publics du voisinage</h2>
+        <div id="dpe-table" class="dpe-grid"></div>
+        <p class="text-xs mt-3" style="color:var(--text-muted)">
+          Source : ADEME — base nationale des DPE depuis juillet 2021.
+          Les diagnostics ne sont pas tous publiés (consentement propriétaire). L'absence d'un DPE dans la base ≠ absence de DPE.
+        </p>
+      </div>
+      <div id="results-sources" class="text-sm" style="color:var(--text-secondary)"></div>
+    </div>
+    <div id="results-error" hidden class="verdict danger">
+      <h3>Lookup impossible</h3>
+      <p id="results-error-msg"></p>
+    </div>
+  </section>
+
+  <section id="watch-cta" hidden class="bv-card p-5 sm:p-6 mb-8" style="background:var(--bg-secondary)">
+    <h2 class="text-lg font-semibold mb-1" style="color:var(--text-primary)">Recevoir une alerte si la réglementation change pour ce bien</h2>
+    <p class="text-sm mb-3" style="color:var(--text-secondary)">
+      Nouvelle loi, décret encadrement, calendrier DPE, jurisprudence Cassation : un email dès qu'un changement impacte une adresse identique à la vôtre.
+      <strong>Pas de spam.</strong> Désinscription en 1 clic, droit à l'oubli RGPD.
+      <a href="/changelog.html" class="underline" style="color:var(--accent)">Voir le journal de surveillance (Journal Officiel temps réel) →</a>
+    </p>
+    <form id="watch-form" class="flex flex-col sm:flex-row gap-2 sm:items-end">
+      <div class="flex-1">
+        <label for="watch-email" class="block text-xs mb-1" style="color:var(--text-secondary)">Votre email</label>
+        <input id="watch-email" type="email" required maxlength="200"
+               class="w-full px-3 py-2 text-sm rounded-lg"
+               style="border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary)"
+               placeholder="vous@exemple.fr">
+      </div>
+      <button type="submit" class="bv-btn" id="watch-submit">M'alerter</button>
+    </form>
+    <label class="flex items-start gap-2 mt-3 text-xs" style="color:var(--text-secondary)">
+      <input id="watch-consent" type="checkbox" required class="mt-1">
+      <span>J'accepte de recevoir les alertes par email. Données traitées conformément à la <a href="/politique-confidentialite.html" class="underline">politique de confidentialité</a> ; conservation 24 mois max ; je peux me désinscrire à tout moment.</span>
+    </label>
+    <div id="watch-status" class="text-sm mt-2"></div>
+  </section>
+
+  <section id="howitworks" class="bv-card p-5 sm:p-6 mb-8">
+    <h2 class="text-lg font-semibold mb-3" style="color:var(--text-primary)">Comment ça marche ?</h2>
+    <ol class="list-decimal pl-5 space-y-1.5 text-sm" style="color:var(--text-secondary)">
+      <li><strong>Géocodage</strong> via la <a href="https://adresse.data.gouv.fr" target="_blank" rel="noopener" class="underline">Base Adresse Nationale</a> (Etalab/IGN, gratuite, sans clé).</li>
+      <li><strong>Encadrement loyer</strong> : croisement avec les 31 communes 2026 (Paris, Lille, Lyon, Bordeaux, Plaine Commune, Est Ensemble, Pays Basque, Montpellier, etc.) via notre <a href="/data/" class="underline">open data CC-BY-4.0</a>.</li>
+      <li><strong>DPE voisinage</strong> : interrogation directe de la <a href="https://data.ademe.fr/datasets/dpe-v2-logements-existants" target="_blank" rel="noopener" class="underline">base ADEME DPE</a> (depuis juillet 2021) avec filtre code postal + nom de rue.</li>
+      <li>Verdict synthétique calculé côté serveur, aucune donnée d'adresse stockée.</li>
+    </ol>
+  </section>
+
+  <section id="about" class="text-sm space-y-3 mb-8" style="color:var(--text-secondary)">
+    <h2 class="text-lg font-semibold" style="color:var(--text-primary)">Limites de l'outil</h2>
+    <p><strong>Le DPE de votre bien précis n'est pas systématiquement public</strong> : ADEME publie uniquement les DPE depuis juillet 2021 et avec consentement propriétaire. Notre lookup retourne les DPE des logements voisins (même rue, même code postal), utiles comme estimation de la performance du bâti environnant — pas une preuve juridique pour votre bien.</p>
+    <p><strong>L'encadrement loyer</strong> dépend aussi du type de bail (nu / meublé) et de la zone géographique précise dans la commune. Les plafonds affichés sont les <em>maxima communaux 2026</em> ; le plafond réel applicable à votre bien dépend de l'année de construction, du nombre de pièces et du secteur (zone DRIHL pour Paris).</p>
+    <p><strong>Cet outil est gratuit, informatif</strong>, et ne se substitue pas à un conseil juridique ni à un diagnostic DPE officiel.</p>
+  </section>
+
+</main>
+
+<footer class="bv-footer mt-8 py-8">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+      <div>
+        <div><strong>BailleurVérif</strong> — Outil gratuit · Mis à jour le 2026-05-16</div>
+        <div class="text-xs mt-1" style="color:var(--text-muted)">Aucune création de compte · Aucun cookie tiers · RGPD</div>
+      </div>
+      <nav class="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+        <a href="/mentions-legales.html">Mentions légales</a>
+        <a href="/politique-confidentialite.html">Confidentialité</a>
+        <a href="/cgu.html">CGU</a>
+        <a href="/data/">Open data</a>
+      </nav>
+    </div>
+    <div class="text-xs mt-4 pt-4" style="border-top:1px solid var(--border); color:var(--text-muted)">
+      © 2026 BailleurVérif — Outil informatif, ne se substitue pas à un conseil juridique.
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "BailleurVérif — Mon bien",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "url": "https://bailleurverif.fr/mon-bien.html",
+  "description": "Diagnostic instantané d'une adresse : encadrement des loyers + DPE voisinage (base ADEME) + préfecture compétente.",
+  "inLanguage": "fr",
+  "isAccessibleForFree": true,
+  "provider": { "@id": "https://bailleurverif.fr/#organization" }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://bailleurverif.fr/#website",
+  "url": "https://bailleurverif.fr/",
+  "name": "BailleurVérif",
+  "alternateName": "BailleurVerif",
+  "description": "Vérification conformité bailleur 2026 + 17 outils gratuits FR (DPE, encadrement, anti-fraude, charges, colocation, aides)",
+  "inLanguage": "fr-FR",
+  "publisher": {"@id": "https://bailleurverif.fr/#organization"},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {"@type": "EntryPoint", "urlTemplate": "https://bailleurverif.fr/?q={search_term_string}"},
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script>
+(function(){
+  var inp = document.getElementById('q-adresse');
+  var ac  = document.getElementById('ac-suggest');
+  var form = document.getElementById('lookup-form');
+  var resultsSection = document.getElementById('results');
+  var skel = document.getElementById('results-skeleton');
+  var body = document.getElementById('results-body');
+  var errBox = document.getElementById('results-error');
+  var errMsg = document.getElementById('results-error-msg');
+  var addrBox = document.getElementById('results-address');
+  var verdBox = document.getElementById('results-verdicts');
+  var dpeBox  = document.getElementById('results-dpe');
+  var dpeTable = document.getElementById('dpe-table');
+  var sourcesBox = document.getElementById('results-sources');
+  var watchSection = document.getElementById('watch-cta');
+
+  // --- BAN autocomplete (client-side, no key) ---
+  var acTimer = null;
+  function acFetch(q){
+    if (acTimer) clearTimeout(acTimer);
+    acTimer = setTimeout(function(){
+      fetch('https://api-adresse.data.gouv.fr/search/?q=' + encodeURIComponent(q) + '&limit=5&autocomplete=1')
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          var feats = (d && d.features) || [];
+          if (!feats.length) { ac.hidden = true; return; }
+          ac.innerHTML = '';
+          feats.forEach(function(f){
+            var p = f.properties || {};
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.setAttribute('role', 'option');
+            btn.textContent = p.label || '';
+            btn.addEventListener('mousedown', function(e){ e.preventDefault(); inp.value = p.label || ''; ac.hidden = true; });
+            ac.appendChild(btn);
+          });
+          ac.hidden = false;
+        }).catch(function(){ ac.hidden = true; });
+    }, 180);
+  }
+  inp.addEventListener('input', function(){
+    var v = inp.value.trim();
+    if (v.length < 4) { ac.hidden = true; return; }
+    acFetch(v);
+  });
+  inp.addEventListener('focus', function(){ if (ac.children.length) ac.hidden = false; });
+  inp.addEventListener('blur', function(){ setTimeout(function(){ ac.hidden = true; }, 150); });
+
+  // --- Submit → /api/lookup-adresse ---
+  function severityClass(s){ return ['ok','warn','danger','info'].indexOf(s) >= 0 ? s : 'info'; }
+  function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
+  function dpeBadge(et){ if(!et) return ''; return '<span class="dpe-badge dpe-' + escapeHtml(et) + '">' + escapeHtml(et) + '</span>'; }
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var q = inp.value.trim();
+    if (q.length < 4) return;
+    ac.hidden = true;
+    resultsSection.hidden = false;
+    body.hidden = true;
+    errBox.hidden = true;
+    skel.hidden = false;
+    watchSection.hidden = true;
+    fetch('/api/lookup-adresse?q=' + encodeURIComponent(q))
+      .then(function(r){ return r.json().then(function(j){ return {status:r.status, body:j}; }); })
+      .then(function(res){
+        skel.hidden = true;
+        if (res.status !== 200 || !res.body.ok) {
+          errBox.hidden = false;
+          errMsg.textContent = (res.body && res.body.error) ? res.body.error : ('HTTP ' + res.status);
+          return;
+        }
+        var d = res.body;
+        // Address card
+        var a = d.address || {};
+        addrBox.innerHTML =
+          '<div style="font-weight:600;color:var(--text-primary)">' + escapeHtml(a.label || q) + '</div>' +
+          '<div class="text-xs mt-1" style="color:var(--text-muted)">' +
+            (a.citycode ? 'INSEE ' + escapeHtml(a.citycode) + ' · ' : '') +
+            (a.depcode ? 'Dép. ' + escapeHtml(a.depcode) + ' · ' : '') +
+            (a.lat && a.lon ? ('lat ' + Number(a.lat).toFixed(5) + ', lon ' + Number(a.lon).toFixed(5)) : '') +
+          '</div>';
+        // Verdicts
+        verdBox.innerHTML = '';
+        (d.verdicts || []).forEach(function(v){
+          var div = document.createElement('div');
+          div.className = 'verdict ' + severityClass(v.severity);
+          div.innerHTML =
+            '<h3>' + escapeHtml(v.title) + '</h3>' +
+            '<p>' + escapeHtml(v.text) + (v.source ? ' <a href="' + escapeHtml(v.source) + '" rel="noopener" target="_blank">Source</a>' : '') + '</p>';
+          verdBox.appendChild(div);
+        });
+        // DPE table
+        var dpe = d.dpe_voisinage || {};
+        var rows = dpe.results || [];
+        if (rows.length) {
+          dpeBox.hidden = false;
+          var html = '<div class="dpe-row head"><div>DPE</div><div>Adresse</div><div>Surface</div><div>Date</div></div>';
+          rows.forEach(function(r){
+            html += '<div class="dpe-row">' +
+              '<div>' + dpeBadge(r.etiquette_dpe) + '</div>' +
+              '<div>' + escapeHtml((r.numero || '') + ' ' + (r.rue || '')) + (r.type_batiment ? ' <span style="color:var(--text-muted)">· ' + escapeHtml(r.type_batiment) + '</span>' : '') + '</div>' +
+              '<div>' + (r.surface_m2 ? Math.round(r.surface_m2) + ' m²' : '—') + '</div>' +
+              '<div style="color:var(--text-muted)">' + escapeHtml(r.date_dpe || '—') + '</div>' +
+            '</div>';
+          });
+          dpeTable.innerHTML = html;
+        } else {
+          dpeBox.hidden = true;
+        }
+        // Sources pills
+        var src = d.sources || {};
+        sourcesBox.innerHTML = '<strong style="color:var(--text-primary)">Sources :</strong> ' +
+          Object.keys(src).map(function(k){ return '<span class="pill-source">' + escapeHtml(src[k]) + '</span>'; }).join('');
+        body.hidden = false;
+        // Show watch CTA
+        watchSection.hidden = false;
+        // Save resolved address in dataset for watch form
+        watchSection.dataset.source = a.label || q;
+      })
+      .catch(function(e){
+        skel.hidden = true;
+        errBox.hidden = false;
+        errMsg.textContent = 'Erreur réseau. Réessayez.';
+      });
+  });
+
+  // --- Watch form ---
+  var wForm = document.getElementById('watch-form');
+  var wEmail = document.getElementById('watch-email');
+  var wConsent = document.getElementById('watch-consent');
+  var wStatus = document.getElementById('watch-status');
+  var wBtn = document.getElementById('watch-submit');
+  wForm.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    wStatus.textContent = '';
+    if (!wConsent.checked) { wStatus.className = 'text-sm mt-2 text-amber-700'; wStatus.textContent = 'Cochez la case de consentement.'; return; }
+    wBtn.disabled = true;
+    var source = watchSection.dataset.source || '';
+    fetch('/api/subscribe', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({email: wEmail.value.trim(), topic: 'mon-bien', source: source.slice(0,200), consent: true})
+    }).then(function(r){ return r.json().then(function(j){ return {status:r.status, body:j}; }); })
+      .then(function(res){
+        wBtn.disabled = false;
+        if (res.status === 200 && res.body.already_confirmed) {
+          wStatus.className = 'text-sm mt-2'; wStatus.style.color = 'var(--success)';
+          wStatus.textContent = '✓ Cet email est déjà inscrit aux alertes.';
+          wForm.reset(); return;
+        }
+        if (res.status === 200 && res.body.confirm_url) {
+          wStatus.className = 'text-sm mt-2'; wStatus.style.color = 'var(--success)';
+          wStatus.innerHTML = '✓ Merci. Pour activer, cliquez ce lien : <a class="underline" href="' + res.body.confirm_url + '" rel="noopener">Confirmer mon inscription</a>.';
+          wForm.reset(); return;
+        }
+        if (res.status === 429) {
+          wStatus.className = 'text-sm mt-2'; wStatus.style.color = 'var(--warning)';
+          wStatus.textContent = 'Trop de demandes. Réessayez dans une minute.'; return;
+        }
+        wStatus.className = 'text-sm mt-2'; wStatus.style.color = 'var(--danger)';
+        wStatus.textContent = (res.body && res.body.error) ? ('Erreur : ' + res.body.error) : 'Erreur inconnue.';
+      })
+      .catch(function(){ wBtn.disabled = false; wStatus.className = 'text-sm mt-2'; wStatus.style.color = 'var(--danger)'; wStatus.textContent = 'Erreur réseau.'; });
+  });
+})();
+</script>
+
+</body>
+</html>

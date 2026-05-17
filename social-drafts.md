@@ -360,3 +360,165 @@ Outil gratuit ↓
 - "Avant / après" : annonce non-conforme vs annonce conforme
 - "Erreurs courantes" : 5 clauses interdites dans un bail
 - Cross-promotion blog : chaque tweet peut linker un article (lien en bio à rotater)
+
+---
+
+## Catégorie E — Preuve open-data observatoire (drafts run-195, 2026-05-17T12:27Z)
+
+> **Asset support** : CSV public `https://bailleurverif.fr/data/observatoire-annonces-loyer-2026-05-17.csv` shippé run-194 (160 lignes × 23 colonnes, 25 KB, licence Etalab 2.0, 0 PII vendeur) + page pivot HTML `https://bailleurverif.fr/observatoire-annonces-loyer.html` (méthodologie + caveats CI Wilson ±12 pts).
+>
+> **Brand voice** : factuel, pas alarmiste, pas militant. Headline réelle 36/61 = 59,0 % d'annonces non-conformes (Wilson 95 % CI [46,5 % ; 70,5 %]) sur 7 villes en zone d'encadrement.
+>
+> **ROI attendu** : capter audience data-journalistes / chercheurs / élus locaux / militants logement. Bypass TODO-21 SMTP / TODO-22 GitHub PAT / TODO-24 data.gouv.fr.
+
+### TWEET-E1 — Thread X (5 tweets) — preuve observatoire
+
+```
+1/ J'ai scoré 160 annonces de location réelles dans 7 villes de la zone d'encadrement des loyers.
+
+Résultat : 36 sur 61 dans le périmètre légal dépassent le plafond.
+
+= 59 % de non-conformité présumée. CI 95 % [46,5 % – 70,5 %].
+```
+~270 car
+
+```
+2/ Méthodo, 100 % reproductible :
+
+— Scrape Locservice.fr (robots.txt-compliant)
+— Géocodage BAN (data.gouv.fr)
+— Récupération DPE ADEME via numéro
+— Application plafonds JORF par commune × année × pièces × meublé
+— Wilson 95 % CI
+```
+~270 car
+
+```
+3/ Décomposition par ville (in-scope encadrement seulement) :
+
+Lyon (arr.) : 10/12 = 83,3 %
+Paris : 19/30 = 63,3 %
+Lille : 6/16 = 37,5 %
+Villeurbanne : 1/3
+
+Marseille / Aix / Nantes / Toulouse / Bordeaux : hors arrêté préfectoral — baseline comparée.
+```
+~280 car · chiffres vérifiés vs CSV 2026-05-17 (run-195)
+
+```
+4/ Pourquoi ouvert :
+
+— CSV brut téléchargeable (Etalab 2.0) → 1 clic, importable pandas/Excel
+— Pas de PII vendeur (URL hashée sha1[:16])
+— Code crawler + scoring MIT sur GitHub
+— Re-crawl quotidien automatique → corpus longitudinal
+
+📥 https://bailleurverif.fr/data/observatoire-annonces-loyer-2026-05-17.csv
+```
+~270 car
+
+```
+5/ Si tu veux reproduire / contredire / utiliser :
+
+Méthodologie + caveats CI + sources :
+https://bailleurverif.fr/observatoire-annonces-loyer.html
+
+Repo MIT :
+https://github.com/Creariax5/bailleurverif
+
+Toute critique de la méthode est bienvenue.
+
+#encadrementloyer #opendata
+```
+~270 car · pinned candidate
+
+---
+
+### TWEET-E2 — Single tweet stat-choc (variante atomique, sans thread)
+
+```
+59 % des annonces de location en zone d'encadrement dépassent le plafond légal.
+
+(36/61 dans 7 villes FR, CI 95 % [46,5 % – 70,5 %], méthodo + données ouvertes Etalab 2.0)
+
+📥 CSV : https://bailleurverif.fr/data/observatoire-annonces-loyer-2026-05-17.csv
+
+#encadrementloyer
+```
+~270 car · usage pinned ou hook seul
+
+---
+
+### TWEET-E3 — Bluesky (300 car max) court — preuve + lien
+
+```
+Observatoire bailleurverif.fr : 36/61 annonces en zone d'encadrement dépassent le plafond. 59,0 %, CI 95 % [46,5–70,5].
+
+Données ouvertes Etalab 2.0, URL hashée (0 PII), code crawler MIT sur GitHub.
+
+Toute critique méthodo bienvenue.
+
+https://bailleurverif.fr/observatoire-annonces-loyer.html
+```
+~280 car
+
+---
+
+### LINKEDIN-E1 — Post long (audiences pro : journalistes immo, juristes, élus locaux, militants logement)
+
+```
+J'ai publié un mini-observatoire open-data des annonces de location en zone d'encadrement des loyers en France.
+
+📊 LES CHIFFRES (snapshot 2026-05-17)
+
+— 160 annonces collectées sur 7 zones : Paris, Lyon, Lille, Marseille / Aix, Nantes, Toulouse, Bordeaux.
+— 61 annonces dans le périmètre légal de l'encadrement (Paris, Lyon arrondissements, Villeurbanne, Lille).
+— 36 dépassent le plafond JORF applicable à leur commune / année / nombre de pièces / meublé.
+— Taux observé : 36/61 = 59,0 %, intervalle de confiance Wilson 95 % [46,5 % – 70,5 %].
+
+🛠️ MÉTHODE 100 % REPRODUCTIBLE
+
+— Source primaire : Locservice.fr (robots.txt-compliant, pace 30s entre fetches).
+— Géocodage : API BAN (data.gouv.fr).
+— DPE : récupération via numéro ADEME quand disponible.
+— Plafonds : application des arrêtés préfectoraux par commune × année × nb pièces × meublé / non-meublé.
+— Code source crawler + scoring : MIT sur GitHub.
+— Cron quotidien 03:00 UTC → corpus longitudinal compounding.
+
+📥 DONNÉES BRUTES
+
+CSV téléchargeable directement, licence ouverte Etalab 2.0 (citable, redistribuable) :
+https://bailleurverif.fr/data/observatoire-annonces-loyer-2026-05-17.csv
+
+23 colonnes : eur_per_m2, plafond_applied_eur_m2, encadrement_violation (clear/presumed/none), encadrement_excess_pct, dpe_letter, code_postal, ville_label, etc.
+
+URL annonce hashée (sha1[:16]) — 0 PII vendeur, RGPD-clean.
+
+📄 MÉTHODOLOGIE COMPLÈTE + CAVEATS
+
+https://bailleurverif.fr/observatoire-annonces-loyer.html
+
+Caveats explicites : effet sélection Locservice, CI large à N=61 in-scope, "présumée" vs "constatée juridiquement", auto-déclaratif vendeur sur DPE/surface.
+
+🧑‍⚖️ POUR QUI
+
+— Journalistes immo / data-journalistes : chiffre citable, sourcé, intervalle de confiance présent.
+— Chercheurs / étudiants logement : dataset reproductible, méthodo ouverte.
+— Élus locaux et associations : outil de plaidoyer factuel.
+— Bailleurs : vérifier leur propre annonce avant publication.
+
+Toute critique méthodologique, suggestion d'amélioration, ou contre-mesure (échantillonnage, biais, normalisation) est bienvenue. Le projet est open-source (MIT) sur GitHub : https://github.com/Creariax5/bailleurverif
+
+#opendata #logement #encadrementloyer #data #immobilier
+```
+~1900 car · LinkedIn long-form
+
+---
+
+### Notes de post Catégorie E
+
+- **Chiffres à re-vérifier** avant chaque post : la headline 36/61 = 59,0 % est valable au snapshot 2026-05-17 ; après cron daily, ré-extraire `headline` de `metrics.json` ou re-grep dans `observatoire-annonces-loyer.html`.
+- **Honnêteté** : ne jamais arrondir au-dessus ("60 %"), toujours afficher l'intervalle de confiance, ne jamais omettre "présumée" (légalement seul un juge constate).
+- **Anti-spam** : 1 post LinkedIn par semaine max, 1 thread X par 3 jours max, jamais le même post sur les 2 canaux le même jour.
+- **Cross-promotion** : si trafic > 100 visites/24h post-publication, ajouter un wedge tool spécifique (DPE / encadrement / lookup adresse) dans le 2ᵉ thread de follow-up.
+- **Discipline DIRECTIVE 9 copyability check** : le post révèle les chiffres + la méthode (copyable) mais PAS le moat (cron daily + dedupe longitudinal) — copier la stat statique ne procure aucun compounding.

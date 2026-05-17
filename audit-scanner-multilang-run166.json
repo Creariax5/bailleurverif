@@ -1,0 +1,88 @@
+{
+  "ts": "2026-05-17T04:58:59Z",
+  "audit_type": "multilang_run166",
+  "scanner_version_under_test": "V1.2",
+  "n_arnaque": 4,
+  "n_legit": 2,
+  "tp": 4,
+  "tn": 2,
+  "fp": 0,
+  "fn": 0,
+  "precision_arnaque": 1.0,
+  "recall_arnaque": 1.0,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "id": "ML1_it_scam_WU_telegram",
+      "lang": "it",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 60,
+      "flags_count": 2,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf, international transfer)",
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Annonce italophone arnaque WU classique. V1.2 doit attraper 'Western Union' meme dans phrase italienne."
+    },
+    {
+      "id": "ML2_es_scam_giro_btc_anticipo",
+      "lang": "es",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 60,
+      "flags_count": 2,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf, international transfer)",
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Espagnol Andalou - virement + bitcoin + arrhe + pas visite. WU/BTC mots-cles latins reperables."
+    },
+    {
+      "id": "ML3_pt_scam_transferencia_chaves",
+      "lang": "pt",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 60,
+      "flags_count": 2,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf, international transfer)",
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Portugais Bresil - propriete Lisbonne falsifiee, virement etranger, FedEx cles."
+    },
+    {
+      "id": "ML4_ar_translit_scam_hawala_btc",
+      "lang": "ar-translit",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 60,
+      "flags_count": 2,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf, international transfer)",
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Arabe translittere (Maghreb diaspora) - hawala mention + telegram + paiement avant visite."
+    },
+    {
+      "id": "ML5_it_legit_no_keywords",
+      "lang": "it",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 0,
+      "flags_count": 0,
+      "flags_labels": [],
+      "comment": "Annonce italophone legitime. Foncia agence FR mention. Doit etre safe meme si scanner connait pas l'italien."
+    },
+    {
+      "id": "ML6_es_legit_agency_visale",
+      "lang": "es",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 0,
+      "flags_count": 0,
+      "flags_labels": [],
+      "comment": "Espagnol mais agence Century21 + Visale + visite obligatoire. Safe."
+    }
+  ]
+}

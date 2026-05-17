@@ -1,0 +1,106 @@
+{
+  "ts": "2026-05-17T04:31:46Z",
+  "audit_type": "edge_cases_run163",
+  "n_arnaque_subtle": 4,
+  "n_legit_tricky": 4,
+  "tp": 4,
+  "tn": 4,
+  "fp": 0,
+  "fn": 0,
+  "precision_arnaque": 1.0,
+  "recall_arnaque": 1.0,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "id": "AS1_caution_avant_visite_sans_money_transfer_classique",
+      "expected": "high",
+      "got_severity": "medium",
+      "score": 45,
+      "flags_count": 2,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee",
+        "Demande d'arrhes / acompte AVANT visite pour 'reserver'"
+      ],
+      "comment": "Arnaque classique post-2024 : la caution avant visite EST le drapeau cardinal, mais sans WU/BTC/PCS explicite. Test sans facilitateurs paiement bizarres."
+    },
+    {
+      "id": "AS2_proprietaire_mission_japon_visite_video_only",
+      "expected": "high",
+      "got_severity": "medium",
+      "score": 45,
+      "flags_count": 2,
+      "flags_labels": [
+        "Bailleur declare a l'etranger / en mission",
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Pas de WU/BTC. Mais combo bailleur étranger + visite vidéo only + paiement avant clés = arnaque type airbnb-scam."
+    },
+    {
+      "id": "AS3_etudiant_caution_visale_mais_paypal_friend",
+      "expected": "high",
+      "got_severity": "medium",
+      "score": 50,
+      "flags_count": 2,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee",
+        "Demande PayPal Amis & Famille (paiement irreversible)"
+      ],
+      "comment": "L'arnaque utilise des mots rassurants (Visale, DPE C, justificatifs) mais demande PayPal Friends&Family (irréversible) — flag à ne PAS rater."
+    },
+    {
+      "id": "AS4_marchand_de_sommeil_caution_cash_pas_de_bail_ecrit",
+      "expected": "high",
+      "got_severity": "medium",
+      "score": 45,
+      "flags_count": 2,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee",
+        "Bail oral / cash / pas de contrat ecrit (marchand de sommeil)"
+      ],
+      "comment": "Arnaque sociale : pas d'arnaque crypto, mais bail oral, cash, pas d'état des lieux, DPE absent — marchand de sommeil classique."
+    },
+    {
+      "id": "LT1_legitime_urgent_juin_etudiant_bail_mobilite",
+      "expected": "safe",
+      "got_severity": "low",
+      "score": 25,
+      "flags_count": 2,
+      "flags_labels": [
+        "Ton d'urgence injustifie",
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Mot 'urgent' présent mais contexte légitime (rentrée septembre, bail mobilité juin). Visale + agence + RDV physiques."
+    },
+    {
+      "id": "LT2_legitime_bailleur_a_letranger_via_agence_mandataire",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 5,
+      "flags_count": 1,
+      "flags_labels": [
+        "Bailleur a l'etranger MAIS mandataire FR identifie (legitime probable)"
+      ],
+      "comment": "Bailleur étranger MAIS agence locale mandataire et toutes les opérations sur place. Doit être classé safe."
+    },
+    {
+      "id": "LT3_particulier_caution_visale_pas_de_telephone_visible",
+      "expected": "safe",
+      "got_severity": "low",
+      "score": 10,
+      "flags_count": 1,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Annonce particulier sans tél visible (RGPD) ni adresse précise, contact via messagerie plateforme — légitime."
+    },
+    {
+      "id": "LT4_legit_meuble_appartement_paris_dispo_immediat_dossier_lourd",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 0,
+      "flags_count": 0,
+      "flags_labels": [],
+      "comment": "Dispo immédiate (mot pouvant être suspect) MAIS dossier locataire structuré, agence, visite physique."
+    }
+  ]
+}

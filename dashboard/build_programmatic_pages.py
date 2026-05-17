@@ -442,9 +442,12 @@ def main():
         blog_pages = []
     tools_pages = [
         p for p in (
+            "mon-bien.html",
             "preavis-bail.html",
+            "changelog.html",
             "widget-bailleurverif.html",
             "locataire-loyer-legal.html",
+            "deficit-foncier-2026.html",
         )
         if os.path.exists(os.path.join(STATIC, p))
     ]

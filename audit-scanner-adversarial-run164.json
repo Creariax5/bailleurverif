@@ -1,0 +1,85 @@
+{
+  "ts": "2026-05-17T04:29:25Z",
+  "audit_type": "adversarial_run164",
+  "scanner_version_under_test": "V1.1",
+  "n_arnaque_adversarial": 4,
+  "n_legit_adversarial": 2,
+  "tp": 3,
+  "tn": 1,
+  "fp": 1,
+  "fn": 1,
+  "precision_arnaque": 0.75,
+  "recall_arnaque": 0.75,
+  "accuracy": 0.667,
+  "results": [
+    {
+      "id": "AV1_leet_obfuscation_W3st3rn_B!tcoin",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 95,
+      "flags_count": 3,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf, international transfer)",
+        "Bailleur declare a l'etranger / en mission",
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Arnaqueur sophistique remplace lettres par chiffres/symboles. V1.1 utilise regex litteral, va probablement RATER."
+    },
+    {
+      "id": "AV2_ascii_spacing_obfuscation",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 65,
+      "flags_count": 3,
+      "flags_labels": [
+        "Demande de caution / loyer AVANT visite",
+        "Aucune adresse precise mentionnee",
+        "Photos envoyees hors plateforme"
+      ],
+      "comment": "Espaces inseres entre lettres pour casser le tokenization regex. \\b...\\b fails."
+    },
+    {
+      "id": "AV3_codeswitch_DE_EN_FR",
+      "expected": "high",
+      "got_severity": "high",
+      "score": 60,
+      "flags_count": 2,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf, international transfer)",
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Annonce trilingue. Bailleur a Berlin, Kaution en EN. V1.1 EN partiel mais DE 0 patterns."
+    },
+    {
+      "id": "AV4_pressure_no_keywords_deadline_bidders",
+      "expected": "medium",
+      "got_severity": "low",
+      "score": 10,
+      "flags_count": 1,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee"
+      ],
+      "comment": "Pure social engineering. Pas de WU, pas de telegram, pas d'urgent. Mais : 7 candidats, deadline 24h, paiement RIB avant visite. Doit lever AU MOINS medium."
+    },
+    {
+      "id": "AL1_legit_wire_in_neutral_sense",
+      "expected": "safe",
+      "got_severity": "safe",
+      "score": 0,
+      "flags_count": 0,
+      "flags_labels": [],
+      "comment": "Mot 'wire' present mais contexte cablage electrique. Pas un faux positif legitime."
+    },
+    {
+      "id": "AL2_legit_anti_arnaque_warning_in_description",
+      "expected": "safe",
+      "got_severity": "medium",
+      "score": 50,
+      "flags_count": 1,
+      "flags_labels": [
+        "Demande de paiement non-tracable (Western Union, MoneyGram, Bitcoin, PCS, Neosurf, international transfer)"
+      ],
+      "comment": "Bailleur experimente mentionne 'methode anti-arnaque' avec les termes Western Union/Bitcoin dans un disclaimer. Faut PAS le flagger high."
+    }
+  ]
+}

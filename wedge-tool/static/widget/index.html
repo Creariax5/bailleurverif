@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Widget DPE gratuit — Embed 1 ligne pour blogs immo · BailleurVérif</title>
+<meta name="description" content="Widget JavaScript gratuit : badge DPE bailleur (interdiction location 2025/2028/2034) pour blog, agence immo, comparateur. 1 ligne copy-paste, sans iframe, RGPD-friendly.">
+<link rel="canonical" href="https://bailleurverif.fr/widget/">
+<meta property="og:title" content="Widget DPE gratuit — Embed 1 ligne · BailleurVérif">
+<meta property="og:description" content="Badge DPE conforme/interdit location pour votre blog ou agence immo. 1 ligne JS, 0 dépendance, 0 iframe.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bailleurverif.fr/widget/">
+<style>
+*{box-sizing:border-box}
+body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#0f172a;max-width:780px;margin:0 auto;padding:24px 18px 80px;background:#fafafa}
+h1{font-size:28px;margin:0 0 6px;letter-spacing:-0.01em}
+h2{font-size:20px;margin:32px 0 10px;border-bottom:1px solid #e2e8f0;padding-bottom:6px}
+h3{font-size:16px;margin:20px 0 8px}
+.lead{color:#475569;font-size:18px;margin:0 0 24px}
+.crumb{font-size:12px;color:#64748b;margin-bottom:8px}
+.crumb a{color:#4338ca;text-decoration:none}
+pre{background:#0f172a;color:#e2e8f0;padding:14px 16px;border-radius:8px;overflow-x:auto;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:10px 0}
+code{background:#e2e8f0;color:#0f172a;padding:2px 6px;border-radius:4px;font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre code{background:transparent;color:inherit;padding:0}
+.demo{padding:18px;border:1px dashed #cbd5e1;border-radius:10px;background:#fff;margin:10px 0 20px}
+.demo-label{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px}
+.btn-copy{display:inline-block;margin-top:6px;padding:6px 12px;background:#4338ca;color:#fff;border:0;border-radius:6px;font:600 12px sans-serif;cursor:pointer}
+.btn-copy:hover{background:#3730a3}
+.note{padding:10px 14px;background:#f1f5f9;border-left:3px solid #4338ca;border-radius:0 6px 6px 0;font-size:14px;margin:10px 0}
+.tbl{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.tbl th,.tbl td{padding:8px 10px;border:1px solid #e2e8f0;text-align:left;vertical-align:top}
+.tbl th{background:#f1f5f9;font-weight:600}
+.foot{margin-top:48px;padding-top:18px;border-top:1px solid #e2e8f0;font-size:12px;color:#64748b;text-align:center}
+.foot a{color:#475569;text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.h-card{display:none}
+</style>
+</head>
+<body>
+<div class="crumb"><a href="/">← BailleurVérif</a> · Widget</div>
+<h1>Widget DPE gratuit — embed 1 ligne</h1>
+<p class="lead">Badge JavaScript pour afficher le statut DPE d'un logement (conforme / interdit location) sur votre blog immo, votre site d'agence, ou votre comparateur. <strong>Gratuit · sans iframe · sans tracker tiers · 0 dépendance.</strong></p>
+
+<h2>Aperçu</h2>
+
+<div class="demo">
+<div class="demo-label">Variante carte (par défaut)</div>
+<script src="/widget/dpe-status.js" data-ville="paris" data-dpe="F" async></script>
+</div>
+
+<div class="demo">
+<div class="demo-label">Variante carte — DPE G (interdiction immédiate)</div>
+<script src="/widget/dpe-status.js" data-ville="lille" data-dpe="G" async></script>
+</div>
+
+<div class="demo">
+<div class="demo-label">Variante compacte (inline badge)</div>
+<p>Ce logement à Bordeaux affiche : <script src="/widget/dpe-status.js" data-ville="bordeaux" data-dpe="E" data-compact="true" async></script> — l'interdiction location est progressive.</p>
+</div>
+
+<div class="demo">
+<div class="demo-label">Variante carte sombre</div>
+<script src="/widget/dpe-status.js" data-ville="lyon" data-dpe="C" data-theme="dark" async></script>
+</div>
+
+<h2>Code à copier-coller</h2>
+
+<h3>Carte standard (380px max-width)</h3>
+<pre><code>&lt;script src="https://bailleurverif.fr/widget/dpe-status.js"
+        data-ville="paris"
+        data-dpe="F"
+        async&gt;&lt;/script&gt;</code></pre>
+
+<h3>Badge inline compact</h3>
+<pre><code>&lt;script src="https://bailleurverif.fr/widget/dpe-status.js"
+        data-ville="paris"
+        data-dpe="F"
+        data-compact="true"
+        async&gt;&lt;/script&gt;</code></pre>
+
+<h3>Thème sombre</h3>
+<pre><code>&lt;script src="https://bailleurverif.fr/widget/dpe-status.js"
+        data-ville="paris"
+        data-dpe="F"
+        data-theme="dark"
+        async&gt;&lt;/script&gt;</code></pre>
+
+<h2>Attributs</h2>
+<table class="tbl">
+<thead><tr><th>Attribut</th><th>Valeurs</th><th>Défaut</th><th>Effet</th></tr></thead>
+<tbody>
+<tr><td><code>data-ville</code></td><td>Nom commune FR (slug auto)</td><td><em>vide</em></td><td>Lien profond vers la page commune correspondante</td></tr>
+<tr><td><code>data-dpe</code></td><td><code>A B C D E F G</code></td><td><em>vide</em></td><td>Détermine la classe affichée + verdict d'interdiction location</td></tr>
+<tr><td><code>data-theme</code></td><td><code>light</code> · <code>dark</code></td><td><code>light</code></td><td>Palette de couleurs</td></tr>
+<tr><td><code>data-compact</code></td><td><code>true</code> · <code>false</code></td><td><code>false</code></td><td>Carte (false) ou badge inline (true)</td></tr>
+</tbody>
+</table>
+
+<h2>Pourquoi ce widget ?</h2>
+<ul>
+<li><strong>Crédibilité immédiate</strong> : DPE F/G = sujet juridique brûlant, source <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043956924/" target="_blank" rel="noopener">Loi Climat & Résilience</a> citée.</li>
+<li><strong>0 iframe</strong> : DOM léger, hérite des couleurs parent si vous voulez, indexable.</li>
+<li><strong>0 tracker tiers</strong> : un seul appel pixel statistique anonyme (ville+classe DPE), pas de cookie, pas de fingerprint. RGPD-friendly.</li>
+<li><strong>0 dépendance</strong> : pas de jQuery, pas de React, pas de framework. ~2,5 KB gzip.</li>
+<li><strong>Bidirectionnel</strong> : vous embeddez → vos lecteurs cliquent → ils vérifient gratuitement leur conformité bailleur sur BailleurVérif.</li>
+</ul>
+
+<h2>Cas d'usage typiques</h2>
+<ul>
+<li>Blog immobilier : article "Investir à Lille en 2026" → afficher le DPE moyen de la ville + interdiction location associée.</li>
+<li>Agence immo : fiche bien individuelle → badge "DPE F · Interdit nouvelle location 2028" pour transparence vendeur/acquéreur.</li>
+<li>Comparateur location/achat : afficher la classe DPE et son impact réglementaire à côté du loyer.</li>
+<li>Calculateur rentabilité locative : avertir avant achat sur l'interdiction location à terme.</li>
+</ul>
+
+<h2>RGPD &amp; vie privée</h2>
+<p>Le widget enregistre un compteur de vue anonyme (ville + classe DPE + horodatage). <strong>Pas d'ID utilisateur, pas de cookie, pas de fingerprint navigateur, pas de tiers ad-tech.</strong> Aucune donnée personnelle traitée. Vous pouvez l'utiliser sans bandeau consentement.</p>
+
+<h2>Open source &amp; transparence</h2>
+<p>Code source : <a href="https://github.com/Creariax5/bailleurverif" target="_blank" rel="noopener">github.com/Creariax5/bailleurverif</a> (MIT license). Le fichier <code>widget/dpe-status.js</code> est lisible directement : <a href="/widget/dpe-status.js">/widget/dpe-status.js</a>.</p>
+
+<h2>Questions ?</h2>
+<p>Mail : <a href="mailto:contact@bailleurverif.fr">contact@bailleurverif.fr</a> · GitHub Issues : <a href="https://github.com/Creariax5/bailleurverif/issues" target="_blank" rel="noopener">repo issues</a>.</p>
+
+<div class="h-card">
+<a class="u-url p-name" href="https://bailleurverif.fr/">BailleurVérif</a>
+<a class="u-email" href="mailto:contact@bailleurverif.fr">contact@bailleurverif.fr</a>
+</div>
+
+<div class="foot">
+<a href="/">Accueil</a> · <a href="/blog/">Blog</a> · <a href="/changelog.html">Changelog réglementaire</a> · <a href="/data/">Open data</a> · MAJ 2026
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "BailleurVérif Widget DPE",
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "All",
+  "url": "https://bailleurverif.fr/widget/",
+  "description": "Widget JavaScript gratuit affichant le statut DPE et l'interdiction location associée (Loi Climat & Résilience). Embed 1 ligne, sans iframe, RGPD-friendly.",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+  "creator": {"@type": "Organization", "@id": "https://bailleurverif.fr/#organization", "name": "BailleurVérif", "url": "https://bailleurverif.fr/"},
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true,
+  "inLanguage": "fr-FR"
+}
+</script>
+</body>
+</html>

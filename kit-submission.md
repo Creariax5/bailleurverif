@@ -81,7 +81,7 @@ bailleur, location, DPE, encadrement loyer, Alur, conformité location, loi Clim
 
 ### Bloqueur récurrent identifié run-104
 
-- `mcp__claude_ai_Gmail__*` scope **insufficient** sur le compte `christian@mobula.io` autorisé : ni `create_draft`, ni `list_drafts`, ni `search_threads` ne fonctionnent (erreur `Request had insufficient authentication scopes`).
+- `mcp__claude_ai_Gmail__*` scope **insufficient** sur le compte `florian.demartini.dev@gmail.com` autorisé : ni `create_draft`, ni `list_drafts`, ni `search_threads` ne fonctionnent (erreur `Request had insufficient authentication scopes`).
 - Conséquence : impossible d'envoyer l'email annuaire-liens.com en autonome **même avec accord brand transparency**.
 - Fix possible : Florian re-grant scopes Gmail (Gmail Send) sur l'integration `claude.ai → Gmail` côté son compte Google. Voir TODO-18 mis à jour.
 

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Observatoire DPE F/G — flux temps réel passoires thermiques par commune | BailleurVérif</title>
+<meta name="description" content="Flux temps réel des nouveaux DPE F/G publiés par l'ADEME, agrégé par commune (Paris arrondissements, Lyon, Marseille, Toulouse, Bordeaux, Lille…). Données officielles Etalab, mise à jour toutes les 6 heures. Loi Climat 2025 : G interdit à la location.">
+<link rel="canonical" href="https://bailleurverif.fr/observatoire-dpe-fg.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Observatoire DPE F/G — flux temps réel passoires thermiques | BailleurVérif">
+<meta property="og:description" content="Flux temps réel des DPE F/G nouvellement diagnostiqués par l'ADEME, par commune. Source officielle Etalab, mise à jour 4×/jour.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bailleurverif.fr/observatoire-dpe-fg.html">
+<meta property="og:site_name" content="BailleurVérif">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://bailleurverif.fr/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Observatoire DPE F/G — passoires thermiques temps réel par commune">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Observatoire DPE F/G — flux temps réel par commune | BailleurVérif">
+<meta name="twitter:description" content="DPE F/G nouvellement diagnostiqués par l'ADEME, agrégés par commune, mise à jour toutes les 6 heures.">
+<meta name="twitter:image" content="https://bailleurverif.fr/og-image.png">
+<link rel="stylesheet" href="/css/main.css">
+<script src="/css/tailwind-runtime.js"></script>
+<style>
+  .obs-counter { font-size: 44px; font-weight: 800; line-height: 1; letter-spacing: -.02em; color: var(--text-primary); }
+  .obs-counter-label { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-secondary); font-weight: 600; }
+  .obs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+  .obs-card { padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-card); }
+  .obs-card .commune { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+  .obs-card .insee { font-size: 11px; color: var(--text-secondary); font-family: ui-monospace, monospace; }
+  .obs-card .badges { display: flex; gap: 6px; margin-top: 8px; }
+  .b-f { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; background: #fff5e1; color: #a55a00; border: 1px solid #f0c98a; }
+  .b-g { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; background: #fde7e7; color: #a01c1c; border: 1px solid #f3b3b3; }
+  .stream-row { padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .stream-row:last-child { border-bottom: 0; }
+  .stream-loc { font-size: 14.5px; font-weight: 600; color: var(--text-primary); }
+  .stream-meta { font-size: 12.5px; color: var(--text-secondary); margin-top: 4px; }
+  .stream-meta .et { display: inline-block; padding: 1px 7px; border-radius: 4px; font-weight: 700; margin-right: 6px; }
+  .stream-meta .et.F { background: #fff5e1; color: #a55a00; }
+  .stream-meta .et.G { background: #fde7e7; color: #a01c1c; }
+  .poll-banner { display: flex; gap: 8px; flex-wrap: wrap; align-items: baseline; font-size: 12px; color: var(--text-secondary); padding: 8px 12px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 14px; }
+  .poll-banner .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #16a34a; }
+  .skeleton { background: linear-gradient(90deg, #f1f5f9, #e2e8f0, #f1f5f9); background-size: 200% 100%; animation: skel 1.4s infinite linear; border-radius: 8px; }
+  @keyframes skel { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+</style>
+</head>
+<body class="min-h-screen">
+
+<header class="bv-header">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="bv-logo">
+      <span class="bv-logo-mark">✓</span>
+      <span>BailleurVérif</span>
+    </a>
+    <nav class="flex items-center gap-4 text-sm">
+      <a href="/mon-bien.html" class="text-[color:var(--accent)] hover:underline font-semibold">Mon bien</a>
+      <a href="/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">Quiz</a>
+      <a href="/changelog.html" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">JO veille</a>
+      <a href="/blog/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Guides</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <nav aria-label="Fil d'Ariane" class="mb-4 text-xs" style="color:var(--text-secondary)">
+    <a href="/" class="hover:underline">Accueil</a> ›
+    <a href="/data/" class="hover:underline">Données ouvertes</a> ›
+    <span>Observatoire DPE F/G</span>
+  </nav>
+
+  <section id="hero" class="mb-6 sm:mb-8">
+    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-3" style="color:var(--text-primary)">
+      Observatoire DPE F/G — passoires thermiques en temps réel
+    </h1>
+    <p class="text-lg" style="color:var(--text-secondary)">
+      Tous les nouveaux diagnostics énergétiques classés <strong>F ou G</strong> publiés par
+      l'ADEME pour les <strong>54 zones prioritaires</strong> (Paris 1-20, Lyon 1-9, Marseille 1-16,
+      Toulouse, Bordeaux, Lille, Nantes, Strasbourg, Nice, Montpellier, Rennes, Grenoble).
+      Source&nbsp;: <a href="https://data.ademe.fr/datasets/dpe03existant" rel="noopener" class="underline" style="color:var(--accent)">data.ademe.fr</a>, Licence&nbsp;Ouverte&nbsp;2.0 Etalab.
+      Mise à jour automatique toutes les 6&nbsp;heures.
+    </p>
+  </section>
+
+  <section id="counters" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+    <div class="obs-card">
+      <div id="cnt-total" class="obs-counter">—</div>
+      <div class="obs-counter-label">DPE F+G observés</div>
+    </div>
+    <div class="obs-card">
+      <div id="cnt-f" class="obs-counter" style="color:#a55a00">—</div>
+      <div class="obs-counter-label">classés F (passoire)</div>
+    </div>
+    <div class="obs-card">
+      <div id="cnt-g" class="obs-counter" style="color:#a01c1c">—</div>
+      <div class="obs-counter-label">classés G (interdit location 2025)</div>
+    </div>
+  </section>
+
+  <div id="poll-banner" class="poll-banner">
+    <span class="dot"></span>
+    <span><strong>Source live</strong></span>
+    <span id="poll-runs">— runs</span>
+    <span>•</span>
+    <span id="poll-last">dernier crawl —</span>
+    <span>•</span>
+    <a href="/dpe-f-g-interdit-location.html" class="underline" style="color:var(--accent)">Comprendre Loi Climat 2025</a>
+  </div>
+
+  <section id="par-commune" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Par commune (top 15)</h2>
+    <div id="commune-grid" class="obs-grid">
+      <div class="skeleton" style="height:80px"></div>
+      <div class="skeleton" style="height:80px"></div>
+      <div class="skeleton" style="height:80px"></div>
+      <div class="skeleton" style="height:80px"></div>
+    </div>
+  </section>
+
+  <section id="flux" class="mb-10">
+    <h2 class="text-xl font-bold mb-2" style="color:var(--text-primary)">Flux des 50 derniers diagnostics</h2>
+    <p class="text-sm mb-4" style="color:var(--text-secondary)">Adresse exacte&nbsp;: rue + numéro tels que publiés dans le DPE officiel ADEME (donnée publique).</p>
+    <div id="stream">
+      <div class="skeleton" style="height:60px; margin-bottom:8px;"></div>
+      <div class="skeleton" style="height:60px; margin-bottom:8px;"></div>
+      <div class="skeleton" style="height:60px"></div>
+    </div>
+  </section>
+
+  <section id="why" class="mb-10 obs-card" style="padding:18px 20px">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Pourquoi ce flux&nbsp;?</h2>
+    <ul class="space-y-2 text-sm leading-relaxed" style="color:var(--text-primary)">
+      <li>★ <strong>Loi Climat &amp; Résilience</strong>&nbsp;: les logements classés <em>G</em> sont <strong>interdits</strong> à la location depuis le 1<sup>er</sup>&nbsp;janvier&nbsp;2025. Les <em>F</em> le seront au 1<sup>er</sup>&nbsp;janvier&nbsp;2028.</li>
+      <li>★ Un diagnostic <em>F/G</em> publié aujourd'hui est souvent le signe d'un logement <strong>sur le point d'être remis sur le marché</strong> (vente / re-location). Le seul moyen pour un locataire de l'identifier en amont, c'est ce flux.</li>
+      <li>★ Aucun signal n'existait jusqu'ici&nbsp;: l'ADEME publie en lots, sans agrégation par commune ni format consultable.</li>
+      <li>★ Les bailleurs concernés peuvent calculer leurs <a href="/aides-financieres-bailleur-2026.html" class="underline" style="color:var(--accent)">aides à la rénovation</a> ou utiliser notre <a href="/deficit-foncier-2026.html" class="underline" style="color:var(--accent)">simulateur déficit foncier</a>.</li>
+    </ul>
+  </section>
+
+  <section id="subscribe" class="mb-10 obs-card" style="padding:18px 20px">
+    <h2 class="text-xl font-bold mb-2" style="color:var(--text-primary)">Recevoir les alertes sur ma commune</h2>
+    <p class="text-sm mb-3" style="color:var(--text-secondary)">Un seul email par semaine, avec les nouveaux DPE F/G de votre commune. Désabonnement en 1 clic. RGPD-friendly, hébergé en France.</p>
+    <form id="sub-form" class="flex flex-col sm:flex-row gap-2">
+      <input type="email" name="email" required placeholder="vous@exemple.fr" class="flex-1 px-3 py-2 rounded-md border" style="border-color:var(--border); background:var(--bg-card); color:var(--text-primary)">
+      <input type="hidden" name="topic" value="dpe-bailleur">
+      <input type="hidden" name="source" value="observatoire-dpe-fg">
+      <input type="hidden" name="consent" value="true">
+      <button type="submit" class="px-5 py-2 rounded-md font-semibold text-white" style="background:var(--accent)">Je m'abonne</button>
+    </form>
+    <div id="sub-status" class="text-sm mt-3" style="color:var(--text-secondary)"></div>
+  </section>
+
+  <section id="sources" class="mb-12">
+    <h2 class="text-xl font-bold mb-2" style="color:var(--text-primary)">Sources et méthode</h2>
+    <ul class="text-sm space-y-2" style="color:var(--text-secondary)">
+      <li>• <strong>Données source</strong>&nbsp;: <a href="https://data.ademe.fr/datasets/dpe03existant" rel="noopener" class="underline">ADEME — DPE Logements existants (depuis juillet 2021)</a>, ~14.7&nbsp;millions de diagnostics indexés. Licence Ouverte 2.0 Etalab.</li>
+      <li>• <strong>Méthode</strong>&nbsp;: requête API filtrée par <code>etiquette_dpe IN (F, G)</code> et <code>code_insee_ban</code> pour chacune des 54 zones, tri descendant par <code>date_etablissement_dpe</code>, dédoublonnage par hash SHA1 (date+INSEE+rue+numéro+surface+étiquette).</li>
+      <li>• <strong>Périodicité</strong>&nbsp;: crawl automatique toutes les 6&nbsp;heures (cron VPS), 25 records max par commune et par crawl.</li>
+      <li>• <strong>Vie privée</strong>&nbsp;: l'ADEME publie ces données en open data avec adresse complète. Cette page ré-affiche uniquement la donnée publique. Aucune information sur le propriétaire / occupant n'est diffusée.</li>
+      <li>• <strong>API</strong>&nbsp;: <a href="/api/observatoire-dpe-fg?limit=10" class="underline" style="color:var(--accent)"><code>GET /api/observatoire-dpe-fg?insee=75101&amp;limit=50</code></a> (réponse JSON, aucune authentification).</li>
+    </ul>
+  </section>
+
+  <p class="text-xs mt-8" style="color:var(--text-secondary)">
+    Question, signalement d'erreur, partenariat&nbsp;: <a href="mailto:contact@bailleurverif.fr" class="underline">contact@bailleurverif.fr</a>.
+  </p>
+
+</main>
+
+<footer class="bv-footer">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-6 text-xs" style="color:var(--text-secondary)">
+    <p>BailleurVérif — outil gratuit de conformité location FR 2026. Source des données&nbsp;: <a href="/data/" class="underline">open data</a>. <a href="/mentions-legales.html" class="underline">Mentions légales</a> · <a href="/politique-confidentialite.html" class="underline">Confidentialité</a> · <a href="/cgu.html" class="underline">CGU</a> · contact@bailleurverif.fr</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://bailleurverif.fr/observatoire-dpe-fg.html#webpage",
+      "url": "https://bailleurverif.fr/observatoire-dpe-fg.html",
+      "name": "Observatoire DPE F/G — flux temps réel passoires thermiques par commune",
+      "description": "Flux temps réel des nouveaux DPE F/G publiés par l'ADEME, agrégé par 54 communes prioritaires FR. Mise à jour automatique toutes les 6 heures.",
+      "inLanguage": "fr-FR",
+      "isPartOf": {"@id": "https://bailleurverif.fr/#website"},
+      "breadcrumb": {"@id": "https://bailleurverif.fr/observatoire-dpe-fg.html#breadcrumb"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bailleurverif.fr/observatoire-dpe-fg.html#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://bailleurverif.fr/"},
+        {"@type": "ListItem", "position": 2, "name": "Données ouvertes", "item": "https://bailleurverif.fr/data/"},
+        {"@type": "ListItem", "position": 3, "name": "Observatoire DPE F/G"}
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://bailleurverif.fr/observatoire-dpe-fg.html#dataset",
+      "name": "Observatoire BailleurVérif — DPE F/G temps réel 54 communes",
+      "description": "Flux dérivé de l'ADEME (dpe03existant) filtré sur étiquette DPE F ou G pour 54 codes INSEE prioritaires (Paris 1-20, Lyon 1-9, Marseille 1-16, Toulouse, Bordeaux, Lille, Nantes, Strasbourg, Nice, Montpellier, Rennes, Grenoble), mis à jour toutes les 6 heures.",
+      "url": "https://bailleurverif.fr/observatoire-dpe-fg.html",
+      "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+      "creator": {"@id": "https://bailleurverif.fr/#organization"},
+      "isBasedOn": "https://data.ademe.fr/datasets/dpe03existant",
+      "keywords": ["DPE", "passoire thermique", "étiquette F", "étiquette G", "Loi Climat", "encadrement loyer", "rénovation énergétique", "ADEME", "open data"],
+      "distribution": [
+        {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://bailleurverif.fr/api/observatoire-dpe-fg?limit=200"}
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bailleurverif.fr/#organization",
+      "name": "BailleurVérif",
+      "url": "https://bailleurverif.fr/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bailleurverif.fr/#website",
+      "url": "https://bailleurverif.fr/",
+      "name": "BailleurVérif",
+      "publisher": {"@id": "https://bailleurverif.fr/#organization"},
+      "inLanguage": "fr-FR"
+    }
+  ]
+}
+</script>
+
+<script>
+(function() {
+  function fmt(n) { return (n || 0).toLocaleString('fr-FR'); }
+  function el(tag, props, children) {
+    var e = document.createElement(tag);
+    if (props) for (var k in props) {
+      if (k === 'class') e.className = props[k];
+      else if (k === 'href') e.setAttribute('href', props[k]);
+      else if (k === 'text') e.textContent = props[k];
+      else e.setAttribute(k, props[k]);
+    }
+    if (children) children.forEach(function(c){ e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return e;
+  }
+  async function load() {
+    try {
+      var r = await fetch('/api/observatoire-dpe-fg?limit=50');
+      var d = await r.json();
+      var ro = d.rollup || {};
+      var et = ro.by_etiquette || {};
+      document.getElementById('cnt-total').textContent = fmt(ro.total);
+      document.getElementById('cnt-f').textContent = fmt(et.F || 0);
+      document.getElementById('cnt-g').textContent = fmt(et.G || 0);
+      var ps = d.poll_state || {};
+      document.getElementById('poll-runs').textContent = (ps.runs_lifetime || 0) + ' crawl' + ((ps.runs_lifetime || 0) > 1 ? 's' : '');
+      document.getElementById('poll-last').textContent = 'dernier crawl ' + (ps.last_run_at ? ps.last_run_at.replace('T', ' ').replace('Z', ' UTC') : '—');
+
+      var grid = document.getElementById('commune-grid');
+      grid.innerHTML = '';
+      (ro.by_commune_top || []).slice(0, 15).forEach(function(it) {
+        var card = el('div', {class: 'obs-card'}, [
+          el('div', {class: 'commune', text: it.commune || '—'}),
+          el('div', {class: 'insee', text: 'INSEE ' + it.insee}),
+          el('div', {class: 'badges'}, [
+            el('span', {class: 'b-f', text: 'F ' + (it.F || 0)}),
+            el('span', {class: 'b-g', text: 'G ' + (it.G || 0)})
+          ])
+        ]);
+        grid.appendChild(card);
+      });
+
+      var stream = document.getElementById('stream');
+      stream.innerHTML = '';
+      (d.latest || []).forEach(function(rec) {
+        var num = rec.numero_voie_ban || '';
+        var rue = rec.nom_rue_ban || '';
+        var commune = rec.nom_commune_ban || '';
+        var cp = rec.code_postal_ban || '';
+        var loc = [num, rue].filter(Boolean).join(' ') + ', ' + [cp, commune].filter(Boolean).join(' ');
+        var et = rec.etiquette_dpe || '?';
+        var surf = rec.surface_habitable_logement ? Math.round(rec.surface_habitable_logement) + ' m²' : '';
+        var date = rec.date_etablissement_dpe || '';
+        var typ = rec.type_batiment || '';
+        var annee = rec.annee_construction || '';
+        var conso = rec.conso_5_usages_par_m2_ep ? Math.round(rec.conso_5_usages_par_m2_ep) + ' kWh/m²/an' : '';
+        var meta = [];
+        meta.push(date);
+        if (surf) meta.push(surf);
+        if (typ) meta.push(typ);
+        if (annee) meta.push(annee);
+        if (conso) meta.push(conso);
+        var row = el('div', {class: 'stream-row'}, [
+          el('div', {class: 'stream-loc', text: loc}),
+          el('div', {class: 'stream-meta'}, [
+            el('span', {class: 'et ' + et, text: et}),
+            document.createTextNode(meta.join(' · '))
+          ])
+        ]);
+        stream.appendChild(row);
+      });
+    } catch (e) {
+      document.getElementById('commune-grid').innerHTML = '<p class="text-sm" style="color:var(--text-secondary)">Erreur de chargement : ' + e.message + '</p>';
+      document.getElementById('stream').innerHTML = '';
+    }
+  }
+  load();
+
+  // Subscribe form
+  document.getElementById('sub-form').addEventListener('submit', async function(ev) {
+    ev.preventDefault();
+    var status = document.getElementById('sub-status');
+    var form = ev.currentTarget;
+    var body = {
+      email: form.email.value,
+      topic: form.topic.value,
+      source: form.source.value,
+      consent: true
+    };
+    status.textContent = 'Envoi…';
+    try {
+      var r = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(body)
+      });
+      var d = await r.json();
+      if (d.ok) {
+        status.textContent = '✓ Confirmez votre email — un lien a été envoyé à ' + body.email + '.';
+        form.email.value = '';
+      } else {
+        status.textContent = 'Erreur : ' + (d.error || 'inconnue');
+      }
+    } catch (e) {
+      status.textContent = 'Erreur réseau : ' + e.message;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

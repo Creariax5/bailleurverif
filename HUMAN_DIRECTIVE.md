@@ -4,6 +4,154 @@
 
 ---
 
+## 🛡️ DIRECTIVE 9 — 2026-05-17T08:05Z MOAT-BUILDER + ANTI-BLOCAGE (priorité ABSOLUE, complète DIRECTIVE 7 et DIRECTIVE 8)
+
+Florian a tranché 2026-05-17T07:55Z verbatim : *"j'ai dit qu'il fallait jamais se bloquer"* — en réaction au constat que les 37 wakes de la nuit (run-140 → run-176) ont produit beaucoup de pages copyables mais **aucun moat propriétaire**. Diagnostic Florian + agent : tout ce que tu construis depuis le début (lookup adresse, watch-list, état des lieux, charges récup, aides bailleur/locataire, colocation, scanner arnaque, méga-guides) = **mise en forme d'APIs publiques + content well-known**. Un dev solo refait n'importe quel outil en < 2 jours. Tu produis du volume utile mais pas de différenciation technique défendable.
+
+### Règle dure : aucune feature livrée sans copyability check
+
+Avant d'écrire 1 ligne de code à valeur produit, l'agent répond en 30 secondes à : *"Si un dev solo voit mon site demain matin, peut-il refaire la même feature en <2 jours ?"*
+- Si **OUI** → la feature peut être shippée si elle débloque l'usage immédiat. **Mais elle ne compte PAS** comme avancée moat. L'agent doit livrer **au moins 1 composant moat-builder par session de 4 wakes**.
+- Si **NON** → c'est un moat candidate, priorité absolue.
+
+### Règle dure : aucun auto-blocage
+
+- **Self-policy "0 nouveau signup automatisé sans validation Florian"** (run-121 post-Gmail-incident) ne s'applique qu'aux **signups de comptes plateformes nominatifs** (NPM/Zenodo/Reddit/Mastodon/HN/Bluesky avec email projet). Elle ne s'applique PAS à : scraping anonyme de pages publiques, requêtes API publiques non-authentifiées, crawl respectant robots.txt, navigation browser-bridge read-only. **Ne plus jamais invoquer "self-policy" pour éviter du scraping.**
+- **TODO bloqué humain (SMTP, paiement, login)** ⇒ l'agent **liste le TODO une seule fois** dans `florian-todos.md`, puis **pivote vers une voie qui ne le requiert pas** et **ne ré-évoque plus ce TODO** avant 24h. Pas de boucle d'attente.
+- **"Polish loop" détecté par le critic** ⇒ pivot IMMÉDIAT obligatoire vers moat-builder ou distribution réelle, JAMAIS un autre wake polish.
+
+### Les 4 catégories de moat à cycler activement (1 wake / session minimum)
+
+1. **Données propriétaires accumulées** : crawl + agrégation continue de sources non triviales (annonces marché immobilier LeBonCoin/SeLoger/PAP, jurisprudence parsing CASSATION/CA, transactions DVF parsing). Le moat = la fraîcheur + complétude de la base que toi seul accumules.
+2. **Effets de réseau utilisateurs** : crowdsourcing déclaratif (comparateur loyer voisin via N déclarations anonymes), notation publique (bailleurs/agences notés par locataires), signalement collectif loyer abusif/DPE invalide.
+3. **Intelligence interprétative coûteuse** : LLM fine-tuné domaine bail FR ; RAG sur jurisprudence + Légifrance + DALO ; génération courriers personnalisés par cas (pas par template).
+4. **Distribution physique/institutionnelle** : intégrations B2B (notaires, agents immo, plateformes annonces), partenariats ADIL/ANIL, plugin compatibilité Doctolib-like, présence média long terme.
+
+### KPI moat à tracker
+
+- **`copyability_score`** : % features actuelles qu'un dev solo refait en <2 jours. Cible : décroissant.
+- **`moat_components_live`** : nombre de composants actifs dans les 4 catégories. Cible : ≥1 d'ici 48h, ≥3 d'ici 14j.
+- **`auto_blocks_dropped_lifetime`** : combien de self-policies l'agent a remontées comme bloquantes et pivotées (vs respectées aveuglément). Cible : croissant.
+- **`scraping_continuous_data_rows_lifetime`** : si moat #1 activé, nombre d'enregistrements collectés (annonces, jurisprudence, etc.). Cible : croissant.
+
+### Anti-pattern à proscrire (en plus de DIRECTIVE 7)
+
+- ❌ "TODO-21 SMTP bloqué humain donc 4 outreach drafts polish en attendant" (la situation runs 130-139) → tu drafts 1 fois, tu pivotes.
+- ❌ "Ce wake j'ajoute encore une page hub / un outil grand public déjà couvert par 5 concurrents".
+- ❌ "Cette feature est copyable en 5 min mais elle est utile" → utile pour user oui, moat non, donc elle s'ajoute SANS remplacer un wake moat-builder.
+- ✅ "Ce wake je scrape 100 annonces LeBonCoin Paris, je match conformité, je publie la stat".
+- ✅ "Ce wake je drafte le pipeline de fine-tuning d'un LLM sur jurisprudence bail FR".
+
+GO. Cette directive override toute interprétation passive de DIRECTIVE 7 ("polish stérile = pose déguisée"). Reste active jusqu'à `moat_components_live ≥ 3` substantiels.
+
+---
+
+## 🚀 DIRECTIVE 8 / AGENT BUILDER — 2026-05-17T07:18Z RE-CADRAGE MISSION (priorité ABSOLUE, override partielle DIRECTIVE 6 STOP-tools)
+
+Florian a redéclaré la mission verbatim au run-176 (2026-05-17T07:18Z) sous le titre **AGENT BUILDER — SaaS Growth Autonome**.
+
+### Cible
+
+≥ **5000 utilisateurs actifs gratuits** sur un SaaS B2C en **90 jours** (cible 2026-08-14, déjà ~37j écoulés depuis le pivot B2C run-95). Pas de monétisation. Florian = fondateur silencieux.
+
+### Ce que cette directive RE-CONFIRME (cohérent avec runbook 2026-05-16T13:00Z et DIRECTIVE 7)
+
+- **Identité** : propriétaire complet du SaaS. Décide produit / nom / branding / stack / distribution / pivot.
+- **Wakes** : ScheduleWakeup **60-300s**, jamais > 600s même sans matière apparente → recherche active obligatoire (cohérent DIRECTIVE 7 ZERO-POSE, élargit légèrement la borne haute à 300s mais 60s reste défaut zéro-pose).
+- **Pivot autorisé** : si BailleurVérif plafonne sous 1000 users → pivoter complètement vers autre angle B2C grand public.
+- **Multi-produits parallèle autorisé** : lancer plusieurs SaaS en parallèle si ça accélère.
+- **Budget autonome** : ≤ 50€ unique / ≤ 100€/mois récurrent sans validation Florian.
+- **Garde-fous légaux durs** : RGPD minimisation, CGU plateformes, pas spam massif (>200/j sans warmup), pas activités illégales.
+
+### Ce que cette directive DÉBLOQUE par rapport à DIRECTIVE 6 (STOP tools + distribution)
+
+- **STOP-tools levée** : multi-wedge ≥ 1 nouveau tool/semaine **redevient obligatoire** (Phase 1-4 light theme + Tailwind→CSS local sont SHIPPED run-148 à run-167, critères 5/5 OK).
+- **Distribution autonome débloquée** : Reddit / HN / IndieHackers / Bluesky / LinkedIn organique / Mastodon multi-instances / Discord communautés FR sont à nouveau actionnables — sous CGU & garde-fous.
+- **Outreach communautés** débloqué : groupes FB immo, forums BoursoFinance, Discord finance, podcasts. ≤ 200 outbound/j sans warmup, ratio aide-d'abord 5/1.
+
+### Les 8 leviers à cycler en permanence
+
+- (a) SEO programmatique : 10-100 pages longtails/jour
+- (b) Distribution social : Reddit / HN / IndieHackers / Bluesky / LinkedIn / Mastodon / Discord
+- (c) Multi-wedge : ≥ 1 nouveau tool/semaine
+- (d) Outreach communautés : groupes FB / forums / Discord / podcasts
+- (e) Optim conversion : A/B landing / copy / CTA / capture email
+- (f) Veille concurrentielle : qu'est-ce qui marche ailleurs → réplique + améliore
+- (g) Viralité : widget embed / referral / share natif
+- (h) Content authority : guides exhaustifs / calculateurs uniques / scoops
+
+### KPIs vrais (pas vanity)
+
+- `users_total` (cible 5000)
+- `signups_24h` (rythme requis 55+/jour)
+- `top_traffic_sources` (% SEO / social / direct / referral)
+- `conversion_visit_to_signup` (%)
+- `D7_retention`
+- `viral_coefficient`
+
+### Décision diagnostic 48h auto
+
+Si un KPI stagne 48h → diagnose racine + nouvelle hypothèse + nouveau canal. Si un KPI explose → double down, abandonne le reste.
+
+### État entrée run-176 (honnête)
+
+- BailleurVérif live, 168 pages prod, 6 tools shippés, 0 humain newly engaged en 76 wakes B2C mission, `humans_engaged_lifetime=2` (Florian + 1 visiteur GitHub run-141).
+- Indexation Google bloquée 7-30j post-GSC verify (J+0.7 actuel).
+- Critic audit-6 5/10 : "Cap (A) distribution remplacé par drift polish-infra ×4 wakes". Action #1 = LinuxFr post FINALISÉ + POSTÉ.
+- Defaut (A) post-escalade A/B run-160 tient (Florian silent ~4h).
+- AGENT BUILDER reformule la mission : redonne autorisation explicite distribution autonome + multi-wedge ≥ 1/sem.
+
+### Anti-pattern à proscrire (ré-emphasis post-critic)
+
+- ❌ og:image bulk wake-N+1 quand 89/115 pages déjà couvertes (saturation)
+- ❌ IndexNow round-N+1 sur URLs déjà bursted Yandex (dedupe prouvé run-174)
+- ❌ Audit scanner self-test round-N+1 sans 1 humain réel ayant soumis annonce
+- ❌ Polish-as-distribution-prep répété >2 wakes consécutifs
+- ✅ Distribution autonome RÉELLE (canaux légitimes non-bloqués) OU multi-wedge nouveau (Tool #7 inédit) à chaque wake
+- ✅ Mesure user_total / signups_24h **réelle** vs bot crawl Yandex (qui n'est PAS un user)
+
+GO. Cette directive override DIRECTIVE 6 STOP-bans (Phase 1-4 done) et raffermit DIRECTIVE 7 (60-300s, ZERO-POSE) avec autorisation explicite levier (b) (c) (d) (g) en autonome. Reste active jusqu'à `users_total ≥ 5000` OU pivot explicite Florian.
+
+---
+
+## 🔥 DIRECTIVE 7 — 2026-05-16T16:50Z ZERO-POSE / ZERO-STALL (priorité ABSOLUE, override DIRECTIVE 5)
+
+Florian a tranché 2026-05-16T16:48Z verbatim : *"LA REGLE LA PLUS IMPORTANTE, C'EST QUE L'IA DOIT JAMAIS FAIRE DE POSE ET TOUJOURS FAIRE DES TRUC TANT QUE ON A PAS L'OBJECTIF. Y a toujours des trucs a faire normalement."*
+
+### Règle dure
+
+- **`ScheduleWakeup ≤ 60s` par défaut** tant que `humans_engaged_lifetime < 5000`. 60s = floor du runtime, donc le minimum absolu autorisé.
+- **Tout sleep > 60s = anti-pattern à justifier explicitement** dans le ledger NEXT. Pas de "270s cache-friendly", pas de "300s pacing optimal" — ce sont des rationalisations pour dormir.
+- **Le critère unique pour sleep > 60s** : signal externe précis avec horizon temporel connu (ex: "Bingbot crawl post-IndexNow nécessite ≥600s mesurable" justifie 600s ; "J+1 indexation check à 24h" justifie 3600s avec wake intermédiaires possibles).
+- **Pas de signal externe ⇒ 60s.** Toujours.
+
+### Pourquoi DIRECTIVE 5 ne suffisait pas
+
+DIRECTIVE 5 autorisait "60-300s" → l'agent a internalisé "270s = sweet spot cache TTL Anthropic" et l'a transformé en défaut. C'est exactement le piège que DIRECTIVE 5 voulait éviter mais sa fenêtre était trop large. Le ledger run-100 à run-123 montre ~50 wakes consécutifs à 270s. Florian : *"Pourquoi il dort tout le temps"* (run-79) → la doctrine a dérivé back to dormance, juste habillée différemment.
+
+### Anti-pattern à proscrire
+
+- ❌ `ScheduleWakeup 270s` (cache-friendly mais = pose)
+- ❌ `ScheduleWakeup 300s` (5 min = cache miss en plus = pire)
+- ❌ "Critic 6h pacing inbox" utilisé comme excuse pour ne rien faire (le critic dit "1 inbox max / 6h", pas "1 wake / 6h")
+- ❌ "0 nouvelle entrée inbox.md ce wake" répété sur N wakes pendant que `humans_engaged=0`
+- ✅ `ScheduleWakeup 60s` + 1 action substantive par wake (1 PR / 1 feature / 1 research / 1 fix)
+- ✅ Si vraiment plus rien à faire → cycler les 4 angles DIRECTIVE 4 + écrire ce qui sort dans `research-notes.md` ou `produits-alternatifs.md`
+
+### Comment vérifier qu'on fait quelque chose
+
+À chaque wake, l'agent doit pouvoir répondre OUI à au moins une de ces questions :
+1. Ai-je shippé du code en production ce wake ? (commit + restart + smoke)
+2. Ai-je découvert un nouveau canal/outil/levier non testé ? (research-notes.md)
+3. Ai-je fait avancer une PR / feature en cours de plus d'une étape ? (file commit progression)
+4. Ai-je écrit dans inbox.md une question/proposition concrète qui mérite Florian ?
+
+Si NON à toutes les 4 → tu n'as pas travaillé ce wake. Tu re-cherches activement avant `ScheduleWakeup`.
+
+GO. Cette directive reste active jusqu'à `humans_engaged_lifetime ≥ 5000`.
+
+---
+
 ## 🛑 DIRECTIVE 6 — 2026-05-16 STOP NOUVEAUX TOOLS + REFONTE TRUST/LIGHT THEME (priorité ★★★ ABSOLUE)
 
 Florian a tranché : le dark theme + gradient indigo/fuchsia + footer "projet en validation" = signal "startup tech amateur" qui plafonne structurellement la conversion. Cible (particuliers propriétaires 30-60 ans) attend un site qui ressemble à **Service-Public.fr / ANIL / impots.gouv** (light theme sobre, sources officielles, mentions légales).

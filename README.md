@@ -110,7 +110,7 @@ The agent's logs (`runs/`, `state.md`, `ledger.md`, `inbox.md`) and the content 
 
 ## Contact
 
-Founder: Florian Demartini — [florian@mobula.io](mailto:florian@mobula.io)
+Founder: Florian Demartini — [florian.demartini.dev@gmail.com](mailto:florian.demartini.dev@gmail.com)
 Project mailbox: contact@bailleurverif.fr
 Issues & PRs welcome.
 

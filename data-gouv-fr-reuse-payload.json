@@ -1,0 +1,23 @@
+{
+  "title": "BailleurVerif — Observatoire annonces loyer non-conformes (encadrement + DPE F/G)",
+  "type": "application",
+  "topic": "housing_and_development",
+  "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
+  "description": "**BailleurVerif** est un observatoire ouvert qui croise quotidiennement des annonces de location FR avec le **plafond d'encadrement des loyers** (zone tendue, arrêté préfectoral) et le **calendrier d'interdiction Loi Climat des DPE F/G** (2025/2028/2034).\n\n## Headline live\n\nSur **N = 160 annonces uniques** crawlées (Locservice, robots-permissive) sur **7 villes** (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux) : **36 / 61 in-scope = 59,0 %** présumées en violation encadrement, intervalle de confiance Wilson 95 % [46,5 % ; 70,5 %], demi-largeur ±12 pts. Mise à jour automatique quotidienne (cron 03:00 UTC).\n\n## Datasets data.gouv.fr réutilisés\n\n- **Diagnostics de Performance Energétique (DPE) — ADEME** (`66c2ff234ea0a9d2ba6a62c3`) : utilisé via l'API ADEME `data.ademe.fr/data-fair` pour récupérer le DPE d'une adresse en `/api/lookup-adresse`.\n- **Base Adresse Nationale (BAN)** (`5530fbacc751df5ff937dddb`) : utilisé via `api-adresse.data.gouv.fr/search/` pour géocoder l'adresse saisie par l'utilisateur en commune INSEE + code postal.\n- **Encadrement des loyers de Paris** (`62a7243912f22dbff558476d`) : intégré dans la matrice plafonds 2026 utilisée par le moteur de scoring `/scoring/non_conformity.py`.\n- **JORF — édition Lois et décrets du Journal officiel** (`53ca3560a3a7294a1ddd784e`) : polling cron `*/30 min` (`poll_jorf.py`) sur les tarballs DILA pour détecter les nouveaux décrets impactant bailleurs (encadrement, Loi Climat).\n\n## Outils publics exposés\n\n- **Observatoire** : `/observatoire-annonces-loyer.html` (URL canonique de la réutilisation) — tableau interactif, Wilson CI, top excès, baseline hors zone tendue, méthodologie 6 étapes, JSON-LD `Dataset`.\n- **Lookup adresse** : `/mon-bien.html` — saisie adresse → DPE ADEME + plafond encadrement + statut Loi Climat en 1 vue.\n- **Plafonds de loyer interactifs** : `/plafonds-loyers.html`.\n- **DPE fiabilité** : `/dpe-fiabilite.html` — détecteur d'anomalies DPE pré-2021.\n- **Calendrier Loi Climat par ville** : 50 pages `/{ville}-dpe-f-g-interdit-location.html`.\n- **Encadrement par commune** : 31 pages `/encadrement-loyer-{commune}-2026.html`.\n- **Préavis bail simulateur** : `/preavis-bail.html`.\n- **Veille réglementaire** : `/changelog.html` alimenté par poll_jorf.py.\n\n## Méthodologie (reproductible)\n\n1. Crawl Locservice (User-Agent `BailleurVerifCompliance/0.1`, pace 30 s entre requêtes, robots-permissive vérifié).\n2. Extraction champs minimaux : `accommodation_id` (hash), ville_label, surface_m2, loyer_eur, DPE. **Aucune PII vendeur** (RGPD art. 6.1.e).\n3. Détermination zone tendue à partir de la liste des arrêtés préfectoraux 2026.\n4. Calcul plafond_max via matrice encadrement (typologie meublé/non-meublé inférée du titre, biais conservatif).\n5. Classification : `clear` (>+10 % plafond_max), `presumed` (1–10 %), `conforming` (≤ plafond).\n6. Publication JSON-LD `Dataset` + table HTML + Wilson 95 % CI.\n\n## Caveats (publiés en clair)\n\n- N=61 in-scope = sample limité. CI ±12 pts.\n- `plafond_max` = borne inférieure du % non-conformité réel.\n- Meublé inféré du titre = faux négatifs possibles.\n- 0 violation DPE G dans le sample (biais source Locservice).\n- 0 PII vendeur stockée. Hash URL + ville + loyer + surface + DPE uniquement.\n\n## Code source\n\n- Repo public MIT : https://github.com/Creariax5/bailleurverif\n- Crawler : `wedge-tool/crawler/locservice_v0.py`\n- Scoring : `wedge-tool/scoring/conformity_score.py`\n- Tracker compounding : `wedge-tool/scoring/moat_growth_tracker.py`\n- Cron daily : `wedge-tool/crawler/daily_crawl_7cities.sh` (03:00 UTC, 7 villes, dedupe auto)\n\n## Téléchargement direct des données scorées\n\n- CSV brut scoré : https://bailleurverif.fr/data/observatoire-annonces-loyer-2026-05-17.csv (160 lignes × 23 colonnes, 25 KB, licence ouverte Etalab 2.0). Importable directement Excel / pandas / R sans dépendance. URL hashée (0 PII vendeur). Colonnes incluent `eur_per_m2`, `plafond_applied_eur_m2`, `encadrement_violation`, `encadrement_excess_pct`, `dpe_letter`, `violation_type`.\n\n## Contact\n\nflorian.demartini.dev@gmail.com — projet d'intérêt général, gratuit, 0 monétisation.",
+  "tags": [
+    "encadrement-des-loyers",
+    "dpe",
+    "ademe",
+    "ban",
+    "loi-climat",
+    "logement",
+    "observatoire",
+    "open-data"
+  ],
+  "datasets": [
+    "66c2ff234ea0a9d2ba6a62c3",
+    "5530fbacc751df5ff937dddb",
+    "62a7243912f22dbff558476d",
+    "53ca3560a3a7294a1ddd784e"
+  ]
+}

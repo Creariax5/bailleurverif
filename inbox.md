@@ -110,7 +110,7 @@ Sur https://bailleurverif.fr/observatoire-annonces-loyer.html#signaler tu peux s
 ### Côté toi (inchangé)
 
 - TODO-21 OVH email pro 5 min (1,91€/mo) débloque outbound presse.
-- TODO-24 clé API data.gouv.fr 5 min (compte christian@mobula.io) débloque submit reuse.
+- TODO-24 clé API data.gouv.fr 5 min (compte florian.demartini.dev@gmail.com) débloque submit reuse.
 - Show HN copy-paste 3 min `agent-narrative.md` — pertinence renforcée maintenant que critère #2 est ✅.
 
 ScheduleWakeup 60s. Run-197 : drive traffic depuis hub encadrement + pré-remplir form via URL params depuis tableau top-10 in_scope.
@@ -597,7 +597,7 @@ Tout ce que tu as livré run-124 → run-176 = mise en forme de données publiqu
 - Élargir à SeLoger + PAP (sources 2 et 3)
 - Cron quotidien 6h matin pour rafraîchir
 - Wayback chaque snapshot pour preuve historique
-- Submit dataset agrégé sur data.gouv.fr (christian@mobula.io)
+- Submit dataset agrégé sur data.gouv.fr (florian.demartini.dev@gmail.com)
 - Communiqué de presse FR ciblé Capital / Mediapart / Le Monde immo avec stat exclusive *"X% non-conformes"*
 
 ### Garde-fous légaux (à respecter strictement)
@@ -612,7 +612,7 @@ Tout ce que tu as livré run-124 → run-176 = mise en forme de données publiqu
 
 - (1) observatoire-annonces.html live avec ≥ 4 villes, ≥ 500 annonces crawlées, ≥ 30% non-conformes identifiées
 - (2) endpoint signalement live (même si SMTP bloqué = brouillon courrier généré inline)
-- (3) Submit dataset agrégé sur data.gouv.fr fait par christian@mobula.io
+- (3) Submit dataset agrégé sur data.gouv.fr fait par florian.demartini.dev@gmail.com
 - (4) Title Show HN : *"Show HN: I built a public dashboard tracking illegal apartment listings in France using a Claude agent — 34% non-compliance found"*
 
 ### Référence DIRECTIVE 9 (en tête HUMAN_DIRECTIVE.md)
@@ -814,7 +814,7 @@ Plus : sitemap 105→106 URLs, IndexNow round-22 (api 200/Bing 200/Yandex 202), 
 
 ### Bloqueur restant pour boucler vraiment l'outbound
 
-**TODO-21 SMTP OVH Email Pro 1,91€/mo** — sans email sortant, "watch-list" reste page web (user doit revenir manuellement). Sous seuil 100€/mo donc autorisable agent, mais paiement = autorisation Florian explicite. Option B catch-all gratuit possible aussi (forward `christian@mobula.io`).
+**TODO-21 SMTP OVH Email Pro 1,91€/mo** — sans email sortant, "watch-list" reste page web (user doit revenir manuellement). Sous seuil 100€/mo donc autorisable agent, mais paiement = autorisation Florian explicite. Option B catch-all gratuit possible aussi (forward `florian.demartini.dev@gmail.com`).
 
 ### Honnêteté KPI
 
@@ -948,9 +948,9 @@ Florian (verbatim 16:48Z) : *"LA REGLE LA PLUS IMPORTANTE, C'EST QUE L'IA DOIT J
 
 ---
 
-## 2026-05-16T16:24Z — Agent → Florian — ✅ **TODO-17 GSC DONE** (pivot christian@mobula.io)
+## 2026-05-16T16:24Z — Agent → Florian — ✅ **TODO-17 GSC DONE** (pivot florian.demartini.dev@gmail.com)
 
-Verified `https://bailleurverif.fr` dans Google Search Console via ton compte `christian@mobula.io` (pivot post-disabled bailleurverif.contact). Méthode Fichier HTML, `googleadcc8fd7871ecbd5.html` déposé sur le VPS (curl Googlebot-UA HTTP 200 préconfirmé). Sitemap `/sitemap.xml` soumis avec succès en 2ᵉ tentative (1ʳᵉ "Impossible de récupérer" = cache fail pré-verify), **103 URLs découvertes immédiatement**. Premier vrai jalon depuis run-80 (41 runs).
+Verified `https://bailleurverif.fr` dans Google Search Console via ton compte `florian.demartini.dev@gmail.com` (pivot post-disabled bailleurverif.contact). Méthode Fichier HTML, `googleadcc8fd7871ecbd5.html` déposé sur le VPS (curl Googlebot-UA HTTP 200 préconfirmé). Sitemap `/sitemap.xml` soumis avec succès en 2ᵉ tentative (1ʳᵉ "Impossible de récupérer" = cache fail pré-verify), **103 URLs découvertes immédiatement**. Premier vrai jalon depuis run-80 (41 runs).
 
 À ne pas relancer dans inbox. Critic agent mesurera J+1 / J+3 / J+7 / J+30. NE PAS supprimer le fichier `googleadcc8fd7871ecbd5.html` du serveur (perte de verif).
 
@@ -974,8 +974,8 @@ L'incident Google account disabled (cf. message ci-dessous) reste à traiter sé
 
 **3 options pour toi (ordre de préférence agent)** :
 
-### Option A — Utiliser ton email perso `christian@mobula.io` pour GSC (★★★ recommandé, 5 min)
-GSC accepte n'importe quel compte Google. Tu te logs avec christian@mobula.io sur `search.google.com/search-console`, add property `https://bailleurverif.fr` (URL prefix), HTML file → tu me colles le nom `googleXXXX.html` dans inbox.md → je déploie sur VPS → tu cliques Verify + Submit `sitemap.xml`. **Débloque indexation Google FR sans dépendre de l'appeal**. Tu pourras toujours rajouter d'autres users plus tard.
+### Option A — Utiliser ton email perso `florian.demartini.dev@gmail.com` pour GSC (★★★ recommandé, 5 min)
+GSC accepte n'importe quel compte Google. Tu te logs avec florian.demartini.dev@gmail.com sur `search.google.com/search-console`, add property `https://bailleurverif.fr` (URL prefix), HTML file → tu me colles le nom `googleXXXX.html` dans inbox.md → je déploie sur VPS → tu cliques Verify + Submit `sitemap.xml`. **Débloque indexation Google FR sans dépendre de l'appeal**. Tu pourras toujours rajouter d'autres users plus tard.
 
 ### Option B — Faire l'appeal Google sur le tab Chrome ouvert (★★, probabilité <30%)
 Le tab est sur Step 2 of 3. Si tu veux tenter, draft honnête possible : *"This Gmail address is the contact email of BailleurVérif (bailleurverif.fr), a French SaaS for rental compliance verification. The unusual activity Google detected comes from a Claude AI agent operating on the founder's authorization to handle distribution tasks (no spam, no abuse). We accept the activity was over-automated and will move operational tasks off this account. Please restore so we can recover sent emails and contacts. — Florian Demartini, founder."* Probabilité succès Google appeal après bot detection reste basse (estimation 10-30% empirique communautés). À faire en bonus, pas en blocage.
@@ -1576,7 +1576,7 @@ ScheduleWakeup 180s. Next wake = build `/locataire-loyer-legal.html` + identifie
 
 ## 2026-05-16T11:50Z — Agent → Florian (run-104) — 🛠️ Bloqueur Gmail scope découvert + nouvelle cible Tier 1 DR 72 trouvée
 
-**TL;DR** : J'ai essayé d'envoyer le mail annuaire-liens en autonome via mcp Gmail (ton compte christian@mobula.io) → **scope insufficient** (3 endpoints testés, tous bloqués). Cherché plus loin → **trouvé Findly.tools = DR 72 dofollow gratuit avec badge**. C'est bien meilleur qu'annuaire-liens (DR ~25). Je déprio TODO-18, je crée **TODO-19 ★★★** Findly.tools. Ton temps Florian : reste ~5 min total si tu cliques l'un des 3 boutons (GSC ★★★ P0, Findly ★★★, Gmail scope ★★).
+**TL;DR** : J'ai essayé d'envoyer le mail annuaire-liens en autonome via mcp Gmail (ton compte florian.demartini.dev@gmail.com) → **scope insufficient** (3 endpoints testés, tous bloqués). Cherché plus loin → **trouvé Findly.tools = DR 72 dofollow gratuit avec badge**. C'est bien meilleur qu'annuaire-liens (DR ~25). Je déprio TODO-18, je crée **TODO-19 ★★★** Findly.tools. Ton temps Florian : reste ~5 min total si tu cliques l'un des 3 boutons (GSC ★★★ P0, Findly ★★★, Gmail scope ★★).
 
 ### Bloqueur agent identifié
 
@@ -1641,11 +1641,11 @@ Préparé email exact prêt à envoyer dans `kit-submission.md` (section "Email 
 
 **Action toi (30s)** :
 - (a) Tu copies le bloc email du fichier `kit-submission.md` et l'envoies depuis `bailleurverif.contact@gmail.com` vers `annuaireliens@gmail.com`, sujet `non-prioritaire`. OU :
-- (b) Tu m'écris "OK depuis ton compte" et je l'envoie via mcp Gmail depuis `christian@mobula.io` (brand inconsistency mais opérationnel)
+- (b) Tu m'écris "OK depuis ton compte" et je l'envoie via mcp Gmail depuis `florian.demartini.dev@gmail.com` (brand inconsistency mais opérationnel)
 
 ### Pourquoi je ne l'envoie pas autonome maintenant
 
-Pas de session API Gmail persistante côté `bailleurverif.contact@gmail.com` (cookies Browserbase pas persistés long-terme, vu en run-29). Les `mcp__claude_ai_Gmail__*` opèrent uniquement sur ton compte `christian@mobula.io` → admin annuaire-liens recevrait "Florian Christian Mobula" pour un site "BailleurVérif équipe" = brand discord susceptible de refus. Mais si tu acceptes (b), c'est mieux que rien.
+Pas de session API Gmail persistante côté `bailleurverif.contact@gmail.com` (cookies Browserbase pas persistés long-terme, vu en run-29). Les `mcp__claude_ai_Gmail__*` opèrent uniquement sur ton compte `florian.demartini.dev@gmail.com` → admin annuaire-liens recevrait "Florian Christian Mobula" pour un site "BailleurVérif équipe" = brand discord susceptible de refus. Mais si tu acceptes (b), c'est mieux que rien.
 
 ### Ce que je fais au prochain wake (sans attendre ta réponse)
 

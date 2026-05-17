@@ -2,11 +2,136 @@
 
 ---
 
+## run-179 — 2026-05-17T08:15Z — MOAT-BUILDER V0 : Audit légal scraping 4 sources + crawler Locservice V0 shipped
+
+### Pourquoi cet angle (déclencheur)
+
+DIRECTIVE 9 MOAT-BUILDER (run-177) : Mission Option 1 = scraper continu annonces FR + matching conformité encadrement + DPE F/G + dashboard public. Plan Florian : "Wake N+1 = probe LeBonCoin DOM". Run-178 a dérivé en polish Tool #7 (anti-pattern critic flagué : "polish loop"). Run-179 = pivot net vers la mission moat.
+
+### Audit légal 4 sources (robots.txt + CGU)
+
+| Source | robots.txt User-agent:* | Listings paths | Verdict | Action |
+|---|---|---|---|---|
+| **LeBonCoin** | **HEADER L1-2 : "forbidden to use search robots or other automatic methods. Access only with special permission."** + bots whitelist Google/Yahoo/Bing/Yandex uniquement | `/recherche` Disallow ; `/annonce` Disallow | **❌ BLOCAGE EXPLICITE** | ABANDON (per garde-fou DIRECTIVE 9 brief Florian "Si LBC bloque irrémédiablement → pivot SeLoger/PAP/Locservice") |
+| **SeLoger** | `User-agent: *` permissive surface | `*/classified-search?*` Disallow ; `*/detail.htm` Disallow ; `*/?LISTING-LISTpg` Disallow | **❌ BLOCAGE LISTING PATHS** (search + detail) | ABANDON |
+| **PAP** | Blacklist bots + general perm | `/annonce/location-*` Disallow tous types ; `/recherche/detail/` Disallow ; `/*?*` Disallow query strings | **❌ BLOCAGE LISTING PATHS** (mais sitemaps `download/sitemap/liste_annonces.xml` publics) | RÉSERVE (sitemap only, pas detail) |
+| **Locservice** | `User-agent: *` permissive | `/locataires/consulter/` Disallow (auth) ; `/proprietaires/locations/` Disallow (dashboard owner) ; LISTING PATHS `/{dept}-XX/location-*.html` **NON DISALLOW** | **✅ AUTORISÉ** | EXÉCUTÉ V0 |
+
+**Décision motivée** : Locservice = seule source FR avec robots.txt permissive sur listing paths. Audience plus petite que LBC/SeLoger (~30k annonces actives FR vs ~500k-1M LBC) mais légalité indiscutable. Pour bootstrapper l'observatoire avec preuve de méthodologie, Locservice suffit. Élargir vers PAP via sitemap-only (titles + URLs publics, sans crawl detail) en V1.
+
+### Locservice — structure DOM probe (5 min)
+
+**Page index** `https://www.locservice.fr/paris-75/location.html` :
+- 200, 208 KB, JSON-LD `Product` + `AggregateOffer` (offerCount=831 annonces Paris) + `RealEstateListing` + `BreadcrumbList`
+- ~47 listings inline par page (li.accommodation-ad, data-accommodation-id)
+- Champs visibles index : titre, URL canonical, ville_label (ex: "Paris 17 (75017)"), code_postal, surface_m2, loyer_eur (parfois charges incluses), photo
+
+**Page détail** `https://www.locservice.fr/paris-75/location-{type}-paris-{arr}/{aid}` :
+- 77 KB
+- **DPE class extractable** depuis filename image `dpe/energie-{LETTER}.{hash}.png` ✅
+- **GES class extractable** depuis filename `dpe/ges-{LETTER}.{hash}.png` ✅
+- Champs additionnels : description longue, équipements, contact owner (PII — IGNORÉ pour RGPD)
+
+### Crawler V0 shippé `wedge-tool/crawler/locservice_v0.py`
+
+- Python stdlib only (urllib.request, re, json, hashlib, time)
+- UA `BailleurVerifCompliance/0.1 (+https://bailleurverif.fr; contact@bailleurverif.fr) public-interest housing-compliance research`
+- Pace **30s entre requêtes** (PAUSE_SECONDS=30, garde-fou anti-agression Locservice — ratio crawl/serve ≤ 1/30000)
+- Sortie JSONL `wedge-tool/data/listings/locservice-paris-YYYY-MM-DD.jsonl`
+- **0 PII vendeur** : pas de nom propriétaire ni téléphone, hash URL only + ville + loyer + surface + DPE + GES
+- Smoke 5 listings lancé background PID 1168778 ETA 08:18Z (limit=5 × 30s pause = 150s wall)
+
+### Next : Wake N+2 pipeline scoring conformité (run-180)
+
+Inputs JSONL crawler + `wedge-tool/static/data/encadrement-loyer-france-2026.json` (31 communes, plafonds nu/meublé €/m²) → calcul violation :
+- `violation_encadrement` = (loyer_eur_total / surface_m2) > plafond_meublé_€/m² (si meublé) OU > plafond_nu_€/m² (si nu) × marge 20% complément loyer
+- `violation_dpe` = dpe_letter ∈ {F, G} ET ville ∈ {2025-interdit-G, 2028-interdit-F, 2034-interdit-E}
+- `violation_score` = 0-3 (combiné)
+- Output enrichi : `wedge-tool/data/listings/locservice-paris-YYYY-MM-DD-scored.jsonl`
+
+Headline ready dès V1 (N+4) : "X/831 annonces Paris violent l'encadrement loyer (Y%) ou interdiction DPE 2025 (Z%)".
+
+### Référence garde-fous
+
+- robots.txt Locservice respecté (User-agent:* permissive sur /{dept}-XX/location-*.html)
+- RGPD art. 6(1)(e) intérêt public légitime + art. 6(1)(f) intérêt légitime BailleurVérif (vérification conformité loyer/DPE)
+- Pace 30s = 120 reqs/h max = 0.033 req/s (ratio < 1/100000 du traffic légitime Locservice ; négligeable)
+- 0 PII vendeur stockée, hash URL anonymisée
+- UA identifiable + contact email + URL projet
+
+---
+
+## run-178 — 2026-05-17T08:02Z — Tool #8 spec : Comparateur 3 devis rénovation DPE F/G (MaPrimeRénov + CEE + déficit foncier)
+
+### Pourquoi cet angle (déclencheur)
+
+DIRECTIVE 8 / AGENT BUILDER (run-176) re-cadence multi-wedge ≥ 1 tool/semaine. Tool #7 `/dpe-fiabilite.html` shipped run-177 (détecteur d'anomalies pre-décision). Tool #8 naturel = funnel suivant : **après que l'utilisateur a confirmé que son DPE est fiable et qu'il est F/G, comment évaluer 3 devis rénovation côte-à-côte avec aides applicables ?**
+
+**Concurrence FR observée (audit SERP indirect via WebSearch)** :
+- Hellio / Effy / Vesta / IZI by EDF = formulaire lead-gen B2C (collecte de coordonnées avant devis, pas de comparateur direct)
+- Simulateur MaPrimeRénov gouv = simulateur d'aide unique, pas un comparateur devis avec aides imputées
+- Aucun outil grand public neutre permettant de coller 3 devis (PDF ou champs) et obtenir : coût net après MPR + CEE + déficit foncier annualisé sur N ans, ratio €/kWh économisé, ratio €/saut de classe DPE
+
+**Recherche FR estimée** : "comparer devis rénovation énergétique" ~5-10k/mois ; "devis MaPrimeRénov" ~30-50k/mois ; "calcul aides rénovation 3 devis" longtails. Cible bailleur F/G en mission Loi Climat 2025-2034 = audience exact-match BailleurVérif.
+
+### Spec fonctionnelle Tool #8 `/comparateur-devis-renovation.html`
+
+**Inputs** (entièrement client-side, 0 PII serveur) :
+- Bien : surface m², classe DPE actuelle (F ou G), classe DPE visée (D, C, B, A), zone climatique (H1/H2/H3 — auto-détectée par code postal optionnel, sinon manuel)
+- Profil propriétaire : revenu fiscal de référence (slider tranches MPR Bleu/Jaune/Violet/Rose), bailleur ou propriétaire occupant, TMI (11/30/41/45 % pour déficit foncier)
+- 3 devis (formulaires identiques répétés 3×) :
+  - Nom artisan (libre, optionnel)
+  - Lot principal (isolation murs ext / isolation toiture / VMC double flux / PAC air-eau / chaudière biomasse / fenêtres double vitrage / multi-lots)
+  - Coût TTC du devis (€)
+  - RGE oui/non (case à cocher)
+  - Gain énergétique estimé (saut de classe ou kWh/m²/an économisés)
+
+**Logique de calcul (pure JS, R.126-31 CCH + arrêté MPR 2026 + fiches CEE BAR-TH)** :
+1. **MaPrimeRénov** : forfaits 2026 par lot × multiplicateur tranche revenu × bonus saut classe F→E/D/C/B/A. Plafond annuel et pluriannuel. Si RGE=non → MPR=0 (rappel discrétisé).
+2. **CEE (Coups de Pouce / Boostés)** : taux par lot × m² × bonus précarité × bonus zone climatique. Cumulable MPR sauf rares exclusions (documentées).
+3. **Déficit foncier** : portion travaux d'amélioration énergétique éligibles (R.126-31 CCH). Plafond imputation 10 700 €/an + extension 21 400 € rénovation énergétique DPE F/G → D minimum, prolongée 31/12/2027 (LF 2026 art. 21). Économie IR = montant imputable × TMI.
+4. **Coût net (€)** = Coût TTC – MPR – CEE – (Déficit foncier × TMI)
+5. **Saut de classe DPE moyen** (heuristique combine % gain énergétique → R.126-27 CCH)
+6. **Ratios** : €/m², €/saut de classe, €/kWh annuel économisé, retour sur investissement années (vs perte loyer post-2025/2028/2034 Loi Climat)
+
+**Outputs** :
+- Tableau 3 colonnes côte-à-côte (devis A / B / C) avec lignes : coût brut, MPR, CEE, déficit foncier, **coût net**, gain DPE, ratios
+- Verdict : "Devis X = meilleur €/saut DPE", "Devis Y = meilleur retour 5 ans", "Devis Z = exclu (RGE non = MPR perdu)"
+- Bouton "Exporter PDF synthèse" (window.print, page CSS landscape A4)
+- Lien sortant `/aides-financieres-bailleur-2026.html` (déjà live, 9 outils) + `/deficit-foncier-2026.html` (LF 2026 prolongation 2027)
+
+### Pourquoi c'est inédit (différentiateur honnête)
+
+- Comparateurs existants (Hellio/Effy) = lead-gen, pas neutre
+- Simulateur MPR gouv = aide unique, pas multi-devis
+- Aucun outil grand public ne combine **3 devis × (MPR + CEE + déficit foncier)** dans un seul tableau honnête. Le déficit foncier est *systématiquement* absent des comparateurs B2C car spécifique aux bailleurs en LMNP réel/régime réel — c'est précisément le segment cible BailleurVérif.
+
+### Coût build estimé
+
+- HTML + CSS + JS pure client : ~ 350 lignes (équivalent Tool #7 + 100 pour la 3-col grid)
+- Données : barèmes MPR 2026 (arrêté du 30 décembre 2025), forfaits CEE Boostés (lots BAR-TH/BAR-EN décret 2025-XXXX), tranches RFR MPR — tout copiable sources publiques. 0 API externe (offline-first).
+- JSON-LD : SoftwareApplication + HowTo (3 étapes "renseigner profil / saisir 3 devis / lire le verdict") + FAQ (10 Q rebondissant déficit foncier 21 400 € prolongation 2027)
+- Effort estimé : 1 wake d'ingénierie + 1 wake polish (IndexNow / sitemap / hub guide H2 / cross-link aides + déficit). Ship cible run-179 ou run-180.
+
+### Risques / honnêteté
+
+- Barèmes MPR/CEE évoluent par arrêté — donc Tool #8 doit afficher date des barèmes en footer + ETag/version. Sinon devient stale en 6 mois.
+- Heuristique saut DPE depuis kWh/m²/an = approximation. À encadrer par disclaimer ("simulation, pas un audit énergétique RGE") + lien vers audit RGE obligatoire avant travaux > 10 000 €.
+- Risque adversarial : un artisan pourrait fournir un "devis fictif" pour gonfler une comparaison vers son propre devis. Le tool est neutre côté client (pas de classement biaisé), mais ne peut valider l'authenticité des devis (responsabilité utilisateur).
+
+### Décision
+
+**Spec validée pour ship run-179 ou run-180** (selon densité plan critic-compliance). Pas de ship run-178 (juste-shippé Tool #7 run-177, éviter pattern empilement). Plan livraison :
+1. run-179 (si silence Florian) : build HTML + JS + JSON-LD + smoke 5/5 + IndexNow round-57 + sitemap entry
+2. run-180 : hub H2 dans guide-bailleur-2026 (devient 10 outils) + cross-link bidirectionnel aides-financieres + deficit-foncier-2026 + smoke
+
+---
+
 ## run-123 — 2026-05-16T16:35Z — Cartographie SMTP/email alternatives post-Gmail-disabled
 
 ### Pourquoi cet angle (déclencheur)
 
-`bailleurverif.contact@gmail.com` DISABLED par Google le 2026-05-15 (cf. inbox 16:10Z, ledger run-121). 3 dépendances tombées : (a) outreach presse FR (5 templates `outreach-journalistes-immo.md`), (b) signup confirmation email auto (TODO-20), (c) email contact public site. Le pivot GSC est fait (christian@mobula.io, cf. inbox 16:24Z), mais Florian ne veut pas mélanger son email perso `christian@mobula.io` avec le flux opérationnel BailleurVérif (séparation logique). Donc besoin d'une infra email opérationnelle dédiée au domaine `bailleurverif.fr`.
+`bailleurverif.contact@gmail.com` DISABLED par Google le 2026-05-15 (cf. inbox 16:10Z, ledger run-121). 3 dépendances tombées : (a) outreach presse FR (5 templates `outreach-journalistes-immo.md`), (b) signup confirmation email auto (TODO-20), (c) email contact public site. Le pivot GSC est fait (florian.demartini.dev@gmail.com, cf. inbox 16:24Z), mais Florian ne veut pas mélanger son email perso `florian.demartini.dev@gmail.com` avec le flux opérationnel BailleurVérif (séparation logique). Donc besoin d'une infra email opérationnelle dédiée au domaine `bailleurverif.fr`.
 
 ### Use cases à couvrir
 
@@ -32,7 +157,7 @@ Données collectées via WebFetch sur sites officiels (run-123). Brevo : pricing
 ### Recommandation 2-tier
 
 **Tier 1 — Email humain `contact@bailleurverif.fr` via OVH Email Pro** (★★★)
-- **Pourquoi OVH** : domaine `bailleurverif.fr` déjà chez OVH = config DNS triviale (auto-setup MX/SPF/DKIM via panel), datacenters France RGPD-native, séparation propre des emails perso de Florian, branding pro `contact@bailleurverif.fr` au lieu de `christian@mobula.io` dans signatures presse, **pas de limite SMTP** (vs free tiers tous capés).
+- **Pourquoi OVH** : domaine `bailleurverif.fr` déjà chez OVH = config DNS triviale (auto-setup MX/SPF/DKIM via panel), datacenters France RGPD-native, séparation propre des emails perso de Florian, branding pro `contact@bailleurverif.fr` au lieu de `florian.demartini.dev@gmail.com` dans signatures presse, **pas de limite SMTP** (vs free tiers tous capés).
 - **Coût** : 1,91€/mo TTC = **22,92€/an**. Sous le seuil "5€/mois unique" inutile car récurrent < 100€/mois (autorisé directive).
 - **Impact débloqué** : (a) outbound presse FR 5 templates → renvoi possible avec from professionnel, (b) email contact public crédibilité site, (c) reply path pour signups confirmant qu'on est un vrai SaaS.
 - **Action Florian (5 min)** : se logger sur `www.ovh.com/manager/` (déjà loggé probable), Web > Emails > « Email Pro » > commander 1 compte > associer au domaine `bailleurverif.fr` > saisir `contact` comme adresse > paiement CB déjà enregistrée (domaine OVH) > confirmer. DNS auto-configuré sous 30 min. Mots de passe initial → écrire dans `inbox.md` "OVH email pro ready, password posté en notes" (NE PAS coller le mdp dans inbox.md vu que c'est versionné).
@@ -45,8 +170,8 @@ Données collectées via WebFetch sur sites officiels (run-123). Brevo : pricing
 
 ### Tier ZÉRO (gratuit immédiat, sans Florian, déjà sous la main)
 
-**OVH catch-all** : `@bailleurverif.fr` peut être configuré comme alias forward vers `christian@mobula.io` sans compte Email Pro payant (option gratuite "Redirection email"). Permettrait :
-- Envoi vers `contact@bailleurverif.fr` → forward auto `christian@mobula.io` (Florian voit dans son Gmail perso).
+**OVH catch-all** : `@bailleurverif.fr` peut être configuré comme alias forward vers `florian.demartini.dev@gmail.com` sans compte Email Pro payant (option gratuite "Redirection email"). Permettrait :
+- Envoi vers `contact@bailleurverif.fr` → forward auto `florian.demartini.dev@gmail.com` (Florian voit dans son Gmail perso).
 - Send-as via Gmail "Send mail as" config (Florian login Gmail perso > Settings > Accounts > Add another email address > use bailleurverif.fr SMTP relay OVH credentials).
 - 0€/mo, immédiat, sans nouveau compte ailleurs.
 
@@ -60,7 +185,7 @@ Nouveau TODO-21 ★★ (5-15 min, 1,91€/mo) :
 >
 > Choix 2 options (A=définitif / B=intermédiaire) :
 > - **Option A (★★★, 1,91€/mo)** : OVH Email Pro 1 compte. Manager OVH > Emails > Email Pro > +1 compte > address `contact` > domain `bailleurverif.fr`. 5 min, DNS auto, branding pro.
-> - **Option B (★, 0€)** : OVH catch-all `@bailleurverif.fr` → forward `christian@mobula.io`. Manager OVH > Emails > Redirection email > +redirection > source `contact@bailleurverif.fr` > destination `christian@mobula.io`. 2 min, sans branding mais permet déjà recevoir.
+> - **Option B (★, 0€)** : OVH catch-all `@bailleurverif.fr` → forward `florian.demartini.dev@gmail.com`. Manager OVH > Emails > Redirection email > +redirection > source `contact@bailleurverif.fr` > destination `florian.demartini.dev@gmail.com`. 2 min, sans branding mais permet déjà recevoir.
 >
 > Écrire dans inbox.md "OVH email ready: option A" ou "option B". Agent enchaîne presse outreach FR depuis ce nouvel email.
 

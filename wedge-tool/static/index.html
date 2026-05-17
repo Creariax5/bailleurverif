@@ -7,6 +7,7 @@
 <title>BailleurVérif — Votre location est-elle conforme à la loi en 2026 ?</title>
 <meta name="description" content="Vérifiez en 30 secondes si votre logement loué est conforme à la loi française 2026 : DPE, encadrement des loyers, obligations bailleur. Gratuit, sans inscription.">
 <link rel="canonical" href="https://bailleurverif.fr/">
+<link rel="me" href="https://github.com/Creariax5/bailleurverif">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="search" type="application/opensearchdescription+xml" title="BailleurVérif" href="/opensearch.xml">
 <link rel="alternate" type="application/atom+xml" title="BailleurVérif — Articles" href="/atom.xml">
@@ -19,11 +20,16 @@
 <meta property="og:url" content="https://bailleurverif.fr/">
 <meta property="og:site_name" content="BailleurVérif">
 <meta property="og:locale" content="fr_FR">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://bailleurverif.fr/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BailleurVérif — Votre bien est-il conforme à la loi 2026 ? DPE, encadrement, Loi Climat — vérification 30 secondes, gratuit.">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BailleurVérif — Conformité location 2026">
 <meta name="twitter:description" content="DPE, encadrement, amendes 5 000€ : vérifiez votre bien en 30 secondes. Gratuit, sans inscription.">
+<meta name="twitter:image" content="https://bailleurverif.fr/og-image.png">
 <link rel="stylesheet" href="/css/main.css">
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="/css/tailwind-runtime.js"></script>
 <style>
   :root {
     --bg: #ffffff;
@@ -48,7 +54,42 @@
   .fade-in { animation: fadeIn .4s ease; }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
   .accent { color: var(--accent); }
+  .bv-dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--success,#059669); box-shadow:0 0 0 0 rgba(5,150,105,.6); animation:bvPulse 2s ease-in-out infinite; }
+  @keyframes bvPulse { 0% { box-shadow:0 0 0 0 rgba(5,150,105,.55); } 70% { box-shadow:0 0 0 8px rgba(5,150,105,0); } 100% { box-shadow:0 0 0 0 rgba(5,150,105,0); } }
+  .watch-entry { border-left: 2px solid var(--accent); padding: 4px 0 4px 12px; }
+  .watch-entry + .watch-entry { margin-top: .6rem; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://bailleurverif.fr/#organization",
+  "name": "BailleurVérif",
+  "url": "https://bailleurverif.fr/",
+  "logo": "https://bailleurverif.fr/favicon.svg",
+  "email": "contact@bailleurverif.fr",
+  "areaServed": "FR",
+  "sameAs": ["https://github.com/Creariax5/bailleurverif"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://bailleurverif.fr/#website",
+  "url": "https://bailleurverif.fr/",
+  "name": "BailleurVérif",
+  "alternateName": "BailleurVerif",
+  "description": "Vérification conformité bailleur 2026 + 17 outils gratuits FR (DPE, encadrement, anti-fraude, charges, colocation, aides)",
+  "inLanguage": "fr-FR",
+  "publisher": {"@id": "https://bailleurverif.fr/#organization"},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {"@type": "EntryPoint", "urlTemplate": "https://bailleurverif.fr/?q={search_term_string}"},
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 </head>
 <body class="min-h-screen">
 
@@ -59,6 +100,8 @@
       <span>BailleurVérif</span>
     </a>
     <nav class="flex items-center gap-4 text-sm">
+      <a href="/mon-bien.html" class="font-semibold text-[color:var(--accent)] hover:underline">Mon bien</a>
+      <a href="/changelog.html" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Veille JO</a>
       <a href="/blog/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">Guides</a>
       <a href="/preavis-bail.html" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Préavis</a>
       <a href="#about" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">À propos</a>
@@ -238,6 +281,230 @@
     </div>
   </section>
 
+  <section id="outil-irl" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">📈 Calculateur IRL — révision annuelle de loyer (nouveau)</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Indice INSEE T1 2026 = 146,60. Vérifie si l'augmentation de loyer proposée respecte la loi (formule article 17-1, loi 1989). Lettre LRAR de contestation pré-remplie.</p>
+      </div>
+      <a href="/irl-revision-loyer.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Vérifier ma révision →</a>
+    </div>
+  </section>
+
+  <section id="outil-dpe-fiabilite" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">🔍 Mon DPE est-il fiable ? — test 2026 (nouveau)</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Expiration légale (DPE 2013-2021 invalides), ancienne méthode 3CL-2013 sur facture vs. 3CL-2021 opposable, plausibilité kWh/m²/an ↔ classe énergie. 30 s, sans inscription.</p>
+      </div>
+      <a href="/dpe-fiabilite.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Tester mon DPE →</a>
+    </div>
+  </section>
+
+  <section id="outil-observatoire-annonces" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">📊 Observatoire annonces loyer — <strong style="color:#a01c1c">59,0 %</strong> de violations encadrement (donnée propriétaire, 95 % CI ±12 pts)</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Premier flux indépendant FR : 61 annonces in-scope Paris / Lyon / Lille / Villeurbanne sur sample 100 (locservice.fr, 17 mai 2026), scoring auto vs plafond légal arrêté préfectoral. 22 violations clear + 14 presumed. Top excès : Paris 4ᵉ 10 m² +175 %. Pattern : 20 / 22 clear = studios meublés ≤ 30 m². Méthodologie + caveats publics, open source.</p>
+      </div>
+      <a href="/observatoire-annonces-loyer.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Voir l'observatoire →</a>
+    </div>
+  </section>
+
+  <section id="outil-widget" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">🧩 Widget gratuit pour blogs &amp; sites immo (nouveau)</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Intégrez le statut DPE Loi Climat sur votre site en 1 ligne. Vanilla JS 4 Ko, aucun cookie, RGPD-friendly. <code class="text-xs">data-ville</code> + <code class="text-xs">data-dpe</code> + thème clair/sombre. Open source.</p>
+      </div>
+      <a href="/widget/" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Voir le widget →</a>
+    </div>
+  </section>
+
+  <section id="outil-hub-encadrement" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">🗺️ Hub national encadrement loyers 2026 (31 communes)</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Tous les plafonds €/m² par commune et intercommunalité : Paris 33,3 — Lille 19,5 — Lyon 16,8 — Bordeaux 17,4 — Montpellier 17,0 — Grenoble 14,5. Bail nu et meublé, données ouvertes CC-BY-4.0.</p>
+      </div>
+      <a href="/encadrement-loyer-france-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Voir les 31 communes →</a>
+    </div>
+  </section>
+
+  <section id="guide-bailleur-2026" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">📘 Guide bailleur 2026 — tout ce qui change cette année</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">DPE F/G interdiction, encadrement, IRL T1 2026, préavis, déficit foncier 21 400 €, MaPrimeRénov'/CEE/FEEBAT 3 : 6 verticales légales mises à jour mai 2026. Références officielles, sans inscription.</p>
+      </div>
+      <a href="/guide-bailleur-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Lire le guide →</a>
+    </div>
+  </section>
+
+  <section id="guide-locataire-2026" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">🧑‍💼 Guide locataire 2026 — vos droits expliqués</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Anti-arnaque, loyer encadré, dépôt max 1 mois (nu) / 2 mois (meublé), DPE F/G, IRL T1 2026, préavis 1 mois zone tendue, recours conciliation + ARS + ANIL. 6 chapitres, 12 FAQ, références légales — pour les 16 M de locataires en France.</p>
+      </div>
+      <a href="/guide-locataire-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Lire le guide →</a>
+    </div>
+  </section>
+
+  <section id="outil-depot-garantie" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">💶 Dépôt de garantie 2026 — plafonds, délais, 4 modèles LRAR</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Calculateur gratuit du plafond légal (1 mois nu, 2 mois meublé, 0 bail mobilité) + délais restitution 1 ou 2 mois + sanction 10 %/mois retard + 4 modèles de lettre LRAR pré-remplis (demande, mise en demeure, commission, juge). Loi 89 art. 22 + ALUR + ELAN.</p>
+      </div>
+      <a href="/depot-garantie-france-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Calculer + lettres →</a>
+    </div>
+  </section>
+
+  <section id="outil-etat-des-lieux" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">📋 État des lieux 2026 — modèle gratuit + checklist 60 points</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Générateur d'EDL d'entrée ou de sortie conforme décret 2016-382 : checklist interactive 6 pièces × 10 points, relevés compteurs, modèle imprimable ou téléchargeable, grille de vétusté usuelle, procédure si refus du bailleur. Tout reste local dans le navigateur — 0 inscription, 0 cookie.</p>
+      </div>
+      <a href="/etat-des-lieux-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Générer l'EDL →</a>
+    </div>
+  </section>
+
+  <section id="outil-charges-recuperables" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">⚖️ Charges récupérables 2026 — décret 87-713 + simulateur</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Liste exhaustive des 80+ postes du décret 87-713 (récupérable / non récupérable / partielle) avec simulateur lookup instantané + estimateur charges annuelles selon configuration logement + modèle LRAR contestation pré-rédigé. Loi 89-462 art. 23. Audience bailleur ET locataire.</p>
+      </div>
+      <a href="/charges-recuperables-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Vérifier mes charges →</a>
+    </div>
+  </section>
+
+  <section id="outil-aides-financieres" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">💰 Aides financières bailleur 2026 — hub + simulateur cumul</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Les 6 dispositifs rénovation décortiqués : MaPrimeRénov régime bailleur, éco-PTZ 50 000 €, CEE, FEEBAT 3, PROFEEL 3 (arrêtés JORF 7 mai 2026), déficit foncier 21 400 €. Simulateur d'éligibilité + comparateur cumul. Sortir d'un DPE F/G avant interdiction 2028 sans se ruiner.</p>
+      </div>
+      <a href="/aides-financieres-bailleur-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Simuler les aides →</a>
+    </div>
+  </section>
+
+  <section id="outil-aides-locataire" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">🎓 Aides financières locataire 2026 — hub + vérificateur d'éligibilité</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Les 6 dispositifs locataires décortiqués : APL/ALS/ALF CAF, garantie Visale gratuite, Loca-Pass 1 200 €, FSL impayés, chèque énergie 48-277 €, MOBILI-JEUNE 100 €/mois alternants. Vérificateur instantané — combien d'aides puis-je cumuler ? Audience 16 M locataires FR.</p>
+      </div>
+      <a href="/aides-financieres-locataire-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Vérifier mes aides →</a>
+    </div>
+  </section>
+
+  <section id="outil-colocation" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">👥 Colocation 2026 — quote-part, clause solidarité ALUR, avenant</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">3 calculateurs gratuits pour gérer une colocation FR : quote-part loyer/dépôt/charges (3 clés), simulateur clause solidarité ALUR (6 mois max post-départ), modèle d'avenant tripartite copy-paste. Audience ~800 000 colocations FR.</p>
+      </div>
+      <a href="/colocation-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Gérer ma colocation →</a>
+    </div>
+  </section>
+
+  <section id="guide-colocataire-2026" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">👥 Guide colocataire 2026 — solidarité ALUR, APL coloc, Visale</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Bail unique vs multiples, quote-part 3 clés, clause solidarité ALUR 6 mois post-départ, APL avec abattement 25 %, Visale + Loca-Pass Action Logement, assurance multi-coloc, avenant tripartite, recours ADIL/CDC. 6 chapitres, 12 FAQ, jurisprudence Cass. 3e civ. — pour les 800 000 colocs FR.</p>
+      </div>
+      <a href="/guide-colocataire-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Lire le guide →</a>
+    </div>
+  </section>
+
+  <section id="outil-scanner-arnaque" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">🛡️ Scanner anti-arnaque pour annonces de location</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Collez le texte d'une annonce (Leboncoin, SeLoger, PAP, Facebook) : 8 drapeaux rouges détectés en 30 secondes — Western Union, bailleur à l'étranger, caution avant visite, prix trop bas, photos hors plateforme. Gratuit, anonyme.</p>
+        <p class="text-xs mt-2" style="color:var(--text-secondary)">Pages locales : <a href="/arnaque-location-paris.html" class="underline">Paris</a> · <a href="/arnaque-location-lyon.html" class="underline">Lyon</a> · <a href="/arnaque-location-marseille.html" class="underline">Marseille</a> · <a href="/arnaque-location-toulouse.html" class="underline">Toulouse</a> · <a href="/arnaque-location-bordeaux.html" class="underline">Bordeaux</a> · <a href="/arnaque-location-lille.html" class="underline">Lille</a> · <a href="/arnaque-location-nantes.html" class="underline">Nantes</a> · <a href="/arnaque-location-strasbourg.html" class="underline">Strasbourg</a> · <a href="/arnaque-location-france-2026.html" class="underline font-semibold accent">Hub national 8 villes →</a></p>
+      </div>
+      <a href="/scanner-annonce-arnaque.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Analyser une annonce →</a>
+    </div>
+  </section>
+
+  <section id="watch-ticker" class="mt-6 mb-2" aria-label="Dernières surveillances réglementaires">
+    <div class="glass rounded-2xl p-5 sm:p-6">
+      <div class="flex items-center justify-between gap-3 flex-wrap mb-2">
+        <div class="flex items-center gap-2">
+          <span class="bv-dot" aria-hidden="true"></span>
+          <span class="text-[11px] uppercase tracking-widest accent font-semibold">Veille JORF · live</span>
+        </div>
+        <a href="/changelog.html" class="text-xs accent underline">Voir tout le journal →</a>
+      </div>
+      <h3 class="text-lg font-semibold mb-1">📡 Dernières mises à jour réglementaires</h3>
+      <p class="text-sm mb-3" style="color:var(--text-secondary)">
+        Détectées automatiquement dans le <strong>Journal Officiel</strong> par notre veille temps réel (DILA OPENDATA). Filtrées sur les sujets bailleur : encadrement, DPE, préavis, aides rénovation.
+      </p>
+      <div id="watch-ticker-meta" class="text-xs mb-3" style="color:var(--text-dim)">Chargement de la veille…</div>
+      <ol id="watch-ticker-list" class="text-sm" aria-live="polite"></ol>
+      <noscript>
+        <p class="text-xs mt-2" style="color:var(--text-dim)">Activer JavaScript pour la veille temps réel, ou <a href="/changelog.html" class="underline accent">consulter directement le journal</a>.</p>
+      </noscript>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var list = document.getElementById('watch-ticker-list');
+    var meta = document.getElementById('watch-ticker-meta');
+    if (!list || !meta) return;
+    function fmtDate(s){ return (s||'').slice(0,10); }
+    var TOPIC_LABEL = {
+      'dpe-bailleur':'DPE','loyer-legal':'Loyer','preavis':'Préavis',
+      'veille-reglementaire':'Veille','aides-financieres':'Aides','mon-bien':'Mon bien'
+    };
+    var TOPIC_STYLE = {
+      'dpe-bailleur':'background:#fff5e1;color:#a55a00;border:1px solid #f0c98a',
+      'loyer-legal':'background:#e6f0ff;color:#0a4ea2;border:1px solid #a3c3ed',
+      'preavis':'background:#f0e8ff;color:#5b2a9a;border:1px solid #cab9ed',
+      'veille-reglementaire':'background:#e6f5ed;color:#0a6b3a;border:1px solid #a3d8b9',
+      'aides-financieres':'background:#fef8d9;color:#7a5a00;border:1px solid #e8d272',
+      'mon-bien':'background:#fde7f0;color:#a02457;border:1px solid #f3b3cc'
+    };
+    function topicBadge(t){
+      var label = TOPIC_LABEL[t] || t;
+      var style = TOPIC_STYLE[t] || 'background:rgba(255,255,255,.05);color:var(--text-secondary)';
+      return '<a href="/changelog.html?topic='+encodeURIComponent(t)+'" class="text-[10px] uppercase tracking-wide font-semibold no-underline hover:opacity-80" style="margin-right:.4em;padding:2px 7px;border-radius:999px;'+style+'">'+label+'</a>';
+    }
+    fetch('/api/changelog?limit=5', { credentials: 'omit' })
+      .then(function(r){ if(!r.ok) throw new Error('http '+r.status); return r.json(); })
+      .then(function(data){
+        var entries = (data && data.entries) || [];
+        var pollState = (data && data.poll_state) || {};
+        if (!entries.length) {
+          meta.textContent = 'Aucune entrée détectée pour le moment.';
+          return;
+        }
+        var lastRun = (pollState.last_run_at||'').replace('T',' ').slice(0,16);
+        meta.innerHTML = '<strong>' + (data.total || entries.length) + '</strong> surveillances actives · dernier scan : <strong>' + (lastRun||'—') + ' UTC</strong> · ' + (pollState.tarballs_seen_lifetime||0) + ' tarballs JORF vus';
+        entries.slice(0,5).forEach(function(e){
+          var li = document.createElement('li');
+          li.className = 'watch-entry';
+          var d = fmtDate(e.date_publi);
+          var topics = (e.topics||[]).map(topicBadge).join('');
+          var titre = (e.titre||'(sans titre)').trim();
+          if (titre.length > 180) titre = titre.slice(0,178) + '…';
+          var lien = e.eli_url ? ('<a href="'+e.eli_url+'" target="_blank" rel="noopener" class="hover:underline" style="color:var(--text-primary)">'+titre+'</a>') : ('<span>'+titre+'</span>');
+          li.innerHTML = '<div class="text-xs mb-1" style="color:var(--text-dim)">'+d+' · '+topics+'</div><div class="text-sm leading-snug">'+lien+'</div>';
+          list.appendChild(li);
+        });
+      })
+      .catch(function(err){
+        meta.textContent = 'Veille indisponible — voir le journal complet.';
+        meta.style.color = 'var(--text-dim)';
+      });
+  })();
+  </script>
+
   <section id="dpe-cities" class="mt-6 mb-2">
     <div class="glass rounded-2xl p-5 sm:p-6">
       <h3 class="text-lg font-semibold mb-1">🏠 DPE F &amp; G interdits — calendrier par ville</h3>
@@ -371,7 +638,8 @@
         <div><strong>BailleurVérif</strong> — Outil gratuit · Mis à jour le 2026-05-16</div>
         <div class="text-xs mt-1" style="color:var(--text-muted)">Aucune création de compte · Aucun cookie tiers · RGPD</div>
         <a class="u-url" href="https://bailleurverif.fr/" hidden>https://bailleurverif.fr/</a>
-        <a class="u-email" href="mailto:bailleurverif.contact@gmail.com" hidden>bailleurverif.contact@gmail.com</a>
+        <a class="u-email" href="mailto:contact@bailleurverif.fr" hidden>contact@bailleurverif.fr</a>
+        <a rel="me" href="https://github.com/Creariax5/bailleurverif" hidden>GitHub</a>
         <span class="p-name p-org" hidden>BailleurVérif</span>
         <span class="p-country-name" hidden>France</span>
         <span class="p-category" hidden>Conformité bailleur · DPE · encadrement loyer · Alur</span>
@@ -380,7 +648,7 @@
         <a href="/mentions-legales.html">Mentions légales</a>
         <a href="/politique-confidentialite.html">Confidentialité</a>
         <a href="/cgu.html">CGU</a>
-        <a href="mailto:bailleurverif.contact@gmail.com">Contact</a>
+        <a href="mailto:contact@bailleurverif.fr">Contact</a>
       </nav>
     </div>
     <div class="text-xs mt-4 pt-4" style="border-top:1px solid var(--border); color:var(--text-muted)">
@@ -390,5 +658,19 @@
 </footer>
 
 <script src="/static/app.js"></script>
+<script>
+  (function(){
+    try {
+      var q = new URLSearchParams(location.search).get('q');
+      if (!q) return;
+      var input = document.getElementById('q-ville');
+      if (input) {
+        input.value = q.slice(0, 80);
+        input.scrollIntoView({behavior: 'smooth', block: 'center'});
+        input.focus();
+      }
+    } catch(e) {}
+  })();
+</script>
 </body>
 </html>

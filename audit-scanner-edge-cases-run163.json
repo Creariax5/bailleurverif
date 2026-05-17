@@ -1,0 +1,78 @@
+{
+  "ts": "2026-05-17T04:15:44Z",
+  "scope": "edge_cases_ambiguous",
+  "n_arnaque": 3,
+  "n_legit": 3,
+  "tp": 1,
+  "tn": 2,
+  "fp": 1,
+  "fn": 2,
+  "precision_arnaque": 0.5,
+  "recall_arnaque": 0.3333333333333333,
+  "accuracy": 0.5,
+  "verdict_success": false,
+  "results": [
+    {
+      "id": "AE1_urgence_faible_telegram_bas_prix",
+      "expected": "high",
+      "got_severity": "low",
+      "score": 10,
+      "flags_count": 1,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee"
+      ]
+    },
+    {
+      "id": "AE2_arnaque_langue_mixte_FR_EN",
+      "expected": "high",
+      "got_severity": "low",
+      "score": 10,
+      "flags_count": 1,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee"
+      ]
+    },
+    {
+      "id": "AE3_arnaque_pas_de_crypto_juste_3_low_flags",
+      "expected": "medium",
+      "got_severity": "medium",
+      "score": 40,
+      "flags_count": 3,
+      "flags_labels": [
+        "Ton d'urgence injustifie",
+        "Aucune adresse precise mentionnee",
+        "Photos envoyees hors plateforme"
+      ]
+    },
+    {
+      "id": "LE1_legit_urgence_rentree_juin",
+      "expected": "safe",
+      "got_severity": "low",
+      "score": 15,
+      "flags_count": 1,
+      "flags_labels": [
+        "Ton d'urgence injustifie"
+      ]
+    },
+    {
+      "id": "LE2_legit_whatsapp_agence_contact",
+      "expected": "safe",
+      "got_severity": "low",
+      "score": 10,
+      "flags_count": 1,
+      "flags_labels": [
+        "Aucune adresse precise mentionnee"
+      ]
+    },
+    {
+      "id": "LE3_legit_bailleur_expatrie_reel_via_gestionnaire",
+      "expected": "safe",
+      "got_severity": "medium",
+      "score": 35,
+      "flags_count": 1,
+      "flags_labels": [
+        "Bailleur declare a l'etranger / en mission"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Observatoire annonces loyer — % de non-conformité encadrement par ville | BailleurVérif</title>
+<meta name="description" content="Mesure indépendante du taux de non-conformité de l'encadrement des loyers sur 7 villes FR (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux), sample N=160 annonces locservice.fr, 17 mai 2026. 36 / 61 = 59,0 % de violations parmi les annonces en zone tendue (95 % CI [46,5 %, 70,5 %], ±12 pts). 99 annonces hors zone en baseline. Méthodologie + caveats publics.">
+<link rel="canonical" href="https://bailleurverif.fr/observatoire-annonces-loyer.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Observatoire annonces loyer — 59,0 % de violations encadrement sur 61 annonces in-scope (Paris/Lyon/Lille, mai 2026)">
+<meta property="og:description" content="Pipeline indépendant de scraping + scoring conformité encadrement (loi 89-462 art. 17 + décret zone tendue). Sample N=160 annonces, 7 villes, 95 % CI ±12 pts, méthodologie + caveats publics, donnée propriétaire.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bailleurverif.fr/observatoire-annonces-loyer.html">
+<meta property="og:site_name" content="BailleurVérif">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://bailleurverif.fr/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Observatoire BailleurVérif annonces loyer — 59,0 % de violations encadrement.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Observatoire annonces loyer — 59,0 % de violations encadrement (Paris/Lyon/Lille)">
+<meta name="twitter:description" content="Sample N=160 annonces locservice.fr (7 villes FR), 61 in-scope, scoring auto encadrement + DPE, 95 % CI ±12 pts, méthodologie publique.">
+<meta name="twitter:image" content="https://bailleurverif.fr/og-image.png">
+<link rel="stylesheet" href="/css/main.css">
+<script src="/css/tailwind-runtime.js"></script>
+<style>
+  .stat-card { padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-card); }
+  .stat-num { font-size: 38px; font-weight: 800; line-height: 1; letter-spacing: -.02em; color: var(--text-primary); }
+  .stat-label { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-secondary); font-weight: 600; margin-top: 6px; }
+  .stat-num.warn { color: #a55a00; }
+  .stat-num.danger { color: #a01c1c; }
+  .stat-num.ok { color: #047857; }
+  .obs-tbl { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .obs-tbl th { text-align: left; padding: 8px 10px; background: var(--bg-secondary); border-bottom: 1px solid var(--border); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-secondary); }
+  .obs-tbl td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .obs-tbl tr.v-clear td { background: #fde7e7; }
+  .obs-tbl tr.v-presumed td { background: #fff5e1; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+  .badge-clear { background: #fde7e7; color: #a01c1c; border: 1px solid #f3b3b3; }
+  .badge-presumed { background: #fff5e1; color: #a55a00; border: 1px solid #f0c98a; }
+  .badge-ok { background: #e8f6ef; color: #047857; border: 1px solid #b6e2cc; }
+  .badge-na { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+  .city-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
+  .city-card { flex: 1 1 200px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-card); }
+  .city-name { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+  .city-stat { font-size: 22px; font-weight: 800; color: var(--text-primary); letter-spacing: -.01em; }
+  .city-stat.danger { color: #a01c1c; }
+  .city-stat.warn { color: #a55a00; }
+  .city-stat.ok { color: #047857; }
+  .city-detail { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+  .top-card { padding: 14px 16px; border: 1px solid #f3b3b3; background: #fde7e7; border-radius: 10px; }
+  .top-card .ville { font-size: 13px; font-weight: 700; color: #7a1010; }
+  .top-card .excess { font-size: 28px; font-weight: 800; color: #a01c1c; margin: 4px 0; letter-spacing: -.01em; }
+  .top-card .detail { font-size: 12.5px; color: #5a1414; }
+  .caveat { border-left: 3px solid #d97706; padding: 8px 12px; background: #fff7ed; border-radius: 0 8px 8px 0; font-size: 13.5px; color: #6b3a04; margin-bottom: 8px; }
+  details summary { cursor: pointer; font-weight: 600; padding: 8px 0; color: var(--text-primary); }
+  .scope-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+  .scope-tab { padding: 7px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--bg-card); font-size: 13px; font-weight: 600; color: var(--text-secondary); cursor: pointer; }
+  .scope-tab.active { background: var(--accent); color: white; border-color: var(--accent); }
+  .hide { display: none; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<header class="bv-header">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="bv-logo">
+      <span class="bv-logo-mark">✓</span>
+      <span>BailleurVérif</span>
+    </a>
+    <nav class="flex items-center gap-4 text-sm">
+      <a href="/mon-bien.html" class="text-[color:var(--accent)] hover:underline font-semibold">Mon bien</a>
+      <a href="/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">Quiz</a>
+      <a href="/changelog.html" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">JO veille</a>
+      <a href="/blog/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Guides</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <nav aria-label="Fil d'Ariane" class="mb-4 text-xs" style="color:var(--text-secondary)">
+    <a href="/" class="hover:underline">Accueil</a> ›
+    <a href="/data/" class="hover:underline">Données ouvertes</a> ›
+    <span>Observatoire annonces loyer</span>
+  </nav>
+
+  <section id="hero" class="mb-6 sm:mb-8">
+    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-3" style="color:var(--text-primary)">
+      Observatoire annonces loyer — taux de non-conformité encadrement
+    </h1>
+    <p class="text-lg" style="color:var(--text-secondary)">
+      Mesure indépendante du <strong>respect de l'encadrement des loyers</strong> (loi 89-462 art. 17 + décret zone tendue) sur un échantillon d'annonces de location <strong>réelles</strong> publiées sur locservice.fr. Pipeline 100 % open source, méthodologie + caveats publics. Données du <strong>17 mai 2026</strong>.
+    </p>
+  </section>
+
+  <section id="headline" class="mb-8">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="stat-card"><div class="stat-num danger">59,0 %</div><div class="stat-label">violations encadrement (in-scope)</div></div>
+      <div class="stat-card"><div class="stat-num">61</div><div class="stat-label">annonces in-scope</div></div>
+      <div class="stat-card"><div class="stat-num">22</div><div class="stat-label">violations <em>clear</em> (+10 %)</div></div>
+      <div class="stat-card"><div class="stat-num warn">14</div><div class="stat-label">violations <em>presumed</em> (&lt;+10 %)</div></div>
+    </div>
+    <p class="text-xs mt-2" style="color:var(--text-secondary)">
+      <strong>In-scope</strong> = annonces dont la commune est en zone d'encadrement (Paris, Lyon, Villeurbanne, Lille). 99 annonces hors zone en baseline comparative (banlieue Lyon, MEL périphérique, Marseille / Aix + 7 villes total avec Nantes / Toulouse / Bordeaux ajoutées round-3, hors arrêté préfectoral) — voir onglet ci-dessous. Sample brut total <strong>N = 160 annonces uniques</strong>, déduplication par <code>accommodation_id</code>, couverture <strong>7 villes / 6 départements</strong>. <strong>Intervalle de confiance binomial 95 %</strong> (Wilson) sur le 59,0 % : <strong>[46,5 %, 70,5 %], ±12 points</strong>.
+    </p>
+  </section>
+
+  <section id="par-ville" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Par ville (in-scope)</h2>
+    <div class="city-row">
+      <div class="city-card">
+        <div class="city-name">Paris</div>
+        <div class="city-stat danger">63 %</div>
+        <div class="city-detail">19 violations / 30 annonces (14 clear + 5 presumed). Studios meublés ≤ 20 m² massivement non-conformes.</div>
+      </div>
+      <div class="city-card">
+        <div class="city-name">Lyon</div>
+        <div class="city-stat danger">83 %</div>
+        <div class="city-detail">10 violations / 12 annonces (7 clear + 3 presumed). Lyon 3ᵉ / 7ᵉ / 9ᵉ : pattern systémique studios meublés.</div>
+      </div>
+      <div class="city-card">
+        <div class="city-name">Lille (MEL)</div>
+        <div class="city-stat warn">38 %</div>
+        <div class="city-detail">6 violations / 16 annonces (1 clear + 5 presumed). Plafond 23,4 €/m² dépassé sur petites surfaces meublées.</div>
+      </div>
+      <div class="city-card">
+        <div class="city-name">Villeurbanne</div>
+        <div class="city-stat warn">33 %</div>
+        <div class="city-detail">1 violation presumed / 3 annonces — sample faible (CI très large).</div>
+      </div>
+    </div>
+    <p class="text-xs mt-1" style="color:var(--text-secondary)">
+      Pattern : <strong>20 / 22 violations clear concernent des studios meublés ≤ 30 m²</strong>, cohérent avec l'audit DRIHL 2022 — la cible favorite de l'arrêté préfectoral (plafond /m² s'écrase sur petite surface). Top excès : Paris 4ᵉ 10 m² à <strong>+175 %</strong> du plafond max.
+    </p>
+  </section>
+
+  <section id="top-violations" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Top 5 violations <em>clear</em> du sample</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+      <div class="top-card">
+        <div class="ville">Paris 4ᵉ — 10 m² meublé</div>
+        <div class="excess">+175,0 %</div>
+        <div class="detail">110 €/m² vs plafond max 40 €/m² · 1 100 €/mois · DPE D</div>
+      </div>
+      <div class="top-card">
+        <div class="ville">Paris 15ᵉ — 16 m² meublé</div>
+        <div class="excess">+86,7 %</div>
+        <div class="detail">74,69 €/m² vs plafond max 40 €/m² · 1 195 €/mois · DPE E (interdit 2034)</div>
+      </div>
+      <div class="top-card">
+        <div class="ville">Paris 13ᵉ — 11 m² meublé</div>
+        <div class="excess">+81,8 %</div>
+        <div class="detail">72,73 €/m² vs plafond max 40 €/m² · 800 €/mois · DPE C</div>
+      </div>
+      <div class="top-card">
+        <div class="ville">Lyon 3ᵉ — 20 m² meublé</div>
+        <div class="excess">+80,7 %</div>
+        <div class="detail">36,50 €/m² vs plafond max 20,20 €/m² · 730 €/mois · DPE C</div>
+      </div>
+      <div class="top-card">
+        <div class="ville">Paris 7ᵉ — 14 m² meublé</div>
+        <div class="excess">+78,6 %</div>
+        <div class="detail">71,43 €/m² vs plafond max 40 €/m² · 1 000 €/mois · DPE C</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="caveats" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Caveats — à lire avant de citer ce chiffre</h2>
+    <div class="caveat"><strong>N = 61 in-scope</strong> (sample brut 160 annonces uniques / 7 villes, dont 99 hors zone tendue). Intervalle de confiance binomial 95 % (Wilson) sur le 59,0 % : <strong>[46,5 %, 70,5 %]</strong>, demi-largeur ± 12 points. Cette page sera ré-éditée à mesure que N grandit (objectif : N ≥ 200 in-scope sous 14 j, CI ± 7 pts).</div>
+    <div class="caveat"><strong>Plafond appliqué = plafond_max meublé par commune</strong> (40 €/m² Paris, 20,20 €/m² Lyon, 23,40 €/m² Lille). Le vrai loyer médian majoré varie par arrondissement × type × époque. Conséquence : <strong>tout loyer &gt; plafond_max est quasi-certainement illégal</strong> ; un loyer &lt; plafond_max <em>n'est pas</em> automatiquement légal. V0 = <strong>lower bound</strong> sur le % réel de non-conformité.</div>
+    <div class="caveat"><strong>"Meublé" inféré du titre</strong> (pattern FR "meublé/meublée/meublés"). Si non détecté, plafond meublé appliqué quand même (conservatif : sous-estime, plafond meublé &gt; plafond nu).</div>
+    <div class="caveat"><strong>0 violation DPE G sur 160 annonces du sample</strong> alors que les G représentent ~17 % du parc 2023. Probable biais Locservice : soit bailleurs G filtrent leurs annonces, soit la plateforme. À monitorer en croisant avec ADEME — cf. <a href="/observatoire-dpe-fg.html" class="underline" style="color:var(--accent)">observatoire DPE F/G</a>. Note : 5 DPE F observés (Paris/Lyon meublés) — futurs interdits 2028.</div>
+    <div class="caveat"><strong>Pas de PII vendeur stockée</strong> : seuls le hash de l'URL annonce + ville + loyer + surface + DPE sont conservés. Conforme RGPD art. 6.1.e (intérêt général : observatoire de conformité légale).</div>
+  </section>
+
+  <section id="table" class="mb-10">
+    <h2 class="text-xl font-bold mb-2" style="color:var(--text-primary)">Détail du sample</h2>
+    <div class="scope-tabs">
+      <button class="scope-tab active" data-scope="in">In-scope (61)</button>
+      <button class="scope-tab" data-scope="out">Baseline hors zone (99)</button>
+    </div>
+
+    
+    <!-- bv-signaler-rowlink-v1 : full-prefill Signaler link per violation row in tbl-in -->
+<div id="tbl-in">
+      <table class="obs-tbl">
+        <thead><tr><th>Ville</th><th>Surface</th><th>Loyer</th><th>€/m²</th><th>Plafond</th><th>Verdict</th><th>DPE</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr class="v-clear"><td>Paris 04 (75004)</td><td>10 m² meublé</td><td>1100 €</td><td>110,00</td><td>40,00</td><td><span class="badge badge-clear">clear +175,0 %</span></td><td>D</td><td><a href="?ville=Paris%2004&amp;cp=75004&amp;loyer=1100&amp;surf=10&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 15 (75015)</td><td>16 m² meublé</td><td>1195 €</td><td>74,69</td><td>40,00</td><td><span class="badge badge-clear">clear +86,7 %</span></td><td>E</td><td><a href="?ville=Paris%2015&amp;cp=75015&amp;loyer=1195&amp;surf=16&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 13 (75013)</td><td>11 m² meublé</td><td>800 €</td><td>72,73</td><td>40,00</td><td><span class="badge badge-clear">clear +81,8 %</span></td><td>C</td><td><a href="?ville=Paris%2013&amp;cp=75013&amp;loyer=800&amp;surf=11&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Lyon 03 (69003)</td><td>20 m² meublé</td><td>730 €</td><td>36,50</td><td>20,20</td><td><span class="badge badge-clear">clear +80,7 %</span></td><td>C</td><td><a href="?ville=Lyon%2003&amp;cp=69003&amp;loyer=730&amp;surf=20&amp;violation=encadrement&amp;plafond=20.20&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 07 (75007)</td><td>14 m² meublé</td><td>1000 €</td><td>71,43</td><td>40,00</td><td><span class="badge badge-clear">clear +78,6 %</span></td><td>C</td><td><a href="?ville=Paris%2007&amp;cp=75007&amp;loyer=1000&amp;surf=14&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 01 (75001)</td><td>12 m² meublé</td><td>850 €</td><td>70,83</td><td>40,00</td><td><span class="badge badge-clear">clear +77,1 %</span></td><td>D</td><td><a href="?ville=Paris%2001&amp;cp=75001&amp;loyer=850&amp;surf=12&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 12 (75012)</td><td>10 m² meublé</td><td>700 €</td><td>70,00</td><td>40,00</td><td><span class="badge badge-clear">clear +75,0 %</span></td><td>D</td><td><a href="?ville=Paris%2012&amp;cp=75012&amp;loyer=700&amp;surf=10&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Lyon 03 (69003)</td><td>20 m² meublé</td><td>700 €</td><td>35,00</td><td>20,20</td><td><span class="badge badge-clear">clear +73,3 %</span></td><td>C</td><td><a href="?ville=Lyon%2003&amp;cp=69003&amp;loyer=700&amp;surf=20&amp;violation=encadrement&amp;plafond=20.20&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 09 (75009)</td><td>14 m² meublé</td><td>920 €</td><td>65,71</td><td>40,00</td><td><span class="badge badge-clear">clear +64,3 %</span></td><td>D</td><td><a href="?ville=Paris%2009&amp;cp=75009&amp;loyer=920&amp;surf=14&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Lyon 07 (69007)</td><td>18 m² meublé</td><td>580 €</td><td>32,22</td><td>20,20</td><td><span class="badge badge-clear">clear +59,5 %</span></td><td>F</td><td><a href="?ville=Lyon%2007&amp;cp=69007&amp;loyer=580&amp;surf=18&amp;violation=both&amp;plafond=20.20&amp;meuble=1&amp;dpe=F#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 01 (75001)</td><td>20 m² meublé</td><td>1200 €</td><td>60,00</td><td>40,00</td><td><span class="badge badge-clear">clear +50,0 %</span></td><td>E</td><td><a href="?ville=Paris%2001&amp;cp=75001&amp;loyer=1200&amp;surf=20&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Lyon 03 (69003)</td><td>27 m² meublé</td><td>800 €</td><td>29,63</td><td>20,20</td><td><span class="badge badge-clear">clear +46,7 %</span></td><td>D</td><td><a href="?ville=Lyon%2003&amp;cp=69003&amp;loyer=800&amp;surf=27&amp;violation=encadrement&amp;plafond=20.20&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Lille (59000)</td><td>16 m² meublé</td><td>535 €</td><td>33,44</td><td>23,40</td><td><span class="badge badge-clear">clear +42,9 %</span></td><td>B</td><td><a href="?ville=Lille&amp;cp=59000&amp;loyer=535&amp;surf=16&amp;violation=encadrement&amp;plafond=23.40&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Lyon 03 (69003)</td><td>24 m² meublé</td><td>670 €</td><td>27,92</td><td>20,20</td><td><span class="badge badge-clear">clear +38,2 %</span></td><td>D</td><td><a href="?ville=Lyon%2003&amp;cp=69003&amp;loyer=670&amp;surf=24&amp;violation=encadrement&amp;plafond=20.20&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 06 (75006)</td><td>40 m² meublé</td><td>2150 €</td><td>53,75</td><td>40,00</td><td><span class="badge badge-clear">clear +34,4 %</span></td><td>F</td><td><a href="?ville=Paris%2006&amp;cp=75006&amp;loyer=2150&amp;surf=40&amp;violation=both&amp;plafond=40.00&amp;meuble=1&amp;dpe=F#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 01 (75001)</td><td>25 m² meublé</td><td>1280 €</td><td>51,20</td><td>40,00</td><td><span class="badge badge-clear">clear +28,0 %</span></td><td>F</td><td><a href="?ville=Paris%2001&amp;cp=75001&amp;loyer=1280&amp;surf=25&amp;violation=both&amp;plafond=40.00&amp;meuble=1&amp;dpe=F#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 18 (75018)</td><td>15 m² meublé</td><td>760 €</td><td>50,67</td><td>40,00</td><td><span class="badge badge-clear">clear +26,7 %</span></td><td>D</td><td><a href="?ville=Paris%2018&amp;cp=75018&amp;loyer=760&amp;surf=15&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 14 (75014)</td><td>16 m² meublé</td><td>800 €</td><td>50,00</td><td>40,00</td><td><span class="badge badge-clear">clear +25,0 %</span></td><td>E</td><td><a href="?ville=Paris%2014&amp;cp=75014&amp;loyer=800&amp;surf=16&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Lyon 09 (69009)</td><td>40 m² meublé</td><td>996 €</td><td>24,90</td><td>20,20</td><td><span class="badge badge-clear">clear +23,3 %</span></td><td>E</td><td><a href="?ville=Lyon%2009&amp;cp=69009&amp;loyer=996&amp;surf=40&amp;violation=encadrement&amp;plafond=20.20&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 15 (75015)</td><td>27 m² meublé</td><td>1300 €</td><td>48,15</td><td>40,00</td><td><span class="badge badge-clear">clear +20,4 %</span></td><td>D</td><td><a href="?ville=Paris%2015&amp;cp=75015&amp;loyer=1300&amp;surf=27&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Paris 03 (75003)</td><td>30 m² meublé</td><td>1400 €</td><td>46,67</td><td>40,00</td><td><span class="badge badge-clear">clear +16,7 %</span></td><td>D</td><td><a href="?ville=Paris%2003&amp;cp=75003&amp;loyer=1400&amp;surf=30&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-clear"><td>Lyon 09 (69009)</td><td>25 m² meublé</td><td>560 €</td><td>22,40</td><td>20,20</td><td><span class="badge badge-clear">clear +10,9 %</span></td><td>E</td><td><a href="?ville=Lyon%2009&amp;cp=69009&amp;loyer=560&amp;surf=25&amp;violation=encadrement&amp;plafond=20.20&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Paris 18 (75018)</td><td>22 m² meublé</td><td>956 €</td><td>43,45</td><td>40,00</td><td><span class="badge badge-presumed">presumed +8,6 %</span></td><td>E</td><td><a href="?ville=Paris%2018&amp;cp=75018&amp;loyer=956&amp;surf=22&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Paris 19 (75019)</td><td>12 m² meublé</td><td>521 €</td><td>43,42</td><td>40,00</td><td><span class="badge badge-presumed">presumed +8,6 %</span></td><td>D</td><td><a href="?ville=Paris%2019&amp;cp=75019&amp;loyer=521&amp;surf=12&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Paris 14 (75014)</td><td>30 m² meublé</td><td>1260 €</td><td>42,00</td><td>40,00</td><td><span class="badge badge-presumed">presumed +5,0 %</span></td><td>D</td><td><a href="?ville=Paris%2014&amp;cp=75014&amp;loyer=1260&amp;surf=30&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Paris 17 (75017)</td><td>30 m² meublé</td><td>1254 €</td><td>41,80</td><td>40,00</td><td><span class="badge badge-presumed">presumed +4,5 %</span></td><td>E</td><td><a href="?ville=Paris%2017&amp;cp=75017&amp;loyer=1254&amp;surf=30&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Villeurbanne (69100)</td><td>29 m² meublé</td><td>600 €</td><td>20,69</td><td>19,80</td><td><span class="badge badge-presumed">presumed +4,5 %</span></td><td>D</td><td><a href="?ville=Villeurbanne&amp;cp=69100&amp;loyer=600&amp;surf=29&amp;violation=encadrement&amp;plafond=19.80&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Lille (59000)</td><td>25 m²</td><td>611 €</td><td>24,44</td><td>23,40</td><td><span class="badge badge-presumed">presumed +4,4 %</span></td><td>C</td><td><a href="?ville=Lille&amp;cp=59000&amp;loyer=611&amp;surf=25&amp;violation=encadrement&amp;plafond=23.40#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Lille (59000)</td><td>25 m²</td><td>611 €</td><td>24,44</td><td>23,40</td><td><span class="badge badge-presumed">presumed +4,4 %</span></td><td>C</td><td><a href="?ville=Lille&amp;cp=59000&amp;loyer=611&amp;surf=25&amp;violation=encadrement&amp;plafond=23.40#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Lille (59000)</td><td>21 m²</td><td>506 €</td><td>24,10</td><td>23,40</td><td><span class="badge badge-presumed">presumed +3,0 %</span></td><td>C</td><td><a href="?ville=Lille&amp;cp=59000&amp;loyer=506&amp;surf=21&amp;violation=encadrement&amp;plafond=23.40#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Lyon 02 (69002)</td><td>58 m² meublé</td><td>1200 €</td><td>20,69</td><td>20,20</td><td><span class="badge badge-presumed">presumed +2,4 %</span></td><td>D</td><td><a href="?ville=Lyon%2002&amp;cp=69002&amp;loyer=1200&amp;surf=58&amp;violation=encadrement&amp;plafond=20.20&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Lille (59000)</td><td>33 m²</td><td>790 €</td><td>23,94</td><td>23,40</td><td><span class="badge badge-presumed">presumed +2,3 %</span></td><td>D</td><td><a href="?ville=Lille&amp;cp=59000&amp;loyer=790&amp;surf=33&amp;violation=encadrement&amp;plafond=23.40#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Paris 17 (75017)</td><td>14 m² meublé</td><td>570 €</td><td>40,71</td><td>40,00</td><td><span class="badge badge-presumed">presumed +1,8 %</span></td><td>D</td><td><a href="?ville=Paris%2017&amp;cp=75017&amp;loyer=570&amp;surf=14&amp;violation=encadrement&amp;plafond=40.00&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Lyon 08 (69008)</td><td>90 m²</td><td>1850 €</td><td>20,56</td><td>20,20</td><td><span class="badge badge-presumed">presumed +1,8 %</span></td><td>C</td><td><a href="?ville=Lyon%2008&amp;cp=69008&amp;loyer=1850&amp;surf=90&amp;violation=encadrement&amp;plafond=20.20#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Lille (59000)</td><td>16 m²</td><td>380 €</td><td>23,75</td><td>23,40</td><td><span class="badge badge-presumed">presumed +1,5 %</span></td><td>D</td><td><a href="?ville=Lille&amp;cp=59000&amp;loyer=380&amp;surf=16&amp;violation=encadrement&amp;plafond=23.40#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr class="v-presumed"><td>Lyon 03 (69003)</td><td>31 m² meublé</td><td>630 €</td><td>20,32</td><td>20,20</td><td><span class="badge badge-presumed">presumed +0,6 %</span></td><td>D</td><td><a href="?ville=Lyon%2003&amp;cp=69003&amp;loyer=630&amp;surf=31&amp;violation=encadrement&amp;plafond=20.20&amp;meuble=1#signaler" class="underline font-semibold" style="color:var(--accent)" title="Pré-remplit le formulaire de signalement avec ces données">Signaler →</a></td></tr>
+          <tr><td>Paris 14 (75014)</td><td>30 m²</td><td>1085 €</td><td>36,17</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>E</td><td></td></tr>
+          <tr><td>Paris 14 (75014)</td><td>25 m² meublé</td><td>816 €</td><td>32,64</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>C</td><td></td></tr>
+          <tr><td>Paris 18 (75018)</td><td>20 m² meublé</td><td>800 €</td><td>40,00</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>E</td><td></td></tr>
+          <tr><td>Paris 10 (75010)</td><td>20 m² meublé</td><td>750 €</td><td>37,50</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>F</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>35 m²</td><td>700 €</td><td>20,00</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>C</td><td></td></tr>
+          <tr><td>Villeurbanne (69100)</td><td>34 m²</td><td>585 €</td><td>17,21</td><td>19,80</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Lyon 01 (69001)</td><td>47 m²</td><td>750 €</td><td>15,96</td><td>20,20</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>23 m² meublé</td><td>525 €</td><td>22,83</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>63 m²</td><td>950 €</td><td>15,08</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>B</td><td></td></tr>
+          <tr><td>Paris 10 (75010)</td><td>45 m² meublé</td><td>1350 €</td><td>30,00</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>E</td><td></td></tr>
+          <tr><td>Paris 10 (75010)</td><td>50 m²</td><td>1500 €</td><td>30,00</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>C</td><td></td></tr>
+          <tr><td>Lyon 03 (69003)</td><td>32 m² meublé</td><td>620 €</td><td>19,38</td><td>20,20</td><td><span class="badge badge-ok">conforme</span></td><td>B</td><td></td></tr>
+          <tr><td>Paris 12 (75012)</td><td>77 m²</td><td>2280 €</td><td>29,61</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>E</td><td></td></tr>
+          <tr><td>Paris 17 (75017)</td><td>49 m² meublé</td><td>1890 €</td><td>38,57</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>32 m² meublé</td><td>650 €</td><td>20,31</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>80 m² meublé</td><td>1150 €</td><td>14,38</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>B</td><td></td></tr>
+          <tr><td>Paris 18 (75018)</td><td>24 m²</td><td>950 €</td><td>39,58</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Paris 12 (75012)</td><td>50 m² meublé</td><td>1640 €</td><td>32,80</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>E</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>35 m² meublé</td><td>660 €</td><td>18,86</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>31 m² meublé</td><td>697 €</td><td>22,48</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Paris 16 (75016)</td><td>36 m² meublé</td><td>1250 €</td><td>34,72</td><td>40,00</td><td><span class="badge badge-ok">conforme</span></td><td>E</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>35 m²</td><td>700 €</td><td>20,00</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Villeurbanne (69100)</td><td>30 m² meublé</td><td>580 €</td><td>19,33</td><td>19,80</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>70 m² meublé</td><td>1590 €</td><td>22,71</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>C</td><td></td></tr>
+          <tr><td>Lille (59000)</td><td>30 m² meublé</td><td>585 €</td><td>19,50</td><td>23,40</td><td><span class="badge badge-ok">conforme</span></td><td>D</td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="tbl-out" class="hide">
+      <p class="text-sm mb-3" style="color:var(--text-secondary)">Annonces hors zone tendue encadrement (Aix-en-Provence, Marseille arrondissements non concernés en 2026, communes périphériques + <strong>round-3 villes baseline : Nantes 44, Toulouse 31, Bordeaux 33</strong> — préfectures sans arrêté préfectoral d'encadrement, ajoutées le 17 mai 2026 pour étendre la base de comparaison). Pas de plafond légal applicable. Données affichées à titre comparatif <strong>(99 annonces au total)</strong>.</p>
+      <table class="obs-tbl">
+        <thead><tr><th>Ville</th><th>Surface</th><th>Loyer</th><th>€/m²</th><th>DPE</th></tr></thead>
+        <tbody>
+          <tr><td>Vaulx-en-Velin (69120)</td><td>16 m² meublé</td><td>600 €</td><td>37,50</td><td>C</td></tr>
+          <tr><td>Corbas (69960)</td><td>13 m² meublé</td><td>450 €</td><td>34,62</td><td>A</td></tr>
+          <tr><td>Vénissieux (69200)</td><td>24 m² meublé</td><td>730 €</td><td>30,42</td><td>B</td></tr>
+          <tr><td>Caluire-et-Cuire (69300)</td><td>24 m² meublé</td><td>715 €</td><td>29,79</td><td>D</td></tr>
+          <tr><td>Aix-en-Provence (13080)</td><td>18 m² meublé</td><td>530 €</td><td>29,44</td><td>C</td></tr>
+          <tr><td>Douai (59500)</td><td>20 m² meublé</td><td>560 €</td><td>28,00</td><td>D</td></tr>
+          <tr><td>Villeneuve-d&#039;Ascq (59491)</td><td>19 m² meublé</td><td>530 €</td><td>27,89</td><td>D</td></tr>
+          <tr><td>Villeneuve-d&#039;Ascq (59491)</td><td>13 m² meublé</td><td>360 €</td><td>27,69</td><td>D</td></tr>
+          <tr><td>Loos (59120)</td><td>27 m² meublé</td><td>700 €</td><td>25,93</td><td>D</td></tr>
+          <tr><td>Loos (59120)</td><td>26 m²</td><td>655 €</td><td>25,19</td><td>C</td></tr>
+          <tr><td>Feyzin (69320)</td><td>24 m² meublé</td><td>600 €</td><td>25,00</td><td>D</td></tr>
+          <tr><td>Aix-en-Provence (13080)</td><td>20 m² meublé</td><td>500 €</td><td>25,00</td><td>C</td></tr>
+          <tr><td>Aix-en-Provence (13080)</td><td>45 m² meublé</td><td>970 €</td><td>21,56</td><td>E</td></tr>
+          <tr><td>Marseille 11 (13011)</td><td>61 m²</td><td>1291 €</td><td>21,16</td><td>C</td></tr>
+          <tr><td>Salon-de-Provence (13300)</td><td>50 m² meublé</td><td>1040 €</td><td>20,80</td><td>A</td></tr>
+          <tr><td>Bouc-Bel-Air (13320)</td><td>45 m² meublé</td><td>900 €</td><td>20,00</td><td>C</td></tr>
+          <tr><td>Vaulx-en-Velin (69120)</td><td>30 m² meublé</td><td>600 €</td><td>20,00</td><td>A</td></tr>
+          <tr><td>La Ciotat (13600)</td><td>28 m² meublé</td><td>555 €</td><td>19,82</td><td>D</td></tr>
+          <tr><td>Aix-en-Provence (13080)</td><td>70 m²</td><td>1340 €</td><td>19,14</td><td>D</td></tr>
+          <tr><td>Caluire-et-Cuire (69300)</td><td>50 m² meublé</td><td>950 €</td><td>19,00</td><td>D</td></tr>
+          <tr><td>Douai (59500)</td><td>30 m² meublé</td><td>550 €</td><td>18,33</td><td>D</td></tr>
+          <tr><td>Saint-Symphorien-d&#039;Ozon (69360)</td><td>32 m² meublé</td><td>540 €</td><td>16,88</td><td>C</td></tr>
+          <tr><td>Marseille 09 (13009)</td><td>40 m²</td><td>670 €</td><td>16,75</td><td>C</td></tr>
+          <tr><td>Caluire-et-Cuire (69300)</td><td>54 m²</td><td>900 €</td><td>16,67</td><td>C</td></tr>
+          <tr><td>Arles (13104)</td><td>27 m² meublé</td><td>450 €</td><td>16,67</td><td>C</td></tr>
+          <tr><td>Valenciennes (59300)</td><td>54 m²</td><td>880 €</td><td>16,30</td><td>C</td></tr>
+          <tr><td>Champagne-au-Mont-d&#039;Or (69410)</td><td>57 m² meublé</td><td>920 €</td><td>16,14</td><td>E</td></tr>
+          <tr><td>Valenciennes (59300)</td><td>25 m² meublé</td><td>400 €</td><td>16,00</td><td>D</td></tr>
+          <tr><td>Craponne (69290)</td><td>67 m²</td><td>1055 €</td><td>15,75</td><td>C</td></tr>
+          <tr><td>Valenciennes (59300)</td><td>29 m²</td><td>450 €</td><td>15,52</td><td>D</td></tr>
+          <tr><td>Valenciennes (59300)</td><td>36 m²</td><td>535 €</td><td>14,86</td><td>D</td></tr>
+          <tr><td>Hallennes-lez-Haubourdin (59320)</td><td>65 m²</td><td>959 €</td><td>14,75</td><td>B</td></tr>
+          <tr><td>Douai (59500)</td><td>40 m²</td><td>590 €</td><td>14,75</td><td>D</td></tr>
+          <tr><td>Écully (69130)</td><td>68 m²</td><td>998 €</td><td>14,68</td><td>E</td></tr>
+          <tr><td>Caluire-et-Cuire (69300)</td><td>70 m² meublé</td><td>1000 €</td><td>14,29</td><td>D</td></tr>
+          <tr><td>Craponne (69290)</td><td>100 m²</td><td>1300 €</td><td>13,00</td><td>B</td></tr>
+          <tr><td>Craponne (69290)</td><td>100 m²</td><td>1300 €</td><td>13,00</td><td>A</td></tr>
+          <tr><td>Valenciennes (59300)</td><td>49 m² meublé</td><td>580 €</td><td>11,84</td><td>D</td></tr>
+          <tr><td>Fenain (59179)</td><td>95 m²</td><td>793 €</td><td>8,35</td><td>C</td></tr>
+          <tr><td colspan="5" style="background:var(--bg-soft);font-weight:600;padding:8px 10px">— Round-3 (17 mai 2026) : Nantes / Toulouse / Bordeaux (60 annonces, hors zone tendue) —</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>20 m² meublé</td><td>800 €</td><td>40,00</td><td>C</td></tr>
+          <tr><td>Gironde (33170)</td><td>14 m²</td><td>525 €</td><td>37,50</td><td>D</td></tr>
+          <tr><td>Toulouse (31000)</td><td>15 m² meublé</td><td>530 €</td><td>35,33</td><td>D</td></tr>
+          <tr><td>Gironde (33600)</td><td>17 m²</td><td>585 €</td><td>34,41</td><td>D</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>56 m²</td><td>1850 €</td><td>33,04</td><td>D</td></tr>
+          <tr><td>Toulouse (31000)</td><td>17 m² meublé</td><td>540 €</td><td>31,76</td><td>D</td></tr>
+          <tr><td>Toulouse (31000)</td><td>20 m² meublé</td><td>600 €</td><td>30,00</td><td>E</td></tr>
+          <tr><td>Loire-Atlantique (44840)</td><td>18 m² meublé</td><td>540 €</td><td>30,00</td><td>D</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>22 m²</td><td>636 €</td><td>28,91</td><td>D</td></tr>
+          <tr><td>Nantes (44000)</td><td>18 m² meublé</td><td>520 €</td><td>28,89</td><td>C</td></tr>
+          <tr><td>Gironde (33400)</td><td>28 m² meublé</td><td>800 €</td><td>28,57</td><td>D</td></tr>
+          <tr><td>Toulouse (31000)</td><td>50 m² meublé</td><td>1410 €</td><td>28,20</td><td>D</td></tr>
+          <tr><td>Toulouse (31000)</td><td>17 m² meublé</td><td>470 €</td><td>27,65</td><td>E</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>20 m² meublé</td><td>535 €</td><td>26,75</td><td>C</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>43 m² meublé</td><td>1150 €</td><td>26,74</td><td>B</td></tr>
+          <tr><td>Toulouse (31000)</td><td>24 m² meublé</td><td>630 €</td><td>26,25</td><td>C</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>20 m² meublé</td><td>520 €</td><td>26,00</td><td>E</td></tr>
+          <tr><td>Nantes (44000)</td><td>25 m² meublé</td><td>650 €</td><td>26,00</td><td>D</td></tr>
+          <tr><td>Toulouse (31000)</td><td>24 m² meublé</td><td>600 €</td><td>25,00</td><td>D</td></tr>
+          <tr><td>Loire-Atlantique (44400)</td><td>12 m² meublé</td><td>300 €</td><td>25,00</td><td>C</td></tr>
+          <tr><td>Nantes (44000)</td><td>21 m² meublé</td><td>514 €</td><td>24,48</td><td>D</td></tr>
+          <tr><td>Nantes (44000)</td><td>16 m² meublé</td><td>390 €</td><td>24,38</td><td>C</td></tr>
+          <tr><td>Loire-Atlantique (44980)</td><td>16 m² meublé</td><td>380 €</td><td>23,75</td><td>C</td></tr>
+          <tr><td>Toulouse (31000)</td><td>22 m²</td><td>520 €</td><td>23,64</td><td>C</td></tr>
+          <tr><td>Toulouse (31000)</td><td>38 m² meublé</td><td>870 €</td><td>22,89</td><td>E</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>33 m²</td><td>750 €</td><td>22,73</td><td>C</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>33 m² meublé</td><td>750 €</td><td>22,73</td><td>C</td></tr>
+          <tr><td>Nantes (44000)</td><td>35 m² meublé</td><td>795 €</td><td>22,71</td><td>C</td></tr>
+          <tr><td>Toulouse (31000)</td><td>45 m² meublé</td><td>1020 €</td><td>22,67</td><td>A</td></tr>
+          <tr><td>Gironde (33320)</td><td>28 m² meublé</td><td>620 €</td><td>22,14</td><td>B</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>33 m²</td><td>720 €</td><td>21,82</td><td>E</td></tr>
+          <tr><td>Gironde (33400)</td><td>32 m²</td><td>696 €</td><td>21,75</td><td>D</td></tr>
+          <tr><td>Toulouse (31000)</td><td>70 m² meublé</td><td>1500 €</td><td>21,43</td><td>C</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>50 m² meublé</td><td>1070 €</td><td>21,40</td><td>C</td></tr>
+          <tr><td>Toulouse (31000)</td><td>30 m² meublé</td><td>640 €</td><td>21,33</td><td>D</td></tr>
+          <tr><td>Nantes (44000)</td><td>50 m²</td><td>1065 €</td><td>21,30</td><td>D</td></tr>
+          <tr><td>Toulouse (31000)</td><td>33 m² meublé</td><td>690 €</td><td>20,91</td><td>C</td></tr>
+          <tr><td>Nantes (44000)</td><td>30 m² meublé</td><td>620 €</td><td>20,67</td><td>C</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>80 m²</td><td>1610 €</td><td>20,12</td><td>D</td></tr>
+          <tr><td>Nantes (44000)</td><td>30 m² meublé</td><td>600 €</td><td>20,00</td><td>D</td></tr>
+          <tr><td>Nantes (44000)</td><td>40 m² meublé</td><td>800 €</td><td>20,00</td><td>D</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>31 m²</td><td>597 €</td><td>19,26</td><td>D</td></tr>
+          <tr><td>Gironde (33600)</td><td>57 m²</td><td>1078 €</td><td>18,91</td><td>D</td></tr>
+          <tr><td>Nantes (44000)</td><td>38 m²</td><td>675 €</td><td>17,76</td><td>C</td></tr>
+          <tr><td>Haute-Garonne (31570)</td><td>42 m² meublé</td><td>730 €</td><td>17,38</td><td>D</td></tr>
+          <tr><td>Gironde (33110)</td><td>48 m² meublé</td><td>818 €</td><td>17,04</td><td>D</td></tr>
+          <tr><td>Nantes (44000)</td><td>77 m² meublé</td><td>1295 €</td><td>16,82</td><td>D</td></tr>
+          <tr><td>Nantes (44000)</td><td>63 m²</td><td>1010 €</td><td>16,03</td><td>C</td></tr>
+          <tr><td>Toulouse (31000)</td><td>25 m² meublé</td><td>395 €</td><td>15,80</td><td>F</td></tr>
+          <tr><td>Bordeaux (33000)</td><td>150 m² meublé</td><td>2150 €</td><td>14,33</td><td>C</td></tr>
+          <tr><td>Nantes (44000)</td><td>78 m²</td><td>1099 €</td><td>14,09</td><td>E</td></tr>
+          <tr><td>Loire-Atlantique (44570)</td><td>74 m²</td><td>1015 €</td><td>13,72</td><td>C</td></tr>
+          <tr><td>Toulouse (31000)</td><td>70 m² meublé</td><td>920 €</td><td>13,14</td><td>C</td></tr>
+          <tr><td>Haute-Garonne (31600)</td><td>100 m²</td><td>1150 €</td><td>11,50</td><td>D</td></tr>
+          <tr><td>Haute-Garonne (31270)</td><td>160 m²</td><td>1800 €</td><td>11,25</td><td>C</td></tr>
+          <tr><td>Loire-Atlantique (44140)</td><td>80 m²</td><td>750 €</td><td>9,38</td><td>C</td></tr>
+          <tr><td>Loire-Atlantique (44860)</td><td>117 m²</td><td>1080 €</td><td>9,23</td><td>E</td></tr>
+          <tr><td>Haute-Garonne (31550)</td><td>110 m²</td><td>800 €</td><td>7,27</td><td>B</td></tr>
+          <tr><td>Haute-Garonne (31700)</td><td>90 m² meublé</td><td>400 €</td><td>4,44</td><td>D</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="methode" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Méthodologie — reproduire ce chiffre</h2>
+    <ol class="text-sm space-y-2 list-decimal pl-6" style="color:var(--text-primary)">
+      <li><strong>Source primaire</strong> : <a href="https://www.locservice.fr/" rel="noopener" class="underline" style="color:var(--accent)">locservice.fr</a> — robots.txt permissif sur les pages publiques de listings (audit 17 mai 2026 in <a href="/observatoire-annonces-loyer.html#robots" class="underline" style="color:var(--accent)">cf. ci-dessous</a>). LeBonCoin, SeLoger et PAP disallow leurs pages d'annonces aux crawlers : non utilisés.</li>
+      <li><strong>Crawler</strong> : <code>wedge-tool/crawler/locservice_v0.py</code>, Python stdlib only, User-Agent <code>BailleurVerifCompliance/0.1 (+https://bailleurverif.fr; contact@bailleurverif.fr) public-interest housing-compliance research</code>, pace 30 s entre requêtes, 0 PII vendeur (hash URL + ville + loyer + surface + DPE).</li>
+      <li><strong>Scoring</strong> : <code>wedge-tool/scoring/conformity_score.py</code> v0.1.0. Pour chaque annonce in-scope : (a) infère "meublé" via regex titre, (b) lookup commune → plafond €/m² depuis <a href="/data/encadrement-loyer-france-2026.json" class="underline" style="color:var(--accent)"><code>encadrement-loyer-france-2026.json</code></a> (31 communes), (c) compare €/m² au plafond_max : <strong>verdict "clear" si &gt; +10 %, "presumed" si 0 &lt; excess ≤ +10 %, "none" sinon</strong>.</li>
+      <li><strong>Échantillonnage 17 mai 2026</strong> : 3 vagues de crawls — vague 1 (~08:30Z) 5 Paris + 10 Lille (Nord 59) + 10 Lyon (Rhône 69) + 10 Marseille (Bouches-du-Rhône 13 hors zone) = 35 annonces. Vague 2 (~09:42Z) 30 Paris + 30 Lyon + 30 Lille = 90 annonces. <strong>Vague 3 (~10:13Z) 20 Nantes (Loire-Atlantique 44) + 20 Toulouse (Haute-Garonne 31) + 20 Bordeaux (Gironde 33) = 60 annonces baseline hors zone</strong>. <strong>Déduplication par <code>accommodation_id</code></strong> sur les 185 lignes brutes → <strong>160 annonces uniques (couverture 7 villes / 6 départements)</strong>. In-scope encadrement : 61 (30 Paris + 12 Lyon + 16 Lille MEL + 3 Villeurbanne). Hors zone : 99 (banlieue Lyon, MEL périph, Marseille / Aix, + Nantes / Toulouse / Bordeaux).</li>
+      <li><strong>Hypothèse plafond</strong> : on applique le <strong>plafond_max</strong> de la commune (cas le plus favorable au bailleur). Plafond réel = loyer médian majoré pour la combinaison (arrondissement × type × époque) selon arrêté préfectoral. V0 = donc <strong>lower bound</strong> sur la non-conformité réelle.</li>
+      <li><strong>Reproductibilité</strong> : code source intégral sur GitHub (<a href="https://github.com/Creariax5/bailleurverif" rel="noopener" class="underline" style="color:var(--accent)">Creariax5/bailleurverif</a>), JSONL brut et scoré téléchargeable.</li>
+      <li><strong>Téléchargement direct</strong> : <a href="/data/observatoire-annonces-loyer-2026-05-17.csv" rel="noopener" class="underline" style="color:var(--accent)" download><code>observatoire-annonces-loyer-2026-05-17.csv</code></a> (160 lignes × 23 colonnes, 25 KB, licence ouverte Etalab 2.0, prêt Excel/R/pandas). 0 PII vendeur (URL hashée).</li>
+    </ol>
+    <details class="mt-4">
+      <summary id="robots">Audit robots.txt 4 sources FR (17 mai 2026)</summary>
+      <ul class="text-sm mt-2 space-y-2 pl-6 list-disc" style="color:var(--text-primary)">
+        <li><strong>LeBonCoin</strong> : header *"forbidden... access only with special permission"* + whitelist Google/Yahoo/Bing/Yandex. ❌ Non utilisé.</li>
+        <li><strong>SeLoger</strong> : <code>Disallow: /*/classified-search?*</code> + <code>/*/detail.htm</code>. ❌ Non utilisé.</li>
+        <li><strong>PAP</strong> : <code>Disallow: /annonce/location-*</code> sur tous types. ❌ Pages détail non crawlées (sitemap éventuel V1).</li>
+        <li><strong>Locservice.fr</strong> : <code>User-agent: *</code> + Disallow restreint aux sections compte/admin (<code>/cgu</code>, <code>/contact</code>, <code>/proprietaire/</code>, etc.). Listings publics <code>/{dept}-XX/location-*.html</code> : <strong>autorisés</strong>. ✅</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="signaler" class="mb-10 stat-card" style="padding:18px 20px">
+    <h2 class="text-xl font-bold mb-2" style="color:var(--text-primary)">Générer un courrier de signalement à la préfecture</h2>
+    <p class="text-sm mb-3" style="color:var(--text-primary)">Vous avez identifié une annonce qui dépasse le plafond d'encadrement légal ou qui propose un logement classé DPE F ou G ? Renseignez les éléments factuels ci-dessous : nous générons un <strong>brouillon de courrier prêt à imprimer ou copier dans votre client mail</strong>, adressé au service compétent de votre département (DRIHL en Île-de-France, DDETS ailleurs). Aucune donnée nominative sur le bailleur n'est conservée — nous stockons seulement le département, le type de violation et un hash anonymisé.</p>
+
+    <form id="signaler-form" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
+      <label class="text-sm" style="color:var(--text-primary)">
+        Ville
+        <input type="text" name="ville" required maxlength="80" placeholder="Paris 15, Lyon 3, Lille…" class="mt-1 block w-full rounded border px-2 py-1" style="background:var(--surface);color:var(--text-primary);border-color:var(--border)">
+      </label>
+      <label class="text-sm" style="color:var(--text-primary)">
+        Code postal
+        <input type="text" name="code_postal" required pattern="[0-9]{4,5}" maxlength="5" placeholder="75015" class="mt-1 block w-full rounded border px-2 py-1" style="background:var(--surface);color:var(--text-primary);border-color:var(--border)">
+      </label>
+      <label class="text-sm" style="color:var(--text-primary)">
+        Loyer mensuel (€, hors charges)
+        <input type="number" name="loyer_eur" required min="100" max="50000" step="1" placeholder="1195" class="mt-1 block w-full rounded border px-2 py-1" style="background:var(--surface);color:var(--text-primary);border-color:var(--border)">
+      </label>
+      <label class="text-sm" style="color:var(--text-primary)">
+        Surface habitable (m²)
+        <input type="number" name="surface_m2" required min="5" max="1000" step="0.1" placeholder="16" class="mt-1 block w-full rounded border px-2 py-1" style="background:var(--surface);color:var(--text-primary);border-color:var(--border)">
+      </label>
+      <label class="text-sm" style="color:var(--text-primary)">
+        Type de violation
+        <select name="violation_type" required class="mt-1 block w-full rounded border px-2 py-1" style="background:var(--surface);color:var(--text-primary);border-color:var(--border)">
+          <option value="encadrement">Loyer au-dessus du plafond d'encadrement</option>
+          <option value="dpe">Logement classé DPE F ou G (interdit à la location)</option>
+          <option value="both">Les deux (cumul des deux non-conformités)</option>
+        </select>
+      </label>
+      <label class="text-sm" style="color:var(--text-primary)">
+        Classe DPE (si applicable)
+        <select name="dpe_letter" class="mt-1 block w-full rounded border px-2 py-1" style="background:var(--surface);color:var(--text-primary);border-color:var(--border)">
+          <option value="">— sans objet —</option>
+          <option value="F">F (interdit à compter du 1ᵉʳ janvier 2028)</option>
+          <option value="G">G (interdit depuis le 1ᵉʳ janvier 2025)</option>
+        </select>
+      </label>
+      <label class="text-sm sm:col-span-2 inline-flex items-center gap-2" style="color:var(--text-primary)">
+        <input type="checkbox" name="meuble"> Logement meublé (sinon : location vide)
+      </label>
+      <label class="text-sm sm:col-span-2" style="color:var(--text-primary)">
+        Plafond €/m² applicable (facultatif — laissez vide si vous ne le connaissez pas)
+        <input type="number" name="plafond_eur_m2" min="5" max="100" step="0.01" placeholder="ex 40,00 pour Paris meublé ≤30m²" class="mt-1 block w-full rounded border px-2 py-1" style="background:var(--surface);color:var(--text-primary);border-color:var(--border)">
+        <span class="block text-xs mt-1" style="color:var(--text-secondary)">Plafonds par commune dans le <a href="/encadrement-loyer-france-2026.html" class="underline" style="color:var(--accent)">hub encadrement</a>.</span>
+      </label>
+      <div class="sm:col-span-2">
+        <button type="submit" class="px-4 py-2 rounded font-semibold" style="background:var(--accent);color:#fff">Générer le brouillon de courrier</button>
+        <span id="signaler-status" class="ml-3 text-sm" style="color:var(--text-secondary)" aria-live="polite"></span>
+      </div>
+    </form>
+
+    <div id="signaler-result" class="mt-4 hidden">
+      <h3 class="text-base font-semibold mb-2" style="color:var(--text-primary)">Brouillon généré</h3>
+      <p class="text-xs mb-2" style="color:var(--text-secondary)">Service compétent : <strong id="signaler-service"></strong>. Adresse postale : <span id="signaler-adresse"></span>. Email (si vous souhaitez doubler par voie électronique) : <code id="signaler-email"></code>.</p>
+      <textarea id="signaler-courrier" rows="22" readonly class="w-full text-sm font-mono rounded border p-2" style="background:var(--surface);color:var(--text-primary);border-color:var(--border)"></textarea>
+      <div class="mt-2 flex flex-wrap gap-2">
+        <button type="button" id="signaler-copy" class="px-3 py-1 rounded text-sm font-semibold" style="background:var(--accent);color:#fff">Copier le courrier</button>
+        <button type="button" id="signaler-print" class="px-3 py-1 rounded text-sm font-semibold" style="background:var(--surface);color:var(--text-primary);border:1px solid var(--border)">Imprimer</button>
+        <a id="signaler-mailto" href="#" class="px-3 py-1 rounded text-sm font-semibold inline-block" style="background:var(--surface);color:var(--text-primary);border:1px solid var(--border)">Ouvrir dans mon mail</a>
+      </div>
+      <p class="text-xs mt-3" style="color:var(--text-secondary)">Brouillon. Relisez et adaptez avant envoi (votre nom, vos pièces). <strong>Voie postale recommandée :</strong> lettre recommandée avec accusé de réception (LRAR). L'ADIL de votre département vous accompagne gratuitement (0 805 16 00 75).</p>
+    </div>
+
+    <p class="text-xs mt-4" style="color:var(--text-secondary)"><strong>Compteur public :</strong> <span id="signaler-count">—</span> courrier(s) généré(s) au total via cet observatoire. Aucune donnée personnelle d'usager ni de bailleur n'est conservée.</p>
+  </section>
+
+  <section id="why" class="mb-10 stat-card" style="padding:18px 20px">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Pourquoi cet observatoire ?</h2>
+    <ul class="text-sm space-y-2 leading-relaxed" style="color:var(--text-primary)">
+      <li>★ L'audit DRIHL 2022 (Paris) restait la dernière mesure publique du non-respect de l'encadrement — <strong>1 ville, 1 année, pas reproductible</strong>.</li>
+      <li>★ Les plateformes (SeLoger, PAP, Locservice) n'ont pas d'intérêt à publier ces stats (conflit direct).</li>
+      <li>★ Cet observatoire est le <strong>premier flux multi-villes mis à jour automatiquement</strong> de France à confronter chaque annonce au plafond légal opposable.</li>
+      <li>★ La méthode est publique, le code open source, et chaque caveat est documenté. Vous pouvez répliquer le chiffre en clone + run en 21 minutes.</li>
+    </ul>
+  </section>
+
+  <section id="links" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Outils liés</h2>
+    <ul class="text-sm space-y-1" style="color:var(--text-primary)">
+      <li>→ <a href="/encadrement-loyer-france-2026.html" class="underline" style="color:var(--accent)">Hub encadrement loyers — plafonds €/m² 31 communes FR 2026</a></li>
+      <li>→ <a href="/observatoire-dpe-fg.html" class="underline" style="color:var(--accent)">Observatoire DPE F/G — flux temps réel passoires thermiques (ADEME)</a></li>
+      <li>→ <a href="/dpe-fiabilite.html" class="underline" style="color:var(--accent)">Mon DPE est-il fiable ? — test 6 anomalies</a></li>
+      <li>→ <a href="/scanner-annonce-arnaque.html" class="underline" style="color:var(--accent)">Scanner anti-arnaque — texte d'annonce → 8 drapeaux rouges</a></li>
+      <li>→ <a href="/guide-locataire-2026.html" class="underline" style="color:var(--accent)">Guide locataire 2026 — vos droits expliqués + LRAR pré-remplies</a></li>
+    </ul>
+  </section>
+
+  <p class="text-xs mt-8" style="color:var(--text-secondary)">
+    Mise à jour : 17 mai 2026. Signalement d'erreur, partenariat presse ou question méthodologique : <a href="mailto:contact@bailleurverif.fr" class="underline">contact@bailleurverif.fr</a>. Données publiées sous licence ouverte Etalab 2.0.
+  </p>
+
+</main>
+
+<footer class="bv-footer">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-6 text-xs" style="color:var(--text-secondary)">
+    <p>BailleurVérif — outil gratuit de conformité location FR 2026. Source des données&nbsp;: <a href="/data/" class="underline">open data</a>. <a href="/mentions-legales.html" class="underline">Mentions légales</a> · <a href="/politique-confidentialite.html" class="underline">Confidentialité</a> · <a href="/cgu.html" class="underline">CGU</a> · contact@bailleurverif.fr</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://bailleurverif.fr/observatoire-annonces-loyer.html#webpage",
+      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
+      "name": "Observatoire annonces loyer — % de non-conformité encadrement par ville",
+      "description": "Pipeline open source de mesure de la non-conformité de l'encadrement des loyers sur 7 villes FR (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux). Sample N=160 annonces uniques (61 in-scope encadrement + 99 hors zone baseline), 95 % CI ±12 pts, scoring auto, méthodologie + caveats publics.",
+      "inLanguage": "fr-FR",
+      "datePublished": "2026-05-17",
+      "dateModified": "2026-05-17",
+      "isPartOf": {"@id": "https://bailleurverif.fr/#website"},
+      "breadcrumb": {"@id": "https://bailleurverif.fr/observatoire-annonces-loyer.html#breadcrumb"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bailleurverif.fr/observatoire-annonces-loyer.html#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://bailleurverif.fr/"},
+        {"@type": "ListItem", "position": 2, "name": "Données ouvertes", "item": "https://bailleurverif.fr/data/"},
+        {"@type": "ListItem", "position": 3, "name": "Observatoire annonces loyer"}
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://bailleurverif.fr/observatoire-annonces-loyer.html#dataset",
+      "name": "Observatoire BailleurVérif — annonces de location FR confrontées au plafond légal d'encadrement",
+      "description": "Sample d'annonces locservice.fr (Paris, Lyon, Lille, Marseille, Nantes, Toulouse, Bordeaux — 17 mai 2026, N=160 annonces uniques après déduplication par accommodation_id) scoré contre le plafond légal d'encadrement des loyers (loi 89-462 art. 17 + décret zone tendue + arrêté préfectoral). 61 in-scope (Paris/Lyon/Villeurbanne/Lille MEL), 99 hors zone baseline (banlieue + Nantes/Toulouse/Bordeaux préfectures sans arrêté). Inclut violations clear (>+10%), presumed (0 à +10%), conformes. 95% CI Wilson sur taux global : ±12 points.",
+      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://bailleurverif.fr/data/observatoire-annonces-loyer-2026-05-17.csv",
+          "contentSize": "24996",
+          "name": "Observatoire BailleurVérif — annonces locservice.fr scorées — 2026-05-17 (CSV)",
+          "description": "160 lignes × 23 colonnes. URL hashée (0 PII vendeur). Colonnes: ts_score, source, url_hash, accommodation_id, ville_label, code_postal, code_dept, in_scope_encadrement, surface_m2, loyer_eur_total, eur_per_m2, dpe_letter, ges_letter, meuble, commune_slug, plafond_applied_eur_m2, encadrement_violation, encadrement_excess_eur_m2, encadrement_excess_pct, dpe_violation, violation_type, violation_score, score_version."
+        }
+      ],
+      "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+      "creator": {"@id": "https://bailleurverif.fr/#organization"},
+      "datePublished": "2026-05-17",
+      "dateModified": "2026-05-17",
+      "spatialCoverage": [
+        {"@type": "Place", "name": "Paris"},
+        {"@type": "Place", "name": "Lyon"},
+        {"@type": "Place", "name": "Lille"},
+        {"@type": "Place", "name": "Marseille"},
+        {"@type": "Place", "name": "Aix-en-Provence"},
+        {"@type": "Place", "name": "Villeurbanne"},
+        {"@type": "Place", "name": "Nantes"},
+        {"@type": "Place", "name": "Toulouse"},
+        {"@type": "Place", "name": "Bordeaux"}
+      ],
+      "keywords": ["encadrement loyer", "non-conformité", "loi 89-462", "zone tendue", "Paris", "Lyon", "Lille", "Marseille", "Nantes", "Toulouse", "Bordeaux", "DPE", "Loi Climat", "open data"],
+      "variableMeasured": [
+        {"@type": "PropertyValue", "name": "violations clear encadrement (in-scope)", "value": 22, "unitText": "annonces"},
+        {"@type": "PropertyValue", "name": "violations presumed encadrement (in-scope)", "value": 14, "unitText": "annonces"},
+        {"@type": "PropertyValue", "name": "annonces in-scope", "value": 61, "unitText": "annonces"},
+        {"@type": "PropertyValue", "name": "annonces baseline hors zone", "value": 99, "unitText": "annonces"},
+        {"@type": "PropertyValue", "name": "annonces totales (sample dédupliqué)", "value": 160, "unitText": "annonces"},
+        {"@type": "PropertyValue", "name": "villes couvertes", "value": 7, "unitText": "villes"},
+        {"@type": "PropertyValue", "name": "taux non-conformité in-scope", "value": "59.0", "unitText": "%"},
+        {"@type": "PropertyValue", "name": "intervalle confiance 95% (Wilson) demi-largeur", "value": "12.0", "unitText": "points de %"}
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bailleurverif.fr/#organization",
+      "name": "BailleurVérif",
+      "url": "https://bailleurverif.fr/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bailleurverif.fr/#website",
+      "url": "https://bailleurverif.fr/",
+      "name": "BailleurVérif",
+      "publisher": {"@id": "https://bailleurverif.fr/#organization"},
+      "inLanguage": "fr-FR"
+    }
+  ]
+}
+</script>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.scope-tab');
+  var inDiv = document.getElementById('tbl-in');
+  var outDiv = document.getElementById('tbl-out');
+  tabs.forEach(function(t) {
+    t.addEventListener('click', function() {
+      tabs.forEach(function(x){ x.classList.remove('active'); });
+      t.classList.add('active');
+      if (t.dataset.scope === 'in') { inDiv.classList.remove('hide'); outDiv.classList.add('hide'); }
+      else { outDiv.classList.remove('hide'); inDiv.classList.add('hide'); }
+    });
+  });
+})();
+
+(function() {
+  var form = document.getElementById('signaler-form');
+  if (!form) return;
+
+  try {
+    var qp = new URLSearchParams(window.location.search);
+    var PARAM_MAP = {
+      ville: 'ville',
+      cp: 'code_postal',
+      code_postal: 'code_postal',
+      loyer: 'loyer_eur',
+      surf: 'surface_m2',
+      surface: 'surface_m2',
+      violation: 'violation_type',
+      dpe: 'dpe_letter',
+      plafond: 'plafond_eur_m2'
+    };
+    var ALLOWED_VIOLATION = { encadrement: 1, dpe: 1, both: 1 };
+    var ALLOWED_DPE = { '': 1, F: 1, G: 1 };
+    var anyPrefilled = false;
+    Object.keys(PARAM_MAP).forEach(function(k) {
+      var v = qp.get(k);
+      if (v == null || v === '') return;
+      v = String(v).slice(0, 80);
+      var name = PARAM_MAP[k];
+      var el = form.querySelector('[name="' + name + '"]');
+      if (!el) return;
+      if (name === 'violation_type') {
+        if (!ALLOWED_VIOLATION[v]) return;
+      } else if (name === 'dpe_letter') {
+        var up = v.toUpperCase();
+        if (!ALLOWED_DPE[up]) return;
+        v = up;
+      } else if (name === 'code_postal') {
+        if (!/^[0-9]{4,5}$/.test(v)) return;
+      } else if (name === 'loyer_eur' || name === 'surface_m2' || name === 'plafond_eur_m2') {
+        if (!/^[0-9]+([.,][0-9]+)?$/.test(v)) return;
+        v = v.replace(',', '.');
+      }
+      el.value = v;
+      anyPrefilled = true;
+    });
+    var meubleQ = qp.get('meuble');
+    if (meubleQ === '1' || meubleQ === 'true') {
+      var mEl = form.querySelector('[name="meuble"]');
+      if (mEl) { mEl.checked = true; anyPrefilled = true; }
+    }
+    if (anyPrefilled && window.location.hash !== '#signaler') {
+      var sect = document.getElementById('signaler');
+      if (sect) sect.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  } catch (e) {}
+
+  var statusEl = document.getElementById('signaler-status');
+  var resultBox = document.getElementById('signaler-result');
+  var courrierEl = document.getElementById('signaler-courrier');
+  var serviceEl = document.getElementById('signaler-service');
+  var adresseEl = document.getElementById('signaler-adresse');
+  var emailEl = document.getElementById('signaler-email');
+  var countEl = document.getElementById('signaler-count');
+  var copyBtn = document.getElementById('signaler-copy');
+  var printBtn = document.getElementById('signaler-print');
+  var mailtoLink = document.getElementById('signaler-mailto');
+
+  function refreshCount() {
+    fetch('/api/stats').then(function(r){ return r.json(); }).then(function(s){
+      if (typeof s.signalements_total === 'number') countEl.textContent = s.signalements_total;
+    }).catch(function(){});
+  }
+  refreshCount();
+
+  form.addEventListener('submit', function(ev) {
+    ev.preventDefault();
+    statusEl.textContent = 'Génération en cours…';
+    var fd = new FormData(form);
+    var body = {
+      ville: fd.get('ville') || '',
+      code_postal: fd.get('code_postal') || '',
+      loyer_eur: parseFloat(fd.get('loyer_eur') || '0'),
+      surface_m2: parseFloat(fd.get('surface_m2') || '0'),
+      violation_type: fd.get('violation_type') || '',
+      dpe_letter: fd.get('dpe_letter') || '',
+      meuble: !!fd.get('meuble'),
+      annonce_ref: ''
+    };
+    var pl = fd.get('plafond_eur_m2');
+    if (pl) body.plafond_eur_m2 = parseFloat(pl);
+    fetch('/api/signaler-annonce', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    }).then(function(r){ return r.json().then(function(j){ return {status: r.status, json: j}; }); })
+      .then(function(res){
+        if (res.status !== 200 || !res.json || res.json.ok !== true) {
+          statusEl.textContent = (res.json && res.json.error) ? ('Erreur : ' + res.json.error) : 'Erreur.';
+          return;
+        }
+        statusEl.textContent = 'Brouillon généré ✓';
+        courrierEl.value = res.json.courrier || '';
+        serviceEl.textContent = res.json.service_competent || '';
+        adresseEl.textContent = res.json.adresse_postale || '';
+        emailEl.textContent = res.json.email_optionnel || '';
+        if (res.json.email_optionnel && res.json.email_optionnel.indexOf('@') > 0) {
+          var subj = 'Signalement annonce de location non-conforme';
+          mailtoLink.href = 'mailto:' + encodeURIComponent(res.json.email_optionnel) + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(res.json.courrier || '');
+          mailtoLink.style.display = 'inline-block';
+        } else {
+          mailtoLink.style.display = 'none';
+        }
+        resultBox.classList.remove('hidden');
+        resultBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        refreshCount();
+      }).catch(function(){ statusEl.textContent = 'Erreur réseau.'; });
+  });
+
+  copyBtn.addEventListener('click', function() {
+    courrierEl.select();
+    try {
+      document.execCommand('copy');
+      copyBtn.textContent = 'Copié ✓';
+      setTimeout(function(){ copyBtn.textContent = 'Copier le courrier'; }, 2000);
+    } catch (e) {}
+  });
+  printBtn.addEventListener('click', function() {
+    var w = window.open('', '_blank');
+    if (!w) return;
+    w.document.write('<pre style="font-family:monospace;white-space:pre-wrap;font-size:11pt">' + (courrierEl.value || '').replace(/</g,'&lt;') + '</pre>');
+    w.document.close();
+    w.print();
+  });
+})();
+</script>
+</body>
+</html>

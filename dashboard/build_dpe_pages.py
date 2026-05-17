@@ -702,12 +702,16 @@ def main():
 
     # Rebuild merged sitemap.xml — includes static + encadrement + dpe pages
     # run-110 : parité avec build_programmatic_pages.py (widget, locataire-loyer-legal)
+    # run-124 : + deficit-foncier-2026.html
     # pour éviter régression sitemap quand ce builder tourne en dernier.
     tools_pages = [
         p for p in (
+            "mon-bien.html",
             "preavis-bail.html",
+            "changelog.html",
             "widget-bailleurverif.html",
             "locataire-loyer-legal.html",
+            "deficit-foncier-2026.html",
         )
         if os.path.exists(os.path.join(STATIC, p))
     ]

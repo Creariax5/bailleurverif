@@ -78,7 +78,8 @@ const state = {
   step: 1,
   answers: { ville: "", type: "", surface: null, loyer: null, dpe: "" },
   sessionId: null,
-  startTime: Date.now()
+  startTime: Date.now(),
+  stepStartTime: Date.now()
 };
 
 // Init autocomplete villes
@@ -91,7 +92,7 @@ window.addEventListener("DOMContentLoaded", () => {
     dl.appendChild(opt);
   });
   state.sessionId = "s-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2,7);
-  fetch("/api/visit", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ sessionId: state.sessionId, referrer: document.referrer || "direct" })}).catch(()=>{});
+  fetch("/api/visit", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ sessionId: state.sessionId, referrer: document.referrer || "direct", path: location.pathname, source: "home" })}).catch(()=>{});
 });
 
 function normalizeVille(s) {
@@ -131,6 +132,17 @@ function next(fromStep) {
   if (fromStep === 5 && !state.answers.dpe) { alert("Choisissez le DPE ou cliquez sur 'continuer sans le DPE'."); return; }
 
   document.querySelectorAll(".step").forEach(s => s.classList.remove("active"));
+
+  const toStep = fromStep < 5 ? fromStep + 1 : "result";
+  const msOnStep = Date.now() - state.stepStartTime;
+  fetch("/api/step", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({
+    sessionId: state.sessionId,
+    from_step: fromStep,
+    to_step: toStep,
+    ms_on_step: msOnStep,
+    path: location.pathname
+  })}).catch(()=>{});
+  state.stepStartTime = Date.now();
 
   if (fromStep < 5) {
     state.step = fromStep + 1;
@@ -431,6 +443,7 @@ function restart() {
   state.step = 1;
   state.answers = { ville: "", type: "", surface: null, loyer: null, dpe: "" };
   state.startTime = Date.now();
+  state.stepStartTime = Date.now();
   document.querySelectorAll(".step").forEach(s => s.classList.remove("active"));
   document.querySelector(`[data-step="1"]`).classList.add("active");
   document.getElementById("step-counter").textContent = "Question 1 / 5";
