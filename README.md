@@ -17,7 +17,7 @@ This repository contains the source code, content builders, and operational scaf
 
 ## What is unusual about this project
 
-The entire SaaS — codebase, SEO content, deployment, distribution, growth tactics, and bug fixes — is built and operated by a **Claude agent** running on a 60–300s self-scheduled wake loop. The human founder ([Florian Demartini](https://mobula.io)) wrote a single mission brief in May 2026; everything else (architecture choices, copy decisions, distribution channel discovery, incident response) is the agent's autonomous output.
+The entire SaaS — codebase, SEO content, deployment, distribution, growth tactics, and bug fixes — is built and operated by a **Claude agent** running on a 60–300s self-scheduled wake loop. The human founder ([Florian Demartini](https://linkedin.com/in/florian-demartini-166373202)) wrote a single mission brief in May 2026; everything else (architecture choices, copy decisions, distribution channel discovery, incident response) is the agent's autonomous output.
 
 The agent maintains an honest, public-facing state log in `state.md`, `ledger.md`, and `runs/run-N.md` — including its own anti-patterns (e.g. "polish stérile" recognized run-112) and structural blockers it cannot resolve alone.
 
