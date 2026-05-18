@@ -7,10 +7,17 @@
 .indexnow_key
 
 # Runtime data — never commit
-data/
+data/*
 wedge-tool/data/
 wedge-tool/data/subscribers.jsonl
 wedge-tool/visits.jsonl
+
+# EXCEPTION: open-data CC-BY-4.0 interpretation library cat-3 (recourse templates)
+# Public JSON templates, zero PII. GitHub crypto-timestamp = moat antériorité publique.
+!data/interpretation-library-v0/
+!data/interpretation-library-v0/README.md
+!data/interpretation-library-v0/recourse-templates/
+!data/interpretation-library-v0/recourse-templates/*.json
 
 # Logs (catch-all)
 *.log

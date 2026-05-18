@@ -1,0 +1,228 @@
+{
+  "tag": "loyer-abusif",
+  "version": "v0",
+  "wave_ts": "2026-05-18T03:00:00Z",
+  "wake_id": "run-243",
+  "title": "Loyer abusif en zone d'encadrement — recours locataire",
+  "scope": "Bail d'habitation résidence principale (logement vide ou meublé hors bail mobilité), commune située en zone tendue avec encadrement du niveau des loyers actif (Paris, Est Ensemble, Plaine Commune, Bordeaux, Grenoble-Alpes Métropole partiel, Lille/Hellemmes/Lomme, Lyon/Villeurbanne, Montpellier, Pays Basque). Hors champ : logements loi de 1948, conventionnés Anah, HLM, meublés de tourisme, sous-locations.",
+  "legal_basis_citations": [
+    {
+      "id": "loi-89-462-art-17",
+      "label": "Loi n° 89-462 du 6 juillet 1989 — article 17",
+      "summary": "Fixation et révision du loyer en zone non tendue (principe de liberté contractuelle), encadrement légal en zone tendue, modalités complément de loyer.",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038814935/",
+      "verified_from_corpus": false,
+      "verification_note": "Citation construite depuis vocabulaire SP.fr F1314, à vérifier intégralement par Florian avant usage public."
+    },
+    {
+      "id": "loi-89-462-art-17-1",
+      "label": "Loi n° 89-462 du 6 juillet 1989 — article 17-1",
+      "summary": "Plafonnement de l'augmentation annuelle de loyer à l'IRL Insee (Indice de Référence des Loyers). Calcul : nouveau loyer = loyer actuel × (IRL trim. réf. année N / IRL trim. réf. année N-1).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038814917/",
+      "verified_from_corpus": true,
+      "verification_note": "Calcul textuel sourced SP.fr F1311 (extrait corpus run-240 ligne 2)."
+    },
+    {
+      "id": "loi-89-462-art-25-9",
+      "label": "Loi n° 89-462 du 6 juillet 1989 — article 25-9",
+      "summary": "Encadrement expérimental du niveau des loyers en zone tendue (plafond = loyer de référence majoré × surface). Amende administrative pour non-respect : jusqu'à 5 000 € (personne physique) / 15 000 € (personne morale).",
+      "source_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041419993/",
+      "verified_from_corpus": true,
+      "verification_note": "Plafonds amende sourced SP.fr F1314 verbatim (extrait corpus run-240 ligne 4)."
+    },
+    {
+      "id": "loi-2026-103-jeanbrun",
+      "label": "Loi n° 2026-103 du 19 février 2026 (loi Jeanbrun)",
+      "summary": "Cadre actualisé 2026 fixation/révision loyer + sanctions encadrement. Référence locale BailleurVérif.",
+      "source_url": "https://www.legifrance.gouv.fr/loda/id/LEGITEXT00026103/",
+      "verified_from_corpus": false,
+      "verification_note": "Référence interne BV inchangée, à vérifier URL Légifrance définitive avant publication template."
+    },
+    {
+      "id": "interdiction-revision-f-g",
+      "label": "Interdiction de révision loyer pour logements DPE F/G",
+      "summary": "Pour tout bail signé/renouvelé/tacitement reconduit depuis le 24 août 2022 (métropole) ou 1er juillet 2024 (DROM), un logement classé F ou G sur le DPE ne peut PAS faire l'objet d'une révision annuelle de loyer, même avec clause IRL contractuelle.",
+      "source_url": "https://www.service-public.fr/particuliers/vosdroits/F1311",
+      "verified_from_corpus": true,
+      "verification_note": "Sourced SP.fr F1311 verbatim + confirmé ANIL comment-fixer-loyer (corpus run-240/241)."
+    }
+  ],
+  "applicability_checks": [
+    {
+      "id": "check-1-zone-tendue",
+      "question": "La commune est-elle classée en zone tendue avec encadrement du niveau des loyers actif ?",
+      "decision_rule": "OUI si commune appartient à : Paris, Est Ensemble (9 communes), Plaine Commune (9 communes), Bordeaux, Grenoble-Alpes Métropole (liste partielle), Lille/Hellemmes/Lomme, Lyon/Villeurbanne, Montpellier, Pays Basque (24 communes). Sinon : encadrement évolution (relocation/renouvellement) possible mais PAS encadrement niveau, recours différent.",
+      "if_no_next_template": "loyer-evolution-relocation"
+    },
+    {
+      "id": "check-2-residence-principale",
+      "question": "Le logement est-il loué comme résidence principale du locataire (ou bail mobilité) ?",
+      "decision_rule": "OUI requis. NON exclut le périmètre encadrement (meublés tourisme, secondaires hors résidence)."
+    },
+    {
+      "id": "check-3-loyer-base-vs-plafond",
+      "question": "Le loyer mensuel hors charges (loyer de base) dépasse-t-il le loyer de référence majoré applicable (€/m² × surface habitable) ?",
+      "decision_rule": "Si oui : prima facie irrégularité encadrement. Calcul = surface habitable (m²) × loyer_ref_majoré (€/m²) selon arrêté préfectoral en vigueur à la date de signature/renouvellement.",
+      "data_needed": ["surface_habitable_m2", "loyer_base_eur", "loyer_ref_majore_eur_m2", "complement_loyer_eur"]
+    },
+    {
+      "id": "check-4-complement-loyer-justifie",
+      "question": "Le bail contient-il un complément de loyer mentionné explicitement (caractéristiques exceptionnelles de localisation/confort) ?",
+      "decision_rule": "Si oui : le complément doit être justifié par des caractéristiques exceptionnelles et le bail doit les mentionner. Caractéristiques disqualifiantes (interdisent complément) : sanitaires palier, humidité murs, DPE F/G, mauvaise isolation thermique, fenêtres non étanches, évacuation eau défectueuse, électricité dégradée, vis-à-vis <10m, mauvaise exposition.",
+      "source_corpus": "ANIL comment-fixer-loyer (corpus run-241)"
+    },
+    {
+      "id": "check-5-dpe-f-g",
+      "question": "Le DPE du logement est-il classé F ou G ?",
+      "decision_rule": "Si oui ET bail signé/renouvelé depuis 24/08/2022 (métropole) : (1) interdiction de révision annuelle, même si clause IRL ; (2) complément de loyer interdit ; (3) DPE G interdit à la location depuis 2025 (renouvellements non autorisés) ; (4) DPE F interdit à la location à partir de 2028."
+    }
+  ],
+  "procedure_steps": [
+    {
+      "step": 1,
+      "label": "Constituer la preuve",
+      "actions": [
+        "Récupérer copie du bail signé (clauses loyer + complément + IRL).",
+        "Récupérer copie DPE du logement (date + classe énergétique).",
+        "Récupérer 3 dernières quittances de loyer (loyer base + charges détaillées).",
+        "Calculer écart constaté : loyer_payé − (surface × loyer_référence_majoré). Conserver capture de l'arrêté préfectoral en vigueur à la date du bail."
+      ]
+    },
+    {
+      "step": 2,
+      "label": "Lettre amiable RAR au bailleur",
+      "actions": [
+        "Envoyer courrier recommandé avec accusé de réception (RAR) au bailleur (ou agence mandataire) demandant : (a) régularisation du loyer au plafond légal pour les mois à venir, (b) remboursement des sommes trop perçues sur 12 derniers mois (prescription quinquennale).",
+        "Délai de réponse raisonnable : 1 mois calendaire."
+      ],
+      "use_sample_letter": "sample_letter_md"
+    },
+    {
+      "step": 3,
+      "label": "Saisine Commission Départementale de Conciliation (CDC)",
+      "actions": [
+        "Si pas de réponse / refus du bailleur sous 1 mois, saisir CDC du département (gratuit, écrit, sous 2 mois suite refus bailleur).",
+        "Joindre : bail, DPE, quittances, lettre RAR + accusé, calcul écart, copie de l'arrêté préfectoral.",
+        "Audience CDC sous 2-4 mois en moyenne (variable selon préfecture)."
+      ],
+      "regulator_id": "cdc-dept"
+    },
+    {
+      "step": 4,
+      "label": "Saisine préfet — sanction administrative encadrement",
+      "actions": [
+        "Si CDC n'aboutit pas à régularisation OU pour signaler infraction encadrement : signaler au préfet (DRIHL en Île-de-France, DDETS en province) qui peut prononcer amende administrative jusqu'à 5 000 € (PP) / 15 000 € (PM).",
+        "Procédure indépendante de la conciliation, peut être menée en parallèle."
+      ],
+      "regulator_id": "prefet-encadrement"
+    },
+    {
+      "step": 5,
+      "label": "Saisine tribunal judiciaire",
+      "actions": [
+        "Si conciliation CDC échoue : saisine tribunal judiciaire (TJ) du lieu de situation de l'immeuble pour : (a) fixation judiciaire du loyer au plafond, (b) restitution du trop-perçu, (c) éventuels dommages-intérêts.",
+        "Procédure : 6-18 mois selon juridiction. Représentation avocat non obligatoire mais conseillée (litiges < 10 000 €)."
+      ],
+      "regulator_id": "tj-lieu-immeuble"
+    }
+  ],
+  "sample_letter_md": "**Objet : Demande de mise en conformité du loyer — encadrement zone tendue**\n\nMadame, Monsieur,\n\nJe suis locataire du logement situé à `[ADRESSE COMPLÈTE + ÉTAGE + N°]`, en vertu du bail signé le `[DATE_BAIL]` pour une durée de `[DURÉE]` mois/années. La commune de `[COMMUNE]` est située en zone tendue et fait l'objet d'un encadrement du niveau des loyers en vertu de l'article 25-9 de la loi n° 89-462 du 6 juillet 1989, conformément à l'arrêté préfectoral du `[DATE_ARRÊTÉ]`.\n\nPour mon logement (surface habitable : `[SURFACE]` m², `[NB_PIÈCES]` pièces, `[ÉPOQUE]`, `[MEUBLÉ|VIDE]`), le loyer de référence majoré applicable s'établit à `[LOYER_REF_MAJORÉ]` € / m², soit un loyer plafond mensuel hors charges de `[PLAFOND_CALCULÉ]` €.\n\nOr, le loyer mensuel hors charges effectivement versé s'élève à `[LOYER_PAYÉ]` €, soit un dépassement de `[ÉCART_EUR]` € (`[ÉCART_PCT]` %) par rapport au plafond légal. `[SI_COMPLÉMENT_LOYER : Le complément de loyer mentionné au bail n'est pas justifié par des caractéristiques exceptionnelles au sens de l'article 25-9 puisque le logement présente : (lister défauts disqualifiants ANIL).]`\n\nEn conséquence, je vous demande de bien vouloir :\n\n1. Procéder à la mise en conformité du loyer au plafond légal à compter du `[1ER_MOIS_CIBLE]`.\n2. Procéder au remboursement des sommes indûment perçues sur les 12 derniers mois, soit un montant total de `[REMBOURSEMENT_EUR]` €.\n\nÀ défaut de réponse favorable sous 30 jours à compter de la réception de la présente, je saisirai la Commission Départementale de Conciliation et, parallèlement, signalerai cette infraction au préfet de `[DÉPARTEMENT]` qui peut prononcer une amende administrative pouvant atteindre 5 000 € (15 000 € pour une personne morale) en vertu de l'article 25-9.\n\nJe vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.\n\n`[NOM PRÉNOM]`\n`[DATE]` — `[VILLE]`\n\n**Pièces jointes :**\n- Copie du bail.\n- Copie du DPE.\n- 3 dernières quittances de loyer.\n- Capture de l'arrêté préfectoral en vigueur.\n- Calcul détaillé de l'écart.",
+  "regulator_contacts": [
+    {
+      "id": "cdc-dept",
+      "name": "Commission Départementale de Conciliation (CDC)",
+      "scope": "Préfecture du département de situation du logement",
+      "free": true,
+      "binding": false,
+      "find_url_pattern": "https://www.service-public.fr/particuliers/vosdroits/F2716",
+      "delay_p50_months": 3
+    },
+    {
+      "id": "prefet-encadrement",
+      "name": "Préfet (DRIHL en Île-de-France / DDETS en province)",
+      "scope": "Sanction administrative encadrement niveau loyers",
+      "free": true,
+      "binding": true,
+      "max_amende_pp_eur": 5000,
+      "max_amende_pm_eur": 15000,
+      "find_url_pattern": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+      "delay_p50_months": 6
+    },
+    {
+      "id": "tj-lieu-immeuble",
+      "name": "Tribunal judiciaire (lieu de situation de l'immeuble)",
+      "scope": "Fixation judiciaire du loyer + restitution trop-perçu",
+      "free": false,
+      "binding": true,
+      "delay_p50_months": 12
+    },
+    {
+      "id": "adil-conseil",
+      "name": "ADIL — Agence Départementale d'Information sur le Logement",
+      "scope": "Conseil juridique gratuit en amont (qualifier l'irrégularité avant action)",
+      "free": true,
+      "binding": false,
+      "find_url_pattern": "https://www.anil.org/votre-adil/"
+    }
+  ],
+  "expected_resolution_p50_days": 90,
+  "expected_resolution_range_days": [30, 540],
+  "expected_resolution_notes": "P50 estimé = règlement amiable post-RAR si bailleur professionnel (1 mois) OU passage CDC (3 mois). P95 = saisine TJ + jugement (12-18 mois). Médiane à recaler après ≥10 case-evaluations réelles.",
+  "success_rate_estimated_pct": 60,
+  "success_rate_basis": "Estimation initiale fondée sur littérature DRIHL/ANIL/UFC-Que-Choisir (à recaler après 10+ cas réels). Variable selon : (a) bailleur pro (taux succès amiable ~70%) vs particulier (~40%), (b) ampleur écart (>20% facilite saisine), (c) DPE F/G (renforce dossier).",
+  "data_needed_user_inputs": [
+    "adresse_complete",
+    "commune",
+    "code_postal",
+    "date_bail",
+    "type_bail (vide|meuble|mobilite)",
+    "surface_habitable_m2",
+    "nb_pieces",
+    "loyer_base_mensuel_eur",
+    "complement_loyer_mensuel_eur",
+    "charges_mensuelles_eur",
+    "dpe_classe (A|B|C|D|E|F|G|non-renseigne)",
+    "type_bailleur (particulier|agence|sci|professionnel)"
+  ],
+  "data_computed": [
+    "loyer_ref_majore_applicable_eur_m2",
+    "plafond_calcule_mensuel_eur",
+    "ecart_eur",
+    "ecart_pct",
+    "remboursement_12_mois_eur",
+    "is_complement_loyer_justifiable_bool",
+    "is_dpe_blocking_revision_bool"
+  ],
+  "corpus_refs": [
+    {
+      "corpus_id": "service-public-v0",
+      "row_url": "https://www.service-public.fr/particuliers/vosdroits/F1311",
+      "extracted_run": "run-240"
+    },
+    {
+      "corpus_id": "service-public-v0",
+      "row_url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+      "extracted_run": "run-240"
+    },
+    {
+      "corpus_id": "anil-v0",
+      "row_url": "https://www.anil.org/parole-expert-logement-location/comment-fixer-le-montant-dun-loyer/",
+      "extracted_run": "run-241"
+    }
+  ],
+  "jurisprudence_refs": [],
+  "jurisprudence_refs_note": "Section vide — PISTE judilibre api-key requis (TODO Florian futur). Wave +1 ouverture sur 3-5 décisions Cass civ 3ème encadrement à enrichir manuellement.",
+  "limitations_disclaimers": [
+    "Ce template est un outil d'information ne remplaçant pas un conseil juridique personnalisé d'un avocat ou de l'ADIL.",
+    "Le contenu reflète l'état du droit au 2026-05-18 (corpus SP.fr F1314 vérifié 01/04/2026, F1311 vérifié 08/08/2025, ANIL fiche màj 26/11/2024). Vérifier toute évolution réglementaire avant action.",
+    "Les loyers de référence majorés et la liste des communes encadrées sont actualisés annuellement par arrêté préfectoral. Toujours vérifier l'arrêté en vigueur à la date du bail.",
+    "BailleurVérif ne représente pas le locataire en justice et ne se porte garant d'aucune issue procédurale."
+  ],
+  "moat_signal": {
+    "component_category": "intelligence-interpretative-coûteuse",
+    "wake_first_authored": "run-243",
+    "wave_ts": "2026-05-18T03:00:00Z",
+    "git_commit_target": "post-run-243",
+    "compounding_basis": "1ʳᵉ entrée interpretation-library-v0/recourse-templates/. Chaque nouvelle entrée timestamped enrichit l'audit-trail compounding non-rejouable rétroactivement par concurrent. Cible 30 wakes = 7-10 templates couvrant tous tags allowlist /api/notation-agence + jurisprudence."
+  }
+}
