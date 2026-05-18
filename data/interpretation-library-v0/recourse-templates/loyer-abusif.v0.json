@@ -63,7 +63,12 @@
       "id": "check-3-loyer-base-vs-plafond",
       "question": "Le loyer mensuel hors charges (loyer de base) dépasse-t-il le loyer de référence majoré applicable (€/m² × surface habitable) ?",
       "decision_rule": "Si oui : prima facie irrégularité encadrement. Calcul = surface habitable (m²) × loyer_ref_majoré (€/m²) selon arrêté préfectoral en vigueur à la date de signature/renouvellement.",
-      "data_needed": ["surface_habitable_m2", "loyer_base_eur", "loyer_ref_majore_eur_m2", "complement_loyer_eur"]
+      "data_needed": [
+        "surface_habitable_m2",
+        "loyer_base_eur",
+        "loyer_ref_majore_eur_m2",
+        "complement_loyer_eur"
+      ]
     },
     {
       "id": "check-4-complement-loyer-justifie",
@@ -166,7 +171,10 @@
     }
   ],
   "expected_resolution_p50_days": 90,
-  "expected_resolution_range_days": [30, 540],
+  "expected_resolution_range_days": [
+    30,
+    540
+  ],
   "expected_resolution_notes": "P50 estimé = règlement amiable post-RAR si bailleur professionnel (1 mois) OU passage CDC (3 mois). P95 = saisine TJ + jugement (12-18 mois). Médiane à recaler après ≥10 case-evaluations réelles.",
   "success_rate_estimated_pct": 60,
   "success_rate_basis": "Estimation initiale fondée sur littérature DRIHL/ANIL/UFC-Que-Choisir (à recaler après 10+ cas réels). Variable selon : (a) bailleur pro (taux succès amiable ~70%) vs particulier (~40%), (b) ampleur écart (>20% facilite saisine), (c) DPE F/G (renforce dossier).",
@@ -223,6 +231,76 @@
     "wake_first_authored": "run-243",
     "wave_ts": "2026-05-18T03:00:00Z",
     "git_commit_target": "post-run-243",
-    "compounding_basis": "1ʳᵉ entrée interpretation-library-v0/recourse-templates/. Chaque nouvelle entrée timestamped enrichit l'audit-trail compounding non-rejouable rétroactivement par concurrent. Cible 30 wakes = 7-10 templates couvrant tous tags allowlist /api/notation-agence + jurisprudence."
-  }
+    "compounding_basis": "1ʳᵉ entrée interpretation-library-v0/recourse-templates/. Run-265 : `legal_basis[]` peuplé via crawler DILA bulk Open Data (3 articles Loi 89-462 — art. 2, art. 17-1, art. 40 — LEGIARTI horodatés, archive XML provenance vérifiable Licence Etalab v2.0). Bascule cat-3 « path validé » → « composant actif #2 substantif » (intelligence interprétative coûteuse au sens DIRECTIVE 9). Cible 30 wakes = 7-10 templates × ≥3 articles LEGIARTI chacun, cadence ingest hebdo non-rejouable rétroactivement.",
+    "legal_basis_populated_dila_verified": true,
+    "legal_basis_articles_count": 3
+  },
+  "legal_basis": [
+    {
+      "legiarti_id": "LEGIARTI000047900014",
+      "num": "2",
+      "titre_loi": "Loi n° 89-462 du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant modification de la loi n° 86-1290 du 23 décembre 1986",
+      "nor": "EQUX8910174L",
+      "date_publi_jorf": "1989-07-08",
+      "date_debut_article": "2023-07-29",
+      "date_fin_article": "2999-01-01",
+      "etat": "VIGUEUR",
+      "role_in_template": "Champ d'application : définit la résidence principale (≥ 8 mois/an), exclut logements-foyers, meublés (titre Ier bis), bail mobilité (titre Ier ter), logements de fonction, dispositif occupation temporaire L. 2018-1021.",
+      "verbatim_excerpt": "Les dispositions du présent titre sont d'ordre public. Le présent titre s'applique aux locations de locaux à usage d'habitation ou à usage mixte professionnel et d'habitation, et qui constituent la résidence principale du preneur, ainsi qu'aux garages, aires et places de stationnement, jardins et autres locaux, loués accessoirement au local principal par le même bailleur. La résidence principale est entendue comme le logement occupé au moins huit mois par an, sauf obligation professionnelle, raison de santé ou cas de force majeure, soit par le preneur ou son conjoint, soit par une personne à charge au sens du code de la construction et de l'habitation.",
+      "dila_archive_provenance": {
+        "archive_name": "LEGI_20260320-213900.tar.gz",
+        "archive_url": "https://echanges.dila.gouv.fr/OPENDATA/LEGI/LEGI_20260320-213900.tar.gz",
+        "archive_path": "article/LEGI/ARTI/*/LEGIARTI000047900014.xml",
+        "licence": "Licence Ouverte Etalab v2.0 (DILA Open Data)",
+        "fetched_run": "run-265",
+        "fetched_ts": "2026-05-18T16:40Z"
+      },
+      "legifrance_canonical_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900014"
+    },
+    {
+      "legiarti_id": "LEGIARTI000043977085",
+      "num": "17-1",
+      "titre_loi": "Loi n° 89-462 du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant modification de la loi n° 86-1290 du 23 décembre 1986",
+      "nor": "EQUX8910174L",
+      "date_publi_jorf": "1989-07-08",
+      "date_debut_article": "2022-08-24",
+      "date_fin_article": "2999-01-01",
+      "etat": "VIGUEUR",
+      "role_in_template": "Révision annuelle du loyer plafonnée à l'IRL (I). Travaux d'amélioration permettent majoration explicite contractualisée (II). **Interdiction de toute révision ET majoration pour logements DPE F ou G au sens de l'article L. 173-1-1 du CCH (III)**. Source légale directe de `applicability_checks.check-5-dpe-f-g`.",
+      "verbatim_excerpt": "I. ― Lorsque le contrat prévoit la révision du loyer, celle-ci intervient chaque année à la date convenue entre les parties ou, à défaut, au terme de chaque année du contrat. La variation qui en résulte ne peut excéder, à la hausse, la variation d'un indice de référence des loyers publié par l'Institut national de la statistique et des études économiques chaque trimestre et qui correspond à la moyenne, sur les douze derniers mois, de l'évolution des prix à la consommation hors tabac et hors loyers. A défaut de clause contractuelle fixant la date de référence, cette date est celle du dernier indice publié à la date de signature du contrat de location. […] III. ― La révision et la majoration de loyer prévues aux I et II du présent article ne peuvent pas être appliquées dans les logements de la classe F ou de la classe G, au sens de l'article L. 173-1-1 du code de la construction et de l'habitation.",
+      "dila_archive_provenance": {
+        "archive_name": "LEGI_20260220-221620.tar.gz",
+        "archive_url": "https://echanges.dila.gouv.fr/OPENDATA/LEGI/LEGI_20260220-221620.tar.gz",
+        "archive_path": "article/LEGI/ARTI/*/LEGIARTI000043977085.xml",
+        "licence": "Licence Ouverte Etalab v2.0 (DILA Open Data)",
+        "fetched_run": "run-265",
+        "fetched_ts": "2026-05-18T16:40Z"
+      },
+      "legifrance_canonical_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977085"
+    },
+    {
+      "legiarti_id": "LEGIARTI000038834701",
+      "num": "40",
+      "titre_loi": "Loi n° 89-462 du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant modification de la loi n° 86-1290 du 23 décembre 1986",
+      "nor": "EQUX8910174L",
+      "date_publi_jorf": "1989-07-08",
+      "date_debut_article": "2019-09-01",
+      "date_fin_article": "2999-01-01",
+      "etat": "VIGUEUR",
+      "role_in_template": "Exclusions périmètre : (I) logements HLM hors convention L. 831-1 CCH exclus de divers articles dont 15-18 (incluant 17-1) ; (II) logements loi 1948 chapitre III ; (III) HLM conventionnés L. 831-1 CCH partiellement exclus (sauf I de 17-1 maintenu). Source légale de `scope` du template (hors HLM/1948/conventionné).",
+      "verbatim_excerpt": "I. - Les 4°, 7° à 9° et le dernier alinéa de l'article 3, l'article 3-1, le II de l'article 5, les articles 8, 8-1, 10 à 12, 15 à 18, le 1° de l'article 20, les cinq premiers alinéas de l'article 23 et les articles 25-3 à 25-11 ne sont pas applicables aux logements appartenant aux organismes d'habitations à loyer modéré et ne faisant pas l'objet d'une convention passée en application de l'article L. 831-1 du code de la construction et de l'habitation. […] II. - Les dispositions des articles 3, 3-1, 8, 8-1, 9 à 20, du premier alinéa de l'article 22 et de l'article 24 ne sont pas applicables aux logements dont le loyer est fixé en application des dispositions du chapitre III de la loi n° 48-1360 du 1er septembre 1948 précitée. III. - Les 4°, 7° à 9° et le dernier alinéa de l'article 3, l'article 3-1, le II de l'article 5, les articles 8, 8-1, 10 à 12, 15 et 17, le II de l'article 17-1 et les articles 17-2 et 18 ne sont pas applicables aux logements régis par une convention conclue en application de l'article L. 831-1 du code de la construction et de l'habitation.",
+      "dila_archive_provenance": {
+        "archive_name": "LEGI_20260223-224003.tar.gz",
+        "archive_url": "https://echanges.dila.gouv.fr/OPENDATA/LEGI/LEGI_20260223-224003.tar.gz",
+        "archive_path": "article/LEGI/ARTI/*/LEGIARTI000038834701.xml",
+        "licence": "Licence Ouverte Etalab v2.0 (DILA Open Data)",
+        "fetched_run": "run-265",
+        "fetched_ts": "2026-05-18T16:40Z"
+      },
+      "legifrance_canonical_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834701"
+    }
+  ],
+  "legal_basis_note": "Articles loi/code extraits du bulk DILA Open Data (https://echanges.dila.gouv.fr/OPENDATA/LEGI/), Licence Ouverte Etalab v2.0, archives quotidiennes XML. Provenance vérifiable : chaque entrée précise archive_name + archive_path + fetched_ts. Citations verbatim depuis BLOC_TEXTUEL/CONTENU (XML schema DILA). Cadence ingestion hebdomadaire prévue via crawler/legifrance_dila_fetch.py --latest-delta + filtre keywords. Différent de legal_basis_citations[] (construction historique depuis vocabulaire SP.fr/ANIL, partiellement non-vérifié).",
+  "legal_basis_first_authored_run": "run-265",
+  "legal_basis_first_authored_ts": "2026-05-18T16:40Z"
 }
