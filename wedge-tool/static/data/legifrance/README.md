@@ -53,3 +53,41 @@ BailleurVérif's recourse templates.
   re-scan over 58 DILA deltas (Loi Jeanbrun window Feb-Mar 2026 + April
   + May), verbatim BLOC_TEXTUEL extraction (≤2000c per article), CGI
   tax-context exclusion. 874 articles indexed (vs 25 stubs run-266).
+
+## Signal / noise audit (run-268, 2026-05-18T19:00Z)
+
+Honest breakdown of the 874 enriched entries — the headline number
+hides historical versions :
+
+- **874 total** entries (post-CGI filter).
+- **`etat=VIGUEUR` : 173** (20 %) — currently in force.
+- **`etat=MODIFIE` : 627** (72 %) — superseded historical versions
+  (kept for audit-trail completeness, not authoritative law today).
+- **`etat=ABROGE` / `ABROGE_DIFF` : 26** (3 %) — repealed.
+- **`etat=MODIFIE_MORT_NE` / `VIGUEUR_DIFF` / `TRANSFERE` / `None` : 48** (5 %).
+
+Cross with bail-core scope (titre or verbatim matching `89-462`, `bail`,
+`loyer`, `encadrement`, `locatif`, `location`, `baux`, `habitation`,
+`logement`) :
+
+- **bail-core total : 512** (59 %).
+- **bail-core VIGUEUR : 115** (13 % of 874) — the substantive moat.
+  Breakdown : 44 CCH (DPE / décence / passoires), 6 Loi 89-462 stricts,
+  6 Code du tourisme, 5 Loi 90-449 (DALO), 4 Code conso, 4 Code
+  énergie, 2 Code civil, plus 44 spread across smaller texts.
+
+Honest claim : the moat is the **timestamped curation of ~115
+bail-core articles in force**, not the headline 874. The 627 MODIFIE
+entries are useful infrastructure (track version drift over time) but
+not authoritative law citations.
+
+## Signaler une annonce ou noter une agence
+
+If you reuse this index for compliance research, you can report a
+non-compliant listing or rate a real-estate agency anonymously :
+
+- <https://bailleurverif.fr/notation-agence-anonyme>
+- <https://bailleurverif.fr/signaler-annonce>
+
+User-contributed records feed the cat-2 (network-effects) moat,
+orthogonal to this cat-3 corpus.
