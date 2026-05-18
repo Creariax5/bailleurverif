@@ -1,0 +1,323 @@
+{
+  "dataset": "encadrement-loyer-france-2026",
+  "source": "https://bailleurverif.fr/",
+  "license": "CC-BY-4.0",
+  "attribution": "BailleurVérif (bailleurverif.fr) — based on official préfectoral arrêtés",
+  "published": "2026-05-16",
+  "last_updated": "2026-05-16",
+  "commune_count": 31,
+  "methodology_url": "https://bailleurverif.fr/data/methodology.html",
+  "csv_url": "https://bailleurverif.fr/data/encadrement-loyer-france-2026.csv",
+  "communes": [
+    {
+      "slug": "paris",
+      "commune": "Paris",
+      "plafond_nu_eur_m2": 33.3,
+      "plafond_meuble_eur_m2": 40.0,
+      "perimetre": "20 arrondissements",
+      "date_debut_encadrement": "1er juillet 2019",
+      "autorite_prefectorale": "Préfecture de Paris (DRIHL)",
+      "intercommunalite": "Paris intra-muros"
+    },
+    {
+      "slug": "lille",
+      "commune": "Lille",
+      "plafond_nu_eur_m2": 19.5,
+      "plafond_meuble_eur_m2": 23.4,
+      "perimetre": "Lille + Hellemmes + Lomme",
+      "date_debut_encadrement": "1er mars 2020",
+      "autorite_prefectorale": "Préfecture du Nord (DDETS)",
+      "intercommunalite": "Métropole Européenne de Lille (MEL)"
+    },
+    {
+      "slug": "hellemmes",
+      "commune": "Hellemmes",
+      "plafond_nu_eur_m2": 19.5,
+      "plafond_meuble_eur_m2": 23.4,
+      "perimetre": "commune associée à Lille",
+      "date_debut_encadrement": "1er mars 2020",
+      "autorite_prefectorale": "Préfecture du Nord (DDETS)",
+      "intercommunalite": "Métropole Européenne de Lille (MEL)"
+    },
+    {
+      "slug": "lomme",
+      "commune": "Lomme",
+      "plafond_nu_eur_m2": 19.5,
+      "plafond_meuble_eur_m2": 23.4,
+      "perimetre": "commune associée à Lille",
+      "date_debut_encadrement": "1er mars 2020",
+      "autorite_prefectorale": "Préfecture du Nord (DDETS)",
+      "intercommunalite": "Métropole Européenne de Lille (MEL)"
+    },
+    {
+      "slug": "lyon",
+      "commune": "Lyon",
+      "plafond_nu_eur_m2": 16.8,
+      "plafond_meuble_eur_m2": 20.2,
+      "perimetre": "9 arrondissements lyonnais",
+      "date_debut_encadrement": "1er novembre 2021",
+      "autorite_prefectorale": "Préfecture du Rhône (DDETS)",
+      "intercommunalite": "Métropole de Lyon"
+    },
+    {
+      "slug": "villeurbanne",
+      "commune": "Villeurbanne",
+      "plafond_nu_eur_m2": 16.5,
+      "plafond_meuble_eur_m2": 19.8,
+      "perimetre": "ensemble du territoire communal",
+      "date_debut_encadrement": "1er novembre 2021",
+      "autorite_prefectorale": "Préfecture du Rhône (DDETS)",
+      "intercommunalite": "Métropole de Lyon"
+    },
+    {
+      "slug": "bordeaux",
+      "commune": "Bordeaux",
+      "plafond_nu_eur_m2": 17.4,
+      "plafond_meuble_eur_m2": 20.9,
+      "perimetre": "ensemble de la commune",
+      "date_debut_encadrement": "15 juillet 2022",
+      "autorite_prefectorale": "Préfecture de la Gironde (DDTM)",
+      "intercommunalite": "Bordeaux Métropole"
+    },
+    {
+      "slug": "montpellier",
+      "commune": "Montpellier",
+      "plafond_nu_eur_m2": 17.0,
+      "plafond_meuble_eur_m2": 20.4,
+      "perimetre": "ensemble de la commune",
+      "date_debut_encadrement": "1er juillet 2022",
+      "autorite_prefectorale": "Préfecture de l'Hérault (DDTM)",
+      "intercommunalite": "Montpellier Méditerranée Métropole (3M)"
+    },
+    {
+      "slug": "saint-ouen",
+      "commune": "Saint-Ouen-sur-Seine",
+      "plafond_nu_eur_m2": 25.2,
+      "plafond_meuble_eur_m2": 30.2,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er juin 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Plaine Commune"
+    },
+    {
+      "slug": "aubervilliers",
+      "commune": "Aubervilliers",
+      "plafond_nu_eur_m2": 23.4,
+      "plafond_meuble_eur_m2": 28.1,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er juin 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Plaine Commune"
+    },
+    {
+      "slug": "saint-denis",
+      "commune": "Saint-Denis",
+      "plafond_nu_eur_m2": 23.4,
+      "plafond_meuble_eur_m2": 28.1,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er juin 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Plaine Commune"
+    },
+    {
+      "slug": "pierrefitte-sur-seine",
+      "commune": "Pierrefitte-sur-Seine",
+      "plafond_nu_eur_m2": 22.1,
+      "plafond_meuble_eur_m2": 26.5,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er juin 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Plaine Commune"
+    },
+    {
+      "slug": "epinay-sur-seine",
+      "commune": "Épinay-sur-Seine",
+      "plafond_nu_eur_m2": 22.1,
+      "plafond_meuble_eur_m2": 26.5,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er juin 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Plaine Commune"
+    },
+    {
+      "slug": "stains",
+      "commune": "Stains",
+      "plafond_nu_eur_m2": 22.1,
+      "plafond_meuble_eur_m2": 26.5,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er juin 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Plaine Commune"
+    },
+    {
+      "slug": "villetaneuse",
+      "commune": "Villetaneuse",
+      "plafond_nu_eur_m2": 22.1,
+      "plafond_meuble_eur_m2": 26.5,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er juin 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Plaine Commune"
+    },
+    {
+      "slug": "ile-saint-denis",
+      "commune": "L'Île-Saint-Denis",
+      "plafond_nu_eur_m2": 23.4,
+      "plafond_meuble_eur_m2": 28.1,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er juin 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Plaine Commune"
+    },
+    {
+      "slug": "la-courneuve",
+      "commune": "La Courneuve",
+      "plafond_nu_eur_m2": 22.1,
+      "plafond_meuble_eur_m2": 26.5,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er juin 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Plaine Commune"
+    },
+    {
+      "slug": "bagnolet",
+      "commune": "Bagnolet",
+      "plafond_nu_eur_m2": 24.0,
+      "plafond_meuble_eur_m2": 28.8,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er décembre 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Est Ensemble"
+    },
+    {
+      "slug": "bondy",
+      "commune": "Bondy",
+      "plafond_nu_eur_m2": 22.5,
+      "plafond_meuble_eur_m2": 27.0,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er décembre 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Est Ensemble"
+    },
+    {
+      "slug": "bobigny",
+      "commune": "Bobigny",
+      "plafond_nu_eur_m2": 22.5,
+      "plafond_meuble_eur_m2": 27.0,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er décembre 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Est Ensemble"
+    },
+    {
+      "slug": "le-pre-saint-gervais",
+      "commune": "Le Pré-Saint-Gervais",
+      "plafond_nu_eur_m2": 24.0,
+      "plafond_meuble_eur_m2": 28.8,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er décembre 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Est Ensemble"
+    },
+    {
+      "slug": "les-lilas",
+      "commune": "Les Lilas",
+      "plafond_nu_eur_m2": 24.0,
+      "plafond_meuble_eur_m2": 28.8,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er décembre 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Est Ensemble"
+    },
+    {
+      "slug": "montreuil",
+      "commune": "Montreuil",
+      "plafond_nu_eur_m2": 24.0,
+      "plafond_meuble_eur_m2": 28.8,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er décembre 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Est Ensemble"
+    },
+    {
+      "slug": "noisy-le-sec",
+      "commune": "Noisy-le-Sec",
+      "plafond_nu_eur_m2": 22.5,
+      "plafond_meuble_eur_m2": 27.0,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er décembre 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Est Ensemble"
+    },
+    {
+      "slug": "pantin",
+      "commune": "Pantin",
+      "plafond_nu_eur_m2": 24.0,
+      "plafond_meuble_eur_m2": 28.8,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er décembre 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Est Ensemble"
+    },
+    {
+      "slug": "romainville",
+      "commune": "Romainville",
+      "plafond_nu_eur_m2": 23.0,
+      "plafond_meuble_eur_m2": 27.6,
+      "perimetre": "ensemble du territoire",
+      "date_debut_encadrement": "1er décembre 2021",
+      "autorite_prefectorale": "Préfecture de Seine-Saint-Denis (DDETS 93)",
+      "intercommunalite": "EPT Est Ensemble"
+    },
+    {
+      "slug": "grenoble",
+      "commune": "Grenoble",
+      "plafond_nu_eur_m2": 14.5,
+      "plafond_meuble_eur_m2": 17.4,
+      "perimetre": "ensemble de la commune",
+      "date_debut_encadrement": "1er septembre 2023",
+      "autorite_prefectorale": "Préfecture de l'Isère (DDETS)",
+      "intercommunalite": "Grenoble-Alpes Métropole"
+    },
+    {
+      "slug": "echirolles",
+      "commune": "Échirolles",
+      "plafond_nu_eur_m2": 13.5,
+      "plafond_meuble_eur_m2": 16.2,
+      "perimetre": "secteurs OLAP",
+      "date_debut_encadrement": "1er septembre 2023",
+      "autorite_prefectorale": "Préfecture de l'Isère (DDETS)",
+      "intercommunalite": "Grenoble-Alpes Métropole"
+    },
+    {
+      "slug": "eybens",
+      "commune": "Eybens",
+      "plafond_nu_eur_m2": 13.5,
+      "plafond_meuble_eur_m2": 16.2,
+      "perimetre": "secteurs OLAP",
+      "date_debut_encadrement": "1er septembre 2023",
+      "autorite_prefectorale": "Préfecture de l'Isère (DDETS)",
+      "intercommunalite": "Grenoble-Alpes Métropole"
+    },
+    {
+      "slug": "fontaine",
+      "commune": "Fontaine",
+      "plafond_nu_eur_m2": 13.5,
+      "plafond_meuble_eur_m2": 16.2,
+      "perimetre": "secteurs OLAP",
+      "date_debut_encadrement": "1er septembre 2023",
+      "autorite_prefectorale": "Préfecture de l'Isère (DDETS)",
+      "intercommunalite": "Grenoble-Alpes Métropole"
+    },
+    {
+      "slug": "saint-martin-d-heres",
+      "commune": "Saint-Martin-d'Hères",
+      "plafond_nu_eur_m2": 13.5,
+      "plafond_meuble_eur_m2": 16.2,
+      "perimetre": "secteurs OLAP",
+      "date_debut_encadrement": "1er septembre 2023",
+      "autorite_prefectorale": "Préfecture de l'Isère (DDETS)",
+      "intercommunalite": "Grenoble-Alpes Métropole"
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Open data — Encadrement des loyers en France 2026 (CC BY 4.0) · BailleurVérif</title>
+<meta name="description" content="Dataset libre listant les 31 communes françaises sous encadrement des loyers en 2026 — plafonds légaux par mètre carré, CSV + JSON, licence CC BY 4.0.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://bailleurverif.fr/data/">
+<link rel="alternate" type="text/csv" href="https://bailleurverif.fr/data/encadrement-loyer-france-2026.csv" title="CSV — Encadrement des loyers 2026">
+<link rel="alternate" type="application/json" href="https://bailleurverif.fr/data/encadrement-loyer-france-2026.json" title="JSON — Encadrement des loyers 2026">
+<meta property="og:title" content="Open data — Encadrement des loyers France 2026 (CC BY 4.0)">
+<meta property="og:description" content="31 communes, plafonds €/m² location nue + meublée, CSV + JSON libres.">
+<meta property="og:url" content="https://bailleurverif.fr/data/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Open data encadrement des loyers France 2026">
+<meta name="twitter:description" content="31 communes · plafonds €/m² · CSV + JSON · licence CC BY 4.0">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://bailleurverif.fr/data/#dataset",
+  "name": "Encadrement des loyers en France 2026 — 31 communes",
+  "alternateName": ["Rent control caps France 2026", "Encadrement loyers ALUR 2026"],
+  "description": "Dataset listant les 31 communes françaises où s'applique l'encadrement des loyers en 2026 (loi ALUR / loi Climat & Résilience), avec les plafonds légaux de référence par mètre carré pour les locations nues et meublées. Couvre Paris, Lille, Lyon, Bordeaux, Montpellier, Grenoble, et 25 communes d'Île-de-France et métropoles. Données sourcées des arrêtés préfectoraux 2026 publiés conformément aux articles L.302-7-1 et suivants du Code de la construction et de l'habitation.",
+  "url": "https://bailleurverif.fr/data/",
+  "sameAs": [
+    "https://bailleurverif.fr/data/encadrement-loyer-france-2026.csv",
+    "https://bailleurverif.fr/data/encadrement-loyer-france-2026.json"
+  ],
+  "identifier": "bailleurverif-encadrement-loyer-france-2026",
+  "keywords": [
+    "encadrement des loyers",
+    "rent control France",
+    "ALUR",
+    "loi Climat et Résilience",
+    "logement",
+    "France",
+    "Paris",
+    "Lille",
+    "Lyon",
+    "Bordeaux",
+    "Montpellier",
+    "Grenoble",
+    "bailleur",
+    "locataire",
+    "loyer plafonné",
+    "zone tendue",
+    "données ouvertes"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creditText": "BailleurVérif (https://bailleurverif.fr/)",
+  "isAccessibleForFree": true,
+  "inLanguage": "fr",
+  "dateCreated": "2026-05-16",
+  "datePublished": "2026-05-16",
+  "dateModified": "2026-05-16",
+  "version": "1.0",
+  "creator": {
+    "@id": "https://bailleurverif.fr/#organization",
+    "@type": "Organization",
+    "name": "BailleurVérif",
+    "url": "https://bailleurverif.fr/"
+  },
+  "publisher": {
+    "@id": "https://bailleurverif.fr/#organization",
+    "@type": "Organization",
+    "name": "BailleurVérif",
+    "url": "https://bailleurverif.fr/"
+  },
+  "temporalCoverage": "2026",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "France",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "41.33 -5.14 51.09 9.56"
+    }
+  },
+  "variableMeasured": [
+    {"@type": "PropertyValue", "name": "slug", "description": "Identifiant URL kebab-case de la commune"},
+    {"@type": "PropertyValue", "name": "commune", "description": "Nom officiel de la commune"},
+    {"@type": "PropertyValue", "name": "plafond_nu_eur_m2", "description": "Loyer plafond légal pour une location nue (€/m²/mois)", "unitText": "EUR par mètre carré par mois"},
+    {"@type": "PropertyValue", "name": "plafond_meuble_eur_m2", "description": "Loyer plafond légal pour une location meublée (€/m²/mois)", "unitText": "EUR par mètre carré par mois"},
+    {"@type": "PropertyValue", "name": "perimetre", "description": "Zone géographique d'application"},
+    {"@type": "PropertyValue", "name": "date_debut_encadrement", "description": "Date d'entrée en vigueur de l'arrêté"},
+    {"@type": "PropertyValue", "name": "autorite_prefectorale", "description": "Préfecture publiant l'arrêté annuel"},
+    {"@type": "PropertyValue", "name": "intercommunalite", "description": "EPCI ou métropole de rattachement"}
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Encadrement loyers France 2026 — CSV",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://bailleurverif.fr/data/encadrement-loyer-france-2026.csv",
+      "contentSize": "4269",
+      "description": "31 lignes · 8 colonnes · UTF-8 · séparateur virgule"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Encadrement loyers France 2026 — JSON",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://bailleurverif.fr/data/encadrement-loyer-france-2026.json",
+      "contentSize": "11680",
+      "description": "Wrapper enveloppe + tableau communes · usage API"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Documentation méthodologique",
+      "encodingFormat": "text/markdown",
+      "contentUrl": "https://bailleurverif.fr/data/README.md",
+      "contentSize": "3422"
+    }
+  ],
+  "citation": "BailleurVérif. (2026). Encadrement des loyers en France 2026 — 31 communes [Dataset]. https://bailleurverif.fr/data/",
+  "measurementTechnique": "Compilation manuelle des arrêtés préfectoraux 2026 publiés par les préfectures concernées (Paris, Nord, Rhône, Gironde, Hérault, Seine-Saint-Denis, Isère). Plafonds extraits = loyer de référence médian + 20% (encadrement strict)."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "BailleurVérif", "item": "https://bailleurverif.fr/"},
+    {"@type": "ListItem", "position": 2, "name": "Open data", "item": "https://bailleurverif.fr/data/"}
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #f8fafc;
+    --text: #0f172a;
+    --text-2: #475569;
+    --muted: #94a3b8;
+    --accent: #1d4ed8;
+    --border: #e2e8f0;
+    --code-bg: #f1f5f9;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  header, main, footer { max-width: 800px; margin: 0 auto; padding: 1rem 1.25rem; }
+  header { border-bottom: 1px solid var(--border); padding-top: 1.5rem; padding-bottom: 1rem; }
+  header nav a { color: var(--text-2); text-decoration: none; font-size: 0.875rem; }
+  header nav a:hover { color: var(--accent); }
+  header .brand { font-weight: 600; color: var(--text); font-size: 1rem; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 1.5rem 0 0.5rem; }
+  h2 { font-size: 1.25rem; margin: 2rem 0 0.5rem; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 0.25rem; }
+  p, ul, ol { margin: 0.5rem 0 1rem; }
+  ul, ol { padding-left: 1.25rem; }
+  a { color: var(--accent); }
+  code, pre { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.875rem; background: var(--code-bg); border-radius: 4px; }
+  code { padding: 0.125rem 0.375rem; }
+  pre { padding: 0.75rem 1rem; overflow-x: auto; border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 0.75rem 0; }
+  th, td { text-align: left; padding: 0.5rem 0.625rem; border-bottom: 1px solid var(--border); }
+  th { background: var(--bg-alt); font-weight: 600; }
+  .meta { color: var(--text-2); font-size: 0.875rem; }
+  .badge { display: inline-block; padding: 0.125rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 500; background: var(--code-bg); color: var(--text-2); margin-right: 0.25rem; }
+  .badge.cc { background: #ecfdf5; color: #047857; }
+  .cards { display: grid; grid-template-columns: 1fr; gap: 0.75rem; margin: 1rem 0; }
+  @media (min-width: 640px) { .cards { grid-template-columns: 1fr 1fr 1fr; } }
+  .card { border: 1px solid var(--border); border-radius: 8px; padding: 1rem; background: var(--bg); }
+  .card a { display: inline-block; margin-top: 0.5rem; font-weight: 500; text-decoration: none; }
+  .card .filename { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.875rem; color: var(--text-2); word-break: break-all; }
+  footer { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1rem; padding-bottom: 2rem; color: var(--text-2); font-size: 0.875rem; }
+  footer a { color: var(--text-2); }
+</style>
+</head>
+<body>
+
+<header>
+  <nav><a href="/">← BailleurVérif</a> · <a href="/blog/">Blog</a> · <a href="/mentions-legales.html">Mentions légales</a></nav>
+  <div class="brand" style="margin-top:0.5rem;">BailleurVérif — Open data</div>
+</header>
+
+<main>
+
+<h1>Open data — Encadrement des loyers en France 2026</h1>
+
+<aside data-bv-marker="datagouv-callout-v1" style="border:1px solid #2563eb;background:#eff6ff;border-radius:8px;padding:0.9rem 1rem;margin:1rem 0 1.2rem;font-size:0.95rem;line-height:1.55">
+  <strong>📡 Publié sur data.gouv.fr</strong> — Le dataset d'observatoire des annonces non-conformes est désormais référencé sur le portail officiel <a href="https://www.data.gouv.fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif" rel="external">data.gouv.fr</a> (Licence Ouverte Etalab v2.0, granularité commune, France métropolitaine, 3 ressources : CSV + JSON + README).
+</aside>
+
+<p class="meta">
+  <span class="badge cc">CC BY 4.0</span>
+  <span class="badge">31 communes</span>
+  <span class="badge">CSV + JSON</span>
+  <span class="badge">Publié 16 mai 2026</span>
+  <span class="badge" style="background:#2563eb;color:#fff">data.gouv.fr</span>
+</p>
+
+<p>Dataset libre listant les <strong>31 communes françaises</strong> où s'applique l'encadrement des loyers en 2026 (loi ALUR / loi Climat &amp; Résilience), avec les plafonds légaux de référence par mètre carré pour les locations nues et meublées.</p>
+
+<h2>Téléchargement</h2>
+
+<div class="cards">
+  <div class="card">
+    <strong>CSV</strong>
+    <div class="filename">encadrement-loyer-france-2026.csv</div>
+    <div class="meta">31 lignes · 8 colonnes · ~4 ko · UTF-8</div>
+    <a href="/data/encadrement-loyer-france-2026.csv" download>Télécharger ↓</a>
+  </div>
+  <div class="card">
+    <strong>JSON</strong>
+    <div class="filename">encadrement-loyer-france-2026.json</div>
+    <div class="meta">Wrapper enveloppe + tableau · ~12 ko</div>
+    <a href="/data/encadrement-loyer-france-2026.json" download>Télécharger ↓</a>
+  </div>
+  <div class="card">
+    <strong>Documentation</strong>
+    <div class="filename">README.md</div>
+    <div class="meta">Schéma, méthodologie, citation · ~3 ko</div>
+    <a href="/data/README.md">Lire ↗</a>
+  </div>
+</div>
+
+<h2>Schéma (CSV)</h2>
+
+<table>
+  <thead><tr><th>Colonne</th><th>Type</th><th>Exemple</th></tr></thead>
+  <tbody>
+    <tr><td><code>slug</code></td><td>string</td><td><code>paris</code>, <code>saint-ouen-sur-seine</code></td></tr>
+    <tr><td><code>commune</code></td><td>string</td><td><code>Paris</code></td></tr>
+    <tr><td><code>plafond_nu_eur_m2</code></td><td>float</td><td><code>33.3</code> (€/m²/mois)</td></tr>
+    <tr><td><code>plafond_meuble_eur_m2</code></td><td>float</td><td><code>40.0</code> (€/m²/mois)</td></tr>
+    <tr><td><code>perimetre</code></td><td>string</td><td><code>20 arrondissements</code></td></tr>
+    <tr><td><code>date_debut_encadrement</code></td><td>string</td><td><code>1er juillet 2019</code></td></tr>
+    <tr><td><code>autorite_prefectorale</code></td><td>string</td><td><code>Préfecture de Paris (DRIHL)</code></td></tr>
+    <tr><td><code>intercommunalite</code></td><td>string</td><td><code>Métropole Européenne de Lille (MEL)</code></td></tr>
+  </tbody>
+</table>
+
+<h2>Couverture</h2>
+
+<ul>
+  <li>31 communes (Paris + Lille + Lyon + Bordeaux + Montpellier + Grenoble + 25 communes d'Île-de-France et métropoles)</li>
+  <li>7 préfectures · 7 intercommunalités</li>
+  <li>Dates d'entrée en vigueur : 2019 (Paris) → 2023 (Grenoble)</li>
+  <li>Couverture temporelle : <strong>2026</strong></li>
+</ul>
+
+<h2>Source &amp; méthodologie</h2>
+
+<p>Arrêtés préfectoraux 2026 publiés par les préfectures concernées (Paris, Nord, Rhône, Gironde, Hérault, Seine-Saint-Denis, Isère) conformément aux articles <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038814738/" rel="external">L.302-7-1 et suivants du Code de la construction et de l'habitation</a>. Les plafonds représentent un loyer de référence (médian + 20%) — le plafond exact applicable à un logement spécifique dépend du secteur OLAP précis, du nombre de pièces, du caractère meublé/nu et de l'époque de construction. Le <a href="/">calculateur interactif BailleurVérif</a> couvre ces nuances commune par commune.</p>
+
+<h2>Licence</h2>
+
+<p>Données publiées sous <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" rel="license external"><strong>licence Creative Commons BY 4.0</strong></a>. Vous pouvez utiliser, modifier et redistribuer librement ce dataset, à condition de citer la source :</p>
+
+<pre><code>BailleurVérif (https://bailleurverif.fr/)</code></pre>
+
+<h2>Citation suggérée</h2>
+
+<p>Format BibTeX :</p>
+
+<pre><code>@dataset{bailleurverif_encadrement_2026,
+  title   = {Encadrement des loyers en France 2026 — 31 communes},
+  author  = {BailleurVérif},
+  year    = {2026},
+  month   = {5},
+  url     = {https://bailleurverif.fr/data/},
+  license = {CC-BY-4.0},
+  version = {1.0}
+}</code></pre>
+
+<p>Format APA :</p>
+
+<pre><code>BailleurVérif. (2026). <em>Encadrement des loyers en France 2026 — 31 communes</em> [Dataset]. https://bailleurverif.fr/data/</code></pre>
+
+<h2>Usage code</h2>
+
+<p>Python (pandas) :</p>
+
+<pre><code>import pandas as pd
+df = pd.read_csv("https://bailleurverif.fr/data/encadrement-loyer-france-2026.csv")
+print(df[["commune", "plafond_nu_eur_m2"]].sort_values("plafond_nu_eur_m2", ascending=False))</code></pre>
+
+<p>JavaScript (fetch) :</p>
+
+<pre><code>const r = await fetch("https://bailleurverif.fr/data/encadrement-loyer-france-2026.json");
+const { communes } = await r.json();
+console.log(communes.find(c =&gt; c.slug === "paris"));</code></pre>
+
+<h2>Formats avancés &amp; métadonnées</h2>
+
+<p>Pour faciliter l'intégration dans des outils tiers (chaînes ETL, plateformes open-data, gestionnaires de citations) :</p>
+
+<ul>
+  <li><a href="/data/methodology.html"><strong>Méthodologie détaillée</strong></a> — sources par préfecture, définition du plafond, audit trail, limites connues.</li>
+  <li><a href="/data/datapackage.json"><strong>datapackage.json</strong></a> — descripteur <a href="https://specs.frictionlessdata.io/data-package/" rel="external">Frictionless Data Package v1</a> avec schéma typé complet (types, contraintes, primaryKey).</li>
+  <li><a href="/data/CITATION.cff"><strong>CITATION.cff</strong></a> — <a href="https://citation-file-format.github.io/" rel="external">Citation File Format 1.2.0</a> (GitHub-natif, gestionnaires de citations académiques).</li>
+  <li><a href="/data/catalog.xml"><strong>catalog.xml</strong></a> — catalogue <a href="https://semiceu.github.io/DCAT-AP/" rel="external">DCAT-AP 2.1</a> (RDF/XML, format pivot data.europa.eu).</li>
+</ul>
+
+<h2>Changelog</h2>
+
+<ul>
+  <li><strong>2026-05-16 — v1.0</strong> : première publication, 31 communes, CSV + JSON. Métadonnées avancées : methodology.html, datapackage.json, CITATION.cff, catalog.xml.</li>
+</ul>
+
+<h2>Contact &amp; corrections</h2>
+
+<p>Pour signaler une erreur, une mise à jour réglementaire ou suggérer un enrichissement (DPE, taxe foncière, etc.), contactez <a href="mailto:contact@bailleurverif.fr">contact@bailleurverif.fr</a>. Le projet est maintenu en continu avec un agent IA Claude (Anthropic) pour la veille juridique.</p>
+
+</main>
+
+<footer>
+  <p>BailleurVérif — outil gratuit · <a href="/mentions-legales.html">Mentions légales</a> · <a href="/politique-confidentialite.html">Confidentialité</a> · <a href="/cgu.html">CGU</a></p>
+  <p>Open data CC BY 4.0 · Mis à jour le 16 mai 2026 · Mainteneur : <a href="https://bailleurverif.fr/">bailleurverif.fr</a></p>
+</footer>
+
+</body>
+</html>

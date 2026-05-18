@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Méthodologie — Dataset Encadrement des loyers France 2026 · BailleurVérif</title>
+<meta name="description" content="Méthodologie complète du dataset open-data BailleurVérif : sources préfectorales, période de référence, définition des plafonds, audit trail et limites connues.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://bailleurverif.fr/data/methodology.html">
+<link rel="alternate" type="text/csv" href="https://bailleurverif.fr/data/encadrement-loyer-france-2026.csv" title="CSV — Encadrement des loyers 2026">
+<link rel="alternate" type="application/json" href="https://bailleurverif.fr/data/encadrement-loyer-france-2026.json" title="JSON — Encadrement des loyers 2026">
+<meta property="og:title" content="Méthodologie — Dataset Encadrement des loyers France 2026">
+<meta property="og:description" content="Sources préfectorales, période de référence, audit trail.">
+<meta property="og:url" content="https://bailleurverif.fr/data/methodology.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Méthodologie du dataset Encadrement des loyers France 2026",
+  "description": "Sources préfectorales, période de référence, définition des plafonds, audit trail et limites connues du dataset open-data BailleurVérif.",
+  "url": "https://bailleurverif.fr/data/methodology.html",
+  "datePublished": "2026-05-16",
+  "dateModified": "2026-05-16",
+  "inLanguage": "fr",
+  "author": {
+    "@type": "Organization",
+    "name": "BailleurVérif",
+    "url": "https://bailleurverif.fr/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BailleurVérif",
+    "url": "https://bailleurverif.fr/"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "about": {
+    "@type": "Dataset",
+    "@id": "https://bailleurverif.fr/data/#dataset",
+    "name": "Encadrement des loyers en France 2026 — 31 communes"
+  },
+  "mainEntityOfPage": "https://bailleurverif.fr/data/methodology.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "BailleurVérif", "item": "https://bailleurverif.fr/"},
+    {"@type": "ListItem", "position": 2, "name": "Open data", "item": "https://bailleurverif.fr/data/"},
+    {"@type": "ListItem", "position": 3, "name": "Méthodologie", "item": "https://bailleurverif.fr/data/methodology.html"}
+  ]
+}
+</script>
+
+<style>
+:root{--bg:#fff;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--accent:#1d4ed8;--code-bg:#f8fafc}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+header,main,footer{max-width:880px;margin:0 auto;padding:1.25rem 1.5rem}
+header{border-bottom:1px solid var(--line)}
+header nav a{color:var(--muted);text-decoration:none;margin-right:1rem}
+header nav a:hover{color:var(--accent)}
+h1{font-size:1.75rem;margin:1rem 0 .25rem}
+h2{font-size:1.25rem;margin:2rem 0 .5rem;border-bottom:1px solid var(--line);padding-bottom:.25rem}
+h3{font-size:1rem;margin:1.25rem 0 .25rem}
+.tagline{color:var(--muted);font-size:.95rem;margin-bottom:.5rem}
+.meta-bar{font-size:.85rem;color:var(--muted);display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:.5rem .75rem;text-align:left;vertical-align:top}
+th{background:var(--code-bg)}
+code{background:var(--code-bg);padding:.1rem .35rem;border-radius:3px;font-size:.85em}
+pre{background:var(--code-bg);padding:1rem;border-radius:6px;overflow-x:auto;font-size:.85em;border:1px solid var(--line)}
+ul li{margin:.25rem 0}
+.note{background:#fefce8;border-left:4px solid #ca8a04;padding:.75rem 1rem;border-radius:4px;margin:1rem 0;font-size:.95rem}
+footer{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);margin-top:2rem}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="/">BailleurVérif</a> ·
+<a href="/data/">Open data</a> ·
+<a href="/data/methodology.html">Méthodologie</a>
+</nav>
+<h1>Méthodologie du dataset</h1>
+<p class="tagline">Encadrement des loyers en France 2026 — version 1.0</p>
+<div class="meta-bar">
+<span>Publication : 16 mai 2026</span>
+<span>Licence : <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" rel="license external">CC BY 4.0</a></span>
+<span>Format : CSV + JSON</span>
+<span>Couverture : 31 communes / 7 préfectures</span>
+</div>
+</header>
+
+<main>
+
+<h2 id="objet">Objet du dataset</h2>
+
+<p>Le dataset <em>encadrement-loyer-france-2026</em> recense, commune par commune, les plafonds légaux de loyer applicables en France métropolitaine en 2026, dans les zones dites <em>tendues</em> ayant adopté un dispositif d'encadrement des loyers en vertu de la <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028772256/" rel="external">loi ALUR du 24 mars 2014</a>, modifiée et étendue par la <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043956924/" rel="external">loi Climat et Résilience du 22 août 2021</a>.</p>
+
+<p>Pour chaque commune sont reportés :</p>
+<ul>
+<li>Le <strong>loyer de référence majoré</strong> (plafond légal) en €/m²/mois pour les locations <strong>nues</strong>.</li>
+<li>Le loyer de référence majoré pour les locations <strong>meublées</strong> (généralement le loyer nu majoré d'un coefficient meublé arrêté par la préfecture).</li>
+<li>Le périmètre géographique d'application (arrondissements, communes membres de l'EPCI, etc.).</li>
+<li>La date d'entrée en vigueur du dispositif local.</li>
+<li>L'autorité préfectorale qui publie l'arrêté annuel.</li>
+<li>L'intercommunalité (EPCI/Métropole) de rattachement.</li>
+</ul>
+
+<h2 id="sources">Sources primaires</h2>
+
+<p>Le dataset est compilé exclusivement à partir des <strong>arrêtés préfectoraux publiés en 2026</strong> par les sept préfectures concernées, conformément aux articles <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038814738/" rel="external">L.302-7-1 et suivants du Code de la construction et de l'habitation</a>. Aucun chiffre n'est repris d'agrégateurs tiers.</p>
+
+<table>
+<thead>
+<tr><th>Préfecture</th><th>Périmètre</th><th>Communes</th><th>Source publique</th></tr>
+</thead>
+<tbody>
+<tr><td>Préfecture de Paris (DRIHL)</td><td>20 arrondissements + 25 communes de Plaine Commune / Est Ensemble</td><td>Paris + Saint-Ouen + Aubervilliers + Saint-Denis + Pantin + …</td><td>Arrêté annuel publié au Recueil des actes administratifs (RAA) de la préfecture d'Île-de-France</td></tr>
+<tr><td>Préfecture du Nord</td><td>Métropole Européenne de Lille (MEL)</td><td>Lille + Hellemmes + Lomme</td><td>Arrêté préfectoral, RAA Nord</td></tr>
+<tr><td>Préfecture du Rhône</td><td>Métropole de Lyon (zone tendue)</td><td>Lyon + Villeurbanne</td><td>Arrêté préfectoral, RAA Rhône (entrée en vigueur 2021)</td></tr>
+<tr><td>Préfecture de la Gironde</td><td>Bordeaux Métropole (commune-centre)</td><td>Bordeaux</td><td>Arrêté préfectoral, RAA Gironde</td></tr>
+<tr><td>Préfecture de l'Hérault</td><td>Montpellier Méditerranée Métropole (3M)</td><td>Montpellier</td><td>Arrêté préfectoral, RAA Hérault</td></tr>
+<tr><td>Préfecture de Seine-Saint-Denis</td><td>Plaine Commune + Est Ensemble (rattaché à Île-de-France)</td><td>Inclus dans dispositif francilien</td><td>Voir Préfecture de Paris / DRIHL</td></tr>
+<tr><td>Préfecture de l'Isère</td><td>Grenoble-Alpes Métropole (commune-centre)</td><td>Grenoble</td><td>Arrêté préfectoral, RAA Isère (entrée en vigueur 2023)</td></tr>
+</tbody>
+</table>
+
+<div class="note">
+<strong>Note d'audit :</strong> chaque ligne du CSV est traçable à un arrêté préfectoral 2026 nominatif. Les références exactes (numéro NOR, date de signature, date de publication RAA) peuvent être communiquées sur simple demande à <a href="mailto:contact@bailleurverif.fr">contact@bailleurverif.fr</a> — l'objectif est la transparence complète.
+</div>
+
+<h2 id="definition-plafond">Définition du plafond légal</h2>
+
+<p>Le plafond reporté correspond au <strong>loyer de référence majoré</strong> tel que défini à l'article 17 de la loi du 6 juillet 1989 modifiée. Il s'agit du loyer médian observé sur le marché local pour un logement comparable, <strong>majoré de 20 %</strong>. Au-delà de ce plafond, le loyer est illégal sauf complément de loyer justifié par une caractéristique exceptionnelle.</p>
+
+<p>Le plafond exact applicable à un logement spécifique dépend de quatre critères additionnels qui <em>ne sont pas reportés dans ce dataset agrégé</em> :</p>
+<ol>
+<li><strong>Secteur géographique précis (OLAP)</strong> — chaque commune est subdivisée en plusieurs secteurs ; le plafond varie de ±15 % entre secteurs.</li>
+<li><strong>Nombre de pièces</strong> — studio, T2, T3, T4+.</li>
+<li><strong>Caractère meublé ou nu</strong> — coefficient d'environ +10 à +20 % pour le meublé.</li>
+<li><strong>Année de construction</strong> — avant 1946, 1946-1970, 1971-1990, après 1990 (quatre tranches).</li>
+</ol>
+
+<p>Le calculateur interactif <a href="/">BailleurVérif</a> intègre ces quatre dimensions commune par commune pour produire un plafond précis. Le dataset agrégé sert de <em>résumé pédagogique</em> et de <em>support à la dataviz</em> ; il ne remplace pas la consultation de l'arrêté préfectoral pour un usage juridique.</p>
+
+<h2 id="periode-reference">Période de référence</h2>
+
+<p>Les valeurs reportées sont celles applicables au <strong>1ᵉʳ janvier 2026</strong>, telles qu'issues des arrêtés préfectoraux de fin 2025 ou début 2026 (la plupart des préfectures publient l'arrêté annuel entre novembre N-1 et avril N). Une mise à jour du dataset interviendra à chaque publication d'un nouvel arrêté préfectoral substantiel.</p>
+
+<h2 id="couverture">Couverture &amp; choix éditoriaux</h2>
+
+<p>Le dataset couvre les <strong>seules communes ayant adopté l'encadrement strict</strong> en 2026 (31 au total). Les nombreuses autres communes situées en <em>zone tendue</em> au sens de la <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028772256/" rel="external">loi ALUR</a> mais n'ayant pas activé le dispositif d'encadrement strict ne sont pas incluses — elles relèvent uniquement de la limitation de l'évolution annuelle du loyer (IRL) et du complément de loyer encadré.</p>
+
+<p>Le périmètre s'élargira mécaniquement à mesure que de nouvelles intercommunalités candidates (Annecy, Toulouse, Marseille…) activent ou non leur dispositif. Le dataset sera versionné explicitement à chaque ajout.</p>
+
+<h2 id="limites">Limites connues</h2>
+
+<ul>
+<li>Le dataset ne reporte qu'<strong>un</strong> plafond €/m² par commune (le loyer de référence majoré médian). Les variations infra-communales (secteurs OLAP) ne sont pas dépliées — voir le calculateur interactif pour cela.</li>
+<li>Les <strong>compléments de loyer</strong> (article 18 loi 1989) ne sont pas modélisés. Ils sont laissés à l'appréciation du bailleur et contrôlables par la commission départementale de conciliation.</li>
+<li>Le distinguo <strong>nu / meublé</strong> est binaire ici ; certains arrêtés introduisent un coefficient meublé variable selon le nombre de pièces (non reflété).</li>
+<li>Les <strong>loyers libres pour reconduction</strong> (article 17-2) restent encadrés par l'IRL mais peuvent dépasser le plafond pour des baux antérieurs — non couvert.</li>
+</ul>
+
+<h2 id="audit-trail">Audit trail (versioning)</h2>
+
+<p>Le dataset est versionné sémantiquement. Toute correction est tracée dans un changelog public et annoncée via le flux <a href="/blog/atom.xml" rel="alternate" type="application/atom+xml">Atom du blog BailleurVérif</a> (rubrique "Open data"). Chaque version dispose d'un identifiant fixe et d'une URL canonique stable (les versions antérieures restent accessibles à <code>/data/v&lt;N&gt;/</code> dès qu'une révision substantielle survient).</p>
+
+<h3>Changelog</h3>
+
+<ul>
+<li><strong>2026-05-16 — v1.0</strong> : première publication. 31 communes, 7 préfectures, 7 intercommunalités. CSV + JSON + index HTML.</li>
+</ul>
+
+<h2 id="formats">Formats &amp; métadonnées</h2>
+
+<p>Pour faciliter l'intégration dans des outils tiers, le dataset est accompagné de plusieurs descripteurs standards :</p>
+
+<table>
+<thead><tr><th>Format</th><th>Fichier</th><th>Standard / spec</th></tr></thead>
+<tbody>
+<tr><td>Tabulaire</td><td><a href="/data/encadrement-loyer-france-2026.csv">encadrement-loyer-france-2026.csv</a></td><td>RFC 4180, UTF-8, séparateur virgule</td></tr>
+<tr><td>JSON enveloppe</td><td><a href="/data/encadrement-loyer-france-2026.json">encadrement-loyer-france-2026.json</a></td><td>JSON RFC 8259</td></tr>
+<tr><td>Documentation humaine</td><td><a href="/data/README.md">README.md</a></td><td>CommonMark</td></tr>
+<tr><td>Page hub</td><td><a href="/data/">/data/ (HTML + JSON-LD Dataset)</a></td><td><a href="https://schema.org/Dataset" rel="external">schema.org/Dataset</a></td></tr>
+<tr><td>Data Package</td><td><a href="/data/datapackage.json">datapackage.json</a></td><td><a href="https://specs.frictionlessdata.io/data-package/" rel="external">Frictionless Data Package v1</a></td></tr>
+<tr><td>Citation File Format</td><td><a href="/data/CITATION.cff">CITATION.cff</a></td><td><a href="https://citation-file-format.github.io/" rel="external">CFF 1.2.0</a></td></tr>
+<tr><td>Catalogue DCAT-AP</td><td><a href="/data/catalog.xml">catalog.xml</a></td><td><a href="https://semiceu.github.io/DCAT-AP/" rel="external">DCAT-AP 2.1</a> (RDF/XML)</td></tr>
+</tbody>
+</table>
+
+<h2 id="reuse">Réutilisation</h2>
+
+<p>Sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" rel="license external">CC BY 4.0</a>. Vous pouvez utiliser, modifier et redistribuer librement ce dataset à condition de citer la source :</p>
+
+<pre><code>BailleurVérif (https://bailleurverif.fr/) — Encadrement des loyers en France 2026, v1.0, CC BY 4.0.</code></pre>
+
+<p>Réutilisations bienvenues : recherche académique, journalisme de données, cartographies civic-tech, modèles de simulation, applications grand public. Une mention écrite (article, blog, slide) nous serait précieuse pour mesurer l'impact — <a href="mailto:contact@bailleurverif.fr">signalez-la</a>.</p>
+
+<h2 id="contact">Contact &amp; corrections</h2>
+
+<p>Erreur de chiffre, omission de commune, mise à jour réglementaire ? Écrivez à <a href="mailto:contact@bailleurverif.fr">contact@bailleurverif.fr</a>. Corrections traitées sous 7 jours, avec mention dans le changelog.</p>
+
+<p><a href="/data/">← Retour à la fiche dataset</a></p>
+
+</main>
+
+<footer>
+<p>BailleurVérif · <a href="/">accueil</a> · <a href="/data/">open data</a> · <a href="/mentions-legales.html">mentions légales</a> · <a href="/politique-confidentialite.html">politique de confidentialité</a></p>
+<p>Données publiées sous licence Creative Commons BY 4.0. Code source en cours de publication.</p>
+</footer>
+
+</body>
+</html>

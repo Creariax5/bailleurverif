@@ -33,6 +33,9 @@ ledger-history.md
 research-notes-history.md
 florian-todos-history.md.bak
 
+# Binary backups — quarantine
+wedge-tool/static/data/quarantine/
+
 # Lead / prospect / activity data
 leads.jsonl
 geo-baseline-*.jsonl

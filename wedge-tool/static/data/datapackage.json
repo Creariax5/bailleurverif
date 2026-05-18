@@ -1,0 +1,103 @@
+{
+  "name": "encadrement-loyer-france-2026",
+  "title": "Encadrement des loyers en France 2026 — 31 communes",
+  "description": "Dataset libre listant les 31 communes françaises où s'applique l'encadrement des loyers en 2026 (loi ALUR / loi Climat & Résilience), avec les plafonds légaux de référence par mètre carré pour les locations nues et meublées.",
+  "version": "1.0.0",
+  "created": "2026-05-16",
+  "homepage": "https://bailleurverif.fr/data/",
+  "id": "https://bailleurverif.fr/data/",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "BailleurVérif",
+      "email": "contact@bailleurverif.fr",
+      "path": "https://bailleurverif.fr/",
+      "role": "author",
+      "organization": "BailleurVérif"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Arrêtés préfectoraux 2026 (Paris, Nord, Rhône, Gironde, Hérault, Seine-Saint-Denis, Isère)",
+      "path": "https://bailleurverif.fr/data/methodology.html#sources"
+    },
+    {
+      "title": "Loi ALUR (n° 2014-366 du 24 mars 2014)",
+      "path": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028772256/"
+    },
+    {
+      "title": "Loi Climat et Résilience (n° 2021-1104 du 22 août 2021)",
+      "path": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043956924/"
+    }
+  ],
+  "keywords": [
+    "encadrement des loyers",
+    "rent control",
+    "France",
+    "ALUR",
+    "logement",
+    "open data",
+    "bailleur",
+    "locataire",
+    "loyer plafonné",
+    "zone tendue"
+  ],
+  "resources": [
+    {
+      "name": "encadrement-loyer-france-2026",
+      "title": "Encadrement loyer France 2026 (CSV)",
+      "path": "encadrement-loyer-france-2026.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4269,
+      "dialect": {
+        "delimiter": ",",
+        "lineTerminator": "\n",
+        "header": true,
+        "doubleQuote": true
+      },
+      "schema": {
+        "fields": [
+          {"name": "slug", "type": "string", "description": "Identifiant URL kebab-case", "constraints": {"required": true, "unique": true, "pattern": "^[a-z0-9-]+$"}},
+          {"name": "commune", "type": "string", "description": "Nom officiel de la commune", "constraints": {"required": true}},
+          {"name": "plafond_nu_eur_m2", "type": "number", "description": "Loyer plafond légal location nue (€/m²/mois)", "constraints": {"required": true, "minimum": 0, "maximum": 100}},
+          {"name": "plafond_meuble_eur_m2", "type": "number", "description": "Loyer plafond légal location meublée (€/m²/mois)", "constraints": {"required": true, "minimum": 0, "maximum": 100}},
+          {"name": "perimetre", "type": "string", "description": "Zone géographique d'application", "constraints": {"required": true}},
+          {"name": "date_debut_encadrement", "type": "string", "description": "Date d'entrée en vigueur (FR free-form)", "constraints": {"required": true}},
+          {"name": "autorite_prefectorale", "type": "string", "description": "Préfecture qui publie l'arrêté annuel", "constraints": {"required": true}},
+          {"name": "intercommunalite", "type": "string", "description": "EPCI/Métropole de rattachement", "constraints": {"required": true}}
+        ],
+        "primaryKey": "slug"
+      }
+    },
+    {
+      "name": "encadrement-loyer-france-2026-json",
+      "title": "Encadrement loyer France 2026 (JSON wrapper)",
+      "path": "encadrement-loyer-france-2026.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "bytes": 11680
+    }
+  ],
+  "spatial": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [[[-5.14, 41.33], [9.56, 41.33], [9.56, 51.09], [-5.14, 51.09], [-5.14, 41.33]]]
+    },
+    "properties": {"name": "France métropolitaine"}
+  },
+  "temporal": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "language": "fr"
+}

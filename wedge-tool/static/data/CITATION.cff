@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Encadrement des loyers en France 2026 — 31 communes"
+abstract: "Dataset libre listant les 31 communes françaises où s'applique l'encadrement des loyers en 2026 (loi ALUR / loi Climat & Résilience), avec les plafonds légaux de référence par mètre carré pour les locations nues et meublées."
+authors:
+  - name: "BailleurVérif"
+    website: "https://bailleurverif.fr/"
+    email: "contact@bailleurverif.fr"
+identifiers:
+  - type: url
+    value: "https://bailleurverif.fr/data/"
+    description: "Page hub du dataset"
+  - type: url
+    value: "https://bailleurverif.fr/data/encadrement-loyer-france-2026.csv"
+    description: "Fichier CSV canonique"
+keywords:
+  - "encadrement des loyers"
+  - "rent control"
+  - "France"
+  - "ALUR"
+  - "loi Climat et Résilience"
+  - "logement"
+  - "open data"
+  - "données ouvertes"
+  - "bailleur"
+  - "locataire"
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+url: "https://bailleurverif.fr/data/"
+repository: "https://bailleurverif.fr/data/"
+version: "1.0"
+date-released: "2026-05-16"
+contact:
+  - name: "BailleurVérif"
+    email: "contact@bailleurverif.fr"
+references:
+  - type: report
+    title: "Loi n° 2014-366 du 24 mars 2014 pour l'accès au logement et un urbanisme rénové (ALUR)"
+    authors:
+      - name: "République française"
+    url: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028772256/"
+    year: 2014
+  - type: report
+    title: "Loi n° 2021-1104 du 22 août 2021 portant lutte contre le dérèglement climatique (Climat et Résilience)"
+    authors:
+      - name: "République française"
+    url: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043956924/"
+    year: 2021
+preferred-citation:
+  type: dataset
+  title: "Encadrement des loyers en France 2026 — 31 communes"
+  authors:
+    - name: "BailleurVérif"
+  year: 2026
+  month: 5
+  url: "https://bailleurverif.fr/data/"
+  license: CC-BY-4.0
+  version: "1.0"

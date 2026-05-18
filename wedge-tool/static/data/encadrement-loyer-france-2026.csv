@@ -1,0 +1,32 @@
+slug,commune,plafond_nu_eur_m2,plafond_meuble_eur_m2,perimetre,date_debut_encadrement,autorite_prefectorale,intercommunalite
+paris,Paris,33.3,40.0,20 arrondissements,1er juillet 2019,Préfecture de Paris (DRIHL),Paris intra-muros
+lille,Lille,19.5,23.4,Lille + Hellemmes + Lomme,1er mars 2020,Préfecture du Nord (DDETS),Métropole Européenne de Lille (MEL)
+hellemmes,Hellemmes,19.5,23.4,commune associée à Lille,1er mars 2020,Préfecture du Nord (DDETS),Métropole Européenne de Lille (MEL)
+lomme,Lomme,19.5,23.4,commune associée à Lille,1er mars 2020,Préfecture du Nord (DDETS),Métropole Européenne de Lille (MEL)
+lyon,Lyon,16.8,20.2,9 arrondissements lyonnais,1er novembre 2021,Préfecture du Rhône (DDETS),Métropole de Lyon
+villeurbanne,Villeurbanne,16.5,19.8,ensemble du territoire communal,1er novembre 2021,Préfecture du Rhône (DDETS),Métropole de Lyon
+bordeaux,Bordeaux,17.4,20.9,ensemble de la commune,15 juillet 2022,Préfecture de la Gironde (DDTM),Bordeaux Métropole
+montpellier,Montpellier,17.0,20.4,ensemble de la commune,1er juillet 2022,Préfecture de l'Hérault (DDTM),Montpellier Méditerranée Métropole (3M)
+saint-ouen,Saint-Ouen-sur-Seine,25.2,30.2,ensemble du territoire,1er juin 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Plaine Commune
+aubervilliers,Aubervilliers,23.4,28.1,ensemble du territoire,1er juin 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Plaine Commune
+saint-denis,Saint-Denis,23.4,28.1,ensemble du territoire,1er juin 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Plaine Commune
+pierrefitte-sur-seine,Pierrefitte-sur-Seine,22.1,26.5,ensemble du territoire,1er juin 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Plaine Commune
+epinay-sur-seine,Épinay-sur-Seine,22.1,26.5,ensemble du territoire,1er juin 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Plaine Commune
+stains,Stains,22.1,26.5,ensemble du territoire,1er juin 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Plaine Commune
+villetaneuse,Villetaneuse,22.1,26.5,ensemble du territoire,1er juin 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Plaine Commune
+ile-saint-denis,L'Île-Saint-Denis,23.4,28.1,ensemble du territoire,1er juin 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Plaine Commune
+la-courneuve,La Courneuve,22.1,26.5,ensemble du territoire,1er juin 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Plaine Commune
+bagnolet,Bagnolet,24.0,28.8,ensemble du territoire,1er décembre 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Est Ensemble
+bondy,Bondy,22.5,27.0,ensemble du territoire,1er décembre 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Est Ensemble
+bobigny,Bobigny,22.5,27.0,ensemble du territoire,1er décembre 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Est Ensemble
+le-pre-saint-gervais,Le Pré-Saint-Gervais,24.0,28.8,ensemble du territoire,1er décembre 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Est Ensemble
+les-lilas,Les Lilas,24.0,28.8,ensemble du territoire,1er décembre 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Est Ensemble
+montreuil,Montreuil,24.0,28.8,ensemble du territoire,1er décembre 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Est Ensemble
+noisy-le-sec,Noisy-le-Sec,22.5,27.0,ensemble du territoire,1er décembre 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Est Ensemble
+pantin,Pantin,24.0,28.8,ensemble du territoire,1er décembre 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Est Ensemble
+romainville,Romainville,23.0,27.6,ensemble du territoire,1er décembre 2021,Préfecture de Seine-Saint-Denis (DDETS 93),EPT Est Ensemble
+grenoble,Grenoble,14.5,17.4,ensemble de la commune,1er septembre 2023,Préfecture de l'Isère (DDETS),Grenoble-Alpes Métropole
+echirolles,Échirolles,13.5,16.2,secteurs OLAP,1er septembre 2023,Préfecture de l'Isère (DDETS),Grenoble-Alpes Métropole
+eybens,Eybens,13.5,16.2,secteurs OLAP,1er septembre 2023,Préfecture de l'Isère (DDETS),Grenoble-Alpes Métropole
+fontaine,Fontaine,13.5,16.2,secteurs OLAP,1er septembre 2023,Préfecture de l'Isère (DDETS),Grenoble-Alpes Métropole
+saint-martin-d-heres,Saint-Martin-d'Hères,13.5,16.2,secteurs OLAP,1er septembre 2023,Préfecture de l'Isère (DDETS),Grenoble-Alpes Métropole

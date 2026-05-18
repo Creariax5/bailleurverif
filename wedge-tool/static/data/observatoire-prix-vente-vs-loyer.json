@@ -1,0 +1,192 @@
+{
+  "title": "Observatoire cross-source : prix de vente DVF × loyer demandé",
+  "license": "CC-BY-4.0",
+  "source_loyer": "BailleurVérif observatoire-annonces-loyer.csv (locservice 2026-05-17 N=236)",
+  "source_prix_vente": "data.gouv.fr Statistiques DVF (object.files.data.gouv.fr/data-pipeline-open/dvf/stats_dvf.csv) — ventes-weighted médiane prix m² appartement 2024-01 → 2025-12",
+  "period_loyer": "2026-05-17 (snapshot)",
+  "period_prix_vente": "2024-01 .. 2025-12 (24 mois)",
+  "methodologie": "Pour chaque commune INSEE présente dans les deux sources, médiane des loyers €/m² mensuel observés (annonces) divisée par médiane DVF prix €/m² vente appartement, multipliée par 12 mois × 100 = rendement brut annuel %. Indicatif investisseur : ne tient pas compte des charges, fiscalité, vacance ni travaux.",
+  "caveats": [
+    "Loyers = annonces (loyer demandé), pas loyer effectivement payé.",
+    "DVF = ventes notariées appartement ; n'exclut pas les parkings annexes ni les ventes en VEFA atypiques.",
+    "N≥3 annonces minimum par commune pour publication (échantillon faible : Paris/Lyon/Marseille arrondissements peuvent avoir N<10).",
+    "Rendement brut ≠ rentabilité nette : charges, taxe foncière, vacance, GLI, frais agence non déduits.",
+    "Cross-source = expérimental v0, pas garanti zéro biais d'échantillon. Open source méthodologie."
+  ],
+  "n_communes_cross": 17,
+  "n_listings_total_observatoire": 236,
+  "n_listings_mappes_insee": 130,
+  "n_listings_skipped_no_cp_mapping": 106,
+  "communes": [
+    {
+      "insee": "35238",
+      "libelle": "Rennes",
+      "loyer_eur_m2_median": 32.78,
+      "loyer_n_annonces": 7,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 3664.0,
+      "nb_ventes_apt_24m": 5477,
+      "rendement_brut_pct_annuel": 10.74
+    },
+    {
+      "insee": "59606",
+      "libelle": "Valenciennes",
+      "loyer_eur_m2_median": 15.52,
+      "loyer_n_annonces": 5,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 2074.0,
+      "nb_ventes_apt_24m": 648,
+      "rendement_brut_pct_annuel": 8.98
+    },
+    {
+      "insee": "34172",
+      "libelle": "Montpellier",
+      "loyer_eur_m2_median": 24.98,
+      "loyer_n_annonces": 6,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 3353.0,
+      "nb_ventes_apt_24m": 7798,
+      "rendement_brut_pct_annuel": 8.94
+    },
+    {
+      "insee": "31555",
+      "libelle": "Toulouse",
+      "loyer_eur_m2_median": 23.64,
+      "loyer_n_annonces": 15,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 3249.0,
+      "nb_ventes_apt_24m": 12673,
+      "rendement_brut_pct_annuel": 8.73
+    },
+    {
+      "insee": "06088",
+      "libelle": "Nice",
+      "loyer_eur_m2_median": 31.03,
+      "loyer_n_annonces": 5,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 4783.0,
+      "nb_ventes_apt_24m": 13811,
+      "rendement_brut_pct_annuel": 7.79
+    },
+    {
+      "insee": "69383",
+      "libelle": "Lyon 3e Arrondissement",
+      "loyer_eur_m2_median": 28.77,
+      "loyer_n_annonces": 6,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 4510.0,
+      "nb_ventes_apt_24m": 2587,
+      "rendement_brut_pct_annuel": 7.66
+    },
+    {
+      "insee": "44109",
+      "libelle": "Nantes",
+      "loyer_eur_m2_median": 20.98,
+      "loyer_n_annonces": 14,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 3413.0,
+      "nb_ventes_apt_24m": 7461,
+      "rendement_brut_pct_annuel": 7.38
+    },
+    {
+      "insee": "59350",
+      "libelle": "Lille",
+      "loyer_eur_m2_median": 22.59,
+      "loyer_n_annonces": 16,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 3697.0,
+      "nb_ventes_apt_24m": 4736,
+      "rendement_brut_pct_annuel": 7.33
+    },
+    {
+      "insee": "33063",
+      "libelle": "Bordeaux",
+      "loyer_eur_m2_median": 22.73,
+      "loyer_n_annonces": 13,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 4175.0,
+      "nb_ventes_apt_24m": 6357,
+      "rendement_brut_pct_annuel": 6.53
+    },
+    {
+      "insee": "69266",
+      "libelle": "Villeurbanne",
+      "loyer_eur_m2_median": 19.33,
+      "loyer_n_annonces": 3,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 3556.0,
+      "nb_ventes_apt_24m": 3638,
+      "rendement_brut_pct_annuel": 6.52
+    },
+    {
+      "insee": "75101",
+      "libelle": "Paris 1er Arrondissement",
+      "loyer_eur_m2_median": 60.0,
+      "loyer_n_annonces": 3,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 12208.0,
+      "nb_ventes_apt_24m": 536,
+      "rendement_brut_pct_annuel": 5.9
+    },
+    {
+      "insee": "13001",
+      "libelle": "Aix-en-Provence",
+      "loyer_eur_m2_median": 23.28,
+      "loyer_n_annonces": 4,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 4809.0,
+      "nb_ventes_apt_24m": 3331,
+      "rendement_brut_pct_annuel": 5.81
+    },
+    {
+      "insee": "75118",
+      "libelle": "Paris 18e Arrondissement",
+      "loyer_eur_m2_median": 41.73,
+      "loyer_n_annonces": 4,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 8709.0,
+      "nb_ventes_apt_24m": 5596,
+      "rendement_brut_pct_annuel": 5.75
+    },
+    {
+      "insee": "75114",
+      "libelle": "Paris 14e Arrondissement",
+      "loyer_eur_m2_median": 39.09,
+      "loyer_n_annonces": 4,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 9298.0,
+      "nb_ventes_apt_24m": 2938,
+      "rendement_brut_pct_annuel": 5.04
+    },
+    {
+      "insee": "75117",
+      "libelle": "Paris 17e Arrondissement",
+      "loyer_eur_m2_median": 40.71,
+      "loyer_n_annonces": 3,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 9986.0,
+      "nb_ventes_apt_24m": 4805,
+      "rendement_brut_pct_annuel": 4.89
+    },
+    {
+      "insee": "75112",
+      "libelle": "Paris 12e Arrondissement",
+      "loyer_eur_m2_median": 32.8,
+      "loyer_n_annonces": 3,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 8911.0,
+      "nb_ventes_apt_24m": 3063,
+      "rendement_brut_pct_annuel": 4.42
+    },
+    {
+      "insee": "75110",
+      "libelle": "Paris 10e Arrondissement",
+      "loyer_eur_m2_median": 30.0,
+      "loyer_n_annonces": 3,
+      "in_scope_encadrement_n": 0,
+      "prix_vente_eur_m2_median_24_25": 9206.0,
+      "nb_ventes_apt_24m": 2765,
+      "rendement_brut_pct_annuel": 3.91
+    }
+  ]
+}

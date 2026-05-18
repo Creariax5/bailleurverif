@@ -1,14 +1,34 @@
 #!/usr/bin/env python3
 """Export observatoire JSONL → CSV with normalized columns.
 
-Reads:  wedge-tool/data/listings/all-cities-2026-05-17.dedup.scored.jsonl
-Writes: wedge-tool/static/data/observatoire-annonces-loyer-2026-05-17.csv
+Usage: export_observatoire_csv.py [YYYY-MM-DD]   (default: today UTC)
+
+Reads:  wedge-tool/data/listings/all-cities-<DATE>.dedup.scored.jsonl
+Writes: wedge-tool/static/data/observatoire-annonces-loyer-<DATE>.csv
+
+Backward compat: if no scored file exists for today, falls back to most recent.
 """
-import csv, json, sys, hashlib, datetime
+import csv, json, sys, hashlib, datetime, glob
 from pathlib import Path
 
-SRC = Path("/home/deploy/saas-florian/wedge-tool/data/listings/all-cities-2026-05-17.dedup.scored.jsonl")
-DST = Path("/home/deploy/saas-florian/wedge-tool/static/data/observatoire-annonces-loyer-2026-05-17.csv")
+LISTINGS_DIR = Path("/home/deploy/saas-florian/wedge-tool/data/listings")
+STATIC_DIR = Path("/home/deploy/saas-florian/wedge-tool/static/data")
+
+def resolve_date(argv):
+    if len(argv) > 1 and argv[1] and argv[1] != "-":
+        return argv[1]
+    today = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+    if (LISTINGS_DIR / f"all-cities-{today}.dedup.scored.jsonl").exists():
+        return today
+    candidates = sorted(glob.glob(str(LISTINGS_DIR / "all-cities-*.dedup.scored.jsonl")))
+    if not candidates:
+        print("ERROR: no scored files found", file=sys.stderr)
+        sys.exit(1)
+    return Path(candidates[-1]).name.split("all-cities-")[1].split(".")[0]
+
+DATE = resolve_date(sys.argv)
+SRC = LISTINGS_DIR / f"all-cities-{DATE}.dedup.scored.jsonl"
+DST = STATIC_DIR / f"observatoire-annonces-loyer-{DATE}.csv"
 
 FIELDS = [
     "ts_score",
