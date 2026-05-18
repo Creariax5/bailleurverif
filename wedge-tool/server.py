@@ -4,6 +4,7 @@ BailleurVérif — serveur HTTP V0
 Port 8102. Sert /static + endpoints API /api/visit, /api/result, /api/capture, /api/stats.
 Données persistées en JSONL dans data/.
 """
+import hashlib
 import json
 import os
 import re
@@ -26,6 +27,7 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_DIR = os.path.join(ROOT, "static")
 DATA_DIR = os.path.join(ROOT, "data")
+INTERPRETATION_LIB_DIR = os.path.normpath(os.path.join(ROOT, "..", "data", "interpretation-library-v0", "recourse-templates"))
 os.makedirs(DATA_DIR, exist_ok=True)
 
 VISITS_FILE = os.path.join(DATA_DIR, "visits.jsonl")
@@ -39,6 +41,7 @@ EMBED_COPIES_FILE = os.path.join(DATA_DIR, "embed-snippet-copies.jsonl")
 SUBSCRIBERS_FILE = os.path.join(DATA_DIR, "subscribers.jsonl")
 CHANGES_FILE = os.path.join(DATA_DIR, "reglementation-changes.jsonl")
 SIGNALEMENTS_FILE = os.path.join(DATA_DIR, "signalements-annonces.jsonl")
+NOTATIONS_AGENCES_FILE = os.path.join(DATA_DIR, "notations-agences.jsonl")
 OUTBOUND_EMAILS_FILE = os.path.join(DATA_DIR, "outbound-emails.jsonl")
 
 # OVH Zimbra SMTP — provisionné Florian 2026-05-17T13:55Z, mandated patch run-205.
@@ -990,6 +993,123 @@ class Handler(BaseHTTPRequestHandler):
             self._send(200, body, ctype="text/html; charset=utf-8")
             return
 
+        if path == "/api/recourse" or path.startswith("/api/recourse/"):
+            tag = path[len("/api/recourse"):].lstrip("/")
+            if not os.path.isdir(INTERPRETATION_LIB_DIR):
+                self._send(503, {"ok": False, "error": "library not available"})
+                return
+            if not tag:
+                tags = []
+                for fn in sorted(os.listdir(INTERPRETATION_LIB_DIR)):
+                    if not fn.endswith(".json"):
+                        continue
+                    base = fn[:-5]
+                    tname = base.rsplit(".", 1)[0] if "." in base else base
+                    fpath = os.path.join(INTERPRETATION_LIB_DIR, fn)
+                    try:
+                        with open(fpath, "rb") as fp:
+                            data = json.loads(fp.read().decode("utf-8"))
+                        tags.append({
+                            "tag": data.get("tag", tname),
+                            "version": data.get("version"),
+                            "wave_ts": data.get("wave_ts"),
+                            "scope": data.get("scope"),
+                            "url": f"/api/recourse/{data.get('tag', tname)}",
+                            "size_bytes": os.path.getsize(fpath),
+                        })
+                    except Exception:
+                        continue
+                self._send(200, {
+                    "ok": True,
+                    "library": "interpretation-library-v0/recourse-templates",
+                    "description": "Templates de recours juridiques pour locataires FR (cat-3 interpretation moat). Citations légales croisées + procédures + courriers RAR + régulateurs.",
+                    "license": "CC-BY-4.0",
+                    "source": "BailleurVérif open-data",
+                    "count": len(tags),
+                    "templates": tags,
+                    "fetched_at": now_iso(),
+                }, extra_headers={"Cache-Control": "public, max-age=300"})
+                return
+            safe_tag = "".join(c for c in tag if c.isalnum() or c in "-_")[:64]
+            if not safe_tag or safe_tag != tag:
+                self._send(400, {"ok": False, "error": "invalid tag"})
+                return
+            candidates = [fn for fn in os.listdir(INTERPRETATION_LIB_DIR)
+                          if fn.startswith(safe_tag + ".") and fn.endswith(".json")]
+            if not candidates:
+                self._send(404, {"ok": False, "error": "tag not found"})
+                return
+            fpath = os.path.join(INTERPRETATION_LIB_DIR, sorted(candidates)[-1])
+            try:
+                with open(fpath, "rb") as fp:
+                    raw = fp.read()
+            except Exception as e:
+                self._send(500, {"ok": False, "error": str(e)})
+                return
+            etag = '"' + hashlib.sha1(raw).hexdigest()[:16] + '"'
+            inm = self.headers.get("If-None-Match", "")
+            if inm and inm == etag:
+                self.send_response(304)
+                self.send_header("ETag", etag)
+                self.send_header("Cache-Control", "public, max-age=3600")
+                self.end_headers()
+                return
+            self._send(200, raw, ctype="application/json; charset=utf-8",
+                       extra_headers={"ETag": etag, "Cache-Control": "public, max-age=3600"})
+            return
+
+        if path == "/api/dvf-stats" or path.startswith("/api/dvf-stats/"):
+            dvf_path = os.path.join(STATIC_DIR, "data", "observatoire-prix-vente-vs-loyer.json")
+            if not os.path.isfile(dvf_path):
+                self._send(503, {"ok": False, "error": "dataset not available"})
+                return
+            try:
+                with open(dvf_path, "rb") as fp:
+                    dataset = json.loads(fp.read().decode("utf-8"))
+            except Exception as e:
+                self._send(500, {"ok": False, "error": str(e)[:160]})
+                return
+            insee = path[len("/api/dvf-stats"):].lstrip("/")
+            if not insee:
+                self._send(200, {
+                    "ok": True,
+                    "license": dataset.get("license"),
+                    "source_loyer": dataset.get("source_loyer"),
+                    "source_prix_vente": dataset.get("source_prix_vente"),
+                    "n_communes": dataset.get("n_communes_cross"),
+                    "communes": [
+                        {"insee": c["insee"], "libelle": c["libelle"],
+                         "url": f"/api/dvf-stats/{c['insee']}"}
+                        for c in dataset.get("communes", [])
+                    ],
+                    "fetched_at": now_iso(),
+                }, extra_headers={"Cache-Control": "public, max-age=300"})
+                return
+            safe_insee = "".join(c for c in insee if c.isalnum())[:6]
+            if not safe_insee or safe_insee != insee:
+                self._send(400, {"ok": False, "error": "invalid insee"})
+                return
+            for c in dataset.get("communes", []):
+                if c.get("insee") == safe_insee:
+                    self._send(200, {
+                        "ok": True,
+                        "insee": c["insee"],
+                        "libelle": c["libelle"],
+                        "loyer_eur_m2_median": c["loyer_eur_m2_median"],
+                        "loyer_n_annonces": c["loyer_n_annonces"],
+                        "prix_vente_eur_m2_median_24_25": c["prix_vente_eur_m2_median_24_25"],
+                        "nb_ventes_apt_24m": c["nb_ventes_apt_24m"],
+                        "rendement_brut_pct_annuel": c["rendement_brut_pct_annuel"],
+                        "period_loyer": dataset.get("period_loyer"),
+                        "period_prix_vente": dataset.get("period_prix_vente"),
+                        "license": dataset.get("license"),
+                        "fetched_at": now_iso(),
+                    }, extra_headers={"Cache-Control": "public, max-age=3600"})
+                    return
+            self._send(404, {"ok": False, "error": "insee not found", "insee": safe_insee,
+                             "hint": "see /api/dvf-stats for full list"})
+            return
+
         # Servir directement depuis STATIC_DIR : robots.txt, sitemap.xml, /blog/...,
         # /embed/..., et tout fichier de vérification (google*.html, BingSiteAuth.xml, etc.).
         if (
@@ -1559,6 +1679,64 @@ class Handler(BaseHTTPRequestHandler):
                 "adresse_postale": pref["adresse"],
                 "email_optionnel": pref["email"],
                 "disclaimer": "Brouillon généré automatiquement à partir des éléments saisis. À relire et adapter avant envoi. BailleurVérif n'envoie aucun courrier à votre place et ne stocke aucune donnée nominative sur le bailleur signalé. Source : observatoire-annonces-loyer.html (licence Etalab 2.0)."
+            })
+            return
+
+        if path == "/api/notation-agence":
+            # V1 run-236 — moat cat-2 effets réseau : notation publique anonyme agences immo FR (entités morales).
+            # Validation stricte : agence_nom normalisé, note 1-5, tags allowlist 7 valeurs, commentaire ≤280, ville/CP optionnels.
+            ALLOWED_TAGS = {"loyer-abusif", "dpe-invalide", "depot-non-rendu", "etat-lieux-abusif", "charges-injustifiees", "reactivite-faible", "autre"}
+            try:
+                agence_raw = str(data.get("agence_nom") or "").strip()
+                note = int(data.get("note") or 0)
+                tags_raw = data.get("tags") or []
+                if isinstance(tags_raw, str):
+                    tags_raw = [t.strip() for t in tags_raw.split(",") if t.strip()]
+                commentaire = str(data.get("commentaire") or "").strip()[:280]
+                ville = str(data.get("ville") or "").strip()[:80]
+                code_postal = str(data.get("code_postal") or "").strip()[:6]
+                agence_type = str(data.get("agence_type") or "agence").strip().lower()
+            except Exception:
+                self._send(400, {"ok": False, "error": "bad fields"})
+                return
+
+            if len(agence_raw) < 2 or len(agence_raw) > 120:
+                self._send(400, {"ok": False, "error": "agence_nom length must be 2-120 chars"})
+                return
+            if note < 1 or note > 5:
+                self._send(400, {"ok": False, "error": "note must be integer 1-5"})
+                return
+            if agence_type not in ("agence", "bailleur-pro", "syndic"):
+                self._send(400, {"ok": False, "error": "agence_type must be agence|bailleur-pro|syndic"})
+                return
+            tags_clean = [t for t in tags_raw if t in ALLOWED_TAGS][:7]
+            # Normalisation pour aggregation (lower + strip accents + simple slug-like).
+            agence_normalized = _slugify_commune(agence_raw)[:120]
+            if len(agence_normalized) < 2:
+                self._send(400, {"ok": False, "error": "agence_nom invalid after normalization"})
+                return
+
+            rec = {
+                "ts": now_iso(),
+                "agence_nom_raw": agence_raw[:120],
+                "agence_normalized": agence_normalized,
+                "agence_type": agence_type,
+                "note": note,
+                "tags": tags_clean,
+                "commentaire": commentaire,
+                "ville_slug": _slugify_commune(ville)[:80] if ville else "",
+                "code_postal": code_postal,
+                "ip_hash": str(abs(hash(ip)) % (10**10)),
+                "ua_short": ua[:80]
+            }
+            append_jsonl(NOTATIONS_AGENCES_FILE, rec)
+            sys.stdout.write("[%s] NOTATION agence=%s type=%s note=%d tags=%s\n" % (now_iso(), agence_normalized, agence_type, note, ",".join(tags_clean)))
+            sys.stdout.flush()
+            self._send(200, {
+                "ok": True,
+                "agence_normalized": agence_normalized,
+                "note": note,
+                "disclaimer": "Avis anonyme déposé. Source : déclarations utilisateurs anonymes. BailleurVérif modère a posteriori les avis manifestement abusifs (insultes, données nominatives individus, fausses agences). Le présent avis exprime l'opinion subjective de son auteur."
             })
             return
 

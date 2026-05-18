@@ -313,6 +313,16 @@
     </div>
   </section>
 
+  <section id="outil-observatoire-prix-vente" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">📈 Loyer × prix de vente DVF — 17 communes, rendement brut annuel (donnée croisée, CC-BY-4.0)</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">Croisement open-data : médianes loyer €/m² (observatoire BailleurVérif, 130 annonces zone tendue) × médianes prix vente €/m² appartement DVF Etalab (~82 000 transactions notariées 2024-2025), pour 17 communes. Rendement brut top : Rennes 10,74 % · Lyon 4,32 % · Paris 10ᵉ 3,91 % bottom. Dataset JSON + endpoint <code class="text-xs">GET /api/dvf-stats/&lt;insee&gt;</code> ouverts.</p>
+      </div>
+      <a href="/observatoire-prix-vente-vs-loyer.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Voir le croisement →</a>
+    </div>
+  </section>
+
   <section id="outil-widget" class="mt-6 mb-2">
     <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <div>
@@ -360,6 +370,16 @@
         <p class="text-sm text-[color:var(--text-dim)]">Calculateur gratuit du plafond légal (1 mois nu, 2 mois meublé, 0 bail mobilité) + délais restitution 1 ou 2 mois + sanction 10 %/mois retard + 4 modèles de lettre LRAR pré-remplis (demande, mise en demeure, commission, juge). Loi 89 art. 22 + ALUR + ELAN.</p>
       </div>
       <a href="/depot-garantie-france-2026.html" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Calculer + lettres →</a>
+    </div>
+  </section>
+
+  <section id="outil-api-recourse" class="mt-6 mb-2">
+    <div class="glass rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div>
+        <h3 class="text-lg font-semibold mb-1">⚖️ API recours juridiques — 3 templates open-data (CC-BY-4.0)</h3>
+        <p class="text-sm text-[color:var(--text-dim)]">JSON machine-lisible : <code class="text-xs">loyer-abusif</code> · <code class="text-xs">dpe-invalide</code> · <code class="text-xs">depot-garantie-non-restitue</code>. Chaque template = 5 articles légaux croisés (Loi 89-462, Loi Climat 2021-1104, décret 87-712, etc.) + 5 étapes procédure (preuve→RAR→CDC→préfet/DRIHL→TJ) + courrier RAR markdown 12-17 placeholders + 4 régulateurs (ADIL/CDC/UFC/préfet). Pour devs, chercheurs, agents IA juridiques. <code class="text-xs">GET /api/recourse</code> liste tout.</p>
+      </div>
+      <a href="/api/recourse" class="bg-[color:var(--panel-2)] border border-[color:var(--accent)] accent font-semibold px-5 py-3 rounded-xl whitespace-nowrap text-center hover:opacity-90">Voir l'API →</a>
     </div>
   </section>
 

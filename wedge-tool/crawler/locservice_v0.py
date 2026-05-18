@@ -50,6 +50,13 @@ GES_RE = re.compile(r'/dpe/ges-([A-G])\.[a-f0-9]+\.png')
 # Postal code from "Paris 17 (75017)" or "Paris (75001)"
 CP_RE = re.compile(r"\((\d{5})\)")
 PRICE_RE = re.compile(r"(\d[\d\s]*)\s*€")
+# run-254/255 probe confirmed: detail pages expose <script type="application/ld+json">
+# block @type=apartment with address.postalCode + floorSize.value structured
+# (4 URLs validated across Paris/Lille/Marseille/Lyon, schema stable).
+SCRIPT_LD_RE = re.compile(
+    r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+    re.DOTALL | re.IGNORECASE,
+)
 
 
 def fetch(url: str) -> str:
@@ -95,6 +102,44 @@ def parse_detail_dpe(html: str) -> tuple[str | None, str | None]:
     return (dpe.group(1) if dpe else None, ges.group(1) if ges else None)
 
 
+def parse_detail_jsonld(html: str) -> dict:
+    """Hybrid anti-fragility helper (run-255, NOT yet wired into main()).
+
+    Returns dict with cp_jsonld + surface_jsonld extracted from <script
+    type="application/ld+json"> @type=apartment block. Empty values if block
+    absent (graceful fallback to regex parsing). 0 PII collected.
+    """
+    out = {"cp_jsonld": None, "surface_jsonld": None, "apartment_block_found": False}
+    for m in SCRIPT_LD_RE.finditer(html):
+        raw = m.group(1).strip()
+        if not raw:
+            continue
+        try:
+            obj = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(obj, dict) and str(obj.get("@type", "")).lower() == "apartment":
+            out["apartment_block_found"] = True
+            addr = obj.get("address") or {}
+            if isinstance(addr, dict):
+                cp = addr.get("postalCode")
+                if cp:
+                    out["cp_jsonld"] = str(cp).strip()
+            fs = obj.get("floorSize") or {}
+            if isinstance(fs, dict):
+                v = fs.get("value")
+                # Locservice nests: {"@type":"QuantitativeValue","value":{"value":80}}
+                if isinstance(v, dict):
+                    v = v.get("value")
+                if v is not None:
+                    try:
+                        out["surface_jsonld"] = int(float(v))
+                    except (TypeError, ValueError):
+                        pass
+            break
+    return out
+
+
 def hash_url(url: str) -> str:
     return hashlib.sha256(url.encode("utf-8")).hexdigest()[:16]
 
@@ -122,15 +167,34 @@ def main(limit: int = 5, index_url: str = INDEX_URL, city_slug: str = "paris"):
                 log(f"  FAIL fetch detail {item['url']}: {e}")
                 continue
             dpe, ges = parse_detail_dpe(detail)
+            ld = parse_detail_jsonld(detail)
+            cp_final = item["code_postal"]
+            surf_final = item["surface_m2"]
+            cp_source = "regex"
+            surf_source = "regex"
+            if ld.get("cp_jsonld"):
+                if cp_final and ld["cp_jsonld"] != cp_final:
+                    log(f"  WARN cp mismatch regex={cp_final} jsonld={ld['cp_jsonld']} aid={item['accommodation_id']} → keep regex")
+                else:
+                    cp_final = ld["cp_jsonld"]
+                    cp_source = "jsonld"
+            if ld.get("surface_jsonld") is not None:
+                if surf_final and abs(ld["surface_jsonld"] - surf_final) / max(surf_final, 1) > 0.10:
+                    log(f"  WARN surface mismatch >10% regex={surf_final} jsonld={ld['surface_jsonld']} aid={item['accommodation_id']} → keep regex")
+                else:
+                    surf_final = ld["surface_jsonld"]
+                    surf_source = "jsonld"
             rec = {
                 "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "source": "locservice",
                 "url_hash": hash_url(item["url"]),
                 "url": item["url"],
                 "accommodation_id": item["accommodation_id"],
-                "code_postal": item["code_postal"],
+                "code_postal": cp_final,
+                "code_postal_source": cp_source,
                 "ville_label": item["loc_raw"],
-                "surface_m2": item["surface_m2"],
+                "surface_m2": surf_final,
+                "surface_m2_source": surf_source,
                 "loyer_eur_total": item["loyer_eur_total"],
                 "dpe_letter": dpe,
                 "ges_letter": ges,

@@ -1,0 +1,13 @@
+paris|https://www.locservice.fr/paris-75/location.html|done|2026-05-17T21:42Z
+lyon|https://www.locservice.fr/rhone-69/location.html|done|2026-05-17T21:42Z
+lille|https://www.locservice.fr/nord-59/location.html|done|2026-05-17T22:46:03Z
+marseille|https://www.locservice.fr/bouches-du-rhone-13/location.html|done|2026-05-17T21:42Z
+nantes|https://www.locservice.fr/loire-atlantique-44/location.html|done|2026-05-17T21:42Z
+toulouse|https://www.locservice.fr/haute-garonne-31/location.html|done|2026-05-17T21:42Z
+bordeaux|https://www.locservice.fr/gironde-33/location.html|done|2026-05-17T21:42Z
+montpellier|https://www.locservice.fr/herault-34/location-herault.html|done|2026-05-17T21:42Z
+grenoble|https://www.locservice.fr/grenoble-38/location.html|done|2026-05-17T21:42Z
+nice|https://www.locservice.fr/alpes-maritimes-06/location-alpes-maritimes.html|done|2026-05-17T21:42Z
+strasbourg|https://www.locservice.fr/bas-rhin-67/location-bas-rhin.html|done|2026-05-17T21:42Z
+seine-saint-denis|https://www.locservice.fr/seine-saint-denis-93/location.html|done|2026-05-17T21:42Z
+rennes|https://www.locservice.fr/ille-et-vilaine-35/location-ille-et-vilaine.html|done|2026-05-17T22:00:36Z

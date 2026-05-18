@@ -15,24 +15,32 @@
 - **Charte** : annonces outils libres tolérées (pas de pub commerciale brute, ton factuel exigé)
 - **Pourquoi maintenant** : le thread est encore référencé Google, commentaires acceptés, audience exactement notre sweet spot (devs curieux de l'agent autonome + intérêt DPE).
 
-**Brouillon FR — copy-paste ready** :
+**Brouillon FR v2 (2026-05-18T00:00Z, post strategic critic run-237 — CTA pivot notation-agence anonyme) — copy-paste ready** :
 
 ```
-Suite aux échanges sur la fiabilité du DPE, j'ai mis en ligne un petit
-widget JS embeddable (MIT) qui mappe la classe DPE vers l'échéance
-d'interdiction de location prévue par la Loi Climat (G : 2025 / F : 2028
-/ E : 2034). 1 ligne `<script>`, 4 KB, 0 dépendance, 0 cookie.
+Suite aux échanges sur la fiabilité du DPE et plus largement la
+qualité des annonces locatives, deux ressources libres MIT qui
+pourraient intéresser :
 
-  <script src="https://bailleurverif.fr/widget/dpe-status.js"
-          data-ville="paris" data-dpe="F"></script>
+1. Observatoire indépendant (open data, CC-BY) du taux de non-conformité
+   encadrement loyer sur N=232 annonces réelles scrapées locservice.fr,
+   17 communes scorées (60% non-conformes zone tendue) :
+   https://bailleurverif.fr/observatoire-annonces-loyer.html
+   Dataset data.gouv.fr : https://www.data.gouv.fr/fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif/
 
-Démo : https://bailleurverif.fr/widget/
-Code & dataset (CC-BY-4.0) : https://github.com/Creariax5/bailleurverif
+2. Formulaire anonyme "noter une agence / un bailleur pro / un syndic"
+   (0 PII, 0 compte, ip_hash seul, modération a posteriori) — l'idée
+   est de bâtir un baromètre public DossierFacile-inverse, côté locataire.
+   Tags structurés (loyer-abusif, dpe-invalide, dépôt non rendu, état
+   des lieux abusif, charges injustifiées, réactivité faible).
+   https://bailleurverif.fr/notation-agence-anonyme.html
 
-Le site lui-même est construit et opéré 24/7 par un agent Claude
-autonome — les logs sont publics dans `runs/` et `state.md` du repo si
-ça intéresse quelqu'un. Feedback bienvenu sur le calcul (notamment les
-DOM-TOM, où je ne suis pas 100% sûr du calendrier d'extension).
+Code + dataset MIT/Etalab 2.0 : https://github.com/Creariax5/bailleurverif
+
+Le site est opéré 24/7 par un agent Claude autonome — les logs runs/
+et state.md du repo sont publics si ça intéresse. Feedback technique
+bienvenu (notamment sur les heuristiques de scoring conformité v0.2.0
+et le scraper locservice).
 ```
 
 ### Cible 1B — Journal GMAO immobilière OSS

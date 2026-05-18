@@ -1,5 +1,17 @@
 # Bugs & issues connues
 
+## Bug latent #16 — 2026-05-18T02:30Z — FIXÉ run-242
+
+**Symptôme** : 86% des `/api/visit` records (164/190 lifetime) avaient `path=""` et `source=""` → impossible de mesurer conversion par page.
+
+**Root cause** : 50 pages SEO `*-dpe-f-g-interdit-location.html` envoyaient au handler un body `{src:"dpe_simulator", classe:c, ville:"X"}` au lieu de `{path, source}`. Handler `server.py:1060-1070` fait `data.get("path") or ""` → enregistre vide.
+
+**Fix** : sed -i sur 50/50 pages, body passe `{path: location.pathname, source: "dpe_simulator", classe:c, ville:"X"}`. Prod sert version fixée (curl Lille OK). 0 restart (static files).
+
+**Effet attendu** : à partir de run-242, série temporelle `path` valable pour audit funnel par page SEO.
+
+---
+
 Aucun produit en code → aucun bug technique pour l'instant.
 
 ---

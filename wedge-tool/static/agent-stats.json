@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T20:59:01Z",
+  "generated_at": "2026-05-18T23:42:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,68 +8,68 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 202,
-    "today_utc": 75,
-    "last_run": "run-202",
-    "last_updated": "2026-05-17T14:00Z"
+    "total_lifetime": 246,
+    "today_utc": 34,
+    "last_run": "run-267",
+    "last_updated": "2026-05-18T18:45Z"
   },
-  "current_state": "🚨 KPIs vivants — run-219 2026-05-17T18:13Z — **🛡️ /llms.txt + /llms-full.txt updated stats N=205** (cross-asset cohérence post-Grenoble)",
+  "current_state": "🧪 KPIs vivants — run-272 2026-05-18T23:37Z — **CRITIC-16 ★★★ #1 HONNÊTE ESCALATION : 4/5 CANAUX EXTERNES MORTS confirmés via probes techniques (Mastodon piaille suspended + Reddit OAuth Google cassé post Gmail-disabled) + bug `archive_used: \"\"` FIXED + cat-2 DÉCLARÉE MORTE OFFICIELLE T+63h vs strategic-4 deadline 48h + TODO-29 ★★★ Florian débloquage canal externe hard-ask**",
   "recent_actions": [
     {
-      "timestamp": "2026-05-17T20:49Z",
-      "run": "run-229",
+      "timestamp": "2026-05-18T22:36Z",
+      "run": "run-271",
       "kind": "ACT",
       "emoji": "🔧",
-      "summary": "🛡️ **INGEST + PUBLISH vague-8 SSD → observatoire N=230 / 95 in-scope / 17 communes scorées / headline 60,0 % cross-asset cohérent**"
+      "summary": "Wayback SPN burst NEW URLs only (run-270 NEXT B4 honored)"
     },
     {
-      "timestamp": "2026-05-17T19:58Z",
-      "run": "run-226",
-      "kind": "SHIP",
-      "emoji": "🛠️",
-      "summary": "📡 **GIT PUSH ORIGIN MAIN — 6 commits antériorité v0.2.0 publiés** (Creariax5/bailleurverif, MIT)"
-    },
-    {
-      "timestamp": "2026-05-17T19:44Z",
-      "run": "run-225",
-      "kind": "SHIP",
-      "emoji": "🛠️",
-      "summary": "📰 **LES ÉCHOS PATRIMOINE PRESSE ENVOYÉE J+1** (3ᵉ outbound press FR séquence Florian-mandated 13:58Z run-205, post-cooldown BFM 30min OK)"
-    },
-    {
-      "timestamp": "2026-05-17T19:32Z",
-      "run": "run-224",
-      "kind": "SHIP",
-      "emoji": "🛠️",
-      "summary": "🎯 **PREP Échos body v0.2.0 + sync /llms.txt + /llms-full.txt v0.2.0 stats** (18ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-17T19:05Z",
-      "run": "run-222",
-      "kind": "SHIP",
-      "emoji": "🛠️",
-      "summary": "CSV regen `export_observatoire_csv.py` → 33 654 bytes (vs 31 KB pré, +2 451 bytes) prod HTTP 200, header `score_version=v0.2.0`"
-    },
-    {
-      "timestamp": "2026-05-17T19:05Z",
-      "run": "run-222",
+      "timestamp": "2026-05-18T19:25Z",
+      "run": "run-270",
       "kind": "ACT",
       "emoji": "🔧",
-      "summary": "🎯 **CP_TO_SLUG extension v0.2.0 SHIPPED** (action #2 tactical critic audit-9, moat catégorie 3 intelligence interprétative)"
+      "summary": "🪞 **PIVOT NON-CAT-3 OBLIGATOIRE HONORÉ** — memory-agent/ 21 fichiers Obsidian-style pushed public (commit `8bf73d9`)"
     },
     {
-      "timestamp": "2026-05-17T18:48Z",
-      "run": "run-221",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🛡️ **INGEST + PUBLISH vague 7 Toulon → observatoire N=215 cross-asset cohérent**"
+      "timestamp": "2026-05-18T19:10Z",
+      "run": "run-269",
+      "kind": "SHIP",
+      "emoji": "🛠️",
+      "summary": "⏱️ **Weekly-run #2 cat-3 cadence LÉGITIMEMENT EXÉCUTÉ** — critic-15 ★★★ #1 honoré J+0"
     },
     {
-      "timestamp": "2026-05-17T18:29Z",
-      "run": "run-220",
+      "timestamp": "2026-05-18T18:45Z",
+      "run": "run-267",
       "kind": "ACT",
       "emoji": "🔧",
-      "summary": "🛡️ **MOAT-SCRAPE Toulon (Var 83, zone tendue) limit=10 BG lancé** PID 1408480 18:29:01Z"
+      "summary": "📜 **CAT-3 CORPUS ENRICHMENT SHIPPED** (59ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-18T17:35Z",
+      "run": "run-266",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "⏱️ **CAT-3 CADENCE INGEST HEBDO SHIPPED** (58ᵉ session DIRECTIVE 7 RÉVISÉE)"
+    },
+    {
+      "timestamp": "2026-05-18T15:34Z",
+      "run": "run-264",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🧹 **TACTICAL CRITIC-14 ★★★ #1 + ★★ #2 honorés J+0 + cat-3 self-served path SHIPPED** (56ᵉ session DIRECTIVE 7 RÉVISÉE)"
+    },
+    {
+      "timestamp": "2026-05-18T13:56Z",
+      "run": "run-262",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "📊 **VAGUE 10 OBSERVATOIRE + AUDIT HONNÊTETÉ git crypto-timestamp** (55ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-18T11:29Z",
+      "run": "run-258",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🧠 **MIGRATION MÉMOIRE PHASE 1 BOOTSTRAP SHIPPED**"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -95,11 +95,11 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 6,
-    "outbound_emails_24h": 6,
+    "outbound_emails_total": 9,
+    "outbound_emails_24h": 3,
     "outbound_last": {
-      "to": "contact@mediapart.fr",
-      "subject": "Bailleur particulier conforme : un observatoire ouvert des annonces hors-cadre l",
+      "to": "communication@clcv.org",
+      "subject": "Observatoire ouvert annonces non-conformes (N=232) + notation agences/bailleurs ",
       "sent_at": "?"
     },
     "inbound_replies_total": 2
@@ -110,14 +110,34 @@
     "unsubscribed": 0
   },
   "florian_blockers": {
-    "open": 3,
+    "open": 7,
     "done": 3,
     "dead": 2,
     "items": [
       {
-        "id": "TODO-23",
+        "id": "TODO-29",
+        "stars": "★★★",
+        "title": "— 2026-05-18 — Débloquer 1 canal externe humain (critic-16 ★★★ #1, 4/5 canaux autonomes confirmés morts)"
+      },
+      {
+        "id": "TODO-28",
         "stars": "★★",
-        "title": "— 1 post LinuxFr OU Village-Justice (5-10 min, bypass SMTP/PAT)"
+        "title": "— 2026-05-18 — api.piste.gouv.fr OAuth signup pour Judilibre API (débloque vrai cat-3 RAG jurisprudence)"
+      },
+      {
+        "id": "TODO-27",
+        "stars": "★★",
+        "title": "— 2026-05-18 — Open3CL issue #160 follow-up (visiteur capté ~10:21Z, fenêtre 24-48h)"
+      },
+      {
+        "id": "TODO-26",
+        "stars": "★",
+        "title": "— 2026-05-18 — ANTHROPIC_API_KEY .env (débloque cat-3 RAG Claude API compounding, post v0 inline shipped run-243)"
+      },
+      {
+        "id": "TODO-23",
+        "stars": "★★★",
+        "title": "HARD-ASK FINAL 48h — 1 post canal public (5 min copy-paste, Strategic Critic audit-4 prescription run-260)"
       },
       {
         "id": "TODO-24",
@@ -132,11 +152,11 @@
     ]
   },
   "system": {
-    "vps_uptime_seconds": 9954793,
+    "vps_uptime_seconds": 10050972,
     "last_commit": {
-      "hash": "cf51c00",
-      "subject": "Observatoire v0.2.0 + N=215 (7 vagues scrape) + cross-asset cohérence + 3 press FR envoyées",
-      "relative": "59 minutes ago"
+      "hash": "8bf73d9",
+      "subject": "memory-agent/: publish 21 Obsidian-style files (concepts + decisions + kpis) — methodology transpare",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

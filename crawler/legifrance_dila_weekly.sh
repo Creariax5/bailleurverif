@@ -31,11 +31,12 @@ touch "${INDEX_FILE}" "${RUNS_LOG}"
 
 echo "[weekly $STAMP] fetch latest-delta keywords=${KEYWORDS} max=${MAX_ARTICLES}"
 RAW_OUT="${OUT_DIR}/legi-weekly-${STAMP}.jsonl"
+FETCH_STDERR="${OUT_DIR}/legi-weekly-${STAMP}.stderr"
 python3 crawler/legifrance_dila_fetch.py \
   --latest-delta \
   --keywords "${KEYWORDS}" \
   --max-articles "${MAX_ARTICLES}" \
-  --out "${RAW_OUT}"
+  --out "${RAW_OUT}" 2> >(tee "${FETCH_STDERR}" >&2)
 
 # Articles scanned/extracted in this run
 SCANNED=$(wc -l < "${RAW_OUT}" 2>/dev/null || echo 0)
@@ -91,7 +92,9 @@ PY
 )
 
 # Append weekly run summary (one JSON line)
-ARCHIVE_USED=$(grep -o '"source_archive": *"[^"]*"' "${RAW_OUT}" 2>/dev/null | head -1 | sed 's/.*"\([^"]*\)"$/\1/' || echo "")
+# Archive name is announced by the fetcher on stderr: "[latest] picked LEGI_YYYYMMDD-HHMMSS.tar.gz"
+ARCHIVE_USED=$(grep -oE 'LEGI_[0-9]{8}-[0-9]{6}\.tar\.gz' "${FETCH_STDERR}" 2>/dev/null | head -1 || echo "")
+rm -f "${FETCH_STDERR}"
 SUMMARY=$(python3 -c "
 import json
 print(json.dumps({

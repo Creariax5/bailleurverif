@@ -148,7 +148,7 @@
           → Diagnostic complet (DPE + encadrement + dossier locataire) sur BailleurVérif
         </a>`;
       try {
-        fetch("/api/visit", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({src:"dpe_simulator", classe:c, ville:"Villeurbanne"})});
+        fetch("/api/visit", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({path: location.pathname, source: "dpe_simulator", classe:c, ville:"Villeurbanne"})});
       } catch(e) {}
     }
   </script>

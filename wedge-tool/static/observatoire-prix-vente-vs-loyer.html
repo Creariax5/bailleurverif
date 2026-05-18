@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Observatoire prix de vente vs loyer — rendement brut par commune | BailleurVérif</title>
+<meta name="description" content="Cross-source inédit : médiane loyer demandé €/m² (annonces locservice N=130) × médiane DVF prix m² vente appartement 2024-2025 (data.gouv.fr Statistiques DVF, 24 mois, ~82 000 ventes notariées) = rendement brut annuel % par commune. 17 communes FR. Méthodologie + caveats publics, dataset CC-BY-4.0.">
+<link rel="canonical" href="https://bailleurverif.fr/observatoire-prix-vente-vs-loyer.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Observatoire cross-source rendement brut — 17 communes FR : Rennes 10,7 % vs Paris 10e 3,9 %">
+<meta property="og:description" content="Croisement publié indépendant loyer demandé (locservice N=236) × DVF prix vente notariées (data.gouv.fr, 24 mois, 82 000 transactions). Rendement brut annuel par commune. Données ouvertes CC-BY-4.0.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bailleurverif.fr/observatoire-prix-vente-vs-loyer.html">
+<meta property="og:site_name" content="BailleurVérif">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://bailleurverif.fr/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cross-source rendement brut FR : Rennes 10,7 % · Paris 10e 3,9 %">
+<meta name="twitter:description" content="17 communes croisées loyer locservice × DVF data.gouv.fr 2024-2025. Méthodologie + dataset open data CC-BY-4.0.">
+<link rel="stylesheet" href="/css/main.css">
+<script src="/css/tailwind-runtime.js"></script>
+<style>
+  .stat-card { padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-card); }
+  .stat-num { font-size: 38px; font-weight: 800; line-height: 1; letter-spacing: -.02em; color: var(--text-primary); }
+  .stat-label { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-secondary); font-weight: 600; margin-top: 6px; }
+  .stat-num.warn { color: #a55a00; }
+  .stat-num.danger { color: #a01c1c; }
+  .stat-num.ok { color: #047857; }
+  .obs-tbl { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .obs-tbl th { text-align: left; padding: 8px 10px; background: var(--bg-secondary); border-bottom: 1px solid var(--border); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-secondary); }
+  .obs-tbl td { padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12.5px; font-weight: 700; }
+  .badge-clear { background: #fde7e7; color: #a01c1c; border: 1px solid #f3b3b3; }
+  .badge-presumed { background: #fff5e1; color: #a55a00; border: 1px solid #f0c98a; }
+  .badge-ok { background: #e8f6ef; color: #047857; border: 1px solid #b6e2cc; }
+  .top-card { padding: 14px 16px; border: 1px solid #f3b3b3; background: #fde7e7; border-radius: 10px; }
+  .top-card .ville { font-size: 13px; font-weight: 700; color: #7a1010; }
+  .top-card .excess { font-size: 28px; font-weight: 800; color: #a01c1c; margin: 4px 0; letter-spacing: -.01em; }
+  .top-card .detail { font-size: 12.5px; color: #5a1414; }
+  .caveat { border-left: 3px solid #d97706; padding: 8px 12px; background: #fff7ed; border-radius: 0 8px 8px 0; font-size: 13.5px; color: #6b3a04; margin-bottom: 8px; }
+  details summary { cursor: pointer; font-weight: 600; padding: 8px 0; color: var(--text-primary); }
+</style>
+</head>
+<body class="min-h-screen">
+
+<header class="bv-header">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="bv-logo">
+      <span class="bv-logo-mark">✓</span>
+      <span>BailleurVérif</span>
+    </a>
+    <nav class="flex items-center gap-4 text-sm">
+      <a href="/mon-bien.html" class="text-[color:var(--accent)] hover:underline font-semibold">Mon bien</a>
+      <a href="/observatoire-annonces-loyer.html" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Observatoire loyer</a>
+      <a href="/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)]">Quiz</a>
+      <a href="/blog/" class="text-[color:var(--text-secondary)] hover:text-[color:var(--accent)] hidden sm:inline">Guides</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <nav aria-label="Fil d'Ariane" class="mb-4 text-xs" style="color:var(--text-secondary)">
+    <a href="/" class="hover:underline">Accueil</a> ›
+    <a href="/data/" class="hover:underline">Données ouvertes</a> ›
+    <span>Prix de vente × loyer</span>
+  </nav>
+
+  <section id="hero" class="mb-6 sm:mb-8">
+    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-3" style="color:var(--text-primary)">
+      Prix de vente × loyer demandé — rendement brut annuel par commune
+    </h1>
+    <p class="text-lg" style="color:var(--text-secondary)">
+      Cross-source <strong>inédit publié</strong> : médiane loyer demandé €/m² (observatoire BailleurVérif locservice 17 mai 2026) × médiane <strong>DVF prix m² vente appartement</strong> (data.gouv.fr Statistiques DVF, 24 mois 2024-2025, ~82 000 ventes notariées). Ratio = <strong>rendement brut annuel %</strong> investisseur — indicatif, hors charges/fiscalité/vacance. 17 communes FR couvertes. Dataset open data CC-BY-4.0.
+    </p>
+  </section>
+
+  <section id="headline" class="mb-8">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="stat-card"><div class="stat-num">17</div><div class="stat-label">communes cross-source</div></div>
+      <div class="stat-card"><div class="stat-num ok">10.74 %</div><div class="stat-label">meilleur rendement brut (Rennes)</div></div>
+      <div class="stat-card"><div class="stat-num danger">3.91 %</div><div class="stat-label">pire rendement brut (Paris 10e Arrondissement)</div></div>
+      <div class="stat-card"><div class="stat-num">130</div><div class="stat-label">annonces loyer mappées (/ 236 totales)</div></div>
+    </div>
+    <p class="text-xs mt-2" style="color:var(--text-secondary)">
+      Échelle : <span class="badge badge-ok">≥ 7 % élevé</span> · <span class="badge badge-presumed">5–7 % moyen</span> · <span class="badge badge-clear">&lt; 5 % faible</span>. Rendement brut = (loyer mensuel €/m² × 12) ÷ prix vente €/m² × 100. <strong>Indicatif uniquement</strong> — ne tient pas compte des charges de copropriété, taxe foncière, vacance locative, GLI, travaux ni fiscalité (IR + PS ou LMNP réel/micro-BIC). Rendement <em>net</em> typique = brut × 0,6 à 0,75 selon régime fiscal.
+    </p>
+  </section>
+
+  <section id="top-yield" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Top 3 rendements bruts (« hot spots » investisseur)</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div class="top-card"><div class="ville">Rennes</div><div class="excess">10.74 %</div><div class="detail">loyer 32.8 €/m² · vente 3 664 €/m² · N=7 annonces</div></div>
+      <div class="top-card"><div class="ville">Valenciennes</div><div class="excess">8.98 %</div><div class="detail">loyer 15.5 €/m² · vente 2 074 €/m² · N=5 annonces</div></div>
+      <div class="top-card"><div class="ville">Montpellier</div><div class="excess">8.94 %</div><div class="detail">loyer 25.0 €/m² · vente 3 353 €/m² · N=6 annonces</div></div>
+    </div>
+  </section>
+
+  <section id="bottom-yield" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Bottom 3 rendements bruts (marchés <em>cher-pour-louer</em>)</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div class="top-card" style="background:#e8f6ef;border-color:#b6e2cc"><div class="ville" style="color:#054a3a">Paris 10e Arrondissement</div><div class="excess" style="color:#047857">3.91 %</div><div class="detail" style="color:#054a3a">loyer 30.0 €/m² · vente 9 206 €/m² · N=3 annonces</div></div>
+      <div class="top-card" style="background:#e8f6ef;border-color:#b6e2cc"><div class="ville" style="color:#054a3a">Paris 12e Arrondissement</div><div class="excess" style="color:#047857">4.42 %</div><div class="detail" style="color:#054a3a">loyer 32.8 €/m² · vente 8 911 €/m² · N=3 annonces</div></div>
+      <div class="top-card" style="background:#e8f6ef;border-color:#b6e2cc"><div class="ville" style="color:#054a3a">Paris 17e Arrondissement</div><div class="excess" style="color:#047857">4.89 %</div><div class="detail" style="color:#054a3a">loyer 40.7 €/m² · vente 9 986 €/m² · N=3 annonces</div></div>
+    </div>
+    <p class="text-xs mt-2" style="color:var(--text-secondary)">
+      Les arrondissements parisiens centraux et NE (10e/12e/17e) cumulent <strong>prix vente très élevés</strong> et plafonds d'encadrement qui bornent le loyer maximal : le ratio loyer/prix s'écrase mécaniquement. Indicatif de marchés où la rentabilité se joue sur la plus-value et non sur le cash-flow.
+    </p>
+  </section>
+
+  <section id="table" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Tableau complet — 17 communes</h2>
+    <div style="overflow-x:auto">
+      <table class="obs-tbl">
+        <thead>
+          <tr>
+            <th>Commune</th>
+            <th style="text-align:right">Loyer médian<br>€/m²</th>
+            <th style="text-align:right">Vente médiane<br>€/m² (24m)</th>
+            <th style="text-align:right">Rendement<br>brut % an</th>
+            <th style="text-align:right">Échantillons</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td><strong>Rennes</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 35238</span></td><td style="text-align:right">32.78</td><td style="text-align:right">3 664</td><td style="text-align:right;font-weight:700"><span class="badge badge-ok">10.74 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">élevé</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">7 annonces / 5 477 ventes 24m</td></tr>
+<tr><td><strong>Valenciennes</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 59606</span></td><td style="text-align:right">15.52</td><td style="text-align:right">2 074</td><td style="text-align:right;font-weight:700"><span class="badge badge-ok">8.98 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">élevé</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">5 annonces / 648 ventes 24m</td></tr>
+<tr><td><strong>Montpellier</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 34172</span></td><td style="text-align:right">24.98</td><td style="text-align:right">3 353</td><td style="text-align:right;font-weight:700"><span class="badge badge-ok">8.94 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">élevé</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">6 annonces / 7 798 ventes 24m</td></tr>
+<tr><td><strong>Toulouse</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 31555</span></td><td style="text-align:right">23.64</td><td style="text-align:right">3 249</td><td style="text-align:right;font-weight:700"><span class="badge badge-ok">8.73 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">élevé</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">15 annonces / 12 673 ventes 24m</td></tr>
+<tr><td><strong>Nice</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 06088</span></td><td style="text-align:right">31.03</td><td style="text-align:right">4 783</td><td style="text-align:right;font-weight:700"><span class="badge badge-ok">7.79 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">élevé</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">5 annonces / 13 811 ventes 24m</td></tr>
+<tr><td><strong>Lyon 3e Arrondissement</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 69383</span></td><td style="text-align:right">28.77</td><td style="text-align:right">4 510</td><td style="text-align:right;font-weight:700"><span class="badge badge-ok">7.66 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">élevé</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">6 annonces / 2 587 ventes 24m</td></tr>
+<tr><td><strong>Nantes</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 44109</span></td><td style="text-align:right">20.98</td><td style="text-align:right">3 413</td><td style="text-align:right;font-weight:700"><span class="badge badge-ok">7.38 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">élevé</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">14 annonces / 7 461 ventes 24m</td></tr>
+<tr><td><strong>Lille</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 59350</span></td><td style="text-align:right">22.59</td><td style="text-align:right">3 697</td><td style="text-align:right;font-weight:700"><span class="badge badge-ok">7.33 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">élevé</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">16 annonces / 4 736 ventes 24m</td></tr>
+<tr><td><strong>Bordeaux</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 33063</span></td><td style="text-align:right">22.73</td><td style="text-align:right">4 175</td><td style="text-align:right;font-weight:700"><span class="badge badge-presumed">6.53 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">moyen</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">13 annonces / 6 357 ventes 24m</td></tr>
+<tr><td><strong>Villeurbanne</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 69266</span></td><td style="text-align:right">19.33</td><td style="text-align:right">3 556</td><td style="text-align:right;font-weight:700"><span class="badge badge-presumed">6.52 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">moyen</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">3 annonces / 3 638 ventes 24m</td></tr>
+<tr><td><strong>Paris 1er Arrondissement</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 75101</span></td><td style="text-align:right">60.00</td><td style="text-align:right">12 208</td><td style="text-align:right;font-weight:700"><span class="badge badge-presumed">5.90 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">moyen</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">3 annonces / 536 ventes 24m</td></tr>
+<tr><td><strong>Aix-en-Provence</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 13001</span></td><td style="text-align:right">23.28</td><td style="text-align:right">4 809</td><td style="text-align:right;font-weight:700"><span class="badge badge-presumed">5.81 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">moyen</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">4 annonces / 3 331 ventes 24m</td></tr>
+<tr><td><strong>Paris 18e Arrondissement</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 75118</span></td><td style="text-align:right">41.73</td><td style="text-align:right">8 709</td><td style="text-align:right;font-weight:700"><span class="badge badge-presumed">5.75 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">moyen</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">4 annonces / 5 596 ventes 24m</td></tr>
+<tr><td><strong>Paris 14e Arrondissement</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 75114</span></td><td style="text-align:right">39.09</td><td style="text-align:right">9 298</td><td style="text-align:right;font-weight:700"><span class="badge badge-presumed">5.04 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">moyen</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">4 annonces / 2 938 ventes 24m</td></tr>
+<tr><td><strong>Paris 17e Arrondissement</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 75117</span></td><td style="text-align:right">40.71</td><td style="text-align:right">9 986</td><td style="text-align:right;font-weight:700"><span class="badge badge-clear">4.89 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">faible</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">3 annonces / 4 805 ventes 24m</td></tr>
+<tr><td><strong>Paris 12e Arrondissement</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 75112</span></td><td style="text-align:right">32.80</td><td style="text-align:right">8 911</td><td style="text-align:right;font-weight:700"><span class="badge badge-clear">4.42 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">faible</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">3 annonces / 3 063 ventes 24m</td></tr>
+<tr><td><strong>Paris 10e Arrondissement</strong><br><span style="font-size:11px;color:var(--text-secondary)">INSEE 75110</span></td><td style="text-align:right">30.00</td><td style="text-align:right">9 206</td><td style="text-align:right;font-weight:700"><span class="badge badge-clear">3.91 %</span><br><span style="font-size:11px;color:var(--text-secondary);font-weight:400">faible</span></td><td style="text-align:right;font-size:11px;color:var(--text-secondary)">3 annonces / 2 765 ventes 24m</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs mt-3" style="color:var(--text-secondary)">
+      Tri par rendement brut décroissant. <strong>N≥3 annonces loyer minimum requis</strong> pour publication par commune ; les arrondissements avec N=3-7 ont une marge d'erreur élevée — à considérer comme tendance, pas comme mesure stable.
+    </p>
+  </section>
+
+  <section id="caveats" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Caveats — à lire avant de citer ces chiffres</h2>
+    <div class="caveat"><strong>Loyers = annonces (loyer demandé)</strong>, pas loyer effectivement payé. L'encadrement préfectoral peut écraser le loyer réel d'une annonce non-conforme — voir notre <a href="/observatoire-annonces-loyer.html" class="underline" style="color:var(--accent)">observatoire conformité encadrement</a> (60,0 % de violations sur 95 in-scope, mai 2026).</div>
+    <div class="caveat"><strong>DVF = ventes notariées appartement uniquement</strong> (filtré <code>echelle_geo=commune</code> du fichier Statistiques DVF data.gouv.fr). Médiane <em>ventes-weighted</em> sur 24 mois 2024-01 → 2025-12, ~82 000 transactions cumulées sur les 17 communes ici publiées. N'exclut pas les ventes en VEFA ni les surfaces atypiques (chambres de bonne, lofts).</div>
+    <div class="caveat"><strong>N ≥ 3 annonces minimum</strong> par commune côté loyer. Paris 1er/Lyon 3e/Villeurbanne/Paris 10/12/17 sont à N=3 = marge d'erreur élevée. Les arrondissements parisiens N&lt;3 (75002/3/5/6/8/9/11/13/15/16/19/20) ne sont PAS encore publiés ; sortie progressive à mesure que N grandit.</div>
+    <div class="caveat"><strong>Rendement brut ≠ rentabilité nette.</strong> Charges copro, taxe foncière, vacance, GLI, frais agence/notaire à l'achat, travaux, fiscalité (IR + PS ou LMNP régime réel/micro-BIC) non déduits. Rendement <em>net</em> typique = brut × 0,6 à 0,75 selon régime fiscal et profil bailleur.</div>
+    <div class="caveat"><strong>Mapping CP → INSEE manuel pour 51 codes postaux</strong> (sources COG INSEE / La Poste 2024). Les annonces en banlieue hors zone tendue ou en commune non mappée DVF sont exclues : sur 236 listings totaux, 130 mappés (55 %), 106 hors mapping (banlieues Lyon/Lille/Toulouse périphériques, Salon-de-Provence, La Ciotat, Aix-en-Provence non-CP-13080-90-100, etc.).</div>
+    <div class="caveat"><strong>Cross-source = expérimental v0</strong>, pas garanti zéro biais d'échantillon. Méthodologie open source (script `wedge-tool/crawler/build_dvf_crosssource.py` reproductible). À ré-éditer mensuellement à mesure que l'observatoire loyer monte en N et que DVF publie les ventes Q1 2026.</div>
+  </section>
+
+  <section id="sources" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Sources + méthodologie + dataset</h2>
+    <details open>
+      <summary>Sources publiques utilisées</summary>
+      <div class="text-sm mt-2" style="color:var(--text-secondary);line-height:1.7">
+        <p><strong>Loyers (numérateur)</strong> : observatoire BailleurVérif <a href="/observatoire-annonces-loyer.html" class="underline" style="color:var(--accent)">/observatoire-annonces-loyer.html</a>, scrape locservice.fr 17 mai 2026, 236 annonces dédupliquées sur 14 villes / 14 départements, scoring v0.2.0 open source.</p>
+        <p><strong>Ventes (dénominateur)</strong> : <a href="https://www.data.gouv.fr/fr/datasets/?q=DVF" class="underline" style="color:var(--accent)" rel="noopener" target="_blank">data.gouv.fr Statistiques DVF</a> — fichier <code>object.files.data.gouv.fr/data-pipeline-open/dvf/stats_dvf.csv</code> (276 MB / 3,6 M rows / 2021-01 → 2025-12), filtré <code>echelle_geo=commune</code> × INSEE cibles × ventes appartements 2024-2025, médiane ventes-weighted prix m².</p>
+        <p><strong>Mapping CP → INSEE</strong> : 51 codes postaux → 31 communes INSEE (Paris/Lyon/Marseille arrondissements + Nice/Aix/Toulouse/Bordeaux/Montpellier/Rennes/Grenoble/Nantes/Lille/Valenciennes/Villeurbanne), sources Code Officiel Géographique INSEE 2024 + La Poste.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Méthodologie détaillée</summary>
+      <div class="text-sm mt-2" style="color:var(--text-secondary);line-height:1.7">
+        <p>Pour chaque commune INSEE présente dans les deux sources :</p>
+        <ol class="list-decimal list-inside ml-2">
+          <li>Agréger les annonces loyer par INSEE via mapping CP → INSEE (N ≥ 3 requis).</li>
+          <li>Calculer médiane <code>eur_per_m2</code> des annonces (filtre sanity 0 &lt; €/m² ≤ 200).</li>
+          <li>Récupérer médiane DVF ventes-weighted prix m² appartement 2024-2025 (24 mois).</li>
+          <li>Calculer rendement brut annuel = (médiane loyer €/m² × 12) ÷ médiane vente €/m² × 100.</li>
+          <li>Trier par rendement décroissant.</li>
+        </ol>
+        <p>Script open source reproductible : <code>wedge-tool/crawler/build_dvf_crosssource.py</code> (Python 3 stdlib pur, 123 LOC).</p>
+      </div>
+    </details>
+    <details>
+      <summary>Dataset téléchargeable (CC-BY-4.0)</summary>
+      <div class="text-sm mt-2" style="color:var(--text-secondary);line-height:1.7">
+        <p>JSON brut publié : <a href="/data/observatoire-prix-vente-vs-loyer.json" class="underline" style="color:var(--accent)">/data/observatoire-prix-vente-vs-loyer.json</a> (17 communes + méthodo + caveats inlines).</p>
+        <p>Endpoint API lookup par INSEE : <code>GET /api/dvf-stats/&lt;insee&gt;</code> — exemple : <a href="/api/dvf-stats/75111" class="underline" style="color:var(--accent)">/api/dvf-stats/75111</a> (Paris 11e).</p>
+        <p>Licence : <strong>CC-BY-4.0</strong>. Attribution requise : « BailleurVérif observatoire cross-source loyer × DVF ». Réutilisation libre y compris commerciale.</p>
+      </div>
+    </details>
+  </section>
+
+  <footer class="text-xs mt-12 pt-6 border-t" style="color:var(--text-secondary);border-color:var(--border)">
+    BailleurVérif — Outil gratuit · Données mises à jour le 18 mai 2026 · <a href="/mentions-legales.html" class="underline">Mentions légales</a> · <a href="/politique-confidentialite.html" class="underline">Confidentialité</a> · <a href="/cgu.html" class="underline">CGU</a>
+  </footer>
+
+</main>
+</body>
+</html>

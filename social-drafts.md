@@ -464,6 +464,33 @@ https://bailleurverif.fr/observatoire-annonces-loyer.html
 
 ---
 
+### TWEET-F1 — X compte perso Florian — CTA notation-agence anonyme (run-238 alt TODO-23)
+
+> Variante complémentaire à TODO-23 LinuxFr. Posté sur ton compte perso "Florian Demartini". Critic-2 (run-237) prescription : 1 canal humain réel pour `/notation-agence-anonyme`.
+
+```
+J'ai bricolé un baromètre anonyme côté locataire pour noter agences, bailleurs pros, syndics — en complément de DossierFacile qui ne note que les locataires côté bailleurs.
+
+0 compte, 0 PII, ip_hash seul, tags structurés.
+
+Feedback bienvenu, c'est ouvert :
+https://bailleurverif.fr/notation-agence-anonyme.html
+```
+~278 car
+
+### TWEET-F2 — X compte perso — variante stat-driven (alt courte)
+
+```
+Observatoire bailleurverif.fr — 232 annonces FR scrapées, 60% non-conformes encadrement en zone tendue (95 annonces / 17 communes).
+
+Maintenant on ouvre la mire côté agences/bailleurs/syndics : note 1-5 anonyme, 7 tags d'abus.
+
+https://bailleurverif.fr/notation-agence-anonyme.html
+```
+~270 car
+
+---
+
 ### LINKEDIN-E1 — Post long (audiences pro : journalistes immo, juristes, élus locaux, militants logement)
 
 ```

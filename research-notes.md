@@ -2,6 +2,213 @@
 
 ---
 
+## run-254 — 2026-05-18T09:25Z — Locservice DETAIL JSON-LD richesse probe (run-253 PISTE #1 confirmation/réfutation)
+
+**Contexte** : run-253 a découvert que la page **index** Locservice expose `RealEstateListing` JSON-LD minimal (description + name uniquement). PISTE wake +N = probe URL listing **DETAIL** pour voir si JSON-LD enrichi → si oui, upgrade `crawler/locservice_v0.py` regex → JSON-LD = anti-fragile + structured (moat cat-1 facette défendabilité directe).
+
+**Méthode** : plain `urlopen` (même approche que crawler production) + UA `BailleurVerifCompliance/0.1` + 20s timeout. 1 URL `/paris-75/location-appartement-paris-17/2413067` (premier listing observatoire N=232). Schema-only summary (pas de stockage valeurs PII).
+
+**Résultat** : HTTP 200 / 93682 chars / 2 JSON-LD blocks / 0.24s elapsed.
+
+| Block | @type | Keys notables |
+|---|---|---|
+| 1 | BreadcrumbList | itemListElement (nav only, non utile) |
+| 2 | **apartment** | address (PostalAddress) ✅, floorSize (QuantitativeValue) ✅, description, photos, potentialAction (RentAction) |
+
+**Détail block 2** :
+- `address` = `{addressCountry, addressLocality, postalCode}` ← **structuré**
+- `floorSize` = `{@type: QuantitativeValue, unitCode, unitText, value}` ← **structuré**
+- `potentialAction` = `{@type: RentAction}` (vide, **pas de price nested**)
+- DPE `/dpe/energie-D.{hash}.png` détecté hors JSON-LD (regex actuelle continue de marcher)
+
+**Diagnostic upgrade crawler** :
+- ✅ **address.postalCode + floorSize.value migrables regex → JSON-LD** = anti-fragile (immune aux changements de présentation HTML)
+- ❌ Price reste regex card index (`potentialAction` vide côté JSON-LD detail)
+- ❌ DPE reste regex filename photo `/dpe/energie-X.{hash}.png` (pas dans JSON-LD)
+- → **Hybrid optimal** : JSON-LD primary CP+surface, fallback regex, price+DPE inchangés. Patch ~30 LOC sur `parse_detail_dpe()` → `parse_detail_full()` wake +N.
+
+**Garde-fou avant patch** : valider schema stable sur ≥3 URLs multi-villes (Lille / Marseille / Lyon) avant toucher production (steady-state 4 villes/jour cron `*/30`).
+
+**Output** : `data/locservice-detail-jsonld-probe-run254.json` (3KB schema, 0 PII).
+
+---
+
+## run-248 — 2026-05-18T05:30Z — Probe alt sources FR-immo (tactical critic 11 ★★ #2 SPOF Locservice, 8 wakes sans exploration)
+
+**Contexte** : tactical critic 11 ★★ #2 flagge "Si Locservice anti-bot kick demain → moat #1 entier s'effondre. 1 wake test playwright LOCAL sur PAP/SeLoger/avendrealouer".
+
+**Méthode** : HTTP plain (urllib) avec UA `BailleurVerifBot/1.0 (+https://bailleurverif.fr)` honnête, pas spoof Googlebot, pas Browserbase ce wake (budget cron 10min).
+
+### Résultats — 8 sources testées
+
+| Source | URL probe | Verdict |
+|---|---|---|
+| `pap.fr` listing | `/annonce/locations-paris-75-g439` | **403 Forbidden** anti-bot strict |
+| `avendrealouer.fr` listing | `/location/paris-75/appartement.html` | **403 Forbidden** + `robots.txt` aussi 403 |
+| `leboncoin.fr` recherche | `?category=10&locations=Paris_75000` | **403 Forbidden** DataDome probable |
+| `seloger.com` list | `/list.htm?types=1,2&places=[{cp:75}]` | **403 Forbidden** DataDome probable |
+| `pap.fr` sitemap | `/download/sitemap/liste_annonces.xml` | **403 Forbidden** (whitelist Googlebot only — robots.txt LISTE le sitemap mais le serveur bloque non-Google UA) |
+| `pap.fr` sitemap prixm2 | `/download/sitemap/prixm2.xml` | **403** idem |
+| `pap.fr` sitemap immobilier | `/download/sitemap/immobilier.xml` | **403** idem |
+| `pap.fr` sitemap outils | `/download/sitemap/outils.xml` | **403** idem |
+| `notaires.fr` sitemap | `/sitemap.xml` | ✅ **HTTP 200 OK + lastmod 2026-05-18T02:00Z FRESH** (sitemap-index 2 pages) |
+| `bienici.com` sitemap-index | `/sitemap-index.xml` | ✅ **HTTP 200 OK** (5+ sub-sitemaps) |
+| `bienici.com` sitemap content | `seo-content-provider.bienici.com/sitemaps/sitemap.xml` | ✅ **HTTP 200 OK** mais pages catégories SEO (`achat-appartement-avec-terrasse`), pas annonces individuelles → pas direct moat-source |
+| `immobilier.notaires.fr` sitemap | `/sitemap.xml` | ✅ **HTTP 200 OK** (mais static pages 2024 outdated) |
+| `dvf.etalab.gouv.fr` API | `/api/etalab/dvf/data` | **DNS introuvable** (URL changée) |
+
+### Diagnostic
+
+- **PAP/SeLoger/LeBonCoin/Avendrealouer = 4/4 anti-bot agressifs.** Sans Browserbase ou Playwright avec stealth + résidentiel proxy = pas exploitable. Cron 10min trop court.
+- **Locservice = SPOF confirmé.** 0 alternative HTTP plain pour location/encadrement.
+- **notaires.fr/sitemap.xml = source ouverte FRESH** mais c'est **achat/transactions**, pas location/encadrement. Pas direct utile pour observatoire conformité loyer. PISTE secondaire (transactions = DVF complément).
+- **bienici.com sub-sitemaps** : à explorer page-par-page pour voir s'il y a des annonces individuelles dans `sitemap-recherche-autre.xml` ou similaires.
+
+### Implication moat #1 cat-1
+
+Le moat data propriétaires cat-1 reste accroché à 1 source (Locservice). **Risque réel** : si Locservice ajoute Cloudflare/DataDome, série temporelle 9 vagues s'arrête → fragilité moat = brutale.
+
+### Actions futures (NEXT wake +1 à +5)
+
+1. **Probe `bienici.com/sitemap-recherche-autre.xml`** (sub-sitemap recherche, peut-être contient URLs annonces).
+2. **Probe DVF dataset data.gouv.fr** : `cadastre.data.gouv.fr` ou `dvf.opendatasoft.com` = transactions immo open-data téléchargeables CSV → **vrai** moat alternative (PISTE moat-builder cat-1 complémentaire : annonces conformité loyer + transactions DVF = comparaison loyer/prix au m² par commune = défendable car nul ne croise les 2 sources).
+3. **Si Browserbase project active** : test 1 fetch PAP/SeLoger via session loggée Browserbase + Chrome stealth — réversible (1 page test). Mais self-policy 0 signup nominatif respect : Browserbase n'est pas un signup-Florian, c'est une API key déjà setup → débloqué.
+
+---
+
+## run-242 — 2026-05-18T02:30Z — Audit conversion lifetime (levier e, non cyclé 50+ wakes) + bug latent #16 fixé
+
+### Diagnostic visits.jsonl N=190 sur 5j (2026-05-13→17)
+
+```
+TOTAL                     190
+Sessions distinctes       150
+Sessions human-like (UA)  136
+Sessions multi-page       1   ← 99.3% bounce rate
+Distinct IP hash          99
+```
+
+**Path/source distribution** :
+- `path=""` (vide) : **164/190 (86%)** ← bug latent #16
+- `path="/"` : 24
+- `path="/lille-dpe-f-g-interdit-location.html"` : 1 (instrumenté différemment via dpe_simulator)
+- `path="/preavis-bail.html"` : 1
+
+**Referrer distribution** :
+- `direct` : 107
+- vide : 41
+- **`/lille-dpe-f-g-interdit-location.html` : 19 ★** (top page SEO interne)
+- `/blog/` : 5
+- `/encadrement-loyer-paris-2026.html` : 3
+- `/preavis-bail.html` : 3
+- `/mon-bien.html`, `/toulouse-dpe...`, `/paris-dpe...`, `/depot-test`, `/data/` : 1 chacun
+- `https://bing.com/` : 1 (1 humain Bing organique, T+J-30 GSC)
+
+**UA buckets** :
+- desktop_chrome : 127
+- mobile_chrome : 30
+- safari : 11
+- googlebot : 4
+- yandexbot : 3
+- bingbot : 1
+- firefox : 5
+- other_bot : 6
+- other : 3
+
+**IP concentration** : top IP_hash = 32 visites (probablement Florian self-check OU bot camouflé), 99 distinctes.
+
+### Bug latent #16 (instrumentation cassée 50+ pages DPE par ville)
+
+**Root cause** : les 50 pages SEO `*-dpe-f-g-interdit-location.html` envoient au `/api/visit` un body `{src:"dpe_simulator", classe:c, ville:"X"}` au lieu de `{path, source}`. Le handler server.py:1060-1070 fait `data.get("path") or ""` → enregistre `path=""`, perdant 86% de la mesure conversion.
+
+**Fix run-242** : sed -i 50/50 pages : `body: JSON.stringify({src:"dpe_simulator", ...})` → `body: JSON.stringify({path: location.pathname, source: "dpe_simulator", ...})`. Prod sert version corrigée (curl Lille OK). 0 restart server (static files). Bugs lifetime fixés : 15→16.
+
+### Insights pour 5000 users
+
+- **Lille DPE = top page SEO** (19 visites internes + ~32 visites totales source 7829... IP). Densifier le pattern `{ville}-dpe-f-g-interdit-location.html` sur les villes encore manquantes pourrait reproduire ce levier (≠ ban Critic-9 Δ≥50 OR new IN-SCOPE, c'est SEO publish pas observatoire).
+- **99.3% bounce rate** → CTA homepage / pages SEO ne convertit pas. Run-190 avait fix contraste CTA + run-191 pre-fill, mais 0 capture lifetime confirme inefficacité.
+- **0 capture email sur 150 sessions distinctes humaines-like** = email-gate broken OR friction trop élevée OR audience pas qualifiée. À investiguer wake futur (lever e profond).
+- **1 visite organique Bing dans 5j** = SEO Bing fonctionne marginalement. Google indexation toujours en cours J+1.5 post-GSC.
+
+### Limite analyse
+
+- `path` instrumenté correctement seulement sur ~14% des visits (26/190) → série temporelle valable post-run-242 uniquement.
+- `humans_engaged_lifetime=2` (Florian + 1 GitHub visitor) reste vrai pour mesure stricte (humain ayant interagi >1 page OU signaler/notation). Les 134 autres sessions human-like sont vraisemblablement des single-page bounces ou tests.
+
+### Honnêteté moat
+
+Bug fix #16 = utile factuel mais **PAS composant moat** (instrumentation refaisable). Comptabilisé comme levier (e) optim conversion, non cyclé depuis run-192 (50+ wakes).
+
+---
+
+## run-239 — 2026-05-18T01:00Z — Cat-3 RAG plan : corpora + interpretation library + sequence (SPEC, pas ship)
+
+### Pourquoi cat-3 maintenant
+
+Strategic Critic audit-2 run-237 honnête : `moat_components_live=2/4` depuis 16+ audits consécutifs (cat-1 observatoire 9 vagues + cat-4 data.gouv.fr v1). Cat-2 effets réseau V2 shippée run-236 mais vide tant que TODO-23 silent. Cat-3 = **0 actif** : règles encadrement codées en JS client + CP_TO_SLUG 54 entries = regex + dict lookup, pas d'intelligence interprétative coûteuse. Pour passer 2/4 → 3/4 sans amplifier cat-1 (déjà la plus forte, Critic-2 ban implicite) ni dupliquer cat-2 (Critic-2 ban "3ᵉ canal cat-2"), la voie défendable = cat-3 layer interprétation.
+
+### Définition cat-3 BailleurVérif (alignée DIRECTIVE 9 §"intelligence interprétative coûteuse")
+
+Cat-3 ≠ "afficher des règles légales" (déjà fait JS client). Cat-3 = **transformer une situation utilisateur en plan d'action légal contextualisé**, avec :
+- RAG sur corpus jurisprudence + textes réglementaires (rare ou coûteux à curer)
+- Génération courriers RAR personnalisés par cas (article cité, montant calculé, échéance computée)
+- Évaluation probabiliste outcome (sur N affaires similaires, P50 délai résolution, P50 montant récupéré)
+
+**Test moat** : "Un dev solo refait-il ça en <2j ?" → NON si corpus jurisprudence + interpretation library compound over 30+ wakes timestampés. Le moat = la **série historique** d'interprétations validées, pas le code de génération.
+
+### Corpora sources candidates (license + accessibilité)
+
+| Source | Contenu | License | Accès | Volume estim |
+|---|---|---|---|---|
+| **PISTE judilibre** (gov.fr) | Décisions Cass + CA + tribunaux administratifs | Etalab v2 (libre) | API REST, **api-key required** (gratuit, signup PISTE) | ~5M décisions total ; filtre encadrement loyer + DPE + dépôt garantie → ~500-2000 décisions pertinentes |
+| **Légifrance** | Code civil + Code construction + Code énergie + JORF | Public | Web scraping (robots.txt à auditer) ou DILA API | ~50 articles structurés pour notre périmètre |
+| **ANIL FAQ** (Agence Nat. Info Logement) | FAQ vulgarisées + fiches pratiques bail/loyer/DPE | CC-BY-NC | Web scraping | ~150 fiches pertinentes |
+| **Service-Public.fr particuliers** | Procédures officielles | Etalab v2 | Web + sitemap (data.gouv.fr) | ~50 fiches sur bail/logement |
+| **CAF / DALO décisions** | Statistiques recours | Public agrégé | data.gouv.fr datasets | KPIs taux succès recours |
+
+**Prioritaire** : **PISTE judilibre** = jurisprudence Cass = source **rare + structurée + propriétaire interprétée** = vrai moat seed. Sans api-key Florian, fallback Service-Public.fr + ANIL = corpus de surface (utile mais copyable).
+
+### Interpretation library (compounding moat)
+
+Structure stockage : `data/interpretation-library-v0/`
+- `recourse-templates/` : 1 JSON par cas-type (loyer-abusif, dpe-invalide, depot-non-rendu, etat-lieux-abusif, charges-injustifiees, reactivite-faible, autre) avec `{tag, legal_basis_citations[], procedure_steps[], sample_letter_md, regulator_contacts[], expected_resolution_p50_days, success_rate_estimated, jurisprudence_refs[], wave_ts, version}`
+- `case-evaluations/` : 1 JSON par notation-agence réelle reçue, output Claude API contextuel
+- `jurisprudence-extracts/` : 1 JSON par décision judiciaire filtrée (PISTE) avec embeddings vectoriels
+
+**Compounding** : chaque wake N enrichit interpretation library d'une nouvelle entrée timestamped. Au bout de 30 wakes = corpus signé + audit-trail = non-rejouable rétroactivement par concurrent.
+
+**Coût estimé Claude API** : ~$0.02-0.05 par interprétation (Sonnet 4.6 ; Opus 4.7 si besoin reasoning juridique poussé). Sur 100 cas/mois = $5/mois → < seuil 50€ budget auto-approuvé. Sur 1000 cas/mois = $50/mois → trigger validation Florian.
+
+### Sequence d'exécution (5 wakes étalés, non-bloquant TODO-23)
+
+**Wake N (run-239, ce wake)** : spec uniquement (ce document). Pas de code, pas de scrape, pas de dépense. ✅ done.
+
+**Wake N+1** (run-240+) : seed corpus Service-Public.fr — 5 fiches publiques scrape via curl (HTTPS, robots.txt à check), JSONL `data/corpus/service-public-v0.jsonl` schema `{url, title, body_text_md, scraped_at, license="etalab-2.0"}`. Pace 30s, robots respecté. Budget : 1 wake (~5 min). 0 dépense.
+
+**Wake N+2** : seed corpus ANIL FAQ — 5 fiches scrape JSONL. Robots audit préalable, pace 30s.
+
+**Wake N+3** : 1ʳᵉ Claude API call cat-3 = générer `recourse-templates/loyer-abusif.v0.json` à partir corpus seed run-240+241 (RAG inline minimal sans vector DB). Output = template avec citations légales structurées + sample courrier RAR. Coût ~$0.03. Persiste dans interpretation-library-v0/.
+
+**Wake N+4** : 2 nouveaux templates `dpe-invalide.v0.json` + `depot-non-rendu.v0.json` (Claude API calls). Coût ~$0.06.
+
+**Wake N+5** : décision GO/NO-GO. Si interpretation library 3 templates substantiels → ship endpoint `/api/recourse/<tag>` lecture seule (GET, pas write) renvoyant template + brief Florian "Cat-3 v0 live". Si quality output médiocre → pivot vers prompts différents OU corpus enrichi.
+
+### TODO Florian (à ajouter florian-todos.md TODO-26 si run-243+ blocage)
+
+- **PISTE judilibre api-key** (signup gratuit ~5 min) : https://piste.gouv.fr/ — débloquer corpus jurisprudence Cassation rare. **Trigger ouverture** : SI cat-3 v0 surface live (run-244 hypothétique) avec corpus seed Service-Public.fr + ANIL et qu'on veut passer à corpus Cass = vraie defensibility.
+
+### Conditions d'arrêt cat-3 spec→ship
+
+- **Stop spec** : SI Florian writes "stop cat-3" inbox.md → abandon, retour cat-1/4 amplif.
+- **Stop wake N+1** : SI TODO-23 done LinuxFr/X/QueChoisir entre temps → priorité MAX shift à monitoring cat-2 first-record, cat-3 mis en pause 1-2 wakes.
+- **Stop wake N+3** : SI Claude API call output médiocre (juridique imprécis, citations bidon, sample letter non-actionable) → pivot prompts ou abandon Claude pour structured templates manuels.
+
+### Honnêteté (anti-pattern Critic-2)
+
+Ce document = **spec, pas un moat composant live**. Le moat-prep ≠ moat. Spec écrite ce wake compte comme `wakes_construction_consecutifs_moat` au sens DIRECTIVE 9 §1.5 ratio 1/4, MAIS ne déplace pas `moat_components_live=2/4`. Le mouvement réel à 3/4 viendra wake N+5 minimum SI Claude API outputs ≥3 templates intégrés en interpretation library timestampée. Si non, pivot transparent dans ledger.
+
+---
+
 ## run-179 — 2026-05-17T08:15Z — MOAT-BUILDER V0 : Audit légal scraping 4 sources + crawler Locservice V0 shipped
 
 ### Pourquoi cet angle (déclencheur)
@@ -546,3 +753,46 @@ Rate-limit ou désactivation 2026. Service legacy né en 2003-2008, mort silenci
 - **J+1 (2026-05-16T10:45Z)** : `curl -A "feedly bot" /atom.xml` ou WebSearch `BailleurVérif inurl:atom.xml` → Feedly découvre-t-il déjà ?
 - **J+3** : grep Feedlybot / FeedBurner / Inoreader / Tiny Tiny RSS dans visits.jsonl
 - **J+7** : sondage `feedly.com/search/feed?q=bailleurverif` (visiteur humain test)
+
+---
+
+## 2026-05-18T06:35Z — run-250 — DVF data.gouv.fr probe SUCCESS (Statistiques DVF) + geo-DVF par-commune CSV BLOCKED
+
+**Finding 1 — geo-DVF (`files.data.gouv.fr/geo-dvf/latest/csv/2024/communes/XX/INSEE.csv`)** : index HTML listing OK (HTTP 200) MAIS file fetches redirect→S3 bucket `geo-dvf.s3.sbg.io.cloud.ovh.net` qui retourne **403 Forbidden** sur toutes les communes testées (Paris 11e/75111, Paris 1er/75101, Lille/59350) et années (2023, 2024). NoSuchKey pour 75056 (Paris non-arrondissement = path inexistant, normal). **Conclusion** : geo-DVF par-commune CSV anonyme = non accessible en l'état (probablement durci récemment, à investiguer si moat exige granularité parcelle).
+
+**Finding 2 — Statistiques DVF (`object.files.data.gouv.fr/data-pipeline-open/dvf/stats_dvf.csv`)** : **HTTP 200 ✅**. 276 MB CSV / 3.6M rows / schema `code_geo,nb_ventes_(maison|appartement|local|apt_maison),moy_prix_m2_X,med_prix_m2_X,annee_mois,libelle_geo,code_parent,echelle_geo` couvrant 2021-01 → 2025-12 à granularité section/commune/EPCI/département/région/nation. **Suffisant pour cross-source moat cat-1** (médiane prix m² appartement par commune × mois).
+
+**Action exécutée run-250** : Extract Python → 31 communes observatoire (mapping CP→INSEE) → JSON `data/dvf/observatoire-dvf-crosssource-v0.json` 5.7 KB avec ventes-weighted median prix m² 2024-2025. ~82k transactions cumulées. Source supprimée (reproductible).
+
+**Wake +N actionnable** : ship page `/observatoire-prix-vente-vs-loyer.html` qui croise observatoire loyer cat-1 × DVF prix-m² → signal investisseur unique (ratio loyer-mensuel / prix-m² = rendement brut par arrondissement). Endpoint API `/api/dvf-stats/<insee>`. Republish dataset data.gouv.fr v3 cross.
+
+---
+
+## 2026-05-18T08:30Z — Run-253 — Playwright LOCAL feasibility probe (tactical critic 12 ★★ #3 honored after 3 audits flagged)
+
+**Setup** : playwright chromium headless, UA honnête `Mozilla/5.0 (X11; Linux x86_64) BailleurVerifBot/1.0 (+https://bailleurverif.fr; feasibility-probe; read-only; respects-robots-txt)`, 15s timeout, fr-FR locale. 4 URLs probed (1 query each, 0 scrape massif, 0 bypass).
+
+**Résultats** (sortie `data/playwright-probe-run253.json`) :
+
+| Cible | status | title | JSON-LD blocks | Diagnostic |
+|---|---|---|---|---|
+| pap.fr/annonces/locations-paris-75-g439 | 404 | "Document non trouvé" | 0 | URL pattern obsolète |
+| pap.fr/annonces/locations-appartement-paris-75-g439 | **403** | "Un instant…" | 0 | **Cloudflare challenge wall** |
+| pap.fr/annonce/locations-paris-75 | **403** | "Just a moment..." | 0 | **Cloudflare challenge wall** |
+| avendrealouer.fr/location/paris-75000/appartement.html | **403** | "avendrealouer.fr" body 1519c | 0 | **DataDome captcha** |
+| **locservice.fr/paris-75/location.html** (control) | **200** ✅ | "Location immobilier Paris (75)" body 288kb | **3** | BreadcrumbList + Product + RealEstateListing |
+
+**Diagnostic SPOF Locservice mitigation** :
+- PAP : 2/2 URL patterns valides → Cloudflare challenge wall ("Just a moment..." / "Un instant…"). Inattaquable via playwright local UA honnête sans anti-detect bypass (incompatible éthique + budget cron 10min).
+- AvendreALouer : DataDome 403 instantané. Inattaquable identique.
+- Locservice : reste seul accessible via playwright local UA honnête. SPOF confirmé.
+
+**Insight JSON-LD Locservice** :
+Sample `RealEstateListing` block sur page index `paris-75/location.html` = minimal (description + name uniquement, pas de floorSize / numberOfRooms / streetAddress / price). C'est la meta SEO de la page liste, pas les listings individuels. → upgrade JSON-LD parsing vs regex pas évident sur page index. PISTE : probe 1 listing DETAIL `https://www.locservice.fr/annonce-de-particulier/...` pour voir si JSON-LD enrichi y est exposé (wake +N).
+
+**Actions wake +N** :
+1. **PISTE prioritaire** : probe 1 URL Locservice listing detail JSON-LD richesse (5 min). Si numberOfRooms/floorSize/price/address exposés → upgrade `crawler/locservice_v0.py` regex → JSON-LD parsing = cleaner data, anti-fragile changement HTML, +moat cat-1 défendabilité directe.
+2. **PISTE secondaire diversification** : tester sources alternatives **non-anti-bot** : (a) data.gouv.fr CADASTRE / OpenStreetMap Overpass / WikiData immobilier dataset OPEN ; (b) FlatLooker / Bien-Locataire / SeLoger-particuliers (sous-domaines particuliers moins surveillés ?) ; (c) flux RSS leboncoin filtered (si toujours public) ; (d) Marketplace Facebook public (CGU lecture-seule).
+3. **PISTE tertiaire DVF reverse** : utiliser DVF mutations 2024-2025 (déjà cross-source publiée run-251) pour extraire indirect prix m² location via ratio rendement zone tendue moyen 4-7% → estimation loyer cible per-INSEE sans scrape annonces. Pas un moat direct mais complément densifie l'observatoire.
+
+**Conclusion tactical critic 12 ★★ #3** : SPOF Locservice diagnostiqué par test concret. Mitigation playwright local sur PAP/AvendreALouer = INFEASIBLE sans anti-detect bypass (Cloudflare + DataDome enterprise walls). Diversification cat-1 = pivot vers (a) JSON-LD parsing detail Locservice (upgrade qualité) OU (b) sources alternatives open-data non-marketplaces.

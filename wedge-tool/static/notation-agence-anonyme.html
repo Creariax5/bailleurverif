@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Noter une agence immobilière anonymement (FR) — locataires | BailleurVérif</title>
+<meta name="description" content="Notez anonymement votre agence immobilière, bailleur professionnel ou syndic en France. Avis publié sans création de compte, sans cookie tiers, sans donnée nominative. Aidez les futurs locataires à choisir. Données déclaratives crowdsourcées BailleurVérif.">
+<link rel="canonical" href="https://bailleurverif.fr/notation-agence-anonyme.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Notez votre agence immobilière anonymement (locataires FR) — BailleurVérif">
+<meta property="og:description" content="Avis crowdsourcés anonymes sur les agences immo, bailleurs pros et syndics FR. Sans compte, sans cookie tiers. Aidez les futurs locataires.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bailleurverif.fr/notation-agence-anonyme.html">
+<meta property="og:site_name" content="BailleurVérif">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Notez votre agence immobilière anonymement (locataires FR)">
+<meta name="twitter:description" content="Avis crowdsourcés anonymes sur les agences immo, bailleurs pros et syndics FR. Sans compte.">
+<link rel="stylesheet" href="/css/main.css">
+<style>
+  .form-card { background: var(--bg-card, #fff); border: 1px solid var(--border, #e2e8f0); border-radius: 12px; padding: 24px; max-width: 640px; margin: 24px auto; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .form-row { margin-bottom: 18px; }
+  .form-row label { display: block; font-weight: 600; font-size: 14px; color: var(--text-primary, #0f172a); margin-bottom: 6px; }
+  .form-row .hint { font-size: 12px; color: var(--text-secondary, #475569); margin-top: 4px; }
+  .form-row input[type=text], .form-row select, .form-row textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--border, #cbd5e1); border-radius: 6px; font: inherit; box-sizing: border-box; background: #fff; color: var(--text-primary, #0f172a); }
+  .form-row textarea { resize: vertical; min-height: 80px; }
+  .stars { display: inline-flex; gap: 4px; font-size: 32px; line-height: 1; cursor: pointer; user-select: none; }
+  .star { color: #cbd5e1; transition: color .15s; }
+  .star.active { color: #d97706; }
+  .tags-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; }
+  .tags-grid label { display: flex; align-items: center; gap: 8px; font-weight: 400; font-size: 14px; padding: 8px 10px; border: 1px solid var(--border, #e2e8f0); border-radius: 6px; cursor: pointer; background: #fff; }
+  .tags-grid label:hover { background: var(--bg-secondary, #f8fafc); }
+  .tags-grid input[type=checkbox] { width: 16px; height: 16px; cursor: pointer; }
+  .btn-primary { display: inline-block; background: var(--accent, #1d4ed8); color: #fff; padding: 12px 24px; border: 0; border-radius: 6px; font-size: 15px; font-weight: 600; cursor: pointer; }
+  .btn-primary:disabled { opacity: .5; cursor: not-allowed; }
+  .feedback { margin-top: 16px; padding: 12px 16px; border-radius: 6px; font-size: 14px; }
+  .feedback.ok { background: #e8f6ef; color: #047857; border: 1px solid #b6e2cc; }
+  .feedback.err { background: #fde7e7; color: #a01c1c; border: 1px solid #f3b3b3; }
+  .meta-note { font-size: 12.5px; color: var(--text-secondary, #475569); margin: 16px 0; line-height: 1.55; }
+  .meta-note strong { color: var(--text-primary, #0f172a); }
+  header.page { padding: 24px 16px 0; text-align: center; }
+  header.page h1 { font-size: 1.8rem; margin: 0 0 8px; color: var(--text-primary, #0f172a); }
+  header.page p.sub { color: var(--text-secondary, #475569); max-width: 640px; margin: 0 auto; font-size: 15px; line-height: 1.5; }
+  .row-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 480px) { .row-2col { grid-template-columns: 1fr; } }
+  .footer-disclaimer { max-width: 640px; margin: 24px auto; padding: 0 16px; font-size: 12px; color: var(--text-secondary, #475569); line-height: 1.6; }
+  .footer-disclaimer a { color: var(--accent, #1d4ed8); }
+</style>
+</head>
+<body>
+
+<header class="page">
+  <h1>Notez votre agence immobilière anonymement</h1>
+  <p class="sub">Avis crowdsourcés sur les agences immo, bailleurs professionnels et syndics en France. Sans création de compte. Sans cookie tiers. Aidez les futurs locataires à choisir.</p>
+</header>
+
+<section class="form-card" aria-labelledby="form-title">
+  <form id="notation-form" autocomplete="off">
+    <div class="form-row">
+      <label for="agence_nom">Nom de l'agence, bailleur pro ou syndic *</label>
+      <input type="text" id="agence_nom" name="agence_nom" required minlength="2" maxlength="120" placeholder="Ex : Foncia Paris 11, Century 21 Bordeaux Centre, Sergic Lyon...">
+      <div class="hint">Entité morale uniquement (société, agence, syndic). Pas de particuliers nominatifs.</div>
+    </div>
+
+    <div class="form-row">
+      <label for="agence_type">Type *</label>
+      <select id="agence_type" name="agence_type" required>
+        <option value="agence">Agence immobilière</option>
+        <option value="bailleur-pro">Bailleur professionnel (SCI, foncière, HLM)</option>
+        <option value="syndic">Syndic de copropriété</option>
+      </select>
+    </div>
+
+    <div class="form-row row-2col">
+      <div>
+        <label for="ville">Ville (optionnel)</label>
+        <input type="text" id="ville" name="ville" maxlength="80" placeholder="Ex : Paris, Lyon, Bordeaux...">
+      </div>
+      <div>
+        <label for="code_postal">Code postal (optionnel)</label>
+        <input type="text" id="code_postal" name="code_postal" maxlength="6" pattern="[0-9]{5}" placeholder="75011">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label>Votre note *</label>
+      <div class="stars" id="stars" role="radiogroup" aria-label="Note de 1 à 5 étoiles">
+        <span class="star" data-v="1" role="radio" aria-checked="false" tabindex="0">★</span>
+        <span class="star" data-v="2" role="radio" aria-checked="false" tabindex="0">★</span>
+        <span class="star" data-v="3" role="radio" aria-checked="false" tabindex="0">★</span>
+        <span class="star" data-v="4" role="radio" aria-checked="false" tabindex="0">★</span>
+        <span class="star" data-v="5" role="radio" aria-checked="false" tabindex="0">★</span>
+      </div>
+      <input type="hidden" id="note" name="note" value="">
+      <div class="hint">1 = très mauvais, 5 = excellent</div>
+    </div>
+
+    <div class="form-row">
+      <label>Problèmes rencontrés (optionnel, multi-choix)</label>
+      <div class="tags-grid">
+        <label><input type="checkbox" name="tags" value="loyer-abusif"> Loyer abusif / encadrement non respecté</label>
+        <label><input type="checkbox" name="tags" value="dpe-invalide"> DPE invalide ou non communiqué</label>
+        <label><input type="checkbox" name="tags" value="depot-non-rendu"> Dépôt de garantie non rendu</label>
+        <label><input type="checkbox" name="tags" value="etat-lieux-abusif"> État des lieux contesté / abusif</label>
+        <label><input type="checkbox" name="tags" value="charges-injustifiees"> Charges injustifiées</label>
+        <label><input type="checkbox" name="tags" value="reactivite-faible"> Pas de réponse / réactivité faible</label>
+        <label><input type="checkbox" name="tags" value="autre"> Autre</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="commentaire">Commentaire (optionnel, 280 caractères max)</label>
+      <textarea id="commentaire" name="commentaire" maxlength="280" placeholder="Restez factuel. Pas de propos diffamatoires, pas d'insultes, pas de données nominatives sur des personnes physiques."></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary" id="submit-btn">Publier mon avis anonyme</button>
+    <div id="feedback" class="feedback" style="display:none;"></div>
+  </form>
+</section>
+
+<section class="meta-note" style="max-width: 640px; margin: 0 auto; padding: 0 16px;">
+  <strong>Pourquoi cet outil ?</strong> Les locataires FR n'ont aujourd'hui aucun annuaire indépendant pour noter agences immo, bailleurs pros et syndics. BailleurVérif ouvre un canal anonyme déclaratif crowdsourcé.<br><br>
+  <strong>Anonymat strict.</strong> Pas de compte, pas d'email, pas de cookie tiers. Seul un hash IP anonymisé est stocké pour rate-limit. Aucune donnée nominative sur des particuliers (locataires comme bailleurs personnes physiques) n'est acceptée.<br><br>
+  <strong>Modération.</strong> Les avis manifestement abusifs (insultes, fausses agences inventées, propos diffamatoires, données nominatives individus) sont supprimés a posteriori manuellement. Avis = opinion subjective de son auteur.
+</section>
+
+<div class="footer-disclaimer">
+  © 2026 BailleurVérif · Outil gratuit · <a href="/mentions-legales.html">Mentions légales</a> · <a href="/politique-confidentialite.html">Politique de confidentialité</a> · <a href="/cgu.html">CGU</a> · <a href="/observatoire-annonces-loyer.html">Observatoire annonces</a>
+</div>
+
+<script>
+(function() {
+  var stars = document.querySelectorAll('#stars .star');
+  var noteInput = document.getElementById('note');
+  function setNote(v) {
+    noteInput.value = String(v);
+    stars.forEach(function(s) {
+      var sv = parseInt(s.getAttribute('data-v'), 10);
+      if (sv <= v) { s.classList.add('active'); s.setAttribute('aria-checked', 'true'); }
+      else { s.classList.remove('active'); s.setAttribute('aria-checked', 'false'); }
+    });
+  }
+  stars.forEach(function(s) {
+    s.addEventListener('click', function() { setNote(parseInt(s.getAttribute('data-v'), 10)); });
+    s.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setNote(parseInt(s.getAttribute('data-v'), 10)); }
+    });
+  });
+
+  var form = document.getElementById('notation-form');
+  var fb = document.getElementById('feedback');
+  var btn = document.getElementById('submit-btn');
+  form.addEventListener('submit', function(ev) {
+    ev.preventDefault();
+    fb.style.display = 'none';
+    fb.className = 'feedback';
+    var note = parseInt(noteInput.value, 10);
+    if (!note || note < 1 || note > 5) {
+      fb.className = 'feedback err'; fb.textContent = 'Veuillez sélectionner une note (1 à 5 étoiles).'; fb.style.display = 'block'; return;
+    }
+    var tags = [];
+    document.querySelectorAll('input[name=tags]:checked').forEach(function(c) { tags.push(c.value); });
+    var payload = {
+      agence_nom: document.getElementById('agence_nom').value.trim(),
+      agence_type: document.getElementById('agence_type').value,
+      note: note,
+      tags: tags,
+      commentaire: document.getElementById('commentaire').value.trim(),
+      ville: document.getElementById('ville').value.trim(),
+      code_postal: document.getElementById('code_postal').value.trim()
+    };
+    btn.disabled = true; btn.textContent = 'Envoi…';
+    fetch('/api/notation-agence', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+      .then(function(r) { return r.json().then(function(j) { return { status: r.status, body: j }; }); })
+      .then(function(resp) {
+        if (resp.status === 200 && resp.body && resp.body.ok) {
+          fb.className = 'feedback ok';
+          fb.innerHTML = 'Merci ! Votre avis anonyme sur <strong>' + (resp.body.agence_normalized || '(agence)') + '</strong> a été publié. Aucune donnée nominative n\'a été enregistrée. <a href="/notation-agence-anonyme.html">Noter une autre agence</a>.';
+          fb.style.display = 'block';
+          form.reset();
+          stars.forEach(function(s) { s.classList.remove('active'); s.setAttribute('aria-checked', 'false'); });
+          noteInput.value = '';
+          btn.disabled = false; btn.textContent = 'Publier mon avis anonyme';
+        } else {
+          fb.className = 'feedback err';
+          fb.textContent = 'Erreur : ' + ((resp.body && resp.body.error) || ('HTTP ' + resp.status));
+          fb.style.display = 'block';
+          btn.disabled = false; btn.textContent = 'Publier mon avis anonyme';
+        }
+      })
+      .catch(function(err) {
+        fb.className = 'feedback err';
+        fb.textContent = 'Erreur réseau. Réessayez dans un instant.';
+        fb.style.display = 'block';
+        btn.disabled = false; btn.textContent = 'Publier mon avis anonyme';
+      });
+  });
+})();
+</script>
+
+</body>
+</html>

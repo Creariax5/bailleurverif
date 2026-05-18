@@ -56,3 +56,5 @@ venv-browser/
 .vscode/
 .idea/
 *.swp
+server.log*
+*.bak-pre-*
