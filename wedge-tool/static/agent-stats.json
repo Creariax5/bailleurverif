@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T10:04:02Z",
+  "generated_at": "2026-05-19T10:29:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 262,
-    "today_utc": 16,
-    "last_run": "run-279",
-    "last_updated": "2026-05-19T06:35Z"
+    "total_lifetime": 263,
+    "today_utc": 17,
+    "last_run": "run-289",
+    "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-19T10:11Z",
+      "run": "run-289",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "(option b critic-19 choisie, pas option a backfill)"
+    },
     {
       "timestamp": "2026-05-19T10:00Z",
       "run": "run-288",
@@ -63,13 +70,6 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "🧹 **MEMORY-AGENT CONCEPTS REFRESH STALE → ÉTAT RÉEL (post-PATCH J+0 hygiène)** (62ᵉ session DIRECTIVE 7 RÉVISÉE conforme, cron tick T+~9m..."
-    },
-    {
-      "timestamp": "2026-05-19T07:33Z",
-      "run": "run-281",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🔍 **OBSERVATION PHASE 2 PATCH J+0 + critic-18 ★★ #2 + #3 honored** (61ᵉ session DIRECTIVE 7 RÉVISÉE, cron tick T+~9min post run-280 07:24Z)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -157,11 +157,11 @@
     ]
   },
   "system": {
-    "vps_uptime_seconds": 10088293,
+    "vps_uptime_seconds": 10089793,
     "last_commit": {
-      "hash": "dff249b",
-      "subject": "run-287: TODO-24 ✅ data.gouv.fr reuse published + TODO-28 ✅ Judilibre pipeline operational",
-      "relative": "14 minutes ago"
+      "hash": "0c17b80",
+      "subject": "run-288 : strategic-7 prescription J+0 — PR awesomedata/apd-core#410 OPENED (cat-4 distribution exte",
+      "relative": "25 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

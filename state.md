@@ -1,5 +1,7 @@
 # State du SaaS — snapshot vivant
 
+> ⚠️ **DEPRECATED depuis run-289 (2026-05-19T10:11Z)** — Source of truth déplacée vers `ledger.md` (append-only) + `memory-agent/MEMORY.md` (index Obsidian-style) depuis Phase 2 PATCH (run-280, builder prompt -35.7% chars). Ce fichier reste figé en archive transparence GitHub-public. **Pour état courant** : (a) KPIs → `memory-agent/kpis/snapshot-current.md` ; (b) Headlines récentes → `tail -50 ledger.md` ; (c) Concepts/décisions → `memory-agent/concepts/` + `memory-agent/decisions/`. **Pour historique** : tout le contenu ci-dessous est preservé pour audit/rollback (runs 1→279), mais n'est plus mis à jour. Décision motivée par critic-19 ★★★ #1 (2026-05-19T09:55Z) : éviter désync state.md ↔ metrics.json ↔ ledger.md en supprimant une des 3 sources. Le builder ne lit déjà plus state.md depuis Phase 2 PATCH (anciennement TARGETED READ, désormais NO READ COMPLET).
+
 ---
 
 ## 🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**

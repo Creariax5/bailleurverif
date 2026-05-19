@@ -1,45 +1,43 @@
+---
+name: Tactical Warnings (last critic audit)
+description: État vivant du dernier audit Tactical Critic, prescriptions ★★★/★★, statut suivi
+type: project
+---
+
 # Concept : Tactical Warnings (last critic audit)
 
-**Source** : `inbox-from-critic.md` **audit-18 2026-05-19T07:00Z** (post run-279, audit-18).
+**Source** : `inbox-from-critic.md` **audit-19 2026-05-19T09:55Z** (post run-287).
 
 ## Verdict global
 
-**8.6/10** (+0.2 vs audit-17). Cycle 4-wakes ★★★ exemplaire compliance disciplinaire :
-- 3/3 priorités audit-17 honored + 3/3 STOPs honored
-- Strategic-Critic-6 invocation DIRECTIVE 10 §a (run-277)
-- Prescription strategic-6 exécutée J+0 (run-278 ANIL mail SUCCESS)
-- 4 catégories moat cyclées (cat-1 vague-11 N=210 + cat-3 saturé + cat-4 ANIL + cat-N/A γ-mini)
-- 4 commits push successifs + WHY_THIS_NOT_THAT 4/4 + 0 ScheduleWakeup 4/4
+**8.7/10** (+0.1 vs audit-18). 2 directives Florian ★★★ honored J+0 run-287 + Phase 2 PATCH J+0 run-280 + 8 commits + 0 ScheduleWakeup 8/8 + cyclage 4/4.
 
 **MAIS** :
-1. Substitution sémantique audit-17 #1 ("publication externe humaine publique" → "ANIL mail SMTP") = proxy invalide laisse prescription tactical OUVERTE.
-2. 76 wakes consécutifs sans humain newly engaged / 0 visite humaine 6h+ / `humans_engaged_lifetime=2 UNCHANGED` 8 wakes.
-3. **ORDRE FLORIAN 06:45Z PATCH agent prompt** reçu APRÈS run-279 = priorité ABSOLUE run-280 override tout NEXT.
+1. **state.md/metrics.json stale 3h+** — désync 3 sources of truth depuis Phase 2 PATCH.
+2. **Ritual §b omis 3/8** runs 285-287 (Copyability check + Moat category fields manquants).
+3. **ip 2124423717 09:47Z non-investigué** (deep-nav OBS→HOME T+4h12min post-ANIL).
+4. **82 wakes 0 humain newly engaged**.
 
-## 3 actions critic-18 prioriser
+## 3 actions critic-19 prioriser
 
-1. **★★★ EXÉCUTER ORDRE FLORIAN 06:45Z — PHASE 2 PATCH AGENT PROMPT** ✅ HONORÉ run-280 (HTTP 200, verify 8/8 PASS, 8326→5349 chars -35.7% économie).
-2. **★★ TRACKER DISTINCTION SÉMANTIQUE** "publication externe humaine publique" ≠ "outreach SMTP institutionnel" ✅ HONORÉ run-281 (`publications_externes_humaines_publiques_count=0 UNCHANGED 76+ wakes` distinct ajouté `metrics.json`).
-3. **★★ PRÉPARER FALLBACK TODO-29 + ANIL silent** ✅ PARTIEL HONORÉ run-281 (`cat_4_anil_silence_check_due=2026-05-22T05:35Z` ajouté). TODO-29 ré-évocation γ-mini cooldown 24h+ ≥23:37Z 19/05 — pas encore expirée à run-281 07:33Z.
+1. **★★★ FIXER désync state.md + metrics.json** — choisir explicit (a) reprendre headlines 280-287 OU (b) deprecate state.md ligne 1 + amend HUMAN_DIRECTIVE. ✅ HONORÉ run-289 J+0 (option b choisie : déprécation explicite + pointeurs vers ledger.md + memory-agent/. Decision file `decisions/2026-05-19-state-md-deprecated.md`).
+2. **★★ Investiguer ip 2124423717** 09:47Z deep-nav OBS→HOME T+4h12min post-ANIL = écho potentiel. UPDATE `concepts/traffic-signals.md`. ⏳ PENDING run-290 (DIRECTIVE 7 ZERO-POSE = 1 ★★★ ce wake, ★★ wake +1).
+3. **★★ Ritual §b strict** runs 288+ : fields "Copyability check : X%" + "Moat category : <N>" obligatoires. ✅ HONORÉ run-289 (Copyability ≈95%, Moat N/A — méthode/hygiène pas composant).
 
-## 3 actions critic-18 arrêter
+## 3 actions critic-19 arrêter
 
-1. **STOP confusion "mail SMTP institutionnel = publication externe humaine publique"** : maintenir trackers distincts. Ne pas implicitement claim audit-17 #1 honored par ANIL mail. ✅ HONORED maintenu run-281+282+283.
-2. **STOP "0 acquisition humaine acceptée comme baseline implicite"** : reconnaître structurellement 78 wakes sans humain = signal **structurel** mathématiquement inaccessible 5000/90j sans pivot voie ou activation TODO-25 monétisation. ✅ **FULLY HONORED run-283 J+0** : question pivot Florian 1× brève appendée inbox.md 4 options chiffrées (γ-mini / monétisation / pivot voie A / acter baseline 50). Cooldown 48h ré-évocation ≥2026-05-21T08:39Z.
-3. **STOP outreach institutionnel N+1 J+1 stérile** : maintenir discipline ≥72h avant relance ANIL silent. Pas de "2ᵉ ADIL/CLCV reformulé" run-280-282 comme pivot facile. ✅ HONORED maintenu run-281+282+283 (ANIL silence check due 2026-05-22T05:35Z, 0 outbound institutionnel run-283).
+1. **STOP grossissement `kpis/snapshot-current.md`** append-only. Rotation history/ ≤200 lignes. ⏳ PENDING — rotation prochaine wake.
+2. **STOP "déficit TODO-24/28 rattrapé glorieusement"** : agent a tardé 2h15+ self-noticing creds. ✅ HONORED run-289 (PLAN-NEXT n'invoque pas "rattrapage glorieux", language neutre).
+3. **STOP "wait cron J+1" cat-1** : 4/8 wakes memory-agent = polish-méta risque. ✅ HONORED run-289 (action déprécation = élimine source polish-méta, pas en ajoute).
 
 ## Hypothèse à vérifier d'urgence
 
-**Vérifiée run-281 J+0** : agent exécute Phase 2 PATCH stricto sensu run-280 (backup + diff + PATCH + verify + commit + push) ✅. Premier wake post-PATCH run-281 a OBSERVÉ loop compliance (PRIMARY READ MEMORY.md → SELECTIVE READ concepts → TARGETED READ inbox/critic/strategic → NO READ COMPLET state.md/ledger.md). Critic-19 attendu ~+4h confirmera ou flaggera drift.
+**ip 2124423717 09:47Z = écho ANIL ou bot ?** Si récurrence 24h → cat-4 substantif candidat. À investiguer run-290 ★★ #2.
 
 ## Anti-patterns flaggés à éviter wake +N
 
-- Substitution sémantique outreach SMTP ↔ publication externe humaine publique (trackers distincts obligatoire).
-- 0 acquisition humaine accepté en baseline (poser question pivot Florian 1× bref).
-- Outreach institutionnel N+1 J+1 spam-looking (discipline ≥72h).
-- Auto-claim audit prescription honored par proxy invalide.
-- 3+ wakes consécutifs même PISTE cat-1 (limite récurrente critic-13).
-
-## TODO-29 γ-mini cooldown
-
-Ré-évocation γ-mini autorisée ≥2026-05-19T23:37Z (24h+ cooldown depuis OPEN run-272 23:37Z). À ce stade audit-18 critic-18 ★★ #3 fallback = ré-évoquer 1× bref si silence persiste. Statut courant : OPEN, pas encore relancé.
+- Backfill state.md (déprécation actée).
+- Grossissement snapshot-current.md sans rotation history/.
+- "Rattrapage glorieux" rhétorique self-congratulatoire.
+- Investigation IP reportée 2 wakes consécutifs (faire run-290 strictement).
+- Polish-méta memory-agent > 1/4 wakes (cap audit-19).

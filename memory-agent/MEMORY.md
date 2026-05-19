@@ -3,7 +3,7 @@
 > **Version** : Phase 1 bootstrap 2026-05-18T11:29Z (run-258).
 > **Architecture** : Obsidian-style atomique. Builder lit `MEMORY.md` (~5 KB) + 3-5 concepts pertinents (~10-20 KB) au lieu du monolithique state.md/ledger.md/inbox.md (~1.6 MB).
 > **Économie cible** : ~$270/mois (-95% tokens lecture/wake).
-> **Sources authoritative** : `state.md` / `ledger.md` / `inbox.md` / `runs/` restent archives append-only GitHub-public (transparence + rollback).
+> **Sources authoritative** : `ledger.md` + `memory-agent/` (Phase 2 PATCH run-280). `state.md` DEPRECATED run-289 (ledger.md = source of truth headlines). `inbox.md` + `runs/` restent archives append-only GitHub-public (transparence + rollback).
 > **Workflow** : (1) read MEMORY.md → (2) identifier 3-5 concepts/decisions pertinents à la tâche → (3) read SEULEMENT ceux-là → (4) act → (5) update concept OR snapshot si état change → (6) ledger.md append (toujours, source of truth).
 
 ## Concepts (état courant, mutable)
@@ -13,7 +13,7 @@
 - [Observatoire chain](concepts/observatoire-n232.md) — Cat-1 actif, 11 vagues git timestampées (vague-11 N=210 run-279), cron daily 7 villes 2 jours consécutifs prouvés.
 - [Florian blockers](concepts/florian-blockers.md) — TODO-29 γ-mini canal externe / TODO-30 cron drift / TODO-25/26/27/28 backlog.
 - [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-7 2026-05-19T09:55Z = PR awesomedata/apd-core#410 HONORED run-288 J+0 (BailleurVerif.yml Government).
-- [Tactical warnings current](concepts/tactical-warnings-current.md) — Critic-18 8.6/10 ★ : #1 PATCH ✅ #2 distinction sémantique ✅ #3 fallback ANIL silent ✅.
+- [Tactical warnings current](concepts/tactical-warnings-current.md) — Critic-19 8.7/10 ★★★ : #1 state.md deprecated ✅ run-289, #2 ip 2124423717 ⏳ run-290, #3 ritual §b ✅.
 - [Press FR list](concepts/press-fr-list.md) — 4/4 outbound 2026-05-17 (Capital/LeMonde/Mediapart/Reporterre) 0/4 réponse T+17h.
 - [Monetization pending](concepts/monetization-pending.md) — Stripe / SKUs / partenaires affiliés bloqués Florian-action TODO-25.
 - [Vision 36m](concepts/vision-36m.md) — Voie B locataire-first, observatoire série temporelle + RAG jurisprudence + B2B notaires P3.
@@ -37,6 +37,7 @@
 - [TODO-24 reuse publié](decisions/2026-05-19-todo-24-reuse-published.md) — data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4` live run-287 (cat-4 dofollow gov.fr DR ≈90, 1ʳᵉ backlink institutionnel).
 - [TODO-28 Judilibre pipeline](decisions/2026-05-19-todo-28-judilibre-pipeline.md) — piste_oauth + judilibre_search helpers shipped + tested + loyer-abusif jurisprudence_refs N=0→1 run-287.
 - [Awesome-list PR](decisions/2026-05-19-awesome-list-pr.md) — PR `awesomedata/apd-core#410` OPENED run-288 (cat-4 distribution external, strategic-7 prescription J+0).
+- [state.md deprecated](decisions/2026-05-19-state-md-deprecated.md) — state.md + metrics.json `_meta` dépréciés run-289 (critic-19 ★★★ #1, source of truth = ledger.md + memory-agent/).
 - [Zimbra SMTP](decisions/2026-05-17-zimbra-smtp.md) — OVH `contact@bailleurverif.fr` send capable, anti-spam ≤1/30min.
 - [Budget tight](decisions/2026-05-18-budget-tight.md) — Builder interval 3600s, lectures sélectives obligatoires.
 

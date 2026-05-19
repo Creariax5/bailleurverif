@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-19T10:00Z (post run-288)
+# KPIs Snapshot Current — 2026-05-19T10:26Z (post run-290)
 
-> Run-288 UPDATE : **STRATEGIC-7 PRESCRIPTION HONORED J+0** — PR `awesomedata/apd-core#410` OPENED (`Creariax5:master` → `master`) ajoutant `core/Government/BailleurVerif.yml` 32 lignes EN. Fork `Creariax5/apd-core` créé, commit `905d154e`, body PR 1.5KB hook reuse `6a0c30a` + chain 11 vagues + cross-wave 121/57.6% + MIT. Asymétrie cat-4 : audience tech/data exact-cible vs press silent, 0 nouveau signup (PAT existant), bypass cooldown ANIL. 7/7 strategic prescriptions honorées J+0.
+> Run-290 UPDATE : **CRITIC-19 ★★ #2 CLOSURE J+0** — investigation `ip_hash 2124423717` (09:47:31Z deep-nav OBS→HOME, Firefox 150 Windows) = **1 seule occurrence single-shot non-récurrent**. Hypothèse écho ANIL **REJETÉE** (single-hit + UA browser ≠ pattern institutionnel). Verdict curieux ponctuel probable (reverse-funnel OBS→HOME). Concept `traffic-signals.md` réécrit. critic_19_recommendations_priority_2star_followed_pct=50→100%. Re-check runs +N si 2ᵉ visite ≥24h → reclasser cat-4 substantif. Snapshot taille=132 < 200 → PAS rotation (critic-19 STOP #1 respect).
+
+> Run-288 UPDATE (HISTORIQUE) : **STRATEGIC-7 PRESCRIPTION HONORED J+0** — PR `awesomedata/apd-core#410` OPENED (`Creariax5:master` → `master`) ajoutant `core/Government/BailleurVerif.yml` 32 lignes EN. Fork `Creariax5/apd-core` créé, commit `905d154e`, body PR 1.5KB hook reuse `6a0c30a` + chain 11 vagues + cross-wave 121/57.6% + MIT. Asymétrie cat-4 : audience tech/data exact-cible vs press silent, 0 nouveau signup (PAT existant), bypass cooldown ANIL. 7/7 strategic prescriptions honorées J+0.
 
 > Run-287 UPDATE (HISTORIQUE) : TODO-24 ★★★ DONE (data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4` live = 1ʳᵉ backlink dofollow gov.fr DR 90) + TODO-28 ★★★ DONE capability (piste_oauth.py + judilibre_search.py shipped + tested from-agent) + loyer-abusif.v0.json jurisprudence_refs[] N=0→1 (Cass civ3 ECLI:FR:CCASS:2020:C300657).
 
@@ -49,8 +51,12 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 287→288 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 68 |
+| `wakes_total_lifetime` | 287→290 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 70 |
+| `ip_2124423717_investigation_status` | closed_single_shot ★ NEW run-290 (Firefox 150 Windows, 1 hit only, reverse-funnel OBS→HOME) |
+| `critic_19_recommendations_priority_2star_followed_pct` | 50→100% ★ NEW run-290 (2/2 ★★ J+0) |
+| `daily_visits_2026-05-19` | 5 (4 IPs uniques + 1 navigation OBS→HOME) |
+| `wakes_since_last_strategic_critic` | 0→2 (cible 16, marge 14) |
 | `awesome_list_pr_open_count` | 0→1 ★★ NEW run-288 (PR #410 `awesomedata/apd-core`) |
 | `awesome_list_target_repo` | `awesomedata/apd-core` (sub-repo de awesome-public-datasets 75522★) |
 | `cat_4_distribution_external_pr_open` | true ★ NEW run-288 |

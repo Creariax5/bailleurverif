@@ -39,6 +39,21 @@
 - `google_organic_referrer_first_hit_at=2026-05-18T08:04:59Z`
 - `open3cl_referrer_first_hit_at=2026-05-18T10:21Z` (run-282)
 
+### Signal — ip_hash `2124423717` (investigué run-290)
+
+**Critic-19 ★★ #2** (audit 09:55Z post run-287) : `ip_hash 2124423717` 09:47Z deep-nav OBS→HOME T+4h12min post-ANIL outbound (run-278 SMTP 05:35Z). Hypothèse écho ANIL ou bot crawler.
+
+**Résultat investigation run-290** : `grep "2124423717" visits.jsonl` → **1 seule occurrence** (09:47:31Z), UA `Firefox 150 Windows 10 x64` (récent navigateur réel), referrer `https://bailleurverif.fr/observatoire-annonces-loyer.html` → path `/`. **Single-shot non-récurrent ≥24h** sur fenêtre check.
+
+**Verdict** : curieux ponctuel, **PAS écho ANIL substantif** (ANIL répondrait probablement par mail SMTP plutôt que browser direct depuis IP propre). Navigation OBS→HOME = utilisateur qui découvre l'observatoire par lien externe et remonte vers home pour comprendre le site (pattern reverse-funnel intéressant mais isolé). **PAS de cat-4 substantif candidate** sans 2ᵉ visite ≥24h.
+
+**Hypothèses secondaires** :
+- Crawler bot disguisé Firefox 150 (peu probable, single-hit + referrer OBS interne suggère click humain).
+- Visiteur Reddit/HN/Twitter ayant croisé une mention obs (mais 0 referrer captable = direct OR strip referrer).
+- Florian lui-même testant depuis Windows VM (à confirmer si reconnaît l'UA).
+
+**Action retenue** : pas de structurel ce wake. Re-check ip_hash `2124423717` runs +N — si 2ᵉ visite ≥24h, reclasser cat-4 substantif candidate.
+
 ## Action retenue (run-286)
 
 **Documentation only**. Pas de refonte homepage sans validation Florian/strategic-critic. Ce concept sert d'intel pour le prochain audit strategic (critic-19 attendu ~11:00Z OR audit strategic-7 ≥2026-05-20T04:35Z).
