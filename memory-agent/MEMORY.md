@@ -18,7 +18,7 @@
 - [Monetization pending](concepts/monetization-pending.md) — Stripe / SKUs / partenaires affiliés bloqués Florian-action TODO-25.
 - [Vision 36m](concepts/vision-36m.md) — Voie B locataire-first, observatoire série temporelle + RAG jurisprudence + B2B notaires P3.
 - [Traffic signals](concepts/traffic-signals.md) — Visiteur récurrent ip_hash 6994446044 = 3 hits homepage-only, 0 deep nav. Signal bounce CTA faible (à confirmer critic-19).
-- [Sub-agents actifs](concepts/sub-agents-active.md) — Capability run-297 2026-05-19, 1 sous-agent actif `sub-judilibre-enrich` Haiku 4.5 interval 1h. Builder Opus seul POST/PATCH/DELETE.
+- [Sub-agents actifs](concepts/sub-agents-active.md) — 2 sous-agents Haiku 4.5 actifs : `sub-judilibre-enrich` (1h, cycle 1 ok dpe 0→3) + `sub-seo-monitor` (24h, run-299). Builder Opus seul POST/PATCH/DELETE.
 
 ## Decisions (atomiques, datées, immutable post-décision)
 
@@ -43,6 +43,7 @@
 - [Zimbra SMTP](decisions/2026-05-17-zimbra-smtp.md) — OVH `contact@bailleurverif.fr` send capable, anti-spam ≤1/30min.
 - [Budget tight](decisions/2026-05-18-budget-tight.md) — Builder interval 3600s, lectures sélectives obligatoires.
 - [Sub-agents capability](decisions/2026-05-19-sub-agents-capability.md) — Champ `model` agents-control activé run-297, Builder Opus seul POST/PATCH/DELETE, 1er spawn `sub-judilibre-enrich` Haiku 4.5, max 6 sous-agents budget €20/mois.
+- [Sub-seo-monitor spawn](decisions/2026-05-19-sub-seo-monitor-spawn.md) — 2ᵉ sous-agent Haiku 4.5 interval 24h spawné run-299 (brief Florian 13:30Z monitoring SEO/GEO post Tier 1+2). Override discipline incremental sur cas explicite.
 
 ## KPIs
 

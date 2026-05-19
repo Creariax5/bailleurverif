@@ -1,3 +1,218 @@
+## 📊 2026-05-19T13:30Z — Florian → Agent — MONITORING GEO/SEO via outils externes (PageSpeed API + crawler custom + Rich Results + LLM extraction test)
+
+Suite au brief 13:15Z TIER 1+2 (4 leviers additifs SEO/GEO en cours d'exécution). Pour **détecter régressions** + mesurer impact des changements, build un système d'audit automatique.
+
+### Architecture recommandée — sous-agent Haiku dédié
+
+**Spawn `sub-seo-monitor` (Haiku 4.5, interval 24h)** suivant la recette `🤖 11:55Z` CAPABILITY UPGRADE. Cas d'usage parfait pour Haiku : audit déterministe + parsing + rapport, pas de décision stratégique.
+
+```python
+# Spawn one-liner (à adapter)
+payload = {
+    'machine_id': 'f17f4ba8-255a-40a2-9445-b7dffd5a307a',
+    'name': 'sub-seo-monitor',
+    'prompt': '''<voir ci-dessous>''',
+    'schedule_type': 'interval',
+    'schedule_interval': 86400,  # 24h
+    'enabled': 1,
+    'model': 'claude-haiku-4-5-20251001',
+}
+```
+
+### Prompt pour `sub-seo-monitor` (Haiku, 1 wake/jour)
+
+```
+Tu es sous-agent monitoring SEO/GEO BailleurVérif (Haiku 4.5). Tu tournes 1×/jour. Time-box dur 8 min. Output unique : `data/sub-agents/seo-monitor-{ISO}.json` + 1 ligne log `data/sub-agents/seo-monitor.jsonl`.
+
+Tu NE peux PAS : modifier code prod, modifier .env, git push, créer d'autres agents, payer.
+
+Tâches obligatoires (séquentielles) :
+
+1. **PageSpeed Insights API** (free, no auth) sur 6 pages clés :
+   - https://bailleurverif.fr/
+   - /observatoire-annonces-loyer.html
+   - /observatoire-prix-vente-vs-loyer.html
+   - /encadrement-loyer-france-2026.html
+   - /notation-agence-anonyme.html
+   - /api/recourse
+   Endpoint : `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=URL&category=PERFORMANCE&category=SEO&category=ACCESSIBILITY&strategy=mobile`
+   Capture pour chaque page : `perf_score`, `seo_score`, `accessibility_score`, LCP/CLS/INP. JSON output structuré.
+
+2. **Crawler structurel custom** : walk `/sitemap.xml` (181 URLs). Pour chaque URL HTTP 200 :
+   - title length 30-60 ?
+   - meta description 50-160 ?
+   - exactement 1 H1 ?
+   - canonical present + match URL self ?
+   - JSON-LD valid (try parse json) ?
+   - count internal links (≥3 attendu) ?
+   - any img sans alt ?
+   Output : `seo_issues_count` par catégorie + 10 worst URLs avec issues.
+   **Budget time** : sample 30 URLs aléatoirement si full crawl >5 min.
+
+3. **LLM-bot extraction test** : `curl -A "GPTBot" URL` vs `curl -A "Mozilla" URL` sur 3 pages clés. Compare body length + check pas de cloaking accidentel. Si écart >20% body length → flag.
+
+4. **Diff vs hier** : lire `seo-monitor.jsonl` ligne précédente. Calculer Δ (perf score, seo score, issues count). Output `regression_alerts` array.
+
+5. **Rapport synthèse** dans output JSON :
+```json
+{
+  "ts": "...",
+  "pagespeed_summary": {"avg_perf_mobile": 85, "avg_seo": 95, "worst_page": "...", "worst_score": 72},
+  "crawler_summary": {"urls_checked": 30, "issues_total": 8, "issues_by_type": {...}},
+  "llm_extraction_summary": {"max_body_delta_pct": 5, "cloaking_detected": false},
+  "regressions_vs_yesterday": [...],
+  "recommendations": ["...", "..."]
+}
+```
+
+6. Si `regressions_vs_yesterday.length >= 1` OU `worst_score < 70` OU `cloaking_detected=true` → APPEND ligne dans `inbox.md` HEAD (pas tail) sous header `## 🚨 SEO MONITOR ALERT {ISO}` avec résumé 3 lignes. Sinon : SILENT (pas de polluage inbox).
+
+7. Git commit `data/sub-agents/seo-monitor-{ISO}.json` (pas push, Builder agglomère).
+
+8. STOP.
+```
+
+### Pourquoi sous-agent Haiku plutôt que toi (Builder Opus)
+
+- **Coût** : 1 wake Haiku ~$0.05 vs $0.50 Opus = 10× moins cher quotidien
+- **Qualité** : audit déterministe + parsing JSON = Haiku 4.5 largement suffisant (testé bout-en-bout 12:00Z)
+- **Délégation propre** : tu (Opus) lis seulement le résumé final + alertes, pas le bruit raw d'audit
+- **1ʳᵉ démo Levier 2** : prouve le pattern sub-agent qui scale, débloque les 4 autres use-cases (judilibre-enrich, imap-summarizer, crawler-postprocess, linkedin-drafter, observatoire-publisher)
+
+### Order pour ce wake (run-N)
+
+1. (5 min) Crée `agent-browser/sub_seo_monitor_prompt.md` (sauvegarde prompt dans fichier versionné).
+2. (3 min) POST `/api/agents` avec payload Haiku + interval 86400 + enabled=1.
+3. (2 min) Update `agent-browser/sub-agents-registry.json` (créer si pas existant) : append entry `{id, name: "sub-seo-monitor", model: "claude-haiku-4-5-20251001", created_at, prompt_file}`.
+4. (1 min) Append 1 ligne `florian-todos.md` section `## SOUS-AGENTS ACTIFS` (créer si pas existant) : `sub-seo-monitor (Haiku) created <ISO> id=...`.
+5. Commit + push.
+
+Premier audit complet dispo demain matin (~14h Florian, T+24h post-spawn). Test concret = vérifier si TIER 1 priorité #1 (markdown versions) qui sera shippée d'ici 1-2 wakes améliore les scores Lighthouse/SEO.
+
+### Alternative légère (si Haiku not yet wiring up Anthropic API call structure)
+
+Si `sub-seo-monitor` Haiku échoue (ex: api.anthropic.com refuse outbound), fallback temporaire = toi (Builder Opus) tournes ce script 1×/jour via condition `if hour == 06 UTC` dans tes wakes. Mais on perd le pricing Haiku.
+
+### Budget total sous-agents post-spawn
+
+- 1 sous-agent (`sub-seo-monitor`) × 1 wake/jour × $0.05 ≈ **$1.50/mois**.
+- Largement sous le hard limit 20€/mois mentionné dans brief 11:55Z.
+- Marge pour 4-5 autres sous-agents Haiku ultérieurs.
+
+GO. Brief Sub-agent priorité #1 démo Levier 2.
+
+---
+
+## 🔍 2026-05-19T13:15Z — Florian → Agent — UPGRADE GEO/SEO ★ TIER 1+2 (4 leviers additifs, ~2-3h cumulé)
+
+Florian a fait un audit GEO/SEO de prod. Constat : **site déjà très bien structuré** (llms.txt 200 OK, robots.txt explicit AI allow GPTBot/ChatGPT/Claude/Perplexity/Google-Extended/Bytespider, sitemap 181 URLs, JSON-LD Dataset+Org+BreadcrumbList+Place complet observatoire, OG tags, light theme mobile-first LCP <2s). Mais 4 leviers asymétriques manquent.
+
+### 🛑 Règle d'or absolue — ADDITIF UNIQUEMENT
+
+**TOUT CHANGEMENT DOIT ÊTRE ADDITIF.** Pas de :
+- Suppression de page existante
+- Renommage URL existante
+- Modification canonical tag existant
+- Modification structure URL existante
+- Removal de JSON-LD existant
+
+Si tu DOIS modifier une page existante (ex: ajouter une citation), tu n'enlèves rien, tu ajoutes seulement. Risque casse SEO indexation = traffic loss net = mois de récupération.
+
+### 🎯 4 priorités ordonnées
+
+#### Priorité 1 ★★★ — Markdown versions pages clés (~30 min, gain immédiat citations LLM)
+
+LLMs (Perplexity, Claude, ChatGPT) préfèrent markdown au HTML pour citation. Actuellement `/observatoire-annonces-loyer.md` → 404 et `/api/recourse/loyer-abusif.md` → 400.
+
+**À faire** :
+1. Patch `wedge-tool/server.py` : ajouter handler dispatch `.md` (ou Accept header `text/markdown`) pour 5 pages clés :
+   - `/observatoire-annonces-loyer` → `.md` ✓
+   - `/observatoire-prix-vente-vs-loyer` → `.md` ✓
+   - `/encadrement-loyer-france-2026` → `.md` ✓
+   - `/api/recourse/loyer-abusif` → `.md` ✓
+   - `/api/recourse/dpe-invalide` → `.md` ✓
+   - `/api/recourse/depot-garantie-non-restitue` → `.md` ✓
+2. Pour chaque page : générer une fois le markdown depuis HTML (strip nav, garder content + JSON-LD inline en frontmatter YAML), persist `wedge-tool/static/<page>.md`.
+3. Pour `/api/recourse/<tag>.md` : générer depuis template JSON existant (Title H1 + sections legal_basis + jurisprudence_refs + steps).
+4. **Linker depuis HTML** : sur chaque page HTML correspondante, ajouter `<link rel="alternate" type="text/markdown" href="/page.md" hreflang="fr">` dans `<head>`.
+5. Ajouter URLs `.md` au sitemap.
+6. **IndexNow ciblé** (PAS burst — 6 URLs nouveaux uniquement).
+7. Test : `curl -H "Accept: text/markdown" https://bailleurverif.fr/observatoire-annonces-loyer` → 200 markdown ; `curl https://bailleurverif.fr/observatoire-annonces-loyer.md` → 200 markdown.
+
+#### Priorité 2 ★★ — JSON-LD `FAQPage` + `HowTo` (~30 min, rich snippets Google + LLM Q/R)
+
+Génère **rich results Google** (CTR +20-40%) + LLM citation cible parfaite pour queries "qu'est-ce que" / "comment".
+
+**À faire** :
+1. **FAQPage** sur 5 pages :
+   - `/encadrement-loyer-france-2026` : 8 Q/R ("Qu'est-ce que l'encadrement des loyers ?", "Comment vérifier si mon loyer respecte l'encadrement ?", "Quelles villes sont concernées ?", etc.)
+   - `/observatoire-annonces-loyer` : 6 Q/R sur la méthodologie observatoire
+   - `/notation-agence-anonyme` : 5 Q/R sur le formulaire + anonymat + usage data
+   - 2 pages DPE F/G : 6 Q/R chacune sur interdiction location 2025/2028
+2. **HowTo** sur 3 pages recours :
+   - `/api/recourse/loyer-abusif` page HTML (faire `loyer-abusif.html` si pas existant) : "Comment contester un loyer abusif en 5 étapes" avec articles loi + jurisprudence cités
+   - `/api/recourse/dpe-invalide` : "Comment contester un DPE invalide en 4 étapes"
+   - `/api/recourse/depot-garantie-non-restitue` : "Comment obtenir restitution dépôt de garantie en 5 étapes"
+3. Test via [Google Rich Results Test](https://search.google.com/test/rich-results) — si erreurs, fixer avant commit.
+4. **Sitemap update** : ajouter pages HTML recourse si nouvelles.
+
+#### Priorité 3 ★★ — Citations source explicites (~30 min, trust EEAT)
+
+Chaque chiffre cité actuellement "sec" doit avoir un lien vers la source canonique.
+
+**À faire** :
+1. Scanner toutes les pages avec `grep -rE "[0-9]+%|N=[0-9]+|[0-9]+ annonces" wedge-tool/static/*.html`
+2. Pour chaque chiffre, ajouter inline : `<a href="https://www.data.gouv.fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif" class="source-cite">source : observatoire N=232 wave-11 2026-05-19</a>` (style discret CSS pour pas casser layout)
+3. Ajouter footer `<aside class="sources">` listant toutes sources avec date publication.
+4. **Renforce trust signal** : Google EEAT (Expertise/Experience/Authoritativeness/Trustworthiness) + LLMs préfèrent contenu source-cited.
+
+#### Priorité 4 ★ — Page `/lexique.html` (~30 min)
+
+LLMs FR-immo répondent à 30-40% queries Perplexity en mode "qu'est-ce que X". Une page `/lexique` bien faite = citation cible parfaite.
+
+**À faire** :
+1. Créer `/lexique.html` : 25-30 termes immo FR cruciaux (encadrement loyer, DPE, dépôt de garantie, préavis, congé pour vente, état des lieux, charges récupérables, loi 89-462, ANIL, etc.)
+2. Format : `<dt>Terme</dt><dd>Définition 1-3 phrases + lien vers ressource produit BailleurVérif si applicable</dd>`
+3. JSON-LD `DefinedTermSet` global + `DefinedTerm` par entry
+4. Cross-link depuis pages programmatiques vers `/lexique.html#terme`
+5. Add au sitemap + IndexNow ciblé.
+
+### ⏭️ TIER 2 différé (peut attendre 1-2 wakes après TIER 1)
+
+- **Wikidata entry BailleurVérif** : nécessite signup Florian côté wikidata.org (~30 min Florian unique). Note dans `florian-todos.md` TODO-31.
+- **Press kit page** `/presse-kit.html` : 1 wake supplémentaire, post-TIER 1.
+- **Sitemap segmentation** (1 → sitemap_index.xml + sitemap-pages/observatoire/recourse/programmatic.xml) : 1 wake. Risque 5-10% (garde le sitemap.xml original en parallèle).
+
+### 🧪 Test post-deploy obligatoire
+
+Après chaque priorité shippée :
+1. `curl -sk URL` → HTTP 200 ✓
+2. Si JSON-LD ajouté : Google Rich Results Test → valid ✓ (ou au moins pas d'erreur critique)
+3. Update `sitemap.xml` puis IndexNow ciblé (6 URLs max par burst, anti-Critic-9 polish-loop ban)
+4. Spot-check via `curl https://bailleurverif.fr/page` que le contenu existant n'a pas régressé
+
+### ⏰ Estimation budget
+
+- Priorité 1 (Markdown) : 30 min wake budget
+- Priorité 2 (FAQPage+HowTo) : 30 min
+- Priorité 3 (Citations) : 30 min
+- Priorité 4 (Lexique) : 30 min
+- Total : **~2-3 wakes Builder ou 1 wake + 2-3 sous-agents Haiku** (markdown gen / FAQ gen / lexique gen = parfait pour Haiku 4.5 déterministe).
+
+### Auto-rollback si problème
+
+Si après deploy : (a) Page existante régression HTTP 200 → 5xx, (b) Google Search Console alerte erreur indexation dans 24h, (c) test Rich Results échoue → tu rollback git revert HEAD + restart server. Watchdog cron `*/2` (installé 13:00Z) backup automatique.
+
+### Order pour ce wake (run-N)
+
+**Si tu as budget time** : commence par **Priorité 1 (markdown)** — la plus asymétrique gain LLM + zéro risque pages existantes. Single-wake.
+
+**Si budget tight** : spawn 1 sous-agent Haiku `sub-markdown-generator` (recette inbox `🤖 11:55Z`) pour générer les 6 markdowns en parallèle pendant que tu (Opus) gères autre chose.
+
+GO.
+
+---
+
 ## 🚨 2026-05-19T13:00Z — Florian → Agent — INCIDENT prod `bailleurverif.fr` DOWN ~30 min (502 Bad Gateway) — watchdog cron installé
 
 ### Incident

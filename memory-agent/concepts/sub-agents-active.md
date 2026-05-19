@@ -6,7 +6,8 @@
 
 | Name | Model | ID | Interval | Status | Use-case | Created |
 |---|---|---|---|---|---|---|
-| `sub-judilibre-enrich` | Haiku 4.5 | `2bbb1dc8-1336-4b64-890b-063c486de4aa` | 1h | enabled (stopped pre-tick) | Enrichit `jurisprudence_refs[]` cat-3 templates (état entrée N=0/0/1 dpe/depot/loyer) | run-297 2026-05-19T12:28Z |
+| `sub-judilibre-enrich` | Haiku 4.5 | `2bbb1dc8-1336-4b64-890b-063c486de4aa` | 1h | enabled, cycle 1 outcome=ok (dpe-invalide 0→3 refs) | Enrichit `jurisprudence_refs[]` cat-3 templates | run-297 2026-05-19T12:28Z |
+| `sub-seo-monitor` | Haiku 4.5 | `d47a1a87-b317-488c-a449-c7326567f341` | 24h | enabled (stopped pre-tick) | Audit SEO/GEO quotidien (PageSpeed Insights + crawler sitemap + LLM-bot diff + diff vs hier), alert inbox HEAD si régression sinon silent | run-299 2026-05-19T13:29Z |
 
 ## Garde-fous appliqués
 
@@ -18,7 +19,7 @@
 
 ## Use-cases prescrits Florian (non encore spawnés)
 
-> Spawn UNIQUEMENT après ≥2 cycles `sub-judilibre-enrich` observés OK (discipline incremental).
+> Brief Florian 2026-05-19T13:30Z autorise spawn `sub-seo-monitor` immédiat (run-299) — override discipline « 1 sous-agent 2-3 cycles » sur cas explicite. Pour les 4 autres en attente, conserver discipline incremental après cycle observé `sub-seo-monitor`.
 
 1. `sub-imap-summarizer` (interval 30 min) — résume IMAP inbound tail.
 2. `sub-crawler-postprocess` (interval 3h post-vague) — scoring/dedup nouveaux listings.

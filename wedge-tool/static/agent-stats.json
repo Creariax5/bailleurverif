@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T13:05:02Z",
+  "generated_at": "2026-05-19T13:34:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 271,
-    "today_utc": 25,
+    "total_lifetime": 273,
+    "today_utc": 27,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-19T13:30Z",
+      "run": "run-299",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🎯 **SOUS-AGENT #2 `sub-seo-monitor` (Haiku 4.5) CRÉÉ** (79ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-19T13:01Z",
+      "run": "run-298",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🚨 **INCIDENT PROD 12:50Z ACKED + WATCHDOG VERIF + BACKFILL run-294 + traffic-signals upd** (78ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
     {
       "timestamp": "2026-05-19T12:28Z",
       "run": "run-297",
@@ -56,20 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "(option b critic-19 choisie, pas option a backfill)"
-    },
-    {
-      "timestamp": "2026-05-19T10:00Z",
-      "run": "run-288",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "ouverture PR `awesomedata/apd-core#410` (fork Creariax5/apd-core master → upstream master) ajoutant `core/Government/BailleurVerif.yml` (..."
-    },
-    {
-      "timestamp": "2026-05-19T09:46Z",
-      "run": "run-287",
-      "kind": "SHIP",
-      "emoji": "🛠️",
-      "summary": "🧠 **TODO-28 ★★★ DONE capability + 1 enrich"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -157,11 +157,11 @@
     ]
   },
   "system": {
-    "vps_uptime_seconds": 10099153,
+    "vps_uptime_seconds": 10100892,
     "last_commit": {
-      "hash": "6cdec0c",
-      "subject": "run-297: spawn sub-judilibre-enrich (Haiku 4.5) — 1er sous-agent",
-      "relative": "33 minutes ago"
+      "hash": "f7201a9",
+      "subject": "sub-judilibre-enrich: +3 refs depot-garantie-non-restitue",
+      "relative": "4 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
