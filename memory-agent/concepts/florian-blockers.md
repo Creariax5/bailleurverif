@@ -1,49 +1,68 @@
 # Concept : Florian-blockers (TODOs ouverts)
 
-**État** : 5 TODOs OPEN au 2026-05-18T12:57Z (run-261). Tous **non-bloquants** par DIRECTIVE 9 (l'agent pivote sur voie alternative).
+**État** : 5 TODOs OPEN au 2026-05-19T07:42Z (post run-281). Tous **non-bloquants** par DIRECTIVE 9 (l'agent pivote sur voie alternative).
 
-## TODO-28 ★★ — 2026-05-18 — api.piste.gouv.fr OAuth Judilibre signup (run-261)
+## TODO-29 ★★★ — 2026-05-18 — Débloquer 1 canal externe humain (critic-16 ★★★ #1)
 
-**Pourquoi (correction run-260)** : strategic critic audit-4 a annoncé pivot cat-3 via data.gouv.fr dataset `66fddeda33e2036788436d8f` "sans signup". Vérif ce wake = INPI marques/brevets (hors-sujet bail/loyer). Vrai corpus Judilibre = `api.piste.gouv.fr/cassation/judilibre/v1.0` = OAuth client_id+secret nominatif (Florian signup obligatoire).
+**Pourquoi** : 76+ wakes consécutifs sans humain newly engaged. 4/5 canaux autonomes confirmés morts (Mastodon piaille suspended / Reddit OAuth cassé post Gmail-disabled / HN+LinuxFr signup self-policy / LinkedIn nominatif). Sans 1 canal externe actif, critic escalate "discipline parfaite stratégie creuse".
 
-**Action** : 3 min Florian → https://piste.gouv.fr → souscription Judilibre → .env `JUDILIBRE_CLIENT_ID/SECRET`.
+**Options (~1-5 min Florian, ordre préférence)** :
+- **(γ-mini) ★ — 60 sec friction ÷5** : copy-paste 1 tweet 278c sur 1 compte perso existant Twitter/Bluesky/Mastodon. Texte exact prêt dans `social-drafts.md` section `TWEET-γ-MINI`. Pas de signup, pas de cred, pas de switch d'onglet >60s.
+- **(α)** Coller cred Bluesky `.env` : `BLUESKY_HANDLE=` + `BLUESKY_APP_PASSWORD=` → agent post autonome (`bluesky_post_atproto.py` shipped run-274).
+- **(β)** Créer compte Mastodon FR autre instance (mamot.fr / framapiaf.org) avec email perso → `MASTODON_INSTANCE_2=` + `MASTODON_PASSWORD_2=` `.env`.
+- **(γ)** Poster toi-même 1 message LinkedIn organique linkant observatoire.
 
-**Cohérence agent** : pré-écriture `crawler/judilibre_fetch.py` OAuth client_credentials flow wake suivant (réutilisable post-débloquage). Cooldown ré-évocation 48h+.
+**Cohérence agent** : pas d'auto-comment (compte agent ≠ compte Florian), pas de signup nominatif. `bluesky_post_atproto.py` ready, `social-drafts.md` ready.
 
-## TODO-23 ★★★ HARD-ASK FINAL 48h — 1 post canal public
+**Statut** : OPEN run-272 2026-05-18T23:37Z. Update run-276 = γ-mini ajouté. Cooldown ré-évocation 24h+ → autorisé ≥2026-05-19T23:37Z.
 
-Strategic critic audit-4 prescription (réitérée audit-3 + bumped). Deadline 2026-05-20T12:00Z. 3 chemins (LinuxFr/X compte perso/QueChoisir forum). Drafts dans `outreach-alternate-channels.md` + `social-drafts.md`. Si silent → cat-2 morte officialisée + bascule cat-3 **conditionnel à TODO-28**.
+## TODO-30 ★ — 2026-05-19 — Cron wake interval drift externe (info)
 
-## TODO-25 ★★★ — Activation monétisation (Florian-action ~3-5h, semaine prochaine)
+**Pourquoi** : critic-17 flaggué wakes ~57-64 min vs `*/15` attendu côté agents-control. Crontab VPS local OK. Drift est **côté agents-control config** (hors-portée fichiers VPS).
+
+**Action attendue Florian** (~1 min, info only) :
+1. Dashboard agents-control : pattern wake `*/15` ou `*/60` ?
+2. Si `*/60` → restaurer `*/15` (4× wakes/h coût ×4) OU acter baseline `*/60`.
+3. Optionnel inbox `TODO-30 acked: */15` ou `TODO-30 acked: */60`.
+
+**Statut** : OPEN run-276 2026-05-19T03:34Z. Cooldown 48h+ info non-bloquante.
+
+## TODO-28 ★★ — 2026-05-18 — api.piste.gouv.fr OAuth Judilibre signup
+
+**Pourquoi** : vrai corpus jurisprudence civile FR = Judilibre `api.piste.gouv.fr/cassation/judilibre/v1.0` = OAuth nominatif obligatoire (signup utilisateur + clé). Self-policy run-121 → agent n'auto-signup pas. Strategic-4 fallback "data.gouv.fr `66fddeda33e2036788436d8f` sans signup" était INPI marques/brevets, hors-sujet.
+
+**Action Florian** : 3 min → https://piste.gouv.fr → souscription Judilibre → `.env` `JUDILIBRE_CLIENT_ID/SECRET`.
+
+**Cohérence agent** : pré-écriture `crawler/judilibre_fetch.py` OAuth client_credentials flow réutilisable post-débloquage. Cooldown 48h+.
+
+## TODO-25 ★★★ — Activation monétisation (Florian-action ~3-5h)
 
 - 25.1 Stripe / Lemon Squeezy compte (~1h)
 - 25.2 Définir 3 SKUs payants (30 min)
 - 25.3 Signer 1-3 partenariats affiliés (1-2h)
-- 25.4 ?
-- 25.5 ?
 
-**Cohérence agent** : tu codes l'intégration Stripe BLANK (test mode opérationnel sans clés), 3 brouillons partenaires affiliés (Lovys/Hemea/Castorama), CGU monétisation draft = readiness sans bloquer Florian.
+**Cohérence agent** : intégration Stripe BLANK (test mode), brouillons partenaires affiliés (Lovys/Hemea/Castorama), CGU monétisation draft.
 
-## TODO-26 ★ — ANTHROPIC_API_KEY .env (silent T+~10h, one-shot mention)
+## TODO-26 ★ — ANTHROPIC_API_KEY `.env` (silent)
 
-**Pourquoi** : débloquer cat-3 RAG Claude API compounding (batch jobs scrape→résumé→template + embeddings jurisprudence Cassation/CA).
+**Pourquoi** : débloquer cat-3 RAG Claude API compounding (batch jobs scrape→résumé→template + embeddings jurisprudence).
 
-**Cohérence agent** : continuer cat-3 inline (Claude Code génère identique). Blocage réel = stade RAG vectorisé jurisprudence (wake +6+ hypothétique). Ré-évocation différée 24h+.
+**Cohérence agent** : continuer cat-3 inline (Claude Code génère identique). Blocage réel = stade RAG vectorisé (wake +N hypothétique). Ré-évocation 24h+.
 
-## TODO-27 ★★ — 2026-05-18 — Open3CL issue #160 follow-up (cooldown 24h)
+## TODO-27 ★★ — 2026-05-18 — Open3CL issue #160 follow-up
 
-- Option A : Florian post bump-comment ~14:49Z 2026-05-19 si toujours 0 réponse
-- Option B post-A : agent drafte PR locale `getLegalStatus.js` + tests Jest, push avec GH PAT
+- Option A : Florian post bump-comment ~14:49Z 2026-05-19 si 0 réponse.
+- Option B post-A : agent drafte PR locale `getLegalStatus.js` + tests, push GH PAT.
 
-**Cohérence agent** : pas de auto-comment (compte agent ≠ compte Florian) ; on attend signal Florian.
+**Cohérence agent** : pas d'auto-comment (compte agent ≠ Florian) ; on attend signal.
 
-## TODOs archivés DONE / CANCELLED (référence)
+## TODOs archivés DONE / CANCELLED / MORTS
 
-- TODO-1-8 archivés CANCELLED pivot DIRECTIVE 2 wedge tool
+- TODO-1→8 CANCELLED pivot DIRECTIVE 2 wedge tool
 - TODO-9 NDD bailleurverif.fr DONE (HTTPS Let's Encrypt OVH)
 - TODO-10/13/14/15 Browserbase signups DEFERRED (self-policy)
 - TODO-12 Browserbase PROJECT_ID DONE
 - TODO-21 SMTP DONE (OVH Zimbra `contact@bailleurverif.fr`)
 - TODO-22 GitHub PAT DONE (`.env` `GH_TOKEN`)
-- TODO-23 LinuxFr post draft DONE → posté run-237 vraisemblable
-- TODO-24 data.gouv.fr api-key v3 republish pending (ré-évocation depuis 30+ wakes, 24h+ cooldown)
+- TODO-23 HARD-ASK FINAL canal public DEAD/MORT (cat-2 déclarée morte officiellement run-272 ; strategic-6 pivot vers cat-4 ANIL run-278 J+0 honored)
+- TODO-24 data.gouv.fr api-key v3 republish pending (ré-évocation 30+ wakes, 24h+ cooldown)

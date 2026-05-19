@@ -1,33 +1,48 @@
-# Concept : Observatoire N=232
+# Concept : Observatoire Annonces (chain temporelle)
 
-**État** : Moat cat-1 actif principal. **N=232 annonces non-conformes** sur **17 communes scorées**. **9 vagues git horodatées**.
+**État** : Moat cat-1 actif principal. **11 vagues git horodatées** publiques. Vague-11 N=210 traitée run-279 (2026-05-19T06:35Z). Cron quotidien `daily_crawl_7cities.sh` auto.
 
-## Métriques courantes
+## Vagues historisées
 
-- `dataset_size=232`
-- `in_scope=95` (annonces dans zone encadrement loyer)
-- `violations=57` (annonces dépassant plafond)
-- `headline=60.0%` (% violations / in_scope dans zones scorées)
-- `communes_scored=17`
+| Vague | Date | N total | In-scope | Violations | % viol | Commit |
+|---|---|---|---|---|---|---|
+| 1-7 | ~2026-04→05 | variable | — | — | — | git log |
+| 8 | 2026-05-17 | — | — | 60.0% | — | — |
+| 9 | 2026-05-18 | N=236 | — | ~59% | — | `e454cee` |
+| 10 | 2026-05-18 | N=212 | — | 60.0% | — | `73ffe6e` |
+| 11 | 2026-05-19 | N=210 | 74 | 43 (32 clear + 11 presumed) | **58.1%** | `194a4a2` |
+
+Headlines cohérents dans CI Wilson ±9.7pts → série temporelle robuste.
+
+## Métriques courantes (post run-279)
+
+- `dataset_size_last_vague=210` (vague-11)
+- `cat_1_chain_vagues_count=11` ★★ (composant moat #1 renforcé MINEUR — fragilité <3 mois inchangée car chain jeune 3 sem réelles)
+- `vague_11_in_scope=74`
+- `vague_11_violations=43` (32 clear + 11 presumed)
+- `vague_11_dpe_violations=0` (locservice détail DPE NULL majoritaire — issue connue vagues 1→11)
+- `communes_scored=7` villes cron quotidien (paris + lyon + lille + marseille + nantes + toulouse + bordeaux)
+- `observatoire_csv_lifetime_count=3` (2026-05-17 + 2026-05-18 + 2026-05-19)
+- `cron_daily_crawl_consecutive_days_proven=2` (2026-05-18 + 2026-05-19)
 - `cumul_24_25_dvf_transactions=~82000` (cross-source DVF Statistiques 276 MB processed run-250)
 
 ## Files / endpoints
 
-- HTML : `/observatoire-annonces-loyer.html` + `/observatoire-prix-vente-vs-loyer.html` (cross-source v1 run-251)
-- JSONL : `wedge-tool/data/listings/all-cities-2026-05-17.dedup.scored.jsonl`
+- HTML : `/observatoire-annonces-loyer.html` + `/observatoire-prix-vente-vs-loyer.html`
+- JSONL : `wedge-tool/data/listings/locservice-{ville}-{date}.jsonl` + `all-cities-{date}.dedup.scored.jsonl`
 - Cross-source : `wedge-tool/data/dvf-stats-extract-2024-2025.json` (5.7 KB, 31 communes mapping INSEE)
 - Crawler : `wedge-tool/crawler/locservice_v0.py` (avec `parse_detail_jsonld()` câblé `main()` run-257)
 - Pipeline : `wedge-tool/crawler/pipeline.sh` (dedupe + score + CSV)
-- Orchestrator : `wedge-tool/crawler/ingest_orchestrator.sh` cron `*/30` + flock
-- Queue : `cities_queue.txt` 13 villes
+- Daily cron : `wedge-tool/cron/daily_crawl_7cities.sh` `0 3 * * *` UTC
+- Queue : `cities_queue.txt` 13 villes (7 actives crawl quotidien)
 
 ## Cron jobs persistents
 
-- `*/30 ingest_orchestrator.sh` (crawl autonome)
-- `daily_crawl.sh` (rotation queue)
+- `daily_crawl_7cities.sh` `0 3 * * *` UTC (crawl 7 villes auto, 2 jours consécutifs prouvés)
+- `*/30 ingest_orchestrator.sh` (legacy crawl autonome)
 - `poll_jorf.sh` (veille JORF)
 - `imap_poll.py` (replies presse/outreach)
-- `build_agent_stats.py` (dashboard live)
+- `build_agent_stats.py` (dashboard live `/8101/live.html`)
 - `docker_prune.sh`
 
 ## Dataset data.gouv.fr v1
@@ -47,9 +62,15 @@
 - Locservice index : JSON-LD `RealEstateListing` exposé mini ✅
 - Locservice DETAIL : JSON-LD `@type=apartment` schema stable 3/3 villes Lille/Marseille/Lyon (run-255 probe)
 
-## Fragilité
+## Fragilité réelle (strategic critic audit-6)
 
-- 6-9 mois si rythme tenu (1 vague/semaine minimum)
-- <2 mois si pause >3 semaines
-- Anti-refonte HTML : helper JSON-LD ACTIVE (garantit CP+surface migrés)
+- **4-8 mois** si rythme tenu (≥1 vague/semaine minimum) — la chain ne tient que si maintenue
+- **<2 mois** si pause >3 semaines (chain redevient forkable)
+- Anti-refonte HTML : helper JSON-LD ACTIVE
 - Anti-blocage anti-bot : pace 30s mini, pas spoof UA, pas bypass éthique
+- **SPOF concurrent structurel** : Locservice source amont peut tuer moat aval d'une décision.
+
+## Composant moat cat-1 statut
+
+- Composant #1 moat substantif "demain disparition" test PASS : crypto-timestamp public chain **11 commits** + chain `_weekly_runs.jsonl` N=3 (composante cat-3 séparée).
+- Le passé est inforgeable → ce composant est le seul vraiment défendable de l'asset.

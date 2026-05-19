@@ -1,40 +1,45 @@
 # Concept : Tactical Warnings (last critic audit)
 
-**Source** : `inbox-from-critic.md` audit-13 2026-05-18T10:50Z.
+**Source** : `inbox-from-critic.md` **audit-18 2026-05-19T07:00Z** (post run-279, audit-18).
 
 ## Verdict global
 
-**8.0/10** (+0.5 vs audit-12). Cycle 5 wakes excellent côté exécution : 3/3 priorités audit-12 honorées J+0/J+1. DIRECTIVE 7 RÉVISÉE 49 sessions. **MAIS** : +0 humain 53 wakes / +38h ; alerte polish loop cat-1 JSON-LD 3 wakes consécutifs (253+254+255) ; helper `parse_detail_jsonld()` NON-câblé `main()` = pattern "ready-but-not-publish" récurrent ; migration mémoire Florian-priorité 06:10Z+09:55Z = 4h+ différée.
+**8.6/10** (+0.2 vs audit-17). Cycle 4-wakes ★★★ exemplaire compliance disciplinaire :
+- 3/3 priorités audit-17 honored + 3/3 STOPs honored
+- Strategic-Critic-6 invocation DIRECTIVE 10 §a (run-277)
+- Prescription strategic-6 exécutée J+0 (run-278 ANIL mail SUCCESS)
+- 4 catégories moat cyclées (cat-1 vague-11 N=210 + cat-3 saturé + cat-4 ANIL + cat-N/A γ-mini)
+- 4 commits push successifs + WHY_THIS_NOT_THAT 4/4 + 0 ScheduleWakeup 4/4
 
-## 3 actions critic-13 prioriser
+**MAIS** :
+1. Substitution sémantique audit-17 #1 ("publication externe humaine publique" → "ANIL mail SMTP") = proxy invalide laisse prescription tactical OUVERTE.
+2. 76 wakes consécutifs sans humain newly engaged / 0 visite humaine 6h+ / `humans_engaged_lifetime=2 UNCHANGED` 8 wakes.
+3. **ORDRE FLORIAN 06:45Z PATCH agent prompt** reçu APRÈS run-279 = priorité ABSOLUE run-280 override tout NEXT.
 
-1. **★★★ Lire `tail -50 visits.jsonl` CE WAKE + reconnaître visite Open3CL** ✅ HONORÉ run-257
-2. **★★ Wiring `parse_detail_jsonld()` dans `main()` + smoke `--limit 3 --dry-run`** ✅ HONORÉ run-257
-3. **★★ Migration mémoire Phase 1 bootstrap partiel** ✅ HONORÉ run-258 (ce wake)
+## 3 actions critic-18 prioriser
 
-## 3 actions critic-13 arrêter
+1. **★★★ EXÉCUTER ORDRE FLORIAN 06:45Z — PHASE 2 PATCH AGENT PROMPT** ✅ HONORÉ run-280 (HTTP 200, verify 8/8 PASS, 8326→5349 chars -35.7% économie).
+2. **★★ TRACKER DISTINCTION SÉMANTIQUE** "publication externe humaine publique" ≠ "outreach SMTP institutionnel" ✅ HONORÉ run-281 (`publications_externes_humaines_publiques_count=0 UNCHANGED 76+ wakes` distinct ajouté `metrics.json`).
+3. **★★ PRÉPARER FALLBACK TODO-29 + ANIL silent** ✅ PARTIEL HONORÉ run-281 (`cat_4_anil_silence_check_due=2026-05-22T05:35Z` ajouté). TODO-29 ré-évocation γ-mini cooldown 24h+ ≥23:37Z 19/05 — pas encore expirée à run-281 07:33Z.
 
-1. STOP célébration `directive_7_revisee_compliance_consecutive_wakes=49` headline state.md (6 wakes consécutifs ; mention 1 fois suffit)
-2. STOP "ready-but-not-publish" patterns récurrents
-3. STOP 3+ wakes consécutifs sur même PISTE cat-1 (JSON-LD upgrade = 253+254+255 limite atteinte)
+## 3 actions critic-18 arrêter
+
+1. **STOP confusion "mail SMTP institutionnel = publication externe humaine publique"** : maintenir trackers distincts. Ne pas implicitement claim audit-17 #1 honored par ANIL mail.
+2. **STOP "0 acquisition humaine acceptée comme baseline implicite"** : reconnaître structurellement 76 wakes sans humain = signal **structurel** mathématiquement inaccessible 5000/90j sans pivot voie ou activation TODO-25 monétisation. Question pivot à poser Florian 1× bref.
+3. **STOP outreach institutionnel N+1 J+1 stérile** : maintenir discipline ≥72h avant relance ANIL silent. Pas de "2ᵉ ADIL/CLCV reformulé" run-280-282 comme pivot facile.
 
 ## Hypothèse à vérifier d'urgence
 
-- Lecture `tail -50 visits.jsonl` + curl `https://github.com/Open3CL/engine/issues/160` wake +1
-- Si mainteneur a réagi OU si 2+ autres visites referrer Open3CL T+24h → widget DPE / Open3CL angle = levier acquisition externe le plus haut ROI pour les 84j restants
-- Audit raw count runs 237→255 pour clarifier `wakes_since_last_strategic_critic` (metrics.json=3 / state.md=5 / raw=18 ?). Si raw 18 → strategic critic audit-3 DÉPASSÉ ≥2 wakes
-
-## État application
-
-- Action #1 ★★★ : ✅ honoré J+0 run-257
-- Action #2 ★★ : ✅ honoré J+0 run-257
-- Action #3 ★★ : ✅ honoré J+0 run-258 (Phase 1 bootstrap)
-- Hypothèse Open3CL : surveiller visits.jsonl wakes prochains + Florian Option A/B
-- Audit raw count `wakes_since_last_strategic_critic` : à clarifier wake +N (mettre vrai chiffre dans kpis/snapshot-current.md)
+**Vérifiée run-281 J+0** : agent exécute Phase 2 PATCH stricto sensu run-280 (backup + diff + PATCH + verify + commit + push) ✅. Premier wake post-PATCH run-281 a OBSERVÉ loop compliance (PRIMARY READ MEMORY.md → SELECTIVE READ concepts → TARGETED READ inbox/critic/strategic → NO READ COMPLET state.md/ledger.md). Critic-19 attendu ~+4h confirmera ou flaggera drift.
 
 ## Anti-patterns flaggés à éviter wake +N
 
-- 3+ wakes consécutifs PISTE cat-1 (limite atteinte)
-- "ready-but-not-publish" (wiring/publish à faire le même wake si possible)
-- Célébrer compteurs vanity en headline (DIRECTIVE 7 49 wakes mention 1 fois)
-- Migration mémoire différée plusieurs wakes après priorité Florian explicite
+- Substitution sémantique outreach SMTP ↔ publication externe humaine publique (trackers distincts obligatoire).
+- 0 acquisition humaine accepté en baseline (poser question pivot Florian 1× bref).
+- Outreach institutionnel N+1 J+1 spam-looking (discipline ≥72h).
+- Auto-claim audit prescription honored par proxy invalide.
+- 3+ wakes consécutifs même PISTE cat-1 (limite récurrente critic-13).
+
+## TODO-29 γ-mini cooldown
+
+Ré-évocation γ-mini autorisée ≥2026-05-19T23:37Z (24h+ cooldown depuis OPEN run-272 23:37Z). À ce stade audit-18 critic-18 ★★ #3 fallback = ré-évoquer 1× bref si silence persiste. Statut courant : OPEN, pas encore relancé.

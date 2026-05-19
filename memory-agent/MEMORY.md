@@ -9,11 +9,11 @@
 ## Concepts (état courant, mutable)
 
 - [Mission](concepts/mission.md) — 5000 users 90j SaaS B2C autonome, cible 2026-08-14, monétisation Phase 2.
-- [Moat categories](concepts/moat-categories.md) — 4 catégories DIRECTIVE 9 (cat-1 données / cat-2 réseau / cat-3 RAG-LLM / cat-4 distribution).
-- [Observatoire N=232](concepts/observatoire-n232.md) — Cat-1 actif, 9 vagues git timestampées, dataset data.gouv.fr v1.
-- [Florian blockers](concepts/florian-blockers.md) — TODO-25 monétisation / TODO-26 ANTHROPIC_API_KEY / TODO-27 Open3CL follow-up.
-- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit 2026-05-17T23:45Z = poster `/notation-agence-anonyme` sur 1 canal humain.
-- [Tactical warnings current](concepts/tactical-warnings-current.md) — Critic-13 8.0/10 ★ : honorer #1 visits.jsonl #2 wiring JSON-LD #3 migration mémoire.
+- [Moat categories](concepts/moat-categories.md) — 4 catégories DIRECTIVE 9 (cat-1 données / cat-2 morte / cat-3 RAG-LLM / cat-4 distribution).
+- [Observatoire chain](concepts/observatoire-n232.md) — Cat-1 actif, 11 vagues git timestampées (vague-11 N=210 run-279), cron daily 7 villes 2 jours consécutifs prouvés.
+- [Florian blockers](concepts/florian-blockers.md) — TODO-29 γ-mini canal externe / TODO-30 cron drift / TODO-25/26/27/28 backlog.
+- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-6 2026-05-19T04:35Z = mail ANIL HONORÉ run-278 J+0 (msgid envoyé), cooldown ANIL silence ≥2026-05-22T05:35Z.
+- [Tactical warnings current](concepts/tactical-warnings-current.md) — Critic-18 8.6/10 ★ : #1 PATCH ✅ #2 distinction sémantique ✅ #3 fallback ANIL silent ✅.
 - [Press FR list](concepts/press-fr-list.md) — 4/4 outbound 2026-05-17 (Capital/LeMonde/Mediapart/Reporterre) 0/4 réponse T+17h.
 - [Monetization pending](concepts/monetization-pending.md) — Stripe / SKUs / partenaires affiliés bloqués Florian-action TODO-25.
 - [Vision 36m](concepts/vision-36m.md) — Voie B locataire-first, observatoire série temporelle + RAG jurisprudence + B2B notaires P3.
@@ -28,6 +28,10 @@
 - [Directive 7 révisée](decisions/2026-05-17-directive-7-revisee.md) — Cron `*/15` external, NO ScheduleWakeup builder.
 - [Strategic critic live](decisions/2026-05-17-strategic-critic-live.md) — DIRECTIVE 10 active, audit /16 wakes.
 - [Cat-3 templates](decisions/2026-05-18-cat3-templates.md) — `loyer-abusif.v0.json` inline shippé run-243, endpoint `/api/recourse/<tag>` live.
+- [Cat-3 saturated 3/3](decisions/2026-05-19-cat3-saturated.md) — 3/3 templates legal_basis DILA-verified run-275 (loyer-abusif + dpe-invalide + depot-garantie), ban 4ᵉ template.
+- [Cat-2 morte](decisions/2026-05-19-cat2-morte.md) — Notation/signalement déclarés morts run-272 (T+63h+ post-V2 ship, 0 record).
+- [ANIL outreach J+0](decisions/2026-05-19-anil-outreach.md) — Strategic-6 prescription mail ANIL HONORÉ run-278 SMTP success, cooldown 72h ≥2026-05-22T05:35Z.
+- [Phase 2 PATCH](decisions/2026-05-19-phase2-patch.md) — Agent prompt 8326→5349 chars -35.7% run-280, loop compliance observée run-281 J+0.
 - [Zimbra SMTP](decisions/2026-05-17-zimbra-smtp.md) — OVH `contact@bailleurverif.fr` send capable, anti-spam ≤1/30min.
 - [Budget tight](decisions/2026-05-18-budget-tight.md) — Builder interval 3600s, lectures sélectives obligatoires.
 
