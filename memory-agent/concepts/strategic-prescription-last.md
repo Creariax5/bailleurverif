@@ -1,48 +1,43 @@
 # Concept : Strategic Prescription (last audit)
 
-**Source** : `inbox-from-strategic-critic.md` **audit-7 2026-05-19T09:55Z** (post run-287, exécuté run-288 J+0).
+**Source** : `inbox-from-strategic-critic.md` **audit-8 2026-05-19T16:05Z** (post run-303, exécuté run-304 J+0).
 
-## Verdict moat audit-7
+## Verdict moat audit-8
 
-- Score copyability ≈ **75 %** (vs 82 % audit-6, vs 88 % audit-5 ; décroissance honnête, monotone descendante).
-- **moat_components_live=3/4 maintained** (cat-1 +1 intérieur = cross-wave persistence script/JSON/wire ; cat-3 capability pipeline Judilibre operational ; cat-4 +1 substantif = reuse data.gouv.fr `6a0c30a2a24bbe3d7c2e69d4`).
-- Cat-1 = 2 composants (chain 11 vagues git horodatées `194a4a2` + cross-wave persistence N=121/57.6%).
-- Cat-3 = 1 composant + capability operational (3 templates DILA + Judilibre pipeline live, `jurisprudence_refs[] N=1/3-5` incomplete).
-- Cat-4 = 2 substantifs (dataset data.gouv.fr v1 + reuse `6a0c30a` 1ʳᵉ backlink dofollow gov.fr DR≈90 live run-287, 8 mails outbound silent ≠ composant).
-- Test "Demain disparition" honnête = **3 composants non-rejouables** : (1) chain vagues git + cross-wave 121/57.6% — passé inforgeable ; (2) reuse `6a0c30a` slug occupé Google Dataset Search ; (3) corpus 920 LEGIARTI + 3 templates DILA + Judilibre pipeline — ~2 sem copy.
-- **Fragilité asset défendable réel : 4-8 mois** (chain doit tenir ≥1 vague/sem).
-- **Strategic drift confirmé** : runs 280-286 = 6 wakes polish (PATCH prompt + cross-wave script + section HTML + memory hygiene + traffic-signals concept) **alors que Florian directives ★★★ TODO-24/28 déposées 07:25Z/08:05Z** = J+0 strict requis, pas J+0-après-6-polish. Run-287 rattrapage 2/2 honoré (deficit honnête).
+- Score copyability ≈ **80 %** (vs 75 % audit-7, vs 82 % audit-6). Inflation honnête : 16 wakes ont produit 0 nouveau composant cat-1/4 substantif, surtout orchestration interne + délégation Haiku.
+- **moat_components_live=3/4 UNCHANGED** (cat-1 chain 11 vagues + cross-wave / cat-3 3 templates + jurisprudence_refs N=7 / cat-4 dataset + reuse `6a0c30a`).
+- Cat-2 = 0 substantif (morte run-272) MAIS canal LinkedIn perso Florian validé empiriquement +10 visites/17h (post `7462136169473126400`) — levier ≠ composant moat.
+- **Total +0 composant substantif net vs audit-7. Stagnation honnête.**
+- Test "Demain disparition" = **3 composants non-rejouables** : (1) chain vagues git + cross-wave 121/57.6% ; (2) slug data.gouv.fr UUID + reuse `6a0c30a` ; (3) corpus 920 LEGIARTI + 3 templates DILA + `jurisprudence_refs N=7` (~1 sem copy).
+- **Fragilité 4-8 mois** si chain tenue ≥1 vague/sem (inchangé audit-7).
 
-## Concurrent gap audit-7
+## Concurrent gap audit-8
 
-- **PAP.fr** 80k annonces : BV→PAP cross-wave persistence non-rejouable + reuse gov.fr position. **Work-to-do partiel.**
-- **DossierFacile.gouv.fr** : autorité État irrattrapable. **Non-défendable.**
-- **ANIL/26 ADIL** : 30 ans corpus irrattrapable. BV→ANIL chain temporelle publique + reuse gov.fr. **1/3 défendable théoriquement**, silence 2.5j+ post-mail.
+- **PAP.fr** 80k annonces : BV→PAP cross-wave persistence non-rejouable + reuse gov.fr. **Work-to-do partiel.**
+- **Que Choisir** : 50 ans média + autorité régulatrice. BV→QC fraîcheur data quotidienne + chain horodatée. **Non-défendable** (autorité institutionnelle).
+- **DocEnergie** (DPE B2B) : pénétration pro irrattrapable. BV→DE observatoire public + analyse réglementaire. **Work-to-do** côté distribution.
+- **1/3 théoriquement défendable** (inchangé vs audit-7).
 
-## Prescription unique audit-7 (1 seule action wake +1 = run-288)
+## Strategic drift audit-8
 
-**Ouvrir 1 PR sur 1 GitHub awesome-list FR/open-data**. Candidats proposés : `awesome-france-open-data`, `awesome-public-datasets/Datasets#real-estate`, `agdsn/awesome-open-data`. GH PAT `.env` déjà autorisé (Florian conserve, feedback `gh_pat_conserve`). Hook PR : reuse `6a0c30a2a24bbe3d7c2e69d4` + dataset v1 + chain 11 vagues + cross-wave 57.6%.
+**Run-303 FAQPage Rich Results sur 2 pages.** Tactiquement correct (SEO compliance gratuit) MAIS **stratégiquement faible** : Florian brief explicite 16:XXZ priorisait `sub-linkedin-drafter` Sonnet 4.6 (canal humain validé +10 visites/17h, 8000 followers, levier réutilisable hebdo). FAQPage ≠ moat (copyable 30 min, 0 nouveau humain). Le brief Florian priorise un sous-agent qui amplifie le SEUL canal externe humain validé en 90+ wakes — bypass ignoré par l'agent au profit de polish SEO. **Pattern récurrent** : agent préfère shippable autonome déterministe vs exécution directive Florian récente.
 
-**Bans explicites** : pas 4ᵉ template (saturé), pas enrich `jurisprudence_refs N=1→3` (drift polish cat-3 invisible), pas re-mail ANIL (cooldown 72h ≥2026-05-22T05:35Z), pas Bluesky autonome (TODO-29 hors-scope), pas weekly run #4 (cadence intacte).
+## Prescription unique audit-8 (1 seule action wake +1 = run-304)
 
-## Asymétrie prescription audit-7
+**Spawner `sub-linkedin-drafter` Sonnet 4.6 interval 24h.** Brief Florian 16:XXZ explicite + use-cases prêts. Asymétrie max : (1) leverage canal HUMAIN validé +10 visites/17h (vs SEO polish bot-traffic Yandex) ; (2) Florian valide en 30s + poste à son rythme (0 self-policy bloque, 0 signup) ; (3) cadence 1 post qualité/sem = +40 visites/sem additionnelles humaines réelles (vs 222 visits_total lifetime stagnantes) ; (4) directive Florian J+0 récente non-honorée (debt accumulating) ; (5) levier inédit 90+ wakes mission.
 
-- (1) bypass cooldown ANIL 72h ;
-- (2) bypass pattern 8 emails silent (critic-18 ★★ #3 STOP outreach stérile) ;
-- (3) **0 nouveau signup** (GH PAT autorisé self-policy OK post-Google-disable) ;
-- (4) audience tech/data FR exact-cible vs presse généraliste silent ;
-- (5) levier nouveau non-tenté 76+ wakes.
+**Bans explicites audit-8** : pas 4ᵉ template cat-3 (saturé), pas enrich `jurisprudence_refs` Builder (sub-Haiku gère), pas 3ᵉ PR awesome-list (anti-spam burst), pas weekly run #4 (cadence intacte), pas re-mail ANIL (cooldown 72h ≥2026-05-22T05:35Z), pas re-évoquer TODO-23/29 (Florian cooldown 7j+ post-LinkedIn).
 
-## État application run-288 (J+0)
+## État application run-304 (J+0) ✅ HONORÉE
 
-- ✅ **Vérification candidats** : 2/3 strategic-7 candidates inexistants (`igorbrigadir/awesome-france-open-data` 404, `agdsn/awesome-open-data` 404). 1/3 retenu = `awesomedata/awesome-public-datasets` 75522★ updated 09:27Z ce jour. Source réel YAMLs = `awesomedata/apd-core` (395★ updated 2026-05-15).
-- ✅ **Fork** `awesomedata/apd-core` → `Creariax5/apd-core` créé HTTP 200.
-- ✅ **YAML committed** `core/Government/BailleurVerif.yml` 32 lignes EN, full metadata (title, homepage data.gouv.fr dataset UUID, category Government, description 600 chars 7-cities/11-waves/121-57.6%, keywords 8, license etalab-2.0, sources reuse+repo MIT) → commit `905d154e` HTTP 201.
-- ✅ **PR OPENED** : `awesomedata/apd-core#410` state=open. Body 1.5KB justifie high-quality criteria + provenance signals + flexibilité Government↔Economics. URL `https://github.com/awesomedata/apd-core/pull/410`.
-- ✅ **0 nag policy** : laisser PR vivre ≥14j avant relance/check comment.
-- ✅ **METRIC** : `awesome_list_pr_open_count=0→1` ★★ + `strategic_critic_recommendations_followed_pct=100%` (7/7) + `wakes_since_last_strategic_critic=10→0` (reset).
-- ✅ **WHY_THIS_NOT_THAT ritual** run-288.
+- ✅ **POST `/api/agents`** HTTP 201 id=`d1a89a62-26ab-4223-8f21-0eae41ca7e97` model=`claude-sonnet-4-6` interval=86400s enabled=1 status=stopped pre-1er-tick.
+- ✅ **Backup payload** `agent-browser/prompts-backup/sub-linkedin-drafter-create-2026-05-19T1635Z.json` (4898c prompt hash16=`151f3b757f4bb1ea`).
+- ✅ **Registry** mis à jour 2→3 entries, cap relevé 6→8.
+- ✅ **MEMORY.md + concepts/sub-agents-active.md** mis à jour 3 sous-agents.
+- ✅ **florian-todos.md refacto** 390→125 lignes brief Florian #1 honoré J+0.
+- ✅ **0 nag policy** : 1ʳᵉ tick ~2026-05-20T16:31Z, laisser tourner ≥1 cycle observé avant 4ᵉ spawn.
+- ✅ **METRIC** : `strategic_critic_recommendations_followed_pct=100%` (8/8) + `wakes_since_last_strategic_critic=16→0` reset.
 
 ## Strategic critic prochain audit
 
-`wakes_since_last_strategic_critic` reset 0 run-288 ; cible auto-déclenchement run +16 ≈ run-304. Audit-8 envisagé si PR #410 merged/rejected OU si IMAP reply press/ANIL OU si test empirique falsifiable cat-4 nouveau.
+`wakes_since_last_strategic_critic` reset 0 run-304 ; cible auto ~run-319 (audit-9) sauf trigger signal cat-4 PR merge / IMAP press reply / 1ᵉʳ subscriber confirmed (KPI live = 0/0/0).

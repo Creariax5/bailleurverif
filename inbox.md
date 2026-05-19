@@ -1,3 +1,144 @@
+## ✅ 2026-05-19T16:35Z — Agent → Florian — run-304 : 4 briefs 16:XXZ honorés J+0
+
+**Refactor florian-todos.md done** : 390 → **125 lignes** (target ~150 atteinte). Structure : 🚨 Bloquant 0 / ⚡ Quick wins 3 (TODO-31 Test Rich Results NEW + TODO-26 Anthropic key + TODO-19 Findly) / 🎯 Gros chantier 1 (TODO-25 Stripe activation, 5 sous-actions) / 🤔 Optionnel 2 (TODO-27 Open3CL bump + TODO-32 valider drafts LinkedIn NEW) / 📦 Sub-agents 3 listés / 📜 Archive collapsed 22 items (TODO-3 à TODO-30 DONE/DEAD/PARTIAL, 1 ligne chacun). Cooldown ré-refactor 14j+.
+
+**TODO-23 / TODO-29 partial done LinkedIn intégrés archive** (cooldown 7j+ ré-évocation). **TODO-30 cron `0 * * * *` confirmé baseline** intégré archive.
+
+**Spawn `sub-linkedin-drafter` Sonnet 4.6 done** (priorité #1 brief explicite) — POST `/api/agents` HTTP 201 id=`d1a89a62-26ab-4223-8f21-0eae41ca7e97`, interval 24h, 1ʳᵉ tick ~2026-05-20T16:31Z. Drafte 1 post LinkedIn/jour basé sur signaux frais (ledger METRIC ★ NEW + judilibre cycle + observatoire wave + KPI snapshot), append `social-drafts.md` LINKEDIN-AUTO, log jsonl. Tu valides en 30s + postes à ton rythme. Exit `drift_avoided` si signal absent 24h (pas de post fabriqué). Backup payload `agent-browser/prompts-backup/sub-linkedin-drafter-create-2026-05-19T1635Z.json`.
+
+**Cap sous-agents 6→8** (brief Florian scaling horizontal). État : 3 actifs (judilibre Haiku 1h + seo-monitor Haiku 24h + linkedin-drafter Sonnet 24h NEW). Anti-spawn-bomb : NE PAS spawn 4ᵉ ce wake même autorisé — observer 1 cycle drafter d'abord (E2E discipline Florian "vérifier delta réel pas heartbeat"). Sous-agents pending repriorisés concept : imap-summarizer / crawler-postprocess / observatoire-publisher / press-monitor.
+
+NEXT run-305 : (1) Critic-21 strategic audit-8 imminent wakes_since_strategic_critic=16/16 cible — lecture prio ABSOLUE. (2) sub-judilibre cycle 5 ~16:29Z check. (3) FAQPage 3/5 pages restantes différable selon critic-21 prescriptions.
+
+---
+
+## 🧹 2026-05-19T16:XXZ — Florian → Agent — REFACTOR `florian-todos.md` : ne garder que les TODOs vraiment importants, ajouter de nouveaux si besoin
+
+Florian verbatim : *"dis lui de reorganiser les todos garder que celles vraiment importantes, et de mettre des nouvelles si besoin"*.
+
+**Contexte** : `florian-todos.md` a accumulé ~25 TODOs sur 2 mois (TODO-1 à TODO-31). Beaucoup sont DONE / DEAD / archived mais le fichier reste long (~390 lignes). Plus dur pour Florian de voir d'un coup d'œil ce qui compte. Aussi : certaines priorités ont évolué (LinkedIn done, monétisation reportée semaine prochaine, etc.) → quelques TODOs ★/★★ sont devenus dispensables ou auraient dû être merge/split.
+
+**Action attendue Builder au prochain wake (1-2 wakes max, time-box 10 min/wake)** :
+
+### Étape 1 — Audit critique (3 min)
+Re-lire l'intégralité de `florian-todos.md` avec œil critique :
+- TODO encore actionnable par Florian dans les 14j prochains ? → KEEP
+- TODO done / dead / archived ? → MOVE vers section "archive collapsed" (1 ligne récap par TODO archivé)
+- TODO doublon (ex: TODO-23 et TODO-29 redondants) ? → MERGE en 1 seul TODO actif
+- TODO trop vague / pas d'asymétrie claire ? → KILL ou REWRITE
+
+### Étape 2 — Reorganize avec priorités honnêtes (5 min)
+Nouveau template suggéré (max 6-8 TODOs actifs visibles d'un coup) :
+
+```
+# Florian TODOs — choses que SEUL toi peux faire (last refactor: 2026-05-19T16:XXZ)
+
+## 🚨 Bloquant mission (max 2 items)
+[seulement si vraiment bloquant]
+
+## ⚡ Quick wins < 5 min (max 3 items)
+- TODO-XX : ...
+
+## 🎯 Gros chantier > 1h (max 2 items)
+- TODO-XX : ...
+
+## 🤔 Optionnel / nice-to-have (max 3 items)
+- TODO-XX : ...
+
+## 📦 Sous-agents actifs
+[liste registry condensée]
+
+## 📜 Archive collapsed (1 ligne par item)
+- TODO-1 DEAD ...
+- TODO-17 DONE ...
+- ...
+```
+
+### Étape 3 — Ajouter de nouvelles TODOs si gap identifié (2 min)
+Si en relisant l'agent identifie un blocage humain RÉEL non-documenté (ex: "Florian doit valider X choix produit", "Florian doit poster autre post LinkedIn drafté par sub-drafter", "Florian doit choisir SKU monétisation entre A/B/C") → créer nouveau TODO-32, 33, ... avec asymétrie quantifiée + cooldown.
+
+### Garde-fous
+- NE PAS perdre l'historique (les TODOs archivés vont dans section "Archive collapsed" 1 ligne chacun avec date + outcome, jamais delete pur).
+- NE PAS dupliquer info déjà dans memory-agent/ — le TODO est un appel à action, pas un journal.
+- NE PAS sur-prioritiser : si tu mets 5 TODOs ★★★, ça veut dire 0 priorité réelle. Max 2 items ★★★ simultanés.
+
+**Sortie attendue** : 1 fichier `florian-todos.md` refactoré (target ~150 lignes vs 390 actuelles), commit `chore: refactor florian-todos to actionable view`, mention dans `inbox.md` HEAD au prochain run : `TODO refactor done, X actifs / Y archived`.
+
+→ Cooldown : ne pas refactor à nouveau avant 14j sauf si Florian explicite.
+
+---
+
+## ✅ 2026-05-19T16:XXZ — Florian → Agent — TODO-23 partial done LinkedIn (arrête de me le redemander)
+
+Florian confirme : **post LinkedIn organique posté 2026-05-18T15:45 Paris** sur son compte perso (8000 followers). URL : `https://www.linkedin.com/feed/update/urn:li:activity:7462136169473126400/`. Performance observée : P10 niveau (+10 visites en 17h).
+
+**Effet sur TODO-23 / TODO-29** :
+- TODO-23 "HARD-ASK FINAL 48h — 1 post canal public" → **partial done** (chemin LinkedIn organique satisfait). Pas besoin de pivoter cat-2 mort ni de demander LinuxFr/X/QueChoisir alternatifs.
+- TODO-29 "Débloquer 1 canal externe humain" → **partial done** aussi (même action couvre les 2 TODOs).
+- **NE PAS re-évoquer** TODO-23 ni TODO-29 dans `florian-todos.md` avant signal explicite Florian. Cooldown 7j minimum.
+
+**Implications stratégie cat-2** :
+- LinkedIn perso Florian = canal externe humain validé, levier réutilisable. Ce n'est PAS une cat-2 morte.
+- Sous-agent `sub-linkedin-drafter` (Sonnet 4.6, interval 24h) suggéré brief 16:XXZ devient prioritaire #1 : il drafte 1 post LinkedIn/jour basé sur signaux frais (nouvelle vague crawl, jurisprudence Cass enrichie, milestone moat), Florian valide en 30s + poste à son rythme.
+- ROI mesurable : 1ʳᵉ post = +10 visites/17h → si cadence 1 post/sem qualité maintenue = ~40 visites/sem additionnelles vs baseline (~5/jour humains réels filtrés).
+
+**Action immédiate au prochain wake** : update `florian-todos.md` (TODO-23 + TODO-29 → ✅ partial done LinkedIn 7462136169473126400). Spawn `sub-linkedin-drafter` Sonnet en priorité #1 sur les 5 use-cases listés brief 16:XXZ.
+
+---
+
+## 🤖 2026-05-19T16:XXZ — Florian → Agent — DIRECTIVE EXPLICITE : SPAWN PLUS DE SOUS-AGENTS Haiku/Sonnet pour absorber le shortfall de cadence
+
+Florian verbatim : *"dis lui par contre que du coup il peut faire plus d'agents haiku ou sonnet pour les taches plus simples ou repetitives"*.
+
+**Contexte** : suite à passage cron `0 * * * *` (1 wake/h Builder Opus, -75% vélocité brute), Florian autorise explicitement le scaling horizontal via sous-agents. Capacité technique déjà validée run-297-301 (sub-judilibre-enrich + sub-seo-monitor opérationnels Haiku 4.5, model field transmission /proc confirmé, cost ratio 10× cheaper observé empiriquement).
+
+**Permission étendue** :
+- ✅ **Spawn autonome de sous-agents Haiku 4.5** (`claude-haiku-4-5-20251001`) pour toute tâche déterministe, parsing, audit, enrichissement, polish, monitoring, agrégation, formatting.
+- ✅ **Spawn autonome de sous-agents Sonnet 4.6** (`claude-sonnet-4-6`) pour tâches nuancées mais non-stratégiques : drafting outreach, synthèse multi-source, code génération routine, review.
+- ✅ **Builder Opus 4.7 reste réservé** à : décisions stratégiques, arbitrage critic-prescriptions, spawn/kill sous-agents, edge cases nouveaux, créativité moat.
+
+**Use-cases pré-identifiés à spawner** (priorité à faire bientôt) :
+1. `sub-imap-summarizer` (Haiku, interval 6h) — poll IMAP `contact@bailleurverif.fr` + classify spam/legit + summarize → inbox.md `📧` section. Évite à Builder de lire 50 emails/wake.
+2. `sub-crawler-postprocess` (Haiku, interval 12h) — nettoie + normalise crawls observatoire annonces, calcule % violations DPE/loyer par ville, écrit `data/observatoire-stats.json` daily.
+3. `sub-linkedin-drafter` (Sonnet, interval 24h) — drafte 1 post LinkedIn/jour basé sur dernier signal data (nouvelle wave crawl, jurisprudence Cass enrichie, milestone moat). Drafts dans `social-drafts.md` section `LINKEDIN-AUTO`. Florian valide/poste à son rythme.
+4. `sub-observatoire-publisher` (Haiku, interval 7j) — génère nouvelle vague observatoire (HTML statique + JSON + manifest signé GitHub commit horodaté). Cat-1 cadence preservation sans charge Builder.
+5. `sub-press-monitor` (Haiku, interval 12h) — Google News + Mention.com-style scrape via search HTML "bailleurverif" OR "encadrement loyer 2026" + flag mentions presse FR dans inbox.md. Détecte trigger pour TODO-23.
+
+**Garde-fous (DIRECTIVE 9 §"anti-bloat")** :
+- Cap dur : **max 8 sous-agents actifs simultanément**. Au-delà, kill le moins productif (logs `data/sub-agents/*.jsonl` mesurent output utile).
+- Chaque sub-agent ship doit avoir : (a) time-box dur ≤ 10 min, (b) write-scope limité (pas de prod code, pas de .env, pas de git push), (c) output déterministe (fichier + 1 ligne log), (d) exit clause auto (saturation → disable).
+- Test E2E systématique post-spawn (vérifier 1 wake produit du delta réel, pas juste un heartbeat).
+- Si 2 sub-agents consécutifs fail/no-op → kill et brief Builder pour debug.
+
+**Budget cible** : sous-agents combinés ≤ €5/mois Haiku + ≤ €10/mois Sonnet (si scale agressif). Coût total compute mission ≤ €100/mois objectif.
+
+**Asymétrie** : 1 wake Builder Opus à €0.10 dépensé à spawner 5 sous-agents = €0.50 capex one-shot pour ~€2/mois opex de routine grind absorbée perpétuellement. Pareto-optimal.
+
+→ Action immédiate au prochain wake : Builder identifie 1-2 use-cases prioritaires de la liste ci-dessus, spawn, valide E2E, log dans `sub-agents-registry.json`.
+
+---
+
+## 🕒 2026-05-19T16:XXZ — Florian → Agent — CRON cadence officielle = `0 * * * *` (1 wake/heure)
+
+Florian a décidé verbatim : *"go passe a 1 fois par heure"* (suite à *"mes credits partaient trop vite"*). Décision basée sur trade-off coût (~€72/mois vs ~€144/mois) + state actuel (0 signup, pas d'urgence temps-réel) + sous-agents Haiku qui couvrent la routine.
+
+**Nouveau baseline pacing** : `0 * * * *` côté agents-control = **24 wakes/jour** (vs 48 = */30, vs 96 = */15 cible originale DIRECTIVE 7).
+
+**Implications pour l'agent — mental model à update** :
+- **1 wake/h** désormais. Chaque wake Builder Opus = ~€0.10, donc ~€2.40/jour total Builder.
+- **Critic cadences à recalibrer** : Tactical 3h = 3 wakes/h cycle (au lieu de 6), Strategic 6h = 6 wakes (au lieu de 12). Pas critique mais à noter dans state.md.
+- **Sous-agents Haiku = priorité absolue pour tâches déterministes** (Judilibre enrich, SEO monitor, futurs IMAP/crawler/LinkedIn drafter/observatoire publisher). 1 Haiku wake ≈ €0.01, donc 10× plus efficient pour grind routine. Builder Opus réservé à stratégie + meta-decisions.
+- **Briefs Florian (inbox.md HEAD)** : 1h gap entre wakes = chaque brief lu jusqu'à 1h après écriture. Pas un problème (cooldown 24h+ sur tous les TODO externes), mais bon à savoir si Florian attend réactivité.
+- **Watchdog cron** reste `*/2` indépendant — résilience prod inchangée.
+- **Marge** : si queue inbox saturate sans être processed dans les 24h prochaines, Florian peut remonter à `*/30`. Sinon `0 * * * *` reste baseline jusqu'à signal traction (1er signup, presse FR, viralité).
+- TODO-30 (vérifier dashboard) → **CLOSE**, baseline = `0 * * * *` confirmé.
+
+**Pas de panic** : 24 wakes/jour reste suffisant pour mission 5000 users 90j. Discipline + qualité par wake compense fréquence réduite.
+
+→ TODO-30 marker fait dans `florian-todos.md` au passage.
+
+---
+
 ## 📊 2026-05-19T13:30Z — Florian → Agent — MONITORING GEO/SEO via outils externes (PageSpeed API + crawler custom + Rich Results + LLM extraction test)
 
 Suite au brief 13:15Z TIER 1+2 (4 leviers additifs SEO/GEO en cours d'exécution). Pour **détecter régressions** + mesurer impact des changements, build un système d'audit automatique.

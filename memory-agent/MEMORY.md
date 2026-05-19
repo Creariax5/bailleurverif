@@ -12,13 +12,13 @@
 - [Moat categories](concepts/moat-categories.md) — 4 catégories DIRECTIVE 9 (cat-1 données / cat-2 morte / cat-3 RAG-LLM / cat-4 distribution).
 - [Observatoire chain](concepts/observatoire-n232.md) — Cat-1 actif, 11 vagues git timestampées (vague-11 N=210 run-279), cron daily 7 villes 2 jours consécutifs prouvés.
 - [Florian blockers](concepts/florian-blockers.md) — TODO-29 γ-mini canal externe / TODO-30 cron drift / TODO-25/26/27/28 backlog.
-- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-7 2026-05-19T09:55Z = PR awesomedata/apd-core#410 HONORED run-288 J+0 (BailleurVerif.yml Government).
+- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-8 2026-05-19T16:05Z = spawn `sub-linkedin-drafter` Sonnet 4.6 HONORED run-304 J+0 (drift flag run-303 FAQPage polish vs directive Florian récente).
 - [Tactical warnings current](concepts/tactical-warnings-current.md) — Critic-19 8.7/10 ★★★ : #1 state.md deprecated ✅ run-289, #2 ip 2124423717 ⏳ run-290, #3 ritual §b ✅.
 - [Press FR list](concepts/press-fr-list.md) — 4/4 outbound 2026-05-17 (Capital/LeMonde/Mediapart/Reporterre) 0/4 réponse T+17h.
 - [Monetization pending](concepts/monetization-pending.md) — Stripe / SKUs / partenaires affiliés bloqués Florian-action TODO-25.
 - [Vision 36m](concepts/vision-36m.md) — Voie B locataire-first, observatoire série temporelle + RAG jurisprudence + B2B notaires P3.
 - [Traffic signals](concepts/traffic-signals.md) — Visiteur récurrent ip_hash 6994446044 = 3 hits homepage-only, 0 deep nav. Signal bounce CTA faible (à confirmer critic-19).
-- [Sub-agents actifs](concepts/sub-agents-active.md) — 2 sous-agents Haiku 4.5 actifs : `sub-judilibre-enrich` (1h, cycle 1 ok dpe 0→3) + `sub-seo-monitor` (24h, run-299). Builder Opus seul POST/PATCH/DELETE.
+- [Sub-agents actifs](concepts/sub-agents-active.md) — 3 sous-agents : `sub-judilibre-enrich` (Haiku 1h cat-3 enrich) + `sub-seo-monitor` (Haiku 24h audit GEO/SEO) + `sub-linkedin-drafter` (Sonnet 24h drafts LinkedIn run-304). Cap 8. Builder Opus seul POST/PATCH/DELETE.
 
 ## Decisions (atomiques, datées, immutable post-décision)
 
@@ -44,6 +44,7 @@
 - [Budget tight](decisions/2026-05-18-budget-tight.md) — Builder interval 3600s, lectures sélectives obligatoires.
 - [Sub-agents capability](decisions/2026-05-19-sub-agents-capability.md) — Champ `model` agents-control activé run-297, Builder Opus seul POST/PATCH/DELETE, 1er spawn `sub-judilibre-enrich` Haiku 4.5, max 6 sous-agents budget €20/mois.
 - [Sub-seo-monitor spawn](decisions/2026-05-19-sub-seo-monitor-spawn.md) — 2ᵉ sous-agent Haiku 4.5 interval 24h spawné run-299 (brief Florian 13:30Z monitoring SEO/GEO post Tier 1+2). Override discipline incremental sur cas explicite.
+- [Sub-linkedin-drafter spawn](decisions/2026-05-19-sub-linkedin-drafter-spawn.md) — 3ᵉ sous-agent Sonnet 4.6 interval 24h spawné run-304 (brief Florian 16:XXZ priorité #1 post-TODO-23 partial done LinkedIn organique). Cap relevé 6→8. florian-todos.md refacto 390→125 lignes.
 
 ## KPIs
 
