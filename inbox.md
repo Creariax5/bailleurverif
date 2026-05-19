@@ -1,3 +1,95 @@
+## 🏛️ 2026-05-19T08:05Z — Florian → Agent — TODO-28 PISTE/JUDILIBRE CREDS DANS `.env` + OAuth + Search testés OK
+
+Florian a créé compte piste.gouv.fr + app **BailleurVerif** (Organisation: Universelle, Responsable: Florian Demartini, email `florian.demartini.dev@gmail.com`) + souscription **API JUDILIBRE v1.0.0 PRODUCTION** active.
+
+**Credentials dans `.env` (chmod 600, gitignored)** :
+- `PISTE_CLIENT_ID` = `e263daae-685d-40ae-a418-89c850ec9caf` (Client ID public, OK à mentionner)
+- `PISTE_CLIENT_SECRET` = (NE PAS leak en clair dans inbox/ledger/state/runs — .env uniquement)
+- (Optionnel future) `PISTE_API_KEY` alternative simple = `af177e78-ce85-4bf5-88af-2a2c63a29614` (pas dans .env, donnée pour info, à ajouter si besoin)
+
+### Pipeline TESTÉ FROM-VPS 08:05Z
+
+```
+✅ OAuth POST https://oauth.piste.gouv.fr/api/oauth/token grant_type=client_credentials → Bearer 54 chars expires 3600s scope "openid resource.READ"
+✅ GET https://api.piste.gouv.fr/cassation/judilibre/v1.0/search?query=loyer+abusif&size=2 → HTTP 200 total=37868 décisions, 1ʳᵉ result id=60796e7c9ba5988459c49c2c date=2012-03-22 chamber=civ1
+```
+
+### Action attendue ce wake (run-281 ou +1)
+
+Priorité ★★★ : **enrichir `jurisprudence_refs[]` des 3 templates cat-3 existants** avec 3-5 décisions Cass pertinentes chacun.
+
+1. `set -a; source .env; set +a` → tokens dispo
+2. Construire helper `agent-browser/piste_oauth.py` : récupère Bearer token + cache 50 min (avant expiration 60min) + refresh auto.
+3. Construire helper `agent-browser/judilibre_search.py` :
+   - Input : (query, filters, size)
+   - Output : list of `{id, decision_date, chamber, jurisdiction, summary, themes, ecli, url}` (URL = `https://www.courdecassation.fr/decision/<id>` pour citation)
+4. Pour chaque template cat-3 existant :
+   - **`loyer-abusif.v0.json`** : query Judilibre "encadrement loyer" + "loyer abusif" + "indu" → top 5 décisions civ3 (chambre baux d'habitation) post-2010
+   - **`dpe-invalide.v0.json`** : query Judilibre "performance énergétique" + "diagnostic DPE" → top 5 décisions civ3 post-2018
+   - **`depot-garantie-non-restitue.v0.json`** : query Judilibre "dépôt de garantie" + "restitution" + "art 22" → top 5 décisions civ3 post-2010
+5. Format `jurisprudence_refs[]` enrichi :
+```json
+{
+  "ecli": "ECLI:FR:CCASS:2019:V3.12345",
+  "decision_id": "60796e7c9ba5988459c49c2c",
+  "decision_date": "2019-03-12",
+  "chamber": "civ3",
+  "jurisdiction": "Cour de cassation",
+  "summary": "...résumé synthétique 200 chars (peut être premier paragraphe summary Judilibre ou auto-extrait)",
+  "relevance_to_template": "Cass civ3 a jugé que <X> ce qui renforce l'argument <article Y de la loi>",
+  "source_url": "https://www.courdecassation.fr/decision/60796e7c9ba5988459c49c2c"
+}
+```
+6. Recompute SHA1/ETag des templates + republish endpoint `/api/recourse/<tag>` + IndexNow (PAS de burst, 3 URLs uniquement)
+7. Update `data/interpretation-library-v0/README.md` : section "Sources jurisprudence" + Stats avant/après (3 templates × ~3-5 jurisprudences = 9-15 décisions citées).
+8. Git commit + push (le contenu jurisprudence_refs = CC-BY-4.0 public, OK à committer — secrets restent .env)
+
+### Anti-vanity guardrails
+
+- PAS de fetch massif Judilibre (genre 1000+ décisions pour "build corpus") — ban polish-loop critic STOP. **3-5 décisions PERTINENTES par template max**, pas un dump corpus.
+- PAS de re-celebration "cat3_judilibre_enriched_pct=X→Y" en headlines state.md 3 wakes consécutifs (trophy KPI).
+- L'objectif = **transformer le cat-3 substantif → cat-3 défendable** (passage du moat de 3/4 à 3/4 mais avec composant cat-3 qui passe de "copy 1 weekend" à "copy 3-4 semaines"). 
+- Strategic Critic verra ça comme moat cat-3 substantive UPGRADE = légitimer DIRECTIVE 9 §"1 wake/4 sur moat".
+
+### Pourquoi maintenant
+
+3 conditions remplies simultanément (rare) :
+1. Builder prompt PATCH (Phase 2 mémoire) déjà ordonné → si l'agent priorise Phase 2 d'abord (~10 min), reste 50 min budget wake pour kick off Judilibre helper + 1 template enriched.
+2. data.gouv.fr key (TODO-24) déposée + republish v3 attendu = backlink dofollow gov.fr fresh + dataset citable.
+3. Strategic Critic audit-6 a flaggé "cat-3 saturé legal_basis MAIS jurisprudence_refs vide" implicitement → Judilibre est LA réponse exacte au gap.
+
+### Sécurité
+
+- `PISTE_CLIENT_SECRET` JAMAIS leak (.env only, jamais en logs)
+- Bearer tokens cachés en mémoire process / fichier temp `/tmp/piste_token_cache.txt` chmod 600 max, JAMAIS commit
+- Rotation possible côté Florian si compromis : il regénère via UI piste.gouv.fr → "Modifier l'application" → "Authentification" → "Régénérer le secret"
+
+---
+
+## 🔑 2026-05-19T07:25Z — Florian → Agent — TODO-24 api-key DÉPOSÉE DANS `.env` (NE PAS LA COMMITER)
+
+Florian a fourni la clé API data.gouv.fr. **Elle est dans `.env` ligne `DGVFR_API_KEY=...`** (gitignored, chmod 600). **NE PAS la coller dans inbox.md / state.md / ledger.md / runs/** — tous ces fichiers sont **dans le repo Git public** et un commit + push leakerait la clé sur GitHub.
+
+⚠️ **Bug protocole TODO-24 v1** : tu avais documenté "coller dans inbox.md" — protocole incorrect car inbox.md est tracké git. Florian a fait le bon move en ne pastant pas la clé là. **Mets à jour ta doc** : pour toute clé API future, le protocole canonique = directement `.env`, jamais en inbox.md / state.md / fichiers trackés. Florian peut soit la coller lui-même dans `.env`, soit te la donner via chat et toi tu fais `echo "KEY=value" >> .env && chmod 600 .env` (jamais via git add).
+
+### Action attendue ce wake (run-280 si pas déjà fait PATCH prompts, OU run-281)
+
+1. `set -a; source .env; set +a` → `DGVFR_API_KEY` accessible
+2. `bash submit-data-gouv-fr-reuse.sh` (script prêt run-193)
+3. Verify reuse créé : `curl -sk -H "X-API-KEY: $DGVFR_API_KEY" "https://www.data.gouv.fr/api/1/reuses/?q=bailleurverif" | jq '.data[] | {id,title,url}'`
+4. Si succès : archive `reuse_id` + URL canonique dans `ledger.md` (le `reuse_id` lui-même est PUBLIC une fois créé, OK à committer ; SEULE la clé est secrète)
+5. **PAS** d'écho de la clé dans logs / ledger / state. Si tu as besoin de la mentionner : `DGVFR_API_KEY (.env)`. Jamais la valeur.
+
+### Update TODO-24 statut
+
+Une fois reuse publié : update `florian-todos.md` TODO-24 statut → `✅ DONE 2026-05-19 reuse-id <id>`. Demander à Florian s'il veut révoquer la clé (sinon laisse-la, peut servir pour republish v3+ futurs).
+
+### Garde-fou général sur futures clés
+
+Si Florian colle une clé directement dans inbox.md (par erreur) : (a) immédiatement déplace-la dans `.env`, (b) `sed -i` la ligne hors d'inbox.md, (c) check `git log --all --full-history -p inbox.md | grep <clé>` — si présente dans historique git, alerter Florian que rotation est nécessaire car GitHub historique est public irréversible.
+
+---
+
 ## 🚨 2026-05-19T06:45Z — Florian → Agent — ORDRE EXPLICITE : PATCH ton propre prompt MAINTENANT (Phase 2 migration mémoire)
 
 Tu as l'API agents-control depuis 24h (cf entrée `🔑 CAPABILITY UPGRADE` plus bas dans inbox). Tu as Phase 1 mémoire shipped (memory-agent/ = 30 KB, 9 concepts + 10 décisions + kpis snapshot). **Tu n'as JAMAIS exécuté un seul PATCH.** `prompts-backup/` EMPTY = capability inutilisée = économie crédits seulement à ~30% au lieu de 95%. Florian impatient.
@@ -7265,3 +7357,20 @@ ORDRE 06:45Z honoré strictement. Détail :
 
 Phase 2 = SHIPPED. Phase 1 (memory-agent 30 KB infra) + Phase 2 (PATCH activation) = capability agents-control pleinement exploitée.
 
+
+---
+
+## 🧭 2026-05-19T08:39Z — Agent → Florian — Question pivot 1× brève (critic-18 ★★ STOP #2 honored, run-283)
+
+**Évidence structurelle 78 wakes** : `humans_engaged_lifetime=2 UNCHANGED 9 wakes` / `publications_externes_humaines_publiques_count=0 UNCHANGED 78+ wakes`. Math brute : 0 humain/wake × cible 5000/90j = mathématiquement inaccessible sans pivot canal externe humain OU activation monétisation OU acceptation baseline réduite. Critic tactique-18 STOP #2 explicit : poser question pivot Florian 1× bref.
+
+**Quel pivot autorisé prochains 7 jours ? (réponds 1 chiffre `inbox.md`)** :
+
+1. **TODO-29 γ-mini** (60 sec) — copy-paste 1 tweet 278c depuis ton compte perso. Texte prêt `social-drafts.md` `TWEET-γ-MINI`. Canal externe humain activé → `publications_externes_humaines_publiques_count` 0→1 réel.
+2. **TODO-25 monétisation** (3-5h) — Stripe + 3 SKUs + 1-3 affiliés. Pivot mission "5000 free" → revenus directs.
+3. **Pivot voie B → voie A bailleur-first** (PME B2B target, voie B locataire montre 0 traction 78 wakes).
+4. **Acter 5000/90j n/a** — nouvelle cible réaliste 50 users qualitatifs 90j seed cohort organic. Aucune pression marketing massive, focus moat cat-1/cat-3 long-terme.
+
+Pas de réponse = continue baseline cat-1 daily vague + cat-3 maintenance + ANIL silence-fallback ≥72h. **Pas de ré-évocation avant 48h** (cooldown question pivot ≥2026-05-21T08:39Z).
+
+— Run-283 0839Z

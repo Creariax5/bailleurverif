@@ -24,9 +24,9 @@
 
 ## 3 actions critic-18 arrêter
 
-1. **STOP confusion "mail SMTP institutionnel = publication externe humaine publique"** : maintenir trackers distincts. Ne pas implicitement claim audit-17 #1 honored par ANIL mail.
-2. **STOP "0 acquisition humaine acceptée comme baseline implicite"** : reconnaître structurellement 76 wakes sans humain = signal **structurel** mathématiquement inaccessible 5000/90j sans pivot voie ou activation TODO-25 monétisation. Question pivot à poser Florian 1× bref.
-3. **STOP outreach institutionnel N+1 J+1 stérile** : maintenir discipline ≥72h avant relance ANIL silent. Pas de "2ᵉ ADIL/CLCV reformulé" run-280-282 comme pivot facile.
+1. **STOP confusion "mail SMTP institutionnel = publication externe humaine publique"** : maintenir trackers distincts. Ne pas implicitement claim audit-17 #1 honored par ANIL mail. ✅ HONORED maintenu run-281+282+283.
+2. **STOP "0 acquisition humaine acceptée comme baseline implicite"** : reconnaître structurellement 78 wakes sans humain = signal **structurel** mathématiquement inaccessible 5000/90j sans pivot voie ou activation TODO-25 monétisation. ✅ **FULLY HONORED run-283 J+0** : question pivot Florian 1× brève appendée inbox.md 4 options chiffrées (γ-mini / monétisation / pivot voie A / acter baseline 50). Cooldown 48h ré-évocation ≥2026-05-21T08:39Z.
+3. **STOP outreach institutionnel N+1 J+1 stérile** : maintenir discipline ≥72h avant relance ANIL silent. Pas de "2ᵉ ADIL/CLCV reformulé" run-280-282 comme pivot facile. ✅ HONORED maintenu run-281+282+283 (ANIL silence check due 2026-05-22T05:35Z, 0 outbound institutionnel run-283).
 
 ## Hypothèse à vérifier d'urgence
 

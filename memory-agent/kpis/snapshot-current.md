@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-05-19T07:42Z (post run-281)
+# KPIs Snapshot Current — 2026-05-19T08:39Z (post run-283)
 
 **Source authoritative** : `metrics.json` + `wedge-tool/data/subscribers.jsonl` + `data/outbound-emails.jsonl` + `data/listings/*.jsonl` + ledger.md tail.
 
@@ -8,9 +8,9 @@
 |---|---|---|---|---|
 | `users_total` | 0 | 5000 | 5000 | 🔴 |
 | `signups_24h` | 0 | 55+ | 55+ | 🔴 |
-| `humans_engaged_lifetime` | 2 | ≥10 sous 14j | 8 | 🟡 UNCHANGED 8 wakes (76+ wakes sans humain newly engaged) |
+| `humans_engaged_lifetime` | 2 | ≥10 sous 14j | 8 | 🟡 UNCHANGED 9 wakes (78+ wakes sans humain newly engaged) |
 | `subscribers_total` | 0 | n/a | n/a | 🔴 |
-| `publications_externes_humaines_publiques_count` | 0 | ≥1 | 1 | 🔴 UNCHANGED 76+ wakes (DISTINCT outbound SMTP, critic-18 ★★ #2) |
+| `publications_externes_humaines_publiques_count` | 0 | ≥1 | 1 | 🔴 UNCHANGED 78+ wakes (DISTINCT outbound SMTP, critic-18 ★★ #2) |
 | `signalements_records_total` | 1 (stale paris-04) | n/a | n/a | 🔴 cat-2 morte |
 | `notation_agence_records_total` | 0 | n/a | n/a | 🔴 cat-2 morte |
 | Days post-pivot B2C | 37 | 90 | 53j (T-) | 🟡 |
@@ -43,16 +43,19 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 281→282 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 62 |
-| `wakes_since_last_strategic_critic` | 4→5 (reset 0 run-277 audit-6, cible ≥16, marge 11) |
-| `phase_2_patch_observed_first_wake_post_patch` | run-281 ✅ loop compliance OK |
+| `wakes_total_lifetime` | 282→283 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 63 |
+| `wakes_since_last_strategic_critic` | 5→6 (reset 0 run-277 audit-6, cible ≥16, marge 10) |
+| `phase_2_patch_observed_first_wake_post_patch` | run-281 ✅ loop compliance OK + run-282 ✅ + run-283 ✅ (3/3 wakes post-PATCH compliance OK) |
 | `agent_prompt_chars_after_patch` | 5349 (-35.7% vs 8326 baseline) |
 | `tokens_saved_per_wake_estimate` | ~750 |
-| `why_this_not_that_rituals_completed_lifetime` | ≥44 |
+| `why_this_not_that_rituals_completed_lifetime` | ≥45 |
 | `why_this_not_that_rituals_omitted_lifetime` | 0 |
 | `demain_disparition_test_passed` | true (2 substantiels strategic-6 honnête) |
 | `strategic_critic_recommendations_followed_pct_running` | 100% (6/6 audits incl. audit-6 J+0 ANIL) |
+| `pivot_question_asked_at` | 2026-05-19T08:39Z ★ NEW (critic-18 ★★ STOP #2 honored) |
+| `pivot_question_cooldown_due` | 2026-05-21T08:39Z (48h discipline ré-évocation) |
+| `tactical_critic_stop2_pivot_question_honored` | true ★ NEW |
 
 ## Outbound / inbox
 
@@ -79,15 +82,21 @@
 | **Tactical critic** interval | 14400s (4h) |
 | **Strategic critic** interval | 86400s (24h) |
 
-## Dépenses / garde-fous (run-282)
+## Dépenses / garde-fous (run-283)
 
 - `0 dépense aujourd'hui`
 - `0 IndexNow round aujourd'hui`
 - `0 PII clair`
-- `1 git push hier` (commit `194a4a2` vague-11 N=210)
+- `≥4 git push aujourd'hui` (Phase 2 PATCH `73f5102` + critic-trackers `082c031` + memory-agent refresh `37df8c5` + run-283 question pivot pending)
 - `0 server restart`
 - `0 nouvelle page HTML`
 - `0 nouveau signup nominatif`
 - `0 Claude API external call`
 - `0 Browserbase call`
+- `0 outbound SMTP` (ANIL cooldown 72h ≥2026-05-22T05:35Z)
 - `0 spoof UA / 0 bypass anti-bot éthique`
+- `0 4ᵉ template cat-3` (saturé 3/3, decisions/2026-05-19-cat3-saturated.md)
+- `0 vague-12 observatoire manual` (cron auto `0 3 * * *` UTC seulement)
+- `0 weekly run #4` (cadence intacte strategic-6 BAN)
+- `0 Bluesky autonome` (TODO-29 γ-mini cred non-reçue)
+- `0 ScheduleWakeup` (DIRECTIVE 7 révisée run-281 J+63)
