@@ -223,7 +223,35 @@
       "url": "internal:data/interpretation-library-v0/recourse-templates/"
     }
   ],
-  "jurisprudence_refs": [],
+  "jurisprudence_refs": [
+    {
+      "ecli": "ECLI:FR:CCASS:2026:C300075",
+      "decision_id": "697b0381cdc6046d471136ea",
+      "decision_date": "2026-01-29",
+      "chamber": "Troisième chambre civile",
+      "jurisdiction": "Cour de cassation",
+      "summary": "Le bailleur d'un local d'habitation peut retenir, sur le dépôt de garantie versé par le locataire, le montant de l'indemnité d'occupation due par celui-ci lorsqu'il se maintient dans les lieux au-delà du terme du bail",
+      "relevance_to_template": "Pertinence: Le bailleur d'un local d'habitation peut retenir, sur le dépôt de garantie versé par le locataire, le montant de l'indemnité d'occupation due par celui-ci lorsqu'il se maintient dans les lieux au-delà"
+    },
+    {
+      "ecli": "ECLI:FR:CCASS:2023:C300706",
+      "decision_id": "653a038fd0451e8318d0e6c7",
+      "decision_date": "2023-10-26",
+      "chamber": "Troisième chambre civile",
+      "jurisdiction": "Cour de cassation",
+      "summary": "Il résulte de l'article 3-2 de la loi n° 89-462 du 6 juillet 1989 que, lorsque les parties n'ont pas été convoquées par lettre recommandée avec demande d'avis de réception adressée au moins sept jours à l'avance, celle qui a pris l'initiati",
+      "relevance_to_template": "Pertinence: Il résulte de l'article 3-2 de la loi n° 89-462 du 6 juillet 1989 que, lorsque les parties n'ont pas été convoquées par lettre recommandée avec demande d'avis de réception adressée au moins sept jours"
+    },
+    {
+      "ecli": "ECLI:FR:CCASS:2015:C101179",
+      "decision_id": "607987699ba5988459c4a5f4",
+      "decision_date": "2015-10-28",
+      "chamber": "Première chambre civile",
+      "jurisdiction": "Cour de cassation",
+      "summary": "La restitution du dépôt de garantie consécutive à la nullité d¿un bail commercial ne constitue pas, en soi, un préjudice indemnisable.",
+      "relevance_to_template": "Pertinence: La restitution du dépôt de garantie consécutive à la nullité d¿un bail commercial ne constitue pas, en soi, un préjudice indemnisable."
+    }
+  ],
   "jurisprudence_refs_note": "Section vide v0 — PISTE judilibre api-key requis (TODO Florian futur, lié TODO-26 ANTHROPIC_API_KEY indirectement). Wave +1 ouverture sur 5-8 décisions Cass civ 3ème et CA portant sur restitution dépôt de garantie et présomption art. 1731 (ex: Cass. civ. 3ème, 17 nov. 2004, n°03-15.288 ; Cass. civ. 3ème, 9 juill. 2014, n°13-15.071 ; CA Paris pôle 4 ch. 3 nombreuses 2020-2024).",
   "limitations_disclaimers": [
     "Ce template n'est pas un conseil juridique individualisé. Il vise à informer le locataire sur ses recours probables et à structurer un dossier amiable et contentieux. La décision finale relève toujours d'un avocat, d'une association habilitée ou de l'ADIL pour les cas complexes.",
@@ -272,5 +300,7 @@
     }
   ],
   "legal_basis_populated_dila_verified": true,
-  "legal_basis_note": "Articles loi/code extraits du bulk DILA Open Data (https://echanges.dila.gouv.fr/OPENDATA/LEGI/), Licence Ouverte Etalab v2.0, archives quotidiennes XML. Provenance vérifiable : chaque entrée précise archive_name + archive_path + fetched_ts. Citations verbatim depuis BLOC_TEXTUEL/CONTENU (XML schema DILA). Pour LEGIARTI stables hors delta window (ex. loi 89-462 art. 22 dépôt de garantie, stable depuis ALUR 2014), fetch ciblé via Freemium_legi_global_<ts>.tar.gz (stock complet ~1.17 GB) avec extraction JORFTEXT000000509310 (loi 89-462) puis filtre NUM=22 ETAT=VIGUEUR. Différent de legal_basis_citations[] (construction historique depuis vocabulaire SP.fr/ANIL, partiellement non-vérifié)."
+  "legal_basis_note": "Articles loi/code extraits du bulk DILA Open Data (https://echanges.dila.gouv.fr/OPENDATA/LEGI/), Licence Ouverte Etalab v2.0, archives quotidiennes XML. Provenance vérifiable : chaque entrée précise archive_name + archive_path + fetched_ts. Citations verbatim depuis BLOC_TEXTUEL/CONTENU (XML schema DILA). Pour LEGIARTI stables hors delta window (ex. loi 89-462 art. 22 dépôt de garantie, stable depuis ALUR 2014), fetch ciblé via Freemium_legi_global_<ts>.tar.gz (stock complet ~1.17 GB) avec extraction JORFTEXT000000509310 (loi 89-462) puis filtre NUM=22 ETAT=VIGUEUR. Différent de legal_basis_citations[] (construction historique depuis vocabulaire SP.fr/ANIL, partiellement non-vérifié).",
+  "jurisprudence_refs_last_enriched_run": "sub-1",
+  "jurisprudence_refs_last_enriched_ts": "2026-05-19T13:29:17.898320+00:00"
 }
