@@ -1,5 +1,23 @@
 # Social drafts — tweets ready-to-post BailleurVérif
 
+## TWEET-γ-MINI — TODO-29 option γ-mini (Twitter/X ou Bluesky/Mastodon) — ajouté run-276 2026-05-19T03:34Z
+
+**Friction Florian** : 60 secondes (copy-paste sur 1 compte perso existant Twitter/Bluesky/Mastodon). **Asymétrie max** : débloque 1 canal externe humain (≠ tout l'écosystème bloqué TODO-29 α/β/γ).
+
+```
+J'ai construit un observatoire Git timestampé de 919 articles Légifrance bail/loyer + 10 vagues d'annonces locatives non-conformes (N≈160).
+
+Dataset public Etalab v2.0 sur data.gouv.fr.
+
+Feedback bienvenu : https://bailleurverif.fr/observatoire-annonces-loyer.html
+```
+
+**Char count** : ~278 (Twitter 280c limit ✓ / Bluesky 300c ✓ / Mastodon 500c ✓).
+**Posture** : factuelle, pas d'agressivité, pas de mention Florian/IA. Hook = "Git timestampé" + "Etalab v2.0" → crédibilité institutionnelle.
+**Variante hashtags optionnels** (si Twitter) : `#immobilier #DataGouvFr #encadrementLoyer` (-50c → 228c, ajoute 3 hashtags si tu veux la reach).
+
+---
+
 > **Statut** : draft autonome, prêt à coller dans X/Twitter dès que Florian crée le compte @BailleurVerif (cf. TODO Twitter). L'agent n'a aucun moyen de poster lui-même (compte = humain).
 >
 > **Brand voice** : posture utile, factuelle, sans agressivité commerciale. Pas de claim "leader du marché". Pas de promesse > "outil gratuit". Pas de mention de Florian.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T23:42:01Z",
+  "generated_at": "2026-05-19T03:37:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,55 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 246,
-    "today_utc": 34,
+    "total_lifetime": 250,
+    "today_utc": 3,
     "last_run": "run-267",
     "last_updated": "2026-05-18T18:45Z"
   },
-  "current_state": "🧪 KPIs vivants — run-272 2026-05-18T23:37Z — **CRITIC-16 ★★★ #1 HONNÊTE ESCALATION : 4/5 CANAUX EXTERNES MORTS confirmés via probes techniques (Mastodon piaille suspended + Reddit OAuth Google cassé post Gmail-disabled) + bug `archive_used: \"\"` FIXED + cat-2 DÉCLARÉE MORTE OFFICIELLE T+63h vs strategic-4 deadline 48h + TODO-29 ★★★ Florian débloquage canal externe hard-ask**",
+  "current_state": "🧪 KPIs vivants — run-275 2026-05-19T02:45Z — **SATURATION CAT-3 3/3 HONNÊTE ATTEINTE : art 22 loi 89-462 LEGIARTI000028806696 DILA-verified ajouté corpus (920ᵉ) via DILA Freemium full stock 1.17GB targeted extract (290 articles loi 89-462 → NUM=22 ETAT=VIGUEUR) ; depot-garantie-non-restitue.v0.json legal_basis[] peuplé verbatim 2995c provenance Etalab v2.0 + legal_basis_populated_dila_verified=true ; templates_legal_basis_populated_pct 67%→100% ; strategic-critic-5 prescription \"peupler legal_basis[] ou rien\" fully honored**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-19T02:45Z",
+      "run": "run-275",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🏛️ **SATURATION CAT-3 3/3 HONNÊTE ATTEINTE** (59ᵉ session DIRECTIVE 7 RÉVISÉE)"
+    },
+    {
+      "timestamp": "2026-05-19T01:38Z",
+      "run": "run-274",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "Saturation cat-3 honnête reconnue 2/3 templates legal_basis populés"
+    },
+    {
+      "timestamp": "2026-05-19T00:34Z",
+      "run": "run-273",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "WHY_THIS_NOT_THAT ritual `runs/run-273-2026-05-19T0034Z.md` 2 alternatives évaluées"
+    },
+    {
+      "timestamp": "2026-05-19T00:34Z",
+      "run": "run-273",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "Edit `data/interpretation-library-v0/recourse-templates/dpe-invalide.v0.json`"
+    },
+    {
+      "timestamp": "2026-05-18T23:45Z",
+      "run": "run-272",
+      "kind": "SHIP",
+      "emoji": "🛠️",
+      "summary": "git commit `75af801` pushed origin/main `8bf73d9..75af801` SUCCESS (118 files +8847 -773 LOC) = crypto-timestamp public chain"
+    },
+    {
+      "timestamp": "2026-05-18T23:37Z",
+      "run": "run-272",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🚧 **CRITIC-16 HONNÊTE ESCALATION** (62ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
     {
       "timestamp": "2026-05-18T22:36Z",
       "run": "run-271",
@@ -28,48 +70,6 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "🪞 **PIVOT NON-CAT-3 OBLIGATOIRE HONORÉ** — memory-agent/ 21 fichiers Obsidian-style pushed public (commit `8bf73d9`)"
-    },
-    {
-      "timestamp": "2026-05-18T19:10Z",
-      "run": "run-269",
-      "kind": "SHIP",
-      "emoji": "🛠️",
-      "summary": "⏱️ **Weekly-run #2 cat-3 cadence LÉGITIMEMENT EXÉCUTÉ** — critic-15 ★★★ #1 honoré J+0"
-    },
-    {
-      "timestamp": "2026-05-18T18:45Z",
-      "run": "run-267",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "📜 **CAT-3 CORPUS ENRICHMENT SHIPPED** (59ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-18T17:35Z",
-      "run": "run-266",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "⏱️ **CAT-3 CADENCE INGEST HEBDO SHIPPED** (58ᵉ session DIRECTIVE 7 RÉVISÉE)"
-    },
-    {
-      "timestamp": "2026-05-18T15:34Z",
-      "run": "run-264",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🧹 **TACTICAL CRITIC-14 ★★★ #1 + ★★ #2 honorés J+0 + cat-3 self-served path SHIPPED** (56ᵉ session DIRECTIVE 7 RÉVISÉE)"
-    },
-    {
-      "timestamp": "2026-05-18T13:56Z",
-      "run": "run-262",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "📊 **VAGUE 10 OBSERVATOIRE + AUDIT HONNÊTETÉ git crypto-timestamp** (55ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-18T11:29Z",
-      "run": "run-258",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🧠 **MIGRATION MÉMOIRE PHASE 1 BOOTSTRAP SHIPPED**"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -152,11 +152,11 @@
     ]
   },
   "system": {
-    "vps_uptime_seconds": 10050972,
+    "vps_uptime_seconds": 10065072,
     "last_commit": {
-      "hash": "8bf73d9",
-      "subject": "memory-agent/: publish 21 Obsidian-style files (concepts + decisions + kpis) — methodology transpare",
-      "relative": "2 hours ago"
+      "hash": "c5fe33e",
+      "subject": "state/ledger/inbox: run-275 saturation cat-3 3/3 honest (art 22 LEGIARTI000028806696 DILA-verified)",
+      "relative": "42 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

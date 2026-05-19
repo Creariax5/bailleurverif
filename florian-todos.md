@@ -9,16 +9,34 @@
 
 **Pourquoi (escalation honnête critic-16 audit-16 22:50Z)** : 68 wakes consécutifs sans humain newly engaged. Critic-16 prescrit *"1 publication externe humaine non-bloquée"*. Probes techniques run-272 confirment 4/5 canaux listés morts : (a) Mastodon `@bailleurverif@piaille.fr` API `"suspended":true` ; (b) Reddit u/BailleurVerif OAuth Google cassé post Gmail-disabled 2026-05-15 ; (c/d) HN/LinuxFr nécessitent signup nouveau (self-policy bloqué) ; (e) LinkedIn dépend nominativement de toi. Sans 1 canal externe actif, critic-17 (~+3h) escalade *"discipline parfaite stratégie creuse confirmée"* explicitement.
 
-**Action attendue Florian** (3 options préférence ordonnée, ~3-5 min) :
-- **(α) Coller cred Bluesky** dans `.env` (compte existant perso ou marque) : `BLUESKY_HANDLE=...` + `BLUESKY_APP_PASSWORD=...` → agent post autonome (Bluesky AT Protocol public, pas anti-bot).
-- **(β) Créer compte Mastodon FR autre instance** (mamot.fr / framapiaf.org) avec email perso non-disabled (christian@mobula.io OR florian.demartini.dev@gmail.com), coller `MASTODON_INSTANCE_2=` + `MASTODON_PASSWORD_2=` `.env`.
+**Action attendue Florian** (4 options préférence ordonnée, ~1-5 min) :
+- **(γ-mini) ★ NOUVEAU run-276 — 60 sec, friction ÷5** : copy-paste 1 tweet 278c sur 1 compte perso existant Twitter/Bluesky/Mastodon. **Texte exact prêt** dans `social-drafts.md` section `TWEET-γ-MINI` (cherche le header). Pas de signup, pas de cred, pas de switch d'onglet plus de 60s.
+- **(α) Coller cred Bluesky** dans `.env` (compte existant perso ou marque) : `BLUESKY_HANDLE=...` + `BLUESKY_APP_PASSWORD=...` → agent post autonome (Bluesky AT Protocol public, pas anti-bot, script `bluesky_post_atproto.py` shipped run-274).
+- **(β) Créer compte Mastodon FR autre instance** (mamot.fr / framapiaf.org) avec email perso non-disabled (florian.demartini.dev@gmail.com), coller `MASTODON_INSTANCE_2=` + `MASTODON_PASSWORD_2=` `.env`.
 - **(γ) Poster toi-même** 1 message LinkedIn organique linkant `bailleurverif.fr/observatoire-annonces-loyer` (texte suggéré : *"Observatoire timestampé Git de 10 vagues annonces immobilières + 919 articles Légifrance bail/loyer indexés cadence hebdo, dataset public data.gouv.fr v1 sous licence Etalab. Feedback bienvenu."*).
 
 **Impact si non-fait** : critic-17 (~3h) escalade *"discipline parfaite stratégie creuse"*. Le moat construit reste invisible aux humains. Pas catastrophique court terme mais blocking pour métrique 5000 users 90j.
 
-**Asymétrie** : 3-5 min toi = 1 levier autonome distribution rétabli. Agent autonome enchaîne ensuite pace 1 post/jour avec ratio 80% utile / 20% promo (DIRECTIVE 3). Cooldown ré-évocation 24h+.
+**Asymétrie** : 1 min toi (γ-mini) = 1 levier externe activé. Cooldown ré-évocation 24h+.
 
-**Statut** : OPEN run-272 2026-05-18T23:37Z.
+**Statut** : OPEN run-272 2026-05-18T23:37Z. **Update run-276** : ajout option γ-mini (tweet 278c friction 60s, asymétrie max vs α/β/γ original).
+
+---
+
+## TODO-30 ★ — 2026-05-19 — Cron wake interval drift externe (agents-control side) — note info
+
+**Pourquoi (critic-17 audit-17 03:34Z constat)** : critic flagué wakes ~57-64 min vs `*/15` attendu. Crontab local VPS (`crontab -l deploy`) confirmé OK : `imap_poll`, `build_agent_stats`, `ingest_orchestrator` tous `*/15`. Le drift est **côté agents-control config** (système qui lance l'agent Claude lui-même = hors-portée fichiers VPS). Si */60 actif côté external scheduler = budget compute 4× moins wakes/h vs cible Builder DIRECTIVE 7.
+
+**Action attendue Florian** (~1 min, info only) :
+1. Vérifier sur dashboard agents-control si pattern wake est `*/15` ou `*/60` (ou autre).
+2. Si `*/60` → décider : restaurer `*/15` (4× wakes/h, coût ×4) OU acter `*/60` comme nouveau baseline (et l'agent ajuste mental model).
+3. (Optionnel) Inbox `TODO-30 acked: */15` ou `TODO-30 acked: */60 new baseline`.
+
+**Impact si non-fait** : agent continue sans certitude sur cadence effective. Mineur. Pas catastrophique.
+
+**Asymétrie** : 1 min Florian = clarification baseline pacing. Cooldown 48h+ (info non-bloquante).
+
+**Statut** : OPEN run-276 2026-05-19T03:34Z.
 
 ---
 
