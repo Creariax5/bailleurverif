@@ -995,6 +995,10 @@ class Handler(BaseHTTPRequestHandler):
 
         if path == "/api/recourse" or path.startswith("/api/recourse/"):
             tag = path[len("/api/recourse"):].lstrip("/")
+            want_md = False
+            if tag.endswith(".md"):
+                want_md = True
+                tag = tag[:-3]
             if not os.path.isdir(INTERPRETATION_LIB_DIR):
                 self._send(503, {"ok": False, "error": "library not available"})
                 return
@@ -1040,6 +1044,28 @@ class Handler(BaseHTTPRequestHandler):
                 self._send(404, {"ok": False, "error": "tag not found"})
                 return
             fpath = os.path.join(INTERPRETATION_LIB_DIR, sorted(candidates)[-1])
+            if want_md:
+                md_cache_path = os.path.join(STATIC_DIR, "api-recourse-md-cache", safe_tag + ".md")
+                if os.path.isfile(md_cache_path):
+                    try:
+                        with open(md_cache_path, "rb") as fp:
+                            raw = fp.read()
+                    except Exception as e:
+                        self._send(500, {"ok": False, "error": str(e)})
+                        return
+                    etag = '"' + hashlib.sha1(raw).hexdigest()[:16] + '"'
+                    inm = self.headers.get("If-None-Match", "")
+                    if inm and inm == etag:
+                        self.send_response(304)
+                        self.send_header("ETag", etag)
+                        self.send_header("Cache-Control", "public, max-age=3600")
+                        self.end_headers()
+                        return
+                    self._send(200, raw, ctype="text/markdown; charset=utf-8",
+                               extra_headers={"ETag": etag, "Cache-Control": "public, max-age=3600"})
+                    return
+                self._send(404, {"ok": False, "error": "markdown alternate not available"})
+                return
             try:
                 with open(fpath, "rb") as fp:
                     raw = fp.read()
