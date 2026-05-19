@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T03:37:01Z",
+  "generated_at": "2026-05-19T09:50:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,68 +8,68 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 250,
-    "today_utc": 3,
-    "last_run": "run-267",
-    "last_updated": "2026-05-18T18:45Z"
+    "total_lifetime": 261,
+    "today_utc": 15,
+    "last_run": "run-279",
+    "last_updated": "2026-05-19T06:35Z"
   },
-  "current_state": "🧪 KPIs vivants — run-275 2026-05-19T02:45Z — **SATURATION CAT-3 3/3 HONNÊTE ATTEINTE : art 22 loi 89-462 LEGIARTI000028806696 DILA-verified ajouté corpus (920ᵉ) via DILA Freemium full stock 1.17GB targeted extract (290 articles loi 89-462 → NUM=22 ETAT=VIGUEUR) ; depot-garantie-non-restitue.v0.json legal_basis[] peuplé verbatim 2995c provenance Etalab v2.0 + legal_basis_populated_dila_verified=true ; templates_legal_basis_populated_pct 67%→100% ; strategic-critic-5 prescription \"peupler legal_basis[] ou rien\" fully honored**",
+  "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
     {
-      "timestamp": "2026-05-19T02:45Z",
-      "run": "run-275",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🏛️ **SATURATION CAT-3 3/3 HONNÊTE ATTEINTE** (59ᵉ session DIRECTIVE 7 RÉVISÉE)"
-    },
-    {
-      "timestamp": "2026-05-19T01:38Z",
-      "run": "run-274",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "Saturation cat-3 honnête reconnue 2/3 templates legal_basis populés"
-    },
-    {
-      "timestamp": "2026-05-19T00:34Z",
-      "run": "run-273",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "WHY_THIS_NOT_THAT ritual `runs/run-273-2026-05-19T0034Z.md` 2 alternatives évaluées"
-    },
-    {
-      "timestamp": "2026-05-19T00:34Z",
-      "run": "run-273",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "Edit `data/interpretation-library-v0/recourse-templates/dpe-invalide.v0.json`"
-    },
-    {
-      "timestamp": "2026-05-18T23:45Z",
-      "run": "run-272",
+      "timestamp": "2026-05-19T09:46Z",
+      "run": "run-287",
       "kind": "SHIP",
       "emoji": "🛠️",
-      "summary": "git commit `75af801` pushed origin/main `8bf73d9..75af801` SUCCESS (118 files +8847 -773 LOC) = crypto-timestamp public chain"
+      "summary": "🧠 **TODO-28 ★★★ DONE capability + 1 enrich"
     },
     {
-      "timestamp": "2026-05-18T23:37Z",
-      "run": "run-272",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🚧 **CRITIC-16 HONNÊTE ESCALATION** (62ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+      "timestamp": "2026-05-19T09:25Z",
+      "run": "run-286",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🗂️ **MEMORY HYGIENE + INTEL TRAFFIC**"
     },
     {
-      "timestamp": "2026-05-18T22:36Z",
-      "run": "run-271",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "Wayback SPN burst NEW URLs only (run-270 NEXT B4 honored)"
+      "timestamp": "2026-05-19T09:10Z",
+      "run": "run-285",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🪟 **MOAT VISIBLE — section publique `#persistance-temporelle` ajoutée `/observatoire-annonces-loyer.html`** (65ᵉ session DIRECTIVE 7 RÉVI..."
     },
     {
-      "timestamp": "2026-05-18T19:25Z",
-      "run": "run-270",
+      "timestamp": "2026-05-19T08:59Z",
+      "run": "run-284",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "Cat-1 RENFORCEMENT MAJEUR : `wedge-tool/cross_wave_persistence.py` créé (~80 LOC stdlib csv+json+collections+pathlib), croise tous les CS..."
+    },
+    {
+      "timestamp": "2026-05-19T08:39Z",
+      "run": "run-283",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "Question pivot Florian 1× brève posée `inbox.md` (critic-18 ★★ STOP #2 FULLY HONORED J+0)"
+    },
+    {
+      "timestamp": "2026-05-19T07:42Z",
+      "run": "run-282",
       "kind": "ACT",
       "emoji": "🔧",
-      "summary": "🪞 **PIVOT NON-CAT-3 OBLIGATOIRE HONORÉ** — memory-agent/ 21 fichiers Obsidian-style pushed public (commit `8bf73d9`)"
+      "summary": "🧹 **MEMORY-AGENT CONCEPTS REFRESH STALE → ÉTAT RÉEL (post-PATCH J+0 hygiène)** (62ᵉ session DIRECTIVE 7 RÉVISÉE conforme, cron tick T+~9m..."
+    },
+    {
+      "timestamp": "2026-05-19T07:33Z",
+      "run": "run-281",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🔍 **OBSERVATION PHASE 2 PATCH J+0 + critic-18 ★★ #2 + #3 honored** (61ᵉ session DIRECTIVE 7 RÉVISÉE, cron tick T+~9min post run-280 07:24Z)"
+    },
+    {
+      "timestamp": "2026-05-19T07:24Z",
+      "run": "run-280",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🔧 **PHASE 2 PATCH AGENT PROMPT EXÉCUTÉ STRICTO SENSU** (ORDRE FLORIAN 06:45Z honoré + tactical critic-18 ★★★ #1 honored)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -95,11 +95,11 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 9,
-    "outbound_emails_24h": 3,
+    "outbound_emails_total": 10,
+    "outbound_emails_24h": 2,
     "outbound_last": {
-      "to": "communication@clcv.org",
-      "subject": "Observatoire ouvert annonces non-conformes (N=232) + notation agences/bailleurs ",
+      "to": "contact@anil.org",
+      "subject": "Observatoire annonces non-conformes + corpus Légifrance bail/loyer — ressources ",
       "sent_at": "?"
     },
     "inbound_replies_total": 2
@@ -110,8 +110,8 @@
     "unsubscribed": 0
   },
   "florian_blockers": {
-    "open": 7,
-    "done": 3,
+    "open": 8,
+    "done": 5,
     "dead": 2,
     "items": [
       {
@@ -120,9 +120,14 @@
         "title": "— 2026-05-18 — Débloquer 1 canal externe humain (critic-16 ★★★ #1, 4/5 canaux autonomes confirmés morts)"
       },
       {
+        "id": "TODO-30",
+        "stars": "★",
+        "title": "— 2026-05-19 — Cron wake interval drift externe (agents-control side) — note info"
+      },
+      {
         "id": "TODO-28",
         "stars": "★★",
-        "title": "— 2026-05-18 — api.piste.gouv.fr OAuth signup pour Judilibre API (débloque vrai cat-3 RAG jurisprudence)"
+        "title": "— 2026-05-18 — api.piste.gouv.fr OAuth signup pour Judilibre API (débloque vrai cat-3 RAG jurisprudence) — HISTORIQUE"
       },
       {
         "id": "TODO-27",
@@ -142,7 +147,7 @@
       {
         "id": "TODO-24",
         "stars": "★★★",
-        "title": "— data.gouv.fr réutilisation (payload prêt run-193, choix 2 chemins) — UPGRADED"
+        "title": "— data.gouv.fr réutilisation (payload prêt run-193, choix 2 chemins) — UPGRADED — HISTORIQUE"
       },
       {
         "id": "TODO-19",
@@ -152,11 +157,11 @@
     ]
   },
   "system": {
-    "vps_uptime_seconds": 10065072,
+    "vps_uptime_seconds": 10087453,
     "last_commit": {
-      "hash": "c5fe33e",
-      "subject": "state/ledger/inbox: run-275 saturation cat-3 3/3 honest (art 22 LEGIARTI000028806696 DILA-verified)",
-      "relative": "42 minutes ago"
+      "hash": "bcd7df5",
+      "subject": "run-286 — memory hygiene + traffic intel",
+      "relative": "20 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

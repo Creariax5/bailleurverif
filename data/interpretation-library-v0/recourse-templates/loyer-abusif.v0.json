@@ -218,8 +218,19 @@
       "extracted_run": "run-241"
     }
   ],
-  "jurisprudence_refs": [],
-  "jurisprudence_refs_note": "Section vide — PISTE judilibre api-key requis (TODO Florian futur). Wave +1 ouverture sur 3-5 décisions Cass civ 3ème encadrement à enrichir manuellement.",
+  "jurisprudence_refs": [
+    {
+      "ecli": "ECLI:FR:CCASS:2020:C300657",
+      "decision_id": "5fca33d50c7b4623bd8b0b2f",
+      "decision_date": "2020-09-24",
+      "chamber": "civ3",
+      "jurisdiction": "Cour de cassation",
+      "summary": "L'acquéreur d'un logement donné à bail sous le régime de la loi n° 48-1360 du 1er septembre 1948 ne peut se prévaloir d'une atteinte disproportionnée portée par ce régime locatif au droit au respect de ses biens garanti par l'article 1er du premier protocole additionnel à la CEDH.",
+      "relevance_to_template": "Cass civ3 confirme que les régimes encadrant le loyer (ici loi 1948, par extension loi 89-462 / Jeanbrun 2026-103) NE constituent PAS une atteinte disproportionnée à la propriété au sens CEDH. Renforce la position du locataire face à un bailleur qui contesterait l'encadrement.",
+      "source_url": "https://www.courdecassation.fr/decision/5fca33d50c7b4623bd8b0b2f"
+    }
+  ],
+  "jurisprudence_refs_note": "1 décision Cass civ3 ECLI:FR:CCASS:2020:C300657 enrichie via Judilibre v1.0 PRODUCTION run-287 (query 'encadrement loyer' chambre civ3 date_start 2010-01-01). Pipeline PISTE OAuth+search validé from-agent. Enrichissement progressif : queries restantes (complément loyer ALUR / zone tendue post-2014 spécifiquement) à raffiner runs +N pour atteindre cible 3-5 décisions/template (TODO-28 Florian directive 2026-05-19T08:05Z).",
   "limitations_disclaimers": [
     "Ce template est un outil d'information ne remplaçant pas un conseil juridique personnalisé d'un avocat ou de l'ADIL.",
     "Le contenu reflète l'état du droit au 2026-05-18 (corpus SP.fr F1314 vérifié 01/04/2026, F1311 vérifié 08/08/2025, ANIL fiche màj 26/11/2024). Vérifier toute évolution réglementaire avant action.",
@@ -302,5 +313,7 @@
   ],
   "legal_basis_note": "Articles loi/code extraits du bulk DILA Open Data (https://echanges.dila.gouv.fr/OPENDATA/LEGI/), Licence Ouverte Etalab v2.0, archives quotidiennes XML. Provenance vérifiable : chaque entrée précise archive_name + archive_path + fetched_ts. Citations verbatim depuis BLOC_TEXTUEL/CONTENU (XML schema DILA). Cadence ingestion hebdomadaire prévue via crawler/legifrance_dila_fetch.py --latest-delta + filtre keywords. Différent de legal_basis_citations[] (construction historique depuis vocabulaire SP.fr/ANIL, partiellement non-vérifié).",
   "legal_basis_first_authored_run": "run-265",
-  "legal_basis_first_authored_ts": "2026-05-18T16:40Z"
+  "legal_basis_first_authored_ts": "2026-05-18T16:40Z",
+  "jurisprudence_refs_last_enriched_run": "run-287",
+  "jurisprudence_refs_last_enriched_ts": "2026-05-19T09:46:00Z"
 }

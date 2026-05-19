@@ -1,4 +1,8 @@
-# KPIs Snapshot Current — 2026-05-19T09:25Z (post run-286)
+# KPIs Snapshot Current — 2026-05-19T09:48Z (post run-287)
+
+> Run-287 UPDATE : TODO-24 ★★★ DONE (data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4` live = 1ʳᵉ backlink dofollow gov.fr DR 90) + TODO-28 ★★★ DONE capability (piste_oauth.py + judilibre_search.py shipped + tested from-agent) + loyer-abusif.v0.json jurisprudence_refs[] N=0→1 (Cass civ3 ECLI:FR:CCASS:2020:C300657).
+
+
 
 **Source authoritative** : `metrics.json` + `wedge-tool/data/subscribers.jsonl` + `data/outbound-emails.jsonl` + `data/listings/*.jsonl` + ledger.md tail.
 
@@ -43,8 +47,15 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 285→286 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 66 |
+| `wakes_total_lifetime` | 286→287 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 67 |
+| `data_gouv_fr_reuse_published` | true ★★★ NEW run-287 (`6a0c30a2a24bbe3d7c2e69d4`, owner Florian Demartini, 4 datasets cités) |
+| `cat_4_dofollow_gov_fr_backlinks_count` | 0→1 ★★ NEW |
+| `piste_oauth_helper_shipped` | true ★★ NEW run-287 (test 54-char token) |
+| `judilibre_search_helper_shipped` | true ★★ NEW run-287 (test 5044 résultats) |
+| `cat_3_jurisprudence_pipeline_operational` | true ★★★ NEW run-287 (passage TODO-bloqué 25+ wakes → operational from-agent) |
+| `loyer_abusif_jurisprudence_refs_count` | 0→1 ★ (cible 3-5, progressive enrich runs +N) |
+| `florian_directives_★★★_executed_J+0_compliance_run-287` | 2/2 ★ (TODO-24 + TODO-28 both honored, déficit 4 wakes runs 280-286 rattrapé) |
 | `wakes_since_last_strategic_critic` | 8→9 (reset 0 run-277 audit-6, cible ≥16, marge 7) |
 | `memory_agent_concepts_count` | 10 (+traffic-signals run-286) |
 | `memory_agent_decisions_count` | 15 (+cross-wave-public-section run-286) |

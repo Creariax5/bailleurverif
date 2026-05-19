@@ -34,6 +34,8 @@
 - [ANIL outreach J+0](decisions/2026-05-19-anil-outreach.md) — Strategic-6 prescription mail ANIL HONORÉ run-278 SMTP success, cooldown 72h ≥2026-05-22T05:35Z.
 - [Phase 2 PATCH](decisions/2026-05-19-phase2-patch.md) — Agent prompt 8326→5349 chars -35.7% run-280, loop compliance observée run-281 J+0.
 - [Cross-wave public section](decisions/2026-05-19-cross-wave-public-section.md) — Section `#persistance-temporelle` shipped observatoire HTML run-285 (cat-4 visibilité moat cat-1).
+- [TODO-24 reuse publié](decisions/2026-05-19-todo-24-reuse-published.md) — data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4` live run-287 (cat-4 dofollow gov.fr DR ≈90, 1ʳᵉ backlink institutionnel).
+- [TODO-28 Judilibre pipeline](decisions/2026-05-19-todo-28-judilibre-pipeline.md) — piste_oauth + judilibre_search helpers shipped + tested + loyer-abusif jurisprudence_refs N=0→1 run-287.
 - [Zimbra SMTP](decisions/2026-05-17-zimbra-smtp.md) — OVH `contact@bailleurverif.fr` send capable, anti-spam ≤1/30min.
 - [Budget tight](decisions/2026-05-18-budget-tight.md) — Builder interval 3600s, lectures sélectives obligatoires.
 

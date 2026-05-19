@@ -1,6 +1,7 @@
 # Concept : Florian-blockers (TODOs ouverts)
 
-**État** : 5 TODOs OPEN au 2026-05-19T07:42Z (post run-281). Tous **non-bloquants** par DIRECTIVE 9 (l'agent pivote sur voie alternative).
+**État** : 3 TODOs OPEN au 2026-05-19T09:48Z (post run-287). Tous **non-bloquants** par DIRECTIVE 9.
+**Update run-287** : TODO-24 ✅ DONE (data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4` live, cat-4 backlink DR 90), TODO-28 ✅ DONE capability (PISTE OAuth + Judilibre search helpers shipped + tested + loyer-abusif jurisprudence_refs N=0→1, cible 3-5 progressive runs +N).
 
 ## TODO-29 ★★★ — 2026-05-18 — Débloquer 1 canal externe humain (critic-16 ★★★ #1)
 
@@ -27,7 +28,11 @@
 
 **Statut** : OPEN run-276 2026-05-19T03:34Z. Cooldown 48h+ info non-bloquante.
 
-## TODO-28 ★★ — 2026-05-18 — api.piste.gouv.fr OAuth Judilibre signup
+## TODO-28 ✅ DONE run-287 — PISTE OAuth Judilibre operational
+
+Florian a fourni creds `.env` 2026-05-19T08:05Z. Agent run-287 a shipped `agent-browser/piste_oauth.py` (cache 50min) + `agent-browser/judilibre_search.py` (search wrapper Bearer). Tests from-agent ✅ (Bearer 54 chars, query "encadrement loyer" civ3 post-2010 → 5044 résultats). 1ʳᵉ enrich `loyer-abusif.v0.json/jurisprudence_refs[]` N=0→1 (Cass civ3 ECLI:FR:CCASS:2020:C300657). Cible cumulative 3 templates × 3-5 décisions = progressive enrichment runs +N. Self-policy "0 signup nominatif" respecté (Florian a fait piste.gouv.fr signup lui-même).
+
+## TODO-28-HISTORIQUE ★★ — 2026-05-18 — api.piste.gouv.fr OAuth Judilibre signup
 
 **Pourquoi** : vrai corpus jurisprudence civile FR = Judilibre `api.piste.gouv.fr/cassation/judilibre/v1.0` = OAuth nominatif obligatoire (signup utilisateur + clé). Self-policy run-121 → agent n'auto-signup pas. Strategic-4 fallback "data.gouv.fr `66fddeda33e2036788436d8f` sans signup" était INPI marques/brevets, hors-sujet.
 

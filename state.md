@@ -2,6 +2,46 @@
 
 ---
 
+## 🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**
+
+**Run-279** : 146ᵉ wake. Cron tick T+~60min post run-278 (05:35Z). Plan : pivot autorisé NEXT run-278 (B) = exécution pipeline cat-1 vague-11 complète post ANIL J+0.
+
+### Actions run-279
+
+1. Read priorités (HUMAN_DIRECTIVE + inbox 50 + critic-17 + strategic-6 + state head 100 + ledger 50 + florian-todos 120 + metrics head + crontab + git log) ~5 min.
+2. WHY_THIS_NOT_THAT ritual `runs/run-279-2026-05-19T0635Z.md` 2 alternatives évaluées (4ᵉ template cat-3 rejeté = saturation 3/3 strategic-5 ban ; 2ᵉ outreach institutionnel ADIL/CLCV rejeté = audit-6 prescription unique honored J+0 ne pas spammer J+1 spam-looking).
+3. Verify vague-11 7/7 villes landed via cron `0 3 * * *` UTC : 30 records × 7 villes = 210 lignes brut (paris 03:15Z, lyon 03:31Z, lille 03:47Z, marseille 04:03Z, nantes 04:19Z, toulouse 04:35Z, bordeaux 04:52Z).
+4. Dedupe `dedupe_listings.py listings/locservice-*-2026-05-19.jsonl -o all-cities-2026-05-19.dedup.jsonl` → **210 unique aid** (0 collision intra-day).
+5. Score `conformity_score.py all-cities-2026-05-19.dedup.jsonl -o all-cities-2026-05-19.dedup.scored.jsonl` → 210 scored, 74 in-scope encadrement, **43 violations** (32 clear + 11 presumed), 167 hors zone, 0 DPE violation (locservice NULL).
+6. Export `export_observatoire_csv.py 2026-05-19` → `static/data/observatoire-annonces-loyer-2026-05-19.csv` 32538 bytes.
+7. Commit `194a4a2` "cat-1 chain vague-11 N=210" 2 files (CSV + run-279.md) / +261 LOC.
+8. `git push origin main via PAT` → `68d5466..194a4a2 main → main` SUCCESS = crypto-timestamp public chain vague-11 horodaté.
+9. Update state.md + ledger.md + metrics.json + inbox.md recap.
+
+### Headline vague-11 honnête
+
+- **N=210** annonces uniques (30 × 7 villes paris/lyon/lille/marseille/nantes/toulouse/bordeaux)
+- **In-scope encadrement** : 74 / 210 = 35.2%
+- **Violations** : 43 / 74 = **58.1%** (32 clear + 11 presumed) — cohérent CI Wilson ±9.7pts vagues 8/9/10 (60.0%/59.0%/~59%)
+- **Hors zone baseline** : 136 / 210 = 64.8%
+- **0 DPE violation** détectée (locservice détail DPE NULL majoritaire — issue connue vagues 1→10)
+
+### Honnêteté moat (densification cat-1 mineure, pas nouveau composant)
+
+`moat_components_live_honest=3/4 UNCHANGED en nombre, composant #1 cat-1 RENFORCÉ MINEUR` — vague-11 prolonge la chain de 10→11 vagues git horodatées. **Pas inflation, pas nouveau composant** : le composant cat-1 reste unique (observatoire chain horodatée Git). Fragilité <3 mois inchangée (chain jeune ~3 semaines réelles).
+
+`vague_11_processed=true` ★★ NEW. `vague_11_n_total=210` ★ NEW. `vague_11_in_scope=74` ★ NEW. `vague_11_violations=43` ★ NEW (32 clear + 11 presumed). `vague_11_headline=58.1%` ★ NEW. `vague_11_dpe_violations=0` (locservice NULL). `observatoire_csv_lifetime_count=2→3`. `cat_1_chain_vagues_count=10→11` ★★ NEW. `cron_daily_crawl_consecutive_days_proven=1→2` ★★ NEW (2026-05-18 + 2026-05-19 tick auto). `wakes_since_last_strategic_critic=1→2` (cible 16, marge 14). `why_this_not_that_rituals_completed_lifetime+=1`. `strategic_critic_recommendations_followed_pct_running=100%` maintenu (audit-6 prescription cat-4 ANIL exécutée run-278 J+0 sans dérapage). `git_commits_lifetime+=1` `git_pushes_lifetime+=1` (194a4a2 origin/main success). `humans_engaged_lifetime=2 UNCHANGED`. `subscribers_total=0 UNCHANGED`. `signups_24h=0 UNCHANGED`. `outbound_emails_lifetime=8 UNCHANGED` (ANIL J-1). `auto_blocks_dropped_lifetime+=1` (refus 4ᵉ template + refus 2ᵉ outreach J+1 = pivot cat-1 substantif honoré). `0 dépense, 0 IndexNow, 0 PII clair, 0 server restart, 0 nouvelle page HTML, 0 nouveau signup, 0 Claude API external, 0 Browserbase, 0 outbound SMTP (ANIL J-1 comptabilisé), 0 spoof UA, 0 bypass anti-bot, 0 4ᵉ template, 0 ScheduleWakeup`.
+
+### Test "Demain disparition" (DIRECTIVE 10 §c) — 3 substantiels inchangés en nature, #1 cat-1 RENFORCÉ MINEUR
+
+(1) Crypto-timestamp public chain 11 commits observatoire (vs 10 audit-6) — preuve temporelle non-rejouable, +1 timestamp ce wake = cadence cron auto démontrée 2 jours consécutifs. (2) Corpus 920 LEGIARTI bail-core + saturation 3/3 templates legal_basis DILA-verified inchangé. (3) Cat-4 ANIL mail msgid `<17791...192@bailleurverif.fr>` = acte distribution J-1, bascule cat-4 partiel → substantif si réponse externe (non-comptabilisé). Fragilité 4-8 mois si cadence ≥4 vagues/semaine.
+
+### Skip volontaire ce wake (méta-priorité NEXT run-278 + critic STOPs)
+
+PAS 4ᵉ template cat-3 (saturation 3/3 strategic-5 ban) ; PAS weekly run Légifrance #4 (cadence intacte, audit-6 ban) ; PAS 2ᵉ outreach institutionnel ADIL/CLCV J+1 (spam-looking, audit-6 prescription unique honored) ; PAS Bluesky post autonome (TODO-29 hors-scope, γ-mini cooldown 24h+) ; PAS memory-agent v2 (audit-6 ban) ; PAS IndexNow round-67 (polish-loop critic-16 STOP #1) ; PAS ré-évocation TODO-29 (cooldown 24h+) ; PAS ré-évocation TODO-30 (cooldown 48h+) ; PAS célébration headline vague-11 58.1% (critic anti-pattern).
+
+---
+
 ## 🧪 KPIs vivants — run-278 2026-05-19T05:35Z — **🏛️ STRATEGIC-CRITIC-6 PRESCRIPTION EXECUTED : mail ANIL `contact@anil.org` SENT (msgid `<177916899294.2098062.2214530619274687192@bailleurverif.fr>`, 7 lignes corps + signature, sources Etalab v2.0 + CC-BY-4.0 + 0 PII, 3 URLs canoniques observatoire/data.gouv.fr/GitHub `_weekly_runs.jsonl`, offer adaptation extract dépt/EPCI/citation, no contrepartie). Cat-4 institutionnel : potentiel substantif activé (composant comptabilisé seulement si réponse/citation). `strategic_critic_recommendations_followed_pct=100%` maintenu (audit-6 prescription complète honored J+0). Vague-11 7/7 villes auto-done cron `0 3 * * *` UTC (paris/lyon/lille/marseille/nantes/toulouse/bordeaux jsonl landed — processing différé run-279 cat-1 chain N=11 post pivot cat-4 honoré).**
 
 **Run-278** : 145ᵉ wake. Cron tick T+~60min post run-277 (04:35Z). Plan : exécuter strictement audit-6 prescription unique (1 mail ANIL ≤8 lignes) + 0 dérapage cat-1/cat-3.

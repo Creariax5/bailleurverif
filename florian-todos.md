@@ -40,7 +40,11 @@
 
 ---
 
-## TODO-28 ★★ — 2026-05-18 — api.piste.gouv.fr OAuth signup pour Judilibre API (débloque vrai cat-3 RAG jurisprudence)
+## TODO-28 ✅ DONE PISTE creds 2026-05-19T08:05Z + helpers shipped run-287 + jurisprudence_refs[] enrich loyer-abusif N=1 first decision
+
+**Statut run-287** : Florian a déposé `PISTE_CLIENT_ID` + `PISTE_CLIENT_SECRET` dans `.env`. Agent run-287 a écrit `agent-browser/piste_oauth.py` (OAuth client_credentials + cache 50 min) + `agent-browser/judilibre_search.py` (search wrapper Bearer). Pipeline TESTÉ from-agent : OAuth 54-char token OK, Judilibre search `encadrement loyer` chambre civ3 post-2010 → 5044 résultats. 1ʳᵉ décision enrichie `loyer-abusif.v0.json/jurisprudence_refs[]` (Cass civ3 ECLI:FR:CCASS:2020:C300657 2020-09-24 — encadrement loyer CEDH-compliant). **Cible 3-5 décisions/template restante : runs +N pour affiner queries** (complément loyer ALUR / zone tendue post-2014). Helpers réutilisables pour dpe-invalide + depot-garantie templates.
+
+## TODO-28 ★★ — 2026-05-18 — api.piste.gouv.fr OAuth signup pour Judilibre API (débloque vrai cat-3 RAG jurisprudence) — HISTORIQUE
 
 **Pourquoi (correction honnête run-261)** : run-260 strategic critic audit-4 a annoncé un "pivot cat-3 sans signup" via dataset data.gouv.fr `66fddeda33e2036788436d8f`. Vérification ce wake : **ce dataset est jurisprudence INPI marques/brevets** — hors-sujet pour BailleurVérif (bail/loyer/DPE). Le **vrai corpus jurisprudence civile FR** = Judilibre (Cour de cassation), distribué par data.gouv.fr (id `6169a763a36598a184f78e6d`) mais accessible **seulement via API `api.piste.gouv.fr/cassation/judilibre/v1.0`** = OAuth nominatif obligatoire (signup utilisateur + génération clé). Self-policy run-121 + DIRECTIVE 9 §"anti-blocage signups nominatifs" → agent n'auto-signup pas.
 
@@ -305,7 +309,11 @@ Discipline post-incident : agent NE crée PAS de compte SMTP/email en autonome. 
 
 ---
 
-## TODO-24 ★★★ — data.gouv.fr réutilisation (payload prêt run-193, choix 2 chemins) — UPGRADED
+## TODO-24 ✅ DONE 2026-05-19T09:42:58Z — reuse `6a0c30a2a24bbe3d7c2e69d4` créé via `submit-data-gouv-fr-reuse.sh` run-287
+
+POST data.gouv.fr/api/1/reuses/ avec `DGVFR_API_KEY` (env, chmod 600) → resource créée (HTTP 400 sur réponse = false-positive backend Tchap, POST effectivement passé : GET /api/1/reuses/?q=bailleurverif retourne `total=1` immédiatement après). URL publique : `https://www.data.gouv.fr/fr/reuses/bailleurverif-observatoire-annonces-loyer-non-conformes-encadrement-dpe-f-g/`. Owner Florian Demartini, 4 datasets cités (DPE ADEME / BAN / Encadrement Paris / JORF). **1ʳᵉ backlink dofollow gov.fr DR 90 cat-4 institutional substantif live** depuis ouverture mission. Florian peut révoquer `DGVFR_API_KEY` à `https://www.data.gouv.fr/fr/admin/me/` → API Key (optionnel — peut servir pour republish v3+ ou nouveau reuse futurs).
+
+## TODO-24 ★★★ — data.gouv.fr réutilisation (payload prêt run-193, choix 2 chemins) — UPGRADED — HISTORIQUE
 
 **Pourquoi** : `data.gouv.fr/reuses/` = dofollow gov.fr DR 90, 0€. BailleurVérif réutilise légitimement 4 datasets officiels (DPE ADEME, BAN, Encadrement Paris, JORF) → cite l'URL pivot de l'observatoire (N=160, 7 villes, 59 % violations) = backlink + visibilité data analysts / journalistes FR.
 
