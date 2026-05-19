@@ -2,6 +2,35 @@
 
 ---
 
+## 🧪 KPIs vivants — run-274 2026-05-19T01:38Z — **SATURATION CAT-3 2/3 RECONNUE HONNÊTE : art 22 loi 89-462 (clé dépôt garantie restitution) ABSENT corpus 919 bail-core delta window Feb-Mar 2026 (stable depuis ALUR 2014 hors deltas) → forçage depot-garantie avec proxy faibles refusé (théâtre anti-DIRECTIVE 9 §"peupler ou rien") ; PIVOT INFRA DISTRIBUTION TODO-29 α : `bluesky_post_atproto.py` shipped (~110 LOC stdlib pure, AT Protocol XRPC HTTP, dry-run validated env-gate) → friction Florian ÷5 (3 min cred → 1-click post autonome)**
+
+**Run-274** : 142ᵉ wake. Cron tick T+~64min post run-273 (00:34Z). Plan : saturation cat-3 honnête + pivot infra distribution. **Pas 3ᵉ template forcé (corpus absence art 22 reconnu) ; pas 4ᵉ template (strategic-5 ban)**.
+
+### Actions run-274
+
+1. Read priorités (HUMAN_DIRECTIVE + inbox 50 + critic-16 + strategic-5 + state head + ledger tail + git log status + metrics.json) ~5 min.
+2. Grep corpus `_index_bail_loyer.jsonl` art 22 loi 89-462 → **0 hit VIGUEUR** (confirmation : art 22 stable depuis ALUR 2014, hors delta window Feb-Mar 2026 du corpus actuel).
+3. WHY_THIS_NOT_THAT ritual `runs/run-274-2026-05-19T0138Z.md` 2 alternatives évaluées (depot-garantie proxy faibles rejeté = théâtre cat-3 ; crawler stock 1.17GB rejeté = time-budget hors-session).
+4. Write `agent-browser/bluesky_post_atproto.py` (~110 LOC stdlib pure : urllib + json + argparse + dry-run + JSONL log + env-gate).
+5. Validation `ast.parse` OK + `--dry-run --text "test message"` retourne `{"ok": false, "error": "BLUESKY_HANDLE or BLUESKY_APP_PASSWORD missing in .env"}` = env-gate honnête (script prêt, gated cred).
+6. Commit + push.
+
+### Honnêteté moat (saturation cat-3 reconnue, pas inflation)
+
+`moat_components_live_honest=3/4 UNCHANGED`. **0 nouveau composant cat-3** ; le 3ᵉ template depot-garantie nécessite corpus extension (alternative 2 wake dédié plus tard). **0 nouveau composant cat-N**. Cat-N/A infra distribution Bluesky AT Protocol = pré-construit levier rétablissable post TODO-29 α débloqué Florian. **Pas inflation, pas régression.**
+
+`cat3_corpus_saturation_2_of_3_acknowledged_honest=true` ★★ NEW (art 22 absent corpus delta window). `bluesky_atproto_poster_script_shipped=true` ★ NEW (`agent-browser/bluesky_post_atproto.py`). `todo_29_alpha_path_infra_pre_built=true` ★ NEW (friction Florian ÷5). `wakes_since_last_strategic_critic=12→13` (16 cible, marge 3). `why_this_not_that_rituals_completed_lifetime+=1`. `strategic_critic_recommendations_followed_pct_running=100%` maintenu. `auto_blocks_dropped_lifetime+=1` (refus forçage depot-garantie proxy faibles + refus 4ᵉ template strategic-5 ban = pivot infra honnête anti-DIRECTIVE 9 §"polish-loop ban"). `humans_engaged_lifetime=2 UNCHANGED`.
+
+### Test "Demain disparition" (DIRECTIVE 10 §c) — 3 substantiels honnêtes INCHANGÉS qualitativement
+
+(1) Série temporelle 10 vagues observatoire cat-1 (fragilité <3 mois) ; (2) URL canonique dataset data.gouv.fr v1 cat-4 partiel + archive.org timestamps server-side (fragilité 3-4 mois) ; (3) corpus 919 LEGIARTI bail-core + chain `_weekly_runs.jsonl` N=2 + 2 templates avec legal_basis DILA-verified (fragilité 3-6 mois corpus seul, 4-8 mois si cadence N≥4). Run-274 contribution = 0 composant substantif (infra distribution cat-N/A).
+
+### Skip volontaire ce wake (≤5 PAS, critic-16 STOP #3 honoré)
+
+PAS depot-garantie proxy faibles (théâtre anti-DIRECTIVE 9) ; PAS 4ᵉ template (strategic-5 ban) ; PAS vague-11 (cron `0 3 * * *` UTC pas tiqué, prochain +1h30 hors-session) ; PAS IndexNow round-67 (polish-loop critic-16 STOP #1) ; PAS ré-évocation TODO-29 (cooldown 24h DIRECTIVE 9).
+
+---
+
 ## 🧪 KPIs vivants — run-273 2026-05-19T00:34Z — **STRATEGIC-5 PRESCRIPTION EXTENSION 2ᵉ TEMPLATE : `dpe-invalide.v0.json` legal_basis[] peuplé via DILA bulk Open Data (3 articles VIGUEUR : Loi 89-462 art. 6 calendrier interdiction G/F/E + Outre-mer, CCH L173-1-1 classification 7 classes, Loi 89-462 art. 17-1 III interdiction révision F/G) ; templates_legal_basis_populated 1/3→2/3 (saturation natural à 3/3 wake +1+) ; cat-3 densification composant #3, pas nouveau composant**
 
 **Run-273** : 141ᵉ wake. Cron tick T+57min post run-272 (23:37Z). Plan : extension strategic-5 prescription (audit-5 `peupler legal_basis[] du loyer-abusif`, honored run-265 commit 7f8cfa6) au 2ᵉ template existant `dpe-invalide.v0.json`. **Pas nouveau template (strategic-5 ban "Pas 4ᵉ template" respecté)**.

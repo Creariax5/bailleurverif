@@ -1,3 +1,40 @@
+## 🤖 Agent → Florian — 2026-05-19T01:38Z — Run-274 : 🛠️ **INFRA TODO-29 α PRÉ-CONSTRUITE + SATURATION CAT-3 2/3 HONNÊTE RECONNUE (art 22 absent corpus)**
+
+### 1. Saturation cat-3 honnête (strategic-5 prescription)
+
+Grep corpus `_index_bail_loyer.jsonl` (919 LEGIARTI) pour art 22 loi 89-462 (clé dépôt garantie restitution) = **0 hit VIGUEUR**. L'article 22 est stable depuis ALUR 2014, hors delta window Feb-Mar 2026 du corpus actuel. Forçage depot-garantie avec proxy faibles disponibles (art 24 résiliation, art 2 scope, art 17-1 révision) = théâtre cat-3 anti-DIRECTIVE 9 §"copyability check". Strategic-5 prescription explicit *"peupler legal_basis[] ou rien"* → **"rien" est le choix honnête** tant que corpus n'inclut pas art 22.
+
+→ `templates_legal_basis_populated=2/3 saturation_natural_atteinte` (loyer-abusif run-265 + dpe-invalide run-273). 3ᵉ template depot-garantie déféré à un wake corpus extension dédié (étendre `crawler/legifrance_dila_weekly.sh` pour fetch DILA stock 1.17 GB au lieu de deltas).
+
+### 2. Pivot infra distribution : `bluesky_post_atproto.py` shipped (TODO-29 α friction ÷5)
+
+`agent-browser/bluesky_post_atproto.py` ~110 LOC stdlib pure (urllib + json + argparse). AT Protocol XRPC HTTP via :
+- `com.atproto.server.createSession` (auth handle + app password)
+- `com.atproto.repo.createRecord` (post 300c limit)
+
+Modes : `--dry-run` validation env sans poster + post réel. Log JSONL `agent-browser/logs/bluesky_post.jsonl`. Env-gate clean : `BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD` (app password ≠ login password, généré via Bluesky settings → "App passwords").
+
+Validation `ast.parse` OK + `--dry-run --text "test message"` → `{"ok": false, "error": "BLUESKY_HANDLE or BLUESKY_APP_PASSWORD missing in .env"}` = env-gate honnête (script prêt, gated cred).
+
+**Quand tu colles `BLUESKY_HANDLE=foo.bsky.social` + `BLUESKY_APP_PASSWORD=xxxx-xxxx-xxxx-xxxx` dans `.env` (3 min toi)** → agent peut poster autonome via 1 ligne CLI. Pas de Browserbase, pas de Playwright, juste HTTP urllib pur. Pacing DIRECTIVE 3 §"Bluesky max 5 posts/jour" appliqué côté caller-scheduler (pas dans ce script atomique).
+
+### 3. État TODOs (∅ ré-évocation, statut bref)
+
+- **TODO-29** ★★★ Débloquage canal externe : OPEN ~26h ; **infra α pré-construite ce wake** → friction ÷5 si tu choisis α.
+- **TODO-28** ★★ Judilibre OAuth : silent ~14h+.
+- **TODO-27** ★★ Open3CL #160 : cooldown actif jusqu'à 2026-05-19T11:00Z.
+- **TODO-26** ★ ANTHROPIC_API_KEY : silent.
+
+### 4. NEXT (run-275 cron tick ~01:53Z)
+
+(A) Inbox audit Florian priorité MAX — réaction TODO-29 (α/β/γ) ?
+(B) Si Bluesky creds dans `.env` → exec `bluesky_post_atproto.py` text observatoire (max 300c, ratio 80/20 utile-promo).
+(C) Si UTC >03:00Z + cron Locservice tiqué → vague-11 scrape.
+(D) Sinon : strategic-critic-6 invocation (13/16, marge 3 wakes).
+(E) "stop" → arrêt. **0 ScheduleWakeup.**
+
+---
+
 ## 🤖 Agent → Florian — 2026-05-18T23:37Z — Run-272 : 🚧 **HARD-ASK FLORIAN — DÉBLOCAGE CANAL EXTERNE (critic-16 ★★★ #1 escalation honnête, 4/5 canaux autonomes confirmés morts via probes)**
 
 ### Contexte (critic-16 verdict 22:50Z)
