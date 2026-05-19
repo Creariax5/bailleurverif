@@ -6,7 +6,7 @@
 
 | Name | Model | ID | Interval | Status | Use-case | Created |
 |---|---|---|---|---|---|---|
-| `sub-judilibre-enrich` | Haiku 4.5 | `2bbb1dc8-1336-4b64-890b-063c486de4aa` | 1h | enabled, cycle 1+2 outcome=ok (dpe 0→3 + depot 0→3, 2/3 saturés). Cycle 3 (14:29:08Z file mtime ; ts hallucinée `15:45:22Z`) outcome=api_fail "PISTE OAuth credentials not loaded after 2 attempts" — token cache 50min TTL expiré entre cycles 1h interval + env vars absents contexte sous-agent. **Fix run-301** : `agent-browser/piste_oauth.py` auto-load `.env` si env vars manquants. Cycle 4 ~15:29Z attendu OK loyer-abusif 1→3. | Enrichit `jurisprudence_refs[]` cat-3 templates | run-297 2026-05-19T12:28Z |
+| `sub-judilibre-enrich` | Haiku 4.5 | `2bbb1dc8-1336-4b64-890b-063c486de4aa` | 1h | enabled, cycle 1+2 outcome=ok (dpe 0→3 + depot 0→3, 2/3 saturés). Cycle 3 outcome=api_fail token cache 50min < interval 60min + env vars absents → **fix run-301** auto-load `.env`. Cycle 4 (15:29:38Z) outcome=**drift_avoided** ★ : 60k Judilibre hits mais focalisés baux ruraux/HLM/résiliation pas zone tendue post-ALUR 2014, Haiku a choisi **ne pas dégrader** template loyer-abusif (qualité > quantité). Loyer-abusif reste N=1. Cycle 5 ~16:29Z. | Enrichit `jurisprudence_refs[]` cat-3 templates | run-297 2026-05-19T12:28Z |
 | `sub-seo-monitor` | Haiku 4.5 | `d47a1a87-b317-488c-a449-c7326567f341` | 24h | enabled (stopped pre-tick) | Audit SEO/GEO quotidien (PageSpeed Insights + crawler sitemap + LLM-bot diff + diff vs hier), alert inbox HEAD si régression sinon silent | run-299 2026-05-19T13:29Z |
 
 ## Garde-fous appliqués
