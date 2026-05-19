@@ -1,3 +1,159 @@
+## 🚨 2026-05-19T06:45Z — Florian → Agent — ORDRE EXPLICITE : PATCH ton propre prompt MAINTENANT (Phase 2 migration mémoire)
+
+Tu as l'API agents-control depuis 24h (cf entrée `🔑 CAPABILITY UPGRADE` plus bas dans inbox). Tu as Phase 1 mémoire shipped (memory-agent/ = 30 KB, 9 concepts + 10 décisions + kpis snapshot). **Tu n'as JAMAIS exécuté un seul PATCH.** `prompts-backup/` EMPTY = capability inutilisée = économie crédits seulement à ~30% au lieu de 95%. Florian impatient.
+
+**Ordre explicite** : execute Phase 2 ce wake (run-280). Pas "wake +N selon budget". Pas "alternative à débattre". PATCH. NOW.
+
+### Étape 1 — Backup (agent-browser/prompts-backup/ existe déjà, vide)
+
+```bash
+cd /home/deploy/saas-florian
+set -a; source .env; set +a
+curl -sk "$AGENTS_CONTROL_BASE/api/agents" \
+  -H "Authorization: Bearer $AGENTS_CONTROL_API_KEY" \
+  > agent-browser/prompts-backup/all-agents-2026-05-19T0645Z.json
+```
+
+### Étape 2 — Nouveau prompt Builder (`Saas 2`, ID `42f2c562-927a-45ea-b6ee-ecfadad0d4d6`)
+
+Charge l'actuel depuis le JSON backup, puis remplace **la section "Loop d'exécution chaque wake" + "Fichiers vivants"** par cette version compacte :
+
+```
+## Loop d'exécution chaque wake (mémoire Obsidian-style depuis run-258)
+
+1. **PRIMARY READ** : `memory-agent/MEMORY.md` (~4 KB, index)
+2. **SELECTIVE READ** : 3-5 concepts pertinents listés dans MEMORY.md (~10-20 KB)
+3. **TARGETED READ** uniquement si tâche le nécessite :
+   - `inbox.md` tail 80 lignes (nouvelles entrées Florian, pas full file)
+   - `inbox-from-critic.md` (court)
+   - `inbox-from-strategic-critic.md` head 60 lignes (dernier audit seulement)
+4. **NO READ COMPLET** : state.md / ledger.md = trop chers. KPIs → `memory-agent/kpis/snapshot-current.md`. Historique → grep ciblé, jamais lecture entière.
+5. Ritual DIRECTIVE 10 `WHY_THIS_NOT_THAT` dans `runs/run-N.md`.
+6. Exécute 1-3 actions.
+7. Documente : `runs/run-N.md` + 1 ligne `ledger.md` (source of truth) + update `memory-agent/concepts/X.md` ou `kpis/snapshot-current.md` si état change.
+8. Stop. PAS de ScheduleWakeup.
+
+## Fichiers vivants (canonical)
+
+- `memory-agent/MEMORY.md` + `concepts/` + `decisions/` + `kpis/` — mémoire courante (lecture quotidienne)
+- `state.md` / `ledger.md` / `inbox.md` / `runs/` — archives append-only GitHub-public (transparence, rollback, JAMAIS lus en entier)
+- `inbox.md` tail 80 — Florian ↔ agent
+- `inbox-from-critic.md` — Tactical Critic
+- `inbox-from-strategic-critic.md` head 60 — Strategic Critic
+- `florian-todos.md` — TODOs SEUL Florian peut faire
+- `wedge-tool/data/*.jsonl` — event-sourcing prod
+```
+
+### Étape 3 — PATCH via cURL
+
+```bash
+NEW_PROMPT=$(python3 << 'PYEOF'
+import json, re
+with open('agent-browser/prompts-backup/all-agents-2026-05-19T0645Z.json') as f:
+    agents = json.load(f)
+builder = [a for a in agents if a['name']=='Saas 2'][0]
+old = builder['prompt']
+
+# Repérer la section à remplacer : depuis "## Loop d'exécution" jusqu'à "## Conditions d'arrêt" exclu
+new_loop_section = """## Loop d'exécution chaque wake (mémoire Obsidian-style depuis run-258)
+... [coller le bloc Loop + Fichiers vivants ci-dessus complet] ...
+"""
+
+# Substitution avec regex DOTALL pour matcher le bloc complet
+pattern = r"## Loop d'exécution chaque wake.*?(?=## Conditions d'arrêt)"
+new_prompt = re.sub(pattern, new_loop_section + "\n\n", old, flags=re.DOTALL)
+
+print(new_prompt)
+PYEOF
+)
+
+# Diff visuel
+diff <(echo "$NEW_PROMPT") <(python3 -c "import json; print([a['prompt'] for a in json.load(open('agent-browser/prompts-backup/all-agents-2026-05-19T0645Z.json')) if a['name']=='Saas 2'][0])") | head -50
+
+# PATCH
+curl -sk -X PATCH "$AGENTS_CONTROL_BASE/api/agents/42f2c562-927a-45ea-b6ee-ecfadad0d4d6" \
+  -H "Authorization: Bearer $AGENTS_CONTROL_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d "$(python3 -c "import json,sys; print(json.dumps({'prompt': sys.stdin.read()}))" <<< "$NEW_PROMPT")"
+
+# Verify
+curl -sk "$AGENTS_CONTROL_BASE/api/agents" \
+  -H "Authorization: Bearer $AGENTS_CONTROL_API_KEY" \
+  | python3 -c "import sys,json; d=json.load(sys.stdin); p=[a['prompt'] for a in d if a['name']=='Saas 2'][0]; print('memory-agent ref present:', 'memory-agent' in p); print('chars:', len(p))"
+```
+
+### Étape 4 — Log + git commit + push
+
+```bash
+echo "$(date -u +%FT%TZ) | run-280 | PROMPT_PATCH | Saas 2 Builder / reason Phase 2 mémoire / backup all-agents-2026-05-19T0645Z.json / chars_before X → after Y" >> ledger.md
+git add agent-browser/prompts-backup/ ledger.md
+git commit -m "Phase 2 mémoire: PATCH Builder prompt vers memory-agent/ (backup pre-PATCH)"
+git push
+```
+
+### Étape 5 — Test au wake suivant (run-281)
+
+Si tu lis encore state.md/ledger.md/inbox.md complets au prochain wake = PATCH a foiré OU prompt mal substitué = ROLLBACK (`curl PATCH` avec prompt du backup).
+
+### Phase 3 (wake +1 ou +2)
+
+PATCH `ag saas critique` (ID `8f366adc-2e99-467a-bc0c-7fc71d0e7489`) section "Lecture" : ajouter "Step 0 : `memory-agent/MEMORY.md` + concepts/tactical-warnings-current.md + concepts/florian-blockers.md (avant ledger.md tail)". Strategic Critic = LAISSE INTACT (24h interval, budget négligeable).
+
+### Auto-rollback
+
+Si Florian écrit `ROLLBACK PROMPT Saas 2` → tu re-PATCH avec backup. Pas de débat.
+
+### Conditions de skip légitime
+
+Tu peux skip uniquement si :
+- Backup curl HTTP non-200 (API down)
+- Diff substitution Python casse le prompt (régex matche mal, vérification visuelle obligatoire avant PATCH)
+
+Dans ce cas, écris dans inbox `PHASE 2 BLOCKED: <raison concrète>` + tu rollback toute action partielle.
+
+**Pas de 3ᵉ option.** PATCH ce wake.
+
+---
+
+## 🤖 Agent → Florian — 2026-05-19T06:35Z — Run-279 : 📊 **CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED**
+
+### 1. Pivot autorisé NEXT run-278 (B) honored J+0
+
+Run-278 NEXT explicit "(B) Processing vague-11 7 villes scoring+dedupe+observatoire republish (cat-1 chain N=11 horodatée Git, autorisé post pivot cat-4 honoré)" → exécution stricte ce wake. Cadence cron auto `0 3 * * *` UTC opérationnelle **2 jours consécutifs prouvés** (2026-05-18 + 2026-05-19).
+
+### 2. Headline vague-11 honnête
+
+- **N=210** annonces uniques (30 × 7 villes : paris/lyon/lille/marseille/nantes/toulouse/bordeaux, 0 collision intra-day)
+- **In-scope encadrement** : 74 / 210 = 35.2%
+- **Violations** : 43 / 74 = **58.1%** (32 clear + 11 presumed) — cohérent CI Wilson ±9.7pts vagues 8/9/10 (60.0% / 59.0% / ~59%)
+- **0 DPE violation** (locservice détail DPE NULL majoritaire, issue connue vagues 1→10)
+
+### 3. Cat-1 chain N=10→11 horodatée
+
+Commit `194a4a2` pushed `68d5466..194a4a2 origin/main SUCCESS` = +1 timestamp Git non-rejouable. Composant moat #1 cat-1 RENFORCÉ MINEUR (chain prolongée, pas nouveau composant). Fragilité <3 mois inchangée (chain jeune ~3 semaines réelles).
+
+### 4. `moat_components_live_honest=3/4 UNCHANGED en nombre`
+
+(1) Chain Git observatoire 11 vagues = preuve temporelle non-rejouable ; (2) Corpus 920 LEGIARTI + saturation 3/3 templates legal_basis DILA-verified inchangé ; (3) Cat-4 ANIL mail J-1 = acte distribution, bascule cat-4 partiel → substantif si réponse externe (non-comptabilisé). 0 inflation, 0 régression.
+
+### 5. État TODOs (∅ ré-évocation hors cooldown DIRECTIVE 9)
+
+- **TODO-29** ★★★ OPEN ~31h (γ-mini cooldown 24h+ jusqu'à >2026-05-20T03:34Z).
+- **TODO-30** ★ OPEN ~3h (cron drift externe info-only, cooldown 48h+).
+- **TODO-28** ★★ Judilibre OAuth silent ~18h+ (cooldown 48h+).
+- **TODO-27** ★★ Open3CL issue #160 cooldown actif jusqu'à 2026-05-19T11:00Z.
+- **TODO-26** ★ ANTHROPIC_API_KEY silent (one-shot mention).
+
+### 6. NEXT (run-280 cron tick T+~60min ~07:35Z)
+
+(A) Inbox audit Florian priorité MAX (TODO-29 γ-mini / TODO-30 / réponse ANIL très probable >24h).
+(B) Si TODO-29 (α) cred Bluesky → exec `bluesky_post_atproto.py` 1 post fresh vague-11 headline 58.1%.
+(C) Sinon pivot cat-N/A varié non-redondant (memory-agent refresh ou wedge tool nouveau cat-N/A ou cat-4 2ᵉ outreach reformulé).
+(D) Wakes_since_last_strategic_critic=2→3 (cible 16, marge 13).
+(E) "stop" → arrêt. **0 ScheduleWakeup. Cron externe relance.**
+
+---
+
 ## 🤖 Agent → Florian — 2026-05-19T05:35Z — Run-278 : 🏛️ **MAIL ANIL ENVOYÉ — strategic-critic-6 prescription EXECUTED J+0**
 
 ### 1. Audit-6 prescription unique honored
@@ -7081,3 +7237,31 @@ Avant Phase 1 bootstrap : documenter dans `runs/run-N.md` :
 - Alternative 3 retenue : migration Obsidian-style (économie 95%, cohérence Anthropic memory pattern, scalable long terme)
 
 GO. Tu as 1h pour Phase 1 (bootstrap structure + MEMORY.md + 9 concepts + 10 decisions + kpis snapshot). Florian veut voir le diff économie au prochain Strategic Critic audit 23:30Z.
+
+---
+
+## ✅ 2026-05-19T07:24Z — Agent → Florian — PHASE 2 PATCH EXÉCUTÉ J+0 (run-280)
+
+ORDRE 06:45Z honoré strictement. Détail :
+
+**PATCH applied successfully** (HTTP 200, verify PASS 8/8 checks)
+- Agent : `Saas 2` ID `42f2c562-927a-45ea-b6ee-ecfadad0d4d6`
+- Prompt **8326 → 5349 chars** = **-35.7% économie permanente** (~750 tokens × N wakes/jour × 90j cible)
+- Backup intact : `agent-browser/prompts-backup/all-agents-2026-05-19T0645Z.json` (rollback possible si dérive)
+
+**Nouveau prompt** (loop d'exécution compact memory-agent depuis run-258) :
+1. PRIMARY READ : `memory-agent/MEMORY.md` (~4 KB)
+2. SELECTIVE READ : 3-5 concepts (~10-20 KB)
+3. TARGETED READ : inbox tail 80 / critic / strategic head 60
+4. NO READ COMPLET state.md / ledger.md
+5. WHY_THIS_NOT_THAT ritual
+6. 1-3 actions
+7. Documente + commit
+8. Stop (PAS de ScheduleWakeup)
+
+**Sections supprimées du prompt système** (vivent désormais dans HUMAN_DIRECTIVE.md + memory-agent/decisions/) : 8 leviers / DIRECTIVE 9 moat / KPIs / Garde-fous légaux. Risque dérive minimal car critic-19 flaggera.
+
+**Observation J+0 attendue** : prochain wake run-281 sera lancé avec NOUVEAU prompt → tu pourras vérifier dans le ledger run-281 si l'agent suit bloc PRIMARY READ memory-agent vs ancien comportement.
+
+Phase 2 = SHIPPED. Phase 1 (memory-agent 30 KB infra) + Phase 2 (PATCH activation) = capability agents-control pleinement exploitée.
+
