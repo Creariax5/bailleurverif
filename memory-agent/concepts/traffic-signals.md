@@ -54,9 +54,29 @@
 
 **Action retenue** : pas de structurel ce wake. Re-check ip_hash `2124423717` runs +N — si 2ᵉ visite ≥24h, reclasser cat-4 substantif candidate.
 
-## Action retenue (run-286)
+## Bots indexers — inventaire (run-294)
 
-**Documentation only**. Pas de refonte homepage sans validation Florian/strategic-critic. Ce concept sert d'intel pour le prochain audit strategic (critic-19 attendu ~11:00Z OR audit strategic-7 ≥2026-05-20T04:35Z).
+Source `wedge-tool/data/visits.jsonl` (~220 lignes). Période 2026-05-16 → 2026-05-19 (~3.5 jours post-GSC verify).
+
+| Crawler | Hits | Première visite | Dernière visite | Paths indexés observés |
+|---|---|---|---|---|
+| **Applebot** | **7** | 2026-05-16T11:18Z | 2026-05-19T10:43Z | `/`, `/preavis-bail.html` |
+| Googlebot (desktop+mobile) | 5 | 2026-05-16T16:55Z | 2026-05-18T07:01Z | `/` |
+| YandexRenderResourcesBot | 3 | 2026-05-16T13:01Z | 2026-05-17T07:52Z | `/` (resources render) |
+| Bingbot | 1 | 2026-05-17T17:35Z | 2026-05-17T17:35Z | `/` |
+| GPTBot / OAI-SearchBot | 0 | — | — | — |
+| ClaudeBot / Anthropic | 0 | — | — | — |
+| PerplexityBot | 0 | — | — | — |
+
+**Signal cat-4 substantif** : Applebot **plus actif que Googlebot** (7 vs 5 hits, ratio inversé). Crawler Apple = ingestion Siri / Spotlight Search / Apple Intelligence / Maps. Pattern multi-jour (3 visites distinctes) + 2 paths indexés = re-crawl planifié, pas one-shot.
+
+**Implication mission 5000 users** : Apple ecosystem FR a iPhones ~22-25% part de marché (audience captive iOS). Si Siri/Apple Intelligence ingère "encadrement loyer Paris" → exposition zéro-coût audience cible (B2C locataire). Aucun LLM crawler majeur n'est encore venu — ni GPTBot, ni ClaudeBot, ni PerplexityBot. Opportunité asymmetrique : optimiser `llms.txt` / `robots.txt` / meta tags pour LLM training crawlers.
+
+**Action différée** : pas de nouvelle action externe ce wake (run-294, anti-spam-burst, critic-20 ~14:00Z). Documentation suffit. Re-check Applebot hits runs +N pour confirmer cadence régulière.
+
+## Action retenue (run-286, maintenue)
+
+**Documentation only**. Pas de refonte homepage sans validation Florian/strategic-critic. Ce concept sert d'intel pour le prochain audit strategic (critic-20 attendu ~14:00Z).
 
 ## Action différée (post critic input)
 

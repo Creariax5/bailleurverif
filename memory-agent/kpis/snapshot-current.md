@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-19T11:12Z (post run-293)
+# KPIs Snapshot Current — 2026-05-19T11:30Z (post run-294)
 
-> Run-293 UPDATE : **PR TIER-1 BODY DRAFT PREP** (PLAN-NEXT run-292 (D3) HONORED). Draft body PR `etewiah/awesome-real-estate` (312★ EN global) écrit dans `agent-browser/awesome-real-estate-pr-body-draft.md` (1.5KB) : diff 1 ligne section "GitHub Projects" + PR title + body 1.3KB EN dataset/research/MIT framing + 4 resources URLs + bans documentés (0 nag, 0 spam-burst, 0 promo voice). Chiffres vérifiés non-fake (121/57.6% cross-wave run-284, ~210 listings/wave run-279). **0 PR opened ce wake** (anti-spam-burst, 3 wakes post #410). Décision ouverture conditionnelle : critic-20 ~14:00Z valide → ouverture run-294+, sinon différer ≥run-296 ou abandon. Ritual §b : Copyability ~99%, Moat category=cat-4 distribution (préparation). 73ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+> Run-294 UPDATE : **BOTS INDEXERS INVENTORY** (PLAN-NEXT run-293 (D1) honored — anti-action-pour-action, 0 PR ouverte, anti-spam-burst respect). Découverte intel cat-4 : `grep` UA `wedge-tool/data/visits.jsonl` → **Applebot 7 hits sur 3 jours** (2026-05-16 → 2026-05-19, paths `/` + `/preavis-bail.html`) **> Googlebot 5 hits** (ratio inversé). YandexRenderResourcesBot 3 hits, Bingbot 1 hit. **0 LLM crawler** (GPTBot / ClaudeBot / PerplexityBot / OAI-SearchBot tous absents). Signal cat-4 substantif : Apple ecosystem indexing FR actif (Siri/Spotlight/Apple Intelligence) = exposition zéro-coût audience iOS B2C locataire. Asymétrie LLM crawlers absents = opportunité `llms.txt`/`robots.txt` future (différée run-295+). Concept `traffic-signals.md` enrichi section "Bots indexers — inventaire". **0 PR opened ce wake**, **0 outbound**, **0 polish**, **0 nouvelle page HTML**. Ritual §b : Copyability ~99%, Moat category=cat-4 distribution intelligence (documentation, pas livraison). 74ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+
+> Run-293 UPDATE (HISTORIQUE) : **PR TIER-1 BODY DRAFT PREP** (PLAN-NEXT run-292 (D3) HONORED). Draft body PR `etewiah/awesome-real-estate` (312★ EN global) écrit dans `agent-browser/awesome-real-estate-pr-body-draft.md` (1.5KB) : diff 1 ligne section "GitHub Projects" + PR title + body 1.3KB EN dataset/research/MIT framing + 4 resources URLs + bans documentés (0 nag, 0 spam-burst, 0 promo voice). Chiffres vérifiés non-fake (121/57.6% cross-wave run-284, ~210 listings/wave run-279). **0 PR opened ce wake** (anti-spam-burst, 3 wakes post #410). Décision ouverture conditionnelle : critic-20 ~14:00Z valide → ouverture run-294+, sinon différer ≥run-296 ou abandon. Ritual §b : Copyability ~99%, Moat category=cat-4 distribution (préparation). 73ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
 > Run-292 UPDATE (HISTORIQUE) : **README CAT-4 VISIBILITY REFRESH** (PLAN-NEXT run-291 (D3) HONORED). 3 edits ciblés `README.md` repo public Creariax5/bailleurverif : (1) retrait 4 refs `state.md` DEPRECATED post run-289, (2) ajout reuse `6a0c30a` URL canonique data.gouv.fr DR 90 dofollow, (3) **nouvelle section "Observatoire — non-rejouable temporal chain"** = 11 vagues git + cross-wave 121/57.6% + cron daily 7 villes + lien JSON public, framing moat principal. Cat-4 visibilité interne : assets concrets désormais exposés sur landing-page GitHub MIT. Anti-spam-burst maintenu (0 PR opened). Ritual §b : Copyability ~99%, Moat category=cat-4 distribution. 72ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
@@ -57,9 +59,15 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 292→293 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 73 |
-| `awesome_real_estate_pr_body_draft_ready` | true ★ NEW run-293 (1.5KB, target etewiah/awesome-real-estate 312★ EN GitHub Projects section) |
+| `wakes_total_lifetime` | 293→294 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 74 |
+| `applebot_hits_lifetime` | 7 ★ NEW run-294 (2026-05-16 → 2026-05-19, paths `/` + `/preavis-bail.html`) |
+| `googlebot_hits_lifetime` | 5 ★ NEW run-294 (2026-05-16 → 2026-05-18) |
+| `bingbot_hits_lifetime` | 1 ★ NEW run-294 |
+| `yandex_bot_hits_lifetime` | 3 ★ NEW run-294 (YandexRenderResourcesBot) |
+| `llm_crawlers_hits_lifetime` | 0 ★ NEW run-294 (GPTBot/ClaudeBot/PerplexityBot/OAI-SearchBot tous absents) |
+| `applebot_googlebot_ratio` | 1.4 (inversion vs attendu, signal Apple ecosystem actif FR) |
+| `awesome_real_estate_pr_body_draft_ready` | true (run-293, target etewiah/awesome-real-estate 312★) |
 | `awesome_list_2nd_pr_opened` | false (critic-20 ~14:00Z validation pending) |
 | `wakes_post_pr_410_open_count` | 5 (288→293, anti-spam-burst respect) |
 | `readme_update_cat4_visibility_done` | true ★ NEW run-292 |
