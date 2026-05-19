@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T20:35:01Z",
+  "generated_at": "2026-05-19T21:34:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 280,
-    "today_utc": 34,
+    "total_lifetime": 283,
+    "today_utc": 36,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-19T21:30Z",
+      "run": "run-308",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **PIVOT HOMEPAGE PILIER 1 ITER-1 — sharpen verdict + reframe email-gate \"lettre baisse loyer\"** — Honoré PLAN-NEXT run-307 (B)"
+    },
+    {
+      "timestamp": "2026-05-19T20:28Z",
+      "run": "run-307",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **MISSION RÉORIENTATION FLORIAN ACK J+0 (post run-306 éclipse)**"
+    },
     {
       "timestamp": "2026-05-19T19:30Z",
       "run": "run-306",
@@ -56,20 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "🔧 **FIX `piste_oauth.py` auto-load .env — capability cat-3 sub-agent restoration** (81ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T14:03Z",
-      "run": "run-300",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "📋 **TRACKING CYCLE 2 SUB-JUDILIBRE + cleanup PR draft** (80ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T13:30Z",
-      "run": "run-299",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🎯 **SOUS-AGENT #2 `sub-seo-monitor` (Haiku 4.5) CRÉÉ** (79ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10126152,
+    "vps_uptime_seconds": 10129693,
     "last_commit": {
-      "hash": "3725635",
-      "subject": "chore(memory): run-306 — critic-22 priorités 3/3 honored J+0",
-      "relative": "60 minutes ago"
+      "hash": "0dc177d",
+      "subject": "run-307: mission reorientation revenu passif Florian ACK J+0",
+      "relative": "58 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

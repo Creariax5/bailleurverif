@@ -167,6 +167,9 @@ function computeVerdict() {
   const { ville, type, surface, loyer, dpe } = state.answers;
   const items = [];
   let severity = "ok";
+  let depassement = 0;
+  let plafondRefMaj = null;
+  let loyerM2 = null;
 
   // DPE check
   if (dpe && dpe !== "unknown") {
@@ -190,13 +193,14 @@ function computeVerdict() {
   const villeData = VILLES_ENCADREES[ville];
   if (villeData) {
     const refMaj = type === "meuble" ? villeData.ref_meuble : villeData.ref_nu;
-    const loyerM2 = loyer / surface;
+    loyerM2 = loyer / surface;
+    plafondRefMaj = refMaj;
     const verifNote = villeData.verified
       ? `Le plafond exact dépend du secteur géographique et de l'année de construction : à confirmer via le <a href="https://www.service-public.fr/particuliers/vosdroits/F33880" target="_blank" rel="noopener" class="underline">simulateur officiel</a>.`
       : `<strong>Barème indicatif</strong> : ${capitalize(ville)} est dans le périmètre d'encadrement mais le plafond exact varie par secteur. À confirmer sur le <a href="https://www.service-public.fr/particuliers/vosdroits/F33880" target="_blank" rel="noopener" class="underline">simulateur officiel</a> ou auprès de votre observatoire local des loyers.`;
     if (loyerM2 > refMaj) {
       if (severity !== "danger") severity = "warn";
-      const depassement = Math.round((loyerM2 - refMaj) * surface);
+      depassement = Math.round((loyerM2 - refMaj) * surface);
       items.push({
         level: "warn",
         icon: "💶",
@@ -223,7 +227,7 @@ function computeVerdict() {
     body: "Vérification non incluse dans cette V0. Recevez la <strong>checklist 15 minutes</strong> pour détecter un faux bulletin de salaire / avis d'imposition (en cas de selection de locataire en cours). Inclus dans le rapport détaillé."
   });
 
-  return { items, severity };
+  return { items, severity, depassement, plafondRefMaj, loyerM2 };
 }
 
 function capitalize(s) {
@@ -236,7 +240,7 @@ function showResult() {
   document.getElementById("step-counter").textContent = `Résultat`;
   document.getElementById("progress").style.width = `100%`;
 
-  const { items, severity } = computeVerdict();
+  const { items, severity, depassement } = computeVerdict();
   const card = document.getElementById("verdict-card");
   const cls = severity === "danger" ? "verdict-danger" : severity === "warn" ? "verdict-warn" : "verdict-ok";
   card.className = "rounded-2xl p-5 sm:p-6 mb-5 fade-in " + cls;
@@ -246,6 +250,12 @@ function showResult() {
     "danger": ["🚫", "Interdiction de location applicable"]
   };
   const [icon, title] = verdictTitles[severity];
+  const economieBlock = (depassement > 0) ? `
+    <div class="mt-4 pt-4" style="border-top:1px solid rgba(0,0,0,.08)">
+      <div class="text-xs uppercase tracking-wide font-semibold mb-1" style="opacity:.7">Trop-perçu mensuel estimé</div>
+      <div class="text-3xl sm:text-4xl font-bold leading-none">~${depassement.toLocaleString('fr-FR')} €/mois</div>
+      <div class="text-xs mt-1" style="opacity:.75">Soit jusqu'à <strong>${(depassement*12).toLocaleString('fr-FR')} €/an</strong> potentiellement récupérables si vous demandez la mise au plafond légal (rétroactif 3 ans max).</div>
+    </div>` : "";
   card.innerHTML = `
     <div class="flex items-start gap-3">
       <div class="text-3xl">${icon}</div>
@@ -254,7 +264,21 @@ function showResult() {
         <p class="text-sm text-[color:var(--text-dim)]">Verdict basé sur les barèmes officiels 2026. Vérification indicative.</p>
       </div>
     </div>
+    ${economieBlock}
   `;
+
+  // Reframe email-gate : "lettre baisse loyer" si violation encadrement détectée (vs rapport générique)
+  if (depassement > 0) {
+    const gate = document.getElementById("email-gate");
+    if (gate) {
+      const h3 = gate.querySelector("h3");
+      const p = gate.querySelector("p");
+      const btn = gate.querySelector("button[type=submit]");
+      if (h3) h3.innerHTML = "📩 Recevez votre lettre de baisse de loyer (LRAR pré-remplie) + barèmes officiels";
+      if (p) p.innerHTML = `Modèle LRAR pré-rempli avec votre calcul exact (~${depassement.toLocaleString('fr-FR')} €/mois trop-perçu) + références arrêté préfectoral + procédure étape par étape. Gratuit, 1 email, on ne spamme pas.`;
+      if (btn) btn.textContent = "Recevoir ma lettre";
+    }
+  }
 
   const det = document.getElementById("details");
   det.innerHTML = "";
@@ -291,15 +315,20 @@ function captureEmail(ev, kind) {
   if (!email.includes("@") || !email.includes(".")) { msg.textContent = "Email invalide."; msg.style.color = "var(--danger)"; return; }
   msg.textContent = "Envoi…";
   msg.style.color = "var(--text-dim)";
+  const v = computeVerdict();
   fetch("/api/capture", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({
     sessionId: state.sessionId,
     email,
     kind, // "report" ou "watch"
     answers: state.answers,
-    severity: computeVerdict().severity
+    severity: v.severity,
+    depassement: v.depassement
   })}).then(r => r.json()).then(data => {
     if (data.ok) {
-      msg.textContent = kind === "watch" ? "✓ Inscrit. On vous prévient au lancement." : "✓ Reçu — votre rapport arrive sous 24h.";
+      const reportMsg = (v.depassement > 0)
+        ? "✓ Reçu — votre lettre de baisse de loyer LRAR arrive sous 24h."
+        : "✓ Reçu — votre rapport arrive sous 24h.";
+      msg.textContent = kind === "watch" ? "✓ Inscrit. On vous prévient au lancement." : reportMsg;
       msg.style.color = "var(--accent)";
       form.querySelector("input").value = "";
       form.querySelector("button").disabled = true;

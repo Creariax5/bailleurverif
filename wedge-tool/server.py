@@ -1433,6 +1433,7 @@ class Handler(BaseHTTPRequestHandler):
                 "kind": data.get("kind", "report"),
                 "answers": data.get("answers", {}),
                 "severity": data.get("severity"),
+                "depassement_eur_mois": data.get("depassement"),
                 "ip_hash": str(abs(hash(ip)) % (10**10))
             }
             append_jsonl(CAPTURES_FILE, rec)
