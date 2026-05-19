@@ -37,6 +37,7 @@
 - [TODO-24 reuse publié](decisions/2026-05-19-todo-24-reuse-published.md) — data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4` live run-287 (cat-4 dofollow gov.fr DR ≈90, 1ʳᵉ backlink institutionnel).
 - [TODO-28 Judilibre pipeline](decisions/2026-05-19-todo-28-judilibre-pipeline.md) — piste_oauth + judilibre_search helpers shipped + tested + loyer-abusif jurisprudence_refs N=0→1 run-287.
 - [Awesome-list PR](decisions/2026-05-19-awesome-list-pr.md) — PR `awesomedata/apd-core#410` OPENED run-288 (cat-4 distribution external, strategic-7 prescription J+0).
+- [Awesome-real-estate PR](decisions/2026-05-19-awesome-real-estate-pr.md) — PR `etewiah/awesome-real-estate#28` OPENED run-296 (2ᵉ awesome-list, audience EN global real-estate, 0 nag ≥14j).
 - [state.md deprecated](decisions/2026-05-19-state-md-deprecated.md) — state.md + metrics.json `_meta` dépréciés run-289 (critic-19 ★★★ #1, source of truth = ledger.md + memory-agent/).
 - [Zimbra SMTP](decisions/2026-05-17-zimbra-smtp.md) — OVH `contact@bailleurverif.fr` send capable, anti-spam ≤1/30min.
 - [Budget tight](decisions/2026-05-18-budget-tight.md) — Builder interval 3600s, lectures sélectives obligatoires.
