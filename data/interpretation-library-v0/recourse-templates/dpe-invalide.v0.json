@@ -223,6 +223,75 @@
     "wave_position": 2,
     "wave_total_target": 3,
     "next_template_candidates": ["depot-garantie-non-restitue", "charges-locatives-injustifiees", "preavis-bail-non-respecte"],
-    "publication_plan": "GitHub push public à wave +1 ou +2 (timestamp crypto-vérifiable comme cat-1 observatoire). Endpoint GET /api/recourse/<tag> lecture seule à wave +1 (séquence run-239 N+5)."
-  }
+    "publication_plan": "GitHub push public à wave +1 ou +2 (timestamp crypto-vérifiable comme cat-1 observatoire). Endpoint GET /api/recourse/<tag> lecture seule à wave +1 (séquence run-239 N+5).",
+    "legal_basis_populated_dila_verified": true,
+    "legal_basis_articles_count": 3,
+    "legal_basis_first_authored_run": "run-273"
+  },
+  "legal_basis": [
+    {
+      "legiarti_id": "LEGIARTI000043977105",
+      "num": "6",
+      "titre_loi": "Loi n° 89-462 du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant modification de la loi n° 86-1290 du 23 décembre 1986",
+      "nor": "EQUX8910174L",
+      "date_publi_jorf": "1989-07-08",
+      "date_debut_article": "2025-01-01",
+      "date_fin_article": "2999-01-01",
+      "etat": "VIGUEUR",
+      "role_in_template": "Source directe du calendrier d'interdiction de location DPE F/G/E (G→01/01/2025, F→01/01/2028, E→01/01/2034) ET du décalage Outre-mer (Guadeloupe/Martinique/Guyane/Réunion/Mayotte : F→01/01/2028, E→01/01/2031). Renvoi explicite à L. 173-1-1 CCH pour la classification. Justifie `applicability_checks.check_id=date_signature_post_interdiction` et `limitations_disclaimers` Outre-mer.",
+      "verbatim_excerpt": "Le bailleur est tenu de remettre au locataire un logement décent ne laissant pas apparaître de risques manifestes pouvant porter atteinte à la sécurité physique ou à la santé, exempt de toute infestation d'espèces nuisibles et parasites, répondant à un niveau de performance minimal au sens de l'article L. 173-1-1 du code de la construction et de l'habitation [...] Le niveau de performance d'un logement décent est compris, au sens de l'article L. 173-1-1 du code de la construction et de l'habitation : 1° A compter du 1er janvier 2025, entre la classe A et la classe F ; 2° A compter du 1er janvier 2028, entre la classe A et la classe E ; 3° A compter du 1er janvier 2034, entre la classe A et la classe D. En Guadeloupe, en Martinique, en Guyane, à La Réunion et à Mayotte, [...] a) A compter du 1er janvier 2028, entre la classe A et la classe F ; b) A compter du 1er janvier 2031, entre la classe A et la classe E. Les logements qui ne répondent pas aux critères précités aux échéances fixées sont considérés comme non décents.",
+      "dila_archive_provenance": {
+        "archive_name": "LEGI_20260213-215711.tar.gz",
+        "archive_url": "https://echanges.dila.gouv.fr/OPENDATA/LEGI/LEGI_20260213-215711.tar.gz",
+        "archive_path": "20260213-215711/legi/global/code_et_TNC_en_vigueur/TNC_en_vigueur/JORF/TEXT/00/00/00/50/93/JORFTEXT000000509310/article/LEGI/ARTI/00/00/06/47/71/LEGIARTI000043977105.xml",
+        "licence": "Licence Ouverte Etalab v2.0 (DILA Open Data)",
+        "fetched_run": "run-273",
+        "fetched_ts": "2026-05-19T00:35Z"
+      },
+      "legifrance_canonical_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977105"
+    },
+    {
+      "legiarti_id": "LEGIARTI000043966496",
+      "num": "L173-1-1",
+      "titre_loi": "Code de la construction et de l'habitation",
+      "nor": "",
+      "date_publi_jorf": "2999-01-01",
+      "date_debut_article": "2021-08-25",
+      "date_fin_article": "2999-01-01",
+      "etat": "VIGUEUR",
+      "role_in_template": "Définit la classification réglementaire DPE en 7 classes (A→G) par niveau décroissant de performance énergétique (kWh/m².an énergie primaire) ET d'émissions CO2 (kg CO2eq/m².an). Renvoi à l'arrêté ministériel pour seuils. Source directe de `applicability_checks.check_id=dpe_classe` ET de la légitimité du recours fondé sur classement F/G.",
+      "verbatim_excerpt": "Les bâtiments ou parties de bâtiment existants à usage d'habitation sont classés, par niveau de performance décroissant, en fonction de leur niveau de performance énergétique et de leur performance en matière d'émissions de gaz à effet de serre. Ce niveau de performance est exprimé en kilowattheures d'énergie primaire par mètre carré et par an, s'agissant de la consommation énergétique, et en kilogramme de dioxyde de carbone par mètre carré et par an, s'agissant des émissions de gaz à effet de serre induites. Un arrêté des ministres chargés de la construction et de l'énergie définit les seuils permettant de classer les bâtiments ou parties de bâtiment dans les catégories suivantes : Extrêmement performants — Classe A ; Très performants — Classe B ; Assez performants — Classe C ; Assez peu performants — Classe D ; Peu performants — Classe E ; Très peu performants — Classe F ; Extrêmement peu performants — Classe G.",
+      "dila_archive_provenance": {
+        "archive_name": "LEGI_20260210-211914.tar.gz",
+        "archive_url": "https://echanges.dila.gouv.fr/OPENDATA/LEGI/LEGI_20260210-211914.tar.gz",
+        "archive_path": "20260210-211914/legi/global/code_et_TNC_en_vigueur/code_en_vigueur/LEGI/TEXT/00/00/06/07/40/LEGITEXT000006074096/article/LEGI/ARTI/00/00/04/39/66/LEGIARTI000043966496.xml",
+        "licence": "Licence Ouverte Etalab v2.0 (DILA Open Data)",
+        "fetched_run": "run-273",
+        "fetched_ts": "2026-05-19T00:35Z"
+      },
+      "legifrance_canonical_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966496"
+    },
+    {
+      "legiarti_id": "LEGIARTI000043977085",
+      "num": "17-1",
+      "titre_loi": "Loi n° 89-462 du 6 juillet 1989 tendant à améliorer les rapports locatifs et portant modification de la loi n° 86-1290 du 23 décembre 1986",
+      "nor": "EQUX8910174L",
+      "date_publi_jorf": "1989-07-08",
+      "date_debut_article": "2022-08-24",
+      "date_fin_article": "2999-01-01",
+      "etat": "VIGUEUR",
+      "role_in_template": "Interdiction explicite de toute révision OU majoration de loyer pour les logements classés F ou G au sens de L. 173-1-1 CCH (III de l'article). Levier complémentaire au recours décence : même si le bailleur refuse les travaux de mise aux normes, il ne peut pas non plus appliquer la clause IRL annuelle. Source légale du paragraphe `interdiction-revision-f-g` dans `legal_basis_citations[]` historique.",
+      "verbatim_excerpt": "III. ― La révision et la majoration de loyer prévues aux I et II du présent article ne peuvent pas être appliquées dans les logements de la classe F ou de la classe G, au sens de l'article L. 173-1-1 du code de la construction et de l'habitation.",
+      "dila_archive_provenance": {
+        "archive_name": "LEGI_20260220-221620.tar.gz",
+        "archive_url": "https://echanges.dila.gouv.fr/OPENDATA/LEGI/LEGI_20260220-221620.tar.gz",
+        "archive_path": "20260220-221620/legi/global/code_et_TNC_en_vigueur/TNC_en_vigueur/JORF/TEXT/00/00/00/50/93/JORFTEXT000000509310/article/LEGI/ARTI/00/00/04/39/77/LEGIARTI000043977085.xml",
+        "licence": "Licence Ouverte Etalab v2.0 (DILA Open Data)",
+        "fetched_run": "run-273",
+        "fetched_ts": "2026-05-19T00:35Z"
+      },
+      "legifrance_canonical_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977085"
+    }
+  ],
+  "legal_basis_note": "Articles loi/code extraits du bulk DILA Open Data (https://echanges.dila.gouv.fr/OPENDATA/LEGI/), Licence Ouverte Etalab v2.0, archives quotidiennes XML. Provenance vérifiable : chaque entrée précise archive_name + archive_path + fetched_ts. Citations verbatim depuis BLOC_TEXTUEL/CONTENU (XML schema DILA). Cadence ingestion hebdomadaire prévue via crawler/legifrance_dila_fetch.py. Différent de legal_basis_citations[] (construction historique vocabulaire SP.fr/ANIL/ADEME, partiellement non-vérifié)."
 }

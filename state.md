@@ -2,6 +2,35 @@
 
 ---
 
+## 🧪 KPIs vivants — run-273 2026-05-19T00:34Z — **STRATEGIC-5 PRESCRIPTION EXTENSION 2ᵉ TEMPLATE : `dpe-invalide.v0.json` legal_basis[] peuplé via DILA bulk Open Data (3 articles VIGUEUR : Loi 89-462 art. 6 calendrier interdiction G/F/E + Outre-mer, CCH L173-1-1 classification 7 classes, Loi 89-462 art. 17-1 III interdiction révision F/G) ; templates_legal_basis_populated 1/3→2/3 (saturation natural à 3/3 wake +1+) ; cat-3 densification composant #3, pas nouveau composant**
+
+**Run-273** : 141ᵉ wake. Cron tick T+57min post run-272 (23:37Z). Plan : extension strategic-5 prescription (audit-5 `peupler legal_basis[] du loyer-abusif`, honored run-265 commit 7f8cfa6) au 2ᵉ template existant `dpe-invalide.v0.json`. **Pas nouveau template (strategic-5 ban "Pas 4ᵉ template" respecté)**.
+
+### Actions run-273
+
+1. Read priorités (HUMAN_DIRECTIVE + inbox 50 + critic-16 + strategic-5 + state head + ledger tail + git log + metrics.json) ~5 min.
+2. Probe 3 templates `data/interpretation-library-v0/recourse-templates/*.json` → status legal_basis : loyer-abusif=3, dpe-invalide=0, depot-garantie=0.
+3. WHY_THIS_NOT_THAT ritual `runs/run-273-2026-05-19T0034Z.md` 2 alternatives (vague-11 rejeté = cron `0 3 * * *` pas tiqué prochain +2.5h ; 3ᵉ template depot-garantie en premier rejeté = ordre logique loyer→dpe→depot + art 22 corpus recherche additionnelle wake dédié).
+4. Grep corpus `_index_bail_loyer.jsonl` 919 lignes : 3 articles VIGUEUR identifiés (LEGIARTI000043977105 + LEGIARTI000043966496 + LEGIARTI000043977085 cross-ref loyer-abusif).
+5. Edit `dpe-invalide.v0.json` insertion legal_basis[] (3 entries provenance DILA Etalab v2.0 archive_name+path+ts) + moat_signal extension (`legal_basis_populated_dila_verified=true`).
+6. Validation Python `len(legal_basis)=3` + JSON parse OK.
+
+### Honnêteté moat (cat-3 densification, pas nouveau composant)
+
+`moat_components_live_honest=3/4 UNCHANGED`. Composant cat-3 existant `chain weekly N=2 + corpus 919 LEGIARTI + 1 template avec legal_basis verifiée` reste 1 composant ; ajouter un 2ᵉ template avec legal_basis renforce le composant existant (mass × profondeur) mais ne crée pas un 4ᵉ composant cat-3 distinct. **Pas inflation, densification honnête.**
+
+`templates_legal_basis_populated_count=1→2` ★ NEW. `templates_legal_basis_populated_pct=33%→67%`. `dpe_invalide_legal_basis_articles_count=0→3` ★ NEW. `wakes_since_last_strategic_critic=11→12` (cible 16, marge 4). `why_this_not_that_rituals_completed_lifetime+=1`. `strategic_critic_recommendations_followed_pct_running=100%` maintenu (audit-5 prescription `peupler legal_basis[] ou rien` honored par extension). `humans_engaged_lifetime=2 UNCHANGED`. `signups_24h=0`. `auto_blocks_dropped_lifetime+=1` (refus vague-11 cron pas tiqué + refus 4ᵉ template strategic-5 ban = pivot densification honnête).
+
+### Test "Demain disparition" (DIRECTIVE 10 §c) — 3 substantiels honnêtes INCHANGÉS qualitativement
+
+(1) Série temporelle 10 vagues observatoire cat-1 (fragilité <3 mois) ; (2) URL canonique dataset data.gouv.fr v1 cat-4 partiel + archive.org timestamps server-side (fragilité 3-4 mois) ; (3) corpus 919 LEGIARTI bail-core + chain `_weekly_runs.jsonl` N=2 + **2 templates avec legal_basis DILA-verified** (fragilité 3-6 mois corpus seul, 4-8 mois si cadence N≥4). Run-273 contribution = densification composant #3 (2/3 templates populés), pas nouveau composant.
+
+### Skip volontaire ce wake (≤5 PAS)
+
+PAS vague-11 (cron `0 3 * * *` UTC pas tiqué, prochain +2.5h hors-session) ; PAS 4ᵉ template (strategic-5 ban explicite) ; PAS ré-évocation TODO-29 (cooldown 24h DIRECTIVE 9) ; PAS IndexNow round-67 (polish-loop critic-16 STOP #1) ; PAS célébration `tactical_critic_audit16_priorites_cumul` headline (critic-16 STOP #2).
+
+---
+
 ## 🧪 KPIs vivants — run-272 2026-05-18T23:37Z — **CRITIC-16 ★★★ #1 HONNÊTE ESCALATION : 4/5 CANAUX EXTERNES MORTS confirmés via probes techniques (Mastodon piaille suspended + Reddit OAuth Google cassé post Gmail-disabled) + bug `archive_used: ""` FIXED + cat-2 DÉCLARÉE MORTE OFFICIELLE T+63h vs strategic-4 deadline 48h + TODO-29 ★★★ Florian débloquage canal externe hard-ask**
 
 **Run-272** : 140ᵉ wake. Cron tick post critic-16 verdict 22:50Z (audit-16 = 8.7/10 record). Plan : exécuter ce qui est faisable autonome honnêtement (priorités #2/#3 critic-16) + escalation hard-ask Florian sur priorité #1 (publication externe humaine).
