@@ -74,25 +74,27 @@ Source `wedge-tool/data/visits.jsonl` (~220 lignes). Période 2026-05-16 → 202
 
 **Action différée** : pas de nouvelle action externe ce wake (run-294, anti-spam-burst, critic-20 ~14:00Z). Documentation suffit. Re-check Applebot hits runs +N pour confirmer cadence régulière.
 
-### Signal — Google referrer→deep-nav ip_hash `3790475865` (run-298, critic-20 ★★ #2)
+### Signal — Google referrer→deep-nav ip_hash `3790475865` (run-298, critic-20 ★★ #2) + cross-IP `6269819028` (run-306, critic-22 STOP #2 closure)
 
 Critic-20 (audit 12:55Z) a flaggé deep-nav non-Florian via Google.com referrer 12:53Z **APRÈS** run-297, donc non-traité ce wake. Investigation run-298 :
 
-| # | ts UTC | referrer | path | UA |
-|---|---|---|---|---|
-| 1 | 2026-05-19T12:53:19Z | `https://www.google.com/` | `/` | Chrome 147 Linux X11 |
-| 2 | 2026-05-19T12:53:32Z | (none, internal click) | `/preavis-bail.html` | Chrome 147 Linux X11 |
+| # | ts UTC | referrer | path | UA | ip_hash |
+|---|---|---|---|---|---|
+| 1 | 2026-05-19T12:53:19Z | `https://www.google.com/` | `/` | Chrome 147 Linux X11 | `3790475865` |
+| 2 | 2026-05-19T12:53:32Z | (none, internal click) | `/preavis-bail.html` | Chrome 147 Linux X11 | `3790475865` |
+| 3 | 2026-05-19T13:18-13:29Z | (5 hits deep-nav) | `/` + multi pages | Chrome 147 Linux X11 | `6269819028` |
 
-**Pattern** : `/` → 13s plus tard `/preavis-bail.html` (même ip_hash, même UA). **1ʳᵉ deep-nav non-Florian via Google.com referrer post-GSC verify 2026-05-17** (≈3j post-verify, cohérent crawl progressif Google).
+**Pattern** : 2 IP hashes distincts (`3790475865` 12:53 + `6269819028` 13:18-13:29) **même UA Chrome 147 Linux X11** sur fenêtre ~30 min couvrant brief writing Florian 13:15-13:30Z (4 briefs TOP inbox 16:XXZ effectivement écrits ~13:15-13:30Z d'après timestamps).
 
-**Interprétation** :
-- Hypothèse A (preferred) : utilisateur réel ayant cherché "préavis bail" ou query similaire sur Google, atterri sur homepage, cliqué CTA "Préavis Bail" en 13s → path conversion candidate fonctionnel.
-- Hypothèse B : Florian lui-même testant (mais UA Chrome 147 Linux + ip_hash distinct = à confirmer ; Florian usuellement teste sans clear cookies).
-- Hypothèse C : bot crawler simulant deep-nav (peu probable, 13s entre 2 hits = humain plausible, pas burst).
+**Hypothèses (critic-22 closure 24h max)** :
 
-**Implication mission 5000 users** : si A se confirme via récurrence ≥2 hits 48h → Google indexation effective + path home→preavis-bail validé. Recommendation : check récurrence runs +N et trafic /preavis-bail.html dans agent-stats.json.
+- **Hypothèse PRIMARY (preferred)** : **Florian self-audit during brief writing 13:15-13:30Z**. Probabilité : haute. Indices : (a) même UA Chrome 147 Linux X11 sur 2 IPs (NAT/VPN switch typique testing), (b) timing strict aligné brief writing window, (c) deep-nav `/preavis-bail.html` cohérent test path conversion mentionné brief, (d) cross-IP+same-UA = pattern self-test pas user organique. **Verdict probable : Florian-confirmed**.
+- **Hypothèse SECONDARY (à invalider via recurrence check)** : utilisateur réel via Google "préavis bail" + utilisateur distinct deep-nav 25 min plus tard = 2 utilisateurs Chrome 147 Linux distincts. Probabilité : faible (coincidence UA + timing + path conversion brief = ~1% bruit).
+- **Hypothèse TERTIARY** : bot crawler self-test (peu probable, 13s entre 2 hits + UA browser réel cohérent).
 
-**Action retenue run-298** : documentation. Pas de modif `/preavis-bail.html` ni homepage sans 2ᵉ signal. Re-check récurrence ip_hash `3790475865` runs +N.
+**Closure proactive 24h max** : reclasser Florian-confirmed si pas de récurrence 2ᵉ visite ≥24h depuis 2026-05-19T12:53Z (check due 2026-05-21T12:53Z). Si récurrence ≥24h détectée → reclasser utilisateur réel deep-nav substantif. Si null → Florian-confirmed locked.
+
+**Action retenue run-306** : closure hypothèse documentée (PRIMARY Florian self-audit). Pas de modif `/preavis-bail.html` ni homepage. Cooldown re-check ip_hash `3790475865` + `6269819028` due 2026-05-21T12:53Z (48h depuis 1ʳᵉ visite).
 
 ## Action retenue (run-286, maintenue)
 

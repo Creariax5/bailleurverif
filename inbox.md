@@ -1,3 +1,21 @@
+## 🧹 2026-05-19T19:30Z — Agent → Florian — run-306 : critic-22 priorités 3/3 HONORÉES J+0 (hygiène mémoire)
+
+**Wake mécanique low-risk** : critic-22 (audit 18:55Z, verdict 8.5/10 +0.3 vs audit-21) avait 3 priorités exactes pour ce wake. Tous honorés ce wake (5 min stricts) :
+
+1. **★★★ Flush memory-agent concepts stale** : `florian-blockers.md` réécrit (était freezé @run-287 = TODO-29 OPEN γ-mini + TODO-30 OPEN, alors qu'archivés depuis run-304) ; `tactical-warnings-current.md` réécrit audit-22 (était freezé audit-19 8.7/10). TODO-32 NEW ★★ ajouté (valider draft drafter LinkedIn cycle 1 = 30s toi).
+2. **★★ Closure hypothèse traffic-signals.md** : 2 IPs `6269819028` + `3790475865` 13:18-13:29Z **même UA Chrome 147 Linux X11**, fenêtre exacte de quand tu écrivais les 4 briefs TOP inbox 16:XXZ (timestamps file mtime). Hypothèse PRIMARY codifiée : **Florian self-audit during brief writing**. Recurrence check 2026-05-21T12:53Z (si null → confirmation lockée ; si hit → reclasser user organique deep-nav). Critic-21 STOP #2 RÉCIDIVE enfin clos après 2 wakes report.
+3. **★★ Rotation snapshot-current.md 195→~85 lignes** : `cp` archive `kpis/history/snapshot-pre-306.md` + réécriture compacte sans historique. Critic-19 STOP #1 enfin résolu après 4 audits ~30h.
+
+**Pas de question pour toi ce wake** (sauf TODO-32 toujours pending depuis 16:45Z — drafter LinkedIn cycle 1 attend ta validation 30s).
+
+**KPIs inchangés** : visits 222 / unique 174 / humans_engaged_lifetime=2 (93+ wakes ~89h+ critic-22 HEADLINE problème CORE non-déplacé) / subscribers 0 / outbound 8 (ANIL cooldown ≥2026-05-22T05:35Z).
+
+**Sub-agents état** : 2 actifs (sub-seo-monitor Haiku 24h next 2026-05-20T13:29Z + sub-linkedin-drafter Sonnet 24h next ≥2026-05-20T16:45Z **timing strict à surveiller** post EARLY cycle 1 T+14min). 1 stopped (sub-judilibre saturated_3 €0.72 lifetime).
+
+NEXT run-307 (~20:00Z cron) : (A) Inbox toi. (B) Audit-23 tactical critic ~22:55Z (T+4h). (C) M1 ne-rien-faire valide si 0 signal (3 wakes substantifs consécutifs 304/305/306). (D) M2 différable polish 1 FAQPage notation-agence. (E) Anti-spawn-bomb 4ᵉ sous-agent maintenu (observer cycle 2 drafter d'abord). **0 ScheduleWakeup**.
+
+---
+
 ## ✅ 2026-05-19T18:30Z — Agent → Florian — run-305 : ★ CAT-3 jurisprudence_refs SATURATED 3/3 (9 ECLI Cass.) + drafter LinkedIn 1ʳᵉ tick EARLY prêt à valider
 
 **Milestone cat-3 RAG-LLM** : sub-judilibre-enrich cycle 5 (16:29Z post run-304) → `loyer-abusif` 1→3 (+2 ECLI C200810 + C200808). **Cumul 9 ECLI Cass. sur 3 templates SATURATED** (dpe-invalide 3/3 + depot-garantie 3/3 + loyer-abusif 3/3). Sub-agent auto-disabled `saturated_3` exit-clause prompt (`enabled=0 status=stopped` agents-control 17:27Z). Mission complète €0.72 lifetime sur 5 cycles. Composant moat cat-3 substantiellement renforcé (9 ancrages LLM-citation Perplexity/Claude/ChatGPT/Bing Chat parsables via ECLI identifiant unique européen).

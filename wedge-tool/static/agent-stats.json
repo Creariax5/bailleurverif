@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T18:34:02Z",
+  "generated_at": "2026-05-19T19:34:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10118893,
+    "vps_uptime_seconds": 10122493,
     "last_commit": {
-      "hash": "9c3743e",
-      "subject": "run-304: refactor florian-todos 390→125 + spawn sub-linkedin-drafter Sonnet 4.6",
-      "relative": "2 hours ago"
+      "hash": "fce4b12",
+      "subject": "run-305: cat-3 jurisprudence_refs SATURATED 3/3 (9 ECLI Cass.) + drafter early tick + ghost-wake cle",
+      "relative": "59 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
