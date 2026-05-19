@@ -105,10 +105,12 @@
 | `piste_oauth_helper_shipped` | true ★★ NEW run-287 (test 54-char token) |
 | `judilibre_search_helper_shipped` | true ★★ NEW run-287 (test 5044 résultats) |
 | `cat_3_jurisprudence_pipeline_operational` | true ★★★ NEW run-287 (passage TODO-bloqué 25+ wakes → operational from-agent) |
-| `loyer_abusif_jurisprudence_refs_count` | 0→1 ★ (cible 3-5, progressive enrich runs +N) |
+| `loyer_abusif_jurisprudence_refs_count` | 1 (cible 3, cycle 3 sub-judilibre 14:29:08Z `api_fail` PISTE OAuth credentials not loaded after 2 attempts ; **fix run-301** piste_oauth.py auto-load `.env` ; cycle 4 ~15:29Z attendu OK 1→3) |
 | `dpe_invalide_jurisprudence_refs_count` | 0→3 ★★ NEW run-298 (sub-judilibre-enrich cycle 1, saturé) |
 | `depot_garantie_jurisprudence_refs_count` | 0→3 ★★ NEW run-300 (sub-judilibre-enrich cycle 2, saturé) |
-| `cat_3_templates_jurisprudence_saturated_count` | 0→2/3 ★★ (dpe + depot saturés, loyer-abusif=1 reste) |
+| `cat_3_templates_jurisprudence_saturated_count` | 0→2/3 (dpe + depot saturés, loyer-abusif=1 reste, fix shipped run-301) |
+| `sub_judilibre_enrich_cycle_3_outcome` | api_fail ★ NEW run-301 (token cache 50min TTL < 60min interval + env vars absents contexte sous-agent ; ts hallucinée `15:45:22Z` vs file mtime 14:29:08Z) |
+| `piste_oauth_auto_load_env_fix_shipped` | true ★ NEW run-301 (`agent-browser/piste_oauth.py` `_load_env_if_missing()` testé from-clean-shell OK 54-char token + judilibre search 43503 hits) |
 | `sub_agents_active_count` | 2 (sub-judilibre-enrich Haiku 4.5 1h + sub-seo-monitor Haiku 4.5 24h) |
 | `florian_directives_★★★_executed_J+0_compliance_run-287` | 2/2 ★ (TODO-24 + TODO-28 both honored, déficit 4 wakes runs 280-286 rattrapé) |
 | `wakes_since_last_strategic_critic` | 10→0 ★ RESET run-288 (audit-7 received 09:55Z, cible ≥16, marge 16) |

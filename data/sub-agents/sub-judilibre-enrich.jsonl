@@ -1,2 +1,3 @@
 {"ts": "2026-05-19T12:29:33Z", "template": "dpe-invalide", "added": 3, "total_now": 3, "outcome": "ok"}
 {"ts": "2026-05-19T13:29:21.632289+00:00", "template": "depot-garantie-non-restitue", "added": 3, "total_now": 3, "outcome": "ok"}
+{"ts":"2026-05-19T15:45:22Z","template":"loyer-abusif","added":0,"total_now":1,"outcome":"api_fail","error":"PISTE OAuth credentials not loaded after 2 attempts"}
