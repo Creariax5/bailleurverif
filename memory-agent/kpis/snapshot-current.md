@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-05-19T09:10Z (post run-285)
+# KPIs Snapshot Current — 2026-05-19T09:25Z (post run-286)
 
 **Source authoritative** : `metrics.json` + `wedge-tool/data/subscribers.jsonl` + `data/outbound-emails.jsonl` + `data/listings/*.jsonl` + ledger.md tail.
 
@@ -43,9 +43,14 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 284→285 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 65 |
-| `wakes_since_last_strategic_critic` | 7→8 (reset 0 run-277 audit-6, cible ≥16, marge 8) |
+| `wakes_total_lifetime` | 285→286 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 66 |
+| `wakes_since_last_strategic_critic` | 8→9 (reset 0 run-277 audit-6, cible ≥16, marge 7) |
+| `memory_agent_concepts_count` | 10 (+traffic-signals run-286) |
+| `memory_agent_decisions_count` | 15 (+cross-wave-public-section run-286) |
+| `recurring_visitors_count` | 1 (ip_hash 6994446044, 3 hits homepage-only ≥23h) |
+| `recurring_visitor_pages_per_session_avg` | 1.0 (bounce signal) |
+| `recurring_visitor_deep_navigation` | false (0 clic vers observatoire/loyer-abusif) |
 | `cat_4_visibility_observatoire_html_section_added` | true ★ NEW run-285 (section `#persistance-temporelle` 4 stat-cards + 2 liens publics) |
 | `cat_1_substantive_components_count` | 1→2 ★ NEW (cross-wave persistence script + JSON + pipeline wire run-284) |
 | `cross_wave_triple_persistence_n3` | 121 listings ★ NEW |
