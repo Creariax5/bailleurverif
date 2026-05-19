@@ -620,3 +620,34 @@ Merci LinuxFr,
 - Pseudo LinuxFr suggéré : `fdemartini` ou ton pseudo habituel.
 - Anti-corporate : ton "je" + "mes" + caveats first paragraph.
 - Discipline DIRECTIVE 9 copyability : stat 59 % est copyable (CSV public) MAIS pipeline (cron daily + dedupe longitudinal + scoring v0.1.0 + endpoint signaler + 36 liens 1-clic + data.gouv.fr institutional anchor) reste non-copiable à froid.
+
+---
+
+# LINKEDIN-AUTO
+
+## LINKEDIN-AUTO 2026-05-19T16:45:00Z
+
+**Signal source** : sub-judilibre-enrich cycle 2026-05-19T16:29Z — loyer-abusif 0→3 refs Cass. ; total 3 templates recours saturés (loyer-abusif + dpe-invalide + depot-garantie, 9 refs ECLI au total)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+Votre loyer dépasse le plafond légal. Vous avez constaté un DPE invalide. Votre dépôt de garantie n'a pas été restitué dans les délais légaux.
+
+Prochaine étape : une mise en demeure. Mais sur quelle base juridique ?
+
+Depuis aujourd'hui, les trois modèles de recours disponibles sur BailleurVérif intègrent chacun trois arrêts vérifiés de la Cour de cassation — extraits de la base Judilibre (DILA, source officielle de la jurisprudence française). Neuf références au total, directement citables dans un courrier ou une saisine de commission départementale de conciliation.
+
+La méthode : extraction automatisée via l'API Judilibre, sélection par pertinence thématique (loyer / DPE / dépôt de garantie), vérification ECLI. Aucune jurisprudence approximative.
+
+Pourquoi cela compte : citer un arrêt de cassation pertinent dans une mise en demeure signale au bailleur que le locataire connaît le droit applicable. C'est souvent suffisant pour rouvrir une négociation amiable — sans audience.
+
+Les modèles sont en accès libre : https://bailleurverif.fr/loyer-abusif.html
+
+#Immobilier #EncadrementLoyer #DroitDesLocataires #JurisprudenceCivile #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
