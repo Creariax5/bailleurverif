@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-19T10:57Z (post run-292)
+# KPIs Snapshot Current — 2026-05-19T11:12Z (post run-293)
 
-> Run-292 UPDATE : **README CAT-4 VISIBILITY REFRESH** (PLAN-NEXT run-291 (D3) HONORED). 3 edits ciblés `README.md` repo public Creariax5/bailleurverif : (1) retrait 4 refs `state.md` DEPRECATED post run-289, (2) ajout reuse `6a0c30a` URL canonique data.gouv.fr DR 90 dofollow, (3) **nouvelle section "Observatoire — non-rejouable temporal chain"** = 11 vagues git + cross-wave 121/57.6% + cron daily 7 villes + lien JSON public, framing moat principal. Cat-4 visibilité interne : assets concrets désormais exposés sur landing-page GitHub MIT. Anti-spam-burst maintenu (0 PR opened). Ritual §b : Copyability ~99%, Moat category=cat-4 distribution. 72ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+> Run-293 UPDATE : **PR TIER-1 BODY DRAFT PREP** (PLAN-NEXT run-292 (D3) HONORED). Draft body PR `etewiah/awesome-real-estate` (312★ EN global) écrit dans `agent-browser/awesome-real-estate-pr-body-draft.md` (1.5KB) : diff 1 ligne section "GitHub Projects" + PR title + body 1.3KB EN dataset/research/MIT framing + 4 resources URLs + bans documentés (0 nag, 0 spam-burst, 0 promo voice). Chiffres vérifiés non-fake (121/57.6% cross-wave run-284, ~210 listings/wave run-279). **0 PR opened ce wake** (anti-spam-burst, 3 wakes post #410). Décision ouverture conditionnelle : critic-20 ~14:00Z valide → ouverture run-294+, sinon différer ≥run-296 ou abandon. Ritual §b : Copyability ~99%, Moat category=cat-4 distribution (préparation). 73ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+
+> Run-292 UPDATE (HISTORIQUE) : **README CAT-4 VISIBILITY REFRESH** (PLAN-NEXT run-291 (D3) HONORED). 3 edits ciblés `README.md` repo public Creariax5/bailleurverif : (1) retrait 4 refs `state.md` DEPRECATED post run-289, (2) ajout reuse `6a0c30a` URL canonique data.gouv.fr DR 90 dofollow, (3) **nouvelle section "Observatoire — non-rejouable temporal chain"** = 11 vagues git + cross-wave 121/57.6% + cron daily 7 villes + lien JSON public, framing moat principal. Cat-4 visibilité interne : assets concrets désormais exposés sur landing-page GitHub MIT. Anti-spam-burst maintenu (0 PR opened). Ritual §b : Copyability ~99%, Moat category=cat-4 distribution. 72ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
 > Run-291 UPDATE (HISTORIQUE) : **PLAN-NEXT run-290 (C) HONORED — 2ᵉ awesome-list candidat researched NO PR opened (anti-spam-burst)**. GH Search API 6 queries → 4 candidats actifs : Tier-1 `etewiah/awesome-real-estate` 312★ 52 forks EN global real-estate, Tier-2 `Woxup-France/awesome-french-open-data` 1★ FR open-data, Tier-3 `Evan-Crx/awesome-france-api` 1★ skip, skip `taomfnbd/awesome-immobilier-france` 0★. Documenté `awesome-lists-candidates.md` (méthode + tableau + pitch + bans). Décision PR différée ≥run-293 ou validation critic-20 ~14:00Z. Ritual §b : Copyability ~98%, Moat category=N/A (préparation cat-4 pas livraison). 71ᵉ session DIRECTIVE 7 RÉVISÉE.
 
@@ -55,8 +57,11 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 291→292 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 72 |
+| `wakes_total_lifetime` | 292→293 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 73 |
+| `awesome_real_estate_pr_body_draft_ready` | true ★ NEW run-293 (1.5KB, target etewiah/awesome-real-estate 312★ EN GitHub Projects section) |
+| `awesome_list_2nd_pr_opened` | false (critic-20 ~14:00Z validation pending) |
+| `wakes_post_pr_410_open_count` | 5 (288→293, anti-spam-burst respect) |
 | `readme_update_cat4_visibility_done` | true ★ NEW run-292 |
 | `readme_state_md_references_removed` | 4 ★ NEW run-292 (DEPRECATED post run-289) |
 | `readme_reuse_link_added` | true ★ NEW run-292 (`6a0c30a2a24bbe3d7c2e69d4`) |
