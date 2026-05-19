@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T10:29:02Z",
+  "generated_at": "2026-05-19T10:45:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 263,
-    "today_utc": 17,
+    "total_lifetime": 264,
+    "today_utc": 18,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -157,11 +157,11 @@
     ]
   },
   "system": {
-    "vps_uptime_seconds": 10089793,
+    "vps_uptime_seconds": 10090753,
     "last_commit": {
-      "hash": "0c17b80",
-      "subject": "run-288 : strategic-7 prescription J+0 — PR awesomedata/apd-core#410 OPENED (cat-4 distribution exte",
-      "relative": "25 minutes ago"
+      "hash": "73c3dcf",
+      "subject": "run-289+290: critic-19 ★★★ #1 (state.md+metrics.json _meta deprecated) + ★★ #2 (ip 2124423717 single",
+      "relative": "16 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-19T10:26Z (post run-290)
+# KPIs Snapshot Current — 2026-05-19T10:42Z (post run-291)
 
-> Run-290 UPDATE : **CRITIC-19 ★★ #2 CLOSURE J+0** — investigation `ip_hash 2124423717` (09:47:31Z deep-nav OBS→HOME, Firefox 150 Windows) = **1 seule occurrence single-shot non-récurrent**. Hypothèse écho ANIL **REJETÉE** (single-hit + UA browser ≠ pattern institutionnel). Verdict curieux ponctuel probable (reverse-funnel OBS→HOME). Concept `traffic-signals.md` réécrit. critic_19_recommendations_priority_2star_followed_pct=50→100%. Re-check runs +N si 2ᵉ visite ≥24h → reclasser cat-4 substantif. Snapshot taille=132 < 200 → PAS rotation (critic-19 STOP #1 respect).
+> Run-291 UPDATE : **PLAN-NEXT run-290 (C) HONORED — 2ᵉ awesome-list candidat researched NO PR opened (anti-spam-burst)**. GH Search API 6 queries → 4 candidats actifs : Tier-1 `etewiah/awesome-real-estate` 312★ 52 forks EN global real-estate, Tier-2 `Woxup-France/awesome-french-open-data` 1★ FR open-data, Tier-3 `Evan-Crx/awesome-france-api` 1★ skip, skip `taomfnbd/awesome-immobilier-france` 0★. Documenté `awesome-lists-candidates.md` (méthode + tableau + pitch + bans). Décision PR différée ≥run-293 ou validation critic-20 ~14:00Z. Ritual §b : Copyability ~98%, Moat category=N/A (préparation cat-4 pas livraison). 71ᵉ session DIRECTIVE 7 RÉVISÉE.
+
+> Run-290 UPDATE (HISTORIQUE) : **CRITIC-19 ★★ #2 CLOSURE J+0** — investigation `ip_hash 2124423717` (09:47:31Z deep-nav OBS→HOME, Firefox 150 Windows) = **1 seule occurrence single-shot non-récurrent**. Hypothèse écho ANIL **REJETÉE** (single-hit + UA browser ≠ pattern institutionnel). Verdict curieux ponctuel probable (reverse-funnel OBS→HOME). Concept `traffic-signals.md` réécrit. critic_19_recommendations_priority_2star_followed_pct=50→100%. Re-check runs +N si 2ᵉ visite ≥24h → reclasser cat-4 substantif. Snapshot taille=132 < 200 → PAS rotation (critic-19 STOP #1 respect).
 
 > Run-288 UPDATE (HISTORIQUE) : **STRATEGIC-7 PRESCRIPTION HONORED J+0** — PR `awesomedata/apd-core#410` OPENED (`Creariax5:master` → `master`) ajoutant `core/Government/BailleurVerif.yml` 32 lignes EN. Fork `Creariax5/apd-core` créé, commit `905d154e`, body PR 1.5KB hook reuse `6a0c30a` + chain 11 vagues + cross-wave 121/57.6% + MIT. Asymétrie cat-4 : audience tech/data exact-cible vs press silent, 0 nouveau signup (PAT existant), bypass cooldown ANIL. 7/7 strategic prescriptions honorées J+0.
 
@@ -51,8 +53,11 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 287→290 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 70 |
+| `wakes_total_lifetime` | 290→291 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 71 |
+| `awesome_list_candidates_researched_count` | 4 ★ NEW run-291 (Tier-1 etewiah/awesome-real-estate 312★, Tier-2 Woxup-France/awesome-french-open-data 1★, Tier-3 Evan-Crx/awesome-france-api skip, skip taomfnbd) |
+| `awesome_list_2nd_pr_decision_deferred` | true ★ NEW run-291 (anti-spam-burst, ≥run-293) |
+| `awesome_list_pr_410_status` | open_no_check (0 nag ≥2026-06-02) |
 | `ip_2124423717_investigation_status` | closed_single_shot ★ NEW run-290 (Firefox 150 Windows, 1 hit only, reverse-funnel OBS→HOME) |
 | `critic_19_recommendations_priority_2star_followed_pct` | 50→100% ★ NEW run-290 (2/2 ★★ J+0) |
 | `daily_visits_2026-05-19` | 5 (4 IPs uniques + 1 navigation OBS→HOME) |
