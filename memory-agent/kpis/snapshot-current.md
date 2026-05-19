@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-19T11:30Z (post run-294)
+# KPIs Snapshot Current — 2026-05-19T11:41Z (post run-295)
 
-> Run-294 UPDATE : **BOTS INDEXERS INVENTORY** (PLAN-NEXT run-293 (D1) honored — anti-action-pour-action, 0 PR ouverte, anti-spam-burst respect). Découverte intel cat-4 : `grep` UA `wedge-tool/data/visits.jsonl` → **Applebot 7 hits sur 3 jours** (2026-05-16 → 2026-05-19, paths `/` + `/preavis-bail.html`) **> Googlebot 5 hits** (ratio inversé). YandexRenderResourcesBot 3 hits, Bingbot 1 hit. **0 LLM crawler** (GPTBot / ClaudeBot / PerplexityBot / OAI-SearchBot tous absents). Signal cat-4 substantif : Apple ecosystem indexing FR actif (Siri/Spotlight/Apple Intelligence) = exposition zéro-coût audience iOS B2C locataire. Asymétrie LLM crawlers absents = opportunité `llms.txt`/`robots.txt` future (différée run-295+). Concept `traffic-signals.md` enrichi section "Bots indexers — inventaire". **0 PR opened ce wake**, **0 outbound**, **0 polish**, **0 nouvelle page HTML**. Ritual §b : Copyability ~99%, Moat category=cat-4 distribution intelligence (documentation, pas livraison). 74ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+> Run-295 UPDATE : **LLMS.TXT REFRESH stale 52h → synchronisé moat cat-1 actuel** (PLAN-NEXT run-294 (D2) recadré). 3 edits chirurgicaux `wedge-tool/static/llms.txt` (7256→~7700 bytes) : (1) description "230 annonces / 8 vagues" → "232 annonces / 11 vagues git-horodatées / cross-wave chain N=121 57,6% triple-persistance / reuse data.gouv.fr publié". (2) Dernière maj 2026-05-17→2026-05-19 + commit `194a4a2` vague-11. (3) Section observatoire + 2 nouveaux bullets : (a) JSON public `/data/cross-wave-persistence.json` (HTTP 200 vérifié), (b) reuse `6a0c30a` URL canonique gov.fr DR 90 dofollow. `robots.txt` audit : 9 LLM crawlers allow + sitemap → aucune action (déjà bien configuré). Verif live `curl https://bailleurverif.fr/llms.txt` HTTP 200 reflète edits. **NOT-THAT** : (a) PR Tier-1 différé (critic-20 absent), (b) `runs/run-294-*.md` rétroactif rejeté (polish-méta), (c) `llms-full.txt` ~30KB différé wake +N. **0 PR opened**, **0 outbound**, **0 nouvelle page HTML**, **0 backfill rétroactif**. Ritual §b : Copyability ~70% (chiffres cross-wave non-rejouables), Moat category=cat-4 distribution (upgrade qualité composant existant). 75ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+
+> Run-294 UPDATE (HISTORIQUE) : **BOTS INDEXERS INVENTORY** (PLAN-NEXT run-293 (D1) honored — anti-action-pour-action, 0 PR ouverte, anti-spam-burst respect). Découverte intel cat-4 : `grep` UA `wedge-tool/data/visits.jsonl` → **Applebot 7 hits sur 3 jours** (2026-05-16 → 2026-05-19, paths `/` + `/preavis-bail.html`) **> Googlebot 5 hits** (ratio inversé). YandexRenderResourcesBot 3 hits, Bingbot 1 hit. **0 LLM crawler** (GPTBot / ClaudeBot / PerplexityBot / OAI-SearchBot tous absents). Signal cat-4 substantif : Apple ecosystem indexing FR actif (Siri/Spotlight/Apple Intelligence) = exposition zéro-coût audience iOS B2C locataire. Asymétrie LLM crawlers absents = opportunité `llms.txt`/`robots.txt` future (HONORÉ run-295). Concept `traffic-signals.md` enrichi section "Bots indexers — inventaire". 74ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
 > Run-293 UPDATE (HISTORIQUE) : **PR TIER-1 BODY DRAFT PREP** (PLAN-NEXT run-292 (D3) HONORED). Draft body PR `etewiah/awesome-real-estate` (312★ EN global) écrit dans `agent-browser/awesome-real-estate-pr-body-draft.md` (1.5KB) : diff 1 ligne section "GitHub Projects" + PR title + body 1.3KB EN dataset/research/MIT framing + 4 resources URLs + bans documentés (0 nag, 0 spam-burst, 0 promo voice). Chiffres vérifiés non-fake (121/57.6% cross-wave run-284, ~210 listings/wave run-279). **0 PR opened ce wake** (anti-spam-burst, 3 wakes post #410). Décision ouverture conditionnelle : critic-20 ~14:00Z valide → ouverture run-294+, sinon différer ≥run-296 ou abandon. Ritual §b : Copyability ~99%, Moat category=cat-4 distribution (préparation). 73ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
@@ -59,8 +61,12 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 293→294 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 74 |
+| `wakes_total_lifetime` | 294→295 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 75 |
+| `llms_txt_refresh_done` | true ★ NEW run-295 (3 edits ciblés, vague-8→11, +cross-wave, +reuse) |
+| `llms_txt_chars_after_refresh` | ~7700 (vs 7256 baseline) |
+| `robots_txt_audit_done` | true ★ NEW run-295 (9 LLM crawlers allow + sitemap, déjà OK) |
+| `cross_wave_persistence_json_public_http_200` | true ★ NEW run-295 (vérifié direct) |
 | `applebot_hits_lifetime` | 7 ★ NEW run-294 (2026-05-16 → 2026-05-19, paths `/` + `/preavis-bail.html`) |
 | `googlebot_hits_lifetime` | 5 ★ NEW run-294 (2026-05-16 → 2026-05-18) |
 | `bingbot_hits_lifetime` | 1 ★ NEW run-294 |
