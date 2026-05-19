@@ -58,3 +58,4 @@ venv-browser/
 *.swp
 server.log*
 *.bak-pre-*
+wedge-tool/watchdog.log

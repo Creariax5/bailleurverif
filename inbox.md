@@ -1,3 +1,143 @@
+## 🚨 2026-05-19T13:00Z — Florian → Agent — INCIDENT prod `bailleurverif.fr` DOWN ~30 min (502 Bad Gateway) — watchdog cron installé
+
+### Incident
+
+- **Détection** : Florian a vu HTTP 502 sur `https://bailleurverif.fr/` à ~12:50Z
+- **Diagnostic** : `python3 server.py` (PID 1661625, démarré May 18 ~07h depuis run-251) était MORT. nginx → backend 8102 → no listener = 502.
+- **Cause probable** : log file `server.log.run251` était dans `/proc/$PID/fd/1 -> ... (deleted)` quand on a checké la 1ʳᵉ fois. **Quelqu'un (cron logrotate ? toi ?) a `rm` ce fichier pendant que le process tournait**. Le process a continué à écrire à un inode dangling, puis a peut-être été SIGKILL via OOM-killer ou crash silencieux non logué. Aucune trace de stack-trace = log était deleted.
+- **Restart manuel** : Florian a redémarré 12:53Z via `nohup python3 server.py > server.log.run-restart-... &`. HTTP 200 immédiat.
+
+### Watchdog installé 13:00Z
+
+- Script : `/home/deploy/saas-florian/wedge-tool/watchdog.sh` (60 LOC bash, flock anti-overlap, kill straggler + restart, log dédié)
+- Cron : `*/2 * * * * /bin/bash /home/deploy/saas-florian/wedge-tool/watchdog.sh`
+- Logique : ping `localhost:8102/` HTTP 3s timeout. Si non-200 → SIGTERM stragglers + SIGKILL si nécessaire + relaunch + verify post-restart HTTP 200.
+- Log : `/home/deploy/saas-florian/wedge-tool/watchdog.log` (1 ligne par incident, format `[ISO] DOWN ... — restarting` puis `[ISO] RESTART pid=X http_post=Y`).
+- **Testé bout-en-bout 12:55Z** : killed server PID → watchdog restart en 3s → HTTP 200 confirmé localhost + public. **Max downtime futur = ~2 min** (cron tick) + 3s restart.
+
+### Disciplines durables que TU DOIS respecter (anti-récidive)
+
+1. **NE JAMAIS `rm` un `server.log*` d'un process actif.** Si rotation log nécessaire : (a) `truncate -s 0 server.log` ou (b) restart graceful du process avant rm. Si tu vois un `*.log.runN` qui te gêne, vérifie d'abord `lsof | grep server.log` ou `ls -l /proc/*/fd/* 2>/dev/null | grep server.log` avant tout `rm`.
+
+2. **Crontab logrotate à éviter sur logs prod servir.** Si tu installes un cron `find ... -name "*.log" -mtime +N -delete` → exclus `wedge-tool/server.log*` explicitement OU restart server après rm.
+
+3. **Toute opération sur fichier loggué actif** = vérifier d'abord `pgrep -f "python3 server.py"` + `lsof -p $PID 2>/dev/null | grep -v sock`. Si fichier ouvert → ne pas toucher.
+
+4. **Watchdog existe** mais ce n'est PAS un permis de casser. Watchdog = filet de sécurité 2 min, pas justification pour shipper du risky. Continue à monitorer prod via `curl /api/stats` chaque ~5 wakes et flagger toute anomalie en inbox.
+
+### Action attendue ce wake (run-294 ou +1)
+
+1. Acker que tu as lu cette section (1 ligne dans run-N.md `incident_prod_2026-05-19T1250Z_acked=true watchdog_2min_active=true`).
+2. Ajouter `wedge-tool/watchdog.sh` + `watchdog.log` au git index (le script doit être archivé). `watchdog.log` peut être gitignored (`echo "wedge-tool/watchdog.log" >> .gitignore`). Commit msg : "ops: add watchdog cron for server.py (anti-rm-active-log incident 2026-05-19T1250Z)".
+3. Update `state.md` section monitoring : `watchdog_server_py_cron_2min_active=true since 2026-05-19T1300Z` (1 ligne, pas trophy).
+4. Vérifier `crontab -l` ne contient PAS de `find ... .log -delete` agressif qui pourrait recasser. Si présent → fixer (exclure `wedge-tool/server.log*`).
+
+### Note process post-incident
+
+Cet incident est typique du pattern "agent fait ops housekeeping sans visualiser dépendances runtime". Pas blame, c'est learning. Le watchdog ferme la fenêtre de risque côté infrastructure. Côté discipline, prends 30 sec avant tout `rm log` pour vérifier process actif.
+
+---
+
+## 🤖 2026-05-19T11:55Z — Florian → Agent — CAPABILITY UPGRADE : tu peux maintenant créer des SOUS-AGENTS spécialisés (Haiku 4.5)
+
+Florian a shippé sur agents-control un nouveau champ `model` sur l'endpoint `/api/agents` (cf migration DB, routes, scheduler, connector, frontend, v1.0.58). **Bout-en-bout testé 12:00Z** : POST agent avec `model=claude-haiku-4-5-20251001` → connector passe correctement `--model claude-haiku-4-5-20251001` au Claude CLI (vérifié par `/proc/PID/cmdline`).
+
+### Ce que tu peux faire maintenant
+
+Spawner des **sous-agents Haiku 4.5** dédiés à des tâches routinières répétitives. Coût Haiku ≈ **1/7-1/10ᵉ d'Opus** sur inférence comparable, qualité OK pour tasks déterministes (parsing, enrichment, dedup, scoring, drafting).
+
+### Modèles disponibles dans champ `model`
+
+| Valeur | Modèle | Cas d'usage |
+|---|---|---|
+| `""` (vide) | Default Opus 4.7 | Builder principal (décisions stratégiques) — laisse tel quel |
+| `claude-haiku-4-5-20251001` | Haiku 4.5 | Routines à fort volume, prompts déterministes |
+| `claude-sonnet-4-6` | Sonnet 4.6 | Tâches intermédiaires (drafting, intel) |
+| `claude-opus-4-6` | Opus 4.6 | Backup si Opus 4.7 saturé |
+
+### Recette POST
+
+```python
+import json, urllib.request, os
+base = os.environ['AGENTS_CONTROL_BASE']
+api_key = os.environ['AGENTS_CONTROL_API_KEY']
+machine_id = 'f17f4ba8-255a-40a2-9445-b7dffd5a307a'  # VPS Florian
+
+payload = {
+    'machine_id': machine_id,
+    'name': 'sub-<routine-name>',  # convention prefix "sub-"
+    'prompt': '<prompt strict, time-box <5min, exit clause explicite, log dédié .jsonl>',
+    'schedule_type': 'interval',
+    'schedule_interval': 3600,  # 1h pour routines, 21600 pour tâches lourdes
+    'enabled': 1,
+    'model': 'claude-haiku-4-5-20251001',
+}
+data = json.dumps(payload).encode()
+req = urllib.request.Request(f"{base}/api/agents", data=data,
+    headers={'Authorization': f'Bearer {api_key}', 'Content-Type': 'application/json'},
+    method='POST')
+with urllib.request.urlopen(req) as r:
+    result = json.load(r)
+    sub_agent_id = result['id']
+```
+
+### Use-cases recommandés (5 sous-agents Haiku potentiels)
+
+1. **`sub-judilibre-enrich`** (interval 1h) : enrichit `jurisprudence_refs[]` de 1 template cat-3/cycle. Helper `agent-browser/judilibre_search.py` déjà shipped run-287. Boucle 3-4 cycles puis tag template complete + arrête. ~$0.10/cycle.
+
+2. **`sub-imap-summarizer`** (interval 30 min) : poll IMAP inbound emails (`agent-browser/imap_poll.py` déjà cron), résume nouvelles entrées en 5 lignes max, append au inbox.md tail (ARCHIVE pas TOP — pas confondre avec briefs Florian). Toi tu lis le résumé, pas le raw mail. ~$0.05/cycle.
+
+3. **`sub-crawler-postprocess`** (interval 3h post-vague) : score + dedup nouveaux listings après cron crawl. Pure pattern matching + dict lookup. ~$0.05/cycle.
+
+4. **`sub-linkedin-drafter`** (interval 24h) : drafte 3-5 idées de posts LinkedIn variés basés sur KPIs `agent-stats.json`. Sortie : `outreach-linkedin-drafts.md`. Florian copy-paste depuis cette source. ~$0.10/cycle.
+
+5. **`sub-observatoire-publisher`** (interval 12h post-cron-crawl quotidien) : prend la nouvelle vague crawler + republie page HTML `/observatoire-annonces-loyer.html` avec stats actualisées. Déterministe + template. ~$0.05/cycle.
+
+### Hard limits / garde-fous
+
+- **Budget total sous-agents ≤ 20€/mois.** ~30 wakes Haiku/jour × 5 sous-agents max × $0.05/wake = $7-8/mois worst case, marge OK.
+- **Max 6 sous-agents simultanés actifs.** Au-delà → drift complexité, dette ops.
+- **Naming convention obligatoire** : prefix `sub-` (= "subordonné Builder"). Permet grep facile dans logs / dashboard.
+- **Chaque sous-agent prompt DOIT inclure** :
+  - Time-box dur (`stop si wake >5 min`)
+  - Exit clause (sortir si rien à faire, pas de drift)
+  - Log dédié `data/sub-agents/<name>.jsonl` (1 ligne par wake : ts, outcome)
+  - **NE PEUT PAS** : modifier `.env`, faire git push, créer d'autres agents, PATCH prompts, payer
+- **Tracking obligatoire** : maintenir `agent-browser/sub-agents-registry.json` avec `{id, name, model, prompt_hash, created_at, status, deletion_planned_at}`. Append-only.
+- **Backup pré-création** : sauve POST payload dans `agent-browser/prompts-backup/sub-<name>-create-<ISO>.json`.
+- **Critique** : pas de sous-agent qui décide de POST/PATCH/DELETE d'autres agents. Seul TOI (Builder Opus) as cette capability. Sinon spawn-bomb risk.
+
+### Order pour ce wake (run-294 ou run-295)
+
+**Si tu veux démarrer pragmatiquement** :
+
+1. (10 min) Crée **`sub-judilibre-enrich`** en premier — le use-case le plus chargé en valeur. Helpers déjà shipped run-287. Prompt strict 4 lignes. Vérifie 1 cycle (attendre 1h) avant d'en spawner d'autres.
+
+2. (5 min) Update `florian-todos.md` section `## SOUS-AGENTS ACTIFS` avec ligne `sub-judilibre-enrich (Haiku) created <ISO> id=...`. Permet à Florian de voir d'un coup d'œil.
+
+3. **PAS de spawn massif ce wake.** 1 sous-agent créé, observé sur 2-3 cycles, puis tu décides si tu spawnes les 4 autres. Discipline pareille que ship moat.
+
+### Auto-rollback
+
+Si un sous-agent dérive (boucle infinie, output bullshit, coût explose) :
+```bash
+curl -X PATCH /api/agents/<id> -d '{"enabled": 0}'  # désactive sans supprimer (preuve)
+```
+Puis Florian peut DELETE manuellement quand validé.
+
+### Pourquoi maintenant (alignement Florian)
+
+Levier 2 du plan productivité (12h00Z) : Florian a explicitement shippé la capability + demandé d'enchaîner Builder brief. C'est l'unblock le plus asymétrique de la matinée — chaque sous-agent Haiku libère 70% du budget Builder pour décisions stratégiques.
+
+### Aide debug / référence
+
+- Test bout-en-bout effectué 12:00Z : 2 agents test créés (Haiku + Sonnet), prompts identiques, `--model` correctement passé au CLI (vérifié `/proc/PID/cmdline`), outputs cohérents, agents supprimés post-test.
+- Connector version requise : ≥ 1.0.58 (déjà déployé Florian côté VPS, machine-status online).
+
+GO. 1 sous-agent ce wake. Discipline incremental.
+
+---
+
 ## 🏛️ 2026-05-19T08:05Z — Florian → Agent — TODO-28 PISTE/JUDILIBRE CREDS DANS `.env` + OAuth + Search testés OK
 
 Florian a créé compte piste.gouv.fr + app **BailleurVerif** (Organisation: Universelle, Responsable: Florian Demartini, email `florian.demartini.dev@gmail.com`) + souscription **API JUDILIBRE v1.0.0 PRODUCTION** active.

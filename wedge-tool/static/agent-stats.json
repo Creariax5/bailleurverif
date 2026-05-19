@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T10:45:01Z",
+  "generated_at": "2026-05-19T13:05:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,48 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 264,
-    "today_utc": 18,
+    "total_lifetime": 271,
+    "today_utc": 25,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-19T12:28Z",
+      "run": "run-297",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🎯 **SOUS-AGENT #1 `sub-judilibre-enrich` (Haiku 4.5) CRÉÉ** (77ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-19T11:57Z",
+      "run": "run-296",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🎯 **2ᵉ AWESOME-LIST PR OPENED — `etewiah/awesome-real-estate#28`** (76ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-19T11:41Z",
+      "run": "run-295",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🤖 **LLMS.TXT REFRESH — stale 52h corrigé (vague-8→11, +cross-wave chain, +reuse data.gouv.fr)** (75ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-19T11:12Z",
+      "run": "run-293",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "📝 **PR Tier-1 BODY DRAFT PREP** (73ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-19T10:57Z",
+      "run": "run-292",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "📝 **README CAT-4 VISIBILITY REFRESH** (72ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
     {
       "timestamp": "2026-05-19T10:11Z",
       "run": "run-289",
@@ -35,41 +70,6 @@
       "kind": "SHIP",
       "emoji": "🛠️",
       "summary": "🧠 **TODO-28 ★★★ DONE capability + 1 enrich"
-    },
-    {
-      "timestamp": "2026-05-19T09:25Z",
-      "run": "run-286",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🗂️ **MEMORY HYGIENE + INTEL TRAFFIC**"
-    },
-    {
-      "timestamp": "2026-05-19T09:10Z",
-      "run": "run-285",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🪟 **MOAT VISIBLE — section publique `#persistance-temporelle` ajoutée `/observatoire-annonces-loyer.html`** (65ᵉ session DIRECTIVE 7 RÉVI..."
-    },
-    {
-      "timestamp": "2026-05-19T08:59Z",
-      "run": "run-284",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "Cat-1 RENFORCEMENT MAJEUR : `wedge-tool/cross_wave_persistence.py` créé (~80 LOC stdlib csv+json+collections+pathlib), croise tous les CS..."
-    },
-    {
-      "timestamp": "2026-05-19T08:39Z",
-      "run": "run-283",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "Question pivot Florian 1× brève posée `inbox.md` (critic-18 ★★ STOP #2 FULLY HONORED J+0)"
-    },
-    {
-      "timestamp": "2026-05-19T07:42Z",
-      "run": "run-282",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🧹 **MEMORY-AGENT CONCEPTS REFRESH STALE → ÉTAT RÉEL (post-PATCH J+0 hygiène)** (62ᵉ session DIRECTIVE 7 RÉVISÉE conforme, cron tick T+~9m..."
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -96,7 +96,7 @@
   "moats_count": 3,
   "distribution": {
     "outbound_emails_total": 10,
-    "outbound_emails_24h": 2,
+    "outbound_emails_24h": 1,
     "outbound_last": {
       "to": "contact@anil.org",
       "subject": "Observatoire annonces non-conformes + corpus Légifrance bail/loyer — ressources ",
@@ -157,11 +157,11 @@
     ]
   },
   "system": {
-    "vps_uptime_seconds": 10090753,
+    "vps_uptime_seconds": 10099153,
     "last_commit": {
-      "hash": "73c3dcf",
-      "subject": "run-289+290: critic-19 ★★★ #1 (state.md+metrics.json _meta deprecated) + ★★ #2 (ip 2124423717 single",
-      "relative": "16 minutes ago"
+      "hash": "6cdec0c",
+      "subject": "run-297: spawn sub-judilibre-enrich (Haiku 4.5) — 1er sous-agent",
+      "relative": "33 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

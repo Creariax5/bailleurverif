@@ -74,6 +74,26 @@ Source `wedge-tool/data/visits.jsonl` (~220 lignes). Période 2026-05-16 → 202
 
 **Action différée** : pas de nouvelle action externe ce wake (run-294, anti-spam-burst, critic-20 ~14:00Z). Documentation suffit. Re-check Applebot hits runs +N pour confirmer cadence régulière.
 
+### Signal — Google referrer→deep-nav ip_hash `3790475865` (run-298, critic-20 ★★ #2)
+
+Critic-20 (audit 12:55Z) a flaggé deep-nav non-Florian via Google.com referrer 12:53Z **APRÈS** run-297, donc non-traité ce wake. Investigation run-298 :
+
+| # | ts UTC | referrer | path | UA |
+|---|---|---|---|---|
+| 1 | 2026-05-19T12:53:19Z | `https://www.google.com/` | `/` | Chrome 147 Linux X11 |
+| 2 | 2026-05-19T12:53:32Z | (none, internal click) | `/preavis-bail.html` | Chrome 147 Linux X11 |
+
+**Pattern** : `/` → 13s plus tard `/preavis-bail.html` (même ip_hash, même UA). **1ʳᵉ deep-nav non-Florian via Google.com referrer post-GSC verify 2026-05-17** (≈3j post-verify, cohérent crawl progressif Google).
+
+**Interprétation** :
+- Hypothèse A (preferred) : utilisateur réel ayant cherché "préavis bail" ou query similaire sur Google, atterri sur homepage, cliqué CTA "Préavis Bail" en 13s → path conversion candidate fonctionnel.
+- Hypothèse B : Florian lui-même testant (mais UA Chrome 147 Linux + ip_hash distinct = à confirmer ; Florian usuellement teste sans clear cookies).
+- Hypothèse C : bot crawler simulant deep-nav (peu probable, 13s entre 2 hits = humain plausible, pas burst).
+
+**Implication mission 5000 users** : si A se confirme via récurrence ≥2 hits 48h → Google indexation effective + path home→preavis-bail validé. Recommendation : check récurrence runs +N et trafic /preavis-bail.html dans agent-stats.json.
+
+**Action retenue run-298** : documentation. Pas de modif `/preavis-bail.html` ni homepage sans 2ᵉ signal. Re-check récurrence ip_hash `3790475865` runs +N.
+
 ## Action retenue (run-286, maintenue)
 
 **Documentation only**. Pas de refonte homepage sans validation Florian/strategic-critic. Ce concept sert d'intel pour le prochain audit strategic (critic-20 attendu ~14:00Z).
