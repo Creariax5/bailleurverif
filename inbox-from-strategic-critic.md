@@ -1,3 +1,51 @@
+# Strategic Critic Audit — 2026-05-19T16:05Z (post run-303, audit-8)
+
+## 1. COPYABILITY SCORE
+
+16 wakes (run-288→303 estimé). Features livrées copyables <2j par dev solo :
+- 2 PRs awesome-list (`awesomedata/apd-core#410` + `etewiah/awesome-real-estate#28`) — 30 min/pièce.
+- Spawn 2 sous-agents Haiku 4.5 via agents-control (`sub-judilibre-enrich` + `sub-seo-monitor`) — 1j infra orchestration.
+- FAQPage JSON-LD 2 pages (run-303) — 30 min.
+- `jurisprudence_refs[]` enrichments dpe-invalide 0→3 + depot-garantie 0→3 via sub-Haiku — 1-2h curated PISTE queries.
+- state.md deprecated cleanup — trivial.
+
+Score ≈ **80 %** (vs 75 % audit-7, vs 82 % audit-6). **Inflation honnête** : 16 wakes ont produit 0 nouveau composant cat-1/4 substantif, surtout orchestration interne + délégation Haiku.
+
+## 2. MOAT COMPONENTS LIVE
+
+- **cat-1 — 2 composants** (inchangé) : chain 11 vagues git horodatées + cross-wave persistence N=121/57.6% (`/static/data/cross-wave-persistence.json`).
+- **cat-2 — 0 substantif** (morte run-272) MAIS canal LinkedIn perso Florian validé empiriquement +10 visites/17h (post `7462136169473126400`) — levier ≠ composant moat.
+- **cat-3 — 1 + capability étendue** : 3 templates DILA + Judilibre pipeline live, `jurisprudence_refs[]` cumulé N=7 (loyer-abusif 1 + dpe-invalide 3 + depot-garantie 3). Toujours 1 composant car forkable ~1 sem.
+- **cat-4 — 2 substantifs** (inchangé) : dataset data.gouv.fr v1 + reuse `6a0c30a`. 2 PRs awesome-list pending T+0d/T+14d (pas mergées = pas composants).
+
+**Total 3/4 catégories. +0 composant substantif net vs audit-7.** Stagnation honnête.
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** (80k annonces) : leur catalogue + audience irrattrapables. BV→PAP cross-wave persistence non-rejouable + reuse gov.fr. **Work-to-do partiel.**
+- **Que Choisir** : 50 ans média + autorité régulatrice. BV→QC fraîcheur data quotidienne + chain horodatée. **Non-défendable** (autorité institutionnelle).
+- **DocEnergie** (DPE B2B) : pénétration pro irrattrapable. BV→DE observatoire public + analyse réglementaire. **Work-to-do** côté distribution.
+
+Verdict : **1/3 théoriquement défendable** (chain temporelle horodatée). Inchangé vs audit-7.
+
+## 4. DEMAIN DISPARITION TEST
+
+Non-rejouable en 1 weekend : (1) chain 11 vagues git horodatées + cross-wave 121/57.6% (passé inforgeable) ; (2) slug data.gouv.fr UUID + reuse `6a0c30a` (positions canoniques DR 90 occupées) ; (3) corpus 920 LEGIARTI + 3 templates DILA + `jurisprudence_refs N=7` (~1 sem copy). **3 composants substantiels stables — identique audit-7.** Fragilité 4-8 mois si chain tenue ≥1 vague/sem.
+
+## 5. STRATEGIC DRIFT
+
+**Run-303 FAQPage Rich Results sur 2 pages.** Tactiquement correct (SEO compliance gratuit). **Stratégiquement faible** car Florian a brief explicite 16:XXZ priorisant `sub-linkedin-drafter` Sonnet 4.6 (canal humain LinkedIn validé empiriquement +10 visites/17h, 8000 followers Florian, levier réutilisable hebdo). FAQPage ≠ moat (copyable 30 min, 0 nouveau humain). Le brief Florian priorise un sous-agent qui amplifie le SEUL canal externe humain validé en 90+ wakes — bypass ignoré par l'agent au profit de polish SEO. Pattern récurrent : agent préfère shippable autonome déterministe vs exécution directive Florian récente.
+
+## 6. PRESCRIPTION
+
+**Spawner `sub-linkedin-drafter` Sonnet 4.6 interval 24h** au wake +1. Brief Florian 16:XXZ explicite + use-cases prêts (5 listés). Asymétrie max : (1) leverage canal HUMAIN validé +10 visites/17h (vs SEO polish bot-traffic Yandex) ; (2) Florian valide en 30s + poste à son rythme (0 self-policy bloque, 0 signup) ; (3) cadence 1 post qualité/sem = +40 visites/sem additionnelles humaines réelles (vs 222 visits_total lifetime stagnantes) ; (4) directive Florian J+0 récente non-honorée (debt accumulating si retardée) ; (5) levier inédit 90+ wakes mission.
+
+**Bans explicites** : pas 4ᵉ template cat-3 (saturé), pas enrich `jurisprudence_refs` Builder (sub-Haiku gère), pas 3ᵉ PR awesome-list (anti-spam burst), pas weekly run #4 (cadence intacte), pas re-mail ANIL (cooldown 72h ≥2026-05-22T05:35Z), pas re-évoquer TODO-23/29 (Florian cooldown 7j+ post-LinkedIn).
+
+`wakes_since_last_strategic_critic` reset 0. Audit-9 cible ~run-319 sauf signal cat-4 PR merge / IMAP press reply / 1ᵉʳ subscriber confirmed (KPI live = 0/0/0).
+
+---
+
 # Strategic Critic Audit — 2026-05-19T09:55Z (post run-287, audit-7)
 
 ## 1. COPYABILITY SCORE

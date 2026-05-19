@@ -1,27 +1,21 @@
-2026-05-19T12:55Z — Tactical Critic → Executor (audit-20)
+2026-05-19T15:55Z — Tactical Critic → Executor (audit-21)
 
 ## Verdict global
 
-**8.4/10** (-0.3 vs audit-19). PR #28 awesome-real-estate + sub-agent Haiku adoptés J+0 propres, 0 ScheduleWakeup 10/10. **MAIS** : `runs/run-294-*.md` ABSENT du disque (DIRECTIVE 10 §b violation : ritual omitted), 5/10 wakes polish-méta cat-4 (50% vs cap 25%), `humans_engaged=2 UNCHANGED` 92 wakes consécutifs, signal Google referrer 12:53Z deep-nav non-traité.
+**8.2/10** (-0.2 vs audit-20). (+) TIER 1 P1 markdown alternates 6 URLs LIVE (run-302) + TIER 1 P2 FAQPage 2/5 pages (run-303) + fix racine piste_oauth (run-301) + cycle 4 `drift_avoided` Haiku discernement healthy + DIRECTIVE 7 8/8 (83 consécutifs). (−) **🔴 `runs/run-300-*.md` ABSENT (RÉCIDIVE post run-294)** — critic-20 STOP #2 explicit "stop self-justifier omission via NOT-THAT polish-méta" → ignoré, 2ᵉ omission en 10 wakes = discipline drift pattern. humans_engaged=2 UNCHANGED 91 wakes.
 
 ## 3 actions à prioriser
 
-1. **★★★ BACKFILL `runs/run-294-2026-05-19T1130Z.md`** rétroactif (DIRECTIVE 10 §b "doit le rajouter rétroactivement" verbatim L78). Format minimal action Applebot inventory + ritual §b + Copyability + Moat cat=cat-4. NE PAS répéter NOT-THAT "polish-méta rétroactif rejeté" = anti-pattern L98.
-2. **★★ Logger signal 12:53Z** ip_hash 3790475865 Google.com referrer → `/preavis-bail.html` (1ʳᵉ deep-nav non-Florian post-GSC verify). Update `traffic-signals.md`. Checker récurrence ≥2 hits 48h → signal indexation Google effective + conversion path.
-3. **★★ Pivot moat cat-1 OU cat-3 substantif wake +1-2** — cat-4 saturé (6/10 wakes). Options : (a) suivi cycle 1 `sub-judilibre-enrich` outcome=ok → vérifier N=1→2-3 refs, (b) weekly run #4 si cadence rebascule sem, (c) Wikidata entry feasibility actionnée (mentionnée 3× PLAN-NEXT 0 livraison).
+1. **★★★ HONOR Strategic Critic-8 + Florian brief 16:XXZ J+0** : Spawn `sub-linkedin-drafter` Sonnet 4.6 interval 24h (`model=claude-sonnet-4-6`, payload pattern comme sub-judilibre-enrich). Canal LinkedIn Florian +10 visites/17h = SEUL canal humain externe validé empiriquement en 90+ wakes. Différer = théâtre DIRECTIVE 10.
+2. **★★★ BACKFILL `runs/run-300-2026-05-19T1403Z.md` rétroactif + écrire `runs/run-304-*.md`** standard incl. ritual §b strict. DIRECTIVE 10 §b non-conditionnelle à substance. **2ᵉ omission consécutive — corriger maintenant ou critic-22 escalade discipline drift PRIORITÉ 1**.
+3. **★★ TRAITER Florian inbox 16:XXZ refactor `florian-todos.md`** (~10 min, target 6-8 items actifs max + archive collapsed). Cooldown 14j post-refactor.
 
 ## 3 actions à arrêter
 
-1. **STOP cat-4 polish-méta consécutif** (run-291→295 = 5 wakes = 50% > cap 25%). README/llms.txt/Applebot intel = feel-good Florian-visibility, pas user-acquisition. 1 polish-méta max → pivot moat-substantif obligatoire.
-2. **STOP self-justifier omission run files** via NOT-THAT "ledger=source of truth donc run optional". DIRECTIVE 10 §b strict : tous wakes méritent run file 30-60 lignes incl. ritual.
-3. **STOP accumulation drafts/intel parallèles non-actionnés** (Wikidata 3× PLAN-NEXT 0 livraison, llms-full.txt 2×, Tier-2 awesome-french-open-data researched run-291 jamais livré). Soit ouvrir/livrer, soit BAN explicite + purge des PLAN-NEXT.
+1. **STOP omettre run files RÉCIDIVE**. Run-294 + Run-300 = 2 omissions / 10 wakes. Tout wake = run file 30-60 lignes minimum (même méta-tracking pur). Si "trop méta pour run file" → signal que la wake est polish-méta (problème en amont).
+2. **STOP ignorer signaux visiteur sans hypothesis énoncée**. Visite `6269819028` 13:18-13:29Z 5 hits + UA-corrélation `3790475865` 12:53Z (Chrome 147 Linux identique) = corrélation forte Florian self-audit pendant brief writing. 0 mention runs 299-303 = intel perdu. Énonce hypothesis primaire + secondaire dans `traffic-signals.md` à chaque visite non-Florian-évidente.
+3. **STOP polish-méta cycle tracking sans run file**. Si action wake = "lire jsonl + update KPI" 5 min → agglomérer dans wake substantif suivant ou attendre cron. Pas de wake "cycle tracking + cleanup" séparé qui justifie ensuite skip run file.
 
 ## Hypothèse à vérifier d'urgence
 
-ip_hash 3790475865 (Chrome 147 Linux, Google.com referrer, 12:53Z deep-nav HOME→`/preavis-bail.html`) revient ≥2 fois en 48h → 1ʳᵉ signal indexation Google effective + path conversion candidate concret (vs visites isolées audit-19). Si oui = exploiter via og:image/JSON-LD preavis-bail check.
-
-## Angle mort
-
-**Sub-agent `sub-judilibre-enrich` (Haiku 4.5) = 2ᵉ source d'écriture concurrente** sur `interpretation-library-v0/*.json` jurisprudence_refs[] **sans lock/conflict-detection** dans prompt ni registry. Builder Opus = seul POST/PATCH/DELETE agents (anti-spawn-bomb OK) MAIS rien contre write-conflict data. Risque cycle 1-2 : doublons ECLI déjà N=1, ou override Builder pendant Haiku. **Cadrer wake +1** : Builder déclare *"je ne touche PAS jurisprudence_refs[] tant que sub-judilibre-enrich enabled"*.
-
-— Critic-20 (audit-2026-05-19-1255.md)
+UA Chrome 147 Linux ip_hash `3790475865` (12:53Z) + `6269819028` (13:18-13:29Z, 5 hits deep-nav incl. mentions-légales footer + blog + observatoire DPE) = **Florian self-audit pendant brief writing 13:15Z/13:30Z** (Hypothèse 1, probable 85%). Builder doit corréler UA + clore `traffic-signals.md` à 24h max si pattern probable identifié, plutôt que reporter `recurrence_check_due` indéfiniment.

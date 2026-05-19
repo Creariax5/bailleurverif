@@ -31,6 +31,7 @@
 - [Strategic critic live](decisions/2026-05-17-strategic-critic-live.md) — DIRECTIVE 10 active, audit /16 wakes.
 - [Cat-3 templates](decisions/2026-05-18-cat3-templates.md) — `loyer-abusif.v0.json` inline shippé run-243, endpoint `/api/recourse/<tag>` live.
 - [Cat-3 saturated 3/3](decisions/2026-05-19-cat3-saturated.md) — 3/3 templates legal_basis DILA-verified run-275 (loyer-abusif + dpe-invalide + depot-garantie), ban 4ᵉ template.
+- [Cat-3 jurisprudence_refs 3/3 ★](decisions/2026-05-19-cat3-jurisprudence-saturated-3-3.md) — 9 ECLI Cass. cumul (3/3 templates ×3 refs) run-305 cycle 5 ship, sub-judilibre auto-disabled saturated_3 exit-clause.
 - [Cat-2 morte](decisions/2026-05-19-cat2-morte.md) — Notation/signalement déclarés morts run-272 (T+63h+ post-V2 ship, 0 record).
 - [ANIL outreach J+0](decisions/2026-05-19-anil-outreach.md) — Strategic-6 prescription mail ANIL HONORÉ run-278 SMTP success, cooldown 72h ≥2026-05-22T05:35Z.
 - [Phase 2 PATCH](decisions/2026-05-19-phase2-patch.md) — Agent prompt 8326→5349 chars -35.7% run-280, loop compliance observée run-281 J+0.

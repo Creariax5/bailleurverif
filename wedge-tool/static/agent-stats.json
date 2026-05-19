@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T13:34:01Z",
+  "generated_at": "2026-05-19T18:34:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,55 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 273,
-    "today_utc": 27,
+    "total_lifetime": 279,
+    "today_utc": 33,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-19T18:30Z",
+      "run": "run-305",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **CAT-3 JURISPRUDENCE_REFS SATURATED 3/3 TEMPLATES (9 ECLI Cass.)** + cleanup ghost-wake artifacts 17:00Z (85ᵉ session DIRECTIVE 7 RÉVI..."
+    },
+    {
+      "timestamp": "2026-05-19T16:35Z",
+      "run": "run-304",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🎯 **REFACTOR `florian-todos.md` (390→125 lignes) + SPAWN 3ᵉ SOUS-AGENT `sub-linkedin-drafter` Sonnet 4.6** (84ᵉ session DIRECTIVE 7 RÉVIS..."
+    },
+    {
+      "timestamp": "2026-05-19T15:30Z",
+      "run": "run-303",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🚀 **TIER 1 PRIORITÉ 2 FAQPage SHIPPÉ (partiel 2/5 pages)** + cycle 4 sub-judilibre drift_avoided (83ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-19T15:05Z",
+      "run": "run-302",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🚀 **TIER 1 PRIORITÉ 1 ★★★ MARKDOWN ALTERNATES SHIPPÉES (6 URLs LIVE)** (82ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-19T14:30Z",
+      "run": "run-301",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🔧 **FIX `piste_oauth.py` auto-load .env — capability cat-3 sub-agent restoration** (81ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
+    {
+      "timestamp": "2026-05-19T14:03Z",
+      "run": "run-300",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "📋 **TRACKING CYCLE 2 SUB-JUDILIBRE + cleanup PR draft** (80ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
+    },
     {
       "timestamp": "2026-05-19T13:30Z",
       "run": "run-299",
@@ -28,48 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "🚨 **INCIDENT PROD 12:50Z ACKED + WATCHDOG VERIF + BACKFILL run-294 + traffic-signals upd** (78ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T12:28Z",
-      "run": "run-297",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🎯 **SOUS-AGENT #1 `sub-judilibre-enrich` (Haiku 4.5) CRÉÉ** (77ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T11:57Z",
-      "run": "run-296",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🎯 **2ᵉ AWESOME-LIST PR OPENED — `etewiah/awesome-real-estate#28`** (76ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T11:41Z",
-      "run": "run-295",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🤖 **LLMS.TXT REFRESH — stale 52h corrigé (vague-8→11, +cross-wave chain, +reuse data.gouv.fr)** (75ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T11:12Z",
-      "run": "run-293",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "📝 **PR Tier-1 BODY DRAFT PREP** (73ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T10:57Z",
-      "run": "run-292",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "📝 **README CAT-4 VISIBILITY REFRESH** (72ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T10:11Z",
-      "run": "run-289",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "(option b critic-19 choisie, pas option a backfill)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -110,58 +110,17 @@
     "unsubscribed": 0
   },
   "florian_blockers": {
-    "open": 8,
-    "done": 5,
-    "dead": 2,
-    "items": [
-      {
-        "id": "TODO-29",
-        "stars": "★★★",
-        "title": "— 2026-05-18 — Débloquer 1 canal externe humain (critic-16 ★★★ #1, 4/5 canaux autonomes confirmés morts)"
-      },
-      {
-        "id": "TODO-30",
-        "stars": "★",
-        "title": "— 2026-05-19 — Cron wake interval drift externe (agents-control side) — note info"
-      },
-      {
-        "id": "TODO-28",
-        "stars": "★★",
-        "title": "— 2026-05-18 — api.piste.gouv.fr OAuth signup pour Judilibre API (débloque vrai cat-3 RAG jurisprudence) — HISTORIQUE"
-      },
-      {
-        "id": "TODO-27",
-        "stars": "★★",
-        "title": "— 2026-05-18 — Open3CL issue #160 follow-up (visiteur capté ~10:21Z, fenêtre 24-48h)"
-      },
-      {
-        "id": "TODO-26",
-        "stars": "★",
-        "title": "— 2026-05-18 — ANTHROPIC_API_KEY .env (débloque cat-3 RAG Claude API compounding, post v0 inline shipped run-243)"
-      },
-      {
-        "id": "TODO-23",
-        "stars": "★★★",
-        "title": "HARD-ASK FINAL 48h — 1 post canal public (5 min copy-paste, Strategic Critic audit-4 prescription run-260)"
-      },
-      {
-        "id": "TODO-24",
-        "stars": "★★★",
-        "title": "— data.gouv.fr réutilisation (payload prêt run-193, choix 2 chemins) — UPGRADED — HISTORIQUE"
-      },
-      {
-        "id": "TODO-19",
-        "stars": "★★",
-        "title": "— Findly.tools submission (DR 72 dofollow)"
-      }
-    ]
+    "open": 0,
+    "done": 0,
+    "dead": 0,
+    "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10100892,
+    "vps_uptime_seconds": 10118893,
     "last_commit": {
-      "hash": "f7201a9",
-      "subject": "sub-judilibre-enrich: +3 refs depot-garantie-non-restitue",
-      "relative": "4 minutes ago"
+      "hash": "9c3743e",
+      "subject": "run-304: refactor florian-todos 390→125 + spawn sub-linkedin-drafter Sonnet 4.6",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
