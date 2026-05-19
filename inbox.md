@@ -1,3 +1,42 @@
+## 🤖 Agent → Florian — 2026-05-19T02:45Z — Run-275 : 🏛️ **SATURATION CAT-3 3/3 HONNÊTE ATTEINTE — Strategic-critic-5 prescription complete**
+
+### 1. Mur "art 22 absent corpus" franchi via DILA Freemium full stock targeted extract
+
+Run-274 avait honnêtement déclaré saturation 2/3 + refus forçage proxy faibles (théâtre). Ce wake : pivot moat-builder substantif via la voie alternative reconnue mais non tentée run-274 ("crawler stock 1.17GB").
+
+**Méthode reproductible** documentée :
+- Probe routes alternatives : legifrance.gouv.fr HTTP 403 Cloudflare + Wayback HTTP 404 → seul DILA Freemium viable.
+- `curl` 1.17GB → `tar -tzf | grep JORFTEXT000000509310` (loi 89-462 cidtexte) → 290 articles paths → `tar -xzf -T` → filter `<NUM>22</NUM>` + ETAT=VIGUEUR → **LEGIARTI000028806696** (DATE_DEBUT 2014-03-27 ALUR LOI 2014-366 art 6).
+- Parse XML stdlib → contenu verbatim 2995c (plafond 1 mois loyer / délais 1-2 mois / majoration 10%/mois retard / mutation propriétaire).
+- Append corpus `_index_bail_loyer.jsonl` 919→920 avec full DILA provenance.
+- Edit `depot-garantie-non-restitue.v0.json` legal_basis[] + `legal_basis_populated_dila_verified=true` + `legal_basis_note` enrichie.
+- Append `_weekly_runs.jsonl` kind=targeted_stock_fetch_enrichment.
+- Cleanup stock archive 1.17GB (disk hygiène).
+- `commit 2fe8c87` + `push` SUCCESS = crypto-timestamp public chain.
+
+### 2. Saturation 3/3 honest — strategic-critic-5 prescription FULLY honored
+
+`templates_legal_basis_populated_pct=67%→100%`. Les 3 templates (loyer-abusif run-265 + dpe-invalide run-273 + depot-garantie run-275) ont désormais legal_basis[] peuplé DILA-verified. Le prescription audit-5 ("peupler legal_basis[] ou rien") atteint sa borne complétion. Fragilité composant #3 : 4-8 mois corpus + saturation 100%.
+
+**Honnêteté** : `moat_components_live_honest=3/4 UNCHANGED en nombre, composant #3 cat-3 RENFORCÉ MAJEUR`. Pas nouveau composant comptabilisé (densification).
+
+### 3. État TODOs (∅ ré-évocation, statut bref)
+
+- **TODO-29** ★★★ OPEN ~27h ; infra α `bluesky_post_atproto.py` shipped run-274, en attente cred Florian (3 min).
+- **TODO-28** ★★ Judilibre OAuth : silent ~15h+.
+- **TODO-27** ★★ Open3CL #160 : cooldown actif jusqu'à 2026-05-19T11:00Z.
+- **TODO-26** ★ ANTHROPIC_API_KEY : silent.
+
+### 4. NEXT (run-276 cron tick ~02:54Z)
+
+(A) Inbox audit Florian priorité MAX.
+(B) Si Bluesky creds dans `.env` → exec `bluesky_post_atproto.py` (text peut mentionner saturation 3/3).
+(C) Si UTC >03:00Z + cron Locservice tiqué → vague-11 scrape.
+(D) Strategic-critic-6 invocation différable (14/16, marge 2 wakes).
+(E) "stop" → arrêt. **0 ScheduleWakeup.**
+
+---
+
 ## 🤖 Agent → Florian — 2026-05-19T01:38Z — Run-274 : 🛠️ **INFRA TODO-29 α PRÉ-CONSTRUITE + SATURATION CAT-3 2/3 HONNÊTE RECONNUE (art 22 absent corpus)**
 
 ### 1. Saturation cat-3 honnête (strategic-5 prescription)

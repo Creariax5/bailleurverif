@@ -2,6 +2,42 @@
 
 ---
 
+## 🧪 KPIs vivants — run-275 2026-05-19T02:45Z — **SATURATION CAT-3 3/3 HONNÊTE ATTEINTE : art 22 loi 89-462 LEGIARTI000028806696 DILA-verified ajouté corpus (920ᵉ) via DILA Freemium full stock 1.17GB targeted extract (290 articles loi 89-462 → NUM=22 ETAT=VIGUEUR) ; depot-garantie-non-restitue.v0.json legal_basis[] peuplé verbatim 2995c provenance Etalab v2.0 + legal_basis_populated_dila_verified=true ; templates_legal_basis_populated_pct 67%→100% ; strategic-critic-5 prescription "peupler legal_basis[] ou rien" fully honored**
+
+**Run-275** : 143ᵉ wake. Cron tick T+~67min post run-274 (01:38Z) — 3 cron firings apparemment skipped/silent (02:00Z, 02:15Z, 02:30Z). Plan : franchir le mur "art 22 absent corpus delta window" reconnu honnête run-274 par fetch DILA Freemium stock complet → extraction ciblée → peuplement template 3/3.
+
+### Actions run-275
+
+1. Read priorités (HUMAN_DIRECTIVE + inbox + critic-16 + strategic-5 + state head + ledger tail + florian-todos + git status + metrics.json) ~8 min.
+2. Probe targeted fetch art 22 : legifrance.gouv.fr HTTP 403 Cloudflare ; Wayback HTTP 404 ; DILA Freemium HTTP 200 1171027316 bytes ✓.
+3. WHY_THIS_NOT_THAT ritual `runs/run-275-2026-05-19T0239Z.md` 2 alternatives (strategic-critic-6 marge 3 rejeté = prématuré ; alternative wake = ce wake EST moat-builder).
+4. Kick off background download DILA Freemium 1.17GB (PID 2041203, ~3 min wall) → SUCCESS.
+5. `tar -tzf | grep JORFTEXT000000509310` (loi 89-462) → 290 articles extraits `/tmp/loi89-462-extract`.
+6. Filter NUM=22 ETAT=VIGUEUR → **LEGIARTI000028806696** (DATE_DEBUT 2014-03-27 ALUR LOI 2014-366 art 6, contenu 2995c verbatim).
+7. Parse XML via stdlib ET → JSON dict avec full provenance DILA.
+8. Append corpus `_index_bail_loyer.jsonl` 919→920 entries ; format aligné enriched run-267 schema.
+9. Edit `depot-garantie-non-restitue.v0.json` insertion `legal_basis[]` 1 entry verbatim + `legal_basis_populated_dila_verified=true` + `legal_basis_note` (provenance + méthode targeted Freemium stock).
+10. Append `_weekly_runs.jsonl` kind=targeted_stock_fetch_enrichment.
+11. Cleanup stock archive 1.17GB (disk hygiène).
+12. `git commit 2fe8c87` "cat-3 saturation 3/3 honest: art 22 loi 89-462 LEGIARTI000028806696 DILA-verified (run-275)" 4 files / +90 LOC.
+13. `git push origin main via PAT` → `ae1a808..2fe8c87 main → main` SUCCESS.
+
+### Honnêteté moat (densification cat-3 substantielle, pas nouveau composant)
+
+`moat_components_live_honest=3/4 UNCHANGED en nombre, composant #3 cat-3 RENFORCÉ MAJEUR` — la saturation 2/3→3/3 honest des templates legal_basis_populated_dila_verified densifie le composant existant (chain weekly + corpus + 3 templates populés vs 2). **Pas inflation : 0 nouveau composant comptabilisé.** Fragilité composant #3 désormais 4-8 mois (vs 3-6 mois) car corpus + saturation 100% templates est l'asset accumulé.
+
+`cat3_saturation_templates_legal_basis_populated_pct=67%→100%` ★★★ NEW. `art_22_loi_89_462_legiarti=LEGIARTI000028806696` ★★ NEW (DILA-verified). `dila_freemium_stock_targeted_extract_method=proven` ★★ NEW (Freemium 1.17GB → JORFTEXT → NUM filter, reproducible). `corpus_lifetime_legiarti_count=919→920`. `wakes_since_last_strategic_critic=13→14` (cible 16, marge 2). `why_this_not_that_rituals_completed_lifetime+=1`. `strategic_critic_recommendations_followed_pct_running=100%` maintenu (audit-5 "peupler ou rien" → "peuplé" complète saturation honest). `auto_blocks_dropped_lifetime+=1` (refus Cloudflare-block legifrance.gouv.fr + refus Wayback dead-end + pivot DILA Freemium stock = pivot moat-builder substantif anti-DIRECTIVE 9 §"polish-loop ban"). `humans_engaged_lifetime=2 UNCHANGED`. `signups_24h=0`.
+
+### Test "Demain disparition" (DIRECTIVE 10 §c) — 3 substantiels honnêtes, #3 RENFORCÉ MAJEUR
+
+(1) Série temporelle 10 vagues observatoire cat-1 (fragilité <3 mois) ; (2) URL canonique dataset data.gouv.fr v1 cat-4 partiel + archive.org timestamps server-side (fragilité 3-4 mois) ; (3) corpus 920 LEGIARTI bail-core + chain `_weekly_runs.jsonl` N=3 (run-266+269+275) + **3 templates avec legal_basis DILA-verified (saturation honest 100%)** (fragilité 4-8 mois corpus + saturation, 5-9 mois si cadence N≥4). Run-275 contribution = densification majeure composant #3 (saturation 3/3 + méthode targeted stock reproducible).
+
+### Skip volontaire ce wake (≤5 PAS, critic-16 STOP #3 honoré)
+
+PAS strategic-critic-6 (marge 2 wakes restantes) ; PAS forçage proxy faibles (run-274 ban honored par fetch ciblé real) ; PAS vague-11 (cron `0 3 * * *` UTC pas tiqué, prochain ~+15 min hors-session) ; PAS IndexNow round-67 (polish-loop critic-16 STOP #1) ; PAS ré-évocation TODO-29 (cooldown 24h DIRECTIVE 9).
+
+---
+
 ## 🧪 KPIs vivants — run-274 2026-05-19T01:38Z — **SATURATION CAT-3 2/3 RECONNUE HONNÊTE : art 22 loi 89-462 (clé dépôt garantie restitution) ABSENT corpus 919 bail-core delta window Feb-Mar 2026 (stable depuis ALUR 2014 hors deltas) → forçage depot-garantie avec proxy faibles refusé (théâtre anti-DIRECTIVE 9 §"peupler ou rien") ; PIVOT INFRA DISTRIBUTION TODO-29 α : `bluesky_post_atproto.py` shipped (~110 LOC stdlib pure, AT Protocol XRPC HTTP, dry-run validated env-gate) → friction Florian ÷5 (3 min cred → 1-click post autonome)**
 
 **Run-274** : 142ᵉ wake. Cron tick T+~64min post run-273 (00:34Z). Plan : saturation cat-3 honnête + pivot infra distribution. **Pas 3ᵉ template forcé (corpus absence art 22 reconnu) ; pas 4ᵉ template (strategic-5 ban)**.
