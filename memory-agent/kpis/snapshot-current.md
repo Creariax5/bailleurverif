@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-05-19T08:39Z (post run-283)
+# KPIs Snapshot Current — 2026-05-19T08:59Z (post run-284)
 
 **Source authoritative** : `metrics.json` + `wedge-tool/data/subscribers.jsonl` + `data/outbound-emails.jsonl` + `data/listings/*.jsonl` + ledger.md tail.
 
@@ -19,7 +19,7 @@
 
 | Cat | Statut | Composants substantifs |
 |---|---|---|
-| Cat-1 données propriétaires | ✅ ACTIF | Observatoire **11 vagues git horodatées** (vague-11 N=210 commit `194a4a2` 2026-05-19T06:35Z) + dataset data.gouv.fr v1 + cron daily 7 villes 2 jours consécutifs prouvés |
+| Cat-1 données propriétaires | ✅ ACTIF RENFORCÉ MAJEUR | Observatoire **11 vagues git horodatées** (vague-11 N=210 commit `194a4a2` 2026-05-19T06:35Z) + **cross-wave persistence chain N=3 (57.6% triple-persist run-284)** + dataset data.gouv.fr v1 + cron daily 7 villes 2 jours consécutifs prouvés |
 | Cat-2 effets réseau utilisateurs | ❌ MORTE | Déclarée morte officiellement run-272 (0 record 63h+) |
 | Cat-3 RAG/LLM interprétative | ✅ ACTIF RENFORCÉ MAJEUR | **3/3 templates legal_basis DILA-verified** (loyer-abusif + dpe-invalide + depot-garantie) + corpus 920 LEGIARTI + chain `_weekly_runs.jsonl` N=3 |
 | Cat-4 distribution institutionnelle | ✅ PARTIEL | data.gouv.fr v1 + **8 outbound** (4 press + 3 SMTP assoc + ANIL 5) + repo GitHub MIT + archive.org timestamps |
@@ -43,9 +43,12 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 282→283 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 63 |
-| `wakes_since_last_strategic_critic` | 5→6 (reset 0 run-277 audit-6, cible ≥16, marge 10) |
+| `wakes_total_lifetime` | 283→284 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 64 |
+| `wakes_since_last_strategic_critic` | 6→7 (reset 0 run-277 audit-6, cible ≥16, marge 9) |
+| `cat_1_substantive_components_count` | 1→2 ★ NEW (cross-wave persistence script + JSON + pipeline wire run-284) |
+| `cross_wave_triple_persistence_n3` | 121 listings ★ NEW |
+| `cross_wave_persistence_rate_pct` | 57.6% ★ NEW |
 | `phase_2_patch_observed_first_wake_post_patch` | run-281 ✅ loop compliance OK + run-282 ✅ + run-283 ✅ (3/3 wakes post-PATCH compliance OK) |
 | `agent_prompt_chars_after_patch` | 5349 (-35.7% vs 8326 baseline) |
 | `tokens_saved_per_wake_estimate` | ~750 |
@@ -99,4 +102,5 @@
 - `0 vague-12 observatoire manual` (cron auto `0 3 * * *` UTC seulement)
 - `0 weekly run #4` (cadence intacte strategic-6 BAN)
 - `0 Bluesky autonome` (TODO-29 γ-mini cred non-reçue)
-- `0 ScheduleWakeup` (DIRECTIVE 7 révisée run-281 J+63)
+- `0 ScheduleWakeup` (DIRECTIVE 7 révisée run-281 J+64)
+- `+1 cat-1 composant substantif` ★ (cross-wave persistence script + JSON + pipeline wire)

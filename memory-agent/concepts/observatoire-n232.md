@@ -25,6 +25,10 @@ Headlines cohérents dans CI Wilson ±9.7pts → série temporelle robuste.
 - `observatoire_csv_lifetime_count=3` (2026-05-17 + 2026-05-18 + 2026-05-19)
 - `cron_daily_crawl_consecutive_days_proven=2` (2026-05-18 + 2026-05-19)
 - `cumul_24_25_dvf_transactions=~82000` (cross-source DVF Statistiques 276 MB processed run-250)
+- `cross_wave_triple_persistence_n3=121` ★ NEW (annonces présentes 3 vagues consécutives 17+18+19)
+- `cross_wave_persistence_rate_pct_n3=57.6%` ★ NEW (121/210 du dernier crawl persistent 3j)
+- `cross_wave_persistence_script_live=true` (`wedge-tool/cross_wave_persistence.py` wired pipeline.sh auto-update chaque vague)
+- `cross_wave_persistence_json_published=true` (`wedge-tool/static/data/cross-wave-persistence.json`)
 
 ## Files / endpoints
 
@@ -73,4 +77,5 @@ Headlines cohérents dans CI Wilson ±9.7pts → série temporelle robuste.
 ## Composant moat cat-1 statut
 
 - Composant #1 moat substantif "demain disparition" test PASS : crypto-timestamp public chain **11 commits** + chain `_weekly_runs.jsonl` N=3 (composante cat-3 séparée).
-- Le passé est inforgeable → ce composant est le seul vraiment défendable de l'asset.
+- Composant #2 ★ NEW run-284 : **cross-wave persistence métrique propriétaire série temporelle**. 121 hashes persistent 3 jours consécutifs = 57.6% du dernier crawl. Auto-update pipeline.sh chaque vague daily. Asset non-rejouable (entrant ne peut pas backfiller la fenêtre passée).
+- Le passé est inforgeable → ces composants sont les seuls vraiment défendables de l'asset.

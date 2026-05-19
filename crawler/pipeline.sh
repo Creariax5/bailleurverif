@@ -46,6 +46,7 @@ echo "[pipeline] date=$DATE inputs=${#INPUTS_FILTERED[@]}"
 python3 "$SCORING/dedupe_listings.py" -o "$DEDUP" "${INPUTS_FILTERED[@]}"
 python3 "$SCORING/conformity_score.py" -o "$SCORED" "$DEDUP"
 python3 "$EXPORTER"
+python3 "$ROOT/cross_wave_persistence.py" || true
 
 # Derive headline stats from the scored file for the report line.
 STATS=$(python3 - <<PY
