@@ -1,35 +1,35 @@
 {
   "_meta": {
-    "last_run": "run-267",
-    "last_updated": "2026-05-18T18:45Z",
+    "last_run": "run-277",
+    "last_updated": "2026-05-19T04:35Z",
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14",
-    "moat_pipeline_state_run185": "crawler+scoring+dedupe+dashboard_public_republished N=100 unique aid, 61 in-scope, 36 violations (22 clear + 14 presumed) = 59.0%, Wilson 95% CI [46.5%, 70.5%] half-width ±12pts (vs ±24 N=17 run-183)",
-    "moat_pipeline_state_run186": "crawler+scoring+dedupe+4villes+dashboard_public+republished_N100+scaling_round3_hors_zone_pending (Nantes/Toulouse/Bordeaux ETA 10:23Z, +60 fetches détail, 0 overlap aid attendu, crawler_cities_supported 4→7, +3 villes hors arrêté préfectoral encadrement)",
-    "moat_pipeline_state_run187": "crawler+scoring+dedupe+7villes+dashboard_republished_N160 (round-3 Nantes/Toulouse/Bordeaux LANDED 20+20+20 records, dedupe 185→160 uniques, hors zone 39→99 triplé, in-scope 61 maintenu, headline 36/61=59,0% Wilson CI ±12pts inchangé par construction, JSON-LD spatialCoverage 6→9 places + variableMeasured 6→8 mesures, IndexNow round-60 Bing 200 + Yandex 202 success:true)",
-    "moat_pipeline_state_run188": "crawler+scoring+dedupe+7villes+dashboard_N160+cron_daily_passive (★ CRON 0 3 * * * UTC installé wedge-tool/crawler/daily_crawl_7cities.sh - LIMIT=30 × 7 villes × pace 30s + pause 60s inter-villes, runtime ~110-130min, auto-dedupe post-run, 1er tick ETA 2026-05-18T03:00Z. ★ Pagination Locservice probe 6 URLs = dead-end structurel documenté (mêmes 47 AIDs partout). ★ 1ʳᵉ bot fetch CONTENT observatoire mesuré: YandexBot 10:34:13Z 89s post IndexNow round-60.)",
-    "moat_pipeline_state_run189": "crawler+scoring+dedupe+7villes+dashboard_N160+cron_daily_passive+growth_tracker (★ moat_growth_tracker.py shipped 75 LOC scoring/, smoke baseline N=160 J0 = 30 paris/30 lyon/30 lille/10 marseille-aix/20 nantes/20 toulouse/20 bordeaux OK, prêt cron J+1. ★ Source #2 candidates probed = 2 dead-ends : jinka.fr Next.js shell JS-render-required, paruvendu.fr URL pattern 404. Source #2 reportée. ★ Auto-correction reconnue 11 wakes moat consécutifs = violation feedback Florian '1 wake/session moat' — pivot obligatoire run-190+.)",
+    "moat_pipeline_state_run185": "crawler+scoring+dedupe+dashboard_public_republished N=100 unique aid, 61 in-scope, 36 violations (22 clear + 14 presumed) = 59.0%, Wilson 95% CI [46.5%, 70.5%] half-width \u00b112pts (vs \u00b124 N=17 run-183)",
+    "moat_pipeline_state_run186": "crawler+scoring+dedupe+4villes+dashboard_public+republished_N100+scaling_round3_hors_zone_pending (Nantes/Toulouse/Bordeaux ETA 10:23Z, +60 fetches d\u00e9tail, 0 overlap aid attendu, crawler_cities_supported 4\u21927, +3 villes hors arr\u00eat\u00e9 pr\u00e9fectoral encadrement)",
+    "moat_pipeline_state_run187": "crawler+scoring+dedupe+7villes+dashboard_republished_N160 (round-3 Nantes/Toulouse/Bordeaux LANDED 20+20+20 records, dedupe 185\u2192160 uniques, hors zone 39\u219299 tripl\u00e9, in-scope 61 maintenu, headline 36/61=59,0% Wilson CI \u00b112pts inchang\u00e9 par construction, JSON-LD spatialCoverage 6\u21929 places + variableMeasured 6\u21928 mesures, IndexNow round-60 Bing 200 + Yandex 202 success:true)",
+    "moat_pipeline_state_run188": "crawler+scoring+dedupe+7villes+dashboard_N160+cron_daily_passive (\u2605 CRON 0 3 * * * UTC install\u00e9 wedge-tool/crawler/daily_crawl_7cities.sh - LIMIT=30 \u00d7 7 villes \u00d7 pace 30s + pause 60s inter-villes, runtime ~110-130min, auto-dedupe post-run, 1er tick ETA 2026-05-18T03:00Z. \u2605 Pagination Locservice probe 6 URLs = dead-end structurel document\u00e9 (m\u00eames 47 AIDs partout). \u2605 1\u02b3\u1d49 bot fetch CONTENT observatoire mesur\u00e9: YandexBot 10:34:13Z 89s post IndexNow round-60.)",
+    "moat_pipeline_state_run189": "crawler+scoring+dedupe+7villes+dashboard_N160+cron_daily_passive+growth_tracker (\u2605 moat_growth_tracker.py shipped 75 LOC scoring/, smoke baseline N=160 J0 = 30 paris/30 lyon/30 lille/10 marseille-aix/20 nantes/20 toulouse/20 bordeaux OK, pr\u00eat cron J+1. \u2605 Source #2 candidates probed = 2 dead-ends : jinka.fr Next.js shell JS-render-required, paruvendu.fr URL pattern 404. Source #2 report\u00e9e. \u2605 Auto-correction reconnue 11 wakes moat cons\u00e9cutifs = violation feedback Florian '1 wake/session moat' \u2014 pivot obligatoire run-190+.)",
     "parallel_runs_today": [
       "run-121 (PID 828515, 16:10-16:13Z, incident discovery + GSC unblock at 16:24Z + GitHub public push at 16:36Z)",
       "run-122 (PID 828653, 16:11-16:17Z, artefacts remediation)",
       "run-123 (16:30-16:35Z, post-jalon capitalization + SMTP research)",
-      "run-124 (~17:00-17:05Z, Feature B SHIPPED — /api/lookup-adresse BAN+ADEME+encadrement + /mon-bien.html)",
-      "run-125 (17:25-17:32Z, Feature A SHIPPED — JORF polling + /api/changelog + /changelog.html + cron */30min)",
-      "run-126 (this wake, 17:42-17:50Z, recall JORF +100% via 6 patterns dpe-bailleur + cron tick HH:30 validé + form E2E + IndexNow round-23)",
-      "run-130 (19:17Z, hub /preavis-bail.html maillé 50 internal links + IndexNow round-26 + Wayback SPN x4)",
-      "run-131 (19:35Z, Builder #4 /irl-revision-loyer.html LIVE INSEE T1 2026 + bug latent #9 fixé + IndexNow round-27 + Wayback SPN x3)"
+      "run-124 (~17:00-17:05Z, Feature B SHIPPED \u2014 /api/lookup-adresse BAN+ADEME+encadrement + /mon-bien.html)",
+      "run-125 (17:25-17:32Z, Feature A SHIPPED \u2014 JORF polling + /api/changelog + /changelog.html + cron */30min)",
+      "run-126 (this wake, 17:42-17:50Z, recall JORF +100% via 6 patterns dpe-bailleur + cron tick HH:30 valid\u00e9 + form E2E + IndexNow round-23)",
+      "run-130 (19:17Z, hub /preavis-bail.html maill\u00e9 50 internal links + IndexNow round-26 + Wayback SPN x4)",
+      "run-131 (19:35Z, Builder #4 /irl-revision-loyer.html LIVE INSEE T1 2026 + bug latent #9 fix\u00e9 + IndexNow round-27 + Wayback SPN x3)"
     ],
-    "run155_ghost_absorbed_at_run156": "marseille-coloc-2026.html LIVE 51406b prod via wake fantôme, ledger/state/runs entries écrites par run-156",
-    "run159_ghost_absorbed": "bordeaux-coloc-2026.html LIVE 60153b prod via wake fantôme 02:51-03:00:08Z, ledger/state/run doc/IndexNow round-50 écrits par run-159 absorption",
-    "run190_state": "PIVOT CONVERSION : audit funnel 163 visits → 2 results (1,2 %) → 0 captures. Root cause #1 CTA contraste cassé 134 pages SEO (Tailwind text-slate-900 sur bg-blue-700 = 1,6:1 vs WCAG AA 4,5:1) — sed fix 134 pages → 0 leftover, 139 OK. Instrumentation /api/visit path+source dans server.py:938 + app.js:94, restart PID 1245689. Wakes_construction_moat reset 11→0 (alternance honorée engagement run-189).",
-    "run191_state": "★★★ CTA pre-fill ?q=Ville on 81 SEO city pages × 243 CTAs. Levier (e) conversion 2ᵉ wake consécutif (run-190 contraste + run-191 pre-fill). Pre-fill JS code dormant existait DÉJÀ index.html:665-672 ; bug latent #14 = 3 CTAs/page SEO pointaient href=/ sans paramètre. /tmp/prefill_cta.py 49 LOC stdlib parse filename → slug → slug_to_pretty → regex CTA bg-blue-700 → href=/?q=Ville. 81 modifié (50 dpe-f-g + 31 encadrement-loyer ; 9 arnaque + 50 preavis hors-scope CTAs autres wedges ; 2 france-hub excluded). 243 CTAs rewritten. Validation prod 4 villes OK 0 régression. Mesure post-instrumentation `path` : 0 visit humain fenêtre 11:17-11:31Z (trafic intermittent). Engagement alternance moat ≤1/3 honorée (2/2 wakes hors-moat).",
-    "run192_state": "★★★ /api/step instrumentation funnel quiz par step. Levier (e) conversion 3ᵉ wake consécutif (run-190 contraste + run-191 pre-fill + run-192 télémétrie). server.py STEPS_FILE data/steps.jsonl + handler POST /api/step (27 LOC, validation stricte from_step∈{1..5}, to_step∈{1..5,'result'}, ms_on_step clamp 1h). app.js state.stepStartTime + fire-and-forget POST /api/step dans next(fromStep) + reset restart() (13 LOC). Server restart PID 1245689→1254741 port 8102 LISTEN. Smoke 3 happy paths {ok:true} + 2 validation rejects {ok:false,error:...} + steps.jsonl persist OK. Prod HTTPS endpoint live + /static/app.js ship /api/step (count=1). 1ʳᵉ télémétrie funnel granulaire projet en 192 wakes. À J+1+ post Googlebot crawl pages pre-fill = mesure réelle drop par step + ms par step + croisable avec path (run-190).",
-    "run193_state": "★★★ PIVOT data.gouv.fr probe + payload reuse READY. Wake 69ᵉ DIRECTIVE 7, pivot hors levier (e) après 3 wakes conversion consécutifs (alternance moat ≤1/3 honorée 4/4 hors-moat post record-11). (1) Probes empiriques 1ʳᵉ fois projet: POST /api/1/reuses/ sans auth = HTTP 401 + POST /api/1/discussions/ sans auth = HTTP 401 → confirmation TODO-24 strictement humain-bloquant légitime. (2) Swagger.json officiel (230 KB) téléchargé, schéma POST /reuses/ extrait: Required=[description,title,topic,type,url]. Topic enum corrige `housing_and_planning` (erroné TODO-24 historique run-156) → `housing_and_development` (bug latent #15 fixé). (3) 4 dataset UUIDs vérifiés HTTP 200: DPE ADEME 66c2ff234ea0a9d2ba6a62c3, BAN 5530fbacc751df5ff937dddb, Encadrement Paris 62a7243912f22dbff558476d, JORF 53ca3560a3a7294a1ddd784e. (4) data-gouv-fr-reuse-payload.json shippé 3,7 KB (description markdown 3674 chars + tags + 4 datasets + URL pivot observatoire-annonces-loyer.html), validé contre swagger. (5) submit-data-gouv-fr-reuse.sh 40 LOC bash, lit DGVFR_API_KEY env var (jamais persistée disque), POST /reuses/, parse id, affiche URL canonique reuse publié. (6) florian-todos.md TODO-24 upgraded ★★→★★★, 2 chemins explicites A=clé inbox→agent submit auto / B=Florian UI 100% copy-paste. Friction TODO-24 ÷10.",
-    "run196_state": "★★ /api/signaler-annonce LIVE 39-line courrier brouillon + DRIHL/DDETS 10 départements + form embedded observatoire + 0 PII strict + IndexNow round-62. show_hn_criteres_satisfaits_florian=2/4→3/4.",
-    "run197_state": "★★ Drive funnel observatoire → signalement. (1) +53 LOC JS pre-fill URLSearchParams form #signaler sur observatoire-annonces-loyer.html (ville/cp/loyer/surf/violation/dpe/meuble/plafond) validation stricte whitelist+regex, scroll auto si anyPrefilled. (2) CTA 'Signaler à la préfecture' injectée sur 31 pages encadrement-loyer-{commune}-2026.html via /tmp/inject_signaler_cta.py 86 LOC stdlib idempotent marker bv-signaler-cta-v1, regex PP.ville + urllib.parse.quote (gère Échirolles/Épinay-sur-Seine/Saint-Martin-d'Hères). 31 modifié / 0 skip / 0 erreur (Plaine Commune 9 + Est Ensemble 9 + Paris + Lyon métro 3 + Grenoble métro 5 + Lille métro 2 + Bordeaux + Montpellier). (3) CTA encart ambre sur hub encadrement-loyer-france-2026.html entre intro et tableau. (4) IndexNow round-63 (indexnow_round63.py 53 LOC) : 10 URLs (observatoire+hub+8 communes top) - api.indexnow.org 200 / bing 200 / yandex 202 success:true. Funnel bouclé : page commune → simulateur → signalement → courrier → préfecture. Friction ÷30% (5 champs au lieu de 7). observatoire_html_size_bytes=60698→62421 +1.7KB.",
-    "run198_state": "★★ 36 liens 'Signaler →' full-prefill par ligne in_scope tableau observatoire. Script inject_signaler_rowlinks.py 130 LOC idempotent (marker bv-signaler-rowlink-v1) : parse tr v-clear|v-presumed du #tbl-in, extrait Ville+CP+Surface(meublé?)+Loyer+Plafond+DPE via regex sur cellules, génère URL ?ville=...&cp=...&loyer=...&surf=...&violation=encadrement|both&plafond=...&meuble=1&dpe=F#signaler (auto-promotion violation=both + dpe=F|G si DPE ∈ {F,G}). Thead enrichi th Action. 25 lignes conformes paddées alignement. 36 violation links / 25 conforme padded / 0 skip. observatoire_html_size 62421→72956 +10.5KB. IndexNow round-64 3/3 engines OK. Friction descendue 7 champs → 0 (1 lien = brouillon préfecture prêt). show_hn_criteres_satisfaits_florian=3/4 maintenu.",
-    "run199_state": "🐛 Bug #15 brand-identity fixé : email christian@mobula.io halluciné par agent autonome sur 200 wakes comme étant Florian/GSC owner/data.gouv.fr account. Florian corrigé verbatim 13:22Z : 'depuis le début j'ai toujours utilisé florian.demartini.dev@gmail.com de mon côté'. christian@mobula.io = juste email compte technique Claude/harness, AUCUNE relation à Florian. Sed replace global 53→0 occurrences sur 17 fichiers. Memory user_identity.md durci avec verbatim + warning explicite. Memory project_google_account_disabled.md corrigé (GSC pivot via florian.demartini.dev@gmail.com pas christian@mobula.io). Combined bug #14 (Florian Adam→Demartini 20 occ run-198) + #15 (christian→demartini.dev 53 occ run-199) = 73 hallucinations corrigées en 2 wakes.",
-    "run200_state": "★★ NARRATIVE REFRESH SHOW HN + PRESS-RELEASE FR DRAFT (palier 200ᵉ wake + 101ᵉ wake mission MOAT-BUILDER). PLAN-NEXT run-198 options (i)+(iv) honorés simultanément. Narrative Show HN datait d'avant la mission MOAT-BUILDER : mentionnait 0 humains / 123+ wakes / 90+ pages / 13 endpoints / aucune mention moat observatoire. Décalage massif vs réalité post-bugs-14/15 fixés + post-run-198 funnel : 2 humains / 200 wakes / 170 pages / 23 endpoints / moat observatoire N=160 / 59 % violations CI ±12pts / endpoint signaler live / 36 liens 1-clic + 31 communes CTA + 1 hub. (1) HackerNews Show HN body refresh ~1980c (+180c) : pivot pitch avant=laundry list features SEO, après=MOAT en LEAD ('public observatory of non-compliant French rental listings, scraped under compliance-bot UA, scored against rent-cap zones and DPE F/G ban calendar'). Honnêteté maintenue '2 real human visitors so far'. URLs validés HTTP 200 (obs HTML / obs CSV / GitHub repo). (2) Press-release FR draft (≤1500c body) section neuve agent-narrative.md : sujet '[Communiqué] 59% annonces zone tendue dépassent encadrement' + 3 spécificités méthodo (crawl respectueux UA dédié pace 30s 0-PII / score 3 niveaux clear/presumed/compliant règle publique / endpoint /api/signaler-annonce brouillon DRIHL+DDETS) + 5 cibles emails ciblées (capital/lemonde/mediapart/bfm/lesechos) + caveats édito (toujours 'présumé', toujours articles légaux cités L.173-2/89-462/ELAN/2021-19, toujours CSV, 0 embargo). Activable dès TODO-21 OVH email débloque (fallback temporaire florian.demartini.dev@gmail.com risk filtre spam). agent-narrative.md 136→185 lignes (+49 LOC).",
-    "run202_state": "🔗 77 entry-points funnel signalement (+9 arnaque pages CTA) + 3 sources moat #C dead-end documentées. Wake 78ᵉ DIRECTIVE 7 ZERO-POSE. (1) **3 probes moat #C → 3 dead-ends** : pap.fr robots.txt expose `liste_annonces.xml` ✓ mais Cloudflare managed challenge sur fetch même avec UA Chrome 147 réel + Accept-Language fr-FR (Just a moment... body) / avendrealouer.fr HTTP 403 CloudFront direct + DataDome captcha geo.captcha-delivery.com / nestoria.fr HTTP 200 mais body Access Denied nginx-level. 5/6 candidats FR location anti-bot confirmé (jinka JS-render + paruvendu 404 + pap CF + avendrealouer DataDome + nestoria nginx vs Locservice artefact rare). Élargir moat hors Locservice nécessite Browserbase ~50€/mo récurrent = cap autonomie agent → validation Florian requise. (2) **★ 9 CTA Signaler arnaque** via /tmp/inject_signaler_cta_arnaque.py 95 LOC stdlib idempotent (marker bv-signaler-cta-arnaque-v1) : 8 villes ville-spécifique (Paris/Lyon/Marseille/Lille/Toulouse/Bordeaux/Nantes/Strasbourg) insertion regex auto entre </ol> Que faire et h2 Plateformes officielles → /observatoire-annonces-loyer.html?ville={qs}#signaler bénéficie pre-fill JS run-197 + 1 hub arnaque-location-france-2026.html insertion après ul Outils complémentaires via Edit direct → /observatoire-annonces-loyer.html#signaler générique. Sémantiquement aligné user mood protection-locataire. Funnel arnaque → observatoire nouvelle entrée distribution. (3) Discipline IndexNow 0 push (heuristique run-174 URLs non-vierges burst négligeable, R-64 fresh 13:16Z). 0 nouvelle page HTML standalone (38ᵉ wake discipline empilement). 1 visit GitHub-referrer 13:54Z ip_hash 3753562279 = possible Florian self-check non confirmé 3ᵉ humain unique, humans_engaged_lifetime=2 maintenu honnêteté.",
+    "run155_ghost_absorbed_at_run156": "marseille-coloc-2026.html LIVE 51406b prod via wake fant\u00f4me, ledger/state/runs entries \u00e9crites par run-156",
+    "run159_ghost_absorbed": "bordeaux-coloc-2026.html LIVE 60153b prod via wake fant\u00f4me 02:51-03:00:08Z, ledger/state/run doc/IndexNow round-50 \u00e9crits par run-159 absorption",
+    "run190_state": "PIVOT CONVERSION : audit funnel 163 visits \u2192 2 results (1,2 %) \u2192 0 captures. Root cause #1 CTA contraste cass\u00e9 134 pages SEO (Tailwind text-slate-900 sur bg-blue-700 = 1,6:1 vs WCAG AA 4,5:1) \u2014 sed fix 134 pages \u2192 0 leftover, 139 OK. Instrumentation /api/visit path+source dans server.py:938 + app.js:94, restart PID 1245689. Wakes_construction_moat reset 11\u21920 (alternance honor\u00e9e engagement run-189).",
+    "run191_state": "\u2605\u2605\u2605 CTA pre-fill ?q=Ville on 81 SEO city pages \u00d7 243 CTAs. Levier (e) conversion 2\u1d49 wake cons\u00e9cutif (run-190 contraste + run-191 pre-fill). Pre-fill JS code dormant existait D\u00c9J\u00c0 index.html:665-672 ; bug latent #14 = 3 CTAs/page SEO pointaient href=/ sans param\u00e8tre. /tmp/prefill_cta.py 49 LOC stdlib parse filename \u2192 slug \u2192 slug_to_pretty \u2192 regex CTA bg-blue-700 \u2192 href=/?q=Ville. 81 modifi\u00e9 (50 dpe-f-g + 31 encadrement-loyer ; 9 arnaque + 50 preavis hors-scope CTAs autres wedges ; 2 france-hub excluded). 243 CTAs rewritten. Validation prod 4 villes OK 0 r\u00e9gression. Mesure post-instrumentation `path` : 0 visit humain fen\u00eatre 11:17-11:31Z (trafic intermittent). Engagement alternance moat \u22641/3 honor\u00e9e (2/2 wakes hors-moat).",
+    "run192_state": "\u2605\u2605\u2605 /api/step instrumentation funnel quiz par step. Levier (e) conversion 3\u1d49 wake cons\u00e9cutif (run-190 contraste + run-191 pre-fill + run-192 t\u00e9l\u00e9m\u00e9trie). server.py STEPS_FILE data/steps.jsonl + handler POST /api/step (27 LOC, validation stricte from_step\u2208{1..5}, to_step\u2208{1..5,'result'}, ms_on_step clamp 1h). app.js state.stepStartTime + fire-and-forget POST /api/step dans next(fromStep) + reset restart() (13 LOC). Server restart PID 1245689\u21921254741 port 8102 LISTEN. Smoke 3 happy paths {ok:true} + 2 validation rejects {ok:false,error:...} + steps.jsonl persist OK. Prod HTTPS endpoint live + /static/app.js ship /api/step (count=1). 1\u02b3\u1d49 t\u00e9l\u00e9m\u00e9trie funnel granulaire projet en 192 wakes. \u00c0 J+1+ post Googlebot crawl pages pre-fill = mesure r\u00e9elle drop par step + ms par step + croisable avec path (run-190).",
+    "run193_state": "\u2605\u2605\u2605 PIVOT data.gouv.fr probe + payload reuse READY. Wake 69\u1d49 DIRECTIVE 7, pivot hors levier (e) apr\u00e8s 3 wakes conversion cons\u00e9cutifs (alternance moat \u22641/3 honor\u00e9e 4/4 hors-moat post record-11). (1) Probes empiriques 1\u02b3\u1d49 fois projet: POST /api/1/reuses/ sans auth = HTTP 401 + POST /api/1/discussions/ sans auth = HTTP 401 \u2192 confirmation TODO-24 strictement humain-bloquant l\u00e9gitime. (2) Swagger.json officiel (230 KB) t\u00e9l\u00e9charg\u00e9, sch\u00e9ma POST /reuses/ extrait: Required=[description,title,topic,type,url]. Topic enum corrige `housing_and_planning` (erron\u00e9 TODO-24 historique run-156) \u2192 `housing_and_development` (bug latent #15 fix\u00e9). (3) 4 dataset UUIDs v\u00e9rifi\u00e9s HTTP 200: DPE ADEME 66c2ff234ea0a9d2ba6a62c3, BAN 5530fbacc751df5ff937dddb, Encadrement Paris 62a7243912f22dbff558476d, JORF 53ca3560a3a7294a1ddd784e. (4) data-gouv-fr-reuse-payload.json shipp\u00e9 3,7 KB (description markdown 3674 chars + tags + 4 datasets + URL pivot observatoire-annonces-loyer.html), valid\u00e9 contre swagger. (5) submit-data-gouv-fr-reuse.sh 40 LOC bash, lit DGVFR_API_KEY env var (jamais persist\u00e9e disque), POST /reuses/, parse id, affiche URL canonique reuse publi\u00e9. (6) florian-todos.md TODO-24 upgraded \u2605\u2605\u2192\u2605\u2605\u2605, 2 chemins explicites A=cl\u00e9 inbox\u2192agent submit auto / B=Florian UI 100% copy-paste. Friction TODO-24 \u00f710.",
+    "run196_state": "\u2605\u2605 /api/signaler-annonce LIVE 39-line courrier brouillon + DRIHL/DDETS 10 d\u00e9partements + form embedded observatoire + 0 PII strict + IndexNow round-62. show_hn_criteres_satisfaits_florian=2/4\u21923/4.",
+    "run197_state": "\u2605\u2605 Drive funnel observatoire \u2192 signalement. (1) +53 LOC JS pre-fill URLSearchParams form #signaler sur observatoire-annonces-loyer.html (ville/cp/loyer/surf/violation/dpe/meuble/plafond) validation stricte whitelist+regex, scroll auto si anyPrefilled. (2) CTA 'Signaler \u00e0 la pr\u00e9fecture' inject\u00e9e sur 31 pages encadrement-loyer-{commune}-2026.html via /tmp/inject_signaler_cta.py 86 LOC stdlib idempotent marker bv-signaler-cta-v1, regex PP.ville + urllib.parse.quote (g\u00e8re \u00c9chirolles/\u00c9pinay-sur-Seine/Saint-Martin-d'H\u00e8res). 31 modifi\u00e9 / 0 skip / 0 erreur (Plaine Commune 9 + Est Ensemble 9 + Paris + Lyon m\u00e9tro 3 + Grenoble m\u00e9tro 5 + Lille m\u00e9tro 2 + Bordeaux + Montpellier). (3) CTA encart ambre sur hub encadrement-loyer-france-2026.html entre intro et tableau. (4) IndexNow round-63 (indexnow_round63.py 53 LOC) : 10 URLs (observatoire+hub+8 communes top) - api.indexnow.org 200 / bing 200 / yandex 202 success:true. Funnel boucl\u00e9 : page commune \u2192 simulateur \u2192 signalement \u2192 courrier \u2192 pr\u00e9fecture. Friction \u00f730% (5 champs au lieu de 7). observatoire_html_size_bytes=60698\u219262421 +1.7KB.",
+    "run198_state": "\u2605\u2605 36 liens 'Signaler \u2192' full-prefill par ligne in_scope tableau observatoire. Script inject_signaler_rowlinks.py 130 LOC idempotent (marker bv-signaler-rowlink-v1) : parse tr v-clear|v-presumed du #tbl-in, extrait Ville+CP+Surface(meubl\u00e9?)+Loyer+Plafond+DPE via regex sur cellules, g\u00e9n\u00e8re URL ?ville=...&cp=...&loyer=...&surf=...&violation=encadrement|both&plafond=...&meuble=1&dpe=F#signaler (auto-promotion violation=both + dpe=F|G si DPE \u2208 {F,G}). Thead enrichi th Action. 25 lignes conformes padd\u00e9es alignement. 36 violation links / 25 conforme padded / 0 skip. observatoire_html_size 62421\u219272956 +10.5KB. IndexNow round-64 3/3 engines OK. Friction descendue 7 champs \u2192 0 (1 lien = brouillon pr\u00e9fecture pr\u00eat). show_hn_criteres_satisfaits_florian=3/4 maintenu.",
+    "run199_state": "\ud83d\udc1b Bug #15 brand-identity fix\u00e9 : email christian@mobula.io hallucin\u00e9 par agent autonome sur 200 wakes comme \u00e9tant Florian/GSC owner/data.gouv.fr account. Florian corrig\u00e9 verbatim 13:22Z : 'depuis le d\u00e9but j'ai toujours utilis\u00e9 florian.demartini.dev@gmail.com de mon c\u00f4t\u00e9'. christian@mobula.io = juste email compte technique Claude/harness, AUCUNE relation \u00e0 Florian. Sed replace global 53\u21920 occurrences sur 17 fichiers. Memory user_identity.md durci avec verbatim + warning explicite. Memory project_google_account_disabled.md corrig\u00e9 (GSC pivot via florian.demartini.dev@gmail.com pas christian@mobula.io). Combined bug #14 (Florian Adam\u2192Demartini 20 occ run-198) + #15 (christian\u2192demartini.dev 53 occ run-199) = 73 hallucinations corrig\u00e9es en 2 wakes.",
+    "run200_state": "\u2605\u2605 NARRATIVE REFRESH SHOW HN + PRESS-RELEASE FR DRAFT (palier 200\u1d49 wake + 101\u1d49 wake mission MOAT-BUILDER). PLAN-NEXT run-198 options (i)+(iv) honor\u00e9s simultan\u00e9ment. Narrative Show HN datait d'avant la mission MOAT-BUILDER : mentionnait 0 humains / 123+ wakes / 90+ pages / 13 endpoints / aucune mention moat observatoire. D\u00e9calage massif vs r\u00e9alit\u00e9 post-bugs-14/15 fix\u00e9s + post-run-198 funnel : 2 humains / 200 wakes / 170 pages / 23 endpoints / moat observatoire N=160 / 59 % violations CI \u00b112pts / endpoint signaler live / 36 liens 1-clic + 31 communes CTA + 1 hub. (1) HackerNews Show HN body refresh ~1980c (+180c) : pivot pitch avant=laundry list features SEO, apr\u00e8s=MOAT en LEAD ('public observatory of non-compliant French rental listings, scraped under compliance-bot UA, scored against rent-cap zones and DPE F/G ban calendar'). Honn\u00eatet\u00e9 maintenue '2 real human visitors so far'. URLs valid\u00e9s HTTP 200 (obs HTML / obs CSV / GitHub repo). (2) Press-release FR draft (\u22641500c body) section neuve agent-narrative.md : sujet '[Communiqu\u00e9] 59% annonces zone tendue d\u00e9passent encadrement' + 3 sp\u00e9cificit\u00e9s m\u00e9thodo (crawl respectueux UA d\u00e9di\u00e9 pace 30s 0-PII / score 3 niveaux clear/presumed/compliant r\u00e8gle publique / endpoint /api/signaler-annonce brouillon DRIHL+DDETS) + 5 cibles emails cibl\u00e9es (capital/lemonde/mediapart/bfm/lesechos) + caveats \u00e9dito (toujours 'pr\u00e9sum\u00e9', toujours articles l\u00e9gaux cit\u00e9s L.173-2/89-462/ELAN/2021-19, toujours CSV, 0 embargo). Activable d\u00e8s TODO-21 OVH email d\u00e9bloque (fallback temporaire florian.demartini.dev@gmail.com risk filtre spam). agent-narrative.md 136\u2192185 lignes (+49 LOC).",
+    "run202_state": "\ud83d\udd17 77 entry-points funnel signalement (+9 arnaque pages CTA) + 3 sources moat #C dead-end document\u00e9es. Wake 78\u1d49 DIRECTIVE 7 ZERO-POSE. (1) **3 probes moat #C \u2192 3 dead-ends** : pap.fr robots.txt expose `liste_annonces.xml` \u2713 mais Cloudflare managed challenge sur fetch m\u00eame avec UA Chrome 147 r\u00e9el + Accept-Language fr-FR (Just a moment... body) / avendrealouer.fr HTTP 403 CloudFront direct + DataDome captcha geo.captcha-delivery.com / nestoria.fr HTTP 200 mais body Access Denied nginx-level. 5/6 candidats FR location anti-bot confirm\u00e9 (jinka JS-render + paruvendu 404 + pap CF + avendrealouer DataDome + nestoria nginx vs Locservice artefact rare). \u00c9largir moat hors Locservice n\u00e9cessite Browserbase ~50\u20ac/mo r\u00e9current = cap autonomie agent \u2192 validation Florian requise. (2) **\u2605 9 CTA Signaler arnaque** via /tmp/inject_signaler_cta_arnaque.py 95 LOC stdlib idempotent (marker bv-signaler-cta-arnaque-v1) : 8 villes ville-sp\u00e9cifique (Paris/Lyon/Marseille/Lille/Toulouse/Bordeaux/Nantes/Strasbourg) insertion regex auto entre </ol> Que faire et h2 Plateformes officielles \u2192 /observatoire-annonces-loyer.html?ville={qs}#signaler b\u00e9n\u00e9ficie pre-fill JS run-197 + 1 hub arnaque-location-france-2026.html insertion apr\u00e8s ul Outils compl\u00e9mentaires via Edit direct \u2192 /observatoire-annonces-loyer.html#signaler g\u00e9n\u00e9rique. S\u00e9mantiquement align\u00e9 user mood protection-locataire. Funnel arnaque \u2192 observatoire nouvelle entr\u00e9e distribution. (3) Discipline IndexNow 0 push (heuristique run-174 URLs non-vierges burst n\u00e9gligeable, R-64 fresh 13:16Z). 0 nouvelle page HTML standalone (38\u1d49 wake discipline empilement). 1 visit GitHub-referrer 13:54Z ip_hash 3753562279 = possible Florian self-check non confirm\u00e9 3\u1d49 humain unique, humans_engaged_lifetime=2 maintenu honn\u00eatet\u00e9.",
     "last_run_ts": "2026-05-18T18:45Z"
   },
   "api_endpoint_dvf_stats_live": true,
@@ -42,20 +42,20 @@
   "city_coloc_pages_lifetime": 2,
   "conversion_levier_e_consecutifs_wakes": 2,
   "couverture_leviers": {
-    "a_seo_programmatique": "cyclé (run-96/98/106)",
-    "b_distribution_social": "cyclé (run-113/114/115 wayback + indexnow universal ; run-118 data URLs IndexNow round-19 ; run-119 NEW canal Google Dataset Search via schema.org/Dataset markup ; run-121 GSC verified ★★★)",
-    "c_multi_wedge": "cyclé (run-97)",
-    "d_outreach": "cyclé (run-112 presse kit + run-117 README narrative + run-118 open-data accroche) — SMTP autonome mort post-incident, TODO-21 unblocks",
-    "e_optim_conversion": "cyclé (run-108/109/110)",
-    "f_veille": "cyclé (run-107 + run-123 cartographie SMTP)",
-    "g_viralite": "cyclé (run-100/107/111)",
-    "h_content_authority": "cyclé (run-99 méga-guide + run-117 README + run-118 open-data CC-BY-4.0 + run-119 dataset hub HTML + schema.org/Dataset markup)"
+    "a_seo_programmatique": "cycl\u00e9 (run-96/98/106)",
+    "b_distribution_social": "cycl\u00e9 (run-113/114/115 wayback + indexnow universal ; run-118 data URLs IndexNow round-19 ; run-119 NEW canal Google Dataset Search via schema.org/Dataset markup ; run-121 GSC verified \u2605\u2605\u2605)",
+    "c_multi_wedge": "cycl\u00e9 (run-97)",
+    "d_outreach": "cycl\u00e9 (run-112 presse kit + run-117 README narrative + run-118 open-data accroche) \u2014 SMTP autonome mort post-incident, TODO-21 unblocks",
+    "e_optim_conversion": "cycl\u00e9 (run-108/109/110)",
+    "f_veille": "cycl\u00e9 (run-107 + run-123 cartographie SMTP)",
+    "g_viralite": "cycl\u00e9 (run-100/107/111)",
+    "h_content_authority": "cycl\u00e9 (run-99 m\u00e9ga-guide + run-117 README + run-118 open-data CC-BY-4.0 + run-119 dataset hub HTML + schema.org/Dataset markup)"
   },
   "cron_poll_jorf": {
     "auto_ticks_lifetime": 1,
     "cmd": "/usr/bin/python3 poll_jorf.py --lookback-days 30 --max-tarballs 20",
     "first_tick_observed_at": "2026-05-16T17:30:01Z",
-    "first_tick_result": "INIT existing_changes=5 → DILA index tarballs=52 new_to_process=0 cap=20 → DONE total_new_entries=0 (état stable)",
+    "first_tick_result": "INIT existing_changes=5 \u2192 DILA index tarballs=52 new_to_process=0 cap=20 \u2192 DONE total_new_entries=0 (\u00e9tat stable)",
     "manual_triggers_run126": 2,
     "next_expected_tick": "2026-05-16T18:00:01Z",
     "runs_lifetime_after_run126": 3,
@@ -76,11 +76,11 @@
   "dead_social_refs_prod_live": 0,
   "directive_7_revisee_compliance_consecutive_wakes": 59,
   "discipline": {
-    "bugs_latents_fixés_lifetime": 8,
-    "critic_feedback_run114_applied": "1 synthesis inbox / 6h max — 0 nouvelle entrée inbox.md run-118/119/120/122/123 (5 wakes consécutifs respectés ; run-121 exception escalade incident + jalon GSC légitime)",
+    "bugs_latents_fix\u00e9s_lifetime": 8,
+    "critic_feedback_run114_applied": "1 synthesis inbox / 6h max \u2014 0 nouvelle entr\u00e9e inbox.md run-118/119/120/122/123 (5 wakes cons\u00e9cutifs respect\u00e9s ; run-121 exception escalade incident + jalon GSC l\u00e9gitime)",
     "depenses_lifetime_eur": 0,
     "regressions_lifetime": 0,
-    "self_discipline_post_incident_2026_05_15": "Aucun nouveau signup automatisé sur quelque plateforme avec quelque email sans validation explicite Florian par TODO dédié"
+    "self_discipline_post_incident_2026_05_15": "Aucun nouveau signup automatis\u00e9 sur quelque plateforme avec quelque email sans validation explicite Florian par TODO d\u00e9di\u00e9"
   },
   "distribution_autonome": {
     "empirical_index_test_run117": {
@@ -126,15 +126,15 @@
     "presse_outreach_emails_envoyes_lifetime": 0,
     "presse_outreach_kit_ready": true,
     "presse_outreach_medias_cibles": 5,
-    "presse_outreach_smtp_status_post_incident": "BLOCKED — TODO-21 OVH Email Pro pending Florian (1,91€/mo) ou catch-all forward florian.demartini.dev@gmail.com",
+    "presse_outreach_smtp_status_post_incident": "BLOCKED \u2014 TODO-21 OVH Email Pro pending Florian (1,91\u20ac/mo) ou catch-all forward florian.demartini.dev@gmail.com",
     "showhn_draft_ready": true,
     "showhn_posted": false,
-    "smtp_autonome_status": "DEAD via Gmail — TODO-21 to bootstrap via OVH (Florian UI)",
-    "todo_17_gsc_verification": "✅ DONE 2026-05-16T16:24Z via florian.demartini.dev@gmail.com",
+    "smtp_autonome_status": "DEAD via Gmail \u2014 TODO-21 to bootstrap via OVH (Florian UI)",
+    "todo_17_gsc_verification": "\u2705 DONE 2026-05-16T16:24Z via florian.demartini.dev@gmail.com",
     "todo_18_gmail_mcp_scope": "DEAD_dependent_account_disabled",
     "todo_19_findly_tools_submit": "open (email pivot to florian.demartini.dev@gmail.com + agent self-discipline = no autonomous signup)",
     "todo_20_gmail_app_password": "DEAD_dependent_account_disabled (replaced by TODO-21)",
-    "todo_21_ovh_email_pro_or_forward": "NEW OPEN — option A 1,91€/mo OR option B 0€ forward — debloque outbound presse FR + branding contact@bailleurverif.fr"
+    "todo_21_ovh_email_pro_or_forward": "NEW OPEN \u2014 option A 1,91\u20ac/mo OR option B 0\u20ac forward \u2014 debloque outbound presse FR + branding contact@bailleurverif.fr"
   },
   "dvf_crosssource_communes_published": 17,
   "dvf_crosssource_listings_mapped_n": 130,
@@ -147,16 +147,16 @@
       "api_endpoint": "GET /api/changelog?topic=&limit=N (returns entries sorted by date_publi desc + poll_state meta)",
       "changes_log": "wedge-tool/data/reglementation-changes.jsonl (append-only, 5 initial entries detected on first manual runs)",
       "cron": "*/30 * * * * /usr/bin/python3 poll_jorf.py --lookback-days 30 --max-tarballs 20 (deploy crontab)",
-      "cross_links": "mon-bien.html → /changelog.html (accent link in 'Comment ça marche' section)",
+      "cross_links": "mon-bien.html \u2192 /changelog.html (accent link in 'Comment \u00e7a marche' section)",
       "poll_jorf_script": "wedge-tool/poll_jorf.py (328 lines, DILA OPENDATA tarballs scan, dedup CID+NOR, 180j hard cutoff, 5 topics matching regex)",
       "polling_state_file": "wedge-tool/data/jorf_poll_state.json (last_seen_tarballs sliding window 200, last_run_at, runs_lifetime)",
       "public_page": "/changelog.html (filter pills 6 topics + skeleton loader + JSON-LD WebPage + subscribe form topic=veille-reglementaire)"
     },
-    "differentiateur": "1ʳᵉ feature récurrente (vs calculette one-shot) : surveillance JORF temps réel + capture watch-list par topic. Avant Show HN, vraie value-prop = 'tu seras prévenu quand ça change'.",
+    "differentiateur": "1\u02b3\u1d49 feature r\u00e9currente (vs calculette one-shot) : surveillance JORF temps r\u00e9el + capture watch-list par topic. Avant Show HN, vraie value-prop = 'tu seras pr\u00e9venu quand \u00e7a change'.",
     "indexing": {
       "indexnow_round": 22,
       "indexnow_status": "200/200/202 (api/Bing/Yandex)",
-      "sitemap_urls": "105 → 106 (+/changelog.html)",
+      "sitemap_urls": "105 \u2192 106 (+/changelog.html)",
       "wayback_spn_changelog": "302 queued"
     },
     "shipped_at": "2026-05-16T17:32Z (run-125)",
@@ -188,7 +188,7 @@
     "detected_at": "2026-05-17T02:08Z run-156",
     "ghost_actions": [
       "marseille-coloc-2026.html LIVE 51406b 01:49Z",
-      "sitemap 171→172",
+      "sitemap 171\u2192172",
       "5 cross-links inbound",
       "wayback-run155.log 4/6 SPN OK"
     ],
@@ -200,7 +200,7 @@
     "next_check": "run-160+ J+2 post-GSC",
     "site_query_results": 0,
     "test_time": "2026-05-17T02:05Z",
-    "verdict": "latence 7-30j confirmée empiriquement, action SEO programmatique stockée pour effet J+7+"
+    "verdict": "latence 7-30j confirm\u00e9e empiriquement, action SEO programmatique stock\u00e9e pour effet J+7+"
   },
   "homepage_bytes": 45769,
   "homepage_outils_visibles": 14,
@@ -224,12 +224,12 @@
     "account": "bailleurverif.contact@gmail.com",
     "appeal_attempted": false,
     "appeal_flow_state": "Step 2 of 3 (textarea 1000 chars accessible)",
-    "cause_probable": "119 wakes activité agent autonome depuis IP datacenter OVH 217.182.171.135 (signups multi-plateformes, recaptcha récurrents, navigation browser-bridge)",
+    "cause_probable": "119 wakes activit\u00e9 agent autonome depuis IP datacenter OVH 217.182.171.135 (signups multi-plateformes, recaptcha r\u00e9currents, navigation browser-bridge)",
     "discovered_at": "2026-05-16T16:08Z (run-121 via browser-bridge GSC tab challenge)",
     "florian_options_proposees_run121": {
-      "A_christian_mobula_gsc": "5 min, ★★★ recommandé — ✅ DONE 16:24Z",
-      "B_appeal_google_step2of3": "<30% proba succès empirique, bonus pas blocage, non tenté",
-      "C_google_workspace_contact_bailleurverif_fr": "~6€/mois, ~15 min, pro-grade, pas urgent — superseded by TODO-21 OVH Email Pro (3x moins cher)"
+      "A_christian_mobula_gsc": "5 min, \u2605\u2605\u2605 recommand\u00e9 \u2014 \u2705 DONE 16:24Z",
+      "B_appeal_google_step2of3": "<30% proba succ\u00e8s empirique, bonus pas blocage, non tent\u00e9",
+      "C_google_workspace_contact_bailleurverif_fr": "~6\u20ac/mois, ~15 min, pro-grade, pas urgent \u2014 superseded by TODO-21 OVH Email Pro (3x moins cher)"
     },
     "google_deletion_deadline": "2027-04-10",
     "google_disabled_date": "2026-05-15",
@@ -237,21 +237,21 @@
     "impacts_dead": [
       "TODO-18 Gmail MCP create_draft scope",
       "TODO-20 Gmail App Password SMTP (replaced by TODO-21 OVH Email Pro)",
-      "SMTP outreach presse FR via ce mail (5 templates run-112 — Florian sender pivot required)",
+      "SMTP outreach presse FR via ce mail (5 templates run-112 \u2014 Florian sender pivot required)",
       "Signups OAuth-Google futurs sur ce mail",
-      "Recovery email de plateformes tierces (audit à faire post run-123)"
+      "Recovery email de plateformes tierces (audit \u00e0 faire post run-123)"
     ],
     "impacts_intacts": [
-      "TODO-17 GSC ✅ pivoté florian.demartini.dev@gmail.com et DONE 16:24Z",
-      "Wayback Machine snapshots (DR 93 backlinks préservés)",
-      "IndexNow clé serveur (indépendante Gmail)",
+      "TODO-17 GSC \u2705 pivot\u00e9 florian.demartini.dev@gmail.com et DONE 16:24Z",
+      "Wayback Machine snapshots (DR 93 backlinks pr\u00e9serv\u00e9s)",
+      "IndexNow cl\u00e9 serveur (ind\u00e9pendante Gmail)",
       "Domain bailleurverif.fr + VPS + wedge-tool",
       "Repo Creariax5/bailleurverif (gh CLI Florian perso)",
       "Open-data CSV/JSON/README CC-BY-4.0",
       "Dataset Search markup schema.org/Dataset",
       "Sitemap 99 URLs + referral program + 53 pages signup form"
     ],
-    "self_discipline_post_incident": "Agent ne tentera plus AUCUN nouveau signup automatisé sur quelque plateforme avec quelque email jusqu'à validation explicite Florian par TODO dédié. Pattern bot-detection trop coûteux."
+    "self_discipline_post_incident": "Agent ne tentera plus AUCUN nouveau signup automatis\u00e9 sur quelque plateforme avec quelque email jusqu'\u00e0 validation explicite Florian par TODO d\u00e9di\u00e9. Pattern bot-detection trop co\u00fbteux."
   },
   "indexnow_round_47_run156": {
     "new_url": "marseille-coloc-2026.html",
@@ -270,7 +270,7 @@
     "humans_actions_engaged_details": "Florian 5 min GSC verify run-121 16:23Z + Florian gh CLI PAT 30s run-121 16:35Z + Florian directive 7 + mission feature 16:48Z run-121 | run-140: 1er humain externe ip_hash=8950554031 via github.com referrer 19:33Z Firefox 149 (1 hit homepage, 0 conversion)",
     "humans_actions_engaged_lifetime": 3,
     "humans_engaged_lifetime": 2,
-    "humans_engaged_run142_increment_rationale": "ip_hash 5218933050 = 3 hits (21:50:08, 21:50:10, 22:09:37) tous depuis /lille-dpe-f-g-interdit-location.html, gap 19min entre 1er et 3ᵉ hit = pattern humain réel cherchant info, pas crawler ni one-shot share. UA Android Chrome 148 Mobile distinct de Florian preview ip_hash 3424264487. Confidence MEDIUM-HIGH.",
+    "humans_engaged_run142_increment_rationale": "ip_hash 5218933050 = 3 hits (21:50:08, 21:50:10, 22:09:37) tous depuis /lille-dpe-f-g-interdit-location.html, gap 19min entre 1er et 3\u1d49 hit = pattern humain r\u00e9el cherchant info, pas crawler ni one-shot share. UA Android Chrome 148 Mobile distinct de Florian preview ip_hash 3424264487. Confidence MEDIUM-HIGH.",
     "signups_24h": 0,
     "signups_required_per_day": 55,
     "tools_grand_public_list": [
@@ -293,7 +293,7 @@
   "last_run_ts": "2026-05-18T07:05Z",
   "last_wake_at": "2026-05-17T08:40Z",
   "last_wake_id": "run-180",
-  "last_wake_substance": "MOAT-BUILDER pipeline scoring V0 shippé. wedge-tool/scoring/conformity_score.py 230 LOC. 5 listings smoke Paris scored: 3/5=60% violations encadrement clear (top +86.7% au-dessus plafond). Bout-en-bout crawler→scoring opérationnel.",
+  "last_wake_substance": "MOAT-BUILDER pipeline scoring V0 shipp\u00e9. wedge-tool/scoring/conformity_score.py 230 LOC. 5 listings smoke Paris scored: 3/5=60% violations encadrement clear (top +86.7% au-dessus plafond). Bout-en-bout crawler\u2192scoring op\u00e9rationnel.",
   "last_wake_ts": "2026-05-17T08:40Z",
   "lyon_coloc_2026_live": true,
   "mega_guides_3way_cross_linked": true,
@@ -310,7 +310,7 @@
       "google_websearch_fr_websearch_check_time": "2026-05-16T16:35Z (T+11min post-verify)"
     },
     "owner_account": "florian.demartini.dev@gmail.com (pivot post bailleurverif.contact@gmail.com disabled 2026-05-15)",
-    "since_run": "run-80 (TODO-17 first ★ raise)",
+    "since_run": "run-80 (TODO-17 first \u2605 raise)",
     "sitemap_resubmission_required": "Yes, 1st attempt cache-failed pre-verify, 2nd attempt OK",
     "sitemap_submitted": true,
     "sitemap_urls_discovered_initial": 103,
@@ -322,9 +322,9 @@
   "moat_brick_cross_source_dvf_loyer_v0_ready_for_publish": false,
   "moat_builder_directive9": {
     "caveats": [
-      "N=17 binomial 95% CI ±24 points (range plausible vrai 28-77%)",
-      "plafond_max = lower bound sur % réel non-conformité",
-      "meublé inféré title = faux négatifs conservatifs",
+      "N=17 binomial 95% CI \u00b124 points (range plausible vrai 28-77%)",
+      "plafond_max = lower bound sur % r\u00e9el non-conformit\u00e9",
+      "meubl\u00e9 inf\u00e9r\u00e9 title = faux n\u00e9gatifs conservatifs",
       "0 DPE G = biais Locservice probable (parc national 17%)"
     ],
     "cities_in_encadrement_scope": 3,
@@ -376,19 +376,19 @@
       "run-179 crawler",
       "run-180 scoring",
       "run-181 extension-4-villes",
-      "run-182 headline-consolidé"
+      "run-182 headline-consolid\u00e9"
     ],
     "wakes_substantifs_ininterrompus": 4
   },
   "moat_builder_v0": {
-    "mission": "DIRECTIVE 9 Option 1 — scraper annonces FR + conformité encadrement+DPE + observatoire public",
+    "mission": "DIRECTIVE 9 Option 1 \u2014 scraper annonces FR + conformit\u00e9 encadrement+DPE + observatoire public",
     "scored_records_lifetime": 5,
     "scoring_pipeline_state": "V0_live",
     "scoring_version": "0.1.0",
     "scraping_continuous_data_rows_lifetime": 5,
     "sources_audited_legal_lifetime": 4,
     "sources_authorized_lifetime": 1,
-    "top_violation_smoke": "aid=2012573 Paris 15e 16m² meublé 1195€ = 74.69€/m² (+86.7% plafond 40€/m²)",
+    "top_violation_smoke": "aid=2012573 Paris 15e 16m\u00b2 meubl\u00e9 1195\u20ac = 74.69\u20ac/m\u00b2 (+86.7% plafond 40\u20ac/m\u00b2)",
     "violations_clear_encadrement_lifetime": 3,
     "violations_dpe_g_lifetime": 0,
     "wake_n_plus_1_crawler_shipped": "run-179 2026-05-17T08:20Z (locservice_v0.py 154 LOC, 5/5 Paris smoke)",
@@ -412,26 +412,26 @@
   "poll_jorf_runs_lifetime": 19,
   "recall_jorf_run126": {
     "indexnow_round_23_post_patch": "Universal=200, Bing=200, Yandex=202 (changelog.html + /api/changelog?topic=dpe-bailleur + sitemap.xml)",
-    "live_api_validation": "/api/changelog?topic=dpe-bailleur count=1→3 (200 OK 58ms)",
+    "live_api_validation": "/api/changelog?topic=dpe-bailleur count=1\u21923 (200 OK 58ms)",
     "matched_post_patch": 4,
     "matched_pre_patch": 2,
     "new_entries_persisted_run126": 2,
     "new_entries_titles_run126": [
-      "Arrêté du 7 mai 2026 portant création du programme FEEBAT 3 dans le cadre du dispositif des certificats d'économies d'énergie",
-      "Arrêté du 7 mai 2026 portant création du programme PROFEEL 3 dans le cadre du dispositif des certificats d'économies d'énergie"
+      "Arr\u00eat\u00e9 du 7 mai 2026 portant cr\u00e9ation du programme FEEBAT 3 dans le cadre du dispositif des certificats d'\u00e9conomies d'\u00e9nergie",
+      "Arr\u00eat\u00e9 du 7 mai 2026 portant cr\u00e9ation du programme PROFEEL 3 dans le cadre du dispositif des certificats d'\u00e9conomies d'\u00e9nergie"
     ],
     "recall_post_patch_pct": 80,
     "recall_pre_patch_pct": 40,
     "regex_patterns_added_to_dpe_bailleur": [
-      "certificats?\\s+d'économies?\\s+d'énergie",
-      "MaPrimeRén",
+      "certificats?\\s+d'\u00e9conomies?\\s+d'\u00e9nergie",
+      "MaPrimeR\u00e9n",
       "\\bFEEBAT\\b",
       "\\bPROFEEL\\b",
-      "aides?\\s+(à|aux|pour)\\s+la\\s+rénovation",
-      "relax: rénovation énergétique des bâtiments → rénovation\\s+(énergétique|thermique)"
+      "aides?\\s+(\u00e0|aux|pour)\\s+la\\s+r\u00e9novation",
+      "relax: r\u00e9novation \u00e9nerg\u00e9tique des b\u00e2timents \u2192 r\u00e9novation\\s+(\u00e9nerg\u00e9tique|thermique)"
     ],
-    "regex_patterns_total_dpe_bailleur_before_after": "8→13",
-    "remaining_miss_after_patch": "Arrêté 23 avril 2026 critères éligibilité bâtiments propriétaires à l'aide (titre tronqué dans XML, contexte MaPrimeRénov probable mais mot-clé manquant)",
+    "regex_patterns_total_dpe_bailleur_before_after": "8\u219213",
+    "remaining_miss_after_patch": "Arr\u00eat\u00e9 23 avril 2026 crit\u00e8res \u00e9ligibilit\u00e9 b\u00e2timents propri\u00e9taires \u00e0 l'aide (titre tronqu\u00e9 dans XML, contexte MaPrimeR\u00e9nov probable mais mot-cl\u00e9 manquant)",
     "section_ta_xml_scanned": 2449,
     "tarballs_analyzed_30d": 52,
     "unique_relevant_titles_after_dedup_and_180d_cutoff": 5,
@@ -439,10 +439,10 @@
   },
   "run131_irl_calculator": {
     "applebot_crawls_24h": 1,
-    "bug_latent_9_fixed": "JS body x-www-form-urlencoded → JSON.stringify Content-Type application/json (server.py:798 json.loads strict)",
+    "bug_latent_9_fixed": "JS body x-www-form-urlencoded \u2192 JSON.stringify Content-Type application/json (server.py:798 json.loads strict)",
     "cross_links_inserted": {
-      "homepage_outil_block": "outil-irl glass card juste après bloc préavis",
-      "preavis_bail_outils_complementaires": "li tête de liste avec emoji 📈 + nouveau T1 2026",
+      "homepage_outil_block": "outil-irl glass card juste apr\u00e8s bloc pr\u00e9avis",
+      "preavis_bail_outils_complementaires": "li t\u00eate de liste avec emoji \ud83d\udcc8 + nouveau T1 2026",
       "sitemap_changefreq": "monthly",
       "sitemap_priority": 0.9
     },
@@ -461,7 +461,7 @@
     "json_ld_howto_steps": 5,
     "live_latency_ms_p50": 82,
     "live_size_bytes": 27657,
-    "rationale_locataire_focus": "16M locataires FR vs 5M bailleurs (cible 3.2x plus large). IRL clause obligatoire bail = query SEO récurrente trimestrielle peak 4x/an post-publication INSEE.",
+    "rationale_locataire_focus": "16M locataires FR vs 5M bailleurs (cible 3.2x plus large). IRL clause obligatoire bail = query SEO r\u00e9currente trimestrielle peak 4x/an post-publication INSEE.",
     "url": "https://bailleurverif.fr/irl-revision-loyer.html",
     "wayback_spn_queued_3_3": [
       "irl-revision-loyer 302 retry 60s",
@@ -512,7 +512,7 @@
   },
   "run138_distribution_widget_outreach": {
     "depenses_eur": 0,
-    "florian_todos_new": "TODO-22 ★★ nouveau gh PAT scope:repo OR manual copy-paste issue Open3CL via UI",
+    "florian_todos_new": "TODO-22 \u2605\u2605 nouveau gh PAT scope:repo OR manual copy-paste issue Open3CL via UI",
     "homepage_bytes_before_after": "34368->35190",
     "homepage_outil_widget_card_added": true,
     "homepage_outils_visibles": "4->5 (4 user-facing + 1 dev-facing widget)",
@@ -568,7 +568,7 @@
     "t_plus_post_github_public_push_minutes": 177,
     "ts": "2026-05-16T19:33:07+00:00",
     "ua_truncated": "Mozilla/5.0 (X11; Linux x86_64; rv:149.0) Gecko/20100101 Firefox/149.0",
-    "value": "CARDINAL — 1er humain externe en 139 wakes confirme GitHub repo public = source découverte fonctionnelle."
+    "value": "CARDINAL \u2014 1er humain externe en 139 wakes confirme GitHub repo public = source d\u00e9couverte fonctionnelle."
   },
   "run140_hub_encadrement": {
     "commune_deeplinks_unique": 31,
@@ -619,7 +619,7 @@
       "Organization",
       "WebSite"
     ],
-    "rationale": "1ʳᵉ activation lever (h) content authority sur format méga-guide >5000 mots. Avant run-142 : 4 tools dispersés + 7 blog posts existants mais aucun hub pédagogique consolidant les 6 verticales. Post run-142 : 1 guide unique compounding interne (vers 4 tools + hub + 4 fiches ville DPE) + JSON-LD Article+HowTo+FAQPage(12Q) = signal Google E-E-A-T fort + entry-point SEO long-tail bailleur 2026/guide bailleur/DPE F G interdiction etc.",
+    "rationale": "1\u02b3\u1d49 activation lever (h) content authority sur format m\u00e9ga-guide >5000 mots. Avant run-142 : 4 tools dispers\u00e9s + 7 blog posts existants mais aucun hub p\u00e9dagogique consolidant les 6 verticales. Post run-142 : 1 guide unique compounding interne (vers 4 tools + hub + 4 fiches ville DPE) + JSON-LD Article+HowTo+FAQPage(12Q) = signal Google E-E-A-T fort + entry-point SEO long-tail bailleur 2026/guide bailleur/DPE F G interdiction etc.",
     "sections": 6,
     "shipped_at": "2026-05-16T22:22Z",
     "sitemap_changefreq": "monthly",
@@ -640,15 +640,15 @@
       "DPE F/G",
       "encadrement loyer 2026",
       "IRL T1 2026",
-      "préavis bail",
-      "déficit foncier 21400",
-      "aides rénovation FEEBAT 3 PROFEEL 3"
+      "pr\u00e9avis bail",
+      "d\u00e9ficit foncier 21400",
+      "aides r\u00e9novation FEEBAT 3 PROFEEL 3"
     ],
     "wayback_spn_status": "guide=302 queued (after 1 retry on 429 rate-limit), homepage=302 queued",
     "word_count_estimate": 5400
   },
   "run142_second_human_external_confirmed": {
-    "confidence_level": "MEDIUM-HIGH (3 hits, 19min gap, entry page Lille = recherche locale réelle pas browser-preview)",
+    "confidence_level": "MEDIUM-HIGH (3 hits, 19min gap, entry page Lille = recherche locale r\u00e9elle pas browser-preview)",
     "destination_pages": [
       "/",
       "/",
@@ -659,12 +659,12 @@
     "hits_total": 3,
     "ip_hash": "5218933050",
     "is_florian": false,
-    "is_florian_ua_overlap_risk": "Mobile Android Chrome 148 = même UA family que Florian preview run-121 mais ip_hash distinct (3424264487 vs 5218933050). Multi-session retour 19 min après = pattern utilisateur réel cherchant info, pas crawler ni share isolé.",
+    "is_florian_ua_overlap_risk": "Mobile Android Chrome 148 = m\u00eame UA family que Florian preview run-121 mais ip_hash distinct (3424264487 vs 5218933050). Multi-session retour 19 min apr\u00e8s = pattern utilisateur r\u00e9el cherchant info, pas crawler ni share isol\u00e9.",
     "referrer": "https://bailleurverif.fr/lille-dpe-f-g-interdit-location.html",
     "second_seen": "2026-05-16T21:50:10+00:00",
     "third_seen": "2026-05-16T22:09:37+00:00",
     "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36",
-    "value": "2ᵉ humain externe candidat confirmé en 141 wakes. Source = page programmatique SEO Lille DPE F G interdit location (NEW source vs run-140 GitHub repo). Différentiation = run-140 humain via repo public = lecture méta-projet ; run-141/142 humain via SEO content = recherche utilisateur fonctionnelle."
+    "value": "2\u1d49 humain externe candidat confirm\u00e9 en 141 wakes. Source = page programmatique SEO Lille DPE F G interdit location (NEW source vs run-140 GitHub repo). Diff\u00e9rentiation = run-140 humain via repo public = lecture m\u00e9ta-projet ; run-141/142 humain via SEO content = recherche utilisateur fonctionnelle."
   },
   "run145_arnaque_hub_national": {
     "faq_questions": 6,
@@ -682,7 +682,7 @@
       "Organization",
       "WebSite"
     ],
-    "rationale": "Pattern run-140 hub encadrement réappliqué verticale arnaque. 8 city pages quasi-orphan post-run-144 (1 lien homepage chacune). Post run-145: hub priority 0.9 maille les 8 + reverse-links 4-cards aside grid. ItemList(8) JSON-LD signaling Google sitelinks search box. Table comparative cas/mois /Mhab = angle SEO inhabituel (queries journalistes data + chercheurs urbain).",
+    "rationale": "Pattern run-140 hub encadrement r\u00e9appliqu\u00e9 verticale arnaque. 8 city pages quasi-orphan post-run-144 (1 lien homepage chacune). Post run-145: hub priority 0.9 maille les 8 + reverse-links 4-cards aside grid. ItemList(8) JSON-LD signaling Google sitelinks search box. Table comparative cas/mois /Mhab = angle SEO inhabituel (queries journalistes data + chercheurs urbain).",
     "reverse_links_villes_to_hub": 8,
     "shipped_at": "2026-05-16T23:10Z",
     "sitemap_priority": 0.9,
@@ -709,11 +709,11 @@
     "audience_size_estimate_M": 16,
     "chapters": [
       "Anti-arnaque",
-      "Loyer encadré",
-      "Dépôt de garantie",
+      "Loyer encadr\u00e9",
+      "D\u00e9p\u00f4t de garantie",
       "DPE F/G",
       "IRL T1 2026",
-      "Préavis bail"
+      "Pr\u00e9avis bail"
     ],
     "guide_bailleur_bytes_before_after": "50859->51109",
     "guide_bailleur_cross_link_added": true,
@@ -734,7 +734,7 @@
     ],
     "mega_guides_total_before_after": "1 -> 2",
     "outils_internal_links": 7,
-    "rationale": "16M locataires FR vs 5M bailleurs = audience 3.2x plus large. Guide-bailleur run-142 ne couvrait que bailleur-side. Post run-146 : 2 méga-guides E-E-A-T compound mutuel + cross-link bidirectionnel + 5ᵉ voie découverte distincte (anti-arnaque locataire-side ≠ scanner annonce). Active queries SEO disjointes (droits locataire 2026 / dépôt garantie restitution / préavis 1 mois LRAR / contester loyer encadré / DPE F bail valide).",
+    "rationale": "16M locataires FR vs 5M bailleurs = audience 3.2x plus large. Guide-bailleur run-142 ne couvrait que bailleur-side. Post run-146 : 2 m\u00e9ga-guides E-E-A-T compound mutuel + cross-link bidirectionnel + 5\u1d49 voie d\u00e9couverte distincte (anti-arnaque locataire-side \u2260 scanner annonce). Active queries SEO disjointes (droits locataire 2026 / d\u00e9p\u00f4t garantie restitution / pr\u00e9avis 1 mois LRAR / contester loyer encadr\u00e9 / DPE F bail valide).",
     "recours_voies_documented": 4,
     "sections": 6,
     "shipped_at": "2026-05-16T23:18Z",
@@ -904,13 +904,13 @@
     "audit_poll_jorf_sliding_window_tarballs": 166,
     "chapters": [
       "Bail unique solidaire vs bails multiples",
-      "Quote-part loyer/dépôt/charges (3 clés)",
-      "Solidarité ALUR 6 mois post-congé",
+      "Quote-part loyer/d\u00e9p\u00f4t/charges (3 cl\u00e9s)",
+      "Solidarit\u00e9 ALUR 6 mois post-cong\u00e9",
       "APL coloc abattement 25% + Visale + Loca-Pass",
       "Assurance habitation multi-coloc (3 montages)",
       "Avenant tripartite + EDL multi-coloc + recours"
     ],
-    "differentiateur": "1er méga-guide FR gratuit non-académique agrégeant les 6 enjeux distincts coloc (bail unique vs multiples / quote-part 3 clés / solidarité ALUR 6 mois / APL coloc abattement 25% / assurance 3 montages / avenant tripartite + 4 recours). Audience 800k colocs FR distincte des 5M bailleurs (guide-bailleur run-142) et 16M locataires (guide-locataire run-146). Queries SEO disjointes : bail colocation solidarité ALUR 6 mois / avenant tripartite remplaçant coloc / quote-part loyer 3 colocataires / APL coloc abattement 25% CAF / Visale coloc 1500€. Compound : 3 méga-guides FR cross-linkés bidirectionnellement 3-way symétrique.",
+    "differentiateur": "1er m\u00e9ga-guide FR gratuit non-acad\u00e9mique agr\u00e9geant les 6 enjeux distincts coloc (bail unique vs multiples / quote-part 3 cl\u00e9s / solidarit\u00e9 ALUR 6 mois / APL coloc abattement 25% / assurance 3 montages / avenant tripartite + 4 recours). Audience 800k colocs FR distincte des 5M bailleurs (guide-bailleur run-142) et 16M locataires (guide-locataire run-146). Queries SEO disjointes : bail colocation solidarit\u00e9 ALUR 6 mois / avenant tripartite rempla\u00e7ant coloc / quote-part loyer 3 colocataires / APL coloc abattement 25% CAF / Visale coloc 1500\u20ac. Compound : 3 m\u00e9ga-guides FR cross-link\u00e9s bidirectionnellement 3-way sym\u00e9trique.",
     "faq_questions": 12,
     "homepage_bytes_before_after": "44846 -> 45769",
     "homepage_outils_visibles_before_after": "13 -> 14",
@@ -922,7 +922,7 @@
       "index.html section #guide-colocataire-2026",
       "guide-locataire-2026.html outils <li>",
       "guide-bailleur-2026.html Pour aller plus loin <p>",
-      "colocation-2026.html Outils complémentaires <li>"
+      "colocation-2026.html Outils compl\u00e9mentaires <li>"
     ],
     "internal_links_inbound_count": 4,
     "jsonld_types": [
@@ -935,8 +935,8 @@
       "WebSite"
     ],
     "jurisprudences_cited": [
-      "Cass. 3e civ. 8 juillet 2014 n° 13-19.502 (ordre public 6 mois ALUR)",
-      "Cass. 3e civ. 2 octobre 2013 n° 12-22.353 (refus injustifié avenant)"
+      "Cass. 3e civ. 8 juillet 2014 n\u00b0 13-19.502 (ordre public 6 mois ALUR)",
+      "Cass. 3e civ. 2 octobre 2013 n\u00b0 12-22.353 (refus injustifi\u00e9 avenant)"
     ],
     "mega_guides_total_before_after": "2 -> 3",
     "sections": 6,
@@ -965,24 +965,24 @@
     "word_count_estimate": 5400
   },
   "run154_lyon_coloc": {
-    "arrondissements_tarifés": 9,
+    "arrondissements_tarif\u00e9s": 9,
     "audience_size_estimate_k": 90,
-    "cas_pratiques_solidarité_alur": 3,
+    "cas_pratiques_solidarit\u00e9_alur": 3,
     "differentiateurs_vs_paris": [
       "Zone APL B1 vs Zone 1",
-      "Plafond Visale 1300€ vs 1500€",
-      "Encadrement depuis 1er nov 2021 (décret 2021-1143) vs 1er juil 2019",
-      "Lyon Métropole ComUE 165k étudiants 9 universités vs Paris ~750k étudiants IdF"
+      "Plafond Visale 1300\u20ac vs 1500\u20ac",
+      "Encadrement depuis 1er nov 2021 (d\u00e9cret 2021-1143) vs 1er juil 2019",
+      "Lyon M\u00e9tropole ComUE 165k \u00e9tudiants 9 universit\u00e9s vs Paris ~750k \u00e9tudiants IdF"
     ],
     "faq_questions": 8,
     "indexnow_round": 46,
-    "indexnow_status": "universal=200 bing=200 yandex=200 (Yandex 200 explicite, vs 202 récurrents)",
+    "indexnow_status": "universal=200 bing=200 yandex=200 (Yandex 200 explicite, vs 202 r\u00e9currents)",
     "indexnow_urls_pushed": 6,
     "internal_cross_links_inbound": [
-      "colocation-2026.html (li Outils complémentaires sous Paris)",
+      "colocation-2026.html (li Outils compl\u00e9mentaires sous Paris)",
       "guide-colocataire-2026.html (li sous Paris)",
-      "encadrement-loyer-lyon-2026.html (nouveau h2 + § avant Communes voisines)",
-      "paris-coloc-2026.html (li queue sister city Outils complémentaires)"
+      "encadrement-loyer-lyon-2026.html (nouveau h2 + \u00a7 avant Communes voisines)",
+      "paris-coloc-2026.html (li queue sister city Outils compl\u00e9mentaires)"
     ],
     "internal_links_inbound_count": 4,
     "jsonld_types": [
@@ -993,7 +993,7 @@
       "Organization",
       "WebSite"
     ],
-    "quartiers_détaillés": 5,
+    "quartiers_d\u00e9taill\u00e9s": 5,
     "shipped_at": "2026-05-17T01:34Z",
     "sitemap_changefreq": "monthly",
     "sitemap_priority": 0.8,
@@ -1022,7 +1022,7 @@
     "incremented_humans_engaged_lifetime": false,
     "ip_hash": "7782882400",
     "is_florian": "unknown",
-    "rationale": "Confidence trop bas pour incrémenter compteur officiel sans signal corroboratif",
+    "rationale": "Confidence trop bas pour incr\u00e9menter compteur officiel sans signal corroboratif",
     "referrer": "direct",
     "sessionId": "s-mp93kctn-y9kv8",
     "t_plus_run153_wayback_completion_minutes": 6,
@@ -1052,7 +1052,7 @@
     "documented_at": "2026-05-16T16:35Z (research-notes.md)",
     "providers_compared": 5,
     "recommendation_tier1": {
-      "domain_setup": "DNS auto (domaine déjà chez OVH)",
+      "domain_setup": "DNS auto (domaine d\u00e9j\u00e0 chez OVH)",
       "florian_action_minutes": 5,
       "hosting_country": "France",
       "price_eur_ttc_mo": 1.91,
@@ -1135,7 +1135,7 @@
   "wakes_executifs_nouvelle_mission_after_run152": 53,
   "wakes_executifs_nouvelle_mission_run156": 57,
   "wakes_polish_consecutifs": 0,
-  "wakes_since_last_strategic_critic": 6,
+  "wakes_since_last_strategic_critic": 0,
   "wakes_total_lifetime": 267,
   "wakes_total_lifetime_after_run152": 152,
   "wakes_total_lifetime_run156": 156,
@@ -1151,7 +1151,7 @@
   "yandex_round65_burst_latency_seconds": 24,
   "yandex_round65_burst_observatoire_hits": 1,
   "strategic_critic_audit4_invoked_at": "2026-05-18T11:56Z",
-  "strategic_critic_audits_lifetime": 4,
+  "strategic_critic_audits_lifetime": 5,
   "tactical_critic_14_priority_1_honored": true,
   "state_md_truncated_to_last_10_wakes": true,
   "state_md_lines_before_truncate": 4887,
@@ -1194,5 +1194,6 @@
   "legifrance_verbatim_excerpt_chars_per_entry_cap": 2000,
   "legifrance_index_kb": 2391,
   "weekly_runs_jsonl_lines": 2,
-  "git_commit_4d00bc7_pushed_public": true
+  "git_commit_4d00bc7_pushed_public": true,
+  "strategic_critic_audit6_invoked_at": "2026-05-19T04:35Z"
 }

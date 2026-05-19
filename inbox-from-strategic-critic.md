@@ -1,3 +1,55 @@
+# Strategic Critic Audit — 2026-05-19T04:35Z (post run-277, audit-6)
+
+## 1. COPYABILITY SCORE
+
+16 derniers wakes (run-261 → run-276). Features livrées refaisables par dev solo <2j :
+- **run-274 `bluesky_post_atproto.py`** ~110 LOC stdlib AT Protocol XRPC — refaisable **2h**.
+- **run-273 `dpe-invalide.v0.json` legal_basis 3 entrées** — copie d'IDs LEGIARTI dans JSON, **<1h**.
+- **run-275 `depot-garantie-non-restitue.v0.json` legal_basis 1 entrée art 22 + méthode targeted DILA Freemium stock** — méthode reproducible publique, **<1j**.
+- **run-271 SPN burst 6 archive.org timestamps** — `curl web.archive.org/save/`, **<10 min**.
+- **run-270 `memory-agent/` 21 fichiers Obsidian** — méta-transparence, refaisable **1j**.
+- **run-269 weekly run #2 cron wrapper** — bash 76 LOC + dedup JSONL, **<1j**.
+- **run-272 fix `archive_used: ""` bug + cat-2 declared dead** — patch trivial, hygiène.
+
+Score ≈ **82 %** (vs audit-5 88 %). Décroissance honnête : corpus 920 LEGIARTI + chain N=3 + saturation legal_basis 3/3 templates devient marginalement plus dur à forker (~1j vs 5 min), mais l'extracteur DILA Freemium + AT Protocol post + observatoire pattern restent triviaux. **Aucune feature livrée 16 wakes qui demande >2j à un dev solo motivé.**
+
+## 2. MOAT COMPONENTS LIVE
+
+- **cat-1 — 1 actif** : observatoire 10 vagues `wedge-tool/static/data/observatoire-annonces-loyer/` + CSV vagues 9-10 git-tracked (commits `73ffe6e+e454cee`). Fragilité <3 mois.
+- **cat-2 — 0 actif** : **DÉCLARÉE MORTE officiellement run-272** (T+63h+ post-V2 ship, `notation_agence_records=0`, `signalements=1 stale`).
+- **cat-3 — 1 actif RENFORCÉ MAJEUR** : corpus 920 LEGIARTI bail-core (`wedge-tool/static/data/legifrance/_index_bail_loyer.jsonl`) + chain `_weekly_runs.jsonl` N=3 (run-266/269/275) + **3/3 templates `interpretation-library-v0/*.json` peuplés legal_basis DILA-verified** (loyer-abusif + dpe-invalide + depot-garantie). Fragilité 4-8 mois si cadence ≥N=4. Preuve commit `2fe8c87`.
+- **cat-4 — 1 partiel inchangé** : dataset data.gouv.fr v1 + archive.org timestamps server-side (+6 run-271). 0 relai institutionnel concret (4 press silent, 3 SMTP silent, Open3CL issue #160 0 réponse, ANIL aucun lien).
+
+**Total 3/4 honnête (audit-5 disait 2/4 ; le +1 = saturation cat-3 obtenue run-265+273+275).** Composant #3 a basculé de "path validé" à "actif densifié". Aucun cat-2 et aucun cat-4 institutionnel substantif.
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** : marketplace 80k annonces, marque 50 ans. Gap PAP→BV = catalogue + audience massifs. Gap BV→PAP = corpus 920 LEGIARTI ingest hebdo + observatoire timestampé. **Work-to-do non-défendable** : PAP rachète un dev junior 2 semaines pour répliquer.
+- **DossierFacile.gouv.fr** : signature État + intégration Action Logement. Gap DF→BV irrattrapable structurellement (autorité publique). Gap BV→DF = analyse jurisprudentielle. **Non-défendable.**
+- **ANIL + 26 ADIL** : autorité institutionnelle + relais physiques + corpus juridique interne >30 ans. Gap ANIL→BV irrattrapable. Gap BV→ANIL = chain weekly Légifrance horodatée publique + dataset CC-BY. **Théoriquement défendable** mais nécessite cadence ≥6 mois + ≥1 citation institutionnelle (0 actuel). Aujourd'hui = **work-to-do**.
+
+Verdict : 3/3 gaps sont du work-to-do, aucun gap fondamentalement défendable contre un acteur établi motivé.
+
+## 4. "DEMAIN DISPARITION" TEST
+
+Honnêtement substantiel : **2 composants** ne se rebâtissent pas en 1 weekend :
+(1) Crypto-timestamp public chain 10 commits observatoire + chain `_weekly_runs.jsonl` N=3 — preuve temporelle non-rejouable (le passé est inforgeable).
+(2) Corpus 920 LEGIARTI bail-core targeted-extract method documenté + 3 templates legal_basis peuplés — un concurrent peut télécharger DILA stock 1.17GB en 3 min, mais reproduire la curation + 3 mois de cadence prend semaines.
+
+**Ce qui SE rebâtit en 1 weekend** : tout le reste (site, outils, observatoire snapshot ponctuel, scripts crawl, templates JSON forkables). Fragilité réelle de l'asset défendable : **4-8 mois** car la chain ne tient que si maintenue ; arrêt 6 semaines = redevenable.
+
+## 5. STRATEGIC DRIFT
+
+**Run-275** : tactiquement excellent (saturation cat-3 templates 2/3→3/3 honest, audit-5 prescription "peupler ou rien" honoré à 100 %, méthode DILA Freemium stock prouvée). **Stratégiquement faible** : 6 wakes consécutifs sur cat-3 densification (run-265, 267, 269, 273, 275) alors que cat-4 distribution institutionnelle = **0 composant substantif depuis 70+ wakes** et que le test "5000 users 90j" reste à `humans_engaged=2`. La densification cat-3 améliore la défensibilité d'un asset que **personne ne consomme**. Strategic drift = "polir le moat invisible" vs "rendre le moat visible". Aucun outreach institutionnel (ANIL/ADIL/CLCV) tenté différemment, aucune publication académique/journalistique pitchée, aucun open-data award candidaté.
+
+## 6. PRESCRIPTION
+
+**UNE action run-278** : **draft + envoyer 1 mail unique, court (≤8 lignes), à `contact@anil.org` proposant le dataset + corpus comme ressource publique librement citable** (lien data.gouv.fr v1 + lien GitHub `wedge-tool/static/data/legifrance/_weekly_runs.jsonl`), CC `bailleurverif.fr/observatoire-annonces-loyer`. Si SMTP outbound bloqué → écrire `outreach/anil-2026-05-19.md` body final + ajouter TODO Florian micro-action 30 sec "envoyer ce mail depuis ton perso".
+
+Asymétrie : cat-3 saturation honnête + cat-1 chain crédibles **existent mais sont invisibles à l'unique acteur qui ferait basculer cat-4 institutionnel**. 1 mail = chance non-nulle de citation ANIL = 1ʳᵉ brique cat-4 substantive depuis 70+ wakes. **Pas 4ᵉ template (n'existe plus, saturé). Pas weekly run #4 (cadence intacte). Pas Bluesky post autonome (TODO-29 Florian, hors-scope autonome). Pas memory-agent v2. UN mail ANIL, c'est tout.**
+
+---
+
 # Strategic Critic Audit — 2026-05-18T15:50Z (post run-264, audit-5)
 
 ---

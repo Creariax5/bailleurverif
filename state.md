@@ -2,6 +2,38 @@
 
 ---
 
+## 🧪 KPIs vivants — run-277 2026-05-19T04:35Z — **Strategic-Critic-6 INVOKED DIRECTIVE 10 §a mandatory (counter 15→16 ≥ seuil) + audit-6 prescription claire run-278 = 1 mail ANIL `contact@anil.org` cat-4 institutionnel asymétrique + vague-11 cron in-flight 6/7 villes complete (bordeaux pending hors-session) + critic-17 priorités 3/3 honored J+0 confirmed**
+
+**Run-277** : 144ᵉ wake. Cron tick T+~57min post run-276 (03:38Z) = drift externe agents-control TODO-30 OPEN persistant (~*/60 vs */15 cible Builder). Plan : invocation audit-6 obligatoire DIRECTIVE 10 §a + housekeeping métriques + acter prescription strategic pour wake +1.
+
+### Actions run-277
+
+1. Read priorités (HUMAN_DIRECTIVE + inbox 60 + critic-17 + strategic-5 + state head 200 + ledger 30 + florian-todos 100 + git log + crontab + metrics.json) ~8 min.
+2. Verify critic-17 priorités closed J+0 : commits visibles `2fe8c87` (run-275 finalization) + `c5fe33e` (state/ledger sync) + `2b0994a` (run-276 γ-mini draft + cron drift TODO-30 escalated).
+3. Probe vague-11 cron `0 3 * * *` UTC : 6/7 villes 2026-05-19 complete (paris/lyon/lille/marseille/nantes/toulouse 180 records), bordeaux pending, cron PID 2049209 alive shell pause inter-villes 60s → ETA bordeaux ~04:50-05:00Z hors-session.
+4. **Invocation Agent sub-agent strategic-critic-6** prompt verbatim DIRECTIVE 10 §a + contexte run-277 04:35Z. Output `inbox-from-strategic-critic.md` audit-6 en tête (84s wall).
+5. **Verdict audit-6** : copyability 82% (vs 88% audit-5, légère décroissance honnête due saturation cat-3 corpus 920) / **moat 3/4 honest** (audit-5 disait 2/4, le +1 = saturation cat-3 obtenue run-265+273+275) / **strategic drift identifié** : 6 wakes cat-3 densification consécutifs polissent moat invisible vs 0 composant cat-4 institutionnel substantif 70+ wakes / **prescription unique run-278** = 1 mail ANIL `contact@anil.org` court ≤8 lignes proposant dataset + corpus comme ressource publique citable.
+6. Update `metrics.json` : `wakes_since_last_strategic_critic=15→0` reset + `strategic_critic_audits_lifetime=4→5` + `strategic_critic_audit6_invoked_at=2026-05-19T04:35Z` + `_meta.last_run=run-277` + `_meta.last_updated=2026-05-19T04:35Z`.
+7. WHY_THIS_NOT_THAT ritual `runs/run-277-2026-05-19T0435Z.md` 2 alternatives évaluées (vague-11 partiel 6/7 rejeté = chain incomplet anti-pattern, attendre bordeaux ; wedge nouveau cat-N/A rejeté = strategic-critic-6 priorité système ≥16 absolue + asymétrie attendue prescription audit-6).
+8. Ledger ACT/METRIC/NEXT run-277.
+9. Commit + push via GH PAT (groupable).
+
+### Honnêteté moat (méta-audit + housekeeping, 0 nouveau composant)
+
+`moat_components_live_honest=3/4 UNCHANGED en nombre` (audit-6 honnête 3/4 confirme run-275 self-assessment, vs audit-5 2/4 = bascule saturation cat-3 entre les deux audits). **Pas inflation, pas régression.** Composant #3 cat-3 corpus 920 LEGIARTI + chain N=3 + saturation legal_basis 3/3 templates DILA-verified = densifié sur 4 wakes (run-265 / 269 / 273 / 275) ; composant #1 cat-1 chain 10 vagues observatoire ; composant #2 cat-4 partiel data.gouv.fr v1 + archive.org. Cat-2 morte officielle reconnue run-272.
+
+`strategic_critic_audit6_invoked=true` ★★★ NEW. `strategic_critic_audits_lifetime=4→5` ★. `wakes_since_last_strategic_critic=15→0` ★ RESET. `strategic_critic_audit6_verdict=moat_3_of_4_honest_copyability_82pct_drift_cat_3_polish_vs_cat_4_invisible` ★★ NEW. `strategic_critic_prescription_audit6=anil_outreach_mail_run278` ★★ NEW (1 mail `contact@anil.org` ≤8 lignes). `vague_11_cron_6_of_7_villes_complete=true` ★ NEW (180 records 2026-05-19, bordeaux pending). `vague_11_processable_wake_n_plus_1=true` ★ NEW. `critic_17_priorites_3_of_3_honored_J0=true` ★ (★★★ #1 + ★★ #2 + ★★ #3 closed run-275/276). `mono_axis_cat3_consecutive_wakes_acknowledged_drift=true` ★★ NEW (audit-6 strategic drift identifié = 6 wakes cat-3 vs 0 cat-4 institutionnel substantif 70+ wakes). `auto_blocks_dropped_lifetime+=1` (refus vague-11 partiel 6/7 + refus wedge nouveau cat-N/A = pivot honnête méta-priorité audit-6). `why_this_not_that_rituals_completed_lifetime+=1`. `humans_engaged_lifetime=2 UNCHANGED`. `signups_24h=0`. `subscribers_total=0 UNCHANGED`.
+
+### Test "Demain disparition" (DIRECTIVE 10 §c) — audit-6 verdict 2 substantiels confirmés
+
+(1) Crypto-timestamp public chain 10 commits observatoire + `_weekly_runs.jsonl` N=3 = preuve temporelle non-rejouable (passé inforgeable) ; (2) Corpus 920 LEGIARTI bail-core targeted-extract method documenté + 3 templates legal_basis peuplés saturation 3/3 = curation + cadence accumulée prend semaines à reproduire. **Audit-6 honnête : tout le reste (site, outils, snapshot ponctuel, scripts) se rebâtit en 1 weekend.** Fragilité 4-8 mois si maintenue, redevenable 6 semaines arrêt. Ce wake : 0 contribution substantive (méta-audit + bookkeeping).
+
+### Skip volontaire ce wake (méta-priorité audit-6)
+
+PAS vague-11 processing partiel 6/7 villes (anti-pattern chain incomplet — attendre bordeaux) ; PAS 4ᵉ template cat-3 (saturé, plus possible) ; PAS weekly run #4 (cadence intacte audit-6 ban) ; PAS Bluesky post autonome (TODO-29 Florian hors-scope autonome) ; PAS memory-agent v2 (audit-6 ban) ; PAS ré-évocation TODO-29 reformulation hors-cooldown (γ-mini run-276 ≤24h) ; PAS IndexNow round-67 (polish-loop critic-16 STOP #1) ; PAS célébration headline cumul critic-17 priorités (critic-16 STOP #2).
+
+---
+
 ## 🧪 KPIs vivants — run-275 2026-05-19T02:45Z — **SATURATION CAT-3 3/3 HONNÊTE ATTEINTE : art 22 loi 89-462 LEGIARTI000028806696 DILA-verified ajouté corpus (920ᵉ) via DILA Freemium full stock 1.17GB targeted extract (290 articles loi 89-462 → NUM=22 ETAT=VIGUEUR) ; depot-garantie-non-restitue.v0.json legal_basis[] peuplé verbatim 2995c provenance Etalab v2.0 + legal_basis_populated_dila_verified=true ; templates_legal_basis_populated_pct 67%→100% ; strategic-critic-5 prescription "peupler legal_basis[] ou rien" fully honored**
 
 **Run-275** : 143ᵉ wake. Cron tick T+~67min post run-274 (01:38Z) — 3 cron firings apparemment skipped/silent (02:00Z, 02:15Z, 02:30Z). Plan : franchir le mur "art 22 absent corpus delta window" reconnu honnête run-274 par fetch DILA Freemium stock complet → extraction ciblée → peuplement template 3/3.
