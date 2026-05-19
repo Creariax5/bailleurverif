@@ -163,7 +163,10 @@
     }
   ],
   "expected_resolution_p50_days": 120,
-  "expected_resolution_range_days": [60, 540],
+  "expected_resolution_range_days": [
+    60,
+    540
+  ],
   "expected_resolution_notes": "P50 estimé = règlement amiable post-RAR + CDC (4 mois, le bailleur préfère négocier réduction loyer pour éviter perte du locataire ET nullité bail révélée publiquement). P95 = saisine TJ + jugement au fond (18 mois). Médiane à recaler après ≥10 case-evaluations réelles. Référé pour situations d'urgence (insalubrité, péril, hiver) : 1-3 mois.",
   "success_rate_estimated_pct": 65,
   "success_rate_basis": "Estimation initiale fondée sur littérature DRIHL/ADIL/UFC-Que-Choisir et premières jurisprudences Cass. civ. 3ème post-Loi Climat 2021. Variable selon : (a) classe DPE (G plus aboutie que F en jurisprudence), (b) date bail (post-interdiction = recours quasi-automatique), (c) bailleur professionnel (taux succès amiable ~75%) vs particulier informé (~55%) vs particulier non informé (~85% en TJ). À recaler après 10+ cas réels.",
@@ -209,7 +212,35 @@
       "url": "https://bailleurverif.fr/lille-dpe-f-g-interdit-location.html"
     }
   ],
-  "jurisprudence_refs": [],
+  "jurisprudence_refs": [
+    {
+      "ecli": "ECLI:FR:CCASS:2019:C300983",
+      "decision_id": "5fca624c7eeb384a40cafb8f",
+      "decision_date": "2019-11-21",
+      "chamber": "Troisième chambre civile",
+      "jurisdiction": "Cour de cassation",
+      "summary": "Selon le II de l'article L. 271-4 du code de la construction et de l'habitation, le diagnostic de performance énergétique mentionné au 6° de ce texte n'a, à la différence des autres documents constituant le dossier de diagnostic technique,",
+      "relevance_to_template": "Pertinence: Selon le II de l'article L. 271-4 du code de la construction et de l'habitation, le diagnostic de performance énergétique mentionné au 6° de ce texte n'a, à la différence des autres documents constitu"
+    },
+    {
+      "ecli": "ECLI:FR:CCASS:2019:C300182",
+      "decision_id": "5fca769f0165796406559b55",
+      "decision_date": "2019-03-07",
+      "chamber": "Troisième chambre civile",
+      "jurisdiction": "Cour de cassation",
+      "summary": "Les juges du fond apprécie souverainement si la proposition de reprise du constructeur constitue une offre consistant en l'obligation de réparer au sens de l'article 1642-1 du code civil",
+      "relevance_to_template": "Pertinence: Les juges du fond apprécie souverainement si la proposition de reprise du constructeur constitue une offre consistant en l'obligation de réparer au sens de l'article 1642-1 du code civil"
+    },
+    {
+      "ecli": "ECLI:FR:CCASS:2023:C300425",
+      "decision_id": "648aaca602075b05db402419",
+      "decision_date": "2023-06-15",
+      "chamber": "Troisième chambre civile",
+      "jurisdiction": "Cour de cassation",
+      "summary": "La mise à disposition, par l'effet d'un bail emphytéotique consenti par une commune à une société, d'une centrale hydroélectrique, en vue de la production et de la vente d'électricité à un fournisseur d'énergie",
+      "relevance_to_template": "Pertinence: La mise à disposition, par l'effet d'un bail emphytéotique consenti par une commune à une société, d'une centrale hydroélectrique, en vue de la production et de la vente d'électricité à un fournisseur"
+    }
+  ],
   "jurisprudence_refs_note": "Section vide — PISTE judilibre api-key requis (TODO Florian futur, lié TODO-26 ANTHROPIC_API_KEY indirectement). Wave +1 ouverture sur 3-5 décisions Cass civ 3ème et CA portant sur DPE et décence post-Loi Climat 2021 (recherche manuelle Cour de cassation + CA Paris/Versailles/Lyon).",
   "limitations_disclaimers": [
     "Ce template n'est pas un conseil juridique individualisé. Il vise à informer le locataire sur ses recours probables et à structurer un dossier amiable. La décision finale relève toujours d'un avocat ou de l'ADIL pour les cas complexes.",
@@ -222,7 +253,11 @@
     "rationale": "Composant cat-3 intelligence interprétative coûteuse : ce template encode 5 articles légaux croisés (loi 2021-1104 + L173-2 CCH + décret 2023-796 + loi 89-462 + arrêté 13/04/2022) + 5 procedure_steps détaillées + sample_letter_md cliquable + 4 regulator_contacts cartographiés. Refaisable par dev solo en <2j sur ce template seul, mais valeur compounding : (1) accumulation de N templates dans la librairie = barrière temporelle, (2) recoupement avec observatoire BV (cat-1 données propriétaires) pour identifier cas réels chez utilisateurs (cat-2 réseau futur), (3) ouverture vers RAG jurisprudence Claude API post-TODO-26 = barrière coût + qualité interprétative.",
     "wave_position": 2,
     "wave_total_target": 3,
-    "next_template_candidates": ["depot-garantie-non-restitue", "charges-locatives-injustifiees", "preavis-bail-non-respecte"],
+    "next_template_candidates": [
+      "depot-garantie-non-restitue",
+      "charges-locatives-injustifiees",
+      "preavis-bail-non-respecte"
+    ],
     "publication_plan": "GitHub push public à wave +1 ou +2 (timestamp crypto-vérifiable comme cat-1 observatoire). Endpoint GET /api/recourse/<tag> lecture seule à wave +1 (séquence run-239 N+5).",
     "legal_basis_populated_dila_verified": true,
     "legal_basis_articles_count": 3,
@@ -293,5 +328,7 @@
       "legifrance_canonical_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977085"
     }
   ],
-  "legal_basis_note": "Articles loi/code extraits du bulk DILA Open Data (https://echanges.dila.gouv.fr/OPENDATA/LEGI/), Licence Ouverte Etalab v2.0, archives quotidiennes XML. Provenance vérifiable : chaque entrée précise archive_name + archive_path + fetched_ts. Citations verbatim depuis BLOC_TEXTUEL/CONTENU (XML schema DILA). Cadence ingestion hebdomadaire prévue via crawler/legifrance_dila_fetch.py. Différent de legal_basis_citations[] (construction historique vocabulaire SP.fr/ANIL/ADEME, partiellement non-vérifié)."
+  "legal_basis_note": "Articles loi/code extraits du bulk DILA Open Data (https://echanges.dila.gouv.fr/OPENDATA/LEGI/), Licence Ouverte Etalab v2.0, archives quotidiennes XML. Provenance vérifiable : chaque entrée précise archive_name + archive_path + fetched_ts. Citations verbatim depuis BLOC_TEXTUEL/CONTENU (XML schema DILA). Cadence ingestion hebdomadaire prévue via crawler/legifrance_dila_fetch.py. Différent de legal_basis_citations[] (construction historique vocabulaire SP.fr/ANIL/ADEME, partiellement non-vérifié).",
+  "jurisprudence_refs_last_enriched_run": "sub-1",
+  "jurisprudence_refs_last_enriched_ts": "2026-05-19T12:29:33Z"
 }
