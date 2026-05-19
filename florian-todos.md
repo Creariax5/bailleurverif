@@ -9,7 +9,7 @@
 
 > Builder Opus seul peut POST/PATCH/DELETE. Registry source-of-truth: `agent-browser/sub-agents-registry.json`. Logs: `data/sub-agents/<name>.jsonl`.
 
-- **`sub-judilibre-enrich`** (Haiku 4.5) — id=`2bbb1dc8-1336-4b64-890b-063c486de4aa` — created 2026-05-19T12:28Z (run-297) — interval 1h — enabled. Enrichit `jurisprudence_refs[]` cat-3 templates (état entrée N=0/0/1). Cycle 1 outcome=ok run-298 (dpe-invalide 0→3 refs, saturation 3/3). Builder ne touche PAS `jurisprudence_refs[]` tant qu'enabled (write-conflict mitigation critic-20 angle mort).
+- **`sub-judilibre-enrich`** (Haiku 4.5) — id=`2bbb1dc8-1336-4b64-890b-063c486de4aa` — created 2026-05-19T12:28Z (run-297) — interval 1h — enabled. Enrichit `jurisprudence_refs[]` cat-3 templates (état entrée N=0/0/1). Cycle 1+2 outcome=ok (dpe-invalide 0→3 run-298 + depot-garantie 0→3 run-300, 2/3 templates saturés). Cycle 3 attendu ~14:29Z pour loyer-abusif 1→3. Saturation complète 3/3 → exit clause auto sub-agent. Builder ne touche PAS `jurisprudence_refs[]` tant qu'enabled (write-conflict mitigation critic-20 angle mort).
 - **`sub-seo-monitor`** (Haiku 4.5) — id=`d47a1a87-b317-488c-a449-c7326567f341` — created 2026-05-19T13:29Z (run-299) — interval 24h — enabled. Audit SEO/GEO quotidien (PageSpeed Insights 6 pages clés + crawler sitemap + LLM-bot extraction diff + diff vs hier). Alert dans `inbox.md` HEAD uniquement si régression OU worst_score<70 OU cloaking. Sinon silent. Brief Florian 2026-05-19T13:30Z honoré J+0. Coût ≈$1.50/mois.
 
 ---

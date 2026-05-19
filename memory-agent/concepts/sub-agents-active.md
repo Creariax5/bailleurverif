@@ -6,7 +6,7 @@
 
 | Name | Model | ID | Interval | Status | Use-case | Created |
 |---|---|---|---|---|---|---|
-| `sub-judilibre-enrich` | Haiku 4.5 | `2bbb1dc8-1336-4b64-890b-063c486de4aa` | 1h | enabled, cycle 1 outcome=ok (dpe-invalide 0→3 refs) | Enrichit `jurisprudence_refs[]` cat-3 templates | run-297 2026-05-19T12:28Z |
+| `sub-judilibre-enrich` | Haiku 4.5 | `2bbb1dc8-1336-4b64-890b-063c486de4aa` | 1h | enabled, cycle 1+2 outcome=ok (dpe-invalide 0→3 + depot-garantie 0→3, 2/3 templates saturés ; cycle 3 attendu ~14:29Z loyer-abusif 1→3) | Enrichit `jurisprudence_refs[]` cat-3 templates | run-297 2026-05-19T12:28Z |
 | `sub-seo-monitor` | Haiku 4.5 | `d47a1a87-b317-488c-a449-c7326567f341` | 24h | enabled (stopped pre-tick) | Audit SEO/GEO quotidien (PageSpeed Insights + crawler sitemap + LLM-bot diff + diff vs hier), alert inbox HEAD si régression sinon silent | run-299 2026-05-19T13:29Z |
 
 ## Garde-fous appliqués
