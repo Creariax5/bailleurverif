@@ -168,6 +168,19 @@
     </div>
   </section>
 
+  <section id="persistance-temporelle" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Persistance temporelle — chaîne antedatée</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-3">
+      <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">vagues consécutives (17-19 mai 2026)</div></div>
+      <div class="stat-card"><div class="stat-num danger">57,6 %</div><div class="stat-label">listings triple-persistants (3/3 vagues)</div></div>
+      <div class="stat-card"><div class="stat-num">121</div><div class="stat-label">annonces présentes 3 jours d'affilée</div></div>
+      <div class="stat-card"><div class="stat-num">11</div><div class="stat-label">vagues git horodatées (lifetime)</div></div>
+    </div>
+    <p class="text-sm" style="color:var(--text-secondary)">
+      Chaque vague quotidienne est commitée publiquement (<a href="https://github.com/Creariax5/bailleurverif/tree/main/wedge-tool/static/data/observatoire-annonces-loyer" class="underline" style="color:var(--accent)">commits GitHub horodatés</a>) et la chaîne de persistance est recalculée à chaque ingest. <strong>57,6 % de persistance triple = inaction structurelle</strong> : les bailleurs ne retirent pas les annonces non-conformes à un horizon de 3 jours. Chaque vague ajoutée par le cron quotidien (<code>0 3 * * *</code> UTC) prolonge l'actif de preuve temporelle ; un acteur entrant ne peut pas backfiller ce signal. Données complètes : <a href="/data/cross-wave-persistence.json" class="underline" style="color:var(--accent)"><code>cross-wave-persistence.json</code></a> (CC-BY 4.0 Etalab v2.0).
+    </p>
+  </section>
+
   <section id="caveats" class="mb-10">
     <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Caveats — à lire avant de citer ce chiffre</h2>
     <div class="caveat"><strong>N = 95 in-scope</strong> (sample brut 230 annonces uniques / 14 villes / 14 départements, dont 135 hors zone tendue). Intervalle de confiance binomial 95 % (Wilson) sur le 60,0 % : <strong>[49,9 %, 69,3 %]</strong>, demi-largeur ± 9,7 points (marge réduite vs ± 10 pts grâce à l'extension scoring vague-8 SSD EPT 93). Cette page sera ré-éditée à mesure que N grandit (objectif : N ≥ 200 in-scope sous 14 j, CI ± 7 pts).</div>

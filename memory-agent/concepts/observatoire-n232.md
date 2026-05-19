@@ -78,4 +78,5 @@ Headlines cohérents dans CI Wilson ±9.7pts → série temporelle robuste.
 
 - Composant #1 moat substantif "demain disparition" test PASS : crypto-timestamp public chain **11 commits** + chain `_weekly_runs.jsonl` N=3 (composante cat-3 séparée).
 - Composant #2 ★ NEW run-284 : **cross-wave persistence métrique propriétaire série temporelle**. 121 hashes persistent 3 jours consécutifs = 57.6% du dernier crawl. Auto-update pipeline.sh chaque vague daily. Asset non-rejouable (entrant ne peut pas backfiller la fenêtre passée).
+- Composant #3 cat-4 visibilité run-285 : section `#persistance-temporelle` ajoutée `/observatoire-annonces-loyer.html` exposant publiquement la chaîne (3 vagues, 57.6%, 121 listings, 11 vagues git). Strategic-6 critique "moat invisible" partiellement adressée — la cat-1 cross-wave persistence est désormais surfacée pour ANIL/presse/concurrents.
 - Le passé est inforgeable → ces composants sont les seuls vraiment défendables de l'asset.

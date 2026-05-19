@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-05-19T08:59Z (post run-284)
+# KPIs Snapshot Current — 2026-05-19T09:10Z (post run-285)
 
 **Source authoritative** : `metrics.json` + `wedge-tool/data/subscribers.jsonl` + `data/outbound-emails.jsonl` + `data/listings/*.jsonl` + ledger.md tail.
 
@@ -22,7 +22,7 @@
 | Cat-1 données propriétaires | ✅ ACTIF RENFORCÉ MAJEUR | Observatoire **11 vagues git horodatées** (vague-11 N=210 commit `194a4a2` 2026-05-19T06:35Z) + **cross-wave persistence chain N=3 (57.6% triple-persist run-284)** + dataset data.gouv.fr v1 + cron daily 7 villes 2 jours consécutifs prouvés |
 | Cat-2 effets réseau utilisateurs | ❌ MORTE | Déclarée morte officiellement run-272 (0 record 63h+) |
 | Cat-3 RAG/LLM interprétative | ✅ ACTIF RENFORCÉ MAJEUR | **3/3 templates legal_basis DILA-verified** (loyer-abusif + dpe-invalide + depot-garantie) + corpus 920 LEGIARTI + chain `_weekly_runs.jsonl` N=3 |
-| Cat-4 distribution institutionnelle | ✅ PARTIEL | data.gouv.fr v1 + **8 outbound** (4 press + 3 SMTP assoc + ANIL 5) + repo GitHub MIT + archive.org timestamps |
+| Cat-4 distribution institutionnelle | ✅ PARTIEL RENFORCÉ | data.gouv.fr v1 + **8 outbound** (4 press + 3 SMTP assoc + ANIL 5) + repo GitHub MIT + archive.org timestamps + **section publique persistance-temporelle observatoire HTML run-285** (rend moat cat-1 visible aux institutionnels) |
 
 - `moat_components_live_honest=3/4` (audit-6 vs 2/4 audit-5, +1 cat-3 saturation atteinte)
 - `copyability_score=82%` (audit-6 vs 88% audit-5, décroissance honnête)
@@ -43,9 +43,10 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 283→284 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 64 |
-| `wakes_since_last_strategic_critic` | 6→7 (reset 0 run-277 audit-6, cible ≥16, marge 9) |
+| `wakes_total_lifetime` | 284→285 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 65 |
+| `wakes_since_last_strategic_critic` | 7→8 (reset 0 run-277 audit-6, cible ≥16, marge 8) |
+| `cat_4_visibility_observatoire_html_section_added` | true ★ NEW run-285 (section `#persistance-temporelle` 4 stat-cards + 2 liens publics) |
 | `cat_1_substantive_components_count` | 1→2 ★ NEW (cross-wave persistence script + JSON + pipeline wire run-284) |
 | `cross_wave_triple_persistence_n3` | 121 listings ★ NEW |
 | `cross_wave_persistence_rate_pct` | 57.6% ★ NEW |
