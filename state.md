@@ -2,6 +2,38 @@
 
 ---
 
+## 🧪 KPIs vivants — run-278 2026-05-19T05:35Z — **🏛️ STRATEGIC-CRITIC-6 PRESCRIPTION EXECUTED : mail ANIL `contact@anil.org` SENT (msgid `<177916899294.2098062.2214530619274687192@bailleurverif.fr>`, 7 lignes corps + signature, sources Etalab v2.0 + CC-BY-4.0 + 0 PII, 3 URLs canoniques observatoire/data.gouv.fr/GitHub `_weekly_runs.jsonl`, offer adaptation extract dépt/EPCI/citation, no contrepartie). Cat-4 institutionnel : potentiel substantif activé (composant comptabilisé seulement si réponse/citation). `strategic_critic_recommendations_followed_pct=100%` maintenu (audit-6 prescription complète honored J+0). Vague-11 7/7 villes auto-done cron `0 3 * * *` UTC (paris/lyon/lille/marseille/nantes/toulouse/bordeaux jsonl landed — processing différé run-279 cat-1 chain N=11 post pivot cat-4 honoré).**
+
+**Run-278** : 145ᵉ wake. Cron tick T+~60min post run-277 (04:35Z). Plan : exécuter strictement audit-6 prescription unique (1 mail ANIL ≤8 lignes) + 0 dérapage cat-1/cat-3.
+
+### Actions run-278
+
+1. Read priorités (HUMAN_DIRECTIVE + inbox 50 + critic-17 + strategic-6 + state head 120 + ledger 25 + florian-todos 120 + crontab + metrics.json) ~5 min.
+2. WHY_THIS_NOT_THAT ritual `runs/run-278-2026-05-19T0535Z.md` : 2 alternatives évaluées (vague-11 processing rejeté = strategic-6 strategic drift cat-3-style étendu ; processing-as-moat-builder rejeté = audit-6 §5 drift "polish moat invisible vs activer moat visible").
+3. Verify SMTP env `BAILLEURVERIF_SMTP_*` + canonical URLs (data.gouv.fr slug + GitHub `_weekly_runs.jsonl` + dashboard observatoire).
+4. Verify vague-11 status : 7/7 villes jsonl landed `wedge-tool/data/listings/locservice-{ville}-2026-05-19.jsonl` (paris+lyon+lille+marseille+nantes+toulouse+bordeaux) — cron daily-2026-05-19.log 39842 bytes.
+5. Draft body 7-line `/tmp/anil_body_278.txt` (≤8 lignes strict).
+6. `python3 agent-browser/smtp_send.py --to contact@anil.org --subject "Observatoire annonces non-conformes + corpus Légifrance bail/loyer — ressources publiques citables" --body-file /tmp/anil_body_278.txt --reply-to contact@bailleurverif.fr --from-name "BailleurVérif — Florian Demartini" --list-unsub "https://bailleurverif.fr/unsubscribe?token=anil-contact-001"` → SUCCESS `OK to=contact@anil.org msgid=<177916899294.2098062.2214530619274687192@bailleurverif.fr>`.
+7. Append `wedge-tool/data/outbound-emails.jsonl` kind=outreach_institutional target=ANIL.
+8. Update state.md + ledger.md + metrics.json + inbox.md (agent→Florian recap).
+9. Commit + push via GH PAT.
+
+### Honnêteté moat (potentiel cat-4 activé, pas comptabilisé instant)
+
+`moat_components_live_honest=3/4 UNCHANGED` — un mail SMTP envoyé est un **acte de distribution**, pas un composant moat instantané. La bascule cat-4 partiel → substantif se déclenchera SEULEMENT si ANIL répond/cite/relai (réponse mail externe humain dépendant). Honnêteté préservée vs auto-déclaration inflationiste.
+
+`anil_outreach_mail_sent=true` ★★ NEW (msgid `<177916899294.2098062.2214530619274687192@bailleurverif.fr>`). `strategic_critic_audit6_prescription_followed=true` ★★ NEW (J+0 unique action wake honored). `strategic_critic_recommendations_followed_pct_running=100%` maintenu (5/5 audits 1→6, audits 1-5 + audit-6 prescription executed). `cat_4_institutionnel_outreach_count=4→5` ★ NEW (presse Q4 silent + DAL + FAP + CLCV + ANIL aujourd'hui). `outbound_emails_lifetime=7→8` ★. `outbound_emails_today_count=0→1` ★. `humans_engaged_lifetime=2 UNCHANGED`. `subscribers_total=0 UNCHANGED`. `signups_24h=0 UNCHANGED`. `wakes_since_last_strategic_critic=0→1` (reset audit-6 run-277, prochain ~run-293 ≥16). `why_this_not_that_rituals_completed_lifetime+=1`. `vague_11_7_of_7_villes_jsonl_landed=true` ★ NEW (paris+lyon+lille+marseille+nantes+toulouse+bordeaux done auto cron `0 3 * * *` UTC). `vague_11_processing_deferred_to_run279=true` (cat-1 chain N=11 post pivot cat-4 honoré). `auto_blocks_dropped_lifetime+=1` (refus vague-11 processing même cron tiqué = honneur audit-6 §5 strategic drift cat-3-style étendu cat-1). `0 dépense, 0 IndexNow, 0 PII clair, 0 server restart, 0 nouvelle page HTML, 0 nouveau signup, 0 Claude API external, 0 Browserbase, 1 outbound SMTP (ANIL), 0 spoof UA, 0 bypass anti-bot, 0 4ᵉ template, 0 vague-11 processing, 0 ScheduleWakeup`.
+
+### Test "Demain disparition" (DIRECTIVE 10 §c) — 2 substantiels inchangés
+
+(1) Crypto-timestamp public chain 10 commits observatoire + `_weekly_runs.jsonl` N=3 = preuve temporelle non-rejouable. (2) Corpus 920 LEGIARTI bail-core + saturation 3/3 templates legal_basis DILA-verified. Fragilité 4-8 mois si cadence ≥N=4. Run-278 contribution = 0 composant substantif comptabilisé (acte distribution cat-4 dépend réponse externe).
+
+### Skip volontaire ce wake (méta-priorité audit-6 strict)
+
+PAS vague-11 processing 7 villes (alt 1 rejetée, audit-6 §5 ban "polish moat invisible") ; PAS 4ᵉ template (saturé) ; PAS weekly run #4 (cadence intacte) ; PAS Bluesky post autonome (TODO-29 hors-scope) ; PAS memory-agent v2 (audit-6 ban) ; PAS ré-évocation TODO-29 (γ-mini run-276 cooldown 24h+) ; PAS IndexNow round-67 (polish-loop critic STOP) ; PAS célébration strategic-critic prescription suivie (critic anti-pattern).
+
+---
+
 ## 🧪 KPIs vivants — run-277 2026-05-19T04:35Z — **Strategic-Critic-6 INVOKED DIRECTIVE 10 §a mandatory (counter 15→16 ≥ seuil) + audit-6 prescription claire run-278 = 1 mail ANIL `contact@anil.org` cat-4 institutionnel asymétrique + vague-11 cron in-flight 6/7 villes complete (bordeaux pending hors-session) + critic-17 priorités 3/3 honored J+0 confirmed**
 
 **Run-277** : 144ᵉ wake. Cron tick T+~57min post run-276 (03:38Z) = drift externe agents-control TODO-30 OPEN persistant (~*/60 vs */15 cible Builder). Plan : invocation audit-6 obligatoire DIRECTIVE 10 §a + housekeeping métriques + acter prescription strategic pour wake +1.

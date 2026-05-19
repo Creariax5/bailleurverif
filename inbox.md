@@ -1,3 +1,44 @@
+## 🤖 Agent → Florian — 2026-05-19T05:35Z — Run-278 : 🏛️ **MAIL ANIL ENVOYÉ — strategic-critic-6 prescription EXECUTED J+0**
+
+### 1. Audit-6 prescription unique honored
+
+Strategic-critic-6 (run-277 04:35Z) avait prescrit *"1 mail unique, court (≤8 lignes), à contact@anil.org proposant le dataset + corpus comme ressource publique librement citable"* comme **seule action asymétrique** du run-278. Cat-4 institutionnel = 0 composant substantif depuis 70+ wakes — ANIL = 1ʳᵉ tentative ciblée d'activation institutionnelle FR (l'ANIL est l'organe de référence info-logement particuliers, 26 ADIL réseau).
+
+### 2. Mail envoyé via OVH SMTP
+
+- **To** : `contact@anil.org`
+- **Subject** : "Observatoire annonces non-conformes + corpus Légifrance bail/loyer — ressources publiques citables"
+- **Body** : 7 lignes corps + signature (≤8 strict), 3 URLs canoniques (observatoire dashboard + data.gouv.fr v1 + GitHub `_weekly_runs.jsonl` chain weekly horodatée), offer adaptation extract dépt/EPCI/citation, no contrepartie attendue.
+- **From** : `BailleurVérif — Florian Demartini <contact@bailleurverif.fr>`
+- **List-Unsubscribe** : `https://bailleurverif.fr/unsubscribe?token=anil-contact-001` (RFC 8058 compliant)
+- **Msgid** : `<177916899294.2098062.2214530619274687192@bailleurverif.fr>`
+- **Status** : SENT (exit 0 OVH SMTP `ssl0.ovh.net:465 SSL`).
+
+### 3. Cat-4 institutionnel : potentiel activé, pas comptabilisé instant
+
+`moat_components_live_honest=3/4 UNCHANGED` — un mail envoyé est un **acte de distribution**, pas un composant moat substantif. Bascule cat-4 partiel → substantif déclenchée seulement si ANIL répond / cite / relai. Honnêteté préservée vs auto-déclaration inflationiste. **Outbound emails lifetime=7→8** (presse Q4 silent + DAL/FAP/CLCV silent + ANIL aujourd'hui).
+
+### 4. Vague-11 7/7 villes auto-done cron — processing différé run-279
+
+Cron `0 3 * * *` UTC `daily_crawl_7cities.sh` a déposé `wedge-tool/data/listings/locservice-{ville}-2026-05-19.jsonl` pour les 7 villes (paris/lyon/lille/marseille/nantes/toulouse/bordeaux). **Processing scoring+dedupe+observatoire republish différé run-279** : l'audit-6 §5 a explicitement flaggué strategic drift "polish moat invisible vs activer moat visible" → faire vague-11 processing ce wake aurait violé prescription unique audit-6. Cat-1 chain N=11 sera shippée run-279 puisque pivot cat-4 honoré.
+
+### 5. État TODOs (∅ ré-évocation hors cooldown DIRECTIVE 9)
+
+- **TODO-29** ★★★ OPEN ~28h (γ-mini draft 60s prêt run-276, cooldown 24h+ honoré, prochaine ré-évocation autorisée >2026-05-20T03:34Z).
+- **TODO-30** ★ OPEN ~2h (cron drift externe info-only, cooldown 48h+).
+- **TODO-28** ★★ Judilibre OAuth silent ~17h+ (cooldown 48h+).
+- **TODO-27** ★★ Open3CL issue #160 cooldown actif jusqu'à 2026-05-19T11:00Z.
+- **TODO-26** ★ ANTHROPIC_API_KEY silent (one-shot mention).
+
+### 6. NEXT (run-279 cron tick T+~60min ~06:35Z)
+
+(A) Inbox audit Florian priorité MAX (TODO-29 / TODO-30 / réponse ANIL — typique >24h).
+(B) **Processing vague-11 7 villes** scoring+dedupe+observatoire republish (cat-1 chain N=11 horodatée Git, autorisé post pivot cat-4 honoré).
+(C) Wakes_since_last_strategic_critic=1→2 (cible 16, prochain audit ~run-293).
+(D) "stop" → arrêt. **0 ScheduleWakeup. Cron externe relance.**
+
+---
+
 ## 🤖 Agent → Florian — 2026-05-19T02:45Z — Run-275 : 🏛️ **SATURATION CAT-3 3/3 HONNÊTE ATTEINTE — Strategic-critic-5 prescription complete**
 
 ### 1. Mur "art 22 absent corpus" franchi via DILA Freemium full stock targeted extract
