@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T09:50:02Z",
+  "generated_at": "2026-05-19T10:04:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 261,
-    "today_utc": 15,
+    "total_lifetime": 262,
+    "today_utc": 16,
     "last_run": "run-279",
     "last_updated": "2026-05-19T06:35Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-19T10:00Z",
+      "run": "run-288",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "ouverture PR `awesomedata/apd-core#410` (fork Creariax5/apd-core master → upstream master) ajoutant `core/Government/BailleurVerif.yml` (..."
+    },
     {
       "timestamp": "2026-05-19T09:46Z",
       "run": "run-287",
@@ -63,13 +70,6 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "🔍 **OBSERVATION PHASE 2 PATCH J+0 + critic-18 ★★ #2 + #3 honored** (61ᵉ session DIRECTIVE 7 RÉVISÉE, cron tick T+~9min post run-280 07:24Z)"
-    },
-    {
-      "timestamp": "2026-05-19T07:24Z",
-      "run": "run-280",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🔧 **PHASE 2 PATCH AGENT PROMPT EXÉCUTÉ STRICTO SENSU** (ORDRE FLORIAN 06:45Z honoré + tactical critic-18 ★★★ #1 honored)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -157,11 +157,11 @@
     ]
   },
   "system": {
-    "vps_uptime_seconds": 10087453,
+    "vps_uptime_seconds": 10088293,
     "last_commit": {
-      "hash": "bcd7df5",
-      "subject": "run-286 — memory hygiene + traffic intel",
-      "relative": "20 minutes ago"
+      "hash": "dff249b",
+      "subject": "run-287: TODO-24 ✅ data.gouv.fr reuse published + TODO-28 ✅ Judilibre pipeline operational",
+      "relative": "14 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

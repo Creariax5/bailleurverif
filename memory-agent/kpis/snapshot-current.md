@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-19T09:48Z (post run-287)
+# KPIs Snapshot Current — 2026-05-19T10:00Z (post run-288)
 
-> Run-287 UPDATE : TODO-24 ★★★ DONE (data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4` live = 1ʳᵉ backlink dofollow gov.fr DR 90) + TODO-28 ★★★ DONE capability (piste_oauth.py + judilibre_search.py shipped + tested from-agent) + loyer-abusif.v0.json jurisprudence_refs[] N=0→1 (Cass civ3 ECLI:FR:CCASS:2020:C300657).
+> Run-288 UPDATE : **STRATEGIC-7 PRESCRIPTION HONORED J+0** — PR `awesomedata/apd-core#410` OPENED (`Creariax5:master` → `master`) ajoutant `core/Government/BailleurVerif.yml` 32 lignes EN. Fork `Creariax5/apd-core` créé, commit `905d154e`, body PR 1.5KB hook reuse `6a0c30a` + chain 11 vagues + cross-wave 121/57.6% + MIT. Asymétrie cat-4 : audience tech/data exact-cible vs press silent, 0 nouveau signup (PAT existant), bypass cooldown ANIL. 7/7 strategic prescriptions honorées J+0.
+
+> Run-287 UPDATE (HISTORIQUE) : TODO-24 ★★★ DONE (data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4` live = 1ʳᵉ backlink dofollow gov.fr DR 90) + TODO-28 ★★★ DONE capability (piste_oauth.py + judilibre_search.py shipped + tested from-agent) + loyer-abusif.v0.json jurisprudence_refs[] N=0→1 (Cass civ3 ECLI:FR:CCASS:2020:C300657).
 
 
 
@@ -26,7 +28,7 @@
 | Cat-1 données propriétaires | ✅ ACTIF RENFORCÉ MAJEUR | Observatoire **11 vagues git horodatées** (vague-11 N=210 commit `194a4a2` 2026-05-19T06:35Z) + **cross-wave persistence chain N=3 (57.6% triple-persist run-284)** + dataset data.gouv.fr v1 + cron daily 7 villes 2 jours consécutifs prouvés |
 | Cat-2 effets réseau utilisateurs | ❌ MORTE | Déclarée morte officiellement run-272 (0 record 63h+) |
 | Cat-3 RAG/LLM interprétative | ✅ ACTIF RENFORCÉ MAJEUR | **3/3 templates legal_basis DILA-verified** (loyer-abusif + dpe-invalide + depot-garantie) + corpus 920 LEGIARTI + chain `_weekly_runs.jsonl` N=3 |
-| Cat-4 distribution institutionnelle | ✅ PARTIEL RENFORCÉ | data.gouv.fr v1 + **8 outbound** (4 press + 3 SMTP assoc + ANIL 5) + repo GitHub MIT + archive.org timestamps + **section publique persistance-temporelle observatoire HTML run-285** (rend moat cat-1 visible aux institutionnels) |
+| Cat-4 distribution institutionnelle | ✅ PARTIEL RENFORCÉ | data.gouv.fr v1 + reuse `6a0c30a` 1ʳᵉ backlink dofollow gov.fr DR 90 + **PR awesome-public-datasets (apd-core#410) pending** ★ NEW run-288 + **8 outbound** (4 press + 3 SMTP assoc + ANIL 5) + repo GitHub MIT + archive.org timestamps + section publique persistance-temporelle observatoire HTML run-285 |
 
 - `moat_components_live_honest=3/4` (audit-6 vs 2/4 audit-5, +1 cat-3 saturation atteinte)
 - `copyability_score=82%` (audit-6 vs 88% audit-5, décroissance honnête)
@@ -47,8 +49,12 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 286→287 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 67 |
+| `wakes_total_lifetime` | 287→288 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 68 |
+| `awesome_list_pr_open_count` | 0→1 ★★ NEW run-288 (PR #410 `awesomedata/apd-core`) |
+| `awesome_list_target_repo` | `awesomedata/apd-core` (sub-repo de awesome-public-datasets 75522★) |
+| `cat_4_distribution_external_pr_open` | true ★ NEW run-288 |
+| `strategic_critic_audit7_prescription_followed_J+0` | true ★ NEW run-288 |
 | `data_gouv_fr_reuse_published` | true ★★★ NEW run-287 (`6a0c30a2a24bbe3d7c2e69d4`, owner Florian Demartini, 4 datasets cités) |
 | `cat_4_dofollow_gov_fr_backlinks_count` | 0→1 ★★ NEW |
 | `piste_oauth_helper_shipped` | true ★★ NEW run-287 (test 54-char token) |
@@ -56,7 +62,7 @@
 | `cat_3_jurisprudence_pipeline_operational` | true ★★★ NEW run-287 (passage TODO-bloqué 25+ wakes → operational from-agent) |
 | `loyer_abusif_jurisprudence_refs_count` | 0→1 ★ (cible 3-5, progressive enrich runs +N) |
 | `florian_directives_★★★_executed_J+0_compliance_run-287` | 2/2 ★ (TODO-24 + TODO-28 both honored, déficit 4 wakes runs 280-286 rattrapé) |
-| `wakes_since_last_strategic_critic` | 8→9 (reset 0 run-277 audit-6, cible ≥16, marge 7) |
+| `wakes_since_last_strategic_critic` | 10→0 ★ RESET run-288 (audit-7 received 09:55Z, cible ≥16, marge 16) |
 | `memory_agent_concepts_count` | 10 (+traffic-signals run-286) |
 | `memory_agent_decisions_count` | 15 (+cross-wave-public-section run-286) |
 | `recurring_visitors_count` | 1 (ip_hash 6994446044, 3 hits homepage-only ≥23h) |
@@ -72,7 +78,7 @@
 | `why_this_not_that_rituals_completed_lifetime` | ≥45 |
 | `why_this_not_that_rituals_omitted_lifetime` | 0 |
 | `demain_disparition_test_passed` | true (2 substantiels strategic-6 honnête) |
-| `strategic_critic_recommendations_followed_pct_running` | 100% (6/6 audits incl. audit-6 J+0 ANIL) |
+| `strategic_critic_recommendations_followed_pct_running` | 100% (7/7 audits incl. audit-7 J+0 awesome-list PR) |
 | `pivot_question_asked_at` | 2026-05-19T08:39Z ★ NEW (critic-18 ★★ STOP #2 honored) |
 | `pivot_question_cooldown_due` | 2026-05-21T08:39Z (48h discipline ré-évocation) |
 | `tactical_critic_stop2_pivot_question_honored` | true ★ NEW |
@@ -121,3 +127,6 @@
 - `0 Bluesky autonome` (TODO-29 γ-mini cred non-reçue)
 - `0 ScheduleWakeup` (DIRECTIVE 7 révisée run-281 J+64)
 - `+1 cat-1 composant substantif` ★ (cross-wave persistence script + JSON + pipeline wire)
+- `+1 PR external repo cat-4` ★★ NEW run-288 (awesomedata/apd-core#410 pending, hook reuse+chain+cross-wave)
+- `0 spam-PR` (1 PR repo niche thématique exact, body argumenté qualité)
+- `0 nag PR comments` (laisser PR vivre ≥14j avant relance)

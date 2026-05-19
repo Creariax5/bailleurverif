@@ -1,3 +1,56 @@
+# Strategic Critic Audit — 2026-05-19T09:55Z (post run-287, audit-7)
+
+## 1. COPYABILITY SCORE
+
+10 wakes (run-278→287). Copyables <2j par dev solo :
+- `cross_wave_persistence.py` 80 LOC stdlib (run-284) — 2-3h.
+- Section HTML `#persistance-temporelle` observatoire (run-285) — 1h.
+- `piste_oauth.py` + `judilibre_search.py` 104 LOC (run-287) — 4h OAuth standard.
+- `jurisprudence_refs[] N=1` loyer-abusif (run-287) — 5 min copy ECLI.
+- POST data.gouv.fr reuse (run-287) — <1h techniquement.
+
+Score ≈ **75 %** (vs 82 % audit-6, vs 88 % audit-5). Décroissance honnête : cross-wave backfill **non-rejouable** + reuse slug position **occupée**.
+
+## 2. MOAT COMPONENTS LIVE
+
+- **cat-1 — 2 composants** : chain 11 vagues git horodatées (`194a4a2`) + cross-wave persistence N=121 listings/57.6% (`wedge-tool/static/data/cross-wave-persistence.json` HTTP 200). 1→2 intérieur cat (run-284).
+- **cat-2 — 0** (morte officiellement run-272).
+- **cat-3 — 1 + capability operational** : 3 templates legal_basis DILA + Judilibre pipeline live (`agent-browser/piste_oauth.py` + `judilibre_search.py`). `jurisprudence_refs[] N=1/cible 3-5` (incomplete).
+- **cat-4 — 2 substantifs** : dataset data.gouv.fr v1 UUID + **NOUVEAU reuse `6a0c30a2a24bbe3d7c2e69d4`** (`https://www.data.gouv.fr/fr/reuses/bailleurverif-observatoire-annonces-loyer-non-conformes-encadrement-dpe-f-g/`) 1ʳᵉ backlink dofollow gov.fr DR≈90 LIVE run-287. 8 mails outbound silent ≠ composant substantif.
+
+**3/4 catégories actives maintenues**, +1 composant intérieur cat-1 ET +1 cat-4 vs audit-6. Gain réel net positif.
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** (80k annonces) : PAP→BV catalogue+audience irrattrapables. BV→PAP cross-wave persistence **non-rejouable** par PAP backfill + reuse gov.fr position. **Work-to-do partiel.**
+- **DossierFacile.gouv.fr** : autorité État irrattrapable. BV→DF analyse réglementaire. **Non-défendable.**
+- **ANIL/26 ADIL** : 30 ans corpus + relais physiques irrattrapables. BV→ANIL chain temporelle publique + reuse gov.fr. Théoriquement défendable, silence 2.5j+ post-mail run-278.
+
+Verdict : **1/3 défendable** (chain temporelle horodatée).
+
+## 4. "DEMAIN DISPARITION" TEST
+
+Non-rejouable 1 weekend par concurrent motivé :
+(1) Chain 11 vagues git + cross-wave persistence N=121/57.6% — **passé inforgeable**.
+(2) Reuse `6a0c30a2a24bbe3d7c2e69d4` slug data.gouv.fr indexé Google Dataset Search — 1ʳᵉ position prise.
+(3) Corpus 920 LEGIARTI + 3 templates DILA + Judilibre pipeline — ~2 sem + signup PISTE concurrent.
+
+Fragilité : **4-8 mois** si chain maintenue ≥1 vague/sem.
+
+## 5. STRATEGIC DRIFT
+
+**Run-280 → run-286** : 6 wakes polish consécutifs (PATCH prompt + cross-wave persistence + section HTML + memory hygiene + traffic-signals concept) **alors que Florian a déposé creds TODO-24 inbox 07:25Z + TODO-28 inbox 08:05Z**. Tactiquement chaque polish mérite (PATCH économie tokens 35.7%, cross-wave asset cat-1 substantif), **stratégiquement faible** : directives ★★★ Florian-débloqué = J+0 strict, pas J+0-après-6-polish. Run-287 rattrapage 2/2 honoré mais déficit honnête.
+
+## 6. PRESCRIPTION
+
+**UNE action run-288** : **open 1 PR sur 1 GitHub awesome-list FR/open-data** (candidats : `awesome-france-open-data`, `awesome-public-datasets/Datasets#real-estate`, `agdsn/awesome-open-data`). GH PAT `.env` déjà autorisé (Florian conserve, feedback gh_pat_conserve). Hook PR : reuse `6a0c30a2a24bbe3d7c2e69d4` + dataset v1 + chain 11 vagues + cross-wave 57.6%.
+
+**Asymétrie** : (1) bypass cooldown ANIL ≥2026-05-22T05:35Z ; (2) bypass pattern 8 emails silent (critic-18 ★★ #3 STOP outreach stérile) ; (3) **0 nouveau signup** (GH PAT autorisé self-policy OK) ; (4) audience tech/data FR exact-cible vs presse généraliste silent ; (5) levier nouveau non-tenté 76+ wakes.
+
+**Bans** : pas 4ᵉ template (saturé), pas enrich jurisprudence_refs N=1→3 (drift polish cat-3 invisible), pas re-mail ANIL (cooldown 72h), pas Bluesky autonome (TODO-29 Florian hors-scope), pas weekly run #4 (cadence intacte).
+
+---
+
 # Strategic Critic Audit — 2026-05-19T04:35Z (post run-277, audit-6)
 
 ## 1. COPYABILITY SCORE

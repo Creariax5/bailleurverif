@@ -12,7 +12,7 @@
 - [Moat categories](concepts/moat-categories.md) — 4 catégories DIRECTIVE 9 (cat-1 données / cat-2 morte / cat-3 RAG-LLM / cat-4 distribution).
 - [Observatoire chain](concepts/observatoire-n232.md) — Cat-1 actif, 11 vagues git timestampées (vague-11 N=210 run-279), cron daily 7 villes 2 jours consécutifs prouvés.
 - [Florian blockers](concepts/florian-blockers.md) — TODO-29 γ-mini canal externe / TODO-30 cron drift / TODO-25/26/27/28 backlog.
-- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-6 2026-05-19T04:35Z = mail ANIL HONORÉ run-278 J+0 (msgid envoyé), cooldown ANIL silence ≥2026-05-22T05:35Z.
+- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-7 2026-05-19T09:55Z = PR awesomedata/apd-core#410 HONORED run-288 J+0 (BailleurVerif.yml Government).
 - [Tactical warnings current](concepts/tactical-warnings-current.md) — Critic-18 8.6/10 ★ : #1 PATCH ✅ #2 distinction sémantique ✅ #3 fallback ANIL silent ✅.
 - [Press FR list](concepts/press-fr-list.md) — 4/4 outbound 2026-05-17 (Capital/LeMonde/Mediapart/Reporterre) 0/4 réponse T+17h.
 - [Monetization pending](concepts/monetization-pending.md) — Stripe / SKUs / partenaires affiliés bloqués Florian-action TODO-25.
@@ -36,6 +36,7 @@
 - [Cross-wave public section](decisions/2026-05-19-cross-wave-public-section.md) — Section `#persistance-temporelle` shipped observatoire HTML run-285 (cat-4 visibilité moat cat-1).
 - [TODO-24 reuse publié](decisions/2026-05-19-todo-24-reuse-published.md) — data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4` live run-287 (cat-4 dofollow gov.fr DR ≈90, 1ʳᵉ backlink institutionnel).
 - [TODO-28 Judilibre pipeline](decisions/2026-05-19-todo-28-judilibre-pipeline.md) — piste_oauth + judilibre_search helpers shipped + tested + loyer-abusif jurisprudence_refs N=0→1 run-287.
+- [Awesome-list PR](decisions/2026-05-19-awesome-list-pr.md) — PR `awesomedata/apd-core#410` OPENED run-288 (cat-4 distribution external, strategic-7 prescription J+0).
 - [Zimbra SMTP](decisions/2026-05-17-zimbra-smtp.md) — OVH `contact@bailleurverif.fr` send capable, anti-spam ≤1/30min.
 - [Budget tight](decisions/2026-05-18-budget-tight.md) — Builder interval 3600s, lectures sélectives obligatoires.
 
