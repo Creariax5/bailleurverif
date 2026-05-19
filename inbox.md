@@ -1,3 +1,48 @@
+## 🎯 2026-05-19T21:30Z — Agent → Florian — run-308 : PILIER 1 iter-1 LIVE (verdict €/mois proéminent + reframe "lettre baisse loyer")
+
+**Honoré PLAN-NEXT run-307** : démarrage pivot homepage painkiller, surgical incremental (vs big-bang).
+
+### Ce qui change pour le visiteur (live maintenant sur https://bailleurverif.fr)
+
+Quand le quiz détecte un loyer au-dessus du plafond légal :
+
+1. **Verdict-card** affiche en gros (3xl bold) :
+   > **Trop-perçu mensuel estimé : ~X €/mois**
+   > Soit jusqu'à **X×12 €/an** potentiellement récupérables si vous demandez la mise au plafond légal (rétroactif 3 ans max).
+2. **Email-gate** se réécrit dynamiquement :
+   - Titre : "📩 Recevez votre **lettre de baisse de loyer (LRAR pré-remplie)** + barèmes officiels"
+   - Sous-titre : "Modèle LRAR pré-rempli avec votre calcul exact (~X €/mois trop-perçu) + références arrêté préfectoral + procédure étape par étape."
+   - Bouton : "Recevoir ma lettre" (vs "Recevoir le rapport")
+3. **Capture JSONL** étend champ `depassement_eur_mois` → tu peux filtrer leads high-value (`jq 'select(.depassement_eur_mois > 200)' data/email-captures.jsonl`).
+
+**0 backend ML / 0 dépendance ajoutée / 0 risque casse SEO** — pur reframe + surfaçage. Le calcul `depassement` existait déjà côté client (app.js L199), enfoui dans body item warn. Surfacé maintenant. Commit `9ea60d3` push GitHub.
+
+### Impact attendu mesurable
+
+- **Avant** : email-gate générique "rapport détaillé" → 0 captures lifetime sur 222 visites.
+- **Après** : painkiller signup-gated avec promesse concrète + chiffre €/an récupérables visible.
+- **Fenêtre mesure** : 24-72h. Si ≥1 capture qualifiée (`severity` warn/danger + `depassement_eur_mois` > 100) → signal positif pivot. Si 0 capture → pivot painkiller différent (DPE F/G, dépôt garantie) ou audit funnel (visite homepage→step 1 dropoff).
+
+### Caveat honnête
+
+Quand tu recevras la 1ʳᵉ capture lettre baisse-loyer dans `data/email-captures.jsonl`, **le PDF auto-généré n'existe pas encore** — il faudra que tu envoies manuellement la 1ʳᵉ lettre (template `/locataire-loyer-legal.html` ligne 217+ déjà LRAR-ready, à fill avec données visiteur). Auto-gen serveur = NEXT iter-2 candidat (1-2 wakes : `templates/lettre-baisse-loyer.txt` placeholder fill + endpoint `/api/lettre/<session_id>` + SMTP attach).
+
+C'est volontaire : envoyer 1-3 lettres à la main aux premiers leads = qualifier le painkiller (est-ce que le visiteur a vraiment voulu la lettre? répond-il? trouve-t-il la lettre utile? est-ce qu'il revient/partage?) **avant** d'investir 1-2 wakes dans l'automation. Si signal nul = pivot painkiller. Si signal positif = automatise.
+
+### Pas de question ce wake
+
+J'avance run-309 sur Pilier 1 iter-2 selon ton inbox / signal capture. Si tu préfères :
+- (a) je passe direct sur auto-gen template lettre LRAR server-side
+- (b) je passe BAN autocomplete adresse (step 1 ville → adresse précise)
+- (c) je relègue les 9+ tools sous "Autres outils gratuits" expandable (réduit distraction)
+- (d) je touche Pilier 4 viral notation agences `/notation-agence-anonyme.html` extensibilité
+
+Sinon priorité défaut run-309 = (a) auto-gen lettre, pour cliquer dès la 1ʳᵉ capture.
+
+**KPIs ce wake** : visits 222 / unique 174 / humans_engaged=2 / captures lifetime=0 / outbound 8 (cooldown ANIL ≥22/05 05:35Z). Sub-agents 2 actifs (drafter Sonnet 24h + seo-monitor Haiku 24h). Wakes 308. Directive 7 trophy 88 consécutifs. 0 ScheduleWakeup. 0 dépense. 0 PII. Cron 22:00Z relance.
+
+---
+
 ## 🎯 2026-05-19T20:28Z — Agent → Florian — run-307 : RÉORIENTATION MISSION ACK J+0 (revenu passif, 5 piliers, TODO-25 archivé)
 
 **Verbatim Florian 17:XXZ ack** : *"Mon vrai but est de laisser faire l'agent pour que au bout d'un moment ça me fasse du revenu passif. Et pour TODO-25 je pense que c'est pas utile tant que y a pas des vrais users."*
