@@ -1,22 +1,30 @@
-# KPIs Snapshot Current — 2026-05-19T19:30Z (post run-306)
+# KPIs Snapshot Current — 2026-05-19T20:28Z (post run-307)
 
-> **Run-306 UPDATE** : Critic-22 ★★★ #1 + ★★ #2 + ★★ #3 HONORED J+0 ce wake (5 min) — concepts stales flush (florian-blockers post-run-304 refactor + tactical-warnings post-audit-22 8.5/10) + traffic-signals closure hypothèse Florian self-audit primary (`6269819028` + `3790475865` Chrome 147 Linux 13:18-13:29Z cross-IP same-UA aligné brief writing) + snapshot rotation history/snapshot-pre-306.md archive 195 lignes (cap 200 critic-19 STOP #1 4 audits sans action enfin résolu). 0 ScheduleWakeup. 86ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+> **Run-307 UPDATE** : ★ **MISSION RÉORIENTATION FLORIAN ACK J+0** — verbatim 17:XXZ "revenu passif vs 5000 users" ack run-307 après que run-306 ait éclipsé directive en faveur critic-22 priorities. mission.md concept réécrit (5 piliers : sharpen+SEO+affiliés+viral+LinkedIn). florian-todos.md update : TODO-25 (Stripe) ARCHIVÉ "REPORTÉ post-100 signups", NEW TODO-32 ★★ Affiliés Lovys+Hemea (1-2h), ancien TODO-32 drafter → TODO-32-bis ★, NEW TODO-33 ★ Parler 5 personnes entourage. Decision file `2026-05-19-mission-reorientation-revenu-passif.md` créé. MEMORY.md index mission + monetization-pending lignes patchés. Métriques succès NOUVELLES (`affiliate_revenue_mtd`, `signups_real_qualified_mtd`, `organic_traffic_30d_compounding_growth`, `florian_hours_consumed_mtd`) ajoutées table Mission progress ci-dessous. 0 ScheduleWakeup. 87ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+
+> **Run-306 UPDATE (HEADLINE PRÉCÉDENT)** : Critic-22 ★★★ #1 + ★★ #2 + ★★ #3 HONORED J+0 ce wake (5 min) — concepts stales flush (florian-blockers post-run-304 refactor + tactical-warnings post-audit-22 8.5/10) + traffic-signals closure hypothèse Florian self-audit primary (`6269819028` + `3790475865` Chrome 147 Linux 13:18-13:29Z cross-IP same-UA aligné brief writing) + snapshot rotation history/snapshot-pre-306.md archive 195 lignes (cap 200 critic-19 STOP #1 4 audits sans action enfin résolu). 0 ScheduleWakeup. 86ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
 > **Run-305 UPDATE (HEADLINE PRÉCÉDENT)** : **CAT-3 JURISPRUDENCE_REFS SATURATED 3/3 TEMPLATES (9 ECLI Cass.)** ★ + sub-judilibre auto-disabled saturated_3 + sub-linkedin-drafter 1ʳᵉ tick EARLY draft 1184c high confidence. Cumul cat-3 = 9 ECLI Cass. (3 dpe-invalide + 3 depot-garantie + 3 loyer-abusif). Sub-judilibre lifetime ≈ €0.72 / 5 cycles. Florian validation drafter LinkedIn pending TODO-32.
 
 **Source authoritative** : `ledger.md` tail + `metrics.json` + `wedge-tool/data/subscribers.jsonl` + `data/outbound-emails.jsonl` + `data/listings/*.jsonl`. Archive complete avant run-306 : `memory-agent/kpis/history/snapshot-pre-306.md` (195 lignes).
 
-## Mission progress
+## Mission progress (RÉORIENTÉE 2026-05-19T17:XXZ — revenu passif, voir mission.md)
 
-| KPI | Valeur | Cible | Reste | Statut |
-|---|---|---|---|---|
-| `users_total` | 0 | 5000 | 5000 | 🔴 |
-| `signups_24h` | 0 | 55+ | 55+ | 🔴 |
-| `humans_engaged_lifetime` | 2 | ≥10 sous 14j | 8 | 🔴 **UNCHANGED 92+ wakes (~88h+)** critic-22 HEADLINE |
-| `subscribers_total` | 0 | n/a | n/a | 🔴 |
-| `publications_externes_humaines_publiques_count` | 0 | ≥1 | 1 | 🔴 UNCHANGED (TODO-23/29 PARTIAL DONE LinkedIn Florian hors-Builder) |
-| Days post-pivot B2C | 37 | 90 | 53j (T-) | 🟡 |
-| Cible mission 2026-08-14 J+0 | 96+ signups/jour requis | — | — | 🔴 trajectoire non-atteignable rythme actuel sans pivot |
+| KPI NOUVEAU | Valeur | Cible | Note |
+|---|---|---|---|
+| `affiliate_revenue_mtd` | €0 | €100-500 @6m / €500-3000 @12m | 🔴 pending TODO-32 Florian signer Lovys+Hemea |
+| `signups_real_qualified_mtd` | 0 | 100 trigger subscriptions | 🔴 pivot homepage painkiller priorité #1 run-308+ |
+| `organic_traffic_30d_compounding_growth` | n/a (baseline 222 visits lifetime) | growth >0 vs 30d-precedent | 🟡 instrument à mettre en place |
+| `florian_hours_consumed_mtd` | ~3h estimated 2026-05-01 → today (réorientation + briefs + LinkedIn post + critic patches) | DOIT décroître M+1 vs M | 🟡 North Star autonomie |
+| `signups_to_paying_conv_pct` | n/a (post-affiliés) | TBD | — |
+
+| KPI legacy (héritage 5000 users) | Valeur | Cible legacy | Note |
+|---|---|---|---|
+| `users_total` | 0 | 5000 (stretch motivant) | 🔴 plus métrique de succès stricte |
+| `signups_24h` | 0 | 55+ legacy | 🔴 idem |
+| `humans_engaged_lifetime` | 2 | ≥10 sous 14j | 🔴 **UNCHANGED 92+ wakes** — proxy actuel |
+| `subscribers_total` | 0 | n/a | TODO-25 REPORTÉ post-100 signups |
+| `publications_externes_humaines_publiques_count` | 0 | ≥1 | TODO-23/29 PARTIAL DONE LinkedIn Florian hors-Builder |
 
 ## Moat (DIRECTIVE 9, strategic-8 audit honnête)
 

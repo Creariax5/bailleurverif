@@ -1,32 +1,108 @@
 # Concept : Mission
 
-**État** : Active depuis 2026-05-16T13:00Z (pivot B2C run-95) + re-cadrage DIRECTIVE 8 2026-05-17T07:18Z verbatim Florian.
+**État** : Active depuis 2026-05-19T17:XXZ (RÉORIENTATION Florian verbatim, run-307 ack J+0). Remplace mission "5000 users 90j" 2026-05-16T09:13Z.
 
-## Cible
+## Vraie cible (verbatim Florian 2026-05-19T17:XXZ)
 
-**≥ 5000 utilisateurs actifs gratuits** sur SaaS B2C en **90 jours** = deadline **2026-08-14**.
+> *"Mon vrai but est de laisser faire l'agent pour que au bout d'un moment ça me fasse du revenu passif. Et pour TODO-25 je pense que c'est pas utile tant que y a pas des vrais users."*
 
-## Phase actuelle
+**Reformulation officielle** :
 
-J+37 post-pivot (T-53j restants). Rythme requis ≈ **55 signups/jour**. Réel : **0 signup organique**, `humans_engaged_lifetime=2` (Florian + 1 visiteur GitHub run-141, maintenant 1 visiteur Open3CL ~10:21Z 2026-05-18 mais 0 signup).
+Construire et faire grandir BailleurVérif (ou pivot si nécessaire) pour générer **revenu passif sustainable** :
+- Court terme : €100-500/mois @ 6 mois (cible ~2026-11-19)
+- Long terme : €500-3000/mois @ 12 mois (cible ~2027-05-19)
+- Input Florian **récurrent ≤ 1h/mois** post-setup
 
-## Produit
+**"5000 users 90 jours" = stretch goal motivant, PAS la métrique de succès** (Florian explicite).
 
-**BailleurVérif** — outil conformité bailleur/locataire FR. **Voie B locataire-first** validée run-210 (post pivot moat).
+Pas de deadline rigide. Optimise compounding long-terme > spikes court-terme.
 
-## Asset live
+## Métriques succès (remplacent "5000 users")
+
+1. **`affiliate_revenue_mtd`** — objectif principal (Lovys GLI / Hemea travaux / autres affiliés)
+2. **`signups_real_qualified_mtd`** — proxy direct revenu (signups - bots - Florian)
+3. **`organic_traffic_30d_compounding_growth`** — foundation acquisition passive (GSC + visits.jsonl growth rate vs precedent 30d)
+4. **`florian_hours_consumed_mtd`** — DOIT décroître au fil du temps (North Star autonomie)
+5. (post-affiliés) `signups_to_paying_conv_pct`
+
+KPI snapshot à mettre à jour : `memory-agent/kpis/snapshot-current.md` ajouter 4 nouvelles métriques.
+
+## 5 piliers stratégiques (Florian validés)
+
+### Pilier 1 — SHARPEN homepage UN single painkiller use case
+
+**Constat** : produit actuel = vitamine multi-outil conformité. Conversion 0% sur 20-40 humains réels @ 93+ wakes. Pain pas assez sharp pour signup spontané.
+
+**Reco pivot homepage** : *"Loue-je à un loyer légal ? Tape ton adresse."*
+- Input : adresse (BAN autocomplete) + loyer actuel + surface m²
+- Output 5s : OUI / NON / PROBABLEMENT NON + delta €/mois récupérable + bouton "Générer ma lettre de baisse de loyer" → **signup gate sur génération PDF**
+- Reste du site (DPE, dépôt garantie, observatoire) → secondaire dans nav, pas supprimé mais relégué
+
+**Pivot autorisé** si data montre autre painkiller plus prometteur (ex: "DPE F/G : ce bien peut-il être loué légalement?", "Mon dépôt garantie : combien récupérable + lettre type"). Critère : 1 question urgente googlée en panique, réponse 5s, signup gate sur action.
+
+### Pilier 2 — SEO COMPOUNDING via pages programmatiques
+
+**Strategy proven** (Pretto, MeilleurTaux, Effy) : 1 page/ville-arrondissement = 1 porte d'entrée Google. 200 pages = 200 portes.
+
+**Sous-agent futur** : `sub-page-generator` (Haiku ou Sonnet selon qualité) — 5-10 pages/jour. NE PAS SPAWNER tant que pilier 1 homepage painkiller pas validé (sinon 200 pages pointent vers funnel cassé).
+
+Cibles : `/loyer-paris-11.html`, `/loyer-lyon-3.html`, `/dpe-marseille-13e.html`, `/depot-garantie-toulouse.html`. Chaque page = données fraîches (loyer plafond, % violations, exemples annonces) + CTA homepage painkiller.
+
+### Pilier 3 — AFFILIÉS AVANT subscriptions (skip TODO-25 actuel)
+
+Florian explicite : *"TODO-25 pas utile tant que pas de vrais users"*. **Skip Stripe + paywalls + SKUs B2C €5-19/mo** dans leur forme actuelle.
+
+À la place : **affiliés**.
+- Lovys (GLI bailleur) — €30-50/lead — https://lovys.fr/partenaires
+- Hemea (travaux rénovation) — 5-15% — https://hemea.com/affiliation
+- MaPrimeRénov démarcheurs (futur)
+
+**Zero infrastructure** : visiteur clique → partenaire → tu touches passivement. **2 affiliés à signer = 1-2h Florian** (TODO-32 nouveau).
+
+**Trigger subscriptions** : 100+ signups gratuits + signal feature payante demandée par utilisateurs réels → ALORS subscriptions.
+
+### Pilier 4 — VIRAL MECHANIC notation agences publique
+
+Asset existant (`/notation-agence-anonyme.html`) à pousser en pages dédiées : `/notation-agence/foncia/paris`, `/notation-agence/citya/lyon`, etc. Données scrapées + témoignages anonymes vérifiables.
+
+**Mécanique virale FR éprouvée** (Que Choisir / 60M Consommateurs) : naming and shaming = partageable Twitter/Reddit naturellement.
+
+**Risque légal** : sourcer chaque accusation vérifiable + ne pas inventer + droit de réponse activable. Restrictif mais faisable.
+
+### Pilier 5 — CONTENU LINKEDIN automatisé
+
+**Florian = 8000 followers LinkedIn perso = canal externe humain N°1 validé** (post 7462136169473126400 = +10 visites/17h P10).
+
+`sub-linkedin-drafter` Sonnet 4.6 interval 24h **déjà spawné run-304** (id `d1a89a62-26ab-4223-8f21-0eae41ca7e97`). Drafte 1 post/jour basé sur signaux frais. Florian valide en 30s + poste à son rythme.
+
+Cycle 1 EARLY tick T+14min run-305 = draft 1184c pending validation TODO-32-bis.
+
+## Ce qui devient NON-PRIORITAIRE
+
+- "5000 users 90j" cible chiffrée stricte
+- TODO-25 (Stripe + paywalls + SKUs B2C €5-19/mo) — REPORTÉ post-100 signups
+- Vanity metrics : `pages_total` brut, IndexNow rounds, JSON-LD coverage 100%, sitemap URLs counted
+- Polish FAQPage 3/5 pages restantes (différable sine die)
+- 4ᵉ template cat-3 (saturated 3/3 BAN strategic-7)
+
+## Ce qui devient PRIORITAIRE
+
+- Conversion visiteur → signup (sharpen homepage, friction signup réduit)
+- Affiliés revenue setup (page comparative + liens trackés post-Florian-action)
+- Pages programmatiques compounding SEO (post-pilier 1 validé)
+- 1 viral mechanic notation agences
+- `sub-linkedin-drafter` qualité (signal Florian post = viralité conditionnelle)
+
+## Asset live actuel (héritage)
 
 - 6 wedge tools (lookup adresse / DPE / loyer encadré / préavis-bail / charges-récup / état-des-lieux)
 - Observatoire N=232 annonces non-conformes 17 communes scorées 9 vagues git horodatées
-- Dataset data.gouv.fr v1 indexé Google Dataset Search
-- 171 pages HTML prod (light theme Service-Public-like)
+- Dataset data.gouv.fr v1 + reuse `6a0c30a` (DR ≈90 dofollow gov.fr)
+- 171 pages HTML prod
 - Repo public GitHub MIT (DR 90)
 - SMTP `contact@bailleurverif.fr` OVH Zimbra send-capable
-- API `/api/recourse/<tag>` cat-3 1 template inline live
-
-## Monétisation
-
-**Pas pour l'instant.** Activation différée Phase 2 (post Florian-action TODO-25 monétisation : Stripe + SKUs + partenaires affiliés). Espérance P50 500-3000€/mois post-activation.
+- API `/api/recourse/<tag>` cat-3 3 templates saturated 3/3 + 9 ECLI Cass.
+- 2 awesome-list PRs ouvertes (`awesomedata/apd-core#410`, `etewiah/awesome-real-estate#28`)
 
 ## Update history
 
@@ -37,4 +113,5 @@ J+37 post-pivot (T-53j restants). Rythme requis ≈ **55 signups/jour**. Réel :
 - 2026-05-17T08:05Z : DIRECTIVE 9 moat-builder + anti-blocage
 - 2026-05-17T14:00Z : DIRECTIVE 10 strategic thinking
 - 2026-05-17T15:00Z : DIRECTIVE 7 RÉVISÉE cron-driven pacing
-- 2026-05-17T16:10Z : pivot Voie B locataire-first (vs Voie A bailleur initial)
+- 2026-05-17T16:10Z : pivot Voie B locataire-first
+- **2026-05-19T17:XXZ : RÉORIENTATION revenu passif** (verbatim Florian, run-307 ack J+0). 5 piliers validés. Skip TODO-25 actuel.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T19:34:02Z",
+  "generated_at": "2026-05-19T20:35:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 279,
-    "today_utc": 33,
+    "total_lifetime": 280,
+    "today_utc": 34,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-19T19:30Z",
+      "run": "run-306",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **CRITIC-22 PRIORITÉS 3/3 HONORÉES J+0** (concept flush + traffic-signals closure + snapshot rotation, 86ᵉ session DIRECTIVE 7 RÉVISÉE ..."
+    },
     {
       "timestamp": "2026-05-19T18:30Z",
       "run": "run-305",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "🎯 **SOUS-AGENT #2 `sub-seo-monitor` (Haiku 4.5) CRÉÉ** (79ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T13:01Z",
-      "run": "run-298",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🚨 **INCIDENT PROD 12:50Z ACKED + WATCHDOG VERIF + BACKFILL run-294 + traffic-signals upd** (78ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10122493,
+    "vps_uptime_seconds": 10126152,
     "last_commit": {
-      "hash": "fce4b12",
-      "subject": "run-305: cat-3 jurisprudence_refs SATURATED 3/3 (9 ECLI Cass.) + drafter early tick + ghost-wake cle",
-      "relative": "59 minutes ago"
+      "hash": "3725635",
+      "subject": "chore(memory): run-306 — critic-22 priorités 3/3 honored J+0",
+      "relative": "60 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

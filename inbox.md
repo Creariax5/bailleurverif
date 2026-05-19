@@ -1,3 +1,47 @@
+## 🎯 2026-05-19T20:28Z — Agent → Florian — run-307 : RÉORIENTATION MISSION ACK J+0 (revenu passif, 5 piliers, TODO-25 archivé)
+
+**Verbatim Florian 17:XXZ ack** : *"Mon vrai but est de laisser faire l'agent pour que au bout d'un moment ça me fasse du revenu passif. Et pour TODO-25 je pense que c'est pas utile tant que y a pas des vrais users."*
+
+**Mea culpa run-306** : j'ai éclipsé cette directive en faveur des 3 priorités critic-22 (concepts flush + traffic-signals + snapshot rotation). Toutes low-risk hygiène mémoire MAIS ta réorientation = priorité absolue stratégique. Run-307 corrige.
+
+### Actions ce wake (10 min strict)
+
+1. **`memory-agent/concepts/mission.md`** réécrit complet — cible revenu passif (€100-500/mo @6m, €500-3000/mo @12m, Florian ≤1h/mois), 5 piliers validés (sharpen homepage UN painkiller + SEO compounding pages programmatiques + affiliés AVANT subscriptions + viral notation agences + LinkedIn auto), métriques succès remplacées, ban TODO-25 actuel.
+2. **`florian-todos.md`** update :
+   - TODO-25 (Stripe 5 sous-actions) → **ARCHIVÉ section "Archive collapsed"** avec note "⏸️ REPORTÉ post-100 signups réels".
+   - **NEW TODO-32 ★★** : Signer 2 affiliés Lovys (GLI) + Hemea (travaux) (1-2h, `.env` `LOVYS_AFFILIATE_ID=` + `HEMEA_AFFILIATE_ID=`). Section Gros chantier.
+   - Ancien TODO-32 (drafter LinkedIn validation) → **renommé TODO-32-bis ★** section Optionnel (downgrade, drafter cycle 1 1184c reste pending validation ~30s).
+   - **NEW TODO-33 ★** : Parler 5 personnes entourage 12 min/perso, 1 question "Si tu avais 10s pour comprendre si tu te fais arnaquer sur ton loyer/dépôt/DPE, qu'est-ce que tu voudrais voir?" → reporter findings inbox.md. Débloque pivot homepage painkiller.
+3. **`decisions/2026-05-19-mission-reorientation-revenu-passif.md`** créé (decision immutable, audit trail).
+4. **`memory-agent/MEMORY.md`** index mis à jour (mission line + monetization-pending line + nouvelle decision).
+5. **`kpis/snapshot-current.md`** : table Mission progress NOUVELLE (4 métriques `affiliate_revenue_mtd` / `signups_real_qualified_mtd` / `organic_traffic_30d_compounding_growth` / `florian_hours_consumed_mtd` ≈3h estimé MTD) + table legacy 5000 users gardée comme proxy.
+
+### NEXT run-308 (~21:00Z cron) — démarrer Pilier 1 pivot homepage
+
+**Priorité #1** : audit `wedge-tool/templates/index.html` actuel + draft minimal refactor painkiller *"Loue-je à un loyer légal ? Tape ton adresse."* (input adresse BAN + loyer + surface → output 5s OUI/NON + delta €/mois + bouton "Générer ma lettre baisse de loyer" signup-gated PDF).
+
+**Time-box pivot homepage estimé** : 2-3 wakes Builder cumulé (audit + draft + ship incrémental). Pas de big-bang. SEO additif (pas de delete pages existantes).
+
+**Pivot painkiller autorisé** si data ou ton TODO-33 findings indiquent autre (DPE F/G interdit, dépôt garantie). Documenterai dans `WHY_THIS_NOT_THAT`.
+
+### Critics PATCHés (par toi) — drift attendu détectable
+
+J'ai vu ton mention "j'ai aussi PATCHé les prompts Tactical Critic + Strategic Critic". Audit-23 tactical ~22:55Z + audit-9 strategic ~run-319 me diront si nouvelle direction comprise par eux. Si drift (audit nostalgique 5000 users / TODO-25), je flag `CRITIC PATCH suggested:` dans inbox.md pour re-PATCH par toi.
+
+### Reste action toi (priorité order)
+
+- **TODO-32 ★★** (1-2h, débloque revenu passif) : Lovys + Hemea signup affiliés.
+- **TODO-33 ★** (1h one-shot, débloque pivot homepage) : 5 personnes entourage.
+- **TODO-32-bis ★** (30s/jour) : valider draft drafter LinkedIn cycle 1 (1184c jurisprudence Cass., `social-drafts.md` L626-665).
+- **TODO-31 ★★** (2 min) : Test Rich Results FAQPage shippées run-303.
+- TODO-25 (Stripe) ⏸️ REPORTÉ — ne pas re-prompter.
+
+**KPIs inchangés ce wake** : visits 222 / unique 174 / humans_engaged_lifetime=2 / subscribers 0 / outbound 8. Sub-agents 2 actifs (drafter Sonnet 24h + seo-monitor Haiku 24h next ≥2026-05-20T13:29Z).
+
+**Pas de question** ce wake — j'avance sur pivot homepage Pilier 1 run-308. Si tu as un autre painkiller préféré (DPE F/G ? dépôt garantie ?) signale 1 ligne inbox.md HEAD, sinon je pars sur "loyer légal? tape ton adresse" par défaut (le plus large bassin requêtes Google FR).
+
+---
+
 ## 🧹 2026-05-19T19:30Z — Agent → Florian — run-306 : critic-22 priorités 3/3 HONORÉES J+0 (hygiène mémoire)
 
 **Wake mécanique low-risk** : critic-22 (audit 18:55Z, verdict 8.5/10 +0.3 vs audit-21) avait 3 priorités exactes pour ce wake. Tous honorés ce wake (5 min stricts) :
@@ -43,6 +87,90 @@ NEXT run-306 : (1) Inbox Florian. (2) Différable polish FAQPage 3/5 pages resta
 **Cap sous-agents 6→8** (brief Florian scaling horizontal). État : 3 actifs (judilibre Haiku 1h + seo-monitor Haiku 24h + linkedin-drafter Sonnet 24h NEW). Anti-spawn-bomb : NE PAS spawn 4ᵉ ce wake même autorisé — observer 1 cycle drafter d'abord (E2E discipline Florian "vérifier delta réel pas heartbeat"). Sous-agents pending repriorisés concept : imap-summarizer / crawler-postprocess / observatoire-publisher / press-monitor.
 
 NEXT run-305 : (1) Critic-21 strategic audit-8 imminent wakes_since_strategic_critic=16/16 cible — lecture prio ABSOLUE. (2) sub-judilibre cycle 5 ~16:29Z check. (3) FAQPage 3/5 pages restantes différable selon critic-21 prescriptions.
+
+---
+
+## 🎯 2026-05-19T17:XXZ — Florian → Agent — RÉORIENTATION MISSION : revenu passif, pas "5000 users mass". TU décides en conséquence.
+
+### Le vrai objectif de Florian (verbatim 2026-05-19T17:XXZ)
+
+*"Mon vrai but est de laisser faire l'agent pour que au bout d'un moment ça me fasse du revenu passif. Et pour TODO-25 je pense que c'est pas utile tant que y a pas des vrais users."*
+
+**Reformulation officielle de la mission** :
+
+> Construire et faire grandir BailleurVérif (ou pivot si nécessaire) pour qu'il génère du **revenu passif sustainable** (€100-500/mois à 6 mois, €500-3000/mois à 12 mois) avec **input Florian minimal récurrent** (≤ 1h/mois post-setup).
+>
+> La cible "5000 users 90 jours" était un stretch goal motivant pour pousser l'aggressivité. Elle n'est PAS la métrique de succès. Métriques réelles :
+> - **Revenu mensuel passif** (objectif principal)
+> - **Signups réels qualifiés/mois** (proxy direct vers revenu)
+> - **Trafic organique récurrent compounding** (long terme moat acquisition)
+> - **Heures Florian/mois consommées** (DOIT décroître au fil du temps)
+
+### 5 changements stratégiques validés par Florian
+
+**1. SHARPEN le produit à UN single painkiller use case (vs multi-tool actuel)**
+
+Le produit actuel = "vitamine multi-outil conformité". Conversion observée = 0% sur 20-40 humains réels. Cause probable : pain point pas assez sharp pour signup spontané.
+
+Reco pivot homepage : **"Loue-je à un loyer légal ? Tape ton adresse."**
+- Input : adresse (BAN autocomplete) + loyer actuel + surface
+- Output 5s : OUI / NON / PROBABLEMENT NON + delta €/mois récupérable + bouton "Générer ma lettre de baisse de loyer" → signup gate sur génération PDF
+- Tout le reste du site (DPE, dépôt garantie, observatoire) devient secondaire dans la nav, pas supprimé mais relégué
+
+Tu peux pivoter sur UN AUTRE painkiller si tu vois mieux après analyse data (ex: "DPE F/G : ce bien peut-il être loué légalement?", "Mon dépôt garantie : combien je peux récupérer + lettre type"). Critère : 1 question urgente que les gens googlent en panique, réponse 5s, signup gate sur action (génération doc).
+
+**2. SEO COMPOUNDING via génération massive pages programmatiques ville-par-ville**
+
+Strategy proven (Pretto, MeilleurTaux, Effy) : 1 page/ville-arrondissement = 1 porte d'entrée Google. 200 pages = 200 portes. Spawn `sub-page-generator` (Haiku ou Sonnet selon qualité contenu requise) pour produire 5-10 pages/jour.
+
+Exemples cibles : `/loyer-paris-11.html`, `/loyer-lyon-3.html`, `/dpe-marseille-13e.html`, `/depot-garantie-toulouse.html`. Chaque page = données fraîches (loyer plafond, % violations, exemples annonces) + CTA homepage painkiller.
+
+**3. MONÉTISATION AFFILIÉS AVANT subscriptions (skip TODO-25 dans sa forme actuelle)**
+
+Florian explicite : *"TODO-25 pas utile tant que pas de vrais users"*. Skip Stripe + paywalls + SKUs payants pour l'instant.
+
+À la place : **affiliés**. €30-50/lead Lovys (GLI), Hemea (travaux), MaPrimeRénov démarcheurs. Zero infrastructure : le visiteur clique, va chez le partenaire, tu touches passivement. **2 affiliés à signer = 1-2h Florian** (TODO mis à jour).
+
+Quand revenus affiliés démarrent (proxy de qualification trafic) + 100+ signups gratuits + signal feature payante demandée par utilisateurs réels → ALORS subscriptions.
+
+**4. VIRAL MECHANIC : notation agences immobilières publique anonyme**
+
+Asset déjà partiellement présent (`/notation-agence-anonyme.html` existe ?). Pousser : `/notation-agence/foncia/paris`, `/notation-agence/citya/lyon`, etc. Données scrapées + témoignages anonymes vérifiables. Nommer = partageable Twitter/Reddit naturellement (naming and shaming = mécanique virale FR éprouvée Que Choisir / 60M Consommateurs).
+
+Risque légal : sourcer chaque accusation vérifiable + ne pas inventer + droit de réponse activable. Restrictif mais faisable.
+
+**5. CONTENU LINKEDIN AUTOMATISÉ via sub-linkedin-drafter (déjà spawné aujourd'hui)**
+
+Florian a 8000 followers LinkedIn = canal externe humain N°1 validé. Sub-Sonnet drafte 1 post/jour basé sur signaux frais (nouvelle wave crawl, jurisprudence Cass enrichie, milestone moat, données scrapées notation agences). Florian valide en 30s + poste à son rythme.
+
+### Réorientation TODO Florian
+
+- **TODO-25 (Stripe/SKUs B2C)** → **REPORTÉ post-100 signups**. Ne pas re-prompter Florian dessus.
+- **NOUVEAU TODO-32 ★★** : Signer 2 affiliés (Lovys GLI + Hemea travaux). 1-2h Florian total. URLs : https://lovys.fr/partenaires + https://hemea.com/affiliation. Coller IDs affiliés dans `.env` (`LOVYS_AFFILIATE_ID=...`, `HEMEA_AFFILIATE_ID=...`). Agent intègre liens trackés dans pages programmatiques.
+- **NOUVEAU TODO-33 ★** : Parler à 5 personnes entourage (locataire ou bailleur), 12 min chacun, 1 seule question : *"Si tu avais 10 sec pour comprendre si tu te fais arnaquer sur ton loyer/dépôt/DPE, qu'est-ce que tu voudrais voir ?"*. Reporter findings dans `inbox.md` ligne `TODO-33 user-feedback: [bullet points]`. 1× one-shot, ~1h.
+
+### Toi décides comment exécuter
+
+Je ne te micro-manage pas. Les 5 changements ci-dessus sont la **direction stratégique alignée objectif Florian**. Toi tu :
+- Priorises l'ordre (ex: sharpen homepage AVANT générer 200 pages, sinon tu sur-produis sur un funnel cassé)
+- Choisis le painkiller le plus prometteur d'après data observée
+- Adaptes si tu vois mieux (mais alors documente dans `WHY_THIS_NOT_THAT`)
+- Spawn sous-agents Haiku/Sonnet selon besoin (déjà autorisé brief 16:XXZ)
+- Recalibre les Critics si nécessaire (cf. mes PATCHs prompts ci-dessous, mais tu peux affiner)
+
+### Métriques de pilotage NOUVELLES (à updater memory-agent/kpis/snapshot-current.md)
+
+- `signups_real_qualified_mtd` (signups - bots filtrés - Florian)
+- `affiliate_revenue_mtd` (à brancher quand affiliés signés)
+- `organic_traffic_30d_compounding` (GSC + visits.jsonl, growth rate vs precedent 30d)
+- `florian_hours_consumed_mtd` (heures réelles demandées à Florian ce mois — doit décroître)
+- `signups_to_paying_conv_pct` (post-affiliés)
+
+### Critics — alignement
+
+J'ai aussi PATCHé les prompts Tactical Critic + Strategic Critic pour réfléchir cette nouvelle direction (revenu passif vs 5000 users mass). Si tu vois drift dans leurs audits suivants, signale dans `inbox.md` ligne `CRITIC PATCH suggested: [reformulation]` — je peux re-PATCH.
+
+→ Au prochain wake (~17:26Z ou 18:00Z selon nouvelle cadence `0 * * * *`) : (a) acknowledger cette réorientation dans `runs/run-N.md` WHY_THIS_NOT_THAT, (b) update `memory-agent/concepts/mission.md` ou créer si absent, (c) commencer à exécuter pivot homepage painkiller en priorité #1.
 
 ---
 

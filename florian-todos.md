@@ -2,6 +2,7 @@
 
 > L'agent ajoute ici uniquement les actions qui requièrent ta personne (login, signature, vote, paiement, click humain). L'agent N'ATTEND PAS ces items pour avancer.
 > **Last refactor : 2026-05-19T16:XXZ (run-304)** — historique condensé en section "Archive collapsed". Détails archivés dans `florian-todos-history.md.bak` + `ledger.md` + git history.
+> **Update 2026-05-19T20:28Z (run-307)** — RÉORIENTATION mission Florian 17:XXZ : revenu passif vs 5000 users. TODO-25 (Stripe) archivé REPORTÉ post-100 signups. Nouveau TODO-32 ★★ Affiliés Lovys+Hemea remplace TODO-25 priorité gros chantier. Ancien TODO-32 (drafter LinkedIn) → TODO-32-bis ★ Optionnel. Nouveau TODO-33 ★ Parler 5 personnes entourage.
 
 ---
 
@@ -41,21 +42,20 @@ Form sur https://findly.tools/submit. Data prête dans `kit-submission.md`. Emai
 
 ## 🎯 Gros chantier > 1h
 
-### TODO-25 ★★★ — Activation monétisation Stripe (3-5h, semaine prochaine)
+### TODO-32 ★★ — Signer 2 affiliés Lovys (GLI) + Hemea (travaux) (1-2h, NOUVEAU run-307)
 
-**Pourquoi maintenant** : machine autonome produit valeur (contenu + data + moat + distribution) mais ne peut PAS convertir en cash sans toi. Asymétrie max : ~3-5h une seule fois → cash récurrent. Espérance 500-3000€/mois P50 à 6 mois post-activation.
+**Pourquoi** : Florian 17:XXZ réorientation — affiliés AVANT subscriptions (zero infrastructure, €30-50/lead, agent intègre liens trackés dans pages programmatiques). Skip TODO-25 Stripe tant que pas 100+ signups réels.
 
-**5 actions séquentielles** (détails complets archivés ledger.md run-XXX, résumé ici) :
+**Asymétrie** : 1-2h Florian one-shot → revenu passif récurrent dès trafic qualifié (proxy validation produit).
 
-1. **25.1 Stripe signup** (1h) — https://dashboard.stripe.com/register avec `florian.demartini.dev@gmail.com`. Coller `STRIPE_SECRET_KEY` + `STRIPE_PUBLISHABLE_KEY` (restreintes) dans `.env`.
-2. **25.2 Définir 3 SKUs** (30 min) — Reco : Premium Bailleur €5/mois + API Access Pro €19/mois + Pack courrier RAR €2/unité.
-3. **25.3 Affiliés** (1-2h) — Lovys (GLI €30-50/contrat) + Hemea (5-15% travaux) recommandés. 2 max suffisants.
-4. **25.4 CGU monétisation** (30 min) — Legifit.fr €49 onetime recommandé OU template service-public.fr gratuit relu.
-5. **25.5 Permission explicite agent** (1 min) — écrire dans `inbox.md` : `🚀 PERMISSION MONÉTISATION GRANTED` + autoriser Stripe + paywalls + A/B testing prix + affiliés. Hard limits : pas SKU >€99/mois sans validation, RGPD strict, reporter conversions dashboard.
+**Actions** :
+1. **Lovys GLI** (45 min) — https://lovys.fr/partenaires. Signup affilié + récupère ID tracking. Coller dans `.env` : `LOVYS_AFFILIATE_ID=...`.
+2. **Hemea travaux** (45 min) — https://hemea.com/affiliation. Signup + récupère ID. Coller dans `.env` : `HEMEA_AFFILIATE_ID=...`.
+3. (Optionnel +30 min) MaPrimeRénov démarcheurs / autre affilié immobilier FR pertinent. Coller IDs dans `.env`.
 
-**Ordre important** : 25.1 → 25.5 (Stripe avant tout, permission en dernier).
+Une fois clés dans `.env`, écrire dans `inbox.md` HEAD : `TODO-32 affiliés done — IDs collés .env, autorise agent à intégrer liens trackés pages programmatiques`. Builder fera le reste (pages comparatives + intégration trackée).
 
-**Statut** : OPEN — pas urgent (mission Phase 1 = 5000 users gratuits, monétisation Phase 2). Recommandation : faire en bloc 1 après-midi quand traction se manifeste (1ʳᵉ signup, presse FR, viralité).
+**Statut** : OPEN — Florian-only (signature compte + signup partenariat). Aucun cooldown évocation tant que pas done (priorité revenu passif).
 
 ---
 
@@ -68,11 +68,27 @@ Issue ouverte 2026-05-18, 0 réponse depuis. Probablement signal mort. Si tu veu
 
 Si signal vert → autorise agent à draft PR localement avec `GH_TOKEN`. **Statut** : OPEN faible priorité, cooldown 7j.
 
-### TODO-32 ★ — Valider drafts LinkedIn `sub-linkedin-drafter` (~30s/jour quand actif)
+### TODO-32-bis ★ — Valider drafts LinkedIn `sub-linkedin-drafter` (~30s/jour quand actif)
 
-Sub-agent `sub-linkedin-drafter` (Sonnet 4.6, interval 24h) sera spawné run-304+ et drafte 1 post LinkedIn/jour basé sur signaux frais. Drafts dans `social-drafts.md` section `LINKEDIN-AUTO`. Tu valides en 30s + postes à ton rythme depuis ton compte perso (8000 followers). ROI mesurable : 1ʳᵉ post organique = +10 visites/17h, cadence 1/sem qualité = ~40 visites/sem additionnelles.
+(Anciennement TODO-32, renommé bis run-307 post-réorientation Florian — voir nouveau TODO-32 Affiliés section Gros chantier.)
 
-**Statut** : ATTENTE spawn, sera actif post run-304. Cooldown ré-évocation 7j si pas validé.
+Sub-agent `sub-linkedin-drafter` (Sonnet 4.6, interval 24h) spawné run-304. **Cycle 1 EARLY tick T+14min run-305 = draft 1184c jurisprudence Cass.** dans `social-drafts.md` ligne 626-665 section `## LINKEDIN-AUTO 2026-05-19T16:45:00Z`. Tu valides en 30s + postes à ton rythme (8000 followers). ROI mesurable : 1ʳᵉ post organique (TODO-23 partial done) = +10 visites/17h P10.
+
+**Statut** : OPEN cycle 1 (1184c jurisprudence) pending validation. Cycle 2 ≥2026-05-20T16:45Z. Cooldown ré-évocation 7j si pas validé.
+
+### TODO-33 ★ — Parler 5 personnes entourage (1h one-shot, NOUVEAU run-307)
+
+Florian 17:XXZ réorientation — recherche utilisateur qualitative pour valider painkiller pivot homepage.
+
+**Action** : 5 personnes entourage (locataire ou bailleur), ~12 min chacune, **1 seule question** :
+
+> *"Si tu avais 10 secondes pour comprendre si tu te fais arnaquer sur ton loyer / dépôt de garantie / DPE, qu'est-ce que tu voudrais voir ?"*
+
+Reporter findings dans `inbox.md` HEAD ligne : `TODO-33 user-feedback: [bullet points]` (1 ligne par personne max).
+
+**Pourquoi** : valide quel painkiller (loyer abusif, dépôt non-rendu, DPE F/G interdit) résonne le plus avant pivot homepage. Builder utilise pour décider le UI/UX du pivot.
+
+**Statut** : OPEN — 1× one-shot ~1h cumulé. Pas de cooldown (résultat débloque pivot homepage Pilier 1).
 
 ---
 
@@ -116,6 +132,7 @@ PAT classic full-scope dans `.env` (`GH_TOKEN=ghp_6kUw...`). L'agent push commit
 - **TODO-28 PISTE Judilibre OAuth** — DONE 2026-05-19T08:05Z, helpers piste_oauth.py + judilibre_search.py shipped, sub-judilibre-enrich Haiku tourne 1h
 - **TODO-29 Débloquer 1 canal externe humain** — ✅ PARTIAL DONE 2026-05-19 via même action TODO-23 LinkedIn (canal validé, levier réutilisable via sub-linkedin-drafter Sonnet). Cooldown 7j+.
 - **TODO-30 Cron drift vérification** — DONE 2026-05-19, baseline final `0 * * * *` (24 wakes/jour, ~€72/mois Builder Opus). TODO-31 = test Rich Results moved to Quick wins above.
+- **TODO-25 Activation monétisation Stripe** — ⏸️ REPORTÉ 2026-05-19T17:XXZ post-100 signups (Florian réorientation revenu passif via affiliés-first, voir TODO-32 nouveau). Détails 5 sous-actions archivés ledger.md / git history. NE PAS re-prompter avant signal explicit Florian ou 100+ signups réels.
 
 ---
 
