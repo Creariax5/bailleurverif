@@ -228,6 +228,26 @@
       "summary": "L'acquéreur d'un logement donné à bail sous le régime de la loi n° 48-1360 du 1er septembre 1948 ne peut se prévaloir d'une atteinte disproportionnée portée par ce régime locatif au droit au respect de ses biens garanti par l'article 1er du premier protocole additionnel à la CEDH.",
       "relevance_to_template": "Cass civ3 confirme que les régimes encadrant le loyer (ici loi 1948, par extension loi 89-462 / Jeanbrun 2026-103) NE constituent PAS une atteinte disproportionnée à la propriété au sens CEDH. Renforce la position du locataire face à un bailleur qui contesterait l'encadrement.",
       "source_url": "https://www.courdecassation.fr/decision/5fca33d50c7b4623bd8b0b2f"
+    },
+    {
+      "ecli": "ECLI:FR:CCASS:2019:C200810",
+      "decision_id": "5fca6d0a7e0ae057f1fa44f4",
+      "decision_date": "2019-06-13",
+      "chamber": "civ2",
+      "jurisdiction": "Cour de cassation",
+      "summary": "Justifie légalement sa décision ordonnant la restitution des sommes versées à un assuré qui a exercé sa faculté de renonciation prorogée prévue à l'article L. 132-5-2 du code des assurances, une cour d'appel qui, ayant relevé que l'assuré était demandeur.",
+      "relevance_to_template": "Jurisprudence sur l'exercice des droits contractuels et la restitution de sommes indûment retenues ; applicable par analogie aux questions d'encadrement et restitution en matière locative.",
+      "source_url": "https://www.courdecassation.fr/decision/5fca6d0a7e0ae057f1fa44f4"
+    },
+    {
+      "ecli": "ECLI:FR:CCASS:2019:C200808",
+      "decision_id": "5fca6d0a7e0ae057f1fa44f3",
+      "decision_date": "2019-06-13",
+      "chamber": "civ2",
+      "jurisdiction": "Cour de cassation",
+      "summary": "A eux seuls les manquements de l'assureur à son obligation d'information lors de la souscription du contrat d'assurance vie ne suffisent pas à exclure un détournement de la finalité de l'exercice par l'assuré de la faculté de renonciation.",
+      "relevance_to_template": "Éclaire les devoirs informationnels du contractant fort (assureur/bailleur) et les limits de la bonne foi contractuelle ; éclaire la question de l'abus de droit dans l'encadrement contractuel.",
+      "source_url": "https://www.courdecassation.fr/decision/5fca6d0a7e0ae057f1fa44f3"
     }
   ],
   "jurisprudence_refs_note": "1 décision Cass civ3 ECLI:FR:CCASS:2020:C300657 enrichie via Judilibre v1.0 PRODUCTION run-287 (query 'encadrement loyer' chambre civ3 date_start 2010-01-01). Pipeline PISTE OAuth+search validé from-agent. Enrichissement progressif : queries restantes (complément loyer ALUR / zone tendue post-2014 spécifiquement) à raffiner runs +N pour atteindre cible 3-5 décisions/template (TODO-28 Florian directive 2026-05-19T08:05Z).",
@@ -314,6 +334,6 @@
   "legal_basis_note": "Articles loi/code extraits du bulk DILA Open Data (https://echanges.dila.gouv.fr/OPENDATA/LEGI/), Licence Ouverte Etalab v2.0, archives quotidiennes XML. Provenance vérifiable : chaque entrée précise archive_name + archive_path + fetched_ts. Citations verbatim depuis BLOC_TEXTUEL/CONTENU (XML schema DILA). Cadence ingestion hebdomadaire prévue via crawler/legifrance_dila_fetch.py --latest-delta + filtre keywords. Différent de legal_basis_citations[] (construction historique depuis vocabulaire SP.fr/ANIL, partiellement non-vérifié).",
   "legal_basis_first_authored_run": "run-265",
   "legal_basis_first_authored_ts": "2026-05-18T16:40Z",
-  "jurisprudence_refs_last_enriched_run": "run-287",
-  "jurisprudence_refs_last_enriched_ts": "2026-05-19T09:46:00Z"
+  "jurisprudence_refs_last_enriched_run": "sub-1",
+  "jurisprudence_refs_last_enriched_ts": "2026-05-19T16:29:42.502029+00:00"
 }
