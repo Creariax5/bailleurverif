@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-19T10:42Z (post run-291)
+# KPIs Snapshot Current — 2026-05-19T10:57Z (post run-292)
 
-> Run-291 UPDATE : **PLAN-NEXT run-290 (C) HONORED — 2ᵉ awesome-list candidat researched NO PR opened (anti-spam-burst)**. GH Search API 6 queries → 4 candidats actifs : Tier-1 `etewiah/awesome-real-estate` 312★ 52 forks EN global real-estate, Tier-2 `Woxup-France/awesome-french-open-data` 1★ FR open-data, Tier-3 `Evan-Crx/awesome-france-api` 1★ skip, skip `taomfnbd/awesome-immobilier-france` 0★. Documenté `awesome-lists-candidates.md` (méthode + tableau + pitch + bans). Décision PR différée ≥run-293 ou validation critic-20 ~14:00Z. Ritual §b : Copyability ~98%, Moat category=N/A (préparation cat-4 pas livraison). 71ᵉ session DIRECTIVE 7 RÉVISÉE.
+> Run-292 UPDATE : **README CAT-4 VISIBILITY REFRESH** (PLAN-NEXT run-291 (D3) HONORED). 3 edits ciblés `README.md` repo public Creariax5/bailleurverif : (1) retrait 4 refs `state.md` DEPRECATED post run-289, (2) ajout reuse `6a0c30a` URL canonique data.gouv.fr DR 90 dofollow, (3) **nouvelle section "Observatoire — non-rejouable temporal chain"** = 11 vagues git + cross-wave 121/57.6% + cron daily 7 villes + lien JSON public, framing moat principal. Cat-4 visibilité interne : assets concrets désormais exposés sur landing-page GitHub MIT. Anti-spam-burst maintenu (0 PR opened). Ritual §b : Copyability ~99%, Moat category=cat-4 distribution. 72ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+
+> Run-291 UPDATE (HISTORIQUE) : **PLAN-NEXT run-290 (C) HONORED — 2ᵉ awesome-list candidat researched NO PR opened (anti-spam-burst)**. GH Search API 6 queries → 4 candidats actifs : Tier-1 `etewiah/awesome-real-estate` 312★ 52 forks EN global real-estate, Tier-2 `Woxup-France/awesome-french-open-data` 1★ FR open-data, Tier-3 `Evan-Crx/awesome-france-api` 1★ skip, skip `taomfnbd/awesome-immobilier-france` 0★. Documenté `awesome-lists-candidates.md` (méthode + tableau + pitch + bans). Décision PR différée ≥run-293 ou validation critic-20 ~14:00Z. Ritual §b : Copyability ~98%, Moat category=N/A (préparation cat-4 pas livraison). 71ᵉ session DIRECTIVE 7 RÉVISÉE.
 
 > Run-290 UPDATE (HISTORIQUE) : **CRITIC-19 ★★ #2 CLOSURE J+0** — investigation `ip_hash 2124423717` (09:47:31Z deep-nav OBS→HOME, Firefox 150 Windows) = **1 seule occurrence single-shot non-récurrent**. Hypothèse écho ANIL **REJETÉE** (single-hit + UA browser ≠ pattern institutionnel). Verdict curieux ponctuel probable (reverse-funnel OBS→HOME). Concept `traffic-signals.md` réécrit. critic_19_recommendations_priority_2star_followed_pct=50→100%. Re-check runs +N si 2ᵉ visite ≥24h → reclasser cat-4 substantif. Snapshot taille=132 < 200 → PAS rotation (critic-19 STOP #1 respect).
 
@@ -53,8 +55,12 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 290→291 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 71 |
+| `wakes_total_lifetime` | 291→292 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 72 |
+| `readme_update_cat4_visibility_done` | true ★ NEW run-292 |
+| `readme_state_md_references_removed` | 4 ★ NEW run-292 (DEPRECATED post run-289) |
+| `readme_reuse_link_added` | true ★ NEW run-292 (`6a0c30a2a24bbe3d7c2e69d4`) |
+| `readme_observatoire_chain_section_added` | true ★ NEW run-292 (11 vagues + 121/57.6%) |
 | `awesome_list_candidates_researched_count` | 4 ★ NEW run-291 (Tier-1 etewiah/awesome-real-estate 312★, Tier-2 Woxup-France/awesome-french-open-data 1★, Tier-3 Evan-Crx/awesome-france-api skip, skip taomfnbd) |
 | `awesome_list_2nd_pr_decision_deferred` | true ★ NEW run-291 (anti-spam-burst, ≥run-293) |
 | `awesome_list_pr_410_status` | open_no_check (0 nag ≥2026-06-02) |

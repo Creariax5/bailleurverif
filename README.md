@@ -19,12 +19,12 @@ This repository contains the source code, content builders, and operational scaf
 
 The entire SaaS — codebase, SEO content, deployment, distribution, growth tactics, and bug fixes — is built and operated by a **Claude agent** running on a 60–300s self-scheduled wake loop. The human founder ([Florian Demartini](https://linkedin.com/in/florian-demartini-166373202)) wrote a single mission brief in May 2026; everything else (architecture choices, copy decisions, distribution channel discovery, incident response) is the agent's autonomous output.
 
-The agent maintains an honest, public-facing state log in `state.md`, `ledger.md`, and `runs/run-N.md` — including its own anti-patterns (e.g. "polish stérile" recognized run-112) and structural blockers it cannot resolve alone.
+The agent maintains an honest, public-facing state log in `ledger.md`, `memory-agent/`, and `runs/run-N.md` — including its own anti-patterns (e.g. "polish stérile" recognized run-112) and structural blockers it cannot resolve alone.
 
 If you came here from a Show HN / press article: the most interesting files are probably:
 
-- [`state.md`](state.md) — current snapshot of what the agent thinks is going on
-- [`ledger.md`](ledger.md) — chronological 1-line decisions
+- [`ledger.md`](ledger.md) — chronological 1-line decisions (source of truth, append-only)
+- [`memory-agent/`](memory-agent/) — Obsidian-style atomic memory (concepts/, decisions/, kpis/snapshot-current.md)
 - [`runs/`](runs/) — full per-wake reports with `CONTEXT / ASSESS / PLAN / ACT / VERIFY / METRIC / NEXT`
 - [`inbox.md`](inbox.md) — bidirectional log Florian ↔ agent
 - [`florian-todos.md`](florian-todos.md) — the only things the agent can't do alone (signup captchas, SMS, GSC verification)
@@ -69,15 +69,15 @@ Total source: ~7 000 lines Python + ~2 500 lines HTML/CSS/JS templates.
 ## Repository layout
 
 ```
-wedge-tool/        — wedge HTTP server (server.py) + 144 static pages, sitemap.xml 151 URLs
+wedge-tool/        — wedge HTTP server (server.py) + 171+ static pages, sitemap.xml
 dashboard/         — content builders (build_blog.py, build_dpe_pages.py, build_programmatic_pages.py, build_preavis_pages.py)
 content/           — long-form Markdown sources (5 guides, FAQ, glossary)
-agent-browser/     — autonomous distribution scripts (wayback_submit.sh, indexnow_push.py, …)
-runs/              — per-wake agent reports (140+ entries and counting)
-state.md           — agent live snapshot
-ledger.md          — chronological log of agent decisions
+agent-browser/     — autonomous distribution scripts (wayback_submit.sh, indexnow_push.py, piste_oauth.py, judilibre_search.py, …)
+runs/              — per-wake agent reports (290+ entries and counting)
+ledger.md          — chronological 1-line log of agent decisions (source of truth)
+memory-agent/      — atomic Obsidian-style memory (concepts/, decisions/, kpis/)
 inbox.md           — founder ↔ agent communication
-metrics.json       — KPI dashboard data
+florian-todos.md   — blockers requiring human action
 ```
 
 ---
@@ -109,6 +109,23 @@ The aggregated rent-cap reference dataset (31 French communes, CSV + JSON + Mark
 Licensed under **Licence Ouverte Etalab v2.0** (compatible with CC BY 4.0). Daily updates. Spatial coverage: France métropolitaine, commune-level granularity.
 
 This dataset references official sources: prefectural decrees published in JORF, ADEME DPE registry, and the loi Climat 2021-1104 calendar.
+
+A companion **reuse** documenting the analytical methodology + cross-wave persistence is published at:
+
+**[`data.gouv.fr/fr/reuses/bailleurverif-observatoire-annonces-loyer-non-conformes-encadrement-dpe-f-g/`](https://www.data.gouv.fr/fr/reuses/bailleurverif-observatoire-annonces-loyer-non-conformes-encadrement-dpe-f-g/)** (reuse id `6a0c30a2a24bbe3d7c2e69d4`).
+
+---
+
+## Observatoire — non-rejouable temporal chain
+
+The [observatoire page](https://bailleurverif.fr/observatoire-annonces-loyer.html) publishes a weekly count of FR rental listings that violate rent-control or DPE-F/G letting bans. Each wave is git-timestamped (signed by the upstream commit hash), so the chain cannot be retroactively forged by a competitor:
+
+- **11 git-timestamped waves** (vague-1 → vague-11, N=210 as of 2026-05-19)
+- **Cross-wave persistence dataset**: 121 listings present in ≥3 consecutive waves (57.6% triple-persist rate), public JSON at [`/data/cross-wave-persistence.json`](https://bailleurverif.fr/data/cross-wave-persistence.json)
+- **Daily crawl** covers 7 cities (Paris, Lille, Lyon, Bordeaux, Plaine Commune, Grenoble, Montpellier) — 2 consecutive runs proven via cron
+- Underlying scrape pipeline: `wedge-tool/static/data/cross-wave-persistence.json` + per-wave commit history in this repo
+
+This temporal proof is the project's principal moat: a competitor starting today cannot reconstruct the past.
 
 ---
 
