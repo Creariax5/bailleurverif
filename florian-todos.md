@@ -5,11 +5,21 @@
 
 ---
 
+## 🧪 TODO suggéré Florian (≤ 2 min) — Test Rich Results FAQPage shipped run-303
+
+Vérifier sur https://search.google.com/test/rich-results les 2 URLs FAQPage shippées run-303 (Builder ne peut pas accéder à cet outil, Florian seul peut) :
+1. `https://bailleurverif.fr/encadrement-loyer-france-2026.html` — attendu 8 FAQ items détectés, status valid.
+2. `https://bailleurverif.fr/observatoire-annonces-loyer.html` — attendu 6 FAQ items détectés, status valid.
+
+Si erreurs critiques (✗), reporter dans `inbox.md` HEAD avec capture/message exact → Builder fixera wake suivant.
+
+---
+
 ## SOUS-AGENTS ACTIFS (capability run-297 2026-05-19T12:28Z)
 
 > Builder Opus seul peut POST/PATCH/DELETE. Registry source-of-truth: `agent-browser/sub-agents-registry.json`. Logs: `data/sub-agents/<name>.jsonl`.
 
-- **`sub-judilibre-enrich`** (Haiku 4.5) — id=`2bbb1dc8-1336-4b64-890b-063c486de4aa` — created 2026-05-19T12:28Z (run-297) — interval 1h — enabled. Enrichit `jurisprudence_refs[]` cat-3 templates (état entrée N=0/0/1). Cycle 1+2 outcome=ok (dpe-invalide 0→3 run-298 + depot-garantie 0→3 run-300, 2/3 templates saturés). Cycle 3 attendu ~14:29Z pour loyer-abusif 1→3. Saturation complète 3/3 → exit clause auto sub-agent. Builder ne touche PAS `jurisprudence_refs[]` tant qu'enabled (write-conflict mitigation critic-20 angle mort).
+- **`sub-judilibre-enrich`** (Haiku 4.5) — id=`2bbb1dc8-1336-4b64-890b-063c486de4aa` — created 2026-05-19T12:28Z (run-297) — interval 1h — enabled. Enrichit `jurisprudence_refs[]` cat-3 templates (état entrée N=0/0/1). Cycle 1 ok dpe-invalide 0→3 run-298, cycle 2 ok depot-garantie 0→3 run-300 (2/3 saturés). Cycle 3 api_fail token cache TTL → fix run-301 piste_oauth auto-load .env. **Cycle 4 (15:29:38Z) outcome=`drift_avoided` ★ run-303** : 60k Judilibre hits "loyer abusif encadrement bail" mais focalisés baux ruraux/HLM/résiliation hors zone tendue post-ALUR 2014, Haiku a préféré **qualité>quantité** (loyer-abusif reste N=1 plutôt que dégrader template). Fix env load run-301 confirmé tournant en sub-agent context (0 api_fail cycle 4). Cycle 5 ~16:29Z. Builder ne touche PAS `jurisprudence_refs[]` tant qu'enabled.
 - **`sub-seo-monitor`** (Haiku 4.5) — id=`d47a1a87-b317-488c-a449-c7326567f341` — created 2026-05-19T13:29Z (run-299) — interval 24h — enabled. Audit SEO/GEO quotidien (PageSpeed Insights 6 pages clés + crawler sitemap + LLM-bot extraction diff + diff vs hier). Alert dans `inbox.md` HEAD uniquement si régression OU worst_score<70 OU cloaking. Sinon silent. Brief Florian 2026-05-19T13:30Z honoré J+0. Coût ≈$1.50/mois.
 
 ---
@@ -32,20 +42,9 @@
 
 ---
 
-## TODO-30 ★ — 2026-05-19 — Cron wake interval drift externe (agents-control side) — note info
+## TODO-30 ✅ DONE 2026-05-19 — Cron baseline = `*/30` (Florian decision pour budget credits)
 
-**Pourquoi (critic-17 audit-17 03:34Z constat)** : critic flagué wakes ~57-64 min vs `*/15` attendu. Crontab local VPS (`crontab -l deploy`) confirmé OK : `imap_poll`, `build_agent_stats`, `ingest_orchestrator` tous `*/15`. Le drift est **côté agents-control config** (système qui lance l'agent Claude lui-même = hors-portée fichiers VPS). Si */60 actif côté external scheduler = budget compute 4× moins wakes/h vs cible Builder DIRECTIVE 7.
-
-**Action attendue Florian** (~1 min, info only) :
-1. Vérifier sur dashboard agents-control si pattern wake est `*/15` ou `*/60` (ou autre).
-2. Si `*/60` → décider : restaurer `*/15` (4× wakes/h, coût ×4) OU acter `*/60` comme nouveau baseline (et l'agent ajuste mental model).
-3. (Optionnel) Inbox `TODO-30 acked: */15` ou `TODO-30 acked: */60 new baseline`.
-
-**Impact si non-fait** : agent continue sans certitude sur cadence effective. Mineur. Pas catastrophique.
-
-**Asymétrie** : 1 min Florian = clarification baseline pacing. Cooldown 48h+ (info non-bloquante).
-
-**Statut** : OPEN run-276 2026-05-19T03:34Z.
+Florian confirmé verbatim : *"j'ai remis le cron à 30 min, mes credits partaient trop vite"*. Baseline officiel agents-control = `*/30` (48 wakes/jour). Pas `*/15` (cible DIRECTIVE 7 originale) ni `*/60` (drift critic-17). Agent mental model à update : 2 wakes/h, ~30 min entre runs. Sous-agents Haiku gagnent en priorité (budget Opus Builder devient plus rare). TODO-30 close.
 
 ---
 
