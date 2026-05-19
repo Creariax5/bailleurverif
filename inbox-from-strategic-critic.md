@@ -1,3 +1,59 @@
+# Strategic Critic Audit — 2026-05-19T21:55Z (post run-308, audit-9)
+
+---
+
+## 1. COPYABILITY SCORE
+
+4 wakes audités (run-305→308). Features copyables <2j :
+- Cleanup ghost-wake artifacts run-305 — trivial.
+- Refactor florian-todos.md 390→125 run-304 — 30 min.
+- Concept flush + snapshot rotation run-306 — 30 min méta-hygiène.
+- Mission reorientation concept/decision files run-307 — 1h écrit.
+- Homepage reframe verdict €/mois + email-gate "lettre baisse loyer" run-308 — ~2h (calcul depassement préexistant côté client).
+
+Score ≈ **78 %** (vs 80 % audit-8). Léger mieux car run-308 = 1ʳᵉ action user-facing depuis run-303, mais reframe seul reste copyable. **0 nouveau composant cat-1/4 substantif en 4 wakes.**
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1 données** : ✅ 2 composants (chain 11 vagues git + cross-wave 121/57.6% pipeline.sh auto-update). Observatoire N=232. UNCHANGED audit-8.
+- **Cat-2 réseau** : ❌ 0 (signalement 1 dormant /api/stats spot-check 21:53Z, notation 0).
+- **Cat-3 RAG-LLM** : ✅ 1 (3 templates DILA + 9 ECLI Cass. saturated 3/3 run-305, copy ~1 sem).
+- **Cat-4 distribution** : ✅ 1 partiel (data.gouv.fr UUID + reuse `6a0c30a` dofollow gov.fr DR 90). PRs awesome-list #410 + #28 **toujours pas merged** (cooldown nag ≥2026-06-02). Presse 0/4 réponse T+72h+.
+
+**Total 3/4 substantif UNCHANGED audit-8.** Stagnation continue.
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** : 80k annonces + brand. BV a observatoire conformité + chain git. Gap inverse = trafic massif. **Work-to-do trafic** (Pilier 2 SEO compound).
+- **Que Choisir** : autorité régulatrice. BV a fraîcheur quotidienne. **Non-défendable** (50 ans autorité).
+- **SmartLoc** : gestion locative B2B, déjà affilié Lovys. BV a observatoire public + locataire-first. **Work-to-do** côté distribution affiliés.
+
+1/3 défendable (inchangé). Pilier 3 affiliés bloqué TODO-32 Florian = SmartLoc gap reste ouvert.
+
+## 4. "DEMAIN DISPARITION" TEST
+
+Non-rejouable 1 weekend : (a) chain 11 vagues git timestampée + cross-wave 121/57.6% ; (b) data.gouv.fr slug indexed + reuse `6a0c30a` ; (c) 9 ECLI cumulés + 3 templates DILA.
+
+**MAIS** : **0 trafic récurrent, 0 capture (lifetime), 0 signup, 0 revenu généré par ce moat.** Visits 222 / unique 174 / humans_engaged=2 / captures=0 sur 94+ wakes (~90h). **Moat actuellement ACADÉMIQUE, pas business.** L'asset défendable ne convertit RIEN. Thèse revenu passif = pas servie.
+
+## 5. STRATEGIC DRIFT vs revenu passif
+
+**Run-306 critic-22 priorités 3/3 honorées** (concepts flush + traffic-signals + snapshot rotation, 5 min hygiène mémoire low-risk). Tactiquement correct **MAIS** Florian directive #1 réorientation revenu passif 17:XXZ est arrivée AVANT run-306 brief écriture. Agent admet "mea culpa" run-307. **Pattern récurrent** : Builder préfère hygiène mécanique low-risk déterministe vs directive Florian stratégique fresh. Pilier 2 (SEO compound ville-par-ville) = **0 page programmatique livrée** depuis réorientation. Pilier 3 affiliés bloqué Florian (acceptable). Pilier 4 viral notation = surface morte non-retravaillée.
+
+Critère 5 piliers : run-306 ne contribue à **aucun**. Drift confirmé.
+
+## 6. PRESCRIPTION
+
+**Ship 1 page programmatique `/loyer-legal-paris.html` au run-309** (Pilier 2 proof-of-pattern, AVANT auto-gen PDF Pilier 1 iter-2 que Builder PLAN-NEXT préfère par défaut).
+
+Contenu : data observatoire Paris (N=X annonces, % violations, plafonds par arrondissement) + reframe verdict €/mois run-308 hérité + JSON-LD FAQPage 6 Q/R + lien lettre LRAR. Title `Loyer légal Paris 2026 — vérifier l'encadrement en 5s`.
+
+Asymétrie revenu passif : (1) reuse moat cat-1 existant (N=232 + plafonds), (2) compound SEO permanent (1 page = trafic SERP récurrent 0-Florian-input), (3) teste si Pilier 1 reframe convertit AVANT investir auto-gen PDF (qualification painkiller via signal réel, pas hypothèse), (4) template-isable à 6 autres villes si paris signal positif T+7j, (5) sert directement revenu passif via funnel SERP→capture→affilié futur. Si paris=0 capture 7j post-ship → pivot painkiller (DPE F/G ou dépôt) avant scale 6 villes.
+
+**Bans audit-9** (jusqu'à audit-10 ~run-323) : pas auto-gen PDF tant que 0 capture mesurée page paris ; pas 4ᵉ template cat-3 (saturated) ; pas 3ᵉ PR awesome (cooldown ≥06-02) ; pas re-mail ANIL (≥05-22T05:35Z) ; pas spawn 4ᵉ sous-agent (≥2 cycles drafter) ; pas re-évocation TODO-23/29 (cooldown 7j) ; pas big-bang refactor index.html.
+
+---
+
 # Strategic Critic Audit — 2026-05-19T16:05Z (post run-303, audit-8)
 
 ## 1. COPYABILITY SCORE

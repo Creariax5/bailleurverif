@@ -12,7 +12,7 @@
 - [Moat categories](concepts/moat-categories.md) — 4 catégories DIRECTIVE 9 (cat-1 données / cat-2 morte / cat-3 RAG-LLM / cat-4 distribution).
 - [Observatoire chain](concepts/observatoire-n232.md) — Cat-1 actif, 11 vagues git timestampées (vague-11 N=210 run-279), cron daily 7 villes 2 jours consécutifs prouvés.
 - [Florian blockers](concepts/florian-blockers.md) — TODO-29 γ-mini canal externe / TODO-30 cron drift / TODO-25/26/27/28 backlog.
-- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-8 2026-05-19T16:05Z = spawn `sub-linkedin-drafter` Sonnet 4.6 HONORED run-304 J+0 (drift flag run-303 FAQPage polish vs directive Florian récente).
+- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-9 2026-05-19T21:55Z = ship `/loyer-legal-paris.html` Pilier 2 proof-of-pattern AVANT auto-gen LRAR. **HONORED run-309 J+0** (tension tactical-23 ★★★ auto-gen LRAR résolue strategic > tactical DIRECTIVE 10).
 - [Tactical warnings current](concepts/tactical-warnings-current.md) — Critic-19 8.7/10 ★★★ : #1 state.md deprecated ✅ run-289, #2 ip 2124423717 ⏳ run-290, #3 ritual §b ✅.
 - [Press FR list](concepts/press-fr-list.md) — 4/4 outbound 2026-05-17 (Capital/LeMonde/Mediapart/Reporterre) 0/4 réponse T+17h.
 - [Monetization pending](concepts/monetization-pending.md) — RÉORIENTÉ : skip Stripe/SKUs B2C, focus affiliés (Lovys+Hemea) via TODO-32 NEW. TODO-25 REPORTÉ post-100 signups.
@@ -47,6 +47,7 @@
 - [Sub-seo-monitor spawn](decisions/2026-05-19-sub-seo-monitor-spawn.md) — 2ᵉ sous-agent Haiku 4.5 interval 24h spawné run-299 (brief Florian 13:30Z monitoring SEO/GEO post Tier 1+2). Override discipline incremental sur cas explicite.
 - [Sub-linkedin-drafter spawn](decisions/2026-05-19-sub-linkedin-drafter-spawn.md) — 3ᵉ sous-agent Sonnet 4.6 interval 24h spawné run-304 (brief Florian 16:XXZ priorité #1 post-TODO-23 partial done LinkedIn organique). Cap relevé 6→8. florian-todos.md refacto 390→125 lignes.
 - [Mission reorientation revenu passif](decisions/2026-05-19-mission-reorientation-revenu-passif.md) — Florian 17:XXZ verbatim : revenu passif vs 5000 users, 5 piliers validés (sharpen+SEO+affiliés+viral+LinkedIn), TODO-25 REPORTÉ post-100 signups, TODO-32 Affiliés NEW + TODO-33 5 personnes NEW. Ack run-307 J+0.
+- [Strategic-9 loyer-legal-paris shipped](decisions/2026-05-19-strategic-9-loyer-legal-paris-shipped.md) — Pilier 2 proof-of-pattern `/loyer-legal-paris.html` shipped run-309 J+0 strategic-9 prescription. Tactical-23 ★★★ auto-gen LRAR différé (BAN strategic-9 jusqu'à signal capture). Seuils Pilier 1 iter-1 explicites mission.md (≥3/7j validé, ≤1/14j pivot).
 
 ## KPIs
 

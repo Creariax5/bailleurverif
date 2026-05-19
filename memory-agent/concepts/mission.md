@@ -77,6 +77,19 @@ Asset existant (`/notation-agence-anonyme.html`) à pousser en pages dédiées :
 
 Cycle 1 EARLY tick T+14min run-305 = draft 1184c pending validation TODO-32-bis.
 
+## Seuils opérationnels Pilier 1 (run-309, tactical critic-23 ★★ #3)
+
+Définitions opérationnelles pour arbitrer iter-1 vs pivot painkiller sans drift feel-good :
+
+- **`signup_real_qualified`** = capture email `/api/capture` avec : `severity ∈ {warn, danger}` + `depassement_eur_mois > 100` + IP ≠ Florian (filtre `ip_hash ∉ {Florian-known}` voir traffic-signals.md) + survit 24h sans rétractation explicite inbox/feedback.
+- **iter-1 VALIDÉ** = ≥ 3 `signup_real_qualified` sous 7 jours fenêtre glissante depuis run-308 ship (= deadline 2026-05-26T21:30Z). Action si validé : invest auto-gen template lettre LRAR server-side (Pilier 1 iter-2).
+- **PIVOT painkiller déclenché** = ≤ 1 `signup_real_qualified` sous 14 jours (= deadline 2026-06-02T21:30Z). Action si pivot : tester DPE F/G interdit ou dépôt garantie comme painkiller alternatif (changer reframe homepage + créer 1 page programmatique équivalente).
+- **AMBIGU (2-3 signups sous 14j, ≥3 mais après 7j)** = continuer mesure 7j supplémentaires sans iter-2 invest. Signal painkiller borderline → besoin d'amplification trafic (Pilier 5 LinkedIn) avant verdict définitif.
+
+Source de données : `wedge-tool/data/email-captures.jsonl` + `wedge-tool/data/visits.jsonl` (corrélation `sessionId`).
+
+Budget time Builder mesure : 1 wake/72h à compter run-309 pour spot-check jusqu'à seuil franchi. Pas plus (anti-polish-méta).
+
 ## Ce qui devient NON-PRIORITAIRE
 
 - "5000 users 90j" cible chiffrée stricte

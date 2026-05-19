@@ -1,3 +1,47 @@
+## 🚀 2026-05-19T22:30Z — Agent → Florian — run-309 : PILIER 2 LIVE `/loyer-legal-paris.html` shipped + seuils Pilier 1 explicites
+
+**Arbitrage** : tactical-23 (★★★ auto-gen LRAR) vs strategic-9 (BAN auto-gen + prescrit page Paris programmatique) en tension directe. J'ai tranché pour strategic — son argument est inattaquable : avec 0 capture lifetime, on ne sait pas distinguer painkiller-mauvais de trafic-absent ; investir auto-gen PDF avant de prouver canal = boîte noire. Plus aligné aussi sur ta réorientation Pilier 2 = SEO compounding = revenu passif.
+
+### Ce qui est live maintenant (https://bailleurverif.fr/loyer-legal-paris.html)
+
+- **H1 painkiller** : "Loue-je à un loyer légal à Paris ?" + sous-titre "Tape ta surface et ton loyer, verdict en 5 secondes. Si dépassement → lettre de baisse de loyer LRAR pré-remplie offerte."
+- **Mini-simulateur inline** (surface + loyer + nu/meublé) → verdict €/mois 3xl bold (heritage run-308 reframe) + jusqu'à €/an + jusqu'à €/3ans récupérables visibles.
+- **Email-gate dynamique** apparaît seulement si dépassement > 0 → "Recevoir ma lettre" → POST `/api/capture` endpoint partagé homepage (champ `depassement_eur_mois` déjà persisté JSONL run-308, donc tu peux filtrer leads page Paris vs homepage avec `jq 'select(.answers.source=="loyer-legal-paris")'`).
+- **Bloc preuve sociale OBSERVATOIRE** (calculé sur ton CSV mai-19 N=30 Paris) : **46,7% des annonces Paris en violation, 17,9 €/m² d'excès moyen, ~540€ trop-perçu typique 30 m²**. Lien data.gouv.fr direct → moat cat-1 visible inline.
+- **6 FAQ visibles `<details>`** + **FAQPage JSON-LD** + **Dataset JSON-LD** PropertyValue 46,7/17,92 → rich snippets potentiels + ancrage LLM-citation Perplexity/Claude/ChatGPT.
+- **Procédure 3 étapes** (LRAR / commission conciliation / juge contentieux protection) + amende préfectorale 5k/15k€ → conversion réassurance.
+- **Cross-link** : page encyclopédique `/encadrement-loyer-paris-2026.html` (aside amber ajouté → routing painkiller) + `/locataire-loyer-legal.html` (procédure détaillée multi-villes).
+- **CTA homepage** `/?q=Paris` (diagnostic complet) → funnel secondaire.
+
+### Seuils Pilier 1 désormais explicites (mission.md, anti-feel-good iter-2)
+
+Pour arbitrer **objectivement** iter-1 validé vs pivot painkiller :
+- `signup_real_qualified` = capture severity warn/danger + depassement > 100€/mois + IP ≠ Florian + survit 24h
+- **iter-1 VALIDÉ = ≥3 signups qualifiés sous 7j** (deadline **2026-05-26T21:30Z**) → ALORS j'investis auto-gen template LRAR server-side (Pilier 1 iter-2 unlocked).
+- **PIVOT painkiller = ≤1 signup sous 14j** (deadline **2026-06-02T21:30Z**) → je teste DPE F/G interdit ou dépôt garantie comme painkiller alternatif.
+- **AMBIGU 2-3 sous 14j** → amplification trafic Pilier 5 LinkedIn (sub-linkedin-drafter cycle suivant) avant verdict définitif.
+
+### Canal trafic activé (partiel)
+
+- **IndexNow round-69** : 3 URLs / 3 engines (Universal 200 + Bing 200 + Yandex 202) → 1ers crawls Bing/Yandex attendus 1-6h, Google natural index 24-72h.
+- Reste à activer (futur) : sub-linkedin-drafter cycle 2 ≥2026-05-20T16:45Z peut être briefé sur signal `signal_source=loyer_legal_paris_live` pour content sharper. Si tu valides TODO-32-bis (draft cycle 1 1184c jurisprudence) entre-temps → cycle 2 prend automatiquement le nouveau signal.
+
+### Reste action toi (priorité inchangée mais raffinée)
+
+- **TODO-32 ★★** (1-2h, débloque revenu passif Pilier 3) : Lovys + Hemea signup affiliés. Ouvert depuis 6h, le plus haut ROI/h disponible.
+- **TODO-33 ★** (1h, débloque pivot painkiller) : 5 personnes entourage 12min/perso. Tes findings remplaceraient les hypothèses qualitatives que j'utilise par défaut.
+- **TODO-32-bis ★** (30s) : valider draft drafter LinkedIn cycle 1 1184c jurisprudence Cass. (`social-drafts.md` L626-665).
+- **TODO-31 ★★** (2 min) : Test Rich Results FAQPage shippées run-303.
+- TODO-25 (Stripe) ⏸️ REPORTÉ. Ne re-prompterai pas.
+
+### Pas de question ce wake
+
+Default plan run-310 (~23:00Z cron) = M1 ne-rien-faire si 0 signal trafic ce wake (3 wakes substantifs consécutifs 307/308/309) **OU** M2 page Pilier 4 viral `/notation-agence/foncia/paris.html` (1ʳᵉ namedshaming attention sourcing légal vérifiable) **OU** M3 page comparative `/comparatif-encadrement-loyer-villes-2026.html`. Je tranche au wake selon signal. Si tu préfères une option spécifique → 1 ligne inbox.md HEAD.
+
+**KPIs ce wake** : visits 222 / unique 174 / humans_engaged=2 / captures lifetime=0 / outbound 8 (ANIL cooldown ≥22/05 05:35Z) / pages_html 171→172 / sitemap_urls 188→189 / IndexNow round 68→69. Sub-agents 2 actifs (drafter Sonnet 24h + seo-monitor Haiku 24h). Wakes 309. Directive 7 trophy 89 consécutifs. 0 ScheduleWakeup. 0 dépense. 0 PII. Cron 23:00Z relance.
+
+---
+
 ## 🎯 2026-05-19T21:30Z — Agent → Florian — run-308 : PILIER 1 iter-1 LIVE (verdict €/mois proéminent + reframe "lettre baisse loyer")
 
 **Honoré PLAN-NEXT run-307** : démarrage pivot homepage painkiller, surgical incremental (vs big-bang).

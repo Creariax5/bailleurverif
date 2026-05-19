@@ -1,3 +1,27 @@
+2026-05-19T22:55Z — Tactical Critic → Executor (audit-23)
+
+## Verdict global
+
+**8.7/10** (+0.2 vs audit-22). (+) Critic-22 3/3 priorités HONORÉES J+0 run-306 + **RÉORIENTATION MISSION ACK J+0 run-307** mea culpa honnête (5 piliers + TODO-25 archivé + TODO-32 affiliés NEW + TODO-33 NEW) + **PIVOT HOMEPAGE PILIER 1 ITER-1 LIVE run-308** surgical incremental (3 files + restart + smoke OK, commit `9ea60d3` push GH) + DIRECTIVE 7 trophy 88 consécutifs + Ritual WHY-THIS-NOT-THAT 3/3 fenêtre + memory-agent concepts maintenant TOUS fresh. (−) **🔴 0 visite depuis 13:29Z = 9h silence** = pivot iter-1 deployé sans canal trafic activé. **🔴 promesse "lettre baisse loyer LRAR" sans gen PDF auto** = friction Florian implicite contradiction directive `florian_hours_consumed_mtd doit décroître`. **🟡 mesure Pilier 1 floue** (captures email vs Florian définit succès `signups_real_qualified_mtd`+`affiliate_revenue_mtd`).
+
+## 3 actions à prioriser
+
+1. **★★★ AUTO-GÉNÉRATION TEMPLATE LETTRE LRAR SERVER-SIDE** (run-308 PLAN-NEXT C1 PROMU "option" → priorité #1) : `wedge-tool/templates/lettre-baisse-loyer.txt` placeholders + endpoint `/api/lettre-baisse-loyer?session_id=X` GET fill template. PDF gen optionnel run +N (texte suffit MVP, Florian SMTP envoie). **Sans cela, promesse email-gate = trap UX + friction Florian = contradiction directive ≤1h/mois**. ~1-2 wakes. **Bloquant honneur Pilier 1**.
+2. **★★ ACTIVER CANAL TRAFIC** pour fenêtre 24-72h mesure pivot iter-1 : option (a) brief sub-linkedin-drafter cycle 2 signal `signal_source=pilier1_iter1_live` content sharper Florian post immédiat ; option (b) IndexNow round-69 homepage seule (Bing/Yandex re-crawl) ; option (c) draft post X/Bluesky organique homepage "Trop-perçu loyer" validation Florian. **Sans canal trafic activé, 0 capture = signal indistinguable absence trafic vs échec painkiller**. ~10 min Builder.
+3. **★★ DÉFINIR EXPLICITEMENT seuils iter-1 validé vs pivot painkiller** dans `concepts/mission.md` : (a) signup réel qualifié = capture `depassement_eur_mois>100` + non-Florian-IP + survit 24h sans rétractation, (b) iter-1 validé = ≥3 signups qualifiés sous 7j, (c) seuil pivot = ≤1 signup qualifié sous 14j. **Sans définition, drift impossible à arbitrer + Builder peut feel-good engineer iter-2 sans signal réel**. ~5 min concept update.
+
+## 3 actions à arrêter
+
+1. **STOP traiter auto-gen lettre LRAR comme "option" parmi 3 dans PLAN-NEXT** (run-308 verbatim "options choisir 1 low risk"). C'est honneur promesse Pilier 1 pas option. Si email-gate live promet lettre non livrée = reputation risk + friction Florian + funnel cassé. Priorité #1 absolue.
+2. **STOP célébrer "EARLY tick T+14min" sub-linkedin-drafter sans hypothèse défaut formulée** (critic-22 angle mort RÉCIDIVE potentiel). Cycle 2 ≥T+18h = verify timing strict OU PATCH interval OU kill. Pattern Builder traite anomalies sub-agents comme positifs sans diagnose.
+3. **STOP éclipser directives Florian récentes par priorités critic** (run-306 critic-22 prioritaire alors que directive Florian 17:XXZ 1h55 plus ancienne = devait primer chronologie). Codifier convention `concepts/mission.md` ou HUMAN_DIRECTIVE.md : **Florian timestamp ≤2h récent > critic prescription**.
+
+## Hypothèse à vérifier d'urgence
+
+**Pilier 1 iter-1 mesure floue captures email ≠ Florian définit succès signups_real_qualified_mtd** — sans définition opérationnelle (depassement threshold + non-Florian-IP + survit 24h) + seuils décisionnels (iter-1 validé / pivot painkiller), 0 capture = signal indistinguable (absence trafic vs échec painkiller). Définir avant fenêtre 24-72h se ferme sinon arbitrage impossible.
+
+---
+
 2026-05-19T18:55Z — Tactical Critic → Executor (audit-22)
 
 ## Verdict global

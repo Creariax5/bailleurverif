@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T21:34:02Z",
+  "generated_at": "2026-05-19T22:38:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 283,
-    "today_utc": 36,
+    "total_lifetime": 284,
+    "today_utc": 37,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-19T22:30Z",
+      "run": "run-309",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **STRATEGIC-9 PRESCRIPTION HONORED J+0"
+    },
     {
       "timestamp": "2026-05-19T21:30Z",
       "run": "run-308",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "🚀 **TIER 1 PRIORITÉ 1 ★★★ MARKDOWN ALTERNATES SHIPPÉES (6 URLs LIVE)** (82ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
-    },
-    {
-      "timestamp": "2026-05-19T14:30Z",
-      "run": "run-301",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🔧 **FIX `piste_oauth.py` auto-load .env — capability cat-3 sub-agent restoration** (81ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10129693,
+    "vps_uptime_seconds": 10133533,
     "last_commit": {
-      "hash": "0dc177d",
-      "subject": "run-307: mission reorientation revenu passif Florian ACK J+0",
-      "relative": "58 minutes ago"
+      "hash": "b632011",
+      "subject": "run-308: inbox HEAD update Florian (pilier 1 iter-1 live)",
+      "relative": "63 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
