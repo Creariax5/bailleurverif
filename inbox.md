@@ -1,3 +1,38 @@
+## 🔍 2026-05-19T23:30Z — Agent → Florian — run-310 : PILIER 4 BLOCKER découvert + TODO-34 à toi (a/b/c)
+
+**Discovery substantif ce wake** : j'ai audité sérieusement Pilier 4 viral (notation agences) que strategic-9 a flag "surface morte non-retravaillée". CSV observatoire (23 colonnes) n'a **PAS** de colonne `agence`/`brand`/`annonceur`. Donc pages `/notation-agence/foncia/paris.html` data-driven que mission.md décrit **sont impossibles** sans upgrade pipeline scraper. Les workarounds 0-data-upgrade (placeholder, hall-of-shame anonyme, crowdsourcing form) sont tous du théâtre ou redondance. Détail decision file `memory-agent/decisions/2026-05-19-pilier-4-data-missing.md`.
+
+### TODO-34 ★★ à toi (~30s décision) — 3 options
+
+Réponds 1 ligne `inbox.md` HEAD : `TODO-34 pilier-4: (a) | (b) | (c)` :
+
+- **(a) UPGRADE SCRAPER** : je code 2-4 wakes (~€10-20 Opus) — ajoute colonnes `agence_brand` + `is_professional` + re-scrape 7 villes daily + backfill partiel. Enable Pilier 4 viral data-driven authentique avec namedshaming sourcé.
+- **(b) PIVOT ANGLE Pilier 4** : je ship 1 wake `/top-violations-loyer-paris-arrondissement.html` (et variants). Data already in CSV (codes postaux + % violations + €/m² excès). Moins viral (pas de target nominatif) mais 0 risque légal + 0 upgrade scraper + compounding SEO.
+- **(c) PAUSE Pilier 4 indéfini** : focus Piliers 1+2+5 cumul. 5 piliers ≠ tous obligatoires. **Mon défaut Builder si silence 14j** (anti-théâtre).
+
+Ne te re-prompterai pas avant 7j (cooldown ré-évocation).
+
+### Ce que j'ai fait ce wake (hygiène mémoire non-éclipsable)
+
+5 concepts memory updates J+0 (`tactical-warnings-current` audit-23 8.7/10 + `strategic-prescription-last` audit-9 HONORED run-309 + `mission.md` Pilier 4 verdict + `florian-blockers` TODO-34 NEW + `snapshot-current` headline Run-310). Decision file `pilier-4-data-missing.md`. MEMORY.md index 5 lignes patch. Update `florian-todos.md` TODO-34 section Gros chantier. Critic-22/23 avaient flag "STOP IGNORER staleness memory-agent concepts" → traité ce wake. Cohérent aussi avec ta directive "concepts memory à jour" indirectement énoncée via critic patches.
+
+### Reste action toi (priorité order INCHANGÉE depuis run-309 + TODO-34 NEW)
+
+- **TODO-32 ★★** (1-2h, débloque revenu passif Pilier 3) : Lovys + Hemea signup affiliés. Ouvert depuis 6h30, le plus haut ROI/h.
+- **TODO-34 ★★** (30s décision, débloque Pilier 4 ou clarifie pause) : a/b/c ci-dessus.
+- **TODO-33 ★** (1h, débloque pivot painkiller) : 5 personnes entourage 12 min/perso. Tes findings = data réelle vs hypothèses Builder.
+- **TODO-32-bis ★** (30s) : valider draft drafter LinkedIn cycle 1 1184c jurisprudence (`social-drafts.md` L626-665).
+- **TODO-31 ★** (2 min) : Test Rich Results FAQPage Google (3 URLs maintenant incl. `/loyer-legal-paris.html`).
+- TODO-25 (Stripe) ⏸️ REPORTÉ. Ne re-prompterai pas.
+
+### Pas de question ce wake (au-delà TODO-34)
+
+Default plan run-311 (~00:30Z cron) = **M0 ne-rien-faire** (5 wakes substantifs consécutifs 306-310, fenêtre mesure Paris page ouverte 7j jusqu'à 2026-05-26, drafter cycle 2 T+17h cible 2026-05-20T16:45Z pas encore). Économie €0.10 Opus + cache warm + cron prend relais. Sauf : signal capture email `/api/capture`, ta réponse TODO-34, IMAP press reply, drafter cycle 2 drift.
+
+**KPIs ce wake** : visits 222 UNCHANGED 10h+ since 13:29:30Z / captures lifetime=0 (fenêtre mesure Paris page T+1h post-ship) / humans_engaged=2 UNCHANGED / outbound 8 (ANIL cooldown ≥22/05 05:35Z) / pages_html 172 UNCHANGED (volontairement, BAN scaler Paris→Lyon avant signal 7j) / sub-agents 2 actifs / wakes 310 / Directive 7 trophy **90 consécutifs**. 0 ScheduleWakeup. 0 dépense. 0 PII. 0 server restart. 0 nouvelle page. 0 IndexNow. 0 outbound. Cron 00:30Z relance.
+
+---
+
 ## 🚀 2026-05-19T22:30Z — Agent → Florian — run-309 : PILIER 2 LIVE `/loyer-legal-paris.html` shipped + seuils Pilier 1 explicites
 
 **Arbitrage** : tactical-23 (★★★ auto-gen LRAR) vs strategic-9 (BAN auto-gen + prescrit page Paris programmatique) en tension directe. J'ai tranché pour strategic — son argument est inattaquable : avec 0 capture lifetime, on ne sait pas distinguer painkiller-mauvais de trafic-absent ; investir auto-gen PDF avant de prouver canal = boîte noire. Plus aligné aussi sur ta réorientation Pilier 2 = SEO compounding = revenu passif.

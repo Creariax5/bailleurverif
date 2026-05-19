@@ -3,6 +3,7 @@
 > L'agent ajoute ici uniquement les actions qui requièrent ta personne (login, signature, vote, paiement, click humain). L'agent N'ATTEND PAS ces items pour avancer.
 > **Last refactor : 2026-05-19T16:XXZ (run-304)** — historique condensé en section "Archive collapsed". Détails archivés dans `florian-todos-history.md.bak` + `ledger.md` + git history.
 > **Update 2026-05-19T20:28Z (run-307)** — RÉORIENTATION mission Florian 17:XXZ : revenu passif vs 5000 users. TODO-25 (Stripe) archivé REPORTÉ post-100 signups. Nouveau TODO-32 ★★ Affiliés Lovys+Hemea remplace TODO-25 priorité gros chantier. Ancien TODO-32 (drafter LinkedIn) → TODO-32-bis ★ Optionnel. Nouveau TODO-33 ★ Parler 5 personnes entourage.
+> **Update 2026-05-19T23:30Z (run-310)** — NEW TODO-34 ★★ DÉCISION Pilier 4 viral notation agences : CSV observatoire 23 colonnes sans `agence`/`brand`/`annonceur` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven impossibles sans upgrade scraper. 3 options (a) upgrade scraper / (b) pivot angle / (c) pause indéfini. Default = (c) si silence 14j.
 
 ---
 
@@ -41,6 +42,23 @@ Form sur https://findly.tools/submit. Data prête dans `kit-submission.md`. Emai
 ---
 
 ## 🎯 Gros chantier > 1h
+
+### TODO-34 ★★ — DÉCISION Pilier 4 viral notation agences (5 min Florian-action, NOUVEAU run-310)
+
+**Pourquoi** : Run-310 a découvert que CSV observatoire (`wedge-tool/static/data/observatoire-annonces-loyer-*.csv` schema 23 colonnes) **n'a pas de colonne `agence`/`brand`/`annonceur`/`professional`**. Donc Pilier 4 "pages dédiées `/notation-agence/foncia/paris.html` data-driven" impossible sans upgrade scraper (extraction nom agence + classification pro vs particulier à chaque listing).
+
+**Décision Florian** : choisir 1 des 3 options dans `inbox.md` HEAD (1 ligne) :
+
+- **(a) UPGRADE SCRAPER** : Builder code 2-4 wakes (ajouter colonnes `agence_brand` + `is_professional` + re-scrape 7 villes + backfill historique partiel possible). Enable Pilier 4 viral data-driven authentique. Risque : 2-4 wakes Builder = ~€10-20 Opus, ROI inconnu tant que Pilier 1+2 pas validés.
+- **(b) PIVOT ANGLE Pilier 4** : namedshaming non-agences via top arrondissements / codes postaux % violation (ex: `/top-violations-loyer-paris-arrondissement.html`). Data already in CSV. Builder ship 1 wake. Moins viral (pas de target identifiable nominatif) mais 0 risque juridique + 0 upgrade scraper.
+- **(c) PAUSE Pilier 4** indéfini, focus Piliers 1+2+5 cumul = enough proof-of-pattern revenu passif. Builder default si pas réponse 14j.
+
+**Action Florian** : 1 ligne `inbox.md` HEAD :
+> `TODO-34 pilier-4: (a) | (b) | (c)`
+
+**Statut** : OPEN run-310 2026-05-19T23:30Z. Default = (c) pause indéfini si silence 14j (cooldown ré-évocation ≥2026-06-02). Ne PAS re-prompter avant 7j.
+
+---
 
 ### TODO-32 ★★ — Signer 2 affiliés Lovys (GLI) + Hemea (travaux) (1-2h, NOUVEAU run-307)
 

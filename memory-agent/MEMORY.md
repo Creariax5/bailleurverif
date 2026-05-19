@@ -8,12 +8,12 @@
 
 ## Concepts (état courant, mutable)
 
-- [Mission](concepts/mission.md) — RÉORIENTÉE 2026-05-19T17:XXZ : revenu passif €100-500/mo @6m + €500-3000/mo @12m, Florian ≤1h/mois, 5 piliers (sharpen+SEO+affiliés+viral+LinkedIn). Skip TODO-25 actuel.
+- [Mission](concepts/mission.md) — RÉORIENTÉE 2026-05-19T17:XXZ : revenu passif €100-500/mo @6m + €500-3000/mo @12m, Florian ≤1h/mois, 5 piliers (sharpen+SEO+affiliés+viral+LinkedIn). Pilier 1+2 LIVE run-308/309. **Pilier 4 BLOCKER data column missing run-310 → TODO-34 décision Florian**. Skip TODO-25.
 - [Moat categories](concepts/moat-categories.md) — 4 catégories DIRECTIVE 9 (cat-1 données / cat-2 morte / cat-3 RAG-LLM / cat-4 distribution).
 - [Observatoire chain](concepts/observatoire-n232.md) — Cat-1 actif, 11 vagues git timestampées (vague-11 N=210 run-279), cron daily 7 villes 2 jours consécutifs prouvés.
-- [Florian blockers](concepts/florian-blockers.md) — TODO-29 γ-mini canal externe / TODO-30 cron drift / TODO-25/26/27/28 backlog.
-- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-9 2026-05-19T21:55Z = ship `/loyer-legal-paris.html` Pilier 2 proof-of-pattern AVANT auto-gen LRAR. **HONORED run-309 J+0** (tension tactical-23 ★★★ auto-gen LRAR résolue strategic > tactical DIRECTIVE 10).
-- [Tactical warnings current](concepts/tactical-warnings-current.md) — Critic-19 8.7/10 ★★★ : #1 state.md deprecated ✅ run-289, #2 ip 2124423717 ⏳ run-290, #3 ritual §b ✅.
+- [Florian blockers](concepts/florian-blockers.md) — 6 TODOs OPEN run-310 : TODO-32 ★★ affiliés / TODO-33 ★ entourage / **TODO-34 ★★ NEW décision Pilier 4** / TODO-32-bis drafter validate / TODO-31 Rich Results / TODO-26/27 silent.
+- [Strategic prescription last](concepts/strategic-prescription-last.md) — Audit-9 2026-05-19T21:55Z = ship `/loyer-legal-paris.html` Pilier 2 proof-of-pattern AVANT auto-gen LRAR. **HONORED run-309 J+0**. Bans audit-9 actifs jusqu'à audit-10 ~run-325 (incl. NEW pas scaler Paris→Lyon avant signal 7j 2026-05-26).
+- [Tactical warnings current](concepts/tactical-warnings-current.md) — Audit-23 8.7/10 (+0.2) post run-308 : ★★★ #1 auto-gen LRAR BLOQUÉ strategic-9 (tension résolue) / ★★ #2 IndexNow round-69 partial / ★★ #3 seuils Pilier 1 mission.md L80-91 ✅ run-309.
 - [Press FR list](concepts/press-fr-list.md) — 4/4 outbound 2026-05-17 (Capital/LeMonde/Mediapart/Reporterre) 0/4 réponse T+17h.
 - [Monetization pending](concepts/monetization-pending.md) — RÉORIENTÉ : skip Stripe/SKUs B2C, focus affiliés (Lovys+Hemea) via TODO-32 NEW. TODO-25 REPORTÉ post-100 signups.
 - [Vision 36m](concepts/vision-36m.md) — Voie B locataire-first, observatoire série temporelle + RAG jurisprudence + B2B notaires P3.
@@ -48,6 +48,7 @@
 - [Sub-linkedin-drafter spawn](decisions/2026-05-19-sub-linkedin-drafter-spawn.md) — 3ᵉ sous-agent Sonnet 4.6 interval 24h spawné run-304 (brief Florian 16:XXZ priorité #1 post-TODO-23 partial done LinkedIn organique). Cap relevé 6→8. florian-todos.md refacto 390→125 lignes.
 - [Mission reorientation revenu passif](decisions/2026-05-19-mission-reorientation-revenu-passif.md) — Florian 17:XXZ verbatim : revenu passif vs 5000 users, 5 piliers validés (sharpen+SEO+affiliés+viral+LinkedIn), TODO-25 REPORTÉ post-100 signups, TODO-32 Affiliés NEW + TODO-33 5 personnes NEW. Ack run-307 J+0.
 - [Strategic-9 loyer-legal-paris shipped](decisions/2026-05-19-strategic-9-loyer-legal-paris-shipped.md) — Pilier 2 proof-of-pattern `/loyer-legal-paris.html` shipped run-309 J+0 strategic-9 prescription. Tactical-23 ★★★ auto-gen LRAR différé (BAN strategic-9 jusqu'à signal capture). Seuils Pilier 1 iter-1 explicites mission.md (≥3/7j validé, ≤1/14j pivot).
+- [Pilier 4 data-missing](decisions/2026-05-19-pilier-4-data-missing.md) — CSV observatoire 23 cols sans `agence`/`brand` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven impossibles sans upgrade scraper. Pilier 4 PAUSE par défaut, TODO-34 ★★ escalade décision Florian (a/b/c).
 
 ## KPIs
 

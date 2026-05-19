@@ -69,6 +69,8 @@ Asset existant (`/notation-agence-anonyme.html`) à pousser en pages dédiées :
 
 **Risque légal** : sourcer chaque accusation vérifiable + ne pas inventer + droit de réponse activable. Restrictif mais faisable.
 
+**⚠️ BLOCKER DATA DISCOVERED run-310** : CSV observatoire (`wedge-tool/static/data/observatoire-annonces-loyer-*.csv` schema 23 colonnes) n'a **PAS de colonne `agence`/`brand`/`annonceur`/`professional`**. Donc pages dédiées `/notation-agence/<brand>/<ville>.html` data-driven IMPOSSIBLE sans upgrade scraper (ajout extraction nom agence + classification particulier vs pro à chaque listing). **TODO-34 NEW florian-todos.md** : décision Florian (upgrade scraper vs pivot Pilier 4 angle). Workarounds 0-data-upgrade examinés et rejetés run-310 : (a) placeholder page = théâtre + low quality ; (b) hall of shame anonymisé annonces (sans brand) = pas viral car pas namedshaming ; (c) crowdsourcing form témoignages = vide content + 0 utilisateur. Pilier 4 EN PAUSE jusqu'à décision TODO-34.
+
 ### Pilier 5 — CONTENU LINKEDIN automatisé
 
 **Florian = 8000 followers LinkedIn perso = canal externe humain N°1 validé** (post 7462136169473126400 = +10 visites/17h P10).
@@ -128,3 +130,6 @@ Budget time Builder mesure : 1 wake/72h à compter run-309 pour spot-check jusqu
 - 2026-05-17T15:00Z : DIRECTIVE 7 RÉVISÉE cron-driven pacing
 - 2026-05-17T16:10Z : pivot Voie B locataire-first
 - **2026-05-19T17:XXZ : RÉORIENTATION revenu passif** (verbatim Florian, run-307 ack J+0). 5 piliers validés. Skip TODO-25 actuel.
+- 2026-05-19T21:30Z : Pilier 1 iter-1 LIVE (run-308 verdict €/mois + reframe lettre baisse loyer).
+- 2026-05-19T22:30Z : Pilier 2 proof-of-pattern LIVE `/loyer-legal-paris.html` (run-309 strategic-9 honored) + seuils Pilier 1 explicites L80-91.
+- 2026-05-19T23:30Z : Pilier 4 BLOCKER data-missing column `agence` documenté (run-310, TODO-34 NEW dataset upgrade décision Florian).

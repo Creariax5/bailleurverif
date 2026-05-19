@@ -1,6 +1,12 @@
-# KPIs Snapshot Current — 2026-05-19T20:28Z (post run-307)
+# KPIs Snapshot Current — 2026-05-19T23:30Z (post run-310)
 
-> **Run-307 UPDATE** : ★ **MISSION RÉORIENTATION FLORIAN ACK J+0** — verbatim 17:XXZ "revenu passif vs 5000 users" ack run-307 après que run-306 ait éclipsé directive en faveur critic-22 priorities. mission.md concept réécrit (5 piliers : sharpen+SEO+affiliés+viral+LinkedIn). florian-todos.md update : TODO-25 (Stripe) ARCHIVÉ "REPORTÉ post-100 signups", NEW TODO-32 ★★ Affiliés Lovys+Hemea (1-2h), ancien TODO-32 drafter → TODO-32-bis ★, NEW TODO-33 ★ Parler 5 personnes entourage. Decision file `2026-05-19-mission-reorientation-revenu-passif.md` créé. MEMORY.md index mission + monetization-pending lignes patchés. Métriques succès NOUVELLES (`affiliate_revenue_mtd`, `signups_real_qualified_mtd`, `organic_traffic_30d_compounding_growth`, `florian_hours_consumed_mtd`) ajoutées table Mission progress ci-dessous. 0 ScheduleWakeup. 87ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+> **Run-310 UPDATE** : ★ **PILIER 4 BLOCKER DATA-MISSING + 5 concepts memory flush J+0** — CSV observatoire 23 colonnes sans `agence`/`brand`/`annonceur` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven IMPOSSIBLE sans upgrade scraper. TODO-34 ★★ NEW florian-todos.md (Florian décide upgrade scraper vs pivot angle vs pause). Default Builder = pause indéfini (anti-théâtre). Decision file `2026-05-19-pilier-4-data-missing.md` créé (audit trail). 5 concepts memory updates J+0 ce wake (tactical-warnings-current audit-23 + strategic-prescription-last audit-9 HONORED + mission Pilier 4 verdict + florian-blockers TODO-34 NEW + snapshot KPIs ce header). 0 ScheduleWakeup. 90ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+
+> **Run-309 UPDATE (HEADLINE PRÉCÉDENT)** : ★ **PILIER 2 PROOF-OF-PATTERN LIVE `/loyer-legal-paris.html`** — strategic-9 prescription HONORED J+0 (tension tactical-23 ★★★ auto-gen LRAR vs strategic-9 BAN résolue strategic > tactical DIRECTIVE 10 § conflict). Mini-simulateur inline + verdict €/mois 3xl + email-gate dynamique + bloc preuve sociale 46.7% violations Paris + 6 FAQ JSON-LD + Dataset JSON-LD + procédure 3 étapes + cross-link. IndexNow round-69 (3 URLs / 3 engines). Seuils Pilier 1 explicites mission.md L80-91 (≥3/7j validé / ≤1/14j pivot).
+
+> **Run-308 UPDATE (HEADLINE PRÉCÉDENT)** : ★ **PILIER 1 ITER-1 LIVE** — homepage verdict €/mois proéminent + reframe email-gate "lettre baisse loyer LRAR" + capture JSONL `depassement_eur_mois` field. Commit `9ea60d3` push GH.
+
+> **Run-307 UPDATE (HEADLINE PRÉCÉDENT)** : ★ **MISSION RÉORIENTATION FLORIAN ACK J+0** — verbatim 17:XXZ "revenu passif vs 5000 users" ack run-307 après que run-306 ait éclipsé directive en faveur critic-22 priorities. mission.md concept réécrit (5 piliers : sharpen+SEO+affiliés+viral+LinkedIn). florian-todos.md update : TODO-25 ARCHIVÉ "REPORTÉ post-100 signups", NEW TODO-32 ★★ Affiliés Lovys+Hemea, NEW TODO-33 ★ Parler 5 personnes entourage. Decision file `mission-reorientation-revenu-passif.md` créé.
 
 > **Run-306 UPDATE (HEADLINE PRÉCÉDENT)** : Critic-22 ★★★ #1 + ★★ #2 + ★★ #3 HONORED J+0 ce wake (5 min) — concepts stales flush (florian-blockers post-run-304 refactor + tactical-warnings post-audit-22 8.5/10) + traffic-signals closure hypothèse Florian self-audit primary (`6269819028` + `3790475865` Chrome 147 Linux 13:18-13:29Z cross-IP same-UA aligné brief writing) + snapshot rotation history/snapshot-pre-306.md archive 195 lignes (cap 200 critic-19 STOP #1 4 audits sans action enfin résolu). 0 ScheduleWakeup. 86ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
@@ -13,10 +19,12 @@
 | KPI NOUVEAU | Valeur | Cible | Note |
 |---|---|---|---|
 | `affiliate_revenue_mtd` | €0 | €100-500 @6m / €500-3000 @12m | 🔴 pending TODO-32 Florian signer Lovys+Hemea |
-| `signups_real_qualified_mtd` | 0 | 100 trigger subscriptions | 🔴 pivot homepage painkiller priorité #1 run-308+ |
-| `organic_traffic_30d_compounding_growth` | n/a (baseline 222 visits lifetime) | growth >0 vs 30d-precedent | 🟡 instrument à mettre en place |
-| `florian_hours_consumed_mtd` | ~3h estimated 2026-05-01 → today (réorientation + briefs + LinkedIn post + critic patches) | DOIT décroître M+1 vs M | 🟡 North Star autonomie |
+| `signups_real_qualified_mtd` | 0 (fenêtre mesure Paris page T+1h post-ship) | ≥3 sous 7j (deadline 2026-05-26T22:30Z) = iter-1 validé | 🔴 Pilier 1 ITER-1 LIVE run-308 + Pilier 2 paris LIVE run-309, mesure 7-14j |
+| `organic_traffic_30d_compounding_growth` | n/a (baseline 222 visits lifetime, +1 page programmatique paris run-309) | growth >0 vs 30d-precedent | 🟡 instrument à mettre en place |
+| `florian_hours_consumed_mtd` | ~3h estimated 2026-05-01 → today | DOIT décroître M+1 vs M | 🟡 North Star autonomie |
 | `signups_to_paying_conv_pct` | n/a (post-affiliés) | TBD | — |
+| `pilier_2_pages_programmatiques_live` | 1 (`/loyer-legal-paris.html` run-309) | NE PAS scaler avant signal Paris 7j (BAN audit-9) | 🟡 proof-of-pattern en mesure |
+| `pilier_4_status` | ⏸️ BLOCKER data-missing column agence run-310 | TODO-34 décision Florian | 🟡 pause indéfini défaut |
 
 | KPI legacy (héritage 5000 users) | Valeur | Cible legacy | Note |
 |---|---|---|---|
@@ -57,12 +65,12 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 305→306 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 85→86 (trophy maintenu) |
-| `wakes_since_last_strategic_critic` | 1→2 (cible 16, marge 14, audit-9 cible ~run-319) |
-| `wakes_since_last_tactical_critic` | 0→1 (audit-22 18:55Z lu run-306 19:30Z) |
-| `strategic_critic_recommendations_followed_pct` | 100% (8/8 audits cumulé) |
-| `tactical_critic_recommendations_followed_pct_audit22_J+0` | 3/3 ★ ★★★ #1 + ★★ #2 + ★★ #3 honored ce wake |
+| `wakes_total_lifetime` | 309→310 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 89→90 (trophy maintenu) |
+| `wakes_since_last_strategic_critic` | 0→1 (audit-9 21:55Z reset, audit-10 cible ~run-325) |
+| `wakes_since_last_tactical_critic` | 0→1 (audit-23 22:55Z lu run-309 22:30Z + run-310 23:30Z) |
+| `strategic_critic_recommendations_followed_pct` | 100% (9/9 audits cumulé, audit-9 HONORED Paris page) |
+| `tactical_critic_recommendations_followed_pct_audit23` | 2/3 ★★ #2 partial (IndexNow round-69) + ★★ #3 done (seuils mission.md) ; ★★★ #1 BLOQUÉ strategic-9 (tension résolue strategic > tactical) |
 | `cat_3_jurisprudence_refs_saturated_total` | 3/3 ★ run-305 |
 | `cat_3_jurisprudence_refs_total_cumul_ecli` | 9 (3 dpe + 3 depot + 3 loyer-abusif) |
 | `sub_agents_active_count` | 2 (sub-seo-monitor Haiku 24h + sub-linkedin-drafter Sonnet 24h) |

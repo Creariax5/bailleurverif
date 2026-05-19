@@ -1,43 +1,60 @@
 # Concept : Strategic Prescription (last audit)
 
-**Source** : `inbox-from-strategic-critic.md` **audit-8 2026-05-19T16:05Z** (post run-303, exécuté run-304 J+0).
+**Source** : `inbox-from-strategic-critic.md` **audit-9 2026-05-19T21:55Z** (post run-308, exécuté run-309 J+0 HONORÉ).
 
-## Verdict moat audit-8
+## Verdict moat audit-9
 
-- Score copyability ≈ **80 %** (vs 75 % audit-7, vs 82 % audit-6). Inflation honnête : 16 wakes ont produit 0 nouveau composant cat-1/4 substantif, surtout orchestration interne + délégation Haiku.
-- **moat_components_live=3/4 UNCHANGED** (cat-1 chain 11 vagues + cross-wave / cat-3 3 templates + jurisprudence_refs N=7 / cat-4 dataset + reuse `6a0c30a`).
-- Cat-2 = 0 substantif (morte run-272) MAIS canal LinkedIn perso Florian validé empiriquement +10 visites/17h (post `7462136169473126400`) — levier ≠ composant moat.
-- **Total +0 composant substantif net vs audit-7. Stagnation honnête.**
-- Test "Demain disparition" = **3 composants non-rejouables** : (1) chain vagues git + cross-wave 121/57.6% ; (2) slug data.gouv.fr UUID + reuse `6a0c30a` ; (3) corpus 920 LEGIARTI + 3 templates DILA + `jurisprudence_refs N=7` (~1 sem copy).
-- **Fragilité 4-8 mois** si chain tenue ≥1 vague/sem (inchangé audit-7).
+- Score copyability ≈ **78 %** (vs 80 % audit-8 inflation honnête). Léger mieux car run-308 = 1ʳᵉ action user-facing depuis run-303, mais reframe seul reste copyable. **0 nouveau composant cat-1/4 substantif en 4 wakes (305-308).**
+- **moat_components_live=3/4 UNCHANGED** (cat-1 chain 11 vagues + cross-wave / cat-3 3 templates + 9 ECLI saturated / cat-4 dataset + reuse `6a0c30a` + 2 PRs awesome OPEN T+18/10 wakes 0 merged + presse 0/4 T+72h+).
+- **Cat-2 morte** 0 substantif (notation 0 record, signalement 1 dormant /api/stats spot-check 21:53Z).
+- **Total +0 composant substantif net vs audit-8. Stagnation continue.**
+- Test "Demain disparition" = **3 composants non-rejouables 1 weekend** : (a) chain 11 vagues git + cross-wave 121/57.6% pipeline auto ; (b) data.gouv.fr slug indexed + reuse `6a0c30a` ; (c) 9 ECLI cumulés + 3 templates DILA-verified.
+- **MAIS** : **0 trafic récurrent, 0 capture lifetime, 0 signup, 0 revenu généré par ce moat.** Visits 222 / unique 174 / humans=2 / captures=0 sur 94+ wakes (~90h). **Moat actuellement ACADÉMIQUE, pas business.** Thèse revenu passif Florian = pas servie.
 
-## Concurrent gap audit-8
+## Concurrent gap audit-9
 
-- **PAP.fr** 80k annonces : BV→PAP cross-wave persistence non-rejouable + reuse gov.fr. **Work-to-do partiel.**
-- **Que Choisir** : 50 ans média + autorité régulatrice. BV→QC fraîcheur data quotidienne + chain horodatée. **Non-défendable** (autorité institutionnelle).
-- **DocEnergie** (DPE B2B) : pénétration pro irrattrapable. BV→DE observatoire public + analyse réglementaire. **Work-to-do** côté distribution.
-- **1/3 théoriquement défendable** (inchangé vs audit-7).
+- **PAP.fr** 80k annonces + brand. BV = observatoire conformité + chain git. Gap inverse = trafic massif. **Work-to-do trafic** (Pilier 2 SEO compound).
+- **Que Choisir** : 50 ans autorité régulatrice. **Non-défendable**.
+- **SmartLoc** : gestion locative B2B déjà affilié Lovys. **Work-to-do distribution affiliés** (Pilier 3 = TODO-32 Florian bloqué).
+- **1/3 défendable** (inchangé). Pilier 3 affiliés bloqué TODO-32 = SmartLoc gap reste ouvert.
 
-## Strategic drift audit-8
+## Strategic drift audit-9
 
-**Run-303 FAQPage Rich Results sur 2 pages.** Tactiquement correct (SEO compliance gratuit) MAIS **stratégiquement faible** : Florian brief explicite 16:XXZ priorisait `sub-linkedin-drafter` Sonnet 4.6 (canal humain validé +10 visites/17h, 8000 followers, levier réutilisable hebdo). FAQPage ≠ moat (copyable 30 min, 0 nouveau humain). Le brief Florian priorise un sous-agent qui amplifie le SEUL canal externe humain validé en 90+ wakes — bypass ignoré par l'agent au profit de polish SEO. **Pattern récurrent** : agent préfère shippable autonome déterministe vs exécution directive Florian récente.
+**Run-306 critic-22 priorités 3/3 honorées** (concepts flush + traffic-signals + snapshot rotation, 5 min hygiène mémoire low-risk). Tactiquement correct **MAIS** Florian directive #1 réorientation revenu passif 17:XXZ AVANT run-306 brief écriture. Agent admet "mea culpa" run-307. **Pattern récurrent** : Builder préfère hygiène mécanique low-risk déterministe vs directive Florian stratégique fresh. Pilier 2 (SEO compound ville-par-ville) = **0 page programmatique livrée depuis réorientation** (au moment audit-9). Pilier 3 affiliés bloqué Florian (acceptable). Pilier 4 viral notation = surface morte non-retravaillée.
 
-## Prescription unique audit-8 (1 seule action wake +1 = run-304)
+Critère 5 piliers : run-306 ne contribue à **aucun**. Drift confirmé.
 
-**Spawner `sub-linkedin-drafter` Sonnet 4.6 interval 24h.** Brief Florian 16:XXZ explicite + use-cases prêts. Asymétrie max : (1) leverage canal HUMAIN validé +10 visites/17h (vs SEO polish bot-traffic Yandex) ; (2) Florian valide en 30s + poste à son rythme (0 self-policy bloque, 0 signup) ; (3) cadence 1 post qualité/sem = +40 visites/sem additionnelles humaines réelles (vs 222 visits_total lifetime stagnantes) ; (4) directive Florian J+0 récente non-honorée (debt accumulating) ; (5) levier inédit 90+ wakes mission.
+## Prescription unique audit-9 (1 seule action wake +1 = run-309)
 
-**Bans explicites audit-8** : pas 4ᵉ template cat-3 (saturé), pas enrich `jurisprudence_refs` Builder (sub-Haiku gère), pas 3ᵉ PR awesome-list (anti-spam burst), pas weekly run #4 (cadence intacte), pas re-mail ANIL (cooldown 72h ≥2026-05-22T05:35Z), pas re-évoquer TODO-23/29 (Florian cooldown 7j+ post-LinkedIn).
+**Ship 1 page programmatique `/loyer-legal-paris.html`** (Pilier 2 proof-of-pattern, AVANT auto-gen PDF Pilier 1 iter-2 que Builder PLAN-NEXT préfère par défaut).
 
-## État application run-304 (J+0) ✅ HONORÉE
+Contenu prescrit : data observatoire Paris (N + % violations + plafonds par arrondissement) + reframe verdict €/mois run-308 hérité + JSON-LD FAQPage 6 Q/R + lien lettre LRAR. Title `Loyer légal Paris 2026 — vérifier l'encadrement en 5s`.
 
-- ✅ **POST `/api/agents`** HTTP 201 id=`d1a89a62-26ab-4223-8f21-0eae41ca7e97` model=`claude-sonnet-4-6` interval=86400s enabled=1 status=stopped pre-1er-tick.
-- ✅ **Backup payload** `agent-browser/prompts-backup/sub-linkedin-drafter-create-2026-05-19T1635Z.json` (4898c prompt hash16=`151f3b757f4bb1ea`).
-- ✅ **Registry** mis à jour 2→3 entries, cap relevé 6→8.
-- ✅ **MEMORY.md + concepts/sub-agents-active.md** mis à jour 3 sous-agents.
-- ✅ **florian-todos.md refacto** 390→125 lignes brief Florian #1 honoré J+0.
-- ✅ **0 nag policy** : 1ʳᵉ tick ~2026-05-20T16:31Z, laisser tourner ≥1 cycle observé avant 4ᵉ spawn.
-- ✅ **METRIC** : `strategic_critic_recommendations_followed_pct=100%` (8/8) + `wakes_since_last_strategic_critic=16→0` reset.
+Asymétrie revenu passif : (1) reuse moat cat-1 existant N=232+plafonds, (2) compound SEO permanent (1 page = trafic SERP récurrent 0-Florian-input), (3) teste si Pilier 1 reframe convertit AVANT investir auto-gen PDF, (4) template-isable à 6 autres villes si paris signal positif T+7j, (5) sert directement revenu passif via funnel SERP→capture→affilié futur. Si paris=0 capture 7j post-ship → pivot painkiller (DPE F/G ou dépôt) avant scale 6 villes.
+
+## État application run-309 (J+0) ✅ HONORÉE
+
+- ✅ **Page `/loyer-legal-paris.html` shippée prod** (URL https://bailleurverif.fr/loyer-legal-paris.html). H1 painkiller + mini-simulateur inline (surface+loyer+nu/meublé) → verdict €/mois 3xl bold + €/an + €/3ans. Email-gate dynamique apparaît si dépassement > 0 → POST `/api/capture` champ `depassement_eur_mois` persisté + `source=loyer-legal-paris`.
+- ✅ **Bloc preuve sociale OBSERVATOIRE** calculé sur CSV mai-19 N=30 Paris : **46,7% violations Paris, 17,9 €/m² excès moyen, ~540€ trop-perçu typique 30m²**. Lien data.gouv.fr direct (moat cat-1 visible inline).
+- ✅ **6 FAQ visibles `<details>`** + FAQPage JSON-LD + Dataset JSON-LD PropertyValue → rich snippets potentiels + ancrage LLM-citation Perplexity/Claude/ChatGPT.
+- ✅ **Procédure 3 étapes** (LRAR / commission conciliation / juge contentieux protection) + amende préfectorale 5k/15k€.
+- ✅ **Cross-link** : `/encadrement-loyer-paris-2026.html` (aside amber ajouté → routing painkiller) + `/locataire-loyer-legal.html`.
+- ✅ **IndexNow round-69** : 3 URLs / 3 engines (Universal 200 + Bing 200 + Yandex 202).
+- ✅ **Seuils Pilier 1 iter-1** explicites mission.md L80-91 (≥3/7j validé / ≤1/14j pivot / 2-3 sous 14j ambigu).
+- ✅ **Tension tactical-23 ★★★ vs strategic-9 ban auto-gen LRAR résolue strategic > tactical** DIRECTIVE 10 § conflict (NOT-THAT documenté run-309).
+- ✅ **METRIC** : `strategic_critic_recommendations_followed_pct=100%` (9/9 audits cumulé) + `wakes_since_last_strategic_critic=16→0` reset.
+
+## Bans audit-9 (jusqu'à audit-10 ~run-323)
+
+- 🚫 Auto-gen PDF tant que 0 capture mesurée page Paris (BAN tension résolue strategic > tactical-23 ★★★).
+- 🚫 4ᵉ template cat-3 (saturated 3/3 run-275/305).
+- 🚫 3ᵉ PR awesome (cooldown ≥2026-06-02).
+- 🚫 Re-mail ANIL (cooldown ≥2026-05-22T05:35Z).
+- 🚫 Spawn 4ᵉ sous-agent (≥2 cycles drafter d'abord, cycle 2 ≥2026-05-20T16:45Z).
+- 🚫 Re-évocation TODO-23/29 (cooldown 7j+).
+- 🚫 Big-bang refactor index.html.
+- ⚠️ **DÉRIVE STRATÉGIQUE NEW (run-310)** : pas scaler Paris→Lyon/Marseille avant signal Paris 7j post-ship (deadline mesure 2026-05-26T22:30Z, prescription audit-9 implicite "Si paris=0 capture 7j → pivot painkiller AVANT scale 6 villes").
 
 ## Strategic critic prochain audit
 
-`wakes_since_last_strategic_critic` reset 0 run-304 ; cible auto ~run-319 (audit-9) sauf trigger signal cat-4 PR merge / IMAP press reply / 1ᵉʳ subscriber confirmed (KPI live = 0/0/0).
+`wakes_since_last_strategic_critic` reset 0 run-309 ; cible auto ~run-325 (audit-10) sauf trigger signal capture Paris / IMAP press reply / 1ʳᵉ Florian post LinkedIn drafter cycle 1.
