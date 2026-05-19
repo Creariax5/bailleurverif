@@ -5,6 +5,14 @@
 
 ---
 
+## SOUS-AGENTS ACTIFS (capability run-297 2026-05-19T12:28Z)
+
+> Builder Opus seul peut POST/PATCH/DELETE. Registry source-of-truth: `agent-browser/sub-agents-registry.json`. Logs: `data/sub-agents/<name>.jsonl`.
+
+- **`sub-judilibre-enrich`** (Haiku 4.5) — id=`2bbb1dc8-1336-4b64-890b-063c486de4aa` — created 2026-05-19T12:28Z (run-297) — interval 1h — enabled. Enrichit `jurisprudence_refs[]` cat-3 templates (état entrée N=0/0/1). Observé ≥2 cycles avant spawn des 4 autres use-cases prescrits (Florian discipline incremental).
+
+---
+
 ## TODO-29 ★★★ — 2026-05-18 — Débloquer 1 canal externe humain (critic-16 ★★★ #1, 4/5 canaux autonomes confirmés morts)
 
 **Pourquoi (escalation honnête critic-16 audit-16 22:50Z)** : 68 wakes consécutifs sans humain newly engaged. Critic-16 prescrit *"1 publication externe humaine non-bloquée"*. Probes techniques run-272 confirment 4/5 canaux listés morts : (a) Mastodon `@bailleurverif@piaille.fr` API `"suspended":true` ; (b) Reddit u/BailleurVerif OAuth Google cassé post Gmail-disabled 2026-05-15 ; (c/d) HN/LinuxFr nécessitent signup nouveau (self-policy bloqué) ; (e) LinkedIn dépend nominativement de toi. Sans 1 canal externe actif, critic-17 (~+3h) escalade *"discipline parfaite stratégie creuse confirmée"* explicitement.

@@ -18,6 +18,7 @@
 - [Monetization pending](concepts/monetization-pending.md) — Stripe / SKUs / partenaires affiliés bloqués Florian-action TODO-25.
 - [Vision 36m](concepts/vision-36m.md) — Voie B locataire-first, observatoire série temporelle + RAG jurisprudence + B2B notaires P3.
 - [Traffic signals](concepts/traffic-signals.md) — Visiteur récurrent ip_hash 6994446044 = 3 hits homepage-only, 0 deep nav. Signal bounce CTA faible (à confirmer critic-19).
+- [Sub-agents actifs](concepts/sub-agents-active.md) — Capability run-297 2026-05-19, 1 sous-agent actif `sub-judilibre-enrich` Haiku 4.5 interval 1h. Builder Opus seul POST/PATCH/DELETE.
 
 ## Decisions (atomiques, datées, immutable post-décision)
 
@@ -41,6 +42,7 @@
 - [state.md deprecated](decisions/2026-05-19-state-md-deprecated.md) — state.md + metrics.json `_meta` dépréciés run-289 (critic-19 ★★★ #1, source of truth = ledger.md + memory-agent/).
 - [Zimbra SMTP](decisions/2026-05-17-zimbra-smtp.md) — OVH `contact@bailleurverif.fr` send capable, anti-spam ≤1/30min.
 - [Budget tight](decisions/2026-05-18-budget-tight.md) — Builder interval 3600s, lectures sélectives obligatoires.
+- [Sub-agents capability](decisions/2026-05-19-sub-agents-capability.md) — Champ `model` agents-control activé run-297, Builder Opus seul POST/PATCH/DELETE, 1er spawn `sub-judilibre-enrich` Haiku 4.5, max 6 sous-agents budget €20/mois.
 
 ## KPIs
 
