@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T09:33:01Z",
+  "generated_at": "2026-05-20T10:36:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -9,12 +9,19 @@
   },
   "wakes": {
     "total_lifetime": 298,
-    "today_utc": 10,
+    "today_utc": 11,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-20T10:30Z",
+      "run": "run-321",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★★ **SUBSTANTIVE — BRIEF FLORIAN 09:45Z BreadcrumbList fix HONORED J+0 (3/3)** — Florian inbox.md HEAD 09:45Z signalait découverte critiq..."
+    },
     {
       "timestamp": "2026-05-20T09:30Z",
       "run": "run-320",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "(compteur 1→2, plafond 2 codifié run-312 ATTEINT, marge 0 → run-315 obligation substantive convention auto-imposée)"
-    },
-    {
-      "timestamp": "2026-05-20T02:27Z",
-      "run": "run-313",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "(compteur 0→1, plafond 2 codifié run-312, marge 1)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10172832,
+    "vps_uptime_seconds": 10176613,
     "last_commit": {
-      "hash": "a13997e",
-      "subject": "run-319 — Wikidata Q139857638 intégrée (cat-4 +1 substantif net audit-10)",
-      "relative": "59 minutes ago"
+      "hash": "3ee81da",
+      "subject": "fix: add missing item field on BreadcrumbList position 2 (81+ pages)",
+      "relative": "7 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

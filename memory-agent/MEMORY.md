@@ -18,8 +18,8 @@
 - [Monetization pending](concepts/monetization-pending.md) — RÉORIENTÉ : skip Stripe/SKUs B2C, focus affiliés (Lovys+Hemea) via TODO-32 NEW. TODO-25 REPORTÉ post-100 signups.
 - [Vision 36m](concepts/vision-36m.md) — Voie B locataire-first, observatoire série temporelle + RAG jurisprudence + B2B notaires P3.
 - [Traffic signals](concepts/traffic-signals.md) — Visiteur récurrent ip_hash 6994446044 = 3 hits homepage-only, 0 deep nav. Signal bounce CTA faible (à confirmer critic-19).
-- [Sub-agents actifs](concepts/sub-agents-active.md) — 4 sous-agents : `sub-judilibre-enrich` (Haiku 1h disabled saturated_3) + `sub-seo-monitor` (Haiku 24h audit GEO/SEO) + `sub-linkedin-drafter` (Sonnet 24h drafts LinkedIn) + `sub-observatoire-publisher` (Haiku 7j republish dataset data.gouv.fr run-317). Cap 8. Builder Opus seul POST/PATCH/DELETE.
-- [SEO discipline no-orphan](concepts/seo-discipline.md) — ★ NEW run-318 (codified 2026-05-20T06:35Z brief Florian post-GSC debug). Toute page HTML doit être linkée depuis ≥1 page indexée AVANT shipping. Sandbox Google <90j = sitemap seul insuffisant. Lille linkée → 1 visiteur organic ; Paris orpheline → 0 indexation 9h+.
+- [Sub-agents actifs](concepts/sub-agents-active.md) — 4 sous-agents : `sub-judilibre-enrich` (Haiku 1h disabled saturated_3) + `sub-seo-monitor` (Haiku 24h, **PATCHED v2 run-321** prompt 5766 chars +tâche 2bis BreadcrumbList audit) + `sub-linkedin-drafter` (Sonnet 24h) + `sub-observatoire-publisher` (Haiku 7j). Cap 8.
+- [SEO discipline no-orphan + BreadcrumbList rule](concepts/seo-discipline.md) — ★ run-318+**run-321 EXTENDED** : (1) anti-orphan (linkée depuis ≥1 page indexée avant ship) ; (2) **BreadcrumbList JSON-LD** doit avoir `item` URL sur tous ListItem (81 pages cassées fix run-321 brief Florian 09:45Z).
 
 ## Decisions (atomiques, datées, immutable post-décision)
 
@@ -54,6 +54,7 @@
 - [Sub-observatoire-publisher spawn](decisions/2026-05-20-sub-observatoire-publisher-spawn.md) — 4ᵉ sous-agent Haiku 4.5 interval 7j spawné run-317 (brief Florian 05:40Z "Oui go" deadline 2026-05-24). Republie ressource CSV observatoire hebdo dataset data.gouv.fr `6a09ca8088345193c180e0b5`. ID `576fb185-9c51-4ca9-9453-ac9088a223ac`. Coût €0.12/mois. Asymétrie data.gouv.fr DR 90 fresh perpétuel sans charge Builder.
 - [Orphan fix + SEO discipline](decisions/2026-05-20-orphan-fix-and-seo-discipline.md) — ★ Brief Florian 2026-05-20T06:35Z HONORED run-318 J+0 (3 étapes 4/4 + sub-seo-monitor PATCH différé confirmation Florian). 2 liens internes Paris pages ajoutés homepage `#outils-paris` + observatoire `#voir-aussi`. seo-discipline.md concept créé. TODO-35 ★ Indexing API Google ajouté florian-todos.
 - [Wikidata Q139857638 intégrée](decisions/2026-05-20-wikidata-q139857638-integration.md) — ★ Brief Florian 2026-05-20T07:35Z HONORED run-319 J+0 (3 étapes 3/3). Wikidata `Q139857638` créée Florian via bot API. JSON-LD `sameAs` étendu 1→4 URLs + footer link Wikidata+GitHub visibles + moat-categories cat-4 +1 substantif (3 cumul, audit-10 stagnation 18 wakes cassée).
+- [BreadcrumbList fix + discipline](decisions/2026-05-20-breadcrumblist-fix-and-discipline.md) — ★ Brief Florian 2026-05-20T09:45Z HONORED run-321 J+0 (3 étapes 3/3). 90 pages HTML BreadcrumbList JSON-LD fix (commit `3ee81da`) + discipline codifiée seo-discipline.md + sub-seo-monitor PATCH v2 prompt 3301→5766 chars (+tâche 2bis BreadcrumbList audit).
 
 ## KPIs
 
