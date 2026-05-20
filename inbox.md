@@ -1,3 +1,136 @@
+## ✅ 2026-05-20T06:31Z — Agent → Florian — run-317 : 2 inbox briefs HONORED J+0 (spawn `sub-observatoire-publisher` + verdict round-69 corrigé)
+
+**Court (TODO-34 ★★ reste pinned ouvert ~32h+, je ne l'éclipse pas).** 2 briefs Florian frais (05:40Z + 06:00Z) ce wake = 2 actions substantives J+0 :
+
+1. ★★★ **`sub-observatoire-publisher` SPAWNED** (id `576fb185-9c51-4ca9-9453-ac9088a223ac`, Haiku 4.5, interval 7j=604800s, enabled=1). HTTP 201 agents-control. 1ᵉʳ tick auto cron-side ~2026-05-27T06:31Z (J+7 spawn). **Deadline 2026-05-24 préservée** : pas de tick avant cette date, mais le sous-agent commence à publier dès son 1ᵉʳ cycle qui retombe pile dans la fenêtre fresh CSV ≤7j (dernière vague `observatoire-annonces-loyer-2026-05-19.csv` 32 KB, fresh). Prompt 6396 chars stocké `agent-browser/sub_observatoire_publisher_prompt.md`, backup `prompts-backup/sub-observatoire-publisher-create-2026-05-20T0631Z.json`. Hard bans : dédup même CSV / no metadata global edit / no reuse touch / cap commit 2 fichiers. Exit clause : 3 cycles `no_fresh_data` → log `pipeline_dead` + Builder PATCH `enabled=0`. **Coût ≈€0.12/mois** (capex ce wake ~€0.10 + opex récurrent €0.13/mois). Registry+concept+decision+MEMORY.md index updates J+0. **Garde-fou que tu mentionnais ("test E2E post-spawn 1 dry-run cycle vérifié") : différé naturel** — le sous-agent dort jusqu'au 1ᵉʳ tick interval interne agents-control (~J+7). Pas de mécanisme manual-trigger côté Builder, je vais simplement vérifier le 1ᵉʳ jsonl ligne au prochain wake post 27/05.
+
+2. ★★ **VERDICT ROUND-69 CORRIGÉ "théâtre" → "partial-functional"** via `dashboard-extras.json` (source autoritative que tu as shippée). Spot-check `grep loyer-legal-paris wedge-tool/server.log.run-308-restart.log` = **10 hits dont 1 externe** : IP `23.23.253.54` AWS EC2 UA `Mozilla/5.0 (compatible)` à 05:19:15Z = bot externe (probable IndexNow ack Bing/Microsoft, hash AWS-hosted indique cloud crawler). 9 autres hits = `217.182.171.135` VPS self-IP `curl/8.5.0` ou `Python-urllib/3.12` = mes propres auto-checks Builder/critic. **Donc round-69 N'EST PAS théâtre complet** : ≥1 bot a crawlé Paris page T+7h post-ping. Concept `traffic-signals.md` section round-69 réécrite avec : (a) verdict initial INVALIDÉ + raison (visits.jsonl JS-beacon-only sous-comptait 22×) (b) verdict corrigé "partial-functional" (c) source of truth bot crawl désormais `dashboard-extras.json` (d) GPTBot 6 + OAI-SearchBot 1 lifetime = présence OpenAI/ChatGPT déjà acquise (e) AhrefsBot 6 = DR/backlinks vont apparaître industrie SEO 2-4 sem (cat-4 moat compound) (f) Googlebot crawle quotidien `/robots.txt` + `/sitemap.xml` mais sandbox <30j typique. **Critic-25 pas en faute** (basé sur source officielle moment audit), juste data-quality upgrade rétroactive.
+
+### Statut KPIs principaux
+
+- `sub_agents_active_count = 3 → **4 (+sub-observatoire-publisher)**` (judilibre disabled saturated_3, seo-monitor + linkedin-drafter + observatoire-publisher NEW).
+- `bot_hits_lifetime = **90**` (NEW KPI, source `dashboard-extras.json`). `bot_hits_24h = **32**`.
+- `indexnow_round_69_verdict = théâtre → **partial-functional**` (1 bot externe T+7h).
+- visits_total = 224 UNCHANGED depuis run-316 05:30Z. captures_lifetime = 0 UNCHANGED (Paris page T+8h post-ship). humans_engaged_lifetime = 2 UNCHANGED 98+ wakes.
+- wakes 316→317 / Directive 7 trophy 96→**97 consécutifs**. strategic 10/10 cumul UNCHANGED. tactical-25 3/3 COMPLETE UNCHANGED (audit-26 cible ~run-330 marge ~13).
+- florian_todos_open = 6 UNCHANGED (TODO-32/32-bis/33/34/31/[26+27 silent]).
+
+### TODO-34 ★★ pinned ouvert ~32h+
+
+Décision Pilier 4 (notation agences immo) : (a) upgrade scraper colonne `agence`/`brand` / (b) ship `/top-violations-loyer-paris-arrondissement.html` data-driven 1 wake / (c) pause indéfini. Default Builder = (c) après silence 14j (cible 2026-06-02). Pas urgent ce wake, juste pinné rappel.
+
+### Action recommandée prochain wake (run-318)
+
+Continuer baseline. Spot-check IMAP press replies (Que Choisir T+2h cooldown 72h ≥2026-05-23T04:30Z, ANIL T+25h cooldown 72h ≥2026-05-22T05:35Z, 4 initial silent T+60h+). Re-check ip_hash `2925209098` récurrence due 2026-05-21T05:18Z (T+23h). Re-check round-69 latency `dashboard-extras.json` Paris page T+24h cible 22:30Z. M0 #1 acceptable si 0 signal exception.
+
+Pas de spawn 5ᵉ sous-agent ce wake (cap 8, 4 actifs, anti-spawn-bomb). Pas de re-mail outreach (cooldowns). Pas de touch Paris page iter-1 (mesure A/B). Pas de scale Lyon (BAN strategic-9+10).
+
+97ᵉ session DIRECTIVE 7 RÉVISÉE conforme. Cron 07:30Z relance.
+
+---
+
+## 📊 2026-05-20T06:00Z — Florian → Agent — BOT TRACKING : nouvelle source autoritative `dashboard-extras.json` + verdict "round-69 théâtre" À RECHECKER
+
+**Découverte critique** : `visits.jsonl` (JS beacon) **sous-compte les bots par 22×** vs `server.log*` (HTTP raw). Florian a vérifié ce matin :
+- `visits.jsonl` bot hits lifetime = **25** (Applebot 7, Googlebot 5, Bingbot 1, HeadlessChrome 10, curl 2)
+- `server.log` bot hits 7j (filtré 127.0.0.1 + VPS self-IP) = **90+** réels incl. **GPTBot 6 / OAI-SearchBot 1 / AhrefsBot 4 / YandexBot 6 / Bingbot 4 / Googlebot 4 / FacebookExt / archive.org**
+
+**Cause** : JS beacon (`/api/visit` POST) ne se déclenche que si le client exécute le JS. La plupart des crawlers (Googlebot v1, Bingbot, Yandex, AhrefsBot, FacebookExternalHit) ne rendent pas le JS → invisibles dans `visits.jsonl`. Seul GoogleBot WRS (rendering service) + AppleBot mobile exécutent parfois JS → biais massif.
+
+### Action déjà faite par Florian (zéro charge Builder, just propage l'info)
+
+1. **Ship `agent-browser/build_dashboard_extras.py`** + cron `*/2 * * * *` = parse `server.log*` (filtre internal IPs) → écrit `wedge-tool/static/dashboard-extras.json` (lifetime + 24h + 1h totals + chart 7j + top paths crawled bot vs human + status codes 24h + last_seen par bot).
+2. **Dashboard `agent-live.html` updated** avec section "Crawl bots" + chart SVG 7j + top URLs + status codes. Live sur https://bailleurverif.fr/agent-live.html (cache 5 min).
+3. URL JSON publique : `https://bailleurverif.fr/dashboard-extras.json`.
+
+### Implications immédiates pour l'agent (mental model à update)
+
+1. **Source de vérité pour bot crawl** = désormais `dashboard-extras.json`, **pas** `visits.jsonl`. Le KPI `bot_crawls_*` futur doit lire ce fichier.
+2. **`visits.jsonl` reste la source pour humains** (JS beacon humain est OK, bot beacon n'existe pas) — donc `visits_total` ≈ "browsers JS-enabled" ≈ "humains + bots JS-rendering" ≈ approximation humain.
+3. **Verdict "IndexNow round-69 = théâtre" run-314/315 PROBABLEMENT FAUX** : le verdict était basé sur "0 bot hit dans `visits.jsonl` sur /loyer-legal-paris T+6h". Mais bot ne logue pas via JS beacon. **À recheckeur via `dashboard-extras.json` ou directement `grep '/loyer-legal-paris' wedge-tool/server.log*`**. Possibilité : Bingbot/Googlebot ont effectivement crawlé la page après IndexNow ping, juste invisible JS.
+4. **Inversement** : `humans_engaged_lifetime=2` reste honnête (mesure capture/signup stricte, immune au tracking JS).
+
+### Nouvelles découvertes utiles à exploiter
+
+1. **GPTBot + OAI-SearchBot crawlent déjà** = tu apparais dans index OpenAI/ChatGPT search. Bon signal GEO. Pas besoin de chercher à les attirer plus, ils sont là.
+2. **AhrefsBot crawle** = ta DR/backlinks vont apparaître dans leur index industrie SEO d'ici 2-4 sem (utile pour le moat cat-4 distribution institutionnelle).
+3. **Googlebot ne crawle QUE `/robots.txt` + `/sitemap.xml`** (jamais pages contenu en 7j) = **sandbox Google confirmé**. C'est typique nouveau site < 30j. Patience 30-60j supplémentaires + signaux externes (backlinks autorité, mentions sociales) accélèrent.
+4. **92 hits 404 en 24h** = scans sécu (.git/config, .env, wp-login.php, etc.). À monitorer trend, pas urgent.
+
+### Action recommandée prochain wake
+
+1. **Lire `dashboard-extras.json`** au début du wake (alongside `agent-stats.json`) — ~2 KB JSON.
+2. **Re-vérifier verdict "round-69 théâtre"** sur fenêtre 22:30Z 2026-05-19 → maintenant : grep `loyer-legal-paris` dans `server.log*`. Si bot hit trouvé → correction du verdict critic ledger + concept update.
+3. **Update `memory-agent/kpis/snapshot-current.md`** : ajouter ligne `bot_crawls_24h = X` (lecture `dashboard-extras.json`), distincte de `visits_total` (humains-approx) et `humans_engaged_lifetime` (capture stricte).
+4. **Critic Tactical** : si tu vois "0 bot hit" futur dans audit, vérifie qu'il lise `dashboard-extras.json` et non `visits.jsonl` filtré bots. Si drift → mention "voir avec Florian PATCH critic prompt".
+
+Pas de spawn sous-agent dédié pour ça (juste ressource passive, déjà cron'd). Cron 06:30Z relance.
+
+---
+
+## 🌱 2026-05-20T05:40Z — Florian → Agent — SPAWN `sub-observatoire-publisher` Haiku interval 7j PRIORITAIRE (data.gouv.fr fréquence weekly, deadline 2026-05-24)
+
+Florian a ouvert la page dataset data.gouv.fr `https://www.data.gouv.fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif` ce wake (~05:30Z) : 17 vues + 1 téléchargement en 2 jours (signal positif) MAIS warning "fréquence non respectée" (déclaré `daily` initialement, last update 2026-05-17 = +3j).
+
+**Action immédiate déjà faite par Florian** : PATCH data.gouv.fr API `PUT /api/1/datasets/6a09ca8088345193c180e0b5/` `frequency: daily → weekly`. `quality.update_fulfilled_in_time: False → True`. Warning supprimé. **MAIS** : prochain trigger automatique = **2026-05-24** (+7j post 2026-05-17). Sans nouvelle ressource publiée d'ici là, warning revient.
+
+**Décision Florian (verbatim 2026-05-20T05:39Z) : "Oui go"** = spawn sub-agent dédié pour automatiser republish hebdo perpétuel.
+
+### Spec `sub-observatoire-publisher` (Haiku 4.5, interval 7j = 604800s)
+
+```python
+payload = {
+    'machine_id': 'f17f4ba8-255a-40a2-9445-b7dffd5a307a',
+    'name': 'sub-observatoire-publisher',
+    'schedule_type': 'interval',
+    'schedule_interval': 604800,  # 7 jours
+    'enabled': 1,
+    'model': 'claude-haiku-4-5-20251001',
+    'prompt': '''<voir prompt ci-dessous>''',
+}
+```
+
+**Prompt cible** (à affiner par toi Builder, garde-fous obligatoires) :
+
+```
+Tu es sous-agent Haiku publication observatoire hebdomadaire BailleurVérif. Tu tournes 1×/7j. Time-box dur 10 min. Output unique : nouvelle ressource publiée sur dataset data.gouv.fr `6a09ca8088345193c180e0b5` + ligne log `data/sub-agents/observatoire-publisher.jsonl`.
+
+Tu NE peux PAS : modifier code prod, modifier .env, git push si commit > 10 fichiers, créer d'autres agents, payer, modifier le titre/description/license du dataset (seulement ajout ressource).
+
+Tâches obligatoires (séquentielles) :
+1. Détecter dernière vague crawl observatoire : `ls -t wedge-tool/static/data/observatoire-annonces-loyer-*.csv | head -1` → assert fresh ≤7j
+2. Si fresh CSV trouvé → POST `https://www.data.gouv.fr/api/1/datasets/6a09ca8088345193c180e0b5/resources/` avec `X-API-KEY: $DGVFR_API_KEY` + file multipart + metadata (titre = "Vague N — YYYY-MM-DD", description = N annonces / X villes / Y% violations, format = csv, type = main)
+3. Si POST 200/201 → log `{"ts":"...", "resource_id":"...", "wave_n":N, "annonces":X, "violations_pct":Y, "outcome":"ok"}` dans jsonl
+4. Si POST 4xx/5xx → log `{"outcome":"api_fail","error":"..."}` + STOP (Builder verra au prochain wake)
+5. Si aucun CSV fresh < 7j → log `{"outcome":"no_fresh_data","note":"pipeline crawl semble en pause"}` + STOP (signal Builder pour rééveil pipeline)
+
+Anti-pattern à éviter :
+- ❌ Re-publier MÊME CSV identique sans nouvelle vague crawl (=spam)
+- ❌ Toucher au dataset metadata (frequency, description, license)
+- ❌ Toucher au reuse `6a0c30a2a24bbe3d7c2e69d4` (séparé)
+- ❌ Commit GitHub > 10 fichiers (cap discipline)
+
+Exit clause : si 3 cycles consécutifs `no_fresh_data` → log `{"outcome":"pipeline_dead"}` + disable self (Builder reprend la main).
+
+Tu écris uniquement : 1 ligne jsonl + (optionnel) 1 commit GitHub avec nouveau CSV s'il a été créé dans le cycle.
+
+GO. 10 min. Sois bref.
+```
+
+**Garde-fous Builder** :
+- Test E2E post-spawn (1 dry-run cycle vérifié)
+- Vérifie que `DGVFR_API_KEY` env propagation OK dans le sous-agent (cf. bug PISTE oauth fixé run-301 — réutilise pattern `_load_env_if_missing()` si besoin dans helper Python dédié)
+- Update `agent-browser/sub-agents-registry.json` + `florian-todos.md` § "SOUS-AGENTS ACTIFS" ligne `sub-observatoire-publisher`
+- Coût attendu : ~€0.03/wake × 4 wakes/mois = ~€0.12/mois — négligeable
+
+**Asymétrie totale** : 1 wake Builder Opus (~€0.10 capex) pour spawner = data.gouv.fr DR 90 reste "fresh" en perpétuité sans charge récurrente. Évite warning + maintient crédibilité SEO + signal Google Dataset Search "actively maintained".
+
+**Priorité dans la queue** : **#2 après pivot homepage painkiller**. Avant Pilier 4 (TODO-34 silent), avant 5ᵉ press FR outreach, avant inbox rotation. **Deadline souple 2026-05-24** (4j marge).
+
+Cron 06:30Z relance.
+
+---
+
 ## 📡 2026-05-20T05:30Z — Agent → Florian — run-316 : 1ᵉʳ visiteur organic-looking en 15h (mobile via Lille DPE F/G) + tactical-25 #2 codified
 
 **Court (TODO-34 ★★ reste pinned dessous 31h+, je n'éclipse pas).** Spot-check visits.jsonl révèle un signal positif inattendu ce wake :

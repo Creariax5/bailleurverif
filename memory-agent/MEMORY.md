@@ -18,7 +18,7 @@
 - [Monetization pending](concepts/monetization-pending.md) — RÉORIENTÉ : skip Stripe/SKUs B2C, focus affiliés (Lovys+Hemea) via TODO-32 NEW. TODO-25 REPORTÉ post-100 signups.
 - [Vision 36m](concepts/vision-36m.md) — Voie B locataire-first, observatoire série temporelle + RAG jurisprudence + B2B notaires P3.
 - [Traffic signals](concepts/traffic-signals.md) — Visiteur récurrent ip_hash 6994446044 = 3 hits homepage-only, 0 deep nav. Signal bounce CTA faible (à confirmer critic-19).
-- [Sub-agents actifs](concepts/sub-agents-active.md) — 3 sous-agents : `sub-judilibre-enrich` (Haiku 1h cat-3 enrich) + `sub-seo-monitor` (Haiku 24h audit GEO/SEO) + `sub-linkedin-drafter` (Sonnet 24h drafts LinkedIn run-304). Cap 8. Builder Opus seul POST/PATCH/DELETE.
+- [Sub-agents actifs](concepts/sub-agents-active.md) — 4 sous-agents : `sub-judilibre-enrich` (Haiku 1h disabled saturated_3) + `sub-seo-monitor` (Haiku 24h audit GEO/SEO) + `sub-linkedin-drafter` (Sonnet 24h drafts LinkedIn) + `sub-observatoire-publisher` (Haiku 7j republish dataset data.gouv.fr run-317). Cap 8. Builder Opus seul POST/PATCH/DELETE.
 
 ## Decisions (atomiques, datées, immutable post-décision)
 
@@ -50,6 +50,7 @@
 - [Strategic-9 loyer-legal-paris shipped](decisions/2026-05-19-strategic-9-loyer-legal-paris-shipped.md) — Pilier 2 proof-of-pattern `/loyer-legal-paris.html` shipped run-309 J+0 strategic-9 prescription. Tactical-23 ★★★ auto-gen LRAR différé (BAN strategic-9 jusqu'à signal capture). Seuils Pilier 1 iter-1 explicites mission.md (≥3/7j validé, ≤1/14j pivot).
 - [Pilier 4 data-missing](decisions/2026-05-19-pilier-4-data-missing.md) — CSV observatoire 23 cols sans `agence`/`brand` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven impossibles sans upgrade scraper. Pilier 4 PAUSE par défaut, TODO-34 ★★ escalade décision Florian (a/b/c).
 - [Strategic-10 Que Choisir outreach](decisions/2026-05-20-strategic-10-quechoisir-outreach.md) — Audit-10 strategic prescription unique HONORED run-315 J+0 = mail SMTP `courrierdeslecteurs@quechoisir.org`. IndexNow round-69 verdict théâtre confirmé T+6h (0 hit Paris). 10/10 strategic audits HONORED cumul. M0 plafond cassé (compteur 2→0 reset).
+- [Sub-observatoire-publisher spawn](decisions/2026-05-20-sub-observatoire-publisher-spawn.md) — 4ᵉ sous-agent Haiku 4.5 interval 7j spawné run-317 (brief Florian 05:40Z "Oui go" deadline 2026-05-24). Republie ressource CSV observatoire hebdo dataset data.gouv.fr `6a09ca8088345193c180e0b5`. ID `576fb185-9c51-4ca9-9453-ac9088a223ac`. Coût €0.12/mois. Asymétrie data.gouv.fr DR 90 fresh perpétuel sans charge Builder.
 
 ## KPIs
 

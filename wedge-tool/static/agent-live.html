@@ -131,6 +131,26 @@ h1 .live { color: var(--success); font-size: 0.75em; font-weight: normal; }
 .system-row .key { color: var(--text-dim); }
 .system-row .val { font-family: ui-monospace, monospace; font-size: 0.8rem; }
 .error { color: var(--danger); padding: 1rem; background: #fef2f2; border: 1px solid #fecaca; border-radius: 4px; }
+.bot-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.bot-table th, .bot-table td { padding: 0.35rem 0.5rem; text-align: left; border-bottom: 1px solid var(--border); }
+.bot-table th { color: var(--text-dim); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.bot-table td.num { font-family: ui-monospace, monospace; text-align: right; }
+.bot-table tr:last-child td { border-bottom: none; }
+.bot-chart { display: flex; align-items: flex-end; gap: 6px; height: 100px; margin: 0.75rem 0 0.5rem; }
+.bot-chart .day { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.bot-chart .bar { width: 100%; min-height: 2px; background: var(--accent); border-radius: 2px 2px 0 0; transition: opacity .15s; position: relative; }
+.bot-chart .bar:hover { opacity: 0.7; }
+.bot-chart .bar-val { font-size: 0.7rem; color: var(--text-dim); }
+.bot-chart .bar-label { font-size: 0.65rem; color: var(--muted); margin-top: 2px; }
+.status-pill { display: inline-block; padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.75rem; font-family: ui-monospace, monospace; margin-right: 0.4rem; }
+.status-200 { background: #d1fae5; color: #065f46; }
+.status-3xx { background: #dbeafe; color: #1e40af; }
+.status-4xx { background: #fef3c7; color: #92400e; }
+.status-5xx { background: #fee2e2; color: #991b1b; }
+.path-row { display: flex; justify-content: space-between; gap: 0.5rem; padding: 0.25rem 0; border-bottom: 1px dotted var(--border); font-size: 0.8rem; }
+.path-row:last-child { border-bottom: none; }
+.path-row .path { font-family: ui-monospace, monospace; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.path-row .count { color: var(--text-dim); font-family: ui-monospace, monospace; flex-shrink: 0; }
 footer { text-align: center; color: var(--text-dim); font-size: 0.75rem; padding: 1.5rem 0; }
 .pulse {
   display: inline-block;
@@ -267,6 +287,47 @@ footer { text-align: center; color: var(--text-dim); font-size: 0.75rem; padding
     <ul class="blockers" id="blockersList"></ul>
   </div>
 
+  <!-- Crawl bots (server.log truth) -->
+  <div class="card" style="margin-bottom: 1.5rem;">
+    <h2>Crawl bots <span style="font-size:0.7rem;font-weight:normal;color:var(--text-dim);">(server.log brut, hors monitoring interne)</span></h2>
+    <div class="kpi-row" style="margin-bottom: 0.75rem;">
+      <div>
+        <div class="kpi" id="botHits24h">—</div>
+        <div class="kpi-sub">hits 24h</div>
+      </div>
+      <div>
+        <div class="kpi" id="botHits1h">—</div>
+        <div class="kpi-sub">dernière heure</div>
+      </div>
+      <div>
+        <div class="kpi" id="botHitsLifetime">—</div>
+        <div class="kpi-sub">7 jours total</div>
+      </div>
+    </div>
+    <div class="bot-chart" id="botChart7d"></div>
+    <table class="bot-table" id="botTypeTable">
+      <thead><tr><th>Bot</th><th class="num">24h</th><th class="num">7j</th><th>Dernier hit</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Top URLs crawled + visited -->
+  <div class="grid" style="margin-bottom: 1.5rem;">
+    <div class="card">
+      <h2>Top pages crawlées par bots (24h)</h2>
+      <div id="botPaths"></div>
+    </div>
+    <div class="card">
+      <h2>Top pages visitées humains (24h)</h2>
+      <div id="humanPaths"></div>
+    </div>
+    <div class="card">
+      <h2>Codes HTTP (24h)</h2>
+      <div id="statusCodes"></div>
+      <div class="kpi-sub" style="margin-top:0.75rem;">Total requêtes 24h : <strong id="reqTotal24h">—</strong></div>
+    </div>
+  </div>
+
   <!-- System health -->
   <div class="card" style="margin-bottom: 1.5rem;">
     <h2>Santé système</h2>
@@ -284,15 +345,115 @@ footer { text-align: center; color: var(--text-dim); font-size: 0.75rem; padding
 <script>
 async function loadStats() {
   try {
-    const r = await fetch('/agent-stats.json?t=' + Date.now());
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    const d = await r.json();
+    const t = Date.now();
+    const [r1, r2] = await Promise.all([
+      fetch('/agent-stats.json?t=' + t),
+      fetch('/dashboard-extras.json?t=' + t).catch(() => null),
+    ]);
+    if (!r1.ok) throw new Error('HTTP ' + r1.status);
+    const d = await r1.json();
     render(d);
+    if (r2 && r2.ok) {
+      const e = await r2.json();
+      renderBots(e);
+    }
     document.getElementById('error').style.display = 'none';
   } catch (e) {
     document.getElementById('error').textContent = 'Erreur chargement: ' + e.message;
     document.getElementById('error').style.display = 'block';
   }
+}
+
+function fmtRelativeShort(iso) {
+  if (!iso) return '—';
+  try {
+    const d = new Date(iso);
+    const diff = Math.floor((Date.now() - d) / 1000);
+    if (diff < 60) return diff + 's';
+    if (diff < 3600) return Math.floor(diff/60) + 'min';
+    if (diff < 86400) return Math.floor(diff/3600) + 'h';
+    return Math.floor(diff/86400) + 'j';
+  } catch { return '—'; }
+}
+
+function renderBots(e) {
+  const t = e.totals || {};
+  document.getElementById('botHits24h').textContent = t.bot_hits_24h ?? '—';
+  document.getElementById('botHits1h').textContent = t.bot_hits_1h ?? '—';
+  document.getElementById('botHitsLifetime').textContent = t.bot_hits_lifetime ?? '—';
+  document.getElementById('reqTotal24h').textContent = t.requests_24h ?? '—';
+
+  // Chart 7d
+  const chart = document.getElementById('botChart7d');
+  chart.innerHTML = '';
+  const days = e.chart_7days || [];
+  const max = Math.max(1, ...days.map(d => d.total));
+  days.forEach(d => {
+    const col = document.createElement('div');
+    col.className = 'day';
+    const dayLbl = d.day.slice(5); // MM-DD
+    const heightPct = (d.total / max) * 100;
+    col.innerHTML = `
+      <span class="bar-val">${d.total}</span>
+      <div class="bar" style="height: ${heightPct}%" title="${dayLbl}: ${d.total} hits — ${Object.entries(d.by_type).map(([k,v])=>k+':'+v).join(', ') || 'aucun'}"></div>
+      <span class="bar-label">${dayLbl}</span>
+    `;
+    chart.appendChild(col);
+  });
+
+  // Bot type table
+  const tbody = document.querySelector('#botTypeTable tbody');
+  tbody.innerHTML = '';
+  const lifetime = e.bots_by_type_lifetime || {};
+  const last = e.bot_last_seen || {};
+  const all = Object.entries(lifetime).sort((a, b) => b[1] - a[1]);
+  const h24 = e.bots_by_type_24h || {};
+  if (!all.length) {
+    tbody.innerHTML = '<tr><td colspan="4" style="color:var(--text-dim);text-align:center;padding:1rem;">Aucun bot détecté</td></tr>';
+  } else {
+    all.forEach(([name, total]) => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${escapeHtml(name)}</td>
+        <td class="num">${h24[name] ?? 0}</td>
+        <td class="num">${total}</td>
+        <td style="color:var(--text-dim);font-size:0.75rem;">${fmtRelativeShort(last[name])}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Top bot paths
+  renderPathList('botPaths', e.top_bot_paths_24h || {});
+  renderPathList('humanPaths', e.top_human_paths_24h || {});
+
+  // Status codes
+  const sc = e.status_codes_24h || {};
+  const scEl = document.getElementById('statusCodes');
+  const entries = Object.entries(sc).sort((a, b) => b[1] - a[1]);
+  if (!entries.length) {
+    scEl.innerHTML = '<div style="color:var(--text-dim);font-size:0.85rem;">Aucune requête</div>';
+  } else {
+    scEl.innerHTML = entries.map(([code, count]) => {
+      const cls = code.startsWith('2') ? 'status-200' : code.startsWith('3') ? 'status-3xx' : code.startsWith('4') ? 'status-4xx' : 'status-5xx';
+      return `<div style="margin: 0.25rem 0;"><span class="status-pill ${cls}">${code}</span><span style="font-family:ui-monospace,monospace;">${count}</span></div>`;
+    }).join('');
+  }
+}
+
+function renderPathList(id, paths) {
+  const el = document.getElementById(id);
+  const entries = Object.entries(paths);
+  if (!entries.length) {
+    el.innerHTML = '<div style="color:var(--text-dim);font-size:0.85rem;">Aucune donnée</div>';
+    return;
+  }
+  el.innerHTML = entries.map(([p, c]) => `
+    <div class="path-row" title="${escapeHtml(p)}">
+      <span class="path">${escapeHtml(p)}</span>
+      <span class="count">${c}</span>
+    </div>
+  `).join('');
 }
 
 function fmtAge(seconds) {

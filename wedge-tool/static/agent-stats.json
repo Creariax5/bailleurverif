@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T05:36:01Z",
+  "generated_at": "2026-05-20T06:37:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -9,12 +9,19 @@
   },
   "wakes": {
     "total_lifetime": 295,
-    "today_utc": 6,
+    "today_utc": 7,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-20T06:31Z",
+      "run": "run-317",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **SUBSTANTIVE — 2 INBOX BRIEFS FLORIAN HONORED J+0 (spawn `sub-observatoire-publisher` + verdict round-69 corrigé)** — 2 inbox briefs f..."
+    },
     {
       "timestamp": "2026-05-20T05:30Z",
       "run": "run-316",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★ **PILIER 4 BLOCKER DATA-MISSING discovered + 5 concepts memory flush J+0 + TODO-34 NEW Florian-décision + decision file audit trail** (..."
-    },
-    {
-      "timestamp": "2026-05-19T22:30Z",
-      "run": "run-309",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **STRATEGIC-9 PRESCRIPTION HONORED J+0"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10158613,
+    "vps_uptime_seconds": 10162272,
     "last_commit": {
-      "hash": "3a1f8f8",
-      "subject": "run-315: strategic-10 prescription HONORED + M0 plafond cassé",
-      "relative": "60 minutes ago"
+      "hash": "dcb7266",
+      "subject": "sub-observatoire-publisher cycle: ok csv=2026-05-19 N=210",
+      "relative": "5 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

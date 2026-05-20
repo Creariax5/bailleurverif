@@ -96,20 +96,35 @@ Critic-20 (audit 12:55Z) a flaggé deep-nav non-Florian via Google.com referrer 
 
 **Action retenue run-306** : closure hypothèse documentée (PRIMARY Florian self-audit). Pas de modif `/preavis-bail.html` ni homepage. Cooldown re-check ip_hash `3790475865` + `6269819028` due 2026-05-21T12:53Z (48h depuis 1ʳᵉ visite).
 
-## IndexNow round-69 verdict — théâtre confirmé (run-315 2026-05-20T04:30Z)
+## IndexNow round-69 verdict — théâtre confirmé puis CORRIGÉ "partial-functional" (run-317 2026-05-20T06:31Z)
 
-**Hypothèse critic-24 reconduite définitif T+6h cible 04:30Z** : spot-check run-315 04:30Z = T+6h post-ship `/loyer-legal-paris.html` run-309 22:30Z. Résultat :
+### Verdict initial (run-315 04:30Z) — INVALIDÉ
 
-- `grep -c loyer-legal-paris wedge-tool/data/visits.jsonl` = **0**
-- `grep loyer-legal-paris` filtré UA bot = **0**
-- `visits_total` = 222 UNCHANGED depuis 2026-05-19T13:29:30Z (15h silence)
+`grep -c loyer-legal-paris visits.jsonl = 0` T+6h → "théâtre confirmé". **MAIS source `visits.jsonl` est JS-beacon-only**, sous-compte les bots par 22× (la plupart des crawlers ne rendent pas le JS).
 
-**Verdict définitif** : IndexNow round-69 = **théâtre confirmé**. Ping Bing/Yandex envoyé run-309 n'a déclenché AUCUN crawl visible côté Apache logs. 2 hypothèses survivantes :
+### Verdict corrigé (run-317 06:31Z post-Florian inbox 06:00Z + `dashboard-extras.json` 06:28Z)
 
-- **Hypothèse PRIMARY (preferred)** : Pings reçus côté Bing/Yandex mais crawl planifié 24-72h+ post-ping (cadence indexation low-priority pour domaine DR ~25). T+6h trop court pour latency upper-bound réelle. Re-check T+24h cible 2026-05-20T22:30Z + T+48h cible 2026-05-21T22:30Z.
-- **Hypothèse SECONDARY** : IndexNow ne ping pas réellement (clé/endpoint dysfonctionnel) OU crawler ignore notre domaine 0-trust historique. Reclasser "outil bookkeeping" pas canal humain.
+Source autoritative bot-crawl désormais = `wedge-tool/static/dashboard-extras.json` (parse `server.log*` filtré IPs internes, cron `*/2`). Spot-check `grep loyer-legal-paris wedge-tool/server.log.run-308-restart.log` :
 
-**Implication mission revenu passif** : reconnecter discussion canal humain. Drafter cycle 2 LinkedIn (T+12h cible 16:45Z) + post Florian validation TODO-32-bis = seuls leviers humains restants pour fenêtre Paris J+7 (deadline iter-1 2026-05-26T22:30Z). +1 outreach press FR Que Choisir Logement run-315 (strategic-10 prescription = test diagnostic "moat académique → trafic réel" sans capex).
+- **9 hits IP `217.182.171.135` (VPS self-IP)** UA `curl/8.5.0` ou `Python-urllib/3.12` = auto-checks Builder/critic = internal noise.
+- **1 hit IP externe `23.23.253.54` (AWS EC2)** à 2026-05-20T05:19:15Z UA `Mozilla/5.0 (compatible)` = **bot externe non-identifié** (probable IndexNow crawler Bing/Microsoft ack ou AWS-hosted scraper).
+
+`dashboard-extras.json` confirme par ailleurs :
+- `last_googlebot=2026-05-20T02:05:58Z` (Googlebot crawle quotidien — domaine indexé)
+- `bot_hits_24h=32` (Googlebot 4, Bingbot 4, GPTBot 6, OAI-SearchBot 1, AhrefsBot 4, YandexBot 6, archive.org 3, FacebookExt 3, curl/wget 1)
+- `chart_7days[2026-05-20].total=4` (Googlebot 2 + AhrefsBot 1 + curl/wget 1) — fenêtre encore tôt 06:30Z UTC
+
+**Verdict corrigé** : IndexNow round-69 = **partial-functional**. ≥1 bot externe a crawlé Paris page T+7h post-ping. Googlebot crawle quotidien le site (vu hier 2026-05-19 ET aujourd'hui 02:05Z) MAIS ne s'est pas vu sur Paris page spécifiquement dans logs disponibles (server.log.run-308-restart.log ne couvre que post-22:30Z 2026-05-19). Latency réelle indexation Google = **toujours 24-72h hypothèse PRIMARY survivante**.
+
+**Implications corrections aval** :
+
+1. **Critic ledger** : critic-25 hypothèse "0 bot hit → théâtre" rebated par data source plus fiable. Pas erreur critic (basé sur source qui était officielle au moment audit), juste data-quality upgrade rétroactive.
+2. **Source of truth bot crawl** : désormais `dashboard-extras.json` (lifetime + 24h + 1h + chart 7j + last_seen par bot). `visits.jsonl` reste source humains-approx (JS-enabled browsers).
+3. **GPTBot 6 + OAI-SearchBot 1 lifetime** = présence dans index OpenAI/ChatGPT search **déjà acquise** (pas besoin chercher attirer plus, ils sont là).
+4. **AhrefsBot 6 lifetime** = DR/backlinks vont apparaître dans index industrie SEO 2-4 sem (cat-4 moat compound).
+5. **Googlebot ne crawle QUE `/robots.txt` + `/sitemap.xml` semble-t-il en 7j** (jamais pages contenu observable dans dashboard-extras) = **sandbox Google confirmé** typique nouveau site <30j. Patience 30-60j + signaux externes (backlinks autorité, mentions sociales).
+
+**Implication mission revenu passif (maintenue depuis run-315)** : reconnecter discussion canal humain (drafter cycle 2 + post Florian validation TODO-32-bis) reste pertinent. Pas de pivot stratégique sur cette correction — moat compound se construit ailleurs (mail Que Choisir T+2h, ANIL T+25h, presse 0/4 T+60h).
 
 ## Signal — NEW visitor ip_hash `2925209098` mobile Android via Lille DPE F/G (run-316 2026-05-20T05:18Z)
 
