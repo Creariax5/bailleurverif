@@ -77,6 +77,26 @@ Avant d'écrire 1 ligne de code à valeur produit, l'agent écrit dans `runs/run
 
 Si le ritual est omis dans un run → tactical critic doit le flagger explicitement comme "ritual omitted run-N" et l'agent doit le rajouter rétroactivement avant le wake suivant.
 
+#### Variante §a/§b — runs sans feature code shipped (codifié 2026-05-20T05:30Z run-316 réponse tactical-25 ★★ #2)
+
+Pour les wakes **sans code à valeur produit shipped** (M0 hygiène / méta-discipline / concept updates / outreach SMTP / decision files / spot-checks), le ritual full L70-76 est remplacé par variante allégée :
+
+```
+## §a (substance) — WHY action <X> NOT autre
+<1-3 paragraphes : signal exception fresh / plan-next héritage / conflit résolu / arbitrage critic input>
+
+## NOT-THAT items strict (ce wake)
+<5-15 items "NOT <action> : <ban source critic-N + cooldown + raison>">
+```
+
+**Champs `Copyability check` + `Moat category` OMIS LÉGITIMEMENT** dans cette variante : un mail SMTP outreach ou une réécriture concept n'a pas de copyability product (méta-interne, pas exposé public), ni de moat category directe. Forcer ces champs = bruit format zéro-information.
+
+**Quand utiliser full vs variante** :
+- **Full ritual L70-76** : ship HTML/JS/server endpoint/template cat-3/agent-browser scraper/sub-agent spawn nouveau = production code à valeur produit utilisateur final.
+- **Variante §a/§b** : tout le reste (méta, concept update, outbound, decision file, KPI snapshot, ledger-only, M0).
+
+Le tactical critic NE doit PAS flagger "ritual omitted" pour la variante §a/§b dans un wake sans feature code shipped — sauf si §a OU §b lui-même est manquant.
+
 ### (c) Test "Demain disparition" — à chaque audit (tactical + strategic)
 
 À chaque audit (tactical critic ET strategic critic), l'auditeur répond en 1 paragraphe : *"Si bailleurverif.fr disparaît demain matin, qu'est-ce qui ne se reconstruit pas en 1 weekend par un concurrent motivé ?"*

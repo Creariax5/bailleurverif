@@ -1,3 +1,38 @@
+## 📡 2026-05-20T05:30Z — Agent → Florian — run-316 : 1ᵉʳ visiteur organic-looking en 15h (mobile via Lille DPE F/G) + tactical-25 #2 codified
+
+**Court (TODO-34 ★★ reste pinned dessous 31h+, je n'éclipse pas).** Spot-check visits.jsonl révèle un signal positif inattendu ce wake :
+
+1. **★★★ NEW visitor ip_hash `2925209098`** à 05:18:03-04Z (T-10min avant ce wake), **UA Mobile Android Chrome 148** (≠ tes patterns historiques Chrome 147 Linux X11 desktop). Referrer `https://bailleurverif.fr/lille-dpe-f-g-interdit-location.html` → path `/` (2 hits 1s apart, double beacon JS browser réel). **Premier signal organic-looking depuis 15h+ silence** (last 13:29Z hier ip_hash 6269819028 = toi self-audit closure). **Implication** : page programmatique SEO Lille DPE F/G GÉNÈRE TRAFIC = **Pilier 2 SEO compounding validé partiellement** sur cousine de la Paris page. Le visiteur n'a PAS deep-nav `/loyer-legal-paris` (pas cross-linkée depuis Lille DPE) → fenêtre mesure Paris J+7 (deadline 2026-05-26T22:30Z) intacte. Single-shot pending recurrence ≥24h cible 2026-05-21T05:18Z. Pas alarme, juste signal.
+
+2. **★★ TACTICAL-25 #2 ritual variant codifié** dans `HUMAN_DIRECTIVE.md` DIRECTIVE 10 §b. Officialise la variante §a/§b (sans champs Copyability+Moat) pour les wakes méta/outreach/concept-update/M0 sans feature code shipped. Full ritual L70-76 réservé ship code à valeur produit (HTML/JS/server/template cat-3/scraper/sub-agent new). Atténue flag critic-25 "drift format silencieux runs 312-315".
+
+3. **★ TACTICAL-25 status** : 3/3 prescriptions HONORED cumul (#1 = run-315 strategic-10 mail + #2 = run-316 variant codify + #3 = run-315 plan-B prescription-last L69 si drafter cycle 2 0 post Florian post-T+24h ET Paris 0 capture J+3 → escalade "Pilier 2 indicateur prématuré-pivot" AVANT deadline J+7).
+
+### Statut KPIs principaux
+
+- **visits_total = 222→224 (+2 NEW)** ★ premier mouvement compteur 15h+.
+- visits_organic_looking_lifetime_post_florian_closure = 0→**1 NEW** (single-shot pending récurrence check).
+- captures_lifetime = 0 UNCHANGED (Paris page T+7h, NEW visitor not on Paris page).
+- wakes 315→316 / Directive 7 trophy 95→**96 consécutifs**. tactical-25 = **3/3 COMPLETE** ★ NEW. strategic 10/10 cumul UNCHANGED.
+- IndexNow round-69 verdict théâtre confirmé T+7h (re-check T+24h 22:30Z + T+48h demain 22:30Z).
+- humans_engaged_lifetime = 2 UNCHANGED 97+ wakes (mesure stricte capture/signup PAS visiteur browser).
+
+### Reste action toi (priorité INCHANGÉE depuis run-310, ordre INCHANGÉ)
+
+- **TODO-32 ★★** Lovys + Hemea affiliés (1-2h, débloque Pilier 3 revenu passif) — ouvert 36h.
+- **TODO-34 ★★** Pilier 4 a/b/c (~30s décision) — ouvert 31h, default Builder (c) pause si silence 14j.
+- **TODO-33 ★** 5 personnes entourage (~1h, débloque pivot painkiller).
+- **TODO-32-bis ★** valider draft drafter cycle 1 ECLI 1184c (~30s).
+- **TODO-31 ★** Test Rich Results FAQPage Google (~2 min).
+
+### Default plan run-317 (~06:30Z cron)
+
+Spot-check IMAP réponses (4 initial T+60h + ANIL T+25h + Que Choisir T+2h) + récurrence `2925209098` + captures Paris T+8h. Si récurrence détectée OU 1ʳᵉ capture OU 1ʳᵉ IMAP reply → escalade. Si 0 signal + budget cron permet → inbox.md rotation cap 1000 (3ᵉ flag critic-25 STOP différer). Sinon M0 #1 acceptable. PAS auto-décision TODO-34. PAS auto-gen LRAR. PAS 2ᵉ outreach press FR (cooldown 72h Que Choisir + 4 initial ≥2026-05-24).
+
+Cron 06:30Z relance.
+
+---
+
 ## 📨 2026-05-20T04:30Z — Agent → Florian — run-315 : strategic-10 prescription unique HONORED + plafond M0 cassé
 
 **Court (TODO-34 ★★ reste pinned dessous 30h+, je n'éclipse pas).** 2 audits critic arrivés EARLY 03:53-03:55Z. Strategic-10 prescription UNIQUE = "envoyer 1 mail SMTP outreach 1 canal FR conso-immo fresh" — exécuté J+0 ce wake :

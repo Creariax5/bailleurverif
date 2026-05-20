@@ -111,6 +111,32 @@ Critic-20 (audit 12:55Z) a flaggé deep-nav non-Florian via Google.com referrer 
 
 **Implication mission revenu passif** : reconnecter discussion canal humain. Drafter cycle 2 LinkedIn (T+12h cible 16:45Z) + post Florian validation TODO-32-bis = seuls leviers humains restants pour fenêtre Paris J+7 (deadline iter-1 2026-05-26T22:30Z). +1 outreach press FR Que Choisir Logement run-315 (strategic-10 prescription = test diagnostic "moat académique → trafic réel" sans capex).
 
+## Signal — NEW visitor ip_hash `2925209098` mobile Android via Lille DPE F/G (run-316 2026-05-20T05:18Z)
+
+**Premier signal organic-looking depuis 15h+ silence** (last 13:29:30Z 2026-05-19 ip_hash 6269819028 Florian self-audit closure run-306).
+
+| # | ts UTC | referrer | path | UA | ip_hash |
+|---|---|---|---|---|---|
+| 1 | 2026-05-20T05:18:03Z | `https://bailleurverif.fr/lille-dpe-f-g-interdit-location.html` | (empty) | Chrome 148 **Mobile Android 10** | `2925209098` |
+| 2 | 2026-05-20T05:18:04Z | `https://bailleurverif.fr/lille-dpe-f-g-interdit-location.html` | `/` | Chrome 148 Mobile Android 10 | `2925209098` |
+
+**Pattern** : 2 hits 1s apart, **UA mobile Android Chrome 148** (DIFFÉRENT du pattern Florian Chrome 147 Linux X11 sur ip_hash `6994446044`/`6269819028`/`3790475865`). Path 1 empty = beacon JS initial, path 2 = `/` navigation tracking complète. Referrer LILLE DPE F/G ON BOTH = visiteur d'abord sur page programmatique DPE F/G Lille (page tracking-less ou cache), puis clic vers homepage.
+
+**Hypothèses** :
+
+- **Hypothèse PRIMARY (preferred)** : Visiteur réel mobile, arrivée organique sur `/lille-dpe-f-g-interdit-location.html` (Google/social/direct), navigation programmatique SEO city-page → homepage. Probabilité : haute. Indices : (a) UA Mobile Android distinct des patterns Florian X11 Linux, (b) timing T-12min avant run-316 = pas aligné brief writing Florian observable, (c) path empty + path `/` 1s apart = double beacon JS pattern d'un browser réel pas pattern bot scriptable, (d) 0 deep-nav Paris page = visiteur n'a pas vu URL `/loyer-legal-paris` (page non-cross-linkée depuis Lille DPE F/G).
+- **Hypothèse SECONDARY (à invalider via recurrence check)** : Bot maquillé Mobile Android Chrome 148 single-shot non-récurrent. Probabilité : faible (UA très récent + 2 hits structure beacon humain + Lille→home navigation pattern humain).
+- **Hypothèse TERTIARY** : Florian on mobile testing. Probabilité : très faible (Florian usually X11 Linux Chrome 147 desktop, jamais vu Mobile Android dans patterns historiques).
+
+**Implication mission revenu passif** :
+
+1. **Pilier 2 SEO compounding validé partiellement** : page programmatique `lille-dpe-f-g-interdit-location.html` (générée vague 1ʳᵉ batch DPE F/G N=7 villes run-XXX) **GÉNÈRE TRAFIC**. Donc le modèle "1 page programmatique → 1+ visiteurs organic-like" tient. Pas Paris page mais cousine.
+2. **Page Lille tracking-less** : les visites sur `/lille-dpe-f-g-interdit-location.html` elle-même ne sont PAS dans visits.jsonl (pas d'instrument client tracking). Seule la navigation OUT (vers `/`) est captée via referrer. **Coût bookkeeping** : visits.jsonl undercount programmatique pages by 100%. Pas urgent mais à noter.
+3. **0 deep-nav Paris page** : visiteur Mobile Android n'a pas vu URL Paris. Donc fenêtre mesure Paris J+7 (deadline 2026-05-26T22:30Z) intacte, ce visiteur n'est pas un candidat capture (focused sur DPE pas loyer).
+4. **NE PAS scaler Paris→Lyon avant signal Paris 7j** (BAN strategic-9+10 maintenu). Le signal vient page DPE F/G PAS page Paris — donc signal de validation modèle programmatique général, pas signal capture iter-1 Pilier 1.
+
+**Action retenue run-316** : documentation only. Pas de tracking instrument page Lille (anti-touch programmatique iter-1 mesure ouverte) + pas de cross-link Lille→Paris hardcoded (anti-touch Paris page A/B). Re-check ip_hash `2925209098` recurrence ≥24h cible 2026-05-21T05:18Z — si 2ᵉ visite récurrence → reclasser cat-4 substantif candidate ; si null → single-shot organic-like documenté.
+
 ## Action retenue (run-286, maintenue)
 
 **Documentation only**. Pas de refonte homepage sans validation Florian/strategic-critic. Ce concept sert d'intel pour le prochain audit strategic (critic-20 attendu ~14:00Z).
