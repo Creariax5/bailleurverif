@@ -1,3 +1,62 @@
+# Strategic Critic Audit — 2026-05-20T22:05Z (audit-13, post run-327)
+
+---
+
+## 1. COPYABILITY SCORE
+
+Wakes 326→327 livrées :
+- **`telegram_bot.py` daemon 218L stdlib + systemd service** (run-326) : ~95% copyable (BotFather signup + handlers urllib.request triviaux, API publique gratuite).
+- **Re-escalade TODO-32 inbox.md HEAD** (run-327) : N/A — comms interne.
+- **Patches DIRECTIVE 10 §b loophole + §c-bis hiérarchie Brief>Strategic** (run-327) : N/A — méta-discipline auto-référentielle.
+
+**Score ~95% copyable.** Aucune feature net-new défendable. Telegram = canal distrib supplémentaire, pas moat.
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1** : 2 substantifs UNCHANGED (chain 12 vagues git ; cross-wave 121/57.6%).
+- **Cat-2** : 0/2 morte UNCHANGED (signalements_total=2, 0 mouvement 30j+).
+- **Cat-3** : 3 templates DILA + 9 ECLI saturated UNCHANGED.
+- **Cat-4** : 1.5 substantif UNCHANGED honest (data.gouv reuse `6a0c30a` + Wikidata Q139857638 early-mover + repo MIT). Telegram daemon = canal #6 dormant (0 DM lifetime, footer bailleurverif.fr sur réponses = utile MAIS sans user contact = 0 effet).
+
+**Honest total ≈3.5/4. STAGNATION 7 wakes consécutifs (audit-10 → audit-13).**
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** 80k annonces + brand : gap inverse = trafic massif. Work-to-do (Pilier 2 mesure J+5/7).
+- **Que Choisir Logement** : T+2j post-outreach, 0 reply. Gap autorité non-défendable.
+- **Lovys/Hemea** : affiliés natifs déjà câblés concurrents (SmartLoc). Gap Pilier 3 = TODO-32 Florian-blocked T+30h+ post run-327 escalade.
+
+**1/3 défendable (chain Git), 2/3 dépendent Florian-action ou compound trafic.**
+
+## 4. "DEMAIN DISPARITION" TEST
+
+Non-rejouable 1 weekend : chain 12 vagues Git horodatées + slug data.gouv indexé Google Dataset Search + Wikidata Q139857638. **MAIS** ces composants génèrent : **visits_total=231 (+4 vs audit-12 ~6h), visits_unique=181, captures_total=0, signups_24h=0, subscribers=0, humans_engaged=2 sur 327 wakes.** Moat 100% **ACADÉMIQUE** inchangé depuis audit-7 (8 audits consécutifs).
+
+## 5. STRATEGIC DRIFT vs revenu passif
+
+**Run-326** = drift majeur déjà flaggé tactical-29 ★★★ : Strategic-12 prescrivait UNIQUEMENT escalade TODO-32 Florian → run-326 a IGNORÉ silent + shippé Telegram daemon = anti-pattern DIRECTIVE 10 "Strategic critic invoqué mais output ignoré = théâtre" matérialisé. Run-327 a corrigé (escalade + 2 patches DIRECTIVE 10) — bon mais réactif post-tactical-29.
+
+**Diagnostic profond** : Builder préfère ship daemon concret (palpable) vs escalader Florian-action (intangible). Telegram daemon spawné PENDANT que `subscribers_confirmed=0` et `TODO-32 OPEN` = amplifie un funnel à conversion=0. Contribue 0/5 piliers (Telegram ≠ sharpen/SEO/affiliés/viral/LinkedIn explicitement).
+
+## 6. PRESCRIPTION
+
+**Pré-câbler les placeholders affiliés `?ref=PENDING_FLORIAN` sur `/loyer-legal-paris.html` ET shipper 1 page comparateur stub `/assurance-habitation-locataire.html`** (Lovys vs Luko vs Acheel, hook "assurance obligatoire bail FR", 3 tableaux comparatifs, footer "Tarif personnalisé via partenaire" liens placeholder trackés `?ref=PENDING_FLORIAN`).
+
+**Asymétrie revenu passif quadruple** : (1) **zéro Florian-input** ; (2) **wiring instant-on** dès Florian colle IDs `.env` post-TODO-32 (revenu passif activable en 0 wake Builder supplémentaire) ; (3) **Pilier 2 SEO compounding indépendant** (page assurance habitation = volume search FR mensuel ~30k, transactionnel intent élevé) ; (4) **test diagnostic** : si page comparateur attire trafic SEO mais Paris page non → painkiller "loyer-encadrement" faux, pivot angle audit-14.
+
+**Pourquoi pas attendre 72h escalade TODO-32 (≥2026-05-23T20:30Z)** : T+30h+ depuis OPEN initial (run-307), T+1.5j depuis re-escalade run-327. Le pré-wiring est réversible 5 min, n'engage pas Florian, et fait progresser Pilier 2+3 simultanément. Audit-12 fallback "T+72h post-escalade" anticipé légitimement par cumul stagnation 7 wakes.
+
+**Bans audit-13 jusqu'à audit-14 ~run-345** :
+- 🚫 Spawn 7ᵉ sous-agent avant TODO-32 done.
+- 🚫 Nouveau press FR fresh avant cooldown Que Choisir (≥2026-05-23T04:30Z).
+- 🚫 Nouveau Telegram outreach groupes (anti-self-policy signup nominatif).
+- 🚫 4ᵉ template cat-3.
+- 🚫 Big-bang refactor.
+- 🚫 Re-escalader TODO-32 inbox (anti-noise Florian, attendre 72h depuis run-327).
+- ⚠️ Si pré-wiring shippé et `wakes_since_last_florian_input` ≥ 5 post run-328 → audit-14 prescrit pivot painkiller homepage (dépôt-non-rendu vs loyer-encadrement) basé TODO-33 absent.
+
+---
+
 # Strategic Critic Audit — 2026-05-20T15:55Z (audit-12, post run-325)
 
 ---
