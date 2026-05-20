@@ -1,3 +1,47 @@
+# Strategic Critic Audit — 2026-05-20T09:55Z (audit-11, post run-320)
+
+---
+
+## 1. COPYABILITY SCORE
+
+Wakes 313→320 livrées : Que Choisir mail (N/A), spawn `sub-observatoire-publisher` Haiku 7j (~95% copyable, POST + cron), orphan-fix homepage+obs 2 liens internes (100%), Wikidata Q139857638 + sameAs +3 + footer Wikidata/GitHub visible (Q-item lui-même réplicable ~10 min via bot API par compétiteur ; intégration 100%), 9 bot crawls Paris doc + verdict round-69 full-functional (N/A obs).
+
+**Score : ~85% copyable.** Aucun composant net-new défendable hors chain Git +1 vague passive.
+
+## 2. MOAT COMPONENTS LIVE
+
+Cat-1 3/3 UNCHANGED (chain 11 vagues + cross-wave 121/57.6% + dataset data.gouv slug). Cat-2 0/2 morte UNCHANGED. Cat-3 3 templates + 9 ECLI saturated UNCHANGED. Cat-4 Builder claim 2→3 via Wikidata mais **honest 1.5/4** (data.gouv reuse `6a0c30a` solo défendable ; Wikidata Q139857638 = early-mover signal mais Q-item reproductible compétiteur ; repo GitHub MIT commodité ; 2 PRs awesome 0 merged T+19/11 wakes ; presse 0/5 reply T+72h+).
+
+**Honest total ≈3.5/4. Net vs audit-10 = +0.5 (Wikidata, KG propagation pending ~14j).**
+
+## 3. CONCURRENT GAP
+
+PAP.fr 80k listings : BV chain inforgeable mais gap = trafic. Que Choisir T+5h no reply (strategic-10 honored mais signal=0). Hemea/Lovys affiliés gap TODO-32 Florian-bloqué T+40h+. **1/3 défendable ; actionnable Florian-dép ou compound trafic.**
+
+## 4. "DEMAIN DISPARITION" TEST
+
+Non-rejouable 1 weekend : chain Git +1 vague (passé inforgeable), data.gouv reuse `6a0c30a`, Wikidata partiel. **MAIS génèrent** : visits 222→227 (+5 mostly bots GPTBot/Googlebot WRS/AWS), **0 capture**, **0 signup**, humans=2 UNCHANGED 100+ wakes, conv_email_pct=0.0. Signal positif T+12h Paris : GPTBot + Googlebot WRS + Google-InspectionTool RARE = discovery enfin ON. Mais discovery ≠ revenu. **Moat reste 100% ACADÉMIQUE.**
+
+## 5. STRATEGIC DRIFT vs revenu passif
+
+**Drift run-316** : codification "DIRECTIVE 10 §b variante runs sans code shipped" = méta-discipline pendant fenêtre Paris J+5 restant (même anti-pattern audit-10 convention M0 max 2). Contribue 0 piliers.
+
+**Drift run-320** : 9 bot crawls Paris documentés exhaustivement (+12 KPIs, +60L `traffic-signals.md`) **sans aucune action follow-up funnel**. Builder convertit signal substantif en bookkeeping plutôt qu'hypothèse falsifiable + action sharpen.
+
+## 6. PRESCRIPTION
+
+**SHARPEN HOMEPAGE `/` ABOVE-FOLD PAINKILLER** (Pilier 1 premier pilier validé Florian 2026-05-19).
+
+Audit 10s test : "un locataire arnaqué voit-il en 10s sur `/` ce qu'il doit faire ?". Si non → rewrite chirurgicale ≤50 lignes HTML : (a) H1 painkiller crystal clair ("Vérifiez si votre loyer est encadré en 5s, gratuit"), (b) UN simulateur OU email-capture inline above-fold (pas 4 wedge-tools concurrents), (c) preuve sociale N=232 / 46.7% violations visible.
+
+**Asymétrie revenu passif** : 0 Florian-input ; surface trafic max (homepage = 90%+ entries) ; Pilier 1 explicite ; mesurable (captures ≥1 sous 7j sinon pivot painkiller angle audit-12) ; compatible bans (pas A/B Paris touch, pas big-bang refactor, pas burst, pas spawn).
+
+**Pourquoi PAS plus d'outreach** : Que Choisir T+5h + presse 0/5 reply T+72h+ = canal saturé, ROI marginal décroissant. Bot crawls T+12h prouvent discovery ON via SEO/IndexNow ; bottleneck = conversion homepage **jamais sharpen depuis pivot revenu passif** (18 wakes Builder, 0 wake homepage above-fold sharpen).
+
+Si 0 capture 7j → pivot painkiller angle (loyer→dépôt→DPE) audit-12 ~run-345.
+
+---
+
 # Strategic Critic Audit — 2026-05-20T03:53Z (post run-312, audit-10)
 
 ---

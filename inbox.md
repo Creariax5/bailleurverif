@@ -1,3 +1,73 @@
+## ✅ 2026-05-20T11:30Z — Agent → Florian — run-322 : Strategic-11 prescription HONORED J+0 (sharpen homepage above-fold) ★
+
+**Court — 3 actions <10 min.**
+
+### 1. ★ Strategic-11 HONORED (sharpen homepage `/` above-fold painkiller, Pilier 1)
+
+Audit-11 strategic 09:55Z prescription unique = "rewrite chirurgicale ≤50 lignes HTML : (a) H1 painkiller crystal clair, (b) UN simulateur above-fold, (c) preuve sociale visible". Exécutée 5 edits surgicaux (4 lignes hero + 4 lignes meta).
+
+**Avant vs après** (`wedge-tool/static/index.html`) :
+
+| # | Élément | Avant | Après |
+|---|---|---|---|
+| 1 | H1 ligne 122-124 | "Votre loyer est-il légal en 2026 ?" (interrogatif) | "**Vérifiez si votre loyer est légal en 30 s — gratuit**" (impératif painkiller) |
+| 2 | Hero subtitle L125-128 | "Encadrement, DPE F/G, charges abusives : vérif 30 secondes. Gratuit, anonyme, sans compte. Adossé observatoire 59% N=160" (stale + scope creep) | "Tapez ville, surface, loyer et DPE : verdict immédiat. Anonyme, sans compte. Adossé observatoire **60% zone tendue dépassent l'encadrement (N=95 in-scope, ±9,7 pts)**" (fresh data + action verb) |
+| 3 | meta description L8 | "59% N=160" (stale) | "60% (N=95 in-scope, ±9,7 pts)" (truthful) |
+| 4 | og:description L20 | "59% N=160" (stale) | "60% (N=95 in-scope)" |
+| 5 | twitter:description L31 | "59% N=160" (stale) | "60% (N=95 in-scope)" |
+| 6 | share-block L243 (cohérence below-fold) | "59% N=160" | "60% N=95 in-scope ±9,7 pts" |
+
+**(b) UN simulateur above-fold** = déjà respecté (quiz #1 inline ligne 136 immédiatement sous hero, pas de wedge concurrent). Pas de touch quiz, juste retitrage hero.
+
+Smoke prod `curl https://bailleurverif.fr/` :
+- `200 OK`
+- H1 servi : `Vérifiez si votre <span class="accent">loyer</span> est légal en 30 s — gratuit` ✅
+- meta description servi : `60% des annonces zone tendue dépassent l'encadrement (N=95 in-scope, ±9,7 pts)` ✅
+
+### 2. ★ Tactical-27 #2 HONORED (nuance "4 canaux" → "3 sources externes")
+
+`memory-agent/concepts/traffic-signals.md` L219 reformulé. Compte honnête :
+- (a) **Google ecosystem** (Googlebot Mobile WRS + Google-InspectionTool RARE 1-shot = sub-bots, pas canaux indépendants)
+- (b) **OpenAI GPTBot** (2 hits content ingest Paris page)
+- (c) **AWS/Bing-like generic compatible** (2 hits cloud crawler)
+
+Tencent iPhone IP exclu (bot disguisé). **3 sources externes distinctes, pas 4.** Anti-inflation feel-good documentée.
+
+### 3. ★ Signal Florian — GPTBot bot_last_seen stale `dashboard-extras.json` (tactical-27 #3)
+
+Bug parsing détecté `dashboard-extras.json` cron `*/2` parse server.log (côté Florian, owner) :
+- `bot_last_seen.GPTBot = 2026-05-19T16:16:24Z` (dashboard live)
+- Realité raw `server.log` : 2026-05-20T08:09:06Z + 08:09:10Z confirmée (GPTBot Paris hits documentés snapshot KPI run-320)
+- **Stale ~17h** ⇒ probable bug filtre temporel OU regex. Bingbot aussi stale (`18:42Z` vs cron 07:13Z).
+
+Pas action Builder. 1-liner inbox pour signal Florian quand tu repasses sur le parser dashboard (5-10 min, optionnel).
+
+### Anti-vol décision (silent rappel)
+
+- ⏸ TODO-34 ★★ Pilier 4 décision a/b/c — silent 11ᵉ wake.
+- ⏸ TODO-32 ★★ affiliés Lovys/Hemea — silent.
+- ⏸ TODO-33 ★ entourage 5 personnes — silent.
+
+### Statut KPIs principaux
+
+- `homepage_h1_imperative_painkiller_codified = true ★ NEW run-322` (strategic-11 (a) honored)
+- `homepage_social_proof_data_freshness = "60% N=95 in-scope ±9,7 pts" ★ FRESH` (vs "59% N=160" stale)
+- `index_html_meta_descriptions_refreshed = 3` (meta + og + twitter)
+- `strategic_critic_recommendations_followed = 10/10 → 11/11 ★`
+- `tactical_critic_recommendations_followed_audit27 = 0/3 → 2/3 J+0` (★★ #2 nuance done + ★ #3 signal done ; ★★ #1 plan-B Paris trigger T+24h cumul = ~16:30-22:30Z, monitoring)
+- `wakes_total_lifetime = 321 → 322`
+- `directive_7_revisee_compliance_consecutive_wakes = 101 → 102 ★`
+- `captures_paris_lifetime = 0 UNCHANGED T+14h` (fenêtre 7j J+5 restants, deadline 2026-05-26T22:30Z)
+- `humans_engaged_lifetime = 2 UNCHANGED` (6ᵉ audit consécutif sans déplacement humain — strategic critic angle mort flag)
+
+### Risque ban-strategic-9 anti-touch Paris page
+
+Ce wake ne touche PAS `/loyer-legal-paris.html`. Seulement homepage `/` (hors BAN). Conforme strategic-9 ET strategic-11 (qui prescrit explicitement homepage sharpen).
+
+Cron 12:30Z relance.
+
+---
+
 ## ✅ 2026-05-20T10:30Z — Agent → Florian — run-321 : BreadcrumbList fix HONORED J+0 (3/3 actions brief 09:45Z) ★★
 
 **Court (3 actions 3/3 exécutées T+45min post-brief).**

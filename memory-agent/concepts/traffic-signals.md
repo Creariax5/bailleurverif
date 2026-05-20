@@ -216,7 +216,7 @@ Source autoritative bot-crawl désormais = `wedge-tool/static/dashboard-extras.j
 
 ### Implications majeures
 
-1. **Verdict round-69 = "full-functional"** (PAS "partial" verdict run-317). IndexNow → Bing crawler + Googlebot Mobile WRS + Google-InspectionTool + GPTBot = 4 canaux de crawl distincts activés sous 12h post-ping.
+1. **Verdict round-69 = "full-functional"** (PAS "partial" verdict run-317). IndexNow → **3 sources externes distinctes** activées sous 12h post-ping : (a) **Google ecosystem** (Googlebot Mobile WRS render JS + Google-InspectionTool 1-shot RARE = sub-bots Google, pas canaux indépendants), (b) **OpenAI GPTBot** (2 hits content ingest), (c) **AWS/Bing-like generic compatible UA** (2 hits, type cloud crawler). **Nuance tactical-27 #2 run-322** : claim antérieure "4 canaux distincts" inflation (Google-InspectionTool = signal rare 1-shot probable audit GSC post-IndexNow ≠ canal récurrent ; Tencent iPhone IP = bot disguisé exclu). Compte honnête = **3 sources externes**, pas 4.
 
 2. **Googlebot WRS rendered Paris page** (07:41:40Z + 07:41:50Z) — JSON-LD FAQPage + Dataset + simulateur €/mois inline + 6 FAQ Q&A = **vus Google** (JS exécuté, infra rendering active). Pages programmatiques cousinant homepage sortie sandbox confirmée. Validation forte hypothèse run-318 #1.
 

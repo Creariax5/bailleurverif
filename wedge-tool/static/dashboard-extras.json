@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-20T10:36:01Z",
+  "generated_at": "2026-05-20T11:32:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 1037,
-    "requests_24h": 914,
+    "requests_lifetime": 1061,
+    "requests_24h": 938,
     "bot_hits_lifetime": 126,
     "bot_hits_24h": 68,
-    "bot_hits_1h": 8,
-    "human_hits_24h": 846
+    "bot_hits_1h": 1,
+    "human_hits_24h": 870
   },
   "bots_by_type_lifetime": {
     "archive.org": 21,
@@ -119,10 +119,6 @@
   ],
   "hourly_24h": [
     {
-      "hour": "11",
-      "hits": 0
-    },
-    {
       "hour": "12",
       "hits": 17
     },
@@ -212,7 +208,11 @@
     },
     {
       "hour": "10",
-      "hits": 29
+      "hits": 42
+    },
+    {
+      "hour": "11",
+      "hits": 11
     }
   ],
   "top_bot_paths_24h": {
@@ -234,21 +234,21 @@
     "/og-image.png": 1
   },
   "top_human_paths_24h": {
-    "/": 51,
-    "/css/main.css": 30,
+    "/": 52,
+    "/css/main.css": 31,
     "/css/tailwind-runtime.js": 29,
-    "/robots.txt": 18,
+    "/robots.txt": 26,
     "/api/visit": 11,
     "/api/changelog?limit=5": 11,
+    "/loyer-legal-paris.html": 11,
+    "/atom.xml": 10,
     "/observatoire-annonces-loyer.html": 10,
-    "/loyer-legal-paris.html": 10,
-    "/atom.xml": 9,
-    "/favicon.ico": 9
+    "/encadrement-loyer-paris-2026.html": 10
   },
   "status_codes_24h": {
-    "200": 720,
+    "200": 741,
     "400": 10,
-    "404": 182,
+    "404": 185,
     "501": 2
   }
 }

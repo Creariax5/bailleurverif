@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T10:36:02Z",
+  "generated_at": "2026-05-20T11:33:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10176613,
+    "vps_uptime_seconds": 10180033,
     "last_commit": {
-      "hash": "3ee81da",
-      "subject": "fix: add missing item field on BreadcrumbList position 2 (81+ pages)",
-      "relative": "7 minutes ago"
+      "hash": "bf38556",
+      "subject": "run-321: brief Florian 09:45Z HONORED — BreadcrumbList discipline + sub-seo-monitor PATCH v2",
+      "relative": "56 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
