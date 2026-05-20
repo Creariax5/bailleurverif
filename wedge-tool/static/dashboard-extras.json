@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-05-20T06:36:01Z",
+  "generated_at": "2026-05-20T07:44:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 635,
-    "requests_24h": 512,
-    "bot_hits_lifetime": 90,
-    "bot_hits_24h": 32,
-    "bot_hits_1h": 0,
-    "human_hits_24h": 480
+    "requests_lifetime": 794,
+    "requests_24h": 671,
+    "bot_hits_lifetime": 97,
+    "bot_hits_24h": 39,
+    "bot_hits_1h": 6,
+    "human_hits_24h": 632
   },
   "bots_by_type_lifetime": {
     "archive.org": 21,
     "YandexBot": 15,
+    "Bingbot": 11,
     "generic-bot": 11,
+    "Googlebot": 9,
     "Go-HTTP": 8,
-    "Bingbot": 7,
     "AhrefsBot": 6,
-    "Googlebot": 6,
     "GPTBot": 6,
     "ByteSpider": 5,
     "FacebookExt": 3,
@@ -24,10 +24,10 @@
     "OAI-SearchBot": 1
   },
   "bots_by_type_24h": {
+    "Bingbot": 8,
+    "Googlebot": 7,
     "YandexBot": 6,
     "GPTBot": 6,
-    "Bingbot": 4,
-    "Googlebot": 4,
     "AhrefsBot": 4,
     "FacebookExt": 3,
     "archive.org": 3,
@@ -42,14 +42,14 @@
     "generic-bot": "2026-05-17T14:02:45+00:00",
     "AhrefsBot": "2026-05-19T19:54:27+00:00",
     "archive.org": "2026-05-19T14:33:33+00:00",
-    "Googlebot": "2026-05-20T02:05:58+00:00",
+    "Googlebot": "2026-05-20T07:42:51+00:00",
     "curl/wget": "2026-05-20T05:29:33+00:00",
     "FacebookExt": "2026-05-19T18:18:14+00:00",
     "OAI-SearchBot": "2026-05-19T15:58:31+00:00",
     "GPTBot": "2026-05-19T16:16:24+00:00"
   },
-  "last_googlebot": "2026-05-20T02:05:58+00:00",
-  "last_bingbot": "2026-05-19T21:39:20+00:00",
+  "last_googlebot": "2026-05-20T07:42:51+00:00",
+  "last_bingbot": "2026-05-20T07:13:53+00:00",
   "chart_7days": [
     {
       "day": "2026-05-14",
@@ -101,19 +101,16 @@
     },
     {
       "day": "2026-05-20",
-      "total": 4,
+      "total": 11,
       "by_type": {
-        "Googlebot": 2,
+        "Googlebot": 5,
         "AhrefsBot": 1,
-        "curl/wget": 1
+        "curl/wget": 1,
+        "Bingbot": 4
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "07",
-      "hits": 0
-    },
     {
       "hour": "08",
       "hits": 0
@@ -204,41 +201,45 @@
     },
     {
       "hour": "06",
-      "hits": 10
+      "hits": 49
+    },
+    {
+      "hour": "07",
+      "hits": 113
     }
   ],
   "top_bot_paths_24h": {
-    "/robots.txt": 10,
+    "/robots.txt": 14,
     "/b0d2add1441ec161a5ba4ad975987bc8.txt": 3,
+    "/": 2,
+    "/sitemap.xml": 2,
     "/data/cross-wave-persistence.json": 2,
     "/observatoire-annonces-loyer.html": 1,
     "/scanner-arnaque-location.html": 1,
     "/.git/config": 1,
     "/observatoire-prix-vente-vs-loyer.html": 1,
-    "/data/cross-wave-persistence.json)": 1,
-    "/observatoire-annonces-loyer.html)": 1,
-    "/api/recourse/dpe-invalide.md": 1
+    "/data/cross-wave-persistence.json)": 1
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 5,
+    "/robots.txt": 8,
     "/sitemap.xml": 1
   },
   "top_human_paths_24h": {
-    "/": 41,
-    "/robots.txt": 15,
-    "/css/tailwind-runtime.js": 9,
-    "/api/visit": 9,
-    "/api/changelog?limit=5": 9,
-    "/css/main.css": 9,
+    "/": 46,
+    "/css/main.css": 18,
+    "/css/tailwind-runtime.js": 17,
+    "/robots.txt": 16,
+    "/api/visit": 10,
+    "/api/changelog?limit=5": 10,
     "/atom.xml": 8,
     "/data/cross-wave-persistence.json": 8,
     "/observatoire-annonces-loyer.html": 7,
     "/favicon.ico": 7
   },
   "status_codes_24h": {
-    "200": 410,
-    "400": 6,
-    "404": 94,
+    "200": 566,
+    "400": 8,
+    "404": 95,
     "501": 2
   }
 }

@@ -4,6 +4,7 @@
 > **Last refactor : 2026-05-19T16:XXZ (run-304)** — historique condensé en section "Archive collapsed". Détails archivés dans `florian-todos-history.md.bak` + `ledger.md` + git history.
 > **Update 2026-05-19T20:28Z (run-307)** — RÉORIENTATION mission Florian 17:XXZ : revenu passif vs 5000 users. TODO-25 (Stripe) archivé REPORTÉ post-100 signups. Nouveau TODO-32 ★★ Affiliés Lovys+Hemea remplace TODO-25 priorité gros chantier. Ancien TODO-32 (drafter LinkedIn) → TODO-32-bis ★ Optionnel. Nouveau TODO-33 ★ Parler 5 personnes entourage.
 > **Update 2026-05-19T23:30Z (run-310)** — NEW TODO-34 ★★ DÉCISION Pilier 4 viral notation agences : CSV observatoire 23 colonnes sans `agence`/`brand`/`annonceur` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven impossibles sans upgrade scraper. 3 options (a) upgrade scraper / (b) pivot angle / (c) pause indéfini. Default = (c) si silence 14j.
+> **Update 2026-05-20T07:30Z (run-318)** — NEW TODO-35 ★ (faible priorité) Indexing API Google : setup service account Google Cloud + clé JSON pour automatiser "Demander indexation" via API (15-20 min). Avant TODO-35 → discipline internal linking (codifiée `concepts/seo-discipline.md`) + GSC manual URL Inspection = suffisent. Faire quand tu veux, pas urgent.
 
 ---
 

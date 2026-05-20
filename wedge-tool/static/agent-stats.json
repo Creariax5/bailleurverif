@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T06:37:01Z",
+  "generated_at": "2026-05-20T07:45:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 295,
-    "today_utc": 7,
+    "total_lifetime": 296,
+    "today_utc": 8,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-20T07:30Z",
+      "run": "run-318",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★★★ **SUBSTANTIVE — BRIEF FLORIAN FIX-ORPHAN HONORED J+0 (3 ÉTAPES 4/4) + BONUS SIGNAL GOOGLEBOT WRS MOBILE RENDERED HOMEPAGE WITH JS** —..."
+    },
     {
       "timestamp": "2026-05-20T06:31Z",
       "run": "run-317",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "default plan run-310 PLAN-NEXT honoré"
-    },
-    {
-      "timestamp": "2026-05-19T23:30Z",
-      "run": "run-310",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **PILIER 4 BLOCKER DATA-MISSING discovered + 5 concepts memory flush J+0 + TODO-34 NEW Florian-décision + decision file audit trail** (..."
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -102,7 +102,7 @@
       "subject": "Observatoire data.gouv non-conformite loyer (N=232) + calculateur Paris 5s — res",
       "sent_at": "?"
     },
-    "inbound_replies_total": 2
+    "inbound_replies_total": 0
   },
   "subscribers": {
     "pending": 0,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10162272,
+    "vps_uptime_seconds": 10166352,
     "last_commit": {
-      "hash": "dcb7266",
-      "subject": "sub-observatoire-publisher cycle: ok csv=2026-05-19 N=210",
-      "relative": "5 minutes ago"
+      "hash": "b18b2de",
+      "subject": "run-317: spawn sub-observatoire-publisher Haiku 7j + verdict round-69 corrigé partial-functional",
+      "relative": "68 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

@@ -122,7 +122,7 @@ Source autoritative bot-crawl désormais = `wedge-tool/static/dashboard-extras.j
 2. **Source of truth bot crawl** : désormais `dashboard-extras.json` (lifetime + 24h + 1h + chart 7j + last_seen par bot). `visits.jsonl` reste source humains-approx (JS-enabled browsers).
 3. **GPTBot 6 + OAI-SearchBot 1 lifetime** = présence dans index OpenAI/ChatGPT search **déjà acquise** (pas besoin chercher attirer plus, ils sont là).
 4. **AhrefsBot 6 lifetime** = DR/backlinks vont apparaître dans index industrie SEO 2-4 sem (cat-4 moat compound).
-5. **Googlebot ne crawle QUE `/robots.txt` + `/sitemap.xml` semble-t-il en 7j** (jamais pages contenu observable dans dashboard-extras) = **sandbox Google confirmé** typique nouveau site <30j. Patience 30-60j + signaux externes (backlinks autorité, mentions sociales).
+5. **Googlebot ne crawle QUE `/robots.txt` + `/sitemap.xml` semble-t-il en 7j** (jamais pages contenu observable dans dashboard-extras) = **sandbox Google confirmé** typique nouveau site <30j. Patience 30-60j + signaux externes (backlinks autorité, mentions sociales). **★ MIS À JOUR run-318 2026-05-20T07:30Z : ce point #5 PARTIELLEMENT INVALIDÉ par Googlebot WRS Mobile sortant de sandbox, voir section dédiée plus bas.**
 
 **Implication mission revenu passif (maintenue depuis run-315)** : reconnecter discussion canal humain (drafter cycle 2 + post Florian validation TODO-32-bis) reste pertinent. Pas de pivot stratégique sur cette correction — moat compound se construit ailleurs (mail Que Choisir T+2h, ANIL T+25h, presse 0/4 T+60h).
 
@@ -160,3 +160,38 @@ Source autoritative bot-crawl désormais = `wedge-tool/static/dashboard-extras.j
 
 - Si critic-19 recommande optim homepage CTA → ajouter bandeau « Voir l'observatoire (43 violations N=210 dernière vague) » au-dessus du fold.
 - Sinon : continuer baseline, surveiller si `recurring_visitors_count` augmente sur ≥3 visiteurs distincts (seuil signal vs bruit).
+
+## ★ Signal — Googlebot WRS Mobile RENDERED HOMEPAGE WITH JS (run-318 2026-05-20T07:30Z)
+
+**Découverte ce wake** : 1ʳᵉ trace concrète Googlebot **WRS (Web Rendering Service) Mobile-First Indexing** rendant la homepage avec exécution JavaScript complète.
+
+### Séquence chronologique (server.log.run-308-restart.log)
+
+| ts UTC | IP | requête | UA |
+|---|---|---|---|
+| 2026-05-20T05:46:50Z | 217.182.171.135 | HEAD / | Googlebot/2.1 (basic) — self-IP self-check |
+| 2026-05-20T06:39:59Z | 66.249.73.129 | GET /robots.txt | Googlebot/2.1 (basic, AS15169 Google) |
+| 2026-05-20T06:40:00Z | 66.249.73.129 | GET / | **Googlebot Mobile WRS Chrome 148** (Nexus 5X) |
+| 2026-05-20T06:40:02Z | 66.249.73.129 | GET /api/changelog?limit=5 | Googlebot Mobile WRS Chrome 148 |
+| 2026-05-20T06:40:03Z | 66.249.73.129 | POST /api/visit | Googlebot Mobile WRS Chrome 148 |
+
+**Diagnostic** : Googlebot Mobile WRS UA = `Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)`. C'est le bot **rendering** Google (distinct du basic crawler) qui exécute JavaScript pour Mobile-First Indexing.
+
+**Preuve rendering JS** : POST `/api/visit` à T+3s post-GET `/` = beacon JavaScript déclenché par `app.js` (notre instrument client). GET `/api/changelog?limit=5` à T+2s = appel JS dynamic interne homepage (composant changelog). Ces 2 endpoints **ne peuvent être appelés QUE si JS s'exécute**.
+
+### Implications stratégiques
+
+1. **Sandbox Google sortie partielle (≥1 page rendered)** : verdict précédent "Googlebot ne crawle QUE robots.txt + sitemap.xml" est PARTIELLEMENT FAUX au moins pour homepage. WRS est entré. Pages programmatiques (Paris, Lille DPE, etc.) PAS encore vues dans logs WRS, mais infrastructure crawling activée.
+2. **Mobile-First Indexing actif** : Google indexe la version mobile = nos optims mobile (responsive viewport, touch CTAs) **comptent**. Notre layout mobile-first est OK (vérifié pré-ship). Pas d'action structurelle nécessaire.
+3. **Dynamic content visible Google** : JSON-LD injected via JS (FAQPage, Dataset) + verdict €/mois calculator output + observatoire stats sont **probablement vus Google** car JS s'exécute. C'est le scénario optimiste qu'on espérait sans en avoir preuve.
+4. **Sitemap effectiveness** : Googlebot lit `/robots.txt` 4× en 24h + `/sitemap.xml` régulièrement. Ship indexNow + sitemap path = bonne décision.
+5. **Round-69 verdict révisé +1** : "partial-functional" (1 bot externe AWS run-317) + maintenant "Googlebot WRS confirmé" → upgrade à **functional Mobile-First**.
+
+### Nouvelle hypothèse à valider
+
+- **Indexation Google homepage dans SERP** : checker `site:bailleurverif.fr` next 7-14j sur compte Florian GSC (Florian-side, TODO existant). Si pages programmatiques apparaissent en SERP = sandbox levée pour ces pages aussi.
+- **Pas de structural change ce wake** : laisser fenêtre mesure Paris ouverte (deadline 2026-05-26T22:30Z), ne pas toucher A/B baseline.
+
+**ip_hash `2872988250`** = Googlebot Mobile WRS Nexus 5X (NEW). Stable IP range 66.249.73.x AS15169 Google.
+
+**Action retenue run-318** : documentation only (concept update + inbox.md HEAD signal Florian). Pas de touch HTML, pas de spawn agent dédié, pas d'IndexNow re-ping (anti-théâtre).

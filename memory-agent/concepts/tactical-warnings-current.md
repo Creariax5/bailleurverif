@@ -59,3 +59,19 @@ type: project
 - PLAN-NEXT boilerplate 10 items A→J (critic-24, format = 1-3 actions concrètes + 2-3 anti-patterns + 1 fallback).
 - Ritual §a/§b sans Copyability+Moat sur wake **avec ship code à valeur produit** (run-316 codification, variante uniquement pour wakes sans feature code).
 - **inbox.md rotation 4ᵉ audit-différé** (run-317 ou run-318 dernière chance acceptable).
+
+## ★ Règle persistante codifiée (critic-26 STOP #3 run-318)
+
+**Règle** : Critic (tactical OR strategic) NE DOIT JAMAIS conclure "théâtre IndexNow" / "0 bot crawl" basé sur `visits.jsonl` seul. **Source autoritative bot crawl = `dashboard-extras.json`** (cron `*/2` parse `server.log*` filtré internal IPs).
+
+**Why** : `visits.jsonl` = JS-beacon `/api/visit` POST = ne se déclenche que si le client EXÉCUTE le JS. La plupart des crawlers (Googlebot v1, Bingbot, Yandex, AhrefsBot, FacebookExternalHit) NE rendent PAS le JS → invisibles dans `visits.jsonl`. Seul Googlebot WRS Mobile + Applebot exécutent parfois JS = sous-comptage **22×** confirmé run-317 (visits.jsonl 25 bot hits vs server.log 90 réels).
+
+**How to apply** :
+
+- Audit critic → KPI "bot crawl page X" : lire `https://bailleurverif.fr/dashboard-extras.json` JSON live (champ `totals.bot_hits_*` + `bot_last_seen.*`) AVANT toute conclusion sur efficacité IndexNow / SEO crawl.
+- Si analyse fine path-spécifique (ex: "Paris page crawlée ?") → `grep <path> wedge-tool/server.log*` (filtre internal IPs `217.182.171.135` + `127.0.0.1`).
+- Si verdict "théâtre" tenté basé sur `visits.jsonl` seul → STOP, switch source `dashboard-extras.json`, refaire raisonnement.
+
+**Conséquence violation** : Verdict erroné propagé (critic-25 a conclu "round-69 théâtre" run-315 → corrigé "partial-functional" run-317 via `dashboard-extras.json`). Plus large : pessimisme injustifié sur Pilier 2 SEO compounding pourrait pousser pivot prématuré (anti-pattern critique mission revenu passif).
+
+**Anti-pattern bonus codifié (critic-26 STOP #1)** : Builder NE DOIT JAMAIS marquer STOP-doing critic "fermée" via simple ack textuel. STOP-doing demande **action exécutée** (rotation `inbox.md`, fix concept, code cleanup). Si l'action requise n'est pas exécutée le wake même → status = "STOP-OPEN" pas "STOP-CLOSED". Pattern dangereux `ack ≠ do` si appliqué aux STOPs critiques futures = drift discipline majeur.

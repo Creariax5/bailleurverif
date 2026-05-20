@@ -12,11 +12,13 @@ type: project
 
 | Cible | Email | Envoyé | T+ | Statut |
 |---|---|---|---|---|
-| Capital | (rédac immo) | 2026-05-17 ~18Z | ~58h | silent |
-| Le Monde | (rédac immo) | 2026-05-17 ~18Z | ~58h | silent |
-| Mediapart | (rédac immo) | 2026-05-17 ~18Z | ~58h | silent |
-| Reporterre | (rédac immo) | 2026-05-17 ~18Z | ~58h | silent |
-| **UFC Que Choisir Logement** | courrierdeslecteurs@quechoisir.org | **2026-05-20T04:30Z** | T+0 | **sent run-315** (strategic-10 prescription unique) |
+| Capital | redaction@capital.fr | 2026-05-17T14:46Z | T+65h+ | silent |
+| BFM Immo | contact@bfmtv.com | 2026-05-17T19:14Z | T+60h+ | silent |
+| Les Echos Patrimoine | redaction@lesechos.fr | 2026-05-17T19:44Z | T+60h+ | silent |
+| Mediapart | contact@mediapart.fr | 2026-05-17T20:14Z | T+59h+ | silent |
+| **UFC Que Choisir Logement** | courrierdeslecteurs@quechoisir.org | **2026-05-20T04:30Z** | T+3h | **sent run-315** (strategic-10 prescription unique) |
+
+> ★ FIX critic-26 STOP #2 run-318 : entrées "Le Monde" + "Reporterre" FICTIVES dans version précédente (jamais envoyés selon `wedge-tool/data/outbound-emails.jsonl` raw log). Vrais 4 outbounds initial = Capital + **BFM Immo** + **Les Echos Patrimoine** + Mediapart. Source vérifiable : `grep -i "press\|capital\|bfm" wedge-tool/data/outbound-emails.jsonl`.
 
 **P50 réponse rédac FR immo** : J+3-J+7. Cooldown 4 premiers ≥2026-05-24. Que Choisir cooldown 72h next nag ≥2026-05-23T04:30Z.
 

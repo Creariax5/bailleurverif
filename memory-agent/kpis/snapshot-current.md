@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-20T06:31Z (post run-317)
+# KPIs Snapshot Current — 2026-05-20T07:30Z (post run-318)
 
-> **Run-317 UPDATE** : ★ **SUB-OBSERVATOIRE-PUBLISHER SPAWNED (4ᵉ sous-agent) + ROUND-69 VERDICT CORRIGÉ "partial-functional"** — 2 actions substantives J+0 alignées 2 inbox Florian frais (05:40Z "Oui go" spawn + 06:00Z dashboard-extras source autoritative bot tracking). (1) Spawn `sub-observatoire-publisher` Haiku 4.5 interval 604800s (7j) id `576fb185-9c51-4ca9-9453-ac9088a223ac` enabled=1, prompt 6396 chars hash `8ecbb525d87e22c5`, backup `prompts-backup/sub-observatoire-publisher-create-2026-05-20T0631Z.json`, registry+concept+decision+MEMORY index updates J+0 ; coût ≈€0.12/mois Haiku ; 1ᵉʳ tick auto ~2026-05-27T06:31Z. (2) Verdict round-69 IndexNow CORRIGÉ "théâtre confirmé"→"**partial-functional**" via `dashboard-extras.json` (cron `*/2` parse server.log filtré internal IPs) : 1 hit bot externe `23.23.253.54` (AWS EC2) UA `Mozilla/5.0 (compatible)` à 2026-05-20T05:19:15Z sur `/loyer-legal-paris.html` + Googlebot crawle quotidien (last seen 02:05:58Z). `visits.jsonl` JS-beacon-only sous-comptait bots par 22×. Concept `traffic-signals.md` section round-69 réécrite + nouveau modèle "source of truth bot crawl = `dashboard-extras.json`". GPTBot 6 + OAI-SearchBot 1 lifetime = présence OpenAI/ChatGPT search déjà acquise. **bot_hits_24h=32 / bot_hits_lifetime=90**. 4 sous-agents actifs (judilibre disabled saturated_3 / seo-monitor / linkedin-drafter / observatoire-publisher NEW). 97ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+> **Run-318 UPDATE** : ★ **SIGNAL EXCEPTION — GOOGLEBOT WRS MOBILE RENDERED HOMEPAGE WITH JS À 06:40Z** — 1ʳᵉ trace concrète Googlebot Mobile WRS (Web Rendering Service Mobile-First Indexing) exécutant JavaScript sur la homepage. Séquence server.log : 06:40:00 GET / (UA Googlebot Mobile Chrome 148 Nexus 5X) → 06:40:02 GET /api/changelog?limit=5 (appel JS interne) → 06:40:03 POST /api/visit (beacon JS app.js). IP `66.249.73.129` AS15169 Google authentique. Beacon arrivé dans visits.jsonl (ip_hash `2872988250` NEW) → visits_total 224→225 (+1 bot WRS, pas humain). Verdict run-317 #5 "Googlebot ne crawle QUE robots.txt + sitemap.xml" PARTIELLEMENT INVALIDÉ : WRS est entré sur homepage = sandbox sortie partielle. Implications : JSON-LD/FAQPage/Dataset/verdict €/mois calculator injected JS sont **probablement vus Google** (preuve JS exécuté). Mobile-First Indexing actif = notre layout mobile-first compte. **bot_hits_lifetime 90→95, bot_hits_1h 1→5, bot_hits_24h 32→37**. Concept `traffic-signals.md` +50 lignes section dédiée "Googlebot WRS Mobile RENDERED HOMEPAGE WITH JS". inbox.md HEAD réponse Florian append-at-top T+50min réactivité signal substantif. **WHY substantive NOT M0 #1** : signal Googlebot WRS sortie sandbox = exception substantive top-importance (catégorie Pilier 2 SEO compounding revenu passif), invalide partiellement verdict établi run-317. **WHY documentation only NOT touch HTML** : fenêtre mesure Paris 7j ouverte deadline 2026-05-26T22:30Z, anti-touch A/B. IMAP 0/4 + 0/1 ANIL + 0/1 Que Choisir UNCHANGED (poll fresh 07:15Z). Captures Paris=0 UNCHANGED (T+9h). 98ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+
+> **Run-317 UPDATE (HEADLINE PRÉCÉDENT)** : ★ **SUB-OBSERVATOIRE-PUBLISHER SPAWNED (4ᵉ sous-agent) + ROUND-69 VERDICT CORRIGÉ "partial-functional"** — 2 actions substantives J+0 alignées 2 inbox Florian frais (05:40Z "Oui go" spawn + 06:00Z dashboard-extras source autoritative bot tracking). (1) Spawn `sub-observatoire-publisher` Haiku 4.5 interval 604800s (7j) id `576fb185-9c51-4ca9-9453-ac9088a223ac` enabled=1, prompt 6396 chars hash `8ecbb525d87e22c5`, backup `prompts-backup/sub-observatoire-publisher-create-2026-05-20T0631Z.json`, registry+concept+decision+MEMORY index updates J+0 ; coût ≈€0.12/mois Haiku ; 1ᵉʳ tick auto ~2026-05-27T06:31Z. (2) Verdict round-69 IndexNow CORRIGÉ "théâtre confirmé"→"**partial-functional**" via `dashboard-extras.json` (cron `*/2` parse server.log filtré internal IPs) : 1 hit bot externe `23.23.253.54` (AWS EC2) UA `Mozilla/5.0 (compatible)` à 2026-05-20T05:19:15Z sur `/loyer-legal-paris.html` + Googlebot crawle quotidien (last seen 02:05:58Z). `visits.jsonl` JS-beacon-only sous-comptait bots par 22×. Concept `traffic-signals.md` section round-69 réécrite + nouveau modèle "source of truth bot crawl = `dashboard-extras.json`". GPTBot 6 + OAI-SearchBot 1 lifetime = présence OpenAI/ChatGPT search déjà acquise. **bot_hits_24h=32 / bot_hits_lifetime=90**. 4 sous-agents actifs (judilibre disabled saturated_3 / seo-monitor / linkedin-drafter / observatoire-publisher NEW). 97ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
 > **Run-316 UPDATE (HEADLINE PRÉCÉDENT)** : ★ **SUBSTANTIVE — NEW visitor signal + tactical-25 #2 codified + #3 closed** — PLAN-NEXT run-315 spot-check révèle NEW visitor `ip_hash 2925209098` mobile Android Chrome 148 T-10min (05:18:03-04Z) referrer `https://bailleurverif.fr/lille-dpe-f-g-interdit-location.html` → path `/`. Premier signal organic-looking 15h+ silence. 3 actions substantives J+0 : traffic-signals NEW visitor section + DIRECTIVE 10 §b variant codified + tactical-warnings-current refresh audit-24→25 (3/3 HONORED).
 
@@ -79,34 +81,41 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 311→312 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 91→92 (trophy maintenu, run-312 substantif) |
-| `wakes_since_last_strategic_critic` | 2→3 (audit-9 21:55Z, audit-10 cible ~run-325 marge ~13) |
-| `wakes_since_last_tactical_critic` | 2→0 (audit-24 00:55Z fresh, reset) |
-| `strategic_critic_recommendations_followed_pct` | 100% (9/9 audits cumulé UNCHANGED) |
-| `tactical_critic_recommendations_followed_pct_audit24` | 3/3 = 100% ★ NEW (★★★ #1 drafter brief Paris + ★★ #2 email-gate Option A + ★★ #3 M0 max 2 codified) |
-| `tactical_critic_recommendations_followed_pct_audit23` | 2/3 (★★ #2 partial IndexNow + ★★ #3 seuils mission.md done ; ★★★ #1 BLOQUÉ strategic-9 puis ATTÉNUÉ run-312 Option A) |
-| `m0_consecutive_count` | 1→0 (reset, run-312 substantif) |
-| `convention_m0_max_2_codified` | true ★ NEW run-312 |
-| `cat_3_jurisprudence_refs_saturated_total` | 3/3 ★ run-305 |
-| `cat_3_jurisprudence_refs_total_cumul_ecli` | 9 (3 dpe + 3 depot + 3 loyer-abusif) |
-| `sub_agents_active_count` | 2 (sub-seo-monitor Haiku 24h + sub-linkedin-drafter Sonnet 24h) |
-| `sub_agents_stopped_count` | 1 (sub-judilibre saturated_3) |
-| `sub_agents_lifetime_created` | 3 |
-| `sub_agents_cap_max` | 8 (relevé 6→8 run-304 brief Florian scaling horizontal) |
-| `sub_linkedin_drafter_cycle_1_outcome` | ok EARLY T+14min (drift à surveiller cycle 2 ≥2026-05-20T16:45Z) |
-| `sub_linkedin_drafter_drafts_pending_validation_florian` | 1 (TODO-32, social-drafts.md L626-665) |
-| `awesome_list_pr_open_count` | 2 (apd-core#410 + awesome-real-estate#28) |
-| `wakes_post_pr_410_open_count` | 18 (0 nag ≥2026-06-02) |
-| `wakes_post_pr_28_open_count` | 10 |
-| `florian_todos_md_lines` | 125 (refactor run-304 390→125, cooldown ≥2026-06-02) |
-| `memory_agent_concepts_count` | 11 |
-| `memory_agent_decisions_count` | 23 |
-| `snapshot_current_lines_post_rotation` | ~85 ★ NEW run-306 (vs 195 pre-rotation, archive history/snapshot-pre-306.md) |
-| `outbound_emails_lifetime` | 8 (4 press silent T+50h + 3 SMTP assoc + 1 ANIL) |
-| `cat_4_anil_silence_check_due` | 2026-05-22T05:35Z (cooldown 72h) |
-| `imap_press_replies_received` | 0/4 |
+| `wakes_total_lifetime` | 317→**318** (refresh run-318 critic-26 ★★ #2) |
+| `directive_7_revisee_compliance_consecutive_wakes` | 97→**98 trophy** (refresh run-318) |
+| `wakes_since_last_strategic_critic` | 2→**3** (audit-10 04:30Z honored, audit-11 cible ~run-340 marge ~22) |
+| `wakes_since_last_tactical_critic` | 2→**3** (audit-26 06:55Z fresh, audit-27 cible ~run-330 marge ~12) |
+| `strategic_critic_recommendations_followed_pct` | **100% (10/10) UNCHANGED** |
+| `tactical_critic_recommendations_followed_pct_audit26` | **4/6 J+0** ★ NEW (★★ #1 rotation EXÉCUTÉE 8516→1000 L + ★★ #2 KPI tables refresh CE WAKE + STOP #2 press-fr-list micro-fix + STOP #3 codify règle ; ★ #3 monitor différé natural run-319/320 + STOP #1 ack≠do meta cumul futur) |
+| `tactical_critic_recommendations_followed_pct_audit25` | 3/3 COMPLETE UNCHANGED (★★★ #1 spot-check Que Choisir J+0 + ★★ #2 DIRECTIVE 10 §b codify + ★★ #3 plan-B Pilier 2 J+0) |
+| `m0_consecutive_count` | 0 UNCHANGED (run-318 substantive WAKE BIG ship) |
+| `convention_m0_max_2_codified` | true UNCHANGED |
+| `cat_3_jurisprudence_refs_saturated_total` | 3/3 ★ UNCHANGED |
+| `cat_3_jurisprudence_refs_total_cumul_ecli` | 9 UNCHANGED |
+| `sub_agents_active_count` | **4** (sub-seo-monitor Haiku 24h + sub-linkedin-drafter Sonnet 24h + sub-observatoire-publisher Haiku 7j NEW run-317 + sub-judilibre disabled saturated_3) |
+| `sub_agents_stopped_count` | 1 (sub-judilibre saturated_3) UNCHANGED |
+| `sub_agents_lifetime_created` | **4** (judilibre + seo-monitor + linkedin-drafter + observatoire-publisher) |
+| `sub_agents_cap_max` | 8 UNCHANGED |
+| `sub_linkedin_drafter_cycle_2_due_at` | 2026-05-20T16:45Z (T+9h futur) |
+| `sub_linkedin_drafter_drafts_pending_validation_florian` | 1 (TODO-32-bis, social-drafts.md cycle 1 1184c) |
+| `awesome_list_pr_open_count` | 2 (apd-core#410 + awesome-real-estate#28) UNCHANGED |
+| `wakes_post_pr_410_open_count` | **24** (0 nag ≥2026-06-02) |
+| `wakes_post_pr_28_open_count` | **16** |
+| `florian_todos_md_lines` | ~128 (TODO-35 ★ NEW run-318 +3 lignes) |
+| `memory_agent_concepts_count` | **12** (+seo-discipline.md run-318) |
+| `memory_agent_decisions_count` | **27** (+sub-observatoire-publisher-spawn run-317 + orphan-fix-and-seo-discipline run-318) |
+| `snapshot_current_lines_post_rotation` | ~108 (vs ~85 baseline run-306, +2 lignes header run-318 +14 lignes KPI refresh) |
+| `outbound_emails_lifetime` | **9 réels** (4 press initial silent T+62h + 3 SMTP assoc + 1 ANIL + 1 Que Choisir 5ᵉ press FR run-315) |
+| `cat_4_anil_silence_check_due` | 2026-05-22T05:35Z UNCHANGED (cooldown 72h) |
+| `quechoisir_outbound_cooldown_next_nag_at` | 2026-05-23T04:30Z |
+| `imap_press_replies_received` | **0/5** (4 initial silent + 0/1 ANIL + 0/1 Que Choisir T+3h) |
 | `ip_3790475865_recurrence_check_due` | 2026-05-21T12:53Z (48h) |
+| `next_recurrence_check_2925209098_due_at` | 2026-05-21T05:18Z (T+22h futur) |
+| `next_recheck_gsc_index_paris_pages_due_at` | 2026-05-22T07:30Z ★ NEW run-318 (T+48h propagation Googlebot WRS cadence) |
+| `googlebot_wrs_first_render_at` | **2026-05-20T06:40:00Z** ★ NEW (UA Googlebot Mobile WRS Chrome 148 Nexus 5X, IP 66.249.73.129 AS15169) |
+| `orphan_pages_fixed_count` | **2** (paris-calc + paris-encadrement) ★ NEW run-318 |
+| `seo_discipline_codified` | **true** ★ NEW run-318 |
+| `inbox_md_lines_post_rotation` | **1000** (rotation exécutée run-318 critic-26 ★★ #1, 8516→1000 L, archive `inbox-archive-2026Q2.md` 7516 L NEW) |
 
 ## Outbound / inbox
 
