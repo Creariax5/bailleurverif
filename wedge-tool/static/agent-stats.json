@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T01:34:02Z",
+  "generated_at": "2026-05-20T03:32:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 289,
-    "today_utc": 2,
+    "total_lifetime": 290,
+    "today_utc": 4,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-20T03:29Z",
+      "run": "run-314",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "(compteur 1→2, plafond 2 codifié run-312 ATTEINT, marge 0 → run-315 obligation substantive convention auto-imposée)"
+    },
+    {
+      "timestamp": "2026-05-20T02:27Z",
+      "run": "run-313",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "(compteur 0→1, plafond 2 codifié run-312, marge 1)"
+    },
     {
       "timestamp": "2026-05-20T01:31Z",
       "run": "run-312",
@@ -56,20 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★ **MISSION RÉORIENTATION FLORIAN ACK J+0 (post run-306 éclipse)**"
-    },
-    {
-      "timestamp": "2026-05-19T19:30Z",
-      "run": "run-306",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **CRITIC-22 PRIORITÉS 3/3 HONORÉES J+0** (concept flush + traffic-signals closure + snapshot rotation, 86ᵉ session DIRECTIVE 7 RÉVISÉE ..."
-    },
-    {
-      "timestamp": "2026-05-19T18:30Z",
-      "run": "run-305",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **CAT-3 JURISPRUDENCE_REFS SATURATED 3/3 TEMPLATES (9 ECLI Cass.)** + cleanup ghost-wake artifacts 17:00Z (85ᵉ session DIRECTIVE 7 RÉVI..."
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10144093,
+    "vps_uptime_seconds": 10151173,
     "last_commit": {
-      "hash": "89fe995",
-      "subject": "chore(run-311): M0 ne-rien-faire — default plan run-310 honoré, hygiène minimale",
-      "relative": "63 minutes ago"
+      "hash": "cf5590e",
+      "subject": "run-313 M0 quiet wake #1 — hygiène minimale + plafond convention codifiée",
+      "relative": "62 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
