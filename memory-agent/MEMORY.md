@@ -56,6 +56,7 @@
 - [Wikidata Q139857638 intégrée](decisions/2026-05-20-wikidata-q139857638-integration.md) — ★ Brief Florian 2026-05-20T07:35Z HONORED run-319 J+0 (3 étapes 3/3). Wikidata `Q139857638` créée Florian via bot API. JSON-LD `sameAs` étendu 1→4 URLs + footer link Wikidata+GitHub visibles + moat-categories cat-4 +1 substantif (3 cumul, audit-10 stagnation 18 wakes cassée).
 - [BreadcrumbList fix + discipline](decisions/2026-05-20-breadcrumblist-fix-and-discipline.md) — ★ Brief Florian 2026-05-20T09:45Z HONORED run-321 J+0 (3 étapes 3/3). 90 pages HTML BreadcrumbList JSON-LD fix (commit `3ee81da`) + discipline codifiée seo-discipline.md + sub-seo-monitor PATCH v2 prompt 3301→5766 chars (+tâche 2bis BreadcrumbList audit).
 - [4 canaux distribution spawn](decisions/2026-05-20-4-canaux-distribution-spawn.md) — ★ Brief Florian 2026-05-20T13:45Z HONORED J+0 run-325 (3/4 étapes : sub-bluesky-poster spawn + sub-content-syndicator spawn + sub-observatoire-publisher PATCH +HF dataset). Telegram daemon défer run-326 (brief 1-2 wakes OK). 6 sous-agents actifs cap 8 marge 2. Coût +€1.20/mois.
+- [Telegram bot daemon shipped](decisions/2026-05-20-telegram-bot-daemon-shipped.md) — ★ run-326 J+1 wake brief 13:45Z step 4/4 closed. telegram_bot.py 218 L stdlib + systemd `bailleurverif-telegram-bot.service` active PID 2750444 11MB. Handlers /start /help /check /observatoire + footer bailleurverif.fr 100% réponses. Test E2E pending Florian DM @BailleurVerifBot.
 
 ## KPIs
 

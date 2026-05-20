@@ -1,3 +1,68 @@
+## 🤖 2026-05-20T17:30Z — Agent → Florian — run-326 : **TELEGRAM BOT LIVE** — brief 13:45Z 4/4 steps COMPLETE (test E2E ta main)
+
+**Court — `@BailleurVerifBot` actif sur tg.me. Brief 13:45Z 4 canaux distribution 100% closed (J+0 ×3 + J+1 ×1). Test E2E nécessite toi-même DM.**
+
+### Ce qui a tourné ce wake (1ʳᵉ wake nouvelle cadence 3h, T+2h58min post run-325)
+
+| Action | Détail |
+|---|---|
+| Ship `agent-browser/telegram_bot.py` | 218 lignes Python stdlib only (`urllib.request`), zéro nouvelle dépendance (vs `python-telegram-bot` suggéré brief = pip lourd, fragile) |
+| Service systemd `bailleurverif-telegram-bot.service` | installé `/etc/systemd/system/`, enabled, **active** PID 2750444 RSS 11.0M stable |
+| Handlers | `/start` + `/help` + `/check <adresse>` + `/observatoire`, footer `🔗 bailleurverif.fr` auto sur 100% réponses |
+| Internal API calls | `http://127.0.0.1:8102/api/lookup-adresse` (BAN + ADEME DPE + encadrement) + `/api/observatoire-dpe-fg` (rollup F/G national) |
+| Anti-PII | `chat_id` hashed SHA256 dans `data/telegram-bot-events.jsonl`, pas de username clair |
+| Logs | `logs/telegram-bot.log` append-only, daemon_start ts loggé |
+
+### Test E2E à faire (toi, hors-Builder)
+
+1. Ouvre `https://t.me/BailleurVerifBot` sur ton phone
+2. Tape `/start` → tu dois recevoir un menu FR
+3. Tape `/check 10 rue de Rivoli 75004 Paris` → tu dois recevoir verdict encadrement Paris + DPE voisinage
+4. Tape `/observatoire` → tu dois recevoir stats F/G nationales (~1318 logements)
+5. Si bug ou OK : log dans inbox.md HEAD au prochain brief
+
+**Pour stopper si jamais** : `sudo systemctl stop bailleurverif-telegram-bot.service && sudo systemctl disable bailleurverif-telegram-bot.service`.
+
+### Brief 13:45Z 4 canaux distribution — statut FINAL
+
+| # | Action | Statut | Wake |
+|---|---|---|---|
+| 1 | Spawn `sub-bluesky-poster` Haiku 24h | ✅ | run-325 J+0 |
+| 2 | PATCH `sub-observatoire-publisher` +HF | ✅ | run-325 J+0 |
+| 3 | Spawn `sub-content-syndicator` Sonnet 7j | ✅ | run-325 J+0 |
+| 4 | Ship `telegram_bot.py` daemon | ✅ | run-326 J+1 |
+
+**4/4 = brief COMPLET. 5 canaux distribution actifs : LinkedIn (toi + drafter) + Bluesky + HuggingFace + dev.to + Telegram NEW.**
+
+### Implications
+
+- **Coût** : €0 ce wake (Telegram API gratuit, RSS 11M sur VPS existant). Total infra +€1.20/mois (compute sub-agents) inchangé.
+- **Viralité latente** : Telegram = canal **bidirectionnel** (DM user → bot). Forwards naturels groupes immo FR = compounding différé. Footer site sur 100% réponses = funnel mesurable.
+- **Architecture** : Telegram daemon **PAS un sub-agent** (long-running systemd, pas cron). Compté séparément. 6 sub-agents UNCHANGED + 2 long-running services (public.service + telegram-bot.service).
+- **Cadence 3h** : 1ʳᵉ wake nouvelle cadence (run-325 14:32Z → run-326 17:30Z = T+2h58min, attendu).
+
+### Fenêtres ouvertes préservées (BANS respectés)
+
+- ✅ Paris page mesure 7j (deadline 2026-05-26T22:30Z, J+4) — 0 touch
+- ✅ Homepage post-sharpen run-322 (mesure 7j) — 0 touch
+- ✅ ANIL cooldown 2026-05-22T05:35Z — pas re-mail
+- ✅ Que Choisir cooldown 2026-05-23T04:30Z — pas re-mail
+- ✅ TODO-34 silent 15ᵉ wake (pas vol décision Pilier 4)
+
+### KPIs
+
+- `florian_briefs_honored_j0_lifetime = 6 UNCHANGED` (brief 13:45Z déjà counted run-325)
+- `brief_13_45z_completion_pct = 75% → 100% ★`
+- `distribution_channels_active = 4 → 5 ★`
+- `long_running_services_count = 1 → 2`
+- `wakes_total_lifetime = 325 → 326`
+- `directive_7_revisee_compliance_consecutive_wakes = 105 → 106 ★`
+- `cron_baseline = 0 */3 * * *` (compliance 1ʳᵉ wake)
+
+Cron prochain tick ~20:30Z.
+
+---
+
 ## ✅ 2026-05-20T14:32Z — Agent → Florian — run-325 : **DUAL BRIEF HONORED J+0** (4 canaux distribution 3/4 + cadence 3h ack)
 
 **Court — 2 briefs concurrents (13:45Z + 14:XXZ) honorés ce wake. 1 défer planifié run-326.**
