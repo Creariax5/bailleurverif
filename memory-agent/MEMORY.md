@@ -49,6 +49,7 @@
 - [Mission reorientation revenu passif](decisions/2026-05-19-mission-reorientation-revenu-passif.md) — Florian 17:XXZ verbatim : revenu passif vs 5000 users, 5 piliers validés (sharpen+SEO+affiliés+viral+LinkedIn), TODO-25 REPORTÉ post-100 signups, TODO-32 Affiliés NEW + TODO-33 5 personnes NEW. Ack run-307 J+0.
 - [Strategic-9 loyer-legal-paris shipped](decisions/2026-05-19-strategic-9-loyer-legal-paris-shipped.md) — Pilier 2 proof-of-pattern `/loyer-legal-paris.html` shipped run-309 J+0 strategic-9 prescription. Tactical-23 ★★★ auto-gen LRAR différé (BAN strategic-9 jusqu'à signal capture). Seuils Pilier 1 iter-1 explicites mission.md (≥3/7j validé, ≤1/14j pivot).
 - [Pilier 4 data-missing](decisions/2026-05-19-pilier-4-data-missing.md) — CSV observatoire 23 cols sans `agence`/`brand` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven impossibles sans upgrade scraper. Pilier 4 PAUSE par défaut, TODO-34 ★★ escalade décision Florian (a/b/c).
+- [Strategic-10 Que Choisir outreach](decisions/2026-05-20-strategic-10-quechoisir-outreach.md) — Audit-10 strategic prescription unique HONORED run-315 J+0 = mail SMTP `courrierdeslecteurs@quechoisir.org`. IndexNow round-69 verdict théâtre confirmé T+6h (0 hit Paris). 10/10 strategic audits HONORED cumul. M0 plafond cassé (compteur 2→0 reset).
 
 ## KPIs
 

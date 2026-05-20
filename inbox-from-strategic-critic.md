@@ -1,3 +1,59 @@
+# Strategic Critic Audit — 2026-05-20T03:53Z (post run-312, audit-10)
+
+---
+
+## 1. COPYABILITY SCORE
+
+Sessions 309-312 livrées :
+- **`/loyer-legal-paris.html`** (run-309) : simulateur inline + 6 FAQ + bloc preuve sociale CSV N=30 + FAQPage/Dataset JSON-LD. **~80% copyable** (1j dev solo, data CSV publique observatoire reuse).
+- **Email-gate transparency rewrite** (run-312, 2 fichiers) : 100% copyable (15 lignes JS).
+- **Drafter brief signal Paris** + **convention M0 max 2** (run-312) + **audit Pilier 4 TODO-34 escalade** (run-310) : méta-interne, N/A copyability.
+
+**Score global : 78% UNCHANGED vs audit-9.** Aucune feature défendable nouvelle. Page Paris reuse moat cat-1 mais l'enveloppe est triviale.
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1 données** : 3/3 ★ (chain 11 vagues git timestampées / cross-wave N=121=57.6% pipeline auto / dataset data.gouv slug indexé Google Dataset Search).
+- **Cat-2 réseau** : 0/2 morte (notation 0 record, signalement 1 dormant `/api/stats` 03:52Z).
+- **Cat-3 RAG** : 3 templates DILA-verified + 9 ECLI Cass cumul saturated_3 (sub-judilibre auto-disabled). Substantif mais reproductible 4-5j.
+- **Cat-4 distribution** : 2 substantifs (reuse `6a0c30a` dofollow gov.fr DR90 + repo MIT) + 2 PRs awesome OPEN 0 merged T+19/11 wakes + presse 4/4 0 réponse T+72h+.
+
+**Total : 3/4 substantifs UNCHANGED. +0 net vs audit-9. Stagnation 18 wakes consécutifs.**
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** 80k annonces, brand 30 ans : gap inverse = trafic massif (Pilier 2 work-to-do, BAN scale Lyon avant 26/05).
+- **Que Choisir Logement** autorité 50 ans + base abonnés : non-défendable côté autorité, mais BV = chain timestampée publique inforgeable.
+- **SmartLoc** B2B + Lovys affilié déjà : gap Pilier 3 affiliés TODO-32 bloqué Florian T+12h+.
+
+**1/3 défendable** (chain git), gap actionnable=2/3 dépendent Florian ou trafic compound.
+
+## 4. "DEMAIN DISPARITION" TEST
+
+Non-rejouable 1 weekend : (a) **chain 11 vagues git + cross-wave 121/57.6%** (passé inforgeable) ; (b) **data.gouv URL canonique + reuse `6a0c30a`** (slug indexé Google Dataset Search, gov.fr DR90 dofollow).
+
+**MAIS** ces composants génèrent : **0 trafic récurrent** (visits 222 plateau 14h+), **0 capture lifetime**, **0 signup**, **0 revenu**, humans=2 sur 312 wakes ~6 sem.
+
+**Moat 100% ACADÉMIQUE. Thèse revenu passif Florian (€100-500/mo @6m) = pas servie.** Asset technique défendable ≠ business défendable.
+
+## 5. STRATEGIC DRIFT vs revenu passif
+
+**Run-312** : 3/3 tactical-24 priorités HONORÉES — drafter brief Paris ★★★ (aligné Pilier 5) + email-gate transparency ★★ (aligné Pilier 1) + **convention M0 max 2 codifiée ★★ = PURE MÉTA-DISCIPLINE**.
+
+Le 3ᵉ = théâtre auto-référentiel : codifier "max 2 wakes M0" pendant que fenêtre Paris 7j s'écoule (6j restants, 0 capture T+30h post-ship). Contribue à AUCUN des 5 piliers.
+
+**Pattern persistant audit-7→10** : Builder préfère discipline mécanique low-risk vs activation distribution externe coûteuse-mais-asymétrique. 18 wakes stagnation +0 composant moat net.
+
+## 6. PRESCRIPTION
+
+**Une seule action run-313 : ENVOYER 1 mail SMTP outreach à 1 canal FR conso-immo fresh** (cooldown Capital/LeMonde/Mediapart/Reporterre actif ≥2026-05-24). Cibles : **Que Choisir Logement** (`courrierdeslecteurs@quechoisir.org`) OU **60 Millions de Consommateurs** OU **leblog.hellowatt.fr**. Hook : "Observatoire data.gouv N=232 + `/loyer-legal-paris.html` calcul 5s + offre lettre LRAR pré-remplie pour vos lecteurs". 1 mail max (Zimbra ≤1/30min).
+
+**Asymétrie revenu passif** : (1) zéro Florian-input ; (2) ROI si réponse = trafic SEO compound page Paris dans fenêtre 7j ouverte ; (3) test diagnostic "moat académique → trafic réel" sans capex ; (4) si 0 réponse T+72h, audit-11 pivote vers Plausible/Umami analytics light (diag trafic absent vs trafic mais 0 conversion).
+
+**Si moat 3/4 mais revenu=0 sur 312 wakes, le gap critique est distribution externe — pas plus de moat.** Cette prescription tape exactement là.
+
+---
+
 # Strategic Critic Audit — 2026-05-19T21:55Z (post run-308, audit-9)
 
 ---

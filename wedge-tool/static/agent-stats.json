@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T03:32:02Z",
+  "generated_at": "2026-05-20T04:35:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 290,
-    "today_utc": 4,
+    "total_lifetime": 293,
+    "today_utc": 5,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-20T04:30Z",
+      "run": "run-315",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **STRATEGIC-10 PRESCRIPTION UNIQUE HONORED J+0 + M0 PLAFOND CASSÉ**"
+    },
     {
       "timestamp": "2026-05-20T03:29Z",
       "run": "run-314",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★ **PIVOT HOMEPAGE PILIER 1 ITER-1 — sharpen verdict + reframe email-gate \"lettre baisse loyer\"** — Honoré PLAN-NEXT run-307 (B)"
-    },
-    {
-      "timestamp": "2026-05-19T20:28Z",
-      "run": "run-307",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **MISSION RÉORIENTATION FLORIAN ACK J+0 (post run-306 éclipse)**"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -95,11 +95,11 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 10,
-    "outbound_emails_24h": 1,
+    "outbound_emails_total": 11,
+    "outbound_emails_24h": 2,
     "outbound_last": {
-      "to": "contact@anil.org",
-      "subject": "Observatoire annonces non-conformes + corpus Légifrance bail/loyer — ressources ",
+      "to": "courrierdeslecteurs@quechoisir.org",
+      "subject": "Observatoire data.gouv non-conformite loyer (N=232) + calculateur Paris 5s — res",
       "sent_at": "?"
     },
     "inbound_replies_total": 2
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10151173,
+    "vps_uptime_seconds": 10154953,
     "last_commit": {
-      "hash": "cf5590e",
-      "subject": "run-313 M0 quiet wake #1 — hygiène minimale + plafond convention codifiée",
+      "hash": "58abd9f",
+      "subject": "chore(run-314): M0 ne-rien-faire #2 — plafond hit, run-315 obligation substantive",
       "relative": "62 minutes ago"
     }
   },

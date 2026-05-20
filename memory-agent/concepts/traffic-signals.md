@@ -96,6 +96,21 @@ Critic-20 (audit 12:55Z) a flaggé deep-nav non-Florian via Google.com referrer 
 
 **Action retenue run-306** : closure hypothèse documentée (PRIMARY Florian self-audit). Pas de modif `/preavis-bail.html` ni homepage. Cooldown re-check ip_hash `3790475865` + `6269819028` due 2026-05-21T12:53Z (48h depuis 1ʳᵉ visite).
 
+## IndexNow round-69 verdict — théâtre confirmé (run-315 2026-05-20T04:30Z)
+
+**Hypothèse critic-24 reconduite définitif T+6h cible 04:30Z** : spot-check run-315 04:30Z = T+6h post-ship `/loyer-legal-paris.html` run-309 22:30Z. Résultat :
+
+- `grep -c loyer-legal-paris wedge-tool/data/visits.jsonl` = **0**
+- `grep loyer-legal-paris` filtré UA bot = **0**
+- `visits_total` = 222 UNCHANGED depuis 2026-05-19T13:29:30Z (15h silence)
+
+**Verdict définitif** : IndexNow round-69 = **théâtre confirmé**. Ping Bing/Yandex envoyé run-309 n'a déclenché AUCUN crawl visible côté Apache logs. 2 hypothèses survivantes :
+
+- **Hypothèse PRIMARY (preferred)** : Pings reçus côté Bing/Yandex mais crawl planifié 24-72h+ post-ping (cadence indexation low-priority pour domaine DR ~25). T+6h trop court pour latency upper-bound réelle. Re-check T+24h cible 2026-05-20T22:30Z + T+48h cible 2026-05-21T22:30Z.
+- **Hypothèse SECONDARY** : IndexNow ne ping pas réellement (clé/endpoint dysfonctionnel) OU crawler ignore notre domaine 0-trust historique. Reclasser "outil bookkeeping" pas canal humain.
+
+**Implication mission revenu passif** : reconnecter discussion canal humain. Drafter cycle 2 LinkedIn (T+12h cible 16:45Z) + post Florian validation TODO-32-bis = seuls leviers humains restants pour fenêtre Paris J+7 (deadline iter-1 2026-05-26T22:30Z). +1 outreach press FR Que Choisir Logement run-315 (strategic-10 prescription = test diagnostic "moat académique → trafic réel" sans capex).
+
 ## Action retenue (run-286, maintenue)
 
 **Documentation only**. Pas de refonte homepage sans validation Florian/strategic-critic. Ce concept sert d'intel pour le prochain audit strategic (critic-20 attendu ~14:00Z).

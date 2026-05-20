@@ -1,3 +1,36 @@
+## 📨 2026-05-20T04:30Z — Agent → Florian — run-315 : strategic-10 prescription unique HONORED + plafond M0 cassé
+
+**Court (TODO-34 ★★ reste pinned dessous 30h+, je n'éclipse pas).** 2 audits critic arrivés EARLY 03:53-03:55Z. Strategic-10 prescription UNIQUE = "envoyer 1 mail SMTP outreach 1 canal FR conso-immo fresh" — exécuté J+0 ce wake :
+
+1. **★★★ Mail SMTP UFC Que Choisir Logement** envoyé `courrierdeslecteurs@quechoisir.org` 04:30Z (5ᵉ press FR outreach lifetime, 0/4 réponse initiale T+59h). Subject "Observatoire data.gouv (N=232, 62% violations) + calculateur Paris 5s — ressource lecteurs". Body 5 paragraphes : observatoire data.gouv + page Paris 5s + 46,7%/17,9€/m²/~540€ trop-perçu typique + offer extract dépt/EPCI CC-BY-4.0 + repo MIT 11 vagues Git audit indépendant. Anti-spam OK (T+23h last ANIL). msgid logged `outbound-emails.jsonl` L11. Cooldown next nag ≥2026-05-23T04:30Z (72h).
+
+2. **★★★ Spot-check bot crawls round-69** verdict définitif T+6h post-ship `/loyer-legal-paris.html` : **0 hit lifetime, IndexNow théâtre confirmé**. Survivants : (a) latency 24-72h+ re-check 22:30Z + demain 22:30Z / (b) reclasser "bookkeeping". Renforce strategic-10 = canal humain externe critique (drafter cycle 2 LinkedIn T+12h + Florian post = leviers humains restants fenêtre Paris J+7 deadline 2026-05-26T21:30Z).
+
+3. **3 concepts memory updates** : press-fr-list (+Que Choisir + 4 cibles futures 60M/hellowatt/BFM/Échos) / traffic-signals (round-69 verdict + survivants) / strategic-prescription-last (audit-10 verdict HONORED + bans audit-10 incl. anticipate Paris J+7). Decision file `2026-05-20-strategic-10-quechoisir-outreach.md` créé (audit trail). MEMORY.md index L41.
+
+### Statut KPIs principaux
+
+- **strategic_critic_recommendations_followed=10/10 ★ NEW** (100% cumul UNCHANGED) + **tactical-25 = 2/3 partial** (★★ #2 codify ritual variant differred sans urgence).
+- **m0_consecutive_count = 2→0 reset, marge 0→2 restored** (plafond convention codifiée run-312 cassé proprement).
+- outbound_emails_lifetime réels 8→9 / press_fr_outreach 4→5 / wakes 314→315 / directive_7_trophy 94→95 consécutifs.
+- visits 222 UNCHANGED 15h+ silence / captures Paris page lifetime=0 T+6h post-ship / humans=2 UNCHANGED 96+ wakes / sub-agents 2 actifs.
+
+### Reste action toi (priorité INCHANGÉE depuis run-310, ordre INCHANGÉ)
+
+- **TODO-32 ★★** Lovys + Hemea affiliés (1-2h, débloque Pilier 3 revenu passif) — ouvert 35h.
+- **TODO-34 ★★** Pilier 4 a/b/c (~30s décision) — ouvert 30h, default Builder (c) pause si silence 14j.
+- **TODO-33 ★** 5 personnes entourage (~1h, débloque pivot painkiller).
+- **TODO-32-bis ★** valider draft drafter cycle 1 ECLI 1184c (~30s).
+- **TODO-31 ★** Test Rich Results FAQPage Google (~2 min).
+
+### Default plan run-316 (~05:30Z cron)
+
+Spot-check IMAP réponses (4 initial + ANIL + Que Choisir T+1h) + check captures Paris page T+7h + bot UA visits. Si 0 signal exception = M0 #1 acceptable (compteur 0→1, marge 2 restored, plafond run-318 si #1+#2 consécutifs). PAS auto-décision TODO-34. PAS auto-gen LRAR. PAS 2ᵉ outreach press FR fresh (cooldown 30min Zimbra + cooldown 72h Que Choisir + cooldown 4 initial ≥2026-05-24).
+
+Cron 05:30Z relance.
+
+---
+
 ## ✅ 2026-05-20T01:31Z — Agent → Florian — run-312 : audit-24 critic HONORED J+0 (3/3) + canal LinkedIn drafter activé
 
 **Court (TODO-34 ★★ reste pinned dessous, je n'éclipse pas).** Tactical critic-24 (8.5/10, 00:55Z) a flag 3 priorités, exécutées <10 min ce wake :
