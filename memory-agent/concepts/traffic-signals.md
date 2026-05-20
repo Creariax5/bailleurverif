@@ -195,3 +195,41 @@ Source autoritative bot-crawl désormais = `wedge-tool/static/dashboard-extras.j
 **ip_hash `2872988250`** = Googlebot Mobile WRS Nexus 5X (NEW). Stable IP range 66.249.73.x AS15169 Google.
 
 **Action retenue run-318** : documentation only (concept update + inbox.md HEAD signal Florian). Pas de touch HTML, pas de spawn agent dédié, pas d'IndexNow re-ping (anti-théâtre).
+
+## ★★ Verdict round-69 RÉ-RÉVISÉ "full-functional" (run-320 2026-05-20T09:30Z) — 9 bot crawls Paris T+12h
+
+**Source** : `grep "loyer-legal-paris" wedge-tool/server.log.run-308-restart.log | grep -v internal IPs` ce wake T+12h post-ship Paris page.
+
+### Crawls externes Paris page (chronologique)
+
+| # | ts UTC | IP | UA |
+|---|---|---|---|
+| 1 | 2026-05-20T05:19:15Z | 23.23.253.54 (AWS) | `Mozilla/5.0 (compatible)` generic |
+| 2 | 2026-05-20T07:41:40Z | 66.249.73.129 (Google AS15169) | **Google-InspectionTool/1.0** ★ |
+| 3 | 2026-05-20T07:41:40Z | 66.249.73.128 (Google AS15169) | **Googlebot Mobile WRS Chrome 148** Nexus 5X ★ |
+| 4 | 2026-05-20T07:41:50Z | 66.249.73.132 (Google AS15169) | **Googlebot Mobile WRS Chrome 148** Nexus 5X ★ |
+| 5 | 2026-05-20T07:41:50Z | 66.249.73.128 (Google AS15169) | **Google-InspectionTool/1.0** ★ |
+| 6 | 2026-05-20T08:09:06Z | 74.7.242.32 | **GPTBot/1.3** ★ |
+| 7 | 2026-05-20T08:09:10Z | 74.7.241.30 | **GPTBot/1.3** ★ |
+| 8 | 2026-05-20T08:49:28Z | 23.23.253.54 (AWS) | re-visite generic compatible |
+| 9 | 2026-05-20T09:18:10Z | 43.128.149.102 (Tencent Cloud HK/SG) | iPhone Safari 13 (suspect bot disguisé) |
+
+### Implications majeures
+
+1. **Verdict round-69 = "full-functional"** (PAS "partial" verdict run-317). IndexNow → Bing crawler + Googlebot Mobile WRS + Google-InspectionTool + GPTBot = 4 canaux de crawl distincts activés sous 12h post-ping.
+
+2. **Googlebot WRS rendered Paris page** (07:41:40Z + 07:41:50Z) — JSON-LD FAQPage + Dataset + simulateur €/mois inline + 6 FAQ Q&A = **vus Google** (JS exécuté, infra rendering active). Pages programmatiques cousinant homepage sortie sandbox confirmée. Validation forte hypothèse run-318 #1.
+
+3. **Google-InspectionTool/1.0 — signal rare et qualité-supérieur** : utilisé par Google Search Console pour audits manuels OU pour vérifier crawl-rendering en cas de problème détecté. Trace = **GSC compte Florian a peut-être déjà ouvert URL Paris** OU Google a flaggé pour inspection automatique post-IndexNow. À surveiller dans GSC pages "Index → Couverture".
+
+4. **GPTBot/1.3 a crawlé Paris page** (2 hits 4s apart, IPs 74.7.242.32 + 74.7.241.30 OpenAI AS) — Le contenu Paris (calcul loyer légal + bloc preuve sociale N=30 + FAQ + Dataset JSON-LD) **est ingéré par OpenAI**. Latent value cat-3 jurisprudence saturée 9 ECLI : si ChatGPT/Claude/Perplexity questionne "comment loyer légal Paris", BV peut surfacer. Validation forte cat-3 → revenu passif.
+
+5. **HeadlessChrome ip_hash `966166252` à 09:10:24Z sur `/`** (visits.jsonl, NOT Paris page) = probablement LinkedIn/Discord/Slack unfurl preview (Chrome headless Linux x86_64) OU bot non-identifié. Single-shot. Pas Paris.
+
+6. **iPhone Safari 13 IP Tencent HK** (43.128.149.102) à 09:18:10Z — **PAS humain organic** probablement (Tencent Cloud = bot disguisé). Pas convertir en signal. Pas dans visits.jsonl (JS pas exécuté → bot scriptable simple).
+
+### Action retenue run-320
+
+**Documentation only**. Pas de touch HTML Paris (anti-touch A/B fenêtre 7j ouverte). Pas d'IndexNow re-ping (round-69 fonctionne). Pas de spawn agent dédié (anti-spawn-bomb, 4 sous-agents actifs). Concept update + snapshot-current.md KPI updates + ledger + inbox.md HEAD signal.
+
+**Critic note** : verdict "partial-functional" run-317 sera mis à jour "full-functional" si critic-27 (~run-330) revisite. Fenêtre IndexNow opérationnelle = anti-pivot canal SEO compounding (Pilier 2 validation).

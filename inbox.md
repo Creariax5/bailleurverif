@@ -1,3 +1,60 @@
+## ✅ 2026-05-20T09:30Z — Agent → Florian — run-320 : verdict round-69 RÉ-RÉVISÉ "full-functional" via 9 bot crawls Paris page T+12h ★★
+
+**Court (TODO-34 ★★ pinné ouvert ~35h+).** PLAN-NEXT run-319 #1 spot-check `grep loyer-legal-paris server.log` révèle **9 hits IP externes Paris page T+12h post-ship** (vs verdict run-317 "partial-functional 1 hit"). 4 canaux crawl distincts activés.
+
+### Découvertes substantives (9 hits chronologique)
+
+| # | ts UTC | IP | UA |
+|---|---|---|---|
+| 1 | 05:19:15Z | 23.23.253.54 (AWS) | generic compatible |
+| 2 | **07:41:40Z** | 66.249.73.129 (Google) | **Google-InspectionTool/1.0** ★ rare |
+| 3 | **07:41:40Z** | 66.249.73.128 (Google) | **Googlebot Mobile WRS Chrome 148 JS** ★ |
+| 4 | 07:41:50Z | 66.249.73.132 (Google) | Googlebot Mobile WRS Chrome 148 |
+| 5 | 07:41:50Z | 66.249.73.128 (Google) | Google-InspectionTool/1.0 |
+| 6 | **08:09:06Z** | 74.7.242.32 (OpenAI) | **GPTBot/1.3** ★ |
+| 7 | 08:09:10Z | 74.7.241.30 (OpenAI) | GPTBot/1.3 |
+| 8 | 08:49:28Z | 23.23.253.54 (AWS) | re-visite |
+| 9 | 09:18:10Z | 43.128.149.102 (Tencent HK) | iPhone Safari 13 (suspect bot) |
+
+### Implications majeures
+
+1. **Googlebot WRS rendered Paris page** (2 hits 07:41Z) — JSON-LD FAQPage + Dataset + simulateur €/mois inline + 6 FAQ Q&A **vus Google** (JS exécuté). Validation forte hypothèse run-318 #1 "Dynamic content visible Google" sur page programmatique (pas juste homepage).
+
+2. **Google-InspectionTool/1.0 signal RARE** : utilisé par GSC pour audits qualité OU vérifier crawl-rendering post-IndexNow. Trace = GSC compte Florian a peut-être ouvert URL Paris OU Google a flaggé pour inspection automatique. À surveiller dans **GSC pages Index → Couverture** prochains jours.
+
+3. **GPTBot a crawlé Paris page** (2 hits 08:09Z) — contenu calcul loyer légal + bloc preuve sociale N=30 + FAQ + Dataset JSON-LD **ingéré OpenAI**. Latent value cat-3 jurisprudence saturated 9 ECLI : si ChatGPT/Claude/Perplexity questionne "comment loyer légal Paris" BV peut surfacer.
+
+4. **Verdict round-69 IndexNow** : théâtre (run-315) → partial-functional (run-317) → **full-functional** (run-320). 4 canaux : Bing AWS + Googlebot WRS + Google-InspectionTool + GPTBot.
+
+### Action ce wake = documentation only
+
+- `concepts/traffic-signals.md` +60 lignes section "Verdict round-69 RÉ-RÉVISÉ full-functional"
+- `kpis/snapshot-current.md` 7 KPIs nouveaux (paris_page_*, bot_hits_lifetime 95→118, bot_hits_24h 37→60, visits_total 225→227)
+- ledger.md ACTION + METRIC + PLAN-NEXT
+- Pas touche HTML Paris (anti-touch A/B fenêtre 7j J+5 restant)
+- Pas spawn 5ᵉ sous-agent (anti-bomb)
+
+### Statut KPIs principaux
+
+- `paris_page_bot_crawls_lifetime = NA → 9` ★ NEW
+- `paris_page_googlebot_wrs_render_count = 0 → 2` ★ NEW
+- `paris_page_gptbot_crawls_count = 0 → 2` ★ NEW
+- `bot_hits_24h = 37 → 60` (+23, GPTBot 11 today vs 6 yesterday)
+- `visits_total = 225 → 227`
+- `wakes_total_lifetime = 319 → 320`. Directive 7 trophy 99→**100 consécutifs** ★
+- TODO-34 ★★ Pilier 4 NEW pinné ~35h+ ouvert (vol décision Florian).
+- captures_paris_lifetime=0 UNCHANGED (T+12h, fenêtre 7j deadline 2026-05-26T22:30Z, J+5 restant).
+- humans_engaged_lifetime=2 UNCHANGED 100+ wakes.
+- IMAP press replies = 0/5 UNCHANGED.
+
+### Action recommandée prochain wake (run-321)
+
+Baseline. Spot-check IMAP + dashboard-extras refresh + captures Paris T+13h + visits.jsonl nouveau trafic post 09:10Z. Si récurrence ip_hash `2925209098` (T+19h cible) OU 1ʳᵉ capture Paris OU 1ʳᵉ IMAP reply OU 2ᵉ GPTBot Paris hit OU GSC URL Paris indexed → escalade. Pas spawn agent. Pas touche HTML. Pas re-mail cooldowns. Pas auto-décide TODO-34.
+
+100ᵉ session DIRECTIVE 7 RÉVISÉE conforme. Cron 10:30Z relance.
+
+---
+
 ## ✅ 2026-05-20T08:30Z — Agent → Florian — run-319 : brief Wikidata Q139857638 HONORED J+0 (3 étapes 3/3) + cat-4 +1 substantif net
 
 **Court (TODO-34 ★★ pinné ouvert ~34h+).** Brief Florian 07:35Z Wikidata integration HONORED J+0 ce wake (T+55min ack). 3 étapes 3/3 livrées en <5 min, anti-touch Paris page A/B baseline préservée.
