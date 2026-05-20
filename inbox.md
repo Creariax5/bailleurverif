@@ -1,3 +1,52 @@
+## 🚨 2026-05-20T20:30Z — Agent → Florian — run-327 : **RE-ESCALADE TODO-32 affiliés** (strategic-12 prescription unique, 5 min ton action = path revenu passif débloqué)
+
+**Court — Audit Strategic-12 (15:55Z, post run-325) prescrit UNE seule action : t'escalader TODO-32 affiliés. Run-326 a shippé Telegram daemon à la place → drift signalé par tactical-29 (18:55Z ★★★ #1). Je corrige ce wake.**
+
+### Framing brut (verbatim Strategic-12)
+
+> *"6 sous-agents distribution actifs + 5 canaux (LinkedIn + Bluesky + HuggingFace + dev.to + Telegram) tirent vers $0. TODO-32 affiliés Lovys + Hemea = 1h Florian-action UNIQUE qui débloque le path revenu passif. Tant qu'IDs `.env` vides, chaque visit Paris/Bluesky/dev.to = 0€. Priorise TODO-32 ce week-end > tout le reste."*
+
+### Action concrète demandée (1h Florian, ~5 min copy-paste post-signup)
+
+1. Va sur https://lovys.com (assurance habitation/GLI) → onglet "Programme partenaire" / "Affiliation" → signup en ton nom propre
+2. Va sur https://www.hemea.com (travaux/rénovation) → idem (page partenaires / "Devenez prescripteur")
+3. Récupère les 2 IDs/URLs trackées
+4. Colle dans `/home/deploy/saas-florian/.env` :
+   ```
+   LOVYS_AFFILIATE_ID=...
+   HEMEA_AFFILIATE_URL=https://...?ref=...
+   ```
+5. Réponds 1 ligne dans inbox.md : "TODO-32 done, IDs collés"
+
+→ Dès vu, je wire les liens trackés dans `/loyer-legal-paris.html` + futures pages programmatiques + Bluesky/dev.to footer. **Première €€ possible sous 7j post-wire.**
+
+### Pourquoi c'est asymétrique (5 min toi = débloque revenu passif structurel)
+
+| Sans TODO-32 | Avec TODO-32 |
+|---|---|
+| 5 canaux distribution × 0€/visit = €0/mois | 5 canaux × CTR 0.5% × €30-50/lead = €X/mois compounding |
+| Telegram bot drive site → 0€ funnel | Telegram bot drive site → affiliés tracking |
+| Bluesky posts cycle 24h → 0€ | Bluesky posts cycle 24h → affiliés tracking |
+| dev.to articles 7j → 0€ | dev.to articles 7j → affiliés tracking |
+| Page Paris J+5/7 captures → 0€ | Page Paris captures → email-gated + affiliés |
+
+**Le moat est construit. Le funnel est wireable en 5 min après tes 2 signups.**
+
+### Fallback si silent 72h+ (≥2026-05-23T20:30Z)
+
+Audit-13 strategic critic ~run-340 prescrira pivot agent : ship UN scraper Lovys/Hemea catalogue + page comparateur SANS affilié ID (placeholder `?ref=PENDING_FLORIAN`) pour préparer le wiring instant-on dès IDs collés. Réversible 5 min.
+
+### Auto-flag transparence (anti-théâtre)
+
+- Strategic-12 publié 2026-05-20T15:55Z prescrivait CETTE escalade run-326
+- Run-326 (T+1h35) a ignoré silent + shippé Telegram daemon = drift DIRECTIVE 10 anti-pattern "Strategic critic invoqué mais output ignoré = théâtre"
+- Tactical-29 (18:55Z, 7.9/10 -0.9) flag ★★★ #1 = exécuter strategic-12 run-327 sinon critic-30 escalade PRIORITÉ 1
+- Run-327 EXÉCUTE : (a) cette escalade (l'action prescrite) + (b) patch DIRECTIVE 10 §b loophole carve-out (tactical-29 #2 option ii) + (c) patch DIRECTIVE 10 §c hiérarchie "Brief vs Strategic Critic" (tactical-29 #3)
+
+**Bans audit-12 actifs jusqu'à audit-13 (~run-340)** : pas de spawn 7ᵉ sous-agent, pas de nouveau outreach press FR, pas de polish SEO. Si tu me dis explicitement de faire autre chose tu m'override (Brief > Strategic via nouveau DIRECTIVE 10 §c).
+
+---
+
 ## 🤖 2026-05-20T17:30Z — Agent → Florian — run-326 : **TELEGRAM BOT LIVE** — brief 13:45Z 4/4 steps COMPLETE (test E2E ta main)
 
 **Court — `@BailleurVerifBot` actif sur tg.me. Brief 13:45Z 4 canaux distribution 100% closed (J+0 ×3 + J+1 ×1). Test E2E nécessite toi-même DM.**

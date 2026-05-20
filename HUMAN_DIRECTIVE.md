@@ -92,10 +92,20 @@ Pour les wakes **sans code à valeur produit shipped** (M0 hygiène / méta-disc
 **Champs `Copyability check` + `Moat category` OMIS LÉGITIMEMENT** dans cette variante : un mail SMTP outreach ou une réécriture concept n'a pas de copyability product (méta-interne, pas exposé public), ni de moat category directe. Forcer ces champs = bruit format zéro-information.
 
 **Quand utiliser full vs variante** :
-- **Full ritual L70-76** : ship HTML/JS/server endpoint/template cat-3/agent-browser scraper/sub-agent spawn nouveau = production code à valeur produit utilisateur final, **ET delta > 50 lignes user-facing OU nouveau fichier user-facing**.
+- **Full ritual L70-76** : ship HTML/JS/server endpoint/template cat-3/agent-browser scraper/sub-agent spawn nouveau = production code à valeur produit utilisateur final, **ET delta > 50 lignes user-facing OU nouveau fichier user-facing**. **CLARIFICATION 2026-05-20T20:30Z run-327 (post tactical-29 ★★★ #2 récidive 3)** : tout **NEW FILE ≥ 100 lignes** ship daemon/service long-running (systemd, cron, long-polling) **OU** tout nouveau fichier user-facing/sub-agent prompt **OU** toute installation systemd nouvelle = **Full ritual obligatoire** (Copyability check + Moat category fields explicites). Carve-out variante §a/§b NE couvre PAS ces cas. Précédent : run-326 Telegram daemon 218L + systemd = 3ᵉ récidive structurelle post audits 27/28. Loophole fermé.
 - **Variante §a/§b** : tout le reste — incluant **fix chirurgical ≤ 50 lignes user-facing sur fichier existant** (ex : run-322 H1+meta+og+twitter+share-block sharpen 5 edits ; run-318 2 liens internes orphan-fix ; run-319 footer Wikidata+sameAs ; run-321 BreadcrumbList rewrite 90 fichiers script-driven). Précédent : 3 récidives signalées tactical audits 25-28 sur des fixes chirurgicaux ⇒ alignement format avec usage réel.
 
 Le tactical critic NE doit PAS flagger "ritual omitted" pour la variante §a/§b dans un wake : (a) sans feature code shipped, OU (b) avec fix chirurgical ≤ 50 lignes user-facing sur fichier existant — sauf si §a OU §b lui-même est manquant. Reset compteur récidive §a/§b post-codification 2026-05-20T13:30Z run-324.
+
+### (c-bis) Hiérarchie "Brief Florian vs Strategic Critic" — codifiée 2026-05-20T20:30Z run-327 (post tactical-29 ★★ #3)
+
+Quand un Strategic Critic audit est publié et qu'un Brief Florian arrive AVANT complétion de la prescription strategic (ou inversement), l'agent Builder DOIT :
+- (a) **Référencer explicitement l'audit strategic** dans le `WHY_THIS_NOT_THAT` du wake suivant (mention audit-N + prescription unique + verbatim si pertinent)
+- (b) **Honorer la partie compatible** : si Brief Florian et Strategic prescrivent des actions orthogonales (ne se contredisent pas) → faire les deux ce wake ou wake suivant. Si Brief Florian explicit override Strategic (rare mais possible) → suivre Brief + flagger tension dans inbox.md HEAD.
+- (c) **Flagger toute tension dans `inbox.md` HEAD** pour arbitrage Florian explicite (court paragraphe : "Strategic-N prescrit X, Brief Y prescrit Z, j'ai fait Y ce wake car…").
+- (d) **Silent ignore Strategic Critic = drift majeur** (DIRECTIVE 10 anti-pattern "Strategic critic invoqué mais output ignoré = théâtre" matérialisé). Si un Strategic audit prescrit une action UNIQUE et que le wake suivant l'ignore sans mention dans WHY_THIS_NOT_THAT → tactical critic doit flagger ★★★. 2 récidives consécutives → escalade inbox.md HEAD Florian.
+
+**Priorité par défaut** : Brief Florian > Strategic Critic > Tactical Critic > runbook par défaut. MAIS un Brief Florian n'efface PAS l'obligation de mentionner les audits strategic critic dans WHY_THIS_NOT_THAT — il les overrides éventuellement, jamais en silence.
 
 ### (c) Test "Demain disparition" — à chaque audit (tactical + strategic)
 

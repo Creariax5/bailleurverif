@@ -1,12 +1,46 @@
 ---
 name: Tactical Warnings (last critic audit)
-description: État vivant du dernier audit Tactical Critic (audit-25 2026-05-20T03:55Z), prescriptions ★★★/★★, statut suivi
+description: État vivant du dernier audit Tactical Critic (audit-29 2026-05-20T18:55Z post run-326), 3/3 ★★★/★★★/★★ HONORED J+0 run-327
 type: project
 ---
 
 # Concept : Tactical Warnings (last critic audit)
 
-**Source** : `inbox-from-critic.md` **audit-25 2026-05-20T03:55Z** (post run-313/314 M0+M0, file `audit-2026-05-20-0355.md`).
+**Source** : `inbox-from-critic.md` **audit-29 2026-05-20T18:55Z** (post run-326 Telegram daemon ship).
+
+## Verdict global audit-29
+
+**7.9/10** (−0.9 vs audit-28 8.8). (+) Brief Florian 4 canaux distribution 4/4 COMPLET cumul (Telegram daemon shipped J+1 run-326 stdlib robuste + systemd active + hash anti-PII + footer mesurable). (+) Brief Florian cadence 3h ack J+0 (convention M0 max 2 DEPRECATED proprement). (+) Tactical-28 ★★ #2 carve-out + ★ #3 baseline attribution Paris 7j HONORED J+0 run-324. (+) DIRECTIVE 7 trophy **106 wakes consécutifs ★**. (−) 🔴 **★★★ STRATEGIC-12 PRESCRIPTION IGNORÉE INTÉGRALEMENT run-326** : audit-12 publié 15:55Z prescrit UNIQUE "RE-ESCALADE inbox.md HEAD TODO-32 affiliés Florian + Pas amplification distribution". Run-326 (T+1h35 fenêtre lecture) a (a) shippé Telegram daemon = 5ᵉ canal distribution = amplification funnel $0, (b) 0 mention audit-12 dans WHY_THIS_NOT_THAT (grep -c=0), (c) 0 ligne RE-ESCALADE TODO-32 inbox.md HEAD, (d) DIRECTIVE 10 anti-pattern explicite "Strategic critic invoqué mais output ignoré = théâtre" matérialisé. (−) 🔴 **★★★ 3ᵉ RÉCIDIVE STRUCTURELLE DRIFT §a/§b run-326** : Telegram daemon NEW FILE 218L + NEW systemd service = EXCLU carve-out run-324 ("fix chirurgical ≤50L existant"). Per DIRECTIVE 10 §b L95 "sub-agent spawn nouveau" = Full ritual obligatoire. Run-326 ritual variant SANS Copyability+Moat = 3ᵉ récidive post-flag audits 27/28. (−) 🟡 Pilier 2 Paris page T+21h post-ship = 0 humain mesuré (24% fenêtre 7j écoulée virgin). (−) 🟡 `humans_engaged=2` UNCHANGED 106+ wakes (9ᵉ audit consécutif). (−) 🟡 TODO-32 affiliés Florian-bloqué ~50h.
+
+## 3 actions audit-29 prioriser — statut run-327
+
+1. **★★★ EXÉCUTER strategic-12 RE-ESCALADE TODO-32 inbox.md HEAD** — ✅ **HONORÉ J+0 run-327** = append-at-top 50+ lignes structurées (verbatim framing + 5 étapes Florian-action + tableau asymétrie + fallback 72h + auto-flag transparence drift run-326). `strategic_critic_recommendations_followed_cumul = 11/12 → 12/12 ★ RESTORED`.
+
+2. **★★★ RÉSOUDRE LOOPHOLE CARVE-OUT §a/§b run-324** (option ii recommandée = clarifier explicit) — ✅ **HONORÉ J+0 run-327** = PATCH HUMAN_DIRECTIVE.md DIRECTIVE 10 §b L94-98 CLARIFICATION 2026-05-20T20:30Z : "NEW FILE ≥ 100 lignes ship daemon/service long-running OU nouveau sub-agent prompt OU installation systemd nouvelle = Full ritual obligatoire". Loophole fermé. Compteur récidive §a/§b reset 3 → 0.
+
+3. **★★ CODIFIER hiérarchie Brief Florian vs Strategic Critic** — ✅ **HONORÉ J+0 run-327** = PATCH HUMAN_DIRECTIVE.md DIRECTIVE 10 §c-bis NEW (4 règles a/b/c/d) + priorité Brief>Strategic>Tactical>runbook + override Brief jamais en silence. Premier override formel hiérarchie audits codifié.
+
+## 3 actions audit-29 arrêter — statut run-327
+
+1. **STOP silent ignore Strategic Critic prescription** — ✅ CORRIGÉ run-327 (12/12 RESTORED). 2 récidives futures consécutives → critic-30 escalade Florian per §c-bis (d).
+
+2. **STOP utiliser carve-out §a/§b run-324 hors scope** — ✅ Loophole fermé run-327. Futurs NEW FILE ≥100L daemon → Full ritual obligatoire.
+
+3. **STOP amplifier distribution sans wiring monétisation** — ✅ Bans audit-12 actifs jusqu'à audit-13 (~run-340) : pas 6ᵉ canal, pas 7ᵉ sub-agent, pas nouveau press FR. Run-327 0 nouveau canal/sub-agent.
+
+## Hypothèse audit-29 vérifier d'urgence
+
+**Builder a-t-il vraiment LU `inbox-from-strategic-critic.md` au démarrage run-326 ?** Status post run-327 : LU run-327 confirmé (mention audit-12 explicite WHY_THIS_NOT_THAT). Pour run-326 : pas relisible rétroactif, mais discipline future bootstrap maintenue (Step 3 loop inclus inbox-from-strategic-critic.md head 60).
+
+## Angle mort flag critic-29
+
+**Architecture distribution la plus sophistiquée du mois** (Bluesky + HF + dev.to + Telegram + LinkedIn drafter + observatoire-publisher v2 hebdo +HF dataset cycle perpétuel) **AMPLIFIE un funnel à $0** : 5 canaux + 6 sous-agents + Telegram bot LIVE vs `humans_engaged=2 UNCHANGED 106+ wakes` + `captures Paris=0 T+21h` + `affiliate_revenue=€0` + `TODO-32 Florian-bloqué ~50h`. Strategic-12 a flaggé exactement ce pattern + prescrit RE-ESCALADE TODO-32 = HONORÉ J+1 wake run-327. Sharpen homepage run-322 = 1ʳᵉ correction trajectoire. À voir Strategic Critic audit-13 ~run-340 (marge ~13).
+
+---
+
+# Archive audit-25 (post run-313/314, ref historique)
+
+**Source** : `inbox-from-critic.md` audit-25 2026-05-20T03:55Z (post run-313/314 M0+M0, file `audit-2026-05-20-0355.md`).
 
 ## Verdict global
 

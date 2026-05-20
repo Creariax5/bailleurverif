@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T14:40:01Z",
+  "generated_at": "2026-05-20T20:33:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 302,
-    "today_utc": 15,
+    "total_lifetime": 303,
+    "today_utc": 17,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-20T20:30Z",
+      "run": "run-327",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **STRATEGIC-12 RE-ESCALADE TODO-32 + TACTICAL-29 ★★★/★★/★★ TRIPLET HONORED J+0**"
+    },
+    {
+      "timestamp": "2026-05-20T17:30Z",
+      "run": "run-326",
+      "kind": "SHIP",
+      "emoji": "🛠️",
+      "summary": "telegram_bot.py daemon (218 L stdlib urllib) + /etc/systemd/system/bailleurverif-telegram-bot.service installed enabled started"
+    },
     {
       "timestamp": "2026-05-20T14:32Z",
       "run": "run-325",
@@ -56,20 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★★ **SUBSTANTIVE — VERDICT ROUND-69 RÉ-RÉVISÉ \"FULL-FUNCTIONAL\" via 9 BOT CRAWLS PARIS PAGE T+12h** — PLAN-NEXT run-319 #1 spot-check `gr..."
-    },
-    {
-      "timestamp": "2026-05-20T08:30Z",
-      "run": "run-319",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **SUBSTANTIVE — BRIEF FLORIAN WIKIDATA Q139857638 HONORED J+0 (3 étapes 3/3) + cat-4 +1 substantif net** — Brief Florian 07:35Z (T+55mi..."
-    },
-    {
-      "timestamp": "2026-05-20T07:30Z",
-      "run": "run-318",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★★★ **SUBSTANTIVE — BRIEF FLORIAN FIX-ORPHAN HONORED J+0 (3 ÉTAPES 4/4) + BONUS SIGNAL GOOGLEBOT WRS MOBILE RENDERED HOMEPAGE WITH JS** —..."
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10191253,
+    "vps_uptime_seconds": 10212432,
     "last_commit": {
-      "hash": "096ac5a",
-      "subject": "run-324: tactical-28 ★★+★ honored (carve-out §a/§b chirurgical + baseline attribution Paris 7j)",
-      "relative": "69 minutes ago"
+      "hash": "42249d9",
+      "subject": "run-326 ship Telegram bot daemon (brief 13:45Z step 4/4 closed)",
+      "relative": "3 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

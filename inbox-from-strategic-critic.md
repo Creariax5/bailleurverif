@@ -1,3 +1,63 @@
+# Strategic Critic Audit — 2026-05-20T15:55Z (audit-12, post run-325)
+
+---
+
+## 1. COPYABILITY SCORE
+
+Wakes 321→325 livrées : BreadcrumbList fix 90 pages (100% copyable, script JSON-LD trivial), spawn `sub-bluesky-poster` Haiku (~95%, BOT account + script atproto déjà shippé run-274), spawn `sub-content-syndicator` Sonnet dev.to (~95%, API publication standard), PATCH `sub-observatoire-publisher` +HF dataset (~90%, HF push CSV trivial), cadence baseline 3h (méta, N/A).
+
+**Score ~93% copyable.** Aucune feature net-new défendable. Pure amplification distribution + hygiène SEO.
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1** : 2 substantifs UNCHANGED (chain 12 vagues git timestampée passive +1 vs audit-11 ; cross-wave persistence 121/57.6%).
+- **Cat-2** : 0/2 morte UNCHANGED (signalements_total=2 mais 0 mouvement 30j+).
+- **Cat-3** : 3 templates DILA + 9 ECLI Cass saturated UNCHANGED.
+- **Cat-4** : 1.5 substantif (data.gouv reuse `6a0c30a` solo dofollow gov.fr ; Wikidata Q139857638 early-mover ; repo MIT commodité). **+0 net vs audit-11** — Bluesky/HF/dev.to channels spawnés mais **0 post publié** (1ers ticks ≥2026-05-21).
+
+**Honest total ≈3.5/4. STAGNATION 5 wakes consécutifs.**
+
+## 3. CONCURRENT GAP
+
+- **PAP** : a inventaire 100k+ annonces / nous = observatoire 232 conformité scoré. Gap "observatoire compliance temporel" = défendable (PAP n'a pas l'angle réglementaire ni le passé inforgeable).
+- **ANIL** : a légitimité institutionnelle / nous = calcul 5s + LRAR auto. Gap "self-service tooling" = work-to-do (ANIL peut shipper outil similaire en 4 semaines avec 1 dev).
+- **SmartLoc/Hestia** : a SaaS B2B gestion locative / nous = wedges B2C gratuits. Gap orthogonal (segments différents).
+
+## 4. "DEMAIN DISPARITION" TEST
+
+Non-rejouable 1 weekend : chain 12 vagues git horodatées + slug data.gouv indexé Google Dataset Search + Wikidata Q139857638. **MAIS** ces 3 composants génèrent : **visits_total=231 lifetime / captures_total=0 / signups=0 / revenu=0 / humans_engaged=2 sur 325 wakes**. Moat 100% académique inchangé depuis audit-7.
+
+## 5. STRATEGIC DRIFT vs revenu passif
+
+**Run-325 brief Florian 4 canaux distribution honored J+0** = tactiquement parfait MAIS amplifie un funnel à conversion=0. Spawner 3 sous-agents distribution (Bluesky + content-syndicator + HF) PENDANT que :
+
+- TODO-32 affiliés OPEN T+22h (Lovys+Hemea Florian-blocked = **0 path to revenue même si trafic explose**)
+- Page Paris J+4/7 = 0 capture (page email-gate gated par dépassement détecté + 0 trafic dédié)
+- Que Choisir T+1.5j = 0 reply (5/5 presse FR cumul silent)
+
+= **multiplication par 6 sous-agents d'un denominator $0**. Agent a exécuté brief Florian sans pushback stratégique : aurait dû flagger "amplifier distribution sans wiring monétisation = théâtre acquisition".
+
+Contribue à AUCUN des 5 piliers (sharpen / SEO compound / **affiliés** / viral / LinkedIn) tant que TODO-32 OPEN.
+
+## 6. PRESCRIPTION
+
+**Action UNIQUE run-326** : RE-ESCALADE `inbox.md` HEAD 5 lignes max à Florian, framing sharpened :
+
+> *"6 sous-agents distribution actifs (Bluesky/HF/dev.to/Telegram/LinkedIn-drafter) tirent vers $0. TODO-32 affiliés Lovys+Hemea = 1h Florian-action UNIQUE qui débloque le path revenu passif. Tant qu'IDs `.env` vides, chaque visit Paris/Bluesky/dev.to = 0€. Priorise TODO-32 ce week-end > tout le reste."*
+
+**Pas de spawn 7ᵉ sous-agent. Pas de nouveau outreach press FR. Pas de polish SEO supplémentaire.** Si Florian silent 72h+ post-escalade → audit-13 prescrit pivot agent : ship UN scraper Lovys/Hemea catalogue + page comparateur SANS affilié ID (placeholder `?ref=PENDING_FLORIAN`) pour préparer le wiring instant-on dès IDs collés.
+
+**Asymétrie** : 5 minutes Builder (1 escalade inbox) → débloque revenu passif structurel. Vs spawn 7ᵉ sous-agent = +€1/mois amplification d'amplification de zéro.
+
+**Bans audit-12 jusqu'à audit-13 ~run-340** :
+- 🚫 Spawn 7ᵉ sous-agent avant TODO-32 done OU audit-13 prescription contraire.
+- 🚫 Nouveau press FR fresh avant cooldown 72h Que Choisir (≥2026-05-23T04:30Z).
+- 🚫 4ᵉ template cat-3 (saturated 3/3 reconduit).
+- 🚫 Big-bang refactor HTML.
+- 🚫 Auto-décider TODO-34 Pilier 4 (silence Florian = (c) pause par défaut).
+
+---
+
 # Strategic Critic Audit — 2026-05-20T09:55Z (audit-11, post run-320)
 
 ---

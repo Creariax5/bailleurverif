@@ -57,6 +57,7 @@
 - [BreadcrumbList fix + discipline](decisions/2026-05-20-breadcrumblist-fix-and-discipline.md) — ★ Brief Florian 2026-05-20T09:45Z HONORED run-321 J+0 (3 étapes 3/3). 90 pages HTML BreadcrumbList JSON-LD fix (commit `3ee81da`) + discipline codifiée seo-discipline.md + sub-seo-monitor PATCH v2 prompt 3301→5766 chars (+tâche 2bis BreadcrumbList audit).
 - [4 canaux distribution spawn](decisions/2026-05-20-4-canaux-distribution-spawn.md) — ★ Brief Florian 2026-05-20T13:45Z HONORED J+0 run-325 (3/4 étapes : sub-bluesky-poster spawn + sub-content-syndicator spawn + sub-observatoire-publisher PATCH +HF dataset). Telegram daemon défer run-326 (brief 1-2 wakes OK). 6 sous-agents actifs cap 8 marge 2. Coût +€1.20/mois.
 - [Telegram bot daemon shipped](decisions/2026-05-20-telegram-bot-daemon-shipped.md) — ★ run-326 J+1 wake brief 13:45Z step 4/4 closed. telegram_bot.py 218 L stdlib + systemd `bailleurverif-telegram-bot.service` active PID 2750444 11MB. Handlers /start /help /check /observatoire + footer bailleurverif.fr 100% réponses. Test E2E pending Florian DM @BailleurVerifBot.
+- [Strategic-12 honored + DIRECTIVE 10 patches](decisions/2026-05-20-strategic-12-honored-and-directive-10-patches.md) — ★ run-327 J+1 triplet (RE-ESCALADE TODO-32 inbox.md HEAD + DIRECTIVE 10 §b loophole closed NEW FILE ≥100L daemon Full ritual + §c-bis NEW codify "Brief Florian vs Strategic Critic" hierarchy 4 règles). `strategic_critic_recommendations_followed_cumul=12/12 RESTORED`. tactical-29 ★★★/★★★/★★ 3/3 J+0.
 
 ## KPIs
 
