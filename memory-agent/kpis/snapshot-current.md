@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-20T00:28Z (post run-311)
+# KPIs Snapshot Current — 2026-05-20T01:31Z (post run-312)
 
-> **Run-311 UPDATE** : **M0 ne-rien-faire** — default PLAN-NEXT run-310 honoré. Triggers d'exception tous négatifs (Florian silent TODO-34 / 0 capture lifetime / 0 IMAP unseen / drafter cycle 2 T+16h / audit-24 T+2h27min / sub-seo-monitor T+13h). Hygiène minimale : run file + ledger ACTION/METRIC/PLAN-NEXT + ce header + commit + push. 0 inbox.md (anti-noise Florian, TODO-34 ★★ reste pinned HEAD). 91ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+> **Run-312 UPDATE** : ★ **TACTICAL-24 3/3 PRESCRIPTIONS HONORED J+0** — 3 actions <10 min, non-bannies strategic-9, alignées Piliers 1+2+5. (1) ★★★ Drafter cycle 2 briefé fresh signal Paris (`social-drafts.md` HEAD section, atténue critic-24 #1 drafter signal stale + critic-23 #2 canal humain). (2) ★★ Tension email-gate Paris atténuée Option A transparence sur `loyer-legal-paris.html` + `app.js` homepage (2 fichiers, 0 endpoint server ship BAN strategic-9 respecté, atténue critic-23 ★★★ #1 2ᵉ flag). (3) ★★ Convention M0 max 2 codifiée `tactical-warnings-current.md` (anti-drift babysitting, +3 anti-patterns flaggés). Smoke prod 200 + 1 match + 1 match confirmé. 0 server restart. m0_consecutive_count=1→0 reset. 92ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+
+> **Run-311 UPDATE (HEADLINE PRÉCÉDENT)** : **M0 ne-rien-faire** — default PLAN-NEXT run-310 honoré. Triggers d'exception tous négatifs (Florian silent TODO-34 / 0 capture lifetime / 0 IMAP unseen / drafter cycle 2 T+16h / audit-24 T+2h27min / sub-seo-monitor T+13h). Hygiène minimale : run file + ledger ACTION/METRIC/PLAN-NEXT + ce header + commit + push. 0 inbox.md (anti-noise Florian, TODO-34 ★★ reste pinned HEAD). 91ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
 > **Run-310 UPDATE (HEADLINE PRÉCÉDENT)** : ★ **PILIER 4 BLOCKER DATA-MISSING + 5 concepts memory flush J+0** — CSV observatoire 23 colonnes sans `agence`/`brand`/`annonceur` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven IMPOSSIBLE sans upgrade scraper. TODO-34 ★★ NEW florian-todos.md (Florian décide upgrade scraper vs pivot angle vs pause). Default Builder = pause indéfini (anti-théâtre). Decision file `2026-05-19-pilier-4-data-missing.md` créé (audit trail). 5 concepts memory updates J+0 ce wake (tactical-warnings-current audit-23 + strategic-prescription-last audit-9 HONORED + mission Pilier 4 verdict + florian-blockers TODO-34 NEW + snapshot KPIs ce header). 0 ScheduleWakeup. 90ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
@@ -67,12 +69,15 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 310→311 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 90→91 (trophy maintenu, M0 ne-rien-faire wake compatible) |
-| `wakes_since_last_strategic_critic` | 1→2 (audit-9 21:55Z, audit-10 cible ~run-325 marge ~13) |
-| `wakes_since_last_tactical_critic` | 1→2 (audit-23 22:55Z, audit-24 cible ~02:55Z 2026-05-20 T+2h27min) |
-| `strategic_critic_recommendations_followed_pct` | 100% (9/9 audits cumulé, audit-9 HONORED Paris page) |
-| `tactical_critic_recommendations_followed_pct_audit23` | 2/3 ★★ #2 partial (IndexNow round-69) + ★★ #3 done (seuils mission.md) ; ★★★ #1 BLOQUÉ strategic-9 (tension résolue strategic > tactical) |
+| `wakes_total_lifetime` | 311→312 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 91→92 (trophy maintenu, run-312 substantif) |
+| `wakes_since_last_strategic_critic` | 2→3 (audit-9 21:55Z, audit-10 cible ~run-325 marge ~13) |
+| `wakes_since_last_tactical_critic` | 2→0 (audit-24 00:55Z fresh, reset) |
+| `strategic_critic_recommendations_followed_pct` | 100% (9/9 audits cumulé UNCHANGED) |
+| `tactical_critic_recommendations_followed_pct_audit24` | 3/3 = 100% ★ NEW (★★★ #1 drafter brief Paris + ★★ #2 email-gate Option A + ★★ #3 M0 max 2 codified) |
+| `tactical_critic_recommendations_followed_pct_audit23` | 2/3 (★★ #2 partial IndexNow + ★★ #3 seuils mission.md done ; ★★★ #1 BLOQUÉ strategic-9 puis ATTÉNUÉ run-312 Option A) |
+| `m0_consecutive_count` | 1→0 (reset, run-312 substantif) |
+| `convention_m0_max_2_codified` | true ★ NEW run-312 |
 | `cat_3_jurisprudence_refs_saturated_total` | 3/3 ★ run-305 |
 | `cat_3_jurisprudence_refs_total_cumul_ecli` | 9 (3 dpe + 3 depot + 3 loyer-abusif) |
 | `sub_agents_active_count` | 2 (sub-seo-monitor Haiku 24h + sub-linkedin-drafter Sonnet 24h) |

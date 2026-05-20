@@ -326,8 +326,8 @@ function captureEmail(ev, kind) {
   })}).then(r => r.json()).then(data => {
     if (data.ok) {
       const reportMsg = (v.depassement > 0)
-        ? "✓ Reçu — votre lettre de baisse de loyer LRAR arrive sous 24h."
-        : "✓ Reçu — votre rapport arrive sous 24h.";
+        ? "✓ Capture reçue. Florian (équipe BailleurVérif) vous envoie la lettre LRAR pré-remplie manuellement sous 24-48 h (automatisation après les premières validations)."
+        : "✓ Reçu — votre rapport arrive sous 24-48 h (envoi manuel actuellement, automatisation en cours).";
       msg.textContent = kind === "watch" ? "✓ Inscrit. On vous prévient au lancement." : reportMsg;
       msg.style.color = "var(--accent)";
       form.querySelector("input").value = "";

@@ -1,5 +1,35 @@
 # Social drafts — tweets ready-to-post BailleurVérif
 
+## SIGNAL pour drafter cycle 2 ≥2026-05-20T16:45Z — Paris page LIVE (run-312 brief tactical-24 ★★★ #1)
+
+**Signal source** : `/loyer-legal-paris.html` shippé run-309 J+0 strategic-9 prescription (Pilier 2 proof-of-pattern programmatique SEO compounding ville-par-ville).
+
+**Angle painkiller** (PAS jurisprudence ECLI — déjà couvert cycle 1) : "Tape ton adresse + loyer + surface → verdict 5s → si dépassement, lettre baisse loyer LRAR pré-remplie offerte."
+
+**3 stats observatoire publiable** (calculées sur CSV vague-11 N=30 Paris) :
+- **46,7 %** des annonces Paris en violation du plafond légal (zone tendue).
+- **17,9 €/m²** d'excès moyen au-dessus du plafond.
+- **~540 €** de trop-perçu typique pour un 30 m².
+
+**URL cible** : `https://bailleurverif.fr/loyer-legal-paris.html` (canonique, IndexNow round-69 Bing/Yandex/Universal 200/200/202 envoyé).
+
+**Cross-link contextuel** : `/observatoire-annonces-loyer.html` (dataset moat cat-1 N=210+ 11 vagues git timestampées) — dispo si pertinent pour réassurance crédibilité données.
+
+**Posture** : factuelle 1ʳᵉ personne Florian, sans agressivité commerciale. Hook = stat choc 46,7 % violations Paris. CTA = "vérifie ton loyer en 5s + lettre LRAR offerte". Cible 8 000 followers LinkedIn FR (immo, tech, légal).
+
+**Consignes drafter cycle 2** :
+- ❌ PAS de reprise jurisprudence ECLI Cass. (cycle 1 a déjà couvert ce signal).
+- ❌ PAS de mention auto-gen PDF (Florian envoie manuellement les 1-3 premières lettres, automation post-validation iter-1).
+- ✅ Hook stat Paris + verdict 5s + lettre LRAR offerte.
+- ✅ Fenêtre mesure 7j ouverte (deadline 2026-05-26T22:30Z, ≥3 signups qualifiés = Pilier 1 iter-1 validé).
+- ✅ Output normal `LINKEDIN-AUTO 2026-05-20T16:45:00Z` section append fin de fichier (suivre format cycle 1 lignes 626-652).
+
+**Mesure cycle 2** : si Florian valide + poste → corrélation visits.jsonl spike T+0h/+24h via `utm_source=linkedin&utm_campaign=paris-page` (optionnel drafter ajoute UTM).
+
+---
+
+
+
 ## TWEET-γ-MINI — TODO-29 option γ-mini (Twitter/X ou Bluesky/Mastodon) — ajouté run-276 2026-05-19T03:34Z
 
 **Friction Florian** : 60 secondes (copy-paste sur 1 compte perso existant Twitter/Bluesky/Mastodon). **Asymétrie max** : débloque 1 canal externe humain (≠ tout l'écosystème bloqué TODO-29 α/β/γ).

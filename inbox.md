@@ -1,3 +1,27 @@
+## ✅ 2026-05-20T01:31Z — Agent → Florian — run-312 : audit-24 critic HONORED J+0 (3/3) + canal LinkedIn drafter activé
+
+**Court (TODO-34 ★★ reste pinned dessous, je n'éclipse pas).** Tactical critic-24 (8.5/10, 00:55Z) a flag 3 priorités, exécutées <10 min ce wake :
+
+1. **★★★ Drafter cycle 2 briefé fresh signal Paris** → `social-drafts.md` HEAD section SIGNAL pour cycle 2 cible 2026-05-20T16:45Z (URL Paris + 3 stats 46,7%/17,9€/m²/~540€ + angle painkiller + consigne PAS ECLI/PAS auto-gen PDF). Sans ce brief, drafter cycle 2 aurait tiré `judilibre_cycle` stale = canal humain LinkedIn non-activé sur fenêtre 7j mesure Paris.
+
+2. **★★ Tension email-gate Paris atténuée** (Option A transparence, 2 fichiers) → message capture success réécrit "✓ Capture reçue. Florian (équipe BailleurVérif) envoie la lettre LRAR manuellement sous 24-48 h (automatisation après les premières validations)." Couvre `loyer-legal-paris.html` + homepage `app.js` (run-308 reframe). 0 endpoint server ship (BAN strategic-9 auto-gen LRAR respecté). Visiteur voit transparence + tu n'as plus la promesse trompeuse "lettre sous 24h" sans automation.
+
+3. **★★ Convention M0 max 2 codifiée** dans `concepts/tactical-warnings-current.md` → max 2 wakes M0 consécutifs, 3ᵉ = obligation action non-bannie Pilier-aligned. Prévention drift babysitting passif pendant fenêtre Paris 7j ouverte.
+
+### Reste action toi (priorité inchangée, ordre INCHANGÉ depuis run-310)
+
+- **TODO-32 ★★** Lovys + Hemea affiliés (1-2h, débloque Pilier 3 revenu passif) — ouvert 8h.
+- **TODO-34 ★★** Pilier 4 a/b/c (~30s décision) — ouvert 2h, default Builder (c) pause si silence 14j.
+- **TODO-33 ★** 5 personnes entourage (~1h, débloque pivot painkiller).
+- **TODO-32-bis ★** valider draft drafter cycle 1 ECLI 1184c (~30s).
+- **TODO-31 ★** Test Rich Results FAQPage Google (~2 min).
+
+### KPIs ce wake
+
+visits 222 UNCHANGED 12h+ since 13:29Z / captures lifetime=0 (fenêtre Paris T+3h post-ship) / humans=2 UNCHANGED 94+ wakes / outbound 8 ANIL cooldown ≥22/05 / pages_html 172 UNCHANGED / sub-agents 2 actifs / wakes 312 / Directive 7 trophy **92 consécutifs**. Tactical 3/3 + Strategic 9/9 audits HONORÉS cumul. Cron 02:30Z relance.
+
+---
+
 ## 🔍 2026-05-19T23:30Z — Agent → Florian — run-310 : PILIER 4 BLOCKER découvert + TODO-34 à toi (a/b/c)
 
 **Discovery substantif ce wake** : j'ai audité sérieusement Pilier 4 viral (notation agences) que strategic-9 a flag "surface morte non-retravaillée". CSV observatoire (23 colonnes) n'a **PAS** de colonne `agence`/`brand`/`annonceur`. Donc pages `/notation-agence/foncia/paris.html` data-driven que mission.md décrit **sont impossibles** sans upgrade pipeline scraper. Les workarounds 0-data-upgrade (placeholder, hall-of-shame anonyme, crowdsourcing form) sont tous du théâtre ou redondance. Détail decision file `memory-agent/decisions/2026-05-19-pilier-4-data-missing.md`.

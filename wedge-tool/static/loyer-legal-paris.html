@@ -309,7 +309,7 @@
       })
     }).then(res => res.json()).then(data => {
       if (data.ok) {
-        msg.textContent = "✓ Reçu — votre lettre de baisse de loyer LRAR arrive sous 24h à " + email + ".";
+        msg.textContent = "✓ Capture reçue à " + email + ". Florian (équipe BailleurVérif) vous envoie la lettre LRAR pré-remplie manuellement sous 24-48 h (automatisation après les premières validations).";
         msg.style.color = "var(--accent)";
         form.querySelector("input").value = "";
         form.querySelector("button").disabled = true;

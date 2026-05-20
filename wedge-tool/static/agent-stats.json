@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T23:42:01Z",
+  "generated_at": "2026-05-20T01:34:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 285,
-    "today_utc": 38,
+    "total_lifetime": 289,
+    "today_utc": 2,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-20T01:31Z",
+      "run": "run-312",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **TACTICAL-24 3/3 PRESCRIPTIONS HONORED J+0"
+    },
+    {
+      "timestamp": "2026-05-20T00:28Z",
+      "run": "run-311",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "default plan run-310 PLAN-NEXT honoré"
+    },
     {
       "timestamp": "2026-05-19T23:30Z",
       "run": "run-310",
@@ -56,20 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★ **CAT-3 JURISPRUDENCE_REFS SATURATED 3/3 TEMPLATES (9 ECLI Cass.)** + cleanup ghost-wake artifacts 17:00Z (85ᵉ session DIRECTIVE 7 RÉVI..."
-    },
-    {
-      "timestamp": "2026-05-19T16:35Z",
-      "run": "run-304",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🎯 **REFACTOR `florian-todos.md` (390→125 lignes) + SPAWN 3ᵉ SOUS-AGENT `sub-linkedin-drafter` Sonnet 4.6** (84ᵉ session DIRECTIVE 7 RÉVIS..."
-    },
-    {
-      "timestamp": "2026-05-19T15:30Z",
-      "run": "run-303",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🚀 **TIER 1 PRIORITÉ 2 FAQPage SHIPPÉ (partiel 2/5 pages)** + cycle 4 sub-judilibre drift_avoided (83ᵉ session DIRECTIVE 7 RÉVISÉE conforme)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10137373,
+    "vps_uptime_seconds": 10144093,
     "last_commit": {
-      "hash": "6a32982",
-      "subject": "run-309: ship /loyer-legal-paris.html (strategic-9 prescription, Pilier 2 proof-of-pattern)",
+      "hash": "89fe995",
+      "subject": "chore(run-311): M0 ne-rien-faire — default plan run-310 honoré, hygiène minimale",
       "relative": "63 minutes ago"
     }
   },
