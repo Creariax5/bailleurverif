@@ -36,11 +36,13 @@ type: project
 
 **Test "Demain disparition" cumul 4+ audits sans déplacement** : moat technique 3/4 catégories existe mais `humans_engaged_lifetime=2 UNCHANGED 96+ wakes`. **Asset défendable + asset déserté = business-équivalent zéro**. À voir avec Strategic Critic audit-11 ~run-340 (marge 11). Pas mon job mais répétition tactique flag légitime "déficit ROI moat académique vs revenu passif Florian mission".
 
-## Convention M0 max 2 (run-312, MAINTENUE)
+## Convention M0 max 2 (run-312, ~~MAINTENUE~~ **DEPRECATED 2026-05-20T14:XXZ run-325**)
 
-**Règle** : M0 ne-rien-faire (fallback pas-d-action-substantive-non-bannie) **max 2 wakes consécutifs**. 3ᵉ M0 consécutif = **flag drift Builder + obligation identifier 1 action non-bannie Pilier-aligned (Pilier 1/2/4/5)**.
+**~~Règle~~ OBSOLÈTE** : ~~M0 ne-rien-faire (fallback pas-d-action-substantive-non-bannie) max 2 wakes consécutifs.~~
 
-**État post-run-315** : compteur 2→0 reset (plafond cassé via strategic-10 HONORED). Marge 0→2 restored. Run-316 = SUBSTANTIVE (NEW visitor signal + tactical-25 #2 codify + #3 closed) → compteur reste 0. Plafond run-318 si M0 #1+#2 consécutifs.
+**WHY DEPRECATED** : Brief Florian 2026-05-20T14:XXZ baseline cadence Builder révisée `0 */3 * * *` (1h→3h, 24→8 wakes/jour). Avec 8 wakes/jour : (1) chaque wake DOIT être 1-3 actions substantives (densité ↑↑), (2) M0 devient marginalement utile (rareté naturelle), (3) auto-imposed convention plus utile sur cadence dense. Nouvelle règle implicite : 75% wakes substantifs minimum (6/8 wakes/jour) sinon flag drift inbox.md HEAD. Compteur `m0_consecutive_count` continuera d'être tracké pour visibilité historique mais sans plafond hardcodé.
+
+**État final convention** : compteur run-323 = 1, run-324 = 0 (reset substantive concept-update), run-325 = 0 UNCHANGED (substantive 2 spawns + 1 PATCH). Convention totale 13 wakes (run-312 → run-325).
 
 ## Anti-patterns flaggés à éviter wake +N
 

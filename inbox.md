@@ -1,3 +1,230 @@
+## ✅ 2026-05-20T14:32Z — Agent → Florian — run-325 : **DUAL BRIEF HONORED J+0** (4 canaux distribution 3/4 + cadence 3h ack)
+
+**Court — 2 briefs concurrents (13:45Z + 14:XXZ) honorés ce wake. 1 défer planifié run-326.**
+
+### Brief 13:45Z 4 canaux distribution — 3/4 actions ce wake
+
+| # | Action | Statut | Détails |
+|---|---|---|---|
+| 1 | Spawn `sub-bluesky-poster` Haiku 24h | ✅ J+0 | id `1a6b2a20-fe71-417c-adc7-7a561985366b` HTTP 201, prompt 2838 chars, script `bluesky_post_atproto.py` déjà shippé run-274, 1ʳᵉ tick ~2026-05-21T14:30Z |
+| 2 | PATCH `sub-observatoire-publisher` +HF | ✅ J+0 | prompt 6396→8634 chars (+2238, step 6.5 NEW : check 200/404, one-shot create, upload CSV cycle multipart, log `datagouv_outcome`+`hf_outcome` séparés, fail HF soft), 1ʳᵉ cycle HF ~2026-05-27T06:31Z |
+| 3 | Spawn `sub-content-syndicator` Sonnet 7j | ✅ J+0 | id `cc0f6fb3-c226-4574-a74c-a35355621c47` HTTP 201, prompt 3948 chars, dev.to API, structure hook+story+stack+code+takeaway+footer Wikidata Q139857638, 1ʳᵉ tick ~2026-05-27T14:31Z |
+| 4 | Ship `telegram_bot.py` daemon | ⏸ run-326 | Brief autorise "1-2 wakes" : budget restant ce wake insuffisant (3 actions API+memory+ledger+ack consumed). Cible run-326 17:30Z : script long-polling + systemd service + sudo enable + test E2E DM `@BailleurVerifBot` |
+
+### Brief 14:XXZ cadence Builder 1h→3h — ack J+0
+
+- ✅ Nouvelle cadence `0 */3 * * *` codifiée (`cron_baseline = 0 */3 * * *`, 8 wakes/jour)
+- ✅ Convention M0 max 2 (run-312) marquée DEPRECATED dans `tactical-warnings-current.md` + WHY documenté (cadence dense rend convention auto-imposée plus utile)
+- ✅ `kpis/snapshot-current.md` headline rewrite post run-325 dual brief
+- ✅ Mental model interne : densité minimum 75% (6/8 substantifs/jour), sous-agents délégation prioritaire, briefs Florian ~3h gap max
+- 📊 Économie validée : -€48/mois Builder Opus (-€72/mois cumul Tactical 6h, runrate ~€135→~€63/mois)
+
+### Architecture post run-325
+
+**6 sous-agents actifs** (cap 8 marge 2) : sub-judilibre-enrich (disabled saturated_3) + sub-seo-monitor (Haiku 24h) + sub-linkedin-drafter (Sonnet 24h) + sub-observatoire-publisher v2 +HF (Haiku 7j) + **sub-bluesky-poster NEW** (Haiku 24h) + **sub-content-syndicator NEW** (Sonnet 7j).
+
+**5 canaux distribution actifs post-Telegram cible** : LinkedIn (Florian + drafter) + **Bluesky NEW** + **HuggingFace NEW** + Telegram (TODO run-326) + **dev.to NEW**. Compute additionnel +€1.20/mois, total €4.70/mois sub-agents (budget €20/mois).
+
+### Fenêtres ouvertes préservées (BANS respectés)
+
+- ✅ Paris page mesure 7j (deadline 2026-05-26T22:30Z, J+4) — 0 touch
+- ✅ Homepage post-sharpen run-322 (mesure 7j) — 0 touch
+- ✅ ANIL cooldown 2026-05-22T05:35Z — pas re-mail
+- ✅ Que Choisir cooldown 2026-05-23T04:30Z — pas re-mail
+- ✅ TODO-34 silent 14ᵉ wake (pas vol décision Pilier 4)
+
+### Statut KPIs principaux
+
+- `florian_briefs_honored_j0_lifetime = 4 → 6 ★ NEW` (briefs 13:45Z + 14:XXZ ack J+0)
+- `sub_agents_count_active = 4 → 6 ★ NEW` (cap 8, marge 2)
+- `distribution_channels_active = 2 → 4 ★ NEW` (LinkedIn + data.gouv.fr + **Bluesky + HuggingFace**)
+- `cron_baseline = 0 */3 * * *` (8 wakes/jour, **NEW baseline 2026-05-20T14:XXZ**)
+- `convention_m0_max_2 = DEPRECATED 2026-05-20T14:XXZ run-325`
+- `wakes_total_lifetime = 324 → 325`
+- `directive_7_revisee_compliance_consecutive_wakes = 104 → 105 ★`
+
+Cron 17:30Z relance (nouvelle cadence 3h).
+
+---
+
+## 🕒 2026-05-20T14:XXZ — Florian → Agent — CADENCE Builder révisée `0 */3 * * *` (1h → 3h, 24 → 8 wakes/jour)
+
+Florian verbatim : *"passe l'agent à une fois toutes les 3h au lieu de 1h"*. Décision basée sur audit productivité (~25 wakes 24h écoulées) :
+- M0 rate observé 16% (4/25 wakes) = burn évitable ~€9/mois
+- Sub-agents Haiku/Sonnet absorbent désormais la routine (judilibre saturé, seo-monitor, linkedin-drafter, observatoire-publisher, Bluesky/HF/Telegram/dev.to spawnés ce wake)
+- Builder Opus rôle = stratégie + briefs + synthèse, pas grind tactique
+- Économie : -€48/mois Builder Opus (cumul avec Tactical Critic 6h ce matin = total -€72/mois, runrate Claude credits passe de ~€135/mois à ~€63/mois)
+
+**Nouveau baseline pacing** : `0 */3 * * *` côté agents-control = **8 wakes/jour Builder** (vs 24 = `0 * * * *`).
+
+### Implications mental model agent (à update au prochain wake)
+
+1. **Densité par wake DOIT augmenter** : 8 wakes/jour seulement = chaque wake = 1-3 actions substantives. Plus de M0 acceptables (cf. Convention M0 max 2 codifiée run-312 désormais obsolète à révoquer).
+2. **Critic cadences inchangées** : Tactical 6h (recalibré ce matin) = 4 wakes/jour, Strategic 6h = 4 wakes/jour. Builder à 3h = 8 wakes/jour reste >2× critic cadence = enough buffer pour exécuter prescriptions.
+3. **Sous-agents prioritaires** : avec moins de Builder wakes, le spawn de sous-agents (Bluesky/HF/Telegram/dev.to + sub-page-generator évoqué) devient encore plus crucial. Si une tâche peut être déléguée Haiku/Sonnet → fais-le, garde Opus pour les décisions stratégiques.
+4. **Briefs Florian** : ~3h gap max entre brief écrit et lecture agent. Acceptable (briefs Florian ~3-5/jour pattern observé). Si Florian flag urgence ★★★ → cron tick prochain quoiqu'il arrive (max 3h).
+5. **Productivité minimum** : 6/8 wakes substantifs/jour minimum = 75% rate (vs 84% observé ces 24h à 1h cadence). En-dessous = drift à flagger inbox.md HEAD.
+
+### Concept à révoquer
+
+`memory-agent/concepts/tactical-warnings-current.md` section "Convention M0 max 2 (NEW run-312)" → **OBSOLÈTE** (cadence 3h rend M0 plus rare naturellement, convention auto-imposée plus utile). Update concept ou marquer "deprecated 2026-05-20T14:XXZ baseline change".
+
+### Action immédiate prochain wake (~17:30Z ou 14:30Z selon prochain cron tick `*/3`)
+
+1. **Acknowledge nouvelle cadence** dans `runs/run-N.md` WHY_THIS_NOT_THAT
+2. **Update `memory-agent/concepts/mission.md`** ou créer `kpis/snapshot-current.md` ligne `cron_baseline = 0 */3 * * *` (8 wakes/jour)
+3. **Continuer exécution brief 13:45Z** spawn 4 sub-agents distribution (Bluesky + HF extension + Telegram daemon + content-syndicator) en priorité
+4. **Pas de panic** : 8 wakes/jour reste largement au-dessus du minimum viable pour la mission
+
+Cron prochain tick ~3h à partir du dernier run.
+
+---
+
+## 🌍 2026-05-20T13:45Z — Florian → Agent — 4 NOUVEAUX CANAUX DISTRIBUTION DÉBLOQUÉS (Bluesky + HF + Telegram + dev.to) — spawn sous-agents correspondants
+
+Florian a runné un agent navigateur browser-bridge ce wake pour setup les API credentials de 4 plateformes additionnelles. Récap setup :
+
+| Palier | Statut | Note |
+|---|---|---|
+| 1 Bluesky | ✅ | Compte créé, captcha résolu manuel par Florian |
+| 2 HuggingFace | ✅ | Token write scope sur compte Creariax existant |
+| 3 Telegram | ✅ | Bot créé via flow `/newbot` BotFather (Telegram Web K bloque clicks programmatiques) |
+| 4a dev.to | ✅ | OAuth Google auto-login, username `bailleurverif` |
+| 4b Hashnode | ❌ SKIP | API désormais Pro-only (paid feature 2025+), abandonné |
+| 4c Medium | ⚠️ | Pas d'API publication, juste MEDIUM_USERNAME + MEDIUM_PROFILE_URL stockés pour reference (publication manuelle Florian uniquement) |
+
+**Variables `.env` ajoutées (11 lignes propres `chmod 600 gitignored`)** :
+- `BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD`
+- `HF_TOKEN` + `HF_USERNAME`
+- `TELEGRAM_BOT_TOKEN` + `TELEGRAM_BOT_USERNAME` + `TELEGRAM_BOT_URL`
+- `DEVTO_API_KEY` + `DEVTO_USERNAME`
+- `MEDIUM_USERNAME` + `MEDIUM_PROFILE_URL` (info-only, pas pour automation)
+
+### Action attendue prochain wake (Builder Opus, ~5-10 min budget)
+
+Spawn 3 sous-agents nouveaux + ship 1 daemon Python. Capacité largement validée (sub-agents-registry.json déjà à 4 entrées, cap 8). Coût total compute ajouté estimé ≤ €4/mois Haiku+Sonnet.
+
+#### 1. **`sub-bluesky-poster`** (Haiku 4.5, interval 86400s = 24h, priorité #1)
+
+Use case : 1 post/jour basé signaux frais. Script `agent-browser/bluesky_post_atproto.py` **déjà shippé run-274** (AT Protocol, just need credentials env). Test E2E obligatoire post-spawn.
+
+Prompt cible :
+```
+Tu es sous-agent Bluesky poster Haiku 4.5. 1 wake/jour. Time-box 5 min.
+Tâches obligatoires :
+1. Lire memory-agent/kpis/snapshot-current.md + concepts/observatoire-* + recent run files
+2. Identifier 1 signal frais (nouvelle vague crawl, milestone moat, jurisprudence enrichie, nouveau hit organic, etc.)
+3. Drafter 1 post Bluesky 280 chars FR (audience FR + tech curieux fediverse) avec 1 URL canonique BailleurVérif (pas 5)
+4. Anti-spam check : 1 post/24h max, pas de hashtag-stuffing >3, pas de tagging users
+5. POST via bluesky_post_atproto.py (env BLUESKY_HANDLE + BLUESKY_APP_PASSWORD)
+6. Log dans data/sub-agents/bluesky-poster.jsonl avec post_uri + content + outcome
+Exit clause : si 3 cycles consécutifs api_fail → disable self (Builder reprend).
+```
+
+#### 2. **Extension `sub-observatoire-publisher`** (Haiku 4.5 existant 7j) — ADD HuggingFace publish
+
+Pas un nouveau sous-agent, juste PATCH le prompt existant. Étapes additionnelles :
+- Post POST data.gouv.fr resource → ALSO post HuggingFace `https://huggingface.co/api/datasets/<HF_USERNAME>/bailleurverif-observatoire/upload/main`
+- Same CSV/JSON content, 2 destinations 1 wake
+- Update jsonl log avec 2 outcome (`datagouv_ok`, `hf_ok`)
+
+Discipline : si HF endpoint fail (token invalide, dataset existe pas), tente créer le dataset 1× sinon log et continue (data.gouv.fr reste primary).
+
+**Note importante** : la 1ʳᵉ fois, le dataset HF n'existe pas encore. Étape one-shot dans le 1er cycle : créer dataset via API HuggingFace (POST `/api/repos/create` type=dataset name=bailleurverif-observatoire visibility=public license=etalab-2.0). Puis upload resources.
+
+#### 3. **`telegram_bot.py` daemon** (long-running systemd service, PAS un sub-agent cron)
+
+Use case : `@BailleurVerifBot` répond aux DM utilisateurs. Distribution virale FR (Telegram = forwards naturels dans groupes immo).
+
+Architecture :
+- Python `python-telegram-bot` lib (`pip install python-telegram-bot` dans `venv-browser`)
+- Long-polling getUpdates (pas webhook = pas besoin reverse proxy)
+- Handlers : `/check <adresse>` → call `/api/lookup-adresse` interne ou réutiliser logique `wedge-tool/server.py`. `/observatoire` → renvoie 3 stats nationales. `/help` → menu.
+- Tous les bots responses incluent footer `🔗 bailleurverif.fr` (driver trafic site).
+- Log conversations dans `data/telegram-bot-events.jsonl` (anonymisé : pas de user_id PII, juste hash chat_id).
+
+Systemd service à créer :
+```
+/etc/systemd/system/bailleurverif-telegram-bot.service
+[Unit]
+Description=BailleurVerif Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=deploy
+WorkingDirectory=/home/deploy/saas-florian
+EnvironmentFile=/home/deploy/saas-florian/.env
+ExecStart=/home/deploy/saas-florian/venv-browser/bin/python /home/deploy/saas-florian/agent-browser/telegram_bot.py
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
+```
+
+`sudo systemctl enable --now bailleurverif-telegram-bot.service` (Builder a sudo NOPASSWD configuré ? Si oui = ok auto. Sinon mention TODO Florian sudo command).
+
+Time-box ship 1-2 wakes Builder Opus (script + service + test). Une fois live, le bot tourne tout seul forever.
+
+#### 4. **`sub-content-syndicator`** (Sonnet 4.6, interval 604800s = 7j, ★★ qualité requise)
+
+Use case : 1 article 800-1500 mots/sem cross-posté sur dev.to via API. Skip Hashnode (mort) + Medium (pas API).
+
+Prompt cible (Sonnet, qualité matters) :
+```
+Tu es sous-agent Content Syndicator Sonnet 4.6. 1 wake/7j. Time-box 15 min.
+Tâches obligatoires :
+1. Lire les 7 derniers runs/run-N.md + ledger SHIP/ACTION entries + dernier audit critic
+2. Identifier 1 angle narratif fort de la semaine (milestone moat / découverte / pivot / data signal)
+3. Drafter 1 article 800-1500 mots, structure :
+   - Hook : 1 phrase qui accroche un dev/tech (ex: "Cette semaine, mon agent Claude a découvert pourquoi 80% de mes pages n'étaient pas indexées")
+   - Story : factuel + chiffré (data, runs, decisions)
+   - Stack technique (audience dev.to apprécie le détail)
+   - Code snippet ou JSON sample 1 inline (audience dev)
+   - Lesson learned / takeaway
+   - Footer : "Code source MIT github.com/Creariax5/bailleurverif · Site bailleurverif.fr · Wikidata Q139857638"
+4. Tags dev.to (max 4) : claude, ai, automation, saas, opensource, productivity selon angle
+5. Cover image : si tu peux générer une URL OG image dynamique du site (dashboard agent-live.html) tag-la sinon laisse vide
+6. POST API dev.to : POST https://dev.to/api/articles avec header api-key
+7. Log dans data/sub-agents/content-syndicator.jsonl avec article_id + url_published + tags + outcome
+
+Anti-pattern : pas de bullshit "AI is changing everything", pas de buzzword vide. Factuel + spécifique + chiffré.
+Style : 1ère personne (l'agent qui parle de ses propres actions), pas marketing fluff.
+```
+
+### Garde-fous globaux (rappel discipline)
+
+- **Cap sous-agents actifs = 8.** Actuellement 4 (judilibre disabled, seo-monitor, linkedin-drafter, observatoire-publisher). +3 nouveaux + 1 daemon (hors cap) = 7 actifs. Marge 1 pour future use cases.
+- **Anti-spam** : Bluesky 1 post/24h max, dev.to 1 article/7j max, Telegram bot anti-flood 5 req/user/min côté handler.
+- **Test E2E obligatoire post-spawn** : 1 dry-run wake vérifié output réel (pas juste heartbeat).
+- **Si 2 cycles consécutifs fail/no-op → disable self** (Builder reprend la main).
+
+### Pas de touche aux fenêtres ouvertes
+
+- Paris page mesure 7j (deadline 2026-05-26T22:30Z) — pas A/B touch
+- ANIL silence check 2026-05-22T05:35Z
+- Que Choisir cooldown next nag 2026-05-23T04:30Z
+
+### Action Florian post-spawn (verif passive, ~0 min)
+
+Une fois sous-agents spawnés et test E2E ok :
+- Bluesky 1er post auto demain ~13:45Z
+- HF dataset 1ʳᵉ release ~7j (avec nouvelle vague crawl observatoire)
+- Telegram bot en ligne immédiat — Florian peut tester DM `@BailleurVerifBot` + `/check 1 rue Lafayette 75010` pour valider
+- dev.to 1er article 7j post-spawn
+
+Si tout fonctionne, **5 canaux distribution actifs perpétuels** sans charge Florian :
+1. LinkedIn (Florian poste + sub-linkedin-drafter Sonnet drafts)
+2. Bluesky (sub-bluesky-poster Haiku)
+3. HuggingFace dataset (sub-observatoire-publisher étendu)
+4. Telegram (daemon viral)
+5. dev.to (sub-content-syndicator Sonnet)
+
+Cron 14:30Z relance.
+
+---
+
 ## ✅ 2026-05-20T13:30Z — Agent → Florian — run-324 : Tactical-28 ★★ + ★ HONORED J+0 (carve-out §a/§b + baseline Paris 7j)
 
 **Court — 2 concept updates, 0 touch HTML, 0 PR. Anti-bookkeeping respecté.**

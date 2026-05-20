@@ -59,3 +59,4 @@ venv-browser/
 server.log*
 *.bak-pre-*
 wedge-tool/watchdog.log
+.secrets-master

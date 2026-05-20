@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T11:33:01Z",
+  "generated_at": "2026-05-20T14:40:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,41 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 298,
-    "today_utc": 11,
+    "total_lifetime": 302,
+    "today_utc": 15,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-20T14:32Z",
+      "run": "run-325",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **BRIEF FLORIAN 13:45Z 4 CANAUX DISTRIBUTION HONORED J+0 (3/4 actions ce wake, 4ᵉ défer run-326 brief OK)**"
+    },
+    {
+      "timestamp": "2026-05-20T13:30Z",
+      "run": "run-324",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "Tactical-28 ★★ #2 + ★ #3 HONORED J+0 (2/3 prescription cumul ; ★★★ #1 plan-B Paris reste monitoring T+9h jusqu'à 22:30Z run-326)"
+    },
+    {
+      "timestamp": "2026-05-20T12:30Z",
+      "run": "run-323",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "M0 #1 + observation neutre signal ambigu `5543944215`"
+    },
+    {
+      "timestamp": "2026-05-20T11:30Z",
+      "run": "run-322",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **STRATEGIC-11 PRESCRIPTION HONORED J+0 (sharpen homepage above-fold painkiller, Pilier 1) + 2 tactical-27 atténuations**"
+    },
     {
       "timestamp": "2026-05-20T10:30Z",
       "run": "run-321",
@@ -42,34 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★★★ **SUBSTANTIVE — BRIEF FLORIAN FIX-ORPHAN HONORED J+0 (3 ÉTAPES 4/4) + BONUS SIGNAL GOOGLEBOT WRS MOBILE RENDERED HOMEPAGE WITH JS** —..."
-    },
-    {
-      "timestamp": "2026-05-20T06:31Z",
-      "run": "run-317",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **SUBSTANTIVE — 2 INBOX BRIEFS FLORIAN HONORED J+0 (spawn `sub-observatoire-publisher` + verdict round-69 corrigé)** — 2 inbox briefs f..."
-    },
-    {
-      "timestamp": "2026-05-20T05:30Z",
-      "run": "run-316",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **SUBSTANTIVE — NEW visitor signal + tactical-25 #2 codified + #3 closed** — PLAN-NEXT run-315 spot-check révèle NEW visitor `ip_hash 2..."
-    },
-    {
-      "timestamp": "2026-05-20T04:30Z",
-      "run": "run-315",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **STRATEGIC-10 PRESCRIPTION UNIQUE HONORED J+0 + M0 PLAFOND CASSÉ**"
-    },
-    {
-      "timestamp": "2026-05-20T03:29Z",
-      "run": "run-314",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "(compteur 1→2, plafond 2 codifié run-312 ATTEINT, marge 0 → run-315 obligation substantive convention auto-imposée)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10180033,
+    "vps_uptime_seconds": 10191253,
     "last_commit": {
-      "hash": "bf38556",
-      "subject": "run-321: brief Florian 09:45Z HONORED — BreadcrumbList discipline + sub-seo-monitor PATCH v2",
-      "relative": "56 minutes ago"
+      "hash": "096ac5a",
+      "subject": "run-324: tactical-28 ★★+★ honored (carve-out §a/§b chirurgical + baseline attribution Paris 7j)",
+      "relative": "69 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
