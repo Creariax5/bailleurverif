@@ -1,6 +1,8 @@
-# KPIs Snapshot Current — 2026-05-19T23:30Z (post run-310)
+# KPIs Snapshot Current — 2026-05-20T00:28Z (post run-311)
 
-> **Run-310 UPDATE** : ★ **PILIER 4 BLOCKER DATA-MISSING + 5 concepts memory flush J+0** — CSV observatoire 23 colonnes sans `agence`/`brand`/`annonceur` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven IMPOSSIBLE sans upgrade scraper. TODO-34 ★★ NEW florian-todos.md (Florian décide upgrade scraper vs pivot angle vs pause). Default Builder = pause indéfini (anti-théâtre). Decision file `2026-05-19-pilier-4-data-missing.md` créé (audit trail). 5 concepts memory updates J+0 ce wake (tactical-warnings-current audit-23 + strategic-prescription-last audit-9 HONORED + mission Pilier 4 verdict + florian-blockers TODO-34 NEW + snapshot KPIs ce header). 0 ScheduleWakeup. 90ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+> **Run-311 UPDATE** : **M0 ne-rien-faire** — default PLAN-NEXT run-310 honoré. Triggers d'exception tous négatifs (Florian silent TODO-34 / 0 capture lifetime / 0 IMAP unseen / drafter cycle 2 T+16h / audit-24 T+2h27min / sub-seo-monitor T+13h). Hygiène minimale : run file + ledger ACTION/METRIC/PLAN-NEXT + ce header + commit + push. 0 inbox.md (anti-noise Florian, TODO-34 ★★ reste pinned HEAD). 91ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
+
+> **Run-310 UPDATE (HEADLINE PRÉCÉDENT)** : ★ **PILIER 4 BLOCKER DATA-MISSING + 5 concepts memory flush J+0** — CSV observatoire 23 colonnes sans `agence`/`brand`/`annonceur` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven IMPOSSIBLE sans upgrade scraper. TODO-34 ★★ NEW florian-todos.md (Florian décide upgrade scraper vs pivot angle vs pause). Default Builder = pause indéfini (anti-théâtre). Decision file `2026-05-19-pilier-4-data-missing.md` créé (audit trail). 5 concepts memory updates J+0 ce wake (tactical-warnings-current audit-23 + strategic-prescription-last audit-9 HONORED + mission Pilier 4 verdict + florian-blockers TODO-34 NEW + snapshot KPIs ce header). 0 ScheduleWakeup. 90ᵉ session DIRECTIVE 7 RÉVISÉE conforme.
 
 > **Run-309 UPDATE (HEADLINE PRÉCÉDENT)** : ★ **PILIER 2 PROOF-OF-PATTERN LIVE `/loyer-legal-paris.html`** — strategic-9 prescription HONORED J+0 (tension tactical-23 ★★★ auto-gen LRAR vs strategic-9 BAN résolue strategic > tactical DIRECTIVE 10 § conflict). Mini-simulateur inline + verdict €/mois 3xl + email-gate dynamique + bloc preuve sociale 46.7% violations Paris + 6 FAQ JSON-LD + Dataset JSON-LD + procédure 3 étapes + cross-link. IndexNow round-69 (3 URLs / 3 engines). Seuils Pilier 1 explicites mission.md L80-91 (≥3/7j validé / ≤1/14j pivot).
 
@@ -65,10 +67,10 @@
 
 | KPI | Valeur |
 |---|---|
-| `wakes_total_lifetime` | 309→310 |
-| `directive_7_revisee_compliance_consecutive_wakes` | 89→90 (trophy maintenu) |
-| `wakes_since_last_strategic_critic` | 0→1 (audit-9 21:55Z reset, audit-10 cible ~run-325) |
-| `wakes_since_last_tactical_critic` | 0→1 (audit-23 22:55Z lu run-309 22:30Z + run-310 23:30Z) |
+| `wakes_total_lifetime` | 310→311 |
+| `directive_7_revisee_compliance_consecutive_wakes` | 90→91 (trophy maintenu, M0 ne-rien-faire wake compatible) |
+| `wakes_since_last_strategic_critic` | 1→2 (audit-9 21:55Z, audit-10 cible ~run-325 marge ~13) |
+| `wakes_since_last_tactical_critic` | 1→2 (audit-23 22:55Z, audit-24 cible ~02:55Z 2026-05-20 T+2h27min) |
 | `strategic_critic_recommendations_followed_pct` | 100% (9/9 audits cumulé, audit-9 HONORED Paris page) |
 | `tactical_critic_recommendations_followed_pct_audit23` | 2/3 ★★ #2 partial (IndexNow round-69) + ★★ #3 done (seuils mission.md) ; ★★★ #1 BLOQUÉ strategic-9 (tension résolue strategic > tactical) |
 | `cat_3_jurisprudence_refs_saturated_total` | 3/3 ★ run-305 |
