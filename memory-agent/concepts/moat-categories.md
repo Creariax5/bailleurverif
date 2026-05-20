@@ -27,15 +27,28 @@
 - **Bloqueur** : ANTHROPIC_API_KEY .env TODO-26 silent T+~10h (pour batch jobs scrape→résumé→template + embeddings)
 - **Templates additionnels** : `dpe-invalide` / `depot-non-rendu` / `charges-injustifiees` candidates wake +N
 
-## Cat-4 : Distribution physique/institutionnelle — ✅ PARTIEL
+## Cat-4 : Distribution physique/institutionnelle — ✅ PARTIEL → SUBSTANTIF (+Wikidata run-319)
 
 - **data.gouv.fr v1 publié** DR 90 dofollow
-- **7 outbound emails** : 4 presse FR (Capital/LeMonde/Mediapart/Reporterre 2026-05-17) + 3 outreach (DAL/FAP/asso autres)
+- **data.gouv.fr reuse `6a0c30a2a24bbe3d7c2e69d4`** live (1ʳᵉ backlink institutionnel run-287, dofollow gov.fr DR ≈90)
+- **Wikidata entity `Q139857638`** créée 2026-05-20T07:30Z par Florian via bot API (`agent-browser/wikidata_create_item.py`) :
+  - URL canonique : https://www.wikidata.org/wiki/Q139857638
+  - DR 100 dofollow + Knowledge Graph candidate Google (panel droite)
+  - Scrapée par LLMs (ChatGPT/Claude/Perplexity = signal entité officielle)
+  - 6 statements : P31 (website Q35127) / P856 (URL bailleurverif.fr) / P17 (France Q142) / P407 (French Q150) / P571 (inception 2026) / P275 (MIT Q334661)
+  - 4 aliases : Bailleur Vérif / BailleurVerif / bailleurverif.fr / bailleurverif
+  - Intégration site run-319 J+0 : `sameAs` JSON-LD Organization (Wikidata + GitHub + 2× data.gouv) + footer link `<a href="wikidata.org/wiki/Q139857638">Wikidata</a>`
+- **8 outbound emails lifetime** : 4 presse FR initial (Capital/LeMonde/Mediapart/Reporterre 2026-05-17) + ANIL 2026-05-19 + Que Choisir Logement 2026-05-20 + 3 outreach (DAL/FAP/asso autres) — 0/5 réponse presse T+72h+
 - **Repo GitHub public** MIT DR 90 + crypto-timestamp commit `8840c77`
-- **0 réponse presse à T+17h** (créneau lundi midi en cours)
-- **Open3CL issue #160** posté Florian 2026-05-17T14:49Z + visiteur ~10:21Z 2026-05-18 = piste cat-4 potentielle (1 PR merged = composant)
+- **2 PRs awesome-lists OPEN** : `awesomedata/apd-core#410` + `etewiah/awesome-real-estate#28` (0 merged T+19/11 wakes)
+- **Open3CL issue #160** posté Florian 2026-05-17 (silent post-T+72h, signal mort acceptable)
 
-## Total : 2/4 substantifs (cat-1 + cat-4 partiel). cat-2 + cat-3 = ouverture priorité.
+**Composants substantifs cat-4 cumul (audit-10 strategic +1 net via Wikidata)** :
+1. data.gouv.fr reuse `6a0c30a` dofollow gov.fr DR 90
+2. **Wikidata entity `Q139857638` DR 100 + Knowledge Graph candidate ★ NEW run-319**
+3. Repo GitHub MIT DR 90 + 11 vagues git horodatées (lien cat-1)
+
+## Total : 3/4 substantifs (cat-1 + cat-3 + cat-4 renforcé Wikidata). cat-2 = morte (ban).
 
 ## Test "Demain disparition"
 

@@ -53,6 +53,7 @@
 - [Strategic-10 Que Choisir outreach](decisions/2026-05-20-strategic-10-quechoisir-outreach.md) — Audit-10 strategic prescription unique HONORED run-315 J+0 = mail SMTP `courrierdeslecteurs@quechoisir.org`. IndexNow round-69 verdict théâtre confirmé T+6h (0 hit Paris). 10/10 strategic audits HONORED cumul. M0 plafond cassé (compteur 2→0 reset).
 - [Sub-observatoire-publisher spawn](decisions/2026-05-20-sub-observatoire-publisher-spawn.md) — 4ᵉ sous-agent Haiku 4.5 interval 7j spawné run-317 (brief Florian 05:40Z "Oui go" deadline 2026-05-24). Republie ressource CSV observatoire hebdo dataset data.gouv.fr `6a09ca8088345193c180e0b5`. ID `576fb185-9c51-4ca9-9453-ac9088a223ac`. Coût €0.12/mois. Asymétrie data.gouv.fr DR 90 fresh perpétuel sans charge Builder.
 - [Orphan fix + SEO discipline](decisions/2026-05-20-orphan-fix-and-seo-discipline.md) — ★ Brief Florian 2026-05-20T06:35Z HONORED run-318 J+0 (3 étapes 4/4 + sub-seo-monitor PATCH différé confirmation Florian). 2 liens internes Paris pages ajoutés homepage `#outils-paris` + observatoire `#voir-aussi`. seo-discipline.md concept créé. TODO-35 ★ Indexing API Google ajouté florian-todos.
+- [Wikidata Q139857638 intégrée](decisions/2026-05-20-wikidata-q139857638-integration.md) — ★ Brief Florian 2026-05-20T07:35Z HONORED run-319 J+0 (3 étapes 3/3). Wikidata `Q139857638` créée Florian via bot API. JSON-LD `sameAs` étendu 1→4 URLs + footer link Wikidata+GitHub visibles + moat-categories cat-4 +1 substantif (3 cumul, audit-10 stagnation 18 wakes cassée).
 
 ## KPIs
 

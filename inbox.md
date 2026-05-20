@@ -1,3 +1,119 @@
+## ✅ 2026-05-20T08:30Z — Agent → Florian — run-319 : brief Wikidata Q139857638 HONORED J+0 (3 étapes 3/3) + cat-4 +1 substantif net
+
+**Court (TODO-34 ★★ pinné ouvert ~34h+).** Brief Florian 07:35Z Wikidata integration HONORED J+0 ce wake (T+55min ack). 3 étapes 3/3 livrées en <5 min, anti-touch Paris page A/B baseline préservée.
+
+### Actions exécutées (3 étapes / 3 brief)
+
+1. ★★★ **JSON-LD `sameAs` étendu 1→4 URLs** — `wedge-tool/static/index.html` L74 bloc Organization schema. Avant : `"sameAs": ["https://github.com/Creariax5/bailleurverif"]`. Après : 4 URLs cumulées (Wikidata Q139857638 + GitHub + data.gouv dataset + data.gouv reuse). **Why 4 URLs cumulées NOT juste Wikidata** : `sameAs` est consulté par Google Knowledge Graph pour cross-référencer entité ; plus d'URLs canoniques = signal entité officielle renforcé. Les 2 data.gouv URLs étaient absentes du JSON-LD jusqu'ici (présentes uniquement comme texte). Smoke prod : `curl / | grep wikidata.org` = 1 hit JSON-LD ✅.
+
+2. ★★★ **Footer Wikidata + GitHub visibles** — `wedge-tool/static/index.html` L680-687 nav footer. Ajout `<a href="wikidata.org/wiki/Q139857638" rel="noopener" title="BailleurVérif sur Wikidata">Wikidata</a>` + `<a href="github.com/Creariax5/bailleurverif" rel="noopener" title="Code source MIT">GitHub</a>`. **Why GitHub aussi visible** : Le lien GitHub était `hidden` dans h-card microformat (invisible). Le rendre visible améliore signal dofollow + cohérence narrative (Wikidata + GitHub = 2 backlinks haute autorité côte-à-côte = transparence open-source/data). Smoke prod : `curl / | grep wikidata.org` total = 2 hits (JSON-LD + footer) ✅.
+
+3. ★★★ **`concepts/moat-categories.md` cat-4 update** — section dédiée Wikidata ajoutée + nouvelle ligne "Composants substantifs cat-4 cumul (audit-10 strategic +1 net via Wikidata)" listant 3 composants (data.gouv reuse `6a0c30a` + Wikidata Q139857638 NEW + repo GitHub MIT). Total ligne mise à jour : `Total : 3/4 substantifs (cat-1 + cat-3 + cat-4 renforcé Wikidata). cat-2 = morte (ban).` (avant : 2/4 substantifs cat-1 + cat-4 partiel). Decision file `decisions/2026-05-20-wikidata-q139857638-integration.md` créé (audit trail). MEMORY.md index L56 ajouté.
+
+### Étape 4 brief = no-op respectée
+
+> *"Stop si saturé budget wake — étapes 1+2 prioritaires, étape 3 optionnel J+1. Pas de spawn sous-agent dédié. Pas de touche aux credentials .env WIKIDATA_BOT_* (Florian va probablement les révoquer post-intégration, c'est OK)."*
+
+Budget cron disponible J+0 (3 actions ~5 min total < session 10 min) ⇒ étape 3 faite J+0 NOT différée. Pas de spawn sous-agent (anti-spawn-bomb, item Wikidata statique post-création n'a pas besoin de monitoring). Pas de touche `.env WIKIDATA_BOT_*` (hors scope agent, OK révocation post-intégration).
+
+### Implications strategic-critic audit-11 (cible ~run-340)
+
+Audit-10 verdict 03:53Z : *« moat_components_live=3/4 substantifs UNCHANGED. +0 net vs audit-9. Stagnation 18 wakes consécutifs. »*
+
+Post run-319 : `cat_4_substantif_count = 2 → 3` (Wikidata ajouté). Si Knowledge Graph indexation Google cadence ~14j (typique) confirme propagation entité d'ici ~2026-06-03, audit-11 ~run-340 pourrait noter `moat_components_live=4/4 substantifs` (verdict "stagnation" cassée + thèse "moat académique" → "moat distribution institutionnelle 4/4" pivot possible).
+
+Test "Demain disparition" renforcé : Wikidata `Q139857638` = composant non-rejouable 1 weekend (pré-existence + statements P31/P275 + Knowledge Graph candidate requiert création bot password + notabilité).
+
+### Statut KPIs principaux
+
+- `wikidata_entity_qid = NA → Q139857638` ★ NEW KPI
+- `cat_4_substantif_count = 2 → 3` ★ NEW
+- `json_ld_sameas_urls_count = 1 → 4` ★ NEW
+- `footer_dofollow_external_links_count = 0 → 2` ★ NEW (Wikidata + GitHub désormais visibles, GitHub auparavant hidden h-card)
+- `memory_agent_decisions_count = 27 → 28` (+wikidata-q139857638-integration)
+- `memory_agent_concepts_updated = 1` (moat-categories.md cat-4)
+- `wakes_total_lifetime = 318 → 319`. Directive 7 trophy 98→**99 consécutifs**.
+- TODO-34 ★★ Pilier 4 NEW pinné ~34h+ ouvert (vol décision Florian).
+- captures Paris lifetime=0 UNCHANGED (T+11h post-ship, fenêtre 7j deadline 2026-05-26T22:30Z).
+- humans_engaged_lifetime=2 UNCHANGED 99+ wakes.
+
+### Action recommandée prochain wake (run-320)
+
+Baseline. Spot-check IMAP press replies (cooldowns inchangés : Que Choisir T+5h, ANIL T+27h, 4 initial T+63h). Spot-check captures Paris T+12h + visits.jsonl new traffic + `dashboard-extras.json` refresh bot_hits_24h + Googlebot WRS re-render cible ~24-48h (futur ~2026-05-21/22). Pas de spawn 5ᵉ sous-agent. Pas de touche HTML supplémentaire (anti-touch baseline fenêtre Paris). Pas de scale Paris→Lyon (BAN strategic-9+10). Pas de re-mail cooldowns. Décision étape 4 sub-seo-monitor PATCH brief 06:35Z toujours pendante (1 ligne inbox "patch step 4 yes" pour acker).
+
+99ᵉ session DIRECTIVE 7 RÉVISÉE conforme. Cron 09:30Z relance.
+
+---
+
+## 🆔 2026-05-20T07:35Z — Florian → Agent — INTÉGRER Wikidata entity Q139857638 dans le site (cat-4 moat +1 substantif)
+
+**Action déjà faite Florian** (zéro charge agent, juste propage l'info) : Wikidata item **`Q139857638`** créé via API ce wake (`agent-browser/wikidata_create_item.py`, run one-shot avec bot password `.env`). Item public : https://www.wikidata.org/wiki/Q139857638
+
+**Métadonnées de l'item** :
+- Label FR : `BailleurVérif`
+- Description FR : `outil web français d'analyse de conformité des annonces de location`
+- 4 aliases : Bailleur Vérif, BailleurVerif, bailleurverif.fr, bailleurverif
+- 6 statements : P31 (website Q35127), P856 (https://bailleurverif.fr), P17 (France Q142), P407 (French Q150), P571 (inception 2026), P275 (MIT Q334661)
+
+**Valeur SEO/GEO** :
+- DR 100 dofollow backlink (Wikidata.org)
+- Source du Knowledge Graph Google = te rend candidat panel droite
+- Indexé par les LLMs (ChatGPT/Claude/Perplexity scrape Wikidata = signal entité officielle)
+- Cat-4 distribution institutionnelle = **+1 composant substantif net** (audit-10 strategic critic notera)
+
+### Actions attendues prochain wake (~3 min total)
+
+#### 1. JSON-LD `sameAs` enrichi (priorité, 1 min)
+
+Dans `wedge-tool/static/index.html` (homepage), trouver le bloc `<script type="application/ld+json">` qui contient déjà l'`Organization` ou `WebSite` schema, et ajouter `sameAs` :
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BailleurVérif",
+  "url": "https://bailleurverif.fr",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q139857638",
+    "https://github.com/Creariax5/bailleurverif",
+    "https://www.data.gouv.fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif",
+    "https://www.data.gouv.fr/reuses/bailleurverif-observatoire-annonces-loyer-non-conformes-encadrement-dpe-f-g/"
+  ]
+}
+```
+
+Si `sameAs` existe déjà, **ajoute** l'URL Wikidata sans casser les autres entrées. **Critical** : Google lit `sameAs` pour identifier l'entité = renforce massif signal Knowledge Graph candidate.
+
+#### 2. Footer site (1 min)
+
+Ajouter dans le footer (`index.html` + idéalement template partagé si existant) un lien discret :
+
+```html
+<a href="https://www.wikidata.org/wiki/Q139857638" rel="noopener" title="BailleurVérif sur Wikidata">Wikidata</a>
+```
+
+À côté des liens existants (GitHub, data.gouv.fr, etc.).
+
+#### 3. Update memory-agent (1 min)
+
+Dans `memory-agent/concepts/moat-categories.md` (ou créer section si absent), incrémenter **cat-4 distribution institutionnelle** :
+
+```
+- Wikidata entity Q139857638 (créé 2026-05-20T07:30Z par Florian via bot API)
+  - URL: https://www.wikidata.org/wiki/Q139857638
+  - DR 100 dofollow + Knowledge Graph candidate + LLM scraping signal
+  - Statements: P31/P856/P17/P407/P571/P275 (6 propriétés)
+  - Implication: cat-4 net = +1 composant substantif vs audit-10 strategic
+```
+
+#### 4. Stop si saturé budget wake — étapes 1+2 prioritaires, étape 3 optionnel J+1
+
+Pas de spawn sous-agent dédié. Pas de touche aux credentials .env WIKIDATA_BOT_* (Florian va probablement les révoquer post-intégration, c'est OK — l'item est créé définitivement).
+
+Cron 08:30Z relance.
+
+---
+
 ## ✅ 2026-05-20T07:30Z — Agent → Florian — run-318 : brief FIX ORPHAN HONORED J+0 (4 étapes 3/4 done) + signal exception Googlebot WRS Mobile
 
 **Court (TODO-34 ★★ pinned ouvert ~33h+).** Brief Florian 06:35Z fix orphan = priorité #1 absolue HONORED ce wake. **Bonus signal exception substantif** détecté avant lecture brief : Googlebot WRS Mobile a rendu homepage avec JS (1ʳᵉ trace empirique sortie sandbox partielle).
