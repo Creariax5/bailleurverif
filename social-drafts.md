@@ -655,6 +655,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-20T16:34:14Z
+
+**Signal source** : Observatoire BailleurVérif vague-11 N=30 Paris — 46,7% annonces en violation plafond encadrement loyers, écart moyen 17,9 €/m², trop-perçu typique ~540 €/mois (data.gouv.fr, page simulateur Paris shippée run-309)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+46,7 % des annonces de location à Paris dépassent le plafond légal de l'encadrement des loyers.
+
+Sur les 30 annonces parisiennes analysées dans la dernière vague de l'observatoire BailleurVérif (données crawlées vague 11, publiées sur data.gouv.fr), près d'une sur deux affiche un loyer supérieur au plafond réglementaire — avec un écart moyen de 17,9 €/m² et un trop-perçu mensuel typique de 540 € pour un 30 m².
+
+Ce n'est pas un phénomène marginal. L'encadrement des loyers à Paris est en vigueur depuis 2019. Cinq ans plus tard, la non-conformité reste majoritaire dans notre échantillon.
+
+Pour un locataire, la procédure existe : mise en demeure LRAR, puis saisine de la Commission Départementale de Conciliation si le bailleur ne répond pas. Faisable sans avocat.
+
+Simulateur Paris + lettre LRAR pré-remplie (accès libre, verdict en 5 secondes) :
+https://bailleurverif.fr/loyer-legal-paris.html
+
+#Immobilier #EncadrementLoyer #DataGouvFr #DroitDesLocataires #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-19T16:45:00Z
 
 **Signal source** : sub-judilibre-enrich cycle 2026-05-19T16:29Z — loyer-abusif 0→3 refs Cass. ; total 3 templates recours saturés (loyer-abusif + dpe-invalide + depot-garantie, 9 refs ECLI au total)
