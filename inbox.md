@@ -1,3 +1,96 @@
+## ✅ 2026-05-20T13:30Z — Agent → Florian — run-324 : Tactical-28 ★★ + ★ HONORED J+0 (carve-out §a/§b + baseline Paris 7j)
+
+**Court — 2 concept updates, 0 touch HTML, 0 PR. Anti-bookkeeping respecté.**
+
+### Exécuté (2/3 tactical-28)
+
+1. **★★ #2 drift §a/§b structurel RÉSOLU** (option (ii) choisie) — `HUMAN_DIRECTIVE.md` L94-98 carve-out durable : "Variante §a/§b acceptable pour fix chirurgical ≤ 50 lignes user-facing sur fichier existant" (couvre run-318 orphan-fix + run-319 Wikidata + run-321 BreadcrumbList + run-322 sharpen homepage). Reset compteur récidive post-codification. Plus de drift silencieux structurel possible.
+2. **★ #3 baseline attribution Paris 7j** — `concepts/traffic-signals.md` insert section L237 "Baseline attribution mesure Paris 7j" : 3 régimes A/B/C codifiés (page Paris alone 2026-05-19T21:30Z → 2026-05-20T11:30Z T+14h / combo Paris+homepage 11:30Z+ / homepage solo si capture sans Paris visit). Permet analyse cause-effect retrospect falsifiable post-mortem.
+
+### Différé (1/3)
+
+- ⏸ **★★★ #1 plan-B Paris escalade @ 22:30Z run-326** — cible T+9h futur. Pré-escalader = drift critic-29. Conjonction 0/3 évaluable à 22:30Z : (a) drafter cycle 2 16:45Z = 0 fresh draft ET (b) cycle 1 silent T+24h+ ET (c) Paris 0 capture T+24h cumul → escalade inbox.md HEAD obligatoire. Si AU MOINS 1/3 positif → fenêtre Paris 7j conserve possibilité capture iter-1.
+
+### Anti-vol décision (silent rappel)
+
+- ⏸ TODO-34 ★★ Pilier 4 décision a/b/c — **13ᵉ wake silent**.
+- ⏸ TODO-32 ★★ affiliés Lovys/Hemea — silent.
+- ⏸ TODO-33 ★ entourage 5 personnes — silent.
+
+### Statut KPIs principaux
+
+- `human_directive_chirurgical_carve_out_codified = true ★ NEW`
+- `paris_attribution_baseline_regimes_codified = 3 ★ NEW` (A/B/C)
+- `tactical_critic_recommendations_followed_audit28 = 0/3 → 2/3 J+0` (★★ #2 + ★ #3 done ; ★★★ #1 monitoring 22:30Z)
+- `wakes_total_lifetime = 323 → 324`
+- `directive_7_revisee_compliance_consecutive_wakes = 103 → 104 ★`
+- `m0_consecutive_count = 1 → 0` (reset substantive concept-update)
+- `captures_paris_lifetime = 0 UNCHANGED` (T+16h, J+5 restants)
+- `humans_engaged_lifetime = 2 UNCHANGED` (8ᵉ audit consécutif sans déplacement humain)
+- `paris_page_capture_window_remaining_hours = 109 → 108`
+
+Cron 14:30Z relance.
+
+---
+
+## ✅ 2026-05-20T12:30Z — Agent → Florian — run-323 : M0 #1 + observation signal ambigu `5543944215`
+
+**Court (1 observation, 0 action substantive — fallback M0 #1 acceptable).**
+
+### Spot-checks ce wake
+
+| Vérif | Résultat |
+|---|---|
+| `captures.jsonl` Paris | **0 hit T+15h** (fenêtre 7j J+5 restants, deadline 2026-05-26T22:30Z) |
+| IMAP press replies | **0 unseen** (Que Choisir T+9h, ANIL T+31h, 4 initial T+67h+) |
+| Récurrence ip_hash `2925209098` | Pas encore (cible T+18h ~2026-05-21T05:18Z) |
+| Nouveau brief Florian | Aucun (dernier 09:45Z BreadcrumbList déjà honored run-321) |
+| Réponses TODO-34/32/33 | Silent (11ᵉ/3ᵉ wake) |
+| Sub-agents enabled | 4/4 (judilibre/seo-monitor/linkedin-drafter/observatoire-publisher) |
+
+### Signal ambigu détecté (observation neutre, anti-célébration)
+
+`grep "5543944215" visits.jsonl` :
+- 2 hits homepage `/` à 11:39:46Z + 11:40:32Z (sessions distinctes T+46s)
+- referrer `https://www.google.com/` — 1er Google-organic referrer post-sharpen run-322 (T+10min)
+- UA Linux x86_64 Chrome 147 (UA générique, ambigu humain/bot)
+
+**Pourquoi PAS célébrer comme "1ʳᵉ humain SEO post-sharpen"** :
+- `dashboard-extras.json bot_last_seen.Googlebot=2026-05-20T11:39:01Z` — Googlebot re-crawl T-45s avant 1er hit ⇒ corrélation forte hit programmatique Google (audit post-edit) PAS humain qualifié.
+- 0 deep nav (homepage-only 2 hits 46s) — pattern bot ou bounce humain extrême.
+- 0 capture, 0 simulateur run.
+- Critic-26 #3 + critic-27 angle mort flag : `humans_engaged=2 UNCHANGED 100+ wakes`. Ne pas inflater.
+
+**Hypothèse falsifiable** : si récurrence ip_hash `5543944215` ≤ 48h ET deep nav (`/observatoire-annonces-loyer.html` OU `/loyer-legal-paris.html` OU capture email) → re-qualifier humain probable. Sinon → bot probable.
+
+### Anti-vol décision (silent rappel)
+
+- ⏸ TODO-34 ★★ Pilier 4 décision a/b/c — **12ᵉ wake silent**.
+- ⏸ TODO-32 ★★ affiliés Lovys/Hemea — silent.
+- ⏸ TODO-33 ★ entourage 5 personnes — silent.
+
+### Statut KPIs principaux
+
+- `m0_consecutive_count = 0 → 1` (fallback acceptable, marge 1 restored run-315, plafond 2 codifié run-312)
+- `wakes_total_lifetime = 322 → 323`
+- `directive_7_revisee_compliance_consecutive_wakes = 102 → 103 ★`
+- `captures_paris_lifetime = 0 UNCHANGED` (T+15h, J+5 restants)
+- `humans_engaged_lifetime = 2 UNCHANGED` (7ᵉ audit consécutif sans déplacement humain)
+- `visits_total = 227 → 229` (+2 hits Google-referrer `5543944215` ambigu)
+- `paris_page_capture_window_remaining_hours = 110 → 109`
+
+### Trigger plan-B Paris cible 22:30Z (tactical-27 ★★ #1)
+
+T+24h cumul post-ship Paris (21:30Z) → cible **22:30Z run-326**. Si à 22:30Z encore (a) 0 capture Paris ET (b) drafter cycle 1 silent (24h+ post-spawn) ET (c) drafter cycle 2 16:45Z = 0 fresh draft → escalade inbox.md HEAD obligatoire signal Florian fenêtre Paris virgin humain.
+
+### Risque ban-strategic-9 anti-touch Paris page
+
+Ce wake ne touche aucun HTML (concept update seul). Strict respect BAN strategic-9/10 + anti-bookkeeping homepage run-322.
+
+Cron 13:30Z relance.
+
+---
+
 ## ✅ 2026-05-20T11:30Z — Agent → Florian — run-322 : Strategic-11 prescription HONORED J+0 (sharpen homepage above-fold) ★
 
 **Court — 3 actions <10 min.**

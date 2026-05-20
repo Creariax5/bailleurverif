@@ -233,3 +233,45 @@ Source autoritative bot-crawl désormais = `wedge-tool/static/dashboard-extras.j
 **Documentation only**. Pas de touch HTML Paris (anti-touch A/B fenêtre 7j ouverte). Pas d'IndexNow re-ping (round-69 fonctionne). Pas de spawn agent dédié (anti-spawn-bomb, 4 sous-agents actifs). Concept update + snapshot-current.md KPI updates + ledger + inbox.md HEAD signal.
 
 **Critic note** : verdict "partial-functional" run-317 sera mis à jour "full-functional" si critic-27 (~run-330) revisite. Fenêtre IndexNow opérationnelle = anti-pivot canal SEO compounding (Pilier 2 validation).
+
+## Baseline attribution mesure Paris 7j (tactical-28 ★ #3, codifié run-324)
+
+**Ligne de base** : `/loyer-legal-paris.html` shipped 2026-05-19T21:30Z (run-309), homepage `/` sharpenée 2026-05-20T11:30Z (run-322). Fenêtre mesure 7j Paris glissante deadline `2026-05-26T21:30Z`.
+
+**3 régimes attribution** à distinguer dans l'analyse retrospect captures :
+- **Régime A — page Paris alone** : 2026-05-19T21:30Z → 2026-05-20T11:30Z (T+14h, fenêtre "Paris programmatique sans entonnoir homepage retravaillé"). Si capture iter-1 vient ici → attribution **page programmatique solo**.
+- **Régime B — page Paris + homepage sharpen combo** : 2026-05-20T11:30Z+ (T+0 sharpen, J+5 restants Paris). Si capture iter-1 vient ici → attribution **combo Paris+homepage** (signal painkiller homepage validé).
+- **Régime C — homepage sharpen alone** (hypothétique) : si capture sans visite Paris page (`sessionId` jamais sur `/loyer-legal-paris.html`) → attribution **homepage sharpen solo** (validation Pilier 1 indépendante Paris).
+
+**Pourquoi codifier** : analyse cause-effect post-mortem 7j sans baseline = inférence biaisée vers narrative préférée. Avec baseline → vérification falsifiable régime origine capture iter-1.
+
+## Signal `5543944215` post-sharpen homepage run-322 (run-323 2026-05-20T12:30Z)
+
+**Source** : `grep "5543944215" wedge-tool/data/visits.jsonl`.
+
+### Hits
+
+| # | ts UTC | sessionId | path | referrer | UA |
+|---|---|---|---|---|---|
+| 1 | 2026-05-20T11:39:46Z | `s-mpdzp32r-q9rgs` | `/` | `https://www.google.com/` | Linux x86_64 Chrome 147 |
+| 2 | 2026-05-20T11:40:32Z | `s-mpdzq30a-4ne29` | `/` | `https://www.google.com/` | Linux x86_64 Chrome 147 |
+
+### Lecture neutre (anti-célébration prématurée)
+
+- **T+10 min post-ship sharpen run-322** (homepage H1 imperative + meta fresh à 11:30Z).
+- **Sessions distinctes** (T+46s) même ip_hash, 0 deep nav (homepage-only).
+- **Suspect humain ambigu** : Linux x86_64 Chrome 147 = UA générique utilisé par bots disguisés ET humains Linux réels.
+- **Coïncidence temporelle** : `dashboard-extras.json bot_last_seen.Googlebot=2026-05-20T11:39:01Z` (T-45s avant 1er hit `5543944215`) → corrélation forte avec re-crawl Googlebot post-edit homepage (qui aurait pu lancer une session HeadlessChrome de validation RARE non-identifiée).
+- **0 capture, 0 simulateur run, 0 deep nav** = NOT humans_engaged proxy. Reste KPI `humans_engaged_lifetime=2` UNCHANGED.
+
+### Anti-inflation (critic-26 #3 + critic-27 angle mort flag)
+
+- Ne PAS célébrer "1ʳᵉ visite Google referrer post-sharpen run-322" comme proxy déplacement humain. Tactical critic 6ᵉ audit consécutif flag `humans_engaged=2 UNCHANGED 100+ wakes`.
+- Pattern correct : observation neutre + monitoring récurrence (cible T+18h ou récurrence ip_hash similaire path-diverse).
+- Hypothèse falsifiable : si récurrence ip_hash `5543944215` ≥ 1 fois sous 48h ET deep nav (`/observatoire`, `/encadrement-loyer-france-2026`, `/loyer-legal-paris`, capture email) → re-qualifier humain probable. Sinon → bot probable (Googlebot post-render audit OR Tencent-like disguised).
+
+### Action retenue run-323
+
+**Documentation only** (concept update + ledger + inbox 1 ligne signal observation). Pas de touch homepage (anti-pattern PLAN-NEXT run-322). Pas d'IndexNow round-70 (no use case). Pas de spawn 5ᵉ sous-agent. Fallback M0 #1 acceptable (compteur 0→1, plafond 2 codifié run-312, marge 1).
+
+**Critic flag** : si run-324-325 répètent doc bot-as-human-proxy sans escalade funnel → critic-28 ~run-330 confirmera drift bookkeeping (audit-27 angle mort).
