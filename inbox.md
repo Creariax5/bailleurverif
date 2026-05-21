@@ -62,6 +62,32 @@ Ack J+0 vélocité T+1h00 post-brief. 3 piliers internalisés. Funnel data atten
 
 ---
 
+## 🔧 2026-05-21T09:30Z — Florian → Agent — **Indexing API Google live + 8 URLs prioritaires soumises** (quota 200/jour)
+
+Setup terminé pendant cette session :
+- Service account `bailleurverif-indexing@bailleurverif-indexing.iam.gserviceaccount.com` créé
+- Site Verification API + Indexing API activées projet `bailleurverif-indexing`
+- SA auto-vérifié comme propriétaire `https://bailleurverif.fr/` (fichier HTML `google69a01ab508377433.html` à NE PAS supprimer du static dir)
+- Tool live : `/home/deploy/saas-florian/agent-browser/indexing_api_ping.py`
+- Credentials : `GOOGLE_INDEXING_API_KEYFILE` + `GOOGLE_INDEXING_API_SA_EMAIL` dans `.env`
+- 8 URLs prioritaires déjà soumises (homepage + Paris + encadrement-FR + 2 observatoires + assurance + DPE fiab + comparateur)
+
+**Quota restant aujourd'hui** : 192/200 (reset minuit UTC = 02:00 Paris)
+
+**Actions agent à intégrer dans plan-NEXT** :
+
+1. **Demain 02:30Z+** : lancer `python3 agent-browser/indexing_api_ping.py --all` pour batch les ~170 URLs sitemap restantes. Si quota 200 atteint mid-batch (HTTP 429), le script stoppe propre — relance jour suivant.
+
+2. **À chaque nouvelle page HTML shippée** (et seulement nouvelles, pas itérations) : appeler `python3 agent-browser/indexing_api_ping.py <URL1> [<URL2>...]` en fin de wake post-commit. Effet : crawl Google <24h vs ~2-4 semaines passive sitemap. ROI compound sur SEO compounding (Pilier 2).
+
+3. **Logs** : `/home/deploy/saas-florian/wedge-tool/data/indexing-api.jsonl` (JSONL append-only). Monitoring : compter ok/error/jour. Si error rate >10% sur 24h → flag inbox HEAD.
+
+4. **NE PAS** : spammer (quota cap 200/jour partagé global projet GCP, pas par URL). NE PAS re-pinger même URL <72h (Google rate-limits côté backend). NE PAS supprimer le fichier `google69a01ab508377433.html` du static (cassera la vérification SA owner).
+
+5. **Documenter** dans `memory-agent/concepts/seo-discipline.md` règle : "Toute nouvelle page user-facing HTML shipped DOIT être pingée Indexing API dans le même wake. Sitemap.xml ne suffit pas (passive 2-4 sem vs API 15min-48h)."
+
+---
+
 ## 🎯 2026-05-21T07:35Z — Florian → Agent — **RECALIBRAGE MISSION 100% acquisition + viralité + produit-fit (revenu OFF jusqu'à >100 humains)**
 
 **Florian verbatim 2026-05-21T07:XXZ** : *"Je fais pas la TODO-32 par choix, ça sert à rien d'essayer de gagner de l'argent tant qu'on a pas des utilisateurs et un site viral donc concentre-toi sur ça à 100%. Concentre-toi aussi sur le produit, est-ce que c'est intéressant? À quel besoin on répond? Telegram, est-ce que c'est une bonne stratégie? Je ne suis pas sûr que les locataires soient sur Telegram."*
