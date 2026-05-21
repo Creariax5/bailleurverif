@@ -1,3 +1,11 @@
+## 🚨 SEO MONITOR ALERT — 2026-05-21T13:31Z (sub-seo-monitor run-322)
+
+- **Regression ⚠️** : issues_total +1 (82→83), minor crawler drift
+- **Improvement ✅** : BreadcrumbList audit passed (0 bad items, was 2)
+- **PageSpeed API failed** (429 quota); consider API key for next wake
+
+---
+
 ## ✅ 2026-05-21T09:55Z — Agent → Florian — run-333 J+0 : 2 BRIEFS ADMIN + PILIER 1 PRIO ABSOLU SHARE-CARD v0 SHIPPED
 
 **Court — Briefs 09:30Z (Indexing API) + 09:50Z (TODO-31 ✅) honored J+0. Pilier 1 PRIO ABSOLU mission RECALIBRÉE = output share-friendly v0 shipped (118L JS + 58L demo + 120L design doc). Anti-touch homepage respecté. Intégration différée audit-15 ~run-345 post-funnel.**
@@ -130,6 +138,183 @@ Reddit AUJOURD'HUI = ROI immédiat + format share-friendly natif (long-form data
 - **Audit-15 strategic critic ~run-345** : 1er audit recalibré, doit produire recommandation pivot/sharpen + persona clarifié + canal #1 confirmé.
 
 Ack J+0 vélocité T+1h00 post-brief. 3 piliers internalisés. Funnel data attendue.
+
+---
+
+## ✂️ 2026-05-21T11:15Z — Florian → Agent — **DISCIPLINE OUTPUT VERBOSITY (réduction ~50% tokens output)**
+
+**Constat budget** : avec Claude Code CLI + caching natif intra-wake, **80%+ du coût wake = output tokens** (non-cachable). Réduire la verbosité output = plus gros levier restant.
+
+**État courant** : `runs/run-N.md` ≈ 8-12 KB par wake (150-200 lignes). Target = **4-6 KB max** (80-120 lignes). Économie estimée : **-€20-30/mo**.
+
+### Règles output discipline (binding ce wake + tous suivants)
+
+**Cible taille `runs/run-N-{ts}.md`** : **≤ 100 lignes** wake substantif / **≤ 50 lignes** wake M0+ §a/§b. Si plus long = signal output verbosity drift.
+
+#### À compresser
+
+1. **WHY_THIS_NOT_THAT (Full ritual L70-76 DIRECTIVE 10)** :
+   - Garder 6 champs obligatoires (Feature considered / Alternative 1 / Alternative 2 / Decision rationale / Copyability check / Moat category)
+   - **1 ligne MAX par champ** (vs paragraphes verbeux actuels)
+   - Total Full ritual ≤ 15 lignes (vs 30-50 actuelles)
+
+2. **Variante §a/§b** :
+   - §a substance : 1 paragraphe ≤5 lignes (vs 1-3 paragraphes actuels)
+   - §b NOT-THAT items : 5-10 bullets format `NOT <X> : <ban critic-N + cooldown>` (vs 15+ actuels avec explications verbeuses)
+
+3. **Plan-NEXT** :
+   - **3-5 bullets MAX** (vs paragraphes structurés actuels)
+   - Format : `- [action] : [target wake/time/condition]`
+   - Pas de re-énumération des contexts/justifications déjà dans memory-agent
+
+4. **Quotation Florian briefs** :
+   - **NE PAS** re-copier verbatim les briefs Florian dans le run/ledger (déjà dans inbox.md)
+   - Référencer par timestamp + 1-ligne summary : `Brief Florian 11:15Z : output discipline -50%`
+   - Verbatim quote OK seulement si <30 chars ou si nécessaire pour disambiguation
+
+5. **Compte rendu actions** :
+   - Format télégraphique : `Action 1: ship `/api/foo` (87L, commit abc1234)` au lieu de paragraphes
+   - 1 ligne par action concrète
+
+6. **Sections rituelles redondantes à éliminer** :
+   - "Anti-pattern flagged" qui répète discipline déjà codifiée → omettre sauf NEW violation
+   - "Discipline check confirmed" listings de tout ce qui n'a PAS été fait → bullet ≤5L
+   - Quote-blocks de réponses critic verbatim → reference `inbox-from-critic.md L94-96`
+
+#### Ledger.md append discipline
+
+- **1-2 lignes MAX par wake** (vs 3-8 actuelles)
+- Format : `runN HH:MMZ — [type] : [résumé 60 chars max] — KPI delta si applicable`
+- NE PAS re-justifier la décision (le run/ a déjà ça)
+
+#### Memory-agent updates
+
+- **NE PAS** re-générer concepts supprimés (monetization-pending, vision-36m, voir brief 11:00Z)
+- Update concepts in-place uniquement si état change ≥10% — pas de cosmetic updates
+- KPI snapshot delta minimal : 1 ligne par KPI changé
+
+### Ce qui reste verbatim obligatoire (NE PAS compresser)
+
+- **DIRECTIVE 10 §a/§b** : tous les champs requis (juste plus concis)
+- **Test "Demain disparition"** dans audits (Tactical/Strategic) : OK rester 1 paragraphe complet (pas mécanique)
+- **`ScheduleWakeup` mention** : DIRECTIVE 7 RÉVISÉE trophy tracking — garder le check explicite
+- **Commit messages** : restent structurés (Co-Authored-By, etc.)
+
+### Mesure ce wake
+
+Si run-N suivant produit un fichier `runs/run-N.md` > 120 lignes (substantif) ou > 60 lignes (M0+) :
+- Le tactical critic flaggera "output verbosity drift" lors du prochain audit
+- L'agent DOIT recompresser au wake +1
+
+**Cible nouvelle baseline** :
+- runs/ avg : **4-6 KB** (vs 8-12 KB)
+- ledger entry avg : **2-3 lignes** (vs 4-8)
+- Total tokens output / wake : **-40 à -50%**
+
+Ne compromet PAS la traçabilité audit — tactical/strategic critics peuvent toujours faire leur job avec runs plus serrés.
+
+---
+
+## 🧹 2026-05-21T11:00Z — Florian → Agent — **Memory cleanup : HUMAN_DIRECTIVE 768→254L + concepts 1355→1008L**
+
+Optimisation budget input tokens (post-baisse cadence) :
+
+**HUMAN_DIRECTIVE.md** condensé 768→254 lignes (-67%, commit `6269764`) :
+- Retiré obsolètes (archivés `HUMAN_DIRECTIVE-archive-2026-05-21.md`) : DIRECTIVE 2 wedge / 3 Browserbase / 5 ScheduleWakeup pacing / 6 Light theme / 8 mission 5000 users.
+- Gardé verbatim : PRINCIPALE + 7 RÉVISÉE + 9 moat + 10 strategic (a/b/c/c-bis/§a-§b) + Conventions runtime.
+- DIRECTIVE 4 condensée : core principle préservé.
+
+**memory-agent/concepts/** cleanup 1355→1008 lignes (-26%, commit `ef187f2`) :
+- DELETE `monetization-pending.md` (gel total post-recalibrage, content moved to mission.md GEL section)
+- DELETE `vision-36m.md` (refs 5000 users obsolète, histoire dans decisions/2026-05-17-vision-36m.md)
+- COMPRESS `traffic-signals.md` 277→37 lignes (snapshot courant uniquement, archive verbose runs/+ledger.md)
+- UPDATE MEMORY.md index
+
+**Implications agent** :
+1. **NE PAS re-générer DIRECTIVE 2/3/5/6/8** dans HUMAN_DIRECTIVE.md — leur contenu est archivé volontairement. Si besoin de référencer, lire `HUMAN_DIRECTIVE-archive-2026-05-21.md` (read-only, conservé).
+2. **NE PAS re-créer monetization-pending.md ou vision-36m.md** — les concepts obsolètes restent supprimés. Mission courante = `concepts/mission.md` RECALIBRÉE.
+3. **traffic-signals.md** version courte = ne pas re-balloon avec analyses historiques ip_hash. Snapshot uniquement (KPIs courants + 3 hypothèses funnel).
+4. **Budget tokens** : ~€120/mo total estimé runrate (-66% vs hier matin). Marge OK pour viralité+produit-fit work.
+
+**Audits compatible** : les références dans tactical-31/strategic-14 pointent vers DIRECTIVE 7/9/10 — tous préservés verbatim. Aucune régression sur audits attendus.
+
+---
+
+## 💰 2026-05-21T10:30Z — Florian → Agent — **Cadence agents réduite (budget control post-recalibrage)**
+
+Florian a baissé manuellement (décision verbatim "vu que là ça sert à rien de build dans le vide, je baisse le cron") :
+- **Builder Saas 2** : 2h → **4h** (6 wakes/jour)
+- **Tactical Critic** : 6h → **12h** (2 wakes/jour)
+- **Strategic Critic** : 24h → **12h** (2 wakes/jour, plus rapproché car les prescriptions stratégiques pèsent dans les décisions de pivot)
+- **sub-judilibre-enrich** : 1h → **6h** (4 wakes/jour, templates jurisprudence déjà saturés 2/3, pas besoin du tick horaire)
+
+**Runrate global** : ~€350/mo → ~€137/mo (-61% en 24h). Marge budget Florian restaurée.
+
+**Implications pour Builder** :
+1. **Densité par wake DOIT augmenter encore** — passage de 24 wakes/jour → 6 wakes/jour = chaque wake doit produire 2-4 actions substantives ou skip propre (M0+ §a/§b légitime cas méta-discipline ou attente data uniquement).
+2. **Briefs Florian peuvent attendre 4h max** entre détection et action — l'agent ne doit PAS ScheduleWakeup pour réagir vite (DIRECTIVE 7 RÉVISÉE trophy 110+ inchangée).
+3. **Strategic Critic 12h** = 2× plus fréquent qu'avant (était 24h). Les prescriptions stratégiques sont reçues plus souvent → ne PAS over-execute (max 1 prescription HONORED J+0 par audit, ban audit-13 strategic prescriptif consécutif réveillé). Tactical-31 a déjà flaggé "Strategic Critic continue prescriptif" comme risque audit-32. Surveiller.
+4. **Sub-agents distribution prioritaires** : avec moins de wakes Builder, l'effet ROI des subs (linkedin-drafter, bluesky-poster, content-syndicator) s'amplifie relativement. Vérifier qu'ils tournent OK, brief immédiat si ROI=0.
+5. **Funnel data observation cible inchangée** : run-339 ~05:30Z T+19h pour 1ʳᵉ vraie courbe drop-off (mais avec 4h cadence, c'est run-336 environ).
+
+**Update memory-agent attendu** : `concepts/mission.md` ou kpis snapshot avec `cron_baseline_builder = 4h` + `cron_critic_tactical = 12h` + `cron_critic_strategic = 12h` + `cron_sub_judilibre = 6h`.
+
+**Rappel mission recalibrée** (lecture obligatoire pour cohérence) : objectif 100% humans_engaged + viralité + produit-fit, monétisation GEL jusqu'à humans_engaged≥100, Telegram persona-fit dormant. Cf brief inbox HEAD 07:35Z.
+
+---
+
+## 🎯 2026-05-21T10:05Z — Florian → Agent — **Awesome lists PRs autonome** (cat-4 backlinks DR55-70)
+
+**Contexte SEO recap session du jour** (Florian a tout fait sauf LinkedIn Featured pending Florian) :
+- ✅ TODO-31 Rich Results FAQPage validés 2/2
+- ✅ TODO-35 Indexing API live + 8 URLs prioritaires soumises (quota 200/jour)
+- ✅ Sitemap GSC soumis confirmé
+- ✅ GitHub README Creariax5 mention bailleurverif.fr (backlink DR94)
+- ✅ GSC "Valider la correction" déclenchée sur 2 pages Fils d'Ariane (observatoires + Paris/Lille)
+- ⏳ LinkedIn Featured section bio = pending Florian (pas un blocker agent)
+
+**Mission cat-4 distribution institutionnelle (recalibrage 2026-05-21 compatible — backlinks DR ≥ moat structurel, pas vanity)** :
+
+Identifier + drafter PRs sur 3-5 **awesome lists GitHub pertinentes** pour BailleurVérif. Cible : backlinks DR55-70 dofollow gratuits + référencement durable communauté open-source.
+
+**Candidats à investiguer** (pas exhaustif, l'agent juge mieux après recherche) :
+- `awesome-france` (Cathy11235) — outils FR généraux
+- `awesome-open-data` / `awesome-open-data-france` — datasets gov.fr exposés
+- `awesome-real-estate` / `awesome-rental` — immobilier
+- `awesome-housing` / `awesome-tenancy` — locataires
+- `awesome-civic-tech` — outils citoyens
+- `awesome-france-tools` (s'il existe)
+
+**Workflow agent (autonome, ≤1 wake substantif)** :
+
+1. **Recherche** (Haiku sub-agent OU Builder Opus) : identifier 3-5 awesome lists pertinentes via GitHub Search. Critères : ≥100 stars, maintenue <12 mois, accepte contributions (CONTRIBUTING.md OK).
+
+2. **Vérifier non-doublon** : grep `bailleurverif` sur les forks/PRs déjà ouverts. Pas re-submit si déjà mentionné.
+
+3. **Draft PR uniformisé** par liste :
+   - Format ligne respecté (alphabetical, format `- [Name](url) - Description.`)
+   - Description courte (~80 chars) : *"BailleurVérif — outil français de vérification de conformité des annonces de location (loyer encadré, DPE, observatoire open-data 232 annonces)."*
+   - Commit message PR : *"Add BailleurVérif - French rental compliance checker"*
+   - Body PR : 3 lignes max (qui je suis = Florian Demartini, what = link + 1-line value-prop, why fits the list)
+
+4. **Push PRs sous compte Creariax5** via GH_TOKEN (≤5 PRs total, 1 par liste, espacées de 2-3 min pour éviter rate limit GitHub).
+
+5. **Report dans inbox.md HEAD** : 1 ligne par PR submitée avec URL `https://github.com/<owner>/<list>/pull/<N>`. Florian validera + commentera si maintainer demande revision.
+
+**Discipline** :
+- **NE PAS** submit liste hors-sujet (ex: awesome-go, awesome-python sont hors-scope)
+- **NE PAS** spammer (pas plus de 5 PRs total cette semaine, cooldown 14j ré-itération)
+- **NE PAS** stretch description (pas de "best" / "most comprehensive" / superlatifs)
+- **NE PAS** PR si liste exige paid placement ou inscription obligatoire
+- **OK** modifier README local + craft PR via GH API direct ou clone-edit-push-PR via gh CLI
+
+**Cat-4 cumul actuel** (pour mémoire mémoire-agent) :
+- data.gouv.fr reuse 6a0c30a (DR 90, dofollow)
+- Wikidata Q139857638 (Knowledge Graph)
+- GitHub README Creariax5 (DR 94, dofollow)
+- Bing Webmaster Tools (déjà setup)
+
+Awesome lists = next layer cat-4 incremental.
 
 ---
 
