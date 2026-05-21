@@ -93,7 +93,26 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   state.sessionId = "s-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2,7);
   fetch("/api/visit", { method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({ sessionId: state.sessionId, referrer: document.referrer || "direct", path: location.pathname, source: "home" })}).catch(()=>{});
+  trackFunnel("home_visit");
+  document.querySelectorAll("input[type=email]").forEach(el => {
+    el.addEventListener("focus", () => trackFunnel("email_field_focused", { id: el.id || el.name || "anon" }), { once: true });
+  });
 });
+
+function trackFunnel(event_type, meta) {
+  try {
+    fetch("/api/funnel/event", {
+      method: "POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({
+        sessionId: state.sessionId,
+        event_type,
+        path: location.pathname,
+        meta: meta || {}
+      })
+    }).catch(()=>{});
+  } catch(e) {}
+}
 
 function normalizeVille(s) {
   return s.toLowerCase().trim()
@@ -142,6 +161,7 @@ function next(fromStep) {
     ms_on_step: msOnStep,
     path: location.pathname
   })}).catch(()=>{});
+  trackFunnel("wedge_q" + fromStep + "_answered", { ms: msOnStep });
   state.stepStartTime = Date.now();
 
   if (fromStep < 5) {
@@ -304,6 +324,13 @@ function showResult() {
     severity,
     timeToCompleteMs: Date.now() - state.startTime
   })}).catch(()=>{});
+  trackFunnel("verdict_displayed", { sev: severity, dep: depassement || 0 });
+  document.querySelectorAll("input[type=email]").forEach(el => {
+    if (!el.dataset.funnelFocusBound) {
+      el.dataset.funnelFocusBound = "1";
+      el.addEventListener("focus", () => trackFunnel("email_field_focused", { id: el.id || el.name || "anon" }), { once: true });
+    }
+  });
 }
 
 function captureEmail(ev, kind) {
@@ -312,6 +339,7 @@ function captureEmail(ev, kind) {
   const email = form.querySelector("input[type=email]").value.trim();
   const msgId = kind === "watch" ? "watch-form-msg" : "email-form-msg";
   const msg = document.getElementById(msgId);
+  trackFunnel("email_submitted", { kind, has_at: email.includes("@") });
   if (!email.includes("@") || !email.includes(".")) { msg.textContent = "Email invalide."; msg.style.color = "var(--danger)"; return; }
   msg.textContent = "Envoi…";
   msg.style.color = "var(--text-dim)";
@@ -376,6 +404,7 @@ function share(channel) {
     severity,
     answers: state.answers
   })}).catch(()=>{});
+  trackFunnel("cta_secondary_clicked", { kind: "share", channel });
 
   if (channel === "whatsapp") {
     const url = "https://wa.me/?text=" + encodeURIComponent(fullMsg);

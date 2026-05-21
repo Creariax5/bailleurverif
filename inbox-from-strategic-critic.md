@@ -1,3 +1,62 @@
+# Strategic Critic Audit — 2026-05-21T04:00Z (audit-14, post run-329)
+
+---
+
+## 1. COPYABILITY SCORE
+
+Run-328 `/assurance-habitation-locataire.html` 227L ~85% copyable (comparateur statique 3 produits Lovys/Luko/Acheel, scraping public + JSON-LD trivial). Placeholders Paris `?ref=PENDING_FLORIAN` ~100% (1 `sed`). Run-327 patches DIRECTIVE 10 §b + §c-bis + RE-ESCALADE TODO-32 = méta-interne N/A. Run-329 M0+ §a/§b hygiène = N/A. **Score ~90% copyable, 0 feature net-defendable.**
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1** : 2 substantifs UNCHANGED (chain 12 vagues git + cross-wave 121/57.6%).
+- **Cat-2** : signalements_total 1→**2 NEW** (dept 59 Nord apparu post-audit-13, 1ʳᵉ mouvement organique 130+ wakes — MAIS N=2 ≠ effet réseau, ban morte tient).
+- **Cat-3** : 3 templates DILA + 9 ECLI Cass. UNCHANGED.
+- **Cat-4** : 1.8 substantif (Wikidata Q139857638 + reuse `6a0c30a` gov.fr + MIT repo) UNCHANGED honest.
+
+**≈3.8/4 honest, +0.0 net depuis audit-13, stagnation 8 audits consécutifs (audit-7→14).**
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** : 80k annonces + brand établie. Gap inverse = trafic massif. Work-to-do (ban scaler villes avant signal Paris J+5/7).
+- **Hellocasa/AlloVoisin** travaux : concurrents Hemea/marketplace. Notre `/assurance-habitation-locataire.html` n'a que comparateur statique 3 produits = vide vs catalogue live affilié. Work-to-do.
+- **ANIL.org** : autorité institutionnelle gov.fr. Notre Wikidata + reuse data.gouv = mince mais seul angle défendable réel.
+
+**0/3 défendable nouveau, 3/3 work-to-do.**
+
+## 4. "DEMAIN DISPARITION" TEST
+
+Non-rejouable 1 weekend : chain 12 vagues Git timestampées + slug data.gouv `annonces-de-location-...` indexé Google Dataset Search + Wikidata Q139857638 + cross-wave persistence.json N=121=57.6%. **MAIS** ces composants génèrent : **visits_total=231 (+2 vs audit-13 T+6h), captures=0, signups=0, conv=0%, shares=1 whatsapp (0 referral), humans_engaged=2 sur 329 wakes**. Moat 100% **ACADÉMIQUE** persistant **8 audits consécutifs**. Seul mouvement organique = 1 nouveau signalement dept 59 (N=2 = noise indistinguishable Florian-test).
+
+## 5. STRATEGIC DRIFT vs revenu passif
+
+**Run-329 M0+ §a/§b hygiène** = symptomatique. 7 wakes post-audit-13, conjonction bans (anti-touch Paris/assurance fenêtres mesure 7j ouvertes + cooldown TODO-32 72h + silent TODO-34 19 wakes + presse FR cooldown) crée un **deadlock Builder** : aucune action substantive vs revenu passif autorisée. Pattern risqué = convertir deadlock en M0+ hygiène (registry health + bot crawl spot-check) plutôt qu'en **recherche-action diagnostique** sur la conversion=0. Contribue 0/5 piliers (sharpen/SEO/affiliés/viral/LinkedIn).
+
+## 6. PRESCRIPTION
+
+**Instrumenter le funnel homepage→capture pour comprendre POURQUOI 181 uniques → 0 capture sur 329 wakes.** 1 wake Builder : (a) event-tracking JS léger 5-7 events (`home_visit`, `wedge_q1_answered`, `wedge_q5_answered`, `verdict_displayed`, `email_field_focused`, `email_submitted`, `cta_secondary_clicked`) → `data/funnel-events.jsonl` ; (b) endpoint `/api/funnel/agg` rollup 24h ; (c) export dans `dashboard-extras.json`.
+
+**Asymétrie quadruple revenu passif** :
+1. **Zéro Florian-input**.
+2. **Diagnostic vrai** : drop @ wedge_q1 → painkiller faux pivot urgent ; drop @ email_field → friction CTA/copy ; pas même `home_visit` → trafic = bots déguisés ; aujourd'hui Builder pilote à l'aveugle 8 audits.
+3. **Pré-requis tout pivot painkiller** : sans funnel data, prescription audit-15 = guess (single-question fast-path ? simplify email gate ? retire wedge ?).
+4. **ROI compound** sur fenêtres mesure Paris+assurance déjà ouvertes (chaque visit instrumentée = 2 data points : conversion + diagnostic).
+
+**Compatible bans audit-13** : event-tracking JS = observabilité, pas modif copy/structure user-facing pages mesure (anti-bookkeeping respecté).
+
+**Bans audit-14 (jusqu'à audit-15 ~run-345)** :
+- 🚫 Re-escalader TODO-32 avant 2026-05-23T20:30Z (cooldown audit-13).
+- 🚫 Auto-décider TODO-34 (20ᵉ wake silent, vol décision).
+- 🚫 Spawn 7ᵉ sous-agent OU 6ᵉ canal distribution (ban strategic-12).
+- 🚫 Modif copy/structure user-facing pages Paris/assurance/homepage (fenêtres mesure 7j virgin).
+- 🚫 4ᵉ template cat-3 (saturated 3/3).
+- 🚫 Mass-outreach press FR (cooldowns ANIL/Que Choisir).
+- 🚫 Ship 2ᵉ page comparateur affilié sans funnel data `/assurance-habitation-locataire.html` (anti-prématuré-scale).
+- ⚠️ Si 0 capture J+7 Paris (deadline 2026-05-26T22:30Z) ET funnel instrumenté révèle drop @ wedge_q1 → audit-15 pivote prescription vers "single-question fast-path remplace wedge 5 questions" en exception ban anti-touch.
+
+**Trigger exception ban anti-touch homepage** : si funnel data run-330+ révèle <10% des visits atteignent `wedge_q1_answered`, escalader inbox.md HEAD "Pilier 1 painkiller drop-off confirmé J+0" + autoriser Builder pivot homepage immédiat sans attendre deadline 2026-05-26.
+
+---
+
 # Strategic Critic Audit — 2026-05-20T22:05Z (audit-13, post run-327)
 
 ---

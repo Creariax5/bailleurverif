@@ -43,6 +43,22 @@ CHANGES_FILE = os.path.join(DATA_DIR, "reglementation-changes.jsonl")
 SIGNALEMENTS_FILE = os.path.join(DATA_DIR, "signalements-annonces.jsonl")
 NOTATIONS_AGENCES_FILE = os.path.join(DATA_DIR, "notations-agences.jsonl")
 OUTBOUND_EMAILS_FILE = os.path.join(DATA_DIR, "outbound-emails.jsonl")
+FUNNEL_FILE = os.path.join(DATA_DIR, "funnel-events.jsonl")
+
+# Funnel events whitelist — strategic-14 prescription run-330.
+# 10 events couvrent homepage→capture diagnostic drop-off.
+FUNNEL_EVENT_TYPES = {
+    "home_visit",
+    "wedge_q1_answered",
+    "wedge_q2_answered",
+    "wedge_q3_answered",
+    "wedge_q4_answered",
+    "wedge_q5_answered",
+    "verdict_displayed",
+    "email_field_focused",
+    "email_submitted",
+    "cta_secondary_clicked",
+}
 
 # OVH Zimbra SMTP — provisionné Florian 2026-05-17T13:55Z, mandated patch run-205.
 # Lu depuis ../.env au démarrage. Si absent, helper retombe sur fallback lien-inline.
@@ -686,6 +702,55 @@ class Handler(BaseHTTPRequestHandler):
             self._send(200, {"ok": True, "service": "BailleurVerif", "time": now_iso()})
             return
 
+        if path == "/api/funnel/agg":
+            try:
+                events = read_jsonl(FUNNEL_FILE)
+            except Exception:
+                events = []
+            now_dt = datetime.now(timezone.utc)
+            h24_ago = now_dt.timestamp() - 86400
+            by_type_24h = {}
+            by_type_lifetime = {}
+            sessions_24h = set()
+            sessions_lifetime = set()
+            session_max_event = {}
+            for e in events:
+                et = e.get("event_type")
+                if not et:
+                    continue
+                sid = e.get("sessionId") or ""
+                by_type_lifetime[et] = by_type_lifetime.get(et, 0) + 1
+                sessions_lifetime.add(sid)
+                try:
+                    ts_str = (e.get("ts") or "").replace("Z", "+00:00")
+                    ts = datetime.fromisoformat(ts_str).timestamp()
+                except Exception:
+                    ts = 0
+                if ts >= h24_ago:
+                    by_type_24h[et] = by_type_24h.get(et, 0) + 1
+                    sessions_24h.add(sid)
+                session_max_event.setdefault(sid, set()).add(et)
+            funnel_order = [
+                "home_visit", "wedge_q1_answered", "wedge_q2_answered",
+                "wedge_q3_answered", "wedge_q4_answered", "wedge_q5_answered",
+                "verdict_displayed", "email_field_focused", "email_submitted",
+            ]
+            sessions_reaching = {}
+            for et in funnel_order:
+                count = sum(1 for sid, evs in session_max_event.items() if et in evs)
+                sessions_reaching[et] = count
+            self._send(200, {
+                "ok": True,
+                "events_total_lifetime": len(events),
+                "sessions_lifetime": len(sessions_lifetime),
+                "sessions_24h": len(sessions_24h),
+                "by_type_24h": by_type_24h,
+                "by_type_lifetime": by_type_lifetime,
+                "sessions_reaching_step_lifetime": sessions_reaching,
+                "updated_at": now_iso(),
+            })
+            return
+
         if path == "/api/embed/view":
             qs = parse_qs(parsed.query or "")
             tool = (qs.get("w", [""])[0] or "").strip().lower()[:32]
@@ -1225,6 +1290,30 @@ class Handler(BaseHTTPRequestHandler):
                 "timeToCompleteMs": data.get("timeToCompleteMs")
             }
             append_jsonl(RESULTS_FILE, rec)
+            self._send(200, {"ok": True})
+            return
+
+        if path == "/api/funnel/event":
+            event_type = (data.get("event_type") or "").strip()[:48]
+            if event_type not in FUNNEL_EVENT_TYPES:
+                self._send(400, {"ok": False, "error": "invalid event_type"})
+                return
+            meta = data.get("meta") or {}
+            if not isinstance(meta, dict):
+                meta = {}
+            meta_clean = {}
+            for k, v in list(meta.items())[:8]:
+                if isinstance(k, str) and len(k) <= 32 and isinstance(v, (str, int, float, bool)):
+                    meta_clean[k[:32]] = v if not isinstance(v, str) else v[:120]
+            rec = {
+                "ts": now_iso(),
+                "sessionId": data.get("sessionId"),
+                "event_type": event_type,
+                "path": (data.get("path") or "")[:200],
+                "meta": meta_clean,
+                "ip_hash": str(abs(hash(ip)) % (10**10)),
+            }
+            append_jsonl(FUNNEL_FILE, rec)
             self._send(200, {"ok": True})
             return
 

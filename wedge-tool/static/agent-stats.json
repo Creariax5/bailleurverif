@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T02:33:02Z",
+  "generated_at": "2026-05-21T05:37:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 304,
-    "today_utc": 0,
+    "total_lifetime": 305,
+    "today_utc": 1,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-21T02:30Z",
+      "run": "run-329",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": ". (§a) `dashboard-extras.json` regenerated 02:28:02Z spot-check"
+    },
     {
       "timestamp": "2026-05-20T23:30Z",
       "run": "run-328",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★ **STRATEGIC-11 PRESCRIPTION HONORED J+0 (sharpen homepage above-fold painkiller, Pilier 1) + 2 tactical-27 atténuations**"
-    },
-    {
-      "timestamp": "2026-05-20T10:30Z",
-      "run": "run-321",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★★ **SUBSTANTIVE — BRIEF FLORIAN 09:45Z BreadcrumbList fix HONORED J+0 (3/3)** — Florian inbox.md HEAD 09:45Z signalait découverte critiq..."
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -96,7 +96,7 @@
   "moats_count": 3,
   "distribution": {
     "outbound_emails_total": 11,
-    "outbound_emails_24h": 1,
+    "outbound_emails_24h": 0,
     "outbound_last": {
       "to": "courrierdeslecteurs@quechoisir.org",
       "subject": "Observatoire data.gouv non-conformite loyer (N=232) + calculateur Paris 5s — res",
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10234033,
+    "vps_uptime_seconds": 10245072,
     "last_commit": {
-      "hash": "26b4d93",
-      "subject": "run-328 — strategic-13 honored J+0 T+1h25 — affiliate pre-wiring + assurance-habitation comparator s",
+      "hash": "97bf40c",
+      "subject": "run-329 M0+ hygiène — Paris bot crawl T+27h + assurance T+3h spot-check + KPI desync fix flag critic",
       "relative": "3 hours ago"
     }
   },
