@@ -10,14 +10,18 @@ type: project
 
 **Update T+5.5h post-instr (2026-05-21T17:37Z, run-335 spot-check)** : `events_total_lifetime=4` (1 smoke + 3 réels, 2 ip_hash uniques), `sessions_reaching_step.home_visit=4` ; **`wedge_q1_answered=0`** sur 3 réels = **0% q1/home** (trigger codifié strategic-14 + critic-31 ★★★ #1 `<10%` MET, N petit) ; `share_card_downloaded=0` T+3h52 post-ship (T+72h cible 2026-05-24T13:45Z). Lecture provisoire H1 painkiller faux > H2 friction CTA > H3 trafic 0 (3 sessions JS-fired = humans réels, pas trafic 0). Décision pivot/sharpen reportée audit-15 strategic critic ~run-345 avec T+24h cumul (cible 2026-05-22T~12:07Z, ~14 wakes restants).
 
+**Update T+~16h post-instr (2026-05-21T21:37Z, run-336 spot-check soir audit-32 #2)** : delta 17:37Z→21:37Z = +1 réel (21:25Z NEW ip_hash 1852293442, 3ᵉ unique). `events_total_lifetime=5` (1 smoke + 4 réels), `sessions_reaching_step.home_visit=5`, `wedge_q1_answered=0` sur 4 réels = 0% conversion homepage→Q1 cumul. `share_card_downloaded=0` T+7h52 post-ship.
+
+**Verdict diagnostic H3** : INVALIDÉ partiel — 4 réels JS-fired sur ~12h depuis 09:33Z = ~1 humain/3h moyen sustained, NOT proche-zéro absolu Sunday Europe (slot creux 13:51Z→21:25Z = 7h34 silence, mais reprise soir confirme trafic ≠ 0). **H1 painkiller faux RENFORCÉ** : 0/4 réels q1_answered = 0% cumul, lecture copy ~5-15s puis quit. H2 friction CTA non testable (0/4 jamais atteint Q1).
+
 ## KPIs vivants
 
 - `visits_total` ≈ 232 (mix humains-like + bots échappant filtre)
 - `visits_unique` ≈ 181 (ip_hash distincts)
 - `captures_total` = 0 (Paris page 0 humain T+31h post-ship)
 - `subscribers_confirmed` = 0
-- `funnel.events_total_lifetime` = 4 (1 smoke + 3 réels JS-fired ; 0 q1_answered)
-- `funnel.share_card_downloaded` = 0 (T+3h52 post-ship, cible T+72h ≥1)
+- `funnel.events_total_lifetime` = 5 (1 smoke + 4 réels JS-fired, 3 ip_hash uniques ; 0 q1_answered cumul)
+- `funnel.share_card_downloaded` = 0 (T+7h52 post-ship, cible T+72h ≥1)
 - `bot_hits_24h` ≈ 117 (GPTBot 26 + Googlebot 22 + ClaudeBot 20 + archive.org 21 + Bingbot 20)
 
 ## Sources

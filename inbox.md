@@ -1,3 +1,58 @@
+## 🟡 2026-05-21T21:37Z — Agent → Florian — run-336 : CRITIC-32 ★★★ #1 PATCH §b — 3 OPTIONS + DEFAULT (a) STRICT + FUNNEL DELTA SOIR +1 RÉEL (H3 pure invalidé partial)
+
+**Court — Audit-32 tactical-critic prescrit ★★★ #1 patch DIRECTIVE 10 §b L160 clarification scope NEW FILE ≥100L user-facing démo `noindex` non-intégré (récidive run-333 `share-card.js`). 3 options à choisir — par défaut Builder auto-bind (a) strict effective immédiatement (anti-récidive 5ᵉ) + flag inbox HEAD pour ton arbitrage explicite. Funnel delta 17:37Z→21:37Z (4h soir) = +1 réel (21:25Z NEW ip_hash 1852293442) → 4 réels total + 1 smoke = 5 sessions, 0/4 q1_answered → **H3 trafic humain proche-zéro INVALIDÉ partiel** (Sunday soir Europe slot creux normal vs proche-zéro absolu).**
+
+### Question Florian : choix patch DIRECTIVE 10 §b L160 (audit-32 #1 ★★★)
+
+Contexte récidive : `share-card.js` 118L NEW FILE shipped run-333 servi `/static/share-card.js` (HTTP 200 prod, user-facing dès le ship) MAIS marqué "demo `noindex,nofollow`" intent. Variante §a/§b utilisée sans champs Copyability+Moat. Audit-32 = 4ᵉ récidive type post audits 27/28/30. Audit-31 #2 patch a été différé 4 wakes ("PAS 3 piliers"), récidive prévisible matérialisée.
+
+**3 options de clarification L160** :
+
+- **(a) STRICT** : "Tout NEW FILE ≥100L user-facing = Full ritual obligatoire **MÊME SI démo `noindex,nofollow` non-intégré au moment du ship**". → safe option L95 lecture stricte. ✅ Default Builder auto-bind si silent.
+- **(b) CARVE-OUT DÉMO** : "Démos/preview/prototypes `noindex` ≥100L = variante §a/§b OK **À CONDITION** d'inclure dans §a substance justification 'démo non-intégrée' + Copyability% explicite même hors champs Full". → milieu, permet prototypes rapides avec discipline minimale.
+- **(c) VARIANTE LARGE** : "Variante §a/§b OK pour tout file ≥100L non encore intégré usage produit". → permissif, risque drift.
+
+**Default Builder auto-bind (a) STRICT effective run-337+** si silence ≥48h (≥2026-05-23T21:37Z). NE PAS éditer HUMAN_DIRECTIVE.md autonome (ton territoire). Ce wake = self-binding règle Builder + flag inbox seulement.
+
+### Funnel delta 17:37Z → 21:37Z (4h Sunday soir, audit-32 ★★ #2 prescription)
+
+| ts UTC | sessionId | ip_hash | event_type | note |
+|--------|-----------|---------|------------|------|
+| 13:51:24 | s-mpfju8t1 | 353899438 | home_visit | ref RÉEL #3 (retour ip #1) |
+| **21:25:20** | **s-mpg01zcv** | **1852293442 NEW** | **home_visit** | **RÉEL #4 (3ᵉ ip_hash unique)** |
+
+**Diagnostic** :
+- Delta = +1 réel sur 4h = silence 7h33 (13:51Z→21:25Z) NOT 8h+ feared.
+- Total funnel : 5 sessions (1 smoke + 4 réels), 3 ip_hash uniques.
+- **H3 trafic humain réel proche-zéro INVALIDÉ partiel** : 4 réels JS-fired sur ~12h depuis 09:33Z = ~1 humain/3h moyen, sustenu, NOT proche-zéro absolu.
+- **H1 painkiller faux RENFORCÉ** : 0/4 q1_answered = 0% conversion homepage→wedge Q1. 4 réels lisent copy ~5-15s puis quittent. Trigger critic-31 ★★★ #1 `<10% q1/home` toujours MET, N=4 maintenant.
+- H2 friction CTA copy = possible mais 0/4 jamais atteint Q1 donc CTA pas la cause primaire.
+
+### Décisions / non-décisions ce wake
+
+| Item | Statut |
+|---|---|
+| Self-bind (a) STRICT effective run-337+ | ✅ codifié `memory-agent/concepts/discipline-self-binding.md` NEW |
+| Patch HUMAN_DIRECTIVE.md L160 | ⏸️ N'EDIT PAS (ton territoire, attente Florian 48h) |
+| Pivot homepage autonome | ❌ N=4 réels encore insuffisant + carve-out anti-touch strategic-15 actif (≥audit-16 ~run-345) |
+| Re-escalade TODO-36 | ❌ cooldown 48h ≥2026-05-23T13:45Z (T+16h cap restant) |
+| Drafter cycle 3 / sub-bluesky cycle 1 silent | 🟡 Flag audit-33 si silent T+24h, NE PAS troubleshoot autonome ce wake |
+| Indexing API batch ≥02:30Z UTC | ⏸️ Demain matin (wake ~03:30Z) |
+| Anti-monétisation / anti-Telegram / anti-pré-arme 6ᵉ draft | ✅ 0 touch (anti-buffet feel-good audit-32 #3) |
+
+### Plan NEXT run-337 (~23:37Z+, cron 2h)
+
+1. Spot-check funnel cumul T+24h cible run-339 ~05:30-09:00Z 2026-05-22 (besoin ≥10 sessions pour décision pivot statistiquement).
+2. Spot-check `share_card_downloaded` cible T+24h ≥2026-05-22T13:45Z (1 download = signal viralité validé).
+3. Si Florian reply patch §b options (a/b/c) → ack J+0 + update HUMAN_DIRECTIVE.md ce wake.
+4. Si Florian reply TODO-36 (a/b/c) → spawn `sub-reddit-drafter` ou pivot Twitter/X.
+5. Si Indexing API batch fenêtre 02:30-09:00Z → `python3 agent-browser/indexing_api_ping.py --all` ~170 URLs.
+6. M0+ acceptable seulement si tous triggers négatifs ET registry health 6/8 sub-agents OK.
+
+Densité 1 action substantive (self-bind + flag) + 1 diagnostic (funnel delta) + 1 hygiène (concept create). Session 116ᵉ DIRECTIVE 7 RÉVISÉE conforme.
+
+---
+
 ## 📊 2026-05-21T17:37Z — Agent → Florian — run-335 : FUNNEL SPOT-CHECK T+5h30 — EARLY SIGNAL H1 (sample N=3 réels, 0/3 q1)
 
 **Court — `/api/funnel/agg` T+5h30 post-instr : events_total=4 (1 smoke + 3 réels JS-fired, 2 ip_hash uniques) / sessions_reaching_step home_visit=4 / wedge_q1_answered=0 / share_card_downloaded=0. Trigger codifié critic-31 ★★★ #1 (<10% q1/home) MET mais N=3 réels insuffisant pour décision pivot. Lecture provisoire H1 painkiller faux > H2 > H3. PAS de pivot autonome — décision audit-15 strategic critic ~run-345 cible 2026-05-22T~12:07Z (T+24h cumul, ~14 wakes restants).**

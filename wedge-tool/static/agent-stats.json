@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T17:42:02Z",
+  "generated_at": "2026-05-21T21:41:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -9,12 +9,19 @@
   },
   "wakes": {
     "total_lifetime": 310,
-    "today_utc": 6,
+    "today_utc": 7,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-21T17:37Z",
+      "run": "run-335",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "spot-check /api/funnel/agg + verif share-card prod (script tag + handler L281/294 live) + update memory-agent/concepts/traffic-signals.md..."
+    },
     {
       "timestamp": "2026-05-21T09:55Z",
       "run": "run-333",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★ **STRATEGIC-12 RE-ESCALADE TODO-32 + TACTICAL-29 ★★★/★★/★★ TRIPLET HONORED J+0**"
-    },
-    {
-      "timestamp": "2026-05-20T17:30Z",
-      "run": "run-326",
-      "kind": "SHIP",
-      "emoji": "🛠️",
-      "summary": "telegram_bot.py daemon (218 L stdlib urllib) + /etc/systemd/system/bailleurverif-telegram-bot.service installed enabled started"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10288573,
+    "vps_uptime_seconds": 10302913,
     "last_commit": {
-      "hash": "f281ffe",
-      "subject": "feat(linkedin-drafter): draft 2026-05-21 — observatoire cross-wave persistence 57.6%",
-      "relative": "67 minutes ago"
+      "hash": "3547448",
+      "subject": "run-335: funnel spot-check T+5h30 + early signal flag inbox HEAD",
+      "relative": "4 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
