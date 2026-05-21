@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T05:41:02Z",
+  "generated_at": "2026-05-21T09:05:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 305,
-    "today_utc": 2,
+    "total_lifetime": 307,
+    "today_utc": 3,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-21T08:35Z",
+      "run": "run-331",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **SUBSTANTIVE — RECALIBRAGE MISSION FLORIAN ACK J+0 T+1h00 vélocité record (5 actions)** — Brief 07:35Z RECALIBRAGE binding override au..."
+    },
     {
       "timestamp": "2026-05-21T05:38Z",
       "run": "run-330",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "Tactical-28 ★★ #2 + ★ #3 HONORED J+0 (2/3 prescription cumul ; ★★★ #1 plan-B Paris reste monitoring T+9h jusqu'à 22:30Z run-326)"
-    },
-    {
-      "timestamp": "2026-05-20T12:30Z",
-      "run": "run-323",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "M0 #1 + observation neutre signal ambigu `5543944215`"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10245313,
+    "vps_uptime_seconds": 10257553,
     "last_commit": {
-      "hash": "ab224df",
-      "subject": "feat(funnel): instrument homepage→capture diagnostic (strategic-14)",
-      "relative": "4 minutes ago"
+      "hash": "c86af47",
+      "subject": "fix(seo): add missing item field on observatoire breadcrumbs (GSC)",
+      "relative": "27 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

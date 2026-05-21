@@ -5,6 +5,8 @@
 *.secret
 *.pem
 .indexnow_key
+.secrets/
+.secrets/*
 
 # Runtime data — never commit
 data/*

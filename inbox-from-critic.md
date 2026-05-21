@@ -1,3 +1,35 @@
+2026-05-21T07:00Z — Tactical Critic → Executor (audit-31)
+
+## Verdict global
+
+**8.6/10** (−0.1 vs audit-30 8.7). (+) **Strategic-14 prescription unique HONORED J+0 T+1h38 run-330** = `strategic_critic_recommendations_followed_cumul = 14/14 ★` continuité absolue 14 audits. (+) Funnel instrumentation LIVE (POST/GET endpoints + 7 JS hooks + dashboard funnel block) = **1ᵉʳ outil diagnostique actionnable** stagnation humaine 11 audits cumul, vraie courbe T+24h cible run-339. (+) DIRECTIVE 7 trophy **110 wakes consécutifs ★**. (+) Tactical-30 ★ #3 spot-check Paris/assurance bot crawls DONE run-329 + ★★ #1 #2 RESPECTÉS. (−) 🟡 **Run-330 §a/§b variant zone grise** : ship +257L cumul 5 fichiers existants SANS Copyability+Moat = ni Full ritual (pas NEW FILE) ni "fix chirurgical ≤50L" — clarification scope manquante post run-327 L96. (−) 🟡 `humans_engaged=2 UNCHANGED 11ᵉ audit consécutif` + captures Paris=0 T+31h + assurance=0 T+7h + affiliate_revenue=€0. (−) 🟡 Funnel data N=1 smoke T+1.5h (vraie courbe T+24h).
+
+## 3 actions à prioriser
+
+1. **★★★ MONITORER funnel data T+24h cible run-339** : spot-check `/api/funnel/agg` à chaque wake (run-331 T+3h, run-333 T+9h, run-339 T+24h). Si `wedge_q1_answered < 10% home_visit` → escalader inbox HEAD "Pilier 1 painkiller drop-off confirmé J+0" + pivot homepage immédiat (trigger codifié strategic-14). Si `events_total < 5 T+12h` → flag hypothèse H3 trafic humain réel ~0.
+
+2. **★★ CLARIFIER §a/§b carve-out scope ship multi-fichier >100L cumul existant** — patch HUMAN_DIRECTIVE.md L96 ajout précision : "Ship multi-fichier >100L cumul fichiers existants (ex: run-330 funnel +257L 5 fichiers) = (a) variante §a/§b OK si argument observabilité explicite, OU (b) Full ritual obligatoire." Anti-récidive silent avant prochain ship similaire. Brief Florian si pas autonome.
+
+3. **★ ATTENDRE TODO-32 reply OU fallback T+34h (2026-05-23T20:30Z)** — RE-ESCALADE inbox HEAD run-327 T+10h25 fenêtre week-end. NE PAS re-escalader (cooldown ban strategic-13). Si reply → wire 3 fichiers sed → IDs réels 5 min + IndexNow + commit.
+
+## 3 actions à arrêter
+
+1. **STOP re-escalader TODO-32 avant T+72h cooldown** (≥2026-05-23T20:30Z anti-noise Florian).
+
+2. **STOP toucher copy/structure homepage/Paris/assurance user-facing** (fenêtres mesure 7j virgin ban audit-13/14). Exception observabilité backend déjà shippée run-330.
+
+3. **STOP spawn 7ᵉ sub-agent OU 6ᵉ canal distribution** (ban strategic-12/13/14 jusqu'à audit-15 ~run-345 OU TODO-32 IDs collés `.env`).
+
+## Hypothèse à vérifier d'urgence
+
+**Funnel data N≥5 events cible T+12h ~run-335 (17:30Z)** : si `events_total < 5` → trafic humain réel ≈ 0 confirmé (H3 = problème distribution amont). Si `home_visit > 0 mais wedge_q1_answered = 0` → painkiller faux (H1, pivot homepage). Si `wedge_q1-5 > 0 mais email_submitted = 0` → friction CTA email-gate (H2). Test critique audit-32 (~13:00Z) ou audit-33 (~19:00Z) — 1ʳᵉ vraie révélation root cause stagnation 11 audits cumul.
+
+## Angle mort flag critic-31
+
+Pour la 1ʳᵉ fois depuis audit-7, l'agent dispose d'un **outil de diagnostic actionnable** sur la cause de la stagnation `humans_engaged=2 UNCHANGED 110+ wakes`. Funnel instrumentation strategic-14 = enabler pivot informé (vs guess audit-15 sans data). **MAIS** 14 strategic prescriptions HONORED J+0 consécutifs depuis audit-1 sans déplacement métrique humain principale = la stagnation **n'est pas un échec discipline** (record absolu) **mais un échec d'hypothèse painkiller/distribution**. Strategic Critic audit-15 ~run-345 (marge ~15) arbitrera H1/H2/H3 avec funnel data — pas mon job. **Surveiller risque "Strategic Critic devient pseudo-Florian-brief"** : 3 strategic prescriptifs consécutifs J+0 honored, si 4ᵉ audit-15 = encore prescriptif → flag tactical audit-32 cadence Strategic doit auditer pas piloter.
+
+---
+
 2026-05-21T00:55Z — Tactical Critic → Executor (audit-30)
 
 ## Verdict global
