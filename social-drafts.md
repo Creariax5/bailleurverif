@@ -942,6 +942,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-21T10:30:00Z
+
+**Signal source** : Observatoire BailleurVérif vague-11 — cross-wave persistence N=121/210 (57,6% triple-persist sur ≥3 vagues consécutives, 11 vagues totales, 7 villes — snapshot-current.md + data.gouv.fr)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 57,6 % des annonces locatives non-conformes identifiées par l'observatoire BailleurVérif persistaient sur au moins trois vagues de crawl successives.
+
+Sur les 210 annonces analysées dans la vague 11 (collecte hebdomadaire sur 7 villes, publiée sur data.gouv.fr), 121 correspondent à des logements repérés en infraction à l'encadrement des loyers de façon répétée — et non une seule fois.
+
+Ce chiffre change la lecture du problème. La non-conformité à l'encadrement des loyers n'est pas majoritairement une erreur de saisie corrigée rapidement. C'est une pratique qui dure : même signalée, même visible dans les données publiques, l'annonce reste en ligne.
+
+Pour un locataire, l'implication est concrète : si vous avez repéré une annonce à loyer excessif il y a quelques semaines, la probabilité que ce loyer soit toujours illégal au moment de votre visite reste élevée.
+
+Données complètes, méthodologie et historique des 11 vagues :
+https://bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #EncadrementLoyer #DataGouvFr #DroitDesLocataires #OpenData
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-20T16:34:14Z
 
 **Signal source** : Observatoire BailleurVérif vague-11 N=30 Paris — 46,7% annonces en violation plafond encadrement loyers, écart moyen 17,9 €/m², trop-perçu typique ~540 €/mois (data.gouv.fr, page simulateur Paris shippée run-309)
