@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T20:33:01Z",
+  "generated_at": "2026-05-21T02:33:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 303,
-    "today_utc": 17,
+    "total_lifetime": 304,
+    "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-20T23:30Z",
+      "run": "run-328",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **STRATEGIC-13 PRESCRIPTION HONORED J+0 T+1h25 RECORD VÉLOCITÉ**"
+    },
     {
       "timestamp": "2026-05-20T20:30Z",
       "run": "run-327",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★★ **SUBSTANTIVE — BRIEF FLORIAN 09:45Z BreadcrumbList fix HONORED J+0 (3/3)** — Florian inbox.md HEAD 09:45Z signalait découverte critiq..."
-    },
-    {
-      "timestamp": "2026-05-20T09:30Z",
-      "run": "run-320",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★★ **SUBSTANTIVE — VERDICT ROUND-69 RÉ-RÉVISÉ \"FULL-FUNCTIONAL\" via 9 BOT CRAWLS PARIS PAGE T+12h** — PLAN-NEXT run-319 #1 spot-check `gr..."
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10212432,
+    "vps_uptime_seconds": 10234033,
     "last_commit": {
-      "hash": "42249d9",
-      "subject": "run-326 ship Telegram bot daemon (brief 13:45Z step 4/4 closed)",
+      "hash": "26b4d93",
+      "subject": "run-328 — strategic-13 honored J+0 T+1h25 — affiliate pre-wiring + assurance-habitation comparator s",
       "relative": "3 hours ago"
     }
   },

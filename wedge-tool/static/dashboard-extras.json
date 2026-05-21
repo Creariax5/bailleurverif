@@ -1,71 +1,68 @@
 {
-  "generated_at": "2026-05-20T20:32:01Z",
+  "generated_at": "2026-05-21T02:32:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 1505,
-    "requests_24h": 1016,
-    "bot_hits_lifetime": 153,
-    "bot_hits_24h": 71,
-    "bot_hits_1h": 4,
-    "human_hits_24h": 945
+    "requests_lifetime": 2347,
+    "requests_24h": 1815,
+    "bot_hits_lifetime": 193,
+    "bot_hits_24h": 104,
+    "bot_hits_1h": 2,
+    "human_hits_24h": 1711
   },
   "bots_by_type_lifetime": {
+    "Googlebot": 22,
     "archive.org": 21,
-    "Googlebot": 20,
+    "ClaudeBot": 20,
+    "AhrefsBot": 17,
     "GPTBot": 17,
+    "Go-HTTP": 16,
     "YandexBot": 15,
-    "Bingbot": 13,
-    "Go-HTTP": 12,
-    "generic-bot": 12,
-    "AhrefsBot": 12,
-    "FacebookExt": 8,
+    "Bingbot": 15,
+    "generic-bot": 13,
+    "FacebookExt": 9,
     "HeadlessChrome": 7,
     "ByteSpider": 6,
+    "python-script": 6,
     "BaiduSpider": 5,
-    "curl/wget": 2,
-    "ClaudeBot": 2,
+    "curl/wget": 3,
     "OAI-SearchBot": 1
   },
   "bots_by_type_24h": {
-    "Googlebot": 18,
+    "ClaudeBot": 20,
+    "Googlebot": 16,
     "GPTBot": 11,
-    "Bingbot": 7,
-    "AhrefsBot": 7,
+    "AhrefsBot": 11,
+    "Bingbot": 8,
+    "Go-HTTP": 8,
     "HeadlessChrome": 7,
+    "FacebookExt": 6,
+    "python-script": 6,
     "BaiduSpider": 5,
-    "FacebookExt": 5,
-    "Go-HTTP": 4,
-    "curl/wget": 2,
-    "ClaudeBot": 2,
-    "YandexBot": 1,
-    "ByteSpider": 1,
-    "generic-bot": 1
+    "curl/wget": 3,
+    "generic-bot": 2,
+    "ByteSpider": 1
   },
   "bot_last_seen": {
     "YandexBot": "2026-05-19T15:30:24+00:00",
-    "Go-HTTP": "2026-05-20T16:24:52+00:00",
+    "Go-HTTP": "2026-05-20T20:40:39+00:00",
     "Bingbot": "2026-05-19T18:42:51+00:00",
     "ByteSpider": "2026-05-20T08:33:36+00:00",
-    "generic-bot": "2026-05-20T18:50:44+00:00",
+    "generic-bot": "2026-05-21T01:10:49+00:00",
     "AhrefsBot": "2026-05-19T19:54:27+00:00",
     "archive.org": "2026-05-19T14:33:33+00:00",
-    "Googlebot": "2026-05-20T14:22:31+00:00",
-    "curl/wget": "2026-05-20T08:43:14+00:00",
+    "Googlebot": "2026-05-20T22:48:35+00:00",
+    "curl/wget": "2026-05-20T20:35:49+00:00",
     "GPTBot": "2026-05-19T16:16:24+00:00",
     "HeadlessChrome": "2026-05-20T09:10:24+00:00",
     "BaiduSpider": "2026-05-20T17:37:32+00:00",
     "FacebookExt": "2026-05-19T18:18:14+00:00",
-    "ClaudeBot": "2026-05-20T20:06:49+00:00",
+    "ClaudeBot": "2026-05-21T00:20:19+00:00",
+    "python-script": "2026-05-20T23:12:45+00:00",
     "OAI-SearchBot": "2026-05-19T15:58:31+00:00"
   },
-  "last_googlebot": "2026-05-20T14:22:31+00:00",
-  "last_bingbot": "2026-05-20T20:22:29+00:00",
+  "last_googlebot": "2026-05-20T22:48:35+00:00",
+  "last_bingbot": "2026-05-21T01:54:11+00:00",
   "chart_7days": [
-    {
-      "day": "2026-05-14",
-      "total": 0,
-      "by_type": {}
-    },
     {
       "day": "2026-05-15",
       "total": 0,
@@ -111,48 +108,36 @@
     },
     {
       "day": "2026-05-20",
-      "total": 67,
+      "total": 96,
       "by_type": {
-        "Googlebot": 16,
-        "AhrefsBot": 7,
-        "curl/wget": 2,
+        "Googlebot": 18,
+        "AhrefsBot": 9,
+        "curl/wget": 3,
         "Bingbot": 6,
         "GPTBot": 11,
         "ByteSpider": 1,
         "HeadlessChrome": 7,
-        "Go-HTTP": 4,
+        "Go-HTTP": 8,
         "BaiduSpider": 5,
         "FacebookExt": 5,
         "generic-bot": 1,
-        "ClaudeBot": 2
+        "ClaudeBot": 16,
+        "python-script": 6
+      }
+    },
+    {
+      "day": "2026-05-21",
+      "total": 11,
+      "by_type": {
+        "ClaudeBot": 4,
+        "AhrefsBot": 3,
+        "FacebookExt": 1,
+        "generic-bot": 1,
+        "Bingbot": 2
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "21",
-      "hits": 3
-    },
-    {
-      "hour": "22",
-      "hits": 8
-    },
-    {
-      "hour": "23",
-      "hits": 2
-    },
-    {
-      "hour": "00",
-      "hits": 4
-    },
-    {
-      "hour": "01",
-      "hits": 11
-    },
-    {
-      "hour": "02",
-      "hits": 11
-    },
     {
       "hour": "03",
       "hits": 25
@@ -224,42 +209,67 @@
     {
       "hour": "20",
       "hits": 2
+    },
+    {
+      "hour": "21",
+      "hits": 3
+    },
+    {
+      "hour": "22",
+      "hits": 2
+    },
+    {
+      "hour": "23",
+      "hits": 144
+    },
+    {
+      "hour": "00",
+      "hits": 6
+    },
+    {
+      "hour": "01",
+      "hits": 644
+    },
+    {
+      "hour": "02",
+      "hits": 6
     }
   ],
   "top_bot_paths_24h": {
-    "/robots.txt": 22,
-    "/": 7,
-    "/sitemap.xml": 5,
+    "/robots.txt": 24,
+    "/": 9,
+    "/sitemap.xml": 8,
+    "/static/app.js": 5,
     "/loyer-legal-paris.html": 4,
-    "/static/app.js": 4,
+    "/api/recourse": 3,
+    "/observatoire-prix-vente-vs-loyer.md": 3,
     "/css/tailwind-runtime.js": 3,
-    "/api/recourse": 2,
-    "/?q=Paris": 2,
-    "/css/main.css": 2,
-    "/favicon.svg": 2
+    "/favicon.svg": 3,
+    "/observatoire-prix-vente-vs-loyer.html": 2
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 17,
+    "/robots.txt": 18,
     "/sitemap.xml": 1,
     "/logo.png": 1,
-    "/og-image.png": 1
+    "/og-image.png": 1,
+    "/favicon.ico": 1
   },
   "top_human_paths_24h": {
-    "/": 62,
-    "/css/tailwind-runtime.js": 34,
-    "/css/main.css": 33,
-    "/encadrement-loyer-paris-2026.html": 17,
-    "/robots.txt": 14,
-    "/loyer-legal-paris.html": 13,
-    "/lille-dpe-f-g-interdit-location.html": 9,
-    "/api/stats": 8,
-    "/api/visit": 8,
-    "/atom.xml": 7
+    "/css/tailwind-runtime.js": 78,
+    "/": 64,
+    "/css/main.css": 36,
+    "/encadrement-loyer-paris-2026.html": 18,
+    "/robots.txt": 17,
+    "/loyer-legal-paris.html": 14,
+    "/lille-dpe-f-g-interdit-location.html": 10,
+    "/css/scanner.js": 9,
+    "/.env": 8,
+    "/static/app.js": 8
   },
   "status_codes_24h": {
-    "200": 703,
-    "400": 16,
-    "404": 294,
-    "501": 3
+    "200": 867,
+    "404": 932,
+    "501": 3,
+    "400": 13
   }
 }
