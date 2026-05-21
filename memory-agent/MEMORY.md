@@ -8,7 +8,7 @@
 
 ## Concepts (état courant, mutable)
 
-- [Mission](concepts/mission.md) — RÉORIENTÉE 2026-05-19T17:XXZ : revenu passif €100-500/mo @6m + €500-3000/mo @12m, Florian ≤1h/mois, 5 piliers (sharpen+SEO+affiliés+viral+LinkedIn). Pilier 1+2 LIVE run-308/309. **Pilier 4 BLOCKER data column missing run-310 → TODO-34 décision Florian**. Skip TODO-25.
+- [Mission](concepts/mission.md) — **RECALIBRÉE 2026-05-21T07:35Z** Florian : 3 piliers (produit-fit + acquisition+viralité + mesure). North Star=`humans_engaged_lifetime` (cible >100 avant monétisation). **GEL** TODO-32 affiliés + TODO-25 Stripe + Telegram itération. Funnel T+24h cible 2026-05-22T05:30Z. Canal #1 proposé Reddit → NEW TODO-36.
 - [Moat categories](concepts/moat-categories.md) — 4 catégories DIRECTIVE 9 (cat-1 données / cat-2 morte / cat-3 RAG-LLM / cat-4 distribution).
 - [Observatoire chain](concepts/observatoire-n232.md) — Cat-1 actif, 11 vagues git timestampées (vague-11 N=210 run-279), cron daily 7 villes 2 jours consécutifs prouvés.
 - [Florian blockers](concepts/florian-blockers.md) — 6 TODOs OPEN run-310 : TODO-32 ★★ affiliés / TODO-33 ★ entourage / **TODO-34 ★★ NEW décision Pilier 4** / TODO-32-bis drafter validate / TODO-31 Rich Results / TODO-26/27 silent.
@@ -60,6 +60,7 @@
 - [Strategic-12 honored + DIRECTIVE 10 patches](decisions/2026-05-20-strategic-12-honored-and-directive-10-patches.md) — ★ run-327 J+1 triplet (RE-ESCALADE TODO-32 inbox.md HEAD + DIRECTIVE 10 §b loophole closed NEW FILE ≥100L daemon Full ritual + §c-bis NEW codify "Brief Florian vs Strategic Critic" hierarchy 4 règles). `strategic_critic_recommendations_followed_cumul=12/12 RESTORED`. tactical-29 ★★★/★★★/★★ 3/3 J+0.
 - [Strategic-13 honored affiliate pre-wiring](decisions/2026-05-20-strategic-13-honored-affiliate-prewiring.md) — ★ run-328 J+0 T+1h25 record vélocité : placeholders `?ref=PENDING_FLORIAN` `/loyer-legal-paris.html` `#partenaires` + NEW FILE `/assurance-habitation-locataire.html` 227L comparateur Lovys/Luko/Acheel + anti-orphan homepage. `strategic_critic_recommendations_followed_cumul=13/13 ★`. moat cat-4 +0.3 (1ʳᵉ progression depuis audit-7). 1ʳᵉ application Full ritual NEW FILE ≥100L post-clarification §b run-327.
 - [Strategic-14 funnel instrumentation](decisions/2026-05-21-strategic-14-funnel-instrumentation.md) — ★ run-330 J+0 T+1h38 vélocité : POST `/api/funnel/event` whitelist 10 events + GET `/api/funnel/agg` sessions_reaching_step 9 étapes + app.js trackFunnel() 7 hooks (home_visit/wedge_q{1-5}_answered/verdict_displayed/email_field_focused/email_submitted/cta_secondary_clicked) + build_dashboard_extras.py funnel block. `strategic_critic_recommendations_followed_cumul=14/14 ★`. Trigger codifié pivot homepage si <10% q1.
+- [Recalibrage mission 3 piliers](decisions/2026-05-21-recalibrage-mission-3-piliers.md) — ★ run-331 J+0 T+1h00 vélocité record. Florian 07:35Z verbatim "je fais pas TODO-32 par choix" → 5→3 piliers (produit-fit+acquisition+viralité+mesure). GEL TODO-32+25+Telegram itération. North Star humans_engaged>100. Q1 SHARPEN d'abord proposé. Q2 canal #1 Reddit → NEW TODO-36 ★★. florian_briefs_honored_j0_lifetime=6→7 ★.
 
 ## KPIs
 

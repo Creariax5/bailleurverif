@@ -5,6 +5,7 @@
 > **Update 2026-05-19T20:28Z (run-307)** — RÉORIENTATION mission Florian 17:XXZ : revenu passif vs 5000 users. TODO-25 (Stripe) archivé REPORTÉ post-100 signups. Nouveau TODO-32 ★★ Affiliés Lovys+Hemea remplace TODO-25 priorité gros chantier. Ancien TODO-32 (drafter LinkedIn) → TODO-32-bis ★ Optionnel. Nouveau TODO-33 ★ Parler 5 personnes entourage.
 > **Update 2026-05-19T23:30Z (run-310)** — NEW TODO-34 ★★ DÉCISION Pilier 4 viral notation agences : CSV observatoire 23 colonnes sans `agence`/`brand`/`annonceur` ⇒ pages `/notation-agence/<brand>/<ville>.html` data-driven impossibles sans upgrade scraper. 3 options (a) upgrade scraper / (b) pivot angle / (c) pause indéfini. Default = (c) si silence 14j.
 > **Update 2026-05-20T07:30Z (run-318)** — NEW TODO-35 ★ (faible priorité) Indexing API Google : setup service account Google Cloud + clé JSON pour automatiser "Demander indexation" via API (15-20 min). Avant TODO-35 → discipline internal linking (codifiée `concepts/seo-discipline.md`) + GSC manual URL Inspection = suffisent. Faire quand tu veux, pas urgent.
+> **🚨 Update 2026-05-21T07:35Z (run-331)** — **RECALIBRAGE MISSION Florian** : objectif court terme RECALIBRÉ = 100% produit-fit + acquisition + viralité (revenu = sortie, pas levier). North Star = `humans_engaged_lifetime` (cible >100 avant monétisation). **TODO-32 GEL TOTAL** (annulé jusqu'à humans_engaged≥100, NE PAS re-escalader). **TODO-34 Pilier 4 GEL pivot** (Pilier 4 cat-4 non recalibrée). **TODO-33 ★★ ESCALADÉ** (recherche utilisateur = aligné Pilier 1 produit-fit, débloquer pivot painkiller). **NEW TODO-36 ★★ Compte Reddit** (canal viral #1 proposé run-331).
 
 ---
 
@@ -57,24 +58,25 @@ Form sur https://findly.tools/submit. Data prête dans `kit-submission.md`. Emai
 **Action Florian** : 1 ligne `inbox.md` HEAD :
 > `TODO-34 pilier-4: (a) | (b) | (c)`
 
-**Statut** : OPEN run-310 2026-05-19T23:30Z. Default = (c) pause indéfini si silence 14j (cooldown ré-évocation ≥2026-06-02). Ne PAS re-prompter avant 7j.
+**Statut** : ⏸️ GEL PIVOT 2026-05-21T07:35Z par recalibrage mission (Pilier 4 cat-4 viral nomming pas dans 3 piliers recalibrés). Florian peut répondre quand il veut MAIS Builder ne re-prompte plus, pas un blocker. Default désormais = pause indéfini auto-validé.
 
 ---
 
-### TODO-32 ★★ — Signer 2 affiliés Lovys (GLI) + Hemea (travaux) (1-2h, NOUVEAU run-307)
+### TODO-32 ⏸️ GEL — Signer 2 affiliés Lovys (GLI) + Hemea (travaux) — annulé 2026-05-21 par recalibrage
 
-**Pourquoi** : Florian 17:XXZ réorientation — affiliés AVANT subscriptions (zero infrastructure, €30-50/lead, agent intègre liens trackés dans pages programmatiques). Skip TODO-25 Stripe tant que pas 100+ signups réels.
+**Statut** : ⏸️ **GEL TOTAL** 2026-05-21T07:35Z (verbatim Florian "je fais pas la TODO-32 par choix, ça sert à rien d'essayer de gagner de l'argent tant qu'on a pas des utilisateurs"). Restera GEL jusqu'à `humans_engaged_lifetime ≥ 100`. NE PAS re-escalader. Page comparateur `/assurance-habitation-locataire.html` reste online (déjà ship), MAIS Builder NE PAS itérer dessus.
 
-**Asymétrie** : 1-2h Florian one-shot → revenu passif récurrent dès trafic qualifié (proxy validation produit).
+### TODO-36 ★★ — Compte Reddit nominatif (canal viral #1 proposé run-331) — NOUVEAU
 
-**Actions** :
-1. **Lovys GLI** (45 min) — https://lovys.fr/partenaires. Signup affilié + récupère ID tracking. Coller dans `.env` : `LOVYS_AFFILIATE_ID=...`.
-2. **Hemea travaux** (45 min) — https://hemea.com/affiliation. Signup + récupère ID. Coller dans `.env` : `HEMEA_AFFILIATE_ID=...`.
-3. (Optionnel +30 min) MaPrimeRénov démarcheurs / autre affilié immobilier FR pertinent. Coller IDs dans `.env`.
+**Pourquoi** : recalibrage 2026-05-21 met acquisition+viralité 100% priorité. Reddit r/france r/Paris r/immobilier r/vosfinances = canal viral persona-fit le plus exploitable AUJOURD'HUI avec assets existants (observatoire N=232 = data posts share-friendly natifs). Ancien TODO-13 Reddit DEAD car OAuth Google cassé post-Gmail-disabled — pas remplaçable côté Builder (anti-bot Reddit fort).
 
-Une fois clés dans `.env`, écrire dans `inbox.md` HEAD : `TODO-32 affiliés done — IDs collés .env, autorise agent à intégrer liens trackés pages programmatiques`. Builder fera le reste (pages comparatives + intégration trackée).
+**Action Florian (≤10 min)** : choisir 1 des 3 options dans `inbox.md` HEAD :
 
-**Statut** : OPEN — Florian-only (signature compte + signup partenariat). Aucun cooldown évocation tant que pas done (priorité revenu passif).
+- **(a)** Créer compte Reddit nominatif sur `florian.demartini.dev@gmail.com` (ton nom propre, transparence "founder of bailleurverif.fr"). Coller `REDDIT_USERNAME=...` dans `inbox.md` HEAD. Builder draft posts pour ta validation (jamais auto-poster sans toi).
+- **(b)** Prêter ton compte Reddit perso existant si tu en as un (idem workflow draft → tu valides → tu postes).
+- **(c)** Refuser Reddit → Builder pivote canal #2 (Twitter/X anonymous avec compte projet, fallback). Note : Twitter signup demande SMS verification donc Florian-only aussi.
+
+**Statut** : OPEN run-331 2026-05-21T07:35Z. Cooldown ré-évocation 7j si silent. Default si silence 14j : Builder propose plan B Twitter/X dans inbox.md HEAD (pas de canal viral self-serve possible sans Florian-input).
 
 ---
 
@@ -95,7 +97,7 @@ Sub-agent `sub-linkedin-drafter` (Sonnet 4.6, interval 24h) spawné run-304. **C
 
 **Statut** : OPEN cycle 1 (1184c jurisprudence) pending validation. Cycle 2 ≥2026-05-20T16:45Z. Cooldown ré-évocation 7j si pas validé.
 
-### TODO-33 ★ — Parler 5 personnes entourage (1h one-shot, NOUVEAU run-307)
+### TODO-33 ★★ — Parler 5 personnes entourage (1h one-shot, ESCALADÉ run-331 priorité Pilier 1 produit-fit)
 
 Florian 17:XXZ réorientation — recherche utilisateur qualitative pour valider painkiller pivot homepage.
 

@@ -1,4 +1,123 @@
-## 🚨 2026-05-20T20:30Z — Agent → Florian — run-327 : **RE-ESCALADE TODO-32 affiliés** (strategic-12 prescription unique, 5 min ton action = path revenu passif débloqué)
+## ✅ 2026-05-21T08:35Z — Agent → Florian — run-331 J+0 : ACK RECALIBRAGE + Q1/Q2 + sub-agents audit + NEW TODO-36
+
+**Court — Brief 07:35Z honored J+0 T+1h (vélocité record). Mission recalibrée 5→3 piliers internalisée (mission.md réécrit). Q1 hypothèse leading = SHARPEN avant pivot (pas data T+24h encore). Q2 canal #1 proposé = REDDIT data posts → NEW TODO-36 ★★ (Florian-input compte Reddit). Sub-agents 6/8 OK conformes 3 piliers, 0 kill. TODO-32 GEL/TODO-34 GEL/TODO-33 escaladé ★→★★. Anti-noise respecté.**
+
+### Q1 — PIVOT scanner-URL VS SHARPEN wedge ? Hypothèse leading agent (sans data T+24h)
+
+**Réponse PROVISIONNELLE (binding pivot/sharpen audit-15 ~run-345 post-funnel) : SHARPEN d'abord, pivot si signal data confirme**.
+
+WHY :
+1. **Pivot scanner-URL = production lourde** (scraper SeLoger/Leboncoin légalement = risqué CGU, capabilities verdict-image-meme = nouveau frontend, output partageable = à concevoir). 2-4 wakes Builder + risque pivot pour pivot sans data.
+2. **Sharpen wedge low-cost** : réduire 3 fields entrée (adresse+loyer+surface) → 2 fields (adresse autocomplete+loyer, surface optional/inferrable BAN). Funnel data drop-off `wedge_q1_answered/home_visit` = signal direct si Q1 trop friction. Si <10% T+24h → pivot scanner-URL légitime data-driven.
+3. **Funnel instrumentation LIVE run-330** = on saura T+24h cible 2026-05-22T05:30Z. Décision data-driven > guess.
+4. **Bonus low-cost actions possible sans pivot/sharpen modif copy** : output share-friendly verdict (image meme PNG generated server-side post-verdict, 1 wake Builder, anti-touch copy respecté). Permet test viralité TikTok/Reddit AVANT décider pivot.
+
+→ Plan recommandé : (a) attendre funnel T+24h, (b) si q1<10% → escalader pivot scanner-URL avec mock UI proposal, (c) si q1>30% → sharpen Q1 friction (2 fields) + ship output share-friendly verdict-image, (d) si q1 entre 10-30% → ambigu, ship share-friendly + sharpen friction en parallèle.
+
+### Q2 — CANAL VIRAL #1 ? Proposition agent
+
+**Canal #1 proposé : REDDIT r/france r/Paris r/immobilier r/vosfinances (data posts)**.
+
+WHY (vs alternatives) :
+| Canal | Pré-requis | Asset ready | ROI compounding | Florian-input |
+|---|---|---|---|---|
+| **Reddit data posts** ★ | compte Reddit | ✅ observatoire N=232 + cat-3 9 ECLI | ✅ posts indexés long terme | 1 signup compte (Florian-only, anti-bot) |
+| TikTok démo 30s | output share-friendly (Pilier 1 pre-requis) | ❌ verdict texte privé non-shareable | ✅ algorithm push | Compte TikTok + 0 production vidéo agent-side |
+| X/Twitter threads | compte X (SMS verif) | ✅ idem | ✅ viralité instant | 1 signup compte (Florian-only, SMS) |
+| Bluesky | déjà setup (sub-bluesky-poster) | ✅ idem | Audience FR faible 2026 | 0 |
+| Facebook groupes | compte FB | ✅ idem | Direct pas viral | 0 |
+
+Reddit AUJOURD'HUI = ROI immédiat + format share-friendly natif (long-form data post + screenshots observatoire) + 0 pivot produit pre-requis + compounding indexation Reddit→Google.
+
+**MAIS** : ancien TODO-13 Reddit DEAD car OAuth Google cassé post-Gmail-disabled. Reddit anti-bot fort → compte créé sur IP serveur non-résidentielle = shadowban quasi-sûr. **Donc Florian-input requis** → NEW TODO-36 ★★ florian-todos.md (3 options : (a) compte nominatif `florian.demartini.dev@gmail.com`, (b) prêt compte perso existant, (c) refuser → pivote Twitter/X).
+
+### Audit sub-agents 6/8 (conforme brief "kill ce qui ne sert pas (a)(b)(c)")
+
+| Sub-agent | Alignement 3 piliers | Action |
+|---|---|---|
+| `sub-judilibre-enrich` (disabled saturated_3) | — | inchangé (déjà stopped) |
+| `sub-seo-monitor` (Haiku 24h) | P3 mesure (audit SEO) ✅ | KEEP enabled |
+| `sub-linkedin-drafter` (Sonnet 24h) | P2 acquisition (canal BASSE persona-fit MAIS 8k followers Florian validé) ✅ | KEEP enabled (Florian explicit) |
+| `sub-observatoire-publisher` (Haiku 7j) | P2 acquisition (data.gouv DR90 + HF) ✅ | KEEP enabled (asymétrie forte) |
+| `sub-bluesky-poster` (Haiku 24h) | P2 acquisition (canal MOYENNE) ✅ | KEEP enabled (Florian explicit) |
+| `sub-content-syndicator` (Sonnet 7j) | P2 acquisition (canal BASSE dev.to) ⚠️ | KEEP enabled (Florian explicit "garder" malgré devs≠locataires) |
+| Telegram bot daemon (systemd, hors registry) | persona mismatch flag Florian | KEEP daemon stay-up zero-coût marginal, NE PAS itérer features |
+
+**0 kill ce wake** (conforme brief). 0 spawn 7ᵉ (cap 8 marge 2 préservée pour potentiel `sub-reddit-drafter` Sonnet post-TODO-36 done).
+
+### Anti-blocage respecté
+
+- **TODO-32 GEL** : annulé florian-todos.md, NE PAS re-escalader.
+- **TODO-34 GEL pivot** : marqué pause-auto, plus de re-prompt.
+- **TODO-33 escaladé ★→★★** : recherche utilisateur = aligné P1 produit-fit (débloquer décision pivot painkiller). Pas re-escalader avant T+72h (cooldown 2026-05-24).
+- **TODO-36 NEW ★★** : compte Reddit (canal #1). Cooldown ré-évocation 7j si silent.
+- **Pas d'autre escalade ce wake** : funnel T+24h pending, décisions Q1 attendent data.
+
+### Prochain check-point
+
+- **T+21h (2026-05-22T05:30Z, run-339+)** : 1ʳᵉ rollup funnel data 24h réel post-instrumentation. Si home_visit≥10 réel → décision Q1 binding. Si home_visit<10 → problème distribution amont confirmé (besoin TODO-36 Reddit urgent).
+- **Audit-15 strategic critic ~run-345** : 1er audit recalibré, doit produire recommandation pivot/sharpen + persona clarifié + canal #1 confirmé.
+
+Ack J+0 vélocité T+1h00 post-brief. 3 piliers internalisés. Funnel data attendue.
+
+---
+
+## 🎯 2026-05-21T07:35Z — Florian → Agent — **RECALIBRAGE MISSION 100% acquisition + viralité + produit-fit (revenu OFF jusqu'à >100 humains)**
+
+**Florian verbatim 2026-05-21T07:XXZ** : *"Je fais pas la TODO-32 par choix, ça sert à rien d'essayer de gagner de l'argent tant qu'on a pas des utilisateurs et un site viral donc concentre-toi sur ça à 100%. Concentre-toi aussi sur le produit, est-ce que c'est intéressant? À quel besoin on répond? Telegram, est-ce que c'est une bonne stratégie? Je ne suis pas sûr que les locataires soient sur Telegram."*
+
+### Décisions explicites Florian (binding, override audits précédents)
+
+1. **TODO-32 RE-ESCALADE plus bas dans cet inbox = ANNULÉE**. Lovys/Hemea affiliés = **GEL TOTAL** jusqu'à `humans_engaged_lifetime ≥ 100`. NE PAS re-escalader. NE PAS proposer affiliés en plan-NEXT. Page comparateur reste online (déjà ship), MAIS NE PAS itérer dessus.
+
+2. **TODO-25 Stripe/paywalls** = GEL (inchangé).
+
+3. **Objectif court terme RECALIBRÉ** = **(a) PRODUIT-FIT + (b) ACQUISITION + (c) VIRALITÉ** à 100%. Revenu = sortie, pas levier. North Star = `humans_engaged_lifetime` (aujourd'hui=2, cible >100).
+
+4. **Telegram bot** = persona mismatch flag Florian. Locataires FR PAS sur Telegram (c'est tech/crypto/news). **Daemon stay up** (zero coût marginal, utile devs/journalistes power-users), **MAIS NE PAS itérer dessus, PAS prioritaire**. Pas spawn sub-agent qui pousse Telegram.
+
+### Prompt PATCHes déjà appliqués via agents-control API (binding)
+
+- **Builder Saas 2** (id `42f2c562`) — Mission section recalibrée 3 piliers (P1 produit-fit / P2 acquisition+viralité persona-fit / P3 mesure). Métriques succès retirent revenu court terme. GEL monétisation codifié. Prompt 8326 → 8927 chars. Lecture obligatoire next wake.
+- **Strategic Critic** (id `85c78e3b`) — Mission alignée recalibrée + Q4 augmenté (viralité intrinsèque output share-friendly + persona-canal fit check) + Q5 (drift vs 3 piliers RECALIBRÉS, flagger Telegram itération comme drift) + Q6 (prescription orientée humans_engaged, interdiction prescriptions monétisation + Telegram). Prompt 5792 → 7283 chars. Audit-15 ~run-345 sera 1er audit recalibré.
+- **Tactical Critic** : pas patché ce coup, ses critères discipline cron-cadence + DIRECTIVE 7 + polish loops restent valides indépendamment de mission.
+
+### 2 questions stratégiques ouvertes (à instruire avec funnel data T+24h)
+
+**Q1 — PIVOT PRODUIT vs SHARPEN ?**
+Le wedge 5 questions est-il trop friction pour viralité ? Hypothèse à tester : output verdict actuel = texte privé non-shareable, démo TikTok 30s impossible. Alternative à évaluer : **scanner zero-friction "colle URL annonce SeLoger/Leboncoin → verdict 5s + image partageable"** (share-friendly intrinsèque, démo virale possible). Avec funnel data T+24h (run-339) :
+- Si `wedge_q1_answered / home_visit < 10%` → painkiller faux OU friction trop élevée → pivot scanner-URL légitime
+- Si `home_visit < 10 T+24h` → trafic humain réel ≈0 → problème distribution amont, pas produit
+- Tu juges, tu proposes (PAS exécutes sans validation Florian)
+
+**Q2 — CANAL VIRAL #1 ?**
+Hiérarchie persona-fit locataire FR à valider :
+- TikTok/Reels (démo 30s "je teste 10 annonces, 7 illégales") — viralité max, mais demande output share-friendly (Q1)
+- Reddit (r/france r/Paris r/immobilier r/vosfinances) — long-form data posts ("scrapé 1000 annonces, X% illégales par arrondissement") — utilisable AUJOURD'HUI avec observatoire 232
+- Twitter/X threads choc data — utilisable AUJOURD'HUI
+- Bluesky (déjà setup) — audience FR encore faible
+- Facebook groupes locataires — direct, pas viral
+
+**À toi de juger** quel canal donne le meilleur ROI immédiat avec assets actuels (observatoire 232 annonces, funnel data, pages SEO) vs canaux qui demandent pivot produit préalable. Propose 1 canal #1 dans plan-NEXT.
+
+### Action immédiate next wake (~10:30Z)
+
+1. **Lire ce brief intégralement** (binding > tactical-31 anti-bookkeeping audit)
+2. **Lire Builder + Strategic Critic prompts à jour** (PATCHs ci-dessus)
+3. **NE PAS exécuter pivot/sharpen sans data** : attends funnel T+24h cible run-339 (~05:30Z 2026-05-22)
+4. **Réponse plan-NEXT structurée** :
+   - Q1 hypothèse leading (pivot scanner-URL OU sharpen wedge OU autre)
+   - Q2 canal viral #1 proposé + WHY
+   - Brief Florian-blocking si décision ≥30min Florian-time requise (TODO format)
+5. **Sub-agents** : audit registry, kill ce qui ne sert pas (a)(b)(c) ; **garder** linkedin-drafter + bluesky-poster + content-syndicator + observatoire-publisher + SEO-monitor ; **garder dormant** telegram daemon (PAS itérer). Sub-judilibre-enrich reste disabled.
+
+### Anti-blocage Florian (DIRECTIVE 9 §2 respect)
+
+NE PAS forcer Florian via inbox tant que funnel data T+24h pas dispo. TODO-33 (5 personnes entourage) reste valide MAIS pas re-escalader avant T+72h (anti-noise). Florian peut répondre Q1/Q2 ou laisser agent juger autonome.
+
+---
+
+## 🚨 2026-05-20T20:30Z — Agent → Florian — run-327 : **RE-ESCALADE TODO-32 affiliés** (strategic-12 prescription unique, 5 min ton action = path revenu passif débloqué) — ⚠️ **ANNULÉE 2026-05-21T07:35Z par décision Florian recalibrage mission (voir brief en tête)**
 
 **Court — Audit Strategic-12 (15:55Z, post run-325) prescrit UNE seule action : t'escalader TODO-32 affiliés. Run-326 a shippé Telegram daemon à la place → drift signalé par tactical-29 (18:55Z ★★★ #1). Je corrige ce wake.**
 
