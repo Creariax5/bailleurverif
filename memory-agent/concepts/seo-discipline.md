@@ -134,3 +134,50 @@ Florian à demander indexation GSC J+0 sur 2 pages canary :
 - `https://bailleurverif.fr/aix-en-provence-dpe-f-g-interdit-location.html`
 
 Si breadcrumb redevient "valid" J+1/J+2 → fix systémique confirmé sur 90 pages.
+
+---
+
+# Indexing API Google rule (codified 2026-05-21T09:55Z run-333, brief Florian 09:30Z)
+
+## Règle (immuable)
+
+Toute nouvelle page user-facing HTML shippée DOIT être pingée Indexing API Google dans le même wake post-commit. Sitemap.xml passif ne suffit PAS (latence 2-4 semaines vs API 15min-48h).
+
+**Why** : Florian a setup 2026-05-21T09:30Z un service account Google Cloud `bailleurverif-indexing@bailleurverif-indexing.iam.gserviceaccount.com` auto-vérifié owner `https://bailleurverif.fr/`, avec quota 200 URLs/jour. Tool live `agent-browser/indexing_api_ping.py`. Asymétrie : 24h vs 2-4 sem propagation = ROI immédiat SEO compounding Pilier 2 (mission RECALIBRÉE 2026-05-21T07:35Z reste valide structurellement même si "vanity SEO" non-prio absolue — pages nouvelles ne sont PAS vanity SEO).
+
+**How to apply** :
+
+## Workflow obligatoire post-ship NEW page HTML
+
+1. Ship page X.html + internal link parent (cf règle anti-orphan ci-dessus)
+2. Commit + push GitHub same wake
+3. **NEW** : `python3 agent-browser/indexing_api_ping.py https://bailleurverif.fr/X.html`
+4. Log auto-append `wedge-tool/data/indexing-api.jsonl`
+5. Ledger ACTION mention "indexing-api ping ok|error"
+
+## Anti-patterns à éviter
+
+- ❌ Ship page sans ping Indexing API (Sitemap suffit mental model = faux)
+- ❌ Re-pinger même URL <72h (Google rate-limits backend)
+- ❌ Batch >200 URLs/jour (quota cap 200 partagé global projet GCP)
+- ❌ Pinger MAJ contenu page existante (Indexing API = `URL_UPDATED` valable mais discrétionnaire ; cible primaire = nouvelles URLs)
+- ❌ Supprimer fichier `wedge-tool/static/google69a01ab508377433.html` (casserait vérification SA owner)
+
+## Batch initial sitemap (run-334+ 02:30Z UTC quotidien)
+
+Florian a déjà soumis 8 URLs prioritaires 2026-05-21T09:30Z (quota restant=192/200 jusqu'à 02:00 Paris reset minuit UTC). Action agent demain ≥02:30Z UTC : `python3 agent-browser/indexing_api_ping.py --all` pour batch les ~170 URLs sitemap restantes. Si HTTP 429 mid-batch → script stoppe propre, relance jour suivant.
+
+## Monitoring (sub-seo-monitor cycle suivant + spot-checks Builder)
+
+- Logs JSONL : `wedge-tool/data/indexing-api.jsonl` (append-only)
+- Si error rate >10% sur 24h → flag `inbox.md` HEAD priorité ★★
+- Spot-check possible : `grep -c '"status":"error"' wedge-tool/data/indexing-api.jsonl` vs `wc -l indexing-api.jsonl`
+
+## Credentials .env (déjà set Florian)
+
+- `GOOGLE_INDEXING_API_KEYFILE` (path keyfile JSON)
+- `GOOGLE_INDEXING_API_SA_EMAIL` (service account email)
+
+## Pourquoi cette discipline matters (mission RECALIBRÉE check)
+
+Mission 2026-05-21T07:35Z dit NON-PRIO "vanity SEO (pages_total brut, IndexNow rounds, JSON-LD coverage)". **Distinction clé** : Indexing API ping new page ≠ vanity. Vanity = ship 50 pages programmatiques bookkeeping. Indexing API = optimiser la propagation des pages déjà décidées comme priorité (proof-of-pattern Paris, Lille DPE, futurs). Pillar 2 acquisition compounding bénéficie directement. Donc OK avec mission. Mais NE PAS générer des nouvelles pages JUSTE pour pinger l'API (anti-vanity).

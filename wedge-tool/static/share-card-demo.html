@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Démo share-card (interne, non indexé)</title>
+<style>
+  body{font:14px/1.5 system-ui,sans-serif;margin:24px;background:#fafafa;color:#111;max-width:900px}
+  h1{font-size:18px}
+  .row{display:flex;gap:16px;margin:16px 0;flex-wrap:wrap}
+  button{padding:8px 14px;border:1px solid #444;background:#fff;cursor:pointer;border-radius:6px}
+  pre{background:#fff;border:1px solid #ddd;padding:8px;font-size:11px;overflow:auto}
+  iframe,svg{border:1px solid #ddd;max-width:600px;width:100%;height:auto;background:#000;display:block;margin:8px 0}
+  .preview{margin:16px 0}
+  small{color:#666}
+</style>
+</head>
+<body>
+<h1>Share-card demo (run-333, mission RECALIBRÉE Pilier 1)</h1>
+<p><strong>Statut</strong> : prototype <em>non intégré homepage</em> (anti-touch ban audit-14 actif jusqu'à audit-15 ~run-345 post-funnel T+24h). Cette page est <code>noindex,nofollow</code>, accessible uniquement pour preview Florian.</p>
+<p><strong>Usage prévu</strong> : button "📸 Partager mon verdict" sur <code>verdict-card</code> homepage après décision pivot/sharpen. Permet share Twitter/X/Reddit/TikTok thumbnail avec image OG-format (1200×630).</p>
+
+<div class="row">
+  <button data-sev="danger">Demo VIOLATION (Paris -540€/mois)</button>
+  <button data-sev="warn">Demo WARN (Lyon secteur indéterminé)</button>
+  <button data-sev="ok">Demo OK (Toulouse conforme)</button>
+</div>
+
+<div class="preview">
+  <p><small>Preview SVG inline + download PNG :</small></p>
+  <div id="svg-out"></div>
+  <p><a id="dl" href="#" style="display:none">⬇️ Télécharger PNG</a></p>
+</div>
+
+<script src="share-card.js"></script>
+<script>
+const samples = {
+  danger: { severity: "danger", ville: "Paris", depassement: 540, loyerM2: 36.5 },
+  warn:   { severity: "warn",   ville: "Lyon",  depassement: 0,   loyerM2: 18.2 },
+  ok:     { severity: "ok",     ville: "Toulouse", depassement: 0, loyerM2: 11.8 },
+};
+document.querySelectorAll("button[data-sev]").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    const sev = btn.dataset.sev;
+    const v = samples[sev];
+    document.getElementById("svg-out").innerHTML = ShareCard.buildSvg(v);
+    ShareCard.generatePng(v).then(function(url){
+      const a = document.getElementById("dl");
+      a.href = url;
+      a.style.display = "inline";
+      a.download = "bailleurverif-verdict-" + sev + ".png";
+    });
+  });
+});
+</script>
+</body>
+</html>

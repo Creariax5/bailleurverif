@@ -1,0 +1,120 @@
+---
+name: Output share-friendly verdict-card design (Pilier 1 PRIO ABSOLU)
+description: Design + prototype v0 d'image PNG verdict shareable (1200×630 OG-format) shippé run-333. Intégration différée post-décision pivot/sharpen audit-15 ~run-345.
+type: project
+---
+
+# Concept : Share-friendly output design (verdict-card PNG)
+
+**État** : v0 prototype shipped run-333 2026-05-21T10:00Z. Non intégré homepage (anti-touch ban audit-14 actif). Intégration cible : 1-line `app.js` post-décision pivot/sharpen audit-15.
+
+## Pourquoi (alignement mission RECALIBRÉE)
+
+Mission 2026-05-21T07:35Z PRIO ABSOLU explicite : *"Output share-friendly à concevoir (image meme verdict, ranking)"*. Florian verbatim : *"output verdict actuel = texte privé non-shareable"*. Sans image partageable :
+- TikTok 30s démo impossible (pas de thumb visuel)
+- Reddit data posts manquent screenshot
+- Twitter/X threads sans visuel = engagement -70% (étude Twitter)
+- Word-of-mouth (user copie-colle verdict texte privé à un ami) = friction max
+
+Avec image PNG verdict :
+- 1 clic → download → repost natif Twitter/Instagram/Reddit
+- OG-image 1200×630 = preview link unfurl automatique
+- Couleur danger/warn/ok = signal viralité émotionnel direct
+- Footer attribué `bailleurverif.fr` = traffic compounding
+
+## Architecture v0 (shipped run-333)
+
+### Files
+
+- `wedge-tool/static/share-card.js` (110 L) — API publique `window.ShareCard`
+- `wedge-tool/static/share-card-demo.html` (60 L, `noindex,nofollow`) — preview Florian
+- Pas de modif `app.js` / `index.html` (anti-touch respect)
+
+### API publique
+
+```js
+ShareCard.buildSvg(verdict);     // → string SVG inline (1200×630)
+ShareCard.generatePng(verdict);  // → Promise<objectURL PNG>
+ShareCard.download(verdict);     // → trigger download direct + trackFunnel("share_card_downloaded")
+```
+
+### Input expected (verdict object)
+
+Mêmes champs que `computeVerdict()` app.js retourne :
+- `severity` : "danger" | "warn" | "ok"
+- `ville` : string
+- `depassement` : number (€/mois, 0 si pas violation)
+- `loyerM2` : number (€/m², optionnel)
+
+### Output
+
+PNG 1200×630, transparent palette par sévérité :
+- `danger` : fond rouge `#7f1d1d` + accent rose `#fca5a5` + emoji 🚨 + label "VIOLATION DÉTECTÉE"
+- `warn`   : fond ambre `#78350f` + accent jaune `#fcd34d` + emoji ⚠️ + label "À VÉRIFIER"
+- `ok`     : fond vert `#14532d` + accent vert clair `#86efac` + emoji ✅ + label "LOYER CONFORME"
+
+Footer : `bailleurverif.fr` + sous-texte "Vérification gratuite • Sources : INSEE OLAP + DILA + ADEME" + mention observatoire 232+ annonces.
+
+## Anti-patterns évités
+
+- ❌ Server-side rendering (Puppeteer/Playwright) = +€5-10/mois coûts vs 0€ client-side SVG→Canvas
+- ❌ Library externe (html2canvas, satori) = bundle +20-30 KB, latency download user
+- ❌ Inclure adresse user dans image = leak PII si user share publiquement → anonymisé (juste ville)
+- ❌ Brand watermark agressif = baisse repostabilité ; on garde footer discret
+- ❌ Texte trop dense = illisible thumbnail TikTok/Twitter ; headline 64px + subline 32px
+
+## Intégration différée (cible run-345+)
+
+### Conditions de ship
+
+Audit-15 strategic critic ~run-345 doit produire décision pivot/sharpen wedge :
+- Si **SHARPEN gagne** : ajouter button "📸 Partager" sur `#verdict-card` post-verdict → 1-line `app.js` `ShareCard.download(verdictObject)`
+- Si **PIVOT scanner-URL gagne** : intégrer dans nouveau frontend zero-friction → adapter `buildSvg()` pour input scanner (URL → verdict 5s)
+
+### Plan d'intégration sharpen path (5 min Builder)
+
+```js
+// app.js dans la fonction qui affiche verdict-card (~line 270)
+const shareBtn = document.createElement("button");
+shareBtn.textContent = "📸 Partager mon verdict";
+shareBtn.className = "share-btn"; // styler CSS terra
+shareBtn.onclick = function() {
+  ShareCard.download({ severity, ville, depassement, loyerM2 });
+};
+card.appendChild(shareBtn);
+
+// index.html <head>
+<script defer src="/share-card.js"></script>
+```
+
+### Funnel event whitelist à ajouter (strategic-14 LIVE)
+
+Ajouter `share_card_downloaded` à la whitelist 10 events `/api/funnel/event` :
+- Fichier : `wedge-tool/server.py` (whitelist set)
+- Step 10 nouvelle : "share_card_downloaded"
+- Permet mesure ratio `share_card_downloaded / verdict_displayed` = signal viralité intrinsèque
+
+## Métriques cibles post-intégration (audit-16+)
+
+| Métrique | Baseline pré-share | Cible J+30 post-ship |
+|---|---|---|
+| `verdict_displayed / wedge_q5_answered` | inconnu (funnel T+24h pending) | maintenu (sharpen) ou +20% (pivot) |
+| **`share_card_downloaded / verdict_displayed`** ★ NEW | 0 (pas de feature) | ≥5% (signal output partageable utilisé) |
+| `referer_non_google_30d` | ~0 (silent) | ≥10 visits/30d (preuve share ↔ traffic) |
+
+## Risques connus + mitigations
+
+1. **iOS Safari `canvas.toBlob` partial support** → fallback `canvas.toDataURL("image/png")` à ajouter v1 si Safari users ratio >20%
+2. **Emoji rendering Linux Chrome dépend fonts système** → SVG embed via foreignObject = HTML rendering, emojis fallback noir & blanc possible ; cosmétique seulement
+3. **Foreign object accessibility** : Safari pré-15 limited support — testable share-card-demo.html via Florian iPhone
+4. **Anti-leak PII** : adresse exclue volontairement (juste ville). Tester aucune fuite avant ship homepage.
+
+## Lien avec funnel T+24h décision (strategic-14)
+
+- Si funnel data run-339+ montre `q1<10%` → pivot scanner-URL : `buildSvg()` reste valide, adapter input
+- Si q1≥30% → sharpen : ship share button homepage 1-line
+- Si q1 10-30% → ambigu : ship share button QUAND MÊME (zero-risk, anti-touch homepage ≠ ajout button non-disruptif), permet test viralité parallèle au sharpen
+
+## Update history
+
+- 2026-05-21T10:00Z run-333 — v0 prototype shipped, design doc créé, intégration différée audit-15

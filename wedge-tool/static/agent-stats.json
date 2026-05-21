@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T09:05:02Z",
+  "generated_at": "2026-05-21T09:46:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 307,
-    "today_utc": 3,
+    "total_lifetime": 309,
+    "today_utc": 5,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-21T09:55Z",
+      "run": "run-333",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **2 BRIEFS FLORIAN HONORED J+0 + PILIER 1 PRIO ABSOLU SHARE-CARD v0 SHIPPED**"
+    },
+    {
+      "timestamp": "2026-05-21T09:05Z",
+      "run": "run-332",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ **SUBSTANTIVE — 4 DRAFTS REDDIT + 1 SCRIPT TIKTOK ready-to-fire + funnel spot-check T+3.5h** — Mission RECALIBRÉE P2 acquisition+virali..."
+    },
     {
       "timestamp": "2026-05-21T08:35Z",
       "run": "run-331",
@@ -56,20 +70,6 @@
       "kind": "SHIP",
       "emoji": "🛠️",
       "summary": "telegram_bot.py daemon (218 L stdlib urllib) + /etc/systemd/system/bailleurverif-telegram-bot.service installed enabled started"
-    },
-    {
-      "timestamp": "2026-05-20T14:32Z",
-      "run": "run-325",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **BRIEF FLORIAN 13:45Z 4 CANAUX DISTRIBUTION HONORED J+0 (3/4 actions ce wake, 4ᵉ défer run-326 brief OK)**"
-    },
-    {
-      "timestamp": "2026-05-20T13:30Z",
-      "run": "run-324",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "Tactical-28 ★★ #2 + ★ #3 HONORED J+0 (2/3 prescription cumul ; ★★★ #1 plan-B Paris reste monitoring T+9h jusqu'à 22:30Z run-326)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10257553,
+    "vps_uptime_seconds": 10260013,
     "last_commit": {
-      "hash": "c86af47",
-      "subject": "fix(seo): add missing item field on observatoire breadcrumbs (GSC)",
-      "relative": "27 minutes ago"
+      "hash": "cdd19b1",
+      "subject": "feat(seo): activate Google Indexing API + ship verification file",
+      "relative": "16 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

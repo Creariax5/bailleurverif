@@ -1,3 +1,74 @@
+## ✅ 2026-05-21T09:55Z — Agent → Florian — run-333 J+0 : 2 BRIEFS ADMIN + PILIER 1 PRIO ABSOLU SHARE-CARD v0 SHIPPED
+
+**Court — Briefs 09:30Z (Indexing API) + 09:50Z (TODO-31 ✅) honored J+0. Pilier 1 PRIO ABSOLU mission RECALIBRÉE = output share-friendly v0 shipped (118L JS + 58L demo + 120L design doc). Anti-touch homepage respecté. Intégration différée audit-15 ~run-345 post-funnel.**
+
+### Action 1 — Indexing API rule codifiée (brief 09:30Z action #5 honored)
+
+`memory-agent/concepts/seo-discipline.md` +52 L section "Indexing API rule" :
+- Règle immuable : nouvelle page HTML shippée DOIT être pingée même wake post-commit
+- Workflow 5 étapes (ship → commit → ping → log → ledger)
+- 5 anti-patterns flaggés (sitemap suffit / re-ping <72h / batch >200 / ping MAJ contenu / supprimer fichier vérif SA `google69a01ab508377433.html`)
+- Batch initial sitemap ≥02:30Z UTC demain (`--all` ~170 URLs restantes)
+- Monitoring `wedge-tool/data/indexing-api.jsonl`, flag inbox HEAD ★★ si error rate >10%/24h
+- **Distinction explicite vs vanity SEO mission L81** : Indexing API ping new page ≠ vanity ; vanity = bulk-générer pages bookkeeping. Donc OK avec mission RECALIBRÉE.
+
+### Action 2 — TODO-31 ✅ + sync TODO global (brief 09:50Z honored)
+
+`memory-agent/concepts/florian-blockers.md` refactor 6→5 TODOs OPEN :
+- TODO-31 ✅ archive (Rich Results 2/2 valides, confirme fix BreadcrumbList run-321 propagé)
+- TODO-35 ✅ archive (Indexing API setup direct Florian, discipline codifiée Action 1)
+- TODO-32 ⏸️ GEL TOTAL (mission RECALIBRÉE)
+- TODO-34 ⏸️ GEL pivot (Pilier 4 hors 3 piliers)
+- TODO-33 ★→★★ ESCALADÉ (Pilier 1 produit-fit débloque pivot painkiller)
+- TODO-36 ★★ NEW Reddit compte (canal viral #1)
+
+### Action 3 — Pilier 1 PRIO ABSOLU : share-card v0 shipped
+
+Mission L86-90 : *"Output share-friendly à concevoir (image meme verdict, ranking)"*. Tu disais 07:35Z *"verdict actuel = texte privé non-shareable"*. Shippé :
+
+**Files** (anti-touch homepage strict — 0 modif `index.html`/`app.js`) :
+- `wedge-tool/static/share-card.js` (118 L) — API `window.ShareCard.{buildSvg, generatePng, download}` PNG 1200×630 OG-format
+- `wedge-tool/static/share-card-demo.html` (58 L `noindex,nofollow`) — preview Florian 3 samples danger/warn/ok
+- `memory-agent/concepts/share-friendly-output-design.md` (120 L) — design doc complet
+
+**Design** :
+- 3 palettes par sévérité (rouge VIOLATION 🚨 / ambre ⚠️ / vert ✅) + footer `bailleurverif.fr` + sources INSEE/DILA/ADEME + observatoire 232+ mention
+- Anonymisé : juste ville (pas adresse) anti-leak PII si user share publiquement
+- 0 dépendance externe : pure SVG → Canvas → PNG.toBlob (no html2canvas/satori, 0 coût marginal, pas de bundle bloat)
+- Tracking : `trackFunnel("share_card_downloaded", { sev })` post-download
+
+**Preview live** : https://bailleurverif.fr/share-card-demo.html (noindex, ouvre + clic 1 des 3 boutons → SVG inline preview + PNG download bouton)
+
+**Intégration différée** : 1-line `app.js` post-décision audit-15 ~run-345. Si SHARPEN gagne → button "📸 Partager mon verdict" sur verdict-card homepage. Si PIVOT scanner-URL gagne → adapter input dans nouveau frontend zero-friction.
+
+**WHY shippé maintenant et pas après funnel T+24h** : enable-future asset, 5 min ship 1-line post-audit-15 → asymétrie max (vs 30 min build au moment du besoin avec urgence). PRIO ABSOLU mission explicite.
+
+### Compliance recalibrage 2026-05-21T07:35Z
+
+| Item | Statut |
+|---|---|
+| TODO-32 affiliés | ✅ GEL respecté |
+| TODO-25 Stripe | ✅ GEL maintenu |
+| Telegram itération | ✅ 0 touch daemon/features |
+| Vanity SEO | ✅ 0 IndexNow round / 0 nouvelle page programmatique inutile |
+| Pilier 1 produit-fit | ✅ **share-card v0 shipped** PRIO ABSOLU honored J+0 |
+| Pilier 2 acquisition+viralité | ✅ pre-requis output share-friendly shipped pour TikTok/Reddit |
+| Pilier 3 mesure | ✅ funnel event `share_card_downloaded` whitelist trigger audit-15 |
+| North Star humans_engaged | 2 UNCHANGED (13ᵉ audit) |
+
+### Plan NEXT (run-334 ~11:00Z+)
+
+1. Spot-check funnel T+~5.5h next wake (si home_visit≥5 et q1=0 → flag early painkiller fail)
+2. Cooldown drafts contenu (run-332 T+2h, pas re-drafter)
+3. Si silence Florian TODO-36 ≥48h → préparer fallback Twitter/X
+4. Si Florian validate TODO-36 → poster r/vosfinances draft (lien commentaire #1 OP-self)
+5. Batch Indexing API sitemap ≥02:30Z UTC demain `python3 agent-browser/indexing_api_ping.py --all`
+6. M0+ acceptable seulement si tous triggers négatifs
+
+Densité 3 actions substantives = aligned cadence `0 */2 * * *` recalibrée. Session 113ᵉ DIRECTIVE 7 RÉVISÉE conforme.
+
+---
+
 ## ✅ 2026-05-21T08:35Z — Agent → Florian — run-331 J+0 : ACK RECALIBRAGE + Q1/Q2 + sub-agents audit + NEW TODO-36
 
 **Court — Brief 07:35Z honored J+0 T+1h (vélocité record). Mission recalibrée 5→3 piliers internalisée (mission.md réécrit). Q1 hypothèse leading = SHARPEN avant pivot (pas data T+24h encore). Q2 canal #1 proposé = REDDIT data posts → NEW TODO-36 ★★ (Florian-input compte Reddit). Sub-agents 6/8 OK conformes 3 piliers, 0 kill. TODO-32 GEL/TODO-34 GEL/TODO-33 escaladé ★→★★. Anti-noise respecté.**
@@ -59,6 +130,16 @@ Reddit AUJOURD'HUI = ROI immédiat + format share-friendly natif (long-form data
 - **Audit-15 strategic critic ~run-345** : 1er audit recalibré, doit produire recommandation pivot/sharpen + persona clarifié + canal #1 confirmé.
 
 Ack J+0 vélocité T+1h00 post-brief. 3 piliers internalisés. Funnel data attendue.
+
+---
+
+## ✅ 2026-05-21T09:50Z — Florian → Agent — **TODO-31 done** (Rich Results FAQPage valides 2/2)
+
+Vérifié sur https://search.google.com/test/rich-results :
+- `encadrement-loyer-france-2026.html` → 3 types valides (BreadcrumbList + Dataset + FAQPage 8 Q&A) ✅
+- `observatoire-annonces-loyer.html` → 3 types valides (BreadcrumbList + Dataset + FAQPage 6 Q&A) ✅
+
+Aucune erreur, aucun warning. Le SEO structuré est OK. Action agent : marquer TODO-31 ✅ dans florian-todos.md (déjà fait localement), mettre à jour memory-agent/kpis si tu trackes ça, et continuer.
 
 ---
 

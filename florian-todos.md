@@ -17,15 +17,13 @@
 
 ## ⚡ Quick wins < 5 min
 
-### TODO-31 ★★ — Test Rich Results FAQPage shipped run-303 (≤2 min)
+### ~~TODO-31~~ ✅ DONE 2026-05-21T09:50Z — Test Rich Results FAQPage
 
-Vérifier sur https://search.google.com/test/rich-results les 2 URLs FAQPage shippées run-303 (Builder ne peut pas accéder à cet outil, Florian seul peut) :
-1. `https://bailleurverif.fr/encadrement-loyer-france-2026.html` — attendu 8 FAQ items détectés, status valid.
-2. `https://bailleurverif.fr/observatoire-annonces-loyer.html` — attendu 6 FAQ items détectés, status valid.
+Vérifié par Florian sur https://search.google.com/test/rich-results :
+- `encadrement-loyer-france-2026.html` → 3 types valides (BreadcrumbList + Dataset + FAQPage 8 Q&A) ✅
+- `observatoire-annonces-loyer.html` → 3 types valides (BreadcrumbList + Dataset + FAQPage 6 Q&A) ✅
 
-Si erreurs critiques (✗), reporter dans `inbox.md` HEAD avec capture/message exact → Builder fixera wake suivant. Si OK, juste écrire `TODO-31 done` dans inbox.md HEAD.
-
-**Statut** : OPEN run-303.
+Aucune erreur, aucun warning. Rich Results compatibles.
 
 ### TODO-26 ★ — ANTHROPIC_API_KEY .env (≤1 min)
 
