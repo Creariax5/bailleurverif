@@ -260,7 +260,7 @@ function showResult() {
   document.getElementById("step-counter").textContent = `Résultat`;
   document.getElementById("progress").style.width = `100%`;
 
-  const { items, severity, depassement } = computeVerdict();
+  const { items, severity, depassement, loyerM2 } = computeVerdict();
   const card = document.getElementById("verdict-card");
   const cls = severity === "danger" ? "verdict-danger" : severity === "warn" ? "verdict-warn" : "verdict-ok";
   card.className = "rounded-2xl p-5 sm:p-6 mb-5 fade-in " + cls;
@@ -276,6 +276,10 @@ function showResult() {
       <div class="text-3xl sm:text-4xl font-bold leading-none">~${depassement.toLocaleString('fr-FR')} €/mois</div>
       <div class="text-xs mt-1" style="opacity:.75">Soit jusqu'à <strong>${(depassement*12).toLocaleString('fr-FR')} €/an</strong> potentiellement récupérables si vous demandez la mise au plafond légal (rétroactif 3 ans max).</div>
     </div>` : "";
+  const shareBlock = `
+    <div class="mt-4 pt-3" style="border-top:1px solid rgba(0,0,0,.08)">
+      <button id="share-verdict-btn" type="button" class="text-sm font-semibold underline" style="opacity:.9">📸 Partager mon verdict (image PNG)</button>
+    </div>`;
   card.innerHTML = `
     <div class="flex items-start gap-3">
       <div class="text-3xl">${icon}</div>
@@ -285,7 +289,16 @@ function showResult() {
       </div>
     </div>
     ${economieBlock}
+    ${shareBlock}
   `;
+  const shareBtn = document.getElementById("share-verdict-btn");
+  if (shareBtn) {
+    shareBtn.addEventListener("click", () => {
+      if (window.ShareCard) {
+        window.ShareCard.download({ severity, depassement, ville: state.answers.ville, loyerM2 });
+      }
+    });
+  }
 
   // Reframe email-gate : "lettre baisse loyer" si violation encadrement détectée (vs rapport générique)
   if (depassement > 0) {

@@ -1,3 +1,59 @@
+## ⚡ 2026-05-21T13:45Z — Agent → Florian — run-334 J+0 : STRATEGIC-15 HONORED + TODO-36 ESCALADE HEAD
+
+**Court — Strategic critic audit-15 prescription unique (`integrate share-card.js verdict-card homepage + escalade TODO-36`) HONORED J+0 T+3h45 audit. `strategic_critic_recommendations_followed_cumul = 15/15 ★`. Carve-out légitime ban anti-touch audit-14 (ajout asset ≠ modif copy). Critère succès T+72h ≥2026-05-24T13:45Z : `share_card_downloaded ≥ 1` OU `referrals_from_share ≥ 1`.**
+
+### Action 1 — Intégration share-card.js verdict-card homepage (strategic-15)
+
+- `wedge-tool/static/index.html` L710 : `<script src="/static/share-card.js"></script>` ajouté avant `app.js`
+- `wedge-tool/static/app.js` L263 : destructure `loyerM2` from computeVerdict (passé share-card)
+- `wedge-tool/static/app.js` L279-298 : `shareBlock` template (button id `share-verdict-btn` 📸 + handler binding post-innerHTML)
+- Total : +16 L, 0 modif copy/structure verdict-card (titre/icône/économie inchangés)
+- Funnel event `share_card_downloaded` whitelist déjà live run-330 → tracking T+72h automatique
+- Live prod : https://bailleurverif.fr/ (faire wedge complet → verdict-card → click bouton 📸)
+
+### Action 2 — TODO-36 escaladé HEAD (canal viral #1 prio, drafts ready dormants 7j)
+
+★★ **TODO-36 — Créer compte Reddit pour BailleurVérif** (canal viral #1 proposé Q2 run-331).
+
+3 options (rappel) :
+- (a) compte nominatif `florian.demartini.dev@gmail.com` + IP résidentielle (anti-shadowban)
+- (b) prêter compte perso existant (1 wake Builder → 1 post test r/vosfinances draft prêt)
+- (c) refuser Reddit → pivote Twitter/X (signup compte SMS-verif Florian + cooldown 7j drafts)
+
+WHY canal #1 (vs alternatives) : 0 pré-requis output share-friendly (post-text + screenshots observatoire), audience locataire FR (r/france r/Paris r/immobilier r/vosfinances), indexation Google compounding, drafts data-posts ready run-332 dormants 7j cooldown. Tu disais 07:35Z *"locataires pas sur Telegram"* → Reddit valide cette logique persona-fit.
+
+Si silence ≥48h (≥2026-05-23T13:45Z) → Agent fallback Twitter/X préparation (besoin Florian SMS-verif anyway, donc TODO-36-bis ★★).
+
+### Compliance recalibrage 2026-05-21T07:35Z
+
+| Item | Statut |
+|---|---|
+| Anti-monétisation (TODO-32/-25) | ✅ 0 touch |
+| Anti-Telegram itération | ✅ 0 touch |
+| Anti-vanity SEO | ✅ 0 IndexNow / 0 page neuve (modif `app.js`+`index.html` ≠ génération page) |
+| Pilier 1 produit-fit | ✅ share-card NOW LIVE verdict-card prod (était demo `noindex` 4h avant) |
+| Pilier 2 acquisition+viralité | ✅ TODO-36 escalade Reddit + asset partage actif |
+| Pilier 3 mesure | ✅ event `share_card_downloaded` tracked T+72h |
+| DIRECTIVE 10 strategic critic J+0 | ✅ 15/15 cumul |
+| Carve-out ban anti-touch homepage audit-14 | ✅ explicit strategic-15 §6 §1 |
+
+### Funnel spot-check T+8h post-instr (read-only diagnostic)
+
+`sessions_lifetime=2 / home_visit=2 (1 smoke + 1 réel 09:33Z) / q1_answered=0`. **Sample size N=1 réel trop faible** pour pivot/sharpen audit-15 → cible run-345 reportée si trafic stagne. Acquisition crisis dominate produit-fit signal. → Renforce prio TODO-36 (canal #1 = drive trafic).
+
+### Plan NEXT (run-335 ~15:30Z+)
+
+1. Spot-check `share_card_downloaded` events T+24h cible 2026-05-22T13:45Z (1 download = signal validation viralité)
+2. Monitor TODO-36 silence Florian (48h cap → fallback Twitter/X)
+3. Si funnel T+24h `home_visit≥10` → check ratio q1_answered/home_visit (>30% sharpen pivote share-card / <10% pivot scanner-URL escalade)
+4. Batch Indexing API sitemap ≥02:30Z UTC demain (planifié run-333)
+5. Sub-seo-monitor alert 13:31Z `issues_total 82→83` minor drift, attente prochain audit Haiku 24h
+6. M0+ acceptable seulement si tous triggers négatifs
+
+Densité 2 actions substantives strategic-15 driven. Session 114ᵉ DIRECTIVE 7 RÉVISÉE conforme.
+
+---
+
 ## 🚨 SEO MONITOR ALERT — 2026-05-21T13:31Z (sub-seo-monitor run-322)
 
 - **Regression ⚠️** : issues_total +1 (82→83), minor crawler drift

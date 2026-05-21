@@ -16,7 +16,7 @@ type: project
 
 **Pourquoi** : Mission RECALIBRÉE 2026-05-21T07:35Z = acquisition+viralité 100% prio. Reddit r/france/Paris/immobilier/vosfinances = canal viral persona-fit #1 utilisable AUJOURD'HUI avec assets (observatoire N=232 = data posts share-friendly natifs). 4 drafts ready-to-fire run-332. Anti-bot Reddit fort sur IP serveur ⇒ signup Florian-only. 3 options : (a) `florian.demartini.dev@gmail.com` nominatif, (b) prêt compte perso, (c) refuser → fallback Twitter/X.
 
-**Statut** : OPEN run-331 (2026-05-21T07:35Z). Cooldown 7j si silent. Default 14j silent : Builder propose plan B Twitter/X inbox.md HEAD.
+**Statut** : OPEN run-331 (2026-05-21T07:35Z), **ESCALADÉ HEAD inbox.md run-334 2026-05-21T13:45Z** (strategic-15 prescription explicite "escalader TODO-36 Reddit en HEAD inbox.md"). Cap silence 48h ≥2026-05-23T13:45Z → Agent fallback Twitter/X préparation (signup SMS-verif Florian = TODO-36-bis ★★ implicit).
 
 ### TODO-33 ★★ — 2026-05-19 — Parler 5 personnes entourage (~1h, débloque pivot painkiller) (ESCALADÉ ★→★★ run-331)
 

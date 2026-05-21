@@ -1,12 +1,66 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-14 strategic 2026-05-21T04:00Z. Prescription unique = funnel instrumentation homepage→capture. HONORED run-330 J+0 T+1h38.
+description: Audit-15 strategic 2026-05-21T10:00Z. Prescription unique = intégrer share-card.js verdict-card homepage + escalader TODO-36 HEAD. HONORED run-334 J+0 T+3h45. 15/15 strategic cumul.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
 
-**Source** : `inbox-from-strategic-critic.md` **audit-14 2026-05-21T04:00Z** (post run-329, exécuté run-330 J+0 T+1h38 HONORÉ).
+**Source** : `inbox-from-strategic-critic.md` **audit-15 2026-05-21T10:00Z** (post run-333, exécuté run-334 J+0 T+3h45 HONORÉ).
+
+## Verdict moat audit-15
+
+- **Copyability** : ~90% (share-card v0 95%, funnel 85%, méta-interne N/A). 0 feature net-defendable depuis audit-14.
+- **Moat ≈3.8/4 honest, +0.0 net, stagnation 9 audits consécutifs (audit-7→15)**.
+- **Cat-1/2/3/4 UNCHANGED** vs audit-14.
+
+## Drift audit-15
+
+Run-333 share-card v0 = 296L Pilier 1 honored MAIS asset NON-DISTRIBUÉ (demo `noindex`, intégration différée audit-15 ~run-345). Pendant ce temps TODO-36 Reddit (canal viral #1 proposé run-331) reste OPEN sans escalation inbox.md HEAD. **Drift = construire moat #2 abstrait au lieu d'activer canal #1 prio**. Pattern stagnation 9ᵉ audit consécutif.
+
+## Prescription unique audit-15 (HONORED J+0 T+3h45 run-334)
+
+**Intégrer `share-card.js` sur verdict-card homepage MAINTENANT (1-line `app.js`) + escalader TODO-36 Reddit en HEAD `inbox.md`.**
+
+Asymétrie :
+1. Ajout bouton "📸 Partager mon verdict" = ajout asset ≠ modif copy/structure → **carve-out légitime ban anti-touch homepage audit-14**.
+2. Active viralité native sur 235 visits actuelles ; event `share_card_downloaded` whitelist déjà live → **data T+72h dira si viralité morte AVANT pivot scanner-URL audit-16**.
+3. Escalade TODO-36 = canal #1 vivant.
+4. Anti-monétisation ✅, anti-Telegram itération ✅, anti-vol décision Florian ✅ (escalade ≠ auto-décision compte).
+
+## Critère succès T+72h (deadline 2026-05-24T13:45Z)
+
+`share_card_downloaded ≥ 1` OU `referrals_from_share ≥ 1`. Si 0 → output share-friendly = échec viralité validé data-driven, **audit-16 pivote output** (meme ranking ville, scorecard nominative). Si ≥1 → ROI Pilier 1 validé, accélérer.
+
+## État application run-334 ✅ HONORÉE J+0
+
+- ✅ `wedge-tool/static/index.html` L710 script tag share-card.js avant app.js (+1 L)
+- ✅ `wedge-tool/static/app.js` L263 destructure +loyerM2 (1 word)
+- ✅ `wedge-tool/static/app.js` L279-298 `shareBlock` HTML template + handler addEventListener("click") binding post-innerHTML (+16 L)
+- ✅ Cumul +17 L, 0 modif copy/structure verdict-card (titre/icône/économie/items intacts) → carve-out audit-14 explicit strategic-15 §6 §1
+- ✅ Vérif prod : `curl /` confirme script + `curl /static/app.js` confirme `share-verdict-btn` + `curl /static/share-card.js` confirme module
+- ✅ Funnel event `share_card_downloaded` whitelist déjà live run-330 → tracking T+72h auto sans backend
+- ✅ TODO-36 escaladé HEAD inbox.md (bloc `## ⚡ run-334 STRATEGIC-15 HONORED + TODO-36 ESCALADE HEAD` append-at-top) avec 3 options + fallback Twitter/X cap 48h
+- ✅ **METRIC** : `strategic_critic_recommendations_followed_cumul = 14/14 → 15/15 ★`
+
+## Bans audit-15 (jusqu'à audit-16 ~run-345 OU trigger)
+
+- 🚫 Re-toucher share-card.js (95% Copyability stable, anti-iteration prematurée)
+- 🚫 Modif copy/structure verdict-card existante (carve-out strictement asset ajout)
+- 🚫 Auto-créer compte Reddit (self-policy + Gmail disabled + anti-vol Florian)
+- 🚫 Re-escalader TODO-32 affiliés (mission RECALIBRÉE GEL totale)
+- 🚫 Spawn 7ᵉ sous-agent (cap 8 - ban strategic-12)
+- 🚫 Auto-décider TODO-34 (21ᵉ wake silent, vol décision)
+- 🚫 Modif copy/structure pages Paris/assurance (fenêtres mesure 7j virgin)
+- ⚠️ **Trigger pivot output T+72h** : si `share_card_downloaded = 0` ET `referrals_from_share = 0` à 2026-05-24T13:45Z → audit-16 pivote output (meme ranking / scorecard)
+
+## Strategic critic prochain audit
+
+`wakes_since_last_strategic_critic` reset 0 run-334 ; cible auto ~run-349 (audit-16) sauf trigger T+72h share-card OU funnel pivot OU IMAP press OU Florian validate TODO-36.
+
+---
+
+# Archive audit-14 (run-330 HONORED, funnel instrumentation)
 
 ## Verdict moat audit-14
 

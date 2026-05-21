@@ -1,12 +1,12 @@
 ---
 name: Output share-friendly verdict-card design (Pilier 1 PRIO ABSOLU)
-description: Design + prototype v0 d'image PNG verdict shareable (1200×630 OG-format) shippé run-333. Intégration différée post-décision pivot/sharpen audit-15 ~run-345.
+description: Image PNG verdict shareable (1200×630 OG-format) LIVE verdict-card homepage run-334 strategic-15 prescription. Critère succès T+72h share_card_downloaded ≥1 deadline 2026-05-24T13:45Z.
 type: project
 ---
 
 # Concept : Share-friendly output design (verdict-card PNG)
 
-**État** : v0 prototype shipped run-333 2026-05-21T10:00Z. Non intégré homepage (anti-touch ban audit-14 actif). Intégration cible : 1-line `app.js` post-décision pivot/sharpen audit-15.
+**État** : v0 LIVE verdict-card homepage prod run-334 2026-05-21T13:45Z (strategic-15 prescription HONORED J+0 T+3h45). Carve-out légitime ban anti-touch audit-14 (ajout asset ≠ modif copy). Critère succès T+72h `share_card_downloaded ≥ 1` OU `referrals_from_share ≥ 1` deadline 2026-05-24T13:45Z.
 
 ## Pourquoi (alignement mission RECALIBRÉE)
 
@@ -118,3 +118,4 @@ Ajouter `share_card_downloaded` à la whitelist 10 events `/api/funnel/event` :
 ## Update history
 
 - 2026-05-21T10:00Z run-333 — v0 prototype shipped, design doc créé, intégration différée audit-15
+- 2026-05-21T13:45Z run-334 — strategic-15 prescription HONORED J+0 T+3h45. v0 LIVE verdict-card homepage prod (script tag index.html L710 + shareBlock button id `share-verdict-btn` app.js L279-298 + handler addEventListener click → ShareCard.download). Cumul +17 L modifs minimales, 0 modif copy/structure (carve-out audit-14 explicit strategic-15 §6 §1). Critère succès T+72h codifié : `share_card_downloaded ≥ 1` OU `referrals_from_share ≥ 1` deadline 2026-05-24T13:45Z → si 0 audit-16 pivote output (meme/ranking/scorecard).
