@@ -1,66 +1,66 @@
 {
-  "generated_at": "2026-05-21T09:46:02Z",
+  "generated_at": "2026-05-21T17:42:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 2615,
-    "requests_24h": 1659,
-    "bot_hits_lifetime": 219,
-    "bot_hits_24h": 101,
-    "bot_hits_1h": 6,
-    "human_hits_24h": 1558
+    "requests_lifetime": 2937,
+    "requests_24h": 1501,
+    "bot_hits_lifetime": 264,
+    "bot_hits_24h": 123,
+    "bot_hits_1h": 4,
+    "human_hits_24h": 1378
   },
   "bots_by_type_lifetime": {
-    "Googlebot": 27,
+    "Googlebot": 33,
+    "Bingbot": 32,
+    "ClaudeBot": 32,
     "GPTBot": 27,
-    "Bingbot": 23,
     "archive.org": 21,
-    "ClaudeBot": 20,
-    "AhrefsBot": 17,
-    "Go-HTTP": 16,
+    "Go-HTTP": 20,
+    "AhrefsBot": 19,
     "YandexBot": 15,
-    "generic-bot": 13,
+    "generic-bot": 15,
+    "OAI-SearchBot": 11,
     "FacebookExt": 9,
+    "ByteSpider": 7,
     "HeadlessChrome": 7,
     "python-script": 7,
-    "ByteSpider": 6,
     "BaiduSpider": 5,
-    "curl/wget": 3,
-    "OAI-SearchBot": 3
+    "curl/wget": 4
   },
   "bots_by_type_24h": {
-    "ClaudeBot": 20,
-    "Googlebot": 17,
-    "Bingbot": 12,
-    "AhrefsBot": 11,
+    "ClaudeBot": 32,
+    "Bingbot": 20,
+    "Googlebot": 13,
+    "AhrefsBot": 10,
+    "OAI-SearchBot": 10,
     "GPTBot": 10,
     "Go-HTTP": 8,
     "python-script": 7,
     "FacebookExt": 6,
-    "BaiduSpider": 5,
-    "generic-bot": 2,
-    "OAI-SearchBot": 2,
-    "curl/wget": 1
+    "generic-bot": 4,
+    "curl/wget": 2,
+    "ByteSpider": 1
   },
   "bot_last_seen": {
     "YandexBot": "2026-05-19T15:30:24+00:00",
-    "Go-HTTP": "2026-05-20T20:40:39+00:00",
-    "Bingbot": "2026-05-21T08:56:22+00:00",
-    "ByteSpider": "2026-05-20T08:33:36+00:00",
-    "generic-bot": "2026-05-21T01:10:49+00:00",
-    "AhrefsBot": "2026-05-19T19:54:27+00:00",
+    "Go-HTTP": "2026-05-21T09:47:20+00:00",
+    "Bingbot": "2026-05-21T15:34:08+00:00",
+    "ByteSpider": "2026-05-21T13:40:49+00:00",
+    "generic-bot": "2026-05-21T14:34:30+00:00",
+    "AhrefsBot": "2026-05-21T10:15:48+00:00",
     "archive.org": "2026-05-19T14:33:33+00:00",
-    "Googlebot": "2026-05-21T09:43:45+00:00",
-    "curl/wget": "2026-05-20T20:35:49+00:00",
+    "Googlebot": "2026-05-21T16:45:48+00:00",
+    "curl/wget": "2026-05-21T09:46:24+00:00",
     "GPTBot": "2026-05-21T09:02:20+00:00",
     "HeadlessChrome": "2026-05-20T09:10:24+00:00",
     "BaiduSpider": "2026-05-20T17:37:32+00:00",
     "FacebookExt": "2026-05-19T18:18:14+00:00",
-    "ClaudeBot": "2026-05-21T00:20:19+00:00",
+    "ClaudeBot": "2026-05-21T16:28:23+00:00",
     "python-script": "2026-05-21T09:11:22+00:00",
-    "OAI-SearchBot": "2026-05-21T09:43:09+00:00"
+    "OAI-SearchBot": "2026-05-21T17:28:12+00:00"
   },
-  "last_googlebot": "2026-05-21T09:43:45+00:00",
-  "last_bingbot": "2026-05-21T08:56:22+00:00",
+  "last_googlebot": "2026-05-21T16:45:48+00:00",
+  "last_bingbot": "2026-05-21T15:34:08+00:00",
   "chart_7days": [
     {
       "day": "2026-05-15",
@@ -126,53 +126,24 @@
     },
     {
       "day": "2026-05-21",
-      "total": 37,
+      "total": 82,
       "by_type": {
-        "ClaudeBot": 4,
-        "AhrefsBot": 3,
+        "ClaudeBot": 16,
+        "AhrefsBot": 5,
         "FacebookExt": 1,
-        "generic-bot": 1,
-        "Bingbot": 10,
-        "OAI-SearchBot": 2,
+        "generic-bot": 3,
+        "Bingbot": 19,
+        "OAI-SearchBot": 10,
         "GPTBot": 10,
-        "Googlebot": 5,
-        "python-script": 1
+        "Googlebot": 11,
+        "python-script": 1,
+        "curl/wget": 1,
+        "Go-HTTP": 4,
+        "ByteSpider": 1
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "10",
-      "hits": 42
-    },
-    {
-      "hour": "11",
-      "hits": 48
-    },
-    {
-      "hour": "12",
-      "hits": 15
-    },
-    {
-      "hour": "13",
-      "hits": 187
-    },
-    {
-      "hour": "14",
-      "hits": 85
-    },
-    {
-      "hour": "15",
-      "hits": 34
-    },
-    {
-      "hour": "16",
-      "hits": 2
-    },
-    {
-      "hour": "17",
-      "hits": 0
-    },
     {
       "hour": "18",
       "hits": 56
@@ -235,58 +206,91 @@
     },
     {
       "hour": "09",
-      "hits": 120
+      "hits": 77
+    },
+    {
+      "hour": "10",
+      "hits": 29
+    },
+    {
+      "hour": "11",
+      "hits": 44
+    },
+    {
+      "hour": "12",
+      "hits": 47
+    },
+    {
+      "hour": "13",
+      "hits": 85
+    },
+    {
+      "hour": "14",
+      "hits": 19
+    },
+    {
+      "hour": "15",
+      "hits": 32
+    },
+    {
+      "hour": "16",
+      "hits": 13
+    },
+    {
+      "hour": "17",
+      "hits": 7
     }
   ],
   "top_bot_paths_24h": {
-    "/robots.txt": 21,
-    "/sitemap.xml": 7,
-    "/": 6,
-    "/static/app.js": 4,
-    "/og-image.png": 2,
-    "/observatoire-dpe-fg.html": 2,
+    "/robots.txt": 22,
+    "/": 13,
+    "/sitemap.xml": 12,
+    "/loyer-legal-paris.html": 4,
+    "/static/app.js": 3,
+    "/favicon.ico": 3,
+    "/api/recourse": 2,
     "/favicon.svg": 2,
-    "/css/tailwind-runtime.js": 2,
-    "/loyer-legal-paris.html": 2,
-    "/api/recourse": 2
+    "/observatoire-prix-vente-vs-loyer.md": 2,
+    "/data/encadrement-loyer-france-2026.json": 2
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 21,
+    "/robots.txt": 24,
+    "/favicon.ico": 3,
     "/sitemap.xml": 2,
-    "/favicon.ico": 2,
     "/logo.png": 1,
-    "/og-image.png": 1
+    "/og-image.png": 1,
+    "/loyer-legal-paris.html": 1,
+    "/lille-dpe-f-g-interdit-location.html": 1
   },
   "top_human_paths_24h": {
-    "/css/tailwind-runtime.js": 81,
-    "/": 58,
-    "/css/main.css": 38,
-    "/robots.txt": 26,
-    "/encadrement-loyer-paris-2026.html": 17,
-    "/loyer-legal-paris.html": 13,
-    "/data/encadrement-loyer-france-2026.json": 11,
-    "/observatoire-annonces-loyer.html": 10,
+    "/css/tailwind-runtime.js": 75,
+    "/": 48,
+    "/robots.txt": 36,
+    "/css/main.css": 33,
+    "/observatoire-annonces-loyer.html": 17,
+    "/data/encadrement-loyer-france-2026.json": 17,
+    "/data/encadrement-loyer-france-2026.csv": 17,
+    "/loyer-legal-paris.html": 10,
     "/css/scanner.js": 10,
-    "/lille-dpe-f-g-interdit-location.html": 9
+    "/api/visit": 8
   },
   "status_codes_24h": {
-    "200": 869,
-    "404": 780,
-    "400": 9,
-    "501": 1
+    "200": 840,
+    "404": 659,
+    "400": 2
   },
   "funnel": {
-    "events_total_lifetime": 2,
-    "sessions_lifetime": 2,
-    "sessions_24h": 2,
+    "events_total_lifetime": 4,
+    "sessions_lifetime": 4,
+    "sessions_24h": 4,
     "by_type_24h": {
-      "home_visit": 2
+      "home_visit": 4
     },
     "by_type_lifetime": {
-      "home_visit": 2
+      "home_visit": 4
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 2,
+      "home_visit": 4,
       "wedge_q1_answered": 0,
       "wedge_q2_answered": 0,
       "wedge_q3_answered": 0,

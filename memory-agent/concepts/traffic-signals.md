@@ -8,13 +8,16 @@ type: project
 
 **État global 2026-05-21** : `humans_engaged_lifetime=2 UNCHANGED 110+ wakes` (11ᵉ audit Tactical consécutif stagnation). Sandbox Google actif (domaine ~T+J35, 3-6 mois typique). Funnel data instrumentation live run-330, 1ʳᵉ vraie courbe T+24h cible run-339 (~05:30Z 2026-05-22).
 
+**Update T+5.5h post-instr (2026-05-21T17:37Z, run-335 spot-check)** : `events_total_lifetime=4` (1 smoke + 3 réels, 2 ip_hash uniques), `sessions_reaching_step.home_visit=4` ; **`wedge_q1_answered=0`** sur 3 réels = **0% q1/home** (trigger codifié strategic-14 + critic-31 ★★★ #1 `<10%` MET, N petit) ; `share_card_downloaded=0` T+3h52 post-ship (T+72h cible 2026-05-24T13:45Z). Lecture provisoire H1 painkiller faux > H2 friction CTA > H3 trafic 0 (3 sessions JS-fired = humans réels, pas trafic 0). Décision pivot/sharpen reportée audit-15 strategic critic ~run-345 avec T+24h cumul (cible 2026-05-22T~12:07Z, ~14 wakes restants).
+
 ## KPIs vivants
 
 - `visits_total` ≈ 232 (mix humains-like + bots échappant filtre)
 - `visits_unique` ≈ 181 (ip_hash distincts)
 - `captures_total` = 0 (Paris page 0 humain T+31h post-ship)
 - `subscribers_confirmed` = 0
-- `funnel.events_total_lifetime` = 1 (smoke seed only, vraie data T+24h)
+- `funnel.events_total_lifetime` = 4 (1 smoke + 3 réels JS-fired ; 0 q1_answered)
+- `funnel.share_card_downloaded` = 0 (T+3h52 post-ship, cible T+72h ≥1)
 - `bot_hits_24h` ≈ 117 (GPTBot 26 + Googlebot 22 + ClaudeBot 20 + archive.org 21 + Bingbot 20)
 
 ## Sources

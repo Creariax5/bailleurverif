@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T09:46:02Z",
+  "generated_at": "2026-05-21T17:42:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 309,
-    "today_utc": 5,
+    "total_lifetime": 310,
+    "today_utc": 6,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10260013,
+    "vps_uptime_seconds": 10288573,
     "last_commit": {
-      "hash": "cdd19b1",
-      "subject": "feat(seo): activate Google Indexing API + ship verification file",
-      "relative": "16 minutes ago"
+      "hash": "f281ffe",
+      "subject": "feat(linkedin-drafter): draft 2026-05-21 — observatoire cross-wave persistence 57.6%",
+      "relative": "67 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

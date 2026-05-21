@@ -1,3 +1,58 @@
+# Strategic Critic Audit — 2026-05-21T10:00Z (audit-15, post run-333)
+
+---
+
+## 1. COPYABILITY SCORE
+
+- run-333 share-card v0 (`share-card.js` 118L + demo 58L) : ~95% (SVG→Canvas pur, 0 dep externe).
+- run-330 funnel (POST/GET `/api/funnel/*` + 7 JS hooks `app.js`) : ~85%.
+- run-331/333 méta-interne (recalibrage piliers, Indexing API discipline) : N/A.
+
+**~90% copyable. 0 feature net-defendable shippée depuis audit-14.**
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1** : 2 UNCHANGED (chain 12 vagues git + cross-wave 121/57.6%).
+- **Cat-2** : `signalements_total=2` UNCHANGED (75+59, 4j stagnant, ban morte tient).
+- **Cat-3** : 3 templates DILA + 9 ECLI Cass. UNCHANGED.
+- **Cat-4** : 1.8 (Wikidata Q139857638 + reuse `6a0c30a` gov.fr + MIT repo) UNCHANGED.
+
+**≈3.8/4 honest, +0.0 net, stagnation 9 audits consécutifs (audit-7→15).**
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** : 80k+ annonces, brand établie. Gap inverse = trafic/branding. Work-to-do massif.
+- **SmartLoc** : SaaS gestion locative 30k+ users. Gap inverse = users. Non-défendable.
+- **ANIL** : autorité Etat DR ~85, institution >50 ans non-rejouable structurellement (silent post-mail T+96h+).
+
+Notre seul gap défendable : observatoire série temporelle 12 vagues + Wikidata. Gap inverse (users/brand/autorité) nous écrase.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**Disparition** : non-rejouable = chain 12 vagues git + slug `data.gouv.fr/...observatoire-bailleurverif` indexé + Wikidata Q139857638 + cross-wave 121/57.6%. MAIS `humans_engaged=2` UNCHANGED 9 audits → **moat 100% ABSTRAIT**.
+
+**Viralité intrinsèque** : share-card v0 SHIPPED run-333 MAIS NON INTÉGRÉ verdict-card (demo `noindex`). Verdict principal homepage = texte privé non-shareable. **Aucun changement net viralité depuis audit-14.**
+
+**Persona-canal** : LinkedIn=pro mismatch / Bluesky=audience FR faible 2026 / HF=devs / Telegram=devs (Florian flag) / syndicator=générique. **Reddit/TikTok/X = 0 sub-agent.** 5/6 sub-agents construits ne touchent pas le persona locataire FR.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+**Run-333 share-card v0** : 296L Pilier 1 honored MAIS asset NON-DISTRIBUÉ (intégration différée audit-15 ~run-345). Pendant ce temps **TODO-36 Reddit** (canal viral #1 proposé run-331 07:35Z) reste OPEN sans escalation `inbox.md` HEAD à T+2.5h Florian silent. **Drift = construire moat #2 abstrait au lieu d'activer canal #1 prio**. Contribue 0/3 piliers court terme recalibrés. Pattern stagnation 9ᵉ audit consécutif.
+
+## 6. PRESCRIPTION
+
+**Intégrer `share-card.js` sur verdict-card homepage MAINTENANT (1-line `app.js`) + escalader TODO-36 Reddit en HEAD `inbox.md`.**
+
+Asymétrie :
+1. Ajout bouton "📸 Partager mon verdict" = ajout asset ≠ modif copy/structure → **carve-out légitime** ban anti-touch homepage audit-14.
+2. Active viralité native sur 235 visits actuelles ; event `share_card_downloaded` whitelist déjà live → **data T+72h dira si viralité morte AVANT pivot scanner-URL audit-16**.
+3. Escalade TODO-36 = canal #1 vivant (4 drafts ready run-332 dormants tant Florian silent). Cooldown 7j respecté.
+4. Anti-monétisation ✅, anti-Telegram itération ✅, anti-vol décision Florian ✅ (escalade ≠ auto-décision compte).
+
+**Critère succès T+72h** : `share_card_downloaded ≥ 1` OU `referrals_from_share ≥ 1`. Si 0 → output share-friendly = échec viralité validé data-driven, audit-16 pivote output (meme ranking ville, scorecard nominative). Si ≥1 → ROI Pilier 1 validé, accélérer.
+
+---
+
 # Strategic Critic Audit — 2026-05-21T04:00Z (audit-14, post run-329)
 
 ---

@@ -1,3 +1,56 @@
+## 📊 2026-05-21T17:37Z — Agent → Florian — run-335 : FUNNEL SPOT-CHECK T+5h30 — EARLY SIGNAL H1 (sample N=3 réels, 0/3 q1)
+
+**Court — `/api/funnel/agg` T+5h30 post-instr : events_total=4 (1 smoke + 3 réels JS-fired, 2 ip_hash uniques) / sessions_reaching_step home_visit=4 / wedge_q1_answered=0 / share_card_downloaded=0. Trigger codifié critic-31 ★★★ #1 (<10% q1/home) MET mais N=3 réels insuffisant pour décision pivot. Lecture provisoire H1 painkiller faux > H2 > H3. PAS de pivot autonome — décision audit-15 strategic critic ~run-345 cible 2026-05-22T~12:07Z (T+24h cumul, ~14 wakes restants).**
+
+### Données brutes funnel-events.jsonl (filtré smoke-test)
+
+| ts UTC | sessionId | ip_hash | event_type |
+|---|---|---|---|
+| 2026-05-21T05:36 | smoke-test-330 | 541791220 | home_visit (smoke ignoré) |
+| 2026-05-21T09:33 | s-mpfamjrq | 353899438 | home_visit |
+| 2026-05-21T13:44 | s-mpfjl3nt | 9323796400 | home_visit |
+| 2026-05-21T13:51 | s-mpfju8t1 | 353899438 | home_visit (retour ip #1, 4h+10min après) |
+
+3 sessions réelles + 2 ip_hash uniques. **0/3 q1_answered = 0% conversion homepage→wedge Q1.** 0/3 verdict_displayed. 0/3 email_submitted.
+
+### Lecture / hypothèses
+
+- **H1 painkiller faux** (visiteur ouvre page, lit copy ~5-15s, repart sans cliquer Q1) — plus probable
+- **H2 friction CTA copy** (Q1 mal placée / pas visible / texte rebute) — possible
+- **H3 trafic 0 humain** — INVALIDÉ partiel : 3 sessions JS-fired = humains réels (Googlebot/GPTBot rendent pas JS)
+
+**Pourquoi je ne pivote pas autonome maintenant** : (1) N=3 réels trop petit ; (2) trigger T+24h codifié mission L67 + run-339 ; (3) carve-out anti-touch homepage strategic-14/15 toujours actif jusqu'à audit-15 ~run-345 ; (4) share-card 0 download T+3h52 = trop tôt pour signal (T+72h cible).
+
+### TODO-36 statut
+
+OPEN T+3h52, silence Florian. Fenêtre 48h cap fallback Twitter/X ≥2026-05-23T13:45Z. Rappel options (a) nominatif Florian / (b) prêt compte perso / (c) refuser → pivot Twitter/X. **NE PAS répondre = je passe en fallback Twitter/X J+2 cap.**
+
+### Compliance recalibrage 2026-05-21T07:35Z
+
+| Item | Statut |
+|---|---|
+| Anti-monétisation (TODO-32/-25) | ✅ 0 touch |
+| Anti-Telegram itération | ✅ 0 touch |
+| Anti-vanity SEO | ✅ 0 page neuve / 0 IndexNow round |
+| Anti-touch homepage copy/verdict-card | ✅ 0 modif (spot-check read-only + concept update + flag inbox) |
+| Anti-touch share-card.js (ban audit-15) | ✅ 0 modif |
+| Cooldown drafts contenu 7j | ✅ 0 nouveau draft |
+| Pilier 3 mesure | ✅ funnel spot-check honored critic-31 ★★★ #1 |
+| DIRECTIVE 7 cron-driven | ✅ 0 ScheduleWakeup (115ᵉ wake conforme) |
+
+### Plan NEXT (run-336 ~19:37Z+)
+
+1. Spot-check funnel T+24h cible **2026-05-22T~12:07Z** (run-339-341 range) — si confirmation `q1_answered/home_visit < 10%` cumul ≥10 sessions → escalade FULL inbox HEAD "Pilier 1 painkiller drop-off confirmé" + déclencher audit-15 strategic critic prematurely si nécessaire
+2. Spot-check `share_card_downloaded` T+24h cible 2026-05-22T13:45Z (1 download = signal viralité output)
+3. Monitor TODO-36 silence cap 48h ≥2026-05-23T13:45Z → fallback Twitter/X SMS-verif
+4. Batch Indexing API sitemap ≥02:30Z UTC tomorrow `python3 agent-browser/indexing_api_ping.py --all` ~170 URLs (per run-334 plan)
+5. Si event suspect entre wakes (q1_answered apparait, share_card download apparait) → flag inbox HEAD micro-update
+6. M0+ acceptable seulement si tous triggers négatifs
+
+Densité 1 action substantive (spot-check + flag) + 1 hygiène (concept update). Session 115ᵉ DIRECTIVE 7 conforme.
+
+---
+
 ## ⚡ 2026-05-21T13:45Z — Agent → Florian — run-334 J+0 : STRATEGIC-15 HONORED + TODO-36 ESCALADE HEAD
 
 **Court — Strategic critic audit-15 prescription unique (`integrate share-card.js verdict-card homepage + escalade TODO-36`) HONORED J+0 T+3h45 audit. `strategic_critic_recommendations_followed_cumul = 15/15 ★`. Carve-out légitime ban anti-touch audit-14 (ajout asset ≠ modif copy). Critère succès T+72h ≥2026-05-24T13:45Z : `share_card_downloaded ≥ 1` OU `referrals_from_share ≥ 1`.**
