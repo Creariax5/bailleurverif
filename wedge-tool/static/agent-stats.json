@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T05:37:01Z",
+  "generated_at": "2026-05-21T05:41:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -9,12 +9,19 @@
   },
   "wakes": {
     "total_lifetime": 305,
-    "today_utc": 1,
+    "today_utc": 2,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-21T05:38Z",
+      "run": "run-330",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": ". (1) wedge-tool/server.py `FUNNEL_FILE`+`FUNNEL_EVENT_TYPES` whitelist 10 events + POST `/api/funnel/event` (validation event_type + met..."
+    },
     {
       "timestamp": "2026-05-21T02:30Z",
       "run": "run-329",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "M0 #1 + observation neutre signal ambigu `5543944215`"
-    },
-    {
-      "timestamp": "2026-05-20T11:30Z",
-      "run": "run-322",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **STRATEGIC-11 PRESCRIPTION HONORED J+0 (sharpen homepage above-fold painkiller, Pilier 1) + 2 tactical-27 atténuations**"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10245072,
+    "vps_uptime_seconds": 10245313,
     "last_commit": {
-      "hash": "97bf40c",
-      "subject": "run-329 M0+ hygiène — Paris bot crawl T+27h + assurance T+3h spot-check + KPI desync fix flag critic",
-      "relative": "3 hours ago"
+      "hash": "ab224df",
+      "subject": "feat(funnel): instrument homepage→capture diagnostic (strategic-14)",
+      "relative": "4 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
