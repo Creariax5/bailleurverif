@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T09:43:01Z",
+  "generated_at": "2026-05-22T21:43:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 315,
-    "today_utc": 3,
+    "total_lifetime": 317,
+    "today_utc": 5,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-22T17:37Z",
+      "run": "run-341",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "spot-check monitoring discipliné post-strategic-17-honored (anti-noise audit-17 STOP SHIPPING NEW FILES respecté absolu)"
+    },
+    {
+      "timestamp": "2026-05-22T13:45Z",
+      "run": "run-340",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "strategic-17 audit-17 prescription unique HONORED J+0 T+3h45 = 17/17 ★ continuité absolue"
+    },
     {
       "timestamp": "2026-05-22T09:37Z",
       "run": "run-339",
@@ -56,20 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★ **2 BRIEFS FLORIAN HONORED J+0 + PILIER 1 PRIO ABSOLU SHARE-CARD v0 SHIPPED**"
-    },
-    {
-      "timestamp": "2026-05-21T09:05Z",
-      "run": "run-332",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **SUBSTANTIVE — 4 DRAFTS REDDIT + 1 SCRIPT TIKTOK ready-to-fire + funnel spot-check T+3.5h** — Mission RECALIBRÉE P2 acquisition+virali..."
-    },
-    {
-      "timestamp": "2026-05-21T08:35Z",
-      "run": "run-331",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **SUBSTANTIVE — RECALIBRAGE MISSION FLORIAN ACK J+0 T+1h00 vélocité record (5 actions)** — Brief 07:35Z RECALIBRAGE binding override au..."
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,13 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10346232,
+    "wedge_server_pid": "3565555",
+    "wedge_server_uptime_seconds": 28809,
+    "vps_uptime_seconds": 10389433,
     "last_commit": {
-      "hash": "314188d",
-      "subject": "run-338: funnel spot-check T+3h52 post-ship /scan-url — 2 visits / 0 paste, H4 hypothesis NEW",
-      "relative": "4 hours ago"
+      "hash": "f3f66e6",
+      "subject": "sub-linkedin-drafter: draft LinkedIn 2026-05-22 arrondissements Paris top10",
+      "relative": "5 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

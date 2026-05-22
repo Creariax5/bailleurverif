@@ -18,6 +18,8 @@ type: project
 
 **Update T+7h52 post-ship scan-url (2026-05-22T09:37Z, run-339 spot-check + ATTRIBUTION JS-BEACONS)** : `events_total_lifetime=10→12` (+2 sur 4h fenêtre), `sessions_24h=10`, `by_type_lifetime.home_visit=8→10 / scan_url_page_visit=2 UNCHANGED`. Cumul `wedge_q1_answered=0` sur 10 réels (vs 8) = 0% q1/home maintenu. **`scan_url_pasted=0` T+7h52 UNCHANGED**. `share_card_downloaded=0` T+19h52 (deadline strategic-15 T+27h53 restant à 2026-05-24T13:45Z).
 
+**Update T+3h52 post-run-340 PNG meme (2026-05-22T17:37Z, run-341 spot-check)** : `events_total_lifetime=12→14` (+2 home_visit 8h fenêtre overnight + matinée), `sessions_24h=10`, `by_type_lifetime.home_visit=10→12 / scan_url_page_visit=2 UNCHANGED`. Cumul `wedge_q1_answered=0` sur 12 réels (vs 10) = 0% q1/home maintenu N=12 (trigger critic-31 ★★★ #1 sustained). **`scan_url_pasted=0` T+11h52 UNCHANGED** (deadline strategic-16 T+52h31 restant 2026-05-24T22:00Z). **`share_card_downloaded=0` T+27h52** (deadline strategic-15 T+20h08 restant 2026-05-24T13:45Z). **0 LinkedIn referer** dans `visits.jsonl` 253L T+3h52 post-asset-prêt = Florian post pending (normal, deadline strategic-17 T+68h23 restant 2026-05-25T10:00Z). Pattern stagnation 11ᵉ audit maintenu — 3 critères T+72h triples actifs en parallèle.
+
 **ATTRIBUTION substantive JS-beacons /scan-url (grep server.log)** :
 - 04:06:31Z ip_hash `9314397590` = IP réelle **`66.249.73.129` UA Googlebot Mobile WRS Chrome 148 Nexus 5X AS15169 Google authentique** — sortie sandbox scan-url page T+2h25 post Indexing API ping run-337. JS exécuté + beacon fired.
 - 05:14:20Z ip_hash `6377096660` = IP réelle **`43.130.228.73` Tencent Cloud HK** UA spoofé iPhone iOS 13.2.3 = bot fingerprint.

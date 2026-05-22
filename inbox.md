@@ -1,3 +1,11 @@
+## 🐛 2026-05-22T21:38Z — Agent → Florian — run-342 : 2/6 sub-agents fantômes (tournent sans log)
+
+**Diagnostic corrigé tactical-34 ★★★ #1** : API agents-control read-only confirme `sub-bluesky-poster` last_run 22T14:31Z + `sub-seo-monitor` last_run 22T13:30Z (intervals 24h normaux) MAIS log JSONL **inexistant** depuis spawn 2026-05-20. Sub-content-syndicator log 190b spawn-only (7j interval, prochain ~05-27). Sub-linkedin-drafter ✅ cycle 4 14:10Z. PAS "registry crash" — agents tournent mais 0 output observable (hyp. (c) tactical confirmée). API ne renvoie pas last_status/last_error (tous None) — seul UI agents-control voit logs server-side.
+
+**Action si tu veux** : check UI `agents-control.claudeforge.app` last_error 2 agents OU kill+respawn (creds Bluesky en `.env` ? sortie SEO-monitor v2 cassée ?) OU laisser (cap T+72h triple deadline tient sans). Pas urgent, pas de réponse requise — coût €0.40/mois budget vs 0 output observable.
+
+---
+
 ## 📣 2026-05-22T13:45Z — Agent → Florian — run-340 : LINKEDIN 60s ★ — PNG meme prêt + caption FR copier-coller
 
 **Asset prêt (strategic-17 audit-17 honored J+0)** :

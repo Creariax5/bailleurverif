@@ -1,12 +1,46 @@
 ---
 name: Tactical Warnings (last critic audit)
-description: État vivant du dernier audit Tactical Critic (audit-29 2026-05-20T18:55Z post run-326), 3/3 ★★★/★★★/★★ HONORED J+0 run-327
+description: État vivant du dernier audit Tactical Critic (audit-34 2026-05-22T18:55Z post run-341), ★★★ #1 escalade sub-agents fantômes ESCALADÉ run-342 J+0 avec diagnostic corrigé
 type: project
 ---
 
 # Concept : Tactical Warnings (last critic audit)
 
-**Source** : `inbox-from-critic.md` **audit-29 2026-05-20T18:55Z** (post run-326 Telegram daemon ship).
+**Source** : `inbox-from-critic.md` **audit-34 2026-05-22T18:55Z** (post run-341 monitoring discipliné).
+
+## Verdict global audit-34
+
+**8.4/10** (−0.3 vs audit-33 8.7). (+) Discipline méta record : DIRECTIVE 7 trophy **121 wakes ★** + ritual `WHY_THIS_NOT_THAT` 8/8 runs 333→340 + SB-1 strict slot run-337 stable + Strategic 17/17 ★ + run-341 STOP SHIPPING absolu honoré (monitoring only). (+) Sub-linkedin-drafter cycle 4 fired 14:10Z consomme data run-340 = autonomy cascade J+0 ★. (−) 🔴 **★★★ 3/6 sub-agents JAMAIS firé observable depuis spawn** : `sub-seo-monitor` + `sub-bluesky-poster` + `sub-content-syndicator` log file INEXISTANT T+76h+ — 50% architecture distribution = catalogue théorique. (−) 🟡 `humans_engaged=2 UNCHANGED 13ᵉ audit consécutif` + triple deadline T+72h convergente échec narratif probable. (−) 🟡 PNG meme footer truncation cosmétique acceptée run-340.
+
+## 3 actions audit-34 prioriser — statut run-342
+
+1. **★★★ ESCALADER inbox HEAD micro-update Florian sub-agents fantômes** — ✅ **HONORÉ J+0 run-342 AVEC DIAGNOSTIC CORRIGÉ** = append-at-top 6L compact. **Correction tactical diagnostic** : spot-check API agents-control read-only (autorisé hypothèse tactical) révèle `last_run_at` récent pour TOUS sub-agents (sub-bluesky-poster=2026-05-22T14:31Z, sub-seo-monitor=2026-05-22T13:30Z, sub-content-syndicator=2026-05-20T14:31Z = 7j interval normal). **PAS "jamais firé" hyp. (a) registry crash**, agents tournent — mais log JSONL inexistant ⇒ hyp. (c) tactical "exécution mémoire sans output" CONFIRMÉE. API ne renvoie pas `last_status/last_error/last_output` (tous None) — seul observable = JSONL absent. Florian arbitrage requis UI agents-control.
+
+2. **★★ MONITORER triple deadline T+72h convergente** — ✅ HONORÉ J+0 run-342 = funnel spot-check T+5h52 vs run-341 : events 14→16 (+2 home_visit normal ~1/2h), scan_url_pasted=0 (deadline 2026-05-24T22:00Z T+24h restant), share_card_downloaded=0 (deadline 2026-05-24T13:45Z T+16h08 restant **critique**), linkedin_referer post-run-340=0 (2 hits visits.jsonl = 2026-05-18 anciens GitHub→home LinkedInApp UA, PAS Florian-LinkedIn-post). humans_engaged=2 UNCHANGED.
+
+3. **★ SI Florian silent TODO-36 cap T+~20h ≥2026-05-23T13:45Z** → fallback Twitter/X 1 SEUL draft. **Status run-342** : T+~16h restant cap. NE PAS pré-armer (tactical-34 STOP explicit). PARALLEL silent patch §b cap T+~28h ≥21:37Z → maintenir SB-1 default (a) strict.
+
+## 3 actions audit-34 arrêter — statut run-342
+
+1. **STOP interpréter critic-33 #3 "NE PAS PATCH" comme "NE PAS NOTIFIER"** — ✅ CORRIGÉ run-342 (escalade inbox HEAD effectuée avec diagnostic corrigé).
+
+2. **STOP wake monitoring funnel sans nouvelle hypothèse à tester** — ✅ HONORÉ run-342 = monitoring T+5h52 ACCOMPAGNÉ d'escalade substantive + diagnostic corrigé sub-agents. PAS un 4ᵉ wake polish.
+
+3. **STOP shipper nouveaux assets pendant fenêtre T+72h triple deadline** — ✅ HONORÉ run-342 (0 ship, 0 NEW FILE, 0 spawn, 0 PR, 0 outreach SMTP, 0 IndexNow).
+
+## Hypothèse audit-34 vérifier d'urgence
+
+**3 sub-agents log MISSING** : (a) jamais tournés silencieux, OU (b) write-path différent, OU (c) tournent mémoire sans output. **Status run-342** : ✅ VÉRIFIÉ API read-only — **(c) CONFIRMÉE** pour sub-bluesky-poster + sub-seo-monitor (last_run récent < interval, log JSONL inexistant). (a) RÉFUTÉE (agents tournent). (b) reste possible (sub-content-syndicator log JSONL existe `190b spawn 2026-05-20` mais aucune entrée cycle ; interval 7j prochain ~2026-05-27 = pas testable avant).
+
+## Angle mort flag critic-34
+
+**Pollution registry** : 3/6 sub-agents fantômes (50% architecture distribution) consomment budget API (sub-content-syndicator Sonnet 7j ~€0.40/mois + sub-bluesky-poster Haiku 24h ~€0.20/mois + sub-seo-monitor Haiku 24h ~€0.20/mois ~€0.80/mois total) pour ZÉRO output observable. **Inverse exact "architecture défendable" = pollution registry**. À voir audit-18 strategic critic ~run-355 (signal mort canaux = pivot DIAGNOSTIC PUR convergent).
+
+---
+
+# Archive audit-29 (post run-326, ref historique)
+
+**Source** : `inbox-from-critic.md` audit-29 2026-05-20T18:55Z (post run-326 Telegram daemon ship).
 
 ## Verdict global audit-29
 

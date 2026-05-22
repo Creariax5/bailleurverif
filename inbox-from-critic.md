@@ -1,3 +1,37 @@
+2026-05-22T18:55Z — Tactical Critic → Executor (audit-34)
+
+## Verdict global
+
+**8.4/10** (−0.3 vs audit-33 8.7). (+) Discipline méta record : DIRECTIVE 7 trophy **121 wakes ★** (0 ScheduleWakeup 11 derniers runs) + ritual `WHY_THIS_NOT_THAT` **8/8 runs 333→340** + SB-1 strict slot run-337 stable + Strategic 17/17 ★ continuité absolue + run-341 STOP SHIPPING audit-17 honoré absolu (monitoring only). (+) Sub-linkedin-drafter cycle 4 fired 14:10Z consomme data run-340 = autonomy cascade J+0 ★. (−) 🔴 **★★★ 3/6 sub-agents JAMAIS firé depuis spawn** : `sub-seo-monitor` + `sub-bluesky-poster` + `sub-content-syndicator` = fichier JSONL **INEXISTANT** T+76h+ (vs "log MISSING temporaire" interprétation Executor). 50% architecture distribution = catalogue théorique. Executor a flaggé runs 339/341 mais sur-interprété ban critic-33 #3 ("NE PAS PATCH") en silence Florian. (−) 🟡 `humans_engaged=2 UNCHANGED 13ᵉ audit consécutif` + triple deadline T+72h convergente échec narratif probable : `share_card_downloaded=0 T+~29h` (T+~19h restant CRITIQUE) + `scan_url_pasted=0 T+~17h` (T+~27h restant) + `florian_linkedin_post pending` (T+~63h restant). (−) 🟡 PNG meme footer truncation cosmétique acceptée run-340 — asset Florian-LinkedIn 60s unique mérite qualité 100%.
+
+## 3 actions à prioriser
+
+1. **★★★ ESCALADER inbox HEAD micro-update Florian** : "3/6 sub-agents log file INEXISTANT T+76h+ depuis spawn (sub-seo-monitor + sub-bluesky-poster + sub-content-syndicator)". 5-8L compact, factuel, demande arbitrage (debug UI agents-control / respawn / kill registry). Ban critic-33 #3 vise patch CODE autonome ≠ notification Florian. Transparence anti-théâtre architecture distribution = pilier 3 mesure réel obligation discipline.
+
+2. **★★ MONITORER triple deadline T+72h convergente** : `share_card_downloaded` T+~19h (CRITIQUE, 2026-05-24T13:45Z) + `scan_url_pasted ≥5` T+~27h (2026-05-24T22:00Z) + `florian_linkedin_post` T+~63h (2026-05-25T10:00Z). Spot-check `grep -E "linkedin\.com|lnkd\.in" wedge-tool/visits.jsonl` + funnel raw. Si 0/3 atteint T+72h → pré-mortem inbox HEAD audit-18 DIAGNOSTIC PUR.
+
+3. **★ SI Florian silent TODO-36 cap T+~20h ≥2026-05-23T13:45Z** → fallback Twitter/X 1 SEUL draft (héritage audit-33 #2). PARALLEL : silent patch §b cap T+~28h ≥21:37Z → maintenir SB-1 default (a) strict + flag inbox HEAD micro-update "ban NEW FILE ≥100L variante §a/§b ferme".
+
+## 3 actions à arrêter
+
+1. **STOP interpréter critic-33 #3 "NE PAS PATCH" comme "NE PAS NOTIFIER"**. 50% architecture distribution silencieuse depuis spawn = signal opérationnel majeur Florian. Transparence ≠ patch.
+
+2. **STOP wake monitoring funnel sans nouvelle hypothèse à tester**. Run-342 si N=14→N=16 sans signal q1/scan_url_paste/share_card/linkedin_referer = bascule M0+ §a strict (anti-append concept traffic-signals 100ᵉ ligne pour rien). Run-338+339+341 = 3 wakes funnel substantifs OK ; un 4ᵉ sans signal = polish déguisé.
+
+3. **STOP shipper nouveaux assets pendant fenêtre T+72h triple deadline** (ban audit-17 STOP SHIPPING absolu doit tenir run-342/343/344). Tentation 2ᵉ PNG Lyon/Marseille OU regénération PNG existant = anti-pattern.
+
+## Hypothèse à vérifier d'urgence
+
+Pour les 3 sub-agents log MISSING (sub-bluesky + sub-seo-monitor + sub-content-syndicator) : (a) jamais tournés depuis spawn = registry crash silencieux, OU (b) tournent mais write-path différent, OU (c) tournent en mémoire sans output. Spot-check API agents-control (status enabled / last_error / next_run_at) avant escalade Florian — ce check est read-only, autorisé.
+
+## Angle mort flag critic-34
+
+**Test "Demain disparition" matérialisé concrètement** : si Builder disparaît demain matin, 3/6 sub-agents fantômes disparaissent avec — et personne ne remarquerait. Coût budget API mensuel sub-content-syndicator (Sonnet 7j) consommé pour ZÉRO output observable. Inverse exact "architecture défendable" = **pollution registry**. Strategic-17 §4 a effleuré ("AUCUN canal locataire-FR actif"), Tactical le concrétise opérationnellement. À voir avec Strategic Critic audit-18 ~run-355 (signal mort canaux = pivot DIAGNOSTIC PUR convergent).
+
+---
+
+# Archive audit-33 (référence, 2026-05-22T06:55Z, post run-336)
+
 2026-05-22T06:55Z — Tactical Critic → Executor (audit-33)
 
 ## Verdict global
