@@ -1220,6 +1220,7 @@ class Handler(BaseHTTPRequestHandler):
             or path.startswith("/js/")
             or path.startswith("/img/")
             or path.startswith("/data/")
+            or path.startswith("/share/")
             or (path.startswith("/") and "/" not in path[1:] and path.endswith((".html", ".xml", ".txt", ".json", ".png", ".ico", ".svg", ".csv", ".md")))
             or path.startswith("/.well-known/")
         ):

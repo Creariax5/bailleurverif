@@ -1,3 +1,60 @@
+# Strategic Critic Audit — 2026-05-22T10:00Z (audit-17, post run-339)
+
+---
+
+## 1. COPYABILITY SCORE
+
+- run-337 `/scan-url.html` 213L + POST `/api/scan-url` (helpers existants `crawler/locservice_v0.py` + score réutilisables, glue ≤2j solo dev) : ~85%.
+- run-338/339 funnel spot-check + attribution JS-beacons bots vs humains : N/A méta diagnostic.
+
+**~85% copyable. 0 feature net-defendable shippée depuis audit-16.**
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1 ✅** : 2 substantifs UNCHANGED (chain 11 vagues git horodatées + cross-wave persistence N=121/57.6% pipeline auto).
+- **Cat-2 ❌** : `signalements_total=2` UNCHANGED 6j+ (ban morte tient, run-272).
+- **Cat-3 ⚠️** : 3 templates DILA-verified + 9 ECLI Cass. (saturated 3/3 run-305) UNCHANGED.
+- **Cat-4 ✅** : 1.8 (Wikidata Q139857638 DR 100 + data.gouv reuse `6a0c30a` DR 90 + MIT repo) UNCHANGED.
+
+**≈3.8/4 honest, +0.0 net, stagnation 11 audits consécutifs (audit-7→17).**
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** : 80k+ annonces, brand 50 ans. Gap inverse = trafic+brand massif.
+- **SeLoger** : marketplace FR audience millions. Gap inverse = distribution+features.
+- **ANIL** : autorité État DR ~85. Silent T+108h post-mail. Gap inverse = autorité structurelle.
+
+Seuls gaps défendables BV : chain 11 vagues git + Wikidata Q139857638 + cross-wave. Gaps inverses (trafic/brand/autorité/users) restent existentiels et non-rattrapables solo.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+Non-rejouable 1 weekend : crypto-timestamp chain 11 vagues git + slug data.gouv.fr indexé Google Dataset Search + Wikidata Q139857638 + cross-wave N=121=57.6%. **MAIS `humans_engaged=2` 112+ wakes UNCHANGED + `/scan-url` T+12h : 2/2 `scan_url_page_visit` = BOTS (Googlebot WRS + Tencent UA-spoofé), 0 humain réel ⇒ moat 100% académique.** Output share-friendly : share-card LIVE T+19h52 `share_card_downloaded=0` + scan-url verdict-card auto T+12h `scan_url_pasted=0` — 0 déclencheur humain. Persona-canal fit **CASSÉ 5/5 PIRE** : sub-bluesky-poster LOG MISSING T+19h post cycle-1 + sub-seo-monitor LOG MISSING T+24h = 2/4 sub-agents 24h-interval non-firing. AUCUN canal locataire-FR actif. TODO-36 Reddit silent T+19h (cap T+28h restant).
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+**Pattern audit-7→17 : 11 audits ★ cumul 17/17 HONORED, +0 humans_engaged net** — la métrique "prescription HONORED" optimise vélocité Builder sans produire users. Run-337 `/scan-url` shipped T+3h45 sur prescription audit-16 = tactiquement parfait, stratégiquement = 12ᵉ asset built sans canal distribution persona-fit pour l'activer. Strategic critic lui-même contribue au drift en prescrivant "ship X" plutôt que "stop ship, fix distribution upstream". Audit-17 corrige.
+
+## 6. PRESCRIPTION
+
+**STOP SHIPPING NEW FILES. Produire 1 PNG meme-format share-friendly + draft pré-ready Florian-30s LinkedIn (8000 followers, SEUL canal humain prouvé +10v/17h P10).**
+
+Builder wake suivant :
+1. Générer `wedge-tool/static/share/top10-arrondissements-paris-2026-05.png` 1080×1080 cat-1 observatoire N=232 (top 10 codes postaux 75XX % violation desc).
+2. Pre-draft `social-drafts.md` caption 280c FR locataire-fit + hashtags `#LoyerParis` `#ImmoFrance`.
+3. Append HEAD `inbox.md` bloc 5L COMPACT "Florian 60s : poste ce PNG ta LinkedIn". Pas escalade, pas re-prompt.
+
+Asymétrie quadruple :
+1. **1ʳᵉ output visual share-friendly cross-canal natif** (Twitter/Instagram/Reddit/LinkedIn) vs textes sub-drafter.
+2. **Cat-1 data observatoire réutilisée** ⇒ moat académique → asset substantif share-friendly.
+3. **LinkedIn Florian = seul canal humain prouvé** (Reddit silent, sub-bluesky/sub-seo non-firing T+19-24h).
+4. **Pas SB-1 NEW FILE ≥100L user-facing** (PNG static asset ≠ NEW user-facing 100L), pas touch carve-outs scan-url/share-card/homepage, pas spawn 7ᵉ sub-agent, pas re-escalade TODO-36/-33.
+
+**Critère succès T+72h (deadline 2026-05-25T10:00Z)** : Florian poste PNG LinkedIn OR signal refus explicit. Si non-posté+silent ⇒ audit-18 pivote DIAGNOSTIC PUR (calcul bot/humain ratio funnel, kill assets non-distribués).
+
+**Bans audit-17** : 🚫 ship 2ᵉ NEW FILE ≥100L (SB-1 strict) / 🚫 touch `/scan-url.html` ou `/api/scan-url` (carve-out T+72h 2026-05-24T22:00Z) / 🚫 touch `share-card.js` / 🚫 modif homepage / 🚫 spawn 7ᵉ sub-agent / 🚫 re-escalade TODO-36/-33 (cooldowns) / 🚫 outreach SMTP press (cooldowns ANIL/Que Choisir) / 🚫 IndexNow / 🚫 Telegram itération / 🚫 ScheduleWakeup.
+
+---
+
 # Strategic Critic Audit — 2026-05-21T22:00Z (audit-16, post run-336)
 
 ---

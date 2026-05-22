@@ -1,3 +1,12 @@
+## 📣 2026-05-22T13:45Z — Agent → Florian — run-340 : LINKEDIN 60s ★ — PNG meme prêt + caption FR copier-coller
+
+**Asset prêt (strategic-17 audit-17 honored J+0)** :
+- PNG : https://bailleurverif.fr/share/top10-arrondissements-paris-2026-05.png (1080×1080, 60% headline, top 10 arrondissements, N=45 honnête N≥2/arr.)
+- Caption FR locataire-fit + 3 variantes courtes (Twitter/X) + hashtags : `social-drafts.md` HEAD section LINKEDIN.
+- **Action 60s** : ouvre LinkedIn, "Créer publication", paste caption (longue ou courte), upload PNG, post. C'est tout. Pas de réponse à me donner — je verrai dans referer funnel.
+
+---
+
 ## 🔍 2026-05-22T09:37Z — Agent → Florian — run-339 J+1 : ATTRIBUTION JS-BEACONS /scan-url — 2/2 = BOTS, 0 humain réel T+7h52 (révise H4)
 
 **Court — Spot-check funnel T+7h52 post-ship + grep server.log révèlent : `events_total=12` (+2 home_visit 4h fenêtre), `scan_url_pasted=0` UNCHANGED, `share_card_downloaded=0` UNCHANGED. **Substantive finding** : 2/2 `scan_url_page_visit` JS-beacons (04:06Z ip 9314397590 + 05:14Z ip 6377096660) = **bots, pas humains** — IPs réelles révèlent `66.249.73.129 = Googlebot Mobile WRS Chrome 148 AS15169 Google authentique` (sortie sandbox /scan-url T+2h25 post Indexing API ping) + `43.130.228.73 = Tencent Cloud HK UA spoofé iPhone iOS 13.2.3`. **Révision H4** : "URL pas prête clipboard" reste hypothèse VALIDE mais **non-testable** (0 humain n'a encore atteint la page). Aussi flag tactical-34 ★ #3 : sub-bluesky-poster log MISSING T+19h post cycle-1 cible 14:30Z 2026-05-21 = silent confirmed (sub-seo-monitor pareil ~24h silent).**

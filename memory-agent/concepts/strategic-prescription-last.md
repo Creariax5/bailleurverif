@@ -1,10 +1,73 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-16 strategic 2026-05-21T22:00Z. Prescription unique = SHIP /scan-url zero-friction painkiller (URL Locservice → verdict + share-card auto). HONORED run-337 J+0 T+3h45. 16/16 strategic cumul ★.
+description: Audit-17 strategic 2026-05-22T10:00Z. Prescription unique = STOP SHIPPING NEW FILES + ship PNG meme top10 Paris + caption FR LinkedIn + inbox HEAD 5L COMPACT. HONORED run-340 J+0 T+3h45. 17/17 strategic cumul ★.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-17 2026-05-22T10:00Z** (post run-339, exécuté run-340 J+0 T+3h45 HONORÉ).
+
+## Verdict moat audit-17
+
+- **Copyability** : ~85% (`/scan-url.html` + endpoint ~85%, méta diagnostic run-338/339 N/A). 0 feature net-defendable depuis audit-16.
+- **Moat ≈3.8/4 honest, +0.0 net, stagnation 11 audits consécutifs (audit-7→17)**.
+- **Cat-1/2/3/4 UNCHANGED** vs audit-16.
+
+## Drift audit-17
+
+`humans_engaged=2` 112+ wakes UNCHANGED + `/scan-url` T+12h `scan_url_page_visit=2 = BOTS` (Googlebot WRS + Tencent UA-spoofé), 0 humain réel. share-card LIVE T+19h52 `share_card_downloaded=0`. Persona-canal fit CASSÉ 5/5 PIRE : sub-bluesky LOG MISSING T+19h + sub-seo LOG MISSING T+24h = 2/4 sub-agents 24h-interval non-firing. AUCUN canal locataire-FR actif. Pattern audit-7→17 : 11 audits ★ cumul 17/17 HONORED, +0 humans_engaged net — métrique optimise vélocité Builder sans produire users. Strategic critic lui-même contribue au drift en prescrivant "ship X". Audit-17 corrige.
+
+## Prescription unique audit-17 (HONORED J+0 T+3h45 run-340)
+
+**STOP SHIPPING NEW FILES. Produire 1 PNG meme-format share-friendly + draft pré-ready Florian-30s LinkedIn (8000 followers, SEUL canal humain prouvé).**
+
+Builder wake suivant (run-340) :
+1. Générer `wedge-tool/static/share/top10-arrondissements-paris-2026-05.png` 1080×1080 cat-1 observatoire (top 10 codes postaux 75XX % violation desc).
+2. Pre-draft `social-drafts.md` caption 280c FR locataire-fit + hashtags `#LoyerParis` `#ImmoFrance`.
+3. Append HEAD `inbox.md` bloc 5L COMPACT "Florian 60s : poste ce PNG ta LinkedIn". Pas escalade, pas re-prompt.
+
+Asymétrie quadruple :
+1. 1ʳᵉ output visual share-friendly cross-canal natif vs textes sub-drafter.
+2. Cat-1 data observatoire réutilisée ⇒ moat académique → asset substantif share-friendly.
+3. LinkedIn Florian = seul canal humain prouvé.
+4. Pas SB-1 NEW FILE ≥100L user-facing (PNG asset static ≠ NEW user-facing 100L).
+
+## Critère succès T+72h (deadline 2026-05-25T10:00Z)
+
+`Florian poste PNG LinkedIn` OR `signal refus explicit`. Si non-posté+silent T+72h ⇒ audit-18 pivote DIAGNOSTIC PUR (calcul bot/humain ratio funnel, kill assets non-distribués).
+
+## État application run-340 ✅ HONORÉE J+0
+
+- ✅ PNG `wedge-tool/static/share/top10-arrondissements-paris-2026-05.png` 1080×1080 112519 bytes (60% headline + 10 barres rouges/orange/vert + footer source observatoire + brand). Filtre honnête N≥2/arr. (3 arrondissements 100% défendables 75001/75006/75005 + 75017 83% + 75015 75% + 75018 50% + 75014/75020 33% + 75012 25% + 75010 0%).
+- ✅ Utility script `build_top10_paris.py` 130L non-user-facing (PIL render + aggregate 3 CSV + listings scored dedup accommodation_id, N=45 Paris, 60% violation global).
+- ✅ Caption FR + 2 variantes courtes (Twitter/X) + 5 hashtags pool : `social-drafts.md` HEAD section LINKEDIN ~75L. Caption longue 1300c LinkedIn-optimisée + variantes 256c/270c fallback X.
+- ✅ Inbox HEAD bloc 4-5L COMPACT `📣 run-340 : LINKEDIN 60s` (lien PNG prod + lien social-drafts + action 60s + anti-noise "Pas de réponse à me donner").
+- ✅ Bonus 1-ligne `wedge-tool/server.py` L1223 whitelist `or path.startswith("/share/")` + restart server (kill 3385544 → spawn 3565579, downtime <2s).
+- ✅ Verify prod HTTPS `curl -sI bailleurverif.fr/share/top10-...png` = 200 OK 112519 bytes image/png ✅.
+- ✅ **METRIC** : `strategic_critic_recommendations_followed_cumul = 16/16 → 17/17 ★`
+
+## Bans audit-17 (jusqu'à audit-18 ~run-355 OU trigger T+72h)
+
+- 🚫 ship 2ᵉ NEW FILE ≥100L user-facing (SB-1 strict)
+- 🚫 touch `/scan-url.html` ou `/api/scan-url` (carve-out T+72h ≥2026-05-24T22:00Z)
+- 🚫 touch `share-card.js` (ban audit-15)
+- 🚫 modif homepage
+- 🚫 spawn 7ᵉ sub-agent
+- 🚫 re-escalade TODO-36/-33 (cooldowns)
+- 🚫 outreach SMTP (cooldowns ANIL/Que Choisir)
+- 🚫 IndexNow (vanity)
+- 🚫 Telegram itération (GEL)
+- 🚫 ScheduleWakeup
+- ⚠️ **Trigger pivot audit-18 prématuré** : si `Referer.*linkedin ≥3` (Florian a posté & viralité signal) OU refus explicit Florian → audit-18 accélérer/pivoter ; sinon naturel ~run-355.
+
+## Strategic critic prochain audit
+
+`wakes_since_last_strategic_critic` reset 0 run-340 ; cible auto ~run-355 (audit-18) sauf trigger T+72h linkedin OU T+72h share-card OU T+72h url-pasted OU Florian post LinkedIn signal.
+
+---
+
+# Archive audit-16 (run-337 HONORED, scan-url shipped)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-16 2026-05-21T22:00Z** (post run-336, exécuté run-337 J+0 T+3h45 HONORÉ).
 

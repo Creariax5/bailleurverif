@@ -2,6 +2,82 @@
 
 ---
 
+## 🟢 LINKEDIN — PNG MEME TOP 10 PARIS — added run-340 2026-05-22T13:45Z (strategic-17 prescription unique HONORED J+0)
+
+**Contexte** : Strategic-17 audit 10:00Z prescription `STOP SHIPPING NEW FILES. Produire 1 PNG meme-format share-friendly + draft pré-ready Florian-30s LinkedIn (8000 followers, SEUL canal humain prouvé)`. Asset visible : `https://bailleurverif.fr/share/top10-arrondissements-paris-2026-05.png` 1080×1080 (60% headline, top 10 arrondissements barres rouges/orange/verte, N=45 dedup, N≥2/arr.).
+
+**Persona-fit cible** : LinkedIn FR locataires + curieux civiques + médias FR (8k followers Florian). Output = post Florian (compte perso), pas page BV. Bouton "Réutiliser ce post" UX LinkedIn n'existe pas, donc 30-60s copier-coller Florian.
+
+### CAPTION FR — locataire-fit — ready-to-post 30s
+
+**Texte (≤1300 chars LinkedIn idéal pour engagement, 1ʳᵉ ligne hook) :**
+
+```
+60% des annonces parisiennes que j'ai scrappées dépassent le plafond légal de l'encadrement des loyers.
+
+Méthodologie ouverte :
+→ 45 annonces Locservice à Paris (vagues 17-19 mai 2026, dédupliquées)
+→ Comparées au plafond Article 17 de la loi ALUR (arrêté préfectoral)
+→ Données brutes publiées en CC-BY-4.0 sur data.gouv.fr
+
+Top arrondissements (N≥2 minimum) :
+• Paris 1ᵉ : 100% (3/3)
+• Paris 6ᵉ : 100% (2/2)
+• Paris 5ᵉ : 100% (2/2)
+• Paris 17ᵉ : 83% (5/6)
+• Paris 15ᵉ : 75% (3/4)
+
+Un excès médian de ~18€/m² = ~540€/mois en trop sur un T2 de 30m².
+
+L'encadrement des loyers existe à Paris depuis 2019. Les bailleurs encourent un rappel + 5 000€ d'amende. Mais le contrôle repose sur le locataire qui doit lui-même contester.
+
+J'ai mis en ligne un outil gratuit pour vérifier en 5 secondes si son loyer respecte le plafond : https://bailleurverif.fr
+
+Les annonces complètes, brutes, sont sur data.gouv.fr (recherche "BailleurVérif").
+
+Données + outil sous MIT/CC-BY-4.0. Si ça peut aider quelqu'un, partagez.
+
+#LoyerParis #EncadrementLoyers #ImmoFrance #LogementFrance #DataGouvFr
+```
+
+**Variantes courtes (Twitter/X 280c fallback)** :
+
+```
+Variante A — punchy (256c) :
+60% des annonces Paris que j'ai scrappées dépassent le plafond légal de l'encadrement.
+
+N=45, méthode ouverte, données CC-BY-4.0 sur data.gouv.fr.
+
+Vérifie ton loyer en 5s → bailleurverif.fr
+
+#LoyerParis #EncadrementLoyers
+```
+
+```
+Variante B — civique (270c) :
+Paris : ~540€/mois en trop sur un 30m² médian non-conforme. 60% des annonces scrappées violent l'encadrement.
+
+L'État a fixé un plafond, mais c'est au locataire de contester.
+
+bailleurverif.fr — vérif gratuite 5s + données data.gouv.fr.
+```
+
+**Hashtags pool (5 max LinkedIn, 2 max Twitter)** :
+- `#LoyerParis` (français primary, locataire-fit)
+- `#EncadrementLoyers` (technique, juridique)
+- `#ImmoFrance` (généraliste immobilier)
+- `#LogementFrance` (politique publique)
+- `#DataGouvFr` (transparence civique)
+
+**Notes posting** :
+- Image attachée = PNG `https://bailleurverif.fr/share/top10-arrondissements-paris-2026-05.png` (LinkedIn affiche en feed native, pas link preview).
+- Mentionner @data.gouv.fr LinkedIn page ? OK si fluide, sinon laisser.
+- Pas de hashtag immobilier-promoteur (anti-feed pollution algorithmique).
+- Si commentaire "N=45 c'est petit" : répondre "vagues 17-19 mai, échantillon test du pipeline. Les vagues hebdo sont cumulatives sur data.gouv.fr."
+- Si ça marche (≥1 commentaire ou ≥10 likes ou referrer LinkedIn dans funnel) → reproduire mensuel (Lille / Marseille / etc.)
+
+---
+
 ## 🔴 REDDIT — 4 DRAFTS PRÊTS-À-FIRE — added run-332 2026-05-21T09:05Z (recalibrage 3 piliers, canal #1 acquisition+viralité)
 
 **Contexte** : Mission RECALIBRÉE 2026-05-21T07:35Z = P2 acquisition+viralité 100%. Canal #1 proposé run-331 = **Reddit data posts** (asset N=232 prêt, format share-friendly natif, indexation Google compounding). Florian-input requis = TODO-36 ★★ (compte Reddit, 3 options a/b/c). **Ces drafts sont ready-to-fire dès Florian validate compte** (5 min post-validation).
