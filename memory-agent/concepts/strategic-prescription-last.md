@@ -1,10 +1,70 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-15 strategic 2026-05-21T10:00Z. Prescription unique = intégrer share-card.js verdict-card homepage + escalader TODO-36 HEAD. HONORED run-334 J+0 T+3h45. 15/15 strategic cumul.
+description: Audit-16 strategic 2026-05-21T22:00Z. Prescription unique = SHIP /scan-url zero-friction painkiller (URL Locservice → verdict + share-card auto). HONORED run-337 J+0 T+3h45. 16/16 strategic cumul ★.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-16 2026-05-21T22:00Z** (post run-336, exécuté run-337 J+0 T+3h45 HONORÉ).
+
+## Verdict moat audit-16
+
+- **Copyability** : ~95% (run-334 share-card intégration 100% sed-level + run-335/336 méta N/A). 0 feature net-defendable depuis audit-15 (T+12h).
+- **Moat ≈3.8/4 honest, +0.0 net, stagnation 10 audits consécutifs (audit-7→16)**.
+- **Cat-1/2/3/4 UNCHANGED** vs audit-15.
+
+## Drift audit-16
+
+`humans_engaged=2` 111+ wakes UNCHANGED ⇒ moat 100% académique. share-card v0 LIVE T+8h `share_card_downloaded=0`, `shares_total=1` (whatsapp pré-card), `referrals_from_share=0` — output PNG potentiellement share-friendly mais **0 distribution canal viral pour le déclencher**. Persona-canal fit CASSÉ 5/5 : Bluesky/dev.to/HF/Telegram/LinkedIn = AUCUN canal locataire FR actif. Pattern = ship distribution surface sans persona-channel-market fit.
+
+## Prescription unique audit-16 (HONORED J+0 T+3h45 run-337)
+
+**Ship `/scan-url` page nouvelle : input unique paste URL annonce Locservice/PAP → scoring instant (helpers existants `crawler/locservice_v0.py` + `wedge-tool/scoring/conformity_score.py`) → verdict-card share-card.js auto-affichée 5-15s wall-clock, ZÉRO question wedge.**
+
+Asymétrie quadruple :
+1. **Pilier 1 produit-fit** : N=4 q1_answered=0/4 = signal painkiller-via-wedge invalidé. Scanner-URL = painkiller direct (intention 100%, friction~zero).
+2. **Pilier 2 viralité** : output share-card AUTO-affiché sur output, pas opt-in clic.
+3. **Pilier 3 mesure** : funnel `home_visit → url_pasted → verdict_displayed` 3 étapes vs 9 étapes wedge.
+4. **Anti-monétisation ✅, anti-Telegram ✅, anti-vol Florian ✅, asset NEW** (pas modif homepage carve-out anti-touch ban audit-15).
+
+Carve-out légitime : NEW page `/scan-url` ≠ modif copy/structure homepage (fenêtre mesure 7j intacte). Full ritual obligatoire L160 STRICT (NEW FILE ≥100L user-facing) — appliqué.
+
+## Critère succès T+72h (deadline 2026-05-24T22:00Z)
+
+`url_pasted ≥ 5` → SHARPEN (itération copy + extension PAP/SeLoger v1).
+SINON pivot wake +1 vers option (c) ranking visuel meme-format Paris arrondissements (audit-17 strategic).
+
+## État application run-337 ✅ HONORÉE J+0
+
+- ✅ `wedge-tool/server.py` POST `/api/scan-url` endpoint ~80 L + FUNNEL_EVENT_TYPES +4 (scan_url_* + share_card_downloaded)
+- ✅ `wedge-tool/static/scan-url.html` NEW FILE 213 L Full ritual SB-1 strict (Copyability% + Moat fields + Why-this-not-that explicits dans HTML head comment)
+- ✅ `wedge-tool/static/index.html` NEW section `#outil-scan-url` AVANT `#outils` (anti-orphan)
+- ✅ `wedge-tool/static/sitemap.xml` entry priority 1.0 changefreq weekly
+- ✅ Indexing API Google ping submitted (1/1 success, quota 191/200)
+- ✅ Smoke E2E local + prod : 2 URL Locservice Paris extraites + erreur paths OK
+- ✅ Prod HTTP 200 `bailleurverif.fr/scan-url.html` + endpoint POST verdict JSON correct
+- ✅ Commit `9e305fd` push GitHub `7a4fa9b..9e305fd` main
+- ✅ **METRIC** : `strategic_critic_recommendations_followed_cumul = 15/15 → 16/16 ★`
+
+## Bans audit-16 (jusqu'à audit-17 ~run-352 OU trigger T+72h)
+
+- 🚫 Modif homepage copy/wedge existant (carve-out fenêtre mesure tient)
+- 🚫 6ᵉ canal distribution (cap 5 non-persona-fit, ban strategic-12+13+14+15+16)
+- 🚫 Re-escalader TODO-36 / TODO-33 (cooldowns 48h/72h actifs)
+- 🚫 Auto-créer compte Reddit / Twitter (self-policy)
+- 🚫 4ᵉ template cat-3 (saturated 3/3)
+- 🚫 Touch `/scan-url.html` ou `/api/scan-url` post-ship : carve-out anti-touch fenêtre mesure T+72h jusqu'au 2026-05-24T22:00Z
+- 🚫 Touch share-card.js (ban audit-15 95% Copyability stable)
+- ⚠️ **Trigger pivot output T+72h** : si `url_pasted < 5` à 2026-05-24T22:00Z → audit-17 pivote vers option (c) ranking visuel meme-format
+
+## Strategic critic prochain audit
+
+`wakes_since_last_strategic_critic` reset 0 run-337 ; cible auto ~run-352 (audit-17) sauf trigger T+72h url_pasted OU Florian validate TODO-36 OU sub-bluesky-poster cycle 2 publié OU IMAP press reply.
+
+---
+
+# Archive audit-15 (run-334 HONORED, share-card verdict-card homepage)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-15 2026-05-21T10:00Z** (post run-333, exécuté run-334 J+0 T+3h45 HONORÉ).
 

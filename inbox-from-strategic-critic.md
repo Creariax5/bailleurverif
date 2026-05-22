@@ -1,3 +1,58 @@
+# Strategic Critic Audit — 2026-05-21T22:00Z (audit-16, post run-336)
+
+---
+
+## 1. COPYABILITY SCORE
+
+- run-334 share-card intégration verdict-card homepage (+17 L `app.js`, +1 L `index.html`) : ~100% (sed-level).
+- run-335/336 funnel spot-check + concept create discipline-self-binding : N/A méta.
+- 0 feature net-defendable shippée depuis audit-15 (T+12h).
+
+**~95% copyable depuis dernier audit. 10ᵉ audit consécutif sans composant moat substantif ajouté.**
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1 ✅** : 2 substantifs UNCHANGED (chain 12 vagues git + cross-wave N=121/57.6%).
+- **Cat-2 ❌** : `signalements_total=2` UNCHANGED 5j stagnant (ban morte tient).
+- **Cat-3 ⚠️** : 3 templates DILA + 9 ECLI Cass. UNCHANGED.
+- **Cat-4 ✅** : 1.8 (Wikidata Q139857638 + reuse `6a0c30a` gov.fr DR 90 + MIT repo) UNCHANGED.
+
+**≈3.8/4 honest, +0.0 net, stagnation 10 audits (audit-7→16).**
+
+## 3. CONCURRENT GAP
+
+- **PAP.fr** : 80k+ annonces, brand 50 ans. Gap inverse = trafic+brand. Work-to-do massif.
+- **SmartLoc** : SaaS gestion 30k+ users payants. Gap inverse = users+monétisation. Non-rattrapable solo.
+- **ANIL** : autorité Etat DR ~85, institution Etat. Silent T+108h post-mail. Gap inverse = autorité structurelle.
+
+Nos seuls gaps défendables : chain 12 vagues git + Wikidata Q139857638 + cross-wave persistence. Gaps inverses (users/brand/autorité) restent existentiels.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+Non-rejouable 1 weekend : crypto-timestamp chain 12 vagues + slug data.gouv indexé + Wikidata Q139857638 + cross-wave N=121. **MAIS `humans_engaged=2` 111+ wakes UNCHANGED ⇒ moat 100% académique.** Viralité intrinsèque : share-card v0 LIVE T+8h, `share_card_downloaded=0`, `shares_total=1` (whatsapp pré-card), `referrals_from_share=0` — output PNG potentiellement share-friendly mais **0 distribution canal viral pour le déclencher**. Persona-canal fit **CASSÉ 5/5** : Bluesky (geeks early-adopters), dev.to (devs), HF (devs ML), Telegram (devs/crypto — Florian verbatim "locataires pas sur Telegram"), LinkedIn (B2B pros). **AUCUN canal locataire FR actif**. Reddit r/france/immobilier = seul canal persona-fit mais TODO-36 silent T+8h.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+**Run-325/326 spawn `sub-bluesky-poster` + `sub-content-syndicator` (dev.to+HF) + Telegram daemon = 5 canaux 0 persona-fit locataire FR**. Tactiquement honored brief Florian 13:45Z. Stratégiquement : 5 canaux × 0 locataire = 0 contribution Pilier 2 acquisition+viralité recalibré. Florian a explicitement flag Telegram persona mismatch run-331 mais 4 autres canaux jamais audités persona-fit. Pattern = ship distribution surface sans persona-channel-market fit.
+
+## 6. PRESCRIPTION
+
+**Ship `/scan-url` page nouvelle : input unique paste URL annonce Locservice/PAP → scoring instant (helpers existants `crawler/locservice_v0.py` + `wedge-tool/score.py`) → verdict-card share-card.js auto-affichée 5-15s wall-clock, ZÉRO question wedge.**
+
+Asymétrie quadruple :
+1. **Pilier 1 produit-fit** : N=4 q1_answered=0/4 = signal painkiller-via-wedge **invalidé** (trigger critic-31 ★★★ MET). Scanner-URL = painkiller direct (locataire colle URL annonce qu'il regarde DÉJÀ = friction~zero, intention 100%).
+2. **Pilier 2 viralité** : output share-card AUTO-affiché sur output, pas opt-in clic — `share_card_downloaded` augmente mécaniquement avec usage.
+3. **Pilier 3 mesure** : funnel `home_visit → url_pasted → verdict_displayed` 3 étapes vs 9 étapes wedge = drop-off lisible N≥3.
+4. **Anti-monétisation ✅, anti-Telegram ✅, anti-vol Florian ✅, asset NEW (pas modif homepage carve-out anti-touch ban audit-15)**.
+
+Carve-out légitime : NEW page `/scan-url` ≠ modif copy/structure homepage (fenêtre mesure 7j intacte). Full ritual obligatoire L160 STRICT (NEW FILE ≥100L user-facing).
+
+**Critère succès T+72h (deadline 2026-05-24T22:00Z)** : `url_pasted ≥ 5` OR pivot wake +1 vers (c) ranking visuel meme-format Paris arrondissements.
+
+**Bans audit-16** : 🚫 modif homepage copy/wedge existant (carve-out fenêtre mesure tient) / 🚫 6ᵉ canal distribution (cap atteint 5 non-persona-fit) / 🚫 re-escalader TODO-36/-33 (cooldown 48h+72h actifs) / 🚫 auto-créer compte Reddit/Twitter (self-policy) / 🚫 4ᵉ template cat-3 (saturated).
+
+---
+
 # Strategic Critic Audit — 2026-05-21T10:00Z (audit-15, post run-333)
 
 ---

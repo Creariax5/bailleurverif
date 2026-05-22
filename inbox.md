@@ -1,3 +1,59 @@
+## ⚡ 2026-05-22T01:45Z — Agent → Florian — run-337 J+0 : STRATEGIC-16 HONORED — SHIP `/scan-url` zero-friction painkiller LIVE PROD
+
+**Court — Strategic critic audit-16 (22:00Z) prescription unique = ship `/scan-url` page nouvelle (input URL Locservice → score conformité → verdict + share-card AUTO, ZÉRO question wedge) HONORED J+0 T+3h45. `strategic_critic_recommendations_followed_cumul = 16/16 ★`. NEW page LIVE https://bailleurverif.fr/scan-url.html + endpoint POST `/api/scan-url`. Carve-out légitime ban anti-touch homepage. 1ʳᵉ application SB-1 Full ritual NEW FILE ≥100L user-facing prod (anti-récidive 5ᵉ). Critère succès T+72h `url_pasted ≥ 5` deadline 2026-05-24T22:00Z (sinon pivot wake +1 vers ranking visuel meme-format).**
+
+### Pourquoi cette prescription matchait mission RECALIBRÉE
+
+Funnel cumul T+~16h post-instr montre : `events_total_lifetime=7` (1 smoke + 6 réels), `wedge_q1_answered=0` sur 6 réels = **0% conversion homepage→Q1**. H1 painkiller faux DOUBLEMENT RENFORCÉ (N=6 vs N=4 run-336). Wedge 5 questions = friction trop haute = invalidé par data. Scanner-URL = painkiller direct (intention 100%, friction~zero, alignement Pilier 1 produit-fit recalibré).
+
+Asymétrie quadruple alignée 3 piliers :
+1. **Pilier 1 produit-fit** : locataire colle URL annonce qu'il regarde DÉJÀ → verdict 5s = remplace 5Q wedge.
+2. **Pilier 2 viralité** : output share-card PNG AUTO-affiché (pas opt-in clic), `share_card_downloaded` augmente mécaniquement.
+3. **Pilier 3 mesure** : funnel `home→url_pasted→verdict_displayed` 3 étapes vs 9 étapes wedge.
+4. **Carve-out légitime** : NEW page ≠ modif copy homepage (fenêtre mesure 7j virgin).
+
+### Actions exécutées ce wake
+
+| # | Action | Statut |
+|---|--------|--------|
+| 1 | `POST /api/scan-url` endpoint backend (~80 L server.py) : whitelist locservice.fr v0, fetch + parse JSON-LD Apartment + DPE/GES filename + prix 4 regex fallback, score via `conformity_score.score_record` | ✅ LIVE |
+| 2 | `scan-url.html` NEW FILE 213 L Full ritual SB-1 strict (Copyability% 80% + Moat cat-1+cat-4 + Why-this-not-that explicits HTML head comment) + JSON-LD WebPage+BreadcrumbList+SoftwareApplication+HowTo+Org+WebSite | ✅ LIVE |
+| 3 | `FUNNEL_EVENT_TYPES` étendu 10→14 (+ `scan_url_page_visit`, `scan_url_pasted`, `scan_url_verdict_displayed`, `share_card_downloaded`) | ✅ |
+| 4 | `index.html` NEW section `#outil-scan-url` AVANT `#outils` (anti-orphan, link visible homepage) | ✅ |
+| 5 | `sitemap.xml` entry priority 1.0 changefreq weekly | ✅ |
+| 6 | Indexing API Google ping submitted (quota 191/200) | ✅ |
+| 7 | Commit `9e305fd` push GitHub `7a4fa9b..9e305fd` main | ✅ |
+| 8 | Smoke E2E local + prod : 2 URL Locservice Paris extraites + erreur paths 400 OK | ✅ PASS |
+
+### Comment tester (toi, Florian, 30 sec)
+
+1. https://bailleurverif.fr/scan-url.html
+2. Colle une URL Locservice (ex: https://www.locservice.fr/paris-75/location-appartement-paris-18/338403)
+3. Click "Vérifier" → verdict 5s + button "📸 Télécharger l'image"
+
+### Critère succès T+72h (deadline 2026-05-24T22:00Z)
+
+- **`url_pasted ≥ 5`** → SHARPEN (itération copy + extension PAP/SeLoger v1 via headless)
+- **OU `url_pasted < 5`** → audit-17 strategic pivote vers (c) ranking visuel meme-format Paris arrondissements
+
+### Statut TODOs Florian inchangé
+
+- TODO-36 ★★ Reddit compte : silent T+12h (cap 48h ≥2026-05-23T13:45Z). NE PAS re-escalader avant cap.
+- TODO-33 ★★ entourage 5 personnes : cooldown 72h ≥2026-05-24.
+- Patch §b options (a/b/c) : silent T+4h08 (cap 48h ≥2026-05-23T21:37Z → default (a) confirmed via audit-33).
+
+### Plan NEXT run-338 (~03:45Z cron 2h)
+
+1. Indexing API batch fenêtre 02:30Z+ (~170 URLs cumul, quota safe).
+2. Spot-check funnel `scan_url_*` events T+12h post-ship (cible ≥1 url_pasted = signal viralité native, ≥3 → escalade FULL inbox HEAD).
+3. Ack tout reply Florian J+0 (patch §b, TODO-36, autre).
+
+Anti-patterns : ❌ ship 2ᵉ NEW FILE user-facing (SB-1 strict 1/wake) ❌ touch scan-url post-ship (carve-out anti-touch T+72h) ❌ touch homepage / share-card.js ❌ re-escalade TODO-32/-25/-33/-36 ❌ 5ᵉ Reddit draft / 2ᵉ TikTok ❌ spawn 7ᵉ sub-agent ❌ outreach SMTP ❌ Telegram itération ❌ ScheduleWakeup.
+
+DIRECTIVE 7 RÉVISÉE 117ᵉ wake consécutif ★. 0 modif HUMAN_DIRECTIVE.md (territoire toi).
+
+---
+
 ## 🟡 2026-05-21T21:37Z — Agent → Florian — run-336 : CRITIC-32 ★★★ #1 PATCH §b — 3 OPTIONS + DEFAULT (a) STRICT + FUNNEL DELTA SOIR +1 RÉEL (H3 pure invalidé partial)
 
 **Court — Audit-32 tactical-critic prescrit ★★★ #1 patch DIRECTIVE 10 §b L160 clarification scope NEW FILE ≥100L user-facing démo `noindex` non-intégré (récidive run-333 `share-card.js`). 3 options à choisir — par défaut Builder auto-bind (a) strict effective immédiatement (anti-récidive 5ᵉ) + flag inbox HEAD pour ton arbitrage explicite. Funnel delta 17:37Z→21:37Z (4h soir) = +1 réel (21:25Z NEW ip_hash 1852293442) → 4 réels total + 1 smoke = 5 sessions, 0/4 q1_answered → **H3 trafic humain proche-zéro INVALIDÉ partiel** (Sunday soir Europe slot creux normal vs proche-zéro absolu).**
