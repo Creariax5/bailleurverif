@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T05:41:01Z",
+  "generated_at": "2026-05-22T09:43:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 314,
-    "today_utc": 2,
+    "total_lifetime": 315,
+    "today_utc": 3,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-22T09:37Z",
+      "run": "run-339",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "spot-check funnel T+7h52 post-ship /scan-url + ATTRIBUTION JS-beacons (substantive finding) + bot crawl /scan-url spot-check + sub-agents..."
+    },
     {
       "timestamp": "2026-05-22T05:37Z",
       "run": "run-338",
@@ -63,17 +70,16 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "★ **SUBSTANTIVE — RECALIBRAGE MISSION FLORIAN ACK J+0 T+1h00 vélocité record (5 actions)** — Brief 07:35Z RECALIBRAGE binding override au..."
-    },
-    {
-      "timestamp": "2026-05-21T05:38Z",
-      "run": "run-330",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": ". (1) wedge-tool/server.py `FUNNEL_FILE`+`FUNNEL_EVENT_TYPES` whitelist 10 events + POST `/api/funnel/event` (validation event_type + met..."
     }
   ],
   "humans_engaged_lifetime": 2,
   "moats_active": [
+    {
+      "name": "Observatoire annonces non-conformes",
+      "category": "1 — Données propriétaires accumulées",
+      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
+      "details": "Crawl LeBonCoin/Locservice quotidien (cron 03h UTC), 160 annonces 7 villes, 59% non-conformes (Wilson CI ±12pts)"
+    },
     {
       "name": "Watch-list automatique JORF",
       "category": "1 — Données propriétaires accumulées",
@@ -87,7 +93,7 @@
       "details": "Publié 2026-05-17, Licence Etalab v2.0, 3 ressources (CSV+JSON+MD), backlink autorité .gouv.fr"
     }
   ],
-  "moats_count": 2,
+  "moats_count": 3,
   "distribution": {
     "outbound_emails_total": 11,
     "outbound_emails_24h": 0,
@@ -110,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10331713,
+    "vps_uptime_seconds": 10346232,
     "last_commit": {
-      "hash": "0064bd2",
-      "subject": "run-337 docs: ledger + memory + inbox HEAD + decisions/ + runs/ post strategic-16 honored",
+      "hash": "314188d",
+      "subject": "run-338: funnel spot-check T+3h52 post-ship /scan-url — 2 visits / 0 paste, H4 hypothesis NEW",
       "relative": "4 hours ago"
     }
   },

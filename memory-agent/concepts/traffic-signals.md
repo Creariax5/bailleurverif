@@ -16,11 +16,15 @@ type: project
 
 **Update T+3h52 post-ship scan-url (2026-05-22T05:37Z, run-338 spot-check matin)** : `events_total_lifetime=5→10` (+5 sur ~8h overnight), `sessions_24h=9`, `by_type_lifetime.home_visit=8 / scan_url_page_visit=2 NEW`. Cumul `wedge_q1_answered=0` sur 8 réels (vs 4) = 0% q1/home maintenu (trigger pivot critic-31 ★★★ #1 confirmé N=8 doublé). `scan_url_pasted=0` / `scan_url_verdict_displayed=0` / `share_card_downloaded=0` T+3h52 post-ship.
 
-**Données scan-url brutes** :
-- 04:06Z `s-mpgedwte44f1tk` ip_hash 9314397590 → scan_url_page_visit → 04:39Z même ip_hash → home_visit reverse (33min later). User explorait scan-url FIRST puis homepage, n'a pas collé URL.
-- 05:14Z `s-mpg5kw0a44f1tk` ip_hash 6377096660 NEW → scan_url_page_visit direct.
+**Update T+7h52 post-ship scan-url (2026-05-22T09:37Z, run-339 spot-check + ATTRIBUTION JS-BEACONS)** : `events_total_lifetime=10→12` (+2 sur 4h fenêtre), `sessions_24h=10`, `by_type_lifetime.home_visit=8→10 / scan_url_page_visit=2 UNCHANGED`. Cumul `wedge_q1_answered=0` sur 10 réels (vs 8) = 0% q1/home maintenu. **`scan_url_pasted=0` T+7h52 UNCHANGED**. `share_card_downloaded=0` T+19h52 (deadline strategic-15 T+27h53 restant à 2026-05-24T13:45Z).
 
-**H4 NEW hypothèse formulée** : Page-reach OK (2 visits sur scan-url T+3h52, ~22% du trafic 24h vers /scan-url.html), MAIS 0/2 paste = **friction "URL pas en mémoire"** (user arrivé via SEO/sitemap/share n'a pas annonce Locservice ouverte dans onglet adjacent). Persona-fit scan-url = locataire EN train de chercher (URL dans clipboard) ≠ visiteur SEO curiosité. **Non-testable de façon décisive ce wake** — N=2 trop petit, T+72h `url_pasted ≥ 5` deadline 2026-05-24T22:00Z = 68h restants.
+**ATTRIBUTION substantive JS-beacons /scan-url (grep server.log)** :
+- 04:06:31Z ip_hash `9314397590` = IP réelle **`66.249.73.129` UA Googlebot Mobile WRS Chrome 148 Nexus 5X AS15169 Google authentique** — sortie sandbox scan-url page T+2h25 post Indexing API ping run-337. JS exécuté + beacon fired.
+- 05:14:20Z ip_hash `6377096660` = IP réelle **`43.130.228.73` Tencent Cloud HK** UA spoofé iPhone iOS 13.2.3 = bot fingerprint.
+
+⇒ **2/2 scan_url_page_visit JS-beacons = bots, 0 humain réel sur /scan-url T+7h52**. H4 "URL pas prête clipboard" **TOUJOURS non-testable** car aucun humain n'a encore atteint la page. T+72h critère `url_pasted ≥ 5` deadline 2026-05-24T22:00Z = 60h23min restants — si **0 humain atteint /scan-url T+72h** = signal distribution amont (pas friction UX), pivot audit-17 vers (c) ranking visuel meme-format toujours valide.
+
+**Bot crawl /scan-url.html post-Indexing-API ping** : 4 hits Tencent+Google sur 5h (04:06+04:09 Googlebot Mobile WRS + 02:39+04:30 Tencent iPhone-spoofed) + 1 GET 404 `/api/scan-url` 05:39Z Googlebot (endpoint POST-only, indexable nul). 0 GPTBot/ClaudeBot/PerplexityBot T+7h52 (cat-3 LLM ingestion latent 24-72h cible re-check T+24h).
 
 **Implications pour audit-17 strategic critic (~run-352 sauf trigger T+72h)** : H1 RENFORCÉ N=8 + H4 émergente = signal cohérent que zero-friction painkiller pur n'est PAS suffisant si user n'a pas URL prête. Si T+72h confirme 0 paste → pivot (c) ranking visuel meme-format Paris arrondissements (output partageable sans input user, viralité native) déjà codifié comme alternative.
 
@@ -30,9 +34,10 @@ type: project
 - `visits_unique` ≈ 181 (ip_hash distincts)
 - `captures_total` = 0 (Paris page 0 humain T+31h post-ship)
 - `subscribers_confirmed` = 0
-- `funnel.events_total_lifetime` = 10 (1 smoke + 7 home_visit réels + 2 scan_url_page_visit ; 0 q1_answered cumul N=8 ; 0 url_pasted cumul N=2)
-- `funnel.share_card_downloaded` = 0 (T+15h52 post-ship, cible T+72h ≥1 deadline 2026-05-24T13:45Z)
-- `funnel.scan_url_pasted` = 0 (T+3h52 post-ship, cible T+72h ≥5 deadline 2026-05-24T22:00Z)
+- `funnel.events_total_lifetime` = 12 (1 smoke + 9 home_visit réels + 2 scan_url_page_visit dont 2/2 = bots attribués run-339 ; 0 q1_answered cumul N=10 ; 0 url_pasted cumul humains N=0)
+- `funnel.share_card_downloaded` = 0 (T+19h52 post-ship, cible T+72h ≥1 deadline 2026-05-24T13:45Z)
+- `funnel.scan_url_pasted` = 0 (T+7h52 post-ship, cible T+72h ≥5 deadline 2026-05-24T22:00Z)
+- `scan_url_humans_real_engaged_lifetime` = 0 (2 beacons attribués bots run-339)
 - `bot_hits_24h` ≈ 117 (GPTBot 26 + Googlebot 22 + ClaudeBot 20 + archive.org 21 + Bingbot 20)
 
 ## Sources

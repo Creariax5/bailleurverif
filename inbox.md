@@ -1,3 +1,88 @@
+## 🔍 2026-05-22T09:37Z — Agent → Florian — run-339 J+1 : ATTRIBUTION JS-BEACONS /scan-url — 2/2 = BOTS, 0 humain réel T+7h52 (révise H4)
+
+**Court — Spot-check funnel T+7h52 post-ship + grep server.log révèlent : `events_total=12` (+2 home_visit 4h fenêtre), `scan_url_pasted=0` UNCHANGED, `share_card_downloaded=0` UNCHANGED. **Substantive finding** : 2/2 `scan_url_page_visit` JS-beacons (04:06Z ip 9314397590 + 05:14Z ip 6377096660) = **bots, pas humains** — IPs réelles révèlent `66.249.73.129 = Googlebot Mobile WRS Chrome 148 AS15169 Google authentique` (sortie sandbox /scan-url T+2h25 post Indexing API ping) + `43.130.228.73 = Tencent Cloud HK UA spoofé iPhone iOS 13.2.3`. **Révision H4** : "URL pas prête clipboard" reste hypothèse VALIDE mais **non-testable** (0 humain n'a encore atteint la page). Aussi flag tactical-34 ★ #3 : sub-bluesky-poster log MISSING T+19h post cycle-1 cible 14:30Z 2026-05-21 = silent confirmed (sub-seo-monitor pareil ~24h silent).**
+
+### Données brutes funnel /api/funnel/agg @09:37Z
+
+| Métrique | Valeur run-338 (05:37Z) | Valeur run-339 (09:37Z) | Delta 4h |
+|---|---|---|---|
+| `events_total_lifetime` | 10 | **12** | +2 |
+| `home_visit` lifetime | 8 | **10** | +2 réels nouveaux |
+| `scan_url_page_visit` lifetime | 2 | **2** | 0 |
+| `wedge_q1_answered` cumul | 0/8 réels | **0/10 réels** | maintenu 0% |
+| `scan_url_pasted` | 0 T+3h52 | **0 T+7h52** | UNCHANGED |
+| `share_card_downloaded` | 0 T+15h52 | **0 T+19h52** | UNCHANGED (cap 27h53 restant deadline 2026-05-24T13:45Z) |
+
+### Attribution JS-beacons /scan-url (grep server.log)
+
+```
+04:06:31Z ip_hash 9314397590 → IP réelle 66.249.73.129
+  UA: Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P)
+      AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96
+  ASN: AS15169 Google authentique
+  ⇒ Googlebot Mobile WRS (Web Rendering Service) qui a EXÉCUTÉ JS + fired beacon.
+
+05:14:20Z ip_hash 6377096660 → IP réelle 43.130.228.73
+  UA: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X)
+      AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/
+  ASN: Tencent Cloud HK
+  ⇒ Bot spoofé iPhone OS vieux (fingerprint suspect Tencent+iPhone vieux)
+```
+
+⇒ **`scan_url_humans_real_engaged_lifetime=0` T+7h52**. Les 2 visits funnel = 1 Googlebot WRS + 1 bot Tencent. **H4 "URL pas prête clipboard" TOUJOURS non-testable** car aucun humain n'est arrivé sur la page. Si **0 humain T+72h** = signal **distribution amont** (pas friction UX) — implique pivot (c) ranking visuel meme-format strategic-16 §6 reste valide alternative.
+
+### Bot crawl /scan-url.html post-Indexing-API ping (substantive Pilier 2 SEO)
+
+```
+04:06:31Z 66.249.73.129 Googlebot Mobile WRS Nexus 5X — JS rendu + beacon
+04:09:37Z 66.249.73.132 Googlebot Mobile (autre IP pool Google)
+05:39:32Z 66.249.73.129 GET /api/scan-url → 404 (endpoint POST-only, indexable nul)
+02:39:34Z 49.51.166.228 Tencent UA iPhone-spoofed
+04:30:11Z 43.130.228.73 Tencent UA iPhone-spoofed
+```
+
+**Implication** : Indexing API ping = fonctionnel (T+2h25 latency vs 24-72h Googlebot natural). Sortie sandbox /scan-url J+0 (pages programmatiques Paris avaient mis 26h en cadence cron). 0 GPTBot/ClaudeBot/PerplexityBot T+7h52 (cat-3 LLM ingestion attendu 24-72h, re-check ~run-345).
+
+### Tactical critic-33 (8.7/10 fresh T+2h42, post run-336)
+
+3 prescriptions :
+- ★★★ #1 Monitorer deadlines T+72h triples (scan_url_pasted ≥5 + share_card_downloaded ≥1). Escalade FULL inbox HEAD si scan_url_pasted ≥3 T+48h. **HONORED J+0** ce wake spot-check.
+- ★★ #2 Si Florian silent TODO-36 cap T+48h ≥2026-05-23T13:45Z → fallback Twitter/X 1 SEUL draft. PARALLEL §b cap T+48h ≥21:37Z → default (a) strict. **Cooldowns pas atteints** (T+28h + T+36h restants).
+- ★ #3 Spot-check sub-bluesky-poster + drafter LinkedIn cycle 3. **HONORED J+0** — voir flag sub-bluesky silent ci-dessous.
+
+3 STOP : ❌ toucher /scan-url.html copy/UX/endpoint T+72h ❌ ship 2ᵉ NEW FILE ≥100L/wake (SB-1 strict) ❌ pré-armer 6ᵉ Reddit / 2ᵉ TikTok / pré-emptif Twitter. **TOUS RESPECTÉS** ce wake.
+
+### Sub-agents registry spot-check ★ critic-33 #3
+
+| Sub-agent | Interval | Logs `data/sub-agents/` | Status |
+|---|---|---|---|
+| sub-judilibre-enrich | 1h | `sub-judilibre-enrich.jsonl` (863b 2026-05-19) | disabled saturated_3 expected |
+| sub-seo-monitor | 24h | **LOG MISSING** | ⚠️ T+~24h silent flag |
+| sub-linkedin-drafter | 24h | `sub-linkedin-drafter.jsonl` (855b, 3 lignes : spawn + cycle 1 + cycle 2 16:34Z 2026-05-20 + 10:30Z 2026-05-21) | cycle 3 cible T+53min futur (~10:30Z 2026-05-22) — re-check run-340 |
+| sub-observatoire-publisher | 168h | `sub-observatoire-publisher.jsonl` (190b spawn 2026-05-20) | next tick T+5d normal |
+| sub-bluesky-poster | 24h | **LOG MISSING** | ⚠️ **T+19h silent post cycle-1 cible 2026-05-21T14:30Z confirmed** |
+| sub-content-syndicator | 168h | **LOG MISSING** | normal interval 7j (spawn 2026-05-20) |
+
+**Conclusion** : 2/4 sub-agents 24h-interval (sub-bluesky + sub-seo-monitor) apparemment non-firing ≥19h. **PAS de patch/respawn autonome** (critic-33 #3 explicit) — flag pour audit-34 tactical (~run-341 T+~4h futur). Si tu veux investiguer registry agents-control direct (UI agents-control.claudeforge.app), c'est ton choix.
+
+### Statut TODOs Florian + cooldowns
+
+- TODO-36 ★★ Reddit compte : silent T+19h52 (cap 48h ≥2026-05-23T13:45Z = **T+28h restant**). NE PAS re-escalader.
+- TODO-33 ★★ entourage 5 personnes : cooldown 72h ≥2026-05-24.
+- Patch §b options (a/b/c) : silent T+12h (cap 48h ≥2026-05-23T21:37Z = T+36h restant → default (a) strict confirmed via SB-1).
+
+### Plan NEXT run-340 (~11:37Z, cron 2h)
+
+1. Spot-check funnel `scan_url_pasted` + `share_card_downloaded` T+9h52 (escalade FULL inbox HEAD si scan_url_pasted ≥3 OU share_card_downloaded ≥1).
+2. Spot-check sub-linkedin-drafter cycle 3 fired (cible ~10:30Z 2026-05-22 = T+53min — si absent T+1h+ post-cible = drafter aussi silent → flag audit-34 cumul).
+3. Ack tout reply Florian J+0 (patch §b, TODO-36, sub-bluesky flag, autre).
+
+Anti-patterns : ❌ ship 2ᵉ NEW FILE ≥100L user-facing (SB-1 strict 1/wake) ❌ touch /scan-url.html / endpoint / homepage / share-card.js ❌ patch/respawn sub-bluesky/sub-seo-monitor autonome (critic explicit) ❌ re-escalade TODO-32/-25/-33/-36 ❌ pré-armer 5ᵉ Reddit / 2ᵉ TikTok / pré-emptif Twitter (STOP critic-33) ❌ spawn 7ᵉ sub-agent ❌ outreach SMTP ❌ Telegram itération ❌ IndexNow ❌ ScheduleWakeup.
+
+DIRECTIVE 7 RÉVISÉE 119ᵉ wake consécutif ★. 16/16 strategic critic ★. tactical-33 honored 2/3 J+0 + 1 différé naturel.
+
+---
+
 ## 📊 2026-05-22T05:37Z — Agent → Florian — run-338 J+1 : FUNNEL SPOT-CHECK T+3h52 POST-SHIP /SCAN-URL — 2 visits / 0 paste (H4 NEW formulée)
 
 **Court — `/api/funnel/agg` T+3h52 post-ship `/scan-url.html` : 2 `scan_url_page_visit` (ip 9314397590 04:06Z + ip 6377096660 NEW 05:14Z) / **0 `scan_url_pasted`** / 0 `scan_url_verdict_displayed` / 0 `share_card_downloaded`. Page-reach OK mais 0 conversion. Cumul `wedge_q1_answered=0` sur 8 réels (vs 4 = N doublé overnight) = trigger pivot critic-31 ★★★ #1 confirmé N=8. H1 painkiller faux DOUBLEMENT RENFORCÉ. **H4 NEW** formulée : friction "URL pas prête clipboard" — visiteurs SEO/Indexing arrivent curiosité, n'ont pas annonce Locservice ouverte dans onglet adjacent. Pas de pivot ce wake (carve-out anti-touch /scan-url.html T+72h actif jusqu'à 2026-05-24T22:00Z + N=2 trop petit).**

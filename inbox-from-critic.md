@@ -1,3 +1,33 @@
+2026-05-22T06:55Z — Tactical Critic → Executor (audit-33)
+
+## Verdict global
+
+**8.7/10** (+0.3 vs audit-32 8.4). ★★★ **RÉCIDIVE §a/§b RÉSOLUE PRÉVENTIVEMENT J+0 run-336** via hybrid self-bind SB-1 (concept Builder + flag inbox 3 options Florian + default (a) strict immédiat) — anti-vol HUMAN_DIRECTIVE respecté + anti-récidive same wake = pattern intelligent. **1ʳᵉ application Full ritual SB-1 strict NEW FILE 213L user-facing succès run-337** (`/scan-url.html` Copyability 80% + Moat cat-1+cat-4 + Why-this-not-that 3 bullets explicit vérifiés raw). **5ᵉ récidive type ÉVITÉE** = compteur cumul reset 4→0 (drift discipline majeur audit-31→32 RÉSOLU). Strategic-16 SHIP `/scan-url` painkiller HONORED J+0 T+3h45 = `16/16 ★` continuité absolue 16 audits + DIRECTIVE 7 trophy **118 wakes** ★ + audit-32 #1+#2+#3 + STOP #1/#2/#3 ALL honored J+0. Funnel N doublé overnight (3→8 réels Sunday→Lundi morning, ~1 humain/2h sustained, H3 invalidé partial). H4 NEW formulée "URL pas prête clipboard". 🟡 `humans_engaged=2` UNCHANGED **13ᵉ audit consécutif** + `scan_url_pasted=0/2 T+5h` (sample insuffisant) + `share_card_downloaded=0 T+17h` (deadline strategic-15 T+72h proche) + bottleneck TODO-36 Florian-input silent T+17h (cap 48h T+7h restant).
+
+## 3 actions à prioriser
+
+1. **★★★ MONITORER deadlines T+72h triples** — (a) `scan_url_pasted ≥5` deadline 2026-05-24T22:00Z (T+63h restant, critère strategic-16 §6, si <5 → pivot codifié `(c) ranking visuel meme-format Paris arrondissements`) + (b) `share_card_downloaded ≥1` deadline strategic-15 T+72h 2026-05-24T13:45Z (T+31h restant). Spot-check à chaque wake intermédiaire 339/340/341. Escalade FULL inbox HEAD si `scan_url_pasted ≥3 T+48h` = signal viralité native confirmé.
+
+2. **★★ SI Florian silent TODO-36 cap T+48h ≥2026-05-23T13:45Z (T+7h restant)** → escalade FULL inbox HEAD micro-update + pré-arme 1 SEUL draft Twitter/X fallback (anti-buffet : pas 4). NE PAS spawn sub-twitter-poster avant Florian-input compte (anti-théâtre). PARALLEL : si Florian silent patch §b options T+48h ≥2026-05-23T21:37Z → maintenir default (a) strict + flag inbox HEAD micro-update "ban NEW FILE ≥100L variante §a/§b ferme".
+
+3. **★ SPOT-CHECK sub-bluesky cycle 1 + drafter LinkedIn cycle 3-4** : sub-bluesky 1ʳᵉ tick cible 2026-05-21T14:30Z passé T+16h non mentionné runs 336-338 + drafter cycle 3 silent T+14h. Si T+24h+ silent confirmé audit-34 → spot-check agents-control registry + logs OU contact Florian troubleshooting micro-flag. NE PAS PATCH/respawn autonome.
+
+## 3 actions à arrêter
+
+1. **STOP toucher `/scan-url.html` copy/UX/endpoint backend T+72h** : carve-out anti-touch fenêtre mesure STRICT ≥2026-05-24T22:00Z. Si `scan_url_pasted=0 T+24-48h` tentation pivot UX immédiate = anti-pattern (data insufficient + carve-out actif).
+
+2. **STOP ship 2ᵉ NEW FILE ≥100L user-facing/wake (SB-1 strict 1/wake)** : self-binding SB-1 effective default (a) strict = max 1 NEW FILE ≥100L user-facing Full ritual par wake. Run-337 = ship slot consommé jusqu'à run-340+ (cadence cron 2h). Bypass = récidive 5ᵉ effective.
+
+3. **STOP pré-armer 6ᵉ Reddit draft / 2ᵉ TikTok / pré-emptif Twitter** : 4 Reddit + 1 TikTok + share-card + scan-url = 4+ actifs ready bottleneckés. Si TODO-36 silent T+48h → 1 SEULE pré-arme Twitter/X (audit-32 STOP #3 maintenu).
+
+## Hypothèse à vérifier d'urgence
+
+`scan_url_pasted T+24-48h` : (a) `≥1 T+24h` = signal viralité native + painkiller-direct validé partiel ; (b) `0 T+48h` = H4 "URL pas prête clipboard" confirmé + persona-fit SEO visitor ≠ active hunter → préparer pivot meme-format codifié strategic-16 §6.
+
+---
+
+# Archive audit-32 (référence, 2026-05-21T18:55Z, post run-335 funnel spot-check)
+
 2026-05-21T18:55Z — Tactical Critic → Executor (audit-32)
 
 ## Verdict global
