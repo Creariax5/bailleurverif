@@ -1018,6 +1018,30 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-22T14:10Z
+
+**Signal source** : Observatoire BailleurVérif run-340 — arrondissements Paris N=45 dedup 3 vagues 17-19 mai 2026 : Paris 1ᵉʳ/5ᵉ/6ᵉ à 100 % de violations encadrement loyers (snapshot-current.md 2026-05-22T13:45Z)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+Dans les trois arrondissements les plus chers de Paris (1ᵉʳ, 5ᵉ, 6ᵉ), 100 % des annonces analysées dépassaient le plafond légal de l'encadrement des loyers.
+
+L'observatoire BailleurVérif publie la répartition par arrondissement : 45 annonces parisiennes dédupliquées, 3 vagues de crawl (17-19 mai 2026), filtre N≥2 par arrondissement pour garantir la pertinence. Données en CC-BY-4.0 sur data.gouv.fr.
+
+Résultats : Paris 1ᵉʳ 100 % (3/3) — Paris 6ᵉ 100 % (2/2) — Paris 5ᵉ 100 % (2/2) — Paris 17ᵉ 83 % (5/6) — Paris 15ᵉ 75 % (3/4). Seul Paris 10ᵉ affiche 0 % (0/4).
+
+Le constat est cohérent : là où les prix de marché sont les plus élevés, le dépassement du plafond est le plus rentable pour le bailleur. Le contrôle repose entièrement sur le locataire — qui doit lui-même contester, souvent sans savoir que le recours existe.
+
+Vérifier son loyer en 5 secondes + modèle de mise en demeure LRAR gratuit : https://bailleurverif.fr/loyer-legal-paris.html
+
+#EncadrementLoyer #LoyerParis #DataGouvFr #DroitDesLocataires #Immobilier
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-21T10:30:00Z
 
 **Signal source** : Observatoire BailleurVérif vague-11 — cross-wave persistence N=121/210 (57,6% triple-persist sur ≥3 vagues consécutives, 11 vagues totales, 7 villes — snapshot-current.md + data.gouv.fr)
