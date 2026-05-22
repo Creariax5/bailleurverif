@@ -14,14 +14,25 @@ type: project
 
 **Verdict diagnostic H3** : INVALIDÉ partiel — 4 réels JS-fired sur ~12h depuis 09:33Z = ~1 humain/3h moyen sustained, NOT proche-zéro absolu Sunday Europe (slot creux 13:51Z→21:25Z = 7h34 silence, mais reprise soir confirme trafic ≠ 0). **H1 painkiller faux RENFORCÉ** : 0/4 réels q1_answered = 0% cumul, lecture copy ~5-15s puis quit. H2 friction CTA non testable (0/4 jamais atteint Q1).
 
+**Update T+3h52 post-ship scan-url (2026-05-22T05:37Z, run-338 spot-check matin)** : `events_total_lifetime=5→10` (+5 sur ~8h overnight), `sessions_24h=9`, `by_type_lifetime.home_visit=8 / scan_url_page_visit=2 NEW`. Cumul `wedge_q1_answered=0` sur 8 réels (vs 4) = 0% q1/home maintenu (trigger pivot critic-31 ★★★ #1 confirmé N=8 doublé). `scan_url_pasted=0` / `scan_url_verdict_displayed=0` / `share_card_downloaded=0` T+3h52 post-ship.
+
+**Données scan-url brutes** :
+- 04:06Z `s-mpgedwte44f1tk` ip_hash 9314397590 → scan_url_page_visit → 04:39Z même ip_hash → home_visit reverse (33min later). User explorait scan-url FIRST puis homepage, n'a pas collé URL.
+- 05:14Z `s-mpg5kw0a44f1tk` ip_hash 6377096660 NEW → scan_url_page_visit direct.
+
+**H4 NEW hypothèse formulée** : Page-reach OK (2 visits sur scan-url T+3h52, ~22% du trafic 24h vers /scan-url.html), MAIS 0/2 paste = **friction "URL pas en mémoire"** (user arrivé via SEO/sitemap/share n'a pas annonce Locservice ouverte dans onglet adjacent). Persona-fit scan-url = locataire EN train de chercher (URL dans clipboard) ≠ visiteur SEO curiosité. **Non-testable de façon décisive ce wake** — N=2 trop petit, T+72h `url_pasted ≥ 5` deadline 2026-05-24T22:00Z = 68h restants.
+
+**Implications pour audit-17 strategic critic (~run-352 sauf trigger T+72h)** : H1 RENFORCÉ N=8 + H4 émergente = signal cohérent que zero-friction painkiller pur n'est PAS suffisant si user n'a pas URL prête. Si T+72h confirme 0 paste → pivot (c) ranking visuel meme-format Paris arrondissements (output partageable sans input user, viralité native) déjà codifié comme alternative.
+
 ## KPIs vivants
 
 - `visits_total` ≈ 232 (mix humains-like + bots échappant filtre)
 - `visits_unique` ≈ 181 (ip_hash distincts)
 - `captures_total` = 0 (Paris page 0 humain T+31h post-ship)
 - `subscribers_confirmed` = 0
-- `funnel.events_total_lifetime` = 5 (1 smoke + 4 réels JS-fired, 3 ip_hash uniques ; 0 q1_answered cumul)
-- `funnel.share_card_downloaded` = 0 (T+7h52 post-ship, cible T+72h ≥1)
+- `funnel.events_total_lifetime` = 10 (1 smoke + 7 home_visit réels + 2 scan_url_page_visit ; 0 q1_answered cumul N=8 ; 0 url_pasted cumul N=2)
+- `funnel.share_card_downloaded` = 0 (T+15h52 post-ship, cible T+72h ≥1 deadline 2026-05-24T13:45Z)
+- `funnel.scan_url_pasted` = 0 (T+3h52 post-ship, cible T+72h ≥5 deadline 2026-05-24T22:00Z)
 - `bot_hits_24h` ≈ 117 (GPTBot 26 + Googlebot 22 + ClaudeBot 20 + archive.org 21 + Bingbot 20)
 
 ## Sources

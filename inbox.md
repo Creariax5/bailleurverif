@@ -1,3 +1,51 @@
+## 📊 2026-05-22T05:37Z — Agent → Florian — run-338 J+1 : FUNNEL SPOT-CHECK T+3h52 POST-SHIP /SCAN-URL — 2 visits / 0 paste (H4 NEW formulée)
+
+**Court — `/api/funnel/agg` T+3h52 post-ship `/scan-url.html` : 2 `scan_url_page_visit` (ip 9314397590 04:06Z + ip 6377096660 NEW 05:14Z) / **0 `scan_url_pasted`** / 0 `scan_url_verdict_displayed` / 0 `share_card_downloaded`. Page-reach OK mais 0 conversion. Cumul `wedge_q1_answered=0` sur 8 réels (vs 4 = N doublé overnight) = trigger pivot critic-31 ★★★ #1 confirmé N=8. H1 painkiller faux DOUBLEMENT RENFORCÉ. **H4 NEW** formulée : friction "URL pas prête clipboard" — visiteurs SEO/Indexing arrivent curiosité, n'ont pas annonce Locservice ouverte dans onglet adjacent. Pas de pivot ce wake (carve-out anti-touch /scan-url.html T+72h actif jusqu'à 2026-05-24T22:00Z + N=2 trop petit).**
+
+### Funnel raw nouveau (overnight 21:37Z→05:37Z, 8h fenêtre)
+
+| ts UTC | sessionId | ip_hash | event_type | note |
+|--------|-----------|---------|------------|------|
+| 21:58:20 | s-mpg18fq0 | 2721807982 NEW | home_visit | 4ᵉ ip_hash unique |
+| 00:27:48 | s-mpg6knp0 | 1754916138 NEW | home_visit | 5ᵉ ip_hash unique |
+| **04:06:35** | **s-mpgedwte** | **9314397590 NEW** | **scan_url_page_visit** | **6ᵉ ip + 1ʳᵉ visite /scan-url** |
+| 04:39:00 | s-mpg5kw0c | 9314397590 | home_visit | même ip 33min plus tard reverse |
+| **05:14:20** | **s-mpg5kw0a** | **6377096660 NEW** | **scan_url_page_visit** | **7ᵉ ip + 2ᵉ visite /scan-url** |
+
+**Lecture pattern 9314397590** : arrivé scan-url FIRST (sitemap/Indexing API ping run-337 ou GSC ?), n'a PAS collé URL, est allé voir homepage 33min plus tard. Comportement réel humain (timing pas bot). Indique : page atteint sa cible distribution mais user n'a pas matériel pour utiliser.
+
+### Hypothèses cumulées
+
+| H | Statut | N | Lecture |
+|---|--------|---|---------|
+| H1 painkiller faux (wedge 5Q homepage) | DOUBLEMENT RENFORCÉ | 8 réels 0/8 q1 | confirmé trigger critic-31 ★★★ <10% MET |
+| H2 friction CTA copy email | NON TESTABLE | 0 atteint Q1 | bloqué par H1 amont |
+| H3 trafic humain proche-zéro | INVALIDÉ partial | 7 réels ~16h | ~1 humain/2h sustained Sunday→Lundi |
+| **H4 friction "URL pas prête clipboard"** | **FORMULÉE NEW** | 2 réels 0/2 paste | persona-fit mismatch SEO visitor ≠ active hunter |
+
+### Décisions / non-décisions ce wake
+
+| Item | Statut |
+|---|---|
+| Indexing API batch --all (~191 URLs sitemap, plan-next inherit run-337) | ⏸️ **SKIPPED** — vanity SEO NON-PRIO mission RECALIBRÉE override |
+| Pivot scan-url copy/UX autonome | ❌ carve-out anti-touch T+72h ≥2026-05-24T22:00Z |
+| Pivot homepage autonome | ❌ N=8 réels, mais carve-out strategic-15 actif + bans audit-13/14/15 |
+| Touch share-card.js | ❌ ban audit-15 strict |
+| Re-escalade TODO-36 | ❌ cooldown 48h cap T+8h restant (≥2026-05-23T13:45Z) |
+| H4 formulation + concept update traffic-signals | ✅ codifié memory-agent |
+
+### Plan NEXT run-339 (~07:45Z, cron 2h)
+
+1. Spot-check funnel `scan_url_pasted` T+5h52 cumul (1ᵉʳ paste = signal viralité native, ≥3 → escalade FULL inbox HEAD).
+2. Spot-check `share_card_downloaded` T+18h post-ship.
+3. Ack tout reply Florian J+0 (patch §b options a/b/c, TODO-36 a/b/c).
+
+Anti-patterns : ❌ ship 2ᵉ NEW FILE ≥100L user-facing (SB-1 strict 1/wake) ❌ touch /scan-url.html / endpoint backend / homepage / share-card.js ❌ re-escalade TODO-32/-25/-33/-36 ❌ pré-armer 5ᵉ Reddit draft ❌ spawn 7ᵉ sub-agent ❌ outreach SMTP ❌ Telegram itération ❌ Indexing API --all (vanity) ❌ ScheduleWakeup.
+
+DIRECTIVE 7 RÉVISÉE 118ᵉ wake consécutif ★.
+
+---
+
 ## ⚡ 2026-05-22T01:45Z — Agent → Florian — run-337 J+0 : STRATEGIC-16 HONORED — SHIP `/scan-url` zero-friction painkiller LIVE PROD
 
 **Court — Strategic critic audit-16 (22:00Z) prescription unique = ship `/scan-url` page nouvelle (input URL Locservice → score conformité → verdict + share-card AUTO, ZÉRO question wedge) HONORED J+0 T+3h45. `strategic_critic_recommendations_followed_cumul = 16/16 ★`. NEW page LIVE https://bailleurverif.fr/scan-url.html + endpoint POST `/api/scan-url`. Carve-out légitime ban anti-touch homepage. 1ʳᵉ application SB-1 Full ritual NEW FILE ≥100L user-facing prod (anti-récidive 5ᵉ). Critère succès T+72h `url_pasted ≥ 5` deadline 2026-05-24T22:00Z (sinon pivot wake +1 vers ranking visuel meme-format).**
