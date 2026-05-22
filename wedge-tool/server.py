@@ -46,7 +46,7 @@ OUTBOUND_EMAILS_FILE = os.path.join(DATA_DIR, "outbound-emails.jsonl")
 FUNNEL_FILE = os.path.join(DATA_DIR, "funnel-events.jsonl")
 
 # Funnel events whitelist — strategic-14 prescription run-330.
-# 10 events couvrent homepage→capture diagnostic drop-off.
+# +4 events strategic-16 run-337 : scan_url_* (zero-friction painkiller) + share_card_downloaded (viralité Pilier 1+2).
 FUNNEL_EVENT_TYPES = {
     "home_visit",
     "wedge_q1_answered",
@@ -58,6 +58,10 @@ FUNNEL_EVENT_TYPES = {
     "email_field_focused",
     "email_submitted",
     "cta_secondary_clicked",
+    "scan_url_page_visit",
+    "scan_url_pasted",
+    "scan_url_verdict_displayed",
+    "share_card_downloaded",
 }
 
 # OVH Zimbra SMTP — provisionné Florian 2026-05-17T13:55Z, mandated patch run-205.
@@ -1291,6 +1295,81 @@ class Handler(BaseHTTPRequestHandler):
             }
             append_jsonl(RESULTS_FILE, rec)
             self._send(200, {"ok": True})
+            return
+
+        if path == "/api/scan-url":
+            # Strategic-16 prescription run-337 — zero-friction painkiller.
+            # Input : URL annonce Locservice → fetch + parse → score conformité → verdict pour share-card.
+            url = (data.get("url") or "").strip()
+            if not isinstance(url, str) or len(url) < 20 or len(url) > 500:
+                self._send(400, {"ok": False, "error": "url invalide (20-500 chars)"})
+                return
+            if not url.startswith("https://www.locservice.fr/"):
+                self._send(400, {"ok": False, "error": "v0 supporte uniquement locservice.fr (PAP/SeLoger JS-rendered, prévus v1)"})
+                return
+            try:
+                from crawler.locservice_v0 import fetch as _ls_fetch, parse_detail_dpe, parse_detail_jsonld
+                from scoring.conformity_score import score_record, load_reference
+            except Exception as e:
+                self._send(500, {"ok": False, "error": f"import error: {e}"})
+                return
+            try:
+                html = _ls_fetch(url)
+            except Exception as e:
+                self._send(502, {"ok": False, "error": f"fetch failed: {e}"})
+                return
+            dpe, ges = parse_detail_dpe(html)
+            ld = parse_detail_jsonld(html)
+            cp = ld.get("cp_jsonld")
+            surface = ld.get("surface_jsonld")
+            title_m = re.search(r"<title>([^<]+)</title>", html)
+            title = (title_m.group(1).strip()[:200] if title_m else "")
+            loyer = None
+            for pat in (
+                r'class="[^"]*price[^"]*"[^>]*>\s*([\d\s ]{3,8})\s*€',
+                r"<title>[^<]*?\b(\d[\d\s ]{2,5})\s*€",
+                r"loyer[^<]{0,30}?(\d[\d\s ]{2,5})\s*€",
+                r">(\d[\d\s ]{2,5})\s*€\s*/\s*mois<",
+            ):
+                m = re.search(pat, html, re.IGNORECASE)
+                if m:
+                    digits = "".join(ch for ch in m.group(1) if ch.isdigit())
+                    if digits and 100 <= int(digits) <= 20000:
+                        loyer = int(digits)
+                        break
+            if not (cp and surface and loyer):
+                self._send(200, {
+                    "ok": True,
+                    "extracted": False,
+                    "verdict": {"severity": "warn", "ville": "annonce", "depassement": 0, "loyerM2": None},
+                    "raw": {"cp": cp, "surface": surface, "loyer": loyer, "dpe": dpe, "ges": ges, "title": title},
+                    "explain": "Extraction partielle — JSON-LD ou prix manquant sur cette URL.",
+                })
+                return
+            ref = load_reference()
+            rec = {
+                "code_postal": cp,
+                "surface_m2": surface,
+                "loyer_eur_total": loyer,
+                "dpe_letter": dpe,
+                "ges_letter": ges,
+                "title": title,
+            }
+            scored = score_record(rec, ref)
+            vscore = scored.get("violation_score", 0)
+            severity = "danger" if vscore >= 2 else ("warn" if vscore >= 1 else "ok")
+            excess = scored.get("encadrement_excess_eur_m2") or 0
+            depassement = round(excess * surface) if excess else 0
+            ville_slug = scored.get("commune_slug") or "votre ville"
+            ville = ville_slug.replace("-", " ").title() if ville_slug else "votre ville"
+            sys.stdout.write(f"[scan-url] {url[:80]} cp={cp} surf={surface}m2 loyer={loyer}EUR dpe={dpe} → {severity}\n")
+            sys.stdout.flush()
+            self._send(200, {
+                "ok": True,
+                "extracted": True,
+                "verdict": {"severity": severity, "ville": ville, "depassement": depassement, "loyerM2": scored.get("eur_per_m2")},
+                "raw": {"cp": cp, "surface": surface, "loyer": loyer, "dpe": dpe, "ges": ges, "title": title, "violation_score": vscore, "violation_type": scored.get("violation_type")},
+            })
             return
 
         if path == "/api/funnel/event":
