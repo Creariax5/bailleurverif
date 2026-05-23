@@ -1,33 +1,42 @@
 {
-  "generated_at": "2026-05-23T13:46:01Z",
+  "generated_at": "2026-05-23T17:40:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3385,
-    "requests_24h": 0,
-    "bot_hits_lifetime": 341,
-    "bot_hits_24h": 0,
-    "bot_hits_1h": 0,
-    "human_hits_24h": 0
+    "requests_lifetime": 3466,
+    "requests_24h": 81,
+    "bot_hits_lifetime": 385,
+    "bot_hits_24h": 44,
+    "bot_hits_1h": 9,
+    "human_hits_24h": 37
   },
   "bots_by_type_lifetime": {
-    "Bingbot": 44,
+    "Bingbot": 47,
     "Googlebot": 44,
-    "ClaudeBot": 38,
-    "OAI-SearchBot": 37,
+    "OAI-SearchBot": 43,
+    "generic-bot": 42,
+    "ClaudeBot": 42,
+    "AhrefsBot": 29,
     "GPTBot": 28,
-    "AhrefsBot": 26,
     "Go-HTTP": 21,
     "archive.org": 21,
-    "generic-bot": 17,
     "YandexBot": 15,
     "FacebookExt": 12,
+    "ByteSpider": 10,
     "HeadlessChrome": 10,
     "python-script": 10,
-    "ByteSpider": 9,
     "BaiduSpider": 5,
-    "curl/wget": 4
+    "curl/wget": 4,
+    "SemrushBot": 2
   },
-  "bots_by_type_24h": {},
+  "bots_by_type_24h": {
+    "generic-bot": 25,
+    "OAI-SearchBot": 6,
+    "ClaudeBot": 4,
+    "AhrefsBot": 3,
+    "Bingbot": 3,
+    "SemrushBot": 2,
+    "ByteSpider": 1
+  },
   "bot_last_seen": {
     "YandexBot": "2026-05-19T15:30:24+00:00",
     "Go-HTTP": "2026-05-21T09:47:20+00:00",
@@ -44,10 +53,11 @@
     "FacebookExt": "2026-05-21T22:20:51+00:00",
     "ClaudeBot": "2026-05-21T22:30:43+00:00",
     "python-script": "2026-05-21T09:11:22+00:00",
-    "OAI-SearchBot": "2026-05-21T22:46:44+00:00"
+    "OAI-SearchBot": "2026-05-21T22:46:44+00:00",
+    "SemrushBot": "2026-05-23T17:09:46+00:00"
   },
   "last_googlebot": "2026-05-22T12:33:36+00:00",
-  "last_bingbot": "2026-05-22T00:42:45+00:00",
+  "last_bingbot": "2026-05-23T15:41:12+00:00",
   "chart_7days": [
     {
       "day": "2026-05-17",
@@ -138,27 +148,19 @@
     },
     {
       "day": "2026-05-23",
-      "total": 0,
-      "by_type": {}
+      "total": 44,
+      "by_type": {
+        "ClaudeBot": 4,
+        "generic-bot": 25,
+        "AhrefsBot": 3,
+        "OAI-SearchBot": 6,
+        "Bingbot": 3,
+        "ByteSpider": 1,
+        "SemrushBot": 2
+      }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "14",
-      "hits": 0
-    },
-    {
-      "hour": "15",
-      "hits": 0
-    },
-    {
-      "hour": "16",
-      "hits": 0
-    },
-    {
-      "hour": "17",
-      "hits": 0
-    },
     {
       "hour": "18",
       "hits": 0
@@ -238,9 +240,36 @@
     {
       "hour": "13",
       "hits": 0
+    },
+    {
+      "hour": "14",
+      "hits": 12
+    },
+    {
+      "hour": "15",
+      "hits": 3
+    },
+    {
+      "hour": "16",
+      "hits": 0
+    },
+    {
+      "hour": "17",
+      "hits": 22
     }
   ],
-  "top_bot_paths_24h": {},
+  "top_bot_paths_24h": {
+    "/": 7,
+    "/robots.txt": 6,
+    "/sitemap.xml": 2,
+    "/mentions-legales.html": 2,
+    "/preavis-bail-lyon.html": 1,
+    "/api/recourse/dpe-invalide": 1,
+    "/preavis-bail-villeurbanne.html": 1,
+    "/encadrement-loyer-stains-2026.html": 1,
+    "/arnaque-location-toulouse.html": 1,
+    "/encadrement-loyer-hellemmes-2026.html": 1
+  },
   "googlebot_paths_lifetime": {
     "/robots.txt": 34,
     "/sitemap.xml": 3,
@@ -250,14 +279,29 @@
     "/loyer-legal-paris.html": 1,
     "/lille-dpe-f-g-interdit-location.html": 1
   },
-  "top_human_paths_24h": {},
-  "status_codes_24h": {},
+  "top_human_paths_24h": {
+    "/": 10,
+    "/encadrement-loyer-paris-2026.html": 8,
+    "/share/top10-arrondissements-paris-2026-05.png": 1,
+    "/scan-url.html": 1,
+    "/css/main.css": 1,
+    "/css/tailwind-runtime.js": 1,
+    "/static/share-card.js": 1,
+    "/static/app.js": 1,
+    "/api/visit": 1,
+    "/api/funnel/event": 1
+  },
+  "status_codes_24h": {
+    "200": 70,
+    "400": 1,
+    "404": 10
+  },
   "funnel": {
-    "events_total_lifetime": 37,
-    "sessions_lifetime": 25,
-    "sessions_24h": 11,
+    "events_total_lifetime": 38,
+    "sessions_lifetime": 26,
+    "sessions_24h": 12,
     "by_type_24h": {
-      "home_visit": 11,
+      "home_visit": 12,
       "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
       "wedge_q3_answered": 2,
@@ -266,7 +310,7 @@
       "verdict_displayed": 2
     },
     "by_type_lifetime": {
-      "home_visit": 23,
+      "home_visit": 24,
       "scan_url_page_visit": 2,
       "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
@@ -276,7 +320,7 @@
       "verdict_displayed": 2
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 23,
+      "home_visit": 24,
       "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
       "wedge_q3_answered": 2,

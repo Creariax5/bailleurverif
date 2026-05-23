@@ -1,12 +1,16 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Compressé 2026-05-21T10:45Z. Run-344 update ★ ChatGPT referral 1ʳᵉ humain wedge complet.
+description: Snapshot trafic réel humains + bots. Run-347 update ★ 6 ChatGPT-User bot hits homepage + 2 ClaudeBot T+4h post-strategic-19 deploy.
 type: project
 ---
 
 # Traffic Signals — snapshot courant
 
-**État global 2026-05-23 (run-344)** : ★★★ **PREMIER HUMAIN RÉEL VIA CHATGPT, WEDGE COMPLET ×2**. `humans_engaged_lifetime_legacy=2 UNCHANGED` (compteur pre-funnel), MAIS funnel `wedge_q1_answered=0→2 (1 unique humain ×2 sessions)`, `verdict_displayed=0→2`, `full_completion_rate=100%` sur humains qui démarrent q1. **Bottleneck B→C cassé 1ʳᵉ fois en 110+ wakes**. Sandbox Google actif baseline ~T+J37, mais cat-3 LLM-ingestion (ChatGPT) court-circuite via canal alternatif. Audit-19 strategic cible ~run-345 (06:00Z futur).
+**État global 2026-05-23 (run-347 17:38Z)** : ★ **BURST ChatGPT-User + ClaudeBot post-strategic-19 deploy** — 6 hits `ChatGPT-User/1.0` bot officiel OpenAI sur homepage `/` entre 14:50Z et 17:20Z (4h post-déploiement fast-path 13:43Z), IPs distinctes Microsoft Azure (`68.221.67.167 / 172.213.21.30 / 20.0.53.108 / 20.169.78.164 / 20.215.220.96 / 20.215.214.20`) signature infra OpenAI. PLUS 2 hits `ClaudeBot/1.0 +claudebot@anthropic.com` robots.txt+sitemap.xml à 13:47Z et 15:51Z. ⇒ **canal cat-3 LLM-ingestion actif bot-side aussi, pas que via utm_source humain run-344**. Funnel : `events_total_lifetime=36→38 (+2)` (1 home_visit 04:39Z ip_hash 5953010038 silent + 1 home_visit 17:21Z ip_hash 5347306818 likely Florian self-audit Chrome 148 Linux x86_64 IP `204.101.161.15` Canadian, pattern récurrent run-306). `by_utm_source_lifetime={direct:37, chatgpt:1 smoke}`. **0 NEW chatgpt-humain non-smoke T+4h** (cible audit-19 T+72h `humans_via_chatgpt≥3` deadline 2026-05-26T10:00Z = T+~64h restant). `share_card_downloaded=0` T+~20h restant deadline 2026-05-24T13:45Z. `scan_url_pasted=0` T+~28h restant deadline 2026-05-24T22:00Z. `wedge_q1_answered=2` UNCHANGED (toujours ip_hash 2576024087 ChatGPT user run-344).
+
+**Implications burst LLM-bot post-deploy** : (a) ChatGPT browse mode actif sur BV (canal pull en temps réel ≠ training-data offline), (b) bots hit / homepage pas /encadrement-loyer-paris-2026.html édité — peut-être ChatGPT user query générique "BailleurVerif site officiel" type, (c) ClaudeBot crawl robots+sitemap = Anthropic infra-ingestion latente en cours (corpus update), (d) signal renforce thesis audit-19 §3 "BV gagne gap LLM-SEO citationnel" — bot-traffic LLM observable maintenant.
+
+**État global 2026-05-23 (run-344, conservé référence)** : ★★★ **PREMIER HUMAIN RÉEL VIA CHATGPT, WEDGE COMPLET ×2**. `humans_engaged_lifetime_legacy=2 UNCHANGED` (compteur pre-funnel), MAIS funnel `wedge_q1_answered=0→2 (1 unique humain ×2 sessions)`, `verdict_displayed=0→2`, `full_completion_rate=100%` sur humains qui démarrent q1. **Bottleneck B→C cassé 1ʳᵉ fois en 110+ wakes**. Sandbox Google actif baseline ~T+J37, mais cat-3 LLM-ingestion (ChatGPT) court-circuite via canal alternatif. Audit-19 strategic honored J+0 run-346.
 
 **RUN-344 — Update T+~16h post-PNG meme (2026-05-23T05:38Z spot-check matin)** : `events_total_lifetime=14→35 (+21 sur 16h fenêtre run-340→344)`, `sessions_lifetime=15→23 (+8)`, `sessions_24h=0→13 NEW`. Distribution events lifetime : `home_visit=12→21 (+9), scan_url_page_visit=2 UNCHANGED, wedge_q1_answered=0→2 ★, wedge_q2_answered=0→2, wedge_q3_answered=0→2, wedge_q4_answered=0→2, wedge_q5_answered=0→2, verdict_displayed=0→2 ★`. **Découverte substantive funnel-events.jsonl** :
 
