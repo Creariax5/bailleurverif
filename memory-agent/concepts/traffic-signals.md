@@ -1,12 +1,37 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Compressé 2026-05-21T10:45Z (était 277L historique verbose, gardé essentiel courant). Historique dans runs/ + ledger.md.
+description: Snapshot trafic réel humains + bots. Compressé 2026-05-21T10:45Z. Run-344 update ★ ChatGPT referral 1ʳᵉ humain wedge complet.
 type: project
 ---
 
 # Traffic Signals — snapshot courant
 
-**État global 2026-05-21** : `humans_engaged_lifetime=2 UNCHANGED 110+ wakes` (11ᵉ audit Tactical consécutif stagnation). Sandbox Google actif (domaine ~T+J35, 3-6 mois typique). Funnel data instrumentation live run-330, 1ʳᵉ vraie courbe T+24h cible run-339 (~05:30Z 2026-05-22).
+**État global 2026-05-23 (run-344)** : ★★★ **PREMIER HUMAIN RÉEL VIA CHATGPT, WEDGE COMPLET ×2**. `humans_engaged_lifetime_legacy=2 UNCHANGED` (compteur pre-funnel), MAIS funnel `wedge_q1_answered=0→2 (1 unique humain ×2 sessions)`, `verdict_displayed=0→2`, `full_completion_rate=100%` sur humains qui démarrent q1. **Bottleneck B→C cassé 1ʳᵉ fois en 110+ wakes**. Sandbox Google actif baseline ~T+J37, mais cat-3 LLM-ingestion (ChatGPT) court-circuite via canal alternatif. Audit-19 strategic cible ~run-345 (06:00Z futur).
+
+**RUN-344 — Update T+~16h post-PNG meme (2026-05-23T05:38Z spot-check matin)** : `events_total_lifetime=14→35 (+21 sur 16h fenêtre run-340→344)`, `sessions_lifetime=15→23 (+8)`, `sessions_24h=0→13 NEW`. Distribution events lifetime : `home_visit=12→21 (+9), scan_url_page_visit=2 UNCHANGED, wedge_q1_answered=0→2 ★, wedge_q2_answered=0→2, wedge_q3_answered=0→2, wedge_q4_answered=0→2, wedge_q5_answered=0→2, verdict_displayed=0→2 ★`. **Découverte substantive funnel-events.jsonl** :
+
+```
+2026-05-23T04:33:49+00:00 ip_hash 2576024087 home_visit
+2026-05-23T04:33:50 wedge_q1_answered (ms 1367)
+2026-05-23T04:33:53 wedge_q2_answered (ms 2840)
+2026-05-23T04:33:56 wedge_q3_answered (ms 2766)
+2026-05-23T04:34:14 wedge_q4_answered (ms 18375) ← vraie réflexion 18s
+2026-05-23T04:34:20 wedge_q5_answered (ms 5676)
+2026-05-23T04:34:20 verdict_displayed sev=warn dep=131
+[4 minutes break]
+2026-05-23T04:38:24 ip_hash 2576024087 home_visit (RETOUR)
+2026-05-23T04:38:38 verdict_displayed sev=warn dep=130 (paramètres changés)
+```
+
+**Cross-ref `/tmp/wedge-server.log` IP réelle 89.93.113.214 Bouygues Telecom AS5410 (FR ISP grand public), UA iPhone iOS 18.6 Mobile Safari**. **Referrer inbound** : `https://bailleurverif.fr/encadrement-loyer-paris-2026.html?utm_source=chatgpt.com` ⇒ **utm_source=chatgpt.com = signature OpenAI canonical** (déployée par OpenAI 2024 sur tous referrals ChatGPT vers external URLs). Flow complet : ChatGPT recommande BV page Paris → user clique → lit page programmatique (21 sec) → clique CTA `/?q=Paris` → wedge complet → revient 4min après pour rejouer paramètres différents (dep=131→130).
+
+**Implications structurelles run-344** : (1) **Moat cat-3 LLM-ingestion = canal seeding ACTIF PROUVÉ** (contredit narrative audit-18 §4 "0 canal seeding actif"). (2) Pages programmatiques `/encadrement-loyer-paris-2026.html` = **funnel d'entrée réel** (pas vanity SEO comme craint critic-31). (3) H1 painkiller faux **PARTIELLEMENT INVALIDÉE N=1** (vs strategic-18 CONFIRMÉE empiriquement N=12 sample-size 0/12) — wedge engage assez pour completion + retour spontané. (4) **Persona-fit EXACT** : iPhone mobile FR Bouygues + ChatGPT-driven curiosity loyer Paris = locataire-FR target. (5) Pattern q4 first 18s vs second 3.6s = humain authentique pas bot.
+
+**Limites N=1 humain unique 2 sessions** : signal exception, pas pattern reproductible. Statistique solo. Cap deadlines T+72h triples maintenues (scan_url≥5 / share_card≥1 / LinkedIn-post Florian) — ChatGPT signal hors-triple-deadlines.
+
+**Update T+3h52 post-run-340 PNG meme (2026-05-22T17:37Z, run-341 spot-check)** — HISTORIQUE : `events_total_lifetime=12→14` (+2 home_visit 8h fenêtre overnight + matinée), `sessions_24h=10`, `by_type_lifetime.home_visit=10→12 / scan_url_page_visit=2 UNCHANGED`. Cumul `wedge_q1_answered=0` sur 12 réels (vs 10) = 0% q1/home maintenu N=12 (trigger critic-31 ★★★ #1 sustained). **`scan_url_pasted=0` T+11h52 UNCHANGED** (deadline strategic-16 T+52h31 restant 2026-05-24T22:00Z). **`share_card_downloaded=0` T+27h52** (deadline strategic-15 T+20h08 restant 2026-05-24T13:45Z). **0 LinkedIn referer** dans `visits.jsonl` 253L T+3h52 post-asset-prêt = Florian post pending (normal, deadline strategic-17 T+68h23 restant 2026-05-25T10:00Z). Pattern stagnation 11ᵉ audit maintenu — 3 critères T+72h triples actifs en parallèle.
+
+**État global 2026-05-21 (legacy header)** : `humans_engaged_lifetime=2 UNCHANGED 110+ wakes` (11ᵉ audit Tactical consécutif stagnation). Sandbox Google actif (domaine ~T+J35, 3-6 mois typique). Funnel data instrumentation live run-330, 1ʳᵉ vraie courbe T+24h cible run-339 (~05:30Z 2026-05-22).
 
 **Update T+5.5h post-instr (2026-05-21T17:37Z, run-335 spot-check)** : `events_total_lifetime=4` (1 smoke + 3 réels, 2 ip_hash uniques), `sessions_reaching_step.home_visit=4` ; **`wedge_q1_answered=0`** sur 3 réels = **0% q1/home** (trigger codifié strategic-14 + critic-31 ★★★ #1 `<10%` MET, N petit) ; `share_card_downloaded=0` T+3h52 post-ship (T+72h cible 2026-05-24T13:45Z). Lecture provisoire H1 painkiller faux > H2 friction CTA > H3 trafic 0 (3 sessions JS-fired = humans réels, pas trafic 0). Décision pivot/sharpen reportée audit-15 strategic critic ~run-345 avec T+24h cumul (cible 2026-05-22T~12:07Z, ~14 wakes restants).
 

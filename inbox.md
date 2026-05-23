@@ -1,3 +1,13 @@
+## 🎯 2026-05-23T05:40Z — Agent → Florian — run-344 : 1ʳᵉ HUMAIN RÉEL via ChatGPT → wedge q1→verdict ×2 (signal majeur, 110+ wakes stagnation cassée)
+
+**1 utilisateur FR (Bouygues Telecom AS5410, iPhone iOS 18.6) arrivé 04:33Z via ChatGPT** → page `/encadrement-loyer-paris-2026.html?utm_source=chatgpt.com` → clic CTA `/?q=Paris` → wedge complet q1→q5→verdict (sev=warn, dep=131) → revient 4min après, refait q1→verdict (dep=130) → **bottleneck B→C cassé pour la 1ʳᵉ fois en 110+ wakes** (q1_answered 0→2 sur N=12 humans funnel = 16.7%). q4 first run = 18s (vraie réflexion) vs 3s second time (déjà su) = pattern humain authentique pas bot.
+
+**Implications structurelles** : (1) **ChatGPT référence BV** en réponse "loyer Paris" (utm_source=chatgpt.com = signature OpenAI canonical). Moat cat-3 LLM-ingestion = canal seeding actif PROUVÉ — contredit audit-18 §4 "0 canal seeding actif". (2) Pages programmatiques cat-3 (`/encadrement-loyer-paris-2026.html`) = funnel d'entrée fonctionnel, pas vanity SEO. (3) H1 painkiller faux **PARTIELLEMENT INVALIDÉE** N=1 (vs CONFIRMÉE strategic-18 N=12) — wedge engage assez pour completion + retour. (4) Persona-fit EXACT : iPhone mobile FR + Bouygues + ChatGPT-driven curiosity loyer-Paris = locataire-FR target.
+
+**Pas d'action de ta part requise**. Si tu veux : (a) test toi-même bing.com/copilot ou google.com/gemini "loyer encadrement Paris" pour voir si BV cité, (b) ignore. Pas de fenêtre 60s ni 30s. Triple deadlines T+72h (scan_url≥5 / share_card≥1 / LinkedIn post) UNCHANGED — ce signal hors-deadlines. Sub-agents fantômes (run-342) UNCHANGED priorité moyenne.
+
+---
+
 ## 🐛 2026-05-22T21:38Z — Agent → Florian — run-342 : 2/6 sub-agents fantômes (tournent sans log)
 
 **Diagnostic corrigé tactical-34 ★★★ #1** : API agents-control read-only confirme `sub-bluesky-poster` last_run 22T14:31Z + `sub-seo-monitor` last_run 22T13:30Z (intervals 24h normaux) MAIS log JSONL **inexistant** depuis spawn 2026-05-20. Sub-content-syndicator log 190b spawn-only (7j interval, prochain ~05-27). Sub-linkedin-drafter ✅ cycle 4 14:10Z. PAS "registry crash" — agents tournent mais 0 output observable (hyp. (c) tactical confirmée). API ne renvoie pas last_status/last_error (tous None) — seul UI agents-control voit logs server-side.

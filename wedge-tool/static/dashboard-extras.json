@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-23T01:44:01Z",
+  "generated_at": "2026-05-23T05:44:01Z",
   "window_days": 7,
   "totals": {
     "requests_lifetime": 3385,
-    "requests_24h": 277,
+    "requests_24h": 220,
     "bot_hits_lifetime": 341,
-    "bot_hits_24h": 40,
+    "bot_hits_24h": 28,
     "bot_hits_1h": 0,
-    "human_hits_24h": 237
+    "human_hits_24h": 192
   },
   "bots_by_type_lifetime": {
     "Bingbot": 44,
@@ -28,9 +28,8 @@
     "curl/wget": 4
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 18,
-    "Googlebot": 10,
-    "python-script": 3,
+    "OAI-SearchBot": 13,
+    "Googlebot": 6,
     "AhrefsBot": 3,
     "HeadlessChrome": 2,
     "Go-HTTP": 1,
@@ -154,22 +153,6 @@
   ],
   "hourly_24h": [
     {
-      "hour": "02",
-      "hits": 6
-    },
-    {
-      "hour": "03",
-      "hits": 16
-    },
-    {
-      "hour": "04",
-      "hits": 16
-    },
-    {
-      "hour": "05",
-      "hits": 7
-    },
-    {
       "hour": "06",
       "hits": 1
     },
@@ -248,12 +231,28 @@
     {
       "hour": "01",
       "hits": 0
+    },
+    {
+      "hour": "02",
+      "hits": 0
+    },
+    {
+      "hour": "03",
+      "hits": 0
+    },
+    {
+      "hour": "04",
+      "hits": 0
+    },
+    {
+      "hour": "05",
+      "hits": 0
     }
   ],
   "top_bot_paths_24h": {
-    "/": 18,
-    "/robots.txt": 11,
-    "/encadrement-loyer-paris-2026.html": 4,
+    "/": 11,
+    "/robots.txt": 7,
+    "/encadrement-loyer-paris-2026.html": 3,
     "/sitemap.xml": 2,
     "/dpe-f-g-interdit-location.html": 1,
     "/data/observatoire-prix-vente-vs-loyer.json": 1,
@@ -271,42 +270,53 @@
     "/lille-dpe-f-g-interdit-location.html": 1
   },
   "top_human_paths_24h": {
-    "/": 34,
-    "/static/share-card.js": 11,
+    "/": 26,
     "/favicon.svg": 11,
-    "/css/tailwind-runtime.js": 9,
-    "/api/funnel/event": 9,
-    "/api/visit": 8,
-    "/robots.txt": 8,
-    "/static/app.js": 8,
-    "/css/main.css": 7,
-    "/data/encadrement-loyer-france-2026.json": 7
+    "/static/app.js": 7,
+    "/static/share-card.js": 7,
+    "/css/tailwind-runtime.js": 7,
+    "/robots.txt": 6,
+    "/api/changelog?limit=5": 5,
+    "/api/funnel/event": 5,
+    "/api/visit": 5,
+    "/css/main.css": 5
   },
   "status_codes_24h": {
-    "200": 225,
-    "404": 49,
-    "400": 3
+    "200": 170,
+    "400": 3,
+    "404": 47
   },
   "funnel": {
-    "events_total_lifetime": 16,
-    "sessions_lifetime": 16,
-    "sessions_24h": 9,
+    "events_total_lifetime": 35,
+    "sessions_lifetime": 23,
+    "sessions_24h": 13,
     "by_type_24h": {
-      "scan_url_page_visit": 2,
-      "home_visit": 7
+      "home_visit": 13,
+      "wedge_q1_answered": 2,
+      "wedge_q2_answered": 2,
+      "wedge_q3_answered": 2,
+      "wedge_q4_answered": 2,
+      "wedge_q5_answered": 2,
+      "verdict_displayed": 2
     },
     "by_type_lifetime": {
-      "home_visit": 14,
-      "scan_url_page_visit": 2
+      "home_visit": 21,
+      "scan_url_page_visit": 2,
+      "wedge_q1_answered": 2,
+      "wedge_q2_answered": 2,
+      "wedge_q3_answered": 2,
+      "wedge_q4_answered": 2,
+      "wedge_q5_answered": 2,
+      "verdict_displayed": 2
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 14,
-      "wedge_q1_answered": 0,
-      "wedge_q2_answered": 0,
-      "wedge_q3_answered": 0,
-      "wedge_q4_answered": 0,
-      "wedge_q5_answered": 0,
-      "verdict_displayed": 0,
+      "home_visit": 21,
+      "wedge_q1_answered": 2,
+      "wedge_q2_answered": 2,
+      "wedge_q3_answered": 2,
+      "wedge_q4_answered": 2,
+      "wedge_q5_answered": 2,
+      "verdict_displayed": 2,
       "email_field_focused": 0,
       "email_submitted": 0
     }
