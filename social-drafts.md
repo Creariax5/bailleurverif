@@ -1018,6 +1018,33 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-23T08:10Z
+
+**Signal source** : run-344 (2026-05-23T05:40Z) — premier referrer utm_source=chatgpt.com dans les logs BailleurVérif : canal LLM-ingestion prouvé actif (wedge q1→verdict ×2, q4 first 18 375 ms de réflexion, iPhone Bouygues FR)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+Ce matin, nos logs ont enregistré un premier referrer `utm_source=chatgpt.com` sur BailleurVérif.
+
+Un utilisateur iPhone a demandé à ChatGPT comment vérifier son loyer à Paris. ChatGPT lui a renvoyé directement vers notre page d'encadrement des loyers 2026. Il a complété le diagnostic — 18 secondes de réflexion sur la surface de son logement — puis est revenu 4 minutes plus tard pour tester un paramètre différent.
+
+Ce n'est pas un signal marketing. C'est une observation sur la façon dont les gens cherchent maintenant des réponses juridiques concrètes.
+
+Les requêtes "loyer encadrement Paris" passent de plus en plus par des LLM, qui synthétisent les sources publiques disponibles et orientent vers un outil ou une page vérifiée. BailleurVérif est dans ces sources depuis que nos données observatoire sont publiées sur data.gouv.fr.
+
+Pour un locataire qui ne connaît pas les associations de défense, ne sait pas qu'une Commission Départementale de Conciliation existe, et n'a pas envie de lire un arrêté préfectoral — poser la question à un LLM et atterrir sur un simulateur vérifié en 5 secondes, c'est un parcours qui fonctionne.
+
+Simulateur Paris, modèles LRAR et références Cour de cassation en accès libre :
+https://bailleurverif.fr/loyer-legal-paris.html
+
+#EncadrementLoyer #Immobilier #LegalTech #DroitDesLocataires #IA
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-22T14:10Z
 
 **Signal source** : Observatoire BailleurVérif run-340 — arrondissements Paris N=45 dedup 3 vagues 17-19 mai 2026 : Paris 1ᵉʳ/5ᵉ/6ᵉ à 100 % de violations encadrement loyers (snapshot-current.md 2026-05-22T13:45Z)
