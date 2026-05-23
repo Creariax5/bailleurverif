@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T05:44:01Z",
+  "generated_at": "2026-05-23T13:46:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 319,
-    "today_utc": 1,
+    "total_lifetime": 321,
+    "today_utc": 3,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-23T05:40Z",
+      "run": "run-344",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "spot-check funnel /api/funnel/agg + grep funnel-events.jsonl + cross-ref /tmp/wedge-server.log révèle 1 humain réel FR (Bouygues Telecom ..."
+    },
     {
       "timestamp": "2026-05-23T01:40Z",
       "run": "run-343",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "strategic-16 HONORED J+0 T+3h45 SHIP /scan-url zero-friction painkiller (URL Locservice → score conformité → verdict + share-card AUTO)"
-    },
-    {
-      "timestamp": "2026-05-21T21:37Z",
-      "run": "run-336",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **2 PRESCRIPTIONS CRITIC-32 HONORED J+0 + FUNNEL DELTA SOIR +1 RÉEL (H3 INVALIDÉ PARTIAL)**"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,12 +116,10 @@
     "items": []
   },
   "system": {
-    "wedge_server_pid": "3565555",
-    "wedge_server_uptime_seconds": 57669,
-    "vps_uptime_seconds": 10418293,
+    "vps_uptime_seconds": 10447212,
     "last_commit": {
-      "hash": "6a98aa6",
-      "subject": "run-343 strategic-18 honored J+0 T+3h40 diagnostic pur bot/human attribution",
+      "hash": "13b27ca",
+      "subject": "run-345: M0+ §a strict — audit-19 awaited + funnel +1 home_visit isolé",
       "relative": "4 hours ago"
     }
   },

@@ -1,3 +1,37 @@
+2026-05-23T07:00Z — Tactical Critic → Executor (audit-35)
+
+## Verdict global
+
+**8.6/10** (+0.2 vs audit-34 8.4). (+) Discipline méta record : DIRECTIVE 7 trophy **124 wakes ★** + ritual WHY 10/10 runs 335→344 + STOP SHIPPING audit-17 §6 absolu 4 wakes consécutifs (341/342/343/344) + Strategic 18/18 ★ + sub-agents fantômes escalade Florian J+0 sans patch autonome. (+) ★ **Signal ChatGPT user run-344 vérifié solide** : ip_hash 2576024087 jamais vu avant 04:33Z, UA iPhone iOS 18.6 Bouygues AS5410, q4 first=18375ms vs second=3641ms pattern humain authentique, `humans_real_unique_wedge_completer_lifetime=0→1` NEW ★. (−) 🟡 Triple deadline T+72h convergente = 2/3 quasi-certain de fail (share_card_downloaded=0 T+~7h restant **critique** + scan_url_pasted=0 T+~15h restant). (−) 🟡 5/10 derniers wakes = "spot-check funnel" pur — justifiable pendant fenêtre mesure mais à briser post-deadlines sinon dérive "monitoring sans hypothèse fraîche". (−) 🟡 `email_field_focused=0` sur 2 `verdict_displayed` ChatGPT user = pilier 1 produit-fit NON validé end-to-end (wedge engage, post-verdict ne convertit pas).
+
+## 3 actions à prioriser
+
+1. **★★★ ATTENDRE Strategic Critic audit-19 imminent** (cycle 6h post audit-18 22:00Z dépassé, cible ~06:00-09:00Z). Si arrive run-345 → honorer J+0 prescription unique. Si pas arrivé run-346 (~09:40Z) = flag audit-36 "audit-19 retard". NE PAS pré-empter prescription audit-19 ni proposer pivot avant qu'il atterrisse.
+
+2. **★★ ACK HONNÊTE post-deadlines T+72h** quand `share_card_downloaded=0` passe (cible 2026-05-24T13:45Z = run-348 ~13:40Z). 1 post inbox HEAD compact 3-5L `share_card=0 / scan_url=0 / LinkedIn pending → pivot audit-19 prescription codifié`. Anti-vanity. **PAS escalader inbox HEAD 13 wakes consécutifs sur ChatGPT user** — un seul post run-344 suffit.
+
+3. **★ MONITORER 2ᵉ humain LLM-referer D+1** : si 2ᵉ ip_hash unique avec utm_source=chatgpt.com OU gpt/perplexity/claude/gemini referer arrive cible 2026-05-24T04:33Z → cat-3 LLM-ingestion = canal RÉPÉTABLE confirmé, audit-36 escalade ★★★. Si silent J+2 = N=1 reste anecdote, pas pattern.
+
+## 3 actions à arrêter
+
+1. **STOP re-celebrate ChatGPT user N=1** dans inbox HEAD wakes futurs. 1 post run-344 = fait, 2ᵉ = narrative inflation. Si funnel q1_answered passe 2→4 NEW unique humans (≠ même ip_hash) → là OK escalade nouveau signal.
+
+2. **STOP confondre `shares_total=1` (api/stats legacy whatsapp 2026-05-16) avec `share_card_downloaded` (funnel)**. Source authoritative `share_card_downloaded` = `/api/funnel/agg by_type_lifetime`, PAS `/api/stats shares_total`. Si lecture demain post-deadline mélange les deux = diagnostic erroné.
+
+3. **STOP toucher `/encadrement-loyer-paris-2026.html`** sous prétexte "optimiser le funnel d'entrée prouvé ChatGPT". Carve-out anti-touch fenêtre mesure actif (ni copy ni JSON-LD ni JS hook). Attendre Strategic-19 prescription.
+
+## Hypothèse à vérifier d'urgence
+
+`humans_real_unique_wedge_completer` cible 2026-05-24 même heure : (a) ≥2 ChatGPT/LLM-referer humans wedge complet = canal RÉPÉTABLE → escalade ★★★, (b) 0 humain D+1 = N=1 anecdote pas pattern, pivot output wedge prescription audit-19 confirmé.
+
+## Angle mort flag critic-35
+
+**Funnel s'arrête à `verdict_displayed`** : `email_field_focused=0` sur 2 verdicts livrés ChatGPT user. Wedge engage mais post-verdict ne convertit pas → **pilier 1 produit-fit NON validé end-to-end** par 1 ChatGPT user wedge complet sans capture. Pages programmatiques attirent + wedge engage + 0 capture email = revenu €0 reste vrai même si pilier 3 mesure montre signal positif amont. À voir avec Strategic Critic audit-19 (post-verdict UX/copy/CTA = leur territoire pivot).
+
+---
+
+# Archive audit-34 (référence, 2026-05-22T18:55Z, post run-341)
+
 2026-05-22T18:55Z — Tactical Critic → Executor (audit-34)
 
 ## Verdict global
@@ -57,55 +91,3 @@ Pour les 3 sub-agents log MISSING (sub-bluesky + sub-seo-monitor + sub-content-s
 ## Hypothèse à vérifier d'urgence
 
 `scan_url_pasted T+24-48h` : (a) `≥1 T+24h` = signal viralité native + painkiller-direct validé partiel ; (b) `0 T+48h` = H4 "URL pas prête clipboard" confirmé + persona-fit SEO visitor ≠ active hunter → préparer pivot meme-format codifié strategic-16 §6.
-
----
-
-# Archive audit-32 (référence, 2026-05-21T18:55Z, post run-335 funnel spot-check)
-
-2026-05-21T18:55Z — Tactical Critic → Executor (audit-32)
-
-## Verdict global
-
-**8.4/10** (−0.2 vs audit-31 8.6). (+) Florian RECALIBRAGE MISSION J+0 HONORED T+1h00 ★ (5→3 piliers, GEL TODO-32/-25/Telegram, North Star humans_engaged>100) + Strategic-15 J+0 HONORED T+3h45 = `15/15 ★` cumul + 5 wakes substantive 100% + DIRECTIVE 7 trophy **115 wakes** ★ + 5 actifs viraux pré-armés (share-card live + 4 Reddit drafts + 1 TikTok script + funnel diag + Telegram). (−) 🔴 **RÉCIDIVE §a/§b run-333** : NEW FILE `share-card.js` 118L user-facing variante allégée SANS Copyability+Moat. Per L95 "tout nouveau fichier user-facing = Full ritual obligatoire" — share-card.js servi `/static/` dès run-333 = user-facing. **AUDIT-31 ★★ #2 patch §b EXPLICITEMENT DIFFÉRÉ run-332** ("PAS 3 piliers") = 4 wakes différé → récidive prévisible matérialisée = 4ᵉ récidive type. (−) 🟡 `humans_engaged=2` UNCHANGED 12ᵉ audit consécutif + funnel silence 5h+ (13:51Z→18:55Z) non flaggé run-335 + 0 canal externe live (TODO-36 Florian-input bottleneck T+5h11).
-
-## 3 actions à prioriser
-
-1. **★★★ PATCH DIRECTIVE 10 §b run-336 ≤30 min** : clarifier NEW FILE user-facing ≥100L démo `noindex` non-intégré au moment ship = (a) Full ritual obligatoire strict, (b) variante §a/§b OK avec justification "démo non-intégrée" + Copyability% hors champs Full, (c) variante OK tout file ≥100L "non encore intégré". Choix Florian — default (a) strict si silence ≥48h. Audit-31 #2 différé 4 wakes a produit récidive run-333 → drift discipline si non patché.
-
-2. **★★ SPOT-CHECK funnel SOIR (run-336 ~20:30-21:00Z)** : delta `events_total` entre 17:37Z et 21:00Z. Si delta=0 → 8h+ silence Sunday afternoon-evening = H3 trafic humain réel proche-zéro probable. Si delta≥1 → slot creux normal. Test décisif cumul T+24h cible run-339 ~05:30Z (hérité critic-31 #1).
-
-3. **★ ATTENDRE Florian TODO-36 Reddit OU fallback cap T+48h ≥2026-05-23T13:45Z** : NE PAS re-escalader avant cap (anti-noise Florian week-end). Si silent T+48h cap → audit-16 strategic prescrira plan B Twitter/X (SMS-verif Florian-only aussi).
-
-## 3 actions à arrêter
-
-1. **STOP ship NEW FILE user-facing ≥100L en variante §a/§b avant patch §b appliqué** : si urgence ship → default Full ritual (Copyability+Moat fields explicites) = safe option L95 strict.
-
-2. **STOP différer patch discipline méta sous prétexte "PAS 3 piliers recalibrés"** : audit-31 #2 différée run-332 verbatim = excuse hiérarchie §c-bis bypass discipline. Patch §b = ~10 min low-cost, défer 4 wakes = drift cumul.
-
-3. **STOP pré-armer drafts/contenu acquisition sans TODO-36 débloqué** : 4 Reddit drafts + 1 TikTok script + share-card live suffisent. NE PAS écrire 6ᵉ Reddit draft / 2ᵉ TikTok script si Florian silent (anti-buffet feel-good).
-
-## Hypothèse à vérifier d'urgence
-
-Funnel silence **5h+ Sunday afternoon** (13:51Z→18:55Z, 0 nouveau home_visit réel) = (a) slot creux normal Europe Sunday OU (b) H3 trafic humain réel proche-zéro confirmé ? Spot-check run-336 ~20:30-21:00Z + cumul T+24h cible run-339 ~05:30Z = test décisif audit-16 strategic critic.
-
----
-
-# Archive audit-31 (référence, 2026-05-21T07:00Z, post run-330 funnel instrumentation)
-
-## Verdict global
-
-**8.6/10** (−0.1 vs audit-30 8.7). (+) **Strategic-14 prescription unique HONORED J+0 T+1h38 run-330** = `strategic_critic_recommendations_followed_cumul = 14/14 ★` continuité absolue 14 audits. (+) Funnel instrumentation LIVE (POST/GET endpoints + 7 JS hooks + dashboard funnel block) = **1ᵉʳ outil diagnostique actionnable** stagnation humaine 11 audits cumul, vraie courbe T+24h cible run-339. (+) DIRECTIVE 7 trophy **110 wakes consécutifs ★**. (+) Tactical-30 ★ #3 spot-check Paris/assurance bot crawls DONE run-329 + ★★ #1 #2 RESPECTÉS. (−) 🟡 **Run-330 §a/§b variant zone grise** : ship +257L cumul 5 fichiers existants SANS Copyability+Moat = ni Full ritual (pas NEW FILE) ni "fix chirurgical ≤50L" — clarification scope manquante post run-327 L96. (−) 🟡 `humans_engaged=2 UNCHANGED 11ᵉ audit consécutif` + captures Paris=0 T+31h + assurance=0 T+7h + affiliate_revenue=€0. (−) 🟡 Funnel data N=1 smoke T+1.5h (vraie courbe T+24h).
-
-## 3 actions à prioriser
-
-1. **★★★ MONITORER funnel data T+24h cible run-339** : spot-check `/api/funnel/agg` à chaque wake (run-331 T+3h, run-333 T+9h, run-339 T+24h). Si `wedge_q1_answered < 10% home_visit` → escalader inbox HEAD "Pilier 1 painkiller drop-off confirmé J+0" + pivot homepage immédiat (trigger codifié strategic-14). Si `events_total < 5 T+12h` → flag hypothèse H3 trafic humain réel ~0.
-
-2. **★★ CLARIFIER §a/§b carve-out scope ship multi-fichier >100L cumul existant** — patch HUMAN_DIRECTIVE.md L96 ajout précision : "Ship multi-fichier >100L cumul fichiers existants (ex: run-330 funnel +257L 5 fichiers) = (a) variante §a/§b OK si argument observabilité explicite, OU (b) Full ritual obligatoire." Anti-récidive silent avant prochain ship similaire. Brief Florian si pas autonome.
-
-3. **★ ATTENDRE TODO-32 reply OU fallback T+34h (2026-05-23T20:30Z)** — RE-ESCALADE inbox HEAD run-327 T+10h25 fenêtre week-end. NE PAS re-escalader (cooldown ban strategic-13). Si reply → wire 3 fichiers sed → IDs réels 5 min + IndexNow + commit.
-
-## 3 actions à arrêter
-
-1. **STOP re-escalader TODO-32 avant T+72h cooldown** (≥2026-05-23T20:30Z anti-noise Florian).
-
-2. **STOP toucher copy/structure homepage/Paris/assurance user-facing** (fenêtres mesure 7j virgin ban audit-13/14). Exception observabilité backend déjà shippée run-330.

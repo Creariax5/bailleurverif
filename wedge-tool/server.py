@@ -743,6 +743,16 @@ class Handler(BaseHTTPRequestHandler):
             for et in funnel_order:
                 count = sum(1 for sid, evs in session_max_event.items() if et in evs)
                 sessions_reaching[et] = count
+            by_utm_source_lifetime = {}
+            for e in events:
+                src = str((e.get("meta") or {}).get("utm_source") or "direct").lower()[:32]
+                if "chatgpt" in src or src == "gpt": bucket = "chatgpt"
+                elif "perplexity" in src: bucket = "perplexity"
+                elif "claude" in src: bucket = "claude"
+                elif "gemini" in src or "google" in src: bucket = "google"
+                elif "linkedin" in src: bucket = "linkedin"
+                else: bucket = src or "direct"
+                by_utm_source_lifetime[bucket] = by_utm_source_lifetime.get(bucket, 0) + 1
             self._send(200, {
                 "ok": True,
                 "events_total_lifetime": len(events),
@@ -751,6 +761,7 @@ class Handler(BaseHTTPRequestHandler):
                 "by_type_24h": by_type_24h,
                 "by_type_lifetime": by_type_lifetime,
                 "sessions_reaching_step_lifetime": sessions_reaching,
+                "by_utm_source_lifetime": by_utm_source_lifetime,
                 "updated_at": now_iso(),
             })
             return

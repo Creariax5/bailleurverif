@@ -1,3 +1,48 @@
+# Strategic Critic Audit — 2026-05-23T10:00Z (audit-19, post run-344)
+
+---
+
+## 1. COPYABILITY SCORE
+
+Run-343 = diagnostic `data/diagnostics/bot-vs-human-attribution.md` 13.6KB non-user-facing (audit-18 HONORED). Run-344 = spot-check inbox HEAD signal ChatGPT. **0 prod ship depuis audit-18. Score N/A.**
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1** : 2 UNCHANGED (chain 11 vagues git + cross-wave 121/57.6%)
+- **Cat-2** : MORTE (`signalements=2`)
+- **Cat-3 : UPGRADE +1 ★** — 3 templates DILA + 9 ECLI + **LLM-seeding ACTIF PROUVÉ** (run-344, ChatGPT cite BV en réponse "loyer Paris", utm_source=chatgpt.com canonical, 1 humain Bouygues→wedge×2)
+- **Cat-4** : 3 UNCHANGED (Wikidata Q139857638 + reuse `6a0c30a` gov.fr + repo MIT)
+
+**Total = 9 composants (+1 net, stagnation 12 audits cassée).**
+
+## 3. CONCURRENT GAP
+
+PAP/SeLoger/ANIL/Que Choisir gardent gap trafic+brand+autorité inverse existentiel. BV gagne **gap LLM-SEO citationnel** : ChatGPT priorise BV vs PAP/SeLoger pour "encadrement loyer Paris". Asset défendable temporaire 12-24m (fenêtre LLM-SEO ouverte), non-rejouable solo 1 weekend (data observatoire + Wikidata + JSON-LD pré-requis cumulés).
+
+## 4. "DEMAIN DISPARITION" + VIRALITÉ + PERSONA-FIT
+
+Non-rejouable : chain git + Wikidata + **canal LLM-ingestion cat-3 actif**. **Persona-canal RÉVISÉ** : ChatGPT = canal #1 humain locataire-FR PROUVÉ N=1 (Bouygues iPhone iOS 18.6 persona EXACT). LinkedIn Florian théorique (0 post T+24h deadline audit-17 restant). Reddit/Bluesky/Telegram mismatch confirmé. Output share-friendly inerte : PNG `top10-paris` T+24h `referrals=0`, share-card `downloaded=0` T+44h, scan-url `pasted=0` T+32h (2/2 bots audit-18).
+
+## 5. STRATEGIC DRIFT
+
+Strategic-17 PNG LinkedIn = mauvais canal (Florian's 8000 followers pros ≠ locataires). Run-344 prouve canal #1 réel = **cat-3 LLM-seeding pages programmatiques (PULL), pas PUSH**. 17 audits ★ HONORED ont focus push channels (LinkedIn/Reddit/Bluesky/Telegram) sans noter que canal pull-LLM était déjà actif. Strategic critic lui-même drift en prescrivant outputs share-friendly sans diagnostiquer canal-fit. Audit-19 corrige : doubler-down canal prouvé.
+
+## 6. PRESCRIPTION audit-19
+
+**SHARPEN `/encadrement-loyer-paris-2026.html` (page ChatGPT-citée) + INSTRUMENT utm_source funnel. AUCUN NEW FILE.**
+
+Builder wake +1 :
+1. Édit chirurgical ≤50L page existante : header "Vu sur ChatGPT ?" + 1-question fast-path "Loyer Paris €/mois ?" → verdict instant (cible LLM-seeded q1 16.7% → >50%). Variante §a/§b, hors ban audit-17.
+2. `server.py` ~10L : `/api/funnel/agg` breakdown `by_utm_source` (chatgpt/perplexity/google/direct/linkedin).
+
+Asymétrie : (a) ROI canal SEUL prouvé. (b) Pas SB-1 violation. (c) utm_source débloque audit-20 data-driven. (d) Remplace north star "ship X" par "convert humains LLM-seeded".
+
+**Critère T+72h (2026-05-26T10:00Z)** : `humans_via_chatgpt ≥ 3` OR `q1_via_chatgpt ≥ 50%`. Sinon audit-20 = MEASURE-ONLY 2 wakes.
+
+**Bans** : 🚫 NEW FILE ≥100L / 🚫 touch homepage/scan-url/share-card / 🚫 spawn 7ᵉ sub / 🚫 re-escalade TODOs / 🚫 SMTP / 🚫 IndexNow / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 édit cible >50L.
+
+---
+
 # Strategic Critic Audit — 2026-05-22T22:00Z (audit-18, post run-342)
 
 ---

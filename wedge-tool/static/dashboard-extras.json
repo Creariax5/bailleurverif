@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-23T05:44:01Z",
+  "generated_at": "2026-05-23T13:46:01Z",
   "window_days": 7,
   "totals": {
     "requests_lifetime": 3385,
-    "requests_24h": 220,
+    "requests_24h": 0,
     "bot_hits_lifetime": 341,
-    "bot_hits_24h": 28,
+    "bot_hits_24h": 0,
     "bot_hits_1h": 0,
-    "human_hits_24h": 192
+    "human_hits_24h": 0
   },
   "bots_by_type_lifetime": {
     "Bingbot": 44,
@@ -27,16 +27,7 @@
     "BaiduSpider": 5,
     "curl/wget": 4
   },
-  "bots_by_type_24h": {
-    "OAI-SearchBot": 13,
-    "Googlebot": 6,
-    "AhrefsBot": 3,
-    "HeadlessChrome": 2,
-    "Go-HTTP": 1,
-    "GPTBot": 1,
-    "generic-bot": 1,
-    "ByteSpider": 1
-  },
+  "bots_by_type_24h": {},
   "bot_last_seen": {
     "YandexBot": "2026-05-19T15:30:24+00:00",
     "Go-HTTP": "2026-05-21T09:47:20+00:00",
@@ -153,38 +144,6 @@
   ],
   "hourly_24h": [
     {
-      "hour": "06",
-      "hits": 1
-    },
-    {
-      "hour": "07",
-      "hits": 24
-    },
-    {
-      "hour": "08",
-      "hits": 25
-    },
-    {
-      "hour": "09",
-      "hits": 55
-    },
-    {
-      "hour": "10",
-      "hits": 13
-    },
-    {
-      "hour": "11",
-      "hits": 31
-    },
-    {
-      "hour": "12",
-      "hits": 27
-    },
-    {
-      "hour": "13",
-      "hits": 16
-    },
-    {
       "hour": "14",
       "hits": 0
     },
@@ -247,19 +206,41 @@
     {
       "hour": "05",
       "hits": 0
+    },
+    {
+      "hour": "06",
+      "hits": 0
+    },
+    {
+      "hour": "07",
+      "hits": 0
+    },
+    {
+      "hour": "08",
+      "hits": 0
+    },
+    {
+      "hour": "09",
+      "hits": 0
+    },
+    {
+      "hour": "10",
+      "hits": 0
+    },
+    {
+      "hour": "11",
+      "hits": 0
+    },
+    {
+      "hour": "12",
+      "hits": 0
+    },
+    {
+      "hour": "13",
+      "hits": 0
     }
   ],
-  "top_bot_paths_24h": {
-    "/": 11,
-    "/robots.txt": 7,
-    "/encadrement-loyer-paris-2026.html": 3,
-    "/sitemap.xml": 2,
-    "/dpe-f-g-interdit-location.html": 1,
-    "/data/observatoire-prix-vente-vs-loyer.json": 1,
-    "/loyer-legal-paris.html": 1,
-    "/opensearch.xml": 1,
-    "/lille-dpe-f-g-interdit-location.html": 1
-  },
+  "top_bot_paths_24h": {},
   "googlebot_paths_lifetime": {
     "/robots.txt": 34,
     "/sitemap.xml": 3,
@@ -269,29 +250,14 @@
     "/loyer-legal-paris.html": 1,
     "/lille-dpe-f-g-interdit-location.html": 1
   },
-  "top_human_paths_24h": {
-    "/": 26,
-    "/favicon.svg": 11,
-    "/static/app.js": 7,
-    "/static/share-card.js": 7,
-    "/css/tailwind-runtime.js": 7,
-    "/robots.txt": 6,
-    "/api/changelog?limit=5": 5,
-    "/api/funnel/event": 5,
-    "/api/visit": 5,
-    "/css/main.css": 5
-  },
-  "status_codes_24h": {
-    "200": 170,
-    "400": 3,
-    "404": 47
-  },
+  "top_human_paths_24h": {},
+  "status_codes_24h": {},
   "funnel": {
-    "events_total_lifetime": 35,
-    "sessions_lifetime": 23,
-    "sessions_24h": 13,
+    "events_total_lifetime": 37,
+    "sessions_lifetime": 25,
+    "sessions_24h": 11,
     "by_type_24h": {
-      "home_visit": 13,
+      "home_visit": 11,
       "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
       "wedge_q3_answered": 2,
@@ -300,7 +266,7 @@
       "verdict_displayed": 2
     },
     "by_type_lifetime": {
-      "home_visit": 21,
+      "home_visit": 23,
       "scan_url_page_visit": 2,
       "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
@@ -310,7 +276,7 @@
       "verdict_displayed": 2
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 21,
+      "home_visit": 23,
       "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
       "wedge_q3_answered": 2,
