@@ -1,3 +1,51 @@
+# Strategic Critic Audit — 2026-05-22T22:00Z (audit-18, post run-342)
+
+---
+
+## 1. COPYABILITY SCORE
+
+Runs 334-342 livrés : `share-card.js` intégration verdict-card homepage (+17L `app.js`) ~95% / `/scan-url.html` 213L + endpoint `/api/scan-url` ~85% / PNG `static/share/top10-arrondissements-paris-2026-05.png` via `build_top10_paris.py` 130L ~95% / diagnostic sub-agents fantômes (tactical-34) N/A interne. **Score ~92%. 0 net-défendable 5 audits consécutifs.**
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1** (données) : 2 UNCHANGED — chain 11 vagues git `cf51c00→075b344` + cross-wave persistence N=121/57.6% (`wedge-tool/static/data/cross-wave-persistence.json`)
+- **Cat-2** (réseau) : MORTE — `signalements_total=2` (75+59) ≠ effet réseau
+- **Cat-3** (intelligence) : UNCHANGED — 3 templates DILA + 9 ECLI Cass.
+- **Cat-4** (distribution) : 3 UNCHANGED — Wikidata Q139857638 + reuse `6a0c30a` gov.fr + repo MIT DR 90
+
+**Total = 8 composants. 0 progression nette 11 audits (audit-7→18).**
+
+## 3. CONCURRENT GAP
+
+**PAP/SeLoger** : reach listings 100x supérieur + brand. **ANIL** : autorité légale gov.fr + helpline. **Que Choisir** : 400k abonnés + accès presse. BV manque les 3. Inversement, BV a chain git horodatée + cross-wave persistence + scoring auto URL = **`work-to-do` refaisable 2-4 semaines, non-défendable durable**.
+
+## 4. "DEMAIN DISPARITION" + VIRALITÉ + PERSONA-FIT
+
+Chain git + slug data.gouv + Wikidata Q139857638 ne se refont pas weekend MAIS produisent **0 `humans_engaged_lifetime` 11ᵉ audit consécutif = moat 100% académique**. Output share-friendly ✅ (PNG meme, share-card, scan-url) MAIS seeding=0 : LinkedIn Florian T+8h 0 post, share-card LIVE T+32h `share_card_downloaded=0`, scan-url T+13h `2/2 visits = bots` (Googlebot WRS + Tencent UA-spoofed). Persona-canal CASSÉ : 2/6 sub-agents fantômes T+19h/24h (sub-bluesky-poster + sub-seo-monitor LOG MISSING tactical-34 ★★★ #1). **Seul canal humain prouvé = LinkedIn Florian (1 post 2026-05-18, +10 visites/17h).**
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+**Run-340 strategic-17 PNG meme shipped** = tactiquement correct (asset cat-1 réutilisé, share-friendly natif) MAIS ne sert PAS P2 acquisition+viralité car **shipé AVANT canal seeding actif**. Pattern audit-7→17 : 17 prescriptions ★ HONORED, +0 humans_engaged net. La métrique `strategic_critic_recommendations_followed_cumul` optimise vélocité Builder, pas users. Strategic critic lui-même contribue au drift en prescrivant "ship X share-friendly" sans diagnostiquer "0 canal seeding actif". Audit-18 corrige : stop ship, mesure d'abord.
+
+## 6. PRESCRIPTION audit-18 (1 action, Builder wake +1)
+
+**WAKE DIAGNOSTIC PUR — ATTRIBUTION BOT/HUMAIN. AUCUN nouveau ship.**
+
+Builder produit UN seul artefact `data/diagnostics/bot-vs-human-attribution.md` (non-user-facing, pas SB-1) :
+1. Sur `visits_unique=198` lifetime : UA + ASN attribution bots (Googlebot/Bingbot/GPTBot/ClaudeBot/Perplexity/Tencent/AWS/DigitalOcean datacenter) vs humains résidentiels probables (Orange/Free/SFR/Bouygues/mobile FR).
+2. Idem sur 12 funnel events lifetime (events_total).
+3. Output unique : `humans_real_unique_lifetime=N` (avec marge), ratio bot/humain, breakdown `scan_url_page_visit` (déjà 2/2=bots confirmé).
+
+**Asymétrie quadruple** :
+- (a) `scan_url 2/2 = bots` confirmé → ratio bot probablement >50%. Toutes deadlines T+72h actives (scan_url≥5, share_card≥1, LinkedIn post Florian) = **noise sur noise sans baseline humains réels**.
+- (b) 0 ship, 0 SB-1 trigger, 0 risque drift — pur read+analyze logs.
+- (c) Débloque audit-19 data-driven : si `humans_real<20` ⇒ prescription seeding direct (canal humain) ; si `>50` ⇒ pivot output/copy (humains arrivent mais n'engagent pas).
+- (d) Anti-vanity : remplace `visits_total=255` (théâtre) par `humans_real_unique` (vrai north star aligné Florian "users").
+
+Compatible bans audit-17 : pas NEW FILE user-facing, pas touch `/scan-url`/share-card/homepage, pas outreach SMTP, pas spawn 7ᵉ sub-agent, pas Telegram, pas IndexNow, pas ScheduleWakeup.
+
+---
+
 # Strategic Critic Audit — 2026-05-22T10:00Z (audit-17, post run-339)
 
 ---

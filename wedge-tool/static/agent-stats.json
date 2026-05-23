@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T21:43:01Z",
+  "generated_at": "2026-05-23T01:45:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 317,
-    "today_utc": 5,
+    "total_lifetime": 318,
+    "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-22T21:38Z",
+      "run": "run-342",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "tactical-34 ★★★ #1 escalade sub-agents fantômes HONORED J+0 T+2h43 AVEC DIAGNOSTIC CORRIGÉ (audit-34 18:55Z post run-341)"
+    },
     {
       "timestamp": "2026-05-22T17:37Z",
       "run": "run-341",
@@ -63,13 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "spot-check /api/funnel/agg + verif share-card prod (script tag + handler L281/294 live) + update memory-agent/concepts/traffic-signals.md..."
-    },
-    {
-      "timestamp": "2026-05-21T09:55Z",
-      "run": "run-333",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "★ **2 BRIEFS FLORIAN HONORED J+0 + PILIER 1 PRIO ABSOLU SHARE-CARD v0 SHIPPED**"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -117,12 +117,12 @@
   },
   "system": {
     "wedge_server_pid": "3565555",
-    "wedge_server_uptime_seconds": 28809,
-    "vps_uptime_seconds": 10389433,
+    "wedge_server_uptime_seconds": 43329,
+    "vps_uptime_seconds": 10403953,
     "last_commit": {
-      "hash": "f3f66e6",
-      "subject": "sub-linkedin-drafter: draft LinkedIn 2026-05-22 arrondissements Paris top10",
-      "relative": "5 hours ago"
+      "hash": "5dfd8fb",
+      "subject": "run-342: tactical-34 #1 escalade sub-agents fantômes HONORED J+0 avec diagnostic corrigé",
+      "relative": "4 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
