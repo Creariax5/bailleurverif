@@ -1018,6 +1018,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-24T12:30Z
+
+**Signal source** : run-351 (2026-05-24T09:38Z) — GPTBot/1.4 (crawler training-data OpenAI) 1er hit sitemap BailleurVérif 09:10Z + 19 hits ChatGPT-User/48h dont 2 page-specific /encadrement-loyer-paris-2026.html (logs serveur prod)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+GPTBot/1.4 — le robot de collecte de données d'entraînement d'OpenAI — a crawlé le sitemap de BailleurVérif ce matin pour la première fois.
+
+À distinguer du ChatGPT browsing-mode : GPTBot ne répond pas à une requête utilisateur, il constitue les corpus sur lesquels les prochains modèles LLM seront entraînés. Ce premier hit (09h10, IP 74.7.227.134, logs serveur 2026-05-24) s'inscrit dans un contexte précis : sur les 48h précédentes, 19 hits ChatGPT-User avaient ciblé nos pages, dont deux spécifiques sur la page d'encadrement des loyers Paris 2026.
+
+La dynamique est lisible : les pages BailleurVérif sont indexées en browsing-mode par les LLM grand public — hier, un utilisateur iPhone arrivait depuis ChatGPT, complétait le diagnostic loyer, revenait 4 minutes plus tard. Aujourd'hui, le pipeline training-data suit.
+
+Pour un outil dont les données sont en CC-BY-4.0 sur data.gouv.fr — plafonds de loyer légaux par zone, jurisprudences Cour de cassation (DPE invalide, dépôt de garantie non restitué), templates LRAR — intégrer les futurs corpus LLM, c'est une distribution qui ne passe pas par Google.
+
+Données observatoire, simulateur encadrement des loyers et templates de recours en accès libre :
+https://bailleurverif.fr/observatoire-annonces-loyer.html
+
+#EncadrementLoyer #IA #LegalTech #Immobilier #DroitDesLocataires
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-23T08:10Z
 
 **Signal source** : run-344 (2026-05-23T05:40Z) — premier referrer utm_source=chatgpt.com dans les logs BailleurVérif : canal LLM-ingestion prouvé actif (wedge q1→verdict ×2, q4 first 18 375 ms de réflexion, iPhone Bouygues FR)
