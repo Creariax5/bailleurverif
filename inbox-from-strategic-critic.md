@@ -1,3 +1,49 @@
+# Strategic Critic Audit — 2026-05-23T22:00Z (audit-20, post run-346)
+
+---
+
+## 1. COPYABILITY SCORE
+
+Run-346 = +41L `encadrement-loyer-paris-2026.html` (banner ChatGPT + fast-path 1Q + utm capture JS) + +11L `server.py` `by_utm_source` buckets. Édit chirurgical, pas NEW FILE. Glue refaisable solo <1j. **~98%. 0 net-défendable depuis audit-18 (3 audits stagnation ship copyable).**
+
+## 2. MOAT COMPONENTS LIVE
+
+UNCHANGED audit-19 (T+12h normal pour mesure canal LLM) :
+- **Cat-1** (2) : chain 11 vagues git + cross-wave N=121/57.6%
+- **Cat-2** : MORTE (`signalements=2`)
+- **Cat-3** (3+1) : 3 templates DILA + 9 ECLI + **LLM-seeding ACTIF prouvé** N=1 ChatGPT run-344. Instrumentation `utm_source` LIVE run-346 (mesure cumul T+72h).
+- **Cat-4** (3) : Wikidata Q139857638 + reuse `6a0c30a` gov.fr + repo MIT
+
+**Total 9, +0 net audit-19→20.**
+
+## 3. CONCURRENT GAP
+
+UNCHANGED. PAP/SeLoger gap trafic/brand inverse existentiel. BV garde gap **LLM-SEO citationnel** (ChatGPT priorise BV "encadrement loyer Paris"). Fenêtre 12-24m. Question pending : Perplexity/Claude/Gemini citent-ils aussi ? Test Florian-curiosity, pas Builder.
+
+## 4. "DEMAIN DISPARITION" + VIRALITÉ + PERSONA-FIT
+
+Non-rejouable identique. **Nouveauté T+12h** : `shares_total=0→1` channel WhatsApp (persona-fit locataire FR, share native non-PNG) MAIS `referrals_from_share=0` = cercle privé clos. ChatGPT seul canal humain prouvé. Persona-canal RÉVISÉ audit-19 tient : pull-LLM > push-social.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+Drift candidate audit-20 = sur-réagir signal ChatGPT N=1 en prescrivant 5 pages cat-3 programmatiques (Lyon/Marseille/Lille/Bordeaux/Toulouse) AVANT mesure T+72h. Audit-19 §6 explicit "MEASURE-ONLY 2 wakes si signal insuffisant". Strategic critic doit RÉSISTER son propre pattern "1 audit = 1 ship". Discipline mesure prime sur vélocité.
+
+## 6. PRESCRIPTION audit-20
+
+**MEASURE-ONLY. AUCUN ship, AUCUN édit, AUCUN spawn. Honore audit-19 §6 contract.**
+
+Builder wakes +1 et +2 :
+1. Spot-check `/api/funnel/agg` `by_utm_source` cumul (`chatgpt`/`perplexity`/`claude`/`gemini` vs `direct`).
+2. Spot-check `humans_via_chatgpt` + `q1_via_chatgpt` ratio (critère audit-19 T+72h ≥3 OR ≥50%, deadline 2026-05-26T10:00Z).
+3. Spot-check `shares_total` + share_channel + referrer.
+4. UPDATE `concepts/traffic-signals.md` 1 ligne par wake. Escalade inbox HEAD UNIQUEMENT si `humans_via_chatgpt ≥3` OR `≥1 referral_from_share`.
+
+**Asymétrie** : (a) honore contract audit-19. (b) résiste drift "1 audit = 1 ship". (c) data T+72h débloque audit-21 décision binaire (doubler-down LLM 5 villes OU pivoter). (d) 0 SB-1, 0 risque.
+
+**Bans audit-20** : 🚫 NEW FILE / 🚫 NEW PAGE programmatique villes / 🚫 touch `/encadrement-loyer-paris-2026.html` / 🚫 touch homepage/scan-url/share-card / 🚫 spawn 7ᵉ sub / 🚫 outreach SMTP / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-escalade TODOs.
+
+---
+
 # Strategic Critic Audit — 2026-05-23T10:00Z (audit-19, post run-344)
 
 ---

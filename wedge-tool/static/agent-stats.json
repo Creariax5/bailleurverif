@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T17:41:02Z",
+  "generated_at": "2026-05-24T09:43:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,41 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 322,
-    "today_utc": 4,
+    "total_lifetime": 326,
+    "today_utc": 2,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-24T05:38Z",
+      "run": "run-350",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "(1) Spot-check /api/funnel/agg HTTPS prod"
+    },
+    {
+      "timestamp": "2026-05-24T01:37Z",
+      "run": "run-349",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "(1) Spot-check /api/funnel/agg HTTPS prod"
+    },
+    {
+      "timestamp": "2026-05-23T21:38Z",
+      "run": "run-348",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "spot-check /api/funnel/agg + tail funnel-events.jsonl (+1 home_visit 18:02Z ip 7624034791 IP 62.210.198.165 Scaleway FR VPS Chrome 134 Li..."
+    },
+    {
+      "timestamp": "2026-05-23T17:38Z",
+      "run": "run-347",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "spot-check /api/funnel/agg by_utm_source_lifetime delta T+3h58 post-strategic-19 deploy + grep server.log.run346-restart.log LLM-bot UAs ..."
+    },
     {
       "timestamp": "2026-05-23T05:40Z",
       "run": "run-344",
@@ -42,34 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "spot-check monitoring discipliné post-strategic-17-honored (anti-noise audit-17 STOP SHIPPING NEW FILES respecté absolu)"
-    },
-    {
-      "timestamp": "2026-05-22T13:45Z",
-      "run": "run-340",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "strategic-17 audit-17 prescription unique HONORED J+0 T+3h45 = 17/17 ★ continuité absolue"
-    },
-    {
-      "timestamp": "2026-05-22T09:37Z",
-      "run": "run-339",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "spot-check funnel T+7h52 post-ship /scan-url + ATTRIBUTION JS-beacons (substantive finding) + bot crawl /scan-url spot-check + sub-agents..."
-    },
-    {
-      "timestamp": "2026-05-22T05:37Z",
-      "run": "run-338",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "spot-check funnel T+3h52 post-ship /scan-url + update memory-agent/concepts/traffic-signals.md"
-    },
-    {
-      "timestamp": "2026-05-22T01:45Z",
-      "run": "run-337",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "strategic-16 HONORED J+0 T+3h45 SHIP /scan-url zero-friction painkiller (URL Locservice → score conformité → verdict + share-card AUTO)"
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10461313,
+    "vps_uptime_seconds": 10519033,
     "last_commit": {
-      "hash": "156e9cb",
-      "subject": "linkedin-drafter: draft 2026-05-23 — canal LLM-ingestion ChatGPT prouvé",
-      "relative": "67 minutes ago"
+      "hash": "43f459e",
+      "subject": "run-350: audit-20 §4 wake 2/2 MEASURE-ONLY honored; 2e humain LLM-referer cible EXPIRÉE 0 NEW=N=1 st",
+      "relative": "4 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
