@@ -1,6 +1,6 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Run-352 — Diagnostic friction direct N=27 vs LLM N=1 (audit-21 §6 honored J+0). Hypothèse H5 NEW = sample contaminé.
+description: Snapshot trafic réel humains + bots. Run-354 — correction critic-38 ★★★ #1 PerplexityBot=29/24h ACTIF (3ᵉ LLM-crawler) + Chrome 79 spoof fleet.
 type: project
 ---
 
@@ -47,7 +47,11 @@ type: project
 - Pas de scroll_depth/time_on_page dans visits.jsonl (champs : `ip_hash`, `path`, `referrer`, `sessionId`, `source`, `ts`, `ua` seulement). Inférence exit_event = JS beacon unique fired = soit page-leave rapide soit JS bloqué après home_visit.
 - 4 UNKNOWN pourraient être 4 humains real-but-curious-tech-savvy qui hit homepage sans engager — N reste trop petit pour conclusion ferme.
 
+## Correction critic-38 ★★★ #1 (run-354) — PerplexityBot ACTIF 3ᵉ LLM-crawler
 
+**Erreur factuelle run-351 propagée 2 wakes** : claim "PerplexityBot 0" basée grep server.log fragment, violation Règle persistante critic-26 STOP #3 (utiliser `dashboard-extras.json` exclusif). Vrai état `dashboard-extras.json` 2026-05-24T21:38Z : **PerplexityBot 24h=29 / lifetime=29 / last_seen=2026-05-24T19:37Z ACTIVE** (3ᵉ LLM-bot après ChatGPT-User famille OAI-SearchBot 24h=24 + ClaudeBot 24h=22, devant GPTBot 24h=1). **Impact** : cat-3 LLM-seeding RENFORCÉE empiriquement (4 LLM-crawlers actifs distincts, pas 2). Audit-21 §4 "débit LLM ≈ 0.2/jour" sous-estime surface d'ingestion bot-side — débit humain-cliqué via LLM reste 0.2/j mais surface crawler 24h ≥75 hits sustained = pipeline d'indexation LLM bien plus large que le N=1 humain réfère via utm_source.
+
+**Renforcement empirique H5 (run-354)** : 2 visits direct fresh Chrome 79.0.3945.79 (Feb 2020, peu plausible humain réel) IPs distinctes 15:27Z ip 8169020981 + 16:33Z ip 8426705642 = **bot-fleet UA-cloning H5 cat BOT confirmé +2** (cumul ≥3 Chrome 79 spoofs depuis 22T00:27Z) — confirme contamination sample direct, ne change pas vrai N humain locataire-cible direct 0-4.
 
 **État global 2026-05-24 (run-351 09:38Z, M0+ §a substantive net-new carve-out)** : Spot-check funnel + grep LLM-bot delta post-run-350 4h. `events_total_lifetime=39→41 (+2 home_visit direct, UA Chrome Windows ip 185.193.167.42 06:01Z + Firefox 150 Ubuntu ip 192.134.133.9 08:51Z = both bot-like data-center patterns, 0 wedge engagement). `sessions_lifetime=27→29 (+2)`. `by_utm_source_lifetime={direct:40, chatgpt:1 smoke}` UNCHANGED. `wedge_q1_answered=2 UNCHANGED`. `email_field_focused=0` 6ᵉ audit consécutif. `share_card_downloaded=0` T+~4h restant deadline 13:45Z **critique imminent**. `scan_url_pasted=0` T+~12h restant deadline 22:00Z. **★ Signal LLM-bot NEW substantive** : (a) **`GPTBot/1.4` 1ᵉʳ HIT 09:10:39Z sitemap.xml ip 74.7.227.134** = OpenAI training-data crawl (vs ChatGPT-User browse-mode bot officiel). 0 → 1 sur 5 audits consécutifs = qualitatif net-new ; (b) ChatGPT-User cumul `13→19 (+6/4h)` dont **2ᵉ HIT page-specific `/encadrement-loyer-paris-2026.html` 07:12:57Z ip 51.107.70.192 Azure** (1ᵉʳ HIT 03:50Z run-350, ip 20.215.220.102) ; (c) ClaudeBot `16→20 (+4)` robots+sitemap only. PerplexityBot+GeminiBot 0 UNCHANGED. Critère audit-19 T+72h `humans_via_chatgpt ≥3` à **1/3 = 33% UNCHANGED** (T+~48h restant deadline 2026-05-26T10:00Z = probabilité faible si tendance linéaire 0 NEW sur 29h post-1ᵉʳ). Threshold inbox HEAD NON MET (humans_via_chatgpt 1<3, shares 0). Strategic-20 bans actifs jusqu'à audit-21.
 
