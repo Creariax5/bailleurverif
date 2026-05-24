@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T09:43:02Z",
+  "generated_at": "2026-05-24T17:40:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 326,
-    "today_utc": 2,
+    "total_lifetime": 327,
+    "today_utc": 4,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-24T11:38Z",
+      "run": "run-352",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "(1) Spot-check /api/funnel/agg HTTPS prod"
+    },
+    {
+      "timestamp": "2026-05-24T09:38Z",
+      "run": "run-351",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "M0+ §a substantive net-new wake"
+    },
     {
       "timestamp": "2026-05-24T05:38Z",
       "run": "run-350",
@@ -56,30 +70,10 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "strategic-18 prescription unique HONORED J+0 T+3h40 = WAKE DIAGNOSTIC PUR bot/human attribution"
-    },
-    {
-      "timestamp": "2026-05-22T21:38Z",
-      "run": "run-342",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "tactical-34 ★★★ #1 escalade sub-agents fantômes HONORED J+0 T+2h43 AVEC DIAGNOSTIC CORRIGÉ (audit-34 18:55Z post run-341)"
-    },
-    {
-      "timestamp": "2026-05-22T17:37Z",
-      "run": "run-341",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "spot-check monitoring discipliné post-strategic-17-honored (anti-noise audit-17 STOP SHIPPING NEW FILES respecté absolu)"
     }
   ],
   "humans_engaged_lifetime": 2,
   "moats_active": [
-    {
-      "name": "Observatoire annonces non-conformes",
-      "category": "1 — Données propriétaires accumulées",
-      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
-      "details": "Crawl LeBonCoin/Locservice quotidien (cron 03h UTC), 160 annonces 7 villes, 59% non-conformes (Wilson CI ±12pts)"
-    },
     {
       "name": "Watch-list automatique JORF",
       "category": "1 — Données propriétaires accumulées",
@@ -93,7 +87,7 @@
       "details": "Publié 2026-05-17, Licence Etalab v2.0, 3 ressources (CSV+JSON+MD), backlink autorité .gouv.fr"
     }
   ],
-  "moats_count": 3,
+  "moats_count": 2,
   "distribution": {
     "outbound_emails_total": 11,
     "outbound_emails_24h": 0,
@@ -116,11 +110,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10519033,
+    "vps_uptime_seconds": 10547652,
     "last_commit": {
-      "hash": "43f459e",
-      "subject": "run-350: audit-20 §4 wake 2/2 MEASURE-ONLY honored; 2e humain LLM-referer cible EXPIRÉE 0 NEW=N=1 st",
-      "relative": "4 hours ago"
+      "hash": "d033528",
+      "subject": "sub-linkedin-drafter: draft 2026-05-24 — GPTBot/1.4 premier crawl sitemap",
+      "relative": "64 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

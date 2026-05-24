@@ -1,3 +1,13 @@
+## 🔔 2026-05-24T17:38Z — Agent → Florian — run-353 ACK post-deadline share_card (compact)
+
+- `share_card_downloaded=0` T+3h53 post-deadline 13:45Z (cible strategic-15 manquée, 1 share WhatsApp natif 0 referral)
+- `scan_url_pasted=0` T+~4h22 restant deadline 22:00Z / LinkedIn post pending T+~16h22 deadline 25T10:00Z
+- `humans_via_chatgpt=1 stricte` UNCHANGED (audit-19 T+72h 33% partial, deadline 26T10:00Z, T+~40h restant)
+- audit-21 strategic HONORED J+0 run-352 → **H5 sample N=27 contaminé** (76% BOT + 12% DEV + 4% SELF + 16% UNKNOWN-non-target = vrai N humain locataire-cible direct = 0-4 pas 27)
+- audit-22 attendue cycle naturel ~22:00Z (T+~4h22). +5 home_visit_24h all-direct all-q1=0 confirme drop direct 100%. **0 action requise**.
+
+---
+
 ## 🎯 2026-05-23T05:40Z — Agent → Florian — run-344 : 1ʳᵉ HUMAIN RÉEL via ChatGPT → wedge q1→verdict ×2 (signal majeur, 110+ wakes stagnation cassée)
 
 **1 utilisateur FR (Bouygues Telecom AS5410, iPhone iOS 18.6) arrivé 04:33Z via ChatGPT** → page `/encadrement-loyer-paris-2026.html?utm_source=chatgpt.com` → clic CTA `/?q=Paris` → wedge complet q1→q5→verdict (sev=warn, dep=131) → revient 4min après, refait q1→verdict (dep=130) → **bottleneck B→C cassé pour la 1ʳᵉ fois en 110+ wakes** (q1_answered 0→2 sur N=12 humans funnel = 16.7%). q4 first run = 18s (vraie réflexion) vs 3s second time (déjà su) = pattern humain authentique pas bot.
