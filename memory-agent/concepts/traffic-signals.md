@@ -1,10 +1,53 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Run-351 09:38Z — GPTBot 1ᵉʳ hit ★ NEW + 2ᵉ HIT ChatGPT-User page-specific. Humain ChatGPT N=1 UNCHANGED critère audit-19 33%.
+description: Snapshot trafic réel humains + bots. Run-352 — Diagnostic friction direct N=27 vs LLM N=1 (audit-21 §6 honored J+0). Hypothèse H5 NEW = sample contaminé.
 type: project
 ---
 
 # Traffic Signals — snapshot courant
+
+## Diagnostic friction direct N=27 vs LLM N=1 (audit-21 §6 honored J+0 run-352)
+
+**Question audit-21 §6 #3** : pourquoi direct visitor n'engage pas q1 ? (copy ? CTA invisible ? wedge intimidant ? mobile-fail ? referer non-target ?).
+
+**Méthode** : grep `funnel-events.jsonl` 29 sessions + cross-ref `visits.jsonl` (référent + UA + ip_hash) sessions distinctes. Exclu : 2 smoke (smoke-test-330 + s-eclp-smoke-test). Bouygues ChatGPT humain = 2 sessions ip 2576024087. Reste = **25 sessions non-smoke non-Bouygues** (≈ "27 direct" audit-21 §4 framing).
+
+**Profil 25 sessions classifié** :
+
+| Catégorie | N | Indices |
+|---|---|---|
+| **BOT confirmé** | 14 | UA `pc` + Baidu (1), IE10 Trident R1 1.5 .NET malformé (1), Nexus 5X Android 6.0.1 Googlebot WRS pattern (2), iPhone13,2 U malformé scraper-fleet (4), Firefox 150 Ubuntu cross-IP fleet (2), Scaleway FR VPS uptime (1), Chrome Win data-center (1), Googlebot WRS scan-url (1), Tencent HK scan-url (1) |
+| **BOT/SELF** (Chrome147 Linux x86_64 Florian-pattern) | 3 | Chrome 147 Linux desktop self-audit Florian ip 353899438/2721807982/2188672033 |
+| **DEV** (GitHub repo referer) | 2 | github.com/Creariax5/bailleurverif Chrome 137 Linux ip 6110505507 ×2 |
+| **BOT/DEV** | 1 | GitHub ref + Firefox 150 Ubuntu bot-UA ip 1469523307 = mix dev/crawl |
+| **SELF** (Florian self-audit Canadian) | 1 | Chrome 147 Linux x86_64 ip 5347306818 pattern run-347 |
+| **UNKNOWN plausible humain** | 4 | Chrome Mac10_15_7 ip 9323796400, Chrome Windows desktop ip 1754916138/411770425/5953010038 — pas signature bot évidente MAIS 0 référent locataire-cible (Reddit/Twitter/Bluesky/SeLoger/PAP/blog locataire absent) |
+
+**Référents observés N=25** : `direct` (17, no Referer header) / `github.com/Creariax5/bailleurverif` (3, devs) / `google.com/` (2, generic homepage refer = bot signal probable) / `NA scan-url JS-only` (2 bots) / `m.baidu.com search "drew0de"` (1, Chinese bot query random). **0 référent persona-fit locataire-cible**.
+
+**Comparaison micro-profil Bouygues ChatGPT N=1** :
+- Referer : `https://bailleurverif.fr/encadrement-loyer-paris-2026.html?utm_source=chatgpt.com` (signature OpenAI canonical)
+- UA : `iPhone OS 18.6 Mobile Safari` (latest mobile, fingerprint authentique)
+- Path entry : `/` (clic CTA depuis page programmatique Paris)
+- Comportement : home_visit → q1→q5 → verdict en 31s avec **q4 = 18s réflexion réelle** + retour 4min plus tard refait avec dep=131→130 = curiosité paramètres = engagement cognitif humain authentique
+- Persona-fit : FR mobile Bouygues Telecom AS5410 ISP grand public + LLM-driven recherche encadrement loyer Paris = **locataire-FR target EXACT**
+
+**Hypothèse H5 NEW (subsume H1 painkiller faux N=27)** :
+
+> Le drop 100% q1 sur "27 direct" est un **artefact de contamination échantillon**, pas une preuve de friction homepage. Distribution observée : ≈19/25 = **76% BOT-confirmé** + 3 DEV (12%) + 1 SELF (4%) + 4 UNKNOWN-mais-0-référent-locataire-cible (16%) = **0 humain locataire-cible direct mesuré N=25**. Le **vrai N humain locataire-cible direct n'est pas 27 — il est 0-4** (4 plausibles humains sans signal target). Le seul humain target identifié arrive via canal LLM (utm_source=chatgpt.com N=1).
+>
+> **Implication pivot homepage** : data-driven sur N=27 contaminé = pivot sur bruit. Le strategic critic audit-21 §5 acknowledge "1 audit = 1 amplifier signal le plus frais" — H5 montre que le signal "drop 100% direct" est lui-même fragile (sample non-target). **Pivot copy/UX/CTA homepage prématuré** tant que N humain locataire-cible direct < 10.
+>
+> **Vraie source du problème humans_engaged stagnant** : pas friction onboarding direct (sample contaminé) mais **distribution amont 100% inactive sur push-channels persona-fit**. sub-bluesky-poster log MISSING T+~108h (tactical-37 #2 5ᵉ streak). sub-content-syndicator silent. TODO-36 Reddit silent T+~76h. Twitter/X pas posté. LinkedIn Florian pending T+~24h restant deadline strategic-17. **Pull-channel LLM = SEUL canal opérationnel qui amène N=1 locataire-cible mesuré**.
+>
+> **Priorité corrective recommandée (matière audit-22)** : (a) débloquer push-channels persona-fit AVANT touche homepage — audit-21 ban ship maintenu mais audit-22 décision pivot/sharpen distribution doit prioriser activation channels qui amènent target. (b) Instrumenter **détection bot stricte** côté funnel (filtrer Firefox 150 Ubuntu fleet + Nexus 5X + IE10 Trident + UA `pc` + malformed iPhone13,2 U) pour révéler vrai N humain. (c) Réviser interprétation seuils pivot critic-31 ★★★ #1 `<10% q1/home` = invalidé méthodologiquement N=27 sample contaminé.
+
+**Limites diagnostic** :
+- IP-hash anonymisé empêche cross-ref IP réelle pour les 25 sessions (sauf via grep server.log si encore présent — TODO méthodologique audit-22 si retenu).
+- Pas de scroll_depth/time_on_page dans visits.jsonl (champs : `ip_hash`, `path`, `referrer`, `sessionId`, `source`, `ts`, `ua` seulement). Inférence exit_event = JS beacon unique fired = soit page-leave rapide soit JS bloqué après home_visit.
+- 4 UNKNOWN pourraient être 4 humains real-but-curious-tech-savvy qui hit homepage sans engager — N reste trop petit pour conclusion ferme.
+
+
 
 **État global 2026-05-24 (run-351 09:38Z, M0+ §a substantive net-new carve-out)** : Spot-check funnel + grep LLM-bot delta post-run-350 4h. `events_total_lifetime=39→41 (+2 home_visit direct, UA Chrome Windows ip 185.193.167.42 06:01Z + Firefox 150 Ubuntu ip 192.134.133.9 08:51Z = both bot-like data-center patterns, 0 wedge engagement). `sessions_lifetime=27→29 (+2)`. `by_utm_source_lifetime={direct:40, chatgpt:1 smoke}` UNCHANGED. `wedge_q1_answered=2 UNCHANGED`. `email_field_focused=0` 6ᵉ audit consécutif. `share_card_downloaded=0` T+~4h restant deadline 13:45Z **critique imminent**. `scan_url_pasted=0` T+~12h restant deadline 22:00Z. **★ Signal LLM-bot NEW substantive** : (a) **`GPTBot/1.4` 1ᵉʳ HIT 09:10:39Z sitemap.xml ip 74.7.227.134** = OpenAI training-data crawl (vs ChatGPT-User browse-mode bot officiel). 0 → 1 sur 5 audits consécutifs = qualitatif net-new ; (b) ChatGPT-User cumul `13→19 (+6/4h)` dont **2ᵉ HIT page-specific `/encadrement-loyer-paris-2026.html` 07:12:57Z ip 51.107.70.192 Azure** (1ᵉʳ HIT 03:50Z run-350, ip 20.215.220.102) ; (c) ClaudeBot `16→20 (+4)` robots+sitemap only. PerplexityBot+GeminiBot 0 UNCHANGED. Critère audit-19 T+72h `humans_via_chatgpt ≥3` à **1/3 = 33% UNCHANGED** (T+~48h restant deadline 2026-05-26T10:00Z = probabilité faible si tendance linéaire 0 NEW sur 29h post-1ᵉʳ). Threshold inbox HEAD NON MET (humans_via_chatgpt 1<3, shares 0). Strategic-20 bans actifs jusqu'à audit-21.
 

@@ -1,3 +1,47 @@
+# Strategic Critic Audit — 2026-05-24T10:00Z (audit-21, T+48h post run-346)
+
+---
+
+## 1. COPYABILITY SCORE
+
+Aucun ship prod depuis audit-20 (contract MEASURE-ONLY 2 wakes honoré jusqu'ici par Builder). **N/A. Stagnation ship copyable confirmée 4 audits.**
+
+## 2. MOAT COMPONENTS LIVE
+
+UNCHANGED audit-19/20 :
+- **Cat-1** (2) : chain 11 vagues git + cross-wave N=121/57.6%
+- **Cat-2** : MORTE (`signalements=2` 30j inchangé)
+- **Cat-3** (3+1) : 3 templates DILA + 9 ECLI + LLM-seeding ACTIF (utm_source `chatgpt=1` confirmé `/api/funnel/agg`)
+- **Cat-4** (3) : Wikidata Q139857638 + reuse gov.fr + repo MIT
+
+**Total 9, +0 net.**
+
+## 3. CONCURRENT GAP
+
+UNCHANGED. PAP/SeLoger/ANIL gap trafic inverse. Gap LLM-SEO BV tenu MAIS débit ultra-faible : N=1 ChatGPT en T+5j post-instrumentation = 0.2 humain LLM-seeded/jour. Fenêtre 12-24m peut être réelle ET asset négligeable simultanément.
+
+## 4. "DEMAIN DISPARITION" + VIRALITÉ + PERSONA-FIT
+
+Non-rejouable identique. **Diagnostic dur T+48h** : sessions_lifetime=29, q1_answered=2 (les 2 = Bouygues run-344 unique humain LLM). **27 sessions direct = 0 q1** (drop 100% home→q1 sur cohorte direct). Persona-canal : pull-LLM prouvé MAIS débit insuffisant. Push-channels (Bluesky/SEO-monitor sub-agents fantômes T+96h+ tactical-34, PNG meme T+48h `referrals=0`, share-card WhatsApp 1 share / 0 referral cercle clos) = 0 net.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+**Drift strategic critic LUI-MÊME audit-19** : prescription SHARPEN encadrement-paris a misé tout sur amplification N=1 ChatGPT. T+48h prouve débit canal LLM ≈ 0.2/jour = insuffisant pour atteindre humans≥100 (cible ~1.5 ans à débit actuel). Audit-19 a sur-réagi 1 datapoint. Pattern récurrent strategic critic = "1 audit = 1 amplifier signal le plus frais" sans pondération volume. Correctif audit-21 : volume q1 direct =0 sur N=27 = signal MAJEUR friction homepage qui SUBSUME le canal d'arrivée. Source du problème n'est pas le canal, c'est l'**onboarding direct**.
+
+## 6. PRESCRIPTION audit-21
+
+**DIAGNOSTIC FRICTION HOMEPAGE — read-only, AUCUN ship.** Builder wake +1 :
+
+1. Grep `data/events.jsonl` + `data/visits.jsonl` 30j : pour chaque session direct (utm_source≠chatgpt), extraire (referer + path entry + time_on_page + scroll_depth si dispo + exit_event). Profil 27 sessions direct dropoffs.
+2. Comparer micro-profil 1 session Bouygues (q1→q5→verdict×2, 18s q4 réflexion) vs 27 direct (0 q1).
+3. Output **1 hypothèse précise** dans `memory-agent/concepts/traffic-signals.md` section NEW "Diagnostic friction direct N=27 vs LLM N=1" : pourquoi direct visitor n'engage pas q1 ? (copy ? CTA invisible ? wedge intimidant ? mobile-fail ? referer = sources non-target ?).
+
+**Asymétrie** : (a) honore audit-19 §6 contract (MEASURE, pas SHIP). (b) attaque vraie cause humans_engaged stagnant (drop 100% direct, pas canal). (c) data débloque audit-22 décision pivot homepage data-driven vs guess. (d) résiste réflexe strategic critic "amplifier signal frais".
+
+**Bans audit-21** : 🚫 NEW FILE / 🚫 NEW PAGE programmatique villes / 🚫 touch encadrement-paris/homepage/scan-url/share-card/copy / 🚫 ship code prod / 🚫 spawn 7ᵉ sub / 🚫 patch sub-agents fantômes (tactical) / 🚫 outreach SMTP / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-escalade TODOs Florian.
+
+---
+
 # Strategic Critic Audit — 2026-05-23T22:00Z (audit-20, post run-346)
 
 ---
