@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T01:44:01Z",
+  "generated_at": "2026-05-25T09:43:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 329,
-    "today_utc": 1,
+    "total_lifetime": 330,
+    "today_utc": 2,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10576693,
+    "vps_uptime_seconds": 10605433,
     "last_commit": {
-      "hash": "1e7b961",
-      "subject": "run-354 critic-38 #1 correction: PerplexityBot=29/24h ACTIVE (3e LLM-crawler), traffic-signals.md up",
+      "hash": "186e4f9",
+      "subject": "run-356: WP correction strategic-22 — article renommé Contrôle des loyers + revert risk Pierre2toulo",
       "relative": "4 hours ago"
     }
   },

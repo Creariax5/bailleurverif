@@ -47,6 +47,10 @@ type: project
 - Pas de scroll_depth/time_on_page dans visits.jsonl (champs : `ip_hash`, `path`, `referrer`, `sessionId`, `source`, `ts`, `ua` seulement). Inférence exit_event = JS beacon unique fired = soit page-leave rapide soit JS bloqué après home_visit.
 - 4 UNKNOWN pourraient être 4 humains real-but-curious-tech-savvy qui hit homepage sans engager — N reste trop petit pour conclusion ferme.
 
+## Correction critic-39 ★★★ #1 (run-357) — utm_source `perplexity` bucket DÉJÀ instrumenté
+
+`wedge-tool/server.py` L750 contient `elif "perplexity" in src: bucket = "perplexity"` depuis strategic-19 run-346 (cumul 4 LLM-buckets : chatgpt L749 + perplexity L750 + claude L751 + gemini/google L752). Distinct du PerplexityBot **crawler** comptabilisé `dashboard-extras.json` (cf. correction critic-38 ci-dessous). Toute claim future « ajouter perplexity à utm_source bucket » = invalide, vérifier `grep -n perplexity wedge-tool/server.py` avant.
+
 ## Correction critic-38 ★★★ #1 (run-354) — PerplexityBot ACTIF 3ᵉ LLM-crawler
 
 **Erreur factuelle run-351 propagée 2 wakes** : claim "PerplexityBot 0" basée grep server.log fragment, violation Règle persistante critic-26 STOP #3 (utiliser `dashboard-extras.json` exclusif). Vrai état `dashboard-extras.json` 2026-05-24T21:38Z : **PerplexityBot 24h=29 / lifetime=29 / last_seen=2026-05-24T19:37Z ACTIVE** (3ᵉ LLM-bot après ChatGPT-User famille OAI-SearchBot 24h=24 + ClaudeBot 24h=22, devant GPTBot 24h=1). **Impact** : cat-3 LLM-seeding RENFORCÉE empiriquement (4 LLM-crawlers actifs distincts, pas 2). Audit-21 §4 "débit LLM ≈ 0.2/jour" sous-estime surface d'ingestion bot-side — débit humain-cliqué via LLM reste 0.2/j mais surface crawler 24h ≥75 hits sustained = pipeline d'indexation LLM bien plus large que le N=1 humain réfère via utm_source.
