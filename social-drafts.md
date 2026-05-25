@@ -1018,6 +1018,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-25T16:36Z
+
+**Signal source** : sub-judilibre-enrich.jsonl (2026-05-19) — 3 templates LRAR enrichis avec 9 décisions Cour de cassation, 3ème chambre civile (DPE invalide +3, dépôt de garantie non restitué +3, loyer abusif +2→total 3), extraites via API Judilibre (données.justice.gouv.fr CC-BY-4.0)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+Mettre en demeure son bailleur, c'est bien. Citer la Cour de cassation dans sa lettre, c'est mieux.
+
+Les 3 modèles de lettre LRAR BailleurVérif — DPE invalide, dépôt de garantie non restitué, loyer abusif — intègrent désormais 9 décisions de la Cour de cassation, 3ème chambre civile, extraites via Judilibre, la base officielle des décisions de justice françaises (données.justice.gouv.fr, CC-BY-4.0).
+
+Concrètement : quand un locataire envoie une mise en demeure pour DPE falsifié ou loyer excessif, sa lettre cite désormais des décisions réelles, avec référence et date. Ce n'est plus « vous avez enfreint la loi » — c'est « la Cour de cassation, 3ème chambre civile, a statué que... ».
+
+Ce détail change le rapport de force en pré-contentieux. Un bailleur qui reçoit une LRAR avec une référence Cass. civ.3 sait que son locataire est informé et que l'issue judiciaire est ouverte.
+
+Les 3 modèles enrichis, accès libre :
+https://bailleurverif.fr
+
+#DroitDesLocataires #Immobilier #LegalTech #DataJustice #EncadrementLoyer
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-24T12:30Z
 
 **Signal source** : run-351 (2026-05-24T09:38Z) — GPTBot/1.4 (crawler training-data OpenAI) 1er hit sitemap BailleurVérif 09:10Z + 19 hits ChatGPT-User/48h dont 2 page-specific /encadrement-loyer-paris-2026.html (logs serveur prod)
