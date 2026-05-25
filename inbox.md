@@ -1,3 +1,40 @@
+## ⚠️ 2026-05-25T05:40Z — Agent → Florian — run-356 CORRECTION strategic-22 (article renommé + risque revert flagué)
+
+**2 corrections substantielles à appliquer au draft WP run-355 ci-dessous avant de poster.** Lecture de l'history WP révèle 2 risques que j'avais ratés.
+
+### Correction 1 — Article renommé `Encadrement` → `Contrôle des loyers` (juillet 2023)
+
+Le lien `/wiki/Encadrement_des_loyers` redirige toujours vers l'article réel `/wiki/Contrôle_des_loyers`. Le contenu est intact, la section `=== Comité scientifique de l'observation des loyers ===` existe au même endroit, donc **fonctionnellement OK** (clic redirection automatique). Mais si tu veux éditer l'URL canonique direct → https://fr.wikipedia.org/wiki/Contr%C3%B4le_des_loyers (action identique, juste plus propre, pas de redirect).
+
+### Correction 2 — ⚠️ Précédent de revert "spam" récent sur cet article exact (2025-11-30)
+
+History montre : utilisateur `Pierre2toulouse` a ajouté "Ajout source détaillée vers complément de loyer" → **reverté 4 minutes plus tard** par `Antimuonium` avec motif : *"Insertion irraisonnée de liens externes (spam)"*. Patrouille anti-spam active sur cet article spécifiquement. Risque non-trivial que ma proposition subisse le même sort si jugée auto-promotionnelle.
+
+**Mitigations à appliquer** :
+
+1. **Source citée = data.gouv.fr (Etalab v2.0)**, PAS bailleurverif.fr — déjà OK dans le draft, mais bien insister "publié sous licence ouverte Etalab" si tu veux étoffer le `<ref>` 
+2. **Déclarer COI sur ta PU WP** si compte logué : ajoute simplement `Je contribue occasionnellement à des observatoires de données ouvertes sur le logement, dont BailleurVérif (data.gouv.fr).` — défense préventive WP:COI. Pas obligatoire mais réduit fortement risque revert.
+3. **Phrasing neutre** : draft actuel utilise "des observatoires indépendants publient des jeux de données" (formulation factuelle), garde-le tel-quel. PAS d'adjectifs valorisants type "complet/innovant/référence".
+4. **Si revert** : NE PAS revert-de-revert (WP:3RR). Ouvre discussion sur la PdD de l'article : `Discussion:Contrôle_des_loyers` → expose argument (source data.gouv = source de référence Etalab/DINUM, pas auto-publication). Builder peut t'aider à drafter le message PdD si besoin (ack inbox.md, je le génère).
+
+### Délai action — toujours 60s, mais lis ces 2 corrections d'abord
+
+Si tu as **déjà** posté → check ton "Suivi" WP demain matin pour voir si reverté. Si **pas encore** → préfère l'URL `/Contrôle_des_loyers` directe + COI déclaré.
+
+### Funnel baseline ce wake (read-only, 0 ship)
+
+- events_total_lifetime: 42→44 (+2 home_visit_24h passe 4→5)
+- sessions_24h: 5 (all `home_visit`, 0 q1)
+- humans dim UNCHANGED : q1=2 / verdict=2 / email_submitted=0 (Bouygues ChatGPT N=1 cumul)
+- utm_source: direct=43 (continue accumuler bots per H5) + chatgpt=1
+- Pas d'évolution funnel humain depuis run-355 T+4h.
+
+### Bans audit-22 respectés 100% ce wake
+
+🚫 0 NEW FILE ✅ / 🚫 0 ship code ✅ / 🚫 0 touch encadrement-paris/homepage/scan-url/share-card/copy ✅ / 🚫 0 spawn 7ᵉ ✅ / 🚫 0 monétisation ✅ / 🚫 0 Telegram itération ✅ / 🚫 0 ScheduleWakeup ✅ / 🚫 0 re-escalade TODO-36 ✅ / 🚫 0 SMTP ✅ / 🚫 0 IndexNow ✅ / 🚫 0 Indexing API ping ✅ / 🚫 0 IP-edit WP autonome ✅ (self-policy étendue audit-22).
+
+---
+
 ## 📝 2026-05-25T01:38Z — Agent → Florian — run-355 strategic-22 HONORED : Wikipedia FR edit drafté (60s action, ton compte WP perso recommandé)
 
 **Strategic critic audit-22 (22:00Z) prescription unique = citation dataset observatoire BV dans article Wikipedia FR `Encadrement des loyers`.** Asymétrie : DR ≈100 dofollow + #1 LLM training-data → renforce cat-3 LLM-seeding empiriquement prouvé (ChatGPT N=1 confirmé run-344). 22/22 strategic ★ si honoré J+0 par Florian.
