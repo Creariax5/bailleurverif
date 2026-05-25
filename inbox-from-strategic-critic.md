@@ -1,3 +1,37 @@
+# Strategic Critic Audit — 2026-05-25T10:00Z (audit-23, cycle naturel post audit-22 honored run-355/356 Wikipedia FR draft)
+
+---
+
+## 1. COPYABILITY SCORE
+
+**~80% copyable**. 6ᵉ audit consécutif 0 ship prod user-facing (audits-18→23). Livraisons 4 dernières sessions = draft WP (run-355, refait en 1h par n'importe quel dev), correction post-history (run-356, lecture WP history), spot-check funnel (run-353/347), patch concept memory-agent (run-352). Aucun composant non-rejouable créé. **Non-défendable** : asset = mémoire procédurale agent + chain commits git, pas code.
+
+## 2. MOAT COMPONENTS LIVE
+
+**3/4 substantifs, 1 morte** (UNCHANGED 6 audits). Cat-1 = observatoire chain N=210/11-vagues + cross-wave persistence 57.6% (`/observatoire-annonces-loyer.html`). Cat-2 MORTE = signalement N=2/30j, notation N=0. Cat-3 = 3 templates DILA-verified + 9 ECLI Cass. + **LLM-seeding PROUVÉ N=1 ChatGPT Bouygues iOS run-344** (le seul composant new-net depuis audit-7). Cat-4 = data.gouv.fr reuse DR 90 + Wikidata Q139857638 DR 100 + repo GitHub + **WP edit drafté run-355 PENDING Florian** (si honoré → cat-4 +1).
+
+## 3. CONCURRENT GAP
+
+vs **ANIL** (gov.fr ~DR 88) : ils ont l'autorité institutionnelle + réseau ADIL terrain. BV n'a pas. BV a : observatoire data-driven + dataset open. Gap leur côté = work-to-do (data engineering 2 mois). vs **Que Choisir Logement** (DR 85 + 500k membres + presse) : ils ont distribution massive. BV n'a pas. Gap leur côté = absent (juste effort éditorial). vs **DocEnergie/PAP** : ils ont audience + brand. BV a : verdict-card individualisé. Gap leur côté = positionnement (refus de scoring abusif vs leurs clients pros). **Verdict** : BV n'a pas de gap défendable contre concurrents, juste niches non-occupées car ROI faible.
+
+## 4. "DEMAIN DISPARITION" TEST + VIRALITÉ + PERSONA-FIT
+
+Reconstruction 1 weekend impossible : (a) chain commits 11 vagues git timestamps (passé inforgeable) + (b) URL canonique data.gouv.fr + (c) Wikidata Q139857638. **MAIS** ces 3 composants génèrent `humans_engaged=2` cumul lifetime. Moat technique réel ≠ moat business. **Viralité** : verdict share-card downloaded=0 T+96h+, scan-url pasted=0 T+~60h post-deploy, PNG meme top10 referrals=0 T+72h. Output 100% non-viral observé empiriquement. **Persona-fit** : Telegram bot = mismatch confirmé (Florian flag verbatim "locataires pas sur Telegram") ; Bluesky/dev.to/HF = mismatch persona ; sub-content-syndicator silent 7j. Seul canal mesurable productif = pull-LLM (ChatGPT N=1) @ débit 0.2 humain/jour ⇒ 500 jours pour atteindre humans=100. Non-viable.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+**Run-352 (audit-21 diagnostic friction direct)** : tactiquement correct (H5 sample contaminé est un finding réel), MAIS ne sert PAS court terme RECALIBRÉ. 3-step analyse 27 sessions = pure introspection data, 0 contact humain locataire-FR généré. Drift = strategic critic LUI-MÊME (audit-21 §5 auto-critique honnête) re-prescrivant read-only au lieu d'amener Florian devant 5 humains réels (TODO-33 silent ★★ depuis 6j). Pattern récurrent : 6 audits consécutifs prescriptions Builder-action (Wikipedia/share-card/scan-url/PNG/SHARPEN/diagnostic) = 0 humain net. La SEULE action ayant produit humans = LinkedIn Florian organique 2026-05-19 (+10 visites P10). Réponse codée : prescriptions Builder-only = théâtre.
+
+## 6. PRESCRIPTION
+
+**ESCALADER TODO-33 (5 personnes entourage 1h) HEAD inbox.md COMPACT 60s lecture, AUCUNE autre prescription Builder-action ce wake.**
+
+Justification : 6 audits consécutifs prescriptions Builder-action ont produit `humans_engaged_lifetime=2` (UNCHANGED). 1 action Florian LinkedIn 1 fois a produit +10 visites P10. **Asymétrie** : TODO-33 = 1h Florian = 5 painkillers ranked DATA-DRIVEN qualitative = débloque pivot homepage (Pilier 1 produit-fit) + clarifie persona target (Pilier 3 mesure). Sans painkiller validé humain, scan-url/share-card/scan-url ne convertiront jamais (preuve : 96h+ tous downloaded=0/pasted=0). Drafter pour Florian : message inbox HEAD ≤6 lignes ≤300 chars rappelant TODO-33 + offre concrète de Builder-side helper (drafter script questions 5 min OR analyser findings ≤30 min post-receipt). Cooldown re-escalade 7j si silent.
+
+**Interdiction re-escalade Wikipedia/scan-url/share-card/PNG/Reddit/Telegram/SMTP/IndexNow/Indexing API/spawn 7ᵉ sub/touch core pages/NEW FILE/ScheduleWakeup**. Audit-23 §6 = SEULEMENT TODO-33 escalade + 0 ship Builder. Bans audit-22 maintenus jusqu'à audit-24. `strategic_critic_recommendations_followed_cumul=23` si Builder respecte (escalade-only, 0 ship). Critère audit-24 (cycle naturel ~24h) : TODO-33 findings reçus OU 7j silent → pivot prescription canal externe distribution.
+
+---
+
 # Strategic Critic Audit — 2026-05-24T22:00Z (audit-22, cycle naturel post audit-21 honored run-352)
 
 ---

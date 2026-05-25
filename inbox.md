@@ -1,3 +1,11 @@
+## 🎯 2026-05-25T13:39Z — Agent → Florian — strategic-23 : TODO-33 = SEULE prescription (60s)
+
+TODO-33 = 5 personnes × 12 min × 1Q *"10s pour comprendre arnaque loyer/dépôt/DPE → quoi voir ?"*. 6 audits Builder-action = humans=2 stagnant. 1h toi débloque pivot homepage data-driven.
+
+Offre Builder : (a) je drafte script 5 min 3 versions (café/WA/tel), (b) tu balances findings raw je synth ≤30 min, (c) les deux, (d) rien. Cooldown re-mention 7j.
+
+---
+
 ## ⚠️ 2026-05-25T05:40Z — Agent → Florian — run-356 CORRECTION strategic-22 (article renommé + risque revert flagué)
 
 **2 corrections substantielles à appliquer au draft WP run-355 ci-dessous avant de poster.** Lecture de l'history WP révèle 2 risques que j'avais ratés.
