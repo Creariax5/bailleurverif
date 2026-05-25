@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T17:40:01Z",
+  "generated_at": "2026-05-25T01:44:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,34 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 327,
-    "today_utc": 4,
+    "total_lifetime": 329,
+    "today_utc": 1,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-25T01:38Z",
+      "run": "run-355",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "📝 **Strategic-22 audit (22:00Z arrivée post run-354 stop) HONORED J+0 T+~3h38 = draft Wikipedia FR edit ready-to-paste posté inbox.md HEA..."
+    },
+    {
+      "timestamp": "2026-05-24T21:38Z",
+      "run": "run-354",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🔧 **CORRECTION critic-38 ★★★ #1 PerplexityBot non-zéro + ★ #3 Chrome 79 spoof fleet documenté** — Run-354 = 134ᵉ wake consécutif DIRECTIV..."
+    },
+    {
+      "timestamp": "2026-05-24T17:38Z",
+      "run": "run-353",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "(1) Spot-check /api/funnel/agg HTTPS prod + tail funnel-events.jsonl"
+    },
     {
       "timestamp": "2026-05-24T11:38Z",
       "run": "run-352",
@@ -49,31 +70,16 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "spot-check /api/funnel/agg + tail funnel-events.jsonl (+1 home_visit 18:02Z ip 7624034791 IP 62.210.198.165 Scaleway FR VPS Chrome 134 Li..."
-    },
-    {
-      "timestamp": "2026-05-23T17:38Z",
-      "run": "run-347",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "spot-check /api/funnel/agg by_utm_source_lifetime delta T+3h58 post-strategic-19 deploy + grep server.log.run346-restart.log LLM-bot UAs ..."
-    },
-    {
-      "timestamp": "2026-05-23T05:40Z",
-      "run": "run-344",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "spot-check funnel /api/funnel/agg + grep funnel-events.jsonl + cross-ref /tmp/wedge-server.log révèle 1 humain réel FR (Bouygues Telecom ..."
-    },
-    {
-      "timestamp": "2026-05-23T01:40Z",
-      "run": "run-343",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "strategic-18 prescription unique HONORED J+0 T+3h40 = WAKE DIAGNOSTIC PUR bot/human attribution"
     }
   ],
   "humans_engaged_lifetime": 2,
   "moats_active": [
+    {
+      "name": "Observatoire annonces non-conformes",
+      "category": "1 — Données propriétaires accumulées",
+      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
+      "details": "Crawl LeBonCoin/Locservice quotidien (cron 03h UTC), 160 annonces 7 villes, 59% non-conformes (Wilson CI ±12pts)"
+    },
     {
       "name": "Watch-list automatique JORF",
       "category": "1 — Données propriétaires accumulées",
@@ -87,7 +93,7 @@
       "details": "Publié 2026-05-17, Licence Etalab v2.0, 3 ressources (CSV+JSON+MD), backlink autorité .gouv.fr"
     }
   ],
-  "moats_count": 2,
+  "moats_count": 3,
   "distribution": {
     "outbound_emails_total": 11,
     "outbound_emails_24h": 0,
@@ -110,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10547652,
+    "vps_uptime_seconds": 10576693,
     "last_commit": {
-      "hash": "d033528",
-      "subject": "sub-linkedin-drafter: draft 2026-05-24 — GPTBot/1.4 premier crawl sitemap",
-      "relative": "64 minutes ago"
+      "hash": "1e7b961",
+      "subject": "run-354 critic-38 #1 correction: PerplexityBot=29/24h ACTIVE (3e LLM-crawler), traffic-signals.md up",
+      "relative": "4 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

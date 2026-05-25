@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-05-24T17:40:01Z",
+  "generated_at": "2026-05-25T01:44:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3808,
-    "requests_24h": 465,
-    "bot_hits_lifetime": 598,
-    "bot_hits_24h": 271,
-    "bot_hits_1h": 8,
-    "human_hits_24h": 194
+    "requests_lifetime": 3946,
+    "requests_24h": 384,
+    "bot_hits_lifetime": 642,
+    "bot_hits_24h": 173,
+    "bot_hits_1h": 1,
+    "human_hits_24h": 211
   },
   "bots_by_type_lifetime": {
     "generic-bot": 182,
-    "OAI-SearchBot": 67,
-    "ClaudeBot": 64,
+    "OAI-SearchBot": 75,
+    "ClaudeBot": 72,
     "Googlebot": 48,
-    "Bingbot": 45,
-    "ByteSpider": 34,
+    "Bingbot": 47,
+    "AhrefsBot": 37,
+    "ByteSpider": 35,
     "GPTBot": 29,
-    "AhrefsBot": 27,
-    "FacebookExt": 22,
-    "PerplexityBot": 22,
-    "Go-HTTP": 13,
+    "FacebookExt": 29,
+    "PerplexityBot": 29,
+    "Go-HTTP": 14,
     "python-script": 12,
     "HeadlessChrome": 10,
     "YandexBot": 6,
@@ -31,18 +31,19 @@
     "MJ12bot": 2
   },
   "bots_by_type_24h": {
-    "generic-bot": 151,
-    "ByteSpider": 29,
-    "OAI-SearchBot": 24,
+    "generic-bot": 34,
+    "ByteSpider": 30,
+    "PerplexityBot": 29,
+    "OAI-SearchBot": 27,
     "ClaudeBot": 22,
-    "PerplexityBot": 22,
-    "FacebookExt": 10,
-    "Googlebot": 6,
+    "AhrefsBot": 10,
+    "FacebookExt": 8,
+    "Googlebot": 4,
+    "Bingbot": 3,
     "python-script": 2,
     "MJ12bot": 2,
-    "curl/wget": 1,
-    "Bingbot": 1,
-    "GPTBot": 1
+    "GPTBot": 1,
+    "Go-HTTP": 1
   },
   "bot_last_seen": {
     "Bingbot": "2026-05-22T00:42:45+00:00",
@@ -62,17 +63,12 @@
     "OAI-SearchBot": "2026-05-21T22:46:44+00:00",
     "SemrushBot": "2026-05-23T17:09:46+00:00",
     "MJ12bot": "2026-05-24T11:00:07+00:00",
-    "PerplexityBot": "2026-05-24T17:31:51+00:00",
+    "PerplexityBot": "2026-05-24T19:37:01+00:00",
     "archive.org": "2026-05-19T14:33:33+00:00"
   },
   "last_googlebot": "2026-05-24T09:12:16+00:00",
-  "last_bingbot": "2026-05-24T06:21:42+00:00",
+  "last_bingbot": "2026-05-24T21:56:12+00:00",
   "chart_7days": [
-    {
-      "day": "2026-05-18",
-      "total": 0,
-      "by_type": {}
-    },
     {
       "day": "2026-05-19",
       "total": 28,
@@ -159,55 +155,32 @@
     },
     {
       "day": "2026-05-24",
-      "total": 147,
+      "total": 188,
       "by_type": {
         "generic-bot": 51,
-        "OAI-SearchBot": 20,
-        "ClaudeBot": 14,
+        "OAI-SearchBot": 25,
+        "ClaudeBot": 22,
         "Googlebot": 4,
-        "Bingbot": 1,
-        "ByteSpider": 29,
+        "Bingbot": 3,
+        "ByteSpider": 30,
         "python-script": 2,
         "GPTBot": 1,
         "MJ12bot": 2,
-        "PerplexityBot": 22,
-        "FacebookExt": 1
+        "PerplexityBot": 29,
+        "FacebookExt": 8,
+        "Go-HTTP": 1,
+        "AhrefsBot": 10
+      }
+    },
+    {
+      "day": "2026-05-25",
+      "total": 3,
+      "by_type": {
+        "OAI-SearchBot": 3
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "18",
-      "hits": 16
-    },
-    {
-      "hour": "19",
-      "hits": 43
-    },
-    {
-      "hour": "20",
-      "hits": 2
-    },
-    {
-      "hour": "21",
-      "hits": 2
-    },
-    {
-      "hour": "22",
-      "hits": 0
-    },
-    {
-      "hour": "23",
-      "hits": 11
-    },
-    {
-      "hour": "00",
-      "hits": 0
-    },
-    {
-      "hour": "01",
-      "hits": 2
-    },
     {
       "hour": "02",
       "hits": 23
@@ -270,20 +243,52 @@
     },
     {
       "hour": "17",
-      "hits": 1
+      "hits": 11
+    },
+    {
+      "hour": "18",
+      "hits": 6
+    },
+    {
+      "hour": "19",
+      "hits": 9
+    },
+    {
+      "hour": "20",
+      "hits": 16
+    },
+    {
+      "hour": "21",
+      "hits": 7
+    },
+    {
+      "hour": "22",
+      "hits": 6
+    },
+    {
+      "hour": "23",
+      "hits": 16
+    },
+    {
+      "hour": "00",
+      "hits": 6
+    },
+    {
+      "hour": "01",
+      "hits": 17
     }
   ],
   "top_bot_paths_24h": {
-    "/robots.txt": 29,
-    "/": 25,
-    "/lille-dpe-f-g-interdit-location.html": 22,
+    "/robots.txt": 30,
+    "/lille-dpe-f-g-interdit-location.html": 28,
+    "/": 27,
     "/sitemap.xml": 12,
-    "/encadrement-loyer-paris-2026.html": 5,
-    "/css/main.css": 3,
-    "/loyer-legal-paris.html": 2,
-    "/dpe-f-g-interdit-location.html": 2,
-    "/politique-confidentialite.html": 2,
-    "/deficit-foncier-2026.html": 2
+    "/encadrement-loyer-paris-2026.html": 6,
+    "/css/main.css": 4,
+    "/guide-bailleur-2026.html": 2,
+    "/mentions-legales.html": 2,
+    "/api/observatoire-dpe-fg?limit=10": 2,
+    "/api/changelog?limit=5": 2
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 38,
@@ -296,31 +301,31 @@
     "/lille-dpe-f-g-interdit-location.html": 1
   },
   "top_human_paths_24h": {
-    "/": 33,
-    "/static/app.js": 9,
-    "/css/tailwind-runtime.js": 8,
-    "/static/share-card.js": 8,
-    "/api/visit": 7,
-    "/api/changelog?limit=5": 7,
-    "/css/main.css": 5,
-    "/api/funnel/event": 5,
-    "/favicon.svg": 4,
-    "/robots.txt": 3
+    "/": 37,
+    "/robots.txt": 10,
+    "/css/tailwind-runtime.js": 7,
+    "/static/share-card.js": 7,
+    "/static/app.js": 7,
+    "/api/visit": 6,
+    "/api/changelog?limit=5": 6,
+    "//xmlrpc.php?rsd": 5,
+    "//blog/wp-includes/wlwmanifest.xml": 5,
+    "//wordpress/wp-includes/wlwmanifest.xml": 5
   },
   "status_codes_24h": {
-    "200": 412,
-    "404": 51,
-    "400": 2
+    "200": 318,
+    "404": 65,
+    "400": 1
   },
   "funnel": {
-    "events_total_lifetime": 43,
-    "sessions_lifetime": 31,
+    "events_total_lifetime": 44,
+    "sessions_lifetime": 32,
     "sessions_24h": 5,
     "by_type_24h": {
       "home_visit": 5
     },
     "by_type_lifetime": {
-      "home_visit": 29,
+      "home_visit": 30,
       "scan_url_page_visit": 2,
       "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
@@ -330,7 +335,7 @@
       "verdict_displayed": 2
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 29,
+      "home_visit": 30,
       "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
       "wedge_q3_answered": 2,
