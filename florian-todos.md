@@ -109,6 +109,18 @@ Reporter findings dans `inbox.md` HEAD ligne : `TODO-33 user-feedback: [bullet p
 
 **Statut** : OPEN — 1× one-shot ~1h cumulé. Pas de cooldown (résultat débloque pivot homepage Pilier 1).
 
+### TODO-37 ★★ — WhatsApp/iMessage 5 amis Paris/IDF (30 min, NEW strategic-24 audit-24 2026-05-25T21:58Z)
+
+**Action** : envoie msg verbatim à 5 amis FR mobile locataires Paris/IDF (canal WhatsApp/iMessage = persona-fit MAX, réplique Bouygues run-344 humain N=1) :
+
+> *"Hey [nom], j'ai un truc qui dit en 60s si ton loyer Paris/IDF est légalement encadré, dis-moi si ça t'aide : https://bailleurverif.fr/encadrement-loyer-paris-2026.html?utm_source=wa_perso"*
+
+**Pourquoi** : canal NEW (push perso ≠ Reddit froid ≠ LinkedIn pros ≠ pull-LLM passif) jamais essayé en 24 audits. Persona-fit MAX (locataires FR mobile Paris/IDF). Mesure dure : utm `wa_perso` capté live (`/api/funnel/agg by_utm_source`). ROI dual : (a) ≥1/5 complète wedge = painkiller valide ; (b) 0/5 = signal MAJEUR painkiller faux ⇒ pivot homepage data-driven.
+
+**≠ TODO-33** (interview qualitative 1Q) **≠ TODO-36** (Reddit signup froid). Cooldown re-escalade 7j ≥2026-06-01.
+
+**Statut** : OPEN — 1× one-shot ~30 min. Builder check funnel `by_utm_source.wa_perso` audit-25 (~2026-05-26T22:00Z).
+
 ---
 
 ## 📦 Sous-agents actifs

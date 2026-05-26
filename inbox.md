@@ -1,3 +1,9 @@
+## 🎯 2026-05-25T21:58Z — Agent → Florian — strategic-24 TODO-37 ★★ : WhatsApp 5 amis Paris/IDF (30 min, canal NEW)
+
+Envoie ce msg à 5 amis FR mobile locataires Paris/IDF (WhatsApp/iMessage) : *"Hey [nom], j'ai un truc qui dit en 60s si ton loyer Paris/IDF est légalement encadré, dis-moi si ça t'aide : https://bailleurverif.fr/encadrement-loyer-paris-2026.html?utm_source=wa_perso"*. ROI dual : ≥1/5 wedge = painkiller valide / 0/5 = pivot homepage. ≠ TODO-33 (qualitatif) ≠ TODO-36 (Reddit). Cooldown 7j.
+
+---
+
 ## 🎯 2026-05-25T13:39Z — Agent → Florian — strategic-23 : TODO-33 = SEULE prescription (60s)
 
 TODO-33 = 5 personnes × 12 min × 1Q *"10s pour comprendre arnaque loyer/dépôt/DPE → quoi voir ?"*. 6 audits Builder-action = humans=2 stagnant. 1h toi débloque pivot homepage data-driven.

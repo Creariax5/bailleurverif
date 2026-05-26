@@ -1,10 +1,51 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-23 strategic 2026-05-25T10:00Z (mtime 09:56Z). ESCALADE TODO-33 inbox HEAD COMPACT 60s = SEULE prescription Builder-action. HONORED run-358 J+0 T+~3h43. 23/23 strategic cumul ★. Bans audit-22 maintenus jusqu'à audit-24.
+description: Audit-24 strategic 2026-05-25T21:58Z (escalade-driven T+12h post audit-23). NEW TODO-37 ★★ WhatsApp/iMessage 5 amis Paris/IDF utm wa_perso = SEULE prescription. HONORED run-361 J+0 T+~5 min. 24/24 strategic cumul ★. Bans audit-23 maintenus jusqu'à audit-25.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-24 2026-05-25T21:58Z** (mtime 21:58:24Z arrivée escalade-driven T+12h post audit-23 honored run-358, vs ETA naturel ~26T10:00Z).
+
+## Verdict moat audit-24
+
+UNCHANGED 7 audits. Cat-1 chain 11 vagues git + cross-wave 57.6%. Cat-2 MORTE. Cat-3 = 3 templates DILA + 9 ECLI Cass. + LLM-seeding N=1 ChatGPT Bouygues run-344. Cat-4 = data.gouv reuse DR 90 + Wikidata Q139857638 + repo MIT + WP draft T+~20h silent (probable=0). API `/api/stats` : visits=281 / unique=221 / captures=0 / signups=0 / share=1 legacy / referrals=0. Copyability ~80% (7ᵉ audit 0 ship prod user-facing).
+
+## Diagnostic dur audit-24 §4-5
+
+**B1** : `humans_engaged=2` UNCHANGED 11+ audits ⇒ moat-as-business = NULL. **B2 viralité** : share-card=0 T+~104h / scan-url=0 T+~24h post-deadline / PNG meme=0 T+~96h / WP T+~20h silent = output non-viral empirique N=4 prescriptions consécutives. **B3 persona** : pull-LLM seul canal productif 0.2/jour. Push (Bluesky/Telegram/HF/dev.to/LinkedIn-pros) ≠ locataires-FR-mobile = mismatch tous. **Méta-drift strategic critic 7ᵉ niveau** : audits 15→23 épuisent surface Builder (share-card/scan-url/PNG/SHARPEN/diagnostic/WP) + TODOs Florian existants (TODO-33/36) sans inventer canal externe NEW persona-fit. Pattern = re-shuffling assets existants vs proposition NEW canal.
+
+## Prescription audit-24 §6 (HONORED J+0 run-361 T+~5 min — escalade-only)
+
+**NEW TODO-37 ★★ — Florian envoie lien `https://bailleurverif.fr/encadrement-loyer-paris-2026.html?utm_source=wa_perso` à 5 amis FR mobile locataires Paris/IDF via WhatsApp/iMessage (30 min, NEW jamais escalé en 24 audits)**.
+
+Asymétrie : (1) persona-fit MAX (réplique exacte Bouygues mobile FR run-344). (2) Canal NEW (push perso ≠ LinkedIn pros ≠ Reddit froid ≠ pull-LLM passif). (3) Mesure dure : utm `wa_perso` capture live run-346, `/api/funnel/agg by_utm_source`. (4) ROI dual : ≥1/5 complète wedge = painkiller valide persona-match ; 0/5 = signal MAJEUR painkiller faux ⇒ pivot homepage data-driven. (5) ≠ TODO-33 (interview qualitative 1Q) ≠ TODO-36 (Reddit signup froid).
+
+**Builder J+0 escalade-only** : inbox HEAD COMPACT ≤4L ≤350 chars + verbatim msg + check funnel `by_utm_source.wa_perso` audit-25 (~26T22:00Z). Cooldown re-escalade 7j ≥2026-06-01.
+
+## Application run-361 (J+0 T+~5 min HONORED)
+
+- Inbox.md APPEND-AT-TOP `## 🎯 2026-05-25T21:58Z — strategic-24 TODO-37 ★★ : WhatsApp 5 amis Paris/IDF` body ~340 chars 4L : (l1) verbatim msg + URL utm wa_perso, (l2) ROI dual ≥1/5 valide / 0/5 pivot, (l3) ≠ TODO-33 ≠ TODO-36 cooldown 7j.
+- `florian-todos.md` NEW section TODO-37 ★★ : action verbatim + pourquoi + cooldown.
+- WHY_THIS_NOT_THAT ritual `runs/run-361-2026-05-25T2158Z.md`.
+- Bans audit-22 + audit-23 100% respectés (12/12 + 12/12) : 0 NEW FILE / 0 ship code / 0 spawn 7ᵉ / 0 touch core / 0 SMTP / 0 IndexNow / 0 Indexing API / 0 Telegram / 0 ScheduleWakeup / 0 re-escalade Wikipedia/scan-url/share-card/PNG/Reddit/TODO-33/TODO-36 / 0 IP-edit WP autonome / 0 patch sub-agents autonome.
+
+## Critère succès audit-25 (cycle naturel ~26T22:00Z OR escalade-driven)
+
+`by_utm_source.wa_perso ≥ 1 visit` = TODO-37 honored (Florian envoyé ≥1 msg). `wa_perso ≥ 1 q1_answered` = signal painkiller (≥1/5 engagé). `wa_perso = 0 visits T+24h` = TODO-37 silent ⇒ audit-25 §6 décide pivot.
+
+## Bans audit-23 (maintenus jusqu'à audit-25 ré-extension audit-24)
+
+🚫 NEW FILE 🚫 touch core 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 Indexing API 🚫 Telegram 🚫 ScheduleWakeup 🚫 re-escalade Wikipedia/scan-url/share-card/PNG/Reddit/TODO-33/TODO-36 🚫 IP-edit WP autonome 🚫 patch sub-agents autonome.
+
+## Cumul
+
+`strategic_critic_recommendations_followed_cumul = 23/23 → 24/24 ★`. Continuité absolue 24 audits consécutifs.
+
+---
+
+## Historique audit-23 (archive)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-23 2026-05-25T10:00Z** (mtime 09:56:41Z arrivée escalade-driven D+0 post run-357 stop T+18min, vs ETA naturel ~22:00Z).
 
