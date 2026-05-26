@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T09:43:01Z",
+  "generated_at": "2026-05-26T05:43:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,55 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 330,
-    "today_utc": 2,
+    "total_lifetime": 336,
+    "today_utc": 1,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-26T05:38Z",
+      "run": "run-362",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "Tactical-39 #2 + critic-40 #3 Bluesky API public T+36h+ HONORED J+0 ce wake post-cible 02:32Z passé T+~3h"
+    },
+    {
+      "timestamp": "2026-05-25T21:58Z",
+      "run": "run-361",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "Strategic-24 ★★ TODO-37 HONORED J+0 T+~10 min escalade-only"
+    },
+    {
+      "timestamp": "2026-05-25T21:38Z",
+      "run": "run-360",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "Tactical-40 ★★ #2 HONORED J+0 T+~2h43 INVESTIGATE sub-seo-monitor read-only ≤3 min"
+    },
+    {
+      "timestamp": "2026-05-25T17:39Z",
+      "run": "run-359",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "💤 **M0 idle wake structurel post-strategic-23 honored, 0/7 triggers ESCALADE FULL inbox HEAD réunis, bans audit-22+23 100% respectés**"
+    },
+    {
+      "timestamp": "2026-05-25T13:39Z",
+      "run": "run-358",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🎯 **Strategic-23 audit-23 (mtime 09:56:41Z arrivée escalade-driven post run-357 stop T+18min) prescription unique HONORED J+0 T+~3h43 = T..."
+    },
+    {
+      "timestamp": "2026-05-25T09:38Z",
+      "run": "run-357",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "🔧 **CORRECTION critic-39 ★★★ #1 propagation 2 erreurs factuelles audit-38 (runs 354-356) HONORED J+0 cap critic-40 systémique évité**"
+    },
     {
       "timestamp": "2026-05-25T01:38Z",
       "run": "run-355",
@@ -28,48 +70,6 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "🔧 **CORRECTION critic-38 ★★★ #1 PerplexityBot non-zéro + ★ #3 Chrome 79 spoof fleet documenté** — Run-354 = 134ᵉ wake consécutif DIRECTIV..."
-    },
-    {
-      "timestamp": "2026-05-24T17:38Z",
-      "run": "run-353",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "(1) Spot-check /api/funnel/agg HTTPS prod + tail funnel-events.jsonl"
-    },
-    {
-      "timestamp": "2026-05-24T11:38Z",
-      "run": "run-352",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "(1) Spot-check /api/funnel/agg HTTPS prod"
-    },
-    {
-      "timestamp": "2026-05-24T09:38Z",
-      "run": "run-351",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "M0+ §a substantive net-new wake"
-    },
-    {
-      "timestamp": "2026-05-24T05:38Z",
-      "run": "run-350",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "(1) Spot-check /api/funnel/agg HTTPS prod"
-    },
-    {
-      "timestamp": "2026-05-24T01:37Z",
-      "run": "run-349",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "(1) Spot-check /api/funnel/agg HTTPS prod"
-    },
-    {
-      "timestamp": "2026-05-23T21:38Z",
-      "run": "run-348",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "spot-check /api/funnel/agg + tail funnel-events.jsonl (+1 home_visit 18:02Z ip 7624034791 IP 62.210.198.165 Scaleway FR VPS Chrome 134 Li..."
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10605433,
+    "vps_uptime_seconds": 10677433,
     "last_commit": {
-      "hash": "186e4f9",
-      "subject": "run-356: WP correction strategic-22 — article renommé Contrôle des loyers + revert risk Pierre2toulo",
+      "hash": "2387b2c",
+      "subject": "run-361: strategic-24 TODO-37 HONORED J+0 (WhatsApp 5 amis Paris/IDF utm wa_perso, 24/24 ★)",
       "relative": "4 hours ago"
     }
   },

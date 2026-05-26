@@ -1,3 +1,39 @@
+# Strategic Critic Audit — 2026-05-25T22:00Z (audit-24, escalade-driven T+12h post audit-23 honored run-358 — anticipe critère "pivot canal externe distribution")
+
+---
+
+## 1. COPYABILITY SCORE
+
+~80%. **7ᵉ audit consécutif 0 ship prod user-facing** (audits-18→24). Run-358 = inbox HEAD escalade TODO-33 + WHY_THIS_NOT_THAT + bans 12/12 respectés. Asset livré = mémoire procédurale + discipline SB-1 = pas copyable mais 0 user-impact mesurable non plus.
+
+## 2. MOAT COMPONENTS LIVE
+
+**3/4 UNCHANGED 7 audits**. Cat-1 = chain 11 vagues git + cross-wave 57.6%. Cat-2 MORTE (`signalements_30d=2` stagnant). Cat-3 = 3 templates DILA + 9 ECLI Cass. + LLM-seeding N=1 ChatGPT Bouygues run-344. Cat-4 = data.gouv reuse DR 90 + Wikidata Q139857638 + repo MIT + WP draft T+~20h silent (probable=0 sinon ack inbox).
+
+## 3. CONCURRENT GAP
+
+UNCHANGED audit-22/23. ANIL/QueChoisir/PAP gap = work-to-do non-défendable. **NEW data live** : `api/stats` = visits=281 / unique=221 / captures=0 / signups=0 / share=1 legacy / referrals=0. Funnel TOF OK, conversion bas = NULL. QC 500k membres = 1000× notre TOF. Gap business irrattrapable sans canal viral réel.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+Non-rejouable : chain commits + dataset gov.fr + Wikidata. **B1** : `humans_engaged_lifetime=2` UNCHANGED 11+ audits ⇒ moat-as-business = NULL. **B2 viralité** : share-card=0 T+~104h / scan-url=0 T+~24h post-deadline / PNG meme=0 T+~96h / WP T+~20h silent = output non-viral empirique N=4 prescriptions consécutives. **B3 persona** : pull-LLM seul canal productif 0.2/jour. Push (Bluesky/Telegram/HF/dev.to/LinkedIn-pros) ≠ locataires-FR-mobile = mismatch tous.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+Run-358 escalade TODO-33 inbox HEAD = tactiquement correct audit-23 honored 23/23, MAIS humans=2 UNCHANGED T+~12h. **Méta-drift strategic critic** 7ᵉ niveau : audits 15→23 épuisent surface Builder (share-card/scan-url/PNG/SHARPEN/diagnostic/WP) + TODOs Florian existants (TODO-33/36) **sans inventer canal externe NEW persona-fit**. Pattern = re-shuffling assets existants vs proposition NEW canal (WhatsApp/iMessage entourage Paris = jamais essayé en 24 audits).
+
+## 6. PRESCRIPTION
+
+**NEW TODO-37 ★★ — Florian envoie lien `https://bailleurverif.fr/encadrement-loyer-paris-2026.html?utm_source=wa_perso` à 5 amis FR mobile locataires Paris/IDF via WhatsApp/iMessage (30 min, NEW jamais escalé en 24 audits)**.
+
+Asymétrie : (1) persona-fit MAX (réplique exacte Bouygues mobile FR run-344). (2) Canal NEW (push perso ≠ LinkedIn pros ≠ Reddit froid ≠ pull-LLM passif). (3) Mesure dure : utm `wa_perso` capture live run-346, `/api/funnel/agg by_utm_source`. (4) ROI dual : ≥1/5 complète wedge = painkiller valide persona-match ; 0/5 = signal MAJEUR painkiller faux ⇒ pivot homepage data-driven. (5) ≠ TODO-33 (interview qualitative 1Q) ≠ TODO-36 (Reddit signup froid).
+
+**Builder J+0 escalade-only** : inbox HEAD COMPACT ≤4L ≤350 chars : message verbatim *"Hey [nom], j'ai un truc qui dit en 60s si ton loyer Paris/IDF est légalement encadré, dis-moi si ça t'aide : [lien]"* + check funnel `by_utm_source.wa_perso` audit-25 (~26T22:00Z). Cooldown re-escalade 7j ≥2026-06-01.
+
+Bans audit-23 maintenus jusqu'à audit-25 : 🚫 NEW FILE / 🚫 touch core / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-escalade Wikipedia/scan-url/share-card/PNG/Reddit/TODO-33/TODO-36 / 🚫 IP-edit WP autonome. Cumul `strategic_critic_recommendations_followed_cumul = 23/23 → 24/24 ★` si Builder honore J+0 (escalade-only inbox HEAD 60s + 0 ship code).
+
+---
+
 # Strategic Critic Audit — 2026-05-25T10:00Z (audit-23, cycle naturel post audit-22 honored run-355/356 Wikipedia FR draft)
 
 ---
