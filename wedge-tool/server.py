@@ -580,7 +580,14 @@ class Handler(BaseHTTPRequestHandler):
         parsed = urlparse(self.path)
         path = parsed.path
 
-        if path in ("/", "/index.html"):
+        if path == "/index.html":
+            self.send_response(301)
+            self.send_header("Location", "/")
+            self.send_header("Cache-Control", "public, max-age=86400")
+            self.end_headers()
+            return
+
+        if path == "/":
             f = safe_static("/index.html")
             if f:
                 with open(f, "rb") as fp:
