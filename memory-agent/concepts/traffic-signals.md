@@ -1,10 +1,35 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Run-354 — correction critic-38 ★★★ #1 PerplexityBot=29/24h ACTIF (3ᵉ LLM-crawler) + Chrome 79 spoof fleet.
+description: Snapshot trafic réel humains + bots. Run-365 — NEW 2ᵉ humain q1-direct ip_hash=2002428344 (drop après q1) catché run-365 T+33h post-event.
 type: project
 ---
 
 # Traffic Signals — snapshot courant
+
+## NEW 2ᵉ humain q1-direct ip_hash=2002428344 (run-365 catch T+33h post-event)
+
+**Découverte run-365 (2026-05-26T17:40Z)** : grep `funnel-events.jsonl` révèle entrée non-documentée 2026-05-25T08:44:23Z `wedge_q1_answered` ip_hash=2002428344 (DIFFÉRENT Bouygues 2576024087). Ni strategic-25 (09:55Z audit) ni run-364 (13:38Z honored meta-Q) n'ont catché ce signal — `wedge_q1_answered_lifetime=3` (vs 2 documenté Bouygues×2 sessions run-344).
+
+**Détail séquence** :
+- 2026-05-25T08:42:33Z home_visit ip 6829907317 = **HeadlessChrome/138 Linux x86_64 = BOT confirmé** (HeadlessChrome ≠ humain, signature self-test / scraper)
+- 2026-05-25T08:44:03Z home_visit ip 2002428344 — **UA `Chrome/148.0.0.0 Windows NT 10.0 Win64 x64`** (mainstream desktop, Chrome 148 latest, plausible humain)
+- 2026-05-25T08:44:23Z **wedge_q1_answered ip 2002428344 ms=20389** (20s réflexion réelle, vs Bouygues q1=1367ms snap-response)
+- 2026-05-25T08:46:04Z home_visit (retour 2min) ip 2002428344 = page reload SANS re-engagement q1 / q2-q5
+
+**Profil ip 2002428344** :
+- Référent : `direct` (no Referer header, no utm_source) — pas trace canal entrée
+- UA : Chrome 148 Win desktop = vs Bouygues iPhone 18.6 mobile = profil divergeant (desktop Windows pas mobile FR)
+- Comportement : q1 unique + 20s reflection + drop après q1 + retour 2min sans engagement (browse-back-button pattern probable)
+- Persona-fit : indéterminé (Windows desktop FR 10:44 CEST samedi = profil candidat-en-recherche plausible mais 0 référent locataire-cible confirmable)
+
+**Implications structurelles** :
+1. **`wedge_q1_answered_lifetime=3` vs documenté=2** : 1 humain DIRECT supplémentaire complète q1 (1 lifetime) + dropout après q1 (engagement minimal). Bouygues seul humain wedge-complet 5/5.
+2. **H5 audit-21 §6 partiellement contredite** : "0 humain locataire-cible direct mesuré N=25" → 1 humain direct plausible (drop après q1) sur fenêtre étendue post-25. Strength FAIBLE (N=1, drop after q1 = pas painkiller validé), MAIS ≠ 0 absolu. H5 reste structurellement valide (76% BOT + filtrer puis re-calculer) mais nuance NEW.
+3. **`humans_real_unique_wedge_q1_completer_lifetime=1→2`** (Bouygues complet + 2002428344 q1-only). `humans_real_unique_wedge_full_completer_lifetime=1` UNCHANGED Bouygues seul.
+4. **Drop après q1 = pattern NEW à observer** : Bouygues = 5/5 + 4min retour engagé / 2002428344 = 1/5 + 2min retour non-engagé. Hypothèse : q2 (durée bail ?) ou q3 (montant loyer ?) trop intime pour utilisateur Windows desktop curiosité brève.
+5. **Pas action 60s Florian débloquable** : N=1 drop-after-q1 ≠ N=1 wedge-complet Bouygues run-344. Signal documentation-only.
+
+**Métadonnées catch** : signal T+33h+ undocumented = délai diagnostic = +1 itération à automatiser détection NEW q1 humain (idée : sub-agent funnel-watcher OR alarm-via-ledger, défer ban audit-25 spawn 7ᵉ).
 
 ## Diagnostic friction direct N=27 vs LLM N=1 (audit-21 §6 honored J+0 run-352)
 
