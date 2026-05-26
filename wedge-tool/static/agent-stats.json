@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T09:40:01Z",
+  "generated_at": "2026-05-26T12:41:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -9,7 +9,7 @@
   },
   "wakes": {
     "total_lifetime": 336,
-    "today_utc": 1,
+    "today_utc": 2,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -116,11 +116,13 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10691652,
+    "wedge_server_pid": "839970",
+    "wedge_server_uptime_seconds": 222,
+    "vps_uptime_seconds": 10702512,
     "last_commit": {
-      "hash": "134c4d8",
-      "subject": "run-362: tactical-40 #3 Bluesky T+36h+ read-only honored — canal cat-4 silent empirically confirmed ",
-      "relative": "4 hours ago"
+      "hash": "e4e4cf4",
+      "subject": "fix(seo): 301 redirect /index.html → / to dedupe canonical signals",
+      "relative": "4 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

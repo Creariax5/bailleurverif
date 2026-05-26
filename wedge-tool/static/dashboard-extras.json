@@ -1,75 +1,75 @@
 {
-  "generated_at": "2026-05-26T09:40:01Z",
+  "generated_at": "2026-05-26T12:40:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4870,
-    "requests_24h": 700,
-    "bot_hits_lifetime": 977,
-    "bot_hits_24h": 292,
-    "bot_hits_1h": 22,
-    "human_hits_24h": 408
+    "requests_lifetime": 5085,
+    "requests_24h": 900,
+    "bot_hits_lifetime": 1128,
+    "bot_hits_24h": 430,
+    "bot_hits_1h": 23,
+    "human_hits_24h": 470
   },
   "bots_by_type_lifetime": {
+    "SemrushBot": 212,
     "generic-bot": 191,
-    "SemrushBot": 155,
-    "OAI-SearchBot": 115,
-    "ClaudeBot": 102,
-    "Bingbot": 75,
+    "OAI-SearchBot": 122,
+    "GPTBot": 113,
+    "ClaudeBot": 106,
+    "Bingbot": 79,
     "Googlebot": 55,
     "PerplexityBot": 43,
     "AhrefsBot": 39,
-    "GPTBot": 37,
-    "ByteSpider": 36,
+    "ByteSpider": 37,
     "FacebookExt": 34,
     "HeadlessChrome": 29,
     "YandexBot": 21,
     "Go-HTTP": 14,
     "python-script": 12,
     "curl/wget": 7,
+    "MJ12bot": 6,
     "BaiduSpider": 5,
-    "MJ12bot": 4,
     "archive.org": 3
   },
   "bots_by_type_24h": {
-    "SemrushBot": 153,
-    "OAI-SearchBot": 32,
+    "SemrushBot": 210,
+    "GPTBot": 83,
+    "OAI-SearchBot": 34,
     "ClaudeBot": 22,
-    "YandexBot": 15,
+    "Bingbot": 17,
     "PerplexityBot": 14,
-    "Bingbot": 13,
+    "YandexBot": 12,
     "HeadlessChrome": 10,
     "generic-bot": 9,
-    "GPTBot": 7,
     "FacebookExt": 5,
     "Googlebot": 5,
+    "MJ12bot": 4,
     "AhrefsBot": 2,
-    "MJ12bot": 2,
     "curl/wget": 2,
     "ByteSpider": 1
   },
   "bot_last_seen": {
-    "Bingbot": "2026-05-26T08:57:34+00:00",
+    "SemrushBot": "2026-05-26T12:35:30+00:00",
+    "Bingbot": "2026-05-26T12:28:13+00:00",
     "Googlebot": "2026-05-26T08:44:27+00:00",
     "YandexBot": "2026-05-26T04:01:39+00:00",
     "AhrefsBot": "2026-05-22T00:50:28+00:00",
     "curl/wget": "2026-05-21T09:46:24+00:00",
-    "GPTBot": "2026-05-26T09:12:13+00:00",
-    "ByteSpider": "2026-05-21T21:30:42+00:00",
+    "GPTBot": "2026-05-26T11:22:23+00:00",
+    "ByteSpider": "2026-05-26T12:26:10+00:00",
     "HeadlessChrome": "2026-05-21T19:30:43+00:00",
     "Go-HTTP": "2026-05-21T09:47:20+00:00",
     "BaiduSpider": "2026-05-20T17:37:32+00:00",
     "FacebookExt": "2026-05-21T22:20:51+00:00",
     "generic-bot": "2026-05-26T04:13:45+00:00",
-    "ClaudeBot": "2026-05-26T07:46:38+00:00",
+    "ClaudeBot": "2026-05-26T11:56:35+00:00",
     "python-script": "2026-05-21T09:11:22+00:00",
-    "OAI-SearchBot": "2026-05-26T08:53:35+00:00",
-    "SemrushBot": "2026-05-26T09:37:55+00:00",
-    "MJ12bot": "2026-05-25T22:12:30+00:00",
+    "OAI-SearchBot": "2026-05-26T12:11:22+00:00",
+    "MJ12bot": "2026-05-26T10:59:59+00:00",
     "PerplexityBot": "2026-05-25T18:25:15+00:00",
     "archive.org": "2026-05-19T14:33:33+00:00"
   },
   "last_googlebot": "2026-05-26T08:44:27+00:00",
-  "last_bingbot": "2026-05-26T08:57:34+00:00",
+  "last_bingbot": "2026-05-26T12:28:13+00:00",
   "chart_7days": [
     {
       "day": "2026-05-20",
@@ -182,32 +182,22 @@
     },
     {
       "day": "2026-05-26",
-      "total": 192,
+      "total": 343,
       "by_type": {
-        "SemrushBot": 143,
-        "GPTBot": 7,
-        "ClaudeBot": 8,
+        "SemrushBot": 200,
+        "GPTBot": 83,
+        "ClaudeBot": 12,
         "Googlebot": 3,
-        "OAI-SearchBot": 10,
-        "Bingbot": 10,
+        "OAI-SearchBot": 17,
+        "Bingbot": 14,
         "YandexBot": 2,
-        "generic-bot": 9
+        "generic-bot": 9,
+        "MJ12bot": 2,
+        "ByteSpider": 1
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "10",
-      "hits": 1
-    },
-    {
-      "hour": "11",
-      "hits": 0
-    },
-    {
-      "hour": "12",
-      "hits": 1
-    },
     {
       "hour": "13",
       "hits": 45
@@ -290,20 +280,32 @@
     },
     {
       "hour": "09",
-      "hits": 3
+      "hits": 6
+    },
+    {
+      "hour": "10",
+      "hits": 16
+    },
+    {
+      "hour": "11",
+      "hits": 6
+    },
+    {
+      "hour": "12",
+      "hits": 39
     }
   ],
   "top_bot_paths_24h": {
-    "/robots.txt": 38,
-    "/": 32,
-    "/encadrement-loyer-paris-2026.html": 18,
+    "/robots.txt": 41,
+    "/": 36,
+    "/encadrement-loyer-paris-2026.html": 21,
     "/sitemap.xml": 13,
+    "/data/encadrement-loyer-france-2026.json": 5,
+    "/static/share-card.js": 4,
+    "/css/tailwind-runtime.js": 4,
+    "/static/app.js": 4,
     "/data/README.md": 4,
-    "/data/encadrement-loyer-france-2026.json": 4,
-    "/static/share-card.js": 3,
-    "/css/tailwind-runtime.js": 3,
-    "/static/app.js": 3,
-    "/data/encadrement-loyer-france-2026.csv": 3
+    "/data/encadrement-loyer-france-2026.csv": 4
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 44,
@@ -317,10 +319,10 @@
     "/encadrement-loyer-echirolles-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 40,
-    "/data/encadrement-loyer-france-2026.csv": 9,
-    "/robots.txt": 6,
-    "/data/encadrement-loyer-france-2026.json": 6,
+    "/": 43,
+    "/data/encadrement-loyer-france-2026.csv": 10,
+    "/robots.txt": 7,
+    "/data/encadrement-loyer-france-2026.json": 7,
     "//xmlrpc.php?rsd": 6,
     "//wp/wp-includes/wlwmanifest.xml": 6,
     "//shop/wp-includes/wlwmanifest.xml": 6,
@@ -329,19 +331,19 @@
     "//blog/wp-includes/wlwmanifest.xml": 5
   },
   "status_codes_24h": {
-    "200": 640,
+    "200": 840,
     "404": 57,
     "501": 3
   },
   "funnel": {
-    "events_total_lifetime": 50,
-    "sessions_lifetime": 37,
-    "sessions_24h": 2,
+    "events_total_lifetime": 51,
+    "sessions_lifetime": 38,
+    "sessions_24h": 3,
     "by_type_24h": {
-      "home_visit": 2
+      "home_visit": 3
     },
     "by_type_lifetime": {
-      "home_visit": 35,
+      "home_visit": 36,
       "scan_url_page_visit": 2,
       "wedge_q1_answered": 3,
       "wedge_q2_answered": 2,
@@ -351,7 +353,7 @@
       "verdict_displayed": 2
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 35,
+      "home_visit": 36,
       "wedge_q1_answered": 3,
       "wedge_q2_answered": 2,
       "wedge_q3_answered": 2,
