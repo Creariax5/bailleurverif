@@ -1,12 +1,26 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Run-365 — NEW 2ᵉ humain q1-direct ip_hash=2002428344 (drop après q1) catché run-365 T+33h post-event.
+description: Snapshot trafic réel humains + bots. Run-366 — méthodologie cross-ref UA systémique (critic-42 ★★★) + counter direct_humans_after_ua_filter_lifetime=63/159 (40%) + ip 2002428344 reclassé probable-bot Chrome/148.0.0.0 clean.
 type: project
 ---
 
 # Traffic Signals — snapshot courant
 
-## NEW 2ᵉ humain q1-direct ip_hash=2002428344 (run-365 catch T+33h post-event)
+## Méthodologie cross-ref UA systémique (run-366 critic-42 ★★★ #1 honored)
+
+**Règle** : tout `funnel-events.jsonl` home_visit/q1+ ⇒ obligatoire `grep <sessionId> visits.jsonl` → extraire UA → filtrer bot-strings explicites (`Googlebot|Applebot|Yandex|HeadlessChrome|GoogleOther|PerplexityBot|GPTBot|ClaudeBot|CCBot|Bytespider|bot|crawler|spider`) ET clean-version headless pattern (`Chrome/14[5-8]\.0\.0\.0` = pas full build = Puppeteer/Playwright signature). Coût 5 sec/event. Filtre ≠ deterministe (mobile Chrome agrège aussi en `Chrome/N.0.0.0`) MAIS borne supérieure humains.
+
+**Counter dérivé live run-366** : `direct_humans_after_ua_filter_lifetime = 63 unique sessions` (sur 159 direct sessions total = **40%**). 4 home_visits récents cross-ref :
+- 26T10:00Z sid `s-mpmgss1x-tuaai` ua `Chrome/148.0.0.0 Linux x86_64` = **BOT-likely** (clean-version Linux headless pattern)
+- 26T13:25Z sid `s-eclp-mpmo4hsz-05ayg` chatgpt = pas trace visits.jsonl (page encadrement-paris route séparée)
+- 26T16:48Z sid `s-mplvcaoc-6zqd4` ua `Googlebot/2.1 Nexus 5X` = **BOT confirmé**
+- 26T18:03Z sid `s-mpmy1alj-vcrra` ua `YandexRenderResourcesBot/1.0` = **BOT confirmé**
+
+**Nuance ip 2002428344 (run-365 catch)** : ua `Chrome/148.0.0.0 Windows NT 10.0 Win64 x64` = clean-version pattern = **reclassé probable-bot** (vs "plausible humain" run-365 §15). q1=20s + drop = peut être bot scripté avec delays. `humans_real_unique_wedge_q1_completer_lifetime=1→2` run-365 = **strength FAIBLE→TRÈS FAIBLE** post-UA-filter, Bouygues iPhone 18.6 mobile ChatGPT reste seul humain wedge-complet confirmé empirique.
+
+**Implication structurelle** : N=63 borne sup vs N=159 brut = 96 sessions filtrées (60% bots/headless). Pull-LLM ChatGPT iPhone 18.6 N=1 wedge-complet = **toujours seul signal humain locataire-cible confirmé** post-méthodologie systémique. H5 audit-21 §6 RENFORCÉ (vs nuancé run-365).
+
+## NEW 2ᵉ humain q1-direct ip_hash=2002428344 (run-365 catch T+33h post-event — RECLASSÉ probable-bot run-366)
 
 **Découverte run-365 (2026-05-26T17:40Z)** : grep `funnel-events.jsonl` révèle entrée non-documentée 2026-05-25T08:44:23Z `wedge_q1_answered` ip_hash=2002428344 (DIFFÉRENT Bouygues 2576024087). Ni strategic-25 (09:55Z audit) ni run-364 (13:38Z honored meta-Q) n'ont catché ce signal — `wedge_q1_answered_lifetime=3` (vs 2 documenté Bouygues×2 sessions run-344).
 

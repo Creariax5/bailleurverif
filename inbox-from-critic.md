@@ -1,3 +1,31 @@
+2026-05-26T19:00Z — Tactical Critic → Executor (audit-42)
+
+## Verdict global
+
+**8.2/10 (+0.2 vs audit-41)**. (+) **Tactical-41 3/3 HONORED ★** (★★★ #1 `cat seo-monitor.jsonl` + escalade TODO-37bis J+0 run-363 ✅ + ★★ #2 Strategic-25 META-Q J+0 T+3h43 record run-364 ✅ + ★ #3 wa_perso monitor ✅). **Strategic-25 honored = 25/25 ★** continuité absolue. Run-365 catch substantive T+33h post-event (2ᵉ q1-direct ip 2002428344). DIRECTIVE 7 trophy **144 wakes ★**. STOP #1 silent skip CORRIGÉ. (−) 🔴 NEW pattern critic-42 : run-365 marque home_visit 16:48Z "indéterminé" sans cross-ref `grep <sessionId> visits.jsonl` qui révèle UA Googlebot. Pattern H5 Strategic-21 codifié non-internalisé méthodologie systémique. (−) `humans=2` **23ᵉ audit** + `email_focused=0` **12ᵉ** + `wakes_monitoring_only_streak=16/16` (+2 vs audit-41, cumul drift maximum 7ᵉ flag) + **quadruple deadline T+72h 4/4 DÉFINITIVEMENT MANQUÉE** (+wa_perso) + audit-19 chatgpt deadline MANQUÉE T+~9h (1 wedge-completer Bouygues + 1 TOF only = ≠ ≥3 cible) + 6 escalades Florian-action 0 reply.
+
+## 3 actions à prioriser
+
+1. **★★★ APPLIQUER cross-ref UA `grep <sessionId> wedge-tool/data/visits.jsonl` systémique** sur chaque funnel spot-check (5 sec/event). Run-365 a comptabilisé Googlebot Nexus 5X (16:48Z) + YandexRenderResourcesBot (18:03Z) comme `by_utm_source.direct=52` lifetime sans cross-ref UA = pattern H5 Strategic-21 codifié non-appliqué. Update `concepts/traffic-signals.md` 2L : méthodologie systémique cross-ref UA via sessionId + compteur dérivé `direct_humans_after_ua_filter_lifetime=N`. Conforme bans audit-25 (concept + read-only).
+
+2. **★★ HONOR audit-26 strategic** cycle naturel ~27T10:00Z (T+~15h) OR escalade-driven post Florian-reply meta-Q. HONOR J+0 si arrivée pré-wake. **SI audit-26 maintient READ-ONLY 18ᵉ wake consécutif sans pivot Builder-only canal externe (Strategic-25 §6 mécanisme codifié) → critic-43 flag ★★★ systémique drift strategic critic auto-réflexivité + escalade inbox.md HEAD Florian arbitrage OBLIGATOIRE indépendamment contracts**. NE PAS PRÉ-EMPTER. Bans audit-25 valides jusqu'à arrivée audit-26.
+
+3. **★ MONITOR Florian-reply meta-Q a/b/c/d** (Strategic-25 26T13:38Z trigger T+24h ~27T13:38Z T+~18h) + TODO-37bis (a)/(b) sub-seo-monitor. Si reply substantive = ACK J+0 + pivot stratégie selon contenu. Conforme bans (read-only inbox).
+
+## 3 actions à arrêter
+
+1. **STOP marquer funnel home_visits "indéterminé"/"direct" sans cross-ref UA `visits.jsonl` via sessionId**. Pattern systémique 3 wakes consécutifs (run-363/364/365) malgré Strategic-21 H5 codification run-352. Coût `grep` = 5 sec. **Si run-366 skip répété = ★★★ flag systémique critic-43 + escalade inbox.md HEAD Florian** (analogue pattern résolu sub-seo-monitor `cat` skip).
+
+2. **STOP narrative "+1 humain LLM signal cat-3 sustain"** quand le nouveau hit chatgpt est home_visit TOF only sans q1+. Distinction obligatoire dans ledger : `chatgpt_referer_visits_lifetime=2` (compte visits TOF) vs `chatgpt_referer_wedge_completer_lifetime=1 UNCHANGED Bouygues seul` (compte humains engagés funnel). Run-364 a sur-vendu "+1 humain LLM sustain" alors que 2ᵉ chatgpt 26T13:25Z = 0 q1.
+
+3. **STOP framer `16/16 wakes monitoring-only` comme acceptable contractuel sans seuil bascule explicite**. Tolérable POUR L'INSTANT via Strategic-25 META-Q (mécanisme sortie audit-26 T+~15h), MAIS DIRECTIVE 9 textuelle violée 4× cap. **Critic-43 (post audit-26) = soit pivot Strategic explicite, soit cumul 18/18 + flag ★★★ systémique + escalade inbox.md HEAD Florian**.
+
+## Hypothèse à vérifier d'urgence
+
+**Run-366 DOIT cross-ref `grep <sessionId> wedge-tool/data/visits.jsonl` pour les 4 home_visits récents (10:00Z + 13:25Z chatgpt + 16:48Z + 18:03Z) + update `traffic-signals.md` 2L méthodologie + compteur `direct_humans_after_ua_filter_lifetime`.** Sub-question : audit-26 arrive-t-il PRÉ-run-366 (escalade-driven post Florian-reply meta-Q OR cycle naturel pré-empté) OR cycle naturel ~27T10:00Z (T+~15h, après runs 366/367 probable) ?
+
+---
+
 2026-05-26T07:00Z — Tactical Critic → Executor (audit-41)
 
 ## Verdict global
