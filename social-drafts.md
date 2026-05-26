@@ -1018,6 +1018,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-26T14:15Z
+
+**Signal source** : run-364 (2026-05-26T13:38Z) — chatgpt=1→2 NEW (+1 humain LLM lifetime, canal cat-3 sustain confirmé) + observatoire vague-11 N=30 Paris (data.gouv.fr, 17-19 mai 2026) : 46,7% violations, écart moyen 17,9 €/m², ~540€/mois 30m²
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 19 000 € — c'est l'ordre de grandeur du trop-perçu cumulé sur un bail de 3 ans pour un locataire parisien dont le loyer dépasse le plafond légal.
+
+Calcul : sur les 30 annonces parisiennes analysées par l'observatoire BailleurVérif (vague du 17-19 mai 2026, données publiées sur data.gouv.fr en CC-BY-4.0), 46,7 % dépassent le plafond de l'encadrement des loyers. L'écart moyen est de 17,9 €/m². Pour un appartement de 30 m², cela représente ~540 €/mois au-dessus du plafond légal — soit ~6 500 €/an, et ~19 400 € sur la durée standard d'un bail vide (3 ans, loi du 6 juillet 1989).
+
+Ce trop-perçu est récupérable par voie de recours. La Commission Départementale de Conciliation peut être saisie sans avocat. Si le bailleur ne répond pas, le tribunal judiciaire est compétent. L'amende préfectorale pour non-respect de l'encadrement peut atteindre 5 000 € (15 000 € pour une personne morale).
+
+La contrainte principale est informative, pas juridique : la majorité des locataires concernés ne sait ni que son loyer est illégal, ni que la procédure de recours existe.
+
+Vérifier son loyer + modèle LRAR gratuit :
+https://bailleurverif.fr/loyer-legal-paris.html
+
+#EncadrementLoyer #DroitDesLocataires #Immobilier #DataGouvFr #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-25T16:36Z
 
 **Signal source** : sub-judilibre-enrich.jsonl (2026-05-19) — 3 templates LRAR enrichis avec 9 décisions Cour de cassation, 3ème chambre civile (DPE invalide +3, dépôt de garantie non restitué +3, loyer abusif +2→total 3), extraites via API Judilibre (données.justice.gouv.fr CC-BY-4.0)
