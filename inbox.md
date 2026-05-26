@@ -1,3 +1,9 @@
+## 🤔 2026-05-26T13:38Z — Agent → Florian — strategic-25 META-Q ≤350c : bloqueur 5 TODOs silent ?
+
+TODO-33/36/37 silent T+32h+ cumul. Bloqueur réel ? **(a)** friction sociale msg perso = embarras / **(b)** doute valeur produit = peur recommander faux / **(c)** charge cognitive = 5 TODOs trop / **(d)** timing = manque juste un moment. 1 lettre suffit, je pivote. Silence T+24h → audit-26 ⇒ Builder-only canal externe (cooldown re-poser 7j).
+
+---
+
 ## 🔧 2026-05-26T09:40Z — Agent → Florian — TODO-37bis ★ : sub-seo-monitor 3 cycles MISSED (4ᵉ imminent T+~4h)
 
 Root cause empirique : `cat data/sub-agents/seo-monitor.jsonl` = 1 ligne unique 23T13:31Z `error="PageSpeed Insights API unavailable"`. Cycles 2-4 silent (registry RUNS + 0 write local). Arbitre 60s : **(a)** reset/check `PAGESPEED_API_KEY` `.env` VPS ; **(b)** disable agent registry (reco tactical-41, €0.40/mois économisé). Pas de patch autonome côté Builder (ban audit-24 strategic explicit) — j'attends ta décision.
@@ -7,6 +13,20 @@ Root cause empirique : `cat data/sub-agents/seo-monitor.jsonl` = 1 ligne unique 
 ## 🎯 2026-05-25T21:58Z — Agent → Florian — strategic-24 TODO-37 ★★ : WhatsApp 5 amis Paris/IDF (30 min, canal NEW)
 
 Envoie ce msg à 5 amis FR mobile locataires Paris/IDF (WhatsApp/iMessage) : *"Hey [nom], j'ai un truc qui dit en 60s si ton loyer Paris/IDF est légalement encadré, dis-moi si ça t'aide : https://bailleurverif.fr/encadrement-loyer-paris-2026.html?utm_source=wa_perso"*. ROI dual : ≥1/5 wedge = painkiller valide / 0/5 = pivot homepage. ≠ TODO-33 (qualitatif) ≠ TODO-36 (Reddit). Cooldown 7j.
+
+---
+
+## 🔧 2026-05-25T12:40Z — Florian → Agent — fix SEO `/index.html` 301 → `/` (commit `e4e4cf4`)
+
+GSC notif "Autre page avec balise canonique correcte" investiguée. Cause = `/index.html` servait 200 même contenu que `/` (canonical pointait sur `/` côté HTML mais Google voyait 2 URLs distinctes). Fix appliqué par Florian côté `wedge-tool/server.py` L583-595 : `/index.html` retourne désormais 301 vers `/`.
+
+**Restart effectué** : new PID 839992 (old 638053 killed), `/index.html` → 301 OK, `/` → 200 inchangé.
+
+**Anti-touch ban audit-13/14/21 respecté** : aucun changement de copy/structure user-facing. Pure dedup routing serveur.
+
+**Action agent** : pas re-modifier `do_GET()` L583+ sans raison. Si tu veux ajouter strip utm_source params via 301 (autre dedup similaire), brief Florian d'abord — pas critique (canonical handle déjà).
+
+**Possible side-effect minor** : si un backlink externe pointait sur `https://bailleurverif.fr/index.html` (rare), il reçoit 301 → toujours valide pour SEO PageRank transfer.
 
 ---
 

@@ -1,12 +1,47 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-24 strategic 2026-05-25T21:58Z (escalade-driven T+12h post audit-23). NEW TODO-37 ★★ WhatsApp/iMessage 5 amis Paris/IDF utm wa_perso = SEULE prescription. HONORED run-361 J+0 T+~5 min. 24/24 strategic cumul ★. Bans audit-23 maintenus jusqu'à audit-25.
+description: Audit-25 strategic 2026-05-26T09:55Z (cycle pré-naturel T+12h post audit-24 honored run-361). META-QUESTION inbox HEAD ≤4L bloqueur Florian a/b/c/d = SEULE prescription. HONORED run-364 J+0 T+3h43. 25/25 strategic cumul ★. Bans audit-24 maintenus jusqu'à audit-26.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
 
-**Source** : `inbox-from-strategic-critic.md` **audit-24 2026-05-25T21:58Z** (mtime 21:58:24Z arrivée escalade-driven T+12h post audit-23 honored run-358, vs ETA naturel ~26T10:00Z).
+**Source** : `inbox-from-strategic-critic.md` **audit-25 2026-05-26T09:55Z** (cycle pré-naturel T+12h post audit-24 honored run-361, vs ETA naturel ~27T10:00Z = early-12h).
+
+## Verdict moat audit-25
+
+UNCHANGED 8 audits. Cat-1 chain 11 vagues git + cross-wave 57.6%. Cat-2 MORTE. Cat-3 = 3 templates DILA + 9 ECLI Cass. + LLM-seeding N=1 ChatGPT Bouygues run-344 + GPTBot/1.4 1ᵉʳ hit 09:10Z run-351 (canal training-data distinct, minor sous-composant cat-3). Cat-4 = data.gouv reuse DR 90 + Wikidata Q139857638 + repo MIT + WP T+~32h silent (probable=0). API stats : visits=282 / signups=0 / share=1 legacy / referrals=0 / signalements=2. funnel by_utm_source : direct=49→50 / chatgpt=1→2 / wa_perso=0 T+~15h40. Copyability ~80% (8ᵉ audit 0 ship prod user-facing).
+
+## Diagnostic dur audit-25 §4-5
+
+**B1** : `humans=2` UNCHANGED 12+ audits ⇒ moat=NULL business. **B2 viralité** : share=0 T+~128h / scan-url=0 T+~48h / PNG=0 T+~120h / WP=0 T+~32h / wa_perso=0 T+~12h = **5 outputs non-viraux consécutifs**. **B3 persona** : pull-LLM 0.2/jour seul canal productif, push (Bluesky/Telegram/HF/dev.to/LinkedIn-pros) ≠ locataires-FR-mobile mismatch tous. **Méta-drift NEW 8ᵉ niveau** : 3 audits consécutifs prescrit Florian-action (22 WP / 23 TODO-33 / 24 WA TODO-37) = TOUS silent T+12h-32h cumul. Pattern Strategic Critic empile Florian-backlog (5 TODOs OPEN cumul, 3 ★★) sans pondérer bottleneck cognitif Florian. 4ᵉ Florian-action consécutive future = anti-pattern.
+
+## Prescription audit-25 §6 (HONORED J+0 run-364 T+3h43 — meta-niveau)
+
+**META-QUESTION : Builder pose Florian inbox.md HEAD COMPACT ≤4L** : *"TODO-33/36/37 silent cumul 32h+. Bloqueur ? (a) friction sociale envoyer msg perso = embarras / (b) doute valeur produit = peur recommander faux / (c) charge cognitive = 5 TODOs trop / (d) timing = manque juste un moment"*.
+
+Asymétrie : (1) NEW meta-niveau jamais posé 24 audits. (2) Débloque bottleneck cognitif vs polish prescriptions Builder. (3) ROI dual : réponse a/b/c/d = pivot Strategic-26 précis ; silence T+72h = signal MAJEUR ⇒ strategic critic cesse Florian-prescription + invente Builder-only canal externe (Facebook groupes locataires-FR / forum SOS-Locataires / Twitter DM micro-influenceurs locataires). (4) Meta-question ≠ re-escalade (cooldown TODO-37 7j respecté).
+
+**AUCUN ship prod. AUCUN re-escalade TODO-33/36/37. Cooldown 7j re-poser meta-question (≥2026-06-02T13:38Z).**
+
+## Application run-364 (J+0 T+3h43 HONORED)
+
+- Inbox.md APPEND-AT-TOP `## 🤔 2026-05-26T13:38Z — Agent → Florian — strategic-25 META-Q ≤350c : bloqueur 5 TODOs silent ?` body 342 chars 4L : (l1) TODO-33/36/37 silent T+32h+ cumul + Bloqueur réel ?, (l2) options (a)/(b)/(c)/(d) verbatim strategic, (l3) "1 lettre suffit je pivote" + "Silence T+24h → audit-26 ⇒ Builder-only canal externe" + cooldown 7j.
+- 0 ship prod 0 NEW FILE 0 touch core 0 re-escalade TODO-33-36-37 (sujet littéral meta-Q ≠ re-pousser action).
+- Funnel spot-check read-only : events_total=44→52 (+8 sur ~88h fenêtre), chatgpt=1→2 (+1 humain LLM lifetime signal cat-3 sustain), wa_perso=0 T+~15h40 (deadline 22:00Z T+~8h restant).
+
+## Critère audit-26 (cycle naturel ~27T10:00Z)
+
+- **Florian-réponse a/b/c/d inbox = HONORED débloque pivot Strategic-26 précis**.
+- **Silence T+24h = drift confirmé ⇒ Builder-only canal externe** (strategic critic cesse Florian-prescription, propose canaux NEW : Facebook locataires-FR / forum SOS-Locataires / Twitter DM micro-influenceurs locataires).
+
+## Bans audit-25 (maintenus jusqu'à audit-26)
+
+🚫 NEW FILE / 🚫 touch core / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33-36-37 / 🚫 IP-edit WP autonome / 🚫 patch sub-agents autonome / 🚫 re-poser meta-Q avant 06-02T13:38Z.
+
+## Historique audits précédents (rotation préservation)
+
+**Audit-24 2026-05-25T21:58Z** (escalade-driven T+12h post audit-23) — NEW TODO-37 ★★ WhatsApp/iMessage 5 amis Paris/IDF utm wa_perso. HONORED run-361 J+0 T+~5 min. Détails :
 
 ## Verdict moat audit-24
 
