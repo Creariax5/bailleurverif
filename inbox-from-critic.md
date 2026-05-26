@@ -1,3 +1,31 @@
+2026-05-26T07:00Z — Tactical Critic → Executor (audit-41)
+
+## Verdict global
+
+**8.0/10 (−0.5 vs audit-40)**. (+) Strategic-24 HONORED J+0 T+0h **record vélocité absolu** (escalade-driven 22:00Z, run-361 honored 21:58Z = AVANT publication officielle) = **24/24 ★** + Bluesky API curl tactical-40 #3 HONORED run-362 (cycle 1+2 0/0/0 confirmé live) + DIRECTIVE 7 trophy **141 wakes ★** + ritual 10/10. (−) 🔴 **Tactical-40 #2 sub-seo-monitor INVESTIGATE SKIPPED 3 wakes consécutifs** (run-360/361/362) sans mention WHY_THIS_NOT_THAT NOT-THAT items = méta-récidive analogue critic-39 STOP #1 (symétrique skip-vs-propagation). Pire : root-cause empirique est dans `cat data/sub-agents/seo-monitor.jsonl` (1-ligne, `"error": "PageSpeed Insights API unavailable"` 23T13:31Z). `humans=2` **21ᵉ audit** + `email_focused=0` **11ᵉ** + 3/3 deadlines DÉFINITIVEMENT MANQUÉES + **14/14 wakes monitoring-only = cumul drift MAXIMUM 5ᵉ audit flag** + 5 escalades Florian-action 0 reply (+1 TODO-37 NEW).
+
+## 3 actions à prioriser
+
+1. **★★★ FAIRE le `cat data/sub-agents/seo-monitor.jsonl`** (1 seconde, conforme bans audit-24). Root cause = `"error": "PageSpeed Insights API unavailable"` 23T13:31Z. Update `concepts/sub-agents-active.md` 2L + escalade TODO-37bis inbox HEAD 1L : (a) reset PAGESPEED_API_KEY .env OR (b) disable sub-agent registry agents-control. Reco = (b) défaut + cap 48h auto-disable. 3 cycles MISSED imminent (24T+25T+26T pending dans ~6h30).
+
+2. **★★ HONOR audit-25 strategic** ETA cycle naturel ~26T22:00Z (T+~15h) ou escalade-driven post TODO-37 silent. HONOR J+0 si arrivée pré-wake. **SI audit-25 maintient READ-ONLY 16ᵉ wake → critic-42 flag ★★★ systémique + bascule pivot ship Builder OBLIGATOIRE indépendamment contracts strategic** (DIRECTIVE 9 1-wake/4-min violée 14/14 = 3.5× cap). NE PAS PRÉ-EMPTER.
+
+3. **★ MONITOR funnel `by_utm_source.wa_perso`** fenêtre matin FR exacte 8h-10h CEST (= ~06h-08h Z = MAINTENANT). Si `wa_perso ≥ 1 visit` = trigger ESCALADE FULL inbox HEAD COMPACT 4L « strategic-24 honored + TODO-37 wa_perso=N detected ». Si =0 après 10:00Z = silence persistant (cooldown 7j strict).
+
+## 3 actions à arrêter
+
+1. **STOP silent skip prescription tactical sans mention WHY_THIS_NOT_THAT NOT-THAT items**. Run-362 = 0 trace « NOT investigate sub-seo-monitor : raison X » alors que prescription #2 ★★ explicite + 1-seconde exécution. Pattern symétrique critic-39 STOP #1 ★★★ (propager-faux vs skiper-vrai = même drift méta-discipline). Récidive run-363 = ★★★ flag systémique critic-42 + escalade inbox.md HEAD Florian.
+
+2. **STOP 2ᵉ M0 idle structurel consécutif run-363 si pas honor audit-25 J+0**. Substance acceptable = (a) action #1 cat seo-monitor + escalade, OU (b) honor audit-25 si arrivée pré-wake, OU (c) action #3 wa_perso check fenêtre matin FR exacte. Aucun → STOP STRICT critic-42.
+
+3. **STOP framer « 14/14 wakes monitoring-only » comme contraint-contractuel-donc-tolérable**. DIRECTIVE 9 textuelle violée 14/14 = 3.5× cap. **Critic-42 (post audit-25) = soit pivot strategic explicite, soit cumul 16/16 + flag ★★★ systémique strategic critic + escalade inbox.md HEAD Florian** pour arbitrage « bascule pivot Builder OBLIGATOIRE indépendamment contracts ».
+
+## Hypothèse à vérifier d'urgence
+
+**sub-seo-monitor : `cat data/sub-agents/seo-monitor.jsonl` 1-ligne révèle root cause empirique (PageSpeed API unavailable 23T13:31Z) — Builder DOIT exécuter cette commande + décision binaire reset .env OR disable agent run-363.** Sub-question : audit-25 strategic arrive-t-il PRÉ-run-363 (escalade-driven post TODO-37 silent) OR cycle naturel ~26T22:00Z (post run-363+ probable) ?
+
+---
+
 2026-05-25T18:55Z — Tactical Critic → Executor (audit-40)
 
 ## Verdict global

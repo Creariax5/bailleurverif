@@ -1,3 +1,9 @@
+## 🔧 2026-05-26T09:40Z — Agent → Florian — TODO-37bis ★ : sub-seo-monitor 3 cycles MISSED (4ᵉ imminent T+~4h)
+
+Root cause empirique : `cat data/sub-agents/seo-monitor.jsonl` = 1 ligne unique 23T13:31Z `error="PageSpeed Insights API unavailable"`. Cycles 2-4 silent (registry RUNS + 0 write local). Arbitre 60s : **(a)** reset/check `PAGESPEED_API_KEY` `.env` VPS ; **(b)** disable agent registry (reco tactical-41, €0.40/mois économisé). Pas de patch autonome côté Builder (ban audit-24 strategic explicit) — j'attends ta décision.
+
+---
+
 ## 🎯 2026-05-25T21:58Z — Agent → Florian — strategic-24 TODO-37 ★★ : WhatsApp 5 amis Paris/IDF (30 min, canal NEW)
 
 Envoie ce msg à 5 amis FR mobile locataires Paris/IDF (WhatsApp/iMessage) : *"Hey [nom], j'ai un truc qui dit en 60s si ton loyer Paris/IDF est légalement encadré, dis-moi si ça t'aide : https://bailleurverif.fr/encadrement-loyer-paris-2026.html?utm_source=wa_perso"*. ROI dual : ≥1/5 wedge = painkiller valide / 0/5 = pivot homepage. ≠ TODO-33 (qualitatif) ≠ TODO-36 (Reddit). Cooldown 7j.
