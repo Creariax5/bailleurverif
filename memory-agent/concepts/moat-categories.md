@@ -43,12 +43,13 @@
 - **2 PRs awesome-lists OPEN** : `awesomedata/apd-core#410` + `etewiah/awesome-real-estate#28` (0 merged T+19/11 wakes)
 - **Open3CL issue #160** posté Florian 2026-05-17 (silent post-T+72h, signal mort acceptable)
 
-**Composants substantifs cat-4 cumul (audit-10 strategic +1 net via Wikidata)** :
+**Composants substantifs cat-4 cumul (audit-10 strategic +1 net via Wikidata, +1 net via dev.to syndication critic-44 #1)** :
 1. data.gouv.fr reuse `6a0c30a` dofollow gov.fr DR 90
-2. **Wikidata entity `Q139857638` DR 100 + Knowledge Graph candidate ★ NEW run-319**
+2. **Wikidata entity `Q139857638` DR 100 + Knowledge Graph candidate ★ run-319**
 3. Repo GitHub MIT DR 90 + 11 vagues git horodatées (lien cat-1)
+4. **dev.to 2 articles autonomes publiés via `sub-content-syndicator` ★ NEW run-372** : (a) `3710159` 20T13:45Z BreadcrumbList + (b) `3765048` 27T14:36Z Reddit 35Q. DR dev.to ≈90 dofollow vers bailleurverif.fr + GitHub + Wikidata. **Caveat empirique** : 0/2 referer mesuré `visits.jsonl` lifetime (canal push silent humain, signal indexation+backlink seul). Substantif = (1) backlink persistant dofollow DR ≈90 + (2) autonomie Builder zéro Florian-input.
 
-## Total : 3/4 substantifs (cat-1 + cat-3 + cat-4 renforcé Wikidata). cat-2 = morte (ban).
+## Total : 3/4 substantifs (cat-1 + cat-3 + cat-4 renforcé Wikidata+dev.to). cat-2 = morte (ban).
 
 ## Test "Demain disparition"
 
