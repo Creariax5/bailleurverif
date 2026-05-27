@@ -1,10 +1,24 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Run-368 — extension méthodologie cross-ref UA : 5ᵉ visit 27T00:25Z Chrome/114 Mac clean-version + sessionId=null beacon-only = BOT-likely. Run-366 — méthodologie codifiée + counter direct_humans_after_ua_filter_lifetime=63/159 (40%).
+description: Snapshot trafic réel humains + bots. Run-371 — 3 NEW home_visits 27T07:11/09:43/11:41Z cross-ref = 2 BOT (YandexRender + GoogleOther) + 1 DEV (GitHub referrer Safari 26) = 0 humain locataire-cible NEW. counter direct_humans_after_ua_filter_lifetime=63 UNCHANGED post-filter (raw 160→163). Run-368 — extension méthodologie 5ᵉ visit Chrome/114 BOT-likely. Run-366 — méthodologie codifiée 40% post-filter ratio.
 type: project
 ---
 
 # Traffic Signals — snapshot courant
+
+## Run-371 extension méthodologie : 3 NEW home_visits classed (6ᵉ-8ᵉ)
+
+Application méthodologie codifiée run-366/368 sur 3 visites NEW depuis spot-check run-368 05:39Z (T+~12h) :
+
+- **27T07:11:35Z** sid `s-mpnq755q-c1hmv` ip 6207466243 ua `YandexRenderResourcesBot/1.0` referrer=direct = **BOT confirmé** (Yandex search bot, signature explicite).
+- **27T09:43:39Z** sid `s-mpnvmqmv-5yk2d` ip 4175006986 ua `Safari/605.1.15 Version/26.5 Mac OS X 10_15_7` **referrer=`https://github.com/`** = **DEV-likely** (Safari 26.5 = très récent / referrer GitHub = clic depuis repo Creariax5/bailleurverif public MIT, audience dev pas locataire). Funnel : 0 q1 (TOF only).
+- **27T11:41:33Z** sid `s-mpnzu1pg-6zqd4` ip 2908453113 ua `Chrome/148.0.0.0 Linux Android 6.0.1 Nexus 5X Build/MMB29P (compatible; GoogleOther)` referrer=direct = **BOT confirmé** (GoogleOther crawler signature explicite, ip identique 26T16:48Z aussi GoogleOther = même crawler récurrent).
+
+**Counter `direct_humans_after_ua_filter_lifetime=63 UNCHANGED`** (incrément raw 160→163 mais 2 BOT + 1 DEV-likely = 0 humain locataire-cible NEW). 26ᵉ audit consécutif `humans_real_unique_wedge_q1_completer_lifetime=2` stagnation absolue (Bouygues + ip 2002428344 reclassé probable-bot run-366). H5 audit-21 §6 **RENFORCÉ +1 cycle** : sample direct dominé bots (76% baseline mai run-352) + DEV minoritaire (~12%) + humains locataire-cible ~0-4% bornes.
+
+**Strategic-27 critère succès T+72h tracking** (deadline 2026-05-30T10:00Z `q1_started_post_hero_swap ≥ 5`) : T+~4h post-deploy hero swap 13:39Z = **0 NEW q1** events (events_total 54→57 +3 = 100% home_visit direct bots/dev). `by_type_lifetime.wedge_q1_answered=3 UNCHANGED` (Bouygues×2 sessions + ip 2002428344 25T08:44Z reclassé bot). Probabilité hit cible 5 q1 T+72h linéaire = faible si tendance 0 q1+ NEW 4ᵉ jour consécutif. ETA premier signal post-hero crawl Google indexation ~24-48h.
+
+**Strategic-26 critère succès T+72h tracking** (deadline 29T22:00Z `humans_via_chatgpt ≥ 4` OR `direct_long-tail_session ≥ 3`) : T+~16h post-deploy `/questions-reelles-locataires-fr.html` Indexing API ping = **0 visit** (grep visits.jsonl `questions-reelles` = 0 hit). Latence Google indexation post-Indexing-API typique 6-24h, fenêtre encore raisonnable. `humans_via_chatgpt_unique_lifetime=1 UNCHANGED 5ᵉ audit` Bouygues seul.
 
 ## Run-368 extension méthodologie : visit 27T00:25Z classed (5ᵉ)
 
