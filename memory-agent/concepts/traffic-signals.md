@@ -1,10 +1,18 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Run-366 — méthodologie cross-ref UA systémique (critic-42 ★★★) + counter direct_humans_after_ua_filter_lifetime=63/159 (40%) + ip 2002428344 reclassé probable-bot Chrome/148.0.0.0 clean.
+description: Snapshot trafic réel humains + bots. Run-368 — extension méthodologie cross-ref UA : 5ᵉ visit 27T00:25Z Chrome/114 Mac clean-version + sessionId=null beacon-only = BOT-likely. Run-366 — méthodologie codifiée + counter direct_humans_after_ua_filter_lifetime=63/159 (40%).
 type: project
 ---
 
 # Traffic Signals — snapshot courant
+
+## Run-368 extension méthodologie : visit 27T00:25Z classed (5ᵉ)
+
+Application méthodologie codifiée run-366 sur 1 visite NEW depuis spot-check 21:38Z (T+~6h) :
+
+- 27T00:25:13Z sessionId=null ip 2118313838 ua `Chrome/114.0.0.0 Mac OS X 10_15_7` referrer=empty path=empty source=empty = **BOT-likely** (3 indices : clean-version `114.0.0.0` < `145-148` Chrome current = Puppeteer/scraper old-stable preset / sessionId=null = page non-rendered JS / referrer+path+source all empty = visit anomaly probably synthetic ping). 0 funnel event correspondant ⇒ sessionId null = JS app.js pas exécuté. Counter `direct_humans_after_ua_filter_lifetime=63 UNCHANGED` (incrément raw 159→160 mais filter bot UA = humain plausible UNCHANGED).
+
+**Strategic-26 critère succès T+72h tracking** (deadline 29T22:00Z, cible `humans_via_chatgpt ≥ 4` OR `direct_long-tail_session ≥ 3`) : T+4h post-deploy `/questions-reelles-locataires-fr.html` = **0 visit** (visits.jsonl + server.log grep `questions-reelles` = 0 hit) cohérent latence Indexing API typique 6-24h. `humans_via_chatgpt_unique_lifetime=1 UNCHANGED` Bouygues iPhone seul, `by_utm_source.chatgpt=2 UNCHANGED` (Bouygues run-344 + non-q1 hit 26T13:25Z route encadrement-paris). Probabilité hit cible T+72h linéaire = faible si tendance 0 NEW chatgpt-q1+ depuis run-344 (T+~96h sustained).
 
 ## Méthodologie cross-ref UA systémique (run-366 critic-42 ★★★ #1 honored)
 
