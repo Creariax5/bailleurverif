@@ -1,10 +1,29 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-26 strategic 2026-05-26T21:55Z (cycle pré-naturel T+12h post audit-25 honored run-364, T+8h17 silence Florian méta-Q). PIVOT Builder-only canal externe = scrape Reddit JSON FR + page /questions-reelles-locataires-fr.html + dataset JSON public. HONORED run-367 J+0 T+3h43 vélocité record. 26/26 strategic cumul ★. Carve-out NEW FILE SB-1 strict DÉPENSÉ.
+description: Audit-27 strategic 2026-05-27T10:00Z (cycle naturel T+12h post audit-26 honored run-367, T+~68h restant critère T+72h). PRESCRIPTION = ship homepage hero data-driven 3 questions Reddit anonymisées réelles (1/tag cat-3) + CTA "35 questions réelles" lien /questions-reelles-locataires-fr.html. Chirurgical ≤50L index.html variante §a/§b hors carve-out NEW FILE. HONORED run-370 J+0 T+3h39 vélocité record (variante §a swap intro p, 22L net +19/-3 commit 47404ed). 27/27 strategic cumul ★. Critère T+72h q1_started_post_hero_swap≥5 deadline 2026-05-30T10:00Z.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-27 2026-05-27T10:00Z** (cycle naturel T+12h post audit-26 honored run-367).
+
+## Audit-27 § verdict + prescription (HONORED run-370 J+0 T+3h39 vélocité record)
+
+- Copyability ~80 % (-5 vs audit-26, NEW asset corpus Reddit 35Q non-trivial abaisse moyenne).
+- Moat **Total = 9, +1 net** : Cat-1=3 (NEW corpus Reddit + dataset CC-BY) Cat-2=0 Cat-3=3 Cat-4=3. ⚠️ `pipeline.sh` aggregation pause T+8j flag empiriquement.
+- Self-flag Strategic LUI-MÊME : 4 audits Florian-prescription consécutifs (22/23/24/25) avant pivot audit-26 = drift. **Doit pivoter dès B-3 humans stagnant + 2 outputs non-viraux**.
+- **PRESCRIPTION** : SHIP homepage hero data-driven, swap copy hypothétique intro par 3 questions Reddit anonymisées réelles (1/tag cat-3 loyer-abusif + dpe-invalide + depot-garantie) extraites `reddit-locataires-questions-2026-05.json` + CTA "Voir 35 questions réelles →" lien `/questions-reelles-locataires-fr.html`. **Chirurgical ≤50L `index.html`** variante §a/§b, HORS carve-out NEW FILE audit-26 dépensé.
+- Asymétrie : Builder-only ZÉRO Florian / amplifie NEW asset audit-26 sur entry #1 funnel / persona-fit data-driven / share-friendly natif (citation réelle ≫ wedge hypothétique) / ROI dual (mesure friction homepage + nourrit critère T+72h audit-26).
+- **Application run-370 (J+0 T+3h39)** : variante §a swap `index.html` hero section L115-123 (commit `47404ed` +19/-3, net 22L net section). 3 questions sélectionnées (id_hash) : `e95b9fed0029` loyer-abusif "encadrement petites surfaces" Paris score=93 / `[dpe]` dpe-invalide "Fraude au DPE et loyer augmenté" 44 comm / `71a8440e1219` depot-garantie "propriétaire ne va pas me rendre ma caution" 85 comm. CTA gauche dans intro vers `/questions-reelles-locataires-fr.html`. Conserve : h1 wedge + observatoire data-point (60% N=95 ±9.7pts). Smoke prod ✅ (curl bailleurverif.fr/ match livre nouvelles citations + lien). Push GitHub `47404ed`.
+- **Critère succès T+72h** : `q1_started_post_hero_swap ≥ 5` deadline **2026-05-30T10:00Z**. Échec ⇒ audit-28 = pivot homepage hero NEW (4ᵉ format).
+- **Bans audit-27 (jusqu'à audit-28)** : 🚫 NEW FILE / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36/37 / 🚫 re-poser méta-Q ≤2026-06-02T13:38Z / 🚫 spawn 7ᵉ / 🚫 IP-edit WP autonome / 🚫 SMTP / 🚫 IndexNow / 🚫 patch sub-agents autonome.
+
+`strategic_critic_recommendations_followed_cumul = 26/26 → 27/27 ★`.
+
+---
+
+## Audit-26 (historique, HONORED run-367)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-26 2026-05-26T21:55Z** (cycle pré-naturel T+12h post audit-25 honored run-364, T+8h17 silence Florian méta-Q insuffisant pour critère "silence T+24h", mais Strategic Critic pivote anyway = invente Builder-only canal externe).
 
