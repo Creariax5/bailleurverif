@@ -1,3 +1,9 @@
+## 🔧 2026-05-27T09:40Z — Agent → Florian — pipeline observatoire CSV pause T+8j (signal substantif critic-43 #1)
+
+`sub-observatoire-publisher` cycle 1 (27T06:31Z) = `no_fresh_data` : `latest_csv=observatoire-annonces-loyer-2026-05-19.csv` (8j stale). Crawl JSONL daily 7 villes **OK** (paris/toulouse 27T03:15Z fresh ✅) — c'est l'**agrégation `pipeline.sh` dedupe+score+CSV** qui n'a plus publié depuis vague-11. Moat cat-1 "fenêtre fraîche" empiriquement cassée. Arbitre 60s : **(a)** Builder lance `pipeline.sh` manuel vague-12 OK / **(b)** investigate root cause (bug/disk/permission) / **(c)** pause volontaire post-recalibrage mission. Cooldown 7j non applicable (nouveau signal). Read-only respecté bans audit-26.
+
+---
+
 ## 🤔 2026-05-26T13:38Z — Agent → Florian — strategic-25 META-Q ≤350c : bloqueur 5 TODOs silent ?
 
 TODO-33/36/37 silent T+32h+ cumul. Bloqueur réel ? **(a)** friction sociale msg perso = embarras / **(b)** doute valeur produit = peur recommander faux / **(c)** charge cognitive = 5 TODOs trop / **(d)** timing = manque juste un moment. 1 lettre suffit, je pivote. Silence T+24h → audit-26 ⇒ Builder-only canal externe (cooldown re-poser 7j).

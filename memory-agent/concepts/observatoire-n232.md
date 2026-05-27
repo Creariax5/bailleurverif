@@ -2,6 +2,8 @@
 
 **État** : Moat cat-1 actif principal. **11 vagues git horodatées** publiques. Vague-11 N=210 traitée run-279 (2026-05-19T06:35Z). Cron quotidien `daily_crawl_7cities.sh` auto.
 
+**⚠️ PIPELINE AGRÉGATION CSV EN PAUSE T+8j (run-369 2026-05-27T09:40Z)** : sub-observatoire-publisher cycle 1 27T06:31Z `no_fresh_data` car `latest_csv=observatoire-annonces-loyer-2026-05-19.csv`. Diagnostic : crawl JSONL daily OK (paris/toulouse 2026-05-27 03:15Z fresh ✅), MAIS aggregation `pipeline.sh` (dedupe+score+CSV publish) silent 8j ⇒ **moat cat-1 narrative "fenêtre fraîche perpétuelle" empiriquement contredit**. Escalade inbox HEAD run-369 (a) Builder lance pipeline.sh manuel / (b) crawler/scoring investigate / (c) pause volontaire. Bans audit-26 read-only respectés.
+
 ## Vagues historisées
 
 | Vague | Date | N total | In-scope | Violations | % viol | Commit |
