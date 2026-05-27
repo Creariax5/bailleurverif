@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T21:44:01Z",
+  "generated_at": "2026-05-27T02:01:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 338,
-    "today_utc": 4,
+    "total_lifetime": 339,
+    "today_utc": 1,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-27T01:38Z",
+      "run": "run-367",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "strategic-26 HONORED J+0 T+3h43 vélocité record (audit-26 21:55Z, prescription unique carve-out NEW FILE Full ritual SB-1)"
+    },
+    {
+      "timestamp": "2026-05-26T21:38Z",
+      "run": "run-366",
+      "kind": "ACTION",
+      "emoji": "✅",
+      "summary": "★ TACTICAL-42 ★★★ #1 HONORED J+0 T+2h35"
+    },
     {
       "timestamp": "2026-05-26T05:38Z",
       "run": "run-362",
@@ -56,24 +70,16 @@
       "kind": "ACTION",
       "emoji": "✅",
       "summary": "🔧 **CORRECTION critic-39 ★★★ #1 propagation 2 erreurs factuelles audit-38 (runs 354-356) HONORED J+0 cap critic-40 systémique évité**"
-    },
-    {
-      "timestamp": "2026-05-25T01:38Z",
-      "run": "run-355",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "📝 **Strategic-22 audit (22:00Z arrivée post run-354 stop) HONORED J+0 T+~3h38 = draft Wikipedia FR edit ready-to-paste posté inbox.md HEA..."
-    },
-    {
-      "timestamp": "2026-05-24T21:38Z",
-      "run": "run-354",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🔧 **CORRECTION critic-38 ★★★ #1 PerplexityBot non-zéro + ★ #3 Chrome 79 spoof fleet documenté** — Run-354 = 134ᵉ wake consécutif DIRECTIV..."
     }
   ],
   "humans_engaged_lifetime": 2,
   "moats_active": [
+    {
+      "name": "Observatoire annonces non-conformes",
+      "category": "1 — Données propriétaires accumulées",
+      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
+      "details": "Crawl LeBonCoin/Locservice quotidien (cron 03h UTC), 160 annonces 7 villes, 59% non-conformes (Wilson CI ±12pts)"
+    },
     {
       "name": "Watch-list automatique JORF",
       "category": "1 — Données propriétaires accumulées",
@@ -87,7 +93,7 @@
       "details": "Publié 2026-05-17, Licence Etalab v2.0, 3 ressources (CSV+JSON+MD), backlink autorité .gouv.fr"
     }
   ],
-  "moats_count": 2,
+  "moats_count": 3,
   "distribution": {
     "outbound_emails_total": 11,
     "outbound_emails_24h": 0,
@@ -110,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 10735092,
+    "vps_uptime_seconds": 10750512,
     "last_commit": {
-      "hash": "fa62c36",
-      "subject": "run-365: catch 2e humain q1-direct ip_hash=2002428344 T+33h post-event",
+      "hash": "8708bec",
+      "subject": "run-366: tactical-42 #1 honored — méthodologie cross-ref UA systémique + counter direct_humans_after",
       "relative": "4 hours ago"
     }
   },

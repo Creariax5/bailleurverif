@@ -1,93 +1,74 @@
 {
-  "generated_at": "2026-05-26T21:44:01Z",
+  "generated_at": "2026-05-27T02:00:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 5139,
-    "requests_24h": 1040,
-    "bot_hits_lifetime": 1197,
-    "bot_hits_24h": 457,
-    "bot_hits_1h": 7,
-    "human_hits_24h": 583
+    "requests_lifetime": 5161,
+    "requests_24h": 983,
+    "bot_hits_lifetime": 1208,
+    "bot_hits_24h": 409,
+    "bot_hits_1h": 3,
+    "human_hits_24h": 574
   },
   "bots_by_type_lifetime": {
     "SemrushBot": 212,
     "generic-bot": 191,
-    "OAI-SearchBot": 138,
-    "ClaudeBot": 114,
+    "OAI-SearchBot": 141,
+    "ClaudeBot": 118,
     "GPTBot": 107,
-    "Bingbot": 82,
-    "Googlebot": 61,
+    "Bingbot": 90,
+    "Googlebot": 58,
     "PerplexityBot": 43,
     "python-script": 42,
     "AhrefsBot": 38,
     "ByteSpider": 37,
     "FacebookExt": 33,
     "HeadlessChrome": 30,
-    "YandexBot": 26,
+    "YandexBot": 25,
     "Go-HTTP": 19,
     "MJ12bot": 10,
     "curl/wget": 9,
     "BaiduSpider": 5
   },
   "bots_by_type_24h": {
-    "SemrushBot": 210,
-    "GPTBot": 83,
-    "OAI-SearchBot": 35,
+    "SemrushBot": 166,
+    "GPTBot": 77,
+    "OAI-SearchBot": 37,
     "python-script": 30,
-    "Bingbot": 23,
+    "Bingbot": 29,
     "ClaudeBot": 22,
     "YandexBot": 12,
-    "Googlebot": 10,
     "generic-bot": 9,
-    "MJ12bot": 8,
+    "Googlebot": 8,
+    "MJ12bot": 6,
     "Go-HTTP": 5,
-    "curl/wget": 4,
     "FacebookExt": 2,
     "AhrefsBot": 2,
+    "curl/wget": 2,
     "HeadlessChrome": 1
   },
   "bot_last_seen": {
     "SemrushBot": "2026-05-26T12:35:30+00:00",
     "Googlebot": "2026-05-26T21:22:05+00:00",
     "python-script": "2026-05-21T09:11:22+00:00",
-    "OAI-SearchBot": "2026-05-26T21:39:11+00:00",
-    "Bingbot": "2026-05-26T21:36:51+00:00",
-    "ClaudeBot": "2026-05-26T20:54:47+00:00",
+    "OAI-SearchBot": "2026-05-27T01:24:27+00:00",
+    "Bingbot": "2026-05-27T00:12:28+00:00",
+    "ClaudeBot": "2026-05-27T01:01:25+00:00",
     "HeadlessChrome": "2026-05-21T19:30:43+00:00",
     "FacebookExt": "2026-05-26T16:03:19+00:00",
     "MJ12bot": "2026-05-26T19:47:54+00:00",
     "AhrefsBot": "2026-05-22T00:50:28+00:00",
-    "YandexBot": "2026-05-26T20:03:07+00:00",
     "curl/wget": "2026-05-26T21:35:57+00:00",
     "GPTBot": "2026-05-26T11:22:23+00:00",
     "ByteSpider": "2026-05-26T12:26:10+00:00",
     "Go-HTTP": "2026-05-26T17:03:11+00:00",
     "BaiduSpider": "2026-05-20T17:37:32+00:00",
     "generic-bot": "2026-05-26T04:13:45+00:00",
-    "PerplexityBot": "2026-05-25T18:25:15+00:00"
+    "PerplexityBot": "2026-05-25T18:25:15+00:00",
+    "YandexBot": "2026-05-26T20:03:07+00:00"
   },
   "last_googlebot": "2026-05-26T21:22:05+00:00",
-  "last_bingbot": "2026-05-26T21:36:51+00:00",
+  "last_bingbot": "2026-05-27T00:12:28+00:00",
   "chart_7days": [
-    {
-      "day": "2026-05-20",
-      "total": 96,
-      "by_type": {
-        "Googlebot": 18,
-        "AhrefsBot": 9,
-        "curl/wget": 3,
-        "Bingbot": 6,
-        "GPTBot": 11,
-        "ByteSpider": 1,
-        "HeadlessChrome": 7,
-        "Go-HTTP": 8,
-        "BaiduSpider": 5,
-        "FacebookExt": 5,
-        "generic-bot": 1,
-        "ClaudeBot": 16,
-        "python-script": 6
-      }
-    },
     {
       "day": "2026-05-21",
       "total": 116,
@@ -180,14 +161,14 @@
     },
     {
       "day": "2026-05-26",
-      "total": 437,
+      "total": 448,
       "by_type": {
         "SemrushBot": 200,
         "Googlebot": 9,
         "python-script": 30,
-        "OAI-SearchBot": 34,
-        "Bingbot": 21,
-        "ClaudeBot": 20,
+        "OAI-SearchBot": 36,
+        "Bingbot": 28,
+        "ClaudeBot": 22,
         "HeadlessChrome": 1,
         "FacebookExt": 2,
         "MJ12bot": 6,
@@ -199,29 +180,18 @@
         "curl/wget": 2,
         "Go-HTTP": 5
       }
+    },
+    {
+      "day": "2026-05-27",
+      "total": 4,
+      "by_type": {
+        "Bingbot": 1,
+        "ClaudeBot": 2,
+        "OAI-SearchBot": 1
+      }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "22",
-      "hits": 7
-    },
-    {
-      "hour": "23",
-      "hits": 18
-    },
-    {
-      "hour": "00",
-      "hits": 10
-    },
-    {
-      "hour": "01",
-      "hits": 9
-    },
-    {
-      "hour": "02",
-      "hits": 8
-    },
     {
       "hour": "03",
       "hits": 15
@@ -296,23 +266,43 @@
     },
     {
       "hour": "21",
-      "hits": 9
+      "hits": 20
+    },
+    {
+      "hour": "22",
+      "hits": 0
+    },
+    {
+      "hour": "23",
+      "hits": 12
+    },
+    {
+      "hour": "00",
+      "hits": 11
+    },
+    {
+      "hour": "01",
+      "hits": 1
+    },
+    {
+      "hour": "02",
+      "hits": 8
     }
   ],
   "top_bot_paths_24h": {
-    "/": 70,
-    "/robots.txt": 45,
+    "/": 66,
+    "/robots.txt": 40,
     "/sitemap.xml": 13,
-    "/encadrement-loyer-paris-2026.html": 8,
+    "/encadrement-loyer-paris-2026.html": 10,
     "/data/encadrement-loyer-france-2026.json": 5,
-    "/scan-url.html": 4,
-    "/data/README.md": 4,
-    "/static/app.js": 4,
-    "/static/share-card.js": 4,
-    "/data/encadrement-loyer-france-2026.csv": 4
+    "/data/encadrement-loyer-france-2026.csv": 4,
+    "/scan-url.html": 3,
+    "/data/README.md": 3,
+    "/aides-financieres-bailleur-2026.html": 3,
+    "/favicon.svg": 3
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 50,
+    "/robots.txt": 47,
     "/favicon.ico": 3,
     "/sitemap.xml": 2,
     "/logo.png": 1,
@@ -323,21 +313,21 @@
     "/encadrement-loyer-echirolles-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 41,
-    "/robots.txt": 13,
+    "/": 34,
+    "/robots.txt": 21,
     "/colocation-2026.html": 7,
     "/guide-colocataire-2026.html": 7,
-    "/css/tailwind-runtime.js": 5,
-    "/observatoire-annonces-loyer.html": 4,
-    "/preavis-bail-lyon.html": 4,
-    "/api/visit": 4,
-    "/data/encadrement-loyer-france-2026.csv": 4,
-    "//xmlrpc.php?rsd": 4
+    "/css/tailwind-runtime.js": 6,
+    "/data/encadrement-loyer-france-2026.csv": 5,
+    "//xmlrpc.php?rsd": 5,
+    "//wp/wp-includes/wlwmanifest.xml": 5,
+    "//shop/wp-includes/wlwmanifest.xml": 5,
+    "//test/wp-includes/wlwmanifest.xml": 5
   },
   "status_codes_24h": {
-    "200": 992,
-    "404": 44,
-    "400": 1,
+    "200": 925,
+    "404": 53,
+    "400": 2,
     "501": 3
   },
   "funnel": {

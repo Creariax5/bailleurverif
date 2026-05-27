@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Questions réelles des locataires français (corpus Reddit anonymisé) | BailleurVérif</title>
+<meta name="description" content="35 questions concrètes posées par des locataires sur Reddit FR — loyer abusif, DPE F/G, caution non restituée — chacune avec le recours légal applicable. Corpus public anonymisé, CC-BY 4.0." />
+<link rel="canonical" href="https://bailleurverif.fr/questions-reelles-locataires-fr.html" />
+<meta property="og:title" content="Questions réelles des locataires français — corpus Reddit anonymisé" />
+<meta property="og:description" content="35 questions concrètes de locataires français classées par recours légal applicable. Loyer abusif, DPE F/G, caution. Dataset CC-BY 4.0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bailleurverif.fr/questions-reelles-locataires-fr.html" />
+<meta property="og:site_name" content="BailleurVérif" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:image" content="https://bailleurverif.fr/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Questions réelles locataires FR — corpus Reddit anonymisé" />
+<meta name="twitter:description" content="35 questions classées par recours légal applicable. Dataset CC-BY 4.0." />
+<meta name="twitter:image" content="https://bailleurverif.fr/og-image.png" />
+<link rel="alternate" type="application/atom+xml" title="BailleurVérif — Articles" href="/atom.xml" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="theme-color" content="#ffffff" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://bailleurverif.fr/questions-reelles-locataires-fr.html#webpage", "url": "https://bailleurverif.fr/questions-reelles-locataires-fr.html", "name": "Questions réelles posées par les locataires en France (corpus Reddit anonymisé) | BailleurVérif", "description": "Corpus public de questions concrètes posées par les locataires sur Reddit FR (r/france, r/immobilier, r/AskFrance…), classées par recours légal applicable. Source ouverte, scrapping anonyme.", "inLanguage": "fr-FR", "datePublished": "2026-05-27", "dateModified": "2026-05-27", "breadcrumb": {"@id": "https://bailleurverif.fr/questions-reelles-locataires-fr.html#breadcrumbs"}, "isPartOf": {"@id": "https://bailleurverif.fr/#website"}}, {"@type": "BreadcrumbList", "@id": "https://bailleurverif.fr/questions-reelles-locataires-fr.html#breadcrumbs", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://bailleurverif.fr"}, {"@type": "ListItem", "position": 2, "name": "Observatoire", "item": "https://bailleurverif.fr/observatoire-annonces-loyer.html"}, {"@type": "ListItem", "position": 3, "name": "Questions réelles locataires", "item": "https://bailleurverif.fr/questions-reelles-locataires-fr.html"}]}, {"@type": "FAQPage", "@id": "https://bailleurverif.fr/questions-reelles-locataires-fr.html#faq", "mainEntity": [{"@type": "Question", "name": "Mon propriétaire ne me rend pas ma caution sous 2 mois, que faire ?", "acceptedAnswer": {"@type": "Answer", "text": "Le délai légal de restitution du dépôt de garantie est de 2 mois si l'état des lieux de sortie révèle des dégradations imputables au locataire, 1 mois sinon (article 22 loi du 6 juillet 1989). Au-delà, le locataire peut envoyer une LRAR au bailleur, puis saisir gratuitement la commission départementale de conciliation, puis le juge des contentieux de la protection. Pénalité 10 % du loyer mensuel par mois de retard entamé est due de plein droit."}}, {"@type": "Question", "name": "Mon loyer dépasse le plafond d'encadrement Paris, ai-je un recours ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. En zone d'encadrement actif (Paris, Lyon-Villeurbanne, Lille, Bordeaux, Montpellier, Plaine Commune, Est Ensemble, Pays Basque), le loyer hors charges ne peut dépasser le loyer de référence majoré (loi 89-462 article 25-9). Le locataire peut envoyer une LRAR demandant baisse + remboursement trop-perçu jusqu'à 3 ans en arrière (article 7-1), puis saisir la commission de conciliation, puis le juge. Le bailleur s'expose à une amende préfectorale 5 000 €/15 000 € (SCI). L'observatoire BailleurVérif mesure 50 % des annonces Paris en violation (N=30, mai 2026)."}}, {"@type": "Question", "name": "Mon logement est classé DPE F ou G, puis-je sortir du bail ?", "acceptedAnswer": {"@type": "Answer", "text": "Depuis le 1er janvier 2025, les logements classés G sont interdits à la location nouvelle (article L173-2 CCH). Les classés F le seront au 1er janvier 2028. Pour un bail en cours, le bailleur est tenu à une obligation de décence énergétique : le locataire peut exiger des travaux via LRAR, puis saisir le juge pour réduction de loyer ou résiliation du bail aux torts du bailleur. Une simple absence ou un DPE manifestement erroné est sanctionnable par l'amende administrative DGCCRF jusqu'à 15 000 €."}}]}, {"@type": "Dataset", "@id": "https://bailleurverif.fr/questions-reelles-locataires-fr.html#dataset", "name": "Corpus questions locataires-FR anonymisé (Reddit, mai 2026)", "description": "35 questions concrètes posées par des locataires français sur Reddit (r/france, r/immobilier, r/AskFrance, r/paris), anonymisées (usernames strippés, URLs/emails retirés, post_id sha256-truncated). Classées par recours légal applicable (loyer-abusif / dpe-invalide / depot-garantie-non-restitue).", "url": "https://bailleurverif.fr/data/reddit-locataires-questions-2026-05.json", "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@id": "https://bailleurverif.fr/#organization"}, "isAccessibleForFree": true, "datePublished": "2026-05-27", "variableMeasured": [{"@type": "PropertyValue", "name": "loyer-abusif questions", "value": 26}, {"@type": "PropertyValue", "name": "dpe-invalide questions", "value": 6}, {"@type": "PropertyValue", "name": "depot-garantie questions", "value": 3}]}, {"@type": "Organization", "@id": "https://bailleurverif.fr/#organization", "name": "BailleurVérif", "url": "https://bailleurverif.fr", "logo": {"@type": "ImageObject", "url": "https://bailleurverif.fr/logo.png"}}, {"@type": "WebSite", "@id": "https://bailleurverif.fr/#website", "url": "https://bailleurverif.fr", "name": "BailleurVérif", "inLanguage": "fr-FR"}]}</script>
+<link rel="stylesheet" href="/css/main.css" />
+<script src="/css/tailwind-runtime.js"></script>
+</head>
+<body class="min-h-screen">
+<header class="border-b border-slate-200">
+  <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-2">
+    <a href="/" class="text-sm text-slate-600 hover:text-slate-900">← BailleurVérif</a>
+    <a href="/" class="text-xs px-3 py-1.5 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold">
+      Diagnostic 30 sec →
+    </a>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-6 py-10">
+  <nav class="text-xs text-slate-500 mb-4">
+    <a href="/" class="hover:text-blue-800">Accueil</a> ·
+    <a href="/observatoire-annonces-loyer.html" class="hover:text-blue-800">Observatoire</a> ·
+    <span class="text-slate-700">Questions réelles locataires</span>
+  </nav>
+
+  <div class="text-xs uppercase tracking-widest text-blue-700 mb-2">Corpus public · mai 2026</div>
+  <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-3">
+    Questions réelles posées par les locataires français
+  </h1>
+  <p class="text-lg text-slate-700 mb-3">
+    35 questions concrètes scrapées sur Reddit FR (r/france, r/immobilier, r/AskFrance, r/paris),
+    anonymisées et classées par <strong>recours légal applicable</strong>.
+  </p>
+  <p class="text-sm text-slate-600 mb-6">
+    Chaque question est rapprochée d'un <strong>modèle de recours BailleurVérif</strong>
+    (sources Légifrance, jurisprudence Cour de cassation, vérifié DILA).
+    Dataset téléchargeable, licence CC-BY 4.0.
+  </p>
+
+  <aside class="rounded-xl border border-slate-200 bg-slate-50 p-4 mb-8 text-sm">
+    <div class="font-semibold text-slate-900 mb-2">📊 Répartition du corpus</div>
+    <ul class="space-y-1 text-slate-700">
+      <li>· Loyer abusif / encadrement : <strong>26</strong> questions</li>
+      <li>· DPE F/G — passoires thermiques : <strong>6</strong> questions</li>
+      <li>· Dépôt de garantie non restitué : <strong>3</strong> questions</li>
+    </ul>
+    <div class="mt-3 flex gap-3 flex-wrap text-xs">
+      <a href="#loyer-abusif" class="text-blue-700 hover:text-blue-900">→ Sauter à Loyer</a>
+      <a href="#dpe-invalide" class="text-blue-700 hover:text-blue-900">→ Sauter à DPE</a>
+      <a href="#depot-garantie-non-restitue" class="text-blue-700 hover:text-blue-900">→ Sauter à Caution</a>
+      <a href="#methodologie" class="text-slate-600 hover:text-slate-800">→ Méthodologie</a>
+      <a href="/data/reddit-locataires-questions-2026-05.json" class="text-slate-600 hover:text-slate-800">→ Télécharger le dataset JSON</a>
+    </div>
+  </aside>
+
+<section id="loyer-abusif" class="mb-10">
+    <div class="flex items-baseline justify-between mb-2 flex-wrap gap-2">
+      <h2 class="text-2xl font-bold text-slate-900">Loyer abusif / encadrement</h2>
+      <span class="text-xs text-slate-500">26 questions corpus Reddit FR</span>
+    </div>
+    <p class="text-sm text-slate-700 mb-4">Plafond légal de l'encadrement (Paris, Lyon, Lille…), complément de loyer abusif, IRL annuel : le top des questions concrètes posées sur Reddit FR.</p>
+    <div class="flex flex-col gap-3">
+      <article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 109 · 💬 129</span>
+          <span class="text-slate-400">2025-08-26</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Loyer à paris</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour, En tant qu’ingénieur en CDI avec un salaire largement au-dessus de la moyenne, je voulais partager mon expérience de recherche de logement durant le mois dernier. En admettant que tu sois prêt à payer 900 € pour 18 m² dans un quartier pas terrible, et que tu réussisses à éviter toutes les arnaques, tu dois ensuite envoyer une montagne de documents confidentiels au bailleur. Puis, il ne te…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1n0rky3/loyer_à_paris/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/AskFrance</span>
+          <span class="text-slate-500">▲ 20 · 💬 151</span>
+          <span class="text-slate-400">2026-04-11</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Quel pourcentage de votre salaire passe dans votre loyer ?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Je suis curieux d’avoir un ordre de grandeur du poids du loyer dans les revenus. Je sais que chaque situation est différente (mode de vie, niveau de revenu, choix perso, etc.), mais l’idée est vraiment d’avoir une vision macro, pas des cas ultra précis. Je cherche simplement le montant du loyer (hors charges) rapporté à votre salaire net après impôt. Si vous êtes en couple, indiquez uniquement vot…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/AskFrance/comments/1sigcdq/quel_pourcentage_de_votre_salaire_passe_dans/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 47 · 💬 119</span>
+          <span class="text-slate-400">2025-09-02</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Logement : Paris dégaine de nouveau sa campagne d’encadrement des loyers</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed"></p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1n6i1sx/logement_paris_dégaine_de_nouveau_sa_campagne/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 93 · 💬 62</span>
+          <span class="text-slate-400">2026-04-22</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Mais qui respecte l&#x27;encadrement des loyers pour les petites surfaces ?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Comme j&#x27;aidais un proche à trouver un petit studio pour ses études, j&#x27;ai consulté les annonces de studio (9-10m²) sur Seloger.com. Il y a 107 annonces pour des studio de 10m². **Absolument AUCUNE annonce ne respecte l&#x27;encadrement des loyers**. Je comprends que sur 3 ans, du 1er janvier 2023 au 31 décembre 2025, la ville de Paris a prononcé au total [15 amendes]( pour des propriétaires qui refusaie…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1ssh9wy/mais_qui_respecte_lencadrement_des_loyers_pour/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/AskFrance</span>
+          <span class="text-slate-500">▲ 32 · 💬 63</span>
+          <span class="text-slate-400">2025-09-03</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Si je gagne 2400€/mois mon loyer doit être de combien ?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">F24 je viens d&#x27;être diplômée et j&#x27;ai trouvé un poste que je commencerai en novembre. J&#x27;adore vivre aveca famille, mais je me sens prête à habiter seule je pense. Petit hic, je connais rien dans ce domaine. Quand je vois le prix des appartements en banlieue sud parisienne je suis un peu choquée car c&#x27;est extrêmement cher pour peu de m². En dessous de 1000€ je ne trouve que des studios. Personnellem…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/AskFrance/comments/1n7sxmp/si_je_gagne_2400mois_mon_loyer_doit_être_de/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 57 · 💬 37</span>
+          <span class="text-slate-400">2026-01-22</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Vers une France de studios ? Un biais discret de l’encadrement des loyer</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour à tous, À l&#x27;heure ou l&#x27;encadrement des loyers est en passe d&#x27;être appliqué à l&#x27;ensemble du territoire, je m&#x27;y suis récemment intéressé et ai voulu comprendre ses tenants et aboutissants. Je précise d&#x27;emblée que je ne souhaite pas ici remettre en cause le bien fondé de l&#x27;encadrement. C&#x27;est un tout autre sujet, bien plus idéologique et polarisé sur lequel un débat Reddit ne semblerait pas op…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1qjq2be/vers_une_france_de_studios_un_biais_discret_de/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 52 · 💬 28</span>
+          <span class="text-slate-400">2025-12-24</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Encadrement des loyers à Paris : outil gratuit open-source pour vérifier son loyer</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Hello, et joyeuses fêtes à toustes ! Je bosse sur un petit outil gratuit et libre pour vérifier si un loyer respecte l’encadrement (je commence par Paris). L’idée : rendre l’info plus simple d’accès, et aider les personnes qui se font avoir à pouvoir agir / faire valoir leurs droits.​ Il existe déjà un simulateur officiel de la ville, mais je le trouve pas hyper pratique à utiliser, donc j’ai tent…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1pus8pm/encadrement_des_loyers_à_paris_outil_gratuit/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 23 · 💬 50</span>
+          <span class="text-slate-400">2026-05-23</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Encadrement des loyers : la mission d’évaluation évoque des « effets ambivalents » et la poursuite du dispositif pourrait être menacée</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed"></p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1tllqyg/encadrement_des_loyers_la_mission_dévaluation/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 28 · 💬 37</span>
+          <span class="text-slate-400">2025-09-15</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Ces propriétaires peu scrupuleux se moquent de l&#x27;encadrement des loyers</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">[Une chute de l’offre et des loyers en forte hausse. Dans les grandes métropoles, trouver un appartement n’est pas chose aisée si bien que certains propriétaires n’en ont que faire de l’encadrement des loyers.](</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1nhs4uq/ces_propriétaires_peu_scrupuleux_se_moquent_de/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 44 · 💬 8</span>
+          <span class="text-slate-400">2026-05-18</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">« Au moins, j’ai un toit ! » : à Paris, ces locataires qui consacrent près de la moitié de leurs revenus au loyer</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed"></p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1tglhqg/au_moins_jai_un_toit_à_paris_ces_locataires_qui/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 21 · 💬 30</span>
+          <span class="text-slate-400">2026-05-23</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Encadrement des loyers : la mission d’évaluation évoque des « effets ambivalents » et la poursuite du dispositif pourrait être menacée</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed"></p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1tllqh2/encadrement_des_loyers_la_mission_dévaluation/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/AskFrance</span>
+          <span class="text-slate-500">▲ 0 · 💬 46</span>
+          <span class="text-slate-400">2025-07-30</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">[Colloc] Inclure un abo illimité piscine et salle de sport dans le loyer ?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Hello, J&#x27;ai un petit appart en loc avec 3 chambres (colloc) en petite couronne parisienne. L&#x27;appart est globalement OK DPE A, métro à 5min, commerces et parcs à prox etc. Je réfléchis à inclure un abonnement illimité à la piscine et salle de sport. Piscine municipale avec une salle de sport. Les salles type fitness park ont un abo nominatif ou c&#x27;est plus galère. (de ce que j&#x27;ai vu/compris) - Pourq…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/AskFrance/comments/1md9sfe/colloc_inclure_un_abo_illimité_piscine_et_salle/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 5 · 💬 35</span>
+          <span class="text-slate-400">2026-05-07</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Prix du loyer</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Je viens vers vous car je suis dans une réflexion sur une location. Je vis actuellement chez mes parents avec des revenus de 1800€ par mois. Je cherche une location seule parce que j&#x27;aspire a avoir mon indépendance et a m&#x27;installer dans la ville. La ou j&#x27;habite les loyers c&#x27;est tres tendu (peu d&#x27;offres et tout est vite cher). La on me propose un appart ou je serai a environ 850 par mois avec toute…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1t6hw9m/prix_du_loyer/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 1 · 💬 38</span>
+          <span class="text-slate-400">2026-04-13</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Augmentation loyer</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour, la propriétaire de ma mère avait jurer malheureusement à voix orale ne jamais augmenter le loyer mais après quelque difficulté de cohabitation ( c’est la voisine et en même temps proprio, elle refuse que les petits enfant de ma mère courent dans sa cour car sa « résonne » et refuse qu’ils jouent au ballon non plus ) son loyer est passer de 480 + 10 euros de charges ( donc 490) a 550 + 15 …</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1skgtgc/augmentation_loyer/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 10 · 💬 27</span>
+          <span class="text-slate-400">2025-08-29</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Encadrement des loyers quand on est déjà dans l&#x27;appartement</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour, Je suis dans un appartement qui coûte 700 € par mois mais en faisant la simulation de l&#x27;encadrement des loyers je trouve beaucoup moins. Est-ce qu&#x27;un entre vous a déjà fait la démarche et comment ça se passe pour régulariser son loyer et se faire rembourser les trop perçus ? Je me doute que mon bailleur va essayer de ne pas payer, de ne pas baisser le loyer et de me virer de l&#x27;appartement…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1n36qac/encadrement_des_loyers_quand_on_est_déjà_dans/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 14 · 💬 21</span>
+          <span class="text-slate-400">2025-08-26</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Question sur l’encadrement des loyers à Paris</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Hello hello**,** Pour le contexte : j’habite à Paris (19e) depuis 2 ans et demi, dans un petit cocon de 16-17 m². Mon loyer était de 750 € (hors charges) + 23 € de charges (sans électricité). Récemment, mon propriétaire a décidé d’augmenter à 815 € en expliquant que les charges avaient augmenté. Comme il n’avait pas fait de hausse depuis 2 ans, j’ai dit OK. Mais un pote m’a conseillé de vérifier s…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1n0l44s/question_sur_lencadrement_des_loyers_à_paris/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 2 · 💬 33</span>
+          <span class="text-slate-400">2025-06-17</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Augmenter le loyer tous les 2 ans</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour à tous. Propriétaire, j&#x27;ai pour habitude d&#x27;augmenter le loyer tous les ans (TOM, charges, loyer IRL). J&#x27;utilise le simulateur l&#x27;IRL où je renseigne la date, le loyer de départ et le trimestre de référence. Tout est stipulé dans le bail. J&#x27;aimerais le faire tous les 2 ans au lieu de tous les 1 an, pour être &quot;sympa&quot; avec mes chouettes locataires qui paient leur loyer le 5 et ne me demandent …</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1le0sl7/augmenter_le_loyer_tous_les_2_ans/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 0 · 💬 31</span>
+          <span class="text-slate-400">2025-09-26</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Votre avis sur le montant du loyer d&#x27;un appartement en location à Paris ?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour ! Mon dossier vient actuellement d&#x27;être accepté pour un appartement en location dans Paris 12. L&#x27;offre me semble plutôt bonne mais j&#x27;aimerais avoir vos avis car le loyer est tout de même conséquent : 1210€ charges comprises pour un studio de 35m². Les avantages : logement neuf avec un DPE C, 2mn à pied du métro Reuilly-Diderot, petit balcon de 2m². Cependant il est loué vide donc je vais d…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1nrefl4/votre_avis_sur_le_montant_du_loyer_dun/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 0 · 💬 30</span>
+          <span class="text-slate-400">2025-07-25</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Augmenter loyer annuellement ?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour à tous, j’ai une question à ceux et celles d’être vous qui sont propriétaire bailleur, est-ce que vous augmentez le loyer de votre bien tous les ans en suivant l’indice ou bien vous décidez de maintenir un loyer fixe si vous avez un locataire de longue date ?</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1m985v6/augmenter_loyer_annuellement/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 13 · 💬 11</span>
+          <span class="text-slate-400">2025-10-03</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Encadrement des loyers et fausse superficie</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour Je loue depuis quelques mois à Paris un appartement au 14 eme . Il était loué comme un 50m^2 avec garage mais en faisant mes mesures j’ai trouvé que il ne faisait même pas 40. La propriétaire a envoyé un agent pour faire une loi Boutin et il aurait à priori trouvé 43m^2 . Je suis à peu près convaincu que il a du surestimé la superficie mais passons . Cela me donne normalement droit à une r…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1nx25ku/encadrement_des_loyers_et_fausse_superficie/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 4 · 💬 16</span>
+          <span class="text-slate-400">2026-01-14</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Besoin de conseil sur l&#x27;augmentation du loyer IRL</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour, J&#x27;espère être sur le bon sub. Aujourd&#x27;hui mon propriétaire m&#x27;a envoyé une lettre avec motif l&#x27;augmentation du loyer part rapport à l&#x27;indexation sur la variation de l&#x27;indice de référence mais selon moi ça ne colle pas donc je voudrais votre avis s&#x27;il vous plait. \-En février 2022 j&#x27;ai signé pour 360€ de loyer + 60 euros de charges, soit 420€. \-En 2023 ou 2024 j&#x27;ai été augmenté à 432,57€ \…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1qcvs3f/besoin_de_conseil_sur_laugmentation_du_loyer_irl/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 1 · 💬 14</span>
+          <span class="text-slate-400">2025-09-06</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Refus de signature avenant de bail au motif d&#x27;une augmentation de loyer au delà de la base IRL.</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour Mon bail de logement meublé sera tacitement reconduit pour une durée de 1an au mois de novembre 2025. Mon propriétaire m&#x27;indique aujourd&#x27;hui, par SMS, vouloir augmenter mon loyer de prés de 7% (donc au delà de la base IRL) via signature d&#x27;un avenant. Il m&#x27;a fait signer un bail civile alors que ce logement constitue notre résidence. Ce contrat est il frauduleux ?Puis je demander une requali…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1na9pak/refus_de_signature_avenant_de_bail_au_motif_dune/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 0 · 💬 14</span>
+          <span class="text-slate-400">2025-11-03</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Réviser un Loyer jamais augmenté</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour, Je souhaite réviser le loyer d&#x27;un logement que je n&#x27;ai jamais augmenté, mais je veux être sure de ne pas faire n&#x27;importe quoi vis à vis de mon locataire. Appart loué depuis Mai 20 avec un indice IRL affiché dans le bail du Trim 1- 2020. Comment dois-je calculer la révision ? 1. Utiliser les IRL de T1-20 et T1-25 2. seulement les IRL de T1-24 et T1-25 ? Merci d&#x27;avance pour vos réponses écl…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1on7oeh/réviser_un_loyer_jamais_augmenté/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 3 · 💬 9</span>
+          <span class="text-slate-400">2026-02-23</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Augmentation de loyer et DPE</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour à tous et désolé si ce post n’est pas au bon endroit. Je vis dans un appartement depuis 2021 et chaque année le propriétaire augmente le loyer. Pourtant je dépense beaucoup en énergie si bien que je lui ai demandé le diagnostique énergie de l’appartement qu’il ne m’avait pas donné lors de la signature du bail. Aujourd’hui il me la fait parvenir par mail. Il date de 2007 et se situe entre D…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1rcjynd/augmentation_de_loyer_et_dpe/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 0 · 💬 10</span>
+          <span class="text-slate-400">2025-12-13</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Zone tendue sans encadrement du loyer : procédure pour augmenter un loyer sous-évalué lors d&#x27;un changement de locataire</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour, Je cherche à trouver la bonne information et je vous assure que ce n&#x27;est pas simple. Il existe 3 cas où vous pouvez augmenter votre loyer lorsque un nouveau locataire prends location de votre appartement en zone tendue. \- vous avez fait des travaux pour un montant suffisant \- votre appartement n&#x27;est plus en location depuis 18 mois \- votre loyer est manifestement sous-évalué **Cette der…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1pln4y9/zone_tendue_sans_encadrement_du_loyer_procédure/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-rose-200 bg-rose-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-rose-800 bg-white border border-rose-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 2 · 💬 6</span>
+          <span class="text-slate-400">2025-07-25</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Augmentation loyer entre le prix de l’annonce et le bail?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonsoir Reddit! Je suis étudiant et je recherche et gère seul mes recherches d’appartement pour la rentrée de septembre. J’ai trouvé une jolie coloc, bien placée, pas chère, et au cadre assez sympa sur Lille. Là réside le problème : le loyer renseigné sur l’annonce (450€/mois cc) est différent du loyer qui figure sur le bail (470€/mois cc). Est-ce normal ? Suis-je face à une quelconque arnaque ? N…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/loyer-abusif" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Loyer abusif / encadrement (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1m9aciz/augmentation_loyer_entre_le_prix_de_lannonce_et/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="mt-4 text-sm">
+      <a href="/api/recourse/loyer-abusif" class="inline-flex items-center gap-1 text-blue-700 hover:text-blue-900 font-semibold">
+        📄 Voir le modèle de recours complet « Loyer abusif / encadrement » →
+      </a>
+      <a href="/api/recourse/loyer-abusif.md" class="ml-3 text-xs text-slate-500 hover:text-slate-700">.md (LLM/AI)</a>
+    </div>
+  </section>
+<section id="dpe-invalide" class="mb-10">
+    <div class="flex items-baseline justify-between mb-2 flex-wrap gap-2">
+      <h2 class="text-2xl font-bold text-slate-900">DPE F/G — passoires thermiques</h2>
+      <span class="text-xs text-slate-500">6 questions corpus Reddit FR</span>
+    </div>
+    <p class="text-sm text-slate-700 mb-4">DPE F interdit à la location depuis 2025 (G depuis 2023, projection 2028). Locataire face à une passoire thermique : quels droits, quels recours.</p>
+    <div class="flex flex-col gap-3">
+      <article class="rounded-xl border border-amber-200 bg-amber-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-amber-800 bg-white border border-amber-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 14 · 💬 44</span>
+          <span class="text-slate-400">2026-03-24</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Fraude au DPE et loyer augmenté. Que faire?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">MàJ: En résumé, les 2 points suivants sont valables \- Je suis dans mon droit (le loyer n&#x27;aurait pas dû être augmenté) \- Si je demande à ce que la réglementation soit appliquée, je me retrouverai dehors, parce que G = interdit à la location. Le système est vraiment fait pour que les puissants continuent leurs abus, c&#x27;est pas possible... Hâte d&#x27;acheter Publication originale: Mon propriétaire (part…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/dpe-invalide" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse DPE F/G — passoires thermiques (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1s2sch0/fraude_au_dpe_et_loyer_augmenté_que_faire/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-amber-200 bg-amber-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-amber-800 bg-white border border-amber-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 6 · 💬 51</span>
+          <span class="text-slate-400">2025-10-10</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Appartement parisien DPE G : isoler par l&#x27;intérieur ou attendre ravalement ?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Salut à tous, En train d&#x27;acheter un appartement à Paris que je compte habiter (28m2, 5ème et dernier étage, immeuble ancien). Nous venons de faire un DPE : G ! Mon archi d&#x27;intérieur me dit que je suis &quot;obligé&quot; d&#x27;isoler par l&#x27;intérieur. Sachant qu&#x27;un ravalement est prévu dans 2 ans (si voté), que me conseillerez-vous ? Merci beaucoup</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/dpe-invalide" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse DPE F/G — passoires thermiques (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1o2u9i7/appartement_parisien_dpe_g_isoler_par_lintérieur/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-amber-200 bg-amber-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-amber-800 bg-white border border-amber-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 0 · 💬 46</span>
+          <span class="text-slate-400">2025-11-27</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">DPE en E a la limite du D</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Je viens de réaliser le dpe pour mettre en location ma maison et il est en E a 257kwh/M2/an (la limite du D étant a 250...). Ai-je un recours pour qu&#x27;il puisse être en en D et que je ne tombe pas dans les logements non louables a partir de 2034 ? Merci de votre aide.</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/dpe-invalide" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse DPE F/G — passoires thermiques (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1p8bvjo/dpe_en_e_a_la_limite_du_d/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-amber-200 bg-amber-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-amber-800 bg-white border border-amber-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 4 · 💬 12</span>
+          <span class="text-slate-400">2025-09-09</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Is renting a flat with DPE score of “F” a bad idea?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour. Let me preface this by saying that I just moved to Paris with minimal french language skills or local renting knowledge. I found a flat in the 8th arrondissement that I rather like. My company provided me with an agent that has been assisting me with the search. Im allotted up to 10 visits, but I feel like the agent that is supposed to be working on my behalf is rather pushy after each ap…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/dpe-invalide" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse DPE F/G — passoires thermiques (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1nchbpf/is_renting_a_flat_with_dpe_score_of_f_a_bad_idea/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-amber-200 bg-amber-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-amber-800 bg-white border border-amber-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 0 · 💬 13</span>
+          <span class="text-slate-400">2025-07-26</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Location appartement DPE G, Arnaque ?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour à tous, Je viens ici partager une grosse frustration et recueillir vos avis. Avec mon copain, on était super heureux : en moins d’une semaine de recherche, on avait trouvé l’appartement parfait. Il cochait absolument toutes nos cases, on s’y voyait déjà. Le propriétaire nous appréciait, l’agence aussi, et ils nous ont choisis pour le logement. On devait emménager ce lundi. Mais voilà, reto…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/dpe-invalide" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse DPE F/G — passoires thermiques (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1m9orka/location_appartement_dpe_g_arnaque/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-amber-200 bg-amber-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-amber-800 bg-white border border-amber-200 font-semibold">r/paris</span>
+          <span class="text-slate-500">▲ 1 · 💬 8</span>
+          <span class="text-slate-400">2025-06-03</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">advise on DPE G in apartment i want to buy</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">As stated in title - I need some sound advise on an apartment i&#x27;m looking to buy in Paris. The apartment itself is fantastic and i fell in love with it. What i didn&#x27;t realise until reading the fine print after is that it is G energy performance. My offer was accepted on the property but i&#x27;m now unsure if it is a wise investment. As someone that would like to live there for a number of years before…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/dpe-invalide" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse DPE F/G — passoires thermiques (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/paris/comments/1l2g5o7/advise_on_dpe_g_in_apartment_i_want_to_buy/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="mt-4 text-sm">
+      <a href="/api/recourse/dpe-invalide" class="inline-flex items-center gap-1 text-blue-700 hover:text-blue-900 font-semibold">
+        📄 Voir le modèle de recours complet « DPE F/G — passoires thermiques » →
+      </a>
+      <a href="/api/recourse/dpe-invalide.md" class="ml-3 text-xs text-slate-500 hover:text-slate-700">.md (LLM/AI)</a>
+    </div>
+  </section>
+<section id="depot-garantie-non-restitue" class="mb-10">
+    <div class="flex items-baseline justify-between mb-2 flex-wrap gap-2">
+      <h2 class="text-2xl font-bold text-slate-900">Dépôt de garantie / caution</h2>
+      <span class="text-xs text-slate-500">3 questions corpus Reddit FR</span>
+    </div>
+    <p class="text-sm text-slate-700 mb-4">Caution non rendue dans le délai légal (2 mois état des lieux conforme, 1 mois si rien à imputer). Retenues abusives, justificatifs manquants.</p>
+    <div class="flex flex-col gap-3">
+      <article class="rounded-xl border border-blue-200 bg-blue-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-blue-800 bg-white border border-blue-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 48 · 💬 52</span>
+          <span class="text-slate-400">2026-02-03</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Mon locataire veut ma caution</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour, J’ai 25 ans et j’habite à Marseille dans mon 2eme appartement seul. Ma première location s’était très bien passé avec ma proprio, mais la seconde est une autre histoire. Il s’agit d’un « T2 » de 29m2, je met T2 entre guillemet car c’est en réalité une seule grande pièce, mais le problème n’est pas ici. Mon logement est humide, très humide. Ma propriétaire m’en a informé mais uniquement ap…</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/depot-garantie-non-restitue" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Dépôt de garantie / caution (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1quxrvp/mon_locataire_veut_ma_caution/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-blue-200 bg-blue-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-blue-800 bg-white border border-blue-200 font-semibold">r/AskFrance</span>
+          <span class="text-slate-500">▲ 14 · 💬 85</span>
+          <span class="text-slate-400">2026-03-04</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Je pense que mon propriétaire ne va pas me rendre ma caution : j’ai le droit de ne pas lui verser le dernier loyer ?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Voilà en gros je vous explique. J’habite dans un studio et le radiateur de la salle de bains ne fonctionne plus depuis 5 mois. Cette réparation est à la charge du propriétaire et non du locataire. Ça fait 5 mois que je le relance et mon propriétaire trouve plein d’excuses pour ne pas le réparer : que comme j’habite dans un studio il a le droit de ne pas réparer le radiateur (??), que je n’ai qu’à …</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/depot-garantie-non-restitue" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Dépôt de garantie / caution (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/AskFrance/comments/1rknjr9/je_pense_que_mon_propriétaire_ne_va_pas_me_rendre/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+<article class="rounded-xl border border-blue-200 bg-blue-50 p-4 sm:p-5">
+        <div class="flex items-center gap-2 mb-2 text-xs flex-wrap">
+          <span class="px-2 py-0.5 rounded text-blue-800 bg-white border border-blue-200 font-semibold">r/immobilier</span>
+          <span class="text-slate-500">▲ 7 · 💬 48</span>
+          <span class="text-slate-400">2026-01-27</span>
+        </div>
+        <h3 class="font-semibold text-slate-900 mb-2 leading-snug">Est-ce normal demander le dépot de garantie + 1ere mois avant la signature du bail?</h3>
+        <p class="text-sm text-slate-700 mb-3 leading-relaxed">Bonjour à toutes et à tous. Dans le cadre de mes recherches de logement, j’ai trouvé un studio que j’ai visité et pour lequel j’ai rencontré le propriétaire. Hier, il m’a informé que son assurance avait validé mon dossier pour la location. Néanmoins, le fait qu’il me demande d’effectuer un paiement avant la signature du bail et la remise des clés me paraît bizarre. Je mets les photos des mails en …</p>
+        <div class="flex items-center gap-3 flex-wrap text-sm">
+          <a href="/api/recourse/depot-garantie-non-restitue" class="text-blue-700 hover:text-blue-900 font-medium underline-offset-2 hover:underline">
+            → Réponse Dépôt de garantie / caution (modèle légal)
+          </a>
+          <a href="https://reddit.com/r/immobilier/comments/1qo8hq0/estce_normal_demander_le_dépot_de_garantie_1ere/" target="_blank" rel="noopener nofollow" class="text-slate-500 hover:text-slate-700 text-xs">
+            source ↗
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="mt-4 text-sm">
+      <a href="/api/recourse/depot-garantie-non-restitue" class="inline-flex items-center gap-1 text-blue-700 hover:text-blue-900 font-semibold">
+        📄 Voir le modèle de recours complet « Dépôt de garantie / caution » →
+      </a>
+      <a href="/api/recourse/depot-garantie-non-restitue.md" class="ml-3 text-xs text-slate-500 hover:text-slate-700">.md (LLM/AI)</a>
+    </div>
+  </section>
+
+  <section id="methodologie" class="mb-10 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6">
+    <h2 class="text-xl font-bold mb-3">Méthodologie</h2>
+    <ul class="space-y-2 text-sm text-slate-700">
+      <li><strong>Source :</strong> API JSON publique Reddit (<code>/r/&lt;sub&gt;/search.json</code>), accès anonyme, sans authentification, conforme <code>robots.txt</code> Reddit et CGU plateforme.</li>
+      <li><strong>Subreddits scrapés :</strong> r/france, r/immobilier, r/paris, r/AskFrance, r/vosfinances, r/Locataires. Fenêtre temporelle : 12 derniers mois.</li>
+      <li><strong>Filtrage strict :</strong> chaque question retenue contient un <em>anchor</em> tag-spécifique dans le titre (ex : « loyer », « DPE », « caution »), associé à au moins un mot du champ lexical locatif. Blacklist anti-bruit (questions hors-sujet recyclant les mêmes mots).</li>
+      <li><strong>Anonymisation :</strong> noms d'utilisateurs Reddit (<code>u/...</code>) supprimés, mentions <code>@</code> supprimées, URLs externes retirées, adresses email scrubbed, <code>post_id</code> remplacé par un hash SHA-256 tronqué à 12 caractères. Le contenu publié ici est public sur Reddit ; ce corpus en propose une vue agrégée et classifiée juridiquement.</li>
+      <li><strong>Classification :</strong> 3 tags correspondant aux 3 modèles de recours BailleurVérif vérifiés DILA : <code>loyer-abusif</code> (loi 89-462 art. 25-9), <code>dpe-invalide</code> (CCH art. L173-2), <code>depot-garantie-non-restitue</code> (loi 89-462 art. 22).</li>
+      <li><strong>User-Agent :</strong> <code>BailleurVerifBot/0.1 (+https://bailleurverif.fr; contact@bailleurverif.fr)</code> — identifié, contactable.</li>
+      <li><strong>Fréquence de mise à jour :</strong> mensuelle minimum (le corpus s'enrichit avec les nouvelles questions postées sur Reddit FR). Dataset republié à chaque vague.</li>
+    </ul>
+  </section>
+
+  <section class="mb-10 rounded-2xl border border-slate-200 bg-blue-50 p-5 sm:p-6">
+    <h2 class="text-xl font-bold mb-2 text-slate-900">Téléchargement du dataset</h2>
+    <p class="text-sm text-slate-700 mb-3">
+      Corpus complet en JSON structuré, licence <strong>Creative Commons Attribution 4.0</strong> (réutilisable y compris commercial avec attribution).
+    </p>
+    <div class="flex gap-3 flex-wrap text-sm">
+      <a href="/data/reddit-locataires-questions-2026-05.json" class="inline-flex items-center gap-1 px-4 py-2 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold">
+        📥 JSON (35 questions)
+      </a>
+      <a href="https://github.com/Creariax5/bailleurverif" target="_blank" rel="noopener" class="inline-flex items-center gap-1 px-4 py-2 rounded-lg border border-slate-300 hover:border-blue-700 text-slate-900 font-medium">
+        📂 Source GitHub
+      </a>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-3">Pour aller plus loin</h2>
+    <ul class="space-y-2 text-sm">
+      <li>· <a href="/observatoire-annonces-loyer.html" class="text-blue-700 hover:text-blue-900">Observatoire des annonces non conformes</a> — N=210 annonces 7 villes, dataset data.gouv.fr</li>
+      <li>· <a href="/loyer-legal-paris.html" class="text-blue-700 hover:text-blue-900">Vérifier mon loyer Paris en 5 secondes</a> — mini-simulateur encadrement</li>
+      <li>· <a href="/encadrement-loyer-france-2026.html" class="text-blue-700 hover:text-blue-900">Encadrement loyers France 2026</a> — règles par ville</li>
+      <li>· <a href="/scan-url.html" class="text-blue-700 hover:text-blue-900">Coller une annonce SeLoger / PAP</a> — verdict conformité 5 sec</li>
+    </ul>
+  </section>
+
+  <div class="text-xs text-slate-500 mt-10 pt-6 border-t border-slate-200">
+    Corpus généré le 2026-05-27T01:54:15Z.
+    Source : Reddit JSON public anonyme.
+    Licence : CC-BY 4.0.
+    Contact : <a href="mailto:contact@bailleurverif.fr" class="hover:text-slate-700">contact@bailleurverif.fr</a>.
+    Code source : <a href="https://github.com/Creariax5/bailleurverif" class="hover:text-slate-700" target="_blank" rel="noopener">github.com/Creariax5/bailleurverif</a>.
+  </div>
+</main>
+
+<footer class="border-t border-slate-200 mt-16 py-8 text-xs text-slate-500">
+  <div class="max-w-3xl mx-auto px-6">
+    <nav class="flex flex-wrap gap-x-4 gap-y-1">
+      <a href="/" class="hover:text-slate-800">Accueil</a>
+      <a href="/observatoire-annonces-loyer.html" class="hover:text-slate-800">Observatoire</a>
+      <a href="/scan-url.html" class="hover:text-slate-800">Scan d'annonce</a>
+      <a href="/encadrement-loyer-france-2026.html" class="hover:text-slate-800">Encadrement France</a>
+      <a href="https://github.com/Creariax5/bailleurverif" class="hover:text-slate-800" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

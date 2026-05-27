@@ -1,3 +1,51 @@
+# Strategic Critic Audit — 2026-05-26T21:55Z (audit-26, cycle pré-naturel T+12h post audit-25 honored run-364, T+8h17 silence Florian méta-Q)
+
+---
+
+## 1. COPYABILITY SCORE
+
+4 dernières sessions = 0 ship prod user-facing (depuis run-340 PNG meme audit-17). Run-346 chatgpt-banner+utm chirurgical ≤50L copyable <1j. Run-352 diagnostic friction read-only N=27 (mémoire seulement). Run-361 escalade TODO-37 inbox. Run-364 méta-Q inbox 342c. **Score ~85%** : surface unchanged 9 audits ⇒ rien défendable de neuf, tout ce qui existe = refaisable dev-solo <2j (sauf chain git timestampée).
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1 (2)** : 11 vagues git chain horodatées + cross-wave persistence 57.6% N=121 (`/observatoire-annonces-loyer.html#persistance-temporelle`).
+- **Cat-2 (0) MORTE** : 2 signalements 30j (75/59), 0 effet réseau.
+- **Cat-3 (3+1)** : loyer-abusif/dpe-invalide/depot-garantie + 9 ECLI Cass + LLM-seeding ChatGPT N=2 lifetime (Bouygues run-344).
+- **Cat-4 (3)** : data.gouv.fr reuse `6a0c30a` DR 90 + Wikidata Q139857638 DR 100 + repo MIT. WP edit drafté run-355 T+~44h silent.
+- **Total 9, +0 net 9 audits. Stagnation absolue.**
+
+## 3. CONCURRENT GAP
+
+PAP/SeLoger trafic 100M+/mois vs BV 225 unique-lifetime : gap inverse écrasant, BV n'a aucune feature qu'ils n'ont pas hors observatoire-violations (copyable 1 mois). ANIL : autorité institutionnelle + DR 70 + maillage ADIL physique ; BV silent ANIL outreach T+7j. Que Choisir : presse + abonnés payants + 5M followers ; BV silent T+6j. **Gap défendable BV vs ces 3 = 0** ; data.gouv reuse + Wikidata + cross-wave = work-to-do répétable, pas barrière.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+Non-rejouable weekend : crypto-timestamp 11 vagues + cross-wave persistence (entrant ne peut pas backfiller passé). **MAIS humans_engaged=2 stagnant 12+ audits ⇒ moat business-mort empirique.** Viralité intrinsèque : share=1 lifetime (legacy) / scan-url=0 T+~96h / PNG meme=0 T+~144h / WP draft=0 / wa_perso=0 T+~32h = **6 outputs non-viraux empiriquement consécutifs**. Persona-fit canaux push (Bluesky/Telegram/HF/dev.to/LinkedIn-pros) = mismatch 100% empirique. Pull-LLM seul canal productif = débit 0.2 humain/jour ⇒ 500j pour humans=100.
+
+## 5. STRATEGIC DRIFT
+
+Run-364 (audit-25 méta-Q HONORED) tactiquement parfait MAIS Strategic Critic LUI-MÊME drift : 4ᵉ audit consécutif (22 WP / 23 TODO-33 / 24 TODO-37 / 25 méta-Q) empilant Florian-action sans inventer canal Builder-only. Méta-Q ≠ pivot, juste défère T+24h. Critère audit-25 codifié : silence T+24h = drift confirmé ⇒ audit-26 invente Builder-only canal externe. T+8h17 = pas encore confirmé MAIS pattern 9-audits 0 humain net rend attente théâtre. **Pivot Builder-only IMMÉDIAT plus asymétrique que wait-T+24h.**
+
+## 6. PRESCRIPTION
+
+**SCRAPE 30 questions locataires-FR Reddit JSON public anonyme (r/france r/paris r/immobilier r/vosfinances r/AskFrance dernier 30j) → publier `/questions-reelles-locataires-fr.html` data-driven (Q anonymisée + match Cat-3 template DILA + lien template `/api/recourse/<tag>`) + dataset JSON public.**
+
+Asymétrie : (1) **Builder-only ZÉRO Florian-action** (rupture pattern 4 audits Florian-prescription empilage). (2) **Persona-fit DATA-DRIVEN** (au lieu hypothèses Builder) : Reddit JSON anonymous OK robots.txt + DIRECTIVE 9 carve-out scraping anonyme autorisé explicit. (3) **Cat-1 NEW substantif** : corpus questions réelles = asset propriétaire non-trivial (concurrent doit re-scraper, fenêtre fraîche). (4) **LLM-seeding cible long-tail réelle** : démultiplie canal SEUL prouvé (ChatGPT N=2) sans dépendre 1 page hub. (5) **Output share-friendly natif** : Q+réponse cat-3 = potentiel cross-post Reddit thread original (Florian peut commenter own thread quand compte ready TODO-36, ROI dual).
+
+**Carve-out NEW FILE SB-1 Full ritual obligatoire** (≥100L user-facing prod). Critère succès T+72h codifié : `humans_via_chatgpt ≥ 4` OR `direct_long-tail_session ≥ 3` (deadline 2026-05-29T22:00Z). Échec → audit-29 = pivot canal #3 NEW.
+
+## Bans audit-26 (maintenus jusqu'à audit-27)
+
+🚫 prescription Florian-action (5ᵉ niveau drift = catastrophe) / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36/37 (cooldown 7j actif) / 🚫 re-poser méta-Q avant 2026-06-02T13:38Z / 🚫 spawn 7ᵉ sub-agent / 🚫 IP-edit WP autonome / 🚫 SMTP outreach (pattern 0/7 réponse confirmé) / 🚫 IndexNow / 🚫 patch sub-agents autonome.
+
+**Carve-out unique** : NEW FILE prescription §6 ci-dessus (Full ritual SB-1 strict obligatoire, replicable une seule fois).
+
+## Cumul
+
+`strategic_critic_recommendations_followed_cumul = 25/25 → audit-26 prescrit, attente HONOR cycle T+~24h`.
+
+---
+
 # Strategic Critic Audit — 2026-05-26T09:55Z (audit-25, cycle pré-naturel T+12h post audit-24 honored run-361)
 
 ---
