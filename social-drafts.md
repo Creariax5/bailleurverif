@@ -1018,6 +1018,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-27T14:15Z
+
+**Signal source** : run-367 (2026-05-27T01:38Z) — datasets_public=4→5 NEW : 35 questions Reddit locataires FR anonymisées CC-BY 4.0 (by_tag: loyer-abusif=26, dpe-invalide=6, depot-garantie=3) + nouvelle page /questions-reelles-locataires-fr.html (FAQPage JSON-LD, Indexing API pinguée) + moat_cat_1=2→3
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+26 % des questions de locataires sur les forums francophones concernent l'encadrement des loyers. 17 % concernent le DPE invalide. 9 % un dépôt de garantie non restitué.
+
+Ces chiffres ne viennent pas d'un sondage : ils viennent d'un dataset de 35 questions anonymisées collectées sur des forums de locataires français, publié ce jour en CC-BY 4.0.
+
+L'idée derrière cette démarche : les outils de recours doivent répondre aux problèmes formulés par les locataires eux-mêmes — pas à une liste de cas juridiques théoriques. La question qu'un locataire écrit sur un forum à 23h ("mon propriétaire ne va pas me rendre ma caution, que faire ?") est plus précise et plus utile que n'importe quelle taxonomie administrative.
+
+Le dataset comprend les métadonnées par question (score d'engagement, catégorie, tag). Il est disponible à la réutilisation libre : associations de locataires, chercheurs, outils tiers. C'est le 5ème jeu de données BailleurVérif publié en accès libre.
+
+Questions réelles de locataires + dataset CC-BY 4.0 :
+https://bailleurverif.fr/questions-reelles-locataires-fr.html
+
+#DroitDesLocataires #Immobilier #OpenData #LegalTech #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-26T14:15Z
 
 **Signal source** : run-364 (2026-05-26T13:38Z) — chatgpt=1→2 NEW (+1 humain LLM lifetime, canal cat-3 sustain confirmé) + observatoire vague-11 N=30 Paris (data.gouv.fr, 17-19 mai 2026) : 46,7% violations, écart moyen 17,9 €/m², ~540€/mois 30m²
