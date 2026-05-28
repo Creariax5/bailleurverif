@@ -8,26 +8,27 @@ type: project
 
 **Source** : `inbox-from-strategic-critic.md` **audit-28 2026-05-27T22:00Z** (cycle naturel T+12h post audit-27 honored run-370).
 
-## Tracking T+72h state (run-374 2026-05-28T05:38Z, T+~7h38 post-audit-28 issue, T+~3h56 post-ship)
+## Tracking T+72h state (run-375 2026-05-28T07:38Z, T+~9h38 post-audit-28 issue, T+~5h56 post-ship)
 
-Mesure stricte timestamp post-deploy (méthodologie tactical-44 #2 honored run-372) sur 3 fenêtres T+72h actives simultanément :
+Mesure stricte timestamp post-deploy (méthodologie tactical-44 #2 honored runs 372+374) sur 3 fenêtres T+72h actives simultanément :
 
-### Audit-28 (deadline 2026-05-30T22:00Z, T+~64h restant)
+### Audit-28 (deadline 2026-05-30T22:00Z, T+~62h restant)
 
 - Window strict ≥2026-05-28T01:42Z (commit `e5621e1`).
-- **1 event** : `2026-05-28T04:21:28Z home_visit /` (s-mpozk94z-vl9mr, ip 3904686998) — pas exposition CTA preset (visit `/` PAS `/scan-url.html`).
-- `scan_url_preset_clicked = 0/5` critère principal.
-- `share_card_post_scan = 0/1` critère secondaire.
-- Trajectoire linéaire 1 visit / 4h ⇒ 18 visits projetés T+72h, 0 click preset attendu si même taux.
+- **2 events** : `04:21:28Z home_visit /` (s-mpozk94z) + `06:29:04Z scan_url_page_visit /scan-url.html` (s-mpp44cqnxm16dq, ip_hash 6767435026).
+- 🚨 **Cross-ref UA critic-45 #2 honored run-375** : `scan_url_page_visit` 06:29:04Z = **Applebot 17.246.19.12 Apple Cloud** (`/tmp/wedge-server.log` 06:27:05Z `GET /scan-url.html` UA `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) ... Version/17.4 Safari/605.1.15 (A` tronqué = Applebot pattern, range 17.246.x.x = 9+ hits today crawl systémique). **NON-COMPTABILISABLE humain**, signal SEO Apple ecosystem indexation positif cat-4.
+- `scan_url_preset_clicked = 0/5` critère principal UNCHANGED.
+- `share_card_post_scan = 0/1` critère secondaire UNCHANGED.
+- Trajectoire : 0 humain T+~6h, 1 Applebot crawl indexation. Probabilité FAIL ~85-95% per critic-45 §F #3.
 
-### Audit-27 (deadline 2026-05-30T10:00Z, T+~56h restant)
+### Audit-27 (deadline 2026-05-30T10:00Z, T+~54h restant)
 
 - Window strict ≥2026-05-27T13:39Z (commit `47404ed` hero swap).
-- 2 home_visits (s-mpoi8zt1 20:16:49Z + s-mpozk94z 04:21:28Z) / **0 wedge_q1_answered**.
+- 2 home_visits (s-mpoi8zt1 20:16:49Z Ahrefs + s-mpozk94z 04:21:28Z) / **0 wedge_q1_answered**.
 - `q1_started_post_hero_swap = 0/5`.
-- Trajectoire 2 visits / 16h = 9 visits projetés T+72h, 0 q1 attendu.
+- Trajectoire 2 visits / 18h = 8 visits projetés T+72h, 0 q1 attendu.
 
-### Audit-26 (deadline 2026-05-29T22:00Z, T+~40h restant)
+### Audit-26 (deadline 2026-05-29T22:00Z, T+~38h restant)
 
 - `humans_via_chatgpt_unique_lifetime = 1 UNCHANGED 7ᵉ audit` (Bouygues 26T13:25Z pré-window audit-26).
 - 0 NEW chatgpt session ≥26T21:55Z (audit-26 issue).

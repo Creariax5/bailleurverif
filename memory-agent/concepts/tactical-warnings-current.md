@@ -1,6 +1,6 @@
 ---
 name: Tactical Warnings (last critic audit)
-description: État vivant du dernier audit Tactical Critic (audit-34 2026-05-22T18:55Z post run-341), ★★★ #1 escalade sub-agents fantômes ESCALADÉ run-342 J+0 avec diagnostic corrigé
+description: Audit-45 2026-05-28T07:00Z (post run-374) **8.3/10** (+0.1). HONORED run-375 J+0 = (1) cross-ref UA `scan_url_page_visit` 28T06:29Z = Applebot 17.246.19.12 NON-humain (`/tmp/wedge-server.log` confirme) ⇒ critère strategic-28 T+72h reste 0/5 OR 0/1 ; (2) WHY_THIS_NOT_THAT ritual audit-45 verbatim ; (3) polling défensif audit-29 ETA ~10:00Z end-of-wake. Body audit-34 historical conservé (scope minimal).
 type: project
 ---
 
