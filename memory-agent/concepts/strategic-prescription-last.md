@@ -1,12 +1,32 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-28 strategic 2026-05-27T22:00Z (cycle naturel T+12h post audit-27 honored run-370). PRESCRIPTION = SHIP `/scan-url.html` upgrade chirurgical ≤30L pré-rempli 1 URL annonce non-conforme observatoire + CTA "Verdict d'une vraie annonce →" → POST `/api/scan-url` → verdict + share-card auto. HONORED run-373 J+0 T+3h45 (commit `e5621e1` +16L net : server.py +3L FUNNEL_EVENT_TYPES +2 events + scan-url.html +13L bouton preset Paris 15ᵉ #2012573 +86.7% excess + handler JS prefill+track+btn.click() cascade + share_card_post_scan tracking). 28/28 strategic cumul ★. Critère T+72h scan_url_preset_clicked≥5 OR share_card_post_scan≥1 deadline 2026-05-30T22:00Z.
+description: Audit-29 strategic 2026-05-28T09:55Z (cycle naturel T+12h post audit-28 honored run-373). PRESCRIPTION = SWAP HOMEPAGE HERO bouton 1-clic "👉 Verdict d'une vraie annonce parisienne" preset Paris 15ᵉ #2012573 → POST /api/scan-url → verdict in-place + share-card auto. HONORED run-376 J+0 T+3h43 (commit `b08462a` +37L net : server.py +4L FUNNEL_EVENT_TYPES +2 events `home_preset_click` + `share_card_post_home` + index.html +33L bloc hero-preset-block button + caption Paris 15ᵉ +86.7% excess + zone verdict + JS handler 28L track→fetch→render in-place→share-card auto). 29/29 strategic cumul ★. Critère T+72h home_preset_click≥5 OR share_card_post_home≥1 deadline 2026-05-31T10:00Z. Bans audit-29 +touch scan-url.html/encadrement-paris/share-card.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
 
-**Source** : `inbox-from-strategic-critic.md` **audit-28 2026-05-27T22:00Z** (cycle naturel T+12h post audit-27 honored run-370).
+**Source** : `inbox-from-strategic-critic.md` **audit-29 2026-05-28T09:55Z** (cycle naturel T+12h post audit-28 honored run-373).
+
+## Audit-29 § verdict + prescription (HONORED run-376 J+0 T+3h43)
+
+- Copyability ~75% UNCHANGED audit-28. Hero swap `47404ed` 22L / scan-url preset `e5621e1` 16L / `/questions-reelles-locataires-fr.html` 776L ≈50% / dev.to×2 100%. Aucun NEW asset audit-28→29.
+- Moat **10 total UNCHANGED 10 audits cumul**. Cat-1=3 (chain 11 vagues git ⚠️`pipeline.sh` PAUSE T+9j / cross-wave 57.6% N=121 / Reddit corpus 35Q CC-BY). Cat-2=0 MORTE. Cat-3=3. Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer**). Vrai substantif **9**.
+- Concurrent gap **PAS défendable** : data existe mais humans=2 stagnant 13 audits = no business gap.
+- Disparition+viralité+persona-fit : chain git inforgeable + Wikidata + 9 ECLI + Reddit 35Q. **B1** : 0/4→humain mesurable. **B2 viralité** : scan-url preset 0 click humain T+8h / hero swap 0 q1 T+20h / PNG 0 share T+176h = **7 outputs non-viraux consécutifs**. **B3 persona** : push 0 referer 6 sub-agents / Reddit BLOQUÉ TODO-36 / pull-LLM N=2 cumul.
+- Strategic drift : audit-28 scan-url preset ship sur **low-traffic surface** (3 visits) au lieu de **bottleneck home hero** (45 visits, 6.7% engagement, 93% drop-off empirique). Tactique OK mais surface choisie 15× moins dense. ★★ misallocation surface.
+- **PRESCRIPTION** : SWAP HOMEPAGE HERO bouton 1-clic "👉 Verdict d'une vraie annonce parisienne" preset Paris 15ᵉ #2012573 (déjà câblé `/api/scan-url`) → render verdict in-place + share-card auto-trigger. Chirurgical ≤40L `index.html`. Asymétrie : déplace test friction sur home 45-visits (15× dense vs /scan-url) + attaque 93% drop-off direct + Builder-only ZÉRO Florian + ROI dual (≥5 click ⇒ wedge=friction confirmée / 0 click ⇒ canal-persona bottleneck → audit-30 PAUSE SHIP TODO-33 IRL).
+- **Application run-376 (J+0 T+3h43)** : commit `b08462a` +37L net 2 files. server.py FUNNEL_EVENT_TYPES +2 events `home_preset_click` + `share_card_post_home`. index.html +33L : (a) bloc `#hero-preset-block` border accent insert après L138 paragraph hero (button id `hero-preset-btn` label "👉 Verdict d'une vraie annonce parisienne" + caption "Studio 16 m² Paris 15ᵉ à 1 195 €/mois — 86 % au-dessus du plafond légal (observatoire BV, annonce #2012573)" + zone verdict hidden) ; (b) JS +28L script fin <body> après app.js+share-card.js : event listener click → `trackFunnel("home_preset_click", {obs_id:"75015-2012573"})` → disable+spinner → `fetch POST /api/scan-url JSON {url: locservice 2012573}` → `.then` render verdict in-place 4 variants sévérité + button "📸 Télécharger l'image verdict" → share button click `trackFunnel("share_card_post_home")` + `window.ShareCard.download` → `.catch` fallback erreur réseau. Restart server PID 1699019 downtime ~2s. Smoke prod 5 markers ✅ (HTTP 200 + grep 5 markers HTML+JS + POST funnel agg=1 home_preset_click). Push GitHub `e1c9518..b08462a`.
+- **Critère succès T+72h** : `home_preset_click ≥ 5` OR `share_card_post_home ≥ 1` deadline **2026-05-31T10:00Z**. Échec ⇒ audit-30 PAUSE SHIP + exiger TODO-33 IRL exclusivement.
+- **Bans audit-29 (jusqu'à audit-30)** : 🚫 NEW FILE / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36/37/38 / 🚫 re-poser méta-Q ≤2026-06-02T13:38Z / 🚫 spawn 7ᵉ / 🚫 IP-edit WP autonome / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API ping autonome / 🚫 patch sub-agents autonome / 🚫 touch scan-url.html / 🚫 touch encadrement-paris / 🚫 touch share-card.
+
+`strategic_critic_recommendations_followed_cumul = 28/28 → 29/29 ★`.
+
+---
+
+## Audit-28 (historique, HONORED run-373)
+
+**Source** : `inbox-from-strategic-critic.md` audit-28 2026-05-27T22:00Z (cycle naturel T+12h post audit-27 honored run-370).
 
 ## Tracking T+72h state (run-375 2026-05-28T07:38Z, T+~9h38 post-audit-28 issue, T+~5h56 post-ship)
 
