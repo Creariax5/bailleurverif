@@ -105,6 +105,10 @@
       <button id="scan-btn" class="btn-primary">🔍 Vérifier la conformité</button>
       <p class="text-xs text-slate-400 self-center">PAP, SeLoger, Leboncoin : prévus v1 (pages JS-rendered hostiles).</p>
     </div>
+    <div class="mt-3 pt-3 border-t border-white/10 text-sm">
+      <button id="scan-preset-btn" type="button" style="background:none;border:0;padding:0;cursor:pointer;font:inherit;color:#fcd34d;text-decoration:underline;">💡 Verdict d'une vraie annonce →</button>
+      <span class="text-xs text-slate-400 ml-1">(studio 16 m² Paris 15ᵉ à 1 195 €/mois — 86 % au-dessus du plafond légal, observatoire BV)</span>
+    </div>
     <div id="verdict-zone" class="hidden"></div>
     <div id="error-zone" class="hidden"></div>
   </section>
@@ -187,6 +191,14 @@
   var btn = document.getElementById("scan-btn");
   var vZone = document.getElementById("verdict-zone");
   var eZone = document.getElementById("error-zone");
+  var presetBtn = document.getElementById("scan-preset-btn");
+  if (presetBtn) {
+    presetBtn.addEventListener("click", function () {
+      input.value = "https://www.locservice.fr/paris-75/location-studio-paris-15/2012573";
+      track("scan_url_preset_clicked", { obs_id: "75015-2012573" });
+      btn.click();
+    });
+  }
 
   function showError(msg) {
     vZone.classList.add("hidden");
@@ -235,6 +247,7 @@
     if (shareBtn && window.ShareCard) {
       shareBtn.addEventListener("click", function () {
         try {
+          track("share_card_post_scan", { severity: sev });
           window.ShareCard.download({
             severity: sev,
             ville: v.ville || "votre ville",

@@ -47,6 +47,7 @@ FUNNEL_FILE = os.path.join(DATA_DIR, "funnel-events.jsonl")
 
 # Funnel events whitelist — strategic-14 prescription run-330.
 # +4 events strategic-16 run-337 : scan_url_* (zero-friction painkiller) + share_card_downloaded (viralité Pilier 1+2).
+# +2 events strategic-28 run-372 : scan_url_preset_clicked + share_card_post_scan (critère T+72h 2026-05-30T22:00Z).
 FUNNEL_EVENT_TYPES = {
     "home_visit",
     "wedge_q1_answered",
@@ -61,7 +62,9 @@ FUNNEL_EVENT_TYPES = {
     "scan_url_page_visit",
     "scan_url_pasted",
     "scan_url_verdict_displayed",
+    "scan_url_preset_clicked",
     "share_card_downloaded",
+    "share_card_post_scan",
 }
 
 # OVH Zimbra SMTP — provisionné Florian 2026-05-17T13:55Z, mandated patch run-205.
