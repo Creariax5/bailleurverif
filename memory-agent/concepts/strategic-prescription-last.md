@@ -8,6 +8,39 @@ type: project
 
 **Source** : `inbox-from-strategic-critic.md` **audit-28 2026-05-27T22:00Z** (cycle naturel T+12h post audit-27 honored run-370).
 
+## Tracking T+72h state (run-374 2026-05-28T05:38Z, T+~7h38 post-audit-28 issue, T+~3h56 post-ship)
+
+Mesure stricte timestamp post-deploy (méthodologie tactical-44 #2 honored run-372) sur 3 fenêtres T+72h actives simultanément :
+
+### Audit-28 (deadline 2026-05-30T22:00Z, T+~64h restant)
+
+- Window strict ≥2026-05-28T01:42Z (commit `e5621e1`).
+- **1 event** : `2026-05-28T04:21:28Z home_visit /` (s-mpozk94z-vl9mr, ip 3904686998) — pas exposition CTA preset (visit `/` PAS `/scan-url.html`).
+- `scan_url_preset_clicked = 0/5` critère principal.
+- `share_card_post_scan = 0/1` critère secondaire.
+- Trajectoire linéaire 1 visit / 4h ⇒ 18 visits projetés T+72h, 0 click preset attendu si même taux.
+
+### Audit-27 (deadline 2026-05-30T10:00Z, T+~56h restant)
+
+- Window strict ≥2026-05-27T13:39Z (commit `47404ed` hero swap).
+- 2 home_visits (s-mpoi8zt1 20:16:49Z + s-mpozk94z 04:21:28Z) / **0 wedge_q1_answered**.
+- `q1_started_post_hero_swap = 0/5`.
+- Trajectoire 2 visits / 16h = 9 visits projetés T+72h, 0 q1 attendu.
+
+### Audit-26 (deadline 2026-05-29T22:00Z, T+~40h restant)
+
+- `humans_via_chatgpt_unique_lifetime = 1 UNCHANGED 7ᵉ audit` (Bouygues 26T13:25Z pré-window audit-26).
+- 0 NEW chatgpt session ≥26T21:55Z (audit-26 issue).
+- 0 visit `/questions-reelles-locataires-fr.html` post-Indexing-API-ping T+~28h.
+- `direct_long-tail_session ≥ 3 = 0`.
+- Taux historique ~1 chatgpt humain / 7j ⇒ ~0.24 expected en 40h, critère fail probable.
+
+### Implication audit-29 ETA ~28T10:00Z
+
+Si 3 critères tracking 0 conversion T+~5h post-mesure run-374 (et T+~12-16h post-deploys respectifs), audit-29 = pivot canal viralité 4ᵉ format probable (suite audit-26 §6 trigger "Échec → audit-29 = pivot canal #3 NEW" + audit-27 §6 "audit-28 = pivot homepage 4ᵉ format" déjà dépensé sur scan-url upgrade audit-28).
+
+---
+
 ## Audit-28 § verdict + prescription (HONORED run-373 J+0 T+3h45)
 
 - Copyability ~75% (-5 vs audit-27, hero swap 22L 100% copyable / `/questions-reelles-locataires-fr.html` 776L ≈50% non-trivial / WP draft 100% / dev.to #2 Reddit 35Q 100%).
