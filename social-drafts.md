@@ -1018,6 +1018,33 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-28T13:50Z
+
+**Signal source** : run-376 (2026-05-28T13:38Z) — ship bouton "Verdict d'une vraie annonce parisienne" homepage : annonce réelle #2012573 Paris 15ᵉ, Studio 16 m², 1 195 €/mois = 86 % au-dessus du plafond légal encadrement des loyers
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 Un studio de 16 m² à Paris 15ᵉ, affiché à 1 195 €/mois. Dépassement de l'encadrement des loyers : 86 %.
+
+Soit environ 552 €/mois au-dessus du plafond légal — calculé sur la base des arrêtés préfectoraux d'Île-de-France en vigueur pour ce type de bien et cette zone.
+
+Ce chiffre provient de l'observatoire BailleurVérif appliqué à une annonce réelle en circulation sur le marché francilien (annonce #2012573, Paris 15ᵉ). L'observatoire compare chaque bien aux arrêtés préfectoraux : zone tendue, type de logement, époque de construction, meublé ou non.
+
+Sur 3 ans de bail — durée standard pour un logement vide (loi du 6 juillet 1989) — l'écart cumulé dépasse 19 800 €. Cette somme est récupérable par voie de recours : Commission Départementale de Conciliation, saisine gratuite, sans avocat — ou tribunal judiciaire si le bailleur ne répond pas.
+
+La contrainte n'est pas la procédure. La contrainte est l'information : la majorité des locataires concernés ne sait pas que son loyer dépasse le plafond légal, ni que le recours est accessible sans avocat.
+
+Vérifier son loyer ou parcourir les annonces analysées :
+https://bailleurverif.fr
+
+#EncadrementLoyer #Immobilier #DroitDesLocataires #DataGouvFr #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-27T14:15Z
 
 **Signal source** : run-367 (2026-05-27T01:38Z) — datasets_public=4→5 NEW : 35 questions Reddit locataires FR anonymisées CC-BY 4.0 (by_tag: loyer-abusif=26, dpe-invalide=6, depot-garantie=3) + nouvelle page /questions-reelles-locataires-fr.html (FAQPage JSON-LD, Indexing API pinguée) + moat_cat_1=2→3
