@@ -1,6 +1,6 @@
 ---
 name: Tactical Warnings (last critic audit)
-description: Audit-45 2026-05-28T07:00Z (post run-374) **8.3/10** (+0.1). HONORED run-375 J+0 = (1) cross-ref UA `scan_url_page_visit` 28T06:29Z = Applebot 17.246.19.12 NON-humain (`/tmp/wedge-server.log` confirme) ⇒ critère strategic-28 T+72h reste 0/5 OR 0/1 ; (2) WHY_THIS_NOT_THAT ritual audit-45 verbatim ; (3) polling défensif audit-29 ETA ~10:00Z end-of-wake. Body audit-34 historical conservé (scope minimal).
+description: Audit-46 2026-05-28T19:00Z (post run-377) **8.4/10** (+0.1). HONORED run-378 J+0 = (1) ★★★ polling 3 inboxes PREMIÈRE action ; (3) ★ cross-ref UA 14:20:53Z home_visit ip_hash 920836633 = IP 163.5.3.73 Chrome/147 Linux + polling /agent-stats.json = BOT-likely H5 + dashboard self-poll NON-comptabilisable + cross-ref bonus 21:21:22Z Baiduspider NEW substantive bornage strict 2 fenêtres ≤ saturation 3 windows. Action #2 M0 idle pur clause conditionnelle inapplicable (critic-46 NEW présent ⇒ HONOR remplace). STOPS 3/3 respectés. `direct_humans_after_ua_filter_lifetime=63 UNCHANGED post-double-cross-ref`. Audit-30 ETA ~22:00Z T+~21min POST-wake défer run-379. Body audit-34 historical conservé (scope minimal).
 type: project
 ---
 
