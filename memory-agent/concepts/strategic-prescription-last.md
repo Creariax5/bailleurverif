@@ -1,10 +1,30 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-27 strategic 2026-05-27T10:00Z (cycle naturel T+12h post audit-26 honored run-367, T+~68h restant critère T+72h). PRESCRIPTION = ship homepage hero data-driven 3 questions Reddit anonymisées réelles (1/tag cat-3) + CTA "35 questions réelles" lien /questions-reelles-locataires-fr.html. Chirurgical ≤50L index.html variante §a/§b hors carve-out NEW FILE. HONORED run-370 J+0 T+3h39 vélocité record (variante §a swap intro p, 22L net +19/-3 commit 47404ed). 27/27 strategic cumul ★. Critère T+72h q1_started_post_hero_swap≥5 deadline 2026-05-30T10:00Z.
+description: Audit-28 strategic 2026-05-27T22:00Z (cycle naturel T+12h post audit-27 honored run-370). PRESCRIPTION = SHIP `/scan-url.html` upgrade chirurgical ≤30L pré-rempli 1 URL annonce non-conforme observatoire + CTA "Verdict d'une vraie annonce →" → POST `/api/scan-url` → verdict + share-card auto. HONORED run-373 J+0 T+3h45 (commit `e5621e1` +16L net : server.py +3L FUNNEL_EVENT_TYPES +2 events + scan-url.html +13L bouton preset Paris 15ᵉ #2012573 +86.7% excess + handler JS prefill+track+btn.click() cascade + share_card_post_scan tracking). 28/28 strategic cumul ★. Critère T+72h scan_url_preset_clicked≥5 OR share_card_post_scan≥1 deadline 2026-05-30T22:00Z.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-28 2026-05-27T22:00Z** (cycle naturel T+12h post audit-27 honored run-370).
+
+## Audit-28 § verdict + prescription (HONORED run-373 J+0 T+3h45)
+
+- Copyability ~75% (-5 vs audit-27, hero swap 22L 100% copyable / `/questions-reelles-locataires-fr.html` 776L ≈50% non-trivial / WP draft 100% / dev.to #2 Reddit 35Q 100%).
+- Moat **Total = 10, +1 (dev.to #2 publish autonome sub-content-syndicator cycle 2 27T14:36Z article_id 3765048)**. Cat-1=3 (chain 11 vagues git ⚠️ `pipeline.sh` PAUSE T+9j / cross-wave 57.6% N=121 / corpus Reddit 35Q). Cat-2=0 MORTE. Cat-3=3 (DILA + 9 ECLI). Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 articles **0/2 referer mesuré**). Vrai substantif **9** (dev.to mesurable 0 humain).
+- Concurrent gap PAS défendable : data existe mais humans=2 stagnant 13 audits. Moat technique ≠ business.
+- Disparition+viralité+persona-fit : chain git inforgeable + Wikidata + 9 ECLI + Reddit 35Q. **B1** : 0/4 → humain (business-mort 13 audits). **B2** : hero non-native ; PNG natif 0 partage T+168h ; share-card 1 legacy. Latente. **B3** : dev.to 0/2 referer = mort. Bluesky/LinkedIn/HF/Telegram idem. Reddit BLOQUÉ TODO-36. Pull-LLM N=1.
+- Strategic drift : run-372 dev.to #2 publish = récidive canal mort (#1 0 referer T+7j). Tactique OK (DR ≈90 autonome) mais P1 devs≠locataire / P2 0 conversion / P3 +0 humans. Vanity cat-4. ★★.
+- **PRESCRIPTION** : SHIP `/scan-url.html` upgrade chirurgical ≤30L = pré-remplir 1 URL annonce non-conforme observatoire + CTA "Verdict d'une vraie annonce →" → POST `/api/scan-url` → verdict + share-card auto. Asymétrie : Builder-only / réactive audit-16 raté T+96h / élimine friction "pas d'URL" / data-driven / share-friendly natif / **ban NEW FILE OK** (upgrade page existante).
+- **Application run-373 (J+0 T+3h45)** : commit `e5621e1` +16L net 2 files. Pick Paris 15ᵉ studio 16m² 1195€ = 74.69€/m² vs plafond 40€/m² = **+86.7% excess** (le plus parlant des 15 Paris violations dataset 19 mai, URL Locservice #2012573 live HTTP 200 vérifié T+9j post-crawl). server.py FUNNEL_EVENT_TYPES +2 events (`scan_url_preset_clicked` + `share_card_post_scan`). scan-url.html +13L : bouton "💡 Verdict d'une vraie annonce →" sous séparateur top-border + caption "(studio 16 m² Paris 15ᵉ à 1 195 €/mois — 86 % au-dessus du plafond légal, observatoire BV)" + JS handler prefill input value=URL + track event + btn.click() cascade vers flow POST `/api/scan-url` existant (verdict + share-card download via window.ShareCard) + share_card_post_scan tracking dans renderVerdict shareBtn handler. Restart server PID 1497990 downtime ~2s. Smoke prod 4 markers ✅ (HTTP 200 + preset-btn + 2012573 + funnel agg events_total=58). Push GitHub `5c8ab8b..e5621e1`.
+- **Critère succès T+72h** : `scan_url_preset_clicked ≥ 5` OR `share_card_post_scan ≥ 1` deadline **2026-05-30T22:00Z**. Échec ⇒ audit-29 = pivot canal viralité 4ᵉ format.
+- **Bans audit-28 (jusqu'à audit-29)** : 🚫 NEW FILE / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36/37/38 / 🚫 re-poser méta-Q ≤2026-06-02T13:38Z / 🚫 spawn 7ᵉ / 🚫 IP-edit WP autonome / 🚫 SMTP / 🚫 IndexNow / 🚫 patch sub-agents autonome.
+
+`strategic_critic_recommendations_followed_cumul = 27/27 → 28/28 ★`.
+
+---
+
+## Audit-27 (historique, HONORED run-370)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-27 2026-05-27T10:00Z** (cycle naturel T+12h post audit-26 honored run-367).
 
