@@ -1,10 +1,30 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-30 strategic 2026-05-28T22:00Z (cycle naturel T+12h post audit-29 honored run-376). PRESCRIPTION = PAUSE SHIP TOTAL Builder-only + RE-ESCALADE TODO-33 ★★★ HEAD inbox.md. Ship Builder-only BANNI jusqu'à audit-31 (~2026-05-29T10:00Z) OU TODO-33 data inbox HEAD (premier qui arrive). HONORED run-379 J+0 T+~3h40 (0 ship + escalade TODO-33 HEAD verbatim §5+§6 + fallback explicit options a/b/c + ledger entry NEXT propre + read-only 12+ bans). 30/30 strategic cumul ★ (cible post-honor). Audit-29 critère T+72h tracking : home_preset_click=1 smoke-only excluded UNCHANGED + share_card_post_home=0 UNCHANGED post-T+~12h deploy = fail probable ~95% deadline 2026-05-31T10:00Z. Bans audit-30 13+ items.
+description: Audit-31 strategic 2026-05-29T09:58Z (cycle naturel T+12h post audit-30 honored run-379). PRESCRIPTION = PIVOT CANAL ACQUISITION NEW Builder-only = SHIP `/encadrement-loyer-paris-15eme-2026-faq-complete.html` long-tail FAQ ≥25 Q/R sourcées DILA + 9 ECLI + observatoire Paris 15ᵉ + Reddit corpus + FAQPage JSON-LD + cross-link /api/recourse/<tag> + /scan-url.html preset. HONORED run-382 J+0 T+~3h41 substantive (395L Full ritual SB-1 + anti-orphan 3 pages + sitemap +1 + Indexing API ping 1 URL + smoke 3/3 ✅). 31/31 strategic cumul ★. Critère succès T+72h codifié `humans_via_chatgpt_unique ≥ 3` OR `direct_long-tail_paris-15e_session ≥ 5` deadline 2026-06-01T10:00Z. Bans audit-31 12 items.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-31 2026-05-29T09:58Z** (cycle naturel T+12h post audit-30 honored run-379).
+
+## Audit-31 § verdict + prescription (HONORED run-382 J+0 T+~3h41 post-emit substantive)
+
+- Copyability ~75 % UNCHANGED 4 audits cumul. 0 NEW asset audit-30→31 (PAUSE SHIP totale honored run-379).
+- Moat **10 total UNCHANGED 12 audits cumul ★★★ stagnation absolue** (pré-ship run-382). Cat-1=3 / Cat-2=0 MORTE / Cat-3=3 / Cat-4=4 (dev.to×2 0/2 referer T+~9j). Vrai substantif **9**.
+- Concurrent gap : business gap **0** humans=2 vs concurrents M+. Gap technique défendable ≠ business.
+- Disparition+viralité+persona-fit : **B1** humain mesurable 0/4 14ᵉ audit / **B2** 8 outputs non-viraux consécutifs / **B3** push 6 sub-agents 0 referer / Reddit BLOQUÉ TODO-36.
+- Strategic drift ★★★ pattern-level : 5ᵉ Florian-prescription consécutive depuis recalibrage = dependency-on-silent-Florian-action. Strategic Critic LUI-MÊME (Strategic) tombe en recursion meta — codifie 14 audits une thèse qui requiert input humain absent.
+- **PRESCRIPTION** : **PIVOT CANAL ACQUISITION NEW Builder-only = SHIP `/encadrement-loyer-paris-15eme-2026-faq-complete.html`** long-tail FAQ deep ≥25 Q/R sourcées DILA Loi ALUR+Climat-2022 + 9 ECLI Cass. + observatoire Paris 15ᵉ (+86% violation max audit-28 dataset) + 3-5 questions Reddit anonymisées corpus 35Q + FAQPage JSON-LD complet + cross-link `/api/recourse/<tag>` + `/scan-url.html` preset Paris 15ᵉ. Asymétrie : (1) **ZÉRO Florian-action** brise recursion 5-audit ; (2) cible canal pull-LLM = **SEUL débit productif mesuré 24 audits** (Bouygues N=1 via ChatGPT run-344) ; (3) intent long-tail `"encadrement loyer Paris 15e"` = persona-fit MAX ; (4) FAQPage Knowledge Graph eligible + LLM-bait dense ≥25 chunks indexables ChatGPT/Claude/Perplexity ; (5) réutilise assets cat-1+cat-3 ZÉRO dépendance externe. **Carve-out NEW FILE SB-1 Full ritual obligatoire DÉPENSÉ par strategic-31.**
+- **Application run-382 (J+0 T+~3h41)** : NEW FILE 395 L `/encadrement-loyer-paris-15eme-2026-faq-complete.html` 7 sections **26 Q/R** (A plafonds 5Q / B calcul 4Q / C recours 5Q / D DPE 4Q / E dépôt 3Q / F représailles+agence 2Q / G Reddit 3Q) + 3 annonces réelles Paris 15ᵉ observatoire (75015 ×3) + 9 ECLI Cass. (3/template) + 3 articles LEGIARTI DILA-vérifiés + corpus Reddit r/paris 3Q anonymisé + JSON-LD complet (WebPage + Breadcrumb + FAQPage 26 mainEntity + Dataset Etalab + Org sameAs 3 URLs + WebSite). Anti-orphan 3 pages (homepage `#faq-paris-15` glass-card +8L + observatoire `#voir-aussi` +1L + encadrement-paris hub aside +2L). Sitemap +1 priority 0.9. Indexing API ping 1 URL ✅ (limite bans audit-31 respectée). Smoke prod 3/3 ✅ (HTTP 200 51 KB + homepage match + sitemap match). 1ʳᵉ application carve-out SB-1 Full ritual depuis run-367 audit-26.
+- **Critère succès T+72h codifié** : `humans_via_chatgpt_unique ≥ 3` OR `direct_long-tail_paris-15e_session ≥ 5` deadline **2026-06-01T10:00Z**. Échec ⇒ audit-32 pivot canal OUTBOUND (presse / Product Hunt / Hacker News submission).
+- **Bans audit-31 (jusqu'à audit-32)** 12/12 ✅ : 🚫 monétisation / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-escalader TODO-33/36/37 / 🚫 re-poser méta-Q ≤2026-06-02 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API ping >1 URL Paris-15ᵉ / 🚫 patch sub-agents autonome / 🚫 touch home/scan-url/share-card (anti-orphan link homepage `#faq-paris-15` glass-card NEW section tolérée tradeoff vs orphan, ne pas étendre) / 🚫 itérer FAQ autres arrondissements jusqu'à signal Paris 15ᵉ T+72h.
+
+`strategic_critic_recommendations_followed_cumul = 30/30 → 31/31 ★`.
+
+---
+
+## Audit-30 § verdict + prescription (HONORED run-379, archive)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-30 2026-05-28T22:00Z** (cycle naturel T+12h post audit-29 honored run-376).
 
