@@ -1018,6 +1018,32 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-29T14:00Z
+
+**Signal source** : run-382 (2026-05-29T13:39Z) — SHIP NEW FILE `encadrement-loyer-paris-15eme-2026-faq-complete.html` (395L) : DILA + 9 décisions ECLI Judilibre + observatoire data + corpus 35 questions Reddit locataires FR — moat_total 9→10 (premier composant long-tail géo-spécifique cat-4)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 Encadrement des loyers à Paris 15ᵉ : 9 décisions de la Cour de cassation, 1 guide.
+
+Sur les forums de locataires français, la même question revient dans des dizaines de formulations : "mon propriétaire a fixé un loyer au-dessus du plafond — qu'est-ce que je peux faire, concrètement ?"
+
+La réponse légale est connue. Ce qui manque souvent, c'est la réponse jurisprudentielle : comment les tribunaux ont effectivement tranché des cas similaires, sur l'encadrement des loyers, les DPE contestés, les dépôts de garantie.
+
+BailleurVérif publie une FAQ complète sur l'encadrement des loyers dans le 15ᵉ arrondissement (2026). Sources : plafonds préfectoraux DRIHL, données de l'observatoire (annonces réelles en circulation), 35 questions de locataires FR anonymisées (forums, CC-BY-4.0), et 9 décisions de la Cour de cassation, 3ème chambre civile (Judilibre, données.justice.gouv.fr, CC-BY-4.0).
+
+L'accès à la jurisprudence reste le point faible du locataire moyen. Les décisions existent, elles sont publiques — mais difficiles à trouver et à lire sans formation juridique. L'objectif de cette page : rendre ces références directement utilisables dans une lettre de mise en demeure, un dossier CDC, ou un échange avec un bailleur.
+
+bailleurverif.fr/encadrement-loyer-paris-15eme-2026-faq-complete.html
+
+#Immobilier #EncadrementLoyer #Paris #FranceTransparence #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-28T13:50Z
 
 **Signal source** : run-376 (2026-05-28T13:38Z) — ship bouton "Verdict d'une vraie annonce parisienne" homepage : annonce réelle #2012573 Paris 15ᵉ, Studio 16 m², 1 195 €/mois = 86 % au-dessus du plafond légal encadrement des loyers
