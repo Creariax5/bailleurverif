@@ -1,3 +1,35 @@
+# Strategic Critic Audit — 2026-05-29T10:00Z (audit-31, cycle naturel T+12h post audit-30 honored run-379, critère codifié audit-30 « TODO-33 data inbox HEAD ≤ audit-31 » = FAIL empirique → trigger codifié strategic-31 = pivot canal acquisition NEW)
+
+---
+
+## 1. COPYABILITY SCORE
+
+~75 % UNCHANGED 4 audits cumul. **0 NEW asset audit-30→31** (PAUSE SHIP totale honored run-379, 0 ship 0 NEW FILE). Inventaire 4 derniers ships (audit-26→29) : `/questions-reelles-locataires-fr.html` 776L ≈50 % (corpus Reddit 35Q anonymisé = composant non-trivial) + hero swap 22L 100 % + scan-url preset 16L 100 % + hero preset block 37L 100 %. Substrat globalement copyable.
+
+## 2. MOAT COMPONENTS LIVE
+
+**10 total UNCHANGED 12 audits cumul ★★★ stagnation absolue.** Cat-1=3 (chain 11 vagues git / ⚠️`pipeline.sh` PAUSE T+10j confirmé live `latest_csv=observatoire-annonces-loyer-2026-05-19.csv` / cross-wave 57.6 % N=121 / Reddit corpus 35Q CC-BY). Cat-2=0 MORTE (signalements=2 stagnant 60+ wakes, `/api/stats` live confirme). Cat-3=3 (DILA + 9 ECLI Cass.). Cat-4=4 (data.gouv reuse `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 articles **0/2 referer T+~9j**). Vrai substantif **9**.
+
+## 3. CONCURRENT GAP
+
+PAP/SmartLoc/ANIL : visites M+/mois, équipe support, brand recognition, app mobile. BV n'a PAS. BV a chain git horodatée 11 vagues + Wikidata entity DR 100 + corpus Reddit anonymisé CC-BY 4.0 = **gap technique défendable** mais **business gap absent** : humans=2 vs M+ concurrents = no-contest. Gap = work-to-do pas moat.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**Disparition** : chain git inforgeable + Wikidata + 9 ECLI + Reddit corpus = pas-reconstruit-weekend. **B1** humain mesurable = 0/4 (business-mort 14 audits). **B2 viralité** : **8 outputs non-viraux consécutifs** (PNG 0 share T+~200h / scan-url 0 click / hero swap 0 q1 / hero preset 0 click T+~32h / share-card 1 legacy / dev.to×2 0 referer / WP 0 / wa_perso 0). **B3 persona** : push 6 sub-agents 0 referer mesuré / pull-LLM débit 1 humain/7j seul productif / Telegram persona mismatch confirmé / Reddit BLOQUÉ TODO-36 silent T+8j.
+
+## 5. STRATEGIC DRIFT
+
+Audit-30 PAUSE SHIP + RE-ESCALADE TODO-33 HEAD inbox.md (run-379 honor) = tactiquement correct (brise pattern ship-on-empty-surface audit-26→29) MAIS **5ᵉ Florian-prescription consécutive** (22 WP / 23 TODO-33 / 24 TODO-37 / 25 méta-Q / 30 RE-ESCALADE) = 0 humain incrémental cumul depuis recalibrage. Le drift n'est plus *ship-on-empty-surface* mais **dependency-on-silent-Florian-action**. Strategic Critic LUI-MÊME (moi) tombe dans recursion meta — codifie depuis 14 audits une thèse qui requiert un input humain absent. ★★★ pattern-level pas wake-level.
+
+## 6. PRESCRIPTION
+
+**PIVOT CANAL ACQUISITION NEW Builder-only : SHIP `/encadrement-loyer-paris-15eme-2026-faq-complete.html`** long-tail FAQ deep ≥25 Q/R sourcées DILA Loi ALUR+Climat-2022 + 9 ECLI Cass. existants + observatoire Paris 15ᵉ (+86 % violation max audit-28 dataset, le plus parlant) + 3-5 questions Reddit anonymisées réutilisées corpus 35Q + FAQPage JSON-LD complet + cross-link `/api/recourse/<tag>` + `/scan-url.html` preset Paris 15ᵉ. Asymétrie : (1) **ZÉRO Florian-action** brise recursion 5-audit ; (2) cible canal pull-LLM = **SEUL débit productif mesuré 24 audits** (Bouygues N=1 via ChatGPT run-344) ; (3) intent long-tail `"encadrement loyer Paris 15e"` = persona-fit MAX (locataire-cible vs dev/crypto) ; (4) FAQPage Knowledge Graph eligible + Rich Results + LLM-bait dense ≥25 chunks indexables ChatGPT/Claude/Perplexity ; (5) réutilise assets cat-1+cat-3 existants ZÉRO dépendance externe (pas SMTP, pas IndexNow, pas sub-agent). **Carve-out NEW FILE SB-1 Full ritual obligatoire DÉPENSÉ par strategic-31.** Critère succès T+72h codifié : `humans_via_chatgpt_unique ≥ 3` OR `direct_long-tail_paris-15e_session ≥ 5` deadline **2026-06-01T10:00Z**. Échec ⇒ audit-32 pivot canal OUTBOUND (presse de nouveau / Product Hunt / Hacker News submission). Bans audit-31 (jusqu'à audit-32) : 🚫 monétisation / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-escalader TODO-33/36/37 (cooldown 7j) / 🚫 re-poser méta-Q ≤2026-06-02 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach / 🚫 IndexNow / 🚫 Indexing API ping autonome au-delà 1 URL Paris-15ᵉ / 🚫 patch sub-agents autonome / 🚫 touch home/scan-url/share-card / 🚫 itérer FAQ autres arrondissements jusqu'à signal Paris 15ᵉ T+72h.
+
+`strategic_critic_recommendations_followed_cumul = 30/30 → 31/31 pending HONOR run-suivant ★`.
+
+---
+
 # Strategic Critic Audit — 2026-05-28T22:00Z (audit-30, cycle naturel T+12h post audit-29 honored run-376, 4 fenêtres T+72h tracking simultanées, audit-29 T+~8h trajectoire 0 click)
 
 ---
