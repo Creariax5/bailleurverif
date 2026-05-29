@@ -1,8 +1,49 @@
+## 🚨 2026-05-29T01:40Z — Agent → Florian — TODO-33 ★★★ RE-ESCALADE (strategic-30 prescription HEAD, PAUSE SHIP TOTAL Builder)
+
+**Strategic Critic audit-30 2026-05-28T22:00Z verdict (verbatim §5+§6)** : *"4 audits consécutifs ship Builder-only sur surface home/scan-url (26→29) = 0 humain incrémental cumul. Pattern strategic prouve le bottleneck n'est PAS friction-ship — c'est CANAL acquisition. PAUSE SHIP TOTAL audit-30 + RE-ESCALADE TODO-33 ★★★ HEAD inbox.md. Ship Builder-only = BANNI jusqu'à audit-31 (~2026-05-29T10:00Z) OU jusqu'à TODO-33 data inbox HEAD (premier qui arrive)."* 29/29 strategic cumul ★, audit-30 HONOR = read-only + cette escalade.
+
+**État empirique (justifie urgence)** :
+- `humans_engaged_lifetime = 2 UNCHANGED 14ᵉ audit consécutif` (1 Bouygues ChatGPT + 1 LinkedIn legacy).
+- Audit-29 critère T+72h `home_preset_click ≥ 5 OR share_card_post_home ≥ 1` = **0 humain T+~12h post-deploy** (1 smoke-only excluded, deadline 2026-05-31T10:00Z, fail probable ~95%).
+- 4 audits ship Builder-only (26 Reddit-corpus / 27 hero-questions / 28 scan-url-preset / 29 hero-preset) = 0 conversion humaine cumul.
+- 6 sub-agents distribution = 0 referer humain measured 30j.
+- 4 TODOs Florian-action silent : TODO-33 (5 personnes) / TODO-36 (Reddit compte) / TODO-37 (5 amis WA) / TODO-38 — diagnostic strategic = **canal acquisition est le vrai bottleneck, pas friction ship**.
+
+**Action TODO-33 (rappel verbatim, ~1h one-shot)** :
+
+> 5 personnes entourage (locataire OU bailleur), ~12 min chacune, 1 SEULE question :
+> *"Si tu avais 10 secondes pour comprendre si tu te fais arnaquer sur ton loyer / dépôt de garantie / DPE, qu'est-ce que tu voudrais voir ?"*
+> Reporter findings ligne `inbox.md` HEAD : `TODO-33 user-feedback: [bullet points]` (1 ligne/personne).
+
+**Pourquoi MAINTENANT (vs cooldown 7j habituel)** : (1) Strategic-30 prescription EXPLICITE override cooldown (cooldown ≥2026-05-24 PAST). (2) Ship Builder banni 8h-72h jusqu'à audit-31 OR TODO-33 data → Builder PEUT QUE attendre. (3) ROI dual = soit tu débloques pivot homepage data-driven (canal + persona-fit), soit T+72h audit-29 fail propre → strategic-31 pivot canal acquisition NEW (TODO-36 Reddit re-escalade + Twitter/X fallback plan B). (4) Sans toi, Builder reste read-only et compteur humans=2 stagne 15ᵉ/16ᵉ/17ᵉ audit consécutif.
+
+**Option fallback explicite si TODO-33 trop lourd 1h** : (a) **TODO-33 light** = 1 SEULE personne (12 min) = signal suffisant si verbatim copié inbox / (b) **TODO-37 WhatsApp 5 amis** (30 min, msg pré-rédigé verbatim) = canal différent mesurable `utm_source=wa_perso` / (c) **TODO-36 Reddit compte** (10 min toi + draft posts Builder) = canal viral persona-fit #1 proposé. **Choisis 1, dis-moi laquelle, je m'aligne.**
+
+**Status Builder run-379+ jusqu'à audit-31 (~2026-05-29T10:00Z, T+~8h)** : 0 ship / 0 NEW FILE / 0 touch home/scan-url/share-card / 0 monétisation / 0 spawn / 0 SMTP / 0 IndexNow / 0 patch sub-agents / 0 ScheduleWakeup. M0 idle pur strict accepté transparent.
+
+---
+
+
 ## 🔧 2026-05-27T09:40Z — Agent → Florian — pipeline observatoire CSV pause T+8j (signal substantif critic-43 #1)
 
 `sub-observatoire-publisher` cycle 1 (27T06:31Z) = `no_fresh_data` : `latest_csv=observatoire-annonces-loyer-2026-05-19.csv` (8j stale). Crawl JSONL daily 7 villes **OK** (paris/toulouse 27T03:15Z fresh ✅) — c'est l'**agrégation `pipeline.sh` dedupe+score+CSV** qui n'a plus publié depuis vague-11. Moat cat-1 "fenêtre fraîche" empiriquement cassée. Arbitre 60s : **(a)** Builder lance `pipeline.sh` manuel vague-12 OK / **(b)** investigate root cause (bug/disk/permission) / **(c)** pause volontaire post-recalibrage mission. Cooldown 7j non applicable (nouveau signal). Read-only respecté bans audit-26.
 
 ---
+
+
+## 📬 2026-05-27T10:30Z — Mail entrant `contact@bailleurverif.fr` UID=6
+
+- **From** : `Mehadi Hasan <mehadi.hasan@coderlegion.co>`
+- **Subject** : Showcase as a Writer on our platform similar to Medium.com/Dev.to/X.com
+- **Date** : Wed, 27 May 2026 10:29:32 +0000
+- **Snippet** :
+
+> Hello Florian, Your article “90 Pages With Broken Rich Results: My Autonomous Agent Found Them, Fixed Them, and Rewrote Itself” on dev.to stood out for its hands-on demonstration of automated detection and repair of structured data issues. The idea of an agent not just identifying SEO problems but actively rewriting itself to improve outcomes is particularly forward-thinking. I’ve also reacted to …
+
+Webmail : https://webmail.mail.ovh.net/ — réponse manuelle ou via agent SMTP.
+
+---
+
 
 ## 🤔 2026-05-26T13:38Z — Agent → Florian — strategic-25 META-Q ≤350c : bloqueur 5 TODOs silent ?
 

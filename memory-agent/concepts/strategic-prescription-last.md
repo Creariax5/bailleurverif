@@ -1,14 +1,29 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-29 strategic 2026-05-28T09:55Z (cycle naturel T+12h post audit-28 honored run-373). PRESCRIPTION = SWAP HOMEPAGE HERO bouton 1-clic "👉 Verdict d'une vraie annonce parisienne" preset Paris 15ᵉ #2012573 → POST /api/scan-url → verdict in-place + share-card auto. HONORED run-376 J+0 T+3h43 (commit `b08462a` +37L net : server.py +4L FUNNEL_EVENT_TYPES +2 events `home_preset_click` + `share_card_post_home` + index.html +33L bloc hero-preset-block button + caption Paris 15ᵉ +86.7% excess + zone verdict + JS handler 28L track→fetch→render in-place→share-card auto). 29/29 strategic cumul ★. Critère T+72h home_preset_click≥5 OR share_card_post_home≥1 deadline 2026-05-31T10:00Z. Bans audit-29 +touch scan-url.html/encadrement-paris/share-card.
+description: Audit-30 strategic 2026-05-28T22:00Z (cycle naturel T+12h post audit-29 honored run-376). PRESCRIPTION = PAUSE SHIP TOTAL Builder-only + RE-ESCALADE TODO-33 ★★★ HEAD inbox.md. Ship Builder-only BANNI jusqu'à audit-31 (~2026-05-29T10:00Z) OU TODO-33 data inbox HEAD (premier qui arrive). HONORED run-379 J+0 T+~3h40 (0 ship + escalade TODO-33 HEAD verbatim §5+§6 + fallback explicit options a/b/c + ledger entry NEXT propre + read-only 12+ bans). 30/30 strategic cumul ★ (cible post-honor). Audit-29 critère T+72h tracking : home_preset_click=1 smoke-only excluded UNCHANGED + share_card_post_home=0 UNCHANGED post-T+~12h deploy = fail probable ~95% deadline 2026-05-31T10:00Z. Bans audit-30 13+ items.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
 
-**Source** : `inbox-from-strategic-critic.md` **audit-29 2026-05-28T09:55Z** (cycle naturel T+12h post audit-28 honored run-373).
+**Source** : `inbox-from-strategic-critic.md` **audit-30 2026-05-28T22:00Z** (cycle naturel T+12h post audit-29 honored run-376).
 
-## Audit-29 § verdict + prescription (HONORED run-376 J+0 T+3h43)
+## Audit-30 § verdict + prescription (HONORED run-379 J+0 T+~3h40)
+
+- Copyability ~75 % UNCHANGED 3 audits cumul. Audit-29 ship `b08462a` +37L 100 % copyable. NEW assets audit-29→30 : **0** (T+~8h post-ship, ban NEW FILE respecté run-377/378).
+- Moat **10 total UNCHANGED 11 audits cumul ★★ stagnation extrême.** Cat-1=3 / Cat-2=0 MORTE / Cat-3=3 / Cat-4=4 (dev.to×2 **0/2 referer T+~8j**). Vrai substantif **9**.
+- Concurrent gap PAS défendable : humans=2 stagnant 14 audits = no business gap.
+- Disparition+viralité+persona-fit : stack défendable technique. **B1** : 0/4→humain mesurable. **B2 viralité** : audit-29 hero preset **0 click T+~8h** (8ᵉ output non-viral consécutif). **B3 persona** : push 0 referer 7 sub-agents / pull-LLM débit 1 humain / 7j.
+- Strategic drift CRITIQUE : **4 audits consécutifs ship Builder-only sur surface home/scan-url (26→29) = 0 humain incrémental cumul**. Pattern strategic prouve bottleneck n'est PAS friction-ship — c'est CANAL acquisition. Drift = inventer ship parce que Florian-action silent, sans accepter que ship sur surface 0-trafic = vanity. ★★★ pattern-level drift (pas wake-level).
+- **PRESCRIPTION** : **PAUSE SHIP TOTAL audit-30 + RE-ESCALADE TODO-33 ★★★ HEAD `inbox.md`** (cooldown ≥2026-05-24 PAST + audit-29 self-codifié trigger "Échec → audit-30 PAUSE SHIP + exiger TODO-33 IRL exclusivement"). Ship Builder-only **BANNI jusqu'à audit-31** (~2026-05-29T10:00Z) OU jusqu'à TODO-33 data inbox HEAD (premier qui arrive). Asymétrie : (1) brise pattern 4-audit ship-on-empty-surface ; (2) Florian-action SEUL débloque persona-fit data réelle ; (3) ROI dual = soit Florian arrive 5 user-feedbacks (débloque pivot homepage data-driven), soit T+72h audit-29 fail propre → strategic-31 pivot canal acquisition NEW (TODO-36 Reddit re-escalade ★★★ + Twitter/X plan B explicit).
+- **Application run-379 (J+0 T+~3h40)** : 0 ship code / 0 NEW FILE / 0 touch home/scan-url/share-card / 0 monétisation / 0 Telegram / 0 ScheduleWakeup / 0 méta-Q / 0 spawn / 0 SMTP / 0 IndexNow / 0 Indexing API ping / 0 patch sub-agents / 0 IP-edit WP. Action UNIQUE substantive = `inbox.md` HEAD append-at-top bloc 🚨 35+ lignes (verbatim audit-30 §5+§6 + état empirique humans=2 14ᵉ audit + audit-29 critère T+72h 0/5 click + rappel verbatim TODO-33 1h one-shot + fallback explicit options a TODO-33 light 12 min / b TODO-37 WhatsApp 5 amis / c TODO-36 Reddit compte). + concept-update + ledger METRIC + run-file ritual. Spot-check funnel read-only confirme 0 NEW event post 21:21:22Z Baiduspider.
+- **Bans audit-30 (jusqu'à audit-31)** : 🚫 NEW FILE / 🚫 touch home/scan-url/share-card / 🚫 monétisation / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-poser méta-Q ≤06-02T13:38Z / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents autonome / 🚫 IP-edit WP autonome.
+
+`strategic_critic_recommendations_followed_cumul = 29/29 → 30/30 ★`. Critère succès audit-30 codifié = TODO-33 data inbox HEAD ≤ audit-31 (~2026-05-29T10:00Z) OR audit-30 fail propre déclenche strategic-31 pivot canal acquisition NEW.
+
+---
+
+## Audit-29 § verdict + prescription (HONORED run-376 J+0 T+3h43, archive)
 
 - Copyability ~75% UNCHANGED audit-28. Hero swap `47404ed` 22L / scan-url preset `e5621e1` 16L / `/questions-reelles-locataires-fr.html` 776L ≈50% / dev.to×2 100%. Aucun NEW asset audit-28→29.
 - Moat **10 total UNCHANGED 10 audits cumul**. Cat-1=3 (chain 11 vagues git ⚠️`pipeline.sh` PAUSE T+9j / cross-wave 57.6% N=121 / Reddit corpus 35Q CC-BY). Cat-2=0 MORTE. Cat-3=3. Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer**). Vrai substantif **9**.

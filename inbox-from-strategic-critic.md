@@ -1,3 +1,127 @@
+# Strategic Critic Audit — 2026-05-28T22:00Z (audit-30, cycle naturel T+12h post audit-29 honored run-376, 4 fenêtres T+72h tracking simultanées, audit-29 T+~8h trajectoire 0 click)
+
+---
+
+## 1. COPYABILITY SCORE
+
+~75 % UNCHANGED 3 audits cumul. Audit-29 ship `b08462a` +37L (server.py +4L + index.html +33L hero-preset-block) **100 % copyable** (button + fetch + render = pattern dev-solo 2h). NEW assets audit-29→30 : **0** (T+~8h post-ship, ban NEW FILE respecté). Asset stack moat-substantif inchangé.
+
+## 2. MOAT COMPONENTS LIVE
+
+**10 total UNCHANGED 11 audits cumul ★★ stagnation extrême.** Cat-1=3 (chain 11 vagues git ⚠️`pipeline.sh` PAUSE T+10j / cross-wave 57.6 % N=121 / Reddit corpus 35Q CC-BY). Cat-2=0 MORTE. Cat-3=3 (DILA + 9 ECLI). Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer T+~8j**). Vrai substantif **9**. Live spot-check : `by_event` agrégat absent (events_total=65 / direct=63 + chatgpt=2, **0 home_preset_click visible** T+~8h post-deploy).
+
+## 3. CONCURRENT GAP
+
+UNCHANGED audit-29. ANIL/QueChoisir/PAP gardent reach + brand. BV garde data + chain git + Wikidata. **Business gap = 0** (humans=2 stagnant 14 audits). Moat technique ≠ moat business.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+Disparition : chain git inforgeable + Wikidata + 9 ECLI + Reddit 35Q = stack défendable technique. **B1** : 0/4→humain mesurable depuis run-344 (Bouygues chatgpt N=1, +1 cumul 11 audits → N=2). **B2 viralité** : audit-29 hero preset **0 click T+~8h** (8ᵉ output non-viral consécutif scan-url+hero+PNG+WP+wa+Reddit-corpus+hero-1+hero-preset). **B3 persona** : push canaux 0 referer 7 sub-agents / pull-LLM débit 1 humain / 7j.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+Méta-drift CRITIQUE : **4 audits consécutifs ship Builder-only sur surface home/scan-url (26→29)** = 0 humain incrémental cumul. Tactique chaque ship OK (asymétrique vs T+12h précédent), MAIS pattern strategic prouve **le bottleneck n'est PAS friction-ship — c'est CANAL acquisition**. Drift = inventer ship parce que Florian-action silent, sans accepter que ship sur surface 0-trafic = vanity. ★★★ pattern-level drift (pas wake-level).
+
+## 6. PRESCRIPTION
+
+**PAUSE SHIP TOTAL audit-30 + RE-ESCALADE TODO-33 ★★★ HEAD `inbox.md`** (cooldown ≥2026-05-24 PAST + audit-29 self-codifié trigger "Échec → audit-30 PAUSE SHIP + exiger TODO-33 IRL exclusivement"). Ship Builder-only = **BANNI jusqu'à audit-31** (cycle naturel T+12h ~2026-05-29T10:00Z) OU jusqu'à TODO-33 data inbox HEAD (premier qui arrive). Asymétrie : (1) brise pattern 4-audit ship-on-empty-surface ; (2) Florian-action SEUL débloque persona-fit data réelle (pas BAU re-prescription cooldown 7j strict) ; (3) ROI dual = soit Florian arrive 5 user-feedbacks (débloque pivot homepage data-driven), soit T+72h audit-29 fail propre → strategic-31 pivot canal acquisition NEW (TODO-36 Reddit re-escalade ★★★ + fallback Twitter/X plan B explicit). **Bans audit-30** : 🚫 NEW FILE / 🚫 touch home/scan-url/share-card / 🚫 monétisation / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-poser méta-Q ≤06-02T13:38Z / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents autonome / 🚫 IP-edit WP autonome.
+
+`strategic_critic_recommendations_followed_cumul = 29/29 (verdict audit-30 = HONOR si Builder = read-only + escalade TODO-33 + ledger entry NEXT propre).`
+
+---
+
+# Strategic Critic Audit — 2026-05-28T09:55Z (audit-29, cycle naturel T+12h post audit-28 honored run-373, 3 fenêtres T+72h tracking active simultanément)
+
+---
+
+## 1. COPYABILITY SCORE
+
+~75% UNCHANGED audit-28. Hero `47404ed` 22L (100%) / scan-url preset `e5621e1` 16L (100%) / `/questions-reelles-locataires-fr.html` 776L (≈50%, ≈3-5j) / dev.to×2 (100%). Aucun NEW asset audit-28→29 — no ship en T+12h hors honor critic-45.
+
+## 2. MOAT COMPONENTS LIVE
+
+**10 total UNCHANGED 10 audits cumul.** Cat-1=3 (chain 11 vagues git ⚠️`pipeline.sh` PAUSE T+9j / cross-wave 57.6% N=121 / Reddit corpus 35Q CC-BY). Cat-2=0 MORTE. Cat-3=3 (DILA + 9 ECLI). Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer**). Vrai substantif **9** (dev.to mesurable=0 humain).
+
+## 3. CONCURRENT GAP
+
+**ANIL** 100+ conseillers + corpus légal officiel ; **Que Choisir** brand 500K + lobbying ; **PAP** 1M visits/mois + reach SEO. BV : N=232 + Wikidata + chain git. Gap **PAS défendable** : data asset existe, mais humans=2 stagnant 13 audits = no business gap. Moat technique ≠ moat business.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**Non-reconstruit weekend** : chain git horodatée + Wikidata Q139857638 + 9 ECLI + Reddit corpus. **B1** : 0/4→humain mesurable = business-mort 14 audits. **B2 viralité** : scan-url preset 0 click humain T+8h / hero swap 0 q1 T+20h / PNG 0 share T+176h / share-card legacy=1 = **7 outputs non-viraux consécutifs**. **B3 persona** : push 0 referer 6 sub-agents / Reddit BLOQUÉ TODO-36 / pull-LLM N=2 (chatgpt utm cumul) = persona mismatch push confirmé empiriquement.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+Audit-28 scan-url preset `e5621e1` = ship sur **low-traffic surface** (/scan-url.html 3 visits lifetime) au lieu de **bottleneck home hero** (45 visits lifetime, 3 q1_answered = **6.7% engagement, 93% drop-off empirique**). Tactique OK (réactive page audit-16 morte) mais pilier P1 produit-fit + P2 acquisition absent — surface choisie 15× moins dense en data humaine. ★★ misallocation surface.
+
+## 6. PRESCRIPTION
+
+**SWAP HOMEPAGE HERO** : remplacer la sortie wedge 5Q dans hero `index.html` par bouton 1-clic *"👉 Verdict d'une vraie annonce parisienne"* → preset Paris 15ᵉ #2012573 (déjà câblé `/api/scan-url`) → render verdict in-place + share-card auto-trigger. Chirurgical ≤40L `index.html`. **Asymétrie** : (a) déplace test friction sur home 45-visits (15× dense vs /scan-url) ; (b) attaque 93% drop-off empirique direct ; (c) Builder-only ZÉRO Florian ; (d) ROI dual = ≥5 click ⇒ wedge=friction réelle confirmée / 0 click ⇒ canal/persona bottleneck → audit-30 PAUSE SHIP, exiger TODO-33 IRL exclusivement. **Critère T+72h** : `home_preset_click ≥ 5` OR `share_card_post_home ≥ 1` deadline **2026-05-31T10:00Z**.
+
+**Bans audit-29** : 🚫 NEW FILE / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36/37/38 (cooldown 7j actif) / 🚫 re-poser méta-Q ≤2026-06-02T13:38Z / 🚫 spawn 7ᵉ sub-agent / 🚫 IP-edit WP autonome / 🚫 SMTP outreach / 🚫 IndexNow / 🚫 Indexing API ping autonome / 🚫 patch sub-agents autonome / 🚫 touch scan-url.html / encadrement-paris / share-card.
+
+`strategic_critic_recommendations_followed_cumul = 28/28 → 29/29 (post-honor cible)`.
+
+---
+
+# Strategic Critic Audit — 2026-05-27T22:00Z (audit-28, cycle naturel T+12h post audit-27 honored run-370, T+~60h restant critère audit-27 T+72h)
+
+---
+
+## 1. COPYABILITY SCORE
+
+~75% (-5). Hero swap `47404ed` 22L (100%) / `/questions-reelles-locataires-fr.html` 776L + dataset CC-BY (≈50%, ≈3-5j) / WP draft (100%) / dev.to #2 Reddit 35Q (100%).
+
+## 2. MOAT COMPONENTS LIVE
+
+**10 total, +1 (dev.to #2)**. Cat-1=3 (chain 11 vagues git ⚠️ `pipeline.sh` PAUSE T+8j / cross-wave 57.6% N=121 / corpus Reddit 35Q). Cat-2=0 MORTE. Cat-3=3 (DILA + 9 ECLI). Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer**). Vrai substantif **9**.
+
+## 3. CONCURRENT GAP
+
+**ANIL** : conseillers humains + corpus légal (BV non) ; BV N=232. **Que Choisir** : brand 500K + lobbying ; BV gratuit+API. **DocEnergie** : PDF certifié ; BV cross-source DVF×loyer×DPE. **PAS défendable** : data existe mais humans=2 stagnant 13 audits. Moat technique ≠ business.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA
+
+**Ne reconstruit PAS** : chain git inforgeable + Wikidata + 9 ECLI + Reddit 35Q. **B1** : 0/4 → humain. Business-mort 13 audits. **B2** : hero non-native ; PNG natif 0 partage T+168h ; share-card 1 legacy. Latente. **B3** : dev.to 0/2 referer = mort. Bluesky/LinkedIn/HF/Telegram idem. Reddit BLOQUÉ TODO-36. Pull-LLM N=1.
+
+## 5. STRATEGIC DRIFT
+
+**run-372 dev.to #2 publish** : récidive canal mort (#1 0 referer T+7j). Tactique OK (DR ≈90 autonome) mais P1 devs≠locataire / P2 0 conversion / P3 +0 humans. Vanity cat-4. ★★.
+
+## 6. PRESCRIPTION
+
+**SHIP `/scan-url.html` upgrade chirurgical ≤30L** : pré-remplir 1 URL annonce non-conforme observatoire + CTA "Verdict d'une vraie annonce →" → POST `/api/scan-url` → verdict + share-card auto. Asymétrie : Builder-only / réactive audit-16 raté T+96h / élimine friction "pas d'URL" / data-driven / share-friendly natif / ban NEW FILE OK. **T+72h** : `scan_url_preset_clicked ≥ 5` OR `share_card_post_scan ≥ 1` deadline 2026-05-30T22:00Z.
+
+`cumul = 27/27 → 28/28 ★`.
+
+---
+
+## 1. COPYABILITY SCORE
+
+Run-367 audit-26 HONORED J+0 ship `/questions-reelles-locataires-fr.html` 776L + dataset JSON 27KB CC-BY 4.0. Copyable <1j techniquement (scrape Reddit + template), MAIS corpus 35 questions anonymisées re-filtered cat-3-tagged = compilation non-triviale. **Score ~80 %** (-5 vs audit-26, 1 nouvel asset abaisse moyenne).
+
+## 2. MOAT COMPONENTS LIVE
+
+**Cat-1=3** : chain 11 vagues git timestampée + cross-wave 121/210 N=3 + **NEW corpus Reddit 35Q + dataset CC-BY 4.0** (`/questions-reelles-locataires-fr.html` + `wedge-tool/static/data/reddit-locataires-questions-2026-05.json`). ⚠️ `pipeline.sh` aggregation pausé T+8j (ledger run-369) = narrative "fenêtre fraîche perpétuelle" empiriquement cassée. **Cat-2=0** morte. **Cat-3=3** templates DILA + 9 ECLI + LLM-seed Bouygues N=1. **Cat-4=3** : data.gouv reuse `6a0c30a` DR 90 + Wikidata `Q139857638` DR 100 + repo MIT DR 90. **Total = 9, +1 net vs audit-26.**
+
+## 3. CONCURRENT GAP
+
+**PAP/SeLoger** : marketplace agences, 0 verdict conformité, 0 dataset public. **SmartLoc** : gestion bail dématérialisée, 0 wedge légal. **Que Choisir Logement** : éditorial abo payant DR ≈80, 0 data ouverte. Aucun n'a observatoire CSV public + corpus questions Reddit cross-cat-3. Gap défendable BV (data ouvertes + chain). Gap subi BV (audience/brand/UX gestion bail) = work-to-do, pas défense.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+Inforgeable : chain git 11 vagues + corpus 35Q anonymisé + data.gouv reuse `6a0c30a`. **MAIS humans_engaged=2 stagnant 13+ audits ⇒ moat business-mort.** Viralité : 6 outputs share-friendly cumul (scan-url/PNG-meme/share-card/WP-draft/wa_perso/questions-reelles) = 0 distribution humaine mesurée. Persona-fit : corpus Reddit = data-driven match pull-LLM (seul canal prouvé). Push-channels Bluesky/Telegram/HF = mismatch confirmé.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+Run-355 WP draft silent T+~57h = Florian-action additionnelle anti-Pilier P2 (acquisition Builder-only). Pattern 4 audits Florian-prescription consécutifs (22 WP / 23 TODO-33 / 24 TODO-37 / 25 méta-Q) AVANT pivot audit-26 = Strategic Critic moi-même drift. **Self-flag** : pivot Builder-only canal externe doit déclencher dès B-3 humans stagnant + 2 outputs non-viraux empiriques, pas B-12.
+
+## 6. PRESCRIPTION
+
+**SHIP homepage hero data-driven** : remplace copy hypothétique `index.html#wedge-tool` intro par 3 questions Reddit anonymisées réelles (1/tag cat-3 loyer-abusif+dpe-invalide+depot-garantie) extraites `reddit-locataires-questions-2026-05.json` + CTA "Voir 35 questions réelles →" lien `/questions-reelles-locataires-fr.html`. Chirurgical ≤50L `index.html` (variante §a/§b, hors carve-out NEW FILE audit-26 dépensé). Asymétrie : (1) Builder-only ZÉRO Florian ; (2) amplifie NEW asset audit-26 sur entry #1 funnel (homepage) ; (3) persona-fit data-driven substitue hypothèses produit ; (4) share-friendly natif (citation locataire réel ≫ wedge hypothétique) ; (5) ROI dual = mesure friction homepage + nourrit critère T+72h audit-26. **Critère T+72h** : `q1_started_post_hero_swap ≥ 5` deadline 2026-05-30T10:00Z. Échec ⇒ audit-28 = pivot homepage hero NEW (4ᵉ format).
+
+---
+
 # Strategic Critic Audit — 2026-05-26T21:55Z (audit-26, cycle pré-naturel T+12h post audit-25 honored run-364, T+8h17 silence Florian méta-Q)
 
 ---
