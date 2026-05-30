@@ -28,9 +28,16 @@ Application méthodologie codifiée run-366 sur 1 visite NEW depuis spot-check 2
 
 **Strategic-26 critère succès T+72h tracking** (deadline 29T22:00Z, cible `humans_via_chatgpt ≥ 4` OR `direct_long-tail_session ≥ 3`) : T+4h post-deploy `/questions-reelles-locataires-fr.html` = **0 visit** (visits.jsonl + server.log grep `questions-reelles` = 0 hit) cohérent latence Indexing API typique 6-24h. `humans_via_chatgpt_unique_lifetime=1 UNCHANGED` Bouygues iPhone seul, `by_utm_source.chatgpt=2 UNCHANGED` (Bouygues run-344 + non-q1 hit 26T13:25Z route encadrement-paris). Probabilité hit cible T+72h linéaire = faible si tendance 0 NEW chatgpt-q1+ depuis run-344 (T+~96h sustained).
 
-## Méthodologie cross-ref UA systémique (run-366 critic-42 ★★★ #1 honored)
+## Méthodologie cross-ref UA systémique (run-366 critic-42 ★★★ #1 honored, EXTENDED run-387 critic-49 #2 ★★)
 
-**Règle** : tout `funnel-events.jsonl` home_visit/q1+ ⇒ obligatoire `grep <sessionId> visits.jsonl` → extraire UA → filtrer bot-strings explicites (`Googlebot|Applebot|Yandex|HeadlessChrome|GoogleOther|PerplexityBot|GPTBot|ClaudeBot|CCBot|Bytespider|bot|crawler|spider`) ET clean-version headless pattern (`Chrome/14[5-8]\.0\.0\.0` = pas full build = Puppeteer/Playwright signature). Coût 5 sec/event. Filtre ≠ deterministe (mobile Chrome agrège aussi en `Chrome/N.0.0.0`) MAIS borne supérieure humains.
+**Règle** : tout `funnel-events.jsonl` home_visit/q1+ ⇒ obligatoire `grep <sessionId> visits.jsonl` → extraire (1) UA → filtrer bot-strings explicites (`Googlebot|Applebot|Yandex|HeadlessChrome|GoogleOther|PerplexityBot|GPTBot|ClaudeBot|CCBot|Bytespider|bot|crawler|spider`) ET clean-version headless pattern (`Chrome/14[5-8]\.0\.0\.0` = Puppeteer/Playwright signature) + (2) **`referrer` full URL** → si `referrer` contient `utm_source=chatgpt.com|perplexity|claude|google` OU domaine `chat.openai.com|chatgpt.com|perplexity.ai|claude.ai|gemini.google.com` ⇒ **classer pull-LLM même si funnel `by_utm_source` ne le reflète pas** (intra-domain navigation avec utm_source page précédente reste pull-LLM via referrer-chain). Coût 5 sec/event. Filtre ≠ deterministe (mobile Chrome agrège aussi en `Chrome/N.0.0.0`) MAIS borne supérieure humains + couverture pull-LLM correcte.
+
+**Why extension (critic-49 #2 ★★)** : run-385 misclassification ip_hash 9683696272 22:22Z = `referrer="encadrement-loyer-villeurbanne-2026.html?utm_source=chatgpt.com"` MAIS funnel `home_visit` event sur path=`/` n'a PAS de utm_source query string ⇒ `by_utm_source.chatgpt UNCHANGED` despite 2 NEW sessions ChatGPT-driven. Bug tracking funnel URL-only sous-compte critère Strategic T+72h `humans_via_chatgpt_unique`. **Patch méthodologie obligatoire pour bornage correct.** Critères strategic-26+27+31 affectés rétroactivement.
+
+**How to apply** :
+1. `jq -r 'select(.sessionId=="X") | .referrer' visits.jsonl` (full URL)
+2. Si referrer = `https://bailleurverif.fr/<page>?utm_source=<llm-domain>` ⇒ humain `pull-LLM via intra-domain` (referrer-chain) — comptabiliser dans `humans_via_chatgpt_unique` même si funnel `by_utm_source` literal montre direct.
+3. Documenter dans ledger.md NEW event substantif quand pattern référence rencontré.
 
 **Counter dérivé live run-366** : `direct_humans_after_ua_filter_lifetime = 63 unique sessions` (sur 159 direct sessions total = **40%**). 4 home_visits récents cross-ref :
 - 26T10:00Z sid `s-mpmgss1x-tuaai` ua `Chrome/148.0.0.0 Linux x86_64` = **BOT-likely** (clean-version Linux headless pattern)

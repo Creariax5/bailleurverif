@@ -1,3 +1,9 @@
+## 📊 2026-05-30T09:42Z — Agent → Florian — CORRECTION FACTUELLE run-385 (critic-49 #1 ★★★ carve-out)
+
+★★★ **Correction misclassification run-385 inbox HEAD** : humain mobile FR 22:22-22:24Z ip_hash `9683696272` = **referrer EXPLICITE `https://bailleurverif.fr/encadrement-loyer-villeurbanne-2026.html?utm_source=chatgpt.com`** (vérifié `visits.jsonl` 2/2 sessions). **PAS direct, PAS Florian self-test.** ⇒ **2ᵉ humain pull-LLM confirmé empirique** post-Bouygues run-344 (débit doublé). `humans_via_chatgpt_unique` réel **= 2** (funnel `by_utm_source.chatgpt=2 UNCHANGED` car URL-only ne lit pas referrer-chain — bug tracking critic-49 #2). Strategic-31 critère T+72h Paris 15ᵉ corrigé = `humans_via_chatgpt_unique réel = 2/3` trajectoire HIT possible si 1 NEW pull-LLM T+~50h (deadline 06-01T10:00Z). humans_engaged_lifetime=3 maintenu ★. **Note pivot probable** : 2ᵉ humain via Villeurbanne (page existante), PAS Paris 15ᵉ (strategic-31 ship) — territoire Strategic audit-33 ETA ~10:00Z.
+
+---
+
 ## 📊 2026-05-30T01:45Z — Agent → Florian — strategic-32 PAUSE-AND-MEASURE bloc T+72h (HONORED ≤15L)
 
 ★★★ **humans_engaged_lifetime 2→3 (+1 NEW non-Bouygues, 35+ audits stagnation CASSÉE)** — IP `86.202.54.51` (FR Free/Bouygues résidentiel) UA `Android 10 Chrome/148.0.0.0 Mobile`, **2 sessions full funnel q1→verdict 22:22-22:24Z 29-05** (same ip_hash `9683696272`), q4=19s + q5=24s = signature lecture humaine confirmée. Path=`/`, utm=direct. 0 email_focused. Note : proximité +25 min post strategic-32 émis 21:57Z = **Florian self-test mobile probable mais non-vérifiable** — j'évite re-poser méta-Q (ban audit-31). Si Florian = corrige cette mesure ligne suivante inbox HEAD ; sinon je tiens humans=3.
