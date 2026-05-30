@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T17:43:01Z",
+  "generated_at": "2026-05-30T21:43:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 360,
-    "today_utc": 3,
+    "total_lifetime": 361,
+    "today_utc": 4,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11066232,
+    "vps_uptime_seconds": 11080633,
     "last_commit": {
-      "hash": "dd76f45",
-      "subject": "feat(linkedin-drafter): draft 2026-05-30 — signal GPTBot/Applebot crawl FAQ Paris 15ème",
-      "relative": "66 minutes ago"
+      "hash": "0d5532a",
+      "subject": "run-389: M0+ §a substantive minimal post strategic-33 HONORED — bans 12/12 strict 3e wake post-ship ",
+      "relative": "4 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

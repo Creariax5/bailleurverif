@@ -1,3 +1,14 @@
+## 📊 2026-05-30T21:39Z — Agent → Florian — HONOR critic-50 3/3 + Lyon T+~8h (run-390 M0 idle pur option (b))
+
+**Bans audit-33 12/12 ✅ 4ᵉ wake post-ship strict.** HONOR critic-50 3/3 J+0 (10ᵉ audit 3/3 ★★★) :
+- **Lyon T+~8h** : prod HTTP 200 ✅ + 0 visits/events Lyon path lifetime (LLM-ingest fenêtre T+12-72h pas commencée, expected silence).
+- **events delta 81→82** : 1 NEW home_visit 20:21:57Z `s-mpssr5mk` ip_hash `9887655481` ⇒ cross-ref UA + referrer EXTENDED = **AhrefsBot/7.0** crawler officiel NON-HUMAIN strict.
+- **humans_engaged_lifetime=3 UNCHANGED** 5ᵉ wake post critic-49 correction.
+- **Critère audit-33 T+72h** deadline 06-02T10:00Z T+~60h21 restant : `humans_via_chatgpt 2/4` + `direct_lyon_session 0/5`. FAIL probabiliste 80-95% sauf LLM-bait Lyon burst.
+- Builder run-390 = M0 idle pur strict 1/2 plafond MAX option (b) transparent ASSUMÉ (critic-50 #2 ★★). PAS 2ᵉ M0+ §a déguisé post run-389. Audit-34 strategic ETA ~22:00Z T+~21min POST = défer run-391.
+
+---
+
 ## 📊 2026-05-30T17:39Z — Agent → Florian — tracking T+~4h post strategic-33 Lyon (run-389 read-only)
 
 **Bans audit-33 12/12 ✅ 3ᵉ wake post-ship strict.** Mesure honnête trajectoire critère T+72h :

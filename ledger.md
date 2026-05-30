@@ -2071,3 +2071,15 @@ TRACK | audit-33 T+72h trajectoire | humans_via_chatgpt 2/4 + direct_lyon_sessio
 RITUAL | WHY_THIS_NOT_THAT | 36-streak post-run-388 | DIRECTIVE 10
 RITUAL | DIRECTIVE 7 zero-pose | 167 wakes ★★ 150+ trophy | aucun ScheduleWakeup
 BAN | audit-33 12/12 respectés | 3ᵉ wake post-ship strict | 0 ship/0 NEW FILE/0 touch surface/0 Indexing/0 SMTP/0 escalade/0 spawn/0 méta-Q/0 monétisation
+
+2026-05-30T21:39Z | run-390 | TRACK | 🛰️ **HONOR critic-50 3/3 J+0 explicit (10ᵉ audit consécutif 3/3 ★★★ MILESTONE) + M0 idle pur strict 1/2 plafond MAX option (b) ASSUMÉ transparent** — Bans audit-33 12/12 ✅ STRICT 4ᵉ wake post-ship. Critic-50 NEW présent mtime 19:03Z T+~2h36 post-emit ⇒ HONOR obligatoire ritual J+0 explicit (NON M0 idle pur car action substantive valide). #1 ★★★ polling 3 inboxes mtime PREMIÈRE action ✅ HONORED. #3 ★ tracking Lyon T+~8h + cross-ref UA + referrer EXTENDED NEW event 20:21:57Z `s-mpssr5mk` ip_hash 9887655481 = visits.jsonl UA `AhrefsBot/7.0` referrer=`direct` ⇒ **AhrefsBot SEO crawler officiel NON-HUMAIN strict** ✅ HONORED. #2 ★★ M0 idle pur strict 1/2 plafond MAX option (b) transparent ASSUMÉ ✅ HONORED (action substantive valid HONOR critic ≠ 2ᵉ M0+ §a déguisé interdit critic-50 STOP saturation). Spot Lyon T+~8h post-ship : HTTP 200 ✅ + 0 visits/events Lyon path lifetime (LLM-ingest fenêtre T+12-72h pas commencée, expected silence). humans_engaged_lifetime=3 UNCHANGED 5ᵉ wake post critic-49 correction. Audit-34 strategic ETA ~22:00Z T+~21min POST-wake défer run-391 cron tick 23:39Z PRÉ. Inbox HEAD compact ≤10L Florian-facing tracking transparent. 0 ship/0 NEW FILE/0 touch surface/0 Indexing/0 SMTP/0 escalade TODO/0 spawn/0 méta-Q/0 monétisation/0 Telegram/0 ScheduleWakeup.
+METRIC | events_total_lifetime | 81→82 | +1 NEW home_visit AhrefsBot/7.0 NON-HUMAIN cross-ref UA + referrer EXTENDED confirmed
+METRIC | humans_engaged_lifetime | 3 UNCHANGED | 5ᵉ wake post critic-49 correction Villeurbanne ChatGPT 2ᵉ humain
+METRIC | by_utm_source_lifetime | direct 79→80 + chatgpt 2 UNCHANGED | +1 AhrefsBot direct (bug funnel referrer-chain non-patché ban audit-33)
+METRIC | tactical_critic_recommendations_followed_j0_lifetime | 49→52 ★ | critic-50 3/3 J+0 = 10ᵉ audit consécutif 3/3 J+0 ★★★ MILESTONE
+METRIC | strategic_critic_recommendations_followed_cumul | 33/33 ★ UNCHANGED | audit-34 ETA ~22:00Z T+~21min POST run-390
+SMOKE | encadrement-loyer-lyon-2026 prod | HTTP 200 ✅ T+~8h post-ship | cache-control public max-age=300
+TRACK | audit-33 T+72h trajectoire | humans_via_chatgpt 2/4 + direct_lyon_session 0/5 | deadline 06-02T10:00Z T+~60h21 fail probabiliste 80-95% sauf LLM-bait Lyon burst T+12-72h
+RITUAL | WHY_THIS_NOT_THAT | 37-streak post-run-389 | DIRECTIVE 10
+RITUAL | DIRECTIVE 7 zero-pose | 168 wakes ★★ 150+ trophy | aucun ScheduleWakeup
+BAN | audit-33 12/12 respectés | 4ᵉ wake post-ship strict | 0 ship/0 NEW FILE/0 touch surface/0 Indexing/0 SMTP/0 escalade/0 spawn/0 méta-Q/0 monétisation/0 Telegram/0 ScheduleWakeup
