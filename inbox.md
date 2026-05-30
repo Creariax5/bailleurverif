@@ -1,3 +1,14 @@
+## 📊 2026-05-30T01:45Z — Agent → Florian — strategic-32 PAUSE-AND-MEASURE bloc T+72h (HONORED ≤15L)
+
+★★★ **humans_engaged_lifetime 2→3 (+1 NEW non-Bouygues, 35+ audits stagnation CASSÉE)** — IP `86.202.54.51` (FR Free/Bouygues résidentiel) UA `Android 10 Chrome/148.0.0.0 Mobile`, **2 sessions full funnel q1→verdict 22:22-22:24Z 29-05** (same ip_hash `9683696272`), q4=19s + q5=24s = signature lecture humaine confirmée. Path=`/`, utm=direct. 0 email_focused. Note : proximité +25 min post strategic-32 émis 21:57Z = **Florian self-test mobile probable mais non-vérifiable** — j'évite re-poser méta-Q (ban audit-31). Si Florian = corrige cette mesure ligne suivante inbox HEAD ; sinon je tiens humans=3.
+- **audit-31 T+72h FAQ Paris 15ᵉ** deadline 06-01T10:00Z T+~56h : `humans_via_chatgpt_unique=1 UNCHANGED` (cible ≥3) + `direct_long-tail_paris-15e_session=0/5` UNCHANGED. T+~12h post-deploy : 5 curl/SELF + **1 GPTBot crawl ✅ 17:31Z** + 2 iPhone-fake Asian (43.156.x + 43.153.x = Tencent cloud BOT) + 1 HEAD smoke. **0 humain direct mais GPTBot OK** → LLM ingestion T+12-72h prévue ChatGPT/Perplexity.
+- **audit-29 hero/share** deadline 31T10:00Z T+~32h : `home_preset_click_humain=0/5` + `share_card_post_home=0/1` UNCHANGED. Fail probable ~99%.
+- **audit-28** deadline 30T22:00Z T+~20h : `q1_started_post_hero_swap` sessions_reaching_q1 lifetime 4→5 (+2 NEW ce wake même ip_hash = 1 humain unique).
+- **audit-30 TODO-33** : FAIL confirmé (Florian silent T+24h post escalade, cooldown 7j actif ≥06-05).
+- events_total 65→79 (+14 = 7×2 sessions same ip_hash 1 humain). by_utm: direct=63→77 (+14), chatgpt=2 UNCHANGED. visits_unique=232→234. signups=0. moat=10. Bans audit-32 14/14 respectés ce wake (0 ship / 0 NEW FILE / 0 touch surface / 0 spawn / 0 SMTP / 0 IndexNow / 0 Indexing API).
+
+---
+
 ## 🚨 2026-05-29T01:40Z — Agent → Florian — TODO-33 ★★★ RE-ESCALADE (strategic-30 prescription HEAD, PAUSE SHIP TOTAL Builder)
 
 **Strategic Critic audit-30 2026-05-28T22:00Z verdict (verbatim §5+§6)** : *"4 audits consécutifs ship Builder-only sur surface home/scan-url (26→29) = 0 humain incrémental cumul. Pattern strategic prouve le bottleneck n'est PAS friction-ship — c'est CANAL acquisition. PAUSE SHIP TOTAL audit-30 + RE-ESCALADE TODO-33 ★★★ HEAD inbox.md. Ship Builder-only = BANNI jusqu'à audit-31 (~2026-05-29T10:00Z) OU jusqu'à TODO-33 data inbox HEAD (premier qui arrive)."* 29/29 strategic cumul ★, audit-30 HONOR = read-only + cette escalade.

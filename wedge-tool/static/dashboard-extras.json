@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-05-29T01:44:02Z",
+  "generated_at": "2026-05-30T01:48:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3041,
+    "requests_lifetime": 2764,
     "requests_24h": 0,
-    "bot_hits_lifetime": 1142,
+    "bot_hits_lifetime": 1102,
     "bot_hits_24h": 0,
     "bot_hits_1h": 0,
     "human_hits_24h": 0
   },
   "bots_by_type_lifetime": {
     "SemrushBot": 212,
-    "generic-bot": 189,
-    "OAI-SearchBot": 153,
+    "generic-bot": 188,
+    "OAI-SearchBot": 135,
     "ClaudeBot": 102,
-    "GPTBot": 98,
+    "GPTBot": 97,
     "Bingbot": 74,
     "PerplexityBot": 54,
-    "python-script": 38,
-    "ByteSpider": 35,
-    "Googlebot": 33,
+    "python-script": 35,
+    "ByteSpider": 34,
     "YandexBot": 31,
-    "AhrefsBot": 30,
+    "AhrefsBot": 27,
     "MJ12bot": 26,
     "FacebookExt": 25,
-    "HeadlessChrome": 22,
-    "Go-HTTP": 12,
+    "Googlebot": 23,
+    "HeadlessChrome": 20,
+    "Go-HTTP": 11,
     "curl/wget": 6,
     "DuckDuckBot": 2
   },
@@ -41,34 +41,18 @@
     "FacebookExt": "2026-05-27T19:53:40+00:00",
     "MJ12bot": "2026-05-27T21:59:55+00:00",
     "AhrefsBot": "2026-05-27T20:16:49+00:00",
-    "Go-HTTP": "2026-05-27T05:16:51+00:00",
-    "GPTBot": "2026-05-27T09:12:32+00:00",
     "generic-bot": "2026-05-27T21:00:21+00:00",
     "ByteSpider": "2026-05-27T13:06:55+00:00",
     "curl/wget": "2026-05-27T05:16:11+00:00",
+    "GPTBot": "2026-05-27T09:12:32+00:00",
     "PerplexityBot": "2026-05-27T23:35:47+00:00",
+    "Go-HTTP": "2026-05-27T05:16:51+00:00",
     "YandexBot": "2026-05-27T07:11:35+00:00",
     "DuckDuckBot": "2026-05-27T11:17:14+00:00"
   },
   "last_googlebot": "2026-05-28T01:33:03+00:00",
   "last_bingbot": "2026-05-28T01:25:56+00:00",
   "chart_7days": [
-    {
-      "day": "2026-05-23",
-      "total": 168,
-      "by_type": {
-        "ClaudeBot": 12,
-        "generic-bot": 125,
-        "AhrefsBot": 3,
-        "OAI-SearchBot": 10,
-        "Bingbot": 3,
-        "ByteSpider": 1,
-        "SemrushBot": 2,
-        "FacebookExt": 9,
-        "curl/wget": 1,
-        "Googlebot": 2
-      }
-    },
     {
       "day": "2026-05-24",
       "total": 188,
@@ -163,6 +147,11 @@
     },
     {
       "day": "2026-05-29",
+      "total": 0,
+      "by_type": {}
+    },
+    {
+      "day": "2026-05-30",
       "total": 0,
       "by_type": {}
     }
@@ -267,41 +256,44 @@
   ],
   "top_bot_paths_24h": {},
   "googlebot_paths_lifetime": {
-    "/robots.txt": 30,
-    "/sitemap.xml": 1,
+    "/robots.txt": 21,
     "/arnaque-location-lyon.html": 1,
     "/encadrement-loyer-echirolles-2026.html": 1
   },
   "top_human_paths_24h": {},
   "status_codes_24h": {},
   "funnel": {
-    "events_total_lifetime": 65,
-    "sessions_lifetime": 52,
-    "sessions_24h": 7,
+    "events_total_lifetime": 79,
+    "sessions_lifetime": 54,
+    "sessions_24h": 2,
     "by_type_24h": {
-      "home_visit": 5,
-      "scan_url_page_visit": 1,
-      "home_preset_click": 1
-    },
-    "by_type_lifetime": {
-      "home_visit": 48,
-      "scan_url_page_visit": 3,
-      "wedge_q1_answered": 3,
+      "home_visit": 2,
+      "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
       "wedge_q3_answered": 2,
       "wedge_q4_answered": 2,
       "wedge_q5_answered": 2,
-      "verdict_displayed": 2,
+      "verdict_displayed": 2
+    },
+    "by_type_lifetime": {
+      "home_visit": 50,
+      "scan_url_page_visit": 3,
+      "wedge_q1_answered": 5,
+      "wedge_q2_answered": 4,
+      "wedge_q3_answered": 4,
+      "wedge_q4_answered": 4,
+      "wedge_q5_answered": 4,
+      "verdict_displayed": 4,
       "home_preset_click": 1
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 48,
-      "wedge_q1_answered": 3,
-      "wedge_q2_answered": 2,
-      "wedge_q3_answered": 2,
-      "wedge_q4_answered": 2,
-      "wedge_q5_answered": 2,
-      "verdict_displayed": 2,
+      "home_visit": 50,
+      "wedge_q1_answered": 5,
+      "wedge_q2_answered": 4,
+      "wedge_q3_answered": 4,
+      "wedge_q4_answered": 4,
+      "wedge_q5_answered": 4,
+      "verdict_displayed": 4,
       "email_field_focused": 0,
       "email_submitted": 0
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T01:44:02Z",
+  "generated_at": "2026-05-30T01:49:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,68 +8,68 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 352,
-    "today_utc": 0,
+    "total_lifetime": 359,
+    "today_utc": 1,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
     {
+      "timestamp": "2026-05-30T01:45Z",
+      "run": "run-385",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "HONOR strategic-32 J+0 substantive (audit-32 PRESENT mtime 21:57:10Z T+~3h48 post-emit ETA 22:00Z, cycle naturel T+12h post audit-31 hono..."
+    },
+    {
+      "timestamp": "2026-05-29T21:39Z",
+      "run": "run-384",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "HONOR critic-48 J+0 substantive (critic-48 PRESENT mtime 19:04:38Z T+~2h35min post-emit, prédiction tactical-47 +95% confirmée)"
+    },
+    {
+      "timestamp": "2026-05-29T17:39Z",
+      "run": "run-383",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "M0 idle pur strict 1/2 plafond tactical-41 ASSUMÉ transparent option (b) post HONOR strategic-31 substantive run-382"
+    },
+    {
+      "timestamp": "2026-05-29T13:39Z",
+      "run": "run-382",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "★★★ **HONOR strategic-31 J+0 substantive T+~3h41 post-emit (audit-31 émis 09:58:35Z)** = SHIP NEW FILE `/encadrement-loyer-paris-15eme-20..."
+    },
+    {
+      "timestamp": "2026-05-29T09:39Z",
+      "run": "run-381",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "★ **HONOR critic-47 J+0 substantive** (NOT M0 idle pur — critic-47 émis 07:04Z PRÉSENT T+~2h35 pré-wake = trigger NEW)"
+    },
+    {
+      "timestamp": "2026-05-29T05:39Z",
+      "run": "run-380",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "★★ **M0 IDLE PUR STRICT TRANSPARENT ASSUMÉ (1ᵉʳ post run-379 HONOR substantive, plafond 2 strict tactical-41)**"
+    },
+    {
+      "timestamp": "2026-05-29T01:39Z",
+      "run": "run-379",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "★★★ **HONOR strategic-30 J+0 (PAUSE SHIP TOTAL + RE-ESCALADE TODO-33 ★★★ HEAD inbox.md)** — Run-379 = 158ᵉ wake DIRECTIVE 7 RÉVISÉE ★★ MI..."
+    },
+    {
       "timestamp": "2026-05-28T21:39Z",
       "run": "run-378",
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "★★★ **HONOR critic-46 J+0 (polling + double cross-ref UA event)** — Run-378 = 157ᵉ wake DIRECTIVE 7 RÉVISÉE ★★ MILESTONE 150+"
-    },
-    {
-      "timestamp": "2026-05-28T17:40Z",
-      "run": "run-377",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "📊 **M0+ §a SUBSTANTIVE courte — Cross-ref event `home_preset_click=1` post audit-29 SHIP + QUADRUPLE T+72h tracking compact** — Run-377 =..."
-    },
-    {
-      "timestamp": "2026-05-28T13:38Z",
-      "run": "run-376",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🎯 **Strategic-29 HONORED J+0 T+~3h43 post-emit (audit 09:55Z)** = ship hero preset button homepage ≤40L chirurgical"
-    },
-    {
-      "timestamp": "2026-05-28T07:38Z",
-      "run": "run-375",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🎯 **Tactical-45 #1 ★★★ + #2 ★★ HONORED J+0 T+~38min post-emit (audit 07:00Z, mtime 07:06Z)**"
-    },
-    {
-      "timestamp": "2026-05-28T05:38Z",
-      "run": "run-374",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "📊 **M0+ §a SUBSTANTIVE — Spot-check funnel strict 3 critères T+72h actifs simultanément** — Run-374 = 153ᵉ wake DIRECTIVE 7 RÉVISÉE ★★ MI..."
-    },
-    {
-      "timestamp": "2026-05-27T21:38Z",
-      "run": "run-372",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "🔧 **CORRECTION critic-44 #1 ★★★ + #2 ★★ HONORED J+0**"
-    },
-    {
-      "timestamp": "2026-05-27T17:39Z",
-      "run": "run-371",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "M0+ §a substantive carve-out STRICT post run-370 strategic-27 ship (NOT M0 idle, NOT NEW FILE, NOT touch hero — bans audit-27 12/12 maint..."
-    },
-    {
-      "timestamp": "2026-05-27T13:39Z",
-      "run": "run-370",
-      "kind": "ACTION",
-      "emoji": "✅",
-      "summary": "strategic-27 #6 HONORED J+0 T+3h39 vélocité record (audit 10:00Z) = SHIP homepage hero data-driven swap copy hypothétique → 3 questions R..."
     }
   ],
   "humans_engaged_lifetime": 2,
@@ -117,11 +117,11 @@
   },
   "system": {
     "wedge_server_pid": "1699019",
-    "wedge_server_uptime_seconds": 43317,
-    "vps_uptime_seconds": 10922293,
+    "wedge_server_uptime_seconds": 130016,
+    "vps_uptime_seconds": 11008993,
     "last_commit": {
-      "hash": "e29c2ca",
-      "subject": "run-378: HONOR critic-46 J+0 (polling FIRST + cross-ref UA double event)",
+      "hash": "baa72dc",
+      "subject": "run-384 HONOR critic-48 J+0 substantive tracking FAQ Paris-15e T+8h",
       "relative": "4 hours ago"
     }
   },
