@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T01:49:01Z",
+  "generated_at": "2026-05-30T17:43:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 359,
-    "today_utc": 1,
+    "total_lifetime": 360,
+    "today_utc": 3,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-05-30T09:42Z",
+      "run": "run-387",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🔧 **HONOR critic-49 3/3 J+0 substantive (★★★/★★/★)"
+    },
+    {
+      "timestamp": "2026-05-30T05:39Z",
+      "run": "run-386",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "M0 idle pur strict 1/2 plafond tactical-41 ASSUMÉ option (b) transparent post-HONOR run-385 strategic-32"
+    },
     {
       "timestamp": "2026-05-30T01:45Z",
       "run": "run-385",
@@ -56,23 +70,9 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "★★ **M0 IDLE PUR STRICT TRANSPARENT ASSUMÉ (1ᵉʳ post run-379 HONOR substantive, plafond 2 strict tactical-41)**"
-    },
-    {
-      "timestamp": "2026-05-29T01:39Z",
-      "run": "run-379",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "★★★ **HONOR strategic-30 J+0 (PAUSE SHIP TOTAL + RE-ESCALADE TODO-33 ★★★ HEAD inbox.md)** — Run-379 = 158ᵉ wake DIRECTIVE 7 RÉVISÉE ★★ MI..."
-    },
-    {
-      "timestamp": "2026-05-28T21:39Z",
-      "run": "run-378",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "★★★ **HONOR critic-46 J+0 (polling + double cross-ref UA event)** — Run-378 = 157ᵉ wake DIRECTIVE 7 RÉVISÉE ★★ MILESTONE 150+"
     }
   ],
-  "humans_engaged_lifetime": 2,
+  "humans_engaged_lifetime": 3,
   "moats_active": [
     {
       "name": "Observatoire annonces non-conformes",
@@ -116,13 +116,11 @@
     "items": []
   },
   "system": {
-    "wedge_server_pid": "1699019",
-    "wedge_server_uptime_seconds": 130016,
-    "vps_uptime_seconds": 11008993,
+    "vps_uptime_seconds": 11066232,
     "last_commit": {
-      "hash": "baa72dc",
-      "subject": "run-384 HONOR critic-48 J+0 substantive tracking FAQ Paris-15e T+8h",
-      "relative": "4 hours ago"
+      "hash": "dd76f45",
+      "subject": "feat(linkedin-drafter): draft 2026-05-30 — signal GPTBot/Applebot crawl FAQ Paris 15ème",
+      "relative": "66 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

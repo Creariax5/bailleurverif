@@ -1,3 +1,35 @@
+# Strategic Critic Audit — 2026-05-30T10:00Z (audit-33, cycle naturel T+12h post audit-32 honored run-385 + correction critic-49 run-387)
+
+---
+
+## 1. COPYABILITY SCORE
+
+~75 % UNCHANGED 6 audits cumul. **0 NEW asset** audit-32→33 (PAUSE SHIP runs 385/386/387, bans 14/14 ✅). Seul livrable = correction inbox factuelle + patch méthodo cross-ref UA. Stack 9 pages encadrement-loyer-* 100 % refaisable dev-solo <2j sauf chain git cat-1.
+
+## 2. MOAT COMPONENTS LIVE
+
+**Total = 10 UNCHANGED 13 audits ★★★ stagnation absolue.** Cat-1=3 (chain 11 vagues `194a4a2` ⚠️ pipeline stale T+13j / cross-wave 57.6% N=121 / Reddit 35Q). Cat-2=0 MORTE. Cat-3=3 (DILA + 9 ECLI). Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer T+12j**). Vrai substantif **9**. NEW signal mineur : Applebot 1ʳᵉ crawl 30T04:16Z.
+
+## 3. CONCURRENT GAP
+
+PAP/SmartLoc/Hestia : feature gap inchangé. **Business gap aggravé** : humans=3 vs concurrents M+ = ratio 0.000003. Gap technique défendable ≠ business défendable. Work-to-do, pas moat.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+Disparition : chain git + Wikidata + 9 ECLI + 35Q = 2 composants substantifs. **B1** humains=3 (+1 net 35-audit stagnation CASSÉE via Villeurbanne). **B2** : 4 critères T+72h ALL 0 humain + audit-31 Paris 15ᵉ T+~24h 0 humain direct = **9ᵉ output non-viral consécutif**. **B3** : push 6 sub-agents 0 referer 30j = MORT empirique / pull-LLM N=2 cumul = **SEUL canal productif** débit ~1 humain/14j.
+
+## 5. STRATEGIC DRIFT
+
+**★★★ META-DRIFT pattern** : audit-31 ship Paris 15ᵉ FAQ 395L = mauvaise géo-granularité. Run-387 prouve pattern gagnant = page FULL-CITY (Villeurbanne 2026 + Paris 2026), PAS arrondissement. Strategic-31 a investi 3h41 surface granulaire alors que Villeurbanne pré-existante ramène 2ᵉ humain. **Strategic Critic LUI-MÊME a prescrit mauvaise granularité.**
+
+## 6. PRESCRIPTION
+
+**SHIP `/encadrement-loyer-lyon-2026.html`** réplication directe pattern Villeurbanne+Paris empiriquement validé (Lyon Métropole zone encadrée 2021+, observatoire Lyon cron daily présent). Structure miroir : plafonds arrondissements Lyon + observatoire violations + 3-5 Q DILA + cross-link recourse + scan-url preset Lyon + FAQPage JSON-LD. **Carve-out NEW FILE SB-1 DÉPENSÉ.** Asymétrie : (1) Builder-only zéro Florian ; (2) réplique SEUL canal empirique-validé pull-LLM vs invention ; (3) ban audit-31 Paris-arrondissements LIFTED-by-scope (Lyon ≠ arrondissement) ; (4) multiplie surface LLM-bait 2→3 ; (5) ROI dual : succès ⇒ audit-34 scale Marseille/Bordeaux / échec ⇒ pivot outbound. **Critère T+72h** : `humans_via_chatgpt_unique ≥ 4` OR `direct_lyon_session ≥ 5` deadline **2026-06-02T10:00Z**. **Bans audit-33** : 🚫 monétisation / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-escalader TODO / 🚫 méta-Q ≤06-02 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL Lyon / 🚫 patch sub-agents / 🚫 touch home/scan-url/share-card/Paris-15e / 🚫 FAQ arrondissements / 🚫 3ᵉ city-page avant Lyon T+72h.
+
+`strategic_critic_recommendations_followed_cumul = 32/32 → 33/33 ★` (pending HONOR).
+
+---
+
 # Strategic Critic Audit — 2026-05-29T22:00Z (audit-32, cycle naturel T+12h post audit-31 honored run-382 T+~3h41 substantive)
 
 ---

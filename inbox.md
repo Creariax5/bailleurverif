@@ -1,3 +1,15 @@
+## 📊 2026-05-30T17:39Z — Agent → Florian — tracking T+~4h post strategic-33 Lyon (run-389 read-only)
+
+**Bans audit-33 12/12 ✅ 3ᵉ wake post-ship strict.** Mesure honnête trajectoire critère T+72h :
+- **Lyon T+~4h** : prod HTTP 200 ✅ + `0 visits` + `0 events` Lyon lifetime (LLM-ingest fenêtre T+12-72h non commencée, expected — Googlebot peut-être déjà passé silent).
+- **events delta 79→81** : 2 home_visit bouncers NON-HUMAIN cross-ref UA — (a) `s-mpru1k7i` 04:10Z Chrome 119 macOS direct = BOT-likely versioning outdated 29 versions retard (Chrome stable 148) / (b) `s-eclp-mps7mskc` 10:30Z Paris-2026 ip 2739306260 = UA absent funnel-events.jsonl blind critic-49 #1 ⇒ conservative NON-HUMAIN.
+- **humans_engaged_lifetime = 3 UNCHANGED** 4ᵉ wake post critic-49 correction (1 Bouygues + 1 LinkedIn legacy + 1 Villeurbanne ChatGPT).
+- **Critère audit-33 T+72h** deadline 06-02T10:00Z T+~64h21 restant : `humans_via_chatgpt_unique réel = 2/4` (need +2 NEW pull-LLM, débit historique ~1/14j) + `direct_lyon_session = 0/5` (need +5 directs Lyon). **FAIL probabiliste ~80-95%** sauf LLM-bait Lyon FAQPage+observatoire dense déclenche burst.
+- **Sub-agents distribution** : 0 referer humain measured 31j (6 sub-agents canal mort empirique).
+- Builder run-389 : 0 ship / 0 NEW FILE / 0 touch surface / 0 Indexing / 0 SMTP / 0 escalade TODO / 0 spawn / 0 méta-Q / 0 monétisation. Critic-50 ETA ~19:00Z T+~1h21.
+
+---
+
 ## ✅ 2026-05-30T13:39Z — Agent → Florian — strategic-33 HONORED J+0 SHIP enrich Lyon (run-388)
 
 ★★★ **Strategic audit-33 (10:00Z) prescription = enrich `/encadrement-loyer-lyon-2026.html` réplique pattern Villeurbanne+Paris empirique-validé (2ᵉ humain pull-LLM via ChatGPT-Villeurbanne run-385). HONORED T+~3h40 substantive** = upgrade chirurgical 260L→341L (+81L) : FAQPage JSON-LD 5 Q/R sourcées DILA + observatoire Lyon 7 violations table (Lyon 6ᵉ studio 10m² 514€ = **+154.5% excess** top + 78.6% sur 14 annonces) + scan-url preset Lyon 6ᵉ event funnel + 4 cross-link `/api/recourse/<tag>` + 5 FAQ details + sitemap bump + Indexing API ping 1 URL ✅ + smoke 6 entités JSON-LD ✅. Commit `f00e04f` push GitHub. Carve-out NEW FILE SB-1 dépensé en upgrade (page existait batch 26 mai). **33/33 strategic cumul ★**. Bans audit-33 12/12 ✅ ce wake. Critère T+72h `humans_via_chatgpt_unique ≥ 4` OR `direct_lyon_session ≥ 5` deadline 2026-06-02T10:00Z.

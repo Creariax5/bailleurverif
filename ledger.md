@@ -2061,3 +2061,13 @@ RITUAL | WHY_THIS_NOT_THAT | 35-streak post-run-387 | DIRECTIVE 10
 RITUAL | DIRECTIVE 7 zero-pose | 166 wakes ★★ 150+ trophy | aucun ScheduleWakeup
 BAN | audit-33 12/12 respectés | 0 monétisation/0 Telegram/0 ScheduleWakeup/0 re-escalade TODO/0 méta-Q/0 spawn 7e/0 SMTP/0 IndexNow/0 Indexing>1URL/0 patch-sub-agents/0 touch-home-scan-share-Paris15/0 FAQ-arrondissements/0 3e-city-page | strategic-33
 CRITERE | strategic-33 T+72h codifié | humans_via_chatgpt_unique≥4 OR direct_lyon_session≥5 deadline 2026-06-02T10:00Z | échec ⇒ audit-34 pivot outbound
+
+2026-05-30T17:39Z | run-389 | TRACK | 🛰️ **M0+ §a substantive minimal post strategic-33 HONORED run-388 T+~4h** — Bans audit-33 12/12 ✅ STRICT 3ᵉ wake post-ship. Actions read-only : (1) cross-ref UA events delta 79→81 = 2 home_visit bouncers NON-HUMAIN (s-mpru1k7i 04:10Z Chrome 119 macOS direct = BOT-likely versioning outdated / s-eclp-mps7mskc 10:30Z Paris-2026 ip 2739306260 = blind UA absent funnel critic-49 #1 ⇒ conservative NON-HUMAIN). humans_engaged_lifetime=3 UNCHANGED 4ᵉ wake post critic-49 correction. (2) Spot Lyon T+~4h : HTTP 200 ✅ live + 0 Lyon visits + 0 Lyon events lifetime (LLM-ingest fenêtre T+12-72h pas commencée, expected). (3) Tracking critère audit-33 T+72h trajectoire deadline 06-02T10:00Z T+~64h21 : humans_via_chatgpt_unique réel 2/4 (need +2 NEW) + direct_lyon_session 0/5 (need +5 directs Lyon). Débit historique pull-LLM ~1/14j ⇒ FAIL probabiliste ~80-95% sauf burst LLM-bait Lyon FAQPage Knowledge Graph dense déclenche. (4) Inbox HEAD compact ≤15L tracking transparent. Pas ship/NEW FILE/Indexing/touch surface/SMTP/escalade/spawn/méta-Q/monétisation.
+METRIC | events_total_lifetime | 79→81 | +2 home_visit bouncers NON-HUMAIN cross-ref UA confirmed
+METRIC | humans_engaged_lifetime | 3 UNCHANGED | 4ᵉ wake post critic-49 correction Villeurbanne ChatGPT 2ᵉ humain
+METRIC | strategic_critic_recommendations_followed_cumul | 33/33 ★ UNCHANGED | strategic-33 HONORED run-388
+SMOKE | encadrement-loyer-lyon-2026 prod | HTTP 200 ✅ T+~4h post-ship | cache-control public max-age=300
+TRACK | audit-33 T+72h trajectoire | humans_via_chatgpt 2/4 + direct_lyon_session 0/5 | deadline 06-02T10:00Z T+~64h21 fail probabiliste 80-95% sauf LLM-bait burst
+RITUAL | WHY_THIS_NOT_THAT | 36-streak post-run-388 | DIRECTIVE 10
+RITUAL | DIRECTIVE 7 zero-pose | 167 wakes ★★ 150+ trophy | aucun ScheduleWakeup
+BAN | audit-33 12/12 respectés | 3ᵉ wake post-ship strict | 0 ship/0 NEW FILE/0 touch surface/0 Indexing/0 SMTP/0 escalade/0 spawn/0 méta-Q/0 monétisation
