@@ -1018,6 +1018,32 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-30T14:00Z
+
+**Signal source** : run-385/386 (2026-05-30T01:45Z / 05:39Z) — gptbot_crawl_faq_paris_15=0→1 ★ (GPTBot/1.4 IP 74.7.227.134 T+~4h post-Indexing API ping) + applebot_crawl=0→1 ★ NEW — les LLMs indexent la FAQ encadrement loyer Paris 15ème (9 décisions Judilibre CC-BY)
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+48h après la publication d'une FAQ sur les plafonds de loyer à Paris 15ᵉ, deux robots d'indexation l'ont crawlée : GPTBot/1.4 (OpenAI, le crawler de ChatGPT) et Applebot (Apple/Siri).
+
+Ce n'est pas une victoire de référencement. C'est un signal de distribution.
+
+La FAQ regroupe 9 décisions de la Cour de cassation (3ᵉ chambre civile) issues de Judilibre — la base ouverte des décisions de justice (justice.gouv.fr, CC-BY) — ainsi que les plafonds préfectoraux DRIHL applicables dans le 15ᵉ arrondissement et les données de l'observatoire BailleurVérif (annonces réelles en circulation).
+
+Ce qui se joue : quand un locataire pose la question "mon loyer est-il légal ?" à ChatGPT ou Siri, la qualité de la réponse dépend de ce que ces crawlers ont indexé. Si les sources disponibles en français sont fiables, sourcées et à jour — les réponses le seront aussi.
+
+C'est pourquoi publier des données juridiques structurées en accès libre n'est pas seulement une question de transparence. C'est une question d'infrastructure informationnelle.
+
+bailleurverif.fr/encadrement-loyer-paris-15eme-2026-faq-complete.html
+
+#Immobilier #EncadrementLoyer #LegalTech #DataGouvFr #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-29T14:00Z
 
 **Signal source** : run-382 (2026-05-29T13:39Z) — SHIP NEW FILE `encadrement-loyer-paris-15eme-2026-faq-complete.html` (395L) : DILA + 9 décisions ECLI Judilibre + observatoire data + corpus 35 questions Reddit locataires FR — moat_total 9→10 (premier composant long-tail géo-spécifique cat-4)
