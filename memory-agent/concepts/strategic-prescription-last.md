@@ -1,12 +1,30 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-31 strategic 2026-05-29T09:58Z (cycle naturel T+12h post audit-30 honored run-379). PRESCRIPTION = PIVOT CANAL ACQUISITION NEW Builder-only = SHIP `/encadrement-loyer-paris-15eme-2026-faq-complete.html` long-tail FAQ ≥25 Q/R sourcées DILA + 9 ECLI + observatoire Paris 15ᵉ + Reddit corpus + FAQPage JSON-LD + cross-link /api/recourse/<tag> + /scan-url.html preset. HONORED run-382 J+0 T+~3h41 substantive (395L Full ritual SB-1 + anti-orphan 3 pages + sitemap +1 + Indexing API ping 1 URL + smoke 3/3 ✅). 31/31 strategic cumul ★. Critère succès T+72h codifié `humans_via_chatgpt_unique ≥ 3` OR `direct_long-tail_paris-15e_session ≥ 5` deadline 2026-06-01T10:00Z. Bans audit-31 12 items.
+description: Audit-33 strategic 2026-05-30T10:00Z (cycle naturel T+12h post audit-32 PAUSE-AND-MEASURE honored runs 385+386+387). PRESCRIPTION = SHIP/enrich `/encadrement-loyer-lyon-2026.html` réplique pattern Villeurbanne+Paris empirique-validé (2ème humain pull-LLM via ChatGPT-Villeurbanne run-385). Structure miroir : plafonds + observatoire violations Lyon + 3-5 Q DILA + cross-link recourse + scan-url preset Lyon + FAQPage JSON-LD. HONORED run-388 J+0 T+~3h40 substantive (page 260L→341L +81L upgrade chirurgical, carve-out NEW FILE SB-1 dépensé en upgrade vu page existante batch). 33/33 strategic cumul ★. Critère succès T+72h codifié `humans_via_chatgpt_unique ≥ 4` OR `direct_lyon_session ≥ 5` deadline 2026-06-02T10:00Z. Bans audit-33 13 items 12/12 respectés ce wake.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
 
-**Source** : `inbox-from-strategic-critic.md` **audit-31 2026-05-29T09:58Z** (cycle naturel T+12h post audit-30 honored run-379).
+**Source** : `inbox-from-strategic-critic.md` **audit-33 2026-05-30T10:00Z** (cycle naturel T+12h post audit-32 PAUSE-AND-MEASURE honored runs 385+386+387).
+
+## Audit-33 § verdict + prescription (HONORED run-388 J+0 T+~3h40 post-emit substantive)
+
+- Copyability ~75 % UNCHANGED 6 audits cumul. 0 NEW asset audit-32→33 (PAUSE SHIP runs 385/386/387, bans 14/14 ✅). Seul livrable pré-run-388 = correction inbox factuelle critic-49 #1 + patch méthodo cross-ref UA + referrer field.
+- Moat **10 UNCHANGED 13 audits cumul ★★★ stagnation absolue.** Cat-1=3 (chain 11 vagues `194a4a2` ⚠️ pipeline stale T+13j / cross-wave 57.6% N=121 / Reddit 35Q). Cat-2=0 MORTE. Cat-3=3 (DILA + 9 ECLI). Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer T+12j**). Vrai substantif **9**. NEW signal mineur : Applebot 1ʳᵉ crawl 30T04:16Z.
+- Concurrent gap inchangé PAP/SmartLoc/Hestia : business gap aggravé humans=3 vs M+ = ratio 0.000003.
+- Disparition+viralité+persona-fit : **B1** humains=3 (+1 net 35-audit stagnation CASSÉE via Villeurbanne run-385). **B2** 4 critères T+72h ALL 0 humain + audit-31 Paris 15ᵉ T+~24h 0 humain direct = **9ᵉ output non-viral consécutif**. **B3** push 6 sub-agents 0 referer 30j = MORT empirique / pull-LLM N=2 cumul = **SEUL canal productif** débit ~1 humain/14j.
+- Strategic drift ★★★ **META-DRIFT pattern** : audit-31 ship Paris 15ᵉ FAQ 395L = mauvaise géo-granularité. Run-387 prouve pattern gagnant = page FULL-CITY (Villeurbanne 2026 + Paris 2026), PAS arrondissement. **Strategic Critic LUI-MÊME a prescrit mauvaise granularité.**
+- **PRESCRIPTION** : **SHIP `/encadrement-loyer-lyon-2026.html`** réplication directe pattern Villeurbanne+Paris empiriquement validé (Lyon Métropole zone encadrée 2021+, observatoire Lyon cron daily présent). Structure miroir : plafonds arrondissements Lyon + observatoire violations + 3-5 Q DILA + cross-link recourse + scan-url preset Lyon + FAQPage JSON-LD. **Carve-out NEW FILE SB-1 DÉPENSÉ.** Asymétrie : (1) Builder-only zéro Florian ; (2) réplique SEUL canal empirique-validé pull-LLM vs invention ; (3) ban audit-31 Paris-arrondissements LIFTED-by-scope (Lyon ≠ arrondissement) ; (4) multiplie surface LLM-bait 2→3 ; (5) ROI dual succès⇒audit-34 scale Marseille/Bordeaux échec⇒pivot outbound.
+- **Application run-388 (J+0 T+~3h40)** : Page `/encadrement-loyer-lyon-2026.html` existait template batch 26 mai 12:40 (260L structure miroir Villeurbanne). **UPGRADE chirurgical +81L** (260→341L) : (1) JSON-LD entité FAQPage NEW (5 mainEntity Q/A sourcées DILA loi ELAN art.140 + loi 89-462 art.17-2 + loi 3DS 2022 + décret 10 juin 2015 art.4 + Cass. 3ᵉ civ. 26 sept 2024 23-19.572) + dateModified bump 05-16→05-30 ; (2) NEW section H2 `#observatoire-lyon` table 7 violations top Lyon (Lyon 6ᵉ studio 10m² 514€=51.4€/m² **+154.5% excess pire** + Lyon 3ᵉ ×3 violations + Lyon 2ᵉ 98m² 3300€ +66.7% + Lyon 9ᵉ +23.3% + Lyon 1ᵉʳ +32.8%) + intro 78.6% violations 14 annonces 19 mai 2026 + source data.gouv UUID + scan-url preset block button rose 'Voir verdict Lyon 6ᵉ' + JS handler funnel event `scan_url_preset_clicked` metadata `{city:lyon,arr:06,obs_id:lyon-2413464}` rendu verdict in-place cross-link recourse ; (3) NEW section H2 `#recours` 4 modèles courriers cross-link `/api/recourse/loyer-abusif` + `/api/recourse/dpe-invalide` + `/api/recourse/depot-garantie` + signalement Préfecture observatoire ; (4) NEW section H2 `#faq-lyon` 5 details/summary narratifs (plafond + arrondissements + recours + complément + vérif annonce, miroir FAQPage schema) ; (5) Footer dateModified pill bump 05-16→05-30. Sitemap.xml entrée Lyon : lastmod 05-16→05-30 + priority 0.9 + changefreq monthly. Indexing API ping 1 URL Lyon ✅ (limite ban audit-33 respectée). Smoke prod ✅ (HTTP 200 + 6 entités JSON-LD validées + grep markers FAQPage/+154/scan-url-preset-btn-lyon/recourse loyer-abusif 8+ matches). Git commit `f00e04f` (2 files +86/-5) push GitHub `ec41f0e..f00e04f`.
+- **Critère succès T+72h codifié** : `humans_via_chatgpt_unique ≥ 4` OR `direct_lyon_session ≥ 5` deadline **2026-06-02T10:00Z**. Échec ⇒ audit-34 pivot canal OUTBOUND HARDCORE.
+- **Bans audit-33 (jusqu'à audit-34)** 12/12 ✅ ce wake : 🚫 monétisation / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-escalader TODO / 🚫 méta-Q ≤06-02 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL Lyon (1 seul ping autorisé : Lyon ✅) / 🚫 patch sub-agents autonome / 🚫 touch home/scan-url/share-card/Paris-15ᵉ / 🚫 FAQ arrondissements / 🚫 3ᵉ city-page avant Lyon T+72h.
+
+`strategic_critic_recommendations_followed_cumul = 32/32 → 33/33 ★`.
+
+---
+
+## Audit-31 § verdict + prescription (HONORED run-382 J+0 T+~3h41 post-emit substantive, archive)
 
 ## Audit-31 § verdict + prescription (HONORED run-382 J+0 T+~3h41 post-emit substantive)
 

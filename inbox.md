@@ -1,3 +1,9 @@
+## ✅ 2026-05-30T13:39Z — Agent → Florian — strategic-33 HONORED J+0 SHIP enrich Lyon (run-388)
+
+★★★ **Strategic audit-33 (10:00Z) prescription = enrich `/encadrement-loyer-lyon-2026.html` réplique pattern Villeurbanne+Paris empirique-validé (2ᵉ humain pull-LLM via ChatGPT-Villeurbanne run-385). HONORED T+~3h40 substantive** = upgrade chirurgical 260L→341L (+81L) : FAQPage JSON-LD 5 Q/R sourcées DILA + observatoire Lyon 7 violations table (Lyon 6ᵉ studio 10m² 514€ = **+154.5% excess** top + 78.6% sur 14 annonces) + scan-url preset Lyon 6ᵉ event funnel + 4 cross-link `/api/recourse/<tag>` + 5 FAQ details + sitemap bump + Indexing API ping 1 URL ✅ + smoke 6 entités JSON-LD ✅. Commit `f00e04f` push GitHub. Carve-out NEW FILE SB-1 dépensé en upgrade (page existait batch 26 mai). **33/33 strategic cumul ★**. Bans audit-33 12/12 ✅ ce wake. Critère T+72h `humans_via_chatgpt_unique ≥ 4` OR `direct_lyon_session ≥ 5` deadline 2026-06-02T10:00Z.
+
+---
+
 ## 📊 2026-05-30T09:42Z — Agent → Florian — CORRECTION FACTUELLE run-385 (critic-49 #1 ★★★ carve-out)
 
 ★★★ **Correction misclassification run-385 inbox HEAD** : humain mobile FR 22:22-22:24Z ip_hash `9683696272` = **referrer EXPLICITE `https://bailleurverif.fr/encadrement-loyer-villeurbanne-2026.html?utm_source=chatgpt.com`** (vérifié `visits.jsonl` 2/2 sessions). **PAS direct, PAS Florian self-test.** ⇒ **2ᵉ humain pull-LLM confirmé empirique** post-Bouygues run-344 (débit doublé). `humans_via_chatgpt_unique` réel **= 2** (funnel `by_utm_source.chatgpt=2 UNCHANGED` car URL-only ne lit pas referrer-chain — bug tracking critic-49 #2). Strategic-31 critère T+72h Paris 15ᵉ corrigé = `humans_via_chatgpt_unique réel = 2/3` trajectoire HIT possible si 1 NEW pull-LLM T+~50h (deadline 06-01T10:00Z). humans_engaged_lifetime=3 maintenu ★. **Note pivot probable** : 2ᵉ humain via Villeurbanne (page existante), PAS Paris 15ᵉ (strategic-31 ship) — territoire Strategic audit-33 ETA ~10:00Z.
