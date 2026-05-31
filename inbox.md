@@ -1,3 +1,16 @@
+## 📊 2026-05-31T05:42Z — Agent → Florian — tracking T+~4h Villeurbanne + T+~16h Lyon (run-392 M0+ §a cross-ref UA + referrer EXTENDED)
+
+**Bans audit-34 15/15 ✅ 1er wake post-ship strict** (0 ship / 0 NEW FILE / 0 touch surface / 0 Indexing / 0 SMTP / 0 escalade TODO / 0 spawn / 0 méta-Q / 0 monétisation / 0 Telegram / 0 ScheduleWakeup). HONOR critic-50 #3 ★ tracking + #1 ★★★ polling 3 inboxes mtime PREMIÈRE action :
+- **Villeurbanne T+~4h post FAQPage backfill** : prod HTTP 200 ✅ (5 entités JSON-LD validées smoke run-391). LLM-ingest fenêtre T+12-72h pas commencée, expected silence.
+- **Lyon T+~16h** : prod HTTP 200 ✅ + `0 visits/events Lyon path lifetime`. LLM-ingest fenêtre T+12-72h en cours, encore tôt.
+- **events delta 82→83** : 1 NEW home_visit 31T03:24:55Z `s-mpt7v1q7` ip_hash `3050852448` ⇒ cross-ref UA + referrer EXTENDED = **Applebot/0.1 (+apple.com/go/applebot) crawler officiel Apple NON-HUMAIN strict** (referrer=direct, path=/, 2ᵉ Applebot crawl post-audit-33 NEW signal mineur).
+- **humans_engaged_lifetime=3 UNCHANGED** 6ᵉ wake post critic-49 correction.
+- **Critère audit-33 T+72h** deadline 06-02T10:00Z T+~52h18 restant : `humans_via_chatgpt 2/4` + `direct_lyon_session 0/5`. FAIL probabiliste 80-95% sauf LLM-bait Lyon+Villeurbanne burst.
+- Sub-agents : 0 cycle nouveau depuis run-388 (last write 27 mai sub-linkedin-drafter), 0 referer humain measured 31j cumul.
+- Builder run-392 = **M0+ §a substantive 1/2 plafond strict** (cross-ref UA EXTENDED + tracking ≠ ship). Critic-51 ETA ~07:00Z T+~1h20.
+
+---
+
 ## ✅ 2026-05-31T01:40Z — Agent → Florian — strategic-34 HONORED J+0 backfill FAQPage Villeurbanne (run-391)
 
 ★★★ **Strategic audit-34 (30T22:00Z) prescription = backfill FAQPage JSON-LD Knowledge Graph eligible sur `/encadrement-loyer-villeurbanne-2026.html` (5-7 Q/R DILA, miroir audit-33 Lyon). HONORED T+~3h43 substantive** = upgrade chirurgical 255L→277L (+22L net, cap ≤50L respecté) : JSON-LD entité FAQPage 5 Q/R (plafond 16.5/19.8 / périmètre 69100 / 3 recours CDC+DDETS+5000€ / complément ELAN+Cass.23-19.572 / vérif annonce+observatoire data.gouv) + section H2 #faq-villeurbanne visible 5 details cross-link Lyon+recourse+observatoire + dateModified bump 05-16→05-31 (4 occ page + sitemap priority 0.9 changefreq monthly) + Indexing API ping 1 URL Villeurbanne ✅ + smoke prod HTTP 200 markers FAQPage/faq-villeurbanne/2026-05-31×4 ✅. Commit `86c8de2` push `3ebfcde..86c8de2`. **34/34 strategic cumul ★** 11ᵉ audit consécutif HONORED J+0. Bans audit-34 15/15 ✅. Asymétrie = amplifier surface LLM-bait sur SEULE page empirique-validée pull-LLM (2ᵉ humain run-385 Villeurbanne referrer). Critère T+72h audit-33 inchangé `humans_via_chatgpt_unique ≥ 4` OR `direct_lyon_session ≥ 5` deadline 06-02T10:00Z T+~56h21 (audit-34 amplifie via Villeurbanne).
