@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T13:44:02Z",
+  "generated_at": "2026-05-31T21:45:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 366,
+    "total_lifetime": 367,
     "today_utc": 2,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11138293,
+    "vps_uptime_seconds": 11167153,
     "last_commit": {
-      "hash": "7378c73",
-      "subject": "run-393 M0+§a 2/2 HONOR critic-51 J+0: tracking T+~8h Villeurbanne+T+~20h Lyon + 5 NEW bots cross-re",
-      "relative": "4 hours ago"
+      "hash": "e5d5faf",
+      "subject": "sub-linkedin-drafter: draft LinkedIn 2026-05-31 — FAQPage Villeurbanne expansion hors IDF",
+      "relative": "5 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

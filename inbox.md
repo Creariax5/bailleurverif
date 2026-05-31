@@ -1,3 +1,16 @@
+## 📊 2026-05-31T17:40Z — Agent → Florian — tracking T+~16h Villeurbanne + T+~28h Lyon + T+~4h post-RE-ESCALADE TODO-36 (run-395 M0+ §a 1/2 cross-ref EXTENDED)
+
+**Bans audit-35 14/14 ✅ 2ᵉ wake post-prescription strict** (0 ship / 0 NEW FILE / 0 city-page / 0 touch 6 surfaces / 0 Indexing / 0 SMTP / 0 escalade TODO supp. / 0 spawn / 0 méta-Q / 0 monétisation / 0 Telegram / 0 ScheduleWakeup). HONOR critic-51 #3 ★ tracking + cross-ref EXTENDED :
+- **Villeurbanne T+~16h post FAQPage backfill** : prod HTTP 200 ✅. LLM-ingest fenêtre T+12-72h milieu, 0 visit/event Villeurbanne path lifetime.
+- **Lyon T+~28h** : prod HTTP 200 ✅ + 0 visits/events Lyon path lifetime UNCHANGED. Rythme empirique pull-LLM 0.07 humain/jour.
+- **events delta 88→92 (+4)** : cross-ref UA + referrer EXTENDED = **4/4 NON-HUMAIN strict** : (1) 12:11Z ip 17.241.219.13 Applebot 17.x (3ᵉ Apple crawl cumul) + (2) 13:15Z ip 23.27.145.102 Cogent Chrome/119 outdated 29 versions BOT-likely + (3) 15:54Z ip 3.235.52.5 AWS HeadlessChrome/138 explicit + (4) 16:47Z ip 17.241.219.201 Applebot 17.x (4ᵉ Apple crawl, range 17.241.219.x systémique).
+- **humans_engaged_lifetime=3 UNCHANGED** 9ᵉ wake post critic-49 correction.
+- **Critère audit-33 T+72h** deadline 06-02T10:00Z T+~40h20 restant : `humans_via_chatgpt 2/4` + `direct_lyon_session 0/5` FAIL probabiliste 90-95%.
+- **TODO-36 silence cap T+~4h post-RE-ESCALADE run-394** : pas spam Florian 2 wakes consécutifs (anti-pattern), wait critère T+72h audit-35 deadline 06-03T10:00Z T+~64h20.
+- Builder run-395 = M0+ §a substantive **1/2 plafond strict** post-substantive run-394 reset (cross-ref EXTENDED 4 NEW events legitime ≠ saturation déguisée critic-51 STOP #3). Critic-52 ETA ~19:00Z T+~1h20 défer run-396 PRÉ.
+
+---
+
 ## 🚨 2026-05-31T13:40Z — Agent → Florian — TODO-36 ★★★ RE-ESCALADE (strategic-35 prescription HEAD, PAUSE SHIP TOTAL Builder)
 
 **Strategic Critic audit-35 2026-05-31T09:57Z verdict (verbatim §5+§6)** : *"audit-26→34 = **9 audits consécutifs ship Builder-only sur surface SEO/LLM-bait** = +1 humain net cumul. Pilier 2 acquisition n'a PAS progressé 8 audits : aucun canal NEW. Exhaustion empirique thèse 'amplifier surface LLM-bait' = ROI marginal proven < bruit mesure. PAUSE SHIP TOTAL audit-35 + RE-ESCALADE TODO-36 ★★★ HEAD inbox.md."* 35/35 strategic cumul ★, audit-35 HONOR = read-only + cette escalade.

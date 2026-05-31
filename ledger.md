@@ -2118,3 +2118,32 @@ TRACKING | events_total=88 UNCHANGED 4h | humans_engaged=3 UNCHANGED 8ᵉ wake p
 BAN | audit-35 14/14 respectés strict 1er wake post-prescription | 0 ship/0 NEW FILE/0 city-page NEW/0 touch 6 surfaces (home/scan-url/share-card/Paris-15ᵉ/Lyon-2026/Villeurbanne-2026)/0 monétisation/0 Telegram/0 ScheduleWakeup/0 méta-Q/0 spawn 7ᵉ/0 SMTP/0 IndexNow/0 Indexing API ping/0 patch sub-agents autonome
 RITUAL | WHY_THIS_NOT_THAT | 40-streak post-run-393 | DIRECTIVE 10
 RITUAL | DIRECTIVE 7 zero-pose | 171 wakes ★★ 150+ trophy | aucun ScheduleWakeup
+
+## run-395 — 2026-05-31T17:40Z (M0+ §a substantive 1/2 tracking cross-ref EXTENDED)
+POLL | 3 inboxes mtime | strategic 09:57Z audit-35 HONORED ✅ / tactical 07:02Z audit-51 HONORED ✅ / inbox 13:41Z = mon run-394 RE-ESCALADE TODO-36 | critic-52 ETA ~19:00Z T+~1h20, audit-36 ETA ~06-01T10:00Z T+~16h20, Florian silent T+~4h
+TRACKING | events delta 88→92 +4 | 4/4 NON-HUMAIN strict cross-ref UA + referrer EXTENDED : Applebot 17.x 12:11Z + Cogent Chrome119 outdated 13:15Z + AWS HeadlessChrome/138 15:54Z + Applebot 17.x 16:47Z | range 17.241.219.x = 2 IPs Apple pattern indexation systémique
+METRIC | events_total_lifetime | 88→92 | +4 bots strict
+METRIC | sessions_lifetime | 63→67 | +4
+METRIC | by_utm_source_lifetime | direct 86→90 + chatgpt 2 UNCHANGED | +4 bots direct
+METRIC | humans_engaged_lifetime | 3 UNCHANGED | 9ᵉ wake post critic-49 correction
+METRIC | applebot_crawl_home_lifetime | 2→4 | +2 ce wake range 17.241.219.x systémique
+METRIC | home_preset_click_lifetime | 1 UNCHANGED | audit-29 critère T+72h FAIL définitif deadline 31T10:00Z passée T+~7h40
+METRIC | strategic_critic_recommendations_followed_cumul | 35/35 UNCHANGED | audit-36 ETA ~06-01T10:00Z T+~16h20
+METRIC | tactical_critic_recommendations_followed_j0_lifetime | 53 UNCHANGED | critic-52 ETA ~19:00Z T+~1h20
+METRIC | M0_plus_a_consecutive_count | 0→1 | post-substantive run-394 reset, plafond 2 strict
+SMOKE | encadrement-loyer-villeurbanne-2026 prod | HTTP 200 ✅ T+~16h post FAQPage backfill run-391 | LLM-ingest fenêtre milieu
+SMOKE | encadrement-loyer-lyon-2026 prod | HTTP 200 ✅ T+~28h post-ship run-388 | 0 visits/events Lyon path lifetime
+TRACK | audit-33 T+72h trajectoire | humans_via_chatgpt 2/4 + direct_lyon 0/5 + direct_villeurbanne 0 | deadline 06-02T10:00Z T+~40h20 fail probabiliste 90-95%
+TRACK | audit-35 T+72h critère | TODO-36 Reddit data inbox HEAD | deadline 06-03T10:00Z T+~64h20, Florian silent T+~4h post-RE-ESCALADE run-394
+RITUAL | WHY_THIS_NOT_THAT | 41-streak post-run-394 | DIRECTIVE 10
+RITUAL | DIRECTIVE 7 zero-pose | 172 wakes ★★ 150+ trophy | aucun ScheduleWakeup
+BAN | audit-35 14/14 respectés strict 2ᵉ wake post-prescription | 0 ship/0 NEW FILE/0 city-page/0 touch 6 surfaces (home/scan-url/share-card/Paris-15ᵉ/Lyon-2026/Villeurbanne-2026)/0 monétisation/0 Telegram/0 ScheduleWakeup/0 méta-Q/0 spawn 7ᵉ/0 SMTP/0 IndexNow/0 Indexing API ping/0 patch sub-agents autonome
+2026-05-31T21:40Z | run-396 | HONOR critic-52 J+0 ritual WHY_THIS_NOT_THAT run-396.md (audit-52 PRÉSENT mtime 19:03Z post-emit 19:00Z, post run-395 8.4/10 UNCHANGED, 12ᵉ audit consécutif 3/3 J+0 ★★★) | M0+ substantive trigger NEW critic-52 émission ≠ §a tracking compact 2ᵉ ré-application (STOP #3 strict) | tactical_critic_recommendations_followed_j0_lifetime=53→54 ★
+TRACK | run-396 | spot Villeurbanne T+~20h + Lyon T+~32h prod HTTP 200 ✅ | 0 visits/events Villeurbanne+Lyon path lifetime UNCHANGED (LLM-ingest fenêtre T+12-72h milieu)
+TRACK | run-396 | events delta 92→93 (+1) cross-ref UA EXTENDED | 21:12Z s-eclp-mpu9zvt1-auwua ip_hash 1892720298 path=/encadrement-loyer-paris-2026.html UA-blind funnel-events + ABSENT visits.jsonl ⇒ NON-HUMAIN conservative UNKNOWN-non-target (critic-49 #1 codification)
+TRACK | run-396 | OAI-SearchBot 20:50Z post critic-52-18:54Z spot | NEW crawl T+~1h56 signal pull-LLM ingest fenêtre actif ✅ + Bingbot 21:28Z + AhrefsBot 21:24Z + generic-bot 20:55Z
+TRACK | run-396 | humans_engaged_lifetime=3 UNCHANGED 10ᵉ wake post critic-49 | rythme empirique pull-LLM 0.07/jour, critère audit-33 T+72h FAIL probabiliste 90-95% deadline 06-02T10:00Z T+~36h20
+TRACK | run-396 | TODO-36 silence cap T+~8h post-RE-ESCALADE run-394 | PAS spam Florian 3 wakes consécutifs, deadline T+72h audit-35 = 06-03T10:00Z T+~60h20
+RITUAL | WHY_THIS_NOT_THAT | 42-streak post-run-395 | DIRECTIVE 10
+RITUAL | DIRECTIVE 7 zero-pose | 173 wakes ★★ 150+ trophy | aucun ScheduleWakeup
+BAN | audit-35 14/14 respectés strict 3ᵉ wake post-prescription | 0 ship/0 NEW FILE/0 city-page/0 touch 6 surfaces/0 monétisation/0 Telegram/0 ScheduleWakeup/0 méta-Q/0 spawn 7ᵉ/0 SMTP/0 IndexNow/0 Indexing API ping/0 patch sub-agents autonome
