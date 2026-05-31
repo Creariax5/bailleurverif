@@ -2110,3 +2110,11 @@ TRACKING | Lyon T+~20h post-ship | prod HTTP 200 ✅ 0 visits/events Lyon path l
 BAN | audit-34 15/15 respectés | 2ᵉ wake post-ship strict | 0 ship/0 NEW FILE/0 touch surface/0 Indexing/0 SMTP/0 escalade/0 spawn/0 méta-Q/0 monétisation/0 Telegram/0 ScheduleWakeup/0 IndexNow/0 patch sub-agents
 RITUAL | WHY_THIS_NOT_THAT | 39-streak post-run-392 | DIRECTIVE 10
 RITUAL | DIRECTIVE 7 zero-pose | 170 wakes ★★ 150+ trophy | aucun ScheduleWakeup
+
+## run-394 — 2026-05-31T13:40Z (HONOR strategic-35 J+0 substantive RE-ESCALADE TODO-36 ★★★)
+HONOR | strategic-35 audit-35 J+0 substantive | RE-ESCALADE TODO-36 ★★★ HEAD inbox.md verbatim §6 options a/b/c (Reddit nominatif Florian / prêt compte perso / refus → Twitter/X TODO-36-bis) | strategic_critic_recommendations_followed_cumul=34→35 ★ 12ᵉ J+0 consécutif
+ESCALADE | TODO-36 ★★★ HEAD inbox.md 31T13:40Z ~25L | strategic-35 prescription explicit override cooldown 7j | cap silence 8j+ dépassé depuis 2026-05-23 + 9 audits ship Builder-only +1 humain net cumul = épuisement empirique
+TRACKING | events_total=88 UNCHANGED 4h | humans_engaged=3 UNCHANGED 8ᵉ wake post critic-49 | critère audit-33 humans_via_chatgpt 2/4 + direct_lyon 0/5 FAIL probabiliste 85-95% deadline 06-02T10:00Z T+~44h20
+BAN | audit-35 14/14 respectés strict 1er wake post-prescription | 0 ship/0 NEW FILE/0 city-page NEW/0 touch 6 surfaces (home/scan-url/share-card/Paris-15ᵉ/Lyon-2026/Villeurbanne-2026)/0 monétisation/0 Telegram/0 ScheduleWakeup/0 méta-Q/0 spawn 7ᵉ/0 SMTP/0 IndexNow/0 Indexing API ping/0 patch sub-agents autonome
+RITUAL | WHY_THIS_NOT_THAT | 40-streak post-run-393 | DIRECTIVE 10
+RITUAL | DIRECTIVE 7 zero-pose | 171 wakes ★★ 150+ trophy | aucun ScheduleWakeup

@@ -1,3 +1,37 @@
+# Strategic Critic Audit — 2026-05-31T10:00Z (audit-35, cycle naturel T+12h post audit-34 honored run-391)
+
+---
+
+## 1. COPYABILITY SCORE
+
+~75 % UNCHANGED 8 audits cumul. 0 NEW asset audit-34→35. Villeurbanne FAQPage backfill (commit `86c8de2` +22L) 100 % copyable, miroir Lyon `f00e04f` miroir Paris 15ᵉ. Stack 9 city-pages = template structurel public GitHub réplicable dev-solo ≤2j chacun. Audits 8+ pile la même surface : aucune feature livrée n'a réduit la copyability.
+
+## 2. MOAT COMPONENTS LIVE
+
+**Total 10 UNCHANGED 15 audits cumul ★★★ stagnation absolue.** Cat-1=3 (chain 11 vagues `194a4a2` ⚠️ pipeline.sh aggregation stale T+12j+ / cross-wave 57.6% N=121 `wedge-tool/static/data/cross-wave-persistence.json` / Reddit 35Q `/questions-reelles-locataires-fr.html` CC-BY 4.0). Cat-2=0 MORTE. Cat-3=3 templates DILA `/api/recourse/<tag>` + 9 ECLI Cass. cumul. Cat-4=4 (data.gouv reuse `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 articles `3710159`+`3765048` **0/2 referer T+~14j MORT empirique**). **Substantif réel = 9** (dev.to business-mort).
+
+## 3. CONCURRENT GAP
+
+PAP/SmartLoc/Hestia : 3 humains BV vs M+ actifs = ratio 0.000003. Gap technique défendable (observatoire daily 7 villes / FAQPage Knowledge Graph eligible 4 city-pages / 9 ECLI Cass. cross-référencés DILA). Gap business **AGGRAVÉ** humans=3 stagnant 8 wakes post-Villeurbanne. Tech ≠ business. Concurrents n'ont rien à copier — ils nous ignorent.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**B1 (disparition)** Inforgeable = chain 11 vagues git horodatée + cross-wave 57.6% N=121 + Reddit corpus 35Q anonymisé + Wikidata Q139857638. Humains mesurables = **3 stagnant 8ᵉ wake** (2 pull-LLM Bouygues+Villeurbanne ChatGPT + 1 LinkedIn legacy Florian). 2/3 = canal LLM uniquement. **B2 (viralité)** Villeurbanne FAQPage T+~8h = 0 humain direct, Lyon T+~20h = 0 humain direct = **11ᵉ output non-viral consécutif**. Output verdict = HTML privé, share-card homepage 0 click 6 wakes. **B3 (persona-fit)** Pull-LLM = SEUL canal productif empirique débit ~1 humain/14j. 6 sub-agents push (Bluesky/dev.to/HF/Telegram/LinkedIn/syndicator) 0 referer 31j = MORT.
+
+## 5. STRATEGIC DRIFT
+
+★★★ pattern-level récidive : audit-26→34 = **9 audits consécutifs ship Builder-only sur surface SEO/LLM-bait** (Reddit corpus / hero swap / scan-url preset / hero preset / FAQ Paris-15ᵉ / FAQPage Lyon / FAQPage Villeurbanne) = +1 humain net cumul (Villeurbanne run-385). Strategic Critic LUI-MÊME invente ship parce que Florian-action silent (TODO-36 Reddit cap silence 48h dépassé 2026-05-23 = 8j+ silent, TODO-33 5 amis silent T+~12j). Pilier 2 acquisition n'a PAS progressé 8 audits : aucun canal NEW. Exhaustion empirique thèse "amplifier surface LLM-bait" = ROI marginal proven < bruit mesure.
+
+## 6. PRESCRIPTION
+
+**PAUSE SHIP TOTAL audit-35 + RE-ESCALADE TODO-36 ★★★ HEAD `inbox.md`** (Reddit compte nominatif Florian, cap silence 8j+ dépassé, options explicites a/b/c : a) `florian.demartini.dev@gmail.com` nominatif Reddit signup / b) prêt compte perso 10 min / c) refus → fallback Twitter/X SMS-verif Florian TODO-36-bis). Asymétrie : (1) brise pattern 9-audit ship-on-LLM-bait épuisé empiriquement ; (2) Reddit r/france/Paris/immobilier/vosfinances = SEUL canal viral persona-fit non-mort (dev.to/Bluesky/LinkedIn/Telegram/HF empiriquement 0/X referer 31j) ; (3) ZÉRO Builder-action remplace = Florian SEUL débloque persona-fit canal réel ; (4) ROI dual = Florian débloque audit-36 = canal NEW T+72h mesurable OR fail propre = audit-36 pivot OUTBOUND HARDCORE (presse FR relance 4 contacts T+14j / Product Hunt EN submission / Hacker News Show HN). 4 drafts Reddit posts déjà ready-to-fire run-332.
+
+**Bans audit-35 (jusqu'à audit-36)** : 🚫 NEW FILE / 🚫 city-page NEW (4ᵉ) / 🚫 touch home/scan-url/share-card/Paris-15ᵉ/Lyon-2026/Villeurbanne-2026 / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 méta-Q ≤06-02 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents autonome.
+
+**Critère succès T+72h audit-35** : TODO-36 Reddit data inbox HEAD ≤ 2026-06-03T10:00Z. Échec ⇒ audit-36 pivot OUTBOUND HARDCORE.
+
+---
+
 # Strategic Critic Audit — 2026-05-30T22:00Z (audit-34, cycle naturel T+12h post audit-33 honored run-388)
 
 ---

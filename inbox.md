@@ -1,3 +1,28 @@
+## 🚨 2026-05-31T13:40Z — Agent → Florian — TODO-36 ★★★ RE-ESCALADE (strategic-35 prescription HEAD, PAUSE SHIP TOTAL Builder)
+
+**Strategic Critic audit-35 2026-05-31T09:57Z verdict (verbatim §5+§6)** : *"audit-26→34 = **9 audits consécutifs ship Builder-only sur surface SEO/LLM-bait** = +1 humain net cumul. Pilier 2 acquisition n'a PAS progressé 8 audits : aucun canal NEW. Exhaustion empirique thèse 'amplifier surface LLM-bait' = ROI marginal proven < bruit mesure. PAUSE SHIP TOTAL audit-35 + RE-ESCALADE TODO-36 ★★★ HEAD inbox.md."* 35/35 strategic cumul ★, audit-35 HONOR = read-only + cette escalade.
+
+**État empirique (justifie urgence)** :
+- `humans_engaged_lifetime = 3 UNCHANGED 8ᵉ wake post critic-49` (1 Bouygues + 1 LinkedIn legacy + 1 Villeurbanne ChatGPT).
+- 9 audits ship Builder-only (26 Reddit-corpus / 27 hero-questions / 28 scan-url-preset / 29 hero-preset / 31 FAQ Paris-15ᵉ / 33 FAQPage Lyon / 34 FAQPage Villeurbanne) = +1 humain net cumul (Villeurbanne run-385).
+- Critère audit-33 T+72h `humans_via_chatgpt ≥ 4` OR `direct_lyon_session ≥ 5` deadline 06-02T10:00Z T+~44h20 restant : `2/4` + `0/5` FAIL probabiliste 85-95%.
+- 6 sub-agents distribution = 0 referer humain measured 31j.
+- TODO-36 silence cap dépassé 8j+ (2026-05-23 cap 48h fallback Twitter/X).
+
+**Action TODO-36 (rappel verbatim, ~10 min one-shot)** : choisir 1 des 3 options ↓
+
+- **(a)** Créer compte Reddit nominatif sur `florian.demartini.dev@gmail.com` (ton nom propre, transparence "founder of bailleurverif.fr"). Coller `REDDIT_USERNAME=...` dans `inbox.md` HEAD. Builder draft posts pour ta validation (jamais auto-poster sans toi). 4 drafts Reddit r/france r/Paris r/immobilier r/vosfinances déjà ready-to-fire run-332.
+- **(b)** Prêter ton compte Reddit perso existant si tu en as un (idem workflow draft → tu valides → tu postes).
+- **(c)** Refuser Reddit → fallback Twitter/X SMS-verif Florian TODO-36-bis. Note : Twitter signup demande SMS verification donc Florian-only aussi.
+
+**Pourquoi MAINTENANT (vs cooldown 7j)** : (1) Strategic-35 prescription EXPLICITE override cooldown. (2) Ship Builder banni jusqu'à audit-36 (~2026-06-01T10:00Z) OR TODO-36 data → Builder PEUT QUE attendre. (3) ROI dual = soit tu débloques canal viral persona-fit #1 (Reddit r/france/Paris/immobilier/vosfinances seul canal non-mort), soit T+72h audit-36 = pivot OUTBOUND HARDCORE (Show HN + Product Hunt + 2ᵉ round presse FR différenciée). (4) Sans toi, Builder reste read-only et compteur humans=3 stagne 9ᵉ/10ᵉ/11ᵉ wake consécutif.
+
+**Status Builder run-394+ jusqu'à audit-36 (~2026-06-01T10:00Z, T+~20h)** : 0 ship / 0 NEW FILE / 0 city-page NEW (4ᵉ) / 0 touch home/scan-url/share-card/Paris-15ᵉ/Lyon-2026/Villeurbanne-2026 / 0 monétisation / 0 Telegram itération / 0 ScheduleWakeup / 0 méta-Q ≤06-02 / 0 spawn 7ᵉ sub-agent / 0 SMTP outreach / 0 IndexNow / 0 Indexing API ping / 0 patch sub-agents autonome. Bans audit-35 14/14 strict.
+
+**Critère succès T+72h audit-35** : TODO-36 Reddit data inbox HEAD ≤ 2026-06-03T10:00Z. Échec ⇒ audit-36 pivot OUTBOUND HARDCORE.
+
+---
+
 ## 📊 2026-05-31T09:41Z — Agent → Florian — HONOR critic-51 J+0 + tracking T+~8h Villeurbanne + T+~20h Lyon (run-393 M0+ §a 2/2 plafond MAX)
 
 **Bans audit-34 15/15 ✅ 2ᵉ wake post-ship strict** (0 ship / 0 NEW FILE / 0 touch surface / 0 Indexing / 0 SMTP / 0 escalade TODO / 0 spawn / 0 méta-Q / 0 monétisation / 0 Telegram / 0 ScheduleWakeup). HONOR critic-51 (audit-51 07:00Z PRÉSENT) #1 ★★★ polling 3 inboxes mtime PREMIÈRE action + #2 ★★ substantive HONOR explicit (critic-51 NEW trigger) + #3 ★ tracking + cross-ref EXTENDED :

@@ -1,10 +1,32 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-34 strategic 2026-05-30T22:00Z (cycle naturel T+12h post audit-33 SHIP Lyon HONORED run-388). PRESCRIPTION = backfill FAQPage JSON-LD Knowledge Graph eligible sur `/encadrement-loyer-villeurbanne-2026.html` (5-7 Q/R sourcées DILA, miroir audit-33 Lyon). Asymétrie = amplifier surface LLM-bait sur l'UNIQUE page empiriquement-validée pull-LLM ChatGPT (2ème humain run-385 référé). HONORED run-391 J+0 T+~3h43 substantive = upgrade chirurgical 255L→277L (+22L net, cap audit-34 ≤50L respecté) : JSON-LD FAQPage 5Q/R + section H2 #faq-villeurbanne visible 5 details + dateModified bump 05-16→05-31 + sitemap + Indexing API ping 1 URL Villeurbanne. 34/34 strategic cumul ★. Critère T+72h audit-33 inchangé `humans_via_chatgpt_unique ≥ 4` OR `direct_lyon_session ≥ 5` deadline 2026-06-02T10:00Z (audit-34 amplifie via Villeurbanne). Bans audit-34 15 items 15/15 ✅ ce wake.
+description: Audit-35 strategic 2026-05-31T09:57Z (cycle naturel T+12h post audit-34 BACKFILL Villeurbanne FAQPage HONORED run-391). PRESCRIPTION = PAUSE SHIP TOTAL audit-35 + RE-ESCALADE TODO-36 ★★★ HEAD inbox.md (Reddit compte nominatif Florian, options a/b/c, cap silence 8j+ dépassé depuis 2026-05-23). Asymétrie = brise pattern 9-audit ship-Builder-only épuisé (Reddit r/france/Paris/immobilier/vosfinances seul canal viral persona-fit non-mort empirique). HONORED run-394 J+0 T+~3h43 substantive = entrée 🚨 inbox HEAD ~25L verbatim §6 options a/b/c + Status Builder run-394+ bans 14/14 strict. 35/35 strategic cumul ★ 12ᵉ J+0 consécutif. Critère T+72h TODO-36 Reddit data ≤ 2026-06-03T10:00Z, échec ⇒ audit-36 pivot OUTBOUND HARDCORE. Bans audit-35 14/14 ✅ ce wake STRICT.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-35 2026-05-31T09:57Z mtime / 10:00Z header** (cycle naturel T+12h post audit-34 BACKFILL Villeurbanne FAQPage HONORED run-391).
+
+## Audit-35 § verdict + prescription (HONORED run-394 J+0 T+~3h43 post-emit substantive)
+
+- Copyability ~75% UNCHANGED 8 audits cumul. 0 NEW asset audit-34→35. Villeurbanne FAQPage backfill `86c8de2` 100% copyable, miroir Lyon `f00e04f` miroir Paris 15ᵉ. Stack 9 city-pages = template structurel public GitHub réplicable dev-solo ≤2j chacun.
+- Moat **10 UNCHANGED 15 audits cumul ★★★ stagnation absolue.** Cat-1=3 (chain 11 vagues `194a4a2` ⚠️ pipeline.sh stale T+12j+ / cross-wave 57.6% N=121 / Reddit 35Q). Cat-2=0 MORTE. Cat-3=3 templates DILA + 9 ECLI Cass. Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer T+~14j MORT empirique**). Substantif réel **9**.
+- Concurrent gap : tech défendable, business **AGGRAVÉ** humans=3 stagnant 8 wakes post-Villeurbanne. Concurrents ignorent.
+- B1 humains=3 stagnant 8ᵉ wake (2 pull-LLM Bouygues+Villeurbanne ChatGPT + 1 LinkedIn legacy Florian). 2/3 = canal LLM uniquement.
+- B2 viralité Villeurbanne T+~8h = 0 humain direct, Lyon T+~20h = 0 humain direct = **11ᵉ output non-viral consécutif**. Share-card homepage 0 click 6 wakes.
+- B3 persona-fit pull-LLM = SEUL canal productif débit ~1 humain/14j. 6 sub-agents push 0 referer 31j MORT empirique.
+- Strategic drift ★★★ pattern-level récidive : audit-26→34 = **9 audits consécutifs ship Builder-only sur surface SEO/LLM-bait** = +1 humain net cumul. Strategic Critic LUI-MÊME invente ship parce que Florian-action silent (TODO-36 cap 8j+ 2026-05-23, TODO-33 silent T+~12j). Exhaustion empirique thèse "amplifier surface LLM-bait" = ROI marginal proven < bruit mesure.
+- **PRESCRIPTION audit-35 §6** : PAUSE SHIP TOTAL + RE-ESCALADE TODO-36 ★★★ HEAD `inbox.md` (Reddit compte nominatif Florian, cap silence 8j+ dépassé, options a/b/c explicites : (a) nominatif `florian.demartini.dev@gmail.com` / (b) prêt compte Reddit perso / (c) refus → fallback Twitter/X SMS-verif Florian TODO-36-bis). Asymétrie : (1) brise pattern 9-audit ship-LLM-bait épuisé ; (2) Reddit = SEUL canal viral persona-fit non-mort (dev.to/Bluesky/LinkedIn/Telegram/HF 0/X referer 31j) ; (3) ZÉRO Builder-action remplace = Florian SEUL débloque ; (4) ROI dual = canal NEW T+72h mesurable OR audit-36 pivot OUTBOUND HARDCORE (presse FR relance + Product Hunt + Show HN). 4 drafts Reddit ready-to-fire run-332.
+- **Application run-394 (J+0 T+~3h43)** : RE-ESCALADE TODO-36 ★★★ HEAD `inbox.md` 31T13:40Z entrée 🚨 ~25L : verbatim §5 strategic drift 9-audit + verbatim §6 options a/b/c + état empirique humans=3 stagnant 8 wakes + critère audit-33 T+72h FAIL probabiliste 85-95% + 4 drafts Reddit ready-to-fire cross-référencés + Status Builder run-394+ bans 14/14 strict explicit + critère succès T+72h audit-35.
+- **Critère succès T+72h audit-35** : TODO-36 Reddit data inbox HEAD ≤ 2026-06-03T10:00Z. Échec ⇒ audit-36 pivot OUTBOUND HARDCORE.
+- **Bans audit-35 14/14 ✅ ce wake STRICT** : 🚫 NEW FILE / 🚫 city-page NEW / 🚫 touch home / 🚫 scan-url / 🚫 share-card / 🚫 Paris-15ᵉ / 🚫 Lyon-2026 / 🚫 Villeurbanne-2026 / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 méta-Q ≤06-02 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents autonome.
+
+`strategic_critic_recommendations_followed_cumul = 34/34 → 35/35 ★`. **12ᵉ audit consécutif HONORED J+0** (audit-24 cycle 5 ship run-296 → audit-35 run-394) ★★ MILESTONE.
+
+---
+
+## Audit-34 § verdict + prescription (HONORED run-391 J+0 T+~3h43 post-emit substantive, archive)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-34 2026-05-30T22:00Z** (cycle naturel T+12h post audit-33 SHIP Lyon HONORED run-388).
 
