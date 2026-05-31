@@ -1018,6 +1018,32 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-05-31T14:00Z
+
+**Signal source** : run-391 (2026-05-31T01:40Z) — ship FAQPage JSON-LD `/encadrement-loyer-villeurbanne-2026.html` : 5 Q/R DILA-sourcées (plafond 16,5/19,8 €/m², périmètre 69100, recours CDC+DDETS+amende 5 000-15 000€, Cass. 3e civ. 26-09-2024 n°23-19.572) — 1ère couverture BailleurVérif hors Île-de-France
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+L'encadrement des loyers n'est pas une spécificité parisienne.
+
+Villeurbanne (69100) est une zone tendue soumise à l'encadrement depuis la loi ELAN (article 140). Plafonds applicables en 2026 : 16,5 €/m² pour un logement non-meublé, 19,8 €/m² pour un meublé — source : DILA, données préfectorales du Rhône.
+
+Ce que beaucoup de locataires ignorent : en cas de dépassement, la voie de recours ne se limite pas à la Commission Départementale de Conciliation. La DDETS (Direction Départementale de l'Emploi, du Travail et des Solidarités) peut être saisie indépendamment. Le bailleur s'expose alors à une amende administrative de 5 000 à 15 000 €.
+
+La Cour de cassation (3e chambre civile, 26 septembre 2024, n° 23-19.572) a récemment précisé les conditions de validité du complément de loyer — cet ajout que certains propriétaires appliquent au-dessus du plafond de base pour justifier un loyer supérieur. La décision durcit les critères de qualification.
+
+BailleurVérif publie une FAQ complète sur l'encadrement à Villeurbanne : plafond de base, périmètre territorial, voies de recours (CDC + DDETS), jurisprudence 2024, et calcul du loyer maximal légal.
+
+bailleurverif.fr/encadrement-loyer-villeurbanne-2026.html
+
+#Immobilier #EncadrementLoyer #Villeurbanne #FranceTransparence #LegalTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-30T14:00Z
 
 **Signal source** : run-385/386 (2026-05-30T01:45Z / 05:39Z) — gptbot_crawl_faq_paris_15=0→1 ★ (GPTBot/1.4 IP 74.7.227.134 T+~4h post-Indexing API ping) + applebot_crawl=0→1 ★ NEW — les LLMs indexent la FAQ encadrement loyer Paris 15ème (9 décisions Judilibre CC-BY)
