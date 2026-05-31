@@ -1,3 +1,16 @@
+## 📊 2026-05-31T09:41Z — Agent → Florian — HONOR critic-51 J+0 + tracking T+~8h Villeurbanne + T+~20h Lyon (run-393 M0+ §a 2/2 plafond MAX)
+
+**Bans audit-34 15/15 ✅ 2ᵉ wake post-ship strict** (0 ship / 0 NEW FILE / 0 touch surface / 0 Indexing / 0 SMTP / 0 escalade TODO / 0 spawn / 0 méta-Q / 0 monétisation / 0 Telegram / 0 ScheduleWakeup). HONOR critic-51 (audit-51 07:00Z PRÉSENT) #1 ★★★ polling 3 inboxes mtime PREMIÈRE action + #2 ★★ substantive HONOR explicit (critic-51 NEW trigger) + #3 ★ tracking + cross-ref EXTENDED :
+- **Villeurbanne T+~8h post FAQPage backfill** : prod HTTP 200 ✅. LLM-ingest fenêtre T+12-72h en phase début, expected silence.
+- **Lyon T+~20h post-ship** : prod HTTP 200 ✅ + `0 visits/events Lyon path lifetime`. LLM-ingest fenêtre en cours, débit empirique 0.
+- **events delta 83→88** : 5 NEW home_visit cross-ref UA + referrer EXTENDED ⇒ **5/5 NON-HUMAIN strict** : (1) Applebot/0.1 08:26Z (3ᵉ crawl Apple cumul) + (2)+(3) Googlebot Smartphone Nexus 5X + Desktop Chrome/147 08:44Z jumelés home + (4)+(5) Googlebot Desktop 08:48:39Z 2 sessions simultanées Paris page (pattern indexation).
+- **humans_engaged_lifetime=3 UNCHANGED** 7ᵉ wake post critic-49 correction.
+- **Critère audit-33 T+72h** deadline 06-02T10:00Z T+~48h19 restant : `humans_via_chatgpt 2/4` + `direct_lyon_session 0/5`. FAIL probabiliste 85-95% sauf LLM-bait Lyon+Villeurbanne burst.
+- Sub-agents : 0 cycle nouveau depuis run-388, 0 referer humain measured 31j cumul (paramètre structural Florian désengagement T+~15j).
+- Builder run-393 = **M0+ §a substantive 2/2 plafond MAX strict atteint** (HONOR critic-51 explicit = trigger NEW légitime ≠ saturation déguisée critic-51 STOP #3). Audit-35 ETA ~10:00Z T+~19min POST-wake défer run-394 PRÉ-cron. Run-394 plafond saturé ⇒ option (b) M0 idle pur strict OBLIGATOIRE sauf audit-35 OR Florian-reply OR critic-52 trigger NEW.
+
+---
+
 ## 📊 2026-05-31T05:42Z — Agent → Florian — tracking T+~4h Villeurbanne + T+~16h Lyon (run-392 M0+ §a cross-ref UA + referrer EXTENDED)
 
 **Bans audit-34 15/15 ✅ 1er wake post-ship strict** (0 ship / 0 NEW FILE / 0 touch surface / 0 Indexing / 0 SMTP / 0 escalade TODO / 0 spawn / 0 méta-Q / 0 monétisation / 0 Telegram / 0 ScheduleWakeup). HONOR critic-50 #3 ★ tracking + #1 ★★★ polling 3 inboxes mtime PREMIÈRE action :

@@ -2101,3 +2101,12 @@ TRACK | audit-33 T+72h trajectoire | humans_via_chatgpt 2/4 + direct_lyon_sessio
 RITUAL | WHY_THIS_NOT_THAT | 38-streak post-run-391 | DIRECTIVE 10
 RITUAL | DIRECTIVE 7 zero-pose | 169 wakes ★★ 150+ trophy | aucun ScheduleWakeup
 BAN | audit-34 15/15 respectés | 1er wake post-ship strict | 0 ship/0 NEW FILE/0 touch surface/0 Indexing/0 SMTP/0 escalade/0 spawn/0 méta-Q/0 monétisation/0 Telegram/0 ScheduleWakeup/0 IndexNow/0 patch sub-agents
+
+## run-393 — 2026-05-31T09:41Z (M0+ §a substantive 2/2 plafond MAX HONOR critic-51 J+0)
+HONOR | critic-51 audit-51 J+0 explicit | #1 polling 3 inboxes + #2 substantive HONOR + #3 tracking + cross-ref EXTENDED | tactical_critic_recommendations_followed_j0_lifetime=52→53
+TRACKING | events delta 83→88 +5 bots | 5/5 NON-HUMAIN strict cross-ref UA + referrer EXTENDED : Applebot 08:26 + Googlebot Smartphone+Desktop 08:44 home jumelés + Googlebot Desktop 08:48 2× Paris | humans_engaged_lifetime=3 UNCHANGED 7ᵉ wake post critic-49
+TRACKING | Villeurbanne T+~8h FAQPage backfill | prod HTTP 200 ✅ LLM-ingest fenêtre début | critère audit-33 humans_via_chatgpt 2/4 + direct_lyon 0/5 FAIL probabiliste 85-95% deadline 06-02T10:00Z T+~48h19
+TRACKING | Lyon T+~20h post-ship | prod HTTP 200 ✅ 0 visits/events Lyon path lifetime | rythme empirique 0.07 humain/jour pull-LLM seul canal productif
+BAN | audit-34 15/15 respectés | 2ᵉ wake post-ship strict | 0 ship/0 NEW FILE/0 touch surface/0 Indexing/0 SMTP/0 escalade/0 spawn/0 méta-Q/0 monétisation/0 Telegram/0 ScheduleWakeup/0 IndexNow/0 patch sub-agents
+RITUAL | WHY_THIS_NOT_THAT | 39-streak post-run-392 | DIRECTIVE 10
+RITUAL | DIRECTIVE 7 zero-pose | 170 wakes ★★ 150+ trophy | aucun ScheduleWakeup
