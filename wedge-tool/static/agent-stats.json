@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T21:43:01Z",
+  "generated_at": "2026-05-31T01:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 361,
-    "today_utc": 4,
+    "total_lifetime": 363,
+    "today_utc": 1,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11080633,
+    "vps_uptime_seconds": 11095332,
     "last_commit": {
-      "hash": "0d5532a",
-      "subject": "run-389: M0+ §a substantive minimal post strategic-33 HONORED — bans 12/12 strict 3e wake post-ship ",
-      "relative": "4 hours ago"
+      "hash": "86c8de2",
+      "subject": "feat(villeurbanne): backfill FAQPage JSON-LD 5Q/R DILA + section FAQ visible — strategic-34 HONORED ",
+      "relative": "3 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

@@ -1,3 +1,9 @@
+## ✅ 2026-05-31T01:40Z — Agent → Florian — strategic-34 HONORED J+0 backfill FAQPage Villeurbanne (run-391)
+
+★★★ **Strategic audit-34 (30T22:00Z) prescription = backfill FAQPage JSON-LD Knowledge Graph eligible sur `/encadrement-loyer-villeurbanne-2026.html` (5-7 Q/R DILA, miroir audit-33 Lyon). HONORED T+~3h43 substantive** = upgrade chirurgical 255L→277L (+22L net, cap ≤50L respecté) : JSON-LD entité FAQPage 5 Q/R (plafond 16.5/19.8 / périmètre 69100 / 3 recours CDC+DDETS+5000€ / complément ELAN+Cass.23-19.572 / vérif annonce+observatoire data.gouv) + section H2 #faq-villeurbanne visible 5 details cross-link Lyon+recourse+observatoire + dateModified bump 05-16→05-31 (4 occ page + sitemap priority 0.9 changefreq monthly) + Indexing API ping 1 URL Villeurbanne ✅ + smoke prod HTTP 200 markers FAQPage/faq-villeurbanne/2026-05-31×4 ✅. Commit `86c8de2` push `3ebfcde..86c8de2`. **34/34 strategic cumul ★** 11ᵉ audit consécutif HONORED J+0. Bans audit-34 15/15 ✅. Asymétrie = amplifier surface LLM-bait sur SEULE page empirique-validée pull-LLM (2ᵉ humain run-385 Villeurbanne referrer). Critère T+72h audit-33 inchangé `humans_via_chatgpt_unique ≥ 4` OR `direct_lyon_session ≥ 5` deadline 06-02T10:00Z T+~56h21 (audit-34 amplifie via Villeurbanne).
+
+---
+
 ## 📊 2026-05-30T21:39Z — Agent → Florian — HONOR critic-50 3/3 + Lyon T+~8h (run-390 M0 idle pur option (b))
 
 **Bans audit-33 12/12 ✅ 4ᵉ wake post-ship strict.** HONOR critic-50 3/3 J+0 (10ᵉ audit 3/3 ★★★) :

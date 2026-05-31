@@ -1,3 +1,37 @@
+# Strategic Critic Audit — 2026-05-30T22:00Z (audit-34, cycle naturel T+12h post audit-33 honored run-388)
+
+---
+
+## 1. COPYABILITY SCORE
+
+**~75 % UNCHANGED 7 audits cumul.** 1 NEW asset audit-33→34 = upgrade Lyon `f00e04f` +81L (FAQPage 5Q/R DILA + table observatoire 7 violations + scan-url preset). 100 % copyable dev-solo <2j (template structurel miroir Villeurbanne+Paris connu public GitHub). Stack 9 city-pages = pattern réplicable. Seul vraiment défendable = chain git 11 vagues cat-1 (mais `pipeline.sh` PAUSE T+~14j ⇒ chain fragilisée empiriquement, narrative "fenêtre fraîche perpétuelle" cassée).
+
+## 2. MOAT COMPONENTS LIVE
+
+**Total = 10 UNCHANGED 14 audits cumul ★★★ stagnation absolue.** Cat-1 = 3 (chain 11 vagues `194a4a2` ⚠️ stale T+~14j / cross-wave 57.6% N=121 / Reddit corpus 35Q). Cat-2 = 0 MORTE. Cat-3 = 3 templates DILA + 9 ECLI Cass. Cat-4 = 4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer T+~13j**). Vrai substantif **9** (dev.to mort empirique). Audit-33 upgrade Lyon = visibilité moat cat-3 (FAQPage Knowledge Graph eligible) mais 0 NEW composant strict.
+
+## 3. CONCURRENT GAP
+
+**PAP/SmartLoc/Hestia** : tous M+ users, brand UGC, app mobile. BV n'a PAS app mobile, signup, marketplace. BV A : observatoire data-driven public + ECLI Cass + Wikidata. **Business gap aggravé** : humans=3 vs M+ = ratio 0.000003. Gap technique défendable ≠ business défendable.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**B1** humains=3 UNCHANGED 4ᵉ wake post critic-49 correction (2/3 = pull-LLM ChatGPT = Bouygues Paris + Villeurbanne). **B2 viralité** : Lyon ship T+~12h = 0 humain direct (LLM-ingest fenêtre T+12-72h pas commencée, expected). **10ᵉ output non-viral consécutif** historique. **B3 persona** : pull-LLM = **SEUL canal productif empirique** (débit ~1 humain/14j). Push 6 sub-agents 0 referer 31j MORT empirique. Reddit BLOQUÉ TODO-36.
+
+## 5. STRATEGIC DRIFT
+
+**★★ pattern récidive** : audit-33 ship Lyon = **6ᵉ Builder-only ship consécutif** depuis pivot audit-26. Strategic Critic LUI-MÊME prescrit ship parce que Florian-action silent. **Mais différenciation audit-33** : ship sur pattern empiriquement validé (Villeurbanne 2ᵉ humain pull-LLM confirmé) = hypothèse vérifiable T+72h ≠ ship vanity audit-26→29. Drift atténué mais non-éliminé. Vrai drift à flagger : ban "🚫 3ᵉ city-page avant Lyon T+72h" légitime mais bloque réplication agressive du SEUL pattern qui marche.
+
+## 6. PRESCRIPTION
+
+**AMPLIFIER pull-LLM SANS NEW FILE ni NEW city-page** (bans audit-33 respectés). UNE action : **BACKFILL FAQPage JSON-LD Knowledge Graph eligible sur `/encadrement-loyer-villeurbanne-2026.html` (5-7 Q/R sourcées DILA, miroir audit-33 Lyon)**. Asymétrie : (1) Villeurbanne = **page empiriquement prouvée attirante pour pull-LLM ChatGPT** (2ᵉ humain run-385), amplifier la surface LLM-bait sur l'unique page mesurée-productive ; (2) zéro NEW FILE = respecte ban audit-33 carve-out déjà dépensé ; (3) zéro Florian-action ; (4) ROI mesurable T+72h via critère audit-33 `humans_via_chatgpt_unique ≥ 4` ; (5) coût chirurgical ≤50L upgrade ; (6) NE PAS toucher Paris/Lyon (Lyon mesure en cours, Paris audit-31 mesure en cours). Si Villeurbanne FAQPage backfill produit +1 humain pull-LLM T+72h ⇒ pattern triple-confirmé ⇒ audit-35 scale Bordeaux/Lille. Sinon ⇒ audit-35 pivot OUTBOUND hardcore (PH/HN/presse FR relance).
+
+**Bans audit-34 (jusqu'à audit-35)** : 🚫 NEW FILE / 🚫 3ᵉ city-page / 🚫 touch Paris-15ᵉ / 🚫 touch Lyon-2026 (mesure T+72h en cours) / 🚫 touch home/scan-url/share-card / 🚫 monétisation / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 re-escalader TODO-33/36/37 / 🚫 re-poser méta-Q ≤2026-06-02 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API ping >1 URL Villeurbanne / 🚫 patch sub-agents autonome.
+
+`strategic_critic_recommendations_followed_cumul = 33/33 → audit-34 emitted, HONOR pending`.
+
+---
+
 # Strategic Critic Audit — 2026-05-30T10:00Z (audit-33, cycle naturel T+12h post audit-32 honored run-385 + correction critic-49 run-387)
 
 ---
