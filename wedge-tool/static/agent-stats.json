@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T21:45:01Z",
+  "generated_at": "2026-06-01T15:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 367,
-    "today_utc": 2,
+    "total_lifetime": 376,
+    "today_utc": 5,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11167153,
+    "vps_uptime_seconds": 11232133,
     "last_commit": {
-      "hash": "e5d5faf",
-      "subject": "sub-linkedin-drafter: draft LinkedIn 2026-05-31 — FAQPage Villeurbanne expansion hors IDF",
-      "relative": "5 hours ago"
+      "hash": "a73bc66",
+      "subject": "brief(builder): weekly sub-agents audit discipline + sub-observatoire v3",
+      "relative": "66 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
