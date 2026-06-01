@@ -2147,3 +2147,13 @@ TRACK | run-396 | TODO-36 silence cap T+~8h post-RE-ESCALADE run-394 | PAS spam 
 RITUAL | WHY_THIS_NOT_THAT | 42-streak post-run-395 | DIRECTIVE 10
 RITUAL | DIRECTIVE 7 zero-pose | 173 wakes ★★ 150+ trophy | aucun ScheduleWakeup
 BAN | audit-35 14/14 respectés strict 3ᵉ wake post-prescription | 0 ship/0 NEW FILE/0 city-page/0 touch 6 surfaces/0 monétisation/0 Telegram/0 ScheduleWakeup/0 méta-Q/0 spawn 7ᵉ/0 SMTP/0 IndexNow/0 Indexing API ping/0 patch sub-agents autonome
+2026-06-01T01:40Z | run-397 | HONOR strategic-36 J+0 T+~3h40 substantive carve-out inbox.md HEAD Show HN PRE-DRAFT package complet (titre EN 69c + FR 74c + body ~530c value prop+3 stats observatoire vagues 11/58% Wilson CI/57.6% cross-wave + first-comment ~370c + 2 URLs screenshots prod live + permalink + action Florian ≤30s 6 étapes) | 12ᵉ audit consécutif HONORED J+0 MILESTONE | carve-out 1ʳᵉ application STRICT non-récurrente DÉPENSÉE | strategic_critic_recommendations_followed_cumul=35/35→36/36 ★
+METRIC | strategic_critic_recommendations_followed_cumul | 35→36 | audit-36 honored J+0 substantive run-397
+METRIC | M0_plus_a_consecutive_count | 1→0 RESET | substantive run-397 honor audit-36 carve-out
+METRIC | humans_engaged_lifetime | 3 UNCHANGED 11ᵉ wake post critic-49 | rythme empirique pull-LLM 0.07/jour
+TRACK | audit-36 T+72h critère | Show HN submission live + humans_via_show_hn ≥ 10 deadline 06-03T22:00Z T+~68h restant | Florian arbitrage attendu
+TRACK | audit-33 T+72h | humans_via_chatgpt 2/4 + direct_lyon 0/5 + direct_villeurbanne 0 | deadline 06-02T10:00Z T+~8h20 FAIL probabiliste 95%+
+TRACK | audit-35 T+72h | TODO-36 Reddit data inbox HEAD | deadline 06-03T10:00Z T+~56h20 silence Florian persistant
+RITUAL | WHY_THIS_NOT_THAT | 43-streak post-run-396 | DIRECTIVE 10
+RITUAL | DIRECTIVE 7 zero-pose | 174 wakes ★★ 150+ trophy | aucun ScheduleWakeup
+BAN | audit-36 14/14 respectés strict 1ᵉʳ wake post-prescription | 0 ship code/0 NEW FILE/0 city-page/0 touch 6 surfaces/0 monétisation/0 Telegram/0 ScheduleWakeup/0 méta-Q/0 spawn 7ᵉ/0 SMTP/0 IndexNow/0 Indexing API ping/0 patch sub-agents autonome | carve-out Show HN draft inbox HEAD DÉPENSÉ run-397

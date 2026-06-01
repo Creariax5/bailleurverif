@@ -1,3 +1,66 @@
+## 🚀 2026-06-01T01:40Z — Agent → Florian — Show HN PRE-DRAFT ready-to-fire (strategic-36 §6 HONORED J+0 T+~3h40 post-emit, carve-out 1ʳᵉ application strict)
+
+**Strategic Critic audit-36 2026-05-31T22:00Z §6 verdict (verbatim)** : *"PRE-DRAFT package Show HN ready-to-fire en `inbox.md` HEAD wake suivant. UNE action Builder-only : composer titre EN+FR ≤80c + body ≤600c + first-comment ≤400c + 2 screenshots inline observatoire+scan-url + permalink prod. Florian 1-click submit (HN signup = email-only, pas SMS-verif contrairement Reddit/Twitter). Asymétrie : canal NEW Builder-only ZÉRO dépendance Reddit + HN devs/tech-savvy = persona overlap acceptable + brise pattern 12-audit + ROI dual T+24h."* Critère succès T+72h = Show HN submission live + `humans_via_show_hn ≥ 10` deadline **2026-06-03T22:00Z**.
+
+**Pourquoi MAINTENANT (vs Reddit TODO-36)** : (1) HN signup = email-only (Reddit/Twitter = SMS-verif Florian-only). (2) Asymétrie canal NEW Builder-only ZÉRO dépendance Florian-Reddit-action (12 cycles 0 reply). (3) Persona overlap "I rent in Paris, got scammed" = acceptable HN crowd (devs tech-savvy, +data-driven). (4) ROI dual T+24h ≥50 referer HN ⇒ canal NEW prouvé / 0 referer ⇒ audit-37 pivot Product Hunt + presse FR 2ᵉ round. (5) Brise pattern 12-audit ship-LLM-bait-épuisé + remplace par "Florian 30s validate + 1-click submit".
+
+---
+
+### 📝 PACKAGE COMPLET (copy/paste prêt)
+
+**1. Permalink** : `https://bailleurverif.fr/`
+
+**2. Titre EN (69c)** :
+```
+Show HN: I scanned 210 French rental ads, 58% violate legal rent caps
+```
+
+**3. Titre FR alternatif (74c)** :
+```
+Show HN: J'ai scanné 210 annonces locatives FR, 58% violent l'encadrement
+```
+
+**4. Body (~530c)** :
+```
+BailleurVérif checks French rental ads/leases vs the law (rent caps, DPE, deposit).
+
+Why it exists:
+- Scraped 210 ads across 7 French cities, 11 weekly waves (git-timestamped chain)
+- 58% violate legal rent caps (95% Wilson CI ±9.7pts)
+- 57.6% of listings persist 3+ days = repeat infractions
+- Cross-referenced with Cassation case law (9 ECLI rulings) via DILA
+- Open data on data.gouv.fr (Etalab v2.0) + Wikidata Q139857638
+
+Paste any rental URL → conformity verdict in 5s + downloadable share card.
+
+Code MIT: github.com/Creariax5/bailleurverif
+```
+
+**5. First-comment ≤400c "why I built this"** :
+```
+Built this because French rent caps have been law since 2015 but enforcement is near-zero — tenants face asymmetric info before signing a lease. The observatory makes the violation rate visible & ties each ad to actual Cassation case law. Open data (data.gouv.fr) + open code (MIT). Feedback on missing laws/sources welcome — especially from anyone who's rented in Paris recently.
+```
+
+**6. Screenshots (URLs prod live HTTP 200 ✅, embed-friendly)** :
+- Observatoire (table top violations 7 villes) : `https://bailleurverif.fr/observatoire-annonces-loyer.html#table-violations`
+- Scan-URL (interface verdict 5s) : `https://bailleurverif.fr/scan-url.html`
+
+**7. Action Florian (≤30s)** :
+1. Va sur https://news.ycombinator.com/submit (login email-only existant ou signup 20s email-only sans SMS).
+2. Title = §2 (EN recommandé pour audience HN US-dominant) OU §3 (FR si tu préfères signal local FR).
+3. URL = §1 permalink prod.
+4. Submit.
+5. Immédiatement post §5 en first-comment (HN convention "Show HN" = OP commente value-prop+intent).
+6. Reviens coller URL HN dans `inbox.md` HEAD → Builder track referer `news.ycombinator.com` + `humans_via_show_hn` lifetime + critère T+72h.
+
+**Status Builder run-397+ jusqu'à audit-37 (~2026-06-01T22:00Z, T+~20h)** : 0 ship / 0 NEW FILE / 0 city-page NEW / 0 touch home/scan-url/share-card/Paris-15ᵉ/Lyon-2026/Villeurbanne-2026 / 0 monétisation / 0 Telegram / 0 ScheduleWakeup / 0 méta-Q ≤06-02 / 0 spawn 7ᵉ / 0 SMTP / 0 IndexNow / 0 Indexing API ping / 0 patch sub-agents autonome. Bans audit-36 14/14 strict. **Carve-out Show HN draft write inbox.md HEAD = DÉPENSÉ ce wake (run-397) 1ʳᵉ application non-récurrente.**
+
+**Critère succès T+72h audit-36** : Show HN submission live + `humans_via_show_hn ≥ 10` deadline 2026-06-03T22:00Z. Échec ⇒ audit-37 pivot OUTBOUND HARDCORE Product Hunt + presse FR 2ᵉ round.
+
+**TODO-36 Reddit (cap original 06-03T10:00Z)** : reste OPEN en parallèle MAIS Show HN = canal Builder-only zéro dépendance toi (priorité supérieure pendant 72h, Reddit cooldown silencieux jusqu'à audit-37 trigger).
+
+---
+
 ## 📊 2026-05-31T17:40Z — Agent → Florian — tracking T+~16h Villeurbanne + T+~28h Lyon + T+~4h post-RE-ESCALADE TODO-36 (run-395 M0+ §a 1/2 cross-ref EXTENDED)
 
 **Bans audit-35 14/14 ✅ 2ᵉ wake post-prescription strict** (0 ship / 0 NEW FILE / 0 city-page / 0 touch 6 surfaces / 0 Indexing / 0 SMTP / 0 escalade TODO supp. / 0 spawn / 0 méta-Q / 0 monétisation / 0 Telegram / 0 ScheduleWakeup). HONOR critic-51 #3 ★ tracking + cross-ref EXTENDED :
