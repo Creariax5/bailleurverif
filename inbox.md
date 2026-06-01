@@ -1,3 +1,105 @@
+## 🎯 2026-06-01T14:35Z — Florian → Agent — **RE-RECALIBRAGE MISSION : PRODUIT-EXCELLENCE + SEO COMPOUNDING (canal principal)**
+
+**Florian verbatim 2026-06-01** : *"Je veux que l'agent se concentre maintenant sur le produit, je veux un très bon produit compétitif, le SEO sera la main méthode d'attraction."*
+
+**2ᵉ pivot stratégique** (post-recalibrage 2026-05-21). Mission `concepts/mission.md` updatée + Builder prompt + Strategic Critic prompt PATCHés via agents-control API.
+
+### Piliers RE-RECALIBRÉS (binding)
+
+| Pilier | Ancien (2026-05-21) | Nouveau (2026-06-01) |
+|---|---|---|
+| **P1** | produit-fit (questionnement) | **PRODUIT-EXCELLENCE** (best-in-class FR vs ANIL/Service-Public/DRIHL) |
+| **P2** | acquisition+viralité (Reddit/TikTok push) | **SEO COMPOUNDING** (canal principal acquisition) |
+| **P3** | mesure | mesure (inchangé) |
+
+### Métriques succès (updated)
+
+1. `humans_engaged_lifetime` (North Star, cible >100, aujourd'hui ~3)
+2. **`gsc_indexed_pages`** NEW (proxy SEO, ~8 → cible 50+ @ M3)
+3. **`produit_excellence_signal`** NEW (verdict_displayed/q1_answered ratio)
+4. `florian_hours_consumed_mtd` (autonomie)
+
+### Pilier 1 PRODUIT-EXCELLENCE — actions Builder
+
+- Chaque wake : identifier 1 friction user point puis fix (funnel drop-off, mobile small screen, slow 3G, accessibility)
+- Approfondir cat-3 (nouveaux templates jurisprudence, edge cases bail meublé/colocation/LMNP)
+- Polish UX wedge + scan-url + share-card (Bouygues humain identifié = mobile iPhone)
+- Documenter valeur ajoutée vs concurrent (ANIL/Service-Public) sur chaque nouvelle page
+
+### Pilier 2 SEO COMPOUNDING — tactiques HAUTE priorité
+
+1. **Différenciation pages programmatiques** : chaque ville-page DOIT contenir data unique (chiffres observatoire locaux, FAQs locales 8+ Q/R DILA-verified, arrêté préfectoral exact, jurisprudence locale si dispo). Sinon Google déduplique → 1-2 indexées sur 50.
+2. **Long-tail content creation** : 1-3 pages/sem réponses requêtes spécifiques ("loyer encadré Paris 11e meublé", "DPE F bail 2028", "dépôt non-rendu LRAR"). Qualité>quantité.
+3. **Backlinks DR60+** : Wikipedia FR édit (strategic-22 draft prêt dans inbox plus bas) + Awesome lists PRs (en cours) + presse FR long terme.
+4. **Internal linking depth** : chaque feuille link ≥2 hubs + ≥3 connexes. Hubs link toutes sous-pages.
+5. **LLM-bot seeding** (cat-3 sous-canal) : llms.txt + llms-full.txt update au moindre ship + Wikidata Knowledge Graph. Pull-LLM = canal validé empiriquement (Bouygues ChatGPT N=1).
+
+### Tactiques MOYENNE (passive, gardées)
+
+- `sub-content-syndicator` dev.to article 1×/sem
+- `sub-linkedin-drafter` Florian valide+poste
+- `sub-bluesky-poster` auto-post observatoire
+- Telegram bot stay up zero-coût
+
+### DÉPRIORITISÉS 2026-06-01 (NE PAS escalader Florian)
+
+- **Reddit posts (TODO-36)** — bloqué signup Florian, ROI incertain
+- **Show HN PRE-DRAFT** (mon brief 01/06 01:40Z) — **CANCEL** : persona devs ≠ locataires FR
+- **Twitter/X threads** — audience FR locataire faible
+- **TikTok démos** — demande output share-friendly + cible jeune ≠ persona principal
+
+Ces 4 canaux → ne plus prescrire dans audits strategic critic. Si moment vient (humans_engaged>50 + gsc_indexed>30), Florian rouvrira lui-même.
+
+### GEL inchangés
+
+- TOUTE monétisation (Stripe/affiliés/paywalls)
+- Telegram itération features (daemon reste up)
+
+### NON-PRIO
+
+- Vanity SEO (pages_total brut, IndexNow rounds, JSON-LD coverage 100% obsession)
+- Spawn sub-agent non-SEO/produit
+- Modal/popup/email-gate friction sur homepage
+
+### PRIO ABSOLU
+
+- Qualité wedge+scan-url+share-card (P1)
+- Pages programmatiques différenciées data locale unique (P2)
+- Backlinks Wikipedia/Awesome/dev.to (P2)
+- Cat-3 templates jurisprudence (P1+P2 moat défendable)
+- Mobile-first UX (P1)
+
+### Implications immédiates
+
+- **Show HN PRE-DRAFT** (mon brief plus bas dans inbox HEAD) = **CANCEL**. Ne plus le promouvoir. Strategic-36 critère succès T+72h obsolète (deadline 2026-06-03T22:00Z ignorée).
+- **Strategic-35 RE-ESCALADE TODO-36 Reddit** = **CANCEL**. Plus de re-escalade canaux push.
+- **Édit Wikipedia FR draft** (strategic-22) reste valid → backlink DR94 = aligné Pilier 2 SEO. Si Florian a 5 min → poster.
+- **Awesome lists PRs** restent valid → backlinks DR55-70 = aligné Pilier 2.
+
+### Update memory-agent
+
+`concepts/mission.md` updated head 2026-06-01 (entrée RE-RECALIBRAGE en tête, ancien recalibrage 2026-05-21 conservé en archive). Builder prompt updated (mission section 3182 → 2660 chars condensé). Strategic Critic prompt updated (Mission Florian alignée bloc).
+
+---
+
+## ✅ 2026-06-01T14:00Z — Florian → Agent — pipeline observatoire UNBLOCKED (vague-12 shipped, daily cron fixed)
+
+**Root cause TODO-37bis investigué + fixé** : `cities_queue.txt` toutes villes "done" depuis 17/05 → `ingest_orchestrator.sh` cron */30 = noop → `pipeline.sh` jamais déclenché → CSV stale vague-11 (8j) → sub-observatoire-publisher cycle 1 `no_fresh_data`.
+
+**Fixes appliqués (commit `e403c4b`)** :
+1. **Manual pipeline.sh 2026-06-01** → CSV vague-12 produit (N=210, 47 violations, headline 70.1% in-scope, 5 communes, 26 villes)
+2. **daily_crawl_7cities.sh** patché : ajoute `pipeline.sh "$DATE_TODAY"` après le dedupe → cron daily 03:00 UTC produira CSV frais auto à partir de demain
+
+**Implications agent** :
+- Next sub-observatoire-publisher cycle (cible ~2026-06-03T06:31Z, 7j depuis dernier run-stale) verra le CSV frais 2026-06-01 → publication data.gouv + HF dataset auto.
+- Moat cat-1 "fenêtre fraîche" RESTAURÉE après 12j stale.
+- `last_ingest_report.txt` reprend tracking : `2026-06-01T13:59Z | N=210 in_scope=67 vio=47 clear=43 presumed=4 headline=70.1%`
+- ANCIENNE pipeline duale (cities_queue + orchestrator) reste dormante mais inoffensive. Pas besoin de la fix maintenant.
+
+**Pour mémoire-agent** : update `concepts/observatoire-n232.md` au prochain wake substantif → vague-12 = N=210, headline 70.1% (vs 60% baseline mai). Note la **rétablissement chain temporelle** (12 vagues git-timestampées au lieu de 11 stuck).
+
+---
+
 ## 🚀 2026-06-01T01:40Z — Agent → Florian — Show HN PRE-DRAFT ready-to-fire (strategic-36 §6 HONORED J+0 T+~3h40 post-emit, carve-out 1ʳᵉ application strict)
 
 **Strategic Critic audit-36 2026-05-31T22:00Z §6 verdict (verbatim)** : *"PRE-DRAFT package Show HN ready-to-fire en `inbox.md` HEAD wake suivant. UNE action Builder-only : composer titre EN+FR ≤80c + body ≤600c + first-comment ≤400c + 2 screenshots inline observatoire+scan-url + permalink prod. Florian 1-click submit (HN signup = email-only, pas SMS-verif contrairement Reddit/Twitter). Asymétrie : canal NEW Builder-only ZÉRO dépendance Reddit + HN devs/tech-savvy = persona overlap acceptable + brise pattern 12-audit + ROI dual T+24h."* Critère succès T+72h = Show HN submission live + `humans_via_show_hn ≥ 10` deadline **2026-06-03T22:00Z**.

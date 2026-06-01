@@ -1,12 +1,40 @@
 ---
 name: Mission
-description: Mission RECALIBRÉE 2026-05-21T07:35Z Florian — 3 piliers produit-fit + acquisition+viralité + mesure, GEL monétisation/Telegram tant que humans_engaged<100, North Star humans_engaged_lifetime.
+description: Mission RE-RECALIBRÉE 2026-06-01T14:30Z Florian — 3 piliers PRODUIT-EXCELLENCE + SEO COMPOUNDING (canal principal) + MESURE. Reddit/HN/X/TikTok DÉPRIORITISÉS. GEL monétisation. North Star humans_engaged_lifetime cible >100.
 type: project
 ---
 
 # Concept : Mission
 
-**État** : RECALIBRÉE 2026-05-21T07:35Z (Florian verbatim, run-331 ack J+0). Remplace réorientation 5 piliers 2026-05-19T17:XXZ.
+**État** : RE-RECALIBRÉE 2026-06-01T14:30Z (Florian verbatim). 2ᵉ pivot stratégique post-recalibrage 2026-05-21. Piliers ré-ordonnés : P1 produit-excellence + P2 SEO compounding (vs viralité-push qui était B) + P3 mesure.
+
+## RE-RECALIBRAGE 2026-06-01 (NEW, head)
+
+**Florian verbatim 2026-06-01** : *"Je veux que l'agent se concentre maintenant sur le produit, je veux un très bon produit compétitif, le SEO sera la main méthode d'attraction."*
+
+**3 piliers RE-RECALIBRÉS** :
+- **P1 PRODUIT-EXCELLENCE** : faire BailleurVérif outil de référence locataires FR, meilleur que ANIL.org + Service-Public.fr + DRIHL. Critères : chaque page = réponse complète vraie question / verdict précis + sources officielles + LRAR-saisine concrète / mobile-first / cat-3 jurisprudence-backed (9 ECLI Cass. min) / différenciation explicit vs concurrents par page.
+- **P2 SEO COMPOUNDING** (canal acquisition principal) : 50+ pages indexées @ M3 (vs ~8). Tactiques HAUTE = différenciation pages programmatiques data locale unique + long-tail content 1-3/sem + backlinks DR60+ (Wikipedia FR strategic-22 draft + Awesome lists + presse FR) + internal linking depth + FAQPage JSON-LD 8+ Q/R DILA + LLM-bot seeding (llms.txt update au ship).
+- **P3 MESURE** : funnel + bot detection + GSC weekly. Itérer sur N≥10 humains target, ne pas pivoter N<10.
+
+**Métriques succès** :
+1. `humans_engaged_lifetime` (North Star, cible >100)
+2. `gsc_indexed_pages` (proxy SEO, ~8 → cible 50+ @ M3)
+3. `produit_excellence_signal` (verdict_displayed/q1_answered ratio)
+4. `florian_hours_consumed_mtd` (autonomie)
+
+**DÉPRIORITISÉS 2026-06-01** :
+- Reddit posts (TODO-36) — bloqué signup Florian
+- Show HN PRE-DRAFT (inbox 01/06) — persona devs ≠ locataires FR
+- Twitter/X threads + TikTok démos — audience FR locataire faible
+
+NE PAS escalader ces 4 canaux à Florian dans inbox HEAD. Si humans_engaged>50 + base SEO solide → Florian rouvrira.
+
+**Check-point M3** (~run-700+) : `gsc_indexed_pages ≥ 30`, `humans_engaged ≥ 30`, `verdict_displayed/q1 ≥ 70%`.
+
+---
+
+## RECALIBRAGE 2026-05-21 (archive, supersédée 2026-06-01)
 
 ## Vraie cible (verbatim Florian 2026-05-21T07:XXZ)
 
