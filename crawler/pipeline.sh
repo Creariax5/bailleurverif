@@ -76,3 +76,45 @@ mkdir -p "$(dirname "$REPORT")"
 TS=$(date -u +%FT%TZ)
 echo "$TS | $STATS" >> "$REPORT"
 echo "[pipeline] $TS | $STATS"
+
+# ===== Cumulative CSV (all waves merged, dedupe by accommodation_id, keep latest)
+# Added 2026-06-01 — single-wave CSV stuck at N≈210, this exposes the 800+ accumulated.
+DEDUP_CUM="$LISTINGS/all-cities-cumulative.dedup.jsonl"
+SCORED_CUM="$LISTINGS/all-cities-cumulative.dedup.scored.jsonl"
+ALL_INPUTS=( "$LISTINGS"/locservice-*-*.jsonl )
+ALL_FILTERED=()
+for f in "${ALL_INPUTS[@]}"; do
+  case "$f" in
+    *.scored.jsonl) ;;
+    *) ALL_FILTERED+=( "$f" ) ;;
+  esac
+done
+echo "[pipeline cumulative] inputs=${#ALL_FILTERED[@]}"
+python3 "$SCORING/dedupe_listings.py" -o "$DEDUP_CUM" "${ALL_FILTERED[@]}"
+python3 "$SCORING/conformity_score.py" -o "$SCORED_CUM" "$DEDUP_CUM"
+python3 "$EXPORTER" cumulative
+
+CUM_STATS=$(python3 - <<PY
+import json
+from collections import Counter
+in_scope = vio = clear = presumed = 0
+communes = Counter(); villes = Counter()
+n_total = 0
+with open("$SCORED_CUM") as f:
+    for line in f:
+        r = json.loads(line); n_total += 1
+        if r.get("commune_slug"):
+            in_scope += 1
+            communes[r["commune_slug"]] += 1
+            villes[r.get("ville_label")] += 1
+            v = r.get("encadrement_violation", "none")
+            if v != "none": vio += 1
+            if v == "clear": clear += 1
+            elif v == "presumed": presumed += 1
+pct = (100.0 * vio / in_scope) if in_scope else 0.0
+print(f"N={n_total} in_scope={in_scope} vio={vio} clear={clear} presumed={presumed} "
+      f"headline={pct:.1f}% communes={len(communes)} villes={len(villes)}")
+PY
+)
+echo "$TS | CUMULATIVE $CUM_STATS" >> "$REPORT"
+echo "[pipeline cumulative] $TS | $CUM_STATS"

@@ -10,7 +10,7 @@ mkdir -p "$LOG_DIR"
 TODAY=$(date -u +%F)
 LOG="$LOG_DIR/daily-$TODAY.log"
 
-LIMIT=${LIMIT:-30}
+LIMIT=${LIMIT:-100}
 
 declare -a CITIES=(
   "paris|https://www.locservice.fr/paris-75/location.html"

@@ -1,3 +1,54 @@
+## 📊 2026-06-01T14:30Z — Florian → Agent — **OBSERVATOIRE SCALE : N=210→843 (×4) + LIMIT 30→100 + CSV cumulative**
+
+Florian flag dataset data.gouv = "200 annonces c'est nul" + Quality 89% "Fréquence non respectée". 2 fixes appliqués :
+
+### Fix 1 — LIMIT 30 → 100 (commit ci-dessous)
+
+`wedge-tool/crawler/daily_crawl_7cities.sh` L13 : `LIMIT=${LIMIT:-100}`.
+- 7 villes × 100 = **700 raw/wave** (vs 210)
+- 1ʳᵉ wave LIMIT=100 = demain 03:00 UTC cron
+- Aucun risque ToS (pace 30s/detail + 60s/ville inchangé)
+
+### Fix 2 — CSV cumulative (commit ci-dessous)
+
+`crawler/pipeline.sh` étendu : après le single-wave CSV, génère aussi `observatoire-annonces-loyer-cumulative.csv` mergeant TOUTES les vagues, dédupliquant par accommodation_id (keep latest ts).
+
+**Stats vague-12 + cumulative (run 14:28Z)** :
+- Single-wave 2026-06-01 : N=210, in_scope=67, vio=47, headline=70.1%
+- **Cumulative (12 vagues mergées)** : **N=843, in_scope=309, vio=191, headline=61.8%, 18 communes, 44 villes**
+
+Le cumulative = représentation statistique solide vs le snapshot quotidien.
+
+### Action agent — push cumulative sur data.gouv au prochain cycle
+
+`sub-observatoire-publisher` cycle 2 (~2026-06-03T06:31Z) doit publier la cumulative SUR le dataset data.gouv `6a09ca8088345193c180e0b5`. Options :
+- (a) **Ajouter NEW resource permanente** "Observatoire cumulative (toutes vagues)" pointant le CSV cumulative (recommandé — preserve history single-wave + ajoute cumulative)
+- (b) **Remplacer ressource principale** par cumulative (déprécie history)
+
+Recommande (a) pour préserver chain temporelle. À implémenter dans `sub-observatoire-publisher` next iteration.
+
+### Mission ongoing — monitoring système
+
+Florian verbatim 2026-06-01T14:30Z : *"dis à l'agent de regarder de temps en temps et d'améliorer le système."*
+
+**Cadence monitoring suggérée** (1×/sem minimum) :
+- Wake dédié `M0+ §a observatoire-monitor` : check `last_ingest_report.txt` tail 7 lignes / vérifier `latest_csv` ≤7j / vérifier `humans_engaged_lifetime` delta / GSC indexed pages weekly
+- Si stale >7j → flag inbox HEAD avec root cause
+- Si stagnation `humans_engaged` 14j → audit deep (référent + UA + pages crawled mais pas indexées)
+
+**Améliorations système à explorer (autonome)** :
+1. **Augmenter LIMIT à 200-300** quand stable et si LocService tolère (test progressif)
+2. **Ajouter 5-10 villes** au crawler (montpellier, grenoble, nice, strasbourg, nantes-ext, rouen, toulon, dijon, reims, le-havre)
+3. **Multi-source crawler** : ajouter SeLoger / LeBonCoin / PAP (haute valeur, mais risque anti-bot, à investiguer)
+4. **Backfill historique** : récupérer annonces antérieures via Wayback Machine + LocService snapshots
+5. **Catégorisation avancée** : ajouter colonnes (agence vs particulier, type bail, durée vacance) → enable Pilier 4 viral notation agences si réactivé
+6. **Cross-data sources** : enrichir DPE via ADEME API, prix m² via DVF
+7. **Détection de fraude** : flag annonces avec photos volées / loyers anormaux / clauses abusives détectées
+
+Toutes ces améliorations alignées Pilier 1 PRODUIT-EXCELLENCE + Pilier 2 SEO (data unique = backlinks). Builder peut prendre l'initiative autonome (cooldown 14j re-évocation si Florian silent).
+
+---
+
 ## 🎯 2026-06-01T14:35Z — Florian → Agent — **RE-RECALIBRAGE MISSION : PRODUIT-EXCELLENCE + SEO COMPOUNDING (canal principal)**
 
 **Florian verbatim 2026-06-01** : *"Je veux que l'agent se concentre maintenant sur le produit, je veux un très bon produit compétitif, le SEO sera la main méthode d'attraction."*
