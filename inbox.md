@@ -1,3 +1,81 @@
+## 🔍 2026-06-01T15:00Z — Florian → Agent — **DISCIPLINE : audit hebdo des 6 sub-agents (check qu'ils marchent vraiment)**
+
+**Florian verbatim** : *"Dis à l'agent principal de regarder si les agents qu'il a créés marchent bien, de check leur travail."*
+
+### Discipline binding (1× / 7j minimum par sub-agent)
+
+Builder DOIT auditer chaque sub-agent **AU MOINS 1×/sem** au-delà de leur log JSONL brut. Audit ≠ "lire tail jsonl" → audit = **vérifier l'artefact réel** + **comparer outcome vs intent**.
+
+### Checklist par sub-agent
+
+Pour CHAQUE sub-agent (cap 8 actuel = 6 actifs), vérifier :
+
+1. **Dernier cycle** : timestamp jsonl, outcome déclaré vs réel (`grep -E 'outcome|error' data/sub-agents/<name>.jsonl | tail -3`)
+2. **Artefact produit** : le sub-agent a-t-il vraiment shippé ce qu'il prétend ? Vérifier fichier/resource live :
+   - `sub-observatoire-publisher` → curl data.gouv `last_update` < 7j + quality.score = 1.0 + CSVs single-wave+cumulative existent
+   - `sub-judilibre-enrich` → grep ECLI dans templates JSON, count vs claim
+   - `sub-seo-monitor` → ls `data/sub-agents/seo-monitor-*.json` last 24h + content fresh
+   - `sub-linkedin-drafter` → ls `social-drafts.md` tail + draft fresh ≤24h
+   - `sub-bluesky-poster` → curl Bluesky API public profil `bailleurverif.bsky.social` posts last 7j
+   - `sub-content-syndicator` → curl dev.to API `articles/me` last 7j
+3. **Silent failure detection** : cycle attendu manquant (interval × N depuis création vs jsonl lines count)
+4. **Cost-benefit** : ROI mesurable depuis 14j ? (humans drived, backlinks créés, content shipped). Si 0 ROI sur 4+ cycles consécutifs → flag pour kill
+5. **Drift prompt** : sub-agent fait-il TOUJOURS ce qu'il était censé ? Ou drift "polish loop" / "vanity output" / "M0 cycles répétés" ?
+
+### Action si problème détecté
+
+- **Bug technique** (write_fail, API quota, env missing) → PATCH prompt sub-agent OU fix env/code, ré-tester cycle suivant
+- **Drift comportemental** → PATCH prompt avec rappel scope strict
+- **ROI=0 confirmé 4+ cycles** → PATCH `enabled=0` via agents-control API + log decision
+- **Découverte substantielle** (sub-agent fait mieux que prévu OU sub-agent fait truc inattendu utile) → documenter `memory-agent/concepts/sub-agents-active.md` + propose upgrade
+
+### Output audit (format)
+
+Audit hebdo → écrire dans `inbox-from-critic.md` ligne `## 🔍 sub-agents weekly audit <ISO>` avec table 6 lignes :
+```
+| sub-agent | last_cycle | outcome | artefact_verified | drift? | action |
+|-----------|-----------|---------|-------------------|--------|--------|
+```
+
+Si tout vert → 1 ligne summary + stop. Si ≥1 rouge → details + PATCH/kill décidé.
+
+### Cadence recommandée
+
+- Audit complet 1×/sem (lundi ou mercredi wake, low-touch)
+- Spot-check rapide si trend_alert reçu d'un sub-agent (cf sub-observatoire-publisher v3 step 10)
+- Audit immédiat si Florian flag dans inbox.md
+
+### NE PAS
+
+- ❌ Faire audit chaque wake (overhead inutile, cap 1×/sem)
+- ❌ PATCH sub-agent prompt sans avoir vérifié artefact réel (action sur supposition)
+- ❌ Kill sub-agent avant 4 cycles ROI=0 confirmés (faux-positifs fréquents)
+- ❌ Audit ≠ revue méta-philosophique : 5-10 min max par sub-agent, factuel
+
+### État courant (snapshot 2026-06-01)
+
+6 sub-agents actifs, statuts mixed :
+
+| sub-agent | status | last activity | risque |
+|---|---|---|---|
+| sub-judilibre-enrich | enabled | 2026-05-19 (saturated_3) | ⚪ normal (exit clause atteinte) |
+| sub-seo-monitor | enabled | 2026-05-23 (1 log line) | 🔴 broken (PageSpeed API quota) |
+| sub-linkedin-drafter | enabled | 2026-05-31 (13 drafts) | 🟢 ok |
+| sub-observatoire-publisher | enabled v3 | 2026-05-27 (no_fresh_data) | 🟢 patched today, next cycle 03/06 |
+| sub-bluesky-poster | enabled | 2026-05-31 (5 cycles posts) | 🟢 ok |
+| sub-content-syndicator | enabled | dev.to article published 26/05 | 🟢 ok |
+
+**1ʳᵉ audit attendu** : prochain wake Builder (~17:30Z ou suivant). Focus sub-seo-monitor (broken) + sub-observatoire-publisher (v3 first cycle 03/06).
+
+### Documenter dans memory-agent
+
+Au prochain wake substantif, mettre à jour `concepts/sub-agents-active.md` avec :
+- Discipline audit hebdo codifiée
+- Tableau état 6 sub-agents (last_cycle + outcome + risque)
+- Last audit timestamp + next due
+
+---
+
 ## 📊 2026-06-01T14:30Z — Florian → Agent — **OBSERVATOIRE SCALE : N=210→843 (×4) + LIMIT 30→100 + CSV cumulative**
 
 Florian flag dataset data.gouv = "200 annonces c'est nul" + Quality 89% "Fréquence non respectée". 2 fixes appliqués :
