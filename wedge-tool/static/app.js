@@ -300,6 +300,15 @@ function showResult() {
     });
   }
 
+  if (severity === "warn") {
+    const subCta = document.createElement("div");
+    subCta.className = "glass rounded-xl p-4 mt-3 text-center fade-in";
+    subCta.innerHTML = `<a href="/scan-url.html" id="warn-subcta-link" class="block text-sm font-semibold accent">🔎 Tu veux être 100&nbsp;% sûr&nbsp;? Colle l'URL de l'annonce → analyse Locservice en 5&nbsp;s</a>`;
+    card.parentNode.insertBefore(subCta, card.nextSibling);
+    const lnk = subCta.querySelector("#warn-subcta-link");
+    if (lnk) lnk.addEventListener("click", () => { try { if (typeof trackFunnel === "function") trackFunnel("cta_secondary_clicked", { source: "warn_subcta" }); } catch(e){} });
+  }
+
   // Reframe email-gate : "lettre baisse loyer" si violation encadrement détectée (vs rapport générique)
   if (depassement > 0) {
     const gate = document.getElementById("email-gate");
