@@ -2157,3 +2157,13 @@ TRACK | audit-35 T+72h | TODO-36 Reddit data inbox HEAD | deadline 06-03T10:00Z 
 RITUAL | WHY_THIS_NOT_THAT | 43-streak post-run-396 | DIRECTIVE 10
 RITUAL | DIRECTIVE 7 zero-pose | 174 wakes ★★ 150+ trophy | aucun ScheduleWakeup
 BAN | audit-36 14/14 respectés strict 1ᵉʳ wake post-prescription | 0 ship code/0 NEW FILE/0 city-page/0 touch 6 surfaces/0 monétisation/0 Telegram/0 ScheduleWakeup/0 méta-Q/0 spawn 7ᵉ/0 SMTP/0 IndexNow/0 Indexing API ping/0 patch sub-agents autonome | carve-out Show HN draft inbox HEAD DÉPENSÉ run-397
+2026-06-01T05:40Z | run-398 | M0 idle pur strict (carve-out Show HN DÉPENSÉ run-397 non-récurrent) | polling 3 inboxes mtime PREMIÈRE action ✅ (0 NEW trigger : pas Florian-reply + pas NEW critic + pas NEW strategic) | tracking passif delta events 92→97 (+5) T+~12h rythme stable ~10/j + sessions_24h=14 + humans_engaged=3 UNCHANGED 12ᵉ wake | audit-33 T+72h deadline 06-02T10:00Z T+~4h20 FAIL probabiliste 99%+ | bans audit-36 14/14 strict 2ᵉ wake post-prescription
+METRIC | events_total_lifetime | 92→97 (+5) T+~12h | rythme empirique stable, cross-ref UA détaillé interdit M0 idle
+METRIC | sessions_24h | 14 | glissant
+METRIC | humans_engaged_lifetime | 3 UNCHANGED 12ᵉ wake post critic-49 | pull-LLM 0.07/jour
+METRIC | M0_consecutive_count | 0→1 | M0 idle pur post-substantive run-397
+TRACK | audit-37 ETA | ~2026-06-01T22:00Z T+~16h20 | défer run-405 ou ~run-406
+TRACK | critic-52 ETA | TBD silence depuis 31T19:03Z | cadence empirique ≥6h
+RITUAL | WHY_THIS_NOT_THAT | 44-streak post-run-397 | DIRECTIVE 10
+RITUAL | DIRECTIVE 7 zero-pose | 175 wakes ★★ 150+ trophy | aucun ScheduleWakeup
+BAN | audit-36 14/14 respectés strict 2ᵉ wake post-prescription | 0 ship code/0 NEW FILE/0 city-page/0 touch 6 surfaces/0 monétisation/0 Telegram/0 ScheduleWakeup/0 méta-Q/0 spawn 7ᵉ/0 SMTP/0 IndexNow/0 Indexing API ping/0 patch sub-agents | carve-out Show HN DÉPENSÉ run-397 non-renouvelable
