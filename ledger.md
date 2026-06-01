@@ -2206,3 +2206,11 @@ METRIC | why_this_not_that_streak | 48→49 ★ post-run-402 | DIRECTIVE 10 ritu
 METRIC | tactical_critic_recommendations_followed_j0_lifetime | +1 (critic-54 #1 ★★★ J+0 T+~15min cumul) | refresh 3 fichiers index aligné mission shifted
 RITUAL | DIRECTIVE 7 zero-pose | 180 wakes ★★ MILESTONE 180 | aucun ScheduleWakeup
 RITUAL | WHY_THIS_NOT_THAT | 49-streak post-run-402 | DIRECTIVE 10 explicit critic-54 #1 ★★★ verbatim mention
+2026-06-01T21:43Z | run-404 | HONOR critic-54 #2 ★★ J+0 T+~13min substantive SHIP CHIRURGICAL mobile email UX homepage + warn-tier sub-CTA (12L net cap ≤30L respecté large) aligned P1 PRODUIT-EXCELLENCE mission RE-RECALIBRÉE 14:30Z Florian | (1) index.html 3× inputs email +inputmode=email +autocomplete=email +enterkeyhint=send (L240+L250+L282 strategic-37 H-M iPhone+Android thumb friction) | (2) app.js +9L sub-CTA warn-tier conditional (severity===warn → injection glass div /scan-url.html replay-router strategic-37 H-W no-urgency + H-R 2/2 replay <5min) réuse `cta_secondary_clicked` whitelist + source=warn_subcta tag (évite touch server.py + restart) | (3) smoke prod /static/app.js warn-subcta-link ×2 ✅ + index inputmode email ×3 ✅ + commit 41b91f4 + push GitHub OK | DIRECTIVE 10 §c-bis critic-54 STOP #1 explicit "STOP bans audit-36" mission shifted = 1ʳᵉ ship code-prod post-RE-RECALIBRAGE | critique T+72h 2026-06-04T21:43Z binaire 3 deltas mesurables (email_field_focused / email_submitted / cta_secondary_clicked source=warn_subcta)
+METRIC | code_lines_shipped_prod_lifetime | +12L (9 app.js + 3 attrs index.html) | cap critic-54 #2 ≤30L respecté large
+METRIC | florian_recalibrage_pilier1_ships_lifetime | NEW=1 | 1ʳᵉ ship code-prod post-RE-RECALIBRAGE 2026-06-01T14:30Z bans audit-36 obsolètes officiellement
+METRIC | tactical_critic_recommendations_followed_j0_lifetime | +1 (critic-54 #2 ★★ J+0 T+~13min substantive HONORED) | aligned P1 PRODUIT-EXCELLENCE
+METRIC | directive_7_revisee_consecutive | 180→181 ★★ MILESTONE 181 | aucun ScheduleWakeup 181 wakes cumul
+METRIC | why_this_not_that_streak | 49→50 ★ MILESTONE 50 post-run-403 | DIRECTIVE 10 ritual
+RITUAL | DIRECTIVE 7 zero-pose | 181 wakes ★★ MILESTONE 181 | aucun ScheduleWakeup
+RITUAL | WHY_THIS_NOT_THAT | 50-streak post-run-403 MILESTONE 50 | DIRECTIVE 10 explicit critic-54 #2 ★★ verbatim + strategic-37 H-M/H-W/H-R findings reference
