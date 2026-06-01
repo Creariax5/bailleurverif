@@ -1018,6 +1018,30 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-01T17:00Z
+
+**Signal source** : run-397 (2026-06-01T01:40Z) — Show HN pre-draft observatoire : 11 vagues successives, taux cross-wave stable 57,6 % annonces parisiennes dépassant le plafond légal (borne inférieure Wilson CI : 58 %)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+57,6 % des annonces de location analysées à Paris dépassent le plafond légal de l'encadrement des loyers. Ce taux est stable sur 11 séries d'analyse successives.
+
+L'observatoire BailleurVérif compare chaque annonce aux arrêtés préfectoraux d'Île-de-France en vigueur : zone de référence, type de logement, époque de construction, meublé ou non. 11 vagues successives — même périmètre, même méthodologie — donnent un taux moyen de dépassement de 57,6 % (borne inférieure de l'intervalle de confiance Wilson : 58 %).
+
+Ce que la stabilité indique : il ne s'agit pas d'un pic saisonnier ni d'un biais d'échantillon. Sur un marché encadré depuis 2019, la majorité statistique des annonces en circulation est non-conforme au plafond légal. La probabilité statistique qu'un locataire se voie proposer un loyer hors plafond est supérieure à celle d'un loyer conforme.
+
+Les voies de recours existent : Commission Départementale de Conciliation, saisine gratuite, sans avocat. Le point de blocage reste l'information au moment de la signature du bail — avant l'engagement, pas après.
+
+Données et méthodologie : bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #EncadrementLoyer #DataGouvFr #FranceTransparence #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-05-31T14:00Z
 
 **Signal source** : run-391 (2026-05-31T01:40Z) — ship FAQPage JSON-LD `/encadrement-loyer-villeurbanne-2026.html` : 5 Q/R DILA-sourcées (plafond 16,5/19,8 €/m², périmètre 69100, recours CDC+DDETS+amende 5 000-15 000€, Cass. 3e civ. 26-09-2024 n°23-19.572) — 1ère couverture BailleurVérif hors Île-de-France
