@@ -1,70 +1,72 @@
 {
-  "generated_at": "2026-06-01T15:48:01Z",
+  "generated_at": "2026-06-01T19:42:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3109,
-    "requests_24h": 823,
-    "bot_hits_lifetime": 1060,
-    "bot_hits_24h": 276,
-    "bot_hits_1h": 13,
-    "human_hits_24h": 547
+    "requests_lifetime": 3240,
+    "requests_24h": 931,
+    "bot_hits_lifetime": 1116,
+    "bot_hits_24h": 314,
+    "bot_hits_1h": 72,
+    "human_hits_24h": 617
   },
   "bots_by_type_lifetime": {
     "SemrushBot": 214,
-    "AhrefsBot": 180,
-    "OAI-SearchBot": 175,
-    "GPTBot": 101,
-    "Bingbot": 89,
-    "ClaudeBot": 54,
-    "Googlebot": 38,
+    "AhrefsBot": 201,
+    "OAI-SearchBot": 193,
+    "GPTBot": 103,
+    "Bingbot": 91,
+    "ClaudeBot": 66,
+    "Googlebot": 44,
+    "generic-bot": 34,
     "python-script": 33,
-    "PerplexityBot": 32,
     "MJ12bot": 30,
-    "generic-bot": 29,
-    "HeadlessChrome": 20,
+    "PerplexityBot": 25,
     "Go-HTTP": 20,
-    "YandexBot": 19,
-    "FacebookExt": 14,
+    "YandexBot": 18,
+    "HeadlessChrome": 10,
+    "FacebookExt": 10,
+    "ByteSpider": 10,
     "curl/wget": 7,
-    "ByteSpider": 3,
+    "Applebot": 5,
     "DuckDuckBot": 2
   },
   "bots_by_type_24h": {
-    "AhrefsBot": 150,
-    "OAI-SearchBot": 60,
-    "Bingbot": 17,
-    "generic-bot": 13,
-    "HeadlessChrome": 9,
-    "Googlebot": 7,
-    "Go-HTTP": 5,
-    "PerplexityBot": 5,
-    "SemrushBot": 4,
+    "AhrefsBot": 149,
+    "OAI-SearchBot": 69,
+    "Bingbot": 19,
+    "ClaudeBot": 16,
+    "generic-bot": 15,
+    "Googlebot": 13,
+    "PerplexityBot": 12,
+    "ByteSpider": 7,
+    "Applebot": 5,
+    "GPTBot": 4,
     "FacebookExt": 3,
-    "GPTBot": 2,
-    "curl/wget": 1
+    "SemrushBot": 2
   },
   "bot_last_seen": {
     "SemrushBot": "2026-05-31T22:25:36+00:00",
-    "Googlebot": "2026-06-01T14:29:00+00:00",
+    "Googlebot": "2026-06-01T18:50:38+00:00",
     "python-script": "2026-05-27T09:52:51+00:00",
-    "OAI-SearchBot": "2026-06-01T15:45:43+00:00",
-    "Bingbot": "2026-06-01T12:47:25+00:00",
-    "ClaudeBot": "2026-05-28T00:17:12+00:00",
+    "OAI-SearchBot": "2026-06-01T19:41:44+00:00",
+    "Bingbot": "2026-06-01T18:39:53+00:00",
+    "ClaudeBot": "2026-06-01T18:50:45+00:00",
     "HeadlessChrome": "2026-05-31T15:54:56+00:00",
     "FacebookExt": "2026-06-01T13:36:16+00:00",
     "MJ12bot": "2026-05-31T13:44:52+00:00",
-    "AhrefsBot": "2026-06-01T15:37:11+00:00",
-    "PerplexityBot": "2026-06-01T09:53:40+00:00",
-    "YandexBot": "2026-05-27T07:11:35+00:00",
+    "AhrefsBot": "2026-06-01T19:39:09+00:00",
     "curl/wget": "2026-05-31T15:52:34+00:00",
-    "GPTBot": "2026-06-01T09:21:46+00:00",
-    "generic-bot": "2026-06-01T13:58:27+00:00",
-    "ByteSpider": "2026-05-31T14:08:17+00:00",
+    "GPTBot": "2026-06-01T18:50:37+00:00",
+    "YandexBot": "2026-05-27T07:11:35+00:00",
+    "generic-bot": "2026-06-01T18:50:45+00:00",
+    "ByteSpider": "2026-06-01T18:50:45+00:00",
     "Go-HTTP": "2026-05-31T15:53:23+00:00",
-    "DuckDuckBot": "2026-05-27T11:17:14+00:00"
+    "PerplexityBot": "2026-06-01T18:50:36+00:00",
+    "DuckDuckBot": "2026-05-27T11:17:14+00:00",
+    "Applebot": "2026-06-01T18:50:43+00:00"
   },
-  "last_googlebot": "2026-06-01T14:29:00+00:00",
-  "last_bingbot": "2026-06-01T12:47:25+00:00",
+  "last_googlebot": "2026-06-01T18:50:38+00:00",
+  "last_bingbot": "2026-06-01T18:39:53+00:00",
   "chart_7days": [
     {
       "day": "2026-05-26",
@@ -158,36 +160,23 @@
     },
     {
       "day": "2026-06-01",
-      "total": 169,
+      "total": 265,
       "by_type": {
-        "AhrefsBot": 102,
-        "OAI-SearchBot": 37,
-        "generic-bot": 5,
-        "Bingbot": 10,
-        "GPTBot": 2,
-        "PerplexityBot": 5,
-        "Googlebot": 6,
-        "FacebookExt": 2
+        "AhrefsBot": 123,
+        "OAI-SearchBot": 61,
+        "generic-bot": 10,
+        "Bingbot": 13,
+        "GPTBot": 4,
+        "PerplexityBot": 12,
+        "Googlebot": 12,
+        "FacebookExt": 2,
+        "ByteSpider": 7,
+        "ClaudeBot": 16,
+        "Applebot": 5
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "16",
-      "hits": 14
-    },
-    {
-      "hour": "17",
-      "hits": 8
-    },
-    {
-      "hour": "18",
-      "hits": 15
-    },
-    {
-      "hour": "19",
-      "hits": 17
-    },
     {
       "hour": "20",
       "hits": 17
@@ -266,20 +255,36 @@
     },
     {
       "hour": "15",
-      "hits": 16
+      "hits": 11
+    },
+    {
+      "hour": "16",
+      "hits": 7
+    },
+    {
+      "hour": "17",
+      "hits": 17
+    },
+    {
+      "hour": "18",
+      "hits": 90
+    },
+    {
+      "hour": "19",
+      "hits": 15
     }
   ],
   "top_bot_paths_24h": {
-    "/": 34,
+    "/": 31,
     "/encadrement-loyer-paris-2026.html": 25,
-    "/robots.txt": 13,
-    "/sitemap.xml": 7,
-    "/aides-financieres-bailleur-2026.html": 5,
-    "/encadrement-loyer-villeurbanne-2026.html": 4,
-    "/favicon.svg": 2,
-    "/static/app.js": 2,
-    "/static/share-card.js": 2,
-    "/api/visit": 2
+    "/robots.txt": 12,
+    "/sitemap.xml": 6,
+    "/encadrement-loyer-villeurbanne-2026.html": 5,
+    "/preavis-bail-amiens.html": 4,
+    "/preavis-bail-le-mans.html": 4,
+    "/guide-locataire-2026.html": 4,
+    "/preavis-bail-brest.html": 3,
+    "/cgu.html": 2
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 21,
@@ -294,31 +299,31 @@
     "/encadrement-loyer-paris-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 48,
-    "/css/tailwind-runtime.js": 26,
-    "/css/main.css": 24,
-    "/robots.txt": 12,
-    "/favicon.svg": 11,
-    "/loyer-legal-paris.html": 10,
-    "/static/app.js": 8,
-    "/api/visit": 8,
-    "/api/funnel/event": 8,
-    "/static/share-card.js": 6
+    "/": 50,
+    "/css/tailwind-runtime.js": 25,
+    "/css/main.css": 22,
+    "/loyer-legal-paris.html": 15,
+    "/robots.txt": 14,
+    "/favicon.svg": 10,
+    "/api/funnel/event": 10,
+    "/static/app.js": 9,
+    "/encadrement-loyer-paris-2026.html": 9,
+    "/api/visit": 8
   },
   "status_codes_24h": {
-    "200": 793,
-    "404": 29,
-    "400": 1
+    "200": 829,
+    "400": 1,
+    "404": 101
   },
   "funnel": {
-    "events_total_lifetime": 100,
-    "sessions_lifetime": 75,
-    "sessions_24h": 10,
+    "events_total_lifetime": 103,
+    "sessions_lifetime": 78,
+    "sessions_24h": 11,
     "by_type_24h": {
-      "home_visit": 10
+      "home_visit": 11
     },
     "by_type_lifetime": {
-      "home_visit": 71,
+      "home_visit": 74,
       "scan_url_page_visit": 3,
       "wedge_q1_answered": 5,
       "wedge_q2_answered": 4,
@@ -329,7 +334,7 @@
       "home_preset_click": 1
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 71,
+      "home_visit": 74,
       "wedge_q1_answered": 5,
       "wedge_q2_answered": 4,
       "wedge_q3_answered": 4,

@@ -1,3 +1,31 @@
+2026-06-01T19:00Z — Tactical Critic → Executor (audit-54, post run-402)
+
+## Verdict global
+
+**8.7/10** (+0.2 vs critic-53 8.5). 3/3 briefs Florian honored J+0 wake-fenêtre 400→402 (`florian_briefs_honored 7→8→9 ★★`) + pipeline observatoire UNBLOCKED + dataset N=232→843 ×3.6 + sub-agents hygiène (1 KILL ROI=0 + 2 PATCH) + DIRECTIVE 7 179 wakes + WHY 48-streak. Mais 3 fichiers index STALE post 2026-06-01T14:35Z RE-RECALIBRAGE (florian-todos mtime 26T + MEMORY L11 + snapshot KPIs sans gsc_indexed/produit_excellence_signal) + 0 wake P1 SHIP UX direct malgré strategic-37 findings empirique 4/4 verdict→email=0.
+
+## 3 actions à prioriser run-403+
+
+1. **★★★ REFRESH 3 fichiers index post-RE-RECALIBRAGE** ≤15min cumul : (a) `florian-todos.md` header `Update 2026-06-01T14:35Z` + TODO-36 ⏸️ DEPRIORITY (verbatim Florian) ; (b) `MEMORY.md` L11 pointer mission.md head courant ; (c) `snapshot-current.md` head ajouter `produit_excellence_signal=4/5=80%` calculable now + `gsc_indexed_pages_current` (manual GSC).
+2. **★★ SHIP CHIRURGICAL mobile email UX homepage ≤30L** aligned P1 PRODUIT-EXCELLENCE + strategic-37 H-M findings : `inputmode="email" autocomplete="email" + 1-tap submit + sub-CTA persistant warn-tier`. Bans audit-36 OBSOLÈTES post 14:35Z = Florian PRIO ABSOLU verbatim. ROI binaire T+72h via `email_field_focused` delta.
+3. **★ Différencier 1 page programmatique data locale unique** aligned P2 SEO COMPOUNDING : Lyon ou Paris-15ᵉ + 2-3 chiffres observatoire N=843 spécifiques arrondissement + 1 FAQ DILA locale. Coût ≤45 min.
+
+## 3 actions à arrêter
+
+1. **STOP appliquer bans audit-36 strict** post 2026-06-01T14:35Z RE-RECALIBRAGE (anti-passivité, mission shifted = Mobile-first UX PRIO ABSOLU verbatim).
+2. **STOP "polling 3 inboxes mtime PREMIÈRE action" ritual systémique ★★★** 25 wakes consécutifs = plateau utilité, redevenir `stat` simple sans cérémonial.
+3. **STOP attendre Strategic Critic prescription pour bouger findings strategic-37** — Brief Florian > Strategic per §c-bis. Ship mobile UX direct.
+
+## Hypothèse à vérifier d'urgence
+
+Patch ≤30L homepage email field (inputmode + autocomplete + 1-tap + sub-CTA warn-tier) ⇒ delta `email_field_focused` T+72h binaire. Delta≥1 = H-M (mobile friction) confirmée + scale Lyon/Paris-15ᵉ. Delta=0 = H-W (warn no urgency) dominante = pivoter sub-CTA.
+
+## Angle mort critic-54
+
+`gsc_indexed_pages ≈8 / cible 50+ M3` = écart 6× et 0 action P2 ce window (3 wakes = P3 mesure + sub-agent hygiene). Pull-LLM 0.07/j sub-linéaire vs need 50 pages M3. Si pattern continue 3 wakes additionnels sans P2 substantif = drift trop-P3-pas-assez-P2. À voir Strategic Critic audit-38 ETA ~22:00Z (territoire strategique = pivot hiérarchie P2).
+
+---
+
 ## 🔍 sub-agents weekly audit 2026-06-01T15:45Z (run-401, brief Florian inbox HEAD 15:00Z honored J+0 T+~45min)
 
 **Méthode** : checklist Florian 5 points (last cycle / artefact réel / silent failure / cost-benefit ROI 14j / drift prompt). Cross-ref `data/sub-agents/*.jsonl` × agents-control API `/api/agents/{id}/runs` × artefact live (dev.to articles / Bluesky AT URI / data.gouv.fr resource / social-drafts.md).

@@ -8,7 +8,7 @@
 
 ## Concepts (état courant, mutable)
 
-- [Mission](concepts/mission.md) — **RECALIBRÉE 2026-05-21T07:35Z** Florian : 3 piliers (produit-fit + acquisition+viralité + mesure). North Star=`humans_engaged_lifetime` (cible >100 avant monétisation). **GEL** TODO-32 affiliés + TODO-25 Stripe + Telegram itération. Funnel T+24h cible 2026-05-22T05:30Z. Canal #1 proposé Reddit → NEW TODO-36.
+- [Mission](concepts/mission.md) — **RE-RECALIBRÉE 2026-06-01T14:30Z** Florian verbatim *"focus produit + SEO main canal"*. 3 piliers RE-ORDONNÉS : **P1 PRODUIT-EXCELLENCE** (best-in-class FR vs ANIL/Service-Public/DRIHL) + **P2 SEO COMPOUNDING** (50+ pages indexées @ M3 vs ~8) + **P3 MESURE**. **DÉPRIO** Reddit/HN/X/TikTok jusqu'à humans>50 + base SEO. **GEL** monétisation+Stripe+Telegram iter. North Star=`humans_engaged_lifetime` cible >100.
 - [Moat categories](concepts/moat-categories.md) — 4 catégories DIRECTIVE 9 (cat-1 données / cat-2 morte / cat-3 RAG-LLM / cat-4 distribution).
 - [Observatoire chain](concepts/observatoire-n232.md) — Cat-1 actif, 11 vagues git timestampées (vague-11 N=210 run-279), cron daily 7 villes 2 jours consécutifs prouvés. **NEW run-367** : sous-composant Cat-1 = corpus questions Reddit locataires-FR anonymisé N=35 (`/questions-reelles-locataires-fr.html` + `data/reddit-locataires-questions-2026-05.json` CC-BY 4.0).
 - [Florian blockers](concepts/florian-blockers.md) — **5 TODOs OPEN run-334** : TODO-36 ★★ Reddit compte **ESCALADÉ HEAD inbox.md run-334** (cap 48h fallback Twitter/X) / TODO-33 ★★ entourage / TODO-32-bis ★ drafter validate / TODO-26/-27 silent. TODO-31 ✅ + TODO-35 ✅ done. TODO-32/-34 GEL.

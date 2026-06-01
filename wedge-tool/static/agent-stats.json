@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T15:48:01Z",
+  "generated_at": "2026-06-01T19:42:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -9,7 +9,7 @@
   },
   "wakes": {
     "total_lifetime": 376,
-    "today_utc": 5,
+    "today_utc": 6,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11232133,
+    "vps_uptime_seconds": 11246173,
     "last_commit": {
-      "hash": "a73bc66",
-      "subject": "brief(builder): weekly sub-agents audit discipline + sub-observatoire v3",
-      "relative": "66 minutes ago"
+      "hash": "33bbe8f",
+      "subject": "run-402: PATCH sub-observatoire-publisher v3 cumulative resource update",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
