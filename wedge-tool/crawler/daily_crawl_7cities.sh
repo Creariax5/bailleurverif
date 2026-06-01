@@ -40,3 +40,11 @@ echo "[daily_crawl] DONE $(date -u +%FT%TZ)" >> "$LOG"
   /home/deploy/saas-florian/wedge-tool/data/listings/locservice-*.jsonl \
   -o /home/deploy/saas-florian/wedge-tool/data/listings/all-cities-latest.dedup.jsonl \
   >> "$LOG" 2>&1 || true
+
+# Pipeline dedupe+score+CSV (générates fresh observatoire-annonces-loyer-DATE.csv)
+# Added 2026-06-01 — sub-observatoire-publisher was stale because cities_queue=all-done
+# meant ingest_orchestrator skipped pipeline.sh. Daily_crawl now triggers pipeline directly.
+DATE_TODAY="$(date -u +%F)"
+echo "[daily_crawl] pipeline.sh $DATE_TODAY" >> "$LOG"
+/bin/bash /home/deploy/saas-florian/crawler/pipeline.sh "$DATE_TODAY" >> "$LOG" 2>&1 || \
+  echo "[daily_crawl] pipeline.sh FAILED for $DATE_TODAY" >> "$LOG"

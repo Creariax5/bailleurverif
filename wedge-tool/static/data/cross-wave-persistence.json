@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-05-19T08:59:52.904170+00:00",
+  "generated_at": "2026-06-01T13:59:37.661260+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -13,72 +13,23 @@
     {
       "date": "2026-05-19",
       "n": 210
+    },
+    {
+      "date": "2026-06-01",
+      "n": 210
     }
   ],
-  "wave_count": 3,
+  "wave_count": 4,
   "presence_distribution": {
-    "1_waves": 147,
-    "2_waves": 74,
-    "3_waves": 121
+    "1_waves": 334,
+    "2_waves": 70,
+    "3_waves": 118,
+    "4_waves": 10
   },
-  "persistence_rate_full_chain_pct": 57.6,
-  "persistence_rate_full_chain_note": "121 listings present in all 3 waves / 210 listings in last wave = 57.6% of last-wave non-conform listings have persisted unchanged for 3 consecutive days.",
+  "persistence_rate_full_chain_pct": 4.8,
+  "persistence_rate_full_chain_note": "10 listings present in all 4 waves / 210 listings in last wave = 4.8% of last-wave non-conform listings have persisted unchanged for 4 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
-    {
-      "url_hash": "00f9c61620ea8e0d",
-      "ville_label": "Caluire-et-Cuire (69300)",
-      "code_dept": "69",
-      "loyer_eur_total": "900",
-      "surface_m2": "54",
-      "dpe_letter": "C",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "05d11587571d517e",
-      "ville_label": "Vénissieux (69200)",
-      "code_dept": "69",
-      "loyer_eur_total": "730",
-      "surface_m2": "24",
-      "dpe_letter": "B",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "06046e3c5c194bd9",
-      "ville_label": "Bordeaux (33000)",
-      "code_dept": "33",
-      "loyer_eur_total": "750",
-      "surface_m2": "33",
-      "dpe_letter": "C",
-      "violation_type": "encadrement"
-    },
-    {
-      "url_hash": "06c93f64ccc16691",
-      "ville_label": "Loos (59120)",
-      "code_dept": "59",
-      "loyer_eur_total": "700",
-      "surface_m2": "27",
-      "dpe_letter": "D",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "0b16dceb311529d7",
-      "ville_label": "Paris 15 (75015)",
-      "code_dept": "75",
-      "loyer_eur_total": "1195",
-      "surface_m2": "16",
-      "dpe_letter": "E",
-      "violation_type": "encadrement"
-    },
-    {
-      "url_hash": "0b953c0be138b491",
-      "ville_label": "Nantes (44000)",
-      "code_dept": "44",
-      "loyer_eur_total": "800",
-      "surface_m2": "40",
-      "dpe_letter": "D",
-      "violation_type": "none"
-    },
     {
       "url_hash": "0d0246510c1c22db",
       "ville_label": "Toulouse (31000)",
@@ -87,78 +38,6 @@
       "surface_m2": "22",
       "dpe_letter": "C",
       "violation_type": "none"
-    },
-    {
-      "url_hash": "0dca21e6d48a3d96",
-      "ville_label": "Lyon 03 (69003)",
-      "code_dept": "69",
-      "loyer_eur_total": "700",
-      "surface_m2": "20",
-      "dpe_letter": "C",
-      "violation_type": "encadrement"
-    },
-    {
-      "url_hash": "0ec6cb0523c98ccd",
-      "ville_label": "Toulouse (31000)",
-      "code_dept": "31",
-      "loyer_eur_total": "630",
-      "surface_m2": "24",
-      "dpe_letter": "C",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "0f22ebb8148b9c29",
-      "ville_label": "Lyon 03 (69003)",
-      "code_dept": "69",
-      "loyer_eur_total": "800",
-      "surface_m2": "27",
-      "dpe_letter": "D",
-      "violation_type": "encadrement"
-    },
-    {
-      "url_hash": "10e5384c47d57fcd",
-      "ville_label": "Pessac (33600)",
-      "code_dept": "33",
-      "loyer_eur_total": "1078",
-      "surface_m2": "57",
-      "dpe_letter": "D",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "115fb8dd40da9f54",
-      "ville_label": "Lille (59000)",
-      "code_dept": "59",
-      "loyer_eur_total": "506",
-      "surface_m2": "21",
-      "dpe_letter": "C",
-      "violation_type": "encadrement"
-    },
-    {
-      "url_hash": "11c187f5be25682d",
-      "ville_label": "La Ciotat (13600)",
-      "code_dept": "13",
-      "loyer_eur_total": "555",
-      "surface_m2": "28",
-      "dpe_letter": "D",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "121a2cd3d2a37a17",
-      "ville_label": "Nantes (44000)",
-      "code_dept": "44",
-      "loyer_eur_total": "1295",
-      "surface_m2": "77",
-      "dpe_letter": "D",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "12acd59a93c6bed0",
-      "ville_label": "Bordeaux (33000)",
-      "code_dept": "33",
-      "loyer_eur_total": "636",
-      "surface_m2": "22",
-      "dpe_letter": "D",
-      "violation_type": "encadrement"
     },
     {
       "url_hash": "13723c672fa92c93",
@@ -170,39 +49,75 @@
       "violation_type": "none"
     },
     {
-      "url_hash": "14b4861f97bcb1f2",
-      "ville_label": "Paris 06 (75006)",
+      "url_hash": "28c6707f3828e78f",
+      "ville_label": "Rezé (44400)",
+      "code_dept": "44",
+      "loyer_eur_total": "300",
+      "surface_m2": "12",
+      "dpe_letter": "C",
+      "violation_type": "none"
+    },
+    {
+      "url_hash": "28c70e53638b26ec",
+      "ville_label": "Les Sorinières (44840)",
+      "code_dept": "44",
+      "loyer_eur_total": "600",
+      "surface_m2": "18",
+      "dpe_letter": "D",
+      "violation_type": "none"
+    },
+    {
+      "url_hash": "401acdc3965bb965",
+      "ville_label": "Toulouse (31000)",
+      "code_dept": "31",
+      "loyer_eur_total": "600",
+      "surface_m2": "24",
+      "dpe_letter": "D",
+      "violation_type": "none"
+    },
+    {
+      "url_hash": "4f4efa46b17fd2aa",
+      "ville_label": "Salon-de-Provence (13300)",
+      "code_dept": "13",
+      "loyer_eur_total": "1020",
+      "surface_m2": "50",
+      "dpe_letter": "A",
+      "violation_type": "none"
+    },
+    {
+      "url_hash": "5ee55aca3951ea09",
+      "ville_label": "Paris 01 (75001)",
       "code_dept": "75",
-      "loyer_eur_total": "2150",
-      "surface_m2": "40",
+      "loyer_eur_total": "1280",
+      "surface_m2": "25",
       "dpe_letter": "F",
       "violation_type": "encadrement"
     },
     {
-      "url_hash": "18e277c405914525",
-      "ville_label": "Bordeaux (33000)",
-      "code_dept": "33",
-      "loyer_eur_total": "750",
-      "surface_m2": "33",
-      "dpe_letter": "C",
-      "violation_type": "encadrement"
-    },
-    {
-      "url_hash": "1c482000b94e9d40",
-      "ville_label": "Bordeaux (33000)",
-      "code_dept": "33",
-      "loyer_eur_total": "535",
+      "url_hash": "64da80eec869e4f1",
+      "ville_label": "Aix-en-Provence (13080)",
+      "code_dept": "13",
+      "loyer_eur_total": "520",
       "surface_m2": "20",
       "dpe_letter": "C",
-      "violation_type": "encadrement"
+      "violation_type": "none"
     },
     {
-      "url_hash": "1d5b326d4e666fec",
-      "ville_label": "Nantes (44000)",
-      "code_dept": "44",
-      "loyer_eur_total": "520",
-      "surface_m2": "18",
+      "url_hash": "68c5ca3f48dc65a6",
+      "ville_label": "Bordeaux (33000)",
+      "code_dept": "33",
+      "loyer_eur_total": "2150",
+      "surface_m2": "150",
       "dpe_letter": "C",
+      "violation_type": "none"
+    },
+    {
+      "url_hash": "a9cc6800b21dd5b2",
+      "ville_label": "Talence (33400)",
+      "code_dept": "33",
+      "loyer_eur_total": "696",
+      "surface_m2": "32",
+      "dpe_letter": "D",
       "violation_type": "none"
     }
   ]

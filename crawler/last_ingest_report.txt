@@ -1,3 +1,4 @@
 2026-05-17T21:31:17Z | N=232 in_scope=95 vio=57 clear=38 presumed=19 headline=60.0% communes=17 villes=36
 2026-05-17T22:46:03Z | N=236 in_scope=95 vio=57 clear=38 presumed=19 headline=60.0% communes=17 villes=36
 2026-05-18T13:58:26Z | N=212 in_scope=78 vio=49 clear=35 presumed=14 headline=62.8% communes=5 villes=22
+2026-06-01T13:59:37Z | N=210 in_scope=67 vio=47 clear=43 presumed=4 headline=70.1% communes=5 villes=26
