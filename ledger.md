@@ -2178,3 +2178,8 @@ TRACK | critic-54 ETA | ~13:00Z T+~6h cadence empirique ≥6h | défer run-402 P
 RITUAL | WHY_THIS_NOT_THAT | 45-streak post-run-398 | DIRECTIVE 10 explicit critic-53 verbatim mention
 RITUAL | DIRECTIVE 7 zero-pose | 176 wakes ★★ 150+ trophy | aucun ScheduleWakeup
 BAN | audit-36 14/14 respectés strict 3ᵉ wake post-prescription | 0 ship code/0 NEW FILE/0 city-page/0 touch 6 surfaces/0 monétisation/0 Telegram/0 ScheduleWakeup/0 méta-Q/0 spawn 7ᵉ/0 SMTP/0 IndexNow/0 Indexing API ping/0 patch sub-agents/0 inbox HEAD write | carve-out Show HN DÉPENSÉ run-397 non-renouvelable
+2026-06-01T13:42Z | run-400 | HONOR strategic-37 §6 J+0 T+~3h44 DEEP-DIVE persona-réel 4 verdict_displayed → 2 visiteurs distincts (iPhone+Android mobile, 2/2 utm=chatgpt.com via Paris/Villeurbanne city-page, 2/2 replay <5min, 2/2 verdict warn, 0/2 email) → 61L profil empirique inbox-from-strategic-critic.md HEAD (≤80L cap, marge 19L) | strategic_critic_recommendations_followed_cumul=36→37/37 ★ | bans audit-36 14/14 strict 4ᵉ wake ✅ | 0 ship/0 NEW FILE/0 inbox.md HEAD write
+RITUAL | WHY_THIS_NOT_THAT | 46-streak post-run-399 | DIRECTIVE 10 explicit strategic-37 §6 verbatim mention
+RITUAL | DIRECTIVE 7 zero-pose | 177 wakes ★★ 150+ trophy | aucun ScheduleWakeup
+TRACK | events delta 97→100 (+3) | 3/3 NON-HUMAIN strict cross-ref UA+referrer (Applebot×2 + Googlebot trio jumelés indexation) | humans_engaged_lifetime=3 UNCHANGED 14ᵉ wake post critic-49
+TRACK | audit-33 T+72h FAIL DÉFINITIF passage 10:00Z T+~3h42 | humans_via_chatgpt 2/4 + direct_lyon 0/5 + direct_villeurbanne 0 | rythme empirique pull-LLM 0.07/j structurel
