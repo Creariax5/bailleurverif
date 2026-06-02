@@ -2278,3 +2278,21 @@ TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z encor
 TRACK | crawler vague-13 fin | ETA ~08-09Z T+~2-3h | cumulative recalcul ⇒ probable wake ~12:00Z observability
 TRACK | next critic-55 ETA | ~07:00Z T+~75min imminent | next strategic audit-39 ETA ~22:00Z T+~16h
 BAN | audit-38 10/10 strict respected J+1 2ᵉ wake | 🚫 monétisation 🚫 Reddit-re-escalade 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 Indexing API ping renouvelé | touch city-page Marseille OK levé post-recalibrage ; pas NEW FILE (edit existant)
+
+## run-409 — 2026-06-02T08:30Z
+
+SHIP | Paris-2026 title rewrite 109c→64c + meta description 145c bénéfice | tactical-55 #1 ★★★ HONORED J+0 T+~1h30 post-critic-55 publish | propagate og/twitter/JSON-LD WebPage + dateModified→2026-06-02 + Indexing API ping + push GH `f41f448` + prod HTTP/200 verified
+METRIC | code_lines_shipped_prod_lifetime | +0 (7 inserts / 7 deletes = net 0) | edits chirurgicaux tactical "≤30L édit" bordage strict
+METRIC | tactical_critic_recommendations_followed_cumul | 54→55 ★ | #1 ★★★ HONORED J+0 (critic-55 publish 07:00Z, run-409 T+1h30)
+METRIC | florian_recalibrage_pilier2_ships_lifetime | 3→4 ★ | P2 SEO COMPOUNDING canal principal — title rewrite = bottleneck CTR ROI binaire mesurable T+7-14j
+METRIC | hierarchy_brief_florian_vs_strategic_applied_lifetime | +1 | §c-bis Brief Florian inbox 06-01T15:30Z > Strategic-38 Marseille (saturé 3 wakes per critic-55 STOP)
+METRIC | indexing_api_pings_lifetime | +1 (Paris-2026 URL) | quota wake disponible respecté
+METRIC | wakes_total | 408→409
+METRIC | directive_7_revisee_consecutive | 185→186 ★★
+METRIC | why_this_not_that_streak | 54→55 ★
+RITUAL | WHY_THIS_NOT_THAT | 55-streak post-run-409 | tactical-55 #1 ★★★ explicit > strategic-38 Marseille (critic-55 STOP saturation 3 wakes) ; §c-bis Brief Florian explicit > Strategic Critic
+TRACK | Paris-2026 CTR delta GSC T+7-14j | deadline 2026-06-09→2026-06-16 | binaire mesurable : ≥1 clic/sem ⇒ propager template 40+ pages, =0 ⇒ pivot H1 Florian #1 hypothèse invalidée
+TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z encore J+2.6 | UNCHANGED
+TRACK | next critic-56 ETA | ~13:00-15:00Z T+~5-7h | next strategic audit-39 ETA ~22:00Z T+~13.5h
+BAN | audit-38 9/10 strict respected (Indexing API Paris ≠ Marseille = autorisé tactical-55 explicit "+Indexing API ping quota wake disponible", IndexNow distinct) | 🚫 monétisation 🚫 Reddit-re-escalade 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents | edit existant city-page Paris (bans levés post-recalibrage)
+NEXT | run-410 polling 3 inboxes mtime + critic-55 #2 (tracker produit_excellence_signal + email_field_focused delta) + critic-55 #3 (TAG Show HN PRE-DRAFT [CANCELLED]) si temps reste | OR Phase 1 brief Florian page suivante (Lille 21 imp ou Villeurbanne 11 imp ou Echirolles 10 imp) si tactical-56 valide pattern
