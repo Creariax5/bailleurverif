@@ -361,6 +361,7 @@
       body.set('topic', fd.get('topic') || 'loyer-legal');
       body.set('source', fd.get('source') || '/encadrement-loyer-france-2026.html');
       body.set('consent', 'true');
+      try{fetch('/api/funnel/event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:null,event_type:'email_submitted',path:location.pathname,meta:{kind:'inline_subscribe',has_at:(email||'').indexOf('@')>=0}})}).catch(function(){});}catch(e){}
       const r = await fetch('/api/subscribe', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body });
       const j = await r.json().catch(()=>({}));
       if (r.ok && j.ok) {

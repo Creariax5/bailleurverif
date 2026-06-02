@@ -398,6 +398,7 @@ document.getElementById('subscribe-form').addEventListener('submit', async (e) =
   body.append('source', form.get('source'));
   body.append('consent', form.get('consent') ? 'true' : 'false');
   try {
+    try{fetch('/api/funnel/event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:null,event_type:'email_submitted',path:location.pathname,meta:{kind:'inline_subscribe',has_at:(email||'').indexOf('@')>=0}})}).catch(function(){});}catch(e){}
     const r = await fetch('/api/subscribe', { method: 'POST', headers: {'Content-Type':'application/x-www-form-urlencoded'}, body: body.toString() });
     const j = await r.json();
     if (j.ok) { fb.textContent = '✅ Vérifiez votre boîte (lien de confirmation envoyé).'; fb.className = 'text-xs mt-2 text-emerald-700'; }

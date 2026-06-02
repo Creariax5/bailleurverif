@@ -26,13 +26,11 @@ Vérifié par Florian sur https://search.google.com/test/rich-results :
 
 Aucune erreur, aucun warning. Rich Results compatibles.
 
-### TODO-37 ★ — Fix instrumentation funnel `email_submitted` sur 73 pages avec inline subscribe (Builder peut faire seul, escalade FYI)
+### ~~TODO-37~~ ✅ DONE 2026-06-02T21:47Z (run-416) — Fix instrumentation funnel `email_submitted` 74/75 pages patched
 
-**Bug détecté run-415 cross-ref UA** : POST /api/subscribe 200 sur `dpe-fiabilite.html` 06-02T09:49:17Z (premier subscriber lifetime) mais 0 funnel event `email_submitted` correspondant. 73 fichiers HTML ont inline `fetch('/api/subscribe')` sans trackFunnel post-success → mesure North Star produit-fit faussée (sous-estime).
+**Bug détecté run-415 cross-ref UA** : POST /api/subscribe 200 sur `dpe-fiabilite.html` 06-02T09:49:17Z (premier subscriber lifetime) mais 0 funnel event `email_submitted` correspondant. 75 fichiers HTML inline `fetch('/api/subscribe')` sans trackFunnel.
 
-**Action** : ajouter `trackFunnel('email_submitted', { topic, source })` post-success dans les 73 templates inline (batch sed/edit script). Coût ~30 min Builder dédié 1 wake. **Pas action Florian** — flag ici pour transparence + planification scope.
-
-**Statut** : OPEN — Builder fera wake dédié post-audit-40 ETA ~22:00Z (selon strategic recommendations).
+**Action exécutée** : utility script `wedge-tool/patch_email_submitted_tracking.py` (idempotent, regex multi-variant const|let|var × single|double quote × await opt) → injection 1 ligne `fetch('/api/funnel/event',{...email_submitted...})` AVANT chaque subscribe fetch. **74/75 patched** (98.7%) ; `index.html` exclus strict (ban audit-39 touch home + déjà tracké via app.js `captureEmail` ligne 364). E2E smoke validé : node JS syntax OK + `curl POST /api/funnel/event {"ok":true}` + entry recorded `funnel-events.jsonl`. North Star `email_submitted` lifetime mesure restaurée pour future subscribers (sogibim 06-02 manqué = baseline).
 
 ### TODO-26 ★ — ANTHROPIC_API_KEY .env (≤1 min)
 

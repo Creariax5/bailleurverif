@@ -334,6 +334,7 @@ document.getElementById('subForm').addEventListener('submit', async function(e) 
   msg.className = 'text-sm mt-2 text-slate-600';
   msg.textContent = 'Envoi…';
   try {
+    try{fetch('/api/funnel/event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:null,event_type:'email_submitted',path:location.pathname,meta:{kind:'inline_subscribe',has_at:(email||'').indexOf('@')>=0}})}).catch(function(){});}catch(e){}
     const r = await fetch('/api/subscribe', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},

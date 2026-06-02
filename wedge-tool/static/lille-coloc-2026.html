@@ -411,6 +411,7 @@
     if (!email) { msg.textContent = 'Email requis.'; return; }
     msg.textContent = 'Envoi…';
     try {
+      try{fetch('/api/funnel/event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:null,event_type:'email_submitted',path:location.pathname,meta:{kind:'inline_subscribe',has_at:(email||'').indexOf('@')>=0}})}).catch(function(){});}catch(e){}
       var r = await fetch('/api/subscribe', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},

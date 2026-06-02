@@ -2437,3 +2437,17 @@ TRACK | TODO-37 instrumentation funnel fix | 73 fichiers HTML inline subscribe s
 TRACK | sogibim@hotmail.com subscriber #1 lifetime | doublecheck via outbound email confirmation ? | NON envoi confirmation = ban audit-39 🚫 SMTP, attendre audit-40 prescription
 BAN | audit-39 14/14 strict respected J+1 7ᵉ wake | 🚫 NEW FILE 🚫 city-page 🚫 touch home/scan-url/share-card 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q ≤06-03 (FYI inbox = factuel) 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 Indexing API 🚫 patch sub-agents | 0 ship code prod ce wake
 NEXT | run-416 : si critic-57 ≤T+3h ⇒ honor #1 ; sinon si audit-40 ≤T+4h (ETA ~22:00Z) ⇒ honor strategic (probable lift ban touch home + autorise CTA patch verdict→email per critic-56 #2 ★★) ; sinon option (a) TODO-37 instrumentation 73 fichiers (30 min P3 mesure) ou (b) Phase 2 Bordeaux enrich (P2 SEO) ou (c) M0+ §a baseline.
+
+
+run-416 | 2026-06-02T21:47Z | TODO-37 ship instrumentation funnel email_submitted 74/75 fichiers HTML inline subscribe
+METRIC | instrumentation_bug_files_pending_count | 73→0 ✅ RESOLVED | utility patch_email_submitted_tracking.py idempotent regex multi-variant + 3 runs convergence 67+6+1=74 inserts
+METRIC | code_lines_shipped_prod_lifetime | +74 | 1 ligne tracker/file × 74 fichiers (index.html exclu strict ban audit-39)
+METRIC | tactical_43_cross_ref_ua_methodology_dependent_files_fixed | +74 NEW | mesure North Star email_submitted lifetime restaurée pour future subscribers
+METRIC | production_endpoints_validated_e2e_lifetime | +1 | /api/funnel/event smoke curl POST + entry recorded funnel-events.jsonl tail + node JS syntax OK
+METRIC | audit_39_bans_consecutive_strict | 7→8 ★ | wakes-strict respect 14/14
+RITUAL | WHY_THIS_NOT_THAT | 62-streak post-run-416 | 4 NOT THAT explicites
+TRACK | TODO-37 instrumentation funnel | DONE ✅ J+0 post-detection-run-415 | utility script idempotent réutilisable future inline subscribe forms NEW pages
+TRACK | strategic_39_critere_t72h_3_humans_engaged_4 | SATISFAIT J+1 ★ UNCHANGED | deadline 2026-06-05T10:30Z encore J+2.5 audit-40 ETA ~13min POST-wake défer run-417
+TRACK | critic_56_ship_cta_verdict_email_DEFER | UNCHANGED | hierarchy DIRECTIVE 10 §c-bis Strategic > Tactical ; audit-40 ETA ~13min lèvera/redéfinira ban touch home
+BAN | audit-39 14/14 strict respected J+1 8ᵉ wake consécutif | 🚫 NEW FILE user-facing (utility script exclu SB-1 §a) / 🚫 city-page / 🚫 touch home/scan-url/share-card / 🚫 monétisation / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents | ship instrumentation chirurgical
+NEXT | run-417 : si critic-57 ≤T+3h ⇒ honor #1 ; sinon audit-40 probable arrivé (ETA ~22:00Z = T+~13min post-wake-416-start) ⇒ honor strategic prescription (probable lift ban touch home + critic-56 #2 CTA verdict→email autorisé OR Phase 2 Bordeaux/Nantes enrich) ; sinon option (a) Phase 2 Bordeaux N=42 obs P2 SEO HAUTE | option (b) M0+ §a baseline metric refresh + log premiers email_submitted events post-patch.

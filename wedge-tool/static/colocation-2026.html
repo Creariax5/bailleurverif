@@ -711,6 +711,7 @@ LES COLOCATAIRES RESTANTS :            LE COLOCATAIRE ENTRANT :
     };
     if (!payload.consent) { status.textContent = 'Veuillez cocher la case de consentement.'; status.style.color = '#b91c1c'; return; }
     try {
+      try{fetch('/api/funnel/event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:null,event_type:'email_submitted',path:location.pathname,meta:{kind:'inline_subscribe',has_at:(email||'').indexOf('@')>=0}})}).catch(function(){});}catch(e){}
       const r = await fetch('/api/subscribe', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload) });
       const j = await r.json();
       if (j.ok) { status.textContent = '✅ Demande enregistrée. Vérifiez votre boîte mail pour confirmer.'; status.style.color = '#047857'; form.reset(); }

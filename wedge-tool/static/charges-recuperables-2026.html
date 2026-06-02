@@ -531,6 +531,7 @@ Fait à [ville], le [date].
       try {
         const fd = new URLSearchParams();
         fd.append("email", email); fd.append("topic", topic); fd.append("source", source); fd.append("consent", "true");
+        try{fetch('/api/funnel/event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:null,event_type:'email_submitted',path:location.pathname,meta:{kind:'inline_subscribe',has_at:(email||'').indexOf('@')>=0}})}).catch(function(){});}catch(e){}
         const r = await fetch("/api/subscribe", { method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body: fd.toString() });
         const j = await r.json();
         if (j.ok) {

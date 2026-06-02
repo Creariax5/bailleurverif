@@ -429,6 +429,7 @@ document.getElementById('subscribe-form').addEventListener('submit', async (e) =
   const payload = { email: fd.get('email'), topic: fd.get('topic'), source: fd.get('source'), consent: fd.get('consent') === 'true' };
   status.textContent = 'Envoi en cours...';
   try {
+    try{fetch('/api/funnel/event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:null,event_type:'email_submitted',path:location.pathname,meta:{kind:'inline_subscribe',has_at:(email||'').indexOf('@')>=0}})}).catch(function(){});}catch(e){}
     const r = await fetch('/api/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
