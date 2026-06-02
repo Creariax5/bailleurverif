@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-01T14:28:00.709332+00:00",
+  "generated_at": "2026-06-02T05:52:42.121936+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -17,17 +17,27 @@
     {
       "date": "2026-06-01",
       "n": 210
+    },
+    {
+      "date": "2026-06-02",
+      "n": 329
+    },
+    {
+      "date": "cumulative",
+      "n": 843
     }
   ],
-  "wave_count": 4,
+  "wave_count": 6,
   "presence_distribution": {
-    "1_waves": 334,
-    "2_waves": 70,
-    "3_waves": 118,
-    "4_waves": 10
+    "1_waves": 325,
+    "2_waves": 195,
+    "3_waves": 254,
+    "4_waves": 112,
+    "5_waves": 11,
+    "6_waves": 10
   },
-  "persistence_rate_full_chain_pct": 4.8,
-  "persistence_rate_full_chain_note": "10 listings present in all 4 waves / 210 listings in last wave = 4.8% of last-wave non-conform listings have persisted unchanged for 4 consecutive days.",
+  "persistence_rate_full_chain_pct": 1.2,
+  "persistence_rate_full_chain_note": "10 listings present in all 6 waves / 843 listings in last wave = 1.2% of last-wave non-conform listings have persisted unchanged for 6 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
     {

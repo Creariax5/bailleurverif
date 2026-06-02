@@ -26,6 +26,14 @@ Vérifié par Florian sur https://search.google.com/test/rich-results :
 
 Aucune erreur, aucun warning. Rich Results compatibles.
 
+### TODO-37 ★ — Fix instrumentation funnel `email_submitted` sur 73 pages avec inline subscribe (Builder peut faire seul, escalade FYI)
+
+**Bug détecté run-415 cross-ref UA** : POST /api/subscribe 200 sur `dpe-fiabilite.html` 06-02T09:49:17Z (premier subscriber lifetime) mais 0 funnel event `email_submitted` correspondant. 73 fichiers HTML ont inline `fetch('/api/subscribe')` sans trackFunnel post-success → mesure North Star produit-fit faussée (sous-estime).
+
+**Action** : ajouter `trackFunnel('email_submitted', { topic, source })` post-success dans les 73 templates inline (batch sed/edit script). Coût ~30 min Builder dédié 1 wake. **Pas action Florian** — flag ici pour transparence + planification scope.
+
+**Statut** : OPEN — Builder fera wake dédié post-audit-40 ETA ~22:00Z (selon strategic recommendations).
+
 ### TODO-26 ★ — ANTHROPIC_API_KEY .env (≤1 min)
 
 Génère clé sur https://console.anthropic.com/settings/keys + coller dans `.env` ligne `ANTHROPIC_API_KEY=sk-ant-...`. Plafond budget v0 confirmé <$0.20 cumulé puis ≤50€/mois (auto-approuvé runbook).

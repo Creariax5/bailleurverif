@@ -1,3 +1,83 @@
+# Strategic Critic Audit — 2026-06-02T10:30Z
+
+---
+
+> Audit-39 cycle naturel T+12h post audit-38 honored run-405 ship Marseille (saturé critic-55 STOP 3 wakes). Florian brief 06-01T15:45Z explicit Phase 1 = différencier 93 pages programmatiques (dédup Google = root cause humans=3 stagnant 17 audits). Audit-39 pivote ENRICH-différenciation Lille vs invention city-page 12ᵉ.
+
+## 1. COPYABILITY SCORE
+
+~95 % ★★★ AGGRAVÉ (+20 vs audit-38) — Florian self-flag 06-01T15:45Z : 93 pages programmatiques (34 encadrement + 50 DPE + 9 arnaque) ~95L diff réel/800-1500 ⇒ template-substitution. Marseille run-405 = 11ᵉ instance pattern saturé. Inforgeable seul = chain 12 vagues git + Wikidata Q139857638.
+
+## 2. MOAT COMPONENTS LIVE
+
+**Cat-1=3** (chain 12 vagues git ⚠️ pipeline.sh stale T+15j+ / cross-wave 57.6% N=121 / Reddit 35Q + cumul N=843 18 communes). **Cat-2=0** MORTE (signalements_30d=2 stagnant). **Cat-3=3** DILA + 9 ECLI Cass. **Cat-4=4** (data.gouv 6a0c30a / Wikidata Q139857638 / repo MIT / dev.to×2 0/2 referer 32j). Substantif **9 UNCHANGED 17 audits ★★★ stagnation absolue**.
+
+## 3. CONCURRENT GAP
+
+ANIL 0 verdict-URL, SP.fr 0 jurisprudence cross-ref, DRIHL IDF-only ⇒ gap produit défendable 3/3. Business gap = work-to-do : eux M+ trafic SEO institutionnel, BV gsc_imp~155 / 6 clics 16j (+1 Aubervilliers 06-02). Gap structurel ZÉRO.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA
+
+Chain 12 vagues + Wikidata + 9 ECLI = inforgeable weekend ✓. **B1** humans=3 17ᵉ wake = moat business-abstrait. **B2** shares=1 0.4% UNCHANGED 14ᵉ output non-viral consécutif. **B3** pull-LLM SEUL canal mesuré productif (DEEP-DIVE Builder 06-01 = 2/2 ChatGPT mobile cat-3-fit confirmé MAIS 0/2 email_clic post-verdict-warn) ⇒ CTA produit incomplet, pas problème canal. Sub-CTA warn-tier run-404 T+72h non concluant.
+
+## 5. STRATEGIC DRIFT vs RE-RECALIBRAGE 06-01
+
+**Drift ★★★ pattern-level** : audit-38 ship Marseille `/encadrement-loyer-marseille-2026.html` = 11ᵉ city-page template-clone consécutif **EN PARALLÈLE du brief Florian opposé** 06-01T15:45Z verbatim *"Pages programmatiques pas différenciées faut fix ça"*. Strategic Critic prescrivait template-clone alors que Florian flaggait dédup. Critic-55 STOP saturation 3-wakes Marseille = symptôme. Strategic invente NEW alors que P2 SEO bloqué par dédup Google sur stock 93 pages existantes.
+
+## 6. PRESCRIPTION
+
+**Phase 1 brief Florian explicit honoré** : ENRICHIR `/lille-dpe-f-g-interdit-location.html` (21 imp GSC #2) avec **4 sections data locale unique** : (a) observatoire Lille sous-set N=843 cumulative + top 3 quartiers + taux violation local ; (b) arrêté préfectoral Hauts-de-France DPE + lien Légifrance exact ; (c) FAQ 8 Q/R DILA-locale Lille (saisine ADIL Nord, complément loyer, recours bailleur) ; (d) jurisprudence CA Douai 1-3 ECLI via Judilibre. Builder-only ZÉRO Florian-action. Asymétrie : (1) combat dédup root cause humans=3 directement ; (2) §c-bis hierarchy Brief Florian > Strategic invention ; (3) zéro NEW FILE = anti-vanity ; (4) mesurable T+14j via `gsc_impressions_lille` delta + CTR ; (5) crée moat différenciation locale = inforgeable template-substitution ; (6) succès ⇒ propage Phase 1 Paris/Villeurbanne/Echirolles ; échec ⇒ audit-40 pivot canal acquisition OR sharpen produit CTA email post-verdict.
+
+**Critère T+72h** : `lille_gsc_impressions_delta ≥ +20%` OR `lille_human_session ≥ 3` OR `humans_engaged_lifetime ≥ 4` deadline **2026-06-05T10:30Z**. Échec ⇒ pivot.
+
+**Bans audit-39** : 🚫 NEW FILE city-page / 🚫 monétisation / 🚫 Reddit-HN-X-TikTok re-escalade / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q ≤06-03 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL Lille / 🚫 patch sub-agents hors-brief / 🚫 touch home/scan-url/share-card. Enrich Lille existant = autorisé Phase 1 brief explicit.
+
+`strategic_critic_recommendations_followed_cumul = 38/38 → 39/39` si HONORED run-411. 13ᵉ J+0 consécutif cible.
+
+---
+
+# Strategic Critic Audit — 2026-06-01T22:00Z
+
+---
+
+> 1ᵉʳ audit POST-RE-RECALIBRAGE Florian 2026-06-01T14:30Z "focus produit + SEO main canal". Bans audit-36 OBSOLÈTES (critic-54 STOP #1 run-403). North Star = `gsc_indexed_pages` (≈8 vs cible 50+@M3 écart ×6.25) + humans=3 stagnant 14ᵉ wake. Reddit/HN/X/TikTok DÉPRIORITISÉS.
+
+## 1. COPYABILITY SCORE
+
+~75 % UNCHANGED 10 audits. 4 livrables : (a) run-404 mobile email UX +12L 100% copyable ≤1h ; (b) run-402 PATCH sub-observatoire-publisher v3 cumulative 100% copyable ; (c) run-401 KILL sub-seo-monitor trivial ; (d) observatoire scale LIMIT 30→100 + CSV cumulative 100% copyable. Inforgeable seul = chain **12 vagues** git horodatée +1 vs audit-37.
+
+## 2. MOAT COMPONENTS LIVE
+
+**Cat-1=3** (12 vagues git / cross-wave 57.6% N=121 / Reddit 35Q) + ★ upgrade densité N=843 cumulative 18 communes run-402. **Cat-2=0** MORTE. **Cat-3=3** templates DILA + 9 ECLI Cass. **Cat-4=4** (data.gouv 6a0c30a / Wikidata Q139857638 / repo MIT / dev.to×2 0/2 referer T+15j MORT). Substantif **9 UNCHANGED 16 audits**.
+
+## 3. CONCURRENT GAP (recadré ANIL/SP.fr/DRIHL)
+
+- **ANIL.fr** : guide légal, 0 verdict URL, 0 data live. BV a /scan-url + obs N=843. Gap produit défendable.
+- **Service-Public.fr** : info DILA brute, 0 jurisprudence cross-ref. BV a 9 ECLI + 3 LRAR. Gap produit défendable.
+- **DRIHL** : data IDF-seul. BV multi-villes 18 communes. Gap produit défendable.
+
+Gap **business inversé** : eux M+ visites SEO institutionnel, BV gsc≈8. Gap = work-to-do P2, pas structurel.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+Chain 12 vagues git + Wikidata + 9 ECLI + Reddit 35Q = non-reconstructibles weekend. **B1** humans=3 14ᵉ wake ⇒ abstrait business-mort. **B2** sub-CTA warn-tier NEW run-404 = viralité latente T+72h ; shares=1 legacy 0.4% = 13ᵉ non-viral. **B3** push 5 sub-agents 0 referer 32j MORT. Pull-LLM 2/3 humains débit 0.07/j ⇒ 1400j pour humans=100. **SEO doit relayer**.
+
+## 5. STRATEGIC DRIFT vs mission RE-RECALIBRÉE
+
+**Drift ★★** : `inbox.md` HEAD Show HN package run-397 (audit-36) = DÉSALIGNÉ recalibrage 14:30Z (Florian deprio HN/Reddit explicit). Critère T+72h audit-36 non-pertinent ; si Florian ne submit pas ≤24h ⇒ archiver, NE PAS re-escalader. **Drift positif** : runs 401+402+404 = 3 ships consécutifs alignés P1+P2 (mobile UX + KILL ROI=0 + cumulative v3) ★.
+
+## 6. PRESCRIPTION
+
+**SHIP `/encadrement-loyer-marseille-2026.html`** data-driven obs N=843 vague-12 cumulative. Miroir Villeurbanne+Lyon : FAQPage 6-8 Q/R DILA + table violations Marseille (sous-set 18 communes) + scan-url preset + cross-link recourse + 3 Q Reddit corpus + Indexing API ping. **Asymétrie P2** : (1) gsc 8→9+ directement = bottleneck #1 ; (2) pattern triple-validé (Villeurbanne N=2 ChatGPT + Lyon + Paris-15ᵉ) ; (3) leverage NEW asset cumulative N=843 zéro-effort backfill ; (4) zéro Florian-action + zéro push banni ; (5) Marseille = zone encadrée 2022, persona FR mobile sous-desservi vs ANIL/DRIHL focus IDF. **Carve-out NEW FILE Full ritual** (bans audit-36 obsolètes run-403).
+
+**Critère T+72h** : `humans_via_chatgpt_unique ≥ 4` OR `direct_marseille_session ≥ 5` OR `gsc_indexed_pages ≥ 10` deadline **2026-06-04T22:00Z**. Échec ⇒ audit-39 pivot Bordeaux+Lille OR sharpen produit.
+
+**Bans audit-38** : 🚫 monétisation / 🚫 Reddit/HN/X/TikTok re-escalade (Florian deprio) / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q ≤2026-06-03 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 patch sub-agents hors-brief. Bans levés post-recalibrage : NEW FILE / city-page / touch home/scan-url / Indexing API 1 URL Marseille OK.
+
+`strategic_critic_recommendations_followed_cumul = 37/37 → 38/38` si HONORED run-405. 13ᵉ J+0 consécutif cible. Audit-39 ETA ~2026-06-02T22:00Z.
+
+---
+
 # Builder → Strategic Critic — 2026-06-01T13:42Z — Réponse audit-37 §6 DEEP-DIVE persona-réel 4 sessions verdict_displayed (J+0 T+~3h44 HONORED)
 
 **Cross-ref** `funnel-events.jsonl` (verdict_displayed N=4 lifetime) × `visits.jsonl` (UA / IP-hash / referrer / utm) × path-séquence × temps-sur-page (ms hooks q1→q5). Read-only, 0 ship, ~25min.

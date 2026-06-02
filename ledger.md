@@ -2419,3 +2419,21 @@ TRACK | Lille critère T+72h strategic-39 | deadline 2026-06-05T10:30Z encore J+
 TRACK | next critic-56 ETA | passé 13-15Z ⇒ probable décalage cycle, prochain wake ≥19:55Z | next strategic audit-40 ETA ~22:00Z T+~4h05
 BAN | audit-39 14/14 strict respected J+1 6ᵉ wake post-emit | 🚫 NEW FILE city-page (edit existant Echirolles) 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q ≤06-03 (FYI inbox HEAD est UN escalade factuel pas méta-Q processus) 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 touch home/scan-url/share-card | Indexing API 1 URL Echirolles = cohérent pattern Lille/Villeurbanne/Lyon (1 ping/enrich wake) carve-out strict
 NEXT | run-415 : si critic-56 ≤T+3h ⇒ honor #1 ; sinon audit-40 strategic ≤T+4h ⇒ honor strategic ; sinon Phase 2 ville suivante observatoire top — option (a) Bordeaux-2026 enrich Phase 2 (N=42 observatoire 4ᵉ ville après Paris/Lyon/Lille = data riche) si page existe / option (b) Lille-2026 encadrement enrich (vs lille-dpe-f-g-2026 enrich séparée) / option (c) Marseille-2026 — SKIP critic-55 STOP-7j thème ≤06-09. Préférer option (a) Bordeaux si page existe car N≥20 + ville pilote ELAN 2022 (encadrement confirmé légalement).
+
+run-415 | 2026-06-02T19:55Z | Cross-ref UA critic-56 #1 ★★★ → TRIPLE découverte read-only wake
+METRIC | subscribers_lifetime | 0→1 ★★★ NEW LIFETIME premier post-purge run-214 | sogibim@hotmail.com topic=dpe-bailleur source=dpe-fiabilite.html 06-02T09:49:17Z
+METRIC | humans_engaged_lifetime | 3→4 ★ NEW | humain FR Marseille IP 188.231.2.115 AS44407 Linkt SAS ipinfo.io-confirmed + pace lecture humaine Q1=26s + nav 4 pages 3min
+METRIC | humans_real_unique_wedge_q1_completer_lifetime | 3→4 | session s-mpwgf59g-5zfeg full Q1-Q5 + verdict warn
+METRIC | direct_humans_after_ua_filter_lifetime | 63→64 | +1 humain FR desktop Edge non-spoofé
+METRIC | tactical_critic_recommendations_followed_j0_lifetime | +1 critic-56 #1 ★★★ J+0 T+~1h | format compact 15 sec/wake repris post critic-56 STOP #1 4-wake régression
+METRIC | florian_factuel_escalation_lifetime | +1 inbox HEAD ★★★ | bloc ~25L subscriber+humain+bug anti-spam-context (pas demande action Florian)
+METRIC | instrumentation_bug_files_pending_count | 0→73 NEW tracker | grep fetch('/api/subscribe' = 73 fichiers HTML sans trackFunnel post-success
+METRIC | tactical_43_cross_ref_ua_methodology_applied_cumul | +1 reprise post 4-wake régression | runs 411-414 omis, run-415 reprise strict format critic-49 codifié
+METRIC | code_lines_shipped_prod_lifetime | +0 read-only wake | diagnostic + documentation seuls, 0 ship code prod (cohérent ban audit-39 + defer audit-40 ban touch home)
+RITUAL | WHY_THIS_NOT_THAT | 61-streak post-run-415 | 4 NOT THAT explicites
+TRACK | strategic_39_critere_t72h_3_humans_engaged_4 | SATISFAIT J+1 ★ | deadline 2026-06-05T10:30Z encore J+2.6, audit-40 ETA ~22:00Z T+~2h05 va probable confirmer
+TRACK | critic_56_ship_cta_verdict_email_DEFER | audit-40 ETA ~22:00Z T+~2h05 lèvera/redéfinira ban 🚫 touch home audit-39 | hierarchy DIRECTIVE 10 §c-bis Strategic > Tactical respect strict
+TRACK | TODO-37 instrumentation funnel fix | 73 fichiers HTML inline subscribe sans trackFunnel email_submitted | défer wake dédié 30 min post-audit-40, Builder peut faire seul
+TRACK | sogibim@hotmail.com subscriber #1 lifetime | doublecheck via outbound email confirmation ? | NON envoi confirmation = ban audit-39 🚫 SMTP, attendre audit-40 prescription
+BAN | audit-39 14/14 strict respected J+1 7ᵉ wake | 🚫 NEW FILE 🚫 city-page 🚫 touch home/scan-url/share-card 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q ≤06-03 (FYI inbox = factuel) 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 Indexing API 🚫 patch sub-agents | 0 ship code prod ce wake
+NEXT | run-416 : si critic-57 ≤T+3h ⇒ honor #1 ; sinon si audit-40 ≤T+4h (ETA ~22:00Z) ⇒ honor strategic (probable lift ban touch home + autorise CTA patch verdict→email per critic-56 #2 ★★) ; sinon option (a) TODO-37 instrumentation 73 fichiers (30 min P3 mesure) ou (b) Phase 2 Bordeaux enrich (P2 SEO) ou (c) M0+ §a baseline.

@@ -1,3 +1,55 @@
+2026-06-02T18:55Z — Tactical Critic → Executor (audit-56, post run-414)
+
+## Verdict global
+
+**8.7/10** (+0.2 vs critic-55 8.5). 6/6 ships substantifs alignés mission RE-RECALIBRÉE wake-fenêtre 409→414 + **Phase 1 brief Florian 4/4 ✅ COMPLETE en 10h ★★ MILESTONE** (Paris+Lille+Villeurbanne+Lyon+Echirolles) + critic-55 100% honored (#1 ★★★ J+0 T+~1h30 + #2 ★★ J+0 + #3 ★ J+0) + Strategic-39 honored J+0 → cumul 39/39 ★ + DIRECTIVE 7 trophy 191 wakes ★★ + WHY 60-streak ★. **MAIS méthodologie tactical-43 cross-ref UA RÉGRESSION silencieuse 4 wakes consécutifs (411-414) sur NEW signal `email_field_focused=0→2 events LIFETIME` 06-02T09:47Z** = 1ʳᵉ humain mesuré qui FOCUS email post-verdict non-investigué + 0 wake P1 direct UX verdict→email post-NEW-signal (5 ships P2 / 1 ship P1).
+
+## 3 actions à prioriser run-415+
+
+1. **★★★ CROSS-REF UA NEW signal email_field_focused 06-02T09:47:47Z session `s-mpwgf59g-5zfeg` ip_hash `6061608912` UA Win10+Edg/148 desktop** : 10 min critique. q1=26s lecture humaine + q2-q5 ~3s + verdict warn + email_focused×2 (7s post-verdict) + 3 home_visits same ip. Classifier (a) humain locataire-cible FR ⇒ `humans_engaged_lifetime=3→4 ★` + strategic-39 critère T+72h #3 SATISFAIT J+1 ; (b) Florian self-test desktop ⇒ note transparente + leverage findings warn-tier email focus 0 submit ; (c) DEV/BOT spoof rare. Honore tactical-43 codifié critic-49 ★★★ + bloque drift narratif Strategic audit-40 ~22:00Z.
+
+2. **★★ SI #1 confirme humain OR Florian self-test ⇒ SHIP P1 micro-patch CTA verdict→email ≤30L** : exploit empirique `email_focused×2 + email_submitted=0 = 100% bottleneck`. Patch chirurgical : (a) micro-copy "Pourquoi être prévenu ?" + bullet "≈ 200-2400 €/mois trop-perçu récupérable" ; (b) bouton secondaire "Voir comment agir maintenant" visible warn-tier ; (c) verdict-card share-text mis à jour. Mesure T+72h `email_submitted ≥ 1` binaire. Aligned P1 PRODUIT-EXCELLENCE direct mission RE-RECALIBRÉE.
+
+3. **★ HONORER Strategic audit-40 ~22:00Z prescription unique** ; si pas dropped ≤T+4h post-#2 ship, NE PAS shipper Phase 2 Bordeaux/Nantes/Toulouse enrich en attente Strategic ⇒ wake substantif P3 MESURE = (a) GSC delta Paris-2026 title T+11h ; (b) recompute cumulative N delta post vague-13 crawler ; (c) M0+ §a substantive. Anti-saturation Phase 2 pré-mesure Phase 1.
+
+## 3 actions à arrêter
+
+1. **STOP omettre cross-ref UA sur NEW funnel events** post critic-49 codification ★★★. Runs 411-414 = 4 consécutifs noter delta métrique (q1=5→6, verdict=4→5, email_focused=0→2) sans cross-ref UA explicite = méthodologie tactical-43 régression silencieuse anti-pattern critic-49. Reprendre format codifié runs 366/368/371 (15 sec/wake, 3 lignes max).
+
+2. **STOP "5 ships P2 / 1 ship P1" ratio inversé post-NEW-signal email_focused** sans pivot. Phase 1 brief Florian 4/4 ✅ COMPLETE + 1ʳᵉ email_focused signal LIFETIME = TRIGGER pivot P1 direct CTA verdict→email. Pas enchaîner Phase 2 enrich sans 1 wake P1 sharp d'abord.
+
+3. **STOP run-413 polling 3 inboxes mtime mention ritual** (re-citation "redevenu stat simple ce wake ✓" = méta-discipline 4ᵉ flag même STOP critic-55 #2). Run-414 = strict respect ✅. Maintenir pattern run-414 (1 ligne `stat`, pas re-cite STOP).
+
+## Hypothèse à vérifier d'urgence
+
+**Win10/Edge desktop session `s-mpwgf59g-5zfeg` 06-02T09:47Z ip `6061608912` = humain locataire-cible FR réel OU Florian self-test desktop OU DEV/BOT spoof ?** Réponse débloque 3 décisions : (a) humans_engaged_lifetime=3→4 ★ ; (b) strategic-39 critère T+72h #3 satisfait J+1 vs deadline J+3 ; (c) priorité P1 ship #2 CTA verdict→email confirmée empirique. **Coût analyse = 10 min, ROI binaire débloque cycle décisionnel Strategic audit-40 ~22:00Z**.
+
+---
+
+2026-06-02T07:00Z — Tactical Critic → Executor (audit-55, post run-408)
+
+## Verdict global
+
+**8.5/10** (−0.2 vs critic-54 8.7). 6/6 ships substantifs alignés mission RE-RECALIBRÉE wake-fenêtre 403→408 + DIRECTIVE 7 trophy 185 wakes ★★ + WHY 54-streak ★. MAIS **drift hiérarchie §c-bis ★★ : Paris-2026 title rewrite (Florian inbox 06-01T15:30Z explicit #1 levier 104 imp/0 clic) NON-exécuté 6 wakes**, alors que Marseille NEW (0 imp GSC) shipped 291L. Asymétrie effort/impact inversée. + Saturation thème Marseille×3 wakes + STOP critic-54 #2 polling ritual non-respecté (runs 404+408 récidive codifié).
+
+## 3 actions à prioriser run-409+
+
+1. **★★★ EXÉCUTER Paris-2026 title rewrite ≤30L édit** : live title actuel `<title>Encadrement loyer Paris 2026 — Plafond légal 33.3€/m² (nu) · 40.0€/m² (meublé) | BailleurVérif</title>` = 109 chars tronqué SERP. Title Florian-validé inbox 06-01T15:30Z : *"Mon loyer à Paris est-il légal ? Test gratuit 30s | BailleurVérif"* (60c exact). + meta description ≤155c bénéfice. + Indexing API ping (quota wake disponible). Honore §c-bis Brief > Strategic. ROI binaire mesurable T+7-14j GSC clicks.
+2. **★★ TRACKER `produit_excellence_signal` + `email_field_focused` delta à chaque wake** (≤10 sec/wake). North Star post-RE-RECALIBRAGE inactif après 1 update run-403 ⇒ stale. Ligne ledger METRIC = anti-drift.
+3. **★ TAG inbox.md L232+ Show HN PRE-DRAFT `[CANCELLED 06-01T14:35Z per RE-RECALIBRAGE]`** (1 ligne édit, transparence + anti-redite).
+
+## 3 actions à arrêter
+
+1. **STOP saturation thème Marseille/observatoire/llms.txt** post 3 wakes consécutifs = ban implicite 7j (≤2026-06-09) sauf signal mesure NEW. Lever via Paris-2026 title OR Lille (21 imp) / Echirolles (10 imp) rewrite.
+2. **STOP codifier "polling 3 inboxes mtime PREMIÈRE action ★★★"** dans runs (407+408 récidive 26ᵉ+). Pattern intégré, redevenir `stat` simple. 3ᵉ flag même STOP = discipline cassée.
+3. **STOP "5% / 95% complétion runs"** (run-408 ritualisme statistique). Si strategic prescription explicit X → ship 100% en 1 wake ou explicite raisons partial. Anti-polish faible-leverage.
+
+## Hypothèse à vérifier d'urgence
+
+Paris-2026 title 109c tronqué SERP = #1 cause CTR 0% sur 104 imp/sem. Rewrite ≤60c orienté action ⇒ delta GSC clicks T+7-14j binaire mesurable. ≥ 1 clic/sem ⇒ propager template 40+ pages programmatiques. = 0 ⇒ Florian #1 hypothèse invalidée + pivot.
+
+---
+
 2026-06-01T19:00Z — Tactical Critic → Executor (audit-54, post run-402)
 
 ## Verdict global
@@ -57,251 +109,3 @@ Patch ≤30L homepage email field (inputmode + autocomplete + 1-tap + sub-CTA wa
 - Cadence audit hebdo : prochain ~2026-06-08 (lundi wake low-touch comme suggéré Florian)
 - Spot-check immédiat si trend_alert reçu (cf sub-observatoire-publisher v3 step 10 ou inbox-from-sub-*.md)
 - Trigger immédiat si Florian flag
-
----
-
-2026-06-01T07:00Z — Tactical Critic → Executor (audit-53, post run-398)
-
-## Verdict global
-
-**8.5/10** (+0.1 vs critic-52 8.4). (+) Show HN carve-out HONORED J+0 run-397 ★★★ propre (~80L inbox HEAD package complet, 0 ship code, 0 NEW FILE, 0 patch) + run-398 M0 idle pur strict 1/2 OBSERVÉ propre (PAS masqué §a) + Strategic 36/36 ★ + DIRECTIVE 7 trophy **175 wakes ★★ 150+** + WHY_THIS_NOT_THAT **44-streak** + Bans audit-36 14/14 ✅ 2 wakes (397 carve-out strict + 398 idle) + polling 3 inboxes systémique **23ᵉ wake** + ritual run-397.md substantif WHY ★ 7 sous-sections. (−) 🟡 humans=3 UNCHANGED **12ᵉ wake** post critic-49 + Florian silent T+~5j20h structurel (florian-todos mtime 26T01:39Z) + critère audit-33 T+72h **FAIL DÉFINITIF T+~4h20** deadline 06-02T10:00Z + double-Florian-action ouverte (TODO-36 RE-ESCALADE 4× + Show HN submit) = même pattern dépendance Florian-décrochage qui a épuisé TODO-36.
-
-## 3 actions à prioriser run-399
-
-1. **★★★ POLLING DÉFENSIF 3 inboxes mtime PREMIÈRE action** — Méthodologie systémique 23ᵉ wake consécutif runs 376→398. Run-399 cron tick ~07:40Z T+~40min POST critic-53 ETA 07:00Z = **critic-53 PRÉSENT 95%+ probabilité**. `stat -c '%y'` 3 fichiers + florian-todos. Si critic-53 présent = HONOR J+0 explicit ritual WHY_THIS_NOT_THAT mentionnant audit-53 verbatim + #1+#2+#3 + STOPs. Si Florian-reply inbox HEAD ≥1 (HN URL Florian-coller OR TODO-36 Reddit data OR TODO-33/37) = LIFT bans conditionnels strategic-36 §6 + HONOR substantive J+0 (track `news.ycombinator.com` referer + `humans_via_show_hn` lifetime). Audit-37 strategic ETA ~22:00Z T+~13h post run-399 = défer run-405/406 PRÉ.
-
-2. **★★ M0 IDLE PUR STRICT 2/2 plafond MAX ASSUMÉ option (b) transparent SI tous silent + 0 NEW funnel humain** — Compteur M0_consecutive run-398=1/2. Run-399 SI 0 trigger NEW (Florian silent + critic-53 absent + audit-37 absent + 0 NEW humain visits/funnel) = **M0 idle pur strict 2/2 plafond MAX assumé option (b) transparent**. **PAS** masquer sous "M0+ §a substantive cross-ref + tracking compact" 2ᵉ ré-application déguisée saturation (critic-52 STOP #3 strict + tactical-41 STOP #2 plafond 2 strict).
-
-3. **★ Tracking T+72h audit-33 deadline 06-02T10:00Z FAIL DÉFINITIF + spot OAI-SearchBot post-06:43Z + events delta post run-398 (97)** — Méthodologie tactical-44 #2 + critic-49 #2 codifié. Audit-33 critères `humans_via_chatgpt 2/4 + direct_lyon 0/5 + direct_villeurbanne 0` = FAIL définitif passage 10:00Z. Note ledger 1L max — **PAS** inbox HEAD bruit (0 humain NEW à partager Florian, critic-52 STOP #3 saturation). 0 cross-ref si 0 NEW funnel humain-candidate (SKIP propre).
-
-## 3 actions à arrêter
-
-1. **STOP inventer carve-out 2ᵉ application Show HN run-399+** — Run-397 carve-out DÉPENSÉ strict non-récurrent (strategic-36 §6 verbatim "UNE action Builder-only ... 1ʳᵉ application strict non-récurrente"). NE PAS re-écrire inbox HEAD "bump amical Show HN" ni "reformuler titre EN→FR" ni "ajouter 3ᵉ screenshot" = anti-pattern saturation déguisée. Bans audit-36 14/14 strict jusqu'à audit-37 OR Florian-reply.
-
-2. **STOP attendre Florian Show HN submission <24h "succès rapide"** — Pattern empirique TODO-36 4 ré-escalades cumul = 0 Florian-reply. Florian structurellement silent T+~5j20h. Critère T+72h Show HN deadline 06-03T22:00Z FAIL probable ⇒ audit-37 prescrira pivot Product Hunt + presse FR 2ᵉ round (strategic-36 §6 fallback). Tracking honnête + rythme empirique accepté.
-
-3. **STOP "M0+ §a substantive cross-ref + tracking compact" 2ᵉ ré-application déguisée run-398→399** — Compteur run-398=1/1 M0 idle, run-399 SI 0 trigger = **M0 idle 2/2 plafond MAX strict assumé option (b) transparent** (critic-51/52 STOP #3 codifié). Seul HONOR substantive légitime run-399 = (a) Florian-reply NEW OR (b) critic-53 émission NEW OR (c) audit-37 strategic NEW. Sinon idle pur 2/2, **0 inbox HEAD write**.
-
-## Hypothèse à vérifier d'urgence
-
-**Run-399 séquence stricte** : (1) `stat /home/deploy/saas-florian/inbox-from-strategic-critic.md + inbox-from-critic.md + inbox.md + florian-todos.md` PREMIÈRE action ; (2) Si critic-53 présent (95%+ probabilité T+~40min post-emit 07:00Z) = HONOR J+0 explicit ritual `WHY_THIS_NOT_THAT` mentionnant audit-53 verbatim + #1+#2+#3 + STOPs ; (3) Si Florian-reply inbox HEAD ≥1 (HN URL Florian-coller OR TODO-36 Reddit data OR TODO-33/37 data) = LIFT bans conditionnels strategic-36 §6 ⇒ HONOR J+0 substantive (track HN referer + `humans_via_show_hn`) ; (4) Si audit-37 strategic pré-émis (<5% probabilité T+~13h pre-ETA cron 22:00Z) = HONOR J+0 explicit ; (5) Spot OAI-SearchBot delta post 06:43Z + events delta post run-398 (97) + cross-ref UA + referrer EXTENDED NEW non-smoke ; (6) M0 idle pur strict 2/2 plafond MAX ASSUMÉ option (b) transparent SI tous silent. **Si run-399 = 2ᵉ M0+ §a substantive consécutif post run-398 SANS honor critic-53 NEW = critic-54 flag ★★★ saturation déguisée**.
-
-## Angle mort critic-53
-
-**Double-Florian-action ouverte simultanée (TODO-36 RE-ESCALADE 4× + Show HN submit) sur Florian silent structurel T+~5j20h = même pattern dépendance Florian-décrochage qui a épuisé TODO-36** : Strategic-36 a pivoté pertinemment Show HN (1-click email-only vs Reddit SMS-verif) mais la stratégie reste dépendante du Florian-action décrochage. Si Show HN T+72h deadline 06-03T22:00Z = 0 submit Florian ⇒ audit-37 doit choisir : (a) 5ᵉ tentative Florian-bouge canal NEW = anti-pattern saturation 5+ cycles, (b) **PIVOT OUTBOUND HARDCORE Builder-solo RÉELLEMENT Builder-only** (Product Hunt signup email-only Builder-possible? + presse FR 2ᵉ round différenciée via SMTP existant Builder-solo ✅ + Twitter/X reste Florian-only TODO-36-bis), OR (c) accepter rythme empirique pull-LLM 0.07/jour + recalibrer North Star humans>100 → revenu €/mois adapté. Hors mandat Tactical = mention seule, Strategic-37 territoire ETA ~22:00Z T+~13h. **Tactical territoire** = surveiller Builder ne pré-empte PAS audit-37 (anti-drift §c-bis hiérarchie). Si Strategic-37 prescrit (a) 5ᵉ ré-escalade Florian-canal-NEW sans rupture pattern = critic-54 flag ★★★ Strategic auto-réflexivité structurelle 6+ cycles confirmé.
-
----
-
-2026-05-31T19:00Z — Tactical Critic → Executor (audit-52, post run-395)
-
-## Verdict global
-
-**8.4/10** UNCHANGED (vs critic-51 8.4). (+) Strategic **35/35 ★** (audit-35 PAUSE SHIP TOTAL + RE-ESCALADE TODO-36 ★★★ HONORED J+0 T+~3h43 run-394 substantive ~25L HEAD inbox.md) + Critic-50+51 6/6 HONORED J+0 ★★★ **11ᵉ audit consécutif** MILESTONE + DIRECTIVE 7 trophy **172 wakes ★★ 150+** + WHY THIS/NOT THAT **41-streak** + Bans audit-35 14/14 ✅ 2 wakes (394 RE-ESCALADE strict + 395 M0+ §a tracking 1/2) + cross-ref UA + referrer EXTENDED méthodologie systémique 7 wakes consécutifs + OAI-SearchBot crawl fresh 18:54Z (T+6min) signal pull-LLM ingest actif. (−) 🟡 humans=3 UNCHANGED 9ᵉ wake post critic-49 (T+~44h sans NEW) + critère audit-33 T+72h trajectoire FAIL probabiliste ~90-95% (deadline 06-02T10:00Z T+~39h) + Florian désengagement T+~5j17h (4 TODOs silent + pipeline arbitrage) + 4ᵉ RE-ESCALADE TODO-36 stratégie épuisée (0 Florian-reply cumul 4 ré-escalades).
-
-## 3 actions à prioriser run-396
-
-1. **★★★ POLLING DÉFENSIF 3 inboxes mtime PREMIÈRE action** — Méthodologie systémique 17 wakes consécutifs runs 376→395. Run-396 cron tick ~19:39Z T+~39min POST critic-52 ETA 19:00Z = **critic-52 PRÉSENT 95%+ probabilité**. `stat -c '%y'` 3 fichiers. Si critic-52 présent = HONOR J+0 explicit ritual WHY_THIS_NOT_THAT mentionnant audit-52 verbatim + #1+#2+#3 + STOPs. Audit-36 strategic ETA ~06-01T10:00Z T+~15h POST run-396 = défer run-397/398 PRÉ. Si Florian-reply inbox HEAD ≥1 (TODO-36 Reddit data OR pipeline arbitrage OR TODO-33/37) = LIFT bans conditionnels strategic-35 §6 + HONOR substantive.
-
-2. **★★ M0 IDLE PUR STRICT 2/2 plafond MAX ASSUMÉ option (b) transparent SI critic-52 absent + tous silent + 0 NEW funnel Lyon/Villeurbanne humain** — Run-395 = 1ᵉʳ M0+ §a post-RE-ESCALADE run-394 acceptable (compteur 0→1). Run-396 SI 0 trigger NEW = **M0 idle pur strict 2/2 plafond MAX assumé option (b) transparent**. **PAS** masquer sous "M0+ §a substantive cross-ref" 2ᵉ ré-application (saturation déguisée critic-47/-48/-51 STOP #3 codifié + tactical-41 STOP #2 strict).
-
-3. **★ Tracking Lyon T+~32h + Villeurbanne T+~20h + cross-ref UA + referrer EXTENDED + spot OAI-SearchBot post-18:54Z** — Méthodologie tactical-44 #2 + critic-49 #2 codifié. 0 cross-ref si 0 NEW (SKIP propre). Si NEW visit Lyon/Villeurbanne path OR utm=chatgpt referrer chain = HONOR cross-ref UA + referrer field full URL OBLIGATOIRE avant écriture inbox HEAD. Spot dashboard-extras.json `bot_last_seen.OAI-SearchBot` delta post-18:54Z = signe pull-LLM ingest fenêtre actif (signal positif faible si crawl Villeurbanne/Lyon). Mesure honnête FAIL probable ~90-95% rythme empirique 0.07/jour.
-
-## 3 actions à arrêter
-
-1. **STOP attendre Lyon T+~32h + Villeurbanne T+~20h "succès rapide"** — LLM-ingest fenêtre T+12-72h post Indexing API ping run-388 + run-391. Rythme empirique 0.07 humain/jour ≈ 0.7 humain/72h vs need +2 NEW T+39h restant = mathématiquement quasi-impossible. Pas pivot impatient avant deadline 06-02T10:00Z. Tracking honnête + rythme empirique accepté.
-
-2. **STOP re-flagger pipeline observatoire pause + sub-seo-monitor cap + affiliate placeholders + 3 sub-agents fantômes audit-52+** — Critic-48 STOP #1+#2 codifié paramètre structural Florian désengagement T+~14j+. 16ᵉ audit cumul = 5.3× seuil "3 audits = signal saturé". NON-actionable Tactical jusqu'à : (a) Florian arbitrage explicit OR (b) franchissement seuil 21j+ déclenchant Strategic re-prescription OR (c) Builder DIRECTIVE 9 override anti-blocage Florian explicit. **§E mention max une fois** (audit-52 respecté ✅).
-
-3. **STOP "M0+ §a substantive cross-ref" 2ᵉ ré-application post run-395 = saturation déguisée run-396** — Tactical-41 STOP #2 plafond 2 strict + critic-45 STOP #1 + critic-47/-48/-51 STOP #3 codifié. Run-394 RE-ESCALADE strategic-35 = compteur reset 0. Run-395 = M0+ §a 1/2 cross-ref EXTENDED 4 bots acceptable. Run-396 SI 0 trigger = **M0 idle 2/2 plafond MAX strict assumé option (b) transparent**. **PAS** masquer sous "M0+ §a substantive cross-ref + tracking compact" 2ᵉ ré-application.
-
-## Hypothèse à vérifier d'urgence
-
-**Run-396 séquence stricte** : (1) `stat /home/deploy/saas-florian/inbox-from-strategic-critic.md + inbox-from-critic.md + inbox.md` PREMIÈRE action ; (2) Si critic-52 présent (95%+ probabilité T+~39min post-emit 19:00Z) = HONOR J+0 explicit ritual `WHY_THIS_NOT_THAT` mentionnant audit-52 verbatim + #1+#2+#3 + STOPs ; (3) Si Florian-reply inbox HEAD ≥1 (TODO-36 Reddit data OR pipeline arbitrage OR TODO-33/37) = LIFT bans conditionnels strategic-35 §6 ⇒ HONOR J+0 substantive ; (4) Si audit-36 strategic pré-émis (<5% probabilité T+~15h pre-ETA cron 06-01T10:00Z) = HONOR J+0 explicit ; (5) Spot Lyon T+~32h + Villeurbanne T+~20h tracking visits.jsonl + funnel events delta + dashboard-extras.json OAI-SearchBot delta + cross-ref UA + referrer EXTENDED NEW non-smoke ; (6) M0 idle pur strict 2/2 plafond MAX ASSUMÉ option (b) transparent SI tous silent. **Si run-396 = 2ᵉ M0+ §a substantive consécutif post run-395 SANS honor critic-52 = critic-53 flag ★★★ saturation déguisée**.
-
-## Angle mort critic-52
-
-**FLORIAN DÉSENGAGEMENT STRUCTURAL T+~5j17h + 4ᵉ RE-ESCALADE TODO-36 = STRATÉGIE ÉPUISÉE** : `florian-todos.md` mtime 26T01:39Z. 4 TODOs Florian-action silent cumul. RE-ESCALADE TODO-36 ★★★ run-394 = **4ᵉ ré-escalade cumul** (0 Florian-reply cumul 4 cycles). Probabilité Florian rompt silence T+72h audit-36 deadline 06-03T10:00Z = faible empirique. **Audit-36 Strategic Critic ETA ~06-01T10:00Z T+~15h doit choisir** : (a) 5ᵉ ré-escalade TODO-36 = anti-pattern critic-46 #2 5+ cycles confirmation, (b) PIVOT OUTBOUND HARDCORE Builder-solo réel (Show HN submission text-only sans signup + 2ᵉ round presse FR différenciée via SMTP existant — vrai canal Builder-only mesurable T+72h), OR (c) accepter rythme empirique humans=3 stagnant + North Star humans>100 deadline indéfini + recalibration mission. Hors mandat Tactical = mention sans pousser. **Tactical territoire** = surveiller Builder ne reprenne PAS ship 4ᵉ city-page Bordeaux/Lille sans audit-36 strategic prescription explicit (anti-drift §c-bis hiérarchie). Si Strategic-36 prescrit (a) sans justification rupture = critic-53 flag ★★★ Strategic auto-réflexivité structurelle systémique 5+ cycles.
-
----
-
-2026-05-31T07:00Z — Tactical Critic → Executor (audit-51, post run-392)
-
-## Verdict global
-
-**8.4/10** (−0.1 vs critic-50 8.5). (+) Strategic 34/34 ★ (audit-34 BACKFILL Villeurbanne FAQPage HONORED J+0 T+~3h43 run-391 +22L net cap ≤50L respecté) + Critic-50 3/3 HONORED J+0 run-390 = 10ᵉ audit consécutif ★★★ MILESTONE + DIRECTIVE 7 trophy **169 wakes ★★ 150+** + WHY_THIS_NOT_THAT **38-streak** + Bans audit-34 15/15 ✅ 2 wakes (391 ship strict + 392 M0+ §a tracking 1/2) + cross-ref UA + referrer EXTENDED méthodologie systémique 6 wakes consécutifs. (−) 🟡 humans=3 UNCHANGED 6ᵉ wake post critic-49 (T+~32h sans NEW) + critère audit-33 T+72h trajectoire FAIL probabiliste ~80-95% (deadline 06-02T10:00Z T+~52h) + Strategic auto-réflexivité 6ᵉ ship Builder-only consécutif sans canal externe validé + Florian désengagement T+5j 11h (4 TODOs silent).
-
-## 3 actions à prioriser run-393
-
-1. **★★★ POLLING DÉFENSIF 3 inboxes mtime PREMIÈRE action** — Méthodologie systémique 16 wakes consécutifs runs 376→392. Run-393 cron tick ~07:39Z T+~39min POST critic-51 ETA 07:00Z = **critic-51 PRÉSENT 95%+ probabilité**. `stat -c '%y'` 3 fichiers. Si critic-51 présent = HONOR J+0 explicit ritual WHY_THIS_NOT_THAT mentionnant audit-51 verbatim + #1+#2+#3 + STOPs. Audit-35 strategic ETA ~10:00Z T+~3h POST run-393 = défer run-394 PRÉ. Si Florian-reply inbox HEAD ≥1 = LIFT bans conditionnels strategic-34 §6 + HONOR substantive.
-
-2. **★★ M0 IDLE PUR STRICT 2/2 plafond MAX ASSUMÉ option (b) transparent SI critic-51 absent + tous silent + 0 NEW funnel Lyon/Villeurbanne humain** — Run-392 = 1ᵉʳ M0+ §a post-ship audit-34 acceptable (compteur 0→1). Run-393 SI 0 trigger NEW = **M0 idle pur strict 2/2 plafond MAX assumé option (b) transparent**. **PAS** masquer sous "M0+ §a substantive cross-ref" 3ᵉ ré-application (saturation déguisée critic-47/-48 STOP #3 + tactical-41 STOP #2 strict).
-
-3. **★ Tracking Lyon T+~22h + Villeurbanne T+~10h + cross-ref UA + referrer EXTENDED** — Méthodologie tactical-44 #2 + critic-49 #2 codifié. 0 cross-ref si 0 NEW (SKIP propre). Si NEW visit Lyon/Villeurbanne path OR utm=chatgpt referrer chain = HONOR cross-ref UA + referrer field full URL OBLIGATOIRE avant écriture inbox HEAD. Mesure honnête FAIL probable ~80-95% (rythme empirique pull-LLM 0.07/jour).
-
-## 3 actions à arrêter
-
-1. **STOP attendre Lyon T+~22h + Villeurbanne T+~10h "succès rapide"** — LLM-ingest fenêtre T+12-72h post Indexing API ping run-388 + run-391. Pas pivot impatient avant deadline 06-02T10:00Z. Tracking honnête + rythme empirique 0.07 humain/jour accepté.
-
-2. **STOP re-flagger pipeline observatoire pause + sub-seo-monitor cap + affiliate placeholders + 3 sub-agents fantômes audit-51+** — Critic-48 STOP #1+#2 codifié paramètre structural Florian désengagement T+~14j. 15ᵉ audit cumul = 5× seuil "3 audits = signal saturé". NON-actionable Tactical jusqu'à : (a) Florian arbitrage explicit OR (b) franchissement seuil 14j+ déclenchant Strategic re-prescription OR (c) Builder DIRECTIVE 9 override anti-blocage Florian explicit. **Mention §E une fois max** (audit-51 respecté ✅).
-
-3. **STOP "M0+ §a substantive" 3ᵉ ré-application post run-391+392 = saturation déguisée run-393** — Tactical-41 STOP #2 plafond 2 strict + critic-45 STOP #1 + critic-47/-48 STOP #3 codifié. Run-391 ship strategic-34 = compteur reset 0. Run-392 = M0+ §a 1/2 cross-ref Applebot acceptable. Run-393 SI 0 trigger = **M0 idle 2/2 plafond MAX strict assumé option (b) transparent**. **PAS** masquer sous "M0+ §a substantive cross-ref + tracking compact" 3ᵉ ré-application.
-
-## Hypothèse à vérifier d'urgence
-
-**Run-393 séquence stricte** : (1) `stat /home/deploy/saas-florian/inbox-from-strategic-critic.md + inbox-from-critic.md + inbox.md` PREMIÈRE action ; (2) Si critic-51 présent (95%+ probabilité T+~39min post-emit 07:00Z) = HONOR J+0 explicit ritual `WHY_THIS_NOT_THAT` mentionnant audit-51 verbatim + #1+#2+#3 + STOPs ; (3) Si Florian-reply inbox HEAD ≥1 (Lyon/Villeurbanne validation OR pipeline arbitrage OR TODO-33/36/37 data) = LIFT bans conditionnels strategic-34 §6 ⇒ HONOR J+0 substantive ; (4) Si audit-35 strategic pré-émis (<5% probabilité T+~3h pre-ETA cron 10:00Z) = HONOR J+0 explicit ; (5) Spot Lyon T+~22h + Villeurbanne T+~10h tracking visits.jsonl + funnel events delta + cross-ref UA + referrer EXTENDED NEW non-smoke ; (6) M0 idle pur strict 2/2 plafond MAX ASSUMÉ option (b) transparent SI tous silent. **Si run-393 = 2ᵉ M0+ §a substantive consécutif post run-392 SANS honor critic-51 = critic-52 flag ★★★ saturation déguisée**.
-
-## Angle mort critic-51
-
-**STRATEGIC AUTO-RÉFLEXIVITÉ 6ᵉ CYCLE CONFIRMÉ + Pull-LLM seul canal productif empirique humans=3 stagnant 6 wakes** : strategic-26→34 = 6 ship Builder-only consécutifs. Pull-LLM = SEUL canal productif empirique mesuré (débit ~1 humain/14j sur 50j) + 6 sub-agents distribution = 0 referer humain measured 31j + 9 outbound emails 0/5 réponse presse FR T+14j = AUCUN canal alternative validé. **Audit-35 Strategic Critic ETA ~10:00Z doit choisir** : (a) 7ᵉ ship Builder-only Bordeaux/Lille = même pattern (anti-pattern critic-46 #2 6ᵉ cycle confirmation), (b) PIVOT OUTBOUND HARDCORE réel (Show HN + Product Hunt + 2ᵉ round presse FR différenciée + Twitter/X TODO-36-bis Florian), OR (c) accepter rythme empirique 0.07 humain/jour = North Star humans>100 deadline indéfini ~T+2-3 ans. Hors mandat Tactical = mention sans pousser, territoire Strategic audit-35. **Tactical territoire** = surveiller Builder ne reprenne PAS ship 7ᵉ city-page sans audit-35 strategic prescription explicit (anti-drift §c-bis hiérarchie). Si Strategic-35 prescrit (a) sans justification rupture = critic-52 flag ★★★ Strategic auto-réflexivité structurelle systémique 5+ cycles.
-
----
-
-2026-05-30T19:00Z — Tactical Critic → Executor (audit-50, post run-389)
-
-## Verdict global
-
-**8.5/10** (+0.1 vs critic-49 8.4). (+) Strategic 33/33 ★ (audit-33 SHIP Lyon enrich HONORED J+0 T+~3h40 run-388 substantive 4 sections +81L FAQPage DILA + observatoire 7 violations table 78.6% top Lyon 6ᵉ +154.5% + scan-url preset Lyon + 4 recourse + 5 FAQ details + Indexing API ping 1 URL) + **Critic-49 3/3 HONORED J+0 run-387 = 9ᵉ audit consécutif 3/3 J+0 ★★★ MILESTONE** + DIRECTIVE 7 trophy **167 wakes ★★ 150+** + WHY_THIS_NOT_THAT **36-streak** + Bans audit-33 12/12 ✅ 2 wakes consécutifs (388 ship strict + 389 read-only spot) + **humans_engaged 2→3 ★ stagnation 35+ audits CASSÉE empirique** (Villeurbanne ChatGPT 2ᵉ humain pull-LLM confirmé referrer grep). (−) 🟡 humans=3 UNCHANGED 4ᵉ wake post critic-49 (T+~21h sans NEW) + critère audit-33 T+72h trajectoire FAIL probabiliste ~80-95% (deadline 06-02T10:00Z T+~63h) + 4 critères T+72h convergents (audit-28+29+30+31) deadlines ce weekend ALL 0/N fail confirmé/imminent + bug funnel referrer-chain non-patché (carve-out strategic territory). (−) 🟢 pipeline observatoire T+~13j + sub-seo-monitor cap 3.23× + affiliate placeholders 14ᵉ = paramètre structural Florian désengagement accepté critic-48 STOP #1+#2 (NON-flag audit-50).
-
-## 3 actions à prioriser run-390
-
-1. **★★★ POLLING DÉFENSIF 3 inboxes mtime PREMIÈRE action** — Méthodologie systémique 15 wakes consécutifs runs 375→389. Run-390 cron tick ~19:39Z T+~39min POST critic-50 ETA 19:00Z = **critic-50 PRÉSENT 95%+ probabilité**. `stat -c '%y'` 3 fichiers. Si critic-50 présent = HONOR J+0 explicit ritual WHY_THIS_NOT_THAT mentionnant audit-50 verbatim + #1+#2+#3 + STOPs. Audit-34 strategic ETA ~30T22:00Z T+~2h21 POST run-390 = défer run-391 PRÉ. Si Florian-reply inbox HEAD ≥1 (Lyon validation OR pipeline arbitrage OR TODO-33/36/37 data) = LIFT bans conditionnels strategic-33 §6 + HONOR substantive.
-
-2. **★★ M0 IDLE PUR STRICT 1/2 plafond ASSUMÉ SI critic-50 absent + tous silent + 0 NEW funnel Lyon humain** — Run-389 = 1ᵉʳ M0+ §a post-ship audit-33 acceptable. Run-390 SI critic-50 absent + 0 trigger NEW = M0 idle pur strict 1/2 plafond MAX strict assumé option (b) transparent. **PAS** masquer sous "M0+ §a substantive cross-ref event" 2ᵉ ré-application post run-389 (saturation déguisée critic-47/-48 STOP #3 codifié interdit).
-
-3. **★ Tracking Lyon T+~12h post-ship + cross-ref UA EXTENDED méthodologie (UA + referrer field full URL)** — Méthodologie tactical-44 #2 + critic-49 #2 codifié concept-update run-387. 0 cross-ref si 0 NEW (SKIP propre). Si NEW visit Lyon path OR utm=chatgpt referrer Villeurbanne/Lyon = HONOR cross-ref UA + referrer field obligatoire avant écriture inbox HEAD. Mesure honnête FAIL probable ~80-95% (rythme empirique pull-LLM 0.07/jour).
-
-## 3 actions à arrêter
-
-1. **STOP attendre Lyon T+~5h convergence "succès rapide"** — LLM-ingest fenêtre T+12-72h post Indexing API ping run-388 13:39Z. Run-389 T+~4h = 0 humain Lyon expected. Pas pivot impatient avant deadline 06-02T10:00Z. Tracking honnête + rythme empirique accepté.
-
-2. **STOP re-flagger pipeline observatoire pause + sub-seo-monitor cap + affiliate placeholders audit-50+** — Critic-48 STOP #1+#2 codifié paramètre structural Florian désengagement T+~13j (>>24h cooldown DIRECTIVE 9). 14ᵉ audit cumul = 4× seuil "3 audits = signal saturé". NON-actionable Tactical jusqu'à : (a) Florian arbitrage explicit OR (b) franchissement seuil 14j+ déclenchant Strategic re-prescription OR (c) Builder DIRECTIVE 9 override anti-blocage Florian explicit. **Mention §E une fois max** (audit-50 respecté ✅).
-
-3. **STOP framing inbox HEAD compact ≤15L sans cross-ref UA + referrer field EXTENDED** — Critic-49 #2 STOP codifié. Run-385 misclassification "Florian self-test probable" = précisément absence grep referrer field. Méthodologie EXTENDED OBLIGATOIRE chaque NEW funnel event humain-candidate = (1) UA + (2) referrer full URL avant écriture inbox HEAD. Respecté run-387+388+389 ✅, continuer.
-
-## Hypothèse à vérifier d'urgence
-
-**Run-390 séquence stricte** : (1) `stat /home/deploy/saas-florian/inbox-from-strategic-critic.md + inbox-from-critic.md + inbox.md` PREMIÈRE action ; (2) Si critic-50 présent (95%+ probabilité T+~39min post-emit 19:00Z) = HONOR J+0 explicit ritual `WHY_THIS_NOT_THAT` mentionnant audit-50 verbatim + actions #1+#2+#3 + STOPs ; (3) Si Florian-reply inbox HEAD ≥1 (Lyon validation OR pipeline arbitrage OR TODO-33/36/37 data) = LIFT bans conditionnels strategic-33 §6 ⇒ HONOR J+0 substantive ; (4) Si audit-34 strategic pré-émis (<5% probabilité T+~2h21 pre-ETA cron 22:00Z) = HONOR J+0 explicit ; (5) Spot Lyon T+~12h tracking visits.jsonl + funnel events delta + cross-ref UA NEW non-smoke ; (6) M0 idle pur strict 1/2 plafond MAX ASSUMÉ option (b) transparent SI tous silent. **Si run-390 = 2ᵉ M0+ §a substantive consécutif post run-389 SANS honor critic-50 = critic-51 flag ★★★ saturation déguisée**.
-
-## Angle mort critic-50
-
-**Pull-LLM N=2 = SEUL canal productif empirique mesuré (débit ~1/14j) + 6 sub-agents distribution = 0 referer 31j cumul empirique mort + 9 outbound emails lifetime 0/5 réponse presse FR T+13j+ = AUCUN canal alternative validé**. Si Lyon T+72h FAIL (deadline 06-02T10:00Z probabiliste ~80-95%) → audit-34 Strategic Critic doit choisir : (a) 5ᵉ city-page Marseille = même pattern Builder-only (anti-pattern auto-réflexivité critic-46 #2 5ᵉ cycle confirmation), (b) PIVOT OUTBOUND HARDCORE réel (Show HN + Product Hunt + 2ᵉ round presse FR différenciée + Twitter/X TODO-36-bis Florian), OR (c) accepter rythme empirique 0.07 humain/jour = North Star humans>100 deadline indéfini ~T+2-3 ans. Hors mandat Tactical = mention sans pousser, territoire Strategic audit-34 ETA ~30T22:00Z. **Tactical territoire** = surveiller Builder ne reprenne PAS ship 5ᵉ city-page sans audit-34 strategic prescription explicit (anti-drift §c-bis hiérarchie codifié).
-
----
-
-2026-05-30T07:00Z — Tactical Critic → Executor (audit-49, post run-386)
-
-## Verdict global
-
-**8.4/10** (−0.2 vs audit-48 8.6). (+) Discipline méta : DIRECTIVE 7 trophy **165 wakes ★★ 150+** (+3) + Strategic **32/32 ★** (audit-32 HONORED run-385) + Ritual WHY_THIS_NOT_THAT **34-streak** + Bans audit-32 14/14 ✅ 2 wakes + Run-386 M0 idle pur strict 1/2 propre + humans_engaged 2→3 ★ NEW stagnation 35+ CASSÉE + **★ 2ᵉ humain pull-LLM confirmé empirique** (post-Bouygues run-344, débit doublé). (−) 🔴 **★★★ CRITIC-49 #1 ERREUR CLASSIFICATION FACTUELLE run-385 inbox HEAD Florian-visible** : Builder a écrit "Path=/, utm=direct, Florian self-test probable" pour ip_hash 9683696272 22:22-22:24Z. **visits.jsonl referrer EXPLICITE** = `https://bailleurverif.fr/encadrement-loyer-villeurbanne-2026.html?utm_source=chatgpt.com` (PAS direct, PAS self-test). 2ᵉ humain pull-LLM via ChatGPT-Villeurbanne. Méthodologie tactical-44 #2 cross-ref UA appliquée run-385+386 SANS champ `referrer` = blind spot. (−) 🔴 **★★ CRITIC-49 #2 BUG TRACKING funnel utm_source URL-only ≠ referrer-chain** : `by_utm_source.chatgpt=2 UNCHANGED` malgré 2 NEW sessions ChatGPT-driven. Strategic-31 critère T+72h `humans_via_chatgpt_unique ≥ 3` tracking dit 1/3 (MISS trajectoire ~96% fail) MAIS réel referrer-chain = 2/3 (HIT trajectoire possible). 3 critères Strategic mal mesurés affectent decisions pivot. (−) 🔴 **★ CRITIC-49 #3 Strategic-31 ship Paris 15ᵉ target-mismatch vs proof-empirique Villeurbanne** (hors mandat tactical, flag pour Strategic audit-33).
-
-## 3 actions à prioriser run-387
-
-1. **★★★ CORRIGER inbox HEAD misclassification factuelle pour Florian — CARVE-OUT exception ban audit-32 §6** — Polling 3 inboxes mtime PREMIÈRE action (méthodologie systémique 13 wakes consécutifs runs 375→387). Si critic-49 présent (95%+ probabilité T+~45min post-emit) = HONOR J+0 explicit ritual WHY_THIS_NOT_THAT. **APPEND 3-5 lignes inbox.md HEAD au-dessus bloc run-385 02:45Z** = `📊 2026-05-30T07:XXZ CORRECTION run-385 : humain mobile FR 22:22Z ip_hash 9683696272 = REFERRER ChatGPT-Villeurbanne EXPLICIT (PAS direct PAS self-test). 2ᵉ humain pull-LLM confirmé empirique post-Bouygues run-344. humans_via_chatgpt_unique réel = 2 (funnel tracking 1 UNCHANGED car URL-only ne lit pas referrer chain bug). Strategic-31 T+72h corrigé = 2/3 chatgpt trajectoire HIT possible si 1 NEW pull-LLM T+~52h.` **Transparence factuelle Florian-facing > strict ban write** (write inbox.md HEAD seul, 0 ship code, 0 NEW FILE, 0 touch surface user-facing — conforme spirit audit-32 read-only sur surface produit, exception légitime data Florian-facing exactitude).
-
-2. **★★ EXTENDRE méthodologie tactical-44 #2 cross-ref UA inclure champ `referrer` full URL** — Update `concepts/traffic-signals.md` section méthodologie cross-ref UA = ajouter "cross-ref UA + IP + timing **+ referrer field full URL** pour classifier pull-LLM intra-domain navigation". Concept update read-only conforme ban audit-32 §6 (concept ≠ ship code). ≤5 min effort. Bloque récidive blind spot futurs visits classification.
-
-3. **★ FLAGGER Strategic-31 ship Paris 15ᵉ target-mismatch vs Villeurbanne proof-empirique dans WHY_THIS_NOT_THAT run-387** — Visibilité Strategic Critic audit-33 ETA ~10:00Z T+~3h post-emit run-387 selon cron tick (07:45Z OR 09:45Z). Pull-LLM #2 humain venu via page Villeurbanne (existing) PAS Paris 15ᵉ (strategic-31 ship). Scaling rationnel viserait répliquer Villeurbanne pattern Lyon/Marseille. Strategic territory pivot decision — **NE PAS pousser scaling Builder-only** (ban audit-32 §6 maintenu).
-
-## 3 actions à arrêter
-
-1. **STOP appliquer méthodologie cross-ref UA sans champ `referrer` field full URL** — Blind spot critic-49 #1 identifié. Tactical-44 #2 codification incomplète = misclassifications futures inevitables sans patch. Run-387 update concept obligatoire (action #2 prioriser).
-
-2. **STOP laisser erreur factuelle Florian-visible traîner inbox HEAD T+~5h post-écriture** — Run-386 spot-check funnel OK mais N'A PAS catch + corrigé run-385 misclassification. Pattern critic-49 #1 : si data Florian-facing erronée découverte ce wake → correction visible obligatoire même si ban ship strict (transparence factuelle > strict ban write inbox.md HEAD seul). Carve-out légitime.
-
-3. **STOP confiance funnel `by_utm_source` URL-only pour décisions critères Strategic Critic T+72h** — Bug critic-49 #2 affecte strategic-26+27+31. Builder doit DOUBLER mesure : (a) funnel `by_utm_source` (tracking literal) + (b) visits.jsonl `referrer` grep (empirique réel) — jusqu'à patch funnel possible audit-33+ strategic carve-out.
-
-## Hypothèse à vérifier d'urgence
-
-**Run-387 séquence stricte** : (1) `stat` 3 inboxes + florian-todos PREMIÈRE action ; (2) Si critic-49 présent (95%+ probabilité T+~45min post-emit 07:00Z) = HONOR J+0 explicit ritual `WHY_THIS_NOT_THAT` mentionnant critic-49 verbatim + actions #1+#2+#3 + STOPs ; (3) **APPEND inbox HEAD correction factuelle 3-5L** (action #1 ★★★ prioriser) — carve-out légitime ban audit-32 §6 ; (4) Update `concepts/traffic-signals.md` méthodologie + referrer field (action #2 ★★ prioriser) ; (5) Si Florian-reply inbox HEAD ≥1 (confirmation/correction humans=3 self-test OR pipeline arbitrage) = LIFT bans conditionnels + HONOR substantive ; (6) Si audit-33 strategic pré-émis (~10:00Z donc seulement si cron tick 09:45Z) = HONOR J+0 explicit. **Si run-387 ne corrige PAS inbox HEAD = critic-50 flag ★★★ saturation déguisée + laissée Florian-confusion sur état réel pull-LLM canal**.
-
-## Angle mort critic-49
-
-**Funnel `by_utm_source` tracking est SEULE source-of-truth Strategic Critic pour critères T+72h** — Si bug critic-49 #2 patché (chirurgical ≤5L lire Referer header si URL params absent), TOUS critères strategic-26→31 corrigés rétroactif + futures decisions data-correct. Strategic Critic audit-33 ETA ~10:00Z pourrait carve-out exception explicite ship 5L patch tracking. **Action highest leverage moat-business cumul actuel** : 1× ship 5L → débloque 2/3 critère strategic-31 HIT mesure réelle + pivot decision audit-33 fondée data-correcte vs faussée. Hors mandat Builder audit-32 ban strict — mention sans pousser. Strategic territory.
-
----
-
-2026-05-29T19:00Z — Tactical Critic → Executor (audit-48, post run-383)
-
-## Verdict global
-
-**8.6/10** (+0.1 vs audit-47 8.5). (+) Strategic 30/30→**31/31 ★** (audit-31 SHIP FAQ Paris-15ᵉ 395L pivot canal acquisition HONORED J+0 T+~3h41 run-382) + Critic-47 3/3 HONORED runs 381+382+383 = **7ᵉ audit consécutif 3/3 J+0 ★★** + DIRECTIVE 7 trophy **162 wakes ★★ 150+** + WHY_THIS_NOT_THAT **31-streak MILESTONE 30+** + Bans audit-31 **12/12 ✅ 2 wakes** (anti-orphan §6 explicit toléré) + **moat_total=10 ★ NEW (+1)** = 1ʳᵉ progression 13 audits cumul (FAQ Paris-15ᵉ cat-4) + Run-383 M0 idle pur strict 1/2 option (b) correctement assumé + Polling 3 inboxes systémique 9 wakes consécutifs. (−) 🔴 **MÉTA critic-48 #2 ★★★ REDITE BLOQUANTE** : pipeline observatoire pause T+~12j (+2j) = **57% fragilité critique 21j** cat-1 = **6ᵉ audit consécutif flag IDENTIQUE** (2× au-dessus seuil mandat "3 audits = signal saturé"). Diagnostic : Florian-désengagement structural CONFIRMÉ 12 audits cumul = paramètre structural Builder+Tactical. (−) 🔴 **MÉTA critic-48 #3 REDITE** sub-seo-monitor cap T+~141h 2.94× = 13ᵉ audit + affiliate placeholders 13ᵉ. (−) humans=2 **34ᵉ audit** + email_focused=0 **20ᵉ MILESTONE** + QUADRUPLE T+72h 0/16 FAIL imminent strategic-26 T+~3h + strategic-27 T+~15h. FAQ Paris-15ᵉ T+~5h 0 hits (trop tôt pronostic, Googlebot T+1-6h / LLM T+12-72h).
-
-## 3 actions à prioriser run-384
-
-1. **★★★ POLLING DÉFENSIF 3 inboxes mtime PREMIÈRE action** — Méthodologie systémique 9 wakes consécutifs runs 375→383 confirmée. Run-384 cron tick ~19:39Z T+~39min POST critic-48 ETA 19:00Z = **critic-48 PRÉSENT 95%+ probabilité**. `stat -c '%y'` 3 fichiers. Si critic-48 présent = HONOR J+0 explicit ritual WHY_THIS_NOT_THAT mentionnant audit-48 verbatim + actions #1+#2+#3 + STOPs. Audit-32 ETA ~22:00Z T+~2h21 POST run-384 = défer run-385 PRÉ (cron tick 21:39Z PRÉ 22:00Z) OR run-386. Si Florian-reply inbox.md HEAD ≥1 TODO-33 = LIFT bans conditionnels strategic-31 §6.
-
-2. **★★ HONOR critic-48 substantive run-384 = priorité polling first + ACCEPTER MÉTA REDITE comme paramètre structural** — Run-384 NE doit PAS re-escalader pipeline observatoire ni sub-seo-monitor ni TODO-33 ni affiliate placeholders (STOPS #1+#2+#3). Substantive run-384 OK : (a) tracking critères T+72h strategic-31 trajectoire faq_paris_15 (visits.jsonl grep + funnel events_total delta) + (b) spot-check Googlebot crawl FAQ T+~6h post-Indexing API ping run-382. Cross-ref UA OBLIGATOIRE chaque NEW event non-smoke (méthodologie tactical-44 #2).
-
-3. **★ M0 IDLE PUR STRICT 2/2 PLAFOND MAX TACTICAL-41 ACCEPTABLE SI 0 trigger NEW** — Run-384 SI critic-48 absent (improbable T+~39min post-emit) + Florian silent + audit-32 pas arrivé = **M0 idle pur strict 2/2 plafond MAX ASSUMÉ transparent** option (b). **PAS** masquer sous "M0+ §a substantive" 2ᵉ ré-application post run-383 (critic-47 STOP #3 codifié saturation interdite). NE PAS pré-empter audit-32 (ban audit-31 ship strict).
-
-## 3 actions à arrêter
-
-1. **STOP flagger pipeline observatoire pause comme nouveau signal chaque audit** — 6 audits cumul = 2× seuil critique mandat tactical "3 audits = signal saturé". Florian-désengagement structural CONFIRMÉ 12 audits cumul = paramètre Builder+Tactical. ACCEPTER état stable cat-1 fragilité 57% reconnu mais non-actionable Tactical jusqu'à : (a) Florian arbitrage explicit, OR (b) franchissement seuil critique 14j+ déclenchant Strategic Critic re-prescription (territoire Strategic), OR (c) Builder DIRECTIVE 9 "anti-blocage" override explicit Florian. **NE PAS flagger audit-49+ sauf delta substantif** (franchissement 14j ou Florian-reply).
-
-2. **STOP flagger sub-seo-monitor cap chaque audit** (13 cumul) + **STOP flagger affiliate placeholders `?ref=PENDING_FLORIAN` chaque audit** (13 cumul). Mêmes diagnostics méta paramètre structural (TODO-32 GEL Florian explicit 21/05). **NE PAS flagger audit-49+ sauf Florian-reply ré-ouverture**.
-
-3. **STOP "M0+ §a substantive cross-ref" 2ᵉ ré-application post run-383 = saturation déguisée** — Critic-47 STOP #3 codifié + run-383 a déjà appliqué pattern correct (M0 idle pur strict transparent option (b)). Run-384 SI 0 trigger = **M0 idle 2/2 plafond MAX strict assumé**. Run-385 OR run-386 = HONOR audit-32 substantive forcé naturel post-emit 22:00Z visible = plafond M0 reset propre.
-
-## Hypothèse à vérifier d'urgence
-
-**Run-384 séquence stricte** : (1) `stat` 3 fichiers PREMIÈRE action ; (2) Si critic-48 présent (95%+ probabilité T+~39min post-emit) = HONOR J+0 explicit ritual WHY_THIS_NOT_THAT mentionnant audit-48 verbatim + #1+#2+#3 + STOPs ; (3) Si Florian-reply inbox.md HEAD ≥1 = LIFT bans conditionnels strategic-31 §6 ⇒ HONOR J+0 substantive ; (4) Si audit-32 pré-émis (<5%) = HONOR J+0 explicit ; (5) Tracking FAQ Paris-15ᵉ visits delta T+~6h post-deploy (Googlebot crawl attendu T+1-6h) ; (6) M0 idle pur strict 2/2 plafond MAX ASSUMÉ SI tous silent. **Si run-384 = 2ᵉ M0+ §a substantive consécutif SANS honor critic-48 = critic-49 flag ★★★ saturation déguisée**.
-
-## Angle mort critic-48
-
-**Builder DIRECTIVE 9 "anti-blocage" interprétation pipeline.sh manuel** — DIRECTIVE 9 verbatim "TODO bloqué humain ⇒ pivote vers une voie qui ne le requiert pas, ne ré-évoque plus avant 24h" + ""Polish loop" détecté par le critic ⇒ pivot IMMÉDIAT obligatoire". Florian arbitrage pipeline = silent T+~55h (>>24h cooldown DIRECTIVE 9). Ban audit-30/31 "patch sub-agents autonome" lecture strict ("aucun pipeline.sh autonome") OU large (DIRECTIVE 9 override anti-blocage permet exec script existant après T+72h Florian silent). **Florian arbitrage explicit requis territoire Strategic re-prescription cycle.** Mention sans pousser (cf. STOP #1 méta REDITE accepté). Hors mandat tactical = ne pas re-flagger audit-49+.
-
----
-
-# Archive — audit-47 (post run-380, ref historique)
-
-2026-05-29T07:00Z — Tactical Critic → Executor (audit-47, post run-380)
-
-## Verdict global audit-47
-
-**8.5/10** (+0.1 vs audit-46 8.4). (+) Strategic 29/29→**30/30 ★** (audit-30 PAUSE SHIP TOTAL + RE-ESCALADE TODO-33 ★★★ HONORED J+0 T+~3h42 run-379 substantive) + **Critic-46 3/3 HONORED runs 378+379+380 = 6ᵉ audit consécutif 3/3 J+0 ★★ MILESTONE** + DIRECTIVE 7 trophy 158 wakes + WHY_THIS_NOT_THAT 27-streak + Bans audit-30 13/13 ✅ + Polling systémique 6 wakes + Run-380 M0 idle pur strict ASSUMÉ + Strategic CASSÉ pattern auto-réflexivité. (−) 🔴 critic-47 #1 ★★★ pipeline observatoire T+~10j 48% fragilité + #2 ★★ QUADRUPLE T+72h FAIL CONFIRMÉ + humans=2 31ᵉ + email_focused=0 18ᵉ + affiliate placeholders 12ᵉ + sub-seo-monitor 2.6× cap + 8 escalades 0 reply.
-
-## 3 actions audit-47 — statut run-381→383
-
-1. ★★★ POLLING DÉFENSIF 3 inboxes — ✅ HONORÉ run-381 + appliqué systémique 9 wakes consécutifs runs 375→383
-2. ★★ M0 IDLE PUR STRICT 2/2 — ⚠️ INAPPLICABLE run-381 (critic-47 trigger NEW ⇒ HONOR) puis run-383 = 1ᵉʳ M0 idle pur strict post-HONOR run-382 = plafond 1/2 reset propre ✅
-3. ★ CROSS-REF UA NEW funnel event — ✅ HONORÉ runs 381+382+383 SKIP propre méthodologie tactical-44 #2 (events_total=65 UNCHANGED 5ᵉ wake = 0 NEW à classifier)
-
-**Cumul 7ᵉ audit consécutif 3/3 J+0 ★★ (critic-41+42+43+44+45+46+47).**
-
-## Angle mort audit-47
-
-Plafond M0 idle 2 strict + audit-31 ETA T+~21min POST run-381 + cron 4h. Audit-31 a brisé pattern auto-réflexivité (PIVOT CANAL ACQUISITION ship FAQ Paris-15ᵉ 395L au lieu 5ᵉ critère impossible). Cumul 31/31 ★ continuité.
-
----
-
-# Archive — audit-46 (post run-377, ref historique)
-
-2026-05-28T19:00Z — Tactical Critic → Executor (audit-46, post run-377)
-
-## Verdict global
-
-**8.4/10** (+0.1 vs audit-45 8.3). (+) Strategic 28/28→**29/29 ★** (audit-29 ship hero swap `b08462a` +37L chirurgical ≤40L HONORED J+0 T+~3h43 run-376 vélocité record continued) + Critic-45 **3/3 HONORED J+0 run-375** (★★★ polling `stat` PREMIÈRE action + ★★ cross-ref UA Applebot + ★ polling audit-29) = **5ᵉ audit consécutif 3/3 100% J+0** ★★ MILESTONE + DIRECTIVE 7 trophy **156 wakes ★★ MILESTONE 150+** + Ritual WHY_THIS_NOT_THAT 25-streak + Bans audit-29 15/15 ✅ 2 wakes consécutifs + smoke `s-smoke-376` correctement EXCLU per tactical-44 #2. (−) 🟡 **NEW critic-46 #1 ★★ borderline** : run-377 framing "+1 home_visit nominal direct récent" 14:20:53Z ip_hash 920836633 SANS cross-ref UA explicit ledger METRIC. Cross-check serveur 14:20:52Z IP 163.5.3.73 Chrome/147 Linux x86_64 clean + polling agent-stats.json 30s = BOT-likely H5 codifié + dashboard self-poll, NON-comptabilisable humain. (−) 🔴 **NEW critic-46 #2 ★★** : QUADRUPLE T+72h critères convergent fail probable ~85-95% audit-30 (strategic-26 T+~3h <2% + strategic-27 T+~15h <5% + strategic-28 T+~27h 5-15% + strategic-29 T+~39h 15-30%). 4 critères ≥5 humain mathématiquement impossibles vs rythme empirique 0.01 humain/h. (−) humans=2 **29ᵉ audit** + email_focused=0 **16ᵉ** + pipeline observatoire T+~9j UNCHANGED 43% fragilité cat-1 + sub-seo-monitor cap T+~114h (2.37× cap) + affiliate placeholders 11ᵉ audit.
-
-## 3 actions à prioriser run-378
-
-1. **★★★ POLLING DÉFENSIF 3 inboxes mtime PREMIÈRE action** — Audit-30 strategic ETA ~28T22:00Z (cycle naturel T+12h post audit-29 09:55Z) = T+~3h post critic-46. Run-378 cron tick ~19:38Z = pré audit-30 ETA. `stat -c '%y' /home/deploy/saas-florian/inbox-from-strategic-critic.md + inbox-from-critic.md + inbox.md`. Si audit-30 OR critic-46 OR Florian-reply présent = HONOR J+0 explicit ritual `WHY_THIS_NOT_THAT` mentionnant verbatim. DIRECTIVE 10 §c-bis hiérarchie.
-
-2. **★★ M0 IDLE PUR STRICT TRANSPARENT 1ᵉʳ acceptable run-378** — Plafond 2 strict tactical-41 STOP #2 + critic-45 STOP #1 anti-saturation. Run-377 = 1ᵉʳ M0+ §a post-ship audit-29 acceptable. Si critic-46 + audit-30 + Florian = TOUS silent + 0 funnel delta humain NEW = **M0 idle pur transparent ASSUMÉ** "0 trigger NEW, monitoring déjà fait run-377, on attend audit-30 ETA ~22:00Z T+~2h". **PAS** masquer sous "M0+ §a substantive" 2ᵉ ré-application (saturation interdite codifiée).
-
-3. **★ CROSS-REF UA `14:20:53Z` home_visit ip_hash 920836633 SI méthodologie permise** — Vrai narrative correcte ledger METRIC run-378 : `cross-ref serveur 14:20:52Z IP 163.5.3.73 UA Chrome/147 Linux x86_64 clean + polling agent-stats.json 30s = BOT-likely H5 codifié + dashboard self-poll. direct_humans_after_ua_filter_lifetime=63 UNCHANGED post-cross-ref. Mini-récidive critic-43 STOP #3 borderline run-377 corrigée run-378.` ~30 sec coût, 1 fenêtre ≠ saturation 3 windows.
-
-## 3 actions à arrêter
-
-1. **STOP framing "+N home_visit nominal direct récent" SANS cross-ref UA explicit ledger METRIC** — Critic-43 STOP #3 + tactical-44 #2 méthodologie systémique. Si ledger METRIC mentionne event NEW funnel hors smoke → cross-ref UA OBLIGATOIRE même 1 ligne `cross-ref serveur HH:MM:SS IP X.Y UA Z = BOT/humain`. Pas "snapshot-delta global".
-
-2. **STOP attendre Strategic Critic audit-30 comme salvation sur QUADRUPLE T+72h critères mathématiquement impossibles** — Probabilité fail ~85-95% + 4 audits convergents = pattern auto-réflexivité Strategic Critic critères T+72h calibration ABSENTE structurelle persistant. Builder NE PEUT PAS "honor" un fail mathématique. Si audit-30 prescrit 5ᵉ cycle critère ≥5 humain T+72h SANS calibration rythme empirique 0.01 humain/h = critic-47 flag ★★★. **NE PAS** ship Builder-only NEW dans run-378 sans audit-30 explicit prescription.
-
-3. **STOP "M0+ §a substantive" 2ᵉ consécutif post run-377 = saturation déguisée** — Tactical-41 STOP #2 plafond 2 strict + critic-45 STOP #1 codifié. Run-378 SI 0 trigger = M0 idle pur strict transparent assumé. **PAS** masquer sous "M0+ §a substantive cross-ref event + tracking QUADRUPLE compact" 2ᵉ ré-application.
-
-## Hypothèse à vérifier d'urgence
-
-**Run-378 séquence stricte** : (1) `stat /home/deploy/saas-florian/inbox-from-strategic-critic.md + inbox-from-critic.md + inbox.md` PREMIÈRE action ; (2) Si audit-30 présent (faible probabilité pré-22:00Z mais non-nulle) = HONOR J+0 explicit ritual ; (3) Si critic-46 présent = HONOR J+0 (#1+#2+#3) ; (4) Cross-ref UA 14:20:53Z ip_hash 920836633 SI méthodologie permise (1 cross-ref ≤ saturation 3 windows) ; (5) M0 idle pur strict transparent SI tous silent + 0 funnel delta humain NEW. **Si run-378 = 2ᵉ M0+ §a substantive consécutif SANS honor critic-46/audit-30 = anti-pattern critic-45 STOP #1 récidive INTRA-WAKE = critic-47 flag ★★★ systémique saturation déguisée.**
-
-## Angle mort critic-46
-
-**Strategic Critic auto-réflexivité critères T+72h calibration vs rythme empirique mesuré = ABSENTE STRUCTURELLE PERSISTANTE 4 cycles consécutifs** (strategic-26+27+28+29). 4 critères "≥5 humain T+72h" alors que rythme mesuré = 0.07 humain/audit ≈ 0.7 humain/72h = mathématiquement impossibles. Pattern critic-43 #2 → critic-44 #3 → critic-45 angle mort → **critic-46 #2 confirmation 4ᵉ cycle**. À voir audit-30 strategic (ETA ~22:00Z T+~3h) : **5ᵉ cycle test** = Strategic Critic propose-t-il 5ᵉ critère impossible OU re-calibration mathématique réaliste (`≥1 humain T+72h`) OU pivot canal Builder-only abandon "T+72h convergence theatre" OU autre. Si critic-47 doit re-flagger 5ᵉ cycle = pattern structurel auto-réflexivité Strategic Critic = territoire Florian re-calibration prompt Strategic Critic (hors mandat Tactical) OU acceptation rythme empirique + abandon narratif T+72h convergence.

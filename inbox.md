@@ -1,3 +1,21 @@
+## 🎯🎯🎯 2026-06-02T19:55Z — Agent → Florian — **PREMIER SUBSCRIBER LIFETIME ★★★ + HUMAIN N°4 confirmé Marseille FR**
+
+**Critic-56 #1 ★★★ honored J+0 T+~1h post-drop** : cross-ref UA session `s-mpwgf59g-5zfeg` ip_hash `6061608912` UA Win10+Edg/148 desktop 06-02T09:47Z → **TRIPLE découverte majeure** :
+
+1. **`subscribers_lifetime = 0 → 1 ★★★`** : `sogibim@hotmail.com` topic `dpe-bailleur` source `dpe-fiabilite.html` 09:49:17Z = **PREMIER subscriber lifetime POST-purge run-214** (avant : 0 depuis 32+ wakes). Email plausible humain. NE PAS dédupliquer = vrai signal produit-fit subscribe.
+
+2. **`humans_engaged_lifetime = 3 → 4 ★`** : profil = humain FR Marseille (IP `188.231.2.115` AS44407 Linkt SAS résidentiel/B2B FR confirmé via ipinfo.io). Pattern lecture humaine : Q1=26s lecture + Q2-Q5 ~3s chaque + verdict warn + 2× email focused home (sans submit) + navigation cohérente 4 pages en 3 min (`/` → `/dpe-fiabilite` → `/preavis-bail` → `/irl-revision-loyer`) → subscribe sur dpe-fiabilite. UA standard Edge desktop pas spoofé. → critère strategic-39 T+72h #3 `humans_engaged ≥ 4` **SATISFAIT J+1** (deadline 2026-06-05T10:30Z).
+
+3. **Bug instrumentation funnel détecté** : `email_submitted` pas tracké côté `dpe-fiabilite.html` (POST /api/subscribe 200 server log mais 0 funnel event correspondant). 73 fichiers HTML ont inline `fetch('/api/subscribe')` sans trackFunnel post-success. **Tactical-43 cross-ref UA méthodologie a permis cette détection — sans elle, signal #1 manqué**. Fix scope = 73 fichiers → ajouté `florian-todos.md` TODO-37 ★ (pas wake-fixable single shot, défer 1 wake dédié).
+
+**Anti-spam-context** : profile humain mix locataire+bailleur (subscribe topic `dpe-bailleur` source dpe-fiabilite.html après verdict home warn). Voie B locataire-first ≠ exclu bailleurs curieux. Subscriber = subscriber.
+
+**Ce que je fais maintenant** : (a) update KPIs + ledger ; (b) PAS de patch CTA verdict→email home cette wake (ban audit-39 🚫 touch home ; audit-40 ETA ~22:00Z T+~2h lèvera/redéfinira) ; (c) defer instrumentation fix wake dédié post-audit-40.
+
+**0 action Florian requise** — signal informationnel + classification objective.
+
+---
+
 ## 🔍 2026-06-02T17:55Z — Agent → Florian — FYI factuel `encadrement-loyer-echirolles-2026.html`
 
 Pendant l'enrich Échirolles (Phase 1 brief 06-01T15:45Z) j'ai noté une affirmation potentiellement trompeuse de la page existante (run-414) : *"votre loyer est soumis à l'encadrement légal des loyers depuis le 1er septembre 2023"* avec mention "secteurs OLAP". À ma connaissance, **Grenoble-Alpes Métropole a postulé pour l'expérimentation ELAN art 140 mais aucun arrêté préfectoral spécifique n'a été pris** (contrairement à Paris, Lille, Lyon/Villeurbanne, Bordeaux, Montpellier, Plaine Commune, Est Ensemble qui ont obtenu l'arrêté). Échirolles reste néanmoins **zone tendue (décret 2013-392)** = plafond hausse renouvellement loi 89-462 art. 17-2 + préavis 1 mois.

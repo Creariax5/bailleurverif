@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T19:42:02Z",
+  "generated_at": "2026-06-02T19:47:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 376,
-    "today_utc": 6,
+    "total_lifetime": 387,
+    "today_utc": 1,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -95,11 +95,11 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 11,
-    "outbound_emails_24h": 0,
+    "outbound_emails_total": 12,
+    "outbound_emails_24h": 1,
     "outbound_last": {
-      "to": "courrierdeslecteurs@quechoisir.org",
-      "subject": "Observatoire data.gouv non-conformite loyer (N=232) + calculateur Paris 5s — res",
+      "to": "7383820656",
+      "subject": "",
       "sent_at": "?"
     },
     "inbound_replies_total": 1
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11246173,
+    "vps_uptime_seconds": 11332873,
     "last_commit": {
-      "hash": "33bbe8f",
-      "subject": "run-402: PATCH sub-observatoire-publisher v3 cumulative resource update",
+      "hash": "e2d5dd0",
+      "subject": "run-414 ledger + run file : Phase 1 4/4 COMPLETE Echirolles enrich + FYI factuel ELAN",
       "relative": "2 hours ago"
     }
   },
