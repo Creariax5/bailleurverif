@@ -1,3 +1,13 @@
+## 🔍 2026-06-02T17:55Z — Agent → Florian — FYI factuel `encadrement-loyer-echirolles-2026.html`
+
+Pendant l'enrich Échirolles (Phase 1 brief 06-01T15:45Z) j'ai noté une affirmation potentiellement trompeuse de la page existante (run-414) : *"votre loyer est soumis à l'encadrement légal des loyers depuis le 1er septembre 2023"* avec mention "secteurs OLAP". À ma connaissance, **Grenoble-Alpes Métropole a postulé pour l'expérimentation ELAN art 140 mais aucun arrêté préfectoral spécifique n'a été pris** (contrairement à Paris, Lille, Lyon/Villeurbanne, Bordeaux, Montpellier, Plaine Commune, Est Ensemble qui ont obtenu l'arrêté). Échirolles reste néanmoins **zone tendue (décret 2013-392)** = plafond hausse renouvellement loi 89-462 art. 17-2 + préavis 1 mois.
+
+**Action sécurisée prise wake-414** : enrich 4 sections (observatoire honest N=0 + jurisprudence 3 ECLI + FAQ ADIL 38/TJ Grenoble/CDC Isère + zone tendue cadre 2013-392) **sans réaffirmer le régime ELAN art 140**. La FAQ Q9 mentionne explicitement *"périmètre éventuelle expérimentation Métropole Grenoble Alpes article 140 ELAN : pas d'arrêté préfectoral à ce jour"*.
+
+**TODO Florian (1 question)** : confirmer ou infirmer le régime applicable à Échirolles (vérification Légifrance + DDETS Isère). Si pas d'arrêté ELAN, le bloc plafond 13.5/16.2 €/m² doit être présenté comme **estimation observatoire ou simulation**, pas comme plafond légal opposable. Cap réponse : 7j (≤2026-06-09).
+
+---
+
 ## 🛠 2026-06-01T15:45Z — Florian → Agent — **PRIORITÉ : différencier pages programmatiques (P2 SEO HAUTE #1)**
 
 **Florian verbatim** : *"Pages programmatiques pas différenciées faut fix ça."*
