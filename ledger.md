@@ -2316,3 +2316,26 @@ TRACK | home→q1 friction H6 NEW | 93.3% bounce home pas q1 = bottleneck #1 fun
 TRACK | next critic-56 ETA | ~13:00-15:00Z T+~3-5h | next strategic audit-39 ETA ~22:00Z T+~12h
 BAN | audit-38 10/10 strict respected J+1 3ᵉ wake | 🚫 monétisation 🚫 Reddit-re-escalade 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 Indexing API ping renouvelé | inbox.md edit + ledger + run = artefacts mémoire (pas code prod ni NEW FILE city-page)
 NEXT | run-411 si critic-56 ≤T+5h ⇒ honor #1 ; sinon Phase 1 Florian brief Lille (21 imp) differentiation 4 sections data locale unique (observatoire Lille + arrêté préfectoral exact + FAQ 8 Q/R DILA + jurisprudence CA Douai) P2 SEO substantif | defer Echirolles ≥ run-412 cadence "1 page/wake substantif"
+
+## run-411 — 2026-06-02T11:40Z
+
+SHIP | wedge-tool/static/lille-dpe-f-g-interdit-location.html +150L (367→516) | strategic-39 §6 HONORED J+0 T+~1h10 + Phase 1 brief Florian 06-01T15:45Z J+1 ship #2 | 4 sections data locale unique : observatoire BV N=59 28.8% clear 7.86 €/m² 8 DPE risqués + statut légal Lille 2026 (zone tendue + permis louer zoné + encadrement expérimental + DPE national) + FAQ 8 Q/R Lille (ADIL 59 / TJ Lille / permis louer quartiers / DPE bail / complément loyer / SCHS / négo F / LRAR) + jurisprudence CA Douai 3 ECLI Cass civ 3e (2019x2+2023) Légifrance liens
+EDIT | JSON-LD FAQPage mainEntity 6→11 Q/R (placeholder "{ville}"→"Lille" + 5 NEW Lille-specific Rich Results) | extension SEO compounding P2 | dateModified 2026-05-16→2026-06-02
+COMMIT | b15eaac "run-411 strategic-39 honored: enrich Lille DPE page +4 sections data locale unique" + git push e5a8ca6..b15eaac main->main OK GH_TOKEN | smoke prod HTTP/2 200 + 1 match nouvelle section heading ✅
+ACTION | Indexing API ping Lille URL (1/1 success) | ban audit-39 "Indexing API >1 URL Lille" → 1 URL exact autorisé | URL_UPDATED valable contenu substantif +150L
+METRIC | strategic_critic_recommendations_followed_cumul | 38/38 → 39/39 ★ | 13ᵉ J+0 consécutif (objectif strategic-39 §6)
+METRIC | code_lines_shipped_prod_lifetime | +150 (Lille 367→516) | substantive ship P2 SEO COMPOUNDING différenciation programmatique
+METRIC | florian_recalibrage_pilier2_seo_diff_ships_lifetime | 0→1 NEW★ | 1ʳᵉ vraie différenciation programmatique post-Florian brief 06-01T15:45Z (Marseille run-405 5% complétion sectoriel ≠ Phase 1 Lille direct)
+METRIC | lille_faq_qr_count_visible | 5→13 (+8) | FAQ Lille-specific section 3 strategic-39 §6
+METRIC | lille_jurisprudence_ecli_displayed | 0→3 ★ | section 4 strategic-39 §6 (ECLI:FR:CCASS:2019:C300983 + :C300182 + 2023:C300425 issus corpus Judilibre templates run-287)
+METRIC | indexing_api_pings_lifetime | +1 Lille URL | quota wake autorisé strategic-39 carve-out
+METRIC | wakes_total | 410→411
+METRIC | directive_7_revisee_consecutive | 187→188 ★★
+METRIC | why_this_not_that_streak | 56→57 ★ | section WHY_THIS_NOT_THAT 6 sous-décisions explicites (enrich-not-new + 4-sections + ECLI-Cass + zone-tendue-honesty + JSON-LD-same-wake + 1-ping)
+RITUAL | WHY_THIS_NOT_THAT | 57-streak post-run-411 | strategic-39 §6 4 sections explicit > "arrêté préfectoral DPE" littéral fabricated (DPE national zéro dérogation préfectorale = reframe honnête zone tendue+permis louer+expé encadrement)
+TRACK | Lille critère T+72h strategic-39 | deadline 2026-06-05T10:30Z | lille_gsc_impressions_delta ≥ +20% OR lille_human_session ≥ 3 OR humans_engaged_lifetime ≥ 4 — échec ⇒ pivot audit-40 canal acquisition OU sharpen CTA email
+TRACK | Paris-2026 CTR delta GSC T+7-14j | deadline 2026-06-09→2026-06-16 UNCHANGED
+TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z encore J+2.4 UNCHANGED
+TRACK | next critic-56 ETA | ~13:00-15:00Z T+~1.5-3.5h | next strategic audit-40 ETA ~22:00Z T+~10.5h
+BAN | audit-39 14/14 strict respected | 🚫 NEW FILE city-page (edit existant) 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 touch home/scan-url/share-card | Indexing API 1 URL Lille exact (carve-out autorisé)
+NEXT | run-412 si critic-56 ≤T+1.5h ⇒ honor #1 ; sinon Phase 1 continuation enrich Villeurbanne 2026 OU Echirolles 2026 (cadence "1 page/wake substantif" brief Florian) ; + update concept seo-discipline.md règle "≥4 sections data locale unique programmatique" pattern Lille run-411 template + spot-check GSC Lille T+24h impressions delta proxy intermédiaire
