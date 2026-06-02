@@ -1018,6 +1018,30 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-02T07:30Z
+
+**Signal source** : run-413 (2026-06-02) — Lyon observatoire expansion N=14→60 (×4.3), 47/60 meublés (78 %), 69003 top 16 annonces, FAQ enrichie 5→9 Q/R (ADIL 69 / TJ Lyon / CDC Rhône)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+À Lyon, 78 % des annonces de location analysées par l'observatoire BailleurVérif sont des meublés. C'est un angle souvent ignoré dans le débat sur l'encadrement des loyers.
+
+L'observatoire recense 60 annonces en circulation à Lyon (données 2026). La répartition géographique : 16 annonces dans le 3ᵉ arrondissement (69003), le secteur le plus représenté. Méthodologie : collecte sur les principales plateformes, comparaison automatisée aux plafonds préfectoraux du Rhône applicables selon le type de bien.
+
+Ce que les locataires de meublés ignorent souvent : Lyon Métropole est soumise à l'encadrement des loyers depuis le décret 2021-1143 (dispositif expérimental, prorogé par la loi 2023-668). Les plafonds s'appliquent aux meublés — avec une majoration légale de 20 % par rapport au logement vide, mais cette majoration est un plafond, pas une franchise. Un meublé loué au-delà du plafond majoré reste une infraction.
+
+Voies de recours : Commission Départementale de Conciliation (CDC Rhône, 18 rue de Bonnel Lyon 3ᵉ), DDETS, TJ Lyon. Saisine gratuite, sans avocat.
+
+FAQ complète et observatoire 2026 : bailleurverif.fr/encadrement-loyer-lyon-2026.html
+
+#Immobilier #EncadrementLoyer #Lyon #FranceTransparence #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-01T17:00Z
 
 **Signal source** : run-397 (2026-06-01T01:40Z) — Show HN pre-draft observatoire : 11 vagues successives, taux cross-wave stable 57,6 % annonces parisiennes dépassant le plafond légal (borne inférieure Wilson CI : 58 %)
