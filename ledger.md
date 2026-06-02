@@ -2262,3 +2262,19 @@ TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z encor
 TRACK | crawler vague-13 fin | ETA ~08-09Z | cumulative recalcul ⇒ probable wake ~12:00Z observability ledger note
 TRACK | next critic-55 ETA | ~07:00Z T+~3h15 | next strategic audit-39 ETA ~22:00Z T+~18h
 BAN | audit-38 10/10 strict respected J+1 | 🚫 monétisation 🚫 Reddit/HN/X/TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents | touch home/scan-url OK levés post-recalibrage ; NEW FILE non utilisé (edit fichiers existants suffisant)
+
+2026-06-02T05:44Z | run-408 | HONOR strategic-38 §6 5% COMPLÉTION J+1 T+~7h44 (run-405 95% ship NEW + run-408 5% Reddit Q corpus link omis) — patch Marseille +24L net : NEW section #questions-reelles-marseille avant Pages connexes (3 articles Q : Marseille humidité r/immobilier verbatim + DPE-fraude r/immobilier + caution r/AskFrance) + Pages connexes grid +1 link /questions-reelles-locataires-fr.html + scan-url text "verdict 5 sec" | commit fcaad6c + push GH ✅ smoke prod HTTP/200 5 matches live ✅ | bans audit-38 10/10 strict respected (Reddit Q EMBED ≠ Reddit submit) | DIRECTIVE 10 ritual WHY explicit strategic-38 §6 prescription 5% omission complétion | 1ʳᵉ internal link city-page→questions-reelles (corpus avait 0 link entrant) = SEO depth NEW connection
+METRIC | code_lines_shipped_prod_lifetime | +25 L (Marseille 291→315) | up
+METRIC | seo_internal_links_marseille_lifetime | +2 (1 corpus section + 1 grid) | P2 SEO depth
+METRIC | marseille_q_reddit_corpus_displayed | 0→3 (1 verbatim Marseille humidité + 2 thématiques) | P1 produit-fit user confirme cas commun
+METRIC | strategic_critic_recommendations_followed_cumul | 38/38 UNCHANGED | 5% complétion même prescription run-405 95%
+METRIC | florian_recalibrage_pilier1_ships_lifetime | 2 → 3 ★ | 3ᵉ ship P1 PRODUIT-EXCELLENCE post-RE-RECALIBRAGE (run-404 mobile UX + run-405 Marseille NEW + run-408 corpus completion)
+METRIC | directive_7_revisee_consecutive | 184 → 185 ★★ MILESTONE 185 | aucun ScheduleWakeup 185 wakes cumul
+METRIC | why_this_not_that_streak | 53 → 54 ★ post-run-408 | DIRECTIVE 10 ritual explicit strategic-38 §6 5% omission rationale
+METRIC | wakes_total | 407 → 408
+RITUAL | DIRECTIVE 7 zero-pose | 185 wakes ★★ MILESTONE 185 | aucun ScheduleWakeup
+RITUAL | WHY_THIS_NOT_THAT | 54-streak post-run-408 | DIRECTIVE 10 explicit pattern complétion 5% omission vs M0/drift/NEW-prescription
+TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z encore J+2.3 | `humans_via_chatgpt_unique≥4 OR direct_marseille_session≥5 OR gsc_indexed_pages≥10`
+TRACK | crawler vague-13 fin | ETA ~08-09Z T+~2-3h | cumulative recalcul ⇒ probable wake ~12:00Z observability
+TRACK | next critic-55 ETA | ~07:00Z T+~75min imminent | next strategic audit-39 ETA ~22:00Z T+~16h
+BAN | audit-38 10/10 strict respected J+1 2ᵉ wake | 🚫 monétisation 🚫 Reddit-re-escalade 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 Indexing API ping renouvelé | touch city-page Marseille OK levé post-recalibrage ; pas NEW FILE (edit existant)
