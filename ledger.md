@@ -2367,3 +2367,27 @@ TRACK | next critic-56 ETA | ~13-15Z passé (T+>8h depuis critic-55 07:00Z) ⇒ 
 TRACK | tactical-55 action #3 (Tag inbox Show HN PRE-DRAFT CANCELLED) | DÉJÀ DONE L389 inbox.md (header tagged "[CANCELLED 2026-06-01T14:35Z per RE-RECALIBRAGE...]") = no-op cette wake | tactical-55 action #2 (produit_excellence_signal + email_field_focused tracking) ≤10s ✅ executed ledger ci-dessus
 BAN | audit-39 14/14 strict respected J+1 4ᵉ wake post-emit | 🚫 NEW FILE city-page (edit existant Villeurbanne) 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 touch home/scan-url/share-card | Indexing API 1 URL Villeurbanne = cohérent pattern Lille run-411 (1 ping par enrich Phase 1 Florian-brief, strict carve-out)
 NEXT | run-413 : si critic-56 ≤T+3h ⇒ honor #1 ; sinon Phase 1 continuation enrich Echirolles 2026 (4ᵉ page imp GSC, 10 imp #4 Florian Phase 1 ordering) ; OU si audit-40 strategic dropped ≤T+4h ⇒ honor strategic ; sinon long-tail Phase 2 ville top observatoire (Lyon-2026 si pas en ban OR Bordeaux/Toulouse/Nantes 2026)
+
+# run-413 — 2026-06-02T15:48Z — Lyon-2026 Phase 2 enrich Florian brief 06-01T15:45Z
+METRIC | wakes_total | 412→413
+METRIC | directive_7_revisee_consecutive | 189→190 ★★ | cron 2h external, NO ScheduleWakeup
+METRIC | why_this_not_that_streak | 58→59 ★ | sections WHY explicites run-413 (Lyon-NOT-Echirolles fake-data-risk + enrich-NOT-NEW + 3-Cass-civ3-judilibre-verified + 4-Q/R-supplémentaires-FAQ-extension + Phase2-fallback-ledger-NEXT-option3)
+METRIC | lyon_2026_faq_qr_count_visible | 5→9 (+4) | NEW ADIL 69 / TJ Lyon / CDC Rhône / loyer-50pct-norme observatoire N=60 +56.8% moyenne
+METRIC | lyon_2026_jurisprudence_ecli_displayed | 1 inline→3 ★ | NEW section dédiée C300657 (encadrement CEDH) + 07-13.034 (prescription 3 ans) + 23-19.572 (charge preuve complément) corpus loyer-abusif.v0 Judilibre-verified
+METRIC | lyon_2026_observatoire_n_displayed | 14→60 (×4.3) | refresh anti-stale + breakdown arrondissements 69003=16 top + 47/60 meublé
+METRIC | code_lines_shipped_prod_lifetime | +36 Lyon | substantive ship P2 SEO COMPOUNDING différenciation programmatique Phase 2
+METRIC | florian_recalibrage_pilier2_seo_diff_ships_lifetime | 2→3 ★ | 3ᵉ enrich Phase 1/2 brief explicit cycle (Lille run-411 + Villeurbanne run-412 + Lyon run-413 Phase 2 top observatoire)
+METRIC | indexing_api_pings_lifetime | +1 Lyon URL | quota daily ok, pattern 1 ping/enrich wake continué
+METRIC | strategic_critic_recommendations_followed_cumul | 39/39 UNCHANGED | pas de nouvelle prescription strategic ce wake ; audit-40 ETA ~22:00Z T+~6h12
+METRIC | florian_briefs_honored_j+1_lifetime | +1 Phase 2 continuation Lyon | 3/3 Phase 1 GSC-imp done + 1/8 Phase 2 top observatoire shipped
+METRIC | produit_excellence_signal | verdict_displayed/wedge_q1_answered = 5/6 = 83.3% lifetime UNCHANGED | tactical-55 #2 honored ≤10s/wake check
+METRIC | email_field_focused_lifetime | 1 sessions_reaching_step UNCHANGED | tactical-55 #2 honored ≤10s/wake check : email_submitted=0 ⇒ funnel bottleneck post-verdict email persiste
+RITUAL | WHY_THIS_NOT_THAT | 59-streak post-run-413 | section dédiée run-413 file ; 4 NOT THAT explicites (Echirolles-fake-data-risk / Bordeaux-Nantes-Toulouse-stale / Paris-fenêtre-mesure / bans-strategic-strict)
+TRACK | Lyon enrich critère T+14j GSC imp delta | deadline 2026-06-16T15:48Z | cible ≥+10 imp ⇒ propage Bordeaux/Nantes/Toulouse pattern
+TRACK | Villeurbanne critère T+14j GSC imp delta | deadline 2026-06-16 UNCHANGED | proxy intermédiaire T+72h via Indexing API recrawl latence 24-48h
+TRACK | Paris-2026 CTR delta GSC T+7-14j | deadline 2026-06-09→2026-06-16 UNCHANGED (run-409 title rewrite f41f448)
+TRACK | Lille critère T+72h strategic-39 | deadline 2026-06-05T10:30Z encore J+2.79
+TRACK | next critic-56 ETA | passé 13-15Z ⇒ probable décalage cycle, prochain wake ≥17:48Z | next strategic audit-40 ETA ~22:00Z T+~6h12
+TRACK | tactical-55 action #3 (Tag inbox Show HN PRE-DRAFT CANCELLED) | DÉJÀ DONE L389 inbox.md (run-412 ledger), no-op cette wake ✓
+BAN | audit-39 14/14 strict respected J+1 5ᵉ wake post-emit | 🚫 NEW FILE city-page (edit existant Lyon) 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 touch home/scan-url/share-card | Indexing API 1 URL Lyon = cohérent pattern Lille/Villeurbanne (1 ping/enrich wake) carve-out strict
+NEXT | run-414 : si critic-56 ≤T+3h ⇒ honor #1 ; sinon audit-40 strategic ≤T+4h ⇒ honor strategic ; sinon Phase 2 ville suivante observatoire top (Bordeaux 2026 si N≥20 + page existante stale OR Nantes 2026 OR Toulouse 2026) après check stat observatoire ; OU enrich Marseille-2026 NEW page (shipped run-405) avec données observatoire si N≥20 (mais critic-55 STOP-7j Marseille thème ≤2026-06-09 ⇒ skip).
