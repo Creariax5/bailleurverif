@@ -2391,3 +2391,31 @@ TRACK | next critic-56 ETA | passé 13-15Z ⇒ probable décalage cycle, prochai
 TRACK | tactical-55 action #3 (Tag inbox Show HN PRE-DRAFT CANCELLED) | DÉJÀ DONE L389 inbox.md (run-412 ledger), no-op cette wake ✓
 BAN | audit-39 14/14 strict respected J+1 5ᵉ wake post-emit | 🚫 NEW FILE city-page (edit existant Lyon) 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 touch home/scan-url/share-card | Indexing API 1 URL Lyon = cohérent pattern Lille/Villeurbanne (1 ping/enrich wake) carve-out strict
 NEXT | run-414 : si critic-56 ≤T+3h ⇒ honor #1 ; sinon audit-40 strategic ≤T+4h ⇒ honor strategic ; sinon Phase 2 ville suivante observatoire top (Bordeaux 2026 si N≥20 + page existante stale OR Nantes 2026 OR Toulouse 2026) après check stat observatoire ; OU enrich Marseille-2026 NEW page (shipped run-405) avec données observatoire si N≥20 (mais critic-55 STOP-7j Marseille thème ≤2026-06-09 ⇒ skip).
+
+# run-414 — 2026-06-02T17:55Z — Echirolles-2026 Phase 1 enrich + FYI factuel ELAN
+METRIC | wakes_total | 413→414
+METRIC | directive_7_revisee_consecutive | 190→191 ★★ | cron 2h external, NO ScheduleWakeup
+METRIC | why_this_not_that_streak | 59→60 ★ | 4 NOT-THAT explicites run-414 : (Echirolles-NOT-Bordeaux-Phase2-car-Florian-explicit-ordering / enrich-NOT-NEW / data-honest-N=0-NOT-fake-N=15 / FYI-FactuelELAN-NOT-edit-page-affirmation)
+METRIC | echirolles_2026_faq_qr_count_visible | 0→9 (+9) NEW | ADIL 38 (04 76 53 37 30) / TJ Grenoble (Place Firmin Gautier) / CDC Isère (DDETS 1 rue Chanrion) / prescription 3 ans / complément loyer / DPE F 2028 / différences Échirolles vs Grenoble
+METRIC | echirolles_2026_jurisprudence_ecli_displayed | 0→3 ★ NEW | section dédiée C300657 (CEDH non-disprop.) + 23-19.572 (charge preuve complément) + 07-13.034 (prescription 3 ans) corpus loyer-abusif.v0 Judilibre-verified
+METRIC | echirolles_2026_observatoire_n_displayed | 0 honest documenté + agglo N=4 (Grenoble 2 + Fontaine 2) + national N=843 baseline | anti-fake pattern Florian brief strict
+METRIC | echirolles_2026_faqpage_jsonld | 0→1 entité ajoutée 8 Q/R structured data | dateModified 2026-05-16→2026-06-02
+METRIC | code_lines_shipped_prod_lifetime | +75 Echirolles | substantive ship P2 SEO COMPOUNDING différenciation Phase 1 FINAL (4/4 pages GSC-imp)
+METRIC | florian_recalibrage_pilier2_seo_diff_ships_lifetime | 3→4 ★ | 4ᵉ enrich cycle (Lille run-411 + Villeurbanne run-412 + Lyon run-413 P2 + Echirolles run-414 P1)
+METRIC | florian_brief_phase1_pages_enriched | 3/4→4/4 ✅ COMPLETE | Paris-2026 title rewrite run-409 + Lille run-411 + Villeurbanne run-412 + Echirolles run-414
+METRIC | indexing_api_pings_lifetime | +1 Echirolles URL HTTP 200 live ✅ | quota daily ok, pattern 1 ping/enrich wake continué (carve-out strict bans audit-39)
+METRIC | strategic_critic_recommendations_followed_cumul | 39/39 UNCHANGED | pas de nouvelle prescription strategic ce wake ; audit-40 ETA ~22:00Z T+~4h05
+METRIC | florian_briefs_honored_j+1_lifetime | +1 Phase 1 FINAL Echirolles | 4/4 Phase 1 GSC-imp done ★★ Phase 1 brief 06-01T15:45Z COMPLETE
+METRIC | produit_excellence_signal | verdict_displayed/wedge_q1_answered = 5/6 = 83.3% lifetime UNCHANGED | tactical-55 #2 honored ≤10s/wake check
+METRIC | email_field_focused_lifetime | 1 sessions_reaching_step UNCHANGED | tactical-55 #2 honored ≤10s/wake check : email_submitted=0 ⇒ funnel bottleneck post-verdict email persiste
+METRIC | florian_factuel_escalation_lifetime | +1 inbox HEAD FYI ELAN art 140 Échirolles ambiguity | cap 7j Florian ≤2026-06-09, action sécurisée prise wake (4 sections enrich sans réaffirmer régime ELAN)
+RITUAL | WHY_THIS_NOT_THAT | 60-streak post-run-414 | 4 NOT THAT explicites
+TRACK | Echirolles enrich critère T+14j GSC imp delta | deadline 2026-06-16T17:55Z | cible ≥+5 imp (base 10 imp) ⇒ Phase 1 4/4 valide concept différenciation
+TRACK | Echirolles FYI ELAN Florian | cap réponse ≤2026-06-09 (J+7) | si confirme pas d'arrêté ELAN ⇒ revoir bloc plafond 13.5/16.2 €/m² Échirolles+Eybens+Fontaine+SMH (formuler estimation vs plafond légal opposable)
+TRACK | Lyon enrich critère T+14j GSC imp delta | deadline 2026-06-16T15:48Z UNCHANGED
+TRACK | Villeurbanne critère T+14j GSC imp delta | deadline 2026-06-16 UNCHANGED
+TRACK | Paris-2026 CTR delta GSC T+7-14j | deadline 2026-06-09→2026-06-16 UNCHANGED (run-409 title rewrite f41f448)
+TRACK | Lille critère T+72h strategic-39 | deadline 2026-06-05T10:30Z encore J+2.67
+TRACK | next critic-56 ETA | passé 13-15Z ⇒ probable décalage cycle, prochain wake ≥19:55Z | next strategic audit-40 ETA ~22:00Z T+~4h05
+BAN | audit-39 14/14 strict respected J+1 6ᵉ wake post-emit | 🚫 NEW FILE city-page (edit existant Echirolles) 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q ≤06-03 (FYI inbox HEAD est UN escalade factuel pas méta-Q processus) 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 touch home/scan-url/share-card | Indexing API 1 URL Echirolles = cohérent pattern Lille/Villeurbanne/Lyon (1 ping/enrich wake) carve-out strict
+NEXT | run-415 : si critic-56 ≤T+3h ⇒ honor #1 ; sinon audit-40 strategic ≤T+4h ⇒ honor strategic ; sinon Phase 2 ville suivante observatoire top — option (a) Bordeaux-2026 enrich Phase 2 (N=42 observatoire 4ᵉ ville après Paris/Lyon/Lille = data riche) si page existe / option (b) Lille-2026 encadrement enrich (vs lille-dpe-f-g-2026 enrich séparée) / option (c) Marseille-2026 — SKIP critic-55 STOP-7j thème ≤06-09. Préférer option (a) Bordeaux si page existe car N≥20 + ville pilote ELAN 2022 (encadrement confirmé légalement).
