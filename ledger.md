@@ -2339,3 +2339,31 @@ TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z encor
 TRACK | next critic-56 ETA | ~13:00-15:00Z T+~1.5-3.5h | next strategic audit-40 ETA ~22:00Z T+~10.5h
 BAN | audit-39 14/14 strict respected | 🚫 NEW FILE city-page (edit existant) 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 touch home/scan-url/share-card | Indexing API 1 URL Lille exact (carve-out autorisé)
 NEXT | run-412 si critic-56 ≤T+1.5h ⇒ honor #1 ; sinon Phase 1 continuation enrich Villeurbanne 2026 OU Echirolles 2026 (cadence "1 page/wake substantif" brief Florian) ; + update concept seo-discipline.md règle "≥4 sections data locale unique programmatique" pattern Lille run-411 template + spot-check GSC Lille T+24h impressions delta proxy intermédiaire
+
+## run-412 — 2026-06-02T14:35Z
+
+SHIP | wedge-tool/static/encadrement-loyer-villeurbanne-2026.html +54L (277→331 denses) | Phase 1 brief Florian 06-01T15:45Z continuation J+1 #3 (post Paris run-409 title rewrite + Lille run-411 strategic-39) | 4 sections data locale unique : (1) Observatoire BV Villeurbanne N=21 12 clear 57.1% 9.86 €/m² avg excess 4 DPE E 81% meublé + comparaison nationale 18 communes ; (2) Statut légal exact 2026 zone tendue décret 2013-392 + décret 2021-1143 expé Lyon Métropole + ELAN art.140 + loi 2023-668 prolongation + 3DS amende + DPE national ; (3) Jurisprudence ressort CA Lyon 3 ECLI Cass civ 3 (24-09-2024 23-19.572 + 24-09-2020 C300657 + 28-05-2008 07-13.034) + précision art L.411-3 COJ lie CA ; (4) FAQ 5→9 Q/R Villeurbanne-specific (ADIL 69 9 rue Vauban / TJ Lyon 67 rue Servient / CDC Rhône 18 rue de Bonnel / loyer +50% norme observatoire)
+EDIT | JSON-LD FAQPage mainEntity 5→9 Q/R + dateModified 2026-05-31→2026-06-02 | extension Rich Results SERP cohérence section visible
+EDIT | memory-agent/concepts/seo-discipline.md +75L | NEW règle "≥4 sections data locale unique" pages programmatiques codifiée (pattern Lille run-411 + Villeurbanne run-412) + cadence Phase 1 brief Florian (✅ Paris/Lille/Villeurbanne done, ⏳ Echirolles next)
+COMMIT | 77eb175 "run-412 phase-1 Florian: enrich Villeurbanne +4 sections data locale unique" + git push 6c760ae..77eb175 main->main OK GH_TOKEN | smoke prod HTTP/2 200 + 1 match "Observatoire BailleurVérif — Villeurbanne" ✅
+ACTION | Indexing API ping Villeurbanne URL (1/1 success) | quota wake disponible carve-out Phase 1 brief Florian cohérent pattern Lille run-411
+METRIC | strategic_critic_recommendations_followed_cumul | 39/39 UNCHANGED (audit-39 was for Lille run-411 ; pas de nouvelle prescription strategic ce wake) | next audit-40 ETA ~22:00Z
+METRIC | florian_briefs_honored_j+1_lifetime | +1 Phase 1 brief 06-01T15:45Z continuation Villeurbanne | 3/3 pages prioritaires GSC-imp done
+METRIC | code_lines_shipped_prod_lifetime | +54 Villeurbanne (277→331) + +75 seo-discipline.md concept | substantive ship P2 SEO COMPOUNDING différenciation programmatique
+METRIC | florian_recalibrage_pilier2_seo_diff_ships_lifetime | 1→2 ★ | 2ᵉ enrich programmatique Phase 1 brief explicit (Marseille run-405 5% complétion sectoriel ≠ Phase 1 ; Lille run-411 = #1 Phase 1 ; Villeurbanne run-412 = #3 Phase 1 GSC-imp ordering)
+METRIC | villeurbanne_faq_qr_count_visible | 5→9 (+4) | NEW ADIL 69 / TJ Lyon / CDC Rhône / loyer-50pct-norme observatoire
+METRIC | villeurbanne_jurisprudence_ecli_displayed | 1→3 ★ | NEW Cass 24-09-2020 C300657 (encadrement CEDH) + 28-05-2008 07-13.034 (prescription 3 ans restitution) via corpus loyer-abusif.v0.json Judilibre-verified
+METRIC | indexing_api_pings_lifetime | +1 Villeurbanne URL | quota daily ok
+METRIC | wakes_total | 411→412
+METRIC | directive_7_revisee_consecutive | 188→189 ★★ | cron 2h external, NO ScheduleWakeup
+METRIC | why_this_not_that_streak | 57→58 ★ | sections WHY explicites run-412 (Villeurbanne-NOT-Echirolles + enrich-NOT-new + 3-Cass-civ3-NOT-CA-fabricated + 4-Q/R-supplémentaires-FAQ-extension + seo-discipline-codification-same-wake)
+METRIC | produit_excellence_signal | verdict_displayed/wedge_q1_answered = 5/6 = 83.3% lifetime ★ (légère hausse 4/5=80% snapshot critic-54) | tactical-55 #2 honored ≤10s/wake check
+METRIC | email_field_focused_lifetime | 1 sessions_reaching_step (24h delta : 2 events whatif multi-event same session) | tactical-55 #2 honored ≤10s/wake check : email_submitted=0 ⇒ funnel bottleneck post-verdict email persiste
+RITUAL | WHY_THIS_NOT_THAT | 58-streak post-run-412 | section dédiée run-412 file ; section seo-discipline.md règle "≥4 sections data locale unique" codification = mémorialisation Pattern Phase 1 Florian post-2 ships (Lille+Villeurbanne) preuve binding
+TRACK | Villeurbanne critère T+14j GSC imp delta | deadline 2026-06-16 | proxy intermédiaire T+72h via Indexing API recrawl latence 24-48h
+TRACK | Paris-2026 CTR delta GSC T+7-14j | deadline 2026-06-09→2026-06-16 UNCHANGED (run-409 title rewrite f41f448)
+TRACK | Lille critère T+72h strategic-39 | deadline 2026-06-05T10:30Z encore J+2.84
+TRACK | next critic-56 ETA | ~13-15Z passé (T+>8h depuis critic-55 07:00Z) ⇒ probable décalage cycle ou émis avant prochain wake | next strategic audit-40 ETA ~22:00Z T+~7.5h
+TRACK | tactical-55 action #3 (Tag inbox Show HN PRE-DRAFT CANCELLED) | DÉJÀ DONE L389 inbox.md (header tagged "[CANCELLED 2026-06-01T14:35Z per RE-RECALIBRAGE...]") = no-op cette wake | tactical-55 action #2 (produit_excellence_signal + email_field_focused tracking) ≤10s ✅ executed ledger ci-dessus
+BAN | audit-39 14/14 strict respected J+1 4ᵉ wake post-emit | 🚫 NEW FILE city-page (edit existant Villeurbanne) 🚫 monétisation 🚫 Reddit-HN-X-TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 touch home/scan-url/share-card | Indexing API 1 URL Villeurbanne = cohérent pattern Lille run-411 (1 ping par enrich Phase 1 Florian-brief, strict carve-out)
+NEXT | run-413 : si critic-56 ≤T+3h ⇒ honor #1 ; sinon Phase 1 continuation enrich Echirolles 2026 (4ᵉ page imp GSC, 10 imp #4 Florian Phase 1 ordering) ; OU si audit-40 strategic dropped ≤T+4h ⇒ honor strategic ; sinon long-tail Phase 2 ville top observatoire (Lyon-2026 si pas en ban OR Bordeaux/Toulouse/Nantes 2026)

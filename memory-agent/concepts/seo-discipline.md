@@ -181,3 +181,45 @@ Florian a déjà soumis 8 URLs prioritaires 2026-05-21T09:30Z (quota restant=192
 ## Pourquoi cette discipline matters (mission RECALIBRÉE check)
 
 Mission 2026-05-21T07:35Z dit NON-PRIO "vanity SEO (pages_total brut, IndexNow rounds, JSON-LD coverage)". **Distinction clé** : Indexing API ping new page ≠ vanity. Vanity = ship 50 pages programmatiques bookkeeping. Indexing API = optimiser la propagation des pages déjà décidées comme priorité (proof-of-pattern Paris, Lille DPE, futurs). Pillar 2 acquisition compounding bénéficie directement. Donc OK avec mission. Mais NE PAS générer des nouvelles pages JUSTE pour pinger l'API (anti-vanity).
+
+# Règle "≥4 sections data locale unique" — pages programmatiques (codifiée 2026-06-02T14:30Z run-412, pattern Lille run-411 + Villeurbanne run-412)
+
+## Règle (immuable)
+
+Toute page programmatique (encadrement-loyer-`<ville>`, `<ville>`-dpe-f-g, arnaque-location-`<ville>`) DOIT comporter **au moins 4 sections de data locale unique** au-dessus du template-substitution standard, sinon Google déduplique → 1-2 pages indexées sur N, le reste invisible.
+
+**Why** : Brief Florian 2026-06-01T15:45Z verbatim *"Pages programmatiques pas différenciées faut fix ça"* après mesure sur 93 pages programmatiques avec ~95 lignes différentes sur ~800-1500 = template-substitution pur. Conséquence GSC mesurée : Paris écrase (104 imp), Villeurbanne 11, Echirolles 10, le reste = 0. Strategic-39 a confirmé le pattern (run-411 Lille +150L, run-412 Villeurbanne +54L denses).
+
+**How to apply** : à chaque ship OU enrichissement de page programmatique, vérifier la présence des 4 sections minimum.
+
+## Les 4 sections obligatoires
+
+1. **Observatoire BV local** (cat-1 réutilisé) : N annonces locales scrapées + taux violation clear/presumed + dépassement moyen €/m² + DPE risk count + comparaison nationale (mean 18 communes N=843). Source : `wedge-tool/static/data/observatoire-annonces-loyer-cumulative.csv` filtré sur `ville_label`.
+2. **Statut légal local exact** : citations directes décrets/arrêtés + liens Légifrance stables (.gouv.fr) + dates de prise d'effet + particularités locales vérifiables (zone tendue / permis de louer si applicable / encadrement expérimental / DPE national). Ne JAMAIS inventer un arrêté préfectoral DPE — le calendrier DPE F/G/E est strictement national, aucune dérogation préfectorale possible (anti-fake-data DIRECTIVE 9 §3).
+3. **FAQ locale 8+ Q/R DILA-verified** : adresses ADIL locale + TJ ressort + CDC départementale + jurisprudence Cass. récente + recours administratifs locaux. Format JSON-LD FAQPage `mainEntity` synchronisé pour Rich Results.
+4. **Jurisprudence ressort CA local** : 2-3 ECLI Cass. civ. 3 issues du corpus `data/interpretation-library-v0/recourse-templates/<tag>.v0.json` (Judilibre-verified production). Précision juridique : ces arrêts Cass. civ. 3 lient toutes les CA du ressort (art. L.411-3 COJ) — pas besoin d'ECLI CA-spécifiques fabriqués.
+
+## Pattern de référence (à reproduire)
+
+- **Lille** run-411 : `/lille-dpe-f-g-interdit-location.html` 367→516L (+150L) — 4 sections shippées strategic-39 J+0.
+- **Villeurbanne** run-412 : `/encadrement-loyer-villeurbanne-2026.html` 277→331L (+54L denses) — 4 sections shippées Phase 1 brief Florian J+1 continuation.
+
+## Anti-pattern à éviter
+
+- ❌ Section "Observatoire" sans N réel (calcul depuis CSV obligatoire, pas placeholder)
+- ❌ Section "Jurisprudence" avec ECLI fabriqués CA locales (uniquement Cass. civ. 3 + précision "lie CA du ressort")
+- ❌ FAQ locale ≤5 Q/R (insuffisant Rich Results SERP density)
+- ❌ Section "Arrêté préfectoral DPE" littérale — DPE national zéro dérogation locale, reframe honnête sur zone tendue / encadrement expérimental
+- ❌ Regen 93 pages d'un coup — cadence 1 page/wake substantif (qualité > quantité, brief Florian)
+- ❌ Copy-paste sections entre villes — chaque ville doit avoir chiffres + adresses + jurisprudence (si applicable) propres
+
+## Cadence Phase 1 brief Florian
+
+Priorité absolue = pages avec impressions GSC déjà acquises (juice indexée éprouvée > sandbox 90j NEW) :
+
+1. ✅ Paris-2026 (104 imp) — title rewrite run-409
+2. ✅ Lille DPE (21 imp) — enrich strategic-39 run-411
+3. ✅ Villeurbanne (11 imp) — enrich Phase 1 run-412
+4. ⏳ Echirolles (10 imp) — prochain wake substantif candidat
+
+Au-delà : top observatoire (Lyon Paris-arr Marseille Bordeaux Toulouse Nantes) puis long-tail opportuniste.
