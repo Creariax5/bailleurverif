@@ -2451,3 +2451,18 @@ TRACK | strategic_39_critere_t72h_3_humans_engaged_4 | SATISFAIT J+1 ★ UNCHANG
 TRACK | critic_56_ship_cta_verdict_email_DEFER | UNCHANGED | hierarchy DIRECTIVE 10 §c-bis Strategic > Tactical ; audit-40 ETA ~13min lèvera/redéfinira ban touch home
 BAN | audit-39 14/14 strict respected J+1 8ᵉ wake consécutif | 🚫 NEW FILE user-facing (utility script exclu SB-1 §a) / 🚫 city-page / 🚫 touch home/scan-url/share-card / 🚫 monétisation / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents | ship instrumentation chirurgical
 NEXT | run-417 : si critic-57 ≤T+3h ⇒ honor #1 ; sinon audit-40 probable arrivé (ETA ~22:00Z = T+~13min post-wake-416-start) ⇒ honor strategic prescription (probable lift ban touch home + critic-56 #2 CTA verdict→email autorisé OR Phase 2 Bordeaux/Nantes enrich) ; sinon option (a) Phase 2 Bordeaux N=42 obs P2 SEO HAUTE | option (b) M0+ §a baseline metric refresh + log premiers email_submitted events post-patch.
+
+
+run-417 | 2026-06-02T23:40Z | Strategic audit-40 honored J+0 T+~1h40 — patch chirurgical CTA verdict→email home (+24L app.js, lift ban touch home strict carve-out CTA-zone)
+METRIC | strategic_critic_recommendations_followed_cumul | 39/39→40/40 ★ | audit-40 prescription unique HONORED J+0 T+~1h40, 14ᵉ J+0 consécutif
+METRIC | code_lines_shipped_prod_lifetime | +24 net (+24/-7 diff 31L) | app.js L312-388 verdict-topic auto-dérivé + parallèle /api/subscribe POST
+METRIC | production_endpoints_validated_e2e_lifetime | +1 (/api/subscribe smoke run-417) | curl POST topic=loyer-legal HTTP 200 + entry recorded data/subscribers.jsonl tail
+METRIC | email_submitted_lifetime | UNCHANGED 0 baseline | critère audit-40 T+72h ≥3 OR humans≥6 deadline 2026-06-05T22:00Z
+METRIC | florian_briefs_honored_j0_lifetime | UNCHANGED | Strategic prescription pas brief Florian
+METRIC | produit_excellence_signal | verdict→email CTA différenciée 3 topics (loyer-legal/dpe-bailleur/veille-reglementaire) = sharpen P1 directe | aligned mission RE-RECALIBRÉE P1 PRODUIT-EXCELLENCE
+RITUAL | WHY_THIS_NOT_THAT | 63-streak post-run-417 | 4 NOT THAT explicites (Phase 2 city-page NEW / touch share-card+scan-url / NEW funnel event / breaking /api/capture)
+TRACK | audit-40 critère T+72h | deadline 2026-06-05T22:00Z | email_submitted_lifetime≥3 OR humans_engaged_lifetime≥6, échec ⇒ audit-41 pivot Phase 2 propagation Lille pattern Bordeaux/Nantes/Toulouse
+TRACK | Echirolles FYI ELAN Florian | cap réponse ≤2026-06-09 (J+7) UNCHANGED
+TRACK | Lille/Villeurbanne/Lyon/Paris-2026 critères T+14j GSC imp delta | deadlines 2026-06-16 UNCHANGED
+BAN | audit-40 14/14 strict respected | 🚫 NEW FILE city-page / 🚫 monétisation / 🚫 Reddit-HN-X-TikTok / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q ≤06-04 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL / 🚫 patch sub-agents hors-brief / 🚫 hero swap / 🚫 touch scan-url / 🚫 touch share-card / 🚫 NEW funnel event types | touch home strict CTA-zone post-verdict autorisé carve-out HONORED
+NEXT | run-418 : si critic-57 ≤T+3h ⇒ honor #1 ; sinon option (a) Phase 2 Bordeaux enrich (edit existant pas NEW FILE) P2 SEO HAUTE — option (b) Nantes enrich top observatoire — option (c) M0+ §a baseline GSC refresh. Préférer (a) Bordeaux si page existe (N=42 observatoire 4ᵉ ville ELAN). Critère audit-40 T+72h en cours mesure, échec ⇒ audit-41 pivot Phase 2 propagation pattern Lille.

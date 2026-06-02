@@ -309,16 +309,26 @@ function showResult() {
     if (lnk) lnk.addEventListener("click", () => { try { if (typeof trackFunnel === "function") trackFunnel("cta_secondary_clicked", { source: "warn_subcta" }); } catch(e){} });
   }
 
-  // Reframe email-gate : "lettre baisse loyer" si violation encadrement détectée (vs rapport générique)
-  if (depassement > 0) {
-    const gate = document.getElementById("email-gate");
-    if (gate) {
-      const h3 = gate.querySelector("h3");
-      const p = gate.querySelector("p");
-      const btn = gate.querySelector("button[type=submit]");
+  // Reframe email-gate + verdict-topic auto-dérivé pour /api/subscribe (strategic-40)
+  let verdictTopic = "";
+  if (depassement > 0) verdictTopic = "loyer-legal";
+  else if (state.answers.dpe === "F" || state.answers.dpe === "G") verdictTopic = "dpe-bailleur";
+  else if (severity === "warn" || severity === "danger") verdictTopic = "veille-reglementaire";
+  const gate = document.getElementById("email-gate");
+  if (gate) {
+    const h3 = gate.querySelector("h3");
+    const p = gate.querySelector("p");
+    const btn = gate.querySelector("button[type=submit]");
+    const form = gate.querySelector("form");
+    if (form && verdictTopic) form.dataset.subscribeTopic = verdictTopic;
+    if (depassement > 0) {
       if (h3) h3.innerHTML = "📩 Recevez votre lettre de baisse de loyer (LRAR pré-remplie) + barèmes officiels";
       if (p) p.innerHTML = `Modèle LRAR pré-rempli avec votre calcul exact (~${depassement.toLocaleString('fr-FR')} €/mois trop-perçu) + références arrêté préfectoral + procédure étape par étape. Gratuit, 1 email, on ne spamme pas.`;
       if (btn) btn.textContent = "Recevoir ma lettre";
+    } else if (state.answers.dpe === "F" || state.answers.dpe === "G") {
+      if (h3) h3.innerHTML = "📩 Recevez votre kit DPE F/G + courrier LRAR mise-en-demeure travaux";
+      if (p) p.innerHTML = `Loi Climat 2025 : DPE ${state.answers.dpe} interdit à la relocation. Modèle LRAR bailleur + sources Légifrance + alertes évolution réglementaire. Gratuit, 1 email, on ne spamme pas.`;
+      if (btn) btn.textContent = "Recevoir mon kit DPE";
     }
   }
 
@@ -380,6 +390,13 @@ function captureEmail(ev, kind) {
         : "✓ Reçu — votre rapport arrive sous 24-48 h (envoi manuel actuellement, automatisation en cours).";
       msg.textContent = kind === "watch" ? "✓ Inscrit. On vous prévient au lancement." : reportMsg;
       msg.style.color = "var(--accent)";
+      // strategic-40 : double opt-in alerts via /api/subscribe topic verdict-dérivé (idempotent côté serveur)
+      const topic = form.dataset.subscribeTopic;
+      if (topic) {
+        fetch("/api/subscribe", { method: "POST", headers: {"Content-Type":"application/json"},
+          body: JSON.stringify({ email, topic, source: "home-verdict-cta", consent: true })
+        }).catch(()=>{});
+      }
       form.querySelector("input").value = "";
       form.querySelector("button").disabled = true;
       form.querySelector("button").style.opacity = "0.5";
