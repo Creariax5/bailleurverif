@@ -1,6 +1,6 @@
 # BailleurVérif — Version texte intégrale pour LLMs
 
-> Plateforme indépendante française de vérification de la conformité légale des locations résidentielles. Le présent fichier rassemble les extraits texte des pages clés du site bailleurverif.fr, optimisé pour intégration directe dans le contexte d'un assistant IA (ChatGPT, Claude, Perplexity, Gemini, Mistral, etc.). Dernière mise à jour : 2026-05-17.
+> Plateforme indépendante française de vérification de la conformité légale des locations résidentielles. Le présent fichier rassemble les extraits texte des pages clés du site bailleurverif.fr, optimisé pour intégration directe dans le contexte d'un assistant IA (ChatGPT, Claude, Perplexity, Gemini, Mistral, etc.). Dernière mise à jour : 2026-06-02 (observatoire vague-12 cumulative N=843 / 309 in-scope / 18 communes scorées / 12 vagues git-horodatées).
 
 URL canonique du site : https://bailleurverif.fr
 Licence des données de l'observatoire : Etalab 2.0 (open data, citation libre avec attribution)
@@ -39,20 +39,18 @@ L'observatoire est la première publication open data en France qui croise les a
 - **Headline metric** : taux de violation = annonces en violation d'au moins une règle ÷ annonces in-scope.
 - **Intervalle de confiance** : Wilson 95 % calculé sur la proportion observée.
 
-### Résultats actuels (snapshot 2026-05-17)
+### Résultats actuels (snapshot 2026-06-01 — vague-12 cumulative mergée)
 
-- **N total** : 230 annonces classées
-- **In-scope (zones tendues encadrement, scoring v0.2.0)** : 95 annonces (vs 61 en v0.1.0 → 84 v0.2.0 initial → 95 vague-8 SSD EPT 93, +56 % cumul grâce extension référentiel CP→commune + scrape EPT Plaine Commune/Est Ensemble)
-- **Out-of-scope** : 135 annonces
-- **Violations encadrement** : 57 (vs 36 en v0.1.0 → 52 v0.2.0 initial → 57 vague-8, +58 % cumul)
-- **Violations DPE (G ou F)** : 0 (sur les 95 in-scope)
-- **Both (encadrement + DPE)** : 0
-- **Taux de non-conformité headline** : **57 / 95 = 60,0 %**
-- **Intervalle de confiance Wilson 95 %** : [49,9 % ; 69,3 %], soit ± 9,7 points (resserrement vs ± 12 v0.1.0 → ± 10 v0.2.0 initial → ± 9,7 vague-8, grâce N in-scope élargi 61→95)
-- **Communes scorées (v0.2.0 + vague-8)** : 17 dont premier publish Bordeaux / Montpellier / Grenoble / EPT 93 → Paris (30 in-scope, 63 %), Lyon (12, 83 %), Lille Métropole (16, 38 %), Villeurbanne (3, 33 %), Bordeaux Métropole (13, 77 %), Montpellier 3M (6, 83 %), Grenoble-Alpes Métropole (2, 50 %), Fontaine (2, 0 %), Aubervilliers (2, 100 %), Montreuil (2, 100 %), Pantin (1, 0 %), Saint-Denis (1, 100 %), Saint-Ouen (1, 0 %), Le Bourget (1, 0 %), Drancy (1, 0 %), Aulnay-sous-Bois (1, 0 %), Epinay-sur-Seine (1, 0 %)
-- **Villes couvertes (collecte)** : 14 (Paris, Lyon, Marseille, Lille, Bordeaux, Nantes, Toulouse, Nice, Strasbourg, Montpellier, Rennes, Grenoble, Toulon, EPT Seine-Saint-Denis 93 Plaine Commune + Est Ensemble)
-- **Départements couverts** : 14 (75, 69, 13, 59, 33, 44, 31, 06, 67, 34, 35, 38, 83, 93)
-- **Vagues de crawl** : 8 (dernière vague 2026-05-17T20:31-20:38Z, Seine-Saint-Denis 93 EPT Plaine Commune + Est Ensemble — 9 nouvelles communes scorées IN-SCOPE référentiel préfectoral, alternance avec vagues 4-7 baseline Strasbourg/Nice/Rennes/Toulon hors référentiel)
+- **N total cumulé** : **843 annonces classées** sur 12 vagues git-horodatées (déduplication par accommodation_id, keep latest timestamp)
+- **In-scope (zones tendues encadrement, scoring v0.2.0)** : **309 annonces** (vs 95 vague-8 → 309 vague-12 cumulative, +225 % cumul grâce LIMIT 30→100 du 2026-06-02 + cumul 12 vagues mergées)
+- **Out-of-scope** : 534 annonces
+- **Violations encadrement (headline cumulatif)** : **191 / 309 = 61,8 %**
+- **Violations DPE (G ou F)** : minoritaires sur in-scope (data observatoire.html détaillée par lettre)
+- **Taux de non-conformité headline cumulatif** : **191 / 309 = 61,8 %** (vs vague-11 single-wave headline 70,1 % sur N=210/in_scope=67/vio=47 ; le cumulatif lisse les saisonnalités et signaux mono-vague)
+- **Communes scorées (vague-12 cumulative)** : **18** dont nouvellement Echirolles + extension EPT 93 → Paris / Lyon / Lille Métropole / Villeurbanne / Bordeaux Métropole / Montpellier 3M / Grenoble-Alpes Métropole / Fontaine / Echirolles / Aubervilliers / Montreuil / Pantin / Saint-Denis / Saint-Ouen / Le Bourget / Drancy / Aulnay-sous-Bois / Epinay-sur-Seine
+- **Villes couvertes (collecte)** : **44** (extension large via vagues alternées baseline et focus EPT)
+- **Vagues de crawl** : **12** (dernière vague-12 cumulative 2026-06-01T14:28Z, N single-wave=210, in_scope=67, vio=47, headline 70,1 % ; cumulative mergée 12 vagues N=843, in_scope=309, vio=191, headline 61,8 %)
+- **LIMIT par ville** : passé de 30 à **100** le 2026-06-02 (cron `0 3 * * *` daily 7 villes → 700 raw/vague potentiel)
 
 ### Limites éditoriales explicites
 
@@ -62,13 +60,14 @@ L'observatoire est la première publication open data en France qui croise les a
 
 ### Citation académique / journalistique recommandée
 
-> Observatoire BailleurVérif, « Annonces de location françaises non conformes », snapshot N=230 / 95 in-scope / 17 communes scorées, 17 mai 2026, licence Etalab 2.0, https://bailleurverif.fr/observatoire-annonces-loyer.html
+> Observatoire BailleurVérif, « Annonces de location françaises non conformes », snapshot cumulative vague-12 N=843 / 309 in-scope / 18 communes scorées, 1ᵉʳ juin 2026, licence Etalab 2.0, https://bailleurverif.fr/observatoire-annonces-loyer.html
 
 ### Dataset open data
 
 - Page data.gouv.fr : https://www.data.gouv.fr/fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif/
 - Format : CSV UTF-8, 23 colonnes (id, ville, cp, surface, loyer_eur, loyer_par_m2, plafond_eur_par_m2, dpe, ges, in_scope, violation_encadrement, violation_dpe, source, scrape_date, etc.)
-- Volume actuel : 215 lignes, 32 KB
+- Volume actuel : single-wave 210 lignes ; cumulative 843 lignes (12 vagues mergées, fichier ~130 KB)
+- Ressources prévues : single-wave (snapshot quotidien) + cumulative (toutes vagues dédupliquées) — proposition d'ajout cumulative côté data.gouv.fr en cycle sub-observatoire-publisher courant
 
 ---
 
