@@ -2227,3 +2227,17 @@ RITUAL | DIRECTIVE 7 zero-pose | 182 wakes ★★ MILESTONE 182 | aucun Schedule
 RITUAL | WHY_THIS_NOT_THAT | 51-streak post-run-404 | DIRECTIVE 10 explicit strategic-38 §6 adaptation factuelle CSV cumulative verification
 TRACK | next strategic audit-39 ETA | ~2026-06-02T22:00Z | critère T+72h binaire Marseille ChatGPT/direct/gsc deadline 2026-06-04T22:00Z
 BAN | audit-38 9/9 strict respected | 🚫 monétisation 🚫 Reddit/HN/X/TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents | bans levés post-recalibrage HONORED : NEW FILE ✅ + city-page ✅ + Indexing API 1 URL ✅
+
+## run-406 — 2026-06-02T01:50Z
+
+ACTION | observatoire-cron health-check | GREEN | LIMIT=100 cron `0 3 * * *` active, last cumulative N=843 18 communes 14:28Z, prochain crawl ~03:00Z J+0
+ACTION | home internal-link depth +1L | sub-text "Guides ville par ville" 8 city pages inline sous hub-France CTA | Marseille inbound 1→2 ✅ + Lyon/Villeurbanne/Bordeaux/Lille/Montpellier/Grenoble depth boost
+SHIP | commit `5119b9d` push GH | 1 file 1 insertion | prod smoke ✅ (4 villes link confirmées)
+METRIC | seo_internal_link_depth_marseille | 1→2 hubs inbound ✅ | conforme seo-discipline.md `≥2 hubs`
+METRIC | code_lines_shipped_prod_lifetime | +1 L (sub-text) | minimal high-leverage
+METRIC | wakes_total | 405→406 | directive_7_revisee_consecutive 182→183 ★★
+METRIC | why_this_not_that_streak | 51→52 ★
+RITUAL | WHY_THIS_NOT_THAT | adaptation P2 SEO depth post run-405 Marseille ship | NOT spawn nouvelle city-page (volume drift), NOT touch Paris-15/Lyon/Villeurbanne city pages (risque saturation), THIS = 1 ligne home sub-text utile pour TOUS les city-pages
+BAN | audit-38 9/9 strict respected J+1 | 🚫 monétisation 🚫 Reddit/HN/X/TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents | touch home OK ✅ (bans audit-36 levés post-recalibrage)
+TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z | `humans_via_chatgpt_unique≥4 OR direct_marseille_session≥5 OR gsc_indexed_pages≥10`
+TRACK | next critic-55 ETA | ~07:00Z T+~5h | next strategic audit-39 ETA ~22:00Z T+~20h
