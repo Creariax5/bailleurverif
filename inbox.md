@@ -1,3 +1,67 @@
+## 📊 2026-06-01T15:30Z — Florian → Agent — **GSC data 16j : Paris écrase, 9 autres pages émergent timide**
+
+Florian a partagé screenshots GSC Performance 16j (15→30/05). **5 clics organiques cumul** (vs 0 il y a 2 sem) — premier vrai signal SEO compounding (aligné mission re-recalibrée 14:35Z).
+
+### Top requêtes captées
+
+| Query | Imp | Clic | Lecture |
+|---|---|---|---|
+| aide rénovation propriétaire bailleur 2026 | 6 | 0 | Aides financières bailleur émerge |
+| service-public interdiction location logement classe g 2025 f 2028 e 2034 | 3 | 0 | Long-tail ultra-niche captée ★ |
+| encadrement de loyers a villeurbanne | 1 | 0 | Pages programmatiques timides |
+| encadrement des loyers paris drihl | 1 | 0 | DRIHL = institutionnel reference |
+
+### Top pages (impressions / clics)
+
+| Page | Imp | Clic | CTR |
+|---|---|---|---|
+| `/` | 19 | 4 | **21% ★** |
+| `/encadrement-loyer-paris-2026.html` | **104** | **0** | **0% 🔴 gros levier** |
+| `/aides-financieres-bailleur-2026.html` | 37 | 0 | 0% |
+| `/lille-dpe-f-g-interdit-location.html` | 21 | 0 | 0% |
+| `/encadrement-loyer-villeurbanne-2026.html` | 11 | 0 | 0% |
+| `/encadrement-loyer-echirolles-2026.html` | 10 | 0 | 0% |
+| `/observatoire-annonces-loyer.html` | 9 | 0 | 0% |
+| `/loyer-legal-paris.html` | 6 | 0 | 0% |
+| `/scan-url.html` | 1 | 0 | 0% |
+| `/arnaque-location-strasbourg.html` | 1 | 0 | 0% |
+
+**Géo** : FR 5 clics / 126 imp (96% des clics), US 0/48 imp, DE 0/14, NL 0/12 = international = bots/curieux non-target.
+
+### Gros levier identifié = `/encadrement-loyer-paris-2026.html`
+
+104 imp / 0 clic = **#1 page visible Google mais titre/meta pas convertit**. Title actuel 91 chars (tronqué SERP) + finit "BailleurVérif" (brand inconnu) + chiffres techniques au lieu d'action utilisateur. Optimisation prioritaire alignée Pilier 1 PRODUIT-EXCELLENCE + Pilier 2 SEO COMPOUNDING.
+
+**Builder action proposée (autonome)** :
+1. Rewrite title à <60 chars orienté action utilisateur (ex: *"Mon loyer à Paris est-il légal ? Test gratuit 30s"* ou *"Loyer Paris 2026 : 60% des annonces dépassent le plafond"*)
+2. Rewrite meta description orientée bénéfice (vérification + montant trop-perçu récupérable)
+3. Ship single Paris d'abord (PAS le template programmatique). Mesurer CTR 7-14j.
+4. Si CTR>2% → propager au template programmatique (40+ pages encadrement/DPE/arnaque héritent).
+5. Documenter expérience dans `concepts/seo-discipline.md` (règle "title ≤60c orienté action utilisateur").
+
+**Discipline** : c'est édit SEO meta (PAS modif copy/structure body) = pas anti-touch ban. Mais nécessite Indexing API ping post-deploy pour accélérer re-crawl.
+
+### Pourquoi seul Paris domine (réponse Florian)
+
+5 raisons cumulatives :
+1. **Popularité query** : "encadrement loyer Paris" = volume massif (millions Parisiens + sujet média) vs "encadrement loyer Echirolles" (niche)
+2. **Sandbox Google sélectif** : Google teste en SERP les pages avec signaux backlinks ou trafic — Paris = pointée par data.gouv reuse + Wikidata + GitHub
+3. **Pages programmatiques pas différenciées** : Lille/Villeurbanne/Echirolles utilisent même template que Paris sans data locale unique → Google partiellement déduplique
+4. **Cat-3 jurisprudence Paris-heavy** : 9 ECLI Cass. cumul = beaucoup réfèrent Paris/DRIHL
+5. **Internal linking biais** : homepage + hub `/encadrement-loyer-france-2026.html` linkent Paris en premier dans la liste villes
+
+**Action structurelle (P2 SEO mission re-recalibrée)** : différencier les 40+ pages programmatiques avec data locale unique (chiffres observatoire par ville, jurisprudence locale CA si dispo, arrêté préfectoral local exact). Plan déjà codifié dans Builder prompt section Pilier 2 HAUTE priorité #1.
+
+### Next action sub-agent SEO-monitor (broken)
+
+`sub-seo-monitor` cassé depuis 23/05 (PageSpeed API quota dépassé). Au prochain audit hebdo sub-agents (cf brief 15:00Z), Builder doit décider :
+- (a) PATCH prompt avec fallback (skip PageSpeed, garder uniquement crawler sitemap + LLM-bot diff)
+- (b) `enabled=0` si redondant avec discipline manuelle Builder
+
+Sans seo-monitor actif, Builder doit faire spot-check GSC weekly manuellement (curl GSC export API ou screenshots Florian).
+
+---
+
 ## 🔍 2026-06-01T15:00Z — Florian → Agent — **DISCIPLINE : audit hebdo des 6 sub-agents (check qu'ils marchent vraiment)**
 
 **Florian verbatim** : *"Dis à l'agent principal de regarder si les agents qu'il a créés marchent bien, de check leur travail."*
