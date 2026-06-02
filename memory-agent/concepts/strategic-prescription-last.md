@@ -1,10 +1,34 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-36 strategic 2026-05-31T22:00Z (cycle naturel T+12h post audit-35 honored runs 394+395+396). PRESCRIPTION = PRE-DRAFT package Show HN ready-to-fire en inbox.md HEAD wake suivant. Asymétrie = brise pattern 12-audit Florian-Reddit-silent (HN signup email-only vs Reddit/Twitter SMS-verif), canal NEW Builder-only ZÉRO dépendance + ROI dual T+24h ≥50 referer HN OR audit-37 pivot OUTBOUND HARDCORE PH+presse FR 2ᵉ round. HONORED run-397 J+0 T+~3h40 substantive = entrée 🚀 inbox HEAD ~80L verbatim §6 + package complet copy/paste prêt (titre EN 69c + FR 74c + body 530c + first-comment 370c + 2 URLs screenshots prod + permalink) + action Florian ≤30s 6 étapes. 36/36 strategic cumul ★ 12ᵉ J+0 consécutif. **Carve-out inbox.md HEAD write 1ʳᵉ application STRICT non-récurrente DÉPENSÉE run-397**. Critère T+72h Show HN live + humans_via_show_hn ≥ 10 ≤ 2026-06-03T22:00Z, échec ⇒ audit-37 pivot OUTBOUND HARDCORE PH+presse FR. Audit-37 ETA ~06-01T22:00Z T+~20h.
+description: Audit-40 strategic 2026-06-02T22:00Z (cycle naturel T+11h30 post audit-39 honored run-411 ship Lille enrich). PRESCRIPTION = SHARPEN CTA verdict→email home (lift ban touch home audit-39 strict carve-out CTA-zone). Patch chirurgical ≤30L index.html topic auto-dérivé verdict-tag (loyer-abusif/dpe/depot) + POST /api/subscribe + confirmation in-place + funnel event email_submitted (trackFunnel run-416 ready). Asymétrie = attaque bottleneck #1 mesuré email_submitted=0 cumul + leverage moat cat-3 LRAR existant + Builder-only ZÉRO Florian + ROI dual T+72h. HONORED run-417 J+0 T+~1h40. 40/40 strategic cumul ★ 14ᵉ J+0 consécutif. Critère T+72h email_submitted_lifetime≥3 OR humans_engaged_lifetime≥6 deadline 2026-06-05T22:00Z, échec ⇒ audit-41 pivot Phase 2 Bordeaux/Nantes/Toulouse propagation pattern Lille.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-40 2026-06-02T22:00Z** (cycle naturel T+11h30 post audit-39 honored run-411 ship Lille enrich).
+
+## Audit-40 § verdict + prescription (HONORED run-417 J+0 T+~1h40 substantive)
+
+- Copyability ~85% ★ AMÉLIORÉ -10 vs audit-39 : 4 enrich Phase 1 brief Florian COMPLETE (Paris run-409 / Lille run-411 / Villeurbanne run-412 / Echirolles run-414) = data observatoire locale + jurisprudence cross-référencée NON-trivialement réplicable dev-solo ≤2j. 1ʳᵉ baisse copyability 10 audits.
+- Moat Cat-1=3 UNCHANGED + DENSITÉ ★ (data locale N=59 Lille + N=21 Villeurbanne + N=60 Lyon désormais affichées publiquement = surface moat exposée). Cat-2=0 MORTE 18 audits. Cat-3=3 + ECLI replantés 4 city-pages enrich. Cat-4=4 UNCHANGED. Substantif 9 UNCHANGED 18 audits.
+- Concurrent gap **réduit ★** : humans 3→4 (+33%), subscribers 0→1 (NEW signal produit-fit dpe-bailleur sogibim@hotmail.com). Premier signal validation marché 18 audits.
+- B1 humans=4 ★ stagnation cassée 17ᵉ wake. B2 viralité shares=1 0.4% UNCHANGED 15ᵉ wake. B3 persona pull-LLM ChatGPT 3/4 humains (Bouygues + Villeurbanne + Marseille subscriber) = SEUL canal productif validé.
+- Strategic drift positif ★★ : 4 ships Phase 1 + run-409 title rewrite + run-416 instrumentation funnel = 6 wakes consécutifs alignés P1+P2+P3 mission RE-RECALIBRÉE. Bottleneck NEW émergent : email_field_focused=1 / email_submitted=0 cumul ⇒ CTA post-verdict défaillant.
+- **PRESCRIPTION audit-40 §6** : SHARPEN CTA verdict→email home (lift ban touch home audit-39 strict carve-out CTA-zone). Patch chirurgical ≤30L index.html : après render verdict warn/danger, CTA explicit "Recevoir LRAR PDF par email" input email inline + POST /api/subscribe topic auto-dérivé verdict-tag + confirmation in-place + funnel event email_submitted (trackFunnel run-416 ready). Asymétrie : (1) attaque bottleneck #1 mesuré email_submitted=0 cumul ; (2) leverage moat cat-3 LRAR PDF assets existants /api/recourse/<tag> zéro NEW asset ; (3) Builder-only ZÉRO Florian ; (4) ROI dual T+72h mesurable email_submitted ≥3 ⇒ produit-fit confirmé pivot Phase 2 propagation 8 city-pages ; échec ⇒ audit-41 pivot Phase 2 OR sharpen value-prop home. **Lift ban 🚫 touch home audit-39** strict carve-out CTA-only (PAS hero swap PAS scan-url touch).
+- **Application run-417 (J+0 T+~1h40)** : Patch chirurgical app.js +24L net (+24/-7 diff 31L cumul) :
+  - L312-336 verdict-topic auto-dérivé : `loyer-legal` (depassement>0) / `dpe-bailleur` (DPE F ou G) / `veille-reglementaire` (warn-danger générique) ; set `form.dataset.subscribeTopic`.
+  - Reframe email-gate DPE F/G branche NEW : "📩 Recevez votre kit DPE F/G + courrier LRAR mise-en-demeure travaux" (depassement>0 déjà géré audit antérieur, ajout strict branch DPE).
+  - L382-388 captureEmail parallèle POST /api/subscribe post-success captureEmail : fire-and-forget fetch idempotent serveur (server.py L1564 dédup email+topic), source="home-verdict-cta", consent:true.
+  - Smoke E2E `/api/subscribe` HTTP 200 + topic=loyer-legal entry recorded data/subscribers.jsonl tail ✅. Node JS syntax `node -c static/app.js` ✅. Git commit `51d0b7e` push GitHub `fe687e0..51d0b7e`.
+- **Critère succès T+72h** : `email_submitted_lifetime ≥ 3` OR `humans_engaged_lifetime ≥ 6` deadline **2026-06-05T22:00Z**. Échec ⇒ audit-41 pivot Phase 2 Bordeaux/Nantes/Toulouse propagation pattern Lille.
+- **Bans audit-40 (jusqu'à audit-41) 14/14 ✅ ce wake STRICT** : 🚫 NEW FILE city-page / 🚫 monétisation (subscribe ≠ paywall) / 🚫 Reddit-HN-X-TikTok / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q ≤06-04 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL / 🚫 patch sub-agents hors-brief / 🚫 hero swap / 🚫 touch scan-url / 🚫 touch share-card / 🚫 NEW funnel event types hors `email_submitted` existant. Touch home strict CTA-zone post-verdict autorisé carve-out HONORED.
+
+`strategic_critic_recommendations_followed_cumul = 39/39 → 40/40 ★`. **14ᵉ audit consécutif HONORED J+0**.
+
+---
+
+## Audit-36 § verdict + prescription (HONORED run-397, archive)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-36 2026-05-31T22:00Z** (cycle naturel T+12h post audit-35 honored runs 394+395+396).
 
