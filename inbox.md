@@ -1,3 +1,96 @@
+## 🛠 2026-06-01T15:45Z — Florian → Agent — **PRIORITÉ : différencier pages programmatiques (P2 SEO HAUTE #1)**
+
+**Florian verbatim** : *"Pages programmatiques pas différenciées faut fix ça."*
+
+### Constat
+
+93 pages programmatiques totales sur le site :
+- 34 `encadrement-loyer-<ville>-2026.html`
+- 50 `<ville>-dpe-f-g-interdit-location.html`
+- 9 `arnaque-location-<ville>.html`
+
+Échantillon diff (Aubervilliers vs Bordeaux après substitution {ville}/{CP}/{plafond}) : seulement ~95 lignes vraiment différentes sur ~800-1500. **Google déduplique → indexe 1-2 sur 50** → c'est pourquoi seul Paris écrase et les autres restent invisibles.
+
+### Mission Builder (autonome, ongoing)
+
+Différencier les pages programmatiques avec **data locale unique par ville**. Aligné Pilier 2 SEO COMPOUNDING HAUTE #1.
+
+### Stratégie cadencée (1-2 pages/wake substantif)
+
+**Phase 1 — pages avec impressions GSC déjà acquises (priorité absolue)** :
+- `encadrement-loyer-paris-2026.html` (104 imp) — title/meta + sections uniques
+- `lille-dpe-f-g-interdit-location.html` (21 imp)
+- `encadrement-loyer-villeurbanne-2026.html` (11 imp) — FAQPage déjà backfilled strategic-34
+- `encadrement-loyer-echirolles-2026.html` (10 imp)
+
+**Phase 2 — top observatoire data (N=843 cumulative)** :
+Villes avec ≥20 annonces dans observatoire → data locale unique exploitable :
+- Paris arrondissements (75001-75020), Lyon, Marseille, Bordeaux, Lille, Nantes, Toulouse, Villeurbanne
+
+**Phase 3 — long-tail** : autres villes au fil de l'eau, 1/wake max.
+
+### Sections uniques à ajouter par ville (binding)
+
+Pour CHAQUE page programmatique enrichie :
+
+1. **Section "Données observatoire <ville>" (cat-1 réutilisé)** :
+   - N annonces locales scrapées (grep cumulative.csv ville=<X>)
+   - Taux violation local (vs national 61.8%)
+   - Plafond moyen observé vs plafond légal
+   - Top 3 quartiers/arrondissements si dispo
+   - Lien direct vers ressource data.gouv cumulative
+
+2. **Section "Arrêté préfectoral exact <ville>"** :
+   - Citation directe du décret/arrêté local (texte court, ≤5 lignes)
+   - Lien Légifrance exact (URL stable .gouv.fr)
+   - Date prise d'effet
+   - Particularité locale (si zone tendue spécifique, périmètre exact)
+
+3. **Section "FAQ locale <ville>" (8 Q/R minimum, JSON-LD FAQPage)** :
+   - Questions spécifiques (PAS générique copy-paste) : "Le complément de loyer est-il fréquent à <ville>?", "Que faire si bailleur refuse baisse loyer à <ville>?", "Recours saisine ADIL/conciliation à <ville>?"
+   - Réponses sourcées : Cassation locale (Judilibre filter par cour appel locale) + arrêté local + ANIL local
+   - Format DILA-verified (comme backfill Villeurbanne strategic-34 honored)
+
+4. **Section "Jurisprudence locale" (si Judilibre data dispo)** :
+   - 1-3 ECLI Cassation civ. 3e locaux (CA Paris/Lyon/Marseille…)
+   - Résumé bref + lien Légifrance
+   - Implication pour locataire local
+
+### Internal linking renforcement
+
+- Hub `/encadrement-loyer-france-2026.html` : ajouter contexte 1-2 lignes pourquoi chaque ville est unique (vs liste plate actuelle)
+- Sidebar/footer chaque ville : link top 3 villes voisines (Paris→Saint-Denis→Aubervilliers→Bagnolet etc.)
+
+### NE PAS faire
+
+- ❌ Regen 93 pages d'un coup (surcharge wake + quality drift)
+- ❌ Ajouter contenu générique copy-paste (= worsen dédup, opposé objectif)
+- ❌ Fake data inventée (sources observatoire/légifrance/judilibre uniquement)
+- ❌ Toucher pages fenêtre mesure 7j virgin (Paris/Lille restent OK à toucher car >7j shipped)
+- ❌ Spawn sub-page-generator dédié (cap 8 + qualité > quantité)
+
+### Mesure succès
+
+- **GSC impressions** par page modifiée à T+14j vs T+0 (Builder log dans `inbox-from-critic.md` weekly)
+- **CTR** : si >2% post-deploy → propager template logique aux autres
+- **Indexed pages GSC** : cible >15 à M2 (vs ~8 actuel)
+- **Funnel** : track utm_source=organic-<ville> sur scan-url / wedge si dispo
+
+### Cadence
+
+- Phase 1 (4 pages avec impressions GSC) : 1 page/wake substantif = 4 wakes ≈ 16-24h (cadence Builder 4h)
+- Phase 2 (top 8 observatoire villes) : 1 page/wake ≈ 32h
+- Phase 3 long-tail : opportuniste 1/wake max
+
+Total scénario : ~5-7 jours pour les 12 pages prioritaires si Builder respecte cadence et qualité.
+
+### Documenter discipline
+
+Au moment du 1er ship (probablement run-401 ou next), ajouter au `concepts/seo-discipline.md` règle :
+> "Chaque page programmatique doit avoir ≥4 sections data locale unique (observatoire + arrêté + FAQ locale + jurisprudence locale). Template-only sans data locale = anti-pattern dédup Google."
+
+---
+
 ## 📊 2026-06-01T15:30Z — Florian → Agent — **GSC data 16j : Paris écrase, 9 autres pages émergent timide**
 
 Florian a partagé screenshots GSC Performance 16j (15→30/05). **5 clics organiques cumul** (vs 0 il y a 2 sem) — premier vrai signal SEO compounding (aligné mission re-recalibrée 14:35Z).
