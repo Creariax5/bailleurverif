@@ -2241,3 +2241,24 @@ RITUAL | WHY_THIS_NOT_THAT | adaptation P2 SEO depth post run-405 Marseille ship
 BAN | audit-38 9/9 strict respected J+1 | 🚫 monétisation 🚫 Reddit/HN/X/TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents | touch home OK ✅ (bans audit-36 levés post-recalibrage)
 TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z | `humans_via_chatgpt_unique≥4 OR direct_marseille_session≥5 OR gsc_indexed_pages≥10`
 TRACK | next critic-55 ETA | ~07:00Z T+~5h | next strategic audit-39 ETA ~22:00Z T+~20h
+
+## run-407 — 2026-06-02T03:45Z
+
+ACTION | polling défensif 3 inboxes mtimes | 4/4 UNCHANGED depuis run-406 | 0 NEW signal Florian/critic/strategic, 0 HONOR substantive J+0 requis
+ACTION | crawler vague-13 LIMIT=100 health-check in-flight | PID 444236 actif 03:00Z, Lyon en cours ~80 ads, 0 ERR, ETA fin ~08-09Z | NOT touched (mission directive observability)
+ACTION | update llms.txt + llms-full.txt cat-3 LLM-bot seeding | staleness 14-16j sur ships substantifs depuis 05-17 (N=232→843, 11→12 vagues, 17→18 communes, +Marseille/Paris-15/Lyon/Villeurbanne, +scan-url, sitemap 170→194) | factuel, zéro marketing
+SHIP | commit `83dc76e` push GH | 2 files +23 -22 lignes nettes, densité chiffres ×3.6 | prod Nginx static-served instant ✅ smoke 5/5 + 8/8 matches
+METRIC | llms_txt_freshness | 14j stale → 0j | LLM-bots (OAI-SearchBot/ClaudeBot/PerplexityBot/GPTBot) servent désormais N=843 + 4 city-pages encadrement + scan-url + share-card
+METRIC | cat-3_llm_seeding_cumul | +2 (llms.txt + llms-full.txt fresh) | moat cat-3 RAG-LLM canal direct pull humain mesuré ChatGPT N=2 (Bouygues+Villeurbanne)
+METRIC | seo_pages_signaled_to_llm_bots | ~170 → 194 + 4 city-pages nominativement listées + scan-url | P2 SEO COMPOUNDING discoverability LLM
+METRIC | florian_recalibrage_pilier2_ships_lifetime | 2 → 3 ★ | 3ᵉ ship P2 SEO COMPOUNDING aligned post-RE-RECALIBRAGE 2026-06-01T14:30Z (Marseille run-405 + home depth run-406 + llms-bot seeding run-407)
+METRIC | code_lines_shipped_prod_lifetime | net +1 L (mais densité chiffres ×3.6) | minimal high-leverage
+METRIC | directive_7_revisee_consecutive | 183 → 184 ★★ MILESTONE 184 | aucun ScheduleWakeup 184 wakes cumul
+METRIC | why_this_not_that_streak | 52 → 53 ★ post-run-407 | DIRECTIVE 10 ritual explicit cat-3 LLM-bot seeding rationale
+METRIC | wakes_total | 406 → 407
+RITUAL | DIRECTIVE 7 zero-pose | 184 wakes ★★ MILESTONE 184 | aucun ScheduleWakeup
+RITUAL | WHY_THIS_NOT_THAT | 53-streak post-run-407 | DIRECTIVE 10 explicit cat-3 staleness 14j + pattern strategic-38 §6 leverage NEW asset
+TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z encore J+2.4 | `humans_via_chatgpt_unique≥4 OR direct_marseille_session≥5 OR gsc_indexed_pages≥10`
+TRACK | crawler vague-13 fin | ETA ~08-09Z | cumulative recalcul ⇒ probable wake ~12:00Z observability ledger note
+TRACK | next critic-55 ETA | ~07:00Z T+~3h15 | next strategic audit-39 ETA ~22:00Z T+~18h
+BAN | audit-38 10/10 strict respected J+1 | 🚫 monétisation 🚫 Reddit/HN/X/TikTok 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents | touch home/scan-url OK levés post-recalibrage ; NEW FILE non utilisé (edit fichiers existants suffisant)
