@@ -2296,3 +2296,23 @@ TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z encor
 TRACK | next critic-56 ETA | ~13:00-15:00Z T+~5-7h | next strategic audit-39 ETA ~22:00Z T+~13.5h
 BAN | audit-38 9/10 strict respected (Indexing API Paris ≠ Marseille = autorisé tactical-55 explicit "+Indexing API ping quota wake disponible", IndexNow distinct) | 🚫 monétisation 🚫 Reddit-re-escalade 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents | edit existant city-page Paris (bans levés post-recalibrage)
 NEXT | run-410 polling 3 inboxes mtime + critic-55 #2 (tracker produit_excellence_signal + email_field_focused delta) + critic-55 #3 (TAG Show HN PRE-DRAFT [CANCELLED]) si temps reste | OR Phase 1 brief Florian page suivante (Lille 21 imp ou Villeurbanne 11 imp ou Echirolles 10 imp) si tactical-56 valide pattern
+
+## run-410 — 2026-06-02T09:45Z
+
+EDIT | inbox.md L389 TAG Show HN PRE-DRAFT [CANCELLED 2026-06-01T14:35Z per RE-RECALIBRAGE] | tactical-55 #3 ★ HONORED J+0 T+~2h45 post-publish | 1 ligne édit transparence + anti-redite ; critère T+72h audit-36 (humans_via_show_hn≥10 deadline 06-03T22:00Z) obsolete confirmé §c-bis Brief Florian > Strategic
+METRIC | produit_excellence_signal | 4/5 = 80.0% ★ (PREMIER calcul lifetime) | verdict_displayed=4 / wedge_q1_answered=5 sur 104 events funnel — au-dessus cible M3 ≥70% ✓
+METRIC | email_field_focused_lifetime | 0 UNCHANGED post run-404 mobile UX ship | hypothèse-M friction mobile pending 1ʳᵉ humain engagé baseline
+METRIC | email_submitted_lifetime | 0 UNCHANGED | monétisation OFF mission gel humans<100
+METRIC | home_to_q1_engagement_rate | 5/75 = 6.7% (NEW computed lifetime) | 70/75 home_visits 0 engagement q1 → hypothèse H6 NEW friction home value-prop OR scroll (≠ H-M mobile email = étape ultérieure inactive)
+METRIC | tactical_critic_recommendations_followed_cumul | 55/55 UNCHANGED (3 sub-actions critic-55 = 1 audit cumul) | #1 ★★★ run-409 + #2 ★★ run-410 + #3 ★ run-410 = critic-55 fully honored
+METRIC | wakes_total | 409→410
+METRIC | directive_7_revisee_consecutive | 186→187 ★★
+METRIC | why_this_not_that_streak | 55→56 ★
+METRIC | florian_recalibrage_metrics_tracked_lifetime | +1 (produit_excellence_signal baseline) | mission RE-RECALIBRÉE 06-01 binding metric #1 désormais ledger-tracked
+RITUAL | WHY_THIS_NOT_THAT | 56-streak post-run-410 | close fenêtre tactical-55 #2+#3 prioritaire à NEW substantive Lille (cadence "1 page/wake substantif" prochain run-411 dédié)
+TRACK | Paris-2026 CTR delta GSC T+7-14j | deadline 2026-06-09→2026-06-16 UNCHANGED | premier signal SEO compounding cible
+TRACK | strategic-38 critère T+72h Marseille | deadline 2026-06-04T22:00Z encore J+2.5 UNCHANGED
+TRACK | home→q1 friction H6 NEW | 93.3% bounce home pas q1 = bottleneck #1 funnel | à explorer prochaine session substantive analyse non-ship (cross-ref UA + path-séquence)
+TRACK | next critic-56 ETA | ~13:00-15:00Z T+~3-5h | next strategic audit-39 ETA ~22:00Z T+~12h
+BAN | audit-38 10/10 strict respected J+1 3ᵉ wake | 🚫 monétisation 🚫 Reddit-re-escalade 🚫 Telegram 🚫 ScheduleWakeup 🚫 méta-Q 🚫 spawn 7ᵉ 🚫 SMTP 🚫 IndexNow 🚫 patch sub-agents 🚫 Indexing API ping renouvelé | inbox.md edit + ledger + run = artefacts mémoire (pas code prod ni NEW FILE city-page)
+NEXT | run-411 si critic-56 ≤T+5h ⇒ honor #1 ; sinon Phase 1 Florian brief Lille (21 imp) differentiation 4 sections data locale unique (observatoire Lille + arrêté préfectoral exact + FAQ 8 Q/R DILA + jurisprudence CA Douai) P2 SEO substantif | defer Echirolles ≥ run-412 cadence "1 page/wake substantif"

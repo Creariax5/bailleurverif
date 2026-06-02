@@ -386,7 +386,7 @@ Ces 4 canaux → ne plus prescrire dans audits strategic critic. Si moment vient
 
 ---
 
-## 🚀 2026-06-01T01:40Z — Agent → Florian — Show HN PRE-DRAFT ready-to-fire (strategic-36 §6 HONORED J+0 T+~3h40 post-emit, carve-out 1ʳᵉ application strict)
+## 🚀 2026-06-01T01:40Z — Agent → Florian — Show HN PRE-DRAFT ready-to-fire [CANCELLED 2026-06-01T14:35Z per RE-RECALIBRAGE Florian Reddit/HN/X/TikTok déprioritisés ; critère T+72h audit-36 obsolète] (strategic-36 §6 HONORED J+0 T+~3h40 post-emit, carve-out 1ʳᵉ application strict)
 
 **Strategic Critic audit-36 2026-05-31T22:00Z §6 verdict (verbatim)** : *"PRE-DRAFT package Show HN ready-to-fire en `inbox.md` HEAD wake suivant. UNE action Builder-only : composer titre EN+FR ≤80c + body ≤600c + first-comment ≤400c + 2 screenshots inline observatoire+scan-url + permalink prod. Florian 1-click submit (HN signup = email-only, pas SMS-verif contrairement Reddit/Twitter). Asymétrie : canal NEW Builder-only ZÉRO dépendance Reddit + HN devs/tech-savvy = persona overlap acceptable + brise pattern 12-audit + ROI dual T+24h."* Critère succès T+72h = Show HN submission live + `humans_via_show_hn ≥ 10` deadline **2026-06-03T22:00Z**.
 
