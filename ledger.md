@@ -2535,3 +2535,14 @@ TRACK | Echirolles FYI ELAN Florian cap ≤2026-06-09 (J+6) UNCHANGED | TODO-37 
 TRACK | strategic-40 critère T+72h deadline 2026-06-05T22:00Z T+~60h restant | email_submitted_lifetime=0/3 MISS + humans_engaged_lifetime=4/6 MISS, sample N=0 post-CTA T+~10h insuffisant
 BAN | audit-40 15/15 strict respected J+1 4ᵉ wake consécutif | 🚫 NEW FILE city-page (0 ship) ✅ / 🚫 monétisation ✅ / 🚫 Reddit-HN-X-TikTok ✅ / 🚫 Telegram ✅ / 🚫 ScheduleWakeup ✅ / 🚫 méta-Q ≤06-04 ✅ / 🚫 spawn 7ᵉ ✅ / 🚫 SMTP ✅ / 🚫 IndexNow ✅ / 🚫 Indexing API >1 URL (0 ping) ✅ / 🚫 patch sub-agents ✅ / 🚫 hero swap ✅ / 🚫 touch home ✅ / 🚫 touch scan-url ✅ / 🚫 touch share-card ✅ / 🚫 NEW funnel event types ✅ | critic-57 STOP #1 (Phase 2 enrich sans mesure intermédiaire) RESPECTED ✅ — ce wake = mesure intermédiaire exigée
 NEXT | run-423 : (a) si audit-41 ≤T+3h ⇒ honor strategic-41 #1 ; (b) sinon defer-track jusqu'à audit-41 ETA ~13:30Z (T+~3h50 post-this-wake) ; (c) si audit-41 silent post-15:30Z ⇒ option Phase 2 Aix-en-Provence enrich (N=42 6ᵉ rang) ONLY IF critic-57 STOP #1 levé explicit ; (d) TODO-37 ✅ DONE. AUCUN cas ship Phase 2 ni V2 CTA sans audit-41 explicit.
+
+## 2026-06-03T11:40Z — run-423 — Florian brief 11:00Z honored J+0 T+~40min : check_legal_regime.py v2 + Discipline 11 + 5 disclaimer grappe Grenoble
+
+WHY | Florian inbox HEAD 11:00Z explicit *"Builder aurait dû prendre cette décision par lui-même"* + 5 priorités → DIRECTIVE 10 §c-bis Brief > Strategic-41 Marseille (defer audit-42)
+ACTION | check_legal_regime.py v1 155L → v2 272L multi-source (authoritative + Wiki FR + SP.fr cross-check + confidence_score + EPCI + note_juridique) + re-run 32 pages = 26 encadre_confirmed (+22 vs v1) / 5 pending grappe Grenoble / 1 non_encadre Marseille
+ACTION | Backfill disclaimer banner ambre `bv-pending-legal` 5 pages grappe Grenoble (Échirolles/Grenoble/Eybens/Fontaine/Saint-Martin-d-Hères) — anchor bv-trust-bar 5/5 ok — message "estimation observatoire, pas plafond légal opposable + zone tendue 2013-392 confirmée"
+ACTION | Discipline 11 codifiée concepts/seo-discipline.md +85L (build-before-escalate workflow + sources ordre + tool référence + anti-patterns + métriques)
+BAN | audit-41 9/9 strict ✅ — carve-out brief Florian hors bans (grappe Grenoble + Discipline 11 + script v2 NON listés)
+METRIC | fact_check_tools_built_autonomously_lifetime=0→1 NEW / pages_legal_verified=32 / pages_pending_correction=5 / strategic_critic_recommendations_followed_cumul=40/40 UNCHANGED / florian_briefs_honored_j0_lifetime +1
+TRACK | tactical-57 #2 CTA mesure intermédiaire T+~14h post-run-417 défer (Florian brief priorise) — reste TRACK ledger pour run-424
+NEXT | run-424 : (a) cross-ref UA window 07:00-13:00Z ; (b) backfill JSON-LD/title 5 grappe Grenoble pending ; (c) mesure CTA T+~16h post-run-417 ; (d) si audit-42 drops ≤13:30Z honor

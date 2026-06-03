@@ -1,8 +1,36 @@
-# Strategic Critic Audit — 2026-06-02T22:00Z
+# Strategic Critic Audit — 2026-06-03T10:00Z
 
 ---
 
-> Audit-40 cycle naturel T+11h30 post audit-39 honored run-411 ship Lille enrich. **Phase 1 brief Florian 06-01T15:45Z COMPLETE 4/4** (Paris run-409 / Lille run-411 / Villeurbanne run-412 / Echirolles run-414). **Critère strategic-39 T+72h `humans_engaged ≥ 4` SATISFAIT J+1** via Marseille FR humain confirmé run-415 + subscriber #1 lifetime sogibim@hotmail.com. Pivot pertinent : Phase 2 propagation OR sharpen produit CTA verdict→email.
+> Audit-41 cycle naturel T+12h post audit-40 honored run-417 ship CTA verdict→email home + ships Phase 2 Nantes run-419 + Toulouse run-420 + critic-57 honored 3/3 run-421 purge smoke + sweep `{ville}` 47 pages. **État empirique purge réelle** : `humans_engaged_lifetime=4` UNCHANGED 4 wakes / `subscribers_real=1` (sogibim Marseille dpe-bailleur) / `email_submitted_real=0` post-CTA T+~10h sample N=0 humain (5 visits=BOT-HIGH Mac/Safari 17.4). Mission RE-RECALIBRÉE 06-01 = P1 produit-excellence + P2 SEO compounding + P3 mesure. Reddit/HN/X/TikTok DÉPRIO Florian explicit jusqu'à humans>50.
+
+## 1. COPYABILITY SCORE
+
+**~82% ★ AMÉLIORÉ -3 vs audit-40** : 2 NEW enrich Phase 2 (Nantes run-419 N + 3 ECLI CA Rennes/ADIL 44/AURAN + Toulouse run-420 +73L N=79 + 3 ECLI CA Toulouse/ADIL 31/AUAT) + sweep 47 pages DPE-FG `{ville}` placeholder fix run-421 = Rich Results unlock systémique. Cumul 6 city-pages data-différenciées (Paris+Lille+Villeurbanne+Lyon+Echirolles Phase 1 + Nantes+Toulouse Phase 2). NON-trivialement réplicable dev-solo ≤2j chacun (crawl + Judilibre + DILA + ADIL local).
+
+## 2. MOAT COMPONENTS LIVE
+
+**9 substantifs UNCHANGED 19 audits cumul ★★★ stagnation absolue 6 mois ETA**. Cat-1=3 (chain 11 vagues `194a4a2` ⚠️ pipeline.sh stale T+~16j / cross-wave 57.6% N=121 / Reddit corpus 35Q). Cat-2=0 MORTE 19 audits. Cat-3=3 templates DILA + 9 ECLI Cass. Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 0/2 referer T+~17j MORT). **NEW sous-composant cat-3 ★ densité** : 6 city-pages Phase 1+2 cross-référencent 12 ECLI Cass. locaux (CA Douai/Lyon/Toulouse/Rennes) = LLM-bait dense jurisprudence territorialisée non-rejouable weekend.
+
+## 3. CONCURRENT GAP
+
+PAP/SmartLoc/Hestia/ANIL : gap tech défendable (observatoire + jurisprudence cross-réf + verdict 30s) MAIS gap business **réduit-mais-toujours-microscopique** humans=4 vs M+. Subscriber #1 sogibim Marseille via `dpe-fiabilite.html` topic `dpe-bailleur` = **1ʳᵉ validation produit-fit segment bailleur-curieux** (≠ thèse locataire-first). Concurrents DPE (DPEHelper/ImmoStat) ignorent toujours — pas validation marché.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**B1** humans=4 stagnant 4 wakes post-Marseille (2 pull-LLM ChatGPT + 1 LinkedIn legacy + 1 sogibim Marseille direct). **B2 viralité** : audit-40 CTA verdict→email T+~10h = N=0 humain post-deploy (5 BOT-HIGH), shares=1 0.4% UNCHANGED 16ᵉ wake. **15ᵉ output non-viral consécutif**. **B3 persona** : Marseille N°4 = signal SEO-direct (pas LLM, pas Reddit) = **valide thèse P2 SEO compounding Florian RE-RECALIBRÉ**. Push 6 sub-agents 0 referer 33j MORT.
+
+## 5. STRATEGIC DRIFT vs P1+P2+P3 RE-RECALIBRÉS
+
+**Drift POSITIF ★★** : 5 wakes consécutifs (417/418/419/420/421) = 100% alignés Phase 1+2 brief Florian 06-01. Critic-57 STOP #1 (Phase 2 sans mesure) honoré run-422 wake mesure pure. SEUL micro-drift : run-422 NEXT plan propose **Aix-en-Provence N=42 6ᵉ rang** comme prochaine Phase 2 = aveugle rang observatoire, IGNORE signal empirique **Marseille = ville-canal-prouvée (sogibim subscriber + LLM-ingest territoire)**. Choisir Aix vs Marseille = drift mesure-vs-empirisme.
+
+## 6. PRESCRIPTION
+
+**ENRICH `encadrement-loyer-marseille-2026.html` Phase 2 ciblé empirique** (PAS Aix-en-Provence). Pattern miroir Nantes/Toulouse : (a) JSON-LD FAQPage 5-8 Q/R DILA-verified (loi 89-462 + zone tendue 2013-392 Marseille décret + ELAN art 140 absent à confirmer) + dateModified bump ; (b) Section "Observatoire Marseille N=X" (grep cumulative.csv ville=marseille) ; (c) 3 ECLI Cass. 3e civ. cross-réf CA Aix-en-Provence (Judilibre filter Bouches-du-Rhône) ; (d) ADIL 13 + Conciliateur + Maison Justice Droit Marseille ; (e) sitemap lastmod + 1 Indexing API ping (limite ban). **Asymétrie** : (1) ville empiriquement-canal-prouvée (sogibim subscriber direct Marseille IP 188.231.2.115 AS44407) **>** Aix N=42 rang aveugle ; (2) amplifie pull-LLM territoire-validé (réplique pattern Villeurbanne→Bouygues) ; (3) Builder-only ZÉRO Florian ; (4) ROI dual T+72h `humans_via_marseille_session ≥ 2` OR `subscribers_via_marseille ≥ 1` ⇒ pattern empirique-driven validé scale Bordeaux/Lyon-arrondissements / échec ⇒ audit-42 pivot densification `dpe-fiabilite.html` (page subscriber-converted). **Interdictions strict** : 🚫 NEW FILE / 🚫 monétisation / 🚫 Reddit-HN-X-TikTok / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 touch home/scan-url/share-card (carve-out audit-40 dépensé) / 🚫 Aix-en-Provence (defer audit-42).
+
+`strategic_critic_recommendations_followed_cumul = 40/40 → audit-41 emit`.
+
+---
 
 ## 1. COPYABILITY SCORE
 

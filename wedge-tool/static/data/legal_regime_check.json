@@ -1,242 +1,816 @@
 {
-  "checked_at": "2026-06-03T10:54:01Z",
-  "source": "https://fr.wikipedia.org/wiki/Contr%C3%B4le_des_loyers",
-  "communes_confirmed_count": 4,
+  "checked_at": "2026-06-03T11:42:59Z",
+  "schema_version": "v2",
+  "sources_consulted": [
+    {
+      "source": "authoritative_law",
+      "label": "Public arrêtés préfectoraux ELAN art 140 + décret 2013-392"
+    },
+    {
+      "source": "wikipedia_fr",
+      "url": "https://fr.wikipedia.org/wiki/Contr%C3%B4le_des_loyers"
+    },
+    {
+      "source": "service_public_fr",
+      "url": "https://www.service-public.fr/particuliers/vosdroits/F1314"
+    }
+  ],
   "local_pages_checked": 32,
-  "encadre_legal_count": 4,
-  "non_encadre_count": 28,
+  "by_regime": {
+    "encadre_legal_confirmed": 26,
+    "pending_legal_verification": 5,
+    "non_encadre_legal": 1
+  },
   "pages": [
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-aubervilliers-2026.html",
       "ville_slug": "aubervilliers",
       "filename": "encadrement-loyer-aubervilliers-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-06-01",
+      "epci_membre": "EPT 6 Plaine Commune (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 6 Plaine Commune.",
+      "source_label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-bagnolet-2026.html",
       "ville_slug": "bagnolet",
       "filename": "encadrement-loyer-bagnolet-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-12-01",
+      "epci_membre": "EPT 8 Est Ensemble (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 8 Est Ensemble.",
+      "source_label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-bobigny-2026.html",
       "ville_slug": "bobigny",
       "filename": "encadrement-loyer-bobigny-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-12-01",
+      "epci_membre": "EPT 8 Est Ensemble (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 8 Est Ensemble.",
+      "source_label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-bondy-2026.html",
       "ville_slug": "bondy",
       "filename": "encadrement-loyer-bondy-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-12-01",
+      "epci_membre": "EPT 8 Est Ensemble (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 8 Est Ensemble.",
+      "source_label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-bordeaux-2026.html",
       "ville_slug": "bordeaux",
       "filename": "encadrement-loyer-bordeaux-2026.html",
-      "regime": "encadre_legal",
+      "regime": "encadre_legal_confirmed",
       "date_effet": "2022-07-15",
-      "source_label": "Bordeaux Métropole ELAN art 140",
-      "wiki_match": true
+      "epci_membre": "Bordeaux Métropole",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Gironde 2022",
+      "note_juridique": "Encadrement légal opposable Bordeaux uniquement (pas l'ensemble de la Métropole).",
+      "source_label": "arrêté préfectoral Gironde Bordeaux Métropole ELAN art 140",
+      "confidence_score": 1.0,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral Gironde Bordeaux Métropole ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "wikipedia_fr",
+          "url": "https://fr.wikipedia.org/wiki/Contr%C3%B4le_des_loyers",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-echirolles-2026.html",
       "ville_slug": "echirolles",
       "filename": "encadrement-loyer-echirolles-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "pending_legal_verification",
+      "date_effet": null,
+      "epci_membre": "Grenoble-Alpes Métropole",
+      "cadre_juridique": "Zone tendue (décret 2013-392) confirmée. Expérimentation ELAN art 140 postulée — arrêté préfectoral effectif à vérifier Légifrance.",
+      "note_juridique": "Statut juridique incertain. Page doit afficher disclaimer 'estimation observatoire, pas plafond légal opposable confirmé' tant que vérification Légifrance non faite.",
+      "source_label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+      "confidence_score": 0.6,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-epinay-sur-seine-2026.html",
       "ville_slug": "epinay-sur-seine",
       "filename": "encadrement-loyer-epinay-sur-seine-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-06-01",
+      "epci_membre": "EPT 6 Plaine Commune (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 6 Plaine Commune.",
+      "source_label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+      "confidence_score": 0.6,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-eybens-2026.html",
       "ville_slug": "eybens",
       "filename": "encadrement-loyer-eybens-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "pending_legal_verification",
+      "date_effet": null,
+      "epci_membre": "Grenoble-Alpes Métropole",
+      "cadre_juridique": "Zone tendue (décret 2013-392) confirmée. Expérimentation ELAN art 140 postulée — arrêté préfectoral effectif à vérifier Légifrance.",
+      "note_juridique": "Statut juridique incertain. Page doit afficher disclaimer 'estimation observatoire, pas plafond légal opposable confirmé' tant que vérification Légifrance non faite.",
+      "source_label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-fontaine-2026.html",
       "ville_slug": "fontaine",
       "filename": "encadrement-loyer-fontaine-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "pending_legal_verification",
+      "date_effet": null,
+      "epci_membre": "Grenoble-Alpes Métropole",
+      "cadre_juridique": "Zone tendue (décret 2013-392) confirmée. Expérimentation ELAN art 140 postulée — arrêté préfectoral effectif à vérifier Légifrance.",
+      "note_juridique": "Statut juridique incertain. Page doit afficher disclaimer 'estimation observatoire, pas plafond légal opposable confirmé' tant que vérification Légifrance non faite.",
+      "source_label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-grenoble-2026.html",
       "ville_slug": "grenoble",
       "filename": "encadrement-loyer-grenoble-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "pending_legal_verification",
+      "date_effet": null,
+      "epci_membre": "Grenoble-Alpes Métropole",
+      "cadre_juridique": "Zone tendue (décret 2013-392) confirmée. Expérimentation ELAN art 140 postulée — arrêté préfectoral effectif à vérifier Légifrance.",
+      "note_juridique": "Statut juridique incertain. Page doit afficher disclaimer 'estimation observatoire, pas plafond légal opposable confirmé' tant que vérification Légifrance non faite.",
+      "source_label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-hellemmes-2026.html",
       "ville_slug": "hellemmes",
       "filename": "encadrement-loyer-hellemmes-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2020-03-01",
+      "epci_membre": "Métropole Européenne de Lille (MEL)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Nord (rattachement Lille)",
+      "note_juridique": "Commune associée à Lille — encadrement légal MEL.",
+      "source_label": "arrêté préfectoral Nord MEL ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral Nord MEL ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-ile-saint-denis-2026.html",
       "ville_slug": "ile-saint-denis",
       "filename": "encadrement-loyer-ile-saint-denis-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-06-01",
+      "epci_membre": "EPT 6 Plaine Commune (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 6 Plaine Commune.",
+      "source_label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+      "confidence_score": 0.6,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-la-courneuve-2026.html",
       "ville_slug": "la-courneuve",
       "filename": "encadrement-loyer-la-courneuve-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-06-01",
+      "epci_membre": "EPT 6 Plaine Commune (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 6 Plaine Commune.",
+      "source_label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-le-pre-saint-gervais-2026.html",
       "ville_slug": "le-pre-saint-gervais",
       "filename": "encadrement-loyer-le-pre-saint-gervais-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-12-01",
+      "epci_membre": "EPT 8 Est Ensemble (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 8 Est Ensemble.",
+      "source_label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+      "confidence_score": 0.6,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-les-lilas-2026.html",
       "ville_slug": "les-lilas",
       "filename": "encadrement-loyer-les-lilas-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-12-01",
+      "epci_membre": "EPT 8 Est Ensemble (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 8 Est Ensemble.",
+      "source_label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-lille-2026.html",
       "ville_slug": "lille",
       "filename": "encadrement-loyer-lille-2026.html",
-      "regime": "encadre_legal",
+      "regime": "encadre_legal_confirmed",
       "date_effet": "2020-03-01",
-      "source_label": "arrete prefectoral Nord, Métropole Européenne de Lille",
-      "wiki_match": true
+      "epci_membre": "Métropole Européenne de Lille (MEL)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Nord 2020",
+      "note_juridique": "Encadrement légal opposable. Périmètre MEL (Lille + Hellemmes + Lomme).",
+      "source_label": "arrêté préfectoral Nord, MEL ELAN art 140",
+      "confidence_score": 1.0,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral Nord, MEL ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "wikipedia_fr",
+          "url": "https://fr.wikipedia.org/wiki/Contr%C3%B4le_des_loyers",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-lomme-2026.html",
       "ville_slug": "lomme",
       "filename": "encadrement-loyer-lomme-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2020-03-01",
+      "epci_membre": "Métropole Européenne de Lille (MEL)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Nord (rattachement Lille)",
+      "note_juridique": "Commune associée à Lille — encadrement légal MEL.",
+      "source_label": "arrêté préfectoral Nord MEL ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral Nord MEL ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-lyon-2026.html",
       "ville_slug": "lyon",
       "filename": "encadrement-loyer-lyon-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-11-01",
+      "epci_membre": "Métropole de Lyon",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Rhône 2021",
+      "note_juridique": "Encadrement légal opposable. Périmètre Lyon (9 arrondissements) + Villeurbanne.",
+      "source_label": "arrêté préfectoral Rhône Métropole de Lyon ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral Rhône Métropole de Lyon ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-marseille-2026.html",
       "ville_slug": "marseille",
       "filename": "encadrement-loyer-marseille-2026.html",
       "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "date_effet": null,
+      "epci_membre": "Métropole Aix-Marseille-Provence",
+      "cadre_juridique": "Zone tendue (décret 2013-392) — plafond hausse renouvellement loi 89-462 art 17-2. PAS d'encadrement ELAN art 140.",
+      "note_juridique": "Pas d'encadrement légal. Plafond loyer renouvellement uniquement (zone tendue).",
+      "source_label": "décret 2013-392 zone tendue (pas ELAN art 140)",
+      "confidence_score": 0.6,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "décret 2013-392 zone tendue (pas ELAN art 140)",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-montpellier-2026.html",
       "ville_slug": "montpellier",
       "filename": "encadrement-loyer-montpellier-2026.html",
-      "regime": "encadre_legal",
+      "regime": "encadre_legal_confirmed",
       "date_effet": "2022-07-01",
-      "source_label": "Métropole de Montpellier ELAN art 140",
-      "wiki_match": true
+      "epci_membre": "Montpellier Méditerranée Métropole",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Hérault 2022",
+      "note_juridique": "Encadrement légal opposable Montpellier uniquement.",
+      "source_label": "arrêté préfectoral Hérault Montpellier ELAN art 140",
+      "confidence_score": 1.0,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral Hérault Montpellier ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "wikipedia_fr",
+          "url": "https://fr.wikipedia.org/wiki/Contr%C3%B4le_des_loyers",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-montreuil-2026.html",
       "ville_slug": "montreuil",
       "filename": "encadrement-loyer-montreuil-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-12-01",
+      "epci_membre": "EPT 8 Est Ensemble (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 8 Est Ensemble.",
+      "source_label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-noisy-le-sec-2026.html",
       "ville_slug": "noisy-le-sec",
       "filename": "encadrement-loyer-noisy-le-sec-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-12-01",
+      "epci_membre": "EPT 8 Est Ensemble (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 8 Est Ensemble.",
+      "source_label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-pantin-2026.html",
       "ville_slug": "pantin",
       "filename": "encadrement-loyer-pantin-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-12-01",
+      "epci_membre": "EPT 8 Est Ensemble (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 8 Est Ensemble.",
+      "source_label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-paris-2026.html",
       "ville_slug": "paris",
       "filename": "encadrement-loyer-paris-2026.html",
-      "regime": "encadre_legal",
+      "regime": "encadre_legal_confirmed",
       "date_effet": "2019-07-01",
-      "source_label": "arrete prefectoral DRIHL Paris",
-      "wiki_match": true
+      "epci_membre": "Ville de Paris (75)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral DRIHL Paris (renouvelé annuellement)",
+      "note_juridique": "Encadrement légal opposable. Plafond loyer par quartier × type bien. Recours CDC Paris.",
+      "source_label": "arrêté préfectoral DRIHL Paris ELAN art 140",
+      "confidence_score": 1.0,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral DRIHL Paris ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "wikipedia_fr",
+          "url": "https://fr.wikipedia.org/wiki/Contr%C3%B4le_des_loyers",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-pierrefitte-sur-seine-2026.html",
       "ville_slug": "pierrefitte-sur-seine",
       "filename": "encadrement-loyer-pierrefitte-sur-seine-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-06-01",
+      "epci_membre": "EPT 6 Plaine Commune (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 6 Plaine Commune.",
+      "source_label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-romainville-2026.html",
       "ville_slug": "romainville",
       "filename": "encadrement-loyer-romainville-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-12-01",
+      "epci_membre": "EPT 8 Est Ensemble (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 8 Est Ensemble.",
+      "source_label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 8 Est Ensemble ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-saint-denis-2026.html",
       "ville_slug": "saint-denis",
       "filename": "encadrement-loyer-saint-denis-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-06-01",
+      "epci_membre": "EPT 6 Plaine Commune (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 6 Plaine Commune.",
+      "source_label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-saint-martin-d-heres-2026.html",
       "ville_slug": "saint-martin-d-heres",
       "filename": "encadrement-loyer-saint-martin-d-heres-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "pending_legal_verification",
+      "date_effet": null,
+      "epci_membre": "Grenoble-Alpes Métropole",
+      "cadre_juridique": "Zone tendue (décret 2013-392) confirmée. Expérimentation ELAN art 140 postulée — arrêté préfectoral effectif à vérifier Légifrance.",
+      "note_juridique": "Statut juridique incertain. Page doit afficher disclaimer 'estimation observatoire, pas plafond légal opposable confirmé' tant que vérification Légifrance non faite.",
+      "source_label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+      "confidence_score": 0.6,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "candidature Grenoble Métropole ELAN art 140 — vérification Légifrance pending",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-saint-ouen-2026.html",
       "ville_slug": "saint-ouen",
       "filename": "encadrement-loyer-saint-ouen-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-06-01",
+      "epci_membre": "EPT 6 Plaine Commune (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 6 Plaine Commune.",
+      "source_label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-stains-2026.html",
       "ville_slug": "stains",
       "filename": "encadrement-loyer-stains-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-06-01",
+      "epci_membre": "EPT 6 Plaine Commune (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 6 Plaine Commune.",
+      "source_label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-villetaneuse-2026.html",
       "ville_slug": "villetaneuse",
       "filename": "encadrement-loyer-villetaneuse-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-06-01",
+      "epci_membre": "EPT 6 Plaine Commune (Seine-Saint-Denis)",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Seine-Saint-Denis 2021",
+      "note_juridique": "Encadrement légal opposable. EPT 6 Plaine Commune.",
+      "source_label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral 93 EPT 6 Plaine Commune ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     },
     {
       "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-villeurbanne-2026.html",
       "ville_slug": "villeurbanne",
       "filename": "encadrement-loyer-villeurbanne-2026.html",
-      "regime": "non_encadre_legal",
-      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+      "regime": "encadre_legal_confirmed",
+      "date_effet": "2021-11-01",
+      "epci_membre": "Métropole de Lyon",
+      "cadre_juridique": "ELAN art 140 + arrêté préfectoral Rhône 2021",
+      "note_juridique": "Encadrement légal opposable. Périmètre Métropole Lyon.",
+      "source_label": "arrêté préfectoral Rhône Métropole de Lyon ELAN art 140",
+      "confidence_score": 0.75,
+      "sources": [
+        {
+          "source": "authoritative_law",
+          "label": "arrêté préfectoral Rhône Métropole de Lyon ELAN art 140",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037639478/",
+          "confirmed": true
+        },
+        {
+          "source": "service_public_fr",
+          "url": "https://www.service-public.fr/particuliers/vosdroits/F1314",
+          "confirmed": true
+        }
+      ]
     }
   ]
 }
