@@ -1,3 +1,85 @@
+## 🔥 2026-06-03T16:30Z — Florian → Agent — **STANDARD QUALITÉ ABSOLU : "would they pay for this?"**
+
+**Florian verbatim 2026-06-03** : *"Fais que notre produit qu'on vend soit vraiment compétitif et vraiment utile au point que les gens soient prêts à payer pour ça."*
+
+### Recalibrage qualité (binding, override toute optimisation antérieure)
+
+**Le filtre absolu désormais** = **"Would a user pay €X for this specific feature/page/action?"** Pas €5/mois, pas €19. **€X concret pour CETTE feature**.
+
+Reste gratuit MIT (mission recalibrage 06-01 inchangée — monétisation OFF jusqu'à humans_engaged >= 100). MAIS la **qualité doit atteindre le niveau payable**. C'est le test de produit-fit ultime.
+
+### Application sur Pilier 1 PRODUIT-EXCELLENCE
+
+**Chaque feature/page doit passer ce test avant ship** :
+
+1. **Wedge homepage 30s verdict** — Would someone pay €5 pour économiser 15 min de recherche service-public + calculs manuels ? Test : si oui, ship. Si non, polish jusqu'à oui.
+
+2. **Générateur LRAR auto-rempli** — Would someone pay €10 pour une lettre LRAR juridiquement solide + calcul trop-perçu rétroactif 3 ans ? ANIL te dit "rédige une LRAR", BailleurVérif la **livre** prête à imprimer. Si pas opposable juridiquement = manque. Cible : LRAR au standard "envoyable telle quelle".
+
+3. **Scan-url annonce** — Would someone pay €2 pour un verdict instantané "cette annonce est illégale, voici comment" ? Test : si l'analyse est superficielle, ça vaut €0. Si elle pointe les vrais articles loi 89-462 + plafond exact + recours = €5-10 facile.
+
+4. **Pages programmatiques par ville** — Would someone pay €1 pour la page Lyon vs Wikipedia gratuite ? Test : si le contenu est unique (observatoire local + arrêté préfectoral exact + jurisprudence CA locale + FAQ DILA) = oui. Si c'est template plat = non.
+
+5. **Observatoire data** — Would someone (chercheur/journaliste/policy) pay €50 pour télécharger CSV avec méthodologie ouverte + chain temporelle 12 vagues + cumulative N=843+ ? Test : APUR et Fondation Logement vendent leurs études → notre data ouverte au même standard.
+
+### Différenciation honnête vs concurrents (à coder)
+
+**NEW concept file** `memory-agent/concepts/competitive-positioning.md` avec tableau honnête vs ANIL/Service-Public.fr/DRIHL/PAP-SmartLoc :
+
+| Critère | ANIL | Service-Public.fr | DRIHL | BailleurVérif |
+|---|---|---|---|---|
+| Verdict 30s | ❌ | ❌ (simulateur séparé) | ❌ | ✅ |
+| LRAR pré-remplie | ❌ | ❌ | ❌ | ✅ |
+| Calcul trop-perçu rétroactif | ❌ | ❌ | ❌ | ✅ |
+| Cassation jurisprudence linked | partiel | ❌ | ❌ | ✅ (9 ECLI) |
+| Observatoire data live | ❌ | ❌ | ❌ | ✅ N=843 |
+| Open source MIT | ❌ | ❌ | ❌ | ✅ |
+| Couverture villes | national | national | Paris seul | 8 (en croissance) |
+| Conseiller humain | ✅ ADIL | ❌ | ❌ | ❌ |
+| Brand 60 ans | ✅ | ✅ État | ✅ Préfecture | ❌ |
+| Avis juridique opposable | partiel | ❌ | ✅ | ❌ |
+
+**Discipline factuelle** : pas d'invention. Si une feature qu'on prétend n'existe pas vraiment ou est superficielle → refactor avant claim. ChatGPT-test "would they pay" = honest mirror.
+
+### Actions Builder (prochains wakes substantifs, priorité HAUTE)
+
+1. **Audit complet** : faire ChatGPT/Claude test sur 5 features actuelles avec critère "payable Y/N" → identifier 2-3 plus faibles qui demandent polish.
+2. **Section "Pourquoi BailleurVérif"** homepage : 3-5 différenciateurs factuels + lien comparateur dédié (PAS marketing fluffy)
+3. **Page `/bailleurverif-vs-alternatives.html`** : comparateur honnête forces+faiblesses (anti-pattern = page promotionnelle aveugle, pro-pattern = tableau factuel + cas d'usage par persona)
+4. **Polish LRAR generator** : audit qualité juridique → si pas opposable telle quelle, fix (ajouter mentions obligatoires loi 89-462 + jurisprudence Cass. précise + format LRAR conforme)
+5. **Sur CHAQUE page programmatique** : section "Quoi de plus que ANIL/SP-fr" 3 lignes factuelles + lien vers ces ressources (le lien externe = trust signal + transparence)
+6. **Documenter dans `concepts/competitive-positioning.md`** la grille + standard "would they pay" comme critère ship gate.
+
+### Critère ship gate (NEW discipline)
+
+**Avant chaque ship feature/page** :
+- Auto-test : "Would a Bouygues iPhone user pay €X pour cette feature ?" — si <€2, polish ; si €2-5, ship + observe ; si >€5, ship + promote.
+- Documenter le €X estimé dans WHY_THIS_NOT_THAT du run.
+
+### Anti-pattern à proscrire
+
+- ❌ Ship features superficielles parce que "ça remplit la roadmap" — qualité > quantité
+- ❌ Marketing aveugle ("la meilleure plateforme FR") sans backing factuel
+- ❌ Cacher faiblesses (couverture villes limitée, pas avis juridique opposable) — la transparence est moat
+- ❌ Copier-coller template programmatique sans data unique
+- ❌ Ne pas linker vers ANIL/SP-fr (peur de perdre user) — le link sortant institutionnel = trust gain
+
+### Pourquoi MAINTENANT
+
+- Subscriber #1 lifetime (sogibim 02/06) prouve qu'au moins 1 utilisateur sur `dpe-fiabilite.html` enrichie a perçu valeur suffisante pour subscribe. Mais : 1/4 humains complète = ratio bas vs concurrent (taux conversion ANIL inconnu mais probablement supérieur sur user déjà filtré).
+- ChatGPT positioning empirique 03/06 = "outil opérationnel complémentaire" → bonne base mais doit être empiriquement TRUE.
+- Mission recalibrage 06-01 P1 PRODUIT-EXCELLENCE déjà actif → ce brief AMPLIFIE le standard qualité, pas nouveau pilier.
+
+### Strategic Critic prescription cohérence
+
+Aligné mission re-recalibrage 06-01 : ce standard "would they pay" est l'opérationalisation du Pilier 1 PRODUIT-EXCELLENCE. Pas conflit. Strategic Critic doit incorporer ce critère dans audits futurs.
+
+### Cooldown
+
+NE PAS re-prompter Florian sur "monétisation" / "pricing" / "stripe" jusqu'à humans_engaged >= 100 (gel mission inchangé). Ce brief = standard qualité, PAS activation revenu.
+
+---
+
 ## 🤖 2026-06-03T15:50Z — Florian → Agent — **LLM benchmark observable + 3 actions (⚪ FAIBLE PRIORITÉ, queue)**
 
 **Florian note explicite** : *"Oui go mais c'est pas un truc prioritaire."* → cette task = **queue après** Discipline 11 + différenciation programmatique + backfill 28 villes flaggées. NE PAS attaquer cette wake. Cooldown re-mention 14j si silent.
