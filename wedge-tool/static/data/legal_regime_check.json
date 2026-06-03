@@ -1,0 +1,242 @@
+{
+  "checked_at": "2026-06-03T10:54:01Z",
+  "source": "https://fr.wikipedia.org/wiki/Contr%C3%B4le_des_loyers",
+  "communes_confirmed_count": 4,
+  "local_pages_checked": 32,
+  "encadre_legal_count": 4,
+  "non_encadre_count": 28,
+  "pages": [
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-aubervilliers-2026.html",
+      "ville_slug": "aubervilliers",
+      "filename": "encadrement-loyer-aubervilliers-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-bagnolet-2026.html",
+      "ville_slug": "bagnolet",
+      "filename": "encadrement-loyer-bagnolet-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-bobigny-2026.html",
+      "ville_slug": "bobigny",
+      "filename": "encadrement-loyer-bobigny-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-bondy-2026.html",
+      "ville_slug": "bondy",
+      "filename": "encadrement-loyer-bondy-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-bordeaux-2026.html",
+      "ville_slug": "bordeaux",
+      "filename": "encadrement-loyer-bordeaux-2026.html",
+      "regime": "encadre_legal",
+      "date_effet": "2022-07-15",
+      "source_label": "Bordeaux Métropole ELAN art 140",
+      "wiki_match": true
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-echirolles-2026.html",
+      "ville_slug": "echirolles",
+      "filename": "encadrement-loyer-echirolles-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-epinay-sur-seine-2026.html",
+      "ville_slug": "epinay-sur-seine",
+      "filename": "encadrement-loyer-epinay-sur-seine-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-eybens-2026.html",
+      "ville_slug": "eybens",
+      "filename": "encadrement-loyer-eybens-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-fontaine-2026.html",
+      "ville_slug": "fontaine",
+      "filename": "encadrement-loyer-fontaine-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-grenoble-2026.html",
+      "ville_slug": "grenoble",
+      "filename": "encadrement-loyer-grenoble-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-hellemmes-2026.html",
+      "ville_slug": "hellemmes",
+      "filename": "encadrement-loyer-hellemmes-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-ile-saint-denis-2026.html",
+      "ville_slug": "ile-saint-denis",
+      "filename": "encadrement-loyer-ile-saint-denis-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-la-courneuve-2026.html",
+      "ville_slug": "la-courneuve",
+      "filename": "encadrement-loyer-la-courneuve-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-le-pre-saint-gervais-2026.html",
+      "ville_slug": "le-pre-saint-gervais",
+      "filename": "encadrement-loyer-le-pre-saint-gervais-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-les-lilas-2026.html",
+      "ville_slug": "les-lilas",
+      "filename": "encadrement-loyer-les-lilas-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-lille-2026.html",
+      "ville_slug": "lille",
+      "filename": "encadrement-loyer-lille-2026.html",
+      "regime": "encadre_legal",
+      "date_effet": "2020-03-01",
+      "source_label": "arrete prefectoral Nord, Métropole Européenne de Lille",
+      "wiki_match": true
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-lomme-2026.html",
+      "ville_slug": "lomme",
+      "filename": "encadrement-loyer-lomme-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-lyon-2026.html",
+      "ville_slug": "lyon",
+      "filename": "encadrement-loyer-lyon-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-marseille-2026.html",
+      "ville_slug": "marseille",
+      "filename": "encadrement-loyer-marseille-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-montpellier-2026.html",
+      "ville_slug": "montpellier",
+      "filename": "encadrement-loyer-montpellier-2026.html",
+      "regime": "encadre_legal",
+      "date_effet": "2022-07-01",
+      "source_label": "Métropole de Montpellier ELAN art 140",
+      "wiki_match": true
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-montreuil-2026.html",
+      "ville_slug": "montreuil",
+      "filename": "encadrement-loyer-montreuil-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-noisy-le-sec-2026.html",
+      "ville_slug": "noisy-le-sec",
+      "filename": "encadrement-loyer-noisy-le-sec-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-pantin-2026.html",
+      "ville_slug": "pantin",
+      "filename": "encadrement-loyer-pantin-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-paris-2026.html",
+      "ville_slug": "paris",
+      "filename": "encadrement-loyer-paris-2026.html",
+      "regime": "encadre_legal",
+      "date_effet": "2019-07-01",
+      "source_label": "arrete prefectoral DRIHL Paris",
+      "wiki_match": true
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-pierrefitte-sur-seine-2026.html",
+      "ville_slug": "pierrefitte-sur-seine",
+      "filename": "encadrement-loyer-pierrefitte-sur-seine-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-romainville-2026.html",
+      "ville_slug": "romainville",
+      "filename": "encadrement-loyer-romainville-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-saint-denis-2026.html",
+      "ville_slug": "saint-denis",
+      "filename": "encadrement-loyer-saint-denis-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-saint-martin-d-heres-2026.html",
+      "ville_slug": "saint-martin-d-heres",
+      "filename": "encadrement-loyer-saint-martin-d-heres-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-saint-ouen-2026.html",
+      "ville_slug": "saint-ouen",
+      "filename": "encadrement-loyer-saint-ouen-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-stains-2026.html",
+      "ville_slug": "stains",
+      "filename": "encadrement-loyer-stains-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-villetaneuse-2026.html",
+      "ville_slug": "villetaneuse",
+      "filename": "encadrement-loyer-villetaneuse-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    },
+    {
+      "file": "/home/deploy/saas-florian/wedge-tool/static/encadrement-loyer-villeurbanne-2026.html",
+      "ville_slug": "villeurbanne",
+      "filename": "encadrement-loyer-villeurbanne-2026.html",
+      "regime": "non_encadre_legal",
+      "note": "absent Wikipedia FR list of officially-encadred communes — likely zone tendue only (article 17-2 loi 89-462)"
+    }
+  ]
+}

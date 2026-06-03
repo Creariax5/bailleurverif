@@ -1,3 +1,91 @@
+## ⚖️ 2026-06-03T11:00Z — Florian → Agent — **NEW capability + discipline : fact-check légal automatique multi-source**
+
+**Florian verbatim 2026-06-03** : *"Brief Builder pour qu'il fasse l'upgrade au prochain wake. Il aurait d'ailleurs dû prendre cette décision par lui-même. Dis-lui et fais en sorte qu'il le fasse."*
+
+### Contexte
+
+Run-414 enrich Échirolles : Builder a flaggé honest doute *"à ma connaissance, Grenoble-Métropole a postulé pour l'expérimentation ELAN art 140 mais aucun arrêté préfectoral spécifique n'a été pris"* + escaladé inbox HEAD à Florian.
+
+**Discipline gap identifié** : c'est PRÉCISÉMENT le moment où Builder aurait dû **construire l'outil de vérification autonome** au lieu d'escalader. La fact-check légale est :
+- **Automatisable** (sources publiques structurées : Wikipedia FR, Service-Public.fr, Légifrance API)
+- **Réutilisable** (cas Échirolles ne sera pas isolé : 28+ autres pages programmatiques avec même incertitude potentielle)
+- **Aligné Pilier 1 PRODUIT-EXCELLENCE** (différenciation vs concurrents = précision juridique > approximation)
+- **Aligné Pilier 2 SEO COMPOUNDING** (Google E-E-A-T = accuracy claim = ranking signal)
+
+### Seed déjà créé par Florian (à étendre, PAS reprendre from scratch)
+
+- `/home/deploy/saas-florian/agent-browser/check_legal_regime.py` (gitignored, agent-browser/ dir)
+- Output : `/home/deploy/saas-florian/wedge-tool/static/data/legal_regime_check.json` (committé)
+- Premier run : 32 pages encadrement-loyer-*-2026 cross-checkées vs Wikipedia FR `Contrôle_des_loyers`
+- Résultat brut : 4 confirmées (Paris/Lille/Bordeaux/Montpellier) / 28 flaggées non-encadrées
+- **Bug parsing connu** : Lyon/Villeurbanne/Saint-Denis/Aubervilliers/Pantin etc. = false negatives (parsing texte trop strict, ne capture pas "Métropole de Lyon" / "Est Ensemble" / "Plaine Commune" comme proxies)
+
+### Mission upgrade (next wake substantif, autonome)
+
+Améliorer `check_legal_regime.py` v2 multi-source + intégration build pipeline :
+
+**Sources de vérité à cross-checker (par ordre d'autorité)** :
+1. **Légifrance API** (PISTE_CLIENT_ID + PISTE_CLIENT_SECRET déjà en `.env`, déjà utilisé par `piste_oauth.py` pour sub-judilibre) : query arrêtés préfectoraux mentionnant chaque commune + "encadrement" / "ELAN" / "article 140"
+2. **Service-Public.fr** (page dédiée encadrement loyers) : crawl + parse liste commune
+3. **Wikipedia FR `Contrôle_des_loyers`** (déjà tenté v1) : améliorer parsing pour capturer EPCI/Métropole (Est Ensemble, Plaine Commune, Métropole Lyon, MEL Lille, Bordeaux Métropole, Montpellier Métropole)
+4. **ANIL FAQ** + DRIHL (Île-de-France) : secondaires si manque info
+
+**Output v2** :
+- Enrichir `legal_regime_check.json` schema :
+  - `confidence_score` 0-1 par ville (combien sources confirment)
+  - `sources` array : `[{source: "legifrance", arrete_ref: "...", url: "...", confirmed: true}, ...]`
+  - `date_effet_first` + `date_effet_last_update`
+  - `epci_membre` si applicable (Est Ensemble / Plaine Commune / Métropole)
+  - `note_juridique` court (cadre légal applicable : ELAN art 140 vs zone tendue art 17-2)
+
+**Intégration build pipeline (NEW v2 - codifier)** :
+- `seo-discipline.md` : ajouter règle "AVANT ship nouvelle page programmatique `encadrement-loyer-<ville>-*.html`, run `python3 check_legal_regime.py --ville <slug>` → si `regime != encadre_legal_confirmed` → contenu page doit explicitement signaler 'estimation observatoire, pas plafond légal opposable' + disclaimer JSON-LD"
+- Régénération hebdo automatique (cron OR sub-agent) : `legal_regime_check.json` re-built chaque lundi 06:00Z pour capter nouveaux arrêtés
+- Toute page existante claim encadrement sans confirmation Légifrance → backfill correction wake substantif
+
+### Discipline à codifier (NEW rule) — anti-pattern "escalade qui aurait dû être autonome"
+
+**Ajouter au prochain wake substantif dans `HUMAN_DIRECTIVE.md` OU dans `concepts/seo-discipline.md`** la règle :
+
+> **Discipline 11 — Build the verification tool BEFORE escalating fact-check doubts**
+>
+> Quand tu rencontres un doute factuel SI ce doute est :
+> 1. **Re-occurring** (cas Échirolles ≠ isolé : 28+ autres villes en attente)
+> 2. **Automatisable** (sources publiques structurées dispo : Légifrance/Wikipedia/gov.fr)
+> 3. **Aligné mission** (P1 produit-excellence accuracy / P2 SEO E-E-A-T)
+>
+> ALORS : **construire l'outil de vérification autonome AVANT d'escalader à Florian**. Escalade seulement si :
+> - Sources publiques contradictoires (vrai gap interprétation juridique)
+> - Action a impact externe ≥50€ (validation Florian explicit budget)
+> - Pas de source publique exploitable (Légifrance/Service-Public/Wikipedia/ANIL vides)
+>
+> **Anti-pattern à éviter** : 'Je note ce doute + escalade Florian' alors qu'un script 30-60 min de dev autonome règle le doute structurellement.
+>
+> **Exemple positif (à imiter)** : run-414 Échirolles aurait dû produire `check_legal_regime.py` au lieu d'escalader. Florian l'a fait à la place run-422 trail = signal d'amélioration discipline future.
+
+### Pourquoi cette discipline NOW
+
+- **Florian time** = ressource la plus chère du système (cf HUMAN_DIRECTIVE.md DIRECTIVE PRINCIPALE)
+- Chaque escalade évitable = quart d'heure Florian perdu
+- 28 villes flaggées dans legal_regime_check.json = 28 escalades potentielles SI Builder reste en mode "flag + escalade" → DOIT être "build tool + auto-fix"
+- Aligné capability shippée 2026-05-17 (Florian autorise tests réversibles + auto-correction)
+
+### Actions wake suivant (priorité)
+
+1. **Améliorer `check_legal_regime.py` v2** multi-source (Légifrance API priorité = source la plus autoritative)
+2. **Re-run** sur 32 pages encadrement-loyer + 50 pages DPE-FG + 9 arnaque-location = 91 pages total
+3. **Codifier Discipline 11** dans `HUMAN_DIRECTIVE.md` (préférable) OU `concepts/seo-discipline.md`
+4. **Backfill correction** pages identifiées false claims (commence par Échirolles + Grenoble + Eybens + Saint-Martin-d-Hères = grappe Grenoble Métropole probable non-encadrée légalement)
+5. Log dans `inbox-from-critic.md` weekly count `pages_legal_verified` + `pages_pending_correction`
+
+### Cohérence audits
+
+- `strategic_critic_recommendations_followed_cumul` = ~40/40 ★ continue
+- Nouvelle métrique à tracker : `fact_check_tools_built_autonomously_lifetime` (cible = chaque pattern récurrent doit produire tool)
+- Tactical critic : flag "escalade évitable" pattern si Builder revient sur même type doute fact-check 2× sans build tool
+
+---
+
 ## 🎯🎯🎯 2026-06-02T19:55Z — Agent → Florian — **PREMIER SUBSCRIBER LIFETIME ★★★ + HUMAIN N°4 confirmé Marseille FR**
 
 **Critic-56 #1 ★★★ honored J+0 T+~1h post-drop** : cross-ref UA session `s-mpwgf59g-5zfeg` ip_hash `6061608912` UA Win10+Edg/148 desktop 06-02T09:47Z → **TRIPLE découverte majeure** :
