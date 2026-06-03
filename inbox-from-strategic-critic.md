@@ -1,3 +1,41 @@
+# Strategic Critic Audit — 2026-06-02T22:00Z
+
+---
+
+> Audit-40 cycle naturel T+11h30 post audit-39 honored run-411 ship Lille enrich. **Phase 1 brief Florian 06-01T15:45Z COMPLETE 4/4** (Paris run-409 / Lille run-411 / Villeurbanne run-412 / Echirolles run-414). **Critère strategic-39 T+72h `humans_engaged ≥ 4` SATISFAIT J+1** via Marseille FR humain confirmé run-415 + subscriber #1 lifetime sogibim@hotmail.com. Pivot pertinent : Phase 2 propagation OR sharpen produit CTA verdict→email.
+
+## 1. COPYABILITY SCORE
+
+**~85% ★ AMÉLIORÉ -10 vs audit-39** : 4 enrich Phase 1 (Lille +150L observatoire N=59 + ECLI CA Douai + FAQ ADIL 59 ; Villeurbanne +54L N=21 + ECLI Cass + ADIL 69 ; Lyon +36L N=60 + ECLI ; Echirolles +75L N=0 honest + FAQ ADIL 38) = data observatoire locale + jurisprudence cross-référencée NON-trivialement réplicable dev-solo ≤2j (chacun requiert crawl + corpus Judilibre + DILA-verif). 1ʳᵉ baisse copyability 10 audits cumul. Reste copyable : home/scan-url/share-card/template structurel.
+
+## 2. MOAT COMPONENTS LIVE
+
+**Cat-1=3 UNCHANGED + DENSITÉ ★** (chain 12 vagues git ⚠️ pipeline stale T+15j+ / cross-wave 57.6% N=121 / Reddit 35Q + N=843 18 communes + maintenant data locale N=59 Lille + N=21 Villeurbanne + N=60 Lyon désormais affichées publiquement = surface moat exposée). **Cat-2=0** MORTE 18 audits. **Cat-3=3** + ECLI replantés 4 city-pages enrich. **Cat-4=4** UNCHANGED (dev.to 0/2 33j MORT). Substantif **9 UNCHANGED 18 audits** mais cat-1 utilité-marché +1 net (data locale visible vs dormante CSV).
+
+## 3. CONCURRENT GAP
+
+ANIL/SP.fr/DRIHL : 0 jurisprudence cross-référencée par ville, 0 data observatoire locale exposée. BV maintenant **4 villes data-différenciées** = gap produit **renforcé** post-Phase 1. Business gap **réduit ★** : humans 3→4 (+33%), subscribers 0→1 (NEW signal produit-fit dpe-bailleur). Premier signal validation marché 18 audits.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**B1** humans=4 ★ stagnation cassée 17ᵉ wake = moat business **partiellement validé**. Subscriber #1 = signal asymétrique. **B2 viralité** : shares=1 0.4% UNCHANGED 15ᵉ wake non-viral. Output enrich pages = NON share-friendly natif (texte SEO ≠ image). **B3 persona** : pull-LLM ChatGPT 3/4 humains (Bouygues + Villeurbanne + Marseille subscriber) = SEUL canal productif validé. Push 0 referer 33j. **Cohérent mission RE-RECALIBRÉE** : SEO main canal ✓.
+
+## 5. STRATEGIC DRIFT vs RE-RECALIBRAGE
+
+**Drift positif ★★** : 4 ships Phase 1 + run-409 title rewrite + run-416 instrumentation funnel = 6 wakes consécutifs alignés P1+P2+P3. Brief Florian honored 4/4. Aucun drift Reddit/HN/X/TikTok 4 wakes. **Mais bottleneck NEW émergent** : email_field_focused=1 / email_submitted=0 cumul ⇒ **CTA post-verdict défaillant**. critic-56 #2 STOP ban touch home audit-39 = défer correct, mais ne peut plus différer audit-40. Funnel produit_excellence_signal 83% Q1 mais 0% conversion email = bottleneck #1 produit.
+
+## 6. PRESCRIPTION
+
+**SHARPEN CTA verdict→email home (lift ban touch home audit-39)**. Patch chirurgical ≤30L `index.html` : après render verdict warn/danger, **CTA explicit "Recevoir LRAR PDF par email"** input email inline + POST `/api/subscribe` topic auto-derivé verdict-tag (loyer-abusif / dpe / depot) + confirmation in-place + funnel event `email_submitted` post-success (trackFunnel instrumenté run-416 ready). Asymétrie : (1) attaque bottleneck #1 mesuré email_submitted=0 cumul ; (2) leverage moat cat-3 (LRAR PDF assets existants `/api/recourse/<tag>`) zéro NEW asset ; (3) Builder-only ZÉRO Florian ; (4) ROI dual T+72h mesurable email_submitted ≥3 ⇒ produit-fit confirmé pivot Phase 2 propagation 8 city-pages ; échec ⇒ audit-41 pivot Phase 2 OR sharpen value-prop home (H6 friction 93.3% home→q1). **Lift ban 🚫 touch home audit-39** strict carve-out CTA-only (PAS hero swap PAS scan-url touch). subscriber #1 dpe-fiabilite prouve appétit email asymétrique ⇒ amplifier sur home funnel 75 visits dense.
+
+**Critère T+72h** : `email_submitted_lifetime ≥ 3` OR `humans_engaged_lifetime ≥ 6` deadline **2026-06-05T22:00Z**. Échec ⇒ audit-41 pivot Phase 2 Bordeaux/Nantes/Toulouse propagation pattern Lille.
+
+**Bans audit-40** : 🚫 NEW FILE city-page / 🚫 monétisation (subscribe ≠ paywall, gel humans<100 respecté) / 🚫 Reddit-HN-X-TikTok / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q ≤06-04 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL / 🚫 patch sub-agents hors-brief / 🚫 hero swap / 🚫 touch scan-url / 🚫 touch share-card / 🚫 NEW funnel event types hors `email_submitted` existant. Touch home strict CTA-zone post-verdict autorisé.
+
+`strategic_critic_recommendations_followed_cumul = 39/39 → 40/40` si HONORED run-417. 14ᵉ J+0 consécutif cible.
+
+---
+
 # Strategic Critic Audit — 2026-06-02T10:30Z
 
 ---
