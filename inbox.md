@@ -1,3 +1,71 @@
+## 📊 2026-06-03T17:30Z — Florian → Agent — **GSC requêtes réelles utilisateurs (5 queries, données live)**
+
+**Florian partage data GSC Performance 03/06** — vraies requêtes Google qui font apparaître bailleurverif.fr (16j cumul) :
+
+| # | Requête | Imp | Clic | CTR | Persona signal |
+|---|---------|-----|------|-----|---|
+| 1 | `r askfrance questions` | 8 | 0 | 0% | Reddit-bait FR — `/questions-reelles-locataires-fr.html` émerge |
+| 2 | `aide rénovation propriétaire bailleur 2026` | 7 | 0 | 0% | **BAILLEUR pain point** — `aides-financieres-bailleur-2026.html` |
+| 3 | `service-public interdiction location logement classe g 2025 f 2028 e 2034` | 3 | 0 | 0% | **Long-tail ultra-spécifique** — DPE F/G calendrier |
+| 4 | `encadrement de loyers a villeurbanne` | 1 | 0 | 0% | Phase 2 Villeurbanne enrich (strategic-34) émerge |
+| 5 | `encadrement des loyers paris drihl` | 1 | 0 | 0% | Persona EXPERT (cite DRIHL = Préfecture) |
+
+**Cumul : 5 requêtes / 20 impressions / 0 clic / CTR 0%** = ranking position basse OU title/meta pas conversit.
+
+### Insights stratégiques (pour intégration concepts/personas-segments.md + roadmap)
+
+1. **Signal persona BAILLEUR fort (#2 + #5)** : 2/5 requêtes = bailleur-oriented. Renforce thèse Phase 2 pivot SaaS bailleur multi-bien (modèle D long-term-strategy.md à créer).
+
+2. **Long-tail = moat structurel (#3)** : requête `service-public interdiction location logement classe g 2025 f 2028 e 2034` ultra-spécifique = 0 concurrent optimise dessus. Notre créneau différenciant vs ANIL/SP-fr.
+
+3. **Stratégie Reddit-bait validée (#1)** : `/questions-reelles-locataires-fr.html` (strategic-26 prescription run-345-ish) émerge sur 8 imp. Capitalize : créer pages similaires `/questions-reelles-bailleurs-fr.html` + `/questions-frequentes-encadrement-loyer.html` + `/questions-frequentes-dpe-bailleur.html`.
+
+4. **Phase 2 enrich Villeurbanne fonctionne (#4)** : strategic-34 honored produit traction. Continuer enrich Phase 2-3 pages restantes (cf brief diff prog 06-01).
+
+5. **0% CTR global = title/meta optimization URGENTE** : ces 5 pages apparaissent mais ne convertissent pas. Pages identifiées (par priorité impressions) :
+   - `/aides-financieres-bailleur-2026.html` (7 imp) ← **#1 priorité**
+   - `/questions-reelles-locataires-fr.html` (8 imp pour Reddit-bait)
+   - Page DPE calendrier 2025/2028/2034 (à créer si n'existe pas encore)
+   - `/encadrement-loyer-villeurbanne-2026.html`
+   - `/encadrement-loyer-paris-2026.html` (DRIHL keyword)
+
+### Actions Builder (autonome, prochains wakes)
+
+**Phase 1 immédiate** :
+
+A. **Optimiser title/meta `aides-financieres-bailleur-2026.html`** — 7 imp = plus gros gain potentiel. Test "would they pay" = bailleur cherchant rénovation 2026, friction calendrier DPE, willingness élevée. Title ≤60c orienté action + chiffres si possible.
+
+B. **Créer NEW page** `/calendrier-interdiction-dpe-2025-2028-2034.html` ciblant long-tail #3 :
+- Calendrier explicite par classe (G 01/01/2025 / F 01/01/2028 / E 01/01/2034)
+- Sources Légifrance + Service-Public.fr (link sortant trust signal)
+- Section "Quelle classe DPE est mon logement ?" → CTA wedge homepage
+- FAQPage JSON-LD 8+ Q/R
+- Mobile-first
+- "would they pay €5 pour avoir le calendrier clair + verdict si MON DPE est concerné" ? → oui probablement.
+
+C. **Créer 2 NEW pages askfrance-style** ciblant requêtes Reddit-bait :
+- `/questions-reelles-bailleurs-fr.html` (10 questions courantes bailleurs, structure Q&A claire)
+- `/questions-frequentes-encadrement-loyer.html` (10 questions encadrement + réponses sourcées)
+- Modèle = strategic-26 success `/questions-reelles-locataires-fr.html`
+
+D. **Documenter dans `concepts/seo-keyword-intelligence.md` NEW** :
+- Tableau 5 requêtes initiales + monitoring weekly via GSC API (ou screenshot Florian périodique)
+- Tracker delta impressions/clics par requête weekly
+- Identifier NEW queries émergentes → action ship dédié
+
+### Cohérence avec briefs en cours
+
+- Aligné brief 06-01T15:45Z (différenciation programmatique) — données GSC confirment Phase 2 fonctionne (#4 Villeurbanne)
+- Aligné brief 06-03T16:30Z ("would they pay") — chaque action ci-dessus passe le filtre €X
+- Aligné brief 06-03T17:00Z (long-term strategy Phase 1/2) — signal bailleur #2+#5 = data pour persona analysis trigger Phase 2 pivot
+- Aligné Discipline 11 (build-vs-escalate) — exemple = créer pages auto sans escalader Florian pour chaque
+
+### Cooldown / monitoring
+
+Florian re-partagera GSC data weekly via screenshots (cooldown 7j). Si tendance change drastiquement OU NEW query émergente non-anticipée → brief inbox HEAD. Si stable → continuer roadmap actions A-D.
+
+---
+
 ## 🎯 2026-06-03T17:00Z — Florian → Agent — **STRATÉGIE LONG TERME + AUTO-PATCH PROMPTS (autonomie totale)**
 
 **Florian verbatim 2026-06-03** : *"Dis à l'agent de faire tout ça lui-même, même modif son prompt et les critic et strategy si besoin."*
