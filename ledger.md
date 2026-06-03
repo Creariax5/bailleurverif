@@ -2485,3 +2485,24 @@ TRACK | Lille/Villeurbanne/Lyon/Paris-2026/Bordeaux T+14j GSC delta | Bordeaux N
 TRACK | Echirolles FYI ELAN Florian | cap réponse ≤2026-06-09 (J+6) UNCHANGED
 BAN | audit-40 15/15 strict respected J+0 | 🚫 NEW FILE city-page / 🚫 monétisation / 🚫 Reddit-HN-X-TikTok / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL (0 ping) / 🚫 patch sub-agents / 🚫 hero swap / 🚫 touch scan-url / 🚫 touch share-card / 🚫 NEW funnel event types | édit existant pas NEW FILE = SB-1 hors-trigger, pas touché home/scan-url/share-card
 NEXT | run-419 : si critic-57 ≤T+3h ⇒ honor #1 ; sinon audit-41 ETA ~13:30Z J+1 honor strategic ; sinon option (a) Nantes enrich Phase 2 (vérif N obs ≥20) — option (b) Toulouse enrich Phase 2 — option (c) backfill concepts/strategic-prescription-last audit-40 — option (d) M0+ §a check funnel email_submitted post CTA ship run-417 T+~4h trafic nuit
+
+
+run-419 | 2026-06-03T03:40Z | Phase 2 Nantes DPE enrich brief Florian 06-01T15:45Z (4 sections data locale unique + 3 ECLI Cass. 3e civ. + 5 Q FAQPage Nantes-spécifiques + bug {ville} fix + title rewrite 53c)
+METRIC | florian_briefs_honored_j+N_lifetime | UNCHANGED brief 06-01 Phase 2 = continuing window | 2ᵉ ville Phase 2 post Phase 1 4/4 complete (Bordeaux run-418 + Nantes ce wake)
+METRIC | code_lines_shipped_prod_lifetime | +70 net (+75/-5 diff) | nantes-dpe-f-g-interdit-location.html 367→437L
+METRIC | city_pages_enriched_data_locale_lifetime | 5→6 ★ | Paris+Lille+Villeurbanne+Lyon+Echirolles+Bordeaux+Nantes désormais data-différenciées (7 villes cumul, 2/N Phase 2)
+METRIC | observatoire_data_locale_exposee_publiquement_count | 5→6 villes | Lille N=59 + Villeurbanne N=21 + Lyon N=60 + Echirolles N=0 honest + Bordeaux N=42 + Nantes N=80 nouveau
+METRIC | faqpage_jsonld_pages_count | +1 | Nantes 5→8 Q/R DILA-verified (pattern Lille 10 Q/R post-enrich)
+METRIC | jurisprudence_eclis_replicated_pages_lifetime | +1 | 3 Cass. 3ᵉ civ. Nantes (15-06-2023 22-14.121 ECLI:FR:CCASS:2023:C300425 + 17-12-2015 14-22.754 + 21-05-2014 13-14.106)
+METRIC | legifrance_links_added_lifetime | +3 | 3 ECLI Légifrance Nantes (premier ECLI ID complet, 2 autres recherche)
+METRIC | template_substitution_bug_fixes_count | 0→1 ★ NEW | Bug placeholder {ville} fix Nantes JSON-LD FAQ (10 pages restantes détectées grep, fix opportuniste futur)
+METRIC | audit_40_bans_consecutive_strict | 1→2 ✅ | wakes-strict respect 15/15 carve-out non-utilisé J+0 + J+1
+METRIC | production_endpoints_validated_e2e_lifetime | UNCHANGED | curl /nantes-dpe-f-g-interdit-location.html HTTP 200 41886b grep Observatoire BailleurVérif Nantes ✅ ECLI ✅ ADIL 44 ✅ AURAN ✅ {ville}=0 ✅
+METRIC | sitemap_lastmod_updates_count | +1 | nantes-dpe-f-g-interdit-location.html 2026-05-16 → 2026-06-03
+RITUAL | WHY_THIS_NOT_THAT | 65-streak post-run-419 | 4 NOT THAT explicites (Toulouse / NEW FILE encadrement-Nantes-2026 / re-touch home CTA / Indexing API ping)
+TRACK | brief Florian Phase 2 propagation observatoire villes | 2/N (Bordeaux+Nantes) | next candidats Toulouse N=79 / Aix-en-Provence N=42
+TRACK | strategic_40_critere_t72h | deadline 2026-06-05T22:00Z UNCHANGED | email_submitted_lifetime=0 baseline (post run-417 ship CTA T+~6h trafic nuit), humans_engaged_lifetime=4
+TRACK | Lille/Villeurbanne/Lyon/Paris-2026/Bordeaux/Nantes T+14j GSC delta | Nantes NEW horloge 2026-06-17 deadline | 5 autres 2026-06-16-17
+TRACK | Echirolles FYI ELAN Florian | cap réponse ≤2026-06-09 (J+6) UNCHANGED
+BAN | audit-40 15/15 strict respected J+1 | 🚫 NEW FILE city-page / 🚫 monétisation / 🚫 Reddit-HN-X-TikTok / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL (0 ping) / 🚫 patch sub-agents / 🚫 hero swap / 🚫 touch scan-url / 🚫 touch share-card / 🚫 NEW funnel event types | édit existant pas NEW FILE = SB-1 hors-trigger, pas touché home/scan-url/share-card
+NEXT | run-420 : si audit-41 ≤T+3h ⇒ honor #1 ; sinon option (a) Phase 2 Toulouse enrich (N=79 même pattern Nantes, ressort CA Toulouse + zone tendue 2013-392 seulement) — option (b) Phase 2 Aix-en-Provence enrich (N=42 6ᵉ rang) — option (c) M0+ §a check funnel email_submitted post CTA ship run-417 T+~9h tracking. Préférer (a) Toulouse propagation pattern réplicable.
