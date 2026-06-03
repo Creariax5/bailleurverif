@@ -2563,3 +2563,19 @@ TRACK | Echirolles FYI ELAN Florian cap ≤2026-06-09 (J+6) | answered substanti
 TRACK | strategic-40 critère T+72h deadline 2026-06-05T22:00Z T+~56h restant | email_submitted 0/3 MISS + humans_engaged 4/6 MISS, sample 24h N=0 humain post-CTA confirmé
 BAN | audit-41 9/9 strict respected | 🚫 NEW FILE city-page (édits existants 5 + sitemap) ✅ / 🚫 monétisation ✅ / 🚫 Reddit-HN-X-TikTok ✅ / 🚫 Telegram ✅ / 🚫 ScheduleWakeup ✅ / 🚫 touch home/scan-url/share-card ✅ / 🚫 Aix-en-Provence (defer audit-42) ✅ — carve-out Florian brief §c-bis (backfill correction) hors-bans : grappe Grenoble pages ≠ Marseille
 NEXT | run-425 : (a) si audit-42 ≤T+3h ⇒ honor strategic-42 #1 ; (b) sinon backfill Marseille (non_encadre_legal, traitement similaire mais cadre = zone tendue stricte, pas pending) — pattern réplicable script `backfill_grappe_grenoble_run424.py` adapté ; (c) sinon TODO-37 instrumentation fix funnel email_submitted 73 fichiers HTML (tactical-56 hypothèse) ; (d) tactical-57 #2 V2 CTA variant si N humain ≥1 post-CTA dans fenêtre. AUCUN cas Phase 2 enrich nouvelle ville sans audit-42 explicit.
+
+## run-425 — 2026-06-03T15:40Z — Wake-425 honor Florian brief 17:30Z Action A+D / title-meta optim + concept seo-keyword-intelligence
+
+SHIP | `aides-financieres-bailleur-2026.html` title 137c→56c + meta 268c→150c + og/twitter mirror + JSON-LD dateModified 2026-06-03 + sitemap.xml lastmod | Action A brief 17:30Z honored (query #2 GSC `aide rénovation propriétaire bailleur 2026` 7 imp / 0% CTR) | smoke prod HTTP/200 45933b nouveau title+meta servis ✅
+SHIP | NEW concept `memory-agent/concepts/seo-keyword-intelligence.md` (tableau 5 queries baseline + 5 insights + monitoring weekly + ship-gate discipline + H1/H2 hypothèses T+14j) + MEMORY.md index ligne pointer | Action D brief 17:30Z honored
+DEFER | Actions B+C brief 17:30Z (NEW pages DPE calendrier + reddit-bait bailleurs) | brief 17:00Z anti-pattern "Tout shipper d'un coup A-D" + ban audit-41 NEW FILE ⇒ defer audit-42
+DEFER | Marseille enrich strategic-41 | brief Florian stack 4× (17:30Z + 17:00Z + 16:30Z + 15:50Z) priorité §c-bis Brief > Strategic ⇒ defer audit-42
+DEFER | Auto-PATCH Builder prompt brief 17:00Z section Phase 1/2 | cap 1-2 actions/wake + structural change ⇒ wake dédié
+DEFER | NEW concepts long-term-strategy.md + personas-segments.md + competitive-positioning.md (briefs 17:00Z + 16:30Z) | 1 concept/wake max ⇒ next wakes 1-3
+DEFER | LLM benchmark 3 actions brief 15:50Z | Florian explicit "queue après Discipline 11 + différenciation programmatique + backfill" ⇒ LOW prio
+SKIP | V2 CTA touch home tactical-57 #2 | sample N=0 humain post-CTA T+~20h = canal bottleneck pas CTA + ban audit-41 🚫 touch home strict
+METRIC | events_total_lifetime=130 / sessions=97 / email_submitted_real=0 / subscribers_real=1 (sogibim) / humans_engaged=4 | UNCHANGED vs run-424
+COMPLIANCE | DIRECTIVE 7 199-streak ✓ / DIRECTIVE 9 ✓ / DIRECTIVE 10 §c-bis ✓ / Discipline 11 ✓ / Audit-41 bans 11/11 ✓ / WHY 67-streak ✓ / "would they pay" filter ✓
+TRACK | strategic_critic_recommendations_followed_cumul = 40/40 UNCHANGED (audit-41 prescription Marseille deferred par carve-out Florian brief §c-bis, pas violation : strategic peut audit cohérence prochain)
+TRACK | Audit-42 ETA ~22:00Z+ T+~6h | si drop ≤T+~6h, honor strategic-42 #1 ; sinon Action B brief 17:30Z (NEW DPE calendrier) blocked SB-1 + audit-41 NEW FILE ban
+NEXT | run-426 : (a) audit-42 drop ≤T+~6h → honor #1 ; (b) brief Action B NEW DPE calendrier (SB-1 + audit-42 lift requis) ; (c) brief Action C 2 NEW pages askfrance (idem) ; (d) auto-PATCH Builder prompt brief 17:00Z section Phase 1/2 ; (e) NEW concept competitive-positioning.md brief 16:30Z (memory-agent ≠ user-facing, pas SB-1). AUCUN cas Marseille sans audit-42.
