@@ -2466,3 +2466,22 @@ TRACK | Echirolles FYI ELAN Florian | cap réponse ≤2026-06-09 (J+7) UNCHANGED
 TRACK | Lille/Villeurbanne/Lyon/Paris-2026 critères T+14j GSC imp delta | deadlines 2026-06-16 UNCHANGED
 BAN | audit-40 14/14 strict respected | 🚫 NEW FILE city-page / 🚫 monétisation / 🚫 Reddit-HN-X-TikTok / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q ≤06-04 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL / 🚫 patch sub-agents hors-brief / 🚫 hero swap / 🚫 touch scan-url / 🚫 touch share-card / 🚫 NEW funnel event types | touch home strict CTA-zone post-verdict autorisé carve-out HONORED
 NEXT | run-418 : si critic-57 ≤T+3h ⇒ honor #1 ; sinon option (a) Phase 2 Bordeaux enrich (edit existant pas NEW FILE) P2 SEO HAUTE — option (b) Nantes enrich top observatoire — option (c) M0+ §a baseline GSC refresh. Préférer (a) Bordeaux si page existe (N=42 observatoire 4ᵉ ville ELAN). Critère audit-40 T+72h en cours mesure, échec ⇒ audit-41 pivot Phase 2 propagation pattern Lille.
+
+
+run-418 | 2026-06-03T01:40Z | Phase 2 Bordeaux enrich brief Florian 06-01T15:45Z (4 sections data locale unique + FAQPage JSON-LD 8 Q/R + title rewrite 68c)
+METRIC | florian_briefs_honored_j+N_lifetime | UNCHANGED brief 06-01 Phase 2 = continuing window | 1ʳᵉ ville Phase 2 post Phase 1 4/4 complete
+METRIC | code_lines_shipped_prod_lifetime | +80 net (+88/-8 diff) | encadrement-loyer-bordeaux-2026.html 261→333L
+METRIC | city_pages_enriched_data_locale_lifetime | 4→5 ★ | Paris+Lille+Villeurbanne+Lyon+Echirolles+Bordeaux désormais data-différenciées (Phase 1 4/4 + Phase 2 1/N)
+METRIC | observatoire_data_locale_exposee_publiquement_count | 4→5 villes | Lille N=59 + Villeurbanne N=21 + Lyon N=60 + Echirolles N=0 honest + Bordeaux N=42 nouveau
+METRIC | faqpage_jsonld_pages_count | +1 | Bordeaux 8 Q/R DILA-verified pattern Villeurbanne strategic-34
+METRIC | jurisprudence_eclis_replicated_pages_lifetime | +1 | 3 Cass. 3ᵉ civ. Bordeaux (26-09-2024 23-19.572 + 24-09-2020 ECLI:FR:CCASS:2020:C300657 + 28-05-2008 07-13.034)
+METRIC | legifrance_links_added_lifetime | +6 | décret 2013-392 + ELAN 140 + loi 2023-668 + loi 3DS + loi Climat 2021-1104 + décret 2022-1726 + loi ALUR 2014 = 7 (dont 1 doublon ECLI Cass)
+METRIC | audit_40_bans_consecutive_strict | 0→1 ✅ | wakes-strict respect 15/15 carve-out non-utilisé
+METRIC | production_endpoints_validated_e2e_lifetime | UNCHANGED | curl /encadrement-loyer-bordeaux-2026.html HTTP 200 42204b grep Observatoire-Bordeaux ✅
+RITUAL | WHY_THIS_NOT_THAT | 64-streak post-run-418 | 4 NOT THAT explicites (Nantes / title-only / re-touch home / Indexing API ping)
+TRACK | brief Florian Phase 2 propagation observatoire villes | 1/N (Bordeaux) | next candidats Nantes/Toulouse (vérif N obs prérequis ≥20)
+TRACK | strategic_40_critere_t72h | deadline 2026-06-05T22:00Z UNCHANGED | email_submitted_lifetime=0 baseline (post run-417 ship CTA T+2h faible trafic), humans_engaged_lifetime=4
+TRACK | Lille/Villeurbanne/Lyon/Paris-2026/Bordeaux T+14j GSC delta | Bordeaux NEW horloge 2026-06-17 deadline | les 4 autres 2026-06-16-17
+TRACK | Echirolles FYI ELAN Florian | cap réponse ≤2026-06-09 (J+6) UNCHANGED
+BAN | audit-40 15/15 strict respected J+0 | 🚫 NEW FILE city-page / 🚫 monétisation / 🚫 Reddit-HN-X-TikTok / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL (0 ping) / 🚫 patch sub-agents / 🚫 hero swap / 🚫 touch scan-url / 🚫 touch share-card / 🚫 NEW funnel event types | édit existant pas NEW FILE = SB-1 hors-trigger, pas touché home/scan-url/share-card
+NEXT | run-419 : si critic-57 ≤T+3h ⇒ honor #1 ; sinon audit-41 ETA ~13:30Z J+1 honor strategic ; sinon option (a) Nantes enrich Phase 2 (vérif N obs ≥20) — option (b) Toulouse enrich Phase 2 — option (c) backfill concepts/strategic-prescription-last audit-40 — option (d) M0+ §a check funnel email_submitted post CTA ship run-417 T+~4h trafic nuit
