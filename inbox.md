@@ -1,3 +1,129 @@
+## 🎯 2026-06-03T17:00Z — Florian → Agent — **STRATÉGIE LONG TERME + AUTO-PATCH PROMPTS (autonomie totale)**
+
+**Florian verbatim 2026-06-03** : *"Dis à l'agent de faire tout ça lui-même, même modif son prompt et les critic et strategy si besoin."*
+
+### Décision stratégique long terme (binding)
+
+Florian confirme stratégie séquentielle **Phase 1 utility free → Phase 2 SaaS scalable conditionnel** :
+- **Phase 1 (M0-M9 estimé)** : produit gratuit utility, acquisition users + brand. Pas de monétisation directe. Mission re-recalibrage 06-01 inchangé.
+- **Phase 2 (M9-M12+ conditionnel)** : pivot SaaS scalable récurrent SI triggers atteints (cf section "Switch triggers").
+- **Long terme cible** : vrai SaaS scalable (€10-50k€/mois) via persona récurrent dominant (probablement bailleur multi-bien + alertes JORF + IRL/DPE/conformité continue, OU pivot B2B agences/syndics, selon signal user).
+
+### Autonomie agent élargie (NEW)
+
+**Florian autorise l'agent à AUTO-PATCH** :
+- Son propre prompt Builder Saas 2 (ID `42f2c562-927a-45ea-b6ee-ecfadad0d4d6`)
+- Tactical Critic prompt (ID `8f366adc-2e99-467a-bc0c-7fc71d0e7489`)
+- Strategic Critic prompt (ID `85c78e3b-6e4b-4bd5-84cf-5a675d1131b7`)
+
+**Via agents-control API** (credentials `AGENTS_CONTROL_API_KEY` + `AGENTS_CONTROL_BASE` dans `.env`). Endpoint `PATCH /api/agents/{id}` avec body `{"prompt": "..."}`.
+
+**Discipline auto-patch (binding)** :
+1. **WHY_THIS_NOT_THAT obligatoire** : chaque PATCH documenté dans `runs/run-N.md` avec justification + delta chars + diff résumé
+2. **Document `decisions/YYYY-MM-DD-prompt-patch-<target>.md`** : 1 fichier par PATCH avec verbatim avant/après section modifiée + raison
+3. **Modifications additives uniquement** : NE PAS supprimer DIRECTIVE 7 (no ScheduleWakeup), DIRECTIVE 9 (moat + anti-blocage), DIRECTIVE 10 (rituel + carve-out + hiérarchie), Discipline 11 (build-vs-escalate). Ces directives = noyau immutable sauf override Florian explicit.
+4. **Cap PATCH** : max 1 PATCH par catégorie (Builder / Tactical / Strategic) par semaine. Anti-spam modifications.
+5. **Cohérence cross-prompts** : si modif Builder mission section, doit refléter dans Strategic Critic "Mission Florian alignée" pour cohérence audit.
+6. **Backup avant PATCH** : sauvegarder current prompt dans `agent-browser/prompts-backup/<target>-<YYYY-MM-DD>-pre-strategy-longterm.json` AVANT modif.
+
+### Actions structurelles à implémenter (Phase 1 préparation Phase 2)
+
+**A. Signal user capture (préparer pivot informé)** :
+1. Mini-feedback widget post-verdict : *"Cet outil vous a aidé ? Qu'est-ce qui manquerait ?"* (textarea libre + bouton submit, anonyme, log → `wedge-tool/data/user-feedback.jsonl`)
+2. Champ optionnel `intent_signal` dans subscribe API : enum `["loyer-trop-cher", "arnaque-suspecte", "litige-en-cours", "curiosite", "bailleur-conformite", "autre"]`
+3. Track `subscribers_by_intent` dans `memory-agent/kpis/snapshot-current.md`
+4. Email follow-up sub T+30j : *"Vous avez utilisé ça pour quoi ? Qu'est-ce qui manque ?"* (via SMTP existing `contact@bailleurverif.fr`)
+
+**B. Rails techniques pré-construits (option pivot ouverte)** :
+1. Auth/login optionnel (PAS forcé) : magic-link email → `users.jsonl` avec `user_id, email, created_at, properties[]` (vide pour l'instant)
+2. Route `/dashboard` stub : page placeholder *"Tableau de bord — bientôt disponible pour suivi multi-biens"* (signal d'intention sans engagement)
+3. API publique propre : version `/api/v1/...` semver pour permettre breaking changes futurs sans cassser early adopters
+4. Data model multi-bien préparé : table conceptuelle `user_id → property[]` même si pas exposé UI
+
+**C. Identifier 2-3 use cases récurrents (signal pivot)** :
+- À 50+ subscribers : analyser distribution `subscribers_by_intent` → flag inbox.md HEAD si pattern dominant émerge
+- À 100+ subscribers : segmenter persona (bailleur DPE / locataire Paris / pro B2B / autre) → publier analyse dans `memory-agent/concepts/personas-segments.md`
+- Cooldown re-analyse : weekly à partir de 30+ subscribers
+
+**D. Narrative pivot pré-construit** :
+- Page draft `/evolution.html` (NOINDEX initialement) : *"BailleurVérif évolue — fonctionnalités gratuites restent, voici ce qu'on ajoute pour les bailleurs multi-biens / pros / etc."* (à activer/personnaliser au pivot)
+- Capturer témoignages subscribers : email opt-in *"Acceptez-vous d'être cité (anonymisé) sur le site ?"*
+- Track `testimonials_captured_lifetime` dans memory-agent/kpis
+
+### Switch triggers Phase 1 → Phase 2 (binding)
+
+Pivot Phase 2 **DÉCLENCHÉ** si **≥2 conditions** sont satisfaites :
+
+| Trigger | Cible | Source de vérité |
+|---|---|---|
+| `humans_engaged_lifetime >= 500` | ≥ 500 humains réels | funnel cross-ref UA + visits.jsonl |
+| `subscribers_confirmed >= 50` | ≥ 50 inscrits avec intent classifié | subscribe API + intent_signal |
+| `persona_récurrent_identifié` | ≥ 1 segment ≥ 60% subscribers | concepts/personas-segments.md analyse |
+| `inbound_b2b_asks >= 3` | ≥ 3 demandes API/pro non sollicitées | inbox/emails entrants |
+| `competitor_risk_high` | Concurrent capture créneau B2B | sub-seo-monitor (à fix) + sub-llm-reputation-monitor (à spawn quand justifié) |
+
+**Si 2+ atteints → escalader inbox HEAD pour décision Florian** : *"Switch trigger atteint : X+Y. Persona dominant = Z. Pivot Phase 2 vers SKU ciblé Z ? Florian arbitre."*
+
+NE PAS auto-pivoter sans validation Florian explicit. C'est un changement structurel produit qui nécessite Florian-input.
+
+### PATCH suggérés (autonomie agent — décide priorité)
+
+**Builder Saas 2 prompt** :
+- Ajouter section "Phase 1 / Phase 2 stratégie séquentielle" dans Mission
+- Ajouter critère ship gate "would they pay €X" dans WHY_THIS_NOT_THAT
+- Référencer `concepts/long-term-strategy.md` NEW (à créer)
+
+**Tactical Critic** :
+- Ajouter dimension audit "préparation Phase 2" : feedback widget shipped ? auth stub ? persona analysis updated ?
+- Critère "ship gate quality" : si feature shipped sans "would they pay" estimé documenté → flag drift
+- Tracking subscribers_by_intent dans audits
+
+**Strategic Critic** :
+- Mission Florian alignée RE-RECALIBRÉE : ajouter Phase 1/2 stratégie séquentielle + switch triggers
+- Question stratégique élargie : "le moat construit prépare-t-il le pivot Phase 2 OU bloque-t-il optionnalité ?"
+- Audit-N préscrire si trigger Phase 2 atteint mais non escaladé
+
+### Documents memory-agent à créer/updater (autonome)
+
+1. **NEW** `memory-agent/concepts/long-term-strategy.md` : roadmap M0-M12, Phase 1/2, switch triggers, actions A-D
+2. **NEW** `memory-agent/concepts/personas-segments.md` : segmentation users + intent distribution (initialement vide, peuplé au fil)
+3. **NEW** `memory-agent/concepts/competitive-positioning.md` : tableau honnête vs ANIL/SP-fr/DRIHL/PAP (déjà briefé 16:30Z)
+4. **UPDATE** `concepts/mission.md` : référence long-term-strategy.md + Phase 1/2 explicit
+5. **UPDATE** `MEMORY.md` index : ajouter nouveaux concepts
+
+### Cohérence audits
+
+- `strategic_critic_recommendations_followed_cumul = ~40/40 ★` à préserver
+- Discipline DIRECTIVE 7 trophy (no ScheduleWakeup) inchangée
+- DIRECTIVE 9 moat + anti-blocage inchangée
+- DIRECTIVE 10 rituel inchangé
+- Discipline 11 build-vs-escalate (codifiée 06-03 matin) inchangée
+- Pillar 1 PRODUIT-EXCELLENCE + "would they pay" amplifiée par cette stratégie séquentielle
+
+### Anti-pattern à éviter
+
+- ❌ Auto-pivoter Phase 2 sans validation Florian (changement structurel)
+- ❌ Tout shipper d'un coup actions A-D (cap cohérence wake, 1-2 actions/wake max)
+- ❌ PATCH prompts sans WHY_THIS_NOT_THAT documenté
+- ❌ Modifier directives noyau (7/9/10/11) sans override Florian explicit
+- ❌ Spam patches (cap 1/sem/cible)
+- ❌ Ignorer Phase 1 actuel (différenciation programmatique + qualité produit) pour Phase 2 prematurément
+
+### Pourquoi cette autonomie élargie MAINTENANT
+
+- Florian a validé la stratégie globale → l'agent ne doit plus escalader chaque détail
+- Auto-PATCH prompts = consistency mécanisme : l'agent peut faire évoluer le système sans Florian-input chaque fois
+- Discipline 11 (build-vs-escalate) amplifiée : ce brief est l'exemple parfait — Florian délègue, l'agent exécute
+- Phase 1 reste mission re-recalibrée 06-01 PRIORITAIRE : différenciation programmatique + qualité produit + "would they pay" — Phase 2 préparation = parallèle, pas remplacement
+
+### Cooldown / monitoring Florian
+
+- Florian peut re-prompter / override n'importe quand via inbox.md HEAD (priorité absolue)
+- Si l'agent fait du PATCH prompt majeur, doit notifier dans inbox.md HEAD post-action (pas avant — autonomie totale)
+- Strategic Critic audits inclueront review des PATCH appliqués pour s'assurer cohérence + non-régression
+
+---
+
 ## 🔥 2026-06-03T16:30Z — Florian → Agent — **STANDARD QUALITÉ ABSOLU : "would they pay for this?"**
 
 **Florian verbatim 2026-06-03** : *"Fais que notre produit qu'on vend soit vraiment compétitif et vraiment utile au point que les gens soient prêts à payer pour ça."*
