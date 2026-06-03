@@ -1,3 +1,50 @@
+# Strategic Critic Audit — 2026-06-03T22:00Z
+
+---
+
+**Live `/api/stats`** : visits=365 / humans=4 UNCHANGED 5 wakes / subscribers=1 sogibim Marseille dpe-bailleur / shares=1 WhatsApp share_rate=0.4% / email_submitted=0 T+~22h post-CTA run-417 / signalements=2. GSC Florian 17:30Z = 5q/20imp/0clic ; signal NEW persona BAILLEUR (#2+#5) + long-tail vierge #3 DPE calendrier (3imp/0page).
+
+## 1. COPYABILITY SCORE
+
+**~85% UNCHANGED 3 audits**. Runs 426-428 = 0 NEW asset défendable : Marseille enrich `bf3a220` 100% copyable + rollback `db2fe7f` -15L (3 fausses ECLI) + auto-PATCH Strategic non-user-facing. Inforgeable seul = chain 11 vagues git + Wikidata Q139857638.
+
+## 2. MOAT COMPONENTS LIVE
+
+- **Cat-1 = 3** : chain 11 vagues `194a4a2` (pipeline stale T+15j) / cross-wave 57.6% N=121 / Reddit 35Q.
+- **Cat-2 = 0 MORTE** 19 audits.
+- **Cat-3 = 3** templates DILA + 9 ECLI Cass. (densité -3 vs run-426 affirmé post-rollback + DISCIPLINE 12 NEW log Judilibre obligatoire).
+- **Cat-4 = 4** : data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer T+~18j MORT**.
+
+**Total = 9 substantif UNCHANGED 18 audits ★★★ stagnation absolue.**
+
+## 3. CONCURRENT GAP
+
+- **ANIL** : trust + breadth. Notre gap : scan-URL verdict 60s + observatoire N=232. Defendable.
+- **Service-Public.fr** : autorité régl. Notre gap : jurisprudence cross-ref + calendrier DPE visuel (GSC #3 confirme SP-fr n'optimise pas). Defendable long-tail.
+- **DRIHL Paris** : plafonds officiels. Notre gap : scan-URL + cross-source DVF×loyer 17 communes. Defendable.
+
+Tech gap defendable 3/3. Business gap = humans=4 vs M+ ANIL/SP-fr ⇒ ratio 0.000004 = no business gap.
+
+## 4. DISPARITION + VIRALITÉ + PERSONA-FIT
+
+- **B1** : chain git + Wikidata + data.gouv inforgeables, MAIS humans=3/4 via pull-LLM textuel ≠ chain git ⇒ moat abstrait pour acquisition.
+- **B2 viralité** : shares=1 / 0.4% = **17ᵉ wake non-viral**. Verdict texte non-shareable + sujet régl. non-TikTok-able.
+- **B3 persona-canal** : 6 sub-agents push 0 referer 35j MORT. Pull-LLM ChatGPT = SEUL canal productif (3/4 humains). GSC signal NEW : 2/5 queries BAILLEUR ⇒ shift persona émergent.
+
+## 5. STRATEGIC DRIFT
+
+**Audit-41 Marseille = drift tactique CORRIGÉ run-427** : ship valide Phase 2 SEO MAIS strategic-41 §6.c prescrit "+3 ECLI" sans exiger log Judilibre pré-ship ⇒ 3 ECLI inventées CCASS:2008/2014/2017 ⇒ trust juridique compromis + rollback `db2fe7f`. DISCIPLINE 12 codifiée run-427 = correctif structurel. Pattern flag : strategic prescriptions ECLI-density-claim sans verification = anti-trust récurrent.
+
+## 6. PRESCRIPTION
+
+**SHIP `/calendrier-interdiction-dpe-2025-2028-2034.html`** (Action B brief Florian 17:30Z explicit = carve-out NEW page LIFTED). Long-tail GSC #3 `service-public interdiction location classe g 2025 f 2028 e 2034` = 3 imp / 0 page = SEUL gap empiriquement validé. Contenu : calendrier visuel G/F/E sources DILA loi Climat 2021 art.160 + section "Quelle classe DPE ?" → captureEmail topic=`dpe-calendrier` (leverage CTA run-417) + FAQPage 8 Q/R **ZERO ECLI** (régl. pas jurisp., DISCIPLINE 12 safe) + mobile-first + anti-orphan home `#outils-dpe` + cross-link `/api/recourse/dpe-invalide` cat-3 + BreadcrumbList + sitemap + Indexing API 1 URL. **Asymétrie** : (1) SEUL gap GSC Florian-validated ≠ Strategic-invention ; (2) capture persona BAILLEUR signal #2+#5 = prep Phase 2 SaaS ; (3) Builder-only Discipline 11 ; (4) ZERO ECLI = DISCIPLINE 12 safe ; (5) leverage cat-3 template existant +0 NEW asset moat ; (6) ROI T+72h `direct_dpe_calendrier ≥ 3` OR `email_submitted_topic_dpe-calendrier ≥ 1` deadline **2026-06-06T22:00Z**, échec ⇒ audit-43 pivot Action C askfrance-bailleur OR feedback widget A.1.
+
+**Bans 15/15 STRICT** : 🚫 NEW FILE >1 (Action B SEUL, PAS Action C) / 🚫 ECLI sans log Judilibre / 🚫 touch home/scan-url/share-card / 🚫 monétisation / 🚫 Reddit-HN-X-TikTok / 🚫 Telegram / 🚫 ScheduleWakeup / 🚫 méta-Q ≤06-05 / 🚫 spawn 7ᵉ / 🚫 SMTP / 🚫 IndexNow / 🚫 Indexing API >1 URL / 🚫 patch sub-agents hors-brief / 🚫 2ᵉ auto-PATCH semaine / 🚫 6ᵉ city-page Phase 2. Carve-out NEW FILE Action B Florian-brief explicit dépensé 1ʳᵉ application.
+
+`strategic_critic_recommendations_followed_cumul = 41/41 → audit-42 prescription emitted`.
+
+---
+
 # Strategic Critic Audit — 2026-06-03T10:00Z
 
 ---

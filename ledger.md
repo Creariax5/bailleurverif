@@ -2611,3 +2611,18 @@ TRACK | builder_auto_patches_lifetime = 0 → 1 (1ʳᵉ application autonomie é
 TRACK | strategic_critic_recommendations_followed_cumul = 41/41 UNCHANGED (audit-42 pas drop encore, prochaine evaluation post-audit-42 emit)
 TRACK | florian_briefs_honored_j0_lifetime incrémenté : brief 17:00Z autonomie auto-PATCH HONORED J+0 T+~4h45 (1ʳᵉ PATCH cible Strategic safest)
 NEXT | run-429 : (a) si audit-42 drop déjà ≤T+~20min → honor strategic-42 #1 (test cohérence post-PATCH) ; (b) tactical-58 #2 ★★ Feedback widget post-verdict (lift ban touch home §c-bis brief 17:00Z Action A.1) ; (c) brief 17:30Z Action B NEW DPE calendrier 2025/2028/2034 (SB-1 Full ritual, audit-42 carve-out NEW page applicable si audit-42 prescrit) ; (d) brief 17:30Z Action C 2 NEW pages askfrance (idem) ; (e) cross-ref UA Marseille T+~26h+ ; (f) re-PATCH différé Builder OR Tactical (cap 1/sem chacun, 1ʳᵉ semaine Strategic consommé, attente impact)
+
+=== run-429 2026-06-03T23:45Z ===
+WHY | strategic-42 22:00Z prescription unique HONORED J+0 T+~1h45 : SHIP NEW `/calendrier-interdiction-dpe-2025-2028-2034.html` (Action B brief Florian 17:30Z + GSC long-tail #3 `service-public interdiction location classe g 2025 f 2028 e 2034` 3 imp / 0 page existing = SEUL gap Florian-validated) > Action C (banned NEW FILE >1) > Feedback widget (touch home banned hors carve-out anti-orphan) > Auto-PATCH 2 (cap 1/sem consommé)
+SHIP | NEW FILE wedge-tool/static/calendrier-interdiction-dpe-2025-2028-2034.html 110+L user-facing : calendrier timeline G2025/F2028/E2034 + texte L.173-2 CCH + tableau A→G + section "Quelle classe DPE ?" + form subscribe topic=dpe-calendrier + 5 cross-links internes (dpe-fiabilite/api/recourse/dpe-invalide/observatoire-dpe-fg/irl/aides-bailleur) + FAQ 8 Q/R ZERO ECLI + JSON-LD @graph WebPage+BreadcrumbList+HowTo4+FAQPage8+Org+WebSite
+EDIT | wedge-tool/static/index.html +1L cross-link calendrier dans section #outil-dpe-fiabilite (anti-orphan strategic-42 §6 carve-out 🚫 touch home lifted 1 ligne)
+EDIT | wedge-tool/static/sitemap.xml +1 URL <loc>calendrier-interdiction-dpe-2025-2028-2034.html</loc> priority 0.9 monthly post dpe-fiabilite
+PING | Indexing API 1 URL strict success HTTP : wedge-tool/data/indexing-api.jsonl ✓
+VERIF | curl prod HTTP 200 / 28355b / 0.125s ✓ page servie OK live
+COMPLIANCE | DIRECTIVE 7 203-streak ✓ / DIRECTIVE 9 ✓ / DIRECTIVE 10 §c-bis ✓ J+0 audit-42 / DIRECTIVE 12 ✓ N/A ZERO ECLI / Discipline 11 ✓ build-vs-escalate / SB-1 Full ritual ✓ / Audit-42 bans 15/15 STRICT ✓ / WHY 71-streak ✓ / "would they pay" filter ✓ (bailleur €5-10 clarté DPE+alerte JORF)
+METRIC | events_total_lifetime=130 / sessions=97 / humans_engaged=4 UNCHANGED / pages_total +1 → 233 / moat substantif 9 UNCHANGED (utility page par design strategic-42 §6.5 leverage cat-3 existant)
+TRACK | strategic_critic_recommendations_followed_cumul = 41/41 → 42/42 ★ (1ʳᵉ J+0 honor post audit-42 cycle)
+TRACK | critère T+72h dpe-calendrier : direct_dpe_calendrier ≥ 3 OR email_submitted_topic_dpe-calendrier ≥ 1 deadline 2026-06-06T22:00Z (T+0 baseline = 0/0)
+TRACK | florian_briefs_honored_j0_lifetime incrémenté : brief 17:30Z Action B HONORED J+0 T+~6h45 (post strategic-42 carve-out NEW FILE explicit)
+TRACK | builder_auto_patches_lifetime = 1 UNCHANGED (cap 1/sem Strategic consommé run-428, autres prompts attente)
+NEXT | run-430 : (a) cross-ref UA T+~14h post-ship calendrier : direct_dpe_calendrier_real + email_submitted_topic_dpe-calendrier ; (b) cross-ref UA Marseille T+~30h+ ; (c) si audit-43 drop ≤T+~3h → honor strategic-43 #1 ; (d) brief 17:30Z Action D NEW concept personas-segments.md OR competitive-positioning.md read-only synthèse ; (e) re-PATCH différé Builder OR Tactical (cap 1/sem, 1ʳᵉ semaine Strategic consommé)
