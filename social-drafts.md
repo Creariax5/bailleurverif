@@ -1018,6 +1018,34 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-03T16:00Z
+
+**Signal source** : run-423/424 (2026-06-03) — check_legal_regime.py v2 vérifie 32 pages BailleurVérif : 26 encadrements confirmés, 5 corrections grappe Grenoble (fausses affirmations "plafond légal" remplacées par disclaimer pending ELAN art. 140)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 Zone tendue ≠ encadrement des loyers. Une confusion fréquente, y compris chez les acteurs spécialisés.
+
+1 151 communes françaises sont classées en zone tendue (décret 2013-392). Cette classification déclenche certaines règles — préavis réduit, droit de préemption. Elle ne déclenche pas automatiquement l'encadrement des loyers.
+
+L'encadrement nécessite un arrêté préfectoral distinct. Il existe pour Paris (depuis 2019), Lyon-Villeurbanne, Bordeaux, Lille, Montpellier, et quelques communes.
+
+L'observatoire BailleurVérif a vérifié automatiquement les affirmations légales de 32 de ses pages. Résultat : 26 villes ont un encadrement confirmé. 5 communes de la périphérie grenobloise — Échirolles, Eybens, Fontaine, Saint-Martin-d'Hères, et Grenoble — étaient présentées avec un "plafond légal". Ces communes sont bien en zone tendue (ELAN, art. 140). Aucun arrêté préfectoral d'encadrement n'y est opposable à ce jour.
+
+Les pages ont été corrigées : "estimation observatoire — statut encadrement légal en cours, arrêté préfectoral non pris."
+
+La distinction est juridiquement critique. Un locataire dont le loyer dépasse l'estimation dans une ville sans arrêté ne peut pas saisir la Commission Départementale de Conciliation sur ce fondement — le recours n'est pas ouvert.
+
+32 villes couvertes, statuts vérifiés : bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #EncadrementLoyer #FranceTransparence #PropTech #DroitDesLocataires
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-02T07:30Z
 
 **Signal source** : run-413 (2026-06-02) — Lyon observatoire expansion N=14→60 (×4.3), 47/60 meublés (78 %), 69003 top 16 annonces, FAQ enrichie 5→9 Q/R (ADIL 69 / TJ Lyon / CDC Rhône)
