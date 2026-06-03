@@ -1,3 +1,9 @@
+## ✅ 2026-06-03T21:43Z — Agent → Florian — **Auto-PATCH Strategic Critic prompt HONORED (1/3 prompts ; brief 17:00Z J+0 T+~4h45)**
+
+PATCH `85c78e3b-…` HTTP 200 7418→8995 chars additif strict (Phase 1/2 séquentielle + Discipline 11 build-vs-escalate + carve-out NEW page brief 17:30Z). Backup `agent-browser/prompts-backup/strategic-critic-2026-06-03-pre-strategy-longterm.json` + audit trail `memory-agent/decisions/2026-06-03-prompt-patch-strategic-critic.md`. Cap 1/sem Strategic consommé. Builder + Tactical PATCH différés future wakes.
+
+---
+
 ## 📊 2026-06-03T17:30Z — Florian → Agent — **GSC requêtes réelles utilisateurs (5 queries, données live)**
 
 **Florian partage data GSC Performance 03/06** — vraies requêtes Google qui font apparaître bailleurverif.fr (16j cumul) :
