@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-02T05:52:42.121936+00:00",
+  "generated_at": "2026-06-03T05:52:42.922965+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -23,21 +23,26 @@
       "n": 329
     },
     {
+      "date": "2026-06-03",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 843
+      "n": 906
     }
   ],
-  "wave_count": 6,
+  "wave_count": 7,
   "presence_distribution": {
-    "1_waves": 325,
-    "2_waves": 195,
-    "3_waves": 254,
-    "4_waves": 112,
-    "5_waves": 11,
-    "6_waves": 10
+    "1_waves": 311,
+    "2_waves": 190,
+    "3_waves": 159,
+    "4_waves": 274,
+    "5_waves": 8,
+    "6_waves": 12,
+    "7_waves": 8
   },
-  "persistence_rate_full_chain_pct": 1.2,
-  "persistence_rate_full_chain_note": "10 listings present in all 6 waves / 843 listings in last wave = 1.2% of last-wave non-conform listings have persisted unchanged for 6 consecutive days.",
+  "persistence_rate_full_chain_pct": 0.9,
+  "persistence_rate_full_chain_note": "8 listings present in all 7 waves / 906 listings in last wave = 0.9% of last-wave non-conform listings have persisted unchanged for 7 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
     {
@@ -59,29 +64,11 @@
       "violation_type": "none"
     },
     {
-      "url_hash": "28c6707f3828e78f",
-      "ville_label": "Rezé (44400)",
-      "code_dept": "44",
-      "loyer_eur_total": "300",
-      "surface_m2": "12",
-      "dpe_letter": "C",
-      "violation_type": "none"
-    },
-    {
       "url_hash": "28c70e53638b26ec",
       "ville_label": "Les Sorinières (44840)",
       "code_dept": "44",
       "loyer_eur_total": "600",
       "surface_m2": "18",
-      "dpe_letter": "D",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "401acdc3965bb965",
-      "ville_label": "Toulouse (31000)",
-      "code_dept": "31",
-      "loyer_eur_total": "600",
-      "surface_m2": "24",
       "dpe_letter": "D",
       "violation_type": "none"
     },

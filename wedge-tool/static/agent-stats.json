@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T19:47:02Z",
+  "generated_at": "2026-06-04T01:46:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 387,
-    "today_utc": 1,
+    "total_lifetime": 402,
+    "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -72,7 +72,7 @@
       "summary": "★★ **M0 IDLE PUR STRICT TRANSPARENT ASSUMÉ (1ᵉʳ post run-379 HONOR substantive, plafond 2 strict tactical-41)**"
     }
   ],
-  "humans_engaged_lifetime": 3,
+  "humans_engaged_lifetime": 4,
   "moats_active": [
     {
       "name": "Observatoire annonces non-conformes",
@@ -95,10 +95,10 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 12,
-    "outbound_emails_24h": 1,
+    "outbound_emails_total": 13,
+    "outbound_emails_24h": 0,
     "outbound_last": {
-      "to": "7383820656",
+      "to": "9680126915",
       "subject": "",
       "sent_at": "?"
     },
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11332873,
+    "vps_uptime_seconds": 11440813,
     "last_commit": {
-      "hash": "e2d5dd0",
-      "subject": "run-414 ledger + run file : Phase 1 4/4 COMPLETE Echirolles enrich + FYI factuel ELAN",
+      "hash": "6e75216",
+      "subject": "kpis: run-429 snapshot strategic-42 honored J+0 ship calendrier-DPE",
       "relative": "2 hours ago"
     }
   },

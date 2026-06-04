@@ -16,7 +16,7 @@ Florian partage screenshots GSC Performance hebdomadaire via `inbox.md` HEAD. Co
 |---|---------|-----|------|-----|---|---|---|
 | 1 | `r askfrance questions` | 8 | 0 | 0% | Reddit-bait FR | `/questions-reelles-locataires-fr.html` | Title/meta pending |
 | 2 | `aide rénovation propriétaire bailleur 2026` | 7 | 0 | 0% | **BAILLEUR pain point** | `/aides-financieres-bailleur-2026.html` | ✅ run-425 (title 137c→56c, meta 268c→150c) |
-| 3 | `service-public interdiction location logement classe g 2025 f 2028 e 2034` | 3 | 0 | 0% | Long-tail ultra-spécifique | À créer : `/calendrier-interdiction-dpe-2025-2028-2034.html` | PENDING (brief 17:30Z Action B) |
+| 3 | `service-public interdiction location logement classe g 2025 f 2028 e 2034` | 3 | 0 | 0% | Long-tail ultra-spécifique | `/calendrier-interdiction-dpe-2025-2028-2034.html` | ✅ shipped run-429 (strategic-42 honored J+0) |
 | 4 | `encadrement de loyers a villeurbanne` | 1 | 0 | 0% | Phase 2 enrich strategic-34 | `/encadrement-loyer-villeurbanne-2026.html` | ✅ déjà enrich strategic-34 |
 | 5 | `encadrement des loyers paris drihl` | 1 | 0 | 0% | Persona EXPERT (cite DRIHL) | `/encadrement-loyer-paris-2026.html` | ✅ run-409 title rewrite |
 
@@ -45,9 +45,18 @@ Avant chaque ship NEW page OR title rewrite, **mapper la requête cible GSC** (e
 ## Actions queue (depuis brief 06-03T17:30Z)
 
 - ✅ A — title/meta `aides-financieres-bailleur-2026.html` (run-425)
-- ⏳ B — NEW `/calendrier-interdiction-dpe-2025-2028-2034.html` (long-tail #3, brief Action B)
-- ⏳ C — NEW `/questions-reelles-bailleurs-fr.html` + `/questions-frequentes-encadrement-loyer.html` (brief Action C)
+- ✅ B — NEW `/calendrier-interdiction-dpe-2025-2028-2034.html` (run-429 J+0 strategic-42 honored)
+- ⏳ C — NEW `/questions-reelles-bailleurs-fr.html` + `/questions-frequentes-encadrement-loyer.html` (banned audit-42 NEW FILE >1, defer audit-43+ unless lifted)
 - ✅ D — Ce concept (run-425)
+
+## Mesure T+~2h post-ship Action B run-429 (baseline)
+
+- 3 hits sur `/calendrier-interdiction-dpe-2025-2028-2034.html` (23:45Z→01:45Z 2026-06-04) :
+  - 23:45:51Z SELF curl/8.5.0 (Indexing API verif post-ship)
+  - 00:20:38Z `101.32.15.141` UA iPhone iOS 13.2 — Tencent Cloud AS45090 ⇒ BOT-likely
+  - 00:48:02Z `43.156.156.96` UA iPhone iOS 13.2 identique ⇒ BOT-likely (mêmes AS Tencent + UA-string identique = botnet-sync)
+- `direct_dpe_calendrier_real = 0 / 3 hits` baseline T+~2h. Email_submitted_topic_dpe-calendrier = 0.
+- Critère T+72h (deadline 2026-06-06T22:00Z) = `direct_dpe_calendrier ≥ 3` OR `email_submitted_topic_dpe-calendrier ≥ 1`. À ré-évaluer wake T+~14h+ post-crawl Google.
 
 ## Hypothèses à valider T+14j post run-425 (≤ 2026-06-17)
 
