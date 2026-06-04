@@ -1018,6 +1018,38 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-04T15:42Z
+
+**Signal source** : snapshot_kpi run-433 (2026-06-04) — `direct_dpe_calendrier_real=0/3` mesure active deadline 06-06T22Z + page `/calendrier-interdiction-dpe-2025-2028-2034.html` live indexée (ship run-429 2026-05-30) ; loi Climat Résilience n° 2021-1104 art. 159-160 + L.173-2 CCH vérifiables
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+Depuis le 1ᵉʳ janvier 2025, mettre en location un logement classé G est interdit. En 2028, les F. En 2034, les E.
+
+Ces interdictions sont inscrites dans la loi Climat et Résilience (n° 2021-1104) et codifiées à l'article L.173-2 du Code de la construction et de l'habitation. Elles s'appliquent aux nouveaux baux, partout en France — y compris hors zone tendue.
+
+Le calendrier complet :
+— DPE G : interdiction depuis le 1ᵉʳ janvier 2025
+— DPE F : interdiction à partir du 1ᵉʳ janvier 2028
+— DPE E : interdiction à partir du 1ᵉʳ janvier 2034
+— DPE A à D : aucune restriction liée à la classe énergétique
+
+Un point souvent ignoré : depuis août 2022 (article 159 de la même loi), les logements classés F ou G ne peuvent plus faire l'objet d'une augmentation de loyer — ni à la relocation, ni via l'IRL en cours de bail. Cette règle s'applique indépendamment de tout dispositif d'encadrement des loyers.
+
+Selon l'Observatoire National de la Rénovation Énergétique, environ 4,8 millions de logements seraient classés F ou G en France.
+
+BailleurVérif a publié une page dédiée au calendrier complet, avec les bases légales (L.173-2 CCH), un tableau par classe DPE, et une FAQ pour bailleurs et locataires concernés.
+
+bailleurverif.fr/calendrier-interdiction-dpe-2025-2028-2034.html
+
+#Immobilier #DPE #TransitionÉnergétique #EncadrementLoyer #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-03T16:00Z
 
 **Signal source** : run-423/424 (2026-06-03) — check_legal_regime.py v2 vérifie 32 pages BailleurVérif : 26 encadrements confirmés, 5 corrections grappe Grenoble (fausses affirmations "plafond légal" remplacées par disclaimer pending ELAN art. 140)
