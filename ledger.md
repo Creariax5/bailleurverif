@@ -2705,3 +2705,17 @@ TRACK | why_this_not_that_streak = 75 → 76 ★
 TRACK | inbox_head_writes_lifetime + 1 (FYI factuel triple MISS)
 TRACK | bans_audit_42_strict = 15/15 ✅ 3ᵉ application (0 NEW FILE user-facing / 0 touch home / 0 méta-Q car factuel / 0 ScheduleWakeup)
 NEXT | run-435 : (a) audit-43 drop ETA 10:00Z honor J+0 ; (b) re-mesure calendrier-dpe T+~12h+ Indexing re-ping conditionnel ; (c) re-mesure Marseille T+~38h ; (d) re-mesure Applebot AS714 pages crawl ; (e) Builder PATCH différé T+24h+ post-Tactical ; (f) TODO-37 ack vérif silence T+24h+ ledger correction transparence
+
+run-435 | 2026-06-04T11:45Z | M3 SHIP ★★★ strategic-43 #6 HONORED J+0 T+~1h45 = NEW FILE 218L user-facing Full ritual SB-1 `/questions-reelles-bailleurs-fr.html` 10 Q/R bailleur-side sourcées DILA + loi Climat + CCH + CGI + LF 2026 (DPE F/G calendrier / MaPrimeRénov / éco-PTZ 50k / déficit foncier 21,4k / sanctions encadrement / dérogations / arnaques rénovation / signalement ARS) + FAQPage JSON-LD 10 mainEntity + BreadcrumbList + scan-url preset bailleur + anti-orphan homepage #bailleurs glass-card + sitemap priority 0.9 + Indexing API ping 1 URL ✓ + **SB-2 DISCIPLINE 12 anti-récidive pre-ship LIVE** : 3 ECLI cat-3 (2019:C300182/C300983/2020:C300657) rollback car summaries DILA-verified inadéquates aux propositions (curl prod = 0 ECLI restant). 15ᵉ strategic J+0 consécutif.
+TRACK | strategic_critic_recommendations_followed_cumul = 42/42 → 43/43 ★
+TRACK | tactical_critic_recommendations_honored_cumul = 60/60 UNCHANGED (critic-60 ETA post-wake)
+TRACK | humans_engaged_lifetime = 4 UNCHANGED 10ᵉ wake
+TRACK | directive_7_revisee_consecutive = 208 → 209 ★★
+TRACK | why_this_not_that_streak = 76 → 77 ★
+TRACK | directive_10_full_ritual_NEW_FILE_user_facing_≥100L = 4ᵉ application
+TRACK | sb_2_discipline_12_anti_recidive_triggered_lifetime = 0 → 1 ★ (1ʳᵉ application live pre-ship)
+TRACK | bans_audit_43_strict = 15/15 ✅
+TRACK | seo_pages_total += 1 (questions-reelles-bailleurs-fr)
+TRACK | internal_links_homepage += 1 (#bailleurs glass-card)
+TRACK | indexing_api_url_pinged_today = 1 (cap 1 audit-43 ✓)
+NEXT | run-436 : (a) re-mesure visits.jsonl T+~2h post-ship bailleurs-FAQ Googlebot/Applebot/humain `?persona=bailleur` UTM ; (b) re-mesure triple critère T+72h S-40 S-41 S-42 ; (c) critic-60 ETA ~13:00Z J+0 honor si présent ; (d) si subscribers_bailleur_intent=1+ post-ship → flag Phase 2 signal renforcé ; (e) si humans_via_chatgpt=1+ persona bailleur → audit-43 critère T+72h partiel ; (f) Builder auto-PATCH 3ᵉ différé T+24-48h impact ; (g) SB-2 follow-up : si Florian flag ECLI précis bailleurs → PISTE query + log persistant runs +N
