@@ -1,3 +1,53 @@
+# Strategic Critic Audit — 2026-06-04T22:00Z
+
+---
+
+**Live `/api/stats`** : visits=371 (+3 vs audit-43) / humans=4 UNCHANGED **10ᵉ wake stagnation** / subscribers_pending=1 sogibim dpe-bailleur UNCHANGED / shares=1 WhatsApp 0.4% UNCHANGED / subscribers_by_intent={'unset':1} (UI intent_signal `/dpe-fiabilite.html` shipped run-439 T+~2h, 0 capture encore) / Applebot AS714=40 crawls (+1 vs audit-43).
+
+## 1. COPYABILITY SCORE
+
+**~85% UNCHANGED 5 audits.** Runs 435-440 livrent : (a) `/questions-reelles-bailleurs-fr.html` 218L FAQPage DILA+CCH+CGI+LF2026 (Strategic-43 honored) — pattern miroir `/questions-reelles-locataires-fr.html` 100% copyable structure, mais corpus 10 Q/R bailleur sourcées DILA + 3 ECLI rollbackées par SB-2 = ✅ discipline ; (b) UI `intent_signal` dropdown `/dpe-fiabilite.html` +16L (critic-60 #2) ; (c) concept `long-term-strategy.md` (memory-only). 0 NEW asset moat. Stack publié = 11 city-pages + scan-url + share-card + DPE calendrier + questions-bailleurs = 100% template dev-solo ≤2j. Inforgeable seul = chain 11 vagues git + Wikidata Q139857638 + 9 ECLI cross-référencées.
+
+## 2. MOAT COMPONENTS LIVE
+
+**Total substantif 9 UNCHANGED 20 audits ★★★ stagnation absolue.** Cat-1=3 (chain 11 vagues `194a4a2` ⚠️ pipeline.sh stale T+17j+ / cross-wave 57.6% N=121 / Reddit 35Q CC-BY). Cat-2=0 MORTE 20 audits. Cat-3=3 (loyer-abusif+dpe-invalide+depot-garantie DILA-verified + 9 ECLI Cass.). Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer T+23j MORT empirique**). Applebot AS714 40 crawls = ingest LLM Apple confirme cat-3+cat-4 LLM-bait fonctionne (signal cat-4 silencieux ≠ +1 composant strict). **NEW sub-signal cat-1 fragile** : 1ʳᵉ subscriber bailleur sogibim run-431+rail intent_signal run-439 = embryon dataset propriétaire persona-segmentation Phase 2 (préparation rail #7, pas composant moat actif).
+
+## 3. CONCURRENT GAP
+
+PAP/SmartLoc/Hestia/ANIL/DRIHL ignorent — humans=4 vs concurrents M+ users = ratio 0.000004, business gap **0 UNCHANGED 20 audits**. Tech gap défendable mais marché ignore. **Sub-gap aggravé ★** : aucun concurrent FR n'a surface bailleur-side complète (aides 2026 + calendrier DPE F/G/E + questions FAQ bailleur DILA) = créneau bailleur multi-bien VIERGE structurel. GSC signal BAILLEUR fort (#2 `aide rénovation propriétaire bailleur 2026` 7imp + #5 `encadrement loyers paris drihl` 1imp) + subscriber sogibim dpe-bailleur = signal Phase 2 pivot conditionnel (Florian 06-03T17Z binding). Gap défendable strategic, work-to-do tactique.
+
+## 4. "DEMAIN DISPARITION" TEST + VIRALITÉ + PERSONA-FIT
+
+**B1** : disparition demain ⇒ chain git 11 vagues + Wikidata Q139857638 + 9 ECLI cross-ref + 1 subscriber bailleur sogibim inforgeables. Mais 0/4 humains mesurable lifetime = moat abstrait, génère pas humans_engaged.
+**B2 VIRALITÉ** : shares=1 WhatsApp 0.4% 16ᵉ wake non-viral. Output principal verdict-card homepage = PNG OG-format share-friendly assets construits mais ZÉRO traction (0 click hero preset 5j+, 0 home_preset_click). `/questions-reelles-bailleurs-fr.html` = texte privé non-shareable (non-image, non-meme, non-score viral). Verdict = output privé, pas viral.
+**B3 PERSONA-CANAL FIT** : pull-LLM ChatGPT + Applebot AS714 = **2 SEULS canaux qualifiés 35j+ confirmés**. Push 6 sub-agents (Bluesky/dev.to/HF/LinkedIn/Telegram/content-syndicator) = 0 referer 35j MORT confirmé. Reddit BLOQUÉ TODO-36 dépriorisé 06-01. Canal-persona fit = locataire-FR via pull-LLM seul (mismatch sub-agents push devs/crypto/tech-savvy international).
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité + Phase 2 prep
+
+**Drift ★★★ META-PATTERN aggravé 20ᵉ audit cumul.** Run-435 ship Strategic-43 `/questions-reelles-bailleurs-fr.html` = **16ᵉ ship Builder-only consécutif surface SEO/LLM-bait** depuis audit-26 (cycle 5). Cumul depuis audit-26 : 11 city-pages enrich/ship + 3 questions-FAQ pages + DPE calendrier + LLM-bait. Net : +2 humains (Bouygues pull-LLM + sogibim subscriber dpe-bailleur via pull-LLM) sur 16 ships = **ROI marginal ~0.13 humain/ship**. Quadruple T+72h MISS prévisible 06-05/06-06/06-07 (~85% probabilité). Pattern strategic = continue ship pré-Phase-2 surface = épuisement empirique progressif. **MAIS** : run-439 ship UI intent_signal `/dpe-fiabilite.html` (critic-60 #2 honored J+0) + concept `long-term-strategy.md` (brief 06-03T17Z item D honored J+1) **alignés Phase 2 prep binding Florian** = drift mitigé par rail #7 capture-persona préparation. Différentiation : run-439 ≠ ship vanity, c'est **rail capture-signal qualitatif** pour trigger Phase 2 conditionnel (≥50 subscribers + persona dominant ≥40%).
+
+## 6. PRESCRIPTION
+
+**ÉTENDRE UI `intent_signal` dropdown 2ᵉ surface bailleur-chaud = `/aides-financieres-bailleur-2026.html`** (patch chirurgical ≤20L miroir run-439 `/dpe-fiabilite.html`).
+
+**Pourquoi cette action SEULE** :
+- (a) **Asymétrie maximale Phase 2 prep** : surface bailleur GSC #2 (7 imp = page bailleur la plus chaude), 2ᵉ point capture signal persona "bailleur multi-bien" vs "locataire" — accélère trigger Phase 2 persona-dominant ≥40% (binding 06-03T17Z).
+- (b) **Leverage signal sogibim NEW** : 1ʳᵉ subscriber bailleur dpe-bailleur via pull-LLM ChatGPT = data réelle persona émergent à amplifier mesure, pas inventer thèse.
+- (c) **Builder-only ZÉRO Florian** + ban NEW FILE strict respecté (PATCH page existante, pas NEW page).
+- (d) **ROI dual T+72h mesurable** : `subscribers_with_intent_bailleur ≥ 2` deadline 2026-06-07T22Z ⇒ pattern persona-segmentation confirmé ⇒ audit-45 propage UI 3ᵉ surface (`/questions-reelles-bailleurs-fr.html` strategic-43 surface) ; échec ⇒ audit-45 pivot canal externe outbound (presse bailleur-trade-press FR 2ᵉ round OR Twitter/X SMS-verif Florian fallback TODO-36-bis).
+- (e) **Anti-recursion** : NE ship PAS NEW page (épuisement empirique 16-ship pattern), NE PAS toucher home (ban audit-39 strict), NE PAS pivot Phase 2 immédiat (binding 06-03T17Z = prep ≠ déclenche).
+- (f) **Discipline 11 build-vs-escalate** : Build small + ship Builder autonomie, pas escalade Florian (cas non-listé).
+
+**Carve-out** : lift ban touch `/aides-financieres-bailleur-2026.html` strict PATCH ≤20L intent_signal UI uniquement (PAS hero swap, PAS NEW section, PAS title-rewrite hors GSC optim déjà queued brief 06-03T17:30Z Action A). Le brief Florian 06-03T17:30Z Action A (title/meta `aides-financieres-bailleur-2026.html`) reste autonome Builder, ne pas confondre.
+
+**Critère succès T+72h audit-44** : `subscribers_by_intent` contient ≥1 entrée `bailleur_multi_bien` OR `bailleur_proprio_unique` deadline **2026-06-07T22:00Z**. Échec ⇒ audit-45 pivot canal externe outbound.
+
+**Bans audit-44 (jusqu'à audit-45) 15/15 strict** : 🚫 NEW FILE / 🚫 NEW city-page / 🚫 touch home / 🚫 touch scan-url / 🚫 touch share-card / 🚫 touch `/dpe-fiabilite.html` (mesure T+72h en cours) / 🚫 touch `/questions-reelles-bailleurs-fr.html` (mesure S-43 T+72h en cours) / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-36/33 / 🚫 méta-Q ≤06-06 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach / 🚫 IndexNow / 🚫 Indexing API ping >1 URL aides-financieres-bailleur-2026 / 🚫 patch sub-agents autonome / 🚫 nouveau event funnel hors `intent_signal_captured` existant.
+
+`strategic_critic_recommendations_followed_cumul = 43/43 → 44/44 attendu`. **16ᵉ audit consécutif J+0 attendu** si Builder honor run-441.
+
+---
+
 # Strategic Critic Audit — 2026-06-04T10:00Z
 
 ---

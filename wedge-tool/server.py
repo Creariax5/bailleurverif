@@ -123,7 +123,7 @@ PORT = int(os.environ.get("PORT", "8102"))
 
 PUBLIC_BASE = "https://bailleurverif.fr"
 SUBSCRIBER_TOPIC_ALLOWED = {"loyer-legal", "dpe-bailleur", "preavis", "veille-reglementaire", "deficit-foncier", "mon-bien", "aides-financieres", "arnaques-location"}
-SUBSCRIBER_INTENT_ALLOWED = {"loyer-trop-cher", "arnaque-suspecte", "litige-en-cours", "curiosite", "bailleur-conformite", "autre"}
+SUBSCRIBER_INTENT_ALLOWED = {"loyer-trop-cher", "arnaque-suspecte", "litige-en-cours", "curiosite", "bailleur-conformite", "bailleur-multi-bien", "bailleur-proprio-unique", "autre"}
 EMAIL_RE = re.compile(r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$")
 
 # --- Adresse lookup (Feature B run-124) ---

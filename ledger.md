@@ -2807,3 +2807,21 @@ TRACK | Strategic audit-44 ETA 22:00Z T+~15min POST-wake = honor J+0 obligatoire
 TRACK | Pull-LLM seul canal qualifié 30j+ confirmé (ChatGPT 1 humain + Applebot AS714 40 crawls), push 6 sub-agents 0 referer 35j MORT
 TRACK | 3 options pivot audit-44+ explicitées Florian inbox : densification cat-3 jurisprudence territorialisée / PAUSE-AND-MEASURE 3 wakes / Pull-LLM-only LLM-bait
 NEXT | run-441 : (a) PREMIÈRE poll mtime audit-44 J+0 honor obligatoire ; (b) cross-ref UA 21-23Z window ; (c) critic-61 si émis honor 3 actions ; (d) Builder PATCH 3ᵉ défer ≥06-05T11:45Z run-442 ; (e) extension intent_signal UI 2ᵉ page conditionnel ; (f) mini-feedback widget A.1 conditionnel ; (g) re-mesure S-43 T+~24h.
+
+run-441 | 2026-06-04T23:10Z | Strategic-44 HONORED J+0 T+~1h10 = PATCH `/aides-financieres-bailleur-2026.html` +14L UI `<select id="sub-intent">` 6 options bailleur + JS intent_signal POST + server.py +1L `SUBSCRIBER_INTENT_ALLOWED` += `bailleur-multi-bien` + `bailleur-proprio-unique`. Smoke E2E POST 200 + `/api/stats` confirme 2 nouveaux buckets pipeline-OK ; 2 entries smoke nettoyées JSONL post-vérif. Server restart manual PID 1939342 HTTP 200. | 44/44 strategic ★ 16ᵉ J+0 cumul ; bans audit-44 15/15 ✅ ; 2ᵉ surface capture intent_signal live ; critère T+72h `subscribers_by_intent` ≥1 `bailleur-multi-bien` OR `bailleur-proprio-unique` deadline 2026-06-07T22:00Z.
+METRIC | wakes_total = 440 → 441
+METRIC | directive_7_revisee_consecutive = 211 → 212 ★★
+METRIC | why_this_not_that_streak = 79 → 80 ★
+METRIC | strategic_critic_recommendations_followed_cumul = 43/43 → 44/44 ★ 16ᵉ J+0
+METRIC | tactical_critic_recommendations_honored_cumul = 63 UNCHANGED
+METRIC | humans_engaged_lifetime = 4 UNCHANGED (11ᵉ wake stagnation)
+METRIC | subscribers_by_intent = {'unset':1} UNCHANGED post-cleanup
+METRIC | intent_signal_capture_surfaces_live = 1 → 2 (dpe-fiabilite + aides-financieres-bailleur-2026)
+METRIC | subscriber_intent_enum_allowed_count = 6 → 8
+METRIC | bans_audit_44_15_15_strict = ✅ 15/15
+METRIC | server_restart_manual_pickup = +1 (run-441 server.py enum pickup)
+TRACK | Strategic critère T+72h `bailleur-multi-bien` OR `bailleur-proprio-unique` real deadline 2026-06-07T22Z
+TRACK | Quadruple T+72h S-40/41/42/43 ~85% MISS prévisible — re-mesure run-442+
+TRACK | Pull-LLM seul canal qualifié (ChatGPT 1 humain + Applebot AS714 40 crawls) — push 6 sub-agents 0 referer 35j MORT
+TRACK | Critic-61 ETA 2026-06-05T07:00Z défer run-443 honor J+0 ; Builder PATCH 3ᵉ éligible ≥06-05T11:45Z run-442/443
+NEXT | run-442 cron 2026-06-05T01:00Z : (a) PREMIÈRE poll 3 inboxes mtime ; (b) cross-ref UA 23-01Z + Applebot ; (c) re-mesure quadruple T+72h + Strategic-44 T+~2h ; (d) critic-61 si émis honor J+0 ; (e) Builder PATCH 3ᵉ défer ≥11:45Z ; (f) Action C brief 06-03T17:30Z NEW page DÉFER post-audit-44 fenêtre ; (g) si quadruple MISS confirmé S-40 06-05T22Z = brief audit-45 pivot canal outbound préparé.

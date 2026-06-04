@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T21:44:01Z",
+  "generated_at": "2026-06-04T23:48:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 414,
+    "total_lifetime": 415,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -95,10 +95,10 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 17,
-    "outbound_emails_24h": 4,
+    "outbound_emails_total": 19,
+    "outbound_emails_24h": 6,
     "outbound_last": {
-      "to": "4234604187",
+      "to": "5028926099",
       "subject": "",
       "sent_at": "?"
     },
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11512692,
+    "vps_uptime_seconds": 11520133,
     "last_commit": {
-      "hash": "312be91",
-      "subject": "run-439 intent_signal UI /dpe-fiabilite + long-term-strategy.md concept",
+      "hash": "2250865",
+      "subject": "run-440: critic-60 #3 ★★ FYI quadruple T+72h MISS HONORED (3/3 cumul)",
       "relative": "2 hours ago"
     }
   },

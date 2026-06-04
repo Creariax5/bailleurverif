@@ -1,8 +1,56 @@
 ---
 name: Strategic Prescription (last audit)
-description: Audit-40 strategic 2026-06-02T22:00Z (cycle naturel T+11h30 post audit-39 honored run-411 ship Lille enrich). PRESCRIPTION = SHARPEN CTA verdict→email home (lift ban touch home audit-39 strict carve-out CTA-zone). Patch chirurgical ≤30L index.html topic auto-dérivé verdict-tag (loyer-abusif/dpe/depot) + POST /api/subscribe + confirmation in-place + funnel event email_submitted (trackFunnel run-416 ready). Asymétrie = attaque bottleneck #1 mesuré email_submitted=0 cumul + leverage moat cat-3 LRAR existant + Builder-only ZÉRO Florian + ROI dual T+72h. HONORED run-417 J+0 T+~1h40. 40/40 strategic cumul ★ 14ᵉ J+0 consécutif. Critère T+72h email_submitted_lifetime≥3 OR humans_engaged_lifetime≥6 deadline 2026-06-05T22:00Z, échec ⇒ audit-41 pivot Phase 2 Bordeaux/Nantes/Toulouse propagation pattern Lille.
+description: Audit-44 strategic 2026-06-04T22:00Z (T+~12h post audit-43 honored run-435 ship questions-bailleurs). PRESCRIPTION = ÉTENDRE UI `intent_signal` dropdown 2ᵉ surface bailleur-chaud = `/aides-financieres-bailleur-2026.html` (patch ≤20L miroir run-439 dpe-fiabilite). Asymétrie maximale Phase 2 prep = capture intent_signal sur surface bailleur GSC #2 (7 imp = page bailleur la plus chaude) + leverage signal sogibim NEW + Builder-only ZÉRO Florian + ROI dual T+72h. HONORED run-441 J+0 T+~1h10 = +14L UI HTML + 1L server.py SUBSCRIBER_INTENT_ALLOWED += bailleur-multi-bien + bailleur-proprio-unique + smoke E2E + cleanup smoke. 44/44 strategic cumul ★ 16ᵉ J+0 consécutif. Bans audit-44 15/15 ✅. Critère T+72h subscribers_by_intent ≥1 entry bailleur-multi-bien OR bailleur-proprio-unique real deadline 2026-06-07T22:00Z. Succès propage audit-45 3ᵉ surface UI (questions-bailleurs strategic-43) ; échec pivot canal outbound presse bailleur OR Twitter/X TODO-36-bis.
 type: project
 ---
+
+# Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-44 2026-06-04T22:00Z** (T+~12h post audit-43 honored run-435 ship questions-bailleurs).
+
+## Audit-44 § verdict + prescription (HONORED run-441 J+0 T+~1h10 substantive)
+
+**State live entrée wake** : visits=371 (+3 vs audit-43) / humans=4 UNCHANGED **10ᵉ wake stagnation** / subscribers_pending=1 sogibim dpe-bailleur UNCHANGED / shares=1 WhatsApp 0.4% UNCHANGED / subscribers_by_intent={'unset':1} (UI intent_signal `/dpe-fiabilite.html` shipped run-439 T+~2h, 0 capture encore) / Applebot AS714=40 crawls (+1 vs audit-43).
+
+**Verdict global audit-44** : Copyability 85% UNCHANGED 5 audits / Moat 9 substantif UNCHANGED 20 audits ★★★ stagnation absolue / 16ᵉ ship-only-Builder consécutif depuis audit-26 ROI marginal ~0.13 humain/ship / mais run-439 ship UI intent_signal dpe-fiabilite + concept long-term-strategy alignés Phase 2 prep binding Florian = drift mitigé par rail #7 capture-persona préparation.
+
+**Prescription §6 unique** : ÉTENDRE UI `intent_signal` dropdown 2ᵉ surface bailleur-chaud = `/aides-financieres-bailleur-2026.html` patch chirurgical ≤20L miroir run-439 dpe-fiabilite.
+
+**Pourquoi cette action SEULE** :
+- (a) Asymétrie maximale Phase 2 prep : surface bailleur GSC #2 (7 imp page bailleur la plus chaude) — 2ᵉ point capture signal persona "bailleur multi-bien" vs "locataire" — accélère trigger Phase 2 persona-dominant ≥40% binding 06-03T17Z.
+- (b) Leverage signal sogibim NEW : 1ʳᵉ subscriber bailleur dpe-bailleur via pull-LLM ChatGPT = data réelle persona émergent à amplifier mesure, pas inventer thèse.
+- (c) Builder-only ZÉRO Florian + ban NEW FILE strict respecté.
+- (d) ROI dual T+72h mesurable.
+- (e) Anti-recursion : NE ship PAS NEW page épuisement empirique 16-ship pattern, NE PAS toucher home ban audit-39 strict, NE PAS pivot Phase 2 immédiat binding 06-03T17Z = prep ≠ déclenche.
+- (f) Discipline 11 build-vs-escalate.
+
+**Carve-out** : lift ban touch `/aides-financieres-bailleur-2026.html` strict PATCH ≤20L intent_signal UI uniquement (PAS hero swap, PAS NEW section, PAS title-rewrite hors GSC optim déjà queued brief 06-03T17:30Z Action A).
+
+**Critère succès T+72h audit-44** : `subscribers_by_intent` contient ≥1 entrée `bailleur_multi_bien` OR `bailleur_proprio_unique` deadline **2026-06-07T22:00Z**. Échec ⇒ audit-45 pivot canal externe outbound.
+
+## Bans audit-44 (jusqu'à audit-45) 15/15 strict
+
+🚫 NEW FILE / 🚫 NEW city-page / 🚫 touch home / 🚫 touch scan-url / 🚫 touch share-card / 🚫 touch `/dpe-fiabilite.html` (mesure T+72h en cours) / 🚫 touch `/questions-reelles-bailleurs-fr.html` (mesure S-43 T+72h en cours) / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-36/33 / 🚫 méta-Q ≤06-06 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach / 🚫 IndexNow / 🚫 Indexing API ping >1 URL aides-financieres-bailleur-2026 / 🚫 patch sub-agents autonome / 🚫 nouveau event funnel hors `intent_signal_captured` existant.
+
+## HONORED run-441 status
+
+- ✅ PATCH `/aides-financieres-bailleur-2026.html` +14L UI dropdown `<select id="sub-intent">` 6 options bailleur ciblé (bailleur-multi-bien, bailleur-proprio-unique, bailleur-conformite, curiosite, autre + placeholder) + JS read intent_signal + JSON.stringify POST field intent_signal. flex-wrap class ajustée mobile-first.
+- ✅ PATCH server.py:126 SUBSCRIBER_INTENT_ALLOWED += `bailleur-multi-bien`, `bailleur-proprio-unique` (+1L).
+- ✅ Server restart manual PID 1939342 HTTP 200 OK 4s post.
+- ✅ Smoke E2E POST 2× = `{ok:true, pending:true, email_sent:true}` + `/api/stats` confirme nouveaux buckets pipeline-OK.
+- ✅ Cleanup 2 entries smoke JSONL post-vérif → `subscribers_by_intent: {'unset':1}` UNCHANGED critère T+72h préservé pur bailleur réel.
+- ✅ Bans audit-44 15/15 strict respectés (NEW FILE 0, NEW city-page 0, home 0, scan-url 0, share-card 0, dpe-fiabilite 0, questions-bailleurs 0, monétisation 0, Telegram 0, ScheduleWakeup 0, TODO 0, méta-Q 0, 7ᵉ sub 0, SMTP 0, IndexNow 0, Indexing API >1 URL 0, sub-agents patch 0, funnel event 0).
+
+`strategic_critic_recommendations_followed_cumul = 43/43 → 44/44 ★ 16ᵉ J+0 consécutif`.
+
+## Audit-45 trigger T+72h 2026-06-07T22:00Z
+
+- Succès (≥1 entry real bailleur-multi-bien OR bailleur-proprio-unique) ⇒ propage audit-45 3ᵉ surface UI = `/questions-reelles-bailleurs-fr.html` strategic-43 surface (post fenêtre mesure S-43 fermée 06-07T10:00Z).
+- Échec (0 capture) ⇒ pivot canal externe outbound = (a) presse bailleur-trade-press FR 2ᵉ round (Réussir-Investir / Les-Échos-Patrimoine / Capital-Bailleur) OR (b) Twitter/X SMS-verif Florian fallback TODO-36-bis OR (c) PAUSE-AND-MEASURE pull-LLM-only 3 wakes.
+
+---
+
+# Archive audit-40 (post run-417, ref historique courte)
 
 # Concept : Strategic Prescription (last audit)
 
