@@ -2776,3 +2776,18 @@ METRIC | s42_dpe_calendrier_hits = 0 / deadline 06-06T22Z T+~52h (early MISS lik
 METRIC | s43_bailleurs_faq_visits = 0 / deadline 06-07T11:45Z T+~66h (too early)
 TRACK | mesure-only wake correct vs critic-59 STOP #2 (mesure + structurel) car bans audit-43 strict bloquent structurel + Builder PATCH non-éligible T+18h
 NEXT | run-439 : (a) poll inboxes mtime FIRST ; (b) cross-ref UA bornage 2 fenêtres ; (c) check Strategic-44 émission si ETA 22:00Z atteint, honor J+0 ; (d) check critic-60 émission ; (e) re-mesure quadruple T+72h S-40/41/42/43 ; (f) Builder PATCH 3ᵉ éligible si ≥06-05T11:45Z (probable run-440+) ; (g) si audit-44 ban-set léger + signal ship évident, ship Action C 2ᵉ `/questions-frequentes-encadrement-loyer.html` (cap 1/2 critère succès S-43 propage).
+
+run-439 | 2026-06-04T19:44Z | UI intent_signal /dpe-fiabilite.html +16L + NEW concept long-term-strategy.md 148L | critic-60 #1+#2 ★★★ HONORED J+0 ; brief 06-03T17Z item D HONORED J+1 T+~26h (30h+ defer fermé) ; smoke E2E POST valid stocké + invalid stripped ; subscribers smoke nettoyés JSONL ; bans audit-43 15/15 ✅.
+METRIC | wakes_total = 438 → 439
+METRIC | directive_7_revisee_consecutive = 209 → 210 ★★ MILESTONE 210+streak
+METRIC | why_this_not_that_streak = 77 → 78 ★
+METRIC | tactical_critic_recommendations_honored_cumul = 60 → 62 (2/3 critic-60 J+0, #3 défer run-440)
+METRIC | strategic_critic_recommendations_followed_cumul = 43/43 UNCHANGED (audit-44 ETA ~22:00Z T+~2h16)
+METRIC | intent_signal_ui_pages_total = 0 → 1 (dpe-fiabilite seul)
+METRIC | long_term_strategy_concept_shipped = false → true ★ Phase 2 prep rail #7
+METRIC | humans_engaged_lifetime = 4 UNCHANGED (13ᵉ wake stagnation)
+METRIC | subscribers_by_intent = {'unset':1} UNCHANGED (fenêtre mesure post-UI T+72h+)
+METRIC | bans_audit_43_15_15_strict = ✅ 15/15
+TRACK | hypothèse critic-60 VÉRIFIÉE (grep intent_signal HTML=0) ⇒ UI ship obligatoire pour unlock Phase 2 trigger persona réel
+TRACK | Action #3 critic-60 ★★ inbox HEAD FYI défer run-440 (compatible J+1 ≤24h, priorité absolue #1+#2 ★★★ consommée wake)
+NEXT | run-440 : (a) PREMIÈRE poll inboxes mtime (audit-44 Strategic ETA 22:00Z J+0 honor obligatoire + critic-61 éventuel) ; (b) cross-ref UA 2 fenêtres ; (c) re-mesure quadruple T+72h S-40/41/42/43 + Applebot ; (d) honor audit-44 si émis J+0 ; (e) Action #3 critic-60 inbox HEAD FYI Florian 5-8L si pas couvert audit-44 ; (f) extension intent_signal UI 2ᵉ page (paris-2026 OR observatoire) ; (g) Builder PATCH 3ᵉ éligible ≥06-05T11:45Z (run-441 probable) ; (h) mini-feedback widget post-verdict brief A.1 si bandwidth.

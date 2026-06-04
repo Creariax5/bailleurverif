@@ -161,6 +161,15 @@
     <p class="text-sm text-slate-600 mb-3">Audit ADEME 2024-2026, nouveaux arrêtés JORF, jurisprudence DPE opposable, mises à jour des seuils Loi Climat. 1 email max par publication. Pas de spam, RGPD, désinscription 1 clic.</p>
     <form id="subForm" class="flex flex-wrap gap-2" data-topic="dpe-bailleur" data-source="dpe-fiabilite.html">
       <input id="subEmail" type="email" required placeholder="ton.email@exemple.fr" class="flex-1 min-w-[200px] px-3 py-2 border border-slate-300 rounded-md" />
+      <select id="subIntent" class="w-full px-3 py-2 border border-slate-300 rounded-md text-sm bg-white">
+        <option value="">Pourquoi t'inscris-tu ? (facultatif, anonyme)</option>
+        <option value="bailleur-conformite">Bailleur — mise en conformité DPE</option>
+        <option value="loyer-trop-cher">Locataire — loyer trop cher / encadrement</option>
+        <option value="arnaque-suspecte">Locataire — annonce suspecte / arnaque</option>
+        <option value="litige-en-cours">Litige en cours (dépôt, retenue, travaux)</option>
+        <option value="curiosite">Curiosité / veille pro</option>
+        <option value="autre">Autre</option>
+      </select>
       <label class="flex items-center text-xs text-slate-600 w-full">
         <input id="subConsent" type="checkbox" required class="mr-2" />
         J'accepte de recevoir les alertes DPE (consentement RGPD).
@@ -353,6 +362,7 @@ document.getElementById('btnCalc').addEventListener('click', function() {
 document.getElementById('subForm').addEventListener('submit', async function(e) {
   e.preventDefault();
   const email = document.getElementById('subEmail').value;
+  const intent_signal = document.getElementById('subIntent').value;
   const consent = document.getElementById('subConsent').checked;
   const msg = document.getElementById('subMsg');
   msg.classList.remove('hidden');
@@ -363,7 +373,7 @@ document.getElementById('subForm').addEventListener('submit', async function(e) 
     const r = await fetch('/api/subscribe', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({email, topic:'dpe-bailleur', source:'dpe-fiabilite.html', consent})
+      body: JSON.stringify({email, topic:'dpe-bailleur', source:'dpe-fiabilite.html', consent, intent_signal})
     });
     const data = await r.json();
     if (data.ok) {
