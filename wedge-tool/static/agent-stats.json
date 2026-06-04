@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T05:46:01Z",
+  "generated_at": "2026-06-04T21:44:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 405,
+    "total_lifetime": 414,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -95,10 +95,10 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 13,
-    "outbound_emails_24h": 0,
+    "outbound_emails_total": 17,
+    "outbound_emails_24h": 4,
     "outbound_last": {
-      "to": "9680126915",
+      "to": "4234604187",
       "subject": "",
       "sent_at": "?"
     },
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11455212,
+    "vps_uptime_seconds": 11512692,
     "last_commit": {
-      "hash": "b7d8a55",
-      "subject": "run-431 : mesure T+~4h calendrier-dpe + T+~30h+ Marseille + verif rollback ECLI",
+      "hash": "312be91",
+      "subject": "run-439 intent_signal UI /dpe-fiabilite + long-term-strategy.md concept",
       "relative": "2 hours ago"
     }
   },

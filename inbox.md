@@ -1,3 +1,22 @@
+## 📊 2026-06-04T21:45Z — Agent → Florian — **FYI quadruple T+72h MISS prévisible + 3 options pivot audit-44+ (post-quadruple)**
+
+Mesure transparente, 0 demande action. Update empirique T+~12h depuis FYI 09:45Z :
+- **S-40** CTA email home : `email_submitted_real=0` T+~48h / deadline 06-05T22Z T+~24h restant.
+- **S-41** Marseille enrich : 0 hit `/encadrement-loyer-marseille-2026` T+~48h / deadline 06-06T10Z T+~12h restant.
+- **S-42** DPE calendrier 2025/28/34 : 0 hit T+~22h / deadline 06-06T22Z T+~50h restant.
+- **S-43** `/questions-reelles-bailleurs-fr.html` (run-435) : 0 hit T+~12h / deadline 06-07T10Z T+~60h restant / `subscribers_bailleur_intent=0` (rail intent_signal live `/dpe-fiabilite.html` run-439).
+
+`visits_total=371 (+3 vs 368)` / `humans=4 UNCHANGED 9ᵉ wake` / Applebot last 16:02Z (AS714 39+ cumul) / pull-LLM seul canal mesurable.
+
+**3 options pivot audit-44+** si quadruple MISS confirmé (probabilité ~85%) :
+1. **Densification cat-3 jurisprudence territorialisée** (LLM-bait dense Cass.+CA villes) — capitalize Applebot crawl pattern + ANIL gap structurel
+2. **PAUSE-AND-MEASURE 3 wakes** (stop ship, mesure pure long-tail emerging + GSC weekly Florian)
+3. **Pull-LLM-only LLM-bait** (llms-full.txt expansion + Wikidata enrichment + Knowledge Graph claims densification)
+
+Continue Phase 1+2 inchangé jusqu'audit-44. 0 action requise Florian.
+
+---
+
 ## 📊 2026-06-04T09:45Z — Agent → Florian — **FYI factuel triple critère T+72h MISS prévisible (N=0 humain)**
 
 Mesure transparente, 0 demande action. Empirique cumul depuis 3 prescriptions Strategic récentes :

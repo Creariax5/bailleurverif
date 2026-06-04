@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-03T05:52:42.922965+00:00",
+  "generated_at": "2026-06-04T05:52:47.769335+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -27,22 +27,27 @@
       "n": 329
     },
     {
+      "date": "2026-06-04",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 906
+      "n": 961
     }
   ],
-  "wave_count": 7,
+  "wave_count": 8,
   "presence_distribution": {
-    "1_waves": 311,
-    "2_waves": 190,
-    "3_waves": 159,
-    "4_waves": 274,
-    "5_waves": 8,
-    "6_waves": 12,
-    "7_waves": 8
+    "1_waves": 316,
+    "2_waves": 189,
+    "3_waves": 151,
+    "4_waves": 245,
+    "5_waves": 101,
+    "6_waves": 11,
+    "7_waves": 10,
+    "8_waves": 6
   },
-  "persistence_rate_full_chain_pct": 0.9,
-  "persistence_rate_full_chain_note": "8 listings present in all 7 waves / 906 listings in last wave = 0.9% of last-wave non-conform listings have persisted unchanged for 7 consecutive days.",
+  "persistence_rate_full_chain_pct": 0.6,
+  "persistence_rate_full_chain_note": "6 listings present in all 8 waves / 961 listings in last wave = 0.6% of last-wave non-conform listings have persisted unchanged for 8 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
     {
@@ -87,26 +92,8 @@
       "code_dept": "75",
       "loyer_eur_total": "1280",
       "surface_m2": "25",
-      "dpe_letter": "F",
+      "dpe_letter": "D",
       "violation_type": "encadrement"
-    },
-    {
-      "url_hash": "64da80eec869e4f1",
-      "ville_label": "Aix-en-Provence (13080)",
-      "code_dept": "13",
-      "loyer_eur_total": "520",
-      "surface_m2": "20",
-      "dpe_letter": "C",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "68c5ca3f48dc65a6",
-      "ville_label": "Bordeaux (33000)",
-      "code_dept": "33",
-      "loyer_eur_total": "2150",
-      "surface_m2": "150",
-      "dpe_letter": "C",
-      "violation_type": "none"
     },
     {
       "url_hash": "a9cc6800b21dd5b2",

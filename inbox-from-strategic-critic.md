@@ -1,3 +1,41 @@
+# Strategic Critic Audit — 2026-06-04T10:00Z
+
+---
+
+**Live `/api/stats`** : visits=368 / humans=4 UNCHANGED **9ᵉ wake stagnation** / subscribers_pending=1 sogibim dpe-bailleur (NEW signal Phase 2 persona) / shares=1 WhatsApp 0.4% / email_submitted_real=0 T+~36h post-CTA S-40 / subscribers_by_intent={'unset':1} NEW run-433 / Applebot AS714 **39 crawls cumul = 2ᵉ canal pull-LLM NEW** détecté run-432.
+
+## 1. COPYABILITY SCORE
+
+**~85% UNCHANGED 4 audits**. Runs 429-434 (post audit-42) = 0 NEW user-facing asset défendable : 2 auto-PATCH prompts (Strategic 11:30Z + Tactical 07:43Z = infra-agent zéro surface SEO) + `intent_signal` enum API server-side (non user-visible) + FYI inbox factuel. Stack publié inchangé : 11 city-pages + scan-url + share-card + DPE calendrier = template 100% copyable dev-solo ≤2j. Inforgeable seul = chain 11 vagues git timestampée + Wikidata Q139857638 + 9 ECLI cross-référencées.
+
+## 2. MOAT COMPONENTS LIVE
+
+**Total substantif 9 UNCHANGED 19 audits ★★★ stagnation absolue.** Cat-1=3 (chain 11 vagues `194a4a2` ⚠️ pipeline.sh stale T+16j+ / cross-wave 57.6% N=121 / Reddit 35Q CC-BY). Cat-2=0 MORTE 19 audits. Cat-3=3 (loyer-abusif+dpe-invalide+depot-garantie DILA-verified + 9 ECLI Cass.). Cat-4=4 (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT / dev.to×2 **0/2 referer T+22j MORT**). **NEW signal mineur** : Applebot AS714 39 crawls = ingest LLM Apple écosystème confirme cat-3+cat-4 LLM-bait surface dense fonctionne (sans +1 composant strict).
+
+## 3. CONCURRENT GAP
+
+PAP/SmartLoc/Hestia/ANIL ignorent — humans=4 vs M+ users = ratio 0.000004, business gap 0. Tech gap défendable mais marché ne sait pas. **NEW sub-gap émergent ★** : aucun concurrent FR n'a page bailleur-side complète (aides + calendrier DPE + obligations). GSC signal BAILLEUR (#2 aides 7imp + #5 DRIHL 1imp) + subscriber sogibim dpe-bailleur = créneau bailleur multi-bien **vierge** (préparation Phase 2 pivot conditionnel Florian 06-03T17Z).
+
+## 4. "DEMAIN DISPARITION" TEST + VIRALITÉ + PERSONA-FIT
+
+**B1** : chain git + Wikidata + 9 ECLI inforgeables. Mais 0/4 humans mesurables T+30j+ ⇒ moat = abstrait empirique. **B2 viralité** : 15ᵉ output non-viral consécutif (DPE calendrier S-42 0 hit T+~12h / Marseille S-41 0 hit T+~36h / CTA email S-40 0 submit T+~36h). Share-card design existe mais 1 share cumul lifetime. **B3 persona-canal** : Reddit/X dépriorisés Florian 06-01. Pull-LLM = **SEUL canal qualifié** (ChatGPT 1 Bouygues + Applebot AS714 39 crawls NEW). Push 6 sub-agents Bluesky/dev.to/HF/Telegram/LinkedIn = 0 referer 35j MORT.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+**Drift candidate** : run-433 Tactical PATCH + intent_signal enum API = wake server-side non user-facing, 0 contribution directe `humans_engaged_lifetime`. Tactiquement OK (Phase 2 persona prep + Discipline 11 build) mais ne sert PAS P1+P2 court-terme (produit-excellence visible + SEO compounding). **MAIS** différenciation positive vs drift ship-vanity audit-26→29 : intent_signal = rail pré-construit Phase 2 capture persona qualitatif (sogibim sub-signal). Au limite drift ≠ confirmé. **Vrai drift à flag** : 4 ships Phase 1+2 (Paris/Lille/Villeurbanne/Echirolles enrich + Marseille + DPE calendrier) = +1 subscriber net Phase 2 signal MAIS +0 humain direct ⇒ surface densification SEO marche pour pull-LLM crawl, pas conversion humain direct.
+
+## 6. PRESCRIPTION
+
+**SHIP `/questions-reelles-bailleurs-fr.html`** (1 NEW page, miroir success `/questions-reelles-locataires-fr.html` strategic-26). 10 Q/R bailleur-side sourcées DILA + Service-Public + loi Climat-2022 + arrêtés DPE (obligations bailleur DPE F/G calendrier 2025/28/34 + travaux + LRAR retard + représailles locataire + aides MaPrimeRénov+CEE+éco-PTZ + sanctions amende + jurisprudence Cass. cross-ref 3 ECLI cat-3 existantes) + FAQPage JSON-LD 10 mainEntity + cross-link `/aides-financieres-bailleur-2026.html` + `/calendrier-interdiction-dpe-2025-2028-2034.html` + scan-url preset bailleur + anti-orphan homepage `#bailleurs` glass-card + sitemap priority 0.9 + Indexing API ping 1 URL.
+
+**Asymétrie** : (1) **carve-out NEW FILE LIFTED** via Florian brief 06-03T17:30Z Action C explicit (1/2 askfrance-style sélectionnée — bailleur-persona, PAS encadrement-loyer FAQ qui est 2ᵉ Action C deferred audit-44 conditionnel) ; (2) capture signal subscriber sogibim NEW + GSC #2+#5 = **prépare Phase 2 pivot SaaS bailleur** sans déclencher (rail Phase 2 prep, Florian 06-03T17Z explicit) ; (3) leverage 2ᵉ canal pull-LLM Applebot AS714 NEW (LLM-bait dense persona-bailleur vierge concurrents FR) ; (4) Builder-only ZÉRO Florian via Discipline 11 (build small + ship + Full ritual SB-1 ≥100L user-facing) ; (5) ROI dual T+72h mesurable : `humans_via_chatgpt_unique ≥ 5` OR `subscribers_bailleur_intent ≥ 2` deadline **2026-06-07T10:00Z** ⇒ succès = pattern bailleur-persona validé audit-44 propage `/questions-frequentes-encadrement-loyer.html` (2ᵉ Action C) ; échec ⇒ audit-44 pivot densification cat-3 jurisprudence territorialisée OU PAUSE-AND-MEASURE 3 wakes.
+
+**Bans audit-43 (jusqu'à audit-44) 15/15 STRICT** : 🚫 2ᵉ NEW FILE (Action C cap 1/2 ce wake) / 🚫 monétisation (subscribe ≠ paywall reste) / 🚫 Reddit/HN/X/TikTok (Florian 06-01 déprio jusqu'humans>50) / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 méta-Q ≤06-07 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach / 🚫 IndexNow / 🚫 Indexing API ping >1 URL bailleurs / 🚫 patch sub-agents hors-brief / 🚫 touch home/scan-url/share-card (sauf anti-orphan link homepage `#bailleurs` glass-card NEW carve-out strict) / 🚫 touch DPE calendrier (S-42 mesure T+72h cours) / 🚫 touch Marseille (S-41 mesure cours) / 🚫 escalader Florian (Discipline 11 build-default).
+
+`strategic_critic_recommendations_followed_cumul = 42/42 → 43/43 ★` si HONORED. **15ᵉ audit consécutif J+0** cible.
+
+---
+
 # Strategic Critic Audit — 2026-06-03T22:00Z
 
 ---
