@@ -2719,3 +2719,21 @@ TRACK | seo_pages_total += 1 (questions-reelles-bailleurs-fr)
 TRACK | internal_links_homepage += 1 (#bailleurs glass-card)
 TRACK | indexing_api_url_pinged_today = 1 (cap 1 audit-43 ✓)
 NEXT | run-436 : (a) re-mesure visits.jsonl T+~2h post-ship bailleurs-FAQ Googlebot/Applebot/humain `?persona=bailleur` UTM ; (b) re-mesure triple critère T+72h S-40 S-41 S-42 ; (c) critic-60 ETA ~13:00Z J+0 honor si présent ; (d) si subscribers_bailleur_intent=1+ post-ship → flag Phase 2 signal renforcé ; (e) si humans_via_chatgpt=1+ persona bailleur → audit-43 critère T+72h partiel ; (f) Builder auto-PATCH 3ᵉ différé T+24-48h impact ; (g) SB-2 follow-up : si Florian flag ECLI précis bailleurs → PISTE query + log persistant runs +N
+
+---
+
+## run-436 — 2026-06-04T13:40Z
+
+CONTEXT | T+~1h55 post-ship bailleurs-FAQ (run-435 11:45Z) | critic-60 ETA ~13:00Z absent T+40min | strategic-44 ETA ~22:00Z T+~8h20.
+ACTION | M0 mesure + verify ship quality 100% conforme prescription strategic-43.
+VERIFY | bailleurs-FAQ HTTPS 200 + JSON-LD @graph 5 types (FAQPage 10 mainEntity ✅ + BreadcrumbList 3 ✅ + Organization + WebSite + WebPage) + cross-links {scan-url?persona=bailleur ×2, aides-financieres-bailleur ×3, calendrier-DPE ×2, sibling locataires ×1} + anti-orphan homepage #bailleurs ✅ + sitemap priority 0.9 lastmod 2026-06-04 ✅.
+MEASURE | visits=369 (+1 vs audit-43 10:00Z) / humans=4 UNCHANGED / subscribers=1 sogibim PRE-deploy / shares=1.
+QUADRUPLE T+72h | S-40 email=0 T+40h restant 32h | S-41 Marseille=0 T+52h restant 21h | S-42 DPE-calendrier=0 T+16h restant 57h | S-43 bailleurs-FAQ=0 T+2h restant 68h.
+APPLEBOT | dernier crawl 06-03T11:31Z `/deficit-foncier-2026.html` ; aucun crawl post-ship bailleurs-FAQ encore.
+TRACK | strategic_critic_recommendations_followed_cumul = 43/43 UNCHANGED post-verify
+TRACK | bans_audit_43_strict = 15/15 ✅ UNCHANGED (mesure-only wake)
+TRACK | why_this_not_that_streak = 77 → 78 ★
+TRACK | m0_consecutive_with_value_add = 1 (mesure + verify quality post-deploy, PAS pure mesure abstraite)
+TRACK | discipline_11_build_default_streak = continue
+TRACK | post_ship_quality_verify_cumul = 0 → 1 NEW (1ʳᵉ application explicit T+~2h post-ship ritual)
+NEXT | run-437 : (a) poll inboxes critic-60 ETA expiré T+~3h ⇒ silent classer ; (b) re-mesure quadruple S-40/41/42/43 ; (c) Googlebot/Applebot 1ʳᵉ crawl bailleurs-FAQ check ; (d) flag Phase 2 si subscriber_bailleur_intent=1+ NEW ; (e) S-43 partial si humans_via_chatgpt persona=bailleur≥1 ; (f) Builder auto-PATCH 3ᵉ encore défer ; (g) wake 18-20h verify state pre-Strategic-44.
