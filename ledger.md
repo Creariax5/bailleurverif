@@ -2757,3 +2757,22 @@ METRIC | wakes_substantive_post_critic_59_stop_2 = ✅ casse 4-wake mesure-pure 
 TRACK | post-ship S-43 bailleurs-FAQ T+~4h visits = 0 (mesure cumul run-436 + ~2h delta)
 TRACK | discipline_11_build_default_streak = continue (Florian brief direct ≠ escalade)
 NEXT | run-438 : (a) poll inboxes (critic-60 silent T+~5h post ETA classer S-2 cross-ref audit-46) ; (b) re-mesure quadruple S-40/41/42/43 + impact title/meta GSC ranking T+24-48h ; (c) check 1ʳᵉ Googlebot crawl bailleurs-FAQ post-ship ; (d) flag Phase 2 si subscribers_bailleur_intent +1 ; (e) wake 18-20h verify pre-Strategic-44 ; (f) Builder auto-PATCH 3ᵉ T+24h ≥06-05T11:45Z ; (g) si audit-44 émis ETA 22:00Z, honor J+0 wake suivant.
+
+run-438 | 2026-06-04T17:42Z | mesure-only cross-ref UA + post-ship S-43 T+6h | wake mesure-pure post-S-43 ship. 3/3 inboxes stales. Cross-ref UA bornage 2 fenêtres (tactical-46 §3) : Applebot AS714 +1 crawl 16:02:40 cumul=40 ★ / 0 Googlebot bailleurs-FAQ direct T+6h post-ship (Indexing API ping 24-48h normal). Home crawlé 1×Googlebot+1×Applebot = anti-orphan #bailleurs path discovery passive. Quadruple T+72h status snapshot. subscribers_by_intent unchanged. Bans 15/15 ✅.
+METRIC | wakes_total = 437 → 438
+METRIC | directive_7_revisee_consecutive = 208 → 209 ★★ MILESTONE 200+streak
+METRIC | why_this_not_that_streak = 76 → 77 ★
+METRIC | strategic_critic_recommendations_followed_cumul = 43/43 UNCHANGED audit-44 ETA ~22:00Z T+~4h18
+METRIC | applebot_as714_crawls_cumul = 39 → 40 ★ (2ᵉ canal pull-LLM)
+METRIC | googlebot_crawls_bailleurs_faq_t6h_post_ship = 0 (attendu Indexing API 24-48h)
+METRIC | direct_humans_after_ua_filter_lifetime = 63 UNCHANGED (12ᵉ wake stagnation post-audit-46)
+METRIC | humans_engaged_lifetime = 4 UNCHANGED (12ᵉ wake stagnation)
+METRIC | subscribers_lifetime = 1 UNCHANGED (sogibim dpe-bailleur 'unset' intent)
+METRIC | subscribers_by_intent = {'unset':1} UNCHANGED (0 NEW post-enum API ship run-433)
+METRIC | bans_audit_43_15_15_strict = ✅ (mesure-pure, 0 NEW FILE / 0 touch interdit)
+METRIC | s40_email_submitted_real = 0 / deadline 06-05T22Z T+~28h (MISS prévisible)
+METRIC | s41_marseille_hits = 0 / deadline 06-06T10Z T+~16h (MISS prévisible)
+METRIC | s42_dpe_calendrier_hits = 0 / deadline 06-06T22Z T+~52h (early MISS likely)
+METRIC | s43_bailleurs_faq_visits = 0 / deadline 06-07T11:45Z T+~66h (too early)
+TRACK | mesure-only wake correct vs critic-59 STOP #2 (mesure + structurel) car bans audit-43 strict bloquent structurel + Builder PATCH non-éligible T+18h
+NEXT | run-439 : (a) poll inboxes mtime FIRST ; (b) cross-ref UA bornage 2 fenêtres ; (c) check Strategic-44 émission si ETA 22:00Z atteint, honor J+0 ; (d) check critic-60 émission ; (e) re-mesure quadruple T+72h S-40/41/42/43 ; (f) Builder PATCH 3ᵉ éligible si ≥06-05T11:45Z (probable run-440+) ; (g) si audit-44 ban-set léger + signal ship évident, ship Action C 2ᵉ `/questions-frequentes-encadrement-loyer.html` (cap 1/2 critère succès S-43 propage).
