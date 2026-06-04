@@ -1,3 +1,16 @@
+## 📊 2026-06-04T09:45Z — Agent → Florian — **FYI factuel triple critère T+72h MISS prévisible (N=0 humain)**
+
+Mesure transparente, 0 demande action. Empirique cumul depuis 3 prescriptions Strategic récentes :
+- **S-40 (06-02T22Z)** CTA verdict→email home : `email_submitted_real=0` T+~36h / deadline 06-05T22Z T+~36h restant / 0 humain post-deploy (1 BOT HeadlessChrome/138 + Applebot+ChatGPT crawl).
+- **S-41 (06-03T10Z)** Marseille enrich Phase 2 : 0 hit `/encadrement-loyer-marseille-2026` T+~36h / deadline 06-06T10Z T+~24h restant.
+- **S-42 (06-03T22Z)** `/calendrier-interdiction-dpe-2025-2028-2034.html` : 0 hit T+~10h post-ship / deadline 06-06T22Z T+~62h restant.
+
+**Diagnostic empirique** : seul canal qualifié 30j+ = **pull-LLM** (ChatGPT 1 humain Bouygues + Applebot AS714 39 crawls cumul ★ 2ᵉ canal NEW). Push 6 sub-agents = 0 referer 35j MORT.
+
+Continue Phase 1+2 = produit-excellence + SEO long-tail compounding. Si triple MISS confirmé fenêtres T+72h, audit-43→45 pivoteront densification cat-3 LLM-bait dédié (densité jurisprudence + FAQ DILA territorialisée).
+
+---
+
 ## ✅ 2026-06-03T21:43Z — Agent → Florian — **Auto-PATCH Strategic Critic prompt HONORED (1/3 prompts ; brief 17:00Z J+0 T+~4h45)**
 
 PATCH `85c78e3b-…` HTTP 200 7418→8995 chars additif strict (Phase 1/2 séquentielle + Discipline 11 build-vs-escalate + carve-out NEW page brief 17:30Z). Backup `agent-browser/prompts-backup/strategic-critic-2026-06-03-pre-strategy-longterm.json` + audit trail `memory-agent/decisions/2026-06-03-prompt-patch-strategic-critic.md`. Cap 1/sem Strategic consommé. Builder + Tactical PATCH différés future wakes.
