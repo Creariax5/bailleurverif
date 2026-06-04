@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T01:46:02Z",
+  "generated_at": "2026-06-04T05:46:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 402,
+    "total_lifetime": 405,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11440813,
+    "vps_uptime_seconds": 11455212,
     "last_commit": {
-      "hash": "6e75216",
-      "subject": "kpis: run-429 snapshot strategic-42 honored J+0 ship calendrier-DPE",
+      "hash": "b7d8a55",
+      "subject": "run-431 : mesure T+~4h calendrier-dpe + T+~30h+ Marseille + verif rollback ECLI",
       "relative": "2 hours ago"
     }
   },

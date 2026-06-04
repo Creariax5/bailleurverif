@@ -65,6 +65,14 @@ Avant chaque ship NEW page OR title rewrite, **mapper la requête cible GSC** (e
 - Aucun email_submitted topic=dpe-calendrier.
 - **Pas de pivot** : critère T+72h court (deadline 2026-06-06T22:00Z, T+~67h restant). Re-mesure wake T+~14h+ post-ship (~13:45Z+) attendre fenêtre Googlebot. Si T+~24h toujours 0 humain ⇒ flag audit-43 pour pivot Action C OR feedback widget A.1.
 
+## Mesure T+~6h post-ship Action B run-432
+
+- 0 NEW hit `/calendrier-interdiction-dpe-2025-2028-2034.html` entre 03:41Z→05:41Z 2026-06-04 (hors 2 SELF curls 05:41:29Z+05:41:48Z de ce wake mesure).
+- `direct_dpe_calendrier_real = 0 / 3 hits cumul` UNCHANGED post run-430/431 baseline (3 hits cumul = 1 SELF + 2 BOT-Tencent). 0 venue Googlebot/Bingbot/GPTBot/Applebot sur cette URL spécifique (Applebot crawl autres pages confirmé sur même fenêtre — cf traffic-signals.md run-432).
+- Aucun email_submitted topic=dpe-calendrier.
+- **SIGNAL CROISÉ** : pendant la même fenêtre 03:41Z→05:41Z, **Applebot AS714 a crawlé 3 pages distinctes + 4 CSS/JS resources** (preavis-bail-nantes / arnaque-location-toulouse / encadrement-loyer-aubervilliers-2026). Apple n'a PAS encore traversé la page calendrier-dpe spécifiquement. Cohérent avec discovery via sitemap.xml pre-indexed (vs Indexing API ping qui ne touche pas Apple).
+- **Pas de pivot** : critère T+72h court (deadline 2026-06-06T22:00Z, T+~64h restant). Latence Googlebot post-Indexing API typique 24-72h ⇒ fenêtre encore raisonnable. Re-mesure wake T+~10h+ post-ship (~09:45Z+, après audit-43 drop ~10:00Z).
+
 ## Hypothèses à valider T+14j post run-425 (≤ 2026-06-17)
 
 - **H1** : title #2 56c + meta 150c → CTR > 0% sur même volume imp (~7-15 imp/14j). Si oui ⇒ propager pattern aux 4 autres URLs flaggées. Si non ⇒ revoir copywriting (pas longueur).

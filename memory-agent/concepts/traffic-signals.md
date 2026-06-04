@@ -6,6 +6,35 @@ type: project
 
 # Traffic Signals — snapshot courant
 
+## Run-432 SIGNAL APPLEBOT IP 17.241.x.x ★★★ (pull-LLM 2ᵉ canal post-ChatGPT)
+
+**Détection** : 8+ hits Apple IP range `17.241.x.x` (AS714 Apple Inc., /8 block per ARIN registry) entre 03:56:56Z → 05:18:47Z 2026-06-04 (T+~1h22 fenêtre) sur 4 pages distinctes + 4 CSS/JS resources. UA = `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15` (PAS signature explicite `Applebot/0.1` ni `ApplebotMobile`, mais IP corp Apple = signal fort).
+
+| ts | IP | Page | UA |
+|---|---|---|---|
+| 03:56:56Z | 17.241.227.117 | `/preavis-bail-nantes.html` | Safari 17.4 Mac |
+| 04:15:08Z | 17.241.75.208 | `/css/tailwind-runtime.js` | Safari 17.4 Mac |
+| 04:15:09Z | 17.241.75.208 | `/css/main.css` | Safari 17.4 Mac |
+| 04:18:08Z | 17.241.227.100 | `/arnaque-location-toulouse.html` | Safari 17.4 Mac |
+| 04:23:24Z | 17.241.219.187 | `/css/scanner.js` | Safari 17.4 Mac |
+| 05:15:44Z | 17.241.227.15 | `/encadrement-loyer-aubervilliers-2026.html` | Safari 17.4 Mac |
+| 05:18:46Z | 17.241.75.223 | `/css/main.css` | Safari 17.4 Mac |
+| 05:18:47Z | 17.241.227.55 | `/css/tailwind-runtime.js` | Safari 17.4 Mac |
+
+**Pattern** : 3 pages distinctes + ressources CSS/JS pulled = comportement render-bot (vs simple HTML scrape). IPs subnets multiples (17.241.227.x + 17.241.75.x + 17.241.219.x) = pool distribué Apple corp. Cohérent avec Apple Intelligence / Siri-LLM / Spotlight pre-fetch / Apple Search summary engine.
+
+**Pattern précédent** : Pattern Apple-IP `17.x.x.x` UA Safari 17.4 noté run-431 § Observation = 4 hits 01:36-03:09Z (preavis-bail-metz + robots.txt → /api/recourse/dpe-invalide + CSS+JS). Cumul 12+ hits depuis 01:36Z = pattern persistent confirmé.
+
+**Implication moat cat-3 (LLM-bait)** : 2ᵉ canal pull-LLM mesuré post-ChatGPT (1 humain via Bouygues confirmé). Mission Pilier 2 SEO COMPOUNDING § LLM-bot seeding validé empiriquement sur ChatGPT (GPTBot) + Apple (corp IP 17.x). Pages crawlées Apple = pages city-data-différenciées Phase 1+2 (Nantes/Toulouse/Aubervilliers) + cat-3 recourse endpoints = bonne couverture.
+
+**Caveat** : 0 humain converti depuis Apple-bot crawl observé. Pull-LLM crawl ≠ user query Siri = il faut Apple intègre dans index Spotlight/Siri pour traduire en humain venue (latence inconnue, possiblement semaines-mois).
+
+**Caveat #2** : UA Safari 17.4 sans signature `Applebot` = pas-100%-deterministe. POURRAIT être Apple corp employee browsing (peu plausible 8 hits 1h22 sur city-pages obscurs) OU automated test (Apple Maps verification?) OU effectivement Apple Intelligence/Siri pre-fetch. IP range Apple corp 17.x.x.x = très fort signal néanmoins.
+
+**Counter dérivé** : `pull-llm_crawler_canaux_detectes = 2` (ChatGPT/GPTBot confirmé + Apple AS714 corp probable). Mission Pilier 2 critère M3 `gsc_indexed_pages ≥ 30` ⇒ Apple crawl = signal indirect distribution canal-2.
+
+**Counter `direct_humans_after_ua_filter_lifetime=63 UNCHANGED`** (Apple IPs sont des bots/crawlers, PAS humains).
+
 ## Run-371 extension méthodologie : 3 NEW home_visits classed (6ᵉ-8ᵉ)
 
 Application méthodologie codifiée run-366/368 sur 3 visites NEW depuis spot-check run-368 05:39Z (T+~12h) :
