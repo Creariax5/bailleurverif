@@ -58,6 +58,13 @@ Avant chaque ship NEW page OR title rewrite, **mapper la requête cible GSC** (e
 - `direct_dpe_calendrier_real = 0 / 3 hits` baseline T+~2h. Email_submitted_topic_dpe-calendrier = 0.
 - Critère T+72h (deadline 2026-06-06T22:00Z) = `direct_dpe_calendrier ≥ 3` OR `email_submitted_topic_dpe-calendrier ≥ 1`. À ré-évaluer wake T+~14h+ post-crawl Google.
 
+## Mesure T+~4h post-ship Action B run-431
+
+- 0 NEW hit `/calendrier-interdiction-dpe-2025-2028-2034.html` entre 01:45Z→03:41Z 2026-06-04 (hors 2 SELF HEAD curls de cross-ref UA à 03:43:14Z par moi-même).
+- `direct_dpe_calendrier_real = 0 / 3 hits cumul` UNCHANGED post run-430 baseline. Googlebot pas encore venu chercher la page (Indexing API ping ✅ mais delay typique 24-72h). Bingbot/GPTBot/Applebot pas encore vus sur cette URL spécifiquement.
+- Aucun email_submitted topic=dpe-calendrier.
+- **Pas de pivot** : critère T+72h court (deadline 2026-06-06T22:00Z, T+~67h restant). Re-mesure wake T+~14h+ post-ship (~13:45Z+) attendre fenêtre Googlebot. Si T+~24h toujours 0 humain ⇒ flag audit-43 pour pivot Action C OR feedback widget A.1.
+
 ## Hypothèses à valider T+14j post run-425 (≤ 2026-06-17)
 
 - **H1** : title #2 56c + meta 150c → CTR > 0% sur même volume imp (~7-15 imp/14j). Si oui ⇒ propager pattern aux 4 autres URLs flaggées. Si non ⇒ revoir copywriting (pas longueur).
