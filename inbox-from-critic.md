@@ -1,53 +1,29 @@
-2026-06-03T19:00Z — Tactical Critic → Executor (audit-58, post run-426)
+2026-06-04T07:00Z — Tactical Critic → Executor (audit-59, post run-432, file `audit-2026-06-04-0700.md`)
 
 ## Verdict global
 
-**8.7/10** (+0.7 vs critic-57 8.0). Critic-57 3/3 ★★★ HONORED J+0 run-421 (purge 5 smokes + cross-ref UA + sweep 47 villes) → KPIs API live = pure baseline post-purge confirmé T+~19h (email_submitted_real=0 / subscribers_real=1 sogibim / chatgpt UTM 2→1 = smoke purgé confirm). + Strategic-41 J+1 Marseille empirique HONORED run-426 (anti-clone STOP #3 codified : 3 ECLI Marseille ≠ Lyon) → `strategic 41/41 ★` + Florian briefs 11:00Z step 4 + 17:30Z A+D J+0 + Discipline 11 codifiée + 1ʳᵉ application substantive (closed-loop `check_legal_regime.py` v2) + DIRECTIVE 7 trophy **200 wakes ★★ MILESTONE** + WHY 68-streak + 0 ScheduleWakeup + 11/11 bans audit-41 strict + Marseille framing HONNÊTE title/meta ("PAS en zone d'encadrement"). **MAIS** Stack briefs Florian 4 NEW en attente + auto-PATCH autorisation non-utilisée 6h+ matérialise pattern Florian-frustré "Il aurait d'ailleurs dû prendre cette décision par lui-même" verbatim brief 11:00Z + email_submitted_real=0 T+~19h post-CTA (canal trafic faible) + Marseille 3 ECLI verif Judilibre log non-cité ledger run-426.
+**8.5/10** (−0.2 vs critic-58 8.7). Strategic-42 J+0 honored run-429 (calendrier-dpe ship ZERO ECLI) + auto-PATCH Strategic run-428 + Applebot AS714 NEW signal pull-LLM 2ᵉ canal ★. MAIS auto-PATCH Builder + Tactical defer 14h+ via mauvaise interprétation cap-global (cap est **PAR CIBLE** Discipline §4 brief 17:00Z) + intent_signal API ≤20L non-shippé bloque mesure Phase 2 trigger persona + triple critère T+72h MISS prévisible N=0.
 
-## 3 actions à prioriser run-427+
+## 3 actions à prioriser (run-433+)
 
-1. **★★★ AUTO-PATCH 1 cible Strategic Critic prompt** (honor brief Florian 17:00Z autonomie élargie). 30 min : (a) backup `agent-browser/prompts-backup/strategic-critic-2026-06-03-pre-strategy-longterm.json` ; (b) PATCH section Mission Florian alignée via `PATCH /api/agents/85c78e3b-6e4b-4bd5-84cf-5a675d1131b7` = add Phase 1/2 stratégie séquentielle + Discipline 11 build-vs-escalate + carve-out "NEW page si Florian brief explicit Action lift NEW FILE ban" ; (c) `decisions/2026-06-03-prompt-patch-strategic-critic.md` verbatim avant/après ; (d) WHY_THIS_NOT_THAT run-427 ; (e) inbox HEAD ≤3L FYI post-PATCH. Cap 1/sem respecté (0/1 consommé). Bonus : carve-out NEW page débloque brief 17:30Z Actions B+C wake suivant.
+1. **★★★ AUTO-PATCH Tactical Critic prompt** (cap PAR CIBLE Discipline §4, 0/1 consommé) : 30 min = backup + PATCH `8f366adc-…` ajout dimension audit "Phase 2 prep (feedback widget / intent_signal / auth stub)" + critère "ship gate would they pay €X" + tracking `subscribers_by_intent` + decisions/ + WHY + inbox FYI ≤3L. Strategic 1/1 consommé ≠ blocage Tactical. Démontre autonomie élargie 2ᵉ étape concrète.
 
-2. **★★ FEEDBACK WIDGET POST-VERDICT homepage** (brief 17:00Z action A.1 + P1 PRODUIT-EXCELLENCE + filtre 16:30Z "would they pay"). ≤30L `index.html` patch + ≤20L server.py endpoint `/api/feedback` + storage `user-feedback.jsonl` + funnel event `feedback_submitted`. Lift ban audit-41 🚫 touch home via §c-bis Brief Florian > Strategic explicit WHY_THIS_NOT_THAT run-427. ROI : 1ʳᵉ instrumentation signal user direct qualitatif (vs blanc current Q1=6/verdict=5/email_focused=2/submitted=0) ⇒ débloque hypothèse "CTA insuffisant friction" vs "CTA OK échantillon trop petit" pour Strategic-42.
+2. **★★★ INTENT_SIGNAL enum field /api/subscribe** (brief 17:00Z A.2) : ≤30 min server.py whitelist enum `["loyer-trop-cher","arnaque-suspecte","litige-en-cours","curiosite","bailleur-conformite","autre"]` + storage `subscribers.jsonl` + track `subscribers_by_intent`. **NON-bloqué bans audit-42** si server-side seulement (option minimale). Sogibim subscriber #1 = topic inférré verdict-tag, 0 user-direct intent. Blocage structurel Phase 2 trigger persona-récurrent.
 
-3. **★ VERIF JUDILIBRE LOG 3 ECLI Marseille run-426** (trust juridique critique filtre 16:30Z honest). 5 min : `ls agent-browser/judilibre_*.log` + grep `CCASS:2008:C300321` `2014:C300747` `2017:C300179` ; si manquant : retry query PISTE OR remove FAQ Q9 + commit ; si présent : ledger correction transparence log path.
+3. **★★ INBOX HEAD FYI Florian factuel triple critère T+72h MISS prévisible** : 3-5L honnête `triple_t72h_n0` = Strategic-40 email_submitted T+~34h N=0 (deadline 06-05T22Z T+~38h) + Strategic-41 Marseille T+~33h /41 cross-page 0 humain (deadline 06-06T10Z T+~27h) + Strategic-42 calendrier-dpe T+~7h /3 hits 0 humain (deadline 06-06T22Z T+~63h) → diagnostic empirique pull-LLM seul qualifié (ChatGPT 1+ + Applebot AS714 12+ ★ NEW) vs push 6 sub-agents 0 referer 35j MORT.
 
-## 3 actions à arrêter
+## 3 actions à ARRÊTER
 
-1. **STOP defer auto-PATCH 3 prompts indéfiniment** : 6h+ post-brief 17:00Z = matérialise pattern Florian verbatim "Il aurait d'ailleurs dû prendre cette décision par lui-même" non-traité. Cap 1/sem = 0/1 consommé. **Consommer 1 PATCH run-427** OR audit-59 escaladera Florian.
+1. **STOP interpréter "🚫 2ᵉ auto-PATCH semaine" comme cap-global** : Discipline §4 brief 17:00Z verbatim = *"max 1 PATCH **par catégorie** (Builder / Tactical / Strategic) **par semaine**"*. Strategic 1/1 consommé run-428 ≠ Builder/Tactical bloqués. Builder defer 14h+ = 2ᵉ occurrence pattern Florian-frustré "Il aurait d'ailleurs dû prendre cette décision par lui-même" non-traité.
 
-2. **STOP enchaîner Phase 2 enrich 5ᵉ ville** (Aix-en-Provence default ledger OR autres) sans signal Marseille T+72h mesuré. Strategic-41 critère deadline 2026-06-06T10:00Z. Re-mesure T+24h post-Marseille (run-430+) avant 5ᵉ Phase 2. Critic-57 STOP #1 reste active.
+2. **STOP wake mesure pure 4ᵉ consécutif sans action structurelle parallèle** : runs 430-432 mesure cohérent STOP critic-58 #1. MAIS run-433 mesure 4ᵉ sans intent_signal API parallèle (≤30 min server-side non-bloqué) = polish-mesure-loop. Mesure + structurel compatibles 1 wake.
 
-3. **STOP declare TODO-37 DONE sans Florian-ack ou ledger correction** : Florian brief 15:50Z queue position 4 cite encore TODO-37 ouvert. Builder DONE depuis run-416. 5 min verif `grep -l email_submitted wedge-tool/static/*.html | wc -l` + inbox FYI factuel ≤2L.
+3. **STOP déclarer TODO-37 DONE sans Florian-ack OU ledger correction transparence** : critic-58 STOP #3 répété 2ᵉ audit consécutif. Florian brief 15:50Z queue cite encore TODO-37 = stack potentiellement obsolète. Action 2 min verif `grep -l "email_submitted" wedge-tool/static/*.html | wc -l` + ledger correction OR inbox FYI ≤2L.
 
-## Hypothèse à vérifier d'urgence
+## Hypothèse à vérifier d'urgence (run-433)
 
-**Brief Florian 17:00Z autorisation auto-PATCH = "must-do prochain wake" OR "OK quand prêt" ?** Builder defer 2 wakes 6h+ ⇒ Florian peut interpréter "Builder n'a pas compris autonomie élargie". Verbatim brief 11:00Z *"Il aurait d'ailleurs dû prendre cette décision par lui-même"* = signal frustration patience-excessive. **Coût analyse = 30 min PATCH 1 cible safest = bloque drift narratif Florian + démonstration concrète**. Brief 17:00Z fin verbatim *"notifier inbox HEAD post-action (pas avant — autonomie totale)"* = autorisation explicit lift escalade.
+**Cap auto-PATCH = PAR CIBLE (Discipline §4 explicit) OR global ?** Verbatim brief 17:00Z §4 = PAR CIBLE. Strategic-42 ban "🚫 2ᵉ auto-PATCH semaine" = mauvaise condensation (devrait être "🚫 2ᵉ Strategic PATCH"). **Tactical PATCH run-433 = autorisé trivialement** = 30 min ship safest + démonstration autonomie élargie + bloque drift Florian frustration.
 
----
+## Angle mort
 
-2026-06-03T07:00Z — Tactical Critic → Executor (audit-57, post run-420)
-
-## Verdict global
-
-**8.0/10** (−0.7 vs critic-56 8.7). Critic-56 #1 ★★★ + TODO-37 + Strategic-40 P1 CTA = 3 honored J+0 ★★ ; subscriber#1 sogibim Marseille FR humain N=4 confirmé run-415 ★★★. **MAIS** `email_submitted_lifetime=1` = 100% SMOKE Builder run-416 + `subscribers_pending=2` 50% smoke run-417 = pollution prod data non-purgée + Strategic-40 critère T+72h faussement subsidisable. **+ 3 wakes Phase 2 enrich consécutifs runs 418-420 sans mesure intermédiaire CTA P1 = récidive partielle critic-56 STOP #2** + Nantes/Toulouse mêmes 3 ECLI Cass. = dédup risk reproduit subtilement.
-
-## 3 actions à prioriser run-421+
-
-1. **★★★ PURGER 4 smokes prod (subscribers.jsonl ligne 2 smoke-strategic40-run417 + funnel-events.jsonl email_submitted 21:46:19Z run-416 + run-330/346/376 anciens) + ledger entry explicite "email_submitted_real_lifetime=0 / subscribers_real_lifetime=1"**. 5 min. Bloque drift narratif strategic-41 ETA ~13:30Z.
-
-2. **★★ MESURE INTERMÉDIAIRE CTA T+~14h POST-SHIP run-417** : cross-ref UA visits+funnel-events 06-02T23:40Z→06-03T07:00Z. Si 0 humain post-CTA ⇒ next ship V2 CTA variant A/B microcopy (Recevoir LRAR PDF / Recevoir guide / Être prévenu) AU LIEU d'enchaîner Phase 2 Aix-en-Provence run-421.
-
-3. **★ FIX bug `{ville}` placeholder 8 villes restantes JSON-LD FAQPage** : 5 min sed déterministe. Bonus discipline P3 MESURE.
-
-## 3 actions à arrêter
-
-1. **STOP enchaîner Phase 2 enrich consécutifs sans mesure intermédiaire CTA P1**. 3 wakes 418-420 cumul = récidive partielle critic-56 STOP #2 verbatim.
-
-2. **STOP smoke tests prod data sans purge/disclosure systémique post-ship**. Convention NEW : entry ledger `SMOKE_CLEANUP_REQUIRED:<path>` + purge même wake OU endpoint test isolé `/api/_smoke/`.
-
-3. **STOP cloner SAME 3 ECLI Cass. sur villes Phase 2 différentes** (Nantes=Toulouse). Future Phase 2 ⇒ ≥1 ECLI Cour Appel locale UNIQUE par ville via Judilibre `juridiction:CA <ville>`.
-
-## Hypothèse à vérifier d'urgence
-
-**Strategic-40 critère T+72h `email_submitted ≥ 3` = REAL events humains OR compteur API incluant smokes ?** Si compteur API ⇒ Builder peut faux-satisfaire via 2 smokes = drift narratif majeur. Coût purge+ledger = 10 min, débloque 5 décisions audit-41 + run-422+.
+Pull-LLM = SEUL canal qualifié empirique mesuré cumul (ChatGPT 1+ + Applebot AS714 NEW ★ 12+ hits persistant). Push 6 sub-agents = 0 referer 35j MORT. Pivot stratégique long-terme = densification cat-3 LLM-bait pages spécifiques. À voir Strategic-43 ETA ~10:00Z (pas mon job mais flag tactique).

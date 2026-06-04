@@ -123,6 +123,7 @@ PORT = int(os.environ.get("PORT", "8102"))
 
 PUBLIC_BASE = "https://bailleurverif.fr"
 SUBSCRIBER_TOPIC_ALLOWED = {"loyer-legal", "dpe-bailleur", "preavis", "veille-reglementaire", "deficit-foncier", "mon-bien", "aides-financieres", "arnaques-location"}
+SUBSCRIBER_INTENT_ALLOWED = {"loyer-trop-cher", "arnaque-suspecte", "litige-en-cours", "curiosite", "bailleur-conformite", "autre"}
 EMAIL_RE = re.compile(r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$")
 
 # --- Adresse lookup (Feature B run-124) ---
@@ -465,6 +466,7 @@ def compute_subscriber_state(events):
                 "ts_unsubscribe": None,
                 "referrer_token": ev.get("referrer_token") or None,
                 "referrals": 0,
+                "intent_signal": ev.get("intent_signal") or None,
             })
             rt = ev.get("referrer_token")
             if rt:
@@ -668,6 +670,12 @@ class Handler(BaseHTTPRequestHandler):
                 subscribers_pending = sum(1 for e in sub_state.values() if e["status"] == "pending")
                 subscribers_confirmed = sum(1 for e in sub_state.values() if e["status"] == "confirmed")
                 subscribers_unsubscribed = sum(1 for e in sub_state.values() if e["status"] == "unsubscribed")
+                subscribers_by_intent = {}
+                for e in sub_state.values():
+                    if e["status"] == "unsubscribed":
+                        continue
+                    isig = e.get("intent_signal") or "unset"
+                    subscribers_by_intent[isig] = subscribers_by_intent.get(isig, 0) + 1
                 referrals_total = sum(e.get("referrals", 0) for e in sub_state.values())
                 referrals_top = sum(1 for e in sub_state.values() if e.get("referrals", 0) > 0)
                 # signups_24h = confirmed events whose ts_confirm is within 24h
@@ -699,6 +707,7 @@ class Handler(BaseHTTPRequestHandler):
                     "subscribers_pending": subscribers_pending,
                     "subscribers_confirmed": subscribers_confirmed,
                     "subscribers_unsubscribed": subscribers_unsubscribed,
+                    "subscribers_by_intent": subscribers_by_intent,
                     "signups_24h": signups_24h,
                     "referrals_total": referrals_total,
                     "referrers_count": referrals_top,
@@ -1530,6 +1539,7 @@ class Handler(BaseHTTPRequestHandler):
             source = (data.get("source") or "")[:200]
             consent = bool(data.get("consent"))
             referrer_token = (data.get("referrer_token") or "").strip()
+            intent_signal = (data.get("intent_signal") or "").strip().lower()
             if not consent:
                 self._send(400, {"ok": False, "error": "consent required"})
                 return
@@ -1539,6 +1549,8 @@ class Handler(BaseHTTPRequestHandler):
             if topic not in SUBSCRIBER_TOPIC_ALLOWED:
                 self._send(400, {"ok": False, "error": "invalid topic"})
                 return
+            if intent_signal and intent_signal not in SUBSCRIBER_INTENT_ALLOWED:
+                intent_signal = ""
             if referrer_token and (len(referrer_token) > 96 or not re.match(r"^[A-Za-z0-9_-]+$", referrer_token)):
                 referrer_token = ""
             ip_hash = str(abs(hash(ip)) % (10**10))
@@ -1581,6 +1593,7 @@ class Handler(BaseHTTPRequestHandler):
                 "ip_hash": ip_hash,
                 "ua": ua[:200],
                 "referrer_token": valid_referrer or None,
+                "intent_signal": intent_signal or None,
             }
             append_jsonl(SUBSCRIBERS_FILE, rec)
             confirm_url = f"{PUBLIC_BASE}/api/confirm?token={token}"
