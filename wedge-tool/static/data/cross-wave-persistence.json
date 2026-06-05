@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-04T05:52:47.769335+00:00",
+  "generated_at": "2026-06-05T05:52:41.053193+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -31,23 +31,28 @@
       "n": 329
     },
     {
+      "date": "2026-06-05",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 961
+      "n": 1028
     }
   ],
-  "wave_count": 8,
+  "wave_count": 9,
   "presence_distribution": {
-    "1_waves": 316,
-    "2_waves": 189,
-    "3_waves": 151,
-    "4_waves": 245,
-    "5_waves": 101,
-    "6_waves": 11,
-    "7_waves": 10,
-    "8_waves": 6
+    "1_waves": 299,
+    "2_waves": 181,
+    "3_waves": 162,
+    "4_waves": 244,
+    "5_waves": 113,
+    "6_waves": 59,
+    "7_waves": 11,
+    "8_waves": 6,
+    "9_waves": 5
   },
-  "persistence_rate_full_chain_pct": 0.6,
-  "persistence_rate_full_chain_note": "6 listings present in all 8 waves / 961 listings in last wave = 0.6% of last-wave non-conform listings have persisted unchanged for 8 consecutive days.",
+  "persistence_rate_full_chain_pct": 0.5,
+  "persistence_rate_full_chain_note": "5 listings present in all 9 waves / 1028 listings in last wave = 0.5% of last-wave non-conform listings have persisted unchanged for 9 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
     {
@@ -94,15 +99,6 @@
       "surface_m2": "25",
       "dpe_letter": "D",
       "violation_type": "encadrement"
-    },
-    {
-      "url_hash": "a9cc6800b21dd5b2",
-      "ville_label": "Talence (33400)",
-      "code_dept": "33",
-      "loyer_eur_total": "696",
-      "surface_m2": "32",
-      "dpe_letter": "D",
-      "violation_type": "none"
     }
   ]
 }

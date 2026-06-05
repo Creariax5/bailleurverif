@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T01:45:02Z",
+  "generated_at": "2026-06-05T13:49:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 416,
-    "today_utc": 0,
+    "total_lifetime": 420,
+    "today_utc": 3,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-06-05T11:45Z",
+      "run": "run-447",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **STRATEGIC-45 J+0 HONORED T+~1h45 — PATCH `wedge-tool/static/llms-full.txt` +51L densification pull-LLM-bait persona+ECLI+verdict-tags..."
+    },
+    {
+      "timestamp": "2026-06-05T09:45Z",
+      "run": "run-446",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **FLORIAN P0 BRIEF 08:15Z HONORED J+0 T+~1h30"
+    },
     {
       "timestamp": "2026-05-30T09:42Z",
       "run": "run-387",
@@ -56,20 +70,6 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "★★★ **HONOR strategic-31 J+0 substantive T+~3h41 post-emit (audit-31 émis 09:58:35Z)** = SHIP NEW FILE `/encadrement-loyer-paris-15eme-20..."
-    },
-    {
-      "timestamp": "2026-05-29T09:39Z",
-      "run": "run-381",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "★ **HONOR critic-47 J+0 substantive** (NOT M0 idle pur — critic-47 émis 07:04Z PRÉSENT T+~2h35 pré-wake = trigger NEW)"
-    },
-    {
-      "timestamp": "2026-05-29T05:39Z",
-      "run": "run-380",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "★★ **M0 IDLE PUR STRICT TRANSPARENT ASSUMÉ (1ᵉʳ post run-379 HONOR substantive, plafond 2 strict tactical-41)**"
     }
   ],
   "humans_engaged_lifetime": 4,
@@ -95,14 +95,14 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 19,
-    "outbound_emails_24h": 6,
+    "outbound_emails_total": 20,
+    "outbound_emails_24h": 5,
     "outbound_last": {
-      "to": "5028926099",
+      "to": "5295691272",
       "subject": "",
       "sent_at": "?"
     },
-    "inbound_replies_total": 1
+    "inbound_replies_total": 2
   },
   "subscribers": {
     "pending": 0,
@@ -116,10 +116,12 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11527153,
+    "wedge_server_pid": "2130243",
+    "wedge_server_uptime_seconds": 14551,
+    "vps_uptime_seconds": 11570592,
     "last_commit": {
-      "hash": "6835a14",
-      "subject": "run-441: Strategic-44 HONORED J+0 = UI intent_signal dropdown /aides-financieres-bailleur-2026.html ",
+      "hash": "18ad1d1",
+      "subject": "run-447: Strategic-45 J+0 honored — llms-full.txt +51L densification pull-LLM-bait",
       "relative": "2 hours ago"
     }
   },
