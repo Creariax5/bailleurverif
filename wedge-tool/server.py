@@ -49,6 +49,7 @@ FUNNEL_FILE = os.path.join(DATA_DIR, "funnel-events.jsonl")
 # +4 events strategic-16 run-337 : scan_url_* (zero-friction painkiller) + share_card_downloaded (viralité Pilier 1+2).
 # +2 events strategic-28 run-373 : scan_url_preset_clicked + share_card_post_scan (critère T+72h 2026-05-30T22:00Z).
 # +2 events strategic-29 run-376 : home_preset_click + share_card_post_home (critère T+72h 2026-05-31T10:00Z).
+# +2 events brief Florian P0 2026-06-05T08:15Z run-446 : signup_confirmed + nurture_sent (loop retention email).
 FUNNEL_EVENT_TYPES = {
     "home_visit",
     "wedge_q1_answered",
@@ -68,6 +69,8 @@ FUNNEL_EVENT_TYPES = {
     "share_card_post_scan",
     "home_preset_click",
     "share_card_post_home",
+    "signup_confirmed",
+    "nurture_sent",
 }
 
 # OVH Zimbra SMTP — provisionné Florian 2026-05-17T13:55Z, mandated patch run-205.
@@ -96,6 +99,7 @@ SMTP_SERVER = _DOTENV.get("BAILLEURVERIF_SMTP_SERVER", "ssl0.ovh.net")
 SMTP_PORT = int(_DOTENV.get("BAILLEURVERIF_SMTP_PORT", "465"))
 SMTP_USE_SSL = _DOTENV.get("BAILLEURVERIF_SMTP_USE_SSL", "true").lower() == "true"
 SMTP_AVAILABLE = bool(SMTP_USERNAME and SMTP_PASSWORD)
+CRON_SECRET = _DOTENV.get("BAILLEURVERIF_CRON_SECRET", "")  # Brief P0 06-05T08:15Z run-446 nurture poll guard.
 
 # Préfectures / services compétents pour signalement non-conformité location (encadrement + DPE F/G).
 # Source : https://www.service-public.fr (DRIHL Île-de-France ; DDETSPP en région ; Métropole de Lyon depuis 2021).
@@ -421,6 +425,142 @@ def send_signup_confirmation(email, confirm_url, unsub_url, topic):
         return False, f"{type(exc).__name__}: {exc}"
 
 
+# Brief Florian P0 2026-06-05T08:15Z run-446 — nurture email T+24h post-confirmation,
+# 1 email/topic/subscriber lifetime, asset-driven (reuse pages déjà shippées).
+NURTURE_TEMPLATES = {
+    "dpe-bailleur": {
+        "subject": "DPE F/G — calendrier 2025/2028/2034 + LRAR travaux pré-remplie",
+        "intro": "Vous suivez le sujet DPE bailleur. Voici les 3 ressources les plus utiles pour anticiper l'interdiction de location DPE G (2025), F (2028) puis E (2034).",
+        "items": [
+            ("Calendrier complet 2025/2028/2034 (échéances loi Climat & Résilience)", "/calendrier-interdiction-dpe-2025-2028-2034.html"),
+            ("Fiabilité d'un DPE — comment vérifier avant achat/relocation", "/dpe-fiabilite.html"),
+            ("Aides financières bailleur 2026 (MaPrimeRénov', éco-PTZ, déficit foncier)", "/aides-financieres-bailleur-2026.html"),
+        ],
+        "action": "Action concrète si vous êtes bailleur d'un G : envoyez une LRAR au diagnostiqueur pour réclamer la mise à jour avant le 1er janvier 2025 (modèle pré-rempli sur la page DPE fiabilité).",
+    },
+    "loyer-legal": {
+        "subject": "Encadrement loyer — méthode 30s + sources DILA officielles",
+        "intro": "Vous suivez le sujet encadrement de loyer. Voici la méthode en 30 secondes pour vérifier la conformité d'une annonce, plus les sources DILA officielles à citer en cas de litige.",
+        "items": [
+            ("Calculateur encadrement — toutes villes en zone tendue", "/"),
+            ("Loyer légal Paris — méthode + arrêté préfectoral 2024", "/loyer-legal-paris.html"),
+            ("Observatoire des annonces non-conformes (dataset public data.gouv.fr)", "/observatoire-annonces-loyer.html"),
+        ],
+        "action": "Action concrète si vous payez un loyer au-dessus du plafond : envoyez une LRAR au bailleur (modèle pré-rempli sur la page de votre ville) ; à défaut de réponse sous 2 mois, saisissez la commission départementale de conciliation (gratuit).",
+    },
+    "aides-financieres": {
+        "subject": "Aides bailleur 2026 — comparatif MaPrimeRénov' / éco-PTZ / déficit foncier",
+        "intro": "Vous suivez le sujet aides financières. Voici le comparatif chiffré des dispositifs 2026 (MaPrimeRénov' bailleur, éco-PTZ, déficit foncier, Denormandie ancien).",
+        "items": [
+            ("Aides financières bailleur 2026 — comparatif complet", "/aides-financieres-bailleur-2026.html"),
+            ("Aides locataire 2026 (APL, Fonds Solidarité Logement)", "/aides-financieres-locataire-2026.html"),
+            ("Déficit foncier — plafond, calcul, optimisation 2026", "/deficit-foncier-2026.html"),
+        ],
+        "action": "Action concrète si vous envisagez des travaux DPE : faites simuler MaPrimeRénov' bailleur sur france-renov.gouv.fr AVANT de signer le devis (la prime est versée après acceptation, pas après travaux).",
+    },
+    "preavis": {
+        "subject": "Préavis bail — délais, formats LRAR, cas zone tendue",
+        "intro": "Vous suivez le sujet préavis. Voici les délais légaux selon zone tendue/non tendue + le modèle de LRAR locataire à envoyer au bailleur.",
+        "items": [
+            ("Préavis bail — règles générales + modèle LRAR", "/preavis-bail.html"),
+            ("Calculateur principal (vérifier votre ville)", "/"),
+            ("Dépôt de garantie — restitution 1 ou 2 mois", "/depot-garantie-france-2026.html"),
+        ],
+        "action": "Action concrète : envoyez TOUJOURS votre préavis en LRAR (lettre recommandée avec accusé de réception) — la date de réception déclenche le décompte, pas la date d'envoi. Conservez l'AR signé pendant 5 ans (prescription).",
+    },
+    "veille-reglementaire": {
+        "subject": "Veille réglementaire bail — changelog DILA + jurisprudence Cassation",
+        "intro": "Vous suivez la veille réglementaire. Voici notre changelog des changements DILA significatifs + les 3 arrêts Cassation de référence à connaître côté bail locatif.",
+        "items": [
+            ("Changelog réglementaire BailleurVérif", "/changelog.html"),
+            ("Charges récupérables 2026 (décret n° 87-713 mis à jour)", "/charges-recuperables-2026.html"),
+            ("Dépôt de garantie — Cass. 3ᵉ civ. ECLI clés", "/depot-garantie-france-2026.html"),
+        ],
+        "action": "Action concrète : abonnez-vous au flux Légifrance JORF de votre code (CCH ou Code civil) — vous recevez chaque modification de texte par alerte mail gratuite officielle.",
+    },
+    "deficit-foncier": {
+        "subject": "Déficit foncier 2026 — plafond, calcul, doublement travaux DPE",
+        "intro": "Vous suivez le sujet déficit foncier. Voici les règles 2026 (plafond 10 700 € de droit commun, doublement à 21 400 € pour travaux DPE F/G→D) et la méthode de calcul.",
+        "items": [
+            ("Déficit foncier 2026 — guide complet", "/deficit-foncier-2026.html"),
+            ("Aides bailleur 2026 cumulables (MaPrimeRénov' + déficit)", "/aides-financieres-bailleur-2026.html"),
+            ("Calendrier DPE — éligibilité doublement déficit", "/calendrier-interdiction-dpe-2025-2028-2034.html"),
+        ],
+        "action": "Action concrète : si vos travaux DPE 2025-2026 portent un G/F vers ≥D, vous bénéficiez du doublement temporaire jusqu'à 21 400 €/an (au lieu de 10 700 €). Conservez factures + DPE avant/après pour justificatif fiscal 2026/2027.",
+    },
+    "mon-bien": {
+        "subject": "Suivi de votre bien — outils BailleurVérif + observatoire",
+        "intro": "Vous suivez votre bien. Voici les 3 outils les plus utiles pour vérifier conformité, anticiper risques DPE et comparer avec le marché local.",
+        "items": [
+            ("Calculateur conformité — annonce + bail", "/"),
+            ("Scan URL Locservice — vérifier une annonce concurrente", "/scan-url.html"),
+            ("Observatoire des annonces non-conformes (votre ville)", "/observatoire-annonces-loyer.html"),
+        ],
+        "action": "Action concrète : passez l'URL de votre annonce dans notre scan-url — vous saurez en 5 secondes si elle est conforme encadrement + DPE + clauses légales (et donc défendable en cas de litige).",
+    },
+    "arnaques-location": {
+        "subject": "Arnaques location — 5 signaux + signalement Pharos",
+        "intro": "Vous suivez le sujet arnaques. Voici les 5 signaux d'alerte qu'une annonce est frauduleuse et la procédure de signalement Pharos (gratuit, 24h).",
+        "items": [
+            ("Arnaque location France 2026 — guide + signaux d'alerte", "/arnaque-location-france-2026.html"),
+            ("Scan URL Locservice — détection automatique annonce douteuse", "/scan-url.html"),
+            ("Observatoire des annonces non-conformes", "/observatoire-annonces-loyer.html"),
+        ],
+        "action": "Action concrète si vous suspectez une arnaque : signalez sur internet-signalement.gouv.fr (Pharos, police nationale) — 0 frais, instruction sous 24h, traçabilité officielle. Ne versez JAMAIS d'argent avant visite physique + vérification pièce d'identité du propriétaire.",
+    },
+}
+
+
+def send_topic_nurture(email, topic, unsub_url):
+    """Send nurture email T+24h post-confirmation. Brief Florian P0 06-05T08:15Z run-446.
+    1 email/topic/subscriber lifetime — caller responsible for idempotence check.
+    Returns (ok, msgid_or_error)."""
+    if not SMTP_AVAILABLE:
+        return False, "smtp_unconfigured"
+    tpl = NURTURE_TEMPLATES.get(topic)
+    if not tpl:
+        return False, f"no_template_for_topic:{topic}"
+    items_block = "\n".join(
+        f"  • {label} — {PUBLIC_BASE}{url}"
+        for label, url in tpl["items"]
+    )
+    body = (
+        f"Bonjour,\n\n"
+        f"{tpl['intro']}\n\n"
+        f"{items_block}\n\n"
+        f"{tpl['action']}\n\n"
+        f"— L'équipe BailleurVérif\n"
+        f"https://bailleurverif.fr — observatoire ouvert des annonces non-conformes\n"
+        f"contact@bailleurverif.fr\n\n"
+        f"Pour vous désinscrire (un clic, RGPD art. 17) :\n{unsub_url}\n"
+    )
+    msg = EmailMessage()
+    msg["From"] = f"BailleurVérif <{SMTP_USERNAME}>"
+    msg["To"] = email
+    msg["Reply-To"] = SMTP_USERNAME
+    msg["Subject"] = tpl["subject"]
+    msg["Date"] = formatdate(localtime=False)
+    msg["Message-ID"] = make_msgid(domain="bailleurverif.fr")
+    msg["List-Unsubscribe"] = f"<{unsub_url}>"
+    msg["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click"
+    msg["X-Mailer"] = "BailleurVerif-server/run-446-nurture"
+    msg.set_content(body)
+    try:
+        if SMTP_USE_SSL:
+            ctx = ssl.create_default_context()
+            with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, context=ctx, timeout=15) as smtp:
+                smtp.login(SMTP_USERNAME, SMTP_PASSWORD)
+                smtp.send_message(msg)
+        else:
+            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT, timeout=15) as smtp:
+                smtp.starttls(context=ssl.create_default_context())
+                smtp.login(SMTP_USERNAME, SMTP_PASSWORD)
+                smtp.send_message(msg)
+        return True, msg["Message-ID"]
+    except Exception as exc:
+        return False, f"{type(exc).__name__}: {exc}"
+
+
 def now_iso():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
@@ -444,9 +584,10 @@ def read_jsonl(path):
     return out
 
 def compute_subscriber_state(events):
-    """Replay event stream → dict[token] = {email, topic, source, status, ts_*, referrer_token, referrals}.
+    """Replay event stream → dict[token] = {email, topic, source, status, ts_*, referrer_token, referrals, nurture_sent_topics}.
 
     `referrals` = count of CONFIRMED downstream subscribers whose `referrer_token` == this token.
+    `nurture_sent_topics` = list of topics for which a nurture email was sent (brief P0 run-446 idempotence).
     """
     state = {}
     referred_by = {}
@@ -467,6 +608,7 @@ def compute_subscriber_state(events):
                 "referrer_token": ev.get("referrer_token") or None,
                 "referrals": 0,
                 "intent_signal": ev.get("intent_signal") or None,
+                "nurture_sent_topics": [],
             })
             rt = ev.get("referrer_token")
             if rt:
@@ -478,6 +620,10 @@ def compute_subscriber_state(events):
         elif t == "unsubscribe" and tok in state:
             state[tok]["status"] = "unsubscribed"
             state[tok]["ts_unsubscribe"] = ev.get("ts")
+        elif t == "nurture_sent" and tok in state:
+            nt = ev.get("topic")
+            if nt and nt not in state[tok]["nurture_sent_topics"]:
+                state[tok]["nurture_sent_topics"].append(nt)
     for child, parent in referred_by.items():
         if child in state and state[child]["status"] == "confirmed" and parent in state:
             state[parent]["referrals"] += 1
@@ -689,6 +835,11 @@ class Handler(BaseHTTPRequestHandler):
                                 signups_24h += 1
                         except Exception:
                             pass
+                # Brief P0 run-446 — email_confirm_rate = confirmed / signup_confirm_sent (proxy delivery loop santé).
+                outbound = read_jsonl(OUTBOUND_EMAILS_FILE)
+                signup_confirm_sent = sum(1 for o in outbound if o.get("kind") == "signup_confirm" and o.get("ok"))
+                email_confirm_rate = round(100 * subscribers_confirmed / max(signup_confirm_sent, 1), 1) if signup_confirm_sent else 0.0
+                nurture_sent_total = sum(1 for o in outbound if o.get("kind") == "topic_nurture" and o.get("ok"))
                 self._send(200, {
                     "visits_total": visits_total,
                     "visits_unique": visits_unique,
@@ -709,6 +860,9 @@ class Handler(BaseHTTPRequestHandler):
                     "subscribers_unsubscribed": subscribers_unsubscribed,
                     "subscribers_by_intent": subscribers_by_intent,
                     "signups_24h": signups_24h,
+                    "signup_confirm_sent": signup_confirm_sent,
+                    "email_confirm_rate": email_confirm_rate,
+                    "nurture_sent_total": nurture_sent_total,
                     "referrals_total": referrals_total,
                     "referrers_count": referrals_top,
                     "severity": sev,
@@ -1026,6 +1180,16 @@ class Handler(BaseHTTPRequestHandler):
                 self._send(200, body, ctype="text/html; charset=utf-8")
                 return
             append_jsonl(SUBSCRIBERS_FILE, {"ts": now_iso(), "type": "confirm", "token": token})
+            # Brief P0 run-446 — tracker click confirmation funnel-events pour email_confirm_rate.
+            email_hash = str(abs(hash(entry["email"] or "")) % (10**10))
+            append_jsonl(FUNNEL_FILE, {
+                "ts": now_iso(),
+                "sessionId": None,
+                "event_type": "signup_confirmed",
+                "path": "/api/confirm",
+                "meta": {"topic": entry["topic"], "email_hash": email_hash, "token": token[:8]},
+                "ip_hash": str(abs(hash(self._client_ip())) % (10**10)),
+            })
             unsub_url = f"{PUBLIC_BASE}/api/unsubscribe?token={token}"
             ref_url = f"{PUBLIC_BASE}/?ref={token}"
             # Comptage referrals après l'event confirm (juste écrit) — recompute state.
@@ -1625,6 +1789,99 @@ class Handler(BaseHTTPRequestHandler):
                 resp["confirm_url"] = confirm_url
                 resp["message"] = "Cliquez sur le lien de confirmation pour valider votre inscription."
             self._send(200, resp)
+            return
+
+        if path == "/api/cron/nurture":
+            # Brief Florian P0 2026-06-05T08:15Z run-446 — nurture poll T+24h post-confirmation.
+            # Auth header X-Cron-Secret obligatoire ; quota 5 sends/run cap (sous 20/jour DIRECTIVE).
+            if not CRON_SECRET:
+                self._send(503, {"ok": False, "error": "cron secret not configured"})
+                return
+            provided = self.headers.get("X-Cron-Secret", "")
+            if not provided or provided != CRON_SECRET:
+                self._send(403, {"ok": False, "error": "forbidden"})
+                return
+            if not SMTP_AVAILABLE:
+                self._send(503, {"ok": False, "error": "smtp unavailable"})
+                return
+            dry_run = bool(data.get("dry_run"))
+            quota_per_run = 5
+            sub_events = read_jsonl(SUBSCRIBERS_FILE)
+            sub_state = compute_subscriber_state(sub_events)
+            now_dt = datetime.now(timezone.utc)
+            eligible = []
+            for tok, entry in sub_state.items():
+                if entry["status"] != "confirmed":
+                    continue
+                if not entry.get("ts_confirm"):
+                    continue
+                try:
+                    ts_confirm = datetime.fromisoformat(entry["ts_confirm"].replace("Z", "+00:00"))
+                except Exception:
+                    continue
+                if (now_dt - ts_confirm).total_seconds() < 86400:
+                    continue
+                topic = entry.get("topic")
+                if not topic or topic in (entry.get("nurture_sent_topics") or []):
+                    continue
+                if topic not in NURTURE_TEMPLATES:
+                    continue
+                eligible.append((tok, entry))
+            results = []
+            sent_count = 0
+            for tok, entry in eligible:
+                if sent_count >= quota_per_run:
+                    results.append({"token": tok[:8], "status": "quota_skipped"})
+                    continue
+                if dry_run:
+                    results.append({"token": tok[:8], "topic": entry["topic"], "status": "dry_run"})
+                    sent_count += 1
+                    continue
+                unsub_url = f"{PUBLIC_BASE}/api/unsubscribe?token={tok}"
+                ok, info = send_topic_nurture(entry["email"], entry["topic"], unsub_url)
+                # Event-sourcing : enregistrer le nurture_sent AVANT log outbound pour idempotence stricte.
+                if ok:
+                    append_jsonl(SUBSCRIBERS_FILE, {
+                        "ts": now_iso(),
+                        "type": "nurture_sent",
+                        "token": tok,
+                        "topic": entry["topic"],
+                    })
+                append_jsonl(OUTBOUND_EMAILS_FILE, {
+                    "ts": now_iso(),
+                    "kind": "topic_nurture",
+                    "to_hash": str(abs(hash(entry["email"] or "")) % (10**10)),
+                    "topic": entry["topic"],
+                    "token": tok,
+                    "ok": ok,
+                    "info": info if not ok else "sent",
+                    "msgid": info if ok else None,
+                })
+                if ok:
+                    append_jsonl(FUNNEL_FILE, {
+                        "ts": now_iso(),
+                        "sessionId": None,
+                        "event_type": "nurture_sent",
+                        "path": "/api/cron/nurture",
+                        "meta": {"topic": entry["topic"], "token": tok[:8]},
+                        "ip_hash": "cron",
+                    })
+                results.append({"token": tok[:8], "topic": entry["topic"], "status": "sent" if ok else "error", "info": info if not ok else None})
+                sent_count += 1
+                # Anti-spam SMTP : 30s entre sends même run pour rester sous le radar OVH Zimbra.
+                if sent_count < min(len(eligible), quota_per_run):
+                    time.sleep(30)
+            sys.stdout.write("[%s] CRON_NURTURE eligible=%d sent=%d dry_run=%s\n"
+                             % (now_iso(), len(eligible), sent_count, dry_run))
+            sys.stdout.flush()
+            self._send(200, {
+                "ok": True,
+                "eligible_count": len(eligible),
+                "sent_count": sent_count,
+                "quota_per_run": quota_per_run,
+                "dry_run": dry_run,
+                "results": results,
+            })
             return
 
         if path == "/api/capture":
