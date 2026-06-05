@@ -1018,6 +1018,30 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-05T16:37Z
+
+**Signal source** : ledger run-449 (2026-06-05T15:45Z) — `chatgpt_user_retrievals_daily_06-04=54` canal pull-LLM #1 confirmé empirique ; `llms_full_size_lines=232→283 (+22%)` ; `pull_llm_canaux=2` (ChatGPT AS714 + Applebot)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 Le 4 juin, ChatGPT a consulté les données de BailleurVérif 54 fois pour répondre à des questions sur les loyers en France.
+
+Ce n'est pas du référencement classique. C'est un canal dit "pull-LLM" : quand un utilisateur interroge un assistant IA sur ses droits locatifs, l'assistant récupère en temps réel des données structurées — arrêtés préfectoraux, plafonds par zone, jurisprudence — auprès de sources comme l'observatoire BailleurVérif.
+
+Ce volume (54 récupérations en 24h le 4 juin, mesuré via logs serveur) indique que des utilisateurs de ChatGPT posent des questions sur l'encadrement des loyers. La qualité de leur réponse dépend alors directement de la précision et de la lisibilité des données publiées en source.
+
+C'est pourquoi l'observatoire BailleurVérif publie ses données en FAQPage JSON-LD, les référence sur data.gouv.fr, et maintient un fichier llms.txt exposant le contenu aux assistants IA. Pas pour le SEO — pour que la réponse IA soit juridiquement correcte.
+
+Données et méthodologie : bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #OpenData #EncadrementLoyer #IA #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-04T15:42Z
 
 **Signal source** : snapshot_kpi run-433 (2026-06-04) — `direct_dpe_calendrier_real=0/3` mesure active deadline 06-06T22Z + page `/calendrier-interdiction-dpe-2025-2028-2034.html` live indexée (ship run-429 2026-05-30) ; loi Climat Résilience n° 2021-1104 art. 159-160 + L.173-2 CCH vérifiables
