@@ -1,3 +1,64 @@
+# Strategic Critic Audit — 2026-06-05T10:00Z
+
+---
+
+**Live `/api/stats`** : visits=377 (+6 vs audit-44) / humans=4 UNCHANGED **15ᵉ wake stagnation** / subscribers_pending=1 sogibim dpe-bailleur PENDING T+~3j non-confirmé / shares=1 WhatsApp 0.4% UNCHANGED 17j / subscribers_by_intent={'unset':1} UNCHANGED T+~12h post audit-44 ship UI 2ᵉ surface / Applebot AS714=41 crawls (+1 vs audit-44) / signup_confirm_sent=10 / email_confirm_rate=0.0% / nurture_sent_total=0 (loop run-446 J+0 P0 Florian).
+
+## 1. COPYABILITY SCORE — ~85% UNCHANGED 6 audits
+
+4 dernières sessions = 100% refaisable dev solo ≤2j chacune :
+- **run-446** : `send_topic_nurture()` + `/api/cron/nurture` + 8 NURTURE_TEMPLATES + cron wrapper (server.py +258L pure backend) — machinerie email standard, copyable 1j.
+- **run-445** : `personas-segments.md` (52 sub-personas) + `competitive-positioning.md` (18 critères) — concepts memory-agent internes, copyable instant.
+- **run-441** : PATCH `/aides-financieres-bailleur-2026.html` +14L UI intent_signal dropdown 6 options bailleur.
+- **run-439** : PATCH `/dpe-fiabilite.html` UI intent_signal + concept `long-term-strategy.md`.
+- **run-435** : NEW FILE `/questions-reelles-bailleurs-fr.html` 218L 10Q/R DILA.
+Score global **~85% UNCHANGED**. Aucun composant NEW non-rejouable.
+
+## 2. MOAT COMPONENTS LIVE — 9 substantif UNCHANGED 21 audits ★★★ stagnation absolue
+
+- **Cat-1=3** : (a) chain 11 vagues git horodatée `194a4a2` ⚠️ pipeline.sh stale T+15j+ ; (b) cross-wave persistence 57.6% N=121 ; (c) Reddit corpus 35Q CC-BY 4.0.
+- **Cat-2=0** MORTE 19 audits (0 record signalement/notation post-V2).
+- **Cat-3=3** : 3 templates DILA-saturés + 9 ECLI Cass. cross-référé.
+- **Cat-4=4** : (a) data.gouv reuse `6a0c30a` DR 90 ; (b) Wikidata Q139857638 DR 100 ; (c) repo GitHub MIT DR 90 ; (d) dev.to×2 articles **0/2 referer T+~16j MORT empirique**.
+
+## 3. CONCURRENT GAP — défendable tech, business=0
+
+- **ANIL** : réseau institutionnel + consult ~50€/h. BV n'a pas réseau, ANIL n'a pas verdict scan-URL+LRAR auto. Gap BV = work-to-do (réseau prend 5+ ans).
+- **Service-Public.fr** : autorité État + DR 95+. BV a actionnable (verdict+LRAR), SP-fr a trust. SP-fr peut copier verdict en 1 sprint = pas défendable.
+- **PAP/SmartLoc** : volume marketplace M+ utilisateurs. BV humans=4 vs M+ = 0.000004 ratio. Gap business inversé non-rattrapable canal actuel.
+
+## 4. DEMAIN DISPARITION + viralité + persona-fit — 9 inforgeables / 0 humain-impact / 1 mismatch / 13ᵉ output non-viral
+
+- **Inforgeable 1 weekend** : chain 11 vagues git crypto-timestamp + data.gouv UUID Etalab + Wikidata Q139857638. Bonus 1 : ces 3 composants génèrent 0/4 humans_engaged measurable ⇒ moat **abstrait**.
+- **Bonus 2 viralité** : nurture loop run-446 = ZÉRO output share-friendly NEW (pure backend). Verdict-card homepage LIVE depuis run-376 = 1 share total 17j (share-rate=0.4%). 16ᵉ output ship-only non-viral consécutif. Aucun output récent TikTok/X démo 30s candidat.
+- **Bonus 3 persona-fit** : Bluesky/dev.to/HF/Telegram/LinkedIn 6 sub-agents push = 0 referer 35j+ MORT. Telegram = devs/crypto mismatch confirmé. **Pull-LLM ChatGPT (1 humain Bouygues) + Applebot AS714 (41 crawls)** = SEUL canal qualifié 25 audits cumul.
+
+## 5. STRATEGIC DRIFT — run-445 ship 2 concepts memory-agent = scaffolding interne ≠ humans_engaged
+
+run-445 = ship `personas-segments.md` + `competitive-positioning.md` (374L cumul concepts memory-agent). Tactiquement correct (critic-61 #1 ★★★ + Phase 2 prep Florian brief 06-03T17:00Z item D HONORED J+2). Mais ne sert ni P1 produit-fit user-facing direct, ni P2 SEO indexation (concepts internes non-publics), ni P3 mesure humans. = **scaffolding interne pre-Phase 2** alors que court terme RECALIBRÉ 06-01 = `humans_engaged_lifetime ≥ 100` (state 4). Critère : décision contribue 3 piliers RECALIBRÉS ? ⇒ P1=non / P2=non / P3=non. Drift mineur 1-wake (compensé brief Florian P0 06-05 nurture ship = code user-impact direct). ★ flag, pas ★★.
+
+## 6. PRESCRIPTION — PATCH `static/llms-full.txt` densification pull-LLM-bait persona+ECLI
+
+**UNE action** : PATCH `wedge-tool/static/llms-full.txt` (existant) **+50-80L** = injecter (a) 5 personas-segments highlights (bailleur-multi-bien / bailleur-proprio-unique / locataire-victime-DPE / locataire-loyer-abusif / B2B-agence) ancrés `personas-segments.md` run-445 ; (b) snapshot observatoire vague-11 N=210 58.1% Wilson CI ±9.7pts ; (c) 9 ECLI Cass. cross-ref 3 templates (loyer-abusif + dpe-invalide + depot-garantie) ; (d) 4 verdict-tags + URL canonique `/api/recourse/<tag>`. Pas TOC bullet, prose dense LLM-friendly.
+
+**Pourquoi cette action SEULE** :
+- (a) Pull-LLM = **SEUL canal qualifié** 25 audits cumul (ChatGPT N=1 + Applebot 41 crawls cumul +1 récent) = amplifier surface SEULE productive empirique vs surfaces UI intent_signal (0/2 capture T+12h+).
+- (b) Bans audit-44 15/15 respectés : pas NEW FILE (llms-full.txt existant), pas touch home/scan-url/share-card/dpe-fiabilite/questions-bailleurs, pas funnel event, pas SMTP, pas IndexNow, pas Indexing API, pas spawn sub-agent, pas escalade TODO, pas méta-Q, pas monétisation, pas Telegram, pas ScheduleWakeup.
+- (c) Builder-only ZÉRO Florian.
+- (d) Leverage assets shippés run-445 (personas-segments) sans NEW user-facing page.
+- (e) ROI dual T+72h mesurable.
+- (f) Discipline 11 build-vs-escalate = build small.
+
+**Carve-out** : lift ban "patch sub-agents autonome" inapplicable (llms-full.txt = static asset, pas sub-agent). Aucun autre carve-out demandé.
+
+**Critère succès T+72h audit-45** : `applebot_as714_crawls_cumul` ≥ 50 (+9 delta) OR `humans_via_pull_llm_unique ≥ 2` (NEW humain via ChatGPT/Claude/Perplexity referrer parsing) deadline **2026-06-08T10:00Z**. Échec ⇒ audit-46 pivot canal outbound presse bailleur 2ᵉ round OR PAUSE-AND-MEASURE 3 wakes.
+
+## Bans audit-45 (jusqu'à audit-46) 16/16 strict
+
+🚫 NEW FILE / 🚫 NEW city-page / 🚫 touch home / 🚫 touch scan-url / 🚫 touch share-card / 🚫 touch `/dpe-fiabilite.html` (mesure S-44 T+72h ouvert deadline 06-07T22Z) / 🚫 touch `/questions-reelles-bailleurs-fr.html` (S-43 ouvert 06-07T10Z) / 🚫 touch `/aides-financieres-bailleur-2026.html` (S-44 surface 2 ouverte) / 🚫 touch `/calendrier-interdiction-dpe-2025-2028-2034.html` (S-42 ouvert) / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-36/33 / 🚫 méta-Q ≤2026-06-07 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach / 🚫 IndexNow / 🚫 Indexing API ping >1 URL llms-full.txt / 🚫 patch sub-agents autonome / 🚫 nouveau event funnel hors `intent_signal_captured`+`signup_confirmed`+`nurture_sent` whitelist actuelle / 🚫 patch sitemap.xml hors lastmod llms-full.txt / 🚫 nouvelle prescription Reddit-HN-X-TikTok push.
+
+---
+
 # Strategic Critic Audit — 2026-06-04T22:00Z
 
 ---

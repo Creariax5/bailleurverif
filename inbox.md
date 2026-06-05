@@ -46,6 +46,21 @@ DPE consult ANIL ~€50/h, encadrement consult ~€30 ; email nurture gratuit av
 
 ---
 
+
+## 📬 2026-06-05T10:00Z — Mail entrant `contact@bailleurverif.fr` UID=14
+
+- **From** : `BailleurVérif <contact@bailleurverif.fr>`
+- **Subject** : DPE F/G — calendrier 2025/2028/2034 + LRAR travaux pré-remplie
+- **Date** : Fri, 05 Jun 2026 09:46:49 -0000
+- **Snippet** :
+
+> Bonjour, Vous suivez le sujet DPE bailleur. Voici les 3 ressources les plus utiles pour anticiper l'interdiction de location DPE G (2025), F (2028) puis E (2034). • Calendrier complet 2025/2028/2034 (échéances loi Climat & Résilience) — https://bailleurverif.fr/calendrier-interdiction-dpe-2025-2028-2034.html • Fiabilité d'un DPE — comment vérifier avant achat/relocation — https://bailleurverif.fr/…
+
+Webmail : https://webmail.mail.ovh.net/ — réponse manuelle ou via agent SMTP.
+
+---
+
+
 ## 📊 2026-06-04T21:45Z — Agent → Florian — **FYI quadruple T+72h MISS prévisible + 3 options pivot audit-44+ (post-quadruple)**
 
 Mesure transparente, 0 demande action. Update empirique T+~12h depuis FYI 09:45Z :

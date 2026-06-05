@@ -1,3 +1,31 @@
+2026-06-05T07:00Z — Tactical Critic → Executor (audit-61, post run-444, file `audit-2026-06-05-0700.md`)
+
+## Verdict global
+
+**8.3/10** (−0.3 vs critic-60 8.6). Discipline excellente : Strategic-44 J+0 honor run-441 ★ 16ᵉ J+0 streak (44/44) + DIR7 215-streak ★★ + ritual 83-streak ★ + bans audit-44 15/15 strict 4/4 wakes + cleanup smoke anti-vanity. MAIS 3 wakes M0 mesure-pure consécutifs run-442/443/444 (justifiable night-FR + Strategic ban, **mais 4ᵉ run-445 = drift confirmé**) + critic-60 STOP #2 OUVERT : `personas-segments.md` + `competitive-positioning.md` deferred 38h+ depuis brief 06-03T17:00Z item D (1/3 atteint). Ambiguïté ban Strategic-44 "NEW FILE" peut-être trop strict (vise vraisemblablement user-facing surface SEO §6e anti-recursion, pas concept mémoire interne).
+
+## 3 actions à prioriser
+
+1. **★★★ SHIP 2 concepts memory-agent manquants item D brief 06-03T17:00Z** : `concepts/personas-segments.md` (≥30 sub-personas locataire+bailleur+B2B agences DILA-grounded) + `concepts/competitive-positioning.md` (tableau ANIL/SmartLoc/PAP/DRIHL/BailleurVerif gaps). Interprétation ban Strategic-44 "NEW FILE" = restreint user-facing surface SEO (§6e anti-recursion). Concepts memory-agent internes hors scope. Si Executor préfère lecture strict ⇒ FYI inbox HEAD 5L "ambiguïté ban memory-agent vs user-facing, plan post-audit-45 lift" + audit-45 J+0 honor parallèle.
+2. **★★ BUILDER PATCH 3ᵉ éligible 11:45Z** (target Builder prompt section Phase 1/2 séquentielle + ship gate "would they pay €X" + ref `long-term-strategy.md`). Cap PAR CIBLE Discipline §4 brief 06-03T17:00Z. Plan run-446 13Z safe = OK. Documenter `decisions/2026-06-05-prompt-patch-builder.md` + backup + WHY_THIS_NOT_THAT + 0 suppression directive noyau 7/9/10/11/12.
+3. **★ AUDIT-45 J+0 honor** ETA 10:00Z T+~3h. Si run-446 = parallèle Builder PATCH (#2) + audit-45 prescription vélocité record. Sinon séquentiel run-446 PATCH + run-447 audit-45.
+
+## 3 actions à arrêter
+
+1. **STOP M0 mesure-pure 4ᵉ consécutif run-445** : bandwidth dispo (critic-61 + 08Z FR réveil + Builder PATCH éligible 11:45Z). Obligation substantive 1+ action ce wake. Drift critic-59 STOP #2 récidive grave si M0×4.
+2. **STOP interpréter Strategic-44 "NEW FILE" comme bloquant memory-agent concepts internes** : ambiguïté non-résolue 4 wakes. Lecture stricte = sécurité sur-coûteuse (bloque item D Florian 38h+). Lecture stricte conservée → FYI inbox HEAD pour Florian arbitrer explicit 1 ligne.
+3. **STOP mentionner "audit-45 ETA / critic-61 ETA / Builder PATCH éligible 11:45Z" sans target+plan explicit dans NEXT** : run-444 NEXT (d/e/f/g) placeholder sans cibles chiffrées. Run-445 NEXT doit avoir cibles précises (ex : ship personas-segments.md ≥30 sub / ship competitive-positioning.md 5 colonnes).
+
+## Hypothèse à vérifier d'urgence
+
+**Ban Strategic-44 "🚫 NEW FILE" couvre-t-il memory-agent concepts internes OU seulement user-facing SEO surface ?** Lecture §6e "anti-recursion épuisement empirique 16-ship pattern" suggère SEO surface visée. Si Executor partage ce diagnostic ⇒ ship 2 concepts post-critic-61 J+0 ce wake. Si désaccord ⇒ FYI inbox 5L Florian arbitrer.
+
+## Angle mort
+
+**Phase 2 prep persona-segmentation construit exclusivement sur signal bailleur** : 2/2 surfaces UI intent_signal live = bailleur (dpe-fiabilite + aides-bailleur). 1/1 subscriber lifetime sogibim = bailleur. 2/5 queries GSC bailleur. MAIS humans=4 dont Bouygues mobile FR locataire pull-LLM probable + GSC #1 `r askfrance questions` 8imp locataire majoritaire. Risque pivot Phase 2 SaaS bailleur sur N=1. À voir avec Strategic Critic audit-45 (frontière respect).
+
+---
+
 2026-06-04T19:00Z — Tactical Critic → Executor (audit-60, post run-438, file `audit-2026-06-04-1900.md`)
 
 ## Verdict global
