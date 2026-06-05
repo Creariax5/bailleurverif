@@ -1,3 +1,16 @@
+## 📊 2026-06-05T19:50Z — Agent → Florian — **FYI factuel data integrity §A critic-62 ★★★ CONFIRMÉ + correctif live (0 demande action)**
+
+Cross-ref déterministe `outbound-emails.jsonl kind=signup_confirm` vs `subscribers.jsonl` tokens (script `agent-browser/audit_signup_confirm_classify.py` ≤30L + log persistant) :
+- `real=1` sogibim 06-02 dpe-bailleur (PENDING T+3j15h jamais confirmé clic)
+- `smoke-documented=3` (run-433 wlHhLGIK+wXgIBNka + run-446 0MOb7yMV — sources/emails `smoke-…@bailleurverif.fr`)
+- **`smoke-undisclosed=5`** : 06-02T23:42 loyer-legal + 06-04T19:43 x2 dpe-bailleur (même seconde, pattern batch) + 06-04T23:44 x2 aides-financieres (~4s écart) = 5 outbound `signup_confirm` SANS subscribe event correspondant. Hypothèse critic-62 PRIMARY (undisclosed Builder smokes pendant ship intent_signal run-439/441 + nurture loop run-446) **vérifiée empiriquement**.
+- `pre-purge=1` 2026-05-17 ancien test SMTP.
+
+Brief P0 métrique `signup_confirm_sent=10` inflated x10. **Vrai humain réel ciblable nurture = 1** (sogibim PENDING). Correctif live `/api/stats` NEW field `signup_confirm_sent_real=1` filtrage tokens ∈ subscribers.jsonl sans `smoke` source/email ; `email_confirm_rate` dénominateur switch `signup_confirm_sent → signup_confirm_sent_real` (anti-vanity Strategic-45 + brief P0 mesure cible 06-08). Continue Phase 1+2 inchangé. 0 ScheduleWakeup 0 escalade.
+
+---
+
+
 ## 📧 2026-06-05T08:15Z — Florian → Builder — **P0 BRIEF : Nurturing email post-confirmation (gap produit-fit majeur)**
 
 **Factuel** : 1 subscriber réel lifetime (sogibim 06-02T09:49:17Z dpe-bailleur) + 3-7 NEW signup_confirm 06-04→06-05 (filtrer smokes run-433). **Tous ont reçu UNIQUEMENT le `signup_confirm` 2s après submit, RIEN depuis.** Sogibim attend 3+ jours, topic dpe-bailleur silencieux = drift produit-fit grave. Code (`wedge-tool/server.py:369 send_signup_confirmation`) n'a qu'1 template, zéro nurturing, zéro tracking de confirmation.

@@ -838,7 +838,10 @@ class Handler(BaseHTTPRequestHandler):
                 # Brief P0 run-446 — email_confirm_rate = confirmed / signup_confirm_sent (proxy delivery loop santé).
                 outbound = read_jsonl(OUTBOUND_EMAILS_FILE)
                 signup_confirm_sent = sum(1 for o in outbound if o.get("kind") == "signup_confirm" and o.get("ok"))
-                email_confirm_rate = round(100 * subscribers_confirmed / max(signup_confirm_sent, 1), 1) if signup_confirm_sent else 0.0
+                # Critic-62 §A run-451 — filter tokens ∈ subscribers.jsonl with non-smoke source/email (anti-vanity inflation undisclosed smokes).
+                _real_tokens = {t for t, evs in sub_state.items() if (lambda src,em: "smoke" not in src and "smoke" not in em and not em.endswith("@bailleurverif.fr"))((evs.get("source") or "").lower(), (evs.get("email") or "").lower())}
+                signup_confirm_sent_real = sum(1 for o in outbound if o.get("kind") == "signup_confirm" and o.get("ok") and o.get("token") in _real_tokens)
+                email_confirm_rate = round(100 * subscribers_confirmed / max(signup_confirm_sent_real, 1), 1) if signup_confirm_sent_real else 0.0
                 nurture_sent_total = sum(1 for o in outbound if o.get("kind") == "topic_nurture" and o.get("ok"))
                 self._send(200, {
                     "visits_total": visits_total,
@@ -861,6 +864,7 @@ class Handler(BaseHTTPRequestHandler):
                     "subscribers_by_intent": subscribers_by_intent,
                     "signups_24h": signups_24h,
                     "signup_confirm_sent": signup_confirm_sent,
+                    "signup_confirm_sent_real": signup_confirm_sent_real,
                     "email_confirm_rate": email_confirm_rate,
                     "nurture_sent_total": nurture_sent_total,
                     "referrals_total": referrals_total,

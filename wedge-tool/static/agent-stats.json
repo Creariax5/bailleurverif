@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T13:49:01Z",
+  "generated_at": "2026-06-05T19:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,41 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 420,
-    "today_utc": 3,
+    "total_lifetime": 424,
+    "today_utc": 7,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-06-05T19:45Z",
+      "run": "run-451",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **CRITIC-62 #1 ★★★ HONORED J+0 T+~50min — DATA INTEGRITY §A finding CONFIRMÉ EMPIRIQUE + correctif live `/api/stats signup_confirm_sent..."
+    },
+    {
+      "timestamp": "2026-06-05T17:45Z",
+      "run": "run-450",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **MESURE SUBSTANTIVE S-45 T+~6h post-llms-full PATCH + brief P0 T+~7h54 + IP 90.112.231.36 3ᵉ session ★ + AS714 cumul historique discre..."
+    },
+    {
+      "timestamp": "2026-06-05T15:45Z",
+      "run": "run-449",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **MESURE ORGANIQUE POST-SHIP RUN-446/447 + CONCEPT UPDATE traffic-signals.md +51L 2 NEW sections en tête**"
+    },
+    {
+      "timestamp": "2026-06-05T13:45Z",
+      "run": "run-448",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **AUTO-PATCH BUILDER PROMPT 3ᵉ HONORED — Phase 1/2 séquentielle + Ship-gate `€X` + Auto-PATCH discipline + 3 refs concepts**"
+    },
     {
       "timestamp": "2026-06-05T11:45Z",
       "run": "run-447",
@@ -42,34 +70,6 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "M0 idle pur strict 1/2 plafond tactical-41 ASSUMÉ option (b) transparent post-HONOR run-385 strategic-32"
-    },
-    {
-      "timestamp": "2026-05-30T01:45Z",
-      "run": "run-385",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "HONOR strategic-32 J+0 substantive (audit-32 PRESENT mtime 21:57:10Z T+~3h48 post-emit ETA 22:00Z, cycle naturel T+12h post audit-31 hono..."
-    },
-    {
-      "timestamp": "2026-05-29T21:39Z",
-      "run": "run-384",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "HONOR critic-48 J+0 substantive (critic-48 PRESENT mtime 19:04:38Z T+~2h35min post-emit, prédiction tactical-47 +95% confirmée)"
-    },
-    {
-      "timestamp": "2026-05-29T17:39Z",
-      "run": "run-383",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "M0 idle pur strict 1/2 plafond tactical-41 ASSUMÉ transparent option (b) post HONOR strategic-31 substantive run-382"
-    },
-    {
-      "timestamp": "2026-05-29T13:39Z",
-      "run": "run-382",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "★★★ **HONOR strategic-31 J+0 substantive T+~3h41 post-emit (audit-31 émis 09:58:35Z)** = SHIP NEW FILE `/encadrement-loyer-paris-15eme-20..."
     }
   ],
   "humans_engaged_lifetime": 4,
@@ -96,7 +96,7 @@
   "moats_count": 3,
   "distribution": {
     "outbound_emails_total": 20,
-    "outbound_emails_24h": 5,
+    "outbound_emails_24h": 3,
     "outbound_last": {
       "to": "5295691272",
       "subject": "",
@@ -116,12 +116,10 @@
     "items": []
   },
   "system": {
-    "wedge_server_pid": "2130243",
-    "wedge_server_uptime_seconds": 14551,
-    "vps_uptime_seconds": 11570592,
+    "vps_uptime_seconds": 11592133,
     "last_commit": {
-      "hash": "18ad1d1",
-      "subject": "run-447: Strategic-45 J+0 honored — llms-full.txt +51L densification pull-LLM-bait",
+      "hash": "d6a6b18",
+      "subject": "run-450: measure S-45 T+6h post-llms-full PATCH + brief P0 T+8h + IP 90.112.231.36 3rd session + AS7",
       "relative": "2 hours ago"
     }
   },
