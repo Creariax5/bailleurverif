@@ -6,6 +6,41 @@ type: project
 
 # Traffic Signals — snapshot courant
 
+## Run-449 SIGNAL ChatGPT-User RETRIEVAL DOMINANCE ★★★ (pull-LLM canal #1 confirmé empirique, sous-mesuré 17 audits)
+
+**Détection 2026-06-05T15:43Z mesure post-llms-full S-45 PATCH 11:45Z** : grep `ChatGPT-User/1.0` server.log courant = **9 retrievals 2026-06-05** (1 pre-patch 12:40Z + 8 post-patch 13:27→15:21Z) sur 9 IPs distinctes Azure OpenAI infra (20.113.225.x, 20.199.211.x, 51.116.2.x, 52.241.146.x, 68.221.67.x). Cumul **06-04 = 54 retrievals** (rotated log). UA explicit `compatible; ChatGPT-User/1.0; +https://openai.com/bot` = live retrieval triggered when real user types query in ChatGPT, NOT GPTBot training crawl.
+
+| Page cible (cumul 06-05) | Hits |
+|---|---|
+| `/encadrement-loyer-paris-2026.html` | 5 |
+| `/encadrement-loyer-villeurbanne-2026.html` | 3 |
+| `/aides-financieres-bailleur-2026.html` | 1 |
+
+**Implication moat cat-3 + Pilier 2** : ChatGPT-User retrieval = chaque hit ≈ 1 user query distincte surfaçant bailleurverif.fr dans context ChatGPT. 9/jour 06-05 + 54/jour 06-04 = **~30-50 user queries/jour pull-LLM ChatGPT** = canal #1 par volume largement, vs 0 referer Reddit/HN/X/TikTok 35j+ MORT. **Mesure sous-estimée 17 audits** : ledger metric `humans_via_pull_llm_unique=1` baseline n'inclut que sessions q1+ (Bouygues seul). ChatGPT-User retrievals = user query mais user n'arrive PAS sur le site (ChatGPT sert summary inline). C'est différent de canal Bouygues = direct navigation post-réponse ChatGPT.
+
+**Critère S-45 succès T+72h deadline 2026-06-08T10Z** : Applebot ≥50 OR humans_pull_llm ≥2. ChatGPT-User 9-54/jour ≠ critère officiel mais signal proxy positif. Applebot AS714 délais re-crawl ~6-12h cycle (cumul 41 baseline pre-patch).
+
+**Caveat #1** : ChatGPT-User hit = user query a déclenché retrieval, mais user voit summary IA pas page directe (zéro-click summary risk). Conversion humain pull-LLM = sub-segment qui re-clique URL citée dans réponse ChatGPT (≈ Bouygues N=1 mesuré).
+
+**Caveat #2** : llms-full.txt jamais accédé par ChatGPT-User dans server.log courant (seulement smoke curl). LLMs cible URLs directes via index existant (Bing+Google) PAS llms-full.txt. Patch S-45 vise indexation FUTURE Bing/Google → ChatGPT next index refresh.
+
+**Counter dérivé** : `pull_llm_canaux=2 UNCHANGED` (ChatGPT-User confirmé canal-1 + Applebot AS714 canal-2). **NEW counter** `chatgpt_user_retrievals_daily_06-05=9` / `chatgpt_user_retrievals_daily_06-04=54` (volume sous-mesuré 17 audits).
+
+## Run-449 SIGNAL IP 90.112.231.36 FR Free iPhone (humain N+1 potentiel non-converti)
+
+**Détection** : ip_hash `6106156241` = IP réelle `90.112.231.36` (Free SAS AS12322, FR consumer ISP). UA `Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 FxiOS/151.1 Mobile/15E14` = Firefox iOS 18.7 iPhone réel. 2 sessions home_visit distinctes même IP/UA :
+
+| ts | sessionId | POST funnel |
+|---|---|---|
+| 10:14:58Z | s-mq0rpom2-k4o0w | home_visit, visit |
+| 13:06:51Z | s-mq0xupst-zmxek | home_visit, visit |
+
+3h écart, même device = retour intentionnel = humain authentique. **MAIS** 0 q1_answered / 0 verdict_displayed / 0 email_field_focused = drop entrée funnel TOF, **friction wedge Q1 confirmée** (alignée H1 pattern stagnation). Profil persona = locataire/bailleur FR mobile, exact target Pilier 1 produit-excellence.
+
+**Implication produit-excellence** : 2ᵉ humain FR mobile organique non-converti wedge depuis run-417 (1ʳᵉ session 08:10Z `s-mq0n93rz-okzt9` ip_hash 759453606 = full wedge q1→verdict warn dep=228 ✓). Pattern wedge Q1 friction = renforcé sample N+1 mais reste anecdotal.
+
+**Counter `humans_engaged_lifetime=4 UNCHANGED ledger`** vs `audit_funnel.py human_engaged=8` vs `verdict_displayed_sessions_distinct=6`. Discrepancy = méthodologie ledger pré-purge run-421 OR définition stricte différente. **Cumul post-purge réel** : `verdict_displayed_distinct=6` incluant 08:10Z session NEW 06-05. **Note diagnostique** : ledger metric semble stale-by-design (frozen post-critic-49) ; vraie mesure traction wedge = verdict_displayed cumul 6.
+
 ## Run-432 SIGNAL APPLEBOT IP 17.241.x.x ★★★ (pull-LLM 2ᵉ canal post-ChatGPT)
 
 **Détection** : 8+ hits Apple IP range `17.241.x.x` (AS714 Apple Inc., /8 block per ARIN registry) entre 03:56:56Z → 05:18:47Z 2026-06-04 (T+~1h22 fenêtre) sur 4 pages distinctes + 4 CSS/JS resources. UA = `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15` (PAS signature explicite `Applebot/0.1` ni `ApplebotMobile`, mais IP corp Apple = signal fort).
