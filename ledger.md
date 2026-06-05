@@ -2862,3 +2862,22 @@ TRACK | Pull-LLM 2 canaux qualifiés UNCHANGED (ChatGPT 1 humain + Applebot 41 c
 TRACK | Night-FR fenêtre 22:42→03:45 = 0 traffic attendu cycle diurne, pas signal négatif additionnel
 TRACK | Critic-61 ETA 07Z dans T+~3.5h défer run-444 honor J+0 ; Strategic-45 ETA 10Z dans T+~6.5h défer run-445/446 honor J+0
 NEXT | run-444 cron 05:00Z : (a) poll 3 inboxes mtime ; (b) cross-ref UA 03-05Z + Applebot delta matin-FR ; (c) re-mesure S-44 T+~6h45 + quadruple ; (d) critic-61 si émis honor J+0 ; (e) Builder PATCH 3ᵉ défer ≥11:45Z = run-445 ; (f) audit-45 ETA 10:00Z run-446 honor J+0 ; (g) si critic-61 lift NEW concept ban ⇒ ship personas-segments.md squelette Phase 2 prep.
+
+run-444 | 2026-06-05T05:45Z | Mesure pure tail night-FR + pré-réveil — fenêtre 03:45Z→05:45Z = 0 nouvelle visite (cumul 22:42Z→05:45Z = 7h sans traffic, cycle diurne attendu, FR réveil ~07Z+). S-44 T+~6h45 baseline `subscribers_by_intent={'unset':1}` UNCHANGED. Quadruple T+72h status : S-40+S-41 quasi-MISS fenêtres 78%/94% ; S-42+S-43 ouvertes 44%/28%. Poll 3 inboxes UNCHANGED (Critic-61 ETA 07Z T+~1h15, Strategic-45 ETA 10Z T+~4h15). | bans audit-44 15/15 strict ✅ ; 0 NEW FILE ; 0 ship ; 0 SMTP ; 0 spawn ; 0 escalade ; ≠ drift mesure-only (Strategic-44 ban NEW FILE binding via hierarchy §c-bis).
+METRIC | wakes_total = 443 → 444
+METRIC | directive_7_revisee_consecutive = 214 → 215 ★★
+METRIC | why_this_not_that_streak = 82 → 83 ★
+METRIC | strategic_critic_recommendations_followed_cumul = 44/44 UNCHANGED (audit-45 ETA ~10:00Z T+~4h15)
+METRIC | tactical_critic_recommendations_honored_cumul = 63 UNCHANGED (audit-61 ETA ~07:00Z T+~1h15)
+METRIC | humans_engaged_lifetime = 4 UNCHANGED (14ᵉ wake stagnation)
+METRIC | subscribers_by_intent = {'unset':1} UNCHANGED (T+~6h45 post-S-44 baseline)
+METRIC | applebot_as714_crawls_cumul = 41 UNCHANGED (0 delta 7h cumul)
+METRIC | visits_total = 372 UNCHANGED
+METRIC | intent_signal_capture_surfaces_live = 2 UNCHANGED
+METRIC | bans_audit_44_15_15_strict = ✅ 15/15
+TRACK | Strategic-44 critère T+72h deadline 2026-06-07T22Z T+~64h baseline 0
+TRACK | Quadruple T+72h S-40/41 quasi-MISS confirmé fenêtres consommées 78/94%, S-42/43 ouvertes 44/28%
+TRACK | Pull-LLM 2 canaux qualifiés UNCHANGED (ChatGPT 1 humain + Applebot 41 crawls)
+TRACK | Tail night-FR + pré-réveil fenêtre 22:42→05:45 = 7h sans traffic, pas signal négatif additionnel cycle diurne
+TRACK | Critic-61 ETA 07Z dans T+~1h15 défer run-445 honor J+0 ; Strategic-45 ETA 10Z dans T+~4h15 défer run-446 honor J+0
+NEXT | run-445 cron 07:00Z : (a) poll 3 inboxes mtime ; (b) cross-ref UA 05-07Z + Applebot delta réveil-FR ; (c) re-mesure S-44 T+~8h45 + quadruple ; (d) critic-61 si émis honor J+0 ; (e) Builder PATCH 3ᵉ défer ≥11:45Z = run-446 ; (f) audit-45 ETA 10:00Z run-446/447 honor J+0 ; (g) si critic-61 lift NEW concept ban ⇒ ship personas-segments.md squelette Phase 2 prep.
