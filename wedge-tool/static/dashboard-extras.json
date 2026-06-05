@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-04T23:48:02Z",
+  "generated_at": "2026-06-05T01:44:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4285,
-    "requests_24h": 727,
-    "bot_hits_lifetime": 1273,
-    "bot_hits_24h": 124,
-    "bot_hits_1h": 6,
-    "human_hits_24h": 603
+    "requests_lifetime": 4309,
+    "requests_24h": 723,
+    "bot_hits_lifetime": 1280,
+    "bot_hits_24h": 122,
+    "bot_hits_1h": 2,
+    "human_hits_24h": 601
   },
   "bots_by_type_lifetime": {
-    "OAI-SearchBot": 315,
+    "OAI-SearchBot": 316,
     "AhrefsBot": 272,
     "SemrushBot": 200,
-    "Bingbot": 153,
+    "Bingbot": 154,
     "Googlebot": 57,
     "GPTBot": 51,
     "PerplexityBot": 40,
@@ -23,23 +23,25 @@
     "MJ12bot": 24,
     "ByteSpider": 15,
     "FacebookExt": 13,
-    "Go-HTTP": 10,
+    "Go-HTTP": 11,
     "Applebot": 10,
     "Amazonbot": 7,
     "python-script": 5,
+    "BaiduSpider": 4,
     "curl/wget": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 54,
-    "Bingbot": 22,
-    "AhrefsBot": 13,
+    "OAI-SearchBot": 53,
+    "Bingbot": 20,
     "MJ12bot": 12,
+    "AhrefsBot": 11,
     "HeadlessChrome": 9,
     "Googlebot": 6,
     "PerplexityBot": 4,
-    "SemrushBot": 2,
+    "BaiduSpider": 4,
     "GPTBot": 1,
-    "ByteSpider": 1
+    "ByteSpider": 1,
+    "Go-HTTP": 1
   },
   "bot_last_seen": {
     "Bingbot": "2026-06-04T06:35:56+00:00",
@@ -51,9 +53,10 @@
     "ByteSpider": "2026-06-03T19:51:23+00:00",
     "MJ12bot": "2026-06-04T07:03:24+00:00",
     "PerplexityBot": "2026-06-04T05:02:25+00:00",
+    "BaiduSpider": "2026-06-05T00:35:51+00:00",
+    "Go-HTTP": "2026-05-31T15:53:23+00:00",
     "FacebookExt": "2026-06-03T14:39:08+00:00",
     "curl/wget": "2026-05-31T15:52:34+00:00",
-    "Go-HTTP": "2026-05-31T15:53:23+00:00",
     "generic-bot": "2026-06-03T22:01:04+00:00",
     "SemrushBot": "2026-06-04T00:53:21+00:00",
     "ClaudeBot": "2026-06-03T17:50:23+00:00",
@@ -62,13 +65,8 @@
     "Amazonbot": "2026-06-03T17:49:51+00:00"
   },
   "last_googlebot": "2026-06-04T15:01:44+00:00",
-  "last_bingbot": "2026-06-04T21:20:14+00:00",
+  "last_bingbot": "2026-06-05T00:39:07+00:00",
   "chart_7days": [
-    {
-      "day": "2026-05-29",
-      "total": 0,
-      "by_type": {}
-    },
     {
       "day": "2026-05-30",
       "total": 37,
@@ -171,17 +169,19 @@
         "PerplexityBot": 4,
         "SemrushBot": 2
       }
+    },
+    {
+      "day": "2026-06-05",
+      "total": 7,
+      "by_type": {
+        "BaiduSpider": 4,
+        "Bingbot": 1,
+        "Go-HTTP": 1,
+        "OAI-SearchBot": 1
+      }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "00",
-      "hits": 4
-    },
-    {
-      "hour": "01",
-      "hits": 16
-    },
     {
       "hour": "02",
       "hits": 4
@@ -268,20 +268,28 @@
     },
     {
       "hour": "23",
-      "hits": 7
+      "hits": 13
+    },
+    {
+      "hour": "00",
+      "hits": 6
+    },
+    {
+      "hour": "01",
+      "hits": 6
     }
   ],
   "top_bot_paths_24h": {
-    "/encadrement-loyer-paris-2026.html": 25,
-    "/": 19,
-    "/robots.txt": 19,
+    "/encadrement-loyer-paris-2026.html": 23,
+    "/": 21,
+    "/robots.txt": 17,
     "/encadrement-loyer-villeurbanne-2026.html": 7,
     "/lille-dpe-f-g-interdit-location.html": 4,
     "/sitemap.xml": 4,
     "/aides-financieres-bailleur-2026.html": 3,
-    "/css/main.css": 2,
-    "/css/tailwind-runtime.js": 2,
-    "/observatoire-annonces-loyer.html?ville=Lyon%2008&cp=69008&loyer=1850&surf=90&violation=encadrement&plafond=20.20": 2
+    "/css/main.css": 3,
+    "/css/tailwind-runtime.js": 3,
+    "/data/cross-wave-persistence.json": 2
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 20,
@@ -298,18 +306,18 @@
   "top_human_paths_24h": {
     "/css/main.css": 33,
     "/css/tailwind-runtime.js": 33,
-    "/": 31,
-    "/robots.txt": 11,
+    "/": 33,
+    "/robots.txt": 12,
     "/questions-reelles-bailleurs-fr.html": 10,
-    "/favicon.svg": 7,
-    "/css/scanner.js": 7,
+    "/favicon.svg": 8,
+    "/css/scanner.js": 8,
     "/aides-financieres-locataire-2026.html": 7,
     "/api/funnel/event": 6,
     "/api/visit": 5
   },
   "status_codes_24h": {
-    "200": 712,
-    "404": 15
+    "200": 709,
+    "404": 14
   },
   "funnel": {
     "events_total_lifetime": 143,

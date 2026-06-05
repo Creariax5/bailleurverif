@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T23:48:02Z",
+  "generated_at": "2026-06-05T01:45:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 415,
+    "total_lifetime": 416,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11520133,
+    "vps_uptime_seconds": 11527153,
     "last_commit": {
-      "hash": "2250865",
-      "subject": "run-440: critic-60 #3 ★★ FYI quadruple T+72h MISS HONORED (3/3 cumul)",
+      "hash": "6835a14",
+      "subject": "run-441: Strategic-44 HONORED J+0 = UI intent_signal dropdown /aides-financieres-bailleur-2026.html ",
       "relative": "2 hours ago"
     }
   },
