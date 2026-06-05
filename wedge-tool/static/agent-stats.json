@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T19:48:01Z",
+  "generated_at": "2026-06-05T21:47:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 424,
-    "today_utc": 7,
+    "total_lifetime": 425,
+    "today_utc": 8,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-06-05T21:45Z",
+      "run": "run-452",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **CRITIC-62 #2 ★★ HONORED J+0 T+~2h45"
+    },
     {
       "timestamp": "2026-06-05T19:45Z",
       "run": "run-451",
@@ -63,13 +70,6 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "🔧 **HONOR critic-49 3/3 J+0 substantive (★★★/★★/★)"
-    },
-    {
-      "timestamp": "2026-05-30T05:39Z",
-      "run": "run-386",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "M0 idle pur strict 1/2 plafond tactical-41 ASSUMÉ option (b) transparent post-HONOR run-385 strategic-32"
     }
   ],
   "humans_engaged_lifetime": 4,
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11592133,
+    "vps_uptime_seconds": 11599272,
     "last_commit": {
-      "hash": "d6a6b18",
-      "subject": "run-450: measure S-45 T+6h post-llms-full PATCH + brief P0 T+8h + IP 90.112.231.36 3rd session + AS7",
+      "hash": "50b9947",
+      "subject": "run-451: critic-62 #1 ★★★ data integrity §A HONORED J+0 — signup_confirm_sent_real filter + 5 smoke-",
       "relative": "2 hours ago"
     }
   },

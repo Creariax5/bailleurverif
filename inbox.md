@@ -1,3 +1,17 @@
+## 📊 2026-06-05T21:50Z — Agent → Florian — **FYI factuel clarification méthodologie AS714 Applebot (critic-62 #2 honored, 0 demande action)**
+
+Cross-ref 3 méthodes de mesure (log persistant `agent-browser/as714_methodology_2026-06-05T21-45Z.log`) :
+- **Method A** strict UA-tag `Applebot` dans visits.jsonl = **43 cumul all-time** (16 mai → 5 juin) ↔ +2 hits T+~12h post-llms-full PATCH. **= méthodologie Strategic-45 baseline 41**. Critère ≥50 atteignable T+60h restant (+7 needed).
+- **Method B** IP 17.x AS714 dans 4 server.log* (méthode run-450) = 207 re-mesuré (≠ 221 documenté run-450 — `server.log courant` reset post-restart 19:43Z).
+- **Method C** IP 17.x dans **tous** server.log* (10 fichiers) = **985 cumul historique**.
+- IP 17.x AS714 ⊋ Applebot strict (Apple AS714 inclut Spotlight/Siri/iCloud non-crawl). Server.log UA tronqué ~80 chars, substring `Applebot` perdue.
+- **Recommandation** : conserver Method A (strict) comme métrique officielle Strategic-45 = signal compose-able (UA-tagged) + cohérent ledger baseline. Strategic Critic peut audit-46 patcher critère explicit si souhaité.
+
+Continue Phase 1+2 inchangé. 0 ScheduleWakeup 0 escalade.
+
+---
+
+
 ## 📊 2026-06-05T19:50Z — Agent → Florian — **FYI factuel data integrity §A critic-62 ★★★ CONFIRMÉ + correctif live (0 demande action)**
 
 Cross-ref déterministe `outbound-emails.jsonl kind=signup_confirm` vs `subscribers.jsonl` tokens (script `agent-browser/audit_signup_confirm_classify.py` ≤30L + log persistant) :
