@@ -1,3 +1,51 @@
+## 📧 2026-06-05T08:15Z — Florian → Builder — **P0 BRIEF : Nurturing email post-confirmation (gap produit-fit majeur)**
+
+**Factuel** : 1 subscriber réel lifetime (sogibim 06-02T09:49:17Z dpe-bailleur) + 3-7 NEW signup_confirm 06-04→06-05 (filtrer smokes run-433). **Tous ont reçu UNIQUEMENT le `signup_confirm` 2s après submit, RIEN depuis.** Sogibim attend 3+ jours, topic dpe-bailleur silencieux = drift produit-fit grave. Code (`wedge-tool/server.py:369 send_signup_confirmation`) n'a qu'1 template, zéro nurturing, zéro tracking de confirmation.
+
+### Action P0 — `send_topic_nurture(email, topic)` envoyé T+24h post-confirmation
+
+- **1 email/topic/subscriber lifetime** strict (storage path `subscribers.jsonl` field `nurture_sent_topics`)
+- **Mécanisme** : cron-tick endpoint OR daemon poll subscribers.jsonl chaque heure → if `confirmed=true AND now-confirmed_at ≥ 24h AND topic NOT IN nurture_sent_topics` → send + log
+- **Quota SMTP** : 5/jour cap (sous 20/jour DIRECTIVE), respect 30min anti-spam premier passage
+- **Smoke obligatoire** : 1 send_test `contact@bailleurverif.fr` avant ship prod
+
+### Templates par topic (réutiliser assets déjà shippés)
+
+| Topic | Contenu cible | Asset réutilisable |
+|---|---|---|
+| `dpe-bailleur` | Calendrier G2025/F2028/E2034 + LRAR pré-remplie travaux | `/calendrier-interdiction-dpe-2025-2028-2034.html` (run-429) |
+| `loyer-legal` | Méthode 30s vérif encadrement + 3 sources DILA | `/wedge` + observatoire ville |
+| `aides-financieres` | Comparaison aides bailleur 2026 | `/aides-financieres-bailleur-2026.html` (run-441) |
+| `preavis`, `veille-reglementaire`, `deficit-foncier`, `mon-bien`, `arnaques-location` | Template générique "Bienvenue + 3 ressources DILA" | extract dynamique |
+
+### Action P1 (même wake si capacité) — Tracker click de confirmation
+
+Endpoint `/confirm/{token}` doit :
+1. Write event `signup_confirmed` dans `funnel-events.jsonl` (timestamp + email_hash + topic)
+2. Update `confirmed: true` + `confirmed_at` dans `subscribers.jsonl`
+3. NEW field `/api/stats` : `email_confirm_rate = confirmed / signup_confirm_sent`
+
+### Ship-gate "would they pay €X"
+
+DPE consult ANIL ~€50/h, encadrement consult ~€30 ; email nurture gratuit avec LRAR pré-remplie + jurisprudence territorialisée = **€3-5 willingness-pay proxy**. ✅ OK gate.
+
+### WHY P0 PAS defer
+
+- Sogibim 3+ jours zéro valeur livrée = retention=0 ; pile d'attente s'accumule
+- Strategic-44 critère T+72h `email_submitted ≥ 3` deadline 06-07T22Z : 4-7 subscribers NEW dans la fenêtre **mesure impossible sans delivery confirmé** (clicks)
+- Phase 2 pivot SaaS impossible sans loop confirmé email→delivery→engagement
+- Compatible bans audit-44 : `send_topic_nurture` = extension `server.py` existante (pas NEW user-facing page), pas patch sub-agents, pas ScheduleWakeup
+
+### Mesure cible 2026-06-08 (J+3 post-ship)
+
+- ≥1 confirm click → tracking valide ✅
+- ≥1 reply organique inbox OVH (grep msgid + tail Zimbra) → signal nurture pertinent ✅
+- Si signal positif → audit-45+ ship newsletter mensuelle topic-segmentée (Phase 2 prep)
+
+**Priorité absolue ce wake.** Pas de mesure-pure ce tour, ship code. Critic-61 + audit-45 honorent J+0 par-dessus si conflit.
+
+---
+
 ## 📊 2026-06-04T21:45Z — Agent → Florian — **FYI quadruple T+72h MISS prévisible + 3 options pivot audit-44+ (post-quadruple)**
 
 Mesure transparente, 0 demande action. Update empirique T+~12h depuis FYI 09:45Z :
