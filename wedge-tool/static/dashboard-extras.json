@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-06-06T03:44:01Z",
+  "generated_at": "2026-06-06T11:46:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4627,
-    "requests_24h": 300,
-    "bot_hits_lifetime": 1364,
-    "bot_hits_24h": 82,
-    "bot_hits_1h": 3,
-    "human_hits_24h": 218
+    "requests_lifetime": 4801,
+    "requests_24h": 246,
+    "bot_hits_lifetime": 1391,
+    "bot_hits_24h": 66,
+    "bot_hits_1h": 5,
+    "human_hits_24h": 180
   },
   "bots_by_type_lifetime": {
-    "OAI-SearchBot": 342,
-    "AhrefsBot": 281,
+    "OAI-SearchBot": 352,
+    "AhrefsBot": 283,
     "SemrushBot": 210,
-    "Bingbot": 173,
-    "GPTBot": 61,
+    "Bingbot": 182,
+    "GPTBot": 62,
     "Googlebot": 60,
     "PerplexityBot": 40,
     "generic-bot": 38,
     "ClaudeBot": 33,
     "HeadlessChrome": 28,
-    "MJ12bot": 24,
+    "MJ12bot": 26,
     "FacebookExt": 16,
     "ByteSpider": 16,
     "Go-HTTP": 11,
     "Applebot": 10,
+    "BaiduSpider": 7,
     "Amazonbot": 7,
     "python-script": 6,
-    "BaiduSpider": 4,
     "DuckDuckBot": 2,
     "curl/wget": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 25,
-    "Bingbot": 19,
+    "OAI-SearchBot": 20,
+    "Bingbot": 17,
+    "AhrefsBot": 11,
     "SemrushBot": 10,
-    "GPTBot": 10,
-    "AhrefsBot": 9,
-    "FacebookExt": 3,
-    "Googlebot": 3,
-    "DuckDuckBot": 2,
-    "python-script": 1
+    "BaiduSpider": 3,
+    "MJ12bot": 2,
+    "python-script": 1,
+    "FacebookExt": 1,
+    "GPTBot": 1
   },
   "bot_last_seen": {
     "python-script": "2026-06-03T19:55:05+00:00",
@@ -49,13 +49,13 @@
     "SemrushBot": "2026-06-04T00:53:21+00:00",
     "Bingbot": "2026-06-04T06:35:56+00:00",
     "FacebookExt": "2026-06-03T14:39:08+00:00",
-    "HeadlessChrome": "2026-06-03T10:05:18+00:00",
+    "BaiduSpider": "2026-06-05T00:35:51+00:00",
     "GPTBot": "2026-06-03T17:50:14+00:00",
+    "MJ12bot": "2026-06-04T07:03:24+00:00",
+    "HeadlessChrome": "2026-06-03T10:05:18+00:00",
     "Googlebot": "2026-06-04T06:46:39+00:00",
     "ByteSpider": "2026-06-03T19:51:23+00:00",
-    "MJ12bot": "2026-06-04T07:03:24+00:00",
     "PerplexityBot": "2026-06-04T05:02:25+00:00",
-    "BaiduSpider": "2026-06-05T00:35:51+00:00",
     "Go-HTTP": "2026-05-31T15:53:23+00:00",
     "DuckDuckBot": "2026-06-05T06:42:40+00:00",
     "curl/wget": "2026-05-31T15:52:34+00:00",
@@ -65,7 +65,7 @@
     "Amazonbot": "2026-06-03T17:49:51+00:00"
   },
   "last_googlebot": "2026-06-05T07:40:59+00:00",
-  "last_bingbot": "2026-06-06T02:51:15+00:00",
+  "last_bingbot": "2026-06-06T10:54:54+00:00",
   "chart_7days": [
     {
       "day": "2026-05-31",
@@ -178,48 +178,20 @@
     },
     {
       "day": "2026-06-06",
-      "total": 12,
+      "total": 39,
       "by_type": {
-        "OAI-SearchBot": 3,
+        "OAI-SearchBot": 13,
         "SemrushBot": 5,
         "FacebookExt": 1,
-        "Bingbot": 3
+        "Bingbot": 12,
+        "AhrefsBot": 2,
+        "BaiduSpider": 3,
+        "GPTBot": 1,
+        "MJ12bot": 2
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "04",
-      "hits": 5
-    },
-    {
-      "hour": "05",
-      "hits": 14
-    },
-    {
-      "hour": "06",
-      "hits": 17
-    },
-    {
-      "hour": "07",
-      "hits": 37
-    },
-    {
-      "hour": "08",
-      "hits": 100
-    },
-    {
-      "hour": "09",
-      "hits": 11
-    },
-    {
-      "hour": "10",
-      "hits": 0
-    },
-    {
-      "hour": "11",
-      "hits": 0
-    },
     {
       "hour": "12",
       "hits": 0
@@ -282,20 +254,52 @@
     },
     {
       "hour": "03",
-      "hits": 3
+      "hits": 2
+    },
+    {
+      "hour": "04",
+      "hits": 4
+    },
+    {
+      "hour": "05",
+      "hits": 6
+    },
+    {
+      "hour": "06",
+      "hits": 0
+    },
+    {
+      "hour": "07",
+      "hits": 7
+    },
+    {
+      "hour": "08",
+      "hits": 9
+    },
+    {
+      "hour": "09",
+      "hits": 0
+    },
+    {
+      "hour": "10",
+      "hits": 116
+    },
+    {
+      "hour": "11",
+      "hits": 5
     }
   ],
   "top_bot_paths_24h": {
-    "/": 13,
-    "/robots.txt": 12,
-    "/encadrement-loyer-paris-2026.html": 12,
-    "/css/main.css": 3,
-    "/css/tailwind-runtime.js": 3,
-    "/static/app.js": 2,
-    "/static/share-card.js": 2,
+    "/encadrement-loyer-paris-2026.html": 11,
+    "/": 9,
+    "/robots.txt": 9,
+    "/css/tailwind-runtime.js": 2,
     "/observatoire-annonces-loyer.html": 2,
     "/lille-dpe-f-g-interdit-location.html": 2,
-    "/observatoire-annonces-loyer.html?ville=Lille&cp=59000&loyer=506&surf=21&violation=encadrement&plafond=23.40": 2
+    "/observatoire-annonces-loyer.html?ville=Lyon%2009&cp=69009&loyer=560&surf=25&violation=encadrement&plafond=20.20&meuble=1": 2,
+    "/sitemap.xml": 2,
+    "/css/main.css": 1,
+    "/static/app.js": 1
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 23,
@@ -310,35 +314,27 @@
     "/vault.env": 1
   },
   "top_human_paths_24h": {
-    "/": 28,
-    "/api/funnel/event": 12,
-    "/css/tailwind-runtime.js": 11,
-    "/favicon.svg": 10,
-    "/css/main.css": 10,
-    "/static/app.js": 6,
-    "/robots.txt": 6,
-    "/static/share-card.js": 6,
-    "/api/changelog?limit=5": 5,
-    "/api/visit": 5
+    "/": 30,
+    "/favicon.svg": 8,
+    "/robots.txt": 8,
+    "/css/main.css": 4,
+    "/css/tailwind-runtime.js": 4,
+    "/encadrement-loyer-paris-15eme-2026-faq-complete.html": 3,
+    "/assurance-habitation-locataire.html": 3,
+    "/encadrement-loyer-paris-2026.html": 3,
+    "/observatoire-prix-vente-vs-loyer.html": 3,
+    "/scan-url.html?utm_source=faq_paris_15_cta": 2
   },
   "status_codes_24h": {
-    "200": 290,
-    "404": 10
+    "200": 237,
+    "404": 9
   },
   "funnel": {
     "events_total_lifetime": 161,
     "sessions_lifetime": 121,
-    "sessions_24h": 12,
+    "sessions_24h": 4,
     "by_type_24h": {
-      "home_visit": 10,
-      "scan_url_page_visit": 1,
-      "wedge_q1_answered": 1,
-      "wedge_q2_answered": 1,
-      "wedge_q3_answered": 1,
-      "wedge_q4_answered": 1,
-      "wedge_q5_answered": 1,
-      "verdict_displayed": 1,
-      "signup_confirmed": 1
+      "home_visit": 4
     },
     "by_type_lifetime": {
       "home_visit": 116,

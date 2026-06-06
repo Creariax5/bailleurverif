@@ -1,3 +1,42 @@
+# Strategic Critic Audit — 2026-06-06T10:00Z
+
+---
+
+**Live `/api/stats`** : visits=382 UNCHANGED 7ᵉ wake / humans=4 UNCHANGED **27ᵉ wake critic-49 strict stagnation** / sogibim T+~4j PENDING (DMARC fix Florian-side TODO-38 ≤2 min) / subscribers_by_intent={'unset':1} UNCHANGED **5 mesures S-44 T+~36h restant** / shares=1 WhatsApp 0.3% / Applebot=43 UNCHANGED 12h gap **+7 needed deadline 06-08T10Z T+~48h** / 18 bans audit-46 ✅ 6 applications strict cumul.
+
+## 1. COPYABILITY SCORE — ~85% UNCHANGED 8 audits
+
+0 NEW ship audit-46→47 (PAUSE-AND-MEASURE honored 5 applications 453/454/455/457/458 + run-457 carve-out diagnostic DMARC ≤★★). Stack inchangé 85% copyable dev-solo ≤2j (city-pages template + LRAR PDF endpoint + scan-url + share-card + intent_signal UI dropdown). **Inforgeable seul** = chain 11 vagues git horodatées + corpus Reddit 35Q CC-BY (cat-1).
+
+## 2. MOAT COMPONENTS LIVE — 9 substantif UNCHANGED 24 audits ★★★ stagnation absolue
+
+- **Cat-1=3** : chain 11 vagues `194a4a2` ⚠️ pipeline.sh stale T+18j / cross-wave 57.6% N=121 / Reddit 35Q.
+- **Cat-2=0 MORTE** (signalement 1 dormant / notation 0).
+- **Cat-3=3** : DILA loyer-abusif+dpe-invalide+depot-garantie + 9 ECLI Cass.
+- **Cat-4=3 réel** : data.gouv `6a0c30a` DR 90 / Wikidata Q139857638 DR 100 / repo MIT DR 90. **dev.to×2 0/2 referer T+~17j = MORT empirique confirmé** (déclasser substantif net audit-47).
+
+## 3. CONCURRENT GAP
+
+ANIL (DR ≈75, gratuit, gouv) / Service-Public.fr (DR 95, gratuit) / SmartLoc (DR 60, freemium €). BV manque : audience, autorité institutionnelle, SEO compounding base (GSC 5 queries 20 imp 0 clic 16j). BV unique : verdict-precise wedge 30s + scan-URL zero-friction + observatoire data temps réel + LRAR PDF auto. Gap **tech défendable** ≠ business défendable. humans=4 vs concurrents M+ = ratio ~0.000004.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**Disparition** : chain git timestampée + data.gouv UUID + Wikidata Q139857638 = 3 composants non-rejouables. **Génèrent humans_engaged ?** Pull-LLM Bouygues+Villeurbanne+sogibim = 3/4 humans via ChatGPT = **moat cat-1+cat-4 productif** (≠ abstrait). **Viralité** : output verdict-card share-friendly LIVE mais 1 share lifetime 20j = canal mort empirique. **Persona-fit** : sub-agents Bluesky/HF/Telegram/LinkedIn 0 referer 32j MORT empirique. **Pull-LLM = SEUL canal productif** (~1 humain/14j).
+
+## 5. STRATEGIC DRIFT vs humans_engaged
+
+Run-457 escalade DMARC TODO-38 (critic-63 carve-out diagnostic) = tactiquement correct + sert P0 nurture-loop, mais **TODO-38 ★★ = 6ᵉ Florian-action escaladée HEAD lifetime** sans path Builder-autonome. Pattern dependency-on-Florian persiste 27 wakes. Aligne P3 mesure ✅, mais P1 produit-excellence et P2 SEO compounding = 0 progrès Builder-only depuis audit-46. **Drift mineur acceptable** (DMARC = unblock retention sogibim seul subscriber réel).
+
+## 6. PRESCRIPTION — EXTENSION PAUSE-AND-MEASURE jusqu'à audit-46 deadline 06-08T22Z
+
+**Audit-46 critère T+72h pas évaluable avant 06-08T22Z** (T+~60h restant). Évaluer audit-47 substantif aujourd'hui = drift mesure. **Action UNIQUE** : extension PAUSE-AND-MEASURE STRICT jusqu'à audit-48 ETA 2026-06-08T22Z, **triple carve-out** : (a) si Florian ajoute DMARC TODO-38 ⇒ Builder re-send mail-tester T+15min verify dmarc=pass + log baseline 5ᵉ ; (b) si NEW signal humain direct/pull-LLM ⇒ FYI factuel ≤★★ ; (c) si critic émis ⇒ honor par priorité. **Asymétrie** : préserve intégrité mesure 3 critères S-44/S-45/P0, évite drift ship-on-empty-surface (pattern 26→34 épuisé +1 humain net cumul 9 ships), respecte recalibrage Florian 06-01 P2 SEO compounding (≠ Reddit/HN/X dépriorité). **Audit-48 post-deadline** : succès ≥1/3 ⇒ propage canal validé (intent_signal 3ᵉ surface bailleur OR pull-LLM amplification) / 0/3 ⇒ pivot outbound presse bailleur-trade-press (Réussir-Investir/Les-Échos-Patrimoine/Capital-Bailleur) OR Twitter/X SMS-verif TODO-36-bis.
+
+**Bans audit-47 (jusqu'à audit-48) 19/19 STRICT** : 🚫 NEW FILE / 🚫 7 surfaces user-facing / 🚫 llms-full PATCH / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36/37/38 / 🚫 méta-Q ≤06-09 / 🚫 spawn 7ᵉ / 🚫 SMTP hors-nurture-template sauf carve-out (a) DMARC verify / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents autonome / 🚫 nouveau event funnel / 🚫 push Reddit-HN-X-TikTok / 🚫 5ᵉ baseline log structurel sans NEW signal / 🚫 FYI compact sans NEW signal / 🚫 auto-extension Strategic carve-out créatif / 🚫 2ᵉ PATCH Builder sem 06-05→06-12 (cap consommé run-448).
+
+**Critère succès audit-47** : 0 drift bans + ≥1/3 audit-46 critère atteint OR 0/3 propre documenté deadline 06-08T22Z ⇒ audit-48 propage OR pivot canal.
+
+---
+
 # Strategic Critic Audit — 2026-06-05T22:00Z
 
 ---

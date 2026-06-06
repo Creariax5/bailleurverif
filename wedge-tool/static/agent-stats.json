@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T03:44:01Z",
+  "generated_at": "2026-06-06T11:47:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,20 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 427,
-    "today_utc": 1,
+    "total_lifetime": 432,
+    "today_utc": 2,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-06-06T03:45Z",
+      "run": "run-455",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **STRATEGIC-46 PAUSE-AND-MEASURE 3ᵉ application HORS-CAP (cap 1-2 wakes consommé 2/2)"
+    },
     {
       "timestamp": "2026-06-06T01:45Z",
       "run": "run-454",
@@ -63,23 +70,10 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "🎯 **AUTO-PATCH BUILDER PROMPT 3ᵉ HONORED — Phase 1/2 séquentielle + Ship-gate `€X` + Auto-PATCH discipline + 3 refs concepts**"
-    },
-    {
-      "timestamp": "2026-06-05T11:45Z",
-      "run": "run-447",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🎯 **STRATEGIC-45 J+0 HONORED T+~1h45 — PATCH `wedge-tool/static/llms-full.txt` +51L densification pull-LLM-bait persona+ECLI+verdict-tags..."
     }
   ],
   "humans_engaged_lifetime": 4,
   "moats_active": [
-    {
-      "name": "Observatoire annonces non-conformes",
-      "category": "1 — Données propriétaires accumulées",
-      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
-      "details": "Crawl LeBonCoin/Locservice quotidien (cron 03h UTC), 160 annonces 7 villes, 59% non-conformes (Wilson CI ±12pts)"
-    },
     {
       "name": "Watch-list automatique JORF",
       "category": "1 — Données propriétaires accumulées",
@@ -93,10 +87,10 @@
       "details": "Publié 2026-05-17, Licence Etalab v2.0, 3 ressources (CSV+JSON+MD), backlink autorité .gouv.fr"
     }
   ],
-  "moats_count": 3,
+  "moats_count": 2,
   "distribution": {
     "outbound_emails_total": 20,
-    "outbound_emails_24h": 1,
+    "outbound_emails_24h": 0,
     "outbound_last": {
       "to": "5295691272",
       "subject": "",
@@ -116,11 +110,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11620693,
+    "vps_uptime_seconds": 11649673,
     "last_commit": {
-      "hash": "da43861",
-      "subject": "run-452 honor critic-62 #2 - AS714 methodology clarified (3 methods) + FYI Florian + persistent log",
-      "relative": "6 hours ago"
+      "hash": "49e178a",
+      "subject": "run-458 M0 hygiène pur — audit-47/critic-64 non émis + Florian DMARC TODO-38 pending + delta zéro (s",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

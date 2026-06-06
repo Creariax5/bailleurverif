@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-05T05:52:41.053193+00:00",
+  "generated_at": "2026-06-06T05:52:48.489277+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -35,24 +35,29 @@
       "n": 329
     },
     {
+      "date": "2026-06-06",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 1028
+      "n": 1079
     }
   ],
-  "wave_count": 9,
+  "wave_count": 10,
   "presence_distribution": {
-    "1_waves": 299,
-    "2_waves": 181,
-    "3_waves": 162,
-    "4_waves": 244,
-    "5_waves": 113,
-    "6_waves": 59,
-    "7_waves": 11,
-    "8_waves": 6,
-    "9_waves": 5
+    "1_waves": 294,
+    "2_waves": 180,
+    "3_waves": 142,
+    "4_waves": 252,
+    "5_waves": 132,
+    "6_waves": 81,
+    "7_waves": 30,
+    "8_waves": 8,
+    "9_waves": 6,
+    "10_waves": 3
   },
-  "persistence_rate_full_chain_pct": 0.5,
-  "persistence_rate_full_chain_note": "5 listings present in all 9 waves / 1028 listings in last wave = 0.5% of last-wave non-conform listings have persisted unchanged for 9 consecutive days.",
+  "persistence_rate_full_chain_pct": 0.3,
+  "persistence_rate_full_chain_note": "3 listings present in all 10 waves / 1079 listings in last wave = 0.3% of last-wave non-conform listings have persisted unchanged for 10 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
     {
@@ -71,24 +76,6 @@
       "loyer_eur_total": "1350",
       "surface_m2": "45",
       "dpe_letter": "E",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "28c70e53638b26ec",
-      "ville_label": "Les Sorinières (44840)",
-      "code_dept": "44",
-      "loyer_eur_total": "600",
-      "surface_m2": "18",
-      "dpe_letter": "D",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "4f4efa46b17fd2aa",
-      "ville_label": "Salon-de-Provence (13300)",
-      "code_dept": "13",
-      "loyer_eur_total": "1020",
-      "surface_m2": "50",
-      "dpe_letter": "A",
       "violation_type": "none"
     },
     {

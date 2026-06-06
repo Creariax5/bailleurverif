@@ -1,10 +1,59 @@
 ---
 name: Strategic Prescription (last audit)
-description: **Audit-46 strategic 2026-06-05T22:00Z HONORED run-453 J+0 T+~1h45 = PAUSE-AND-MEASURE 1-2 wakes STRICT + baseline 3 mesures simultanées documentée propre (log `agent-browser/strategic_46_baseline_2026-06-05T23-45Z.log` + ledger ACT)**. **46/46 strategic cumul ★ 18ᵉ J+0 consécutif RECORD STREAK**. 18 bans rotation depuis audit-45 (NEW FILE / 7 surfaces user-facing / llms-full / monétisation / Telegram / ScheduleWakeup / re-escalade TODOs / méta-Q ≤06-08 / spawn 7ᵉ / SMTP / IndexNow / Indexing API / patch sub-agents / nouveau event funnel / push Reddit-HN-X-TikTok). Carve-outs tolérés = brief P0 nurture suivi mesure click + tactical critic ≤★★ mesure structurelle scripts utility + cross-ref UA + funnel diagnostic read-only. Critère succès T+72h deadline **2026-06-08T22:00Z** = baseline propre + ≥1/3 critère atteint (S-44 subscribers_by_intent bailleur ≥1 06-07T22Z / S-45 Applebot ≥50 OR humans_pull_llm ≥2 06-08T10Z / P0 nurture ≥1 click + ≥1 reply 06-08T09:45Z) ⇒ audit-47 propage canal validé ; 0/3 ⇒ audit-47 pivot canal outbound presse FR 2ᵉ round bailleur-trade-press (Réussir-Investir / Les-Échos-Patrimoine / Capital-Bailleur) OR Twitter/X SMS-verif TODO-36-bis fallback.
+description: **Audit-47 strategic 2026-06-06T10:00Z HONORED run-459 J+0 T+~1h41 = EXTENSION PAUSE-AND-MEASURE STRICT jusqu'à audit-48 ETA 2026-06-08T22Z (deadline T+~60h)**. Triple carve-out (a) DMARC TODO-38 ⇒ re-send mail-tester verify (b) NEW signal humain direct/pull-LLM ⇒ FYI ≤★★ (c) critic émis ⇒ honor priorité. **47/47 strategic cumul ★ 19ᵉ J+0 consécutif RECORD STREAK**. 19 bans rotation audit-47 (NEW FILE / 7 surfaces / llms-full PATCH / monétisation / Telegram / ScheduleWakeup / re-escalade TODO-33/36/37/38 / méta-Q ≤06-09 / spawn 7ᵉ / SMTP hors-nurture sauf DMARC verify / IndexNow / Indexing API ping / patch sub-agents / nouveau event funnel / Reddit-HN-X-TikTok / 5ᵉ baseline log sans NEW signal / FYI compact sans NEW signal / auto-extension carve-out créatif / 2ᵉ PATCH Builder sem 06-05→06-12 cap consommé). **Run-459 ACT** : critic-63 #3 ★ honor carve-out (c) = `agent-browser/reconcile_results_vs_humans.py` ≤30L exécuté + log `reconcile_results_vs_humans_2026-06-06T11-45Z.log` (results=10 HUM-cls all UA-clean / top_villes(results) 7 réelles cap api/stats 5 masque lens+montreuil / humans=4 funnel+pull-LLM strict ≠ raw results). Critère succès audit-47 = 0 drift bans + ≥1/3 audit-46 critère atteint ⇒ audit-48 propage OR 0/3 ⇒ pivot outbound presse bailleur-trade-press OR Twitter/X TODO-36-bis.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-47 2026-06-06T10:00Z** (T+~12h post audit-46 honored run-453+454+455+457+458, file `audit-2026-06-06-1000.md`).
+
+## Audit-47 § verdict + prescription (HONORED run-459 J+0 T+~1h41 substantive carve-out (c))
+
+**State live entrée wake** : visits=382 UNCHANGED 8ᵉ wake / humans=4 UNCHANGED **27ᵉ wake stagnation critic-49 strict** / sogibim T+~4j PENDING (DMARC TODO-38 Florian-side silent samedi matin) / subscribers_by_intent={'unset':1} UNCHANGED 6 mesures S-44 T+~36h restant / shares=1 WhatsApp 0.3% / Applebot strict UA=43 UNCHANGED 12h gap +7 needed S-45 T+~48h.
+
+**Verdict global audit-47** : Copyability 85% UNCHANGED 8 audits / Moat **9 substantif UNCHANGED 24 audits ★★★ stagnation absolue** (dev.to×2 0/2 referer T+~17j mort empirique confirmé déclasser net) / drift mineur acceptable (DMARC TODO-38 escalade run-457 = 6ᵉ Florian-action HEAD lifetime mais retention sogibim unblock structurel) / P3 mesure ✅ / P1+P2 = 0 progrès Builder-only audit-46→47.
+
+**Prescription §6 unique** : EXTENSION PAUSE-AND-MEASURE STRICT jusqu'à audit-48 ETA 2026-06-08T22Z. Évaluer audit-47 substantif aujourd'hui = drift mesure (audit-46 critère T+72h pas évaluable avant 06-08T22Z T+~60h).
+
+**Triple carve-out** :
+- (a) si Florian ajoute DMARC TODO-38 ⇒ Builder re-send mail-tester T+15min verify dmarc=pass + log baseline 5ᵉ légitime
+- (b) si NEW signal humain direct/pull-LLM ⇒ FYI factuel ≤★★
+- (c) si critic émis ⇒ honor par priorité
+
+**Asymétrie** : (1) préserve intégrité mesure 3 critères S-44/S-45/P0 ; (2) évite drift ship-on-empty-surface (pattern 26→34 épuisé +1 humain net cumul 9 ships) ; (3) respecte recalibrage Florian 06-01 P2 SEO compounding (≠ Reddit/HN/X dépriorité).
+
+**Audit-48 post-deadline** : ≥1/3 critère ⇒ propage canal validé (intent_signal 3ᵉ surface bailleur OR pull-LLM amplification) / 0/3 ⇒ pivot outbound presse bailleur-trade-press (Réussir-Investir / Les-Échos-Patrimoine / Capital-Bailleur) OR Twitter/X SMS-verif TODO-36-bis fallback.
+
+## Bans audit-47 (jusqu'à audit-48) 19/19 STRICT
+
+🚫 NEW FILE / 🚫 7 surfaces user-facing / 🚫 llms-full PATCH / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36/37/38 / 🚫 méta-Q ≤06-09 / 🚫 spawn 7ᵉ / 🚫 SMTP hors-nurture-template sauf carve-out (a) DMARC verify / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents autonome / 🚫 nouveau event funnel / 🚫 push Reddit-HN-X-TikTok / 🚫 5ᵉ baseline log structurel sans NEW signal / 🚫 FYI compact sans NEW signal / 🚫 auto-extension Strategic carve-out créatif / 🚫 2ᵉ PATCH Builder sem 06-05→06-12 (cap consommé run-448).
+
+## HONORED run-459 status
+
+- ✅ Honor §6 EXTENSION PAUSE-AND-MEASURE STRICT (0 NEW ship Builder-only).
+- ✅ Carve-out (a) DMARC : `dig +short TXT _dmarc.bailleurverif.fr` empty T+~4h post-escalade run-457 = Florian silent samedi matin = 0 re-send mail-tester (Builder-correct).
+- ✅ Carve-out (b) NEW signal humain/pull-LLM : 0 delta visits=382 / humans=4 = 0 FYI (ban explicit "FYI compact sans NEW signal" respecté).
+- ✅ Carve-out (c) critic émis : critic-63 #3 ★ "réconciliation top_villes vs humans micro-script post-audit-47 1 wake dispo" HONORED = `agent-browser/reconcile_results_vs_humans.py` 28L (sous cap ≤30L) exécuté + log `reconcile_results_vs_humans_2026-06-06T11-45Z.log` persistant.
+- ✅ Bans 19/19 strict respectés (NEW FILE user-facing 0 / 7 surfaces 0 / llms-full 0 / monétisation 0 / Telegram 0 / SW 0 / re-escalade TODO 0 / méta-Q 0 / 7ᵉ sub 0 / SMTP 0 / IndexNow 0 / Indexing API 0 / sub-agents patch 0 / funnel event 0 / Reddit-HN-X 0 / 5ᵉ baseline log 0 / FYI compact 0 / auto-extension carve-out 0 / 2ᵉ PATCH Builder 0).
+
+**Findings reconcile critic-63 #3 (data hygiene)** :
+- results.jsonl=10 entries, all classify "HUM" par UA (0 bot signature détectée Mozilla/AppleWebKit standard)
+- top_villes(results.jsonl)=7 villes réelles : paris=3, villeurbanne=2, nice/marseille/amiens/lens/montreuil=1 (somme 10)
+- `/api/stats top_villes` cap 5 masque 2 villes (lens, montreuil) → gap structurel display ≠ corruption data
+- humans_engaged_lifetime=4 = stricter funnel + pull-LLM unique (Bouygues+Villeurbanne+sogibim+LinkedIn-legacy) ≠ raw results.jsonl line count
+- Discrepancy 10 results HUM-cls vs 4 humans = structural différentiation métrique (verdict-card completion vs identified-real-engaged-human + pull-LLM separate cumul), pas bug
+
+`strategic_critic_recommendations_followed_cumul = 46/46 → 47/47 ★ 19ᵉ J+0 consécutif RECORD STREAK`. `tactical_critic_recommendations_honored_cumul = 64 → 65 ★` (critic-63 #3 ★ honored J+1 wake explicit "post-audit-47 1 wake dispo").
+
+## Audit-48 trigger T+72h 2026-06-08T22:00Z
+
+- ≥1/3 critère atteint (S-44 ≥1 bailleur real / S-45 Applebot ≥50 OR humans_pull_llm ≥2 / P0 ≥1 click + ≥1 reply) ⇒ propage canal validé.
+- 0/3 ⇒ pivot canal outbound presse bailleur-trade-press FR 2ᵉ round (Réussir-Investir / Les-Échos-Patrimoine / Capital-Bailleur) OR Twitter/X SMS-verif TODO-36-bis OR (c) PAUSE-AND-MEASURE pull-LLM-only 3 wakes.
+
+---
+
+# Archive audit-44 (post run-441, ref historique)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-44 2026-06-04T22:00Z** (T+~12h post audit-43 honored run-435 ship questions-bailleurs).
 
