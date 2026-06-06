@@ -1504,3 +1504,159 @@ Les modèles sont en accès libre : https://bailleurverif.fr/loyer-abusif.html
 
 _Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
 
+---
+
+## 📰 PRESSE FR BAILLEUR-TRADE-PRESS — 3 DRAFTS PRÊTS-À-PITCH — added run-463 2026-06-06T19:41Z (critic-64 #1 ★★★ HONORED pré-armage pivot Strategic-48 ETA 06-08T22Z T+~28h)
+
+**Contexte** : Critic-64 prescription `★★★ Pré-armer 3 drafts presse FR bailleur-trade-press + 1 Twitter/X TODO-36-bis`. Asymétrie = si Strategic-48 prescrit pivot outbound presse bailleur après ETA 06-08T22Z (T+~28h), honor J+0 instant. NON-banni audit-47 (drafts internes ≠ SMTP send ≠ NEW FILE user-facing ≠ Reddit-push).
+
+**Persona-fit cible** : presse FR spécialisée bailleurs/patrimoine/investissement locatif. Pitch éditorial = outil gratuit FR open-source data Etalab 232 annonces auditées + 9 ECLI Cass. jurisprudence intégrée. Use-cases bailleurs : aides 2026 (MaPrimeRénov / Denormandie / Loc'Avantages) + observatoire encadrement + autodiag DPE F-G + intérêts retard CCH L312-1.
+
+**Persona ship-gate appliqué** : `would a bailleur read this?` = OUI (chiffres concrets + LF2026 + RGPD-friendly + dataset CC-BY + Florian fondateur ingénieur GitHub-public). `would a journalist quote this?` = OUI (data unique 60% Paris hors plafond + méthodologie ouverte + ECLI verified).
+
+### DRAFT 1 — RÉUSSIR-INVESTIR (FR, mensuel patrimoine/immobilier bailleur)
+
+**À** : redaction@reussir-investir.com (DRAFT — adresse à confirmer Florian avant envoi)
+**Objet** : Outil gratuit open-source pour bailleurs FR — observatoire 232 annonces + 9 ECLI Cass. — angle data exclusif Réussir Investir ?
+
+```
+Bonjour,
+
+Je suis Florian Demartini, ingénieur logiciel, fondateur de BailleurVérif (https://bailleurverif.fr) — outil gratuit FR open-source destiné aux locataires ET aux bailleurs pour vérifier la conformité d'un bail / d'une annonce (encadrement des loyers, DPE, dépôt de garantie, charges récupérables).
+
+Je vous écris parce que nous avons constitué deux ressources qui pourraient intéresser vos lecteurs bailleurs :
+
+1) Un observatoire public CC-BY-4.0 de 232 annonces FR auditées (Paris + Lyon + Lille + Bordeaux + Marseille + Montpellier + Villeurbanne), publié sur data.gouv.fr (UUID `annonces-de-location-francaises-non-conformes-observatoire-bailleurverif`). Constat : ~60% des annonces parisiennes scrappées dépassent le plafond légal de l'encadrement — souvent par méconnaissance des arrêtés préfectoraux (excès médian ~18€/m²). Donnée actionnable pour un bailleur qui veut éviter un litige.
+
+2) Des modèles de recours (mise en demeure, saisine ADIL, commission départementale de conciliation) intégrant 9 arrêts vérifiés de la Cour de cassation (3/3 templates × 3 références ECLI, source Judilibre/DILA). Côté bailleur, la valeur miroir = anticiper les arguments juridiques qu'un locataire pourrait invoquer.
+
+Angles éditoriaux possibles pour Réussir Investir :
+- "Encadrement des loyers 2026 : les pièges qu'évite l'outil open-source BailleurVérif"
+- "DPE F-G interdit à la location 2028 : autodiag + aides MaPrimeRénov / Denormandie / Loc'Avantages, page dédiée bailleurs"
+- "Data exclusive : 60% des annonces parisiennes hors plafond — méthodologie ouverte"
+
+Le projet est entièrement open-source (MIT, https://github.com/Creariax5/bailleurverif), je rends disponibles toutes les données brutes et la méthodologie de scraping (respect robots.txt, dédup, vague hebdo). Je peux fournir un jeu de données enrichi sur demande.
+
+Disponible cette semaine pour un échange si l'angle vous intéresse.
+
+Cordialement,
+Florian Demartini
+florian.demartini.dev@gmail.com
+https://bailleurverif.fr / https://github.com/Creariax5/bailleurverif
+```
+
+**Stats à intégrer si pivot** : N=232, 60% Paris hors plafond, dataset DR≈90 data.gouv.fr, 9 ECLI Cass. cumul, page `/aides-financieres-bailleur-2026.html` LF2026.
+
+### DRAFT 2 — LES ÉCHOS PATRIMOINE (FR, quotidien finance/patrimoine bailleur)
+
+**À** : redaction.patrimoine@lesechos.fr (DRAFT — adresse à confirmer Florian)
+**Objet** : LF2026 bailleurs — outil open-source gratuit autodiag + observatoire Etalab — angle "PropTech FR souveraine"
+
+```
+Bonjour,
+
+Florian Demartini, fondateur de BailleurVérif (https://bailleurverif.fr), outil open-source FR destiné aux locataires et aux bailleurs pour vérifier la conformité d'un bail (encadrement, DPE, dépôt, charges) et anticiper les changements réglementaires.
+
+Trois éléments susceptibles d'intéresser Les Échos Patrimoine sur le segment bailleurs :
+
+1) Loi de Finances 2026 — synthèse actionnable. Page dédiée bailleurs (https://bailleurverif.fr/aides-financieres-bailleur-2026.html) qui consolide MaPrimeRénov Sérénité (jusqu'à 70k€/logement copro), Denormandie (jusqu'à 21% IR), Loc'Avantages (15-65% IR), Éco-PTZ (50k€ 20 ans 0%), exonérations TF/IFI. Sources officielles : ANIL, ANAH, BOFiP, Service-Public.fr — toutes vérifiées et liées en footer.
+
+2) PropTech FR souveraine et open-source. À la différence des plateformes US (RealAdvisor, Yopa) ou des SaaS B2B agences (PRMI, Septeo), BailleurVérif est gratuit, open-source (MIT, GitHub Creariax5/bailleurverif), data publiée sous CC-BY-4.0 sur data.gouv.fr, hébergé en France (OVH). Pas de PII, pas de tracking commercial, pas de modèle freemium.
+
+3) Observatoire Etalab. Dataset 232 annonces auditées publié sur data.gouv.fr (UUID stable). Constat : 60% des annonces parisiennes dépassent le plafond ALUR. Donnée utile à un journaliste patrimoine couvrant l'efficacité de l'encadrement loi ELAN/Climat.
+
+Pour Les Échos Patrimoine, l'angle PropTech FR souveraine + LF2026 actionable pourrait être à part. Je peux fournir des données ou un commentaire sur l'application terrain de la LF2026.
+
+Cordialement,
+Florian Demartini
+florian.demartini.dev@gmail.com
+```
+
+### DRAFT 3 — CAPITAL (FR, mensuel grand public finance/immobilier bailleur)
+
+**À** : redaction@capital.fr (DRAFT — adresse à confirmer Florian)
+**Objet** : Outil 100% gratuit autodiag bailleur — 232 annonces auditées data.gouv.fr — chiffres exclusifs
+
+```
+Bonjour,
+
+Florian Demartini, fondateur de BailleurVérif (https://bailleurverif.fr) — outil gratuit FR pour vérifier la conformité d'un bail (encadrement loyers / DPE / dépôt / charges).
+
+Côté bailleurs, j'ai trois éléments factuels pour Capital :
+
+→ Observatoire public 232 annonces FR. Constat : 60% des annonces parisiennes scrappées dépassent le plafond légal de l'encadrement (vagues mai 2026). Excès médian ~18€/m² = ~540€/mois en trop sur un T2 30m². Données brutes publiées CC-BY-4.0 sur data.gouv.fr.
+
+→ Aides bailleurs 2026 consolidées. Une page dédiée (https://bailleurverif.fr/aides-financieres-bailleur-2026.html) regroupe MaPrimeRénov Sérénité, Denormandie, Loc'Avantages, Éco-PTZ — chiffres officiels ANAH/ANIL/BOFiP. Utile aux bailleurs hésitants face aux DPE F-G interdits 2028.
+
+→ Outil 100% gratuit, open-source, sans inscription. Pas de freemium piège, pas de revente PII. Modèle inspiré des services publics numériques (Service-Public.fr).
+
+L'angle Capital "outil gratuit qui économise des milliers d'euros aux bailleurs en évitant les litiges" pourrait fonctionner — je peux fournir 3 cas concrets anonymisés issus de l'observatoire.
+
+Cordialement,
+Florian Demartini
+florian.demartini.dev@gmail.com
+```
+
+---
+
+## 🐦 TWITTER/X — TODO-36-bis FLORIAN-VALIDATION TEMPLATE — added run-463 2026-06-06T19:41Z (critic-64 #1 ★★★)
+
+**Contexte** : TODO-36-bis Twitter/X = fallback canal si Strategic-48 prescrit pivot post-deadline 06-08T22Z (Reddit compte Florian-blocked TODO-36 escalade 48h fallback). Compte Florian @florian_dem (DRAFT handle, à confirmer) ou compte projet `@bailleurverif` (à créer si Florian valide).
+
+**Self-policy run-121 rappel** : `0 nouveau signup automatisé sans validation Florian explicite`. Template ci-dessous = post Florian (compte perso), pas création compte projet sans ack.
+
+### TWEET 1 — DATA THREAD (3 tweets, hook + chiffres + lien)
+
+```
+1/3 60% des annonces parisiennes que j'ai auditées dépassent le plafond légal de l'encadrement des loyers.
+
+N=45 annonces (vagues mai 2026), méthodo ouverte, données brutes publiées sur data.gouv.fr.
+
+#EncadrementLoyer #PropTech
+```
+
+```
+2/3 Excès médian = ~18€/m² = ~540€/mois en trop sur un T2 de 30m².
+
+Top arrondissements (N≥2) :
+• Paris 1ᵉ : 100% (3/3)
+• Paris 6ᵉ : 100% (2/2)
+• Paris 5ᵉ : 100% (2/2)
+• Paris 17ᵉ : 83%
+```
+
+```
+3/3 Outil gratuit pour vérifier votre annonce (locataire OU bailleur) :
+https://bailleurverif.fr/scan-url.html
+
+Code open-source MIT : https://github.com/Creariax5/bailleurverif
+Dataset Etalab CC-BY-4.0.
+```
+
+### TWEET 2 — RECOURS / JURISPRUDENCE (single tweet, fact-heavy)
+
+```
+9 arrêts vérifiés de la Cour de cassation maintenant intégrés aux modèles de recours BailleurVérif (loyer abusif / DPE / dépôt de garantie).
+
+Source : Judilibre/DILA. Gratuit, open-source, sans inscription.
+
+https://bailleurverif.fr/loyer-abusif.html
+
+#DroitDesLocataires
+```
+
+### TWEET 3 — AIDES BAILLEUR LF2026 (single tweet, persona BAILLEUR captured GSC run-425)
+
+```
+Aides bailleurs 2026 consolidées (MaPrimeRénov Sérénité 70k€ / Denormandie 21% IR / Loc'Avantages 65% IR / Éco-PTZ 50k€ 0%).
+
+Page gratuite + chiffres officiels ANAH/ANIL/BOFiP :
+https://bailleurverif.fr/aides-financieres-bailleur-2026.html
+
+#LF2026 #InvestissementLocatif
+```
+
+---
+
+_Validation Florian attendue (30s) : si OK → confirm adresses presse + handle Twitter → drafter ajustera J+1. Drafts NON envoyés. Asymétrie pré-armage = honor J+0 instant si Strategic-48 prescrit pivot._
+
