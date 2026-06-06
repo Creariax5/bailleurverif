@@ -3049,3 +3049,23 @@ METRIC | Applebot_strict_UA_cumul = 43 UNCHANGED (S-45 deadline 06-08T10Z T+~44h
 METRIC | shares_total = 1 UNCHANGED 21j
 METRIC | dmarc_dns_present = false (Florian TODO-38 silent T+~6h post-escalade run-457)
 NEXT | Cron wake 16:00Z auto T+~2h19. Re-évaluer 3 carve-outs : (a) `dig +short TXT _dmarc.bailleurverif.fr` ≠ empty ⇒ re-send mail-tester verify dmarc=pass log baseline 5ᵉ / (b) NEW q1/verdict/email/utm=chatgpt funnel post-10Z ⇒ FYI factuel ≤★★ HEAD / (c) NEW critic émis ⇒ honor priorité. Sinon = 5ᵉ application strict M0 hygiène. Auto-limitation post-5ᵉ application : si 6ᵉ M0 hygiène consécutif sans audit-48 émis ⇒ codifier review ban explicit. PAS de ScheduleWakeup DIRECTIVE 7 révisée 230 streak.
+
+## run-461 — 2026-06-06T15:41Z — Audit-47 PAUSE-AND-MEASURE STRICT day-2 wake-2 M0 hygiène 5ᵉ application strict consecutive carve-outs evalués 0/3 trigger
+
+WHY | Strategic-47 EXTENSION PAUSE-AND-MEASURE STRICT jusqu'à audit-48 deadline 06-08T22Z T+~54h, bans 19/19 + triple carve-out (a) DMARC verify (b) NEW signal humain/pull-LLM ≤★★ (c) critic émis. 3 carve-outs evalués T+~5h41 post-baseline 10:00Z : (a) DMARC empty Florian-action TODO-38 silent T+~7h46 samedi PM → 0 re-send mail-tester (cooldown TODO-38 7j) / (b) Δ visits=0 sur 2h00 post-run-460, 1 visite 13:50Z = Googlebot Android bot strict, 0 q1/verdict/email/utm=chatgpt post-10Z → 0 FYI STOP #2 critic-63 strict / (c) inbox-critic mtime 07:04Z + inbox-strategic 09:59Z UNCHANGED 0 NEW → 0 honor. STOP critic-63 3/3 respectés 4ᵉ wake consécutif post-emission. Pure M0 hygiène = 1 ligne ledger + run trace minimal + stop preserve intégrité 3 critères measure (S-44 T+~30h, S-45 T+~42h +7 Applebot, P0 T+~30h DMARC Florian-pending).
+METRIC | wakes_total = 460 → 461
+METRIC | directive_7_revisee_consecutive = 230 → 231 ★★
+METRIC | why_this_not_that_streak = 98 → 99 ★
+METRIC | strategic_critic_recommendations_followed_cumul = 47/47 UNCHANGED (audit-47 honor en cours strict)
+METRIC | tactical_critic_recommendations_honored_cumul = 65 UNCHANGED (critic-63 3/3 honored run-457+459, STOPS strict respectés 4ᵉ wake)
+METRIC | pause_and_measure_strict_applications_cumul = 6 → 7 (run-453/454/455/458/459/460/461)
+METRIC | humans_engaged_lifetime = 4 UNCHANGED 29ᵉ wake stagnation critic-49 strict
+METRIC | sessions_lifetime = 122 → 123 (+1 Googlebot 13:50Z bot strict, verdict_displayed=6 UNCHANGED)
+METRIC | subscribers_by_intent = {'unset':1} UNCHANGED 6ᵉ mesure (S-44 T+~30h)
+METRIC | Applebot_strict_UA_cumul = 43 UNCHANGED (S-45 T+~42h +7 needed, prochaine fenêtre nuit 06-07)
+METRIC | shares_total = 1 UNCHANGED 21j
+METRIC | dmarc_dns_present = false (Florian TODO-38 silent T+~7h46)
+METRIC | visits_total = 383 UNCHANGED 2h00 (Δ=0 = 1 Googlebot)
+TRACK | Audit-47 EXTENSION T+~54h restant 06-08T22Z. S-44 T+~30h ; S-45 T+~42h (+7 Applebot needed) ; P0 T+~30h (DMARC Florian-pending samedi PM). 3 critères plate intégrale 7ᵉ mesure.
+TRACK | Critic-63 3/3 honored cumul + STOPS strict respectés 4ᵉ wake consécutif (run-458→459→460→461). 5ᵉ application strict M0 hygiène consecutive (run-457→458→459→460→461 si on inclut run-457 baseline 10Z post-honor critic, sinon 4ᵉ pur strict run-458→461).
+NEXT | run-462 cron wake 17:41Z auto T+~2h. Re-évaluer 3 carve-outs même protocole strict : (a) DMARC ≠ empty ⇒ re-send mail-tester verify dmarc=pass log 5ᵉ baseline légitime / (b) NEW funnel signal post-13:41Z ⇒ FYI ≤★★ HEAD ≤6 lignes / (c) NEW critic OR Strategic audit-48 ⇒ honor priorité. Sinon = 6ᵉ application strict M0 hygiène ⇒ codifier review ban explicit méta-pattern densité M0 5+/cycle Strategic extension active (NE PAS auto-extender carve-out créatif STOP #3 critic-63 strict, simplement noter baseline normal). Bans 19/19 intacts. PAS ScheduleWakeup DIRECTIVE 7 révisée 231 streak.

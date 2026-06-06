@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-06-06T11:46:01Z",
+  "generated_at": "2026-06-06T15:42:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4801,
-    "requests_24h": 246,
-    "bot_hits_lifetime": 1391,
-    "bot_hits_24h": 66,
-    "bot_hits_1h": 5,
-    "human_hits_24h": 180
+    "requests_lifetime": 4870,
+    "requests_24h": 315,
+    "bot_hits_lifetime": 1405,
+    "bot_hits_24h": 80,
+    "bot_hits_1h": 3,
+    "human_hits_24h": 235
   },
   "bots_by_type_lifetime": {
-    "OAI-SearchBot": 352,
+    "OAI-SearchBot": 361,
     "AhrefsBot": 283,
     "SemrushBot": 210,
-    "Bingbot": 182,
+    "Bingbot": 184,
     "GPTBot": 62,
-    "Googlebot": 60,
+    "Googlebot": 61,
     "PerplexityBot": 40,
-    "generic-bot": 38,
+    "generic-bot": 39,
     "ClaudeBot": 33,
     "HeadlessChrome": 28,
     "MJ12bot": 26,
+    "ByteSpider": 17,
     "FacebookExt": 16,
-    "ByteSpider": 16,
     "Go-HTTP": 11,
     "Applebot": 10,
     "BaiduSpider": 7,
@@ -32,15 +32,18 @@
     "curl/wget": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 20,
-    "Bingbot": 17,
+    "OAI-SearchBot": 29,
+    "Bingbot": 19,
     "AhrefsBot": 11,
     "SemrushBot": 10,
     "BaiduSpider": 3,
     "MJ12bot": 2,
     "python-script": 1,
     "FacebookExt": 1,
-    "GPTBot": 1
+    "GPTBot": 1,
+    "Googlebot": 1,
+    "generic-bot": 1,
+    "ByteSpider": 1
   },
   "bot_last_seen": {
     "python-script": "2026-06-03T19:55:05+00:00",
@@ -52,20 +55,20 @@
     "BaiduSpider": "2026-06-05T00:35:51+00:00",
     "GPTBot": "2026-06-03T17:50:14+00:00",
     "MJ12bot": "2026-06-04T07:03:24+00:00",
-    "HeadlessChrome": "2026-06-03T10:05:18+00:00",
     "Googlebot": "2026-06-04T06:46:39+00:00",
+    "generic-bot": "2026-06-03T22:01:04+00:00",
     "ByteSpider": "2026-06-03T19:51:23+00:00",
+    "HeadlessChrome": "2026-06-03T10:05:18+00:00",
     "PerplexityBot": "2026-06-04T05:02:25+00:00",
     "Go-HTTP": "2026-05-31T15:53:23+00:00",
     "DuckDuckBot": "2026-06-05T06:42:40+00:00",
     "curl/wget": "2026-05-31T15:52:34+00:00",
-    "generic-bot": "2026-06-03T22:01:04+00:00",
     "ClaudeBot": "2026-06-03T17:50:23+00:00",
     "Applebot": "2026-06-03T17:49:57+00:00",
     "Amazonbot": "2026-06-03T17:49:51+00:00"
   },
-  "last_googlebot": "2026-06-05T07:40:59+00:00",
-  "last_bingbot": "2026-06-06T10:54:54+00:00",
+  "last_googlebot": "2026-06-06T13:50:15+00:00",
+  "last_bingbot": "2026-06-06T15:02:28+00:00",
   "chart_7days": [
     {
       "day": "2026-05-31",
@@ -178,36 +181,23 @@
     },
     {
       "day": "2026-06-06",
-      "total": 39,
+      "total": 53,
       "by_type": {
-        "OAI-SearchBot": 13,
+        "OAI-SearchBot": 22,
         "SemrushBot": 5,
         "FacebookExt": 1,
-        "Bingbot": 12,
+        "Bingbot": 14,
         "AhrefsBot": 2,
         "BaiduSpider": 3,
         "GPTBot": 1,
-        "MJ12bot": 2
+        "MJ12bot": 2,
+        "Googlebot": 1,
+        "generic-bot": 1,
+        "ByteSpider": 1
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "12",
-      "hits": 0
-    },
-    {
-      "hour": "13",
-      "hits": 0
-    },
-    {
-      "hour": "14",
-      "hits": 0
-    },
-    {
-      "hour": "15",
-      "hits": 0
-    },
     {
       "hour": "16",
       "hits": 0
@@ -287,22 +277,38 @@
     {
       "hour": "11",
       "hits": 5
+    },
+    {
+      "hour": "12",
+      "hits": 34
+    },
+    {
+      "hour": "13",
+      "hits": 8
+    },
+    {
+      "hour": "14",
+      "hits": 12
+    },
+    {
+      "hour": "15",
+      "hits": 1
     }
   ],
   "top_bot_paths_24h": {
-    "/encadrement-loyer-paris-2026.html": 11,
-    "/": 9,
-    "/robots.txt": 9,
+    "/encadrement-loyer-paris-2026.html": 14,
+    "/robots.txt": 12,
+    "/": 10,
+    "/lille-dpe-f-g-interdit-location.html": 5,
     "/css/tailwind-runtime.js": 2,
     "/observatoire-annonces-loyer.html": 2,
-    "/lille-dpe-f-g-interdit-location.html": 2,
     "/observatoire-annonces-loyer.html?ville=Lyon%2009&cp=69009&loyer=560&surf=25&violation=encadrement&plafond=20.20&meuble=1": 2,
-    "/sitemap.xml": 2,
-    "/css/main.css": 1,
-    "/static/app.js": 1
+    "/observatoire-annonces-loyer.html?ville=Paris%2001&cp=75001&loyer=1200&surf=20&violation=encadrement&plafond=40.00&meuble=1": 2,
+    "/encadrement-loyer-montpellier-2026.html": 2,
+    "/sitemap.xml": 2
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 23,
+    "/robots.txt": 24,
     "/sitemap.xml": 11,
     "/": 4,
     "/api/funnel/event": 3,
@@ -314,31 +320,32 @@
     "/vault.env": 1
   },
   "top_human_paths_24h": {
-    "/": 30,
-    "/favicon.svg": 8,
-    "/robots.txt": 8,
-    "/css/main.css": 4,
-    "/css/tailwind-runtime.js": 4,
+    "/": 37,
+    "/favicon.svg": 9,
+    "/robots.txt": 9,
+    "/css/tailwind-runtime.js": 8,
+    "/css/main.css": 6,
+    "/encadrement-loyer-marseille-2026.html": 4,
+    "/observatoire-annonces-loyer.html": 4,
+    "/api/funnel/event": 4,
     "/encadrement-loyer-paris-15eme-2026-faq-complete.html": 3,
-    "/assurance-habitation-locataire.html": 3,
-    "/encadrement-loyer-paris-2026.html": 3,
-    "/observatoire-prix-vente-vs-loyer.html": 3,
-    "/scan-url.html?utm_source=faq_paris_15_cta": 2
+    "/assurance-habitation-locataire.html": 3
   },
   "status_codes_24h": {
-    "200": 237,
-    "404": 9
+    "200": 280,
+    "404": 35
   },
   "funnel": {
-    "events_total_lifetime": 161,
-    "sessions_lifetime": 121,
-    "sessions_24h": 4,
+    "events_total_lifetime": 165,
+    "sessions_lifetime": 125,
+    "sessions_24h": 7,
     "by_type_24h": {
-      "home_visit": 4
+      "home_visit": 4,
+      "scan_url_page_visit": 3
     },
     "by_type_lifetime": {
-      "home_visit": 116,
-      "scan_url_page_visit": 5,
+      "home_visit": 117,
+      "scan_url_page_visit": 8,
       "wedge_q1_answered": 7,
       "wedge_q2_answered": 6,
       "wedge_q3_answered": 6,
@@ -349,7 +356,7 @@
       "signup_confirmed": 1
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 115,
+      "home_visit": 116,
       "wedge_q1_answered": 7,
       "wedge_q2_answered": 6,
       "wedge_q3_answered": 6,

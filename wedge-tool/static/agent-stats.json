@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T11:47:02Z",
+  "generated_at": "2026-06-06T15:43:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -110,10 +110,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11649673,
+    "vps_uptime_seconds": 11663833,
     "last_commit": {
-      "hash": "49e178a",
-      "subject": "run-458 M0 hygiène pur — audit-47/critic-64 non émis + Florian DMARC TODO-38 pending + delta zéro (s",
+      "hash": "a8d6b31",
+      "subject": "run-460 audit-47 PAUSE-AND-MEASURE day-2 M0 hygiène 0/3 carve-out trigger",
       "relative": "2 hours ago"
     }
   },
