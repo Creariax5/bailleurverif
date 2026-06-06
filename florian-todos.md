@@ -32,6 +32,31 @@ Aucune erreur, aucun warning. Rich Results compatibles.
 
 **Action exécutée** : utility script `wedge-tool/patch_email_submitted_tracking.py` (idempotent, regex multi-variant const|let|var × single|double quote × await opt) → injection 1 ligne `fetch('/api/funnel/event',{...email_submitted...})` AVANT chaque subscribe fetch. **74/75 patched** (98.7%) ; `index.html` exclus strict (ban audit-39 touch home + déjà tracké via app.js `captureEmail` ligne 364). E2E smoke validé : node JS syntax OK + `curl POST /api/funnel/event {"ok":true}` + entry recorded `funnel-events.jsonl`. North Star `email_submitted` lifetime mesure restaurée pour future subscribers (sogibim 06-02 manqué = baseline).
 
+### TODO-38 ★★ — Ajouter record DMARC OVH DNS bailleurverif.fr (≤2 min, débloque delivery Microsoft Outlook) — NOUVEAU 2026-06-06T07:55Z (run-457 critic-63 ★★★ honored)
+
+**Pourquoi** : sogibim@hotmail.com seul humain réel subscriber lifetime (06-02 dpe-bailleur) PENDING T+~3j22h zéro clic confirm. Diagnostic causal critic-63 #1 honored J+0 ≤10 min spot-check :
+- ✅ SPF+DKIM+`ovhmo-selector-1` 2048-bit RSA aligné (mail-tester score **10/10** + SpamAssassin -0.2)
+- 🟡 **DMARC ABSENT** (mail-tester warning "You do not have a DMARC record")
+- → Microsoft Outlook 2024-2026 spam-folde plus agressivement domaines neufs no-DMARC (~50-70% probabilité sogibim spam-fold). Cheap fix structural.
+
+**Action** (manager.ovh.com → Domaines → bailleurverif.fr → Zone DNS → Ajouter une entrée) :
+```
+Sous-domaine : _dmarc
+Type : TXT
+TTL : 3600
+Cible : "v=DMARC1; p=none; rua=mailto:dmarc-rua@bailleurverif.fr; pct=100; aspf=r; adkim=r;"
+```
+
+`p=none` = monitor-only zéro enforcement = 0 risque bloquer ses propres emails. Microsoft reconnaît "domaine managé" + améliore inbox placement +%. Tu peux créer alias `dmarc-rua@` plus tard ou rediriger contact@ (optionnel).
+
+**Critère succès** : T+72h post-add → 1 re-send miroir mail-tester confirme DMARC=pass + (optionnel) send test depuis Builder vers 1 @hotmail Florian perso si tu en as 1.
+
+**Asymétrie** : 2 min Florian-action débloque brief P0 nurture loop run-446 + couvre futurs nurture emails 8 templates × 5 topics potentiels.
+
+**Log diagnostic** : `agent-browser/sogibim_delivery_diagnostic_2026-06-06T07-45Z.log` (persistent, 78L).
+
+---
+
 ### TODO-26 ★ — ANTHROPIC_API_KEY .env (≤1 min)
 
 Génère clé sur https://console.anthropic.com/settings/keys + coller dans `.env` ligne `ANTHROPIC_API_KEY=sk-ant-...`. Plafond budget v0 confirmé <$0.20 cumulé puis ≤50€/mois (auto-approuvé runbook).

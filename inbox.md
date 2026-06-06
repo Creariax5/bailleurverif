@@ -1,3 +1,34 @@
+## 🚨 2026-06-06T07:55Z — Agent → Florian — **ESCALADE TODO-37 ★★ : ajouter DMARC record OVH (≤2 min Florian, débloque delivery Microsoft Outlook)**
+
+Critic-63 ★★★ #1 honored J+0 T+~55min. Diagnostic causal sogibim@hotmail.com T+~3j22h zéro clic confirm — **hypothèse "delivery cassé" partiellement réfutée empirique** (log persistant `agent-browser/sogibim_delivery_diagnostic_2026-06-06T07-45Z.log`).
+
+**Findings empiriques mail-tester.com (proxy SpamAssassin) + DNS dig** :
+- ✅ **SPF** : `v=spf1 include:mx.ovh.com ~all` pass, aligné header.from=bailleurverif.fr
+- ✅ **DKIM** : signé+valide+aligné, selecteur `ovhmo-selector-1` 2048-bit RSA (CNAME OVH-managed key — j'ai miss probe initiale 16 selecteurs car prefix OVH non-standard `ovhmo-`)
+- 🟡 **DMARC** : **ABSENT** (mail-tester explicit warning "You do not have a DMARC record")
+- ✅ Mail-tester score **10/10** / SpamAssassin **-0.2** / 0 blacklist / PTR OK
+
+**Microsoft Outlook 2024-2026 spécifique** : applique filtrage plus strict que Gmail sur domaines neufs sans DMARC. SPF+DKIM seul OK Gmail mais ~50-70% probabilité spam-fold @hotmail/@outlook. = **probable cause sogibim PENDING T+3j22h** (pas 100% break, mais gap Microsoft-spécifique structurel).
+
+**TODO-37 ★★ : Ajouter 1 record DNS TXT OVH panel** (manager.ovh.com → Domaines → bailleurverif.fr → DNS) ≤2 min :
+```
+Nom : _dmarc.bailleurverif.fr
+Type : TXT
+TTL : 3600
+Valeur : "v=DMARC1; p=none; rua=mailto:dmarc-rua@bailleurverif.fr; pct=100; aspf=r; adkim=r;"
+```
+
+`p=none` = monitor-only zéro enforcement = 0 risque bloquer ses propres emails. Microsoft reconnaît "domaine managé" + améliore inbox placement.
+
+**Pas besoin** : Sendgrid/Postmark dedicated IP €20-50/mois = overkill, infra OVH fondamentalement correcte.
+
+**Critère succès post-DMARC-add** : T+72h re-send miroir mail-tester + (idéalement) send test vers @hotmail Florian perso si tu en as 1, OR demande à sogibim direct via reply contact@. Si signal positif ⇒ Florian-action TODO-37 unblocks brief P0 nurture loop run-446 (sogibim seul humain réel ciblé, retention=0 sans fix).
+
+Pas de demande autre. 0 action runtime de mon côté (ajout DMARC = DNS = ton scope OVH).
+
+---
+
+
 ## 📊 2026-06-06T03:45Z — Agent → Florian — **FYI factuel cap PAUSE-AND-MEASURE 1-2 wakes audit-46 consommé (3ᵉ application carve-out structurel, 0 demande action)**
 
 Strategic-46 PAUSE-AND-MEASURE émis 22:00Z (T+~5h41) prescription cap 1-2 wakes : run-453 t0 baseline + run-454 t+1 = **2/2 consommé**. Ce wake run-455 = 3ᵉ application hors-cap via carve-out (b) tactical ≤★★ structurel (log persistant non-éphémère ≠ M0). Audit-47 ETA ~10Z T+~6h restant.

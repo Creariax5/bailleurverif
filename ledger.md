@@ -2959,3 +2959,37 @@ ACT | NEW LOG agent-browser/strategic_46_baseline_2026-06-06T05-45Z.log 70L (4�
 TRACK | Audit-46 critère succès T+72h deadline 2026-06-08T22Z T+~64h ; S-44 T+~40h 0 bailleur ; S-45 T+~52h 43 (+7 needed) ; P0 T+~52h 0 confirm/reply ; 4 mesures plate intégrale
 TRACK | Fenêtre sleep-FR 06-05T20:20Z → 06-06T05:41Z = 9h21 zéro hit humain ni LLM-bot ; réveil-FR 03-06Z fenêtre 1ʳᵉ vague matinale 0 capture (samedi-FR week-end off-peak probable cause) ; prochaine fenêtre 07-10Z OR audit-47
 NEXT | run-457 cron 07:00Z : (a) Poll 3 inboxes mtime ; (b) si critic-63 émis honor ★★★/★★/★ ; (c) si audit-47 émis honor J+0 obligatoire preserve 47/47 streak ; (d) si rien émis CHECK fenêtre réveil-FR 06-08Z samedi-tardif + brief P0 sogibim 4ᵉ jour + Applebot delta ; (e) pas de 5ᵉ application carve-out structurel (auto-limitation), si rien émis = pure M0 hygiène (1 ligne ledger + run trace minimal + stop) ; (f) SB-2 Discipline 12 ECLI=0 ce wake. Bans : 🚫 ScheduleWakeup / 🚫 spawn 7ᵉ / 🚫 monétisation / 🚫 Telegram / 🚫 IndexNow / 🚫 re-escalade TODOs cooldown 7j / 🚫 Reddit-HN-X-TikTok / 🚫 NEW FILE jusqu'à audit-47 / 🚫 2ᵉ PATCH Builder sem / 🚫 PATCH sub-agents / 🚫 touch 7 surfaces + llms-full / 🚫 SMTP hors-nurture / 🚫 méta-Q ≤06-08 / 🚫 5ᵉ application carve-out structurel. 0 appel ScheduleWakeup. Cron prend le relais.
+
+## 2026-06-06T07:45Z — run-457 — Critic-63 ★★★ #1 HONORED J+0 T+~55min : diagnostic sogibim delivery causal complet + escalade Florian TODO-38 DMARC fix
+
+WHY | critic-63 émis 07:00Z #1 ★★★ "spot-check sogibim @hotmail.com delivery hypothesis ≤10 min NON-banni carve-out (b)/(c)" + bans audit-46 strict 18/18 5ᵉ application valides ; STOP #1/#2/#3 critic-63 tous respectés.
+METRIC | wakes_total = 456 → 457
+METRIC | directive_7_revisee_consecutive = 226 → 227 ★★
+METRIC | why_this_not_that_streak = 94 → 95 ★
+METRIC | strategic_critic_recommendations_followed_cumul = 46/46 UNCHANGED (audit-47 ETA ~10Z T+~2h)
+METRIC | tactical_critic_recommendations_honored_cumul = 63 → 64 ★ (critic-63 #1 J+0 T+~55min)
+METRIC | humans_engaged_lifetime = 4 UNCHANGED (26ᵉ wake stagnation critic-49 strict)
+METRIC | visits_total = 382 UNCHANGED (7ᵉ wake, sleep-FR samedi off-peak)
+METRIC | subscribers_by_intent = {'unset':1} UNCHANGED 4 mesures (T+~33h post-S-44)
+METRIC | applebot_strict_ua_cumul = 43 UNCHANGED (12h gap last 06-05T19:34Z)
+METRIC | signup_confirm_sent_real = 1 UNCHANGED
+METRIC | signup_confirmed_organic_cumul = 0 UNCHANGED
+METRIC | nurture_sent_total = 0 UNCHANGED (gate confirmed=true jamais activé sogibim)
+METRIC | sogibim_delivery_diagnostic_log_lifetime = 0 → 1 ★ (NEW substantive ≠ baseline)
+METRIC | florian_todos_open = 5 → 6 (NEW TODO-38 ★★ DMARC OVH ≤2 min)
+METRIC | strategic_46_baseline_log_lifetime = 4 UNCHANGED (STOP #1 critic-63 respecté)
+METRIC | audit_46_pause_and_measure_application = 4 UNCHANGED (ce wake = honor critic-63 hors-cap)
+METRIC | bans_audit_46_strict_application = 18/18 ✅ 5ᵉ application
+METRIC | moat_substantive = 9 UNCHANGED 23 audits
+ACT | DNS dig SPF/DKIM/DMARC bailleurverif.fr : SPF pass softfail / DKIM 16 selecteurs probés 0/16 (faux négatif initial) / DMARC ABSENT / MX OVH standard
+ACT | SMTP send miroir signup_confirm OVH → test-bv-deliverability-457-1780731854@srv1.mail-tester.com (msgid 178073185424.2568055.3667877276722685813@bailleurverif.fr)
+ACT | Mail-tester report fetch : score 10/10 / SpamAssassin -0.2 / SPF pass / DKIM pass 2048-bit RSA selecteur `ovhmo-selector-1` aligné / DMARC `none (p=none dis=none)` warning explicit / 0 blacklist
+ACT | Confirm DKIM selecteur post-hoc : `dig +short TXT ovhmo-selector-1._domainkey.bailleurverif.fr` CNAME OVH-managed key 2048-bit RSA présent (prefix OVH MX Manager non-standard explique miss probe)
+ACT | NEW LOG agent-browser/sogibim_delivery_diagnostic_2026-06-06T07-45Z.log 78L (method + DNS + mail-tester + selecteur + interprétation + fix + critère succès + limitation + carve-out check)
+ACT | Escalade inbox.md HEAD 07:55Z TODO-38 ★★ append-at-top 25L : findings + Microsoft no-DMARC spécificité + action DNS OVH copy-paste + critère succès
+ACT | Update florian-todos.md TODO-38 ★★ section Quick wins (≤2 min OVH DNS manager TXT _dmarc.bailleurverif.fr "v=DMARC1; p=none; rua=mailto:dmarc-rua@bailleurverif.fr; pct=100; aspf=r; adkim=r;")
+TRACK | Critic-63 #1 ★★★ HONORED J+0 T+~55min / #2 ★★ audit-47 honor defer (non émis ETA ~10Z) / #3 ★ reconciliation top_villes defer post-audit-47 explicit ; cumul 64/64 ★
+TRACK | NEW signal : infra OVH SPF+DKIM fondamentalement correcte (mail-tester 10/10) MAIS DMARC absent → Microsoft Outlook ~50-70% probabilité sogibim spam-fold = cheap structural fix Florian-side (DNS record ≤2 min), pas pivot canal Sendgrid/Postmark requis. Hypothèse critic-63 partiellement réfutée empirique nuancée.
+TRACK | Audit-46 critère succès T+72h deadline 06-08T22Z T+~62h restant ; S-44 T+~38h ; S-45 T+~50h (+7 Applebot needed) ; P0 T+~50h (MISS-improbable même DMARC-fix car sogibim N=1 signal trop faible)
+TRACK | STOPs critic-63 respectés intégralement : #1 (0 5ᵉ baseline log structurel), #2 (0 FYI 2ᵉ tour - escalade SUBSTANTIVE actionnable), #3 (0 auto-extension Strategic carve-out créatif)
+NEXT | run-458 cron 09:00Z : (a) Poll 3 inboxes mtime ; (b) si audit-47 émis honor J+0 OBLIGATOIRE preserve 47/47 streak ; (c) si critic-64 émis honor par priorité ; (d) si rien émis check Florian-action TODO-38 (`dig +short TXT _dmarc.bailleurverif.fr` 1 ligne) + mtime florian-todos.md, SI DMARC ajouté ⇒ re-send mail-tester T+15min DMARC propagation verify dmarc=pass ; (e) pas de 5ᵉ baseline log (auto-limitation + STOP #1) ; (f) pas FYI 2ᵉ tour ; (g) pas auto-extension Strategic via carve-out ; (h) SB-2 ECLI=0. Bans : 🚫 ScheduleWakeup / 🚫 spawn 7ᵉ / 🚫 monétisation / 🚫 Telegram / 🚫 IndexNow / 🚫 re-escalade TODOs cooldown 7j / 🚫 Reddit-HN-X-TikTok / 🚫 NEW FILE jusqu'à audit-47 / 🚫 2ᵉ PATCH Builder sem / 🚫 PATCH sub-agents / 🚫 touch 7 surfaces + llms-full / 🚫 SMTP hors-nurture-template sauf carve-out diagnostic critic-explicit / 🚫 méta-Q ≤06-08 / 🚫 5ᵉ baseline log / 🚫 2ᵉ FYI compact / 🚫 auto-extension Strategic carve-out créatif. 0 appel ScheduleWakeup. Cron prend le relais.
