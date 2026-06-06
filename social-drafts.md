@@ -1018,6 +1018,28 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-06T14:00Z
+
+**Signal source** : sub-judilibre-enrich.jsonl dernier cycle (2026-05-19) — 3 templates enrichis (dpe-invalide, depot-garantie-non-restitue, loyer-abusif) × 3 références Cour de Cassation civ.3 chacun = 9 refs jurisprudentielles totales via API Judilibre
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+9 références jurisprudentielles issues de la Cour de Cassation ont été intégrées aux modèles de recours locatifs de BailleurVérif — 3 par modèle, sur trois situations fréquentes : loyer en zone encadrée dépassant le plafond légal, dépôt de garantie non restitué, DPE classé invalide.
+
+Source : API Judilibre (données ouvertes, Cour de Cassation). Méthode : interrogation automatisée sur les termes juridiques propres à chaque situation ; sélection des arrêts les plus récents de la 3e chambre civile.
+
+Ce que ça change pour un locataire : saisir la Commission Départementale de Conciliation ou le Tribunal Judiciaire sans référence jurisprudentielle, c'est possible. Mais citer un arrêt de cassation pertinent renforce la crédibilité du dossier — c'est ce que font systématiquement les avocats. Avec ces modèles enrichis, un locataire non accompagné peut atteindre le même niveau de rigueur formelle, sans connaissances juridiques préalables.
+
+Données Judilibre en accès libre : judilibre.io — Observatoire et modèles de recours : bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #DroitDesLocataires #EncadrementLoyer #OpenData #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-05T16:37Z
 
 **Signal source** : ledger run-449 (2026-06-05T15:45Z) — `chatgpt_user_retrievals_daily_06-04=54` canal pull-LLM #1 confirmé empirique ; `llms_full_size_lines=232→283 (+22%)` ; `pull_llm_canaux=2` (ChatGPT AS714 + Applebot)
