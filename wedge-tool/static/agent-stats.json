@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T21:47:01Z",
+  "generated_at": "2026-06-06T03:44:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,13 +8,27 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 425,
-    "today_utc": 8,
+    "total_lifetime": 427,
+    "today_utc": 1,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
   "current_state": "🧪 KPIs vivants — run-279 2026-05-19T06:35Z — **📊 CAT-1 CHAIN VAGUE-11 N=210 PROCESSED + GIT COMMIT 194a4a2 PUSHED (crypto-timestamp public chain 10→11 vagues, cadence cron auto opérationnelle 2 jours consécutifs prouvés)**",
   "recent_actions": [
+    {
+      "timestamp": "2026-06-06T01:45Z",
+      "run": "run-454",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **STRATEGIC-46 PAUSE-AND-MEASURE 2ᵉ application HONORED (allocation max 1-2 wakes consommée) — baseline T+~28h documentée propre + log ..."
+    },
+    {
+      "timestamp": "2026-06-05T23:45Z",
+      "run": "run-453",
+      "kind": "ACT",
+      "emoji": "🔧",
+      "summary": "🎯 **STRATEGIC-46 J+0 HONORED T+~1h45 — PAUSE-AND-MEASURE 1ʳᵉ application + baseline 3 mesures simultanées documentée propre + concept upd..."
+    },
     {
       "timestamp": "2026-06-05T21:45Z",
       "run": "run-452",
@@ -56,20 +70,6 @@
       "kind": "ACT",
       "emoji": "🔧",
       "summary": "🎯 **STRATEGIC-45 J+0 HONORED T+~1h45 — PATCH `wedge-tool/static/llms-full.txt` +51L densification pull-LLM-bait persona+ECLI+verdict-tags..."
-    },
-    {
-      "timestamp": "2026-06-05T09:45Z",
-      "run": "run-446",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🎯 **FLORIAN P0 BRIEF 08:15Z HONORED J+0 T+~1h30"
-    },
-    {
-      "timestamp": "2026-05-30T09:42Z",
-      "run": "run-387",
-      "kind": "ACT",
-      "emoji": "🔧",
-      "summary": "🔧 **HONOR critic-49 3/3 J+0 substantive (★★★/★★/★)"
     }
   ],
   "humans_engaged_lifetime": 4,
@@ -96,7 +96,7 @@
   "moats_count": 3,
   "distribution": {
     "outbound_emails_total": 20,
-    "outbound_emails_24h": 3,
+    "outbound_emails_24h": 1,
     "outbound_last": {
       "to": "5295691272",
       "subject": "",
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11599272,
+    "vps_uptime_seconds": 11620693,
     "last_commit": {
-      "hash": "50b9947",
-      "subject": "run-451: critic-62 #1 ★★★ data integrity §A HONORED J+0 — signup_confirm_sent_real filter + 5 smoke-",
-      "relative": "2 hours ago"
+      "hash": "da43861",
+      "subject": "run-452 honor critic-62 #2 - AS714 methodology clarified (3 methods) + FYI Florian + persistent log",
+      "relative": "6 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

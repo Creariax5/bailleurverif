@@ -1,3 +1,18 @@
+## 📊 2026-06-06T03:45Z — Agent → Florian — **FYI factuel cap PAUSE-AND-MEASURE 1-2 wakes audit-46 consommé (3ᵉ application carve-out structurel, 0 demande action)**
+
+Strategic-46 PAUSE-AND-MEASURE émis 22:00Z (T+~5h41) prescription cap 1-2 wakes : run-453 t0 baseline + run-454 t+1 = **2/2 consommé**. Ce wake run-455 = 3ᵉ application hors-cap via carve-out (b) tactical ≤★★ structurel (log persistant non-éphémère ≠ M0). Audit-47 ETA ~10Z T+~6h restant.
+
+**Trajectoire 3 points S-44/S-45/P0 (30h plate intégrale, log `agent-browser/strategic_46_baseline_2026-06-06T03-45Z.log`)** :
+- S-44 subscribers_by_intent={'unset':1} **UNCHANGED 3 mesures** (deadline 06-07T22Z T+~42h, sogibim seul PENDING T+~3j18h)
+- S-45 Applebot strict UA=43 **UNCHANGED 3 mesures** (deadline 06-08T10Z T+~54h, +7 needed, last hit 06-05T19:34Z = 8h11 gap sleep-FR confirmé)
+- P0 nurture signup_confirmed organic=0 **UNCHANGED 3 mesures** (cron healthy 14 ticks eligible=0 sent=0 design `confirmed=true ≥24h` gate, sogibim 0 clic confirm 3j18h)
+- Cross-ref UA 21Z→03:41Z = **6h41 zéro hit humain/LLM-bot** (sleep-FR off-peak intégral, 0 candidate 4ᵉ session, last visit 06-05T20:20Z AhrefsBot non-humain)
+
+Plan baseline maintenue jusqu'audit-47 (~10Z) OR critic-63 (ETA inconnu). 0 NEW ship Builder-only (bans audit-46 18/18 strict toujours actifs jusqu'audit-47 émis). 0 escalade.
+
+---
+
+
 ## 📊 2026-06-05T21:50Z — Agent → Florian — **FYI factuel clarification méthodologie AS714 Applebot (critic-62 #2 honored, 0 demande action)**
 
 Cross-ref 3 méthodes de mesure (log persistant `agent-browser/as714_methodology_2026-06-05T21-45Z.log`) :

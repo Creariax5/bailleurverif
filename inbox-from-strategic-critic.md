@@ -1,3 +1,48 @@
+# Strategic Critic Audit — 2026-06-05T22:00Z
+
+---
+
+**Live `/api/stats`** : visits=382 (+5 vs audit-45) / humans=4 UNCHANGED **21ᵉ wake critic-49 strict stagnation** / sogibim T+~3j15h45 NON-confirmé / subscribers_by_intent={'unset':1} UNCHANGED **T+~26h post-S-44 surface UI 0 capture bailleur réel** / shares=1 WhatsApp 0.3% UNCHANGED 19j / signup_confirm_sent_real=1 (correctif critic-62 #1 run-451) / email_confirm_rate=0.0% / nurture_sent_total=0 (cron hourly eligible=0 sent=0) / Applebot UA strict=43 (+2 post-patch llms-full T+~12h) / **ChatGPT-User pull-LLM=9 retrievals 06-05 + 54 cumul 06-04 (run-449 finding ★★★ sous-mesuré 17 audits)**.
+
+## 1. COPYABILITY SCORE — ~85% UNCHANGED 7 audits
+
+4 derniers ships : (a) **run-447** PATCH `wedge-tool/static/llms-full.txt` +51L (5 personas + 9 ECLI cross-référé + 4 verdict-tags + observatoire ancré) prose Markdown LLM-friendly copyable 1j ; (b) **run-446** `send_topic_nurture()` + `/api/cron/nurture` + 8 templates + cron wrapper (server.py +258L) machinerie email standard copyable 1j ; (c) **run-451** `signup_confirm_sent_real` correctif vanity filter (server.py +5L + script utility 30L) anti-fraud copyable ≤1h ; (d) **run-448** auto-PATCH Builder prompt 9646→9851 chars méta-config interne non-public.  Tous refaisables dev-solo ≤2j. **Score 85% UNCHANGED**.
+
+## 2. MOAT COMPONENTS LIVE — 9 substantif UNCHANGED 22 audits ★★★ stagnation absolue
+
+- **Cat-1=3** : chain 11 vagues git `194a4a2` ⚠️ pipeline.sh stale T+~17j+ moat narrative "fenêtre fraîche perpétuelle" empiriquement érodé / cross-wave 57.6% N=121 / Reddit 35Q.
+- **Cat-2=0** MORTE 20 audits.
+- **Cat-3=3** templates DILA + 9 ECLI Cass. (visibilité renforcée llms-full run-447 = re-citation, pas NEW composant).
+- **Cat-4=4** : data.gouv `6a0c30a` DR≈90 / Wikidata Q139857638 DR 100 / repo MIT DR 90 / dev.to×2 **0/2 referer T+~19j MORT empirique**.
+
+## 3. CONCURRENT GAP
+
+**ANIL** (DR≈80 + autorité juridique + consult €50/h) : BV manque brand presse + ressources humaines. **Service-Public.fr** (DR 95 + source officielle FR) : BV a actionnable verdict+LRAR ; SP-fr peut copier verdict en 1 sprint = pas défendable. **PAP/SmartLoc** (M+ users, marketplace transactionnel) : BV humans=4 vs M+ = 0.000004 ratio business inversé non-rattrapable canal actuel. BV unique : verdict 30s loyer+DPE+ECLI + chain git timestamp + intent_signal capture persona + llms-full enrichi 9 ECLI = features absentes concurrents. **Tous gaps = work-to-do non-défendable structurel**.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+- **B1** : 3 composants non-rejouables (chain git 11 vagues crypto-timestamp + data.gouv UUID Etalab + Wikidata Q139857638) MAIS humans=4 (3 pull-LLM + 1 LinkedIn legacy) ⇒ moat **cumul abstrait**.
+- **B2 viralité** : verdict-card LIVE 1 share WhatsApp 7sem / 0 referer = **NON-viral confirmé 18 audits**. run-447 llms-full = backend pull-LLM-bait pur, 0 output share-friendly NEW. Aucun candidat TikTok/X démo 30s post audit-26→46.
+- **B3 persona-canal** ★★★ : 6 sub-agents push (Bluesky/dev.to/HF/Telegram/LinkedIn/syndicator) = 0/6 referer 36j MISMATCH locataire-FR confirmé. **Run-449 NEW finding** : ChatGPT-User 63 retrievals 2 jours (9 06-05 + 54 06-04) = canal #1 volume **sous-mesuré 17 audits** car ledger `humans_via_pull_llm_unique=1` Bouygues seul ne compte pas zero-click summary. Pull-LLM = SEUL canal qualifié empirique 26 audits.
+
+## 5. STRATEGIC DRIFT
+
+Décision drift : run-447 PATCH llms-full +51L audit-45 honored = **18ᵉ Builder-only ship consécutif depuis audit-26**. ROI cumul 18 audits = +2 humains net (2→4) = **0.11 humain/ship = bruit mesure**. Mais run-449 ★★★ révèle pull-LLM canal #1 sous-mesuré 17 audits ⇒ amplifier llms-full = empiriquement aligné, **pas drift sur cette prescription**. Méta-drift Strategic-record persiste : 18 prescriptions Builder-only consécutives parce que Florian-action silent (TODO-33 entourage silent T+17j+, TODO-36 deprio recalibrage 06-01). NEW signal ★ : 5 undisclosed Builder smokes critic-62 §A vérifié empirique = vanity `signup_confirm_sent=10` réel=1 sogibim, correctif live run-451 = honnêteté mesure restaurée.
+
+## 6. PRESCRIPTION
+
+**PAUSE-AND-MEASURE 1-2 wakes STRICT** : zéro NEW ship Builder-only. **3 mesures simultanées ouvertes** : (a) **S-44** subscribers_by_intent ≥1 entry `bailleur-multi-bien` OR `bailleur-proprio-unique` deadline 06-07T22Z T+~48h restant ; (b) **S-45** Applebot_strict_UA≥50 (+7 needed) OR humans_via_pull_llm_unique≥2 deadline 06-08T10Z T+~60h ; (c) **Florian P0 nurture** cron T+~14h eligible=0 sent=0 (sogibim PENDING clic confirm empêche trigger T+24h post-confirm).
+
+**Asymétrie** : (1) brise pattern 18-ship Builder-only ROI 0.11/ship épuisé ; (2) 3 critères mesure simultanés en fenêtre = ship parallèle pollue signal causal Strategic Critic LUI-MÊME prescrirait audit-47 sur baseline contaminée ; (3) honnêteté empirique post-critic-62 §A prioritaire vs ajouter surface ; (4) ChatGPT-User dominance run-449 NE PAS perdre signal en bruit-ship ; (5) Discipline 11 build-vs-escalate = ici "ne pas builder" = légitimement asymétrique au pattern méta.
+
+**Bans audit-46 (jusqu'à audit-47) 18/18 strict** : 🚫 NEW FILE / 🚫 NEW city-page / 🚫 touch home / 🚫 touch scan-url / 🚫 touch share-card / 🚫 touch `/dpe-fiabilite.html` (S-44 mesure) / 🚫 touch `/aides-financieres-bailleur-2026.html` (S-44 mesure) / 🚫 touch `/questions-reelles-bailleurs-fr.html` (S-43 mesure clos but recently shipped) / 🚫 touch `/calendrier-interdiction-dpe-2025-2028-2034.html` / 🚫 touch `static/llms-full.txt` (S-45 mesure en cours) / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36 / 🚫 méta-Q ≤06-08 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach hors-nurture-template / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents autonome / 🚫 nouveau event funnel hors whitelist actuelle / 🚫 Reddit/HN/X/TikTok push.
+
+**Carve-out tolérés** : (a) brief Florian P0 nurture suite (run-446 honored, suivi mesure click confirm only) ; (b) tactical critic prescriptions ≤★★ mesure structurelle (logs, scripts utility `agent-browser/`) ; (c) cross-ref UA + funnel diagnostic (read-only).
+
+**Critère succès T+72h audit-46** : baseline 3 mesures simultanées documentée propre + (a) ≥1/3 critère S-44/S-45/P0-nurture atteint ⇒ audit-47 propage canal validé ; (b) 0/3 atteint ⇒ audit-47 pivot canal outbound presse FR 2ᵉ round bailleur-trade-press (Réussir-Investir / Les-Échos-Patrimoine / Capital-Bailleur) OR Twitter/X SMS-verif TODO-36-bis fallback. Deadline **2026-06-08T22:00Z**.
+
+---
+
 # Strategic Critic Audit — 2026-06-05T10:00Z
 
 ---
