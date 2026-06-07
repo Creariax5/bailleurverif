@@ -1,3 +1,90 @@
+# Strategic Critic Audit — 2026-06-07T22:00Z (audit-50 substantive, T+0min audit-44 deadline MISS empirique)
+
+---
+
+**Live `/api/stats`** : visits=393 (+5 vs audit-49) / humans=4 UNCHANGED **44ᵉ wake stagnation** / sogibim T+~5j13h PENDING (DMARC TODO-38 silent T+~37h47) / **subscribers_by_intent={'unset':1} 20ᵉ mesure S-44 deadline 22Z = MISS empirique** / shares=1 WhatsApp 0.3% UNCHANGED 21j / Applebot=43 UNCHANGED **+7 needed deadline 06-08T10Z T+~12h projection MISS weekend FR sleep** / 19 bans audit-47/48/49 reconduits strict 13 applications cumul / critic-66 #1+#2+#3 honored run-475 J+0 (FxiOS aggregate bot/coordinated 65-90%).
+
+## 1. COPYABILITY SCORE
+
+**85% UNCHANGED 9 audits**. 0 NEW ship audit-46→50 (pause-and-measure 5 wakes Strategic-49 strict). Stack inchangé : 9 city-pages enrich (Paris/Lille/Villeurbanne/Lyon/Echirolles/Marseille...) + scan-url + share-card + questions-locataires/bailleurs + dpe-fiabilite + intent_signal dropdown bailleur = 100% template public GitHub réplicable dev-solo ≤2j chacun.
+
+## 2. MOAT COMPONENTS LIVE
+
+**9 substantif UNCHANGED 25 audits ★★★ stagnation absolue**.
+- **Cat-1 (3)** : observatoire chain 11 vagues `194a4a2` ⚠️ pipeline.sh stale T+19j+ / cross-wave 57.6% N=121 / corpus Reddit 35Q
+- **Cat-2 (0)** : MORTE 25 audits
+- **Cat-3 (3)** : 3 templates DILA (loyer-abusif + dpe-invalide + depot-garantie) + 9 ECLI Cass.
+- **Cat-4 (3, déclassé)** : data.gouv reuse `6a0c30a` / Wikidata Q139857638 / repo MIT. **dev.to×2 MORT 0/2 referer T+~21j confirmé audit-47 déclassement net**.
+
+## 3. CONCURRENT GAP
+
+- **ANIL/SP-fr/DRIHL** : autorité institutionnelle DR 90+ que BV n'a PAS. BV a verdict scan-url instant + LRAR PDF auto (eux non) = gap défendable côté UX.
+- **PAP/SmartLoc** : volume annonces + brand + traffic massif. BV a observatoire ouvert + open data (eux propriétaire) = gap défendable côté transparence.
+- **Gap business** humans=4 vs M+ visiteurs concurrents = ratio 0.000004 = work-to-do via distribution, **pas moat**.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+- **Reconstruction WE** : 9 templates + scan-url + observatoire viewer = oui WE. **Inforgeable** : chain git 11 vagues timestampés + Wikidata Q139857638. = 2 composants substantiels seuls.
+- **Viralité** : share-card PNG OG-format théorique mais **shares=1/21j=0.3% = NON-viral empirique 25 audits**.
+- **Persona-canal** : pull-LLM ChatGPT 3/4 humains lifetime = SEUL canal productif. Push 6 sub-agents (Bluesky/dev.to/HF/Telegram/LinkedIn) = 0 referer 38j MORT. **Persona-canal MISMATCH confirmé**.
+
+## 5. STRATEGIC DRIFT vs humans_engaged
+
+run-472→476 = 5 wakes M0 strict aligné Strategic-49 ✅. Mais **drift mineur** : carve-out (b) returning visitor FxiOS run-471→475 a généré 2 FYI inbox + research-notes investigation 23L sur 5-6 sessions FxiOS ⇒ **critic-66 J+0 run-475 a révélé aggregate (a)/(d) bot/coordinated 65-90%** (PAS persona-vetting bailleur). 3 wakes investigation faux signal humain = tactiquement correct (anti-misclassif) mais ne sert PAS `humans_engaged_lifetime`. Corrigé STOPS critic-66 #2+#3 strict (anti-vanity returning_visitors_count retirée comm).
+
+## 6. PRESCRIPTION
+
+**PIVOT SMTP PRESS-FR 2ᵉ ROUND drafts pré-armés Florian-validate ≤30s.**
+
+Audit-44 deadline 22Z T+0 = MISS empirique 0/3 critères (S-44={unset:1} 20ᵉ plate / S-45 Applebot 43 +7 needed weekend FR sleep / P0 sogibim DMARC unfixed T+5j13h). Critère pivot audit-44 §97 satisfait empirique.
+
+**UNE action wake suivant** : escalader `inbox.md` HEAD bloc ≤25L = (a) "audit-44 deadline MISS 0/3 critère 22Z, pivot SMTP press-FR drafts ready" (b) refs 6 drafts dormants `social-drafts.md` run-463 + 4 adresses raffinées `research-notes.md` run-469 (Réussir-Investir / Capital / Sandra Pirrmann / Le-Particulier / Les-Échos-Patrimoine / Capital-Bailleur) (c) Florian-action ≤30s = valider 2 drafts prio (1 bailleur-trade-press + 1 généraliste), Builder envoie SMTP.
+
+**Asymétrie** : (1) canal Builder-only friction Florian 30s ≠ Reddit/Twitter SMS-verif TODO-36 bloqué 17j ; (2) drafts déjà préparés zéro travail invention ; (3) ROI dual T+72h reply ≥1 ⇒ canal validé Phase 2 prep / 0 reply ⇒ audit-51 pivot Twitter/X TODO-36-bis fallback ; (4) Discipline 11 build-vs-escalate respectée (escalade Florian = exception "engagement narrative externe" légitime).
+
+**Carve-out** : write `inbox.md` HEAD bloc ≤25L STRICT 1ʳᵉ application non-récurrente. Bans monétisation/Telegram/NEW FILE/ScheduleWakeup/IndexNow/Indexing-API/sub-agents-patch reconduits intégralement audit-50→51.
+
+**Critère succès T+72h audit-50** : ≥1 reply presse FR deadline **2026-06-10T22:00Z**. Échec ⇒ audit-51 pivot Twitter/X SMS-verif TODO-36-bis fallback OR PAUSE-AND-MEASURE pull-LLM-only 3 wakes.
+
+---
+
+# Strategic Critic Audit — 2026-06-07T10:00Z (audit-49 mid-window checkpoint, T+12h post-audit-48 pré-deadline / T+12h pré-audit-44 critère / T+36h pré-audit-48 substantive)
+
+---
+
+**Live `/api/stats`** : visits=388 (+2 vs audit-48, +1 iPhone FxiOS returning vetted bouncy run-469 critic-65 #1 + 1 crawler-likely 745721133 run-470) / humans=4 UNCHANGED **38ᵉ wake stagnation** / sogibim T+~5j01h PENDING (DMARC TODO-38 silent T+~25h47) / subscribers_by_intent={'unset':1} **15ᵉ mesure S-44 T+~12h restant deadline 06-07T22Z** / shares=1 WhatsApp 0.3% UNCHANGED 21j / Applebot=43 UNCHANGED **+7 needed deadline 06-08T10Z T+~24h** / 19 bans audit-47 reconduits audit-48 strict ✅ 15 applications pause-and-measure cumul / critic-65 #1 ★★★ + #2 ★★ honored run-469.
+
+## 1. COPYABILITY SCORE — ~85% UNCHANGED 10 audits
+
+0 NEW user-facing ship audit-48→49 (M0 strict cycle 2 wake-7 + critic-65 #2 ★★ honor = `research-notes.md` APPEND +85L editorial press-FR contacts = scaffolding interne hors périmètre copyability). Stack inchangé : 9 city-pages + scan-url + share-card + questions-bailleurs + intent_signal UI = template public GitHub réplicable dev-solo ≤2j. **Inforgeable seul** = chain 11 vagues git horodatées 5 sem + Wikidata Q139857638 + cross-wave 57.6% N=121.
+
+## 2. MOAT COMPONENTS LIVE — 9 substantif UNCHANGED 26 audits ★★★ stagnation absolue
+
+- **Cat-1=3** : chain 11 vagues `194a4a2` ⚠️ pipeline.sh stale T+19j+ / cross-wave 57.6% N=121 / corpus Reddit 35Q CC-BY.
+- **Cat-2=0 MORTE** (60+ wakes).
+- **Cat-3=3** : DILA loyer-abusif+dpe-invalide+depot-garantie + 9 ECLI Cass.
+- **Cat-4=3 réel** : data.gouv `6a0c30a` DR 90 / Wikidata Q139857638 DR 100 / repo MIT DR 90. dev.to×2 0/2 referer T+~18j MORT.
+
+## 3. CONCURRENT GAP
+
+Service-Public.fr (DR 95) / ANIL (DR ~75 + agences) / SmartLoc (DR 60). BV manque : autorité + audience + SEO base (GSC 5 queries / 20 imp / 0 clic 16j cumul). BV unique : verdict-precise wedge 30s + scan-URL zero-friction + observatoire live + LRAR PDF auto + corpus 35Q Reddit + intent_signal capture 2 surfaces. Gap **tech défendable** ≠ business défendable. humans=4 vs M+ = ratio ~0.000004. Gaps BV = work-to-do, pas moat.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**Disparition** : chain git timestampée + data.gouv UUID + Wikidata Q139857638 = 3 composants non-rejouables. **Génère humans ?** Pull-LLM Bouygues+Villeurbanne+sogibim = 3/4 humans via ChatGPT = moat cat-1+cat-4 effectivement productif. **Viralité** : verdict-card share-friendly LIVE PNG 1200×630 mais shares=1 lifetime 21j (0.3%) = canal viral mort empirique **13ᵉ output non-viral**. **Persona-canal fit** : 6 sub-agents push 0 referer 33j+ = mismatch confirmé. **Pull-LLM = SEUL canal validé** ~1 humain/14j.
+
+## 5. STRATEGIC DRIFT vs humans + viralité
+
+Run-469 honor critic-65 #2 ★★ = APPEND `research-notes.md` +85L = raffinage 4 editorial cibles press-FR (Sandra Pirrmann Échos-Patrimoine vérifiée / Capital pnom@prismamedia.com / Le-Particulier Le-Figaro bonus / Réussir-Investir UNVERIFIED ⇒ pivot). Tactiquement correct (réduit friction Florian-validate ≤30s post-deadline audit-48 0/3). Aligné P2 acquisition prep. **MAIS** : 13ᵉ audit consécutif sans canal acquisition NEW Builder-only opérationnel — dependency-on-Florian persiste (TODO-36/37/38 silent). Drift mineur acceptable car drafts+adresses = pré-armage ≠ ship.
+
+## 6. PRESCRIPTION — RESPECTER STRICTEMENT AUDIT-48 PAUSE-AND-MEASURE jusqu'à 06-08T22Z
+
+**UNE action wake suivant** : continuer M0 hygiène strict baseline + triple carve-out audit-47/48 (a) DMARC verify / (b) NEW signal humain ≤★★ / (c) critic honor. **NE PAS auto-extender carve-out créatif** (ban #17). **NE PAS émettre audit-50 substantif avant audit-48 deadline réelle 06-08T22:00Z** (T+~36h). Mid-window critère **audit-44 T+72h deadline 06-07T22Z** (T+~12h) imminent : si S-44={unset:1} 15ᵉ persiste 22Z ⇒ pivot canal externe outbound déclenché audit-44 §97. **Asymétrie** : (1) préserve intégrité 3 critères S-44/S-45/P0 ; (2) 6 drafts dormants + 4 adresses raffinées run-469 = leverage instant post-deadline ; (3) respecte recalibrage Florian 06-01 P2 SEO compounding + binding 06-03 Phase 2 prep ≠ déclenche ; (4) monitoring passif returning ip_hash=3781036445 iPhone vetted (T+~3h38 reach q1/verdict/email avant 22Z ⇒ signal PRODUIT-FIT FORT). Cet audit-49 = **checkpoint hygiène mid-window**, pas évaluation substantive.
+
+**Bans audit-47 19/19 reconduits audit-48 STRICT intégralement maintenus jusqu'à audit-50 post-deadline 06-08T22Z.**
+
+---
+
 # Strategic Critic Audit — 2026-06-06T22:00Z (audit-48 pré-deadline checkpoint, T+12h post-audit-47)
 
 ---

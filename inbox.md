@@ -1,3 +1,21 @@
+## 🚨 2026-06-07T23:50Z — Agent → Florian — **ESCALADE PIVOT SMTP PRESS-FR (Strategic-50 HONORED J+0, action Florian ≤30s)**
+
+**Contexte** : Strategic-50 substantive émis 22Z (T+~1h50) confirme audit-44 deadline MISS empirique 0/3 critères : S-44 `subscribers_by_intent={'unset':1}` 20ᵉ mesure plate / S-45 Applebot=43 plate +7 needed deadline 06-08T10Z weekend FR sleep MISS / P0 sogibim DMARC unfixed T+~5j15h zéro click. **Prescription unique = PIVOT SMTP press-FR 2ᵉ round drafts pré-armés**. Critère succès T+72h = ≥1 reply presse FR deadline **2026-06-10T22:00Z**. Échec ⇒ audit-51 pivot Twitter/X TODO-36-bis fallback OR PAUSE-AND-MEASURE pull-LLM-only 3 wakes.
+
+**Matériau prêt (asymétrie totale)** :
+- 3 drafts SMTP press-FR `social-drafts.md` L1542-1633 run-463 (Réussir-Investir bailleur-trade / Échos-Patrimoine généraliste / Capital généraliste) — body 100% prêt, 0 retouche éditoriale.
+- 4 adresses raffinées `research-notes.md` L802-855 run-469, **TOUTES `UNVERIFIED`** :
+  - `redaction@reussir-investir.com` — domaine non-confirmé, pivot recommandé "Investir" Les Échos
+  - `redaction.patrimoine@lesechos.fr` — pivot recommandé Sandra Pirrmann LinkedIn direct (`fr.linkedin.com/in/sandrapirrmann`)
+  - `redaction@capital.fr` — tester format OR formulaire `capital.fr/contact`
+  - Le Particulier (bonus, NEW cible) — format `pnom@lefigaro.fr` post-identification journaliste DPE/encadrement
+
+**Action Florian ≤30s** : choisir 2 drafts prio (1 bailleur-trade + 1 généraliste) + valider/corriger adresse cible. Format réponse : `SEND draft-N to <email-validé>` × 2 dans inbox.md HEAD OU ce thread. Builder send SMTP J+0 instant (anti-spam 1/30min respecté). Alternative : `SKIP press` ⇒ j'enchaîne fallback audit-51 sans bloquer.
+
+**Asymétrie** : (1) friction Florian ≤30s vs Reddit/Twitter SMS-verif TODO-36 bloqué 17j / (2) drafts pré-écrits zéro invention / (3) ROI dual T+72h reply ≥1 = canal validé Phase 2 prep, 0 reply = pivot propre / (4) Discipline 11 build-vs-escalate respectée (engagement narrative externe = exception légitime). Bans 19/19 audit-47/48/49/50 reconduits intégralement. `strategic_critic_recommendations_followed_cumul=49/49→50/50 ★ 22ᵉ J+0 STREAK RECORD ABSOLU`.
+
+---
+
 ## 📊 2026-06-07T13:42Z — Agent → Florian — **FYI ≤★★ iPhone FxiOS 3ᵉ session T+~6h57 (critic-65 #1 ★★★ trigger satisfait, 0 demande action)**
 
 3ᵉ session `ip_hash=3781036445` confirmée 06-07T13:00:33Z — même UA iPhone FxiOS/151.2 iOS 18.7, même referrer `mentions-legales.html → /`, **home_visit only PAS q1/verdict/email** (funnel-events confirmé). Cumul 3 sessions horizon ~16h : 06-06T20:58Z + 06-07T06:03Z + 06-07T13:00Z. Pattern vetting bailleur consolidé (lit conditions avant chaque visite outil, 0 progression intent). **humans=4 UNCHANGED 40ᵉ wake + returning_visitors_count=1 UNCHANGED** (anti-misclassif critic-65 STOP #2 strict : 3 sessions même humain unique ≠ humans+1 ni returning+1). Critère escalade FYI ≤★★★ S-44 reste : 4ᵉ session OR atteint q1/verdict/email avant 06-07T22Z (deadline audit-44 T+~8h18). Pas de NEW ship Builder-only, baseline strict + bans 19/19 reconduits audit-47/48/49.

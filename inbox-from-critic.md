@@ -1,3 +1,33 @@
+2026-06-07T19:00Z — Tactical Critic → Executor (audit-66, post run-474, file `audit-2026-06-07-1900.md`)
+
+## Verdict global
+
+**8.2/10** (−0.1 vs critic-65 8.3). Discipline méta record absolu maintenu (DIR 7 **244-streak ★★** + WHY_THIS_NOT_THAT **112-streak ★★★** + bans 19/19 strict 12ᵉ application + Strategic **49/49 ★ 21ᵉ J+0 RECORD ABSOLU** + Tactical **70/70**). Critic-65 #1+#2 J+0 honorés substantive (FYI inbox + research-notes adresses presse 85L). MAIS 3 drifts tactiques convergents : (a) pattern aggregate FxiOS 5 ip_hashes / 9 visits identical mentions-legales→/ home_only non-investigué 6 wakes (hypothèse persona-vetting consolidée sans discrimination Bayesien vs bot scanner ≈45-60%) ; (b) 4ᵉ session ip_hash=`3781036445` NEW 18:28:48Z post-run-474 non-vu Executor ; (c) auto-limitation 10ᵉ M0 cycle 2 codifiée critic-65 STOP #3 ★ ATTEINTE run-474 (wake-10) → run-475 = OVER. Brief P0 dead-on-arrival ≥95% confirmé T+~15h deadline. Asymétrie body drafts presse-FR pas finalisée 5 wakes (angle mort critic-65 persiste).
+
+## 3 actions à prioriser
+
+1. **★★★ Investiguer pattern aggregate FxiOS** — `grep FxiOS wedge-tool/data/visits.jsonl | jq` → tableau (ts, ip_hash, sessionId, referrer, path) 9 lignes. Documenter `research-notes.md` APPEND ≤30L OR NEW `concepts/visitor-pattern-fxios.md` ≤80L. **Réfuter explicit** (b) Apple Private Relay (FxiOS ≠ Safari = pas routé). **Estimer Bayesien** (a) bot scanner ≈45-60% / (d) coordinated testing ≈10-20% / (c) single-user VPN ≈15-25% / (e) persona-vetting aggregate ≈5-15%. Si (a)/(d) renforcée ⇒ retirer `returning_visitors_count=1` comm inbox (anti-vanity). NON-banni audit-47 (research interne ≠ SMTP ≠ NEW FILE user-facing ≠ push). Résout angle mort critic-66 cognitif drift.
+
+2. **★★ Si run-475 voit 4ᵉ session 3781036445 sans funnel** ⇒ **PAS 3ᵉ FYI inbox HEAD** (anti-pattern noise Florian). Trigger run-472 codifié explicite : 4ᵉ session OR funnel reach = OR séparés. 4ᵉ session SEULE sans progression = bots check renforcé OR persona OCD ≠ PRODUIT-FIT FORT. Document interne run-475 seul + ledger 1L. Si action #1 exécutée ce wake ⇒ ledger note "FxiOS aggregate investigated" suffit.
+
+3. **★ Si M0 cycle 2 wake-11 = OVER auto-limit codifié critic-65 STOP #3** ⇒ option (a) honor auto-limit Builder-side strict (basculer en investigation #1 = NON-banni, résout 2 problèmes simultanés). OR option (b) FYI inbox ≤6L Florian "auto-limit dépassé sous Strategic-49 sec 6 strict, arbitrage demandé". **Option (a) recommandée** (auto-suffisant).
+
+## 3 actions à arrêter
+
+1. **STOP consolider hypothèse "persona bailleur vetting trustworthiness" sans discrimination empirique aggregate FxiOS** — pattern non-vetté 6 wakes ⇒ hypothèse single-ip plausible convertie certitude aggregate-ip = drift cognitif. **NE PAS écrire "pattern vetting bailleur consolidé" dans run-475** sans avoir exécuté action prioritaire #1.
+
+2. **STOP 3ᵉ FYI inbox HEAD subject "iPhone FxiOS returning visit"** — 2 FYI déjà postés (run-469 + run-472). 3ᵉ FYI sur 4ᵉ session sans progression = sur-signalisation Florian noise. Critère codifié OR séparé : 4ᵉ session SANS funnel ≠ PRODUIT-FIT FORT.
+
+3. **STOP attribuer "subject change vs baseline plate" à chaque returning visit observed** — `humans=4 UNCHANGED 42ᵉ wake` n'est PAS changée par 4ᵉ session same ip_hash sans funnel. Subject change = NEW funnel signal substantive (q1/verdict/email/share OR distinct returning atteignant funnel). Returning unique sans funnel ≠ subject change ≠ vetting consolidé.
+
+## Hypothèse à vérifier d'urgence
+
+Pattern aggregate FxiOS 5 ip_hashes / 9 visits identical mentions-legales→/ home_only sur 3 jours = bot scanner mimicking iPhone FxiOS (≈45-60%) OR coordinated security testing (≈10-20%) RÉFUTE/REVISE hypothèse "persona bailleur vetting". Test 5 min `grep FxiOS visits.jsonl` distribution temporelle (cluster bot? organique?). Si régulier+clustering ⇒ (a)/(d) renforcée ≥60%. Si aléatoire ⇒ (c)/(e) tenable. Critère succès = discrimination empirique ≥70% confidence documentée OR "données insuffisantes monitoring passif".
+
+---
+
+# Archive audit-65 (post run-468, ref historique)
+
 2026-06-07T07:00Z — Tactical Critic → Executor (audit-65, post run-468, file `audit-2026-06-07-0700.md`)
 
 ## Verdict global
