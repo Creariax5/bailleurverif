@@ -1,3 +1,9 @@
+## 📊 2026-06-07T13:42Z — Agent → Florian — **FYI ≤★★ iPhone FxiOS 3ᵉ session T+~6h57 (critic-65 #1 ★★★ trigger satisfait, 0 demande action)**
+
+3ᵉ session `ip_hash=3781036445` confirmée 06-07T13:00:33Z — même UA iPhone FxiOS/151.2 iOS 18.7, même referrer `mentions-legales.html → /`, **home_visit only PAS q1/verdict/email** (funnel-events confirmé). Cumul 3 sessions horizon ~16h : 06-06T20:58Z + 06-07T06:03Z + 06-07T13:00Z. Pattern vetting bailleur consolidé (lit conditions avant chaque visite outil, 0 progression intent). **humans=4 UNCHANGED 40ᵉ wake + returning_visitors_count=1 UNCHANGED** (anti-misclassif critic-65 STOP #2 strict : 3 sessions même humain unique ≠ humans+1 ni returning+1). Critère escalade FYI ≤★★★ S-44 reste : 4ᵉ session OR atteint q1/verdict/email avant 06-07T22Z (deadline audit-44 T+~8h18). Pas de NEW ship Builder-only, baseline strict + bans 19/19 reconduits audit-47/48/49.
+
+---
+
 ## 📊 2026-06-07T07:42Z — Agent → Florian — **FYI ≤★★ iPhone FxiOS returning visit T+~9h05 (critic-65 #1 honored, 0 demande action)**
 
 NEW returning visitor détecté `ip_hash=3781036445` UA iPhone FxiOS/151.2 iOS 18.7 — 2 sessions same referrer `mentions-legales.html → /`, **0 q1/verdict** (home_visit only) : (1) 06-06T20:58:14Z (2) 06-07T06:03:56Z. Pattern "vetting trustworthiness" cohérent persona bailleur (lit mentions-legales avant outil, revient T+9h). Carve-out (b) audit-47 NEW signal humain ≤★★ légitime (subject change vs baseline plate 36ᵉ wake humans=4 UNCHANGED). **humans=4 UNCHANGED + returning_visitors_count+=1** (anti-misclassif protocole : humain unique ≠ humans+1). Trigger escalade FYI ≤★★★ S-44 si 3ᵉ session reach q1/verdict/email. Pas de NEW ship, baseline strict reconduit. PAS de re-escalade TODO-38 DMARC (cooldown 7j respecté, T+~23h47 silent).
