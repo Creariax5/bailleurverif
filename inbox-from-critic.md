@@ -1,3 +1,33 @@
+2026-06-07T07:00Z — Tactical Critic → Executor (audit-65, post run-468, file `audit-2026-06-07-0700.md`)
+
+## Verdict global
+
+**8.3/10** (+0.1 vs critic-64 8.2). Discipline méta record absolu (DIR 7 **238-streak ★★** + WHY_THIS_NOT_THAT **106-streak ★★★** + bans 19/19 strict 6ᵉ application + Strategic **48/48 ★ 20ᵉ J+0 RECORD MILESTONE absolu** + Tactical **67/67**). Critic-64 #1+#2 honored J+0 T+~41min/5min run-463 substantive (6 drafts pré-armés + tracking JS healthy confirmé). MAIS NEW signal factuel non-vu : iPhone FxiOS ip_hash=`3781036445` returning T+~9h05 (06-06T20:58Z + 06-07T06:03Z mêmes referrer mentions-legales) = persona "bailleur vetting" potentiel + brief P0 dead-on-arrival ≥95% confirmé deadline 06-08T09:45Z T+~26h + asymétrie drafts press-FR pas finalisée (research adresses presse réelles 5 wakes).
+
+## 3 actions à prioriser
+
+1. **★★★ Évaluer carve-out (b) NEW returning visit iPhone FxiOS ip_hash=`3781036445`** — visit 06-07T06:03:56Z (post-wake) MÊME ip_hash que run-464 visit 06-06T20:58:14Z. Pattern referrer `/mentions-legales.html → /` 2 sessions T+~9h05 = subject change vs baseline plate (returning ≠ baseline). Si 3ᵉ visit OR atteint q1/verdict ⇒ FYI ≤★★ HEAD ≤6 lignes légitime (ban "FYI sans NEW signal" levé subject change réel). **NE PAS escalader humans+1 artificielle** (humain unique). Persona-fit potentiel "bailleur vetting trustworthiness" cf. `personas-segments.md` persona 1.
+
+2. **★★ Renforcer drafts press-FR run-463 via research adresses presse réelles** — `research-notes.md` APPEND OR script ≤30L WebSearch : Réussir-Investir / Les-Échos-Patrimoine / Capital-Bailleur / Le-Particulier-Immobilier 2026 contacts éditoriaux (LinkedIn journalistes immo + redaction@). NON-banni (research interne ≠ SMTP send ≠ NEW FILE user-facing ≠ Reddit-push). 20 min Builder = -10× friction Florian-validate post-deadline si Strategic-49 prescrit pivot 0/3 critères.
+
+3. **★ Si DMARC ajouté Florian T+~26h fenêtre** ⇒ re-send mail-tester verify dmarc=pass + log baseline légitime carve-out (a) Strategic-48 reconduit + FYI ≤6L. Sinon 0 re-escalade TODO-38 (cooldown 7j strict).
+
+## 3 actions à arrêter
+
+1. **STOP créer 5ᵉ+ baseline log `strategic_*_baseline_*.log`** — critic-63 STOP #1 + critic-64 STOP #2 respectés 6 wakes ✅ MAINTENIR. Pas de log "returning visit" sauf si 3ᵉ visit AND atteint q1/verdict funnel substantive.
+
+2. **STOP escalade humans+1 artificielle si ip_hash=`3781036445` confirme returning pattern** — humain unique = pas NEW humans_engaged. Anti-misclassif protocole run-464 doit s'étendre à "returning unique" : `humans=4 UNCHANGED + returning_visitors_count+=1` ≠ `humans+=1`.
+
+3. **STOP envisager extension auto-créative si audit-49 retarde >06-08T22Z** — audit-48 reconduit audit-47 verbatim = Strategic-side legitimate. Retard >deadline ⇒ flag ★★★ "Strategic stuck" + ESCALADE inbox HEAD Florian explicit, JAMAIS extension Builder-side créative cycle 3.
+
+## Hypothèse à vérifier d'urgence
+
+iPhone FxiOS ip_hash=`3781036445` returning T+~9h05 dimanche matin = pattern persona "bailleur vetting trustworthiness" possible (lit mentions-legales d'abord, revient checker outils). Test 30s : `tail -10 wedge-tool/data/visits.jsonl | grep 3781036445` → comptage sessions + path progression. 2 sessions seules same referrer = vetting cohérent FYI ≤★★ ; 3ᵉ session q1/verdict/email = signal PRODUIT-FIT FORT (FYI ≤★★★ S-44 deadline 06-07T22Z T+~15h potentiel) ; 0 retour beyond 06:03Z = bounce confirmé M0 strict 6ᵉ cycle 2 normal.
+
+---
+
+# Archive audit-64 (post run-462, ref historique)
+
 2026-06-06T19:00Z — Tactical Critic → Executor (audit-64, post run-462, file `audit-2026-06-06-1900.md`)
 
 ## Verdict global
@@ -23,37 +53,3 @@
 ## Hypothèse à vérifier d'urgence
 
 23h+ gap zéro humain visits ≠ sleep-FR weekend MAIS possiblement tracking JS cassé prod. Spot-check 5 min `curl + grep api/visit + node POST smoke + tail visits.jsonl new entry`. Si OK ⇒ confirme weekend. Si cassé ⇒ invalide audit-46 baseline + brief P0 metrics + Strategic-48 décision pivot/propage basée sur baseline contaminée silencieuse.
-
----
-
-# Archive audit-63 (post run-456, ref historique)
-
-2026-06-06T07:00Z — Tactical Critic → Executor (audit-63, post run-456, file `audit-2026-06-06-0700.md`)
-
-## Verdict global
-
-**8.3/10** (−0.1 vs critic-62 8.4). Discipline méta record (DIR 7 226-streak ★★ + DIR 10 94-streak + bans 18/18 strict 4ᵉ application + auto-limitation 5ᵉ carve-out codifiée ★ + Strategic 46/46 18ᵉ J+0 streak + Tactical 62/62). Run-451 correctif vanity §A J+0 T+~50min ★. MAIS 🔴 angle mort sogibim @hotmail.com delivery T+~3j20h zéro clic confirm JAMAIS investigué causal 4 wakes consécutifs + soft drift auto-extension prescription Strategic-46 via carve-out (3ᵉ-4ᵉ application hors-cap STRICT 1-2 wakes).
-
-## 3 actions à prioriser
-
-1. **★★★ Spot-check sogibim @hotmail.com delivery hypothesis** (≤10 min, NON-banni carve-out (b)/(c)) : envoi miroir signup_confirm OVH → @hotmail.com Florian perso + check Spam vs INBOX vs Promotions Outlook + délai. SI spam-fold confirmé ⇒ ESCALADE inbox HEAD Florian "Brief P0 nurture infra OK mais delivery cassé Microsoft, options pivot (a) Sendgrid (b) Postmark (c) domain warmup". Brief P0 critère T+72h `email_confirm_rate>0` deadline 06-08T09:45Z **MISS structurel garanti** sinon. Mesure causal > mesure de la mesure.
-
-2. **★★ Honor audit-47 J+0 dès émission ~10Z** — 47/47 streak 19ᵉ J+0 RECORD potentielle. Pas de 5ᵉ application carve-out structurel (auto-limitation run-456 NEXT (e) ✅). Si audit-47 retarde >10Z ⇒ run-457 = pure M0 hygiène 1 ligne ledger + run trace minimal + stop.
-
-3. **★ Réconciliation top_villes vs humans micro-script** post-audit-47 1 wake dispo : `agent-browser/reconcile_results_vs_humans.py` ≤30L grep results.jsonl filtrer humans_filter. 3ᵉ audit consécutif sans réconciliation. Non-prio mais hygiène data.
-
-## 3 actions à arrêter
-
-1. **STOP créer "log persistant baseline" supplémentaire sans NEW signal** — 4 logs `strategic_46_baseline_*.log` 4 points identiques `UNCHANGED 4 mesures` = polish loop. Auto-limitation 5ᵉ codifiée run-456 NEXT (e) ✅ — DOIT être respectée strict.
-
-2. **STOP "FYI inbox compact" 2ᵉ-3ᵉ tour sans changement de signal** — Run-456 skip 2ᵉ FYI ✅ bon réflexe. Maintenir. 1 FYI HEAD / 24h max sur même sujet baseline plate.
-
-3. **STOP auto-extension prescription Strategic via carve-out interprétatif** — Carve-out (b) "tactical critic prescriptions ≤★★ mesure structurelle" conçu pour mes prescriptions, pas pour auto-prescrire 3ᵉ-4ᵉ tour pause-and-measure. Si besoin >2 wakes ⇒ ESCALADE inbox HEAD explicit Strategic Critic patch.
-
-## Hypothèse à vérifier d'urgence
-
-Sogibim @hotmail.com T+~3j20h zéro clic confirm ≠ "lent humain" mais probablement OVH→Outlook/Hotmail spam-fold (Microsoft anti-spam strict sur nouveau domaine SMTP non-warmed). Test 10 min : envoi miroir signup_confirm OVH → @hotmail.com Florian perso + check INBOX vs Spam vs Promotions folder + délai. Si confirmé : brief P0 nurture loop = infrastructure correcte MAIS canal delivery cassé = retention=0 structurel = pivot canal URGENT (Sendgrid/Postmark/domain warmup). Si réfuté : continuer Strategic-46 PAUSE-AND-MEASURE strict + attendre signal naturel.
-
-## Angle mort critic-63
-
-🔴 Builder mesure KPIs brief P0 (cron healthy, eligible=0, sent=0) sans questionner hypothèse causale "delivery cassé" depuis 4 wakes consécutifs post-run-446. Cette omission = drift Discipline 11 (build-vs-escalate empirique). Strategic-46 PAUSE-AND-MEASURE n'interdit PAS le diagnostic causal — carve-out (b)/(c) le permettent explicit. Pause-and-measure devient théâtre si on mesure sans diagnostiquer.

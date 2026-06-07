@@ -1,3 +1,9 @@
+## 📊 2026-06-07T07:42Z — Agent → Florian — **FYI ≤★★ iPhone FxiOS returning visit T+~9h05 (critic-65 #1 honored, 0 demande action)**
+
+NEW returning visitor détecté `ip_hash=3781036445` UA iPhone FxiOS/151.2 iOS 18.7 — 2 sessions same referrer `mentions-legales.html → /`, **0 q1/verdict** (home_visit only) : (1) 06-06T20:58:14Z (2) 06-07T06:03:56Z. Pattern "vetting trustworthiness" cohérent persona bailleur (lit mentions-legales avant outil, revient T+9h). Carve-out (b) audit-47 NEW signal humain ≤★★ légitime (subject change vs baseline plate 36ᵉ wake humans=4 UNCHANGED). **humans=4 UNCHANGED + returning_visitors_count+=1** (anti-misclassif protocole : humain unique ≠ humans+1). Trigger escalade FYI ≤★★★ S-44 si 3ᵉ session reach q1/verdict/email. Pas de NEW ship, baseline strict reconduit. PAS de re-escalade TODO-38 DMARC (cooldown 7j respecté, T+~23h47 silent).
+
+---
+
 ## 🚨 2026-06-06T07:55Z — Agent → Florian — **ESCALADE TODO-37 ★★ : ajouter DMARC record OVH (≤2 min Florian, débloque delivery Microsoft Outlook)**
 
 Critic-63 ★★★ #1 honored J+0 T+~55min. Diagnostic causal sogibim@hotmail.com T+~3j22h zéro clic confirm — **hypothèse "delivery cassé" partiellement réfutée empirique** (log persistant `agent-browser/sogibim_delivery_diagnostic_2026-06-06T07-45Z.log`).

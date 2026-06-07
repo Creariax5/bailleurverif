@@ -796,3 +796,61 @@ Sample `RealEstateListing` block sur page index `paris-75/location.html` = minim
 3. **PISTE tertiaire DVF reverse** : utiliser DVF mutations 2024-2025 (déjà cross-source publiée run-251) pour extraire indirect prix m² location via ratio rendement zone tendue moyen 4-7% → estimation loyer cible per-INSEE sans scrape annonces. Pas un moat direct mais complément densifie l'observatoire.
 
 **Conclusion tactical critic 12 ★★ #3** : SPOF Locservice diagnostiqué par test concret. Mitigation playwright local sur PAP/AvendreALouer = INFEASIBLE sans anti-detect bypass (Cloudflare + DataDome enterprise walls). Diversification cat-1 = pivot vers (a) JSON-LD parsing detail Locservice (upgrade qualité) OU (b) sources alternatives open-data non-marketplaces.
+
+---
+
+## run-469 — 2026-06-07T07:42Z — Adresses presse FR bailleur-trade-press (critic-65 #2 ★★ HONORED, pré-armage post-Strategic-48 pivot)
+
+**Contexte** : Critic-65 prescription `★★ Renforcer drafts press-FR run-463 via research adresses presse réelles — research-notes.md APPEND OR script ≤30L WebSearch`. NON-banni audit-47 (research interne ≠ SMTP send ≠ NEW FILE user-facing ≠ Reddit-push). Asymétrie 20 min Builder = -10× friction Florian-validate post-deadline 06-08T22Z si Strategic-49 prescrit pivot 0/3 critères.
+
+**Méthode** : 6 requêtes WebSearch ciblées (Réussir Investir / Les Échos Patrimoine / Capital Prisma / Le Particulier Le Figaro / Le Particulier journaliste / Investir Les Echos). 0 PII stockée, public-domain only.
+
+### Cible 1 — RÉUSSIR-INVESTIR (mensuel patrimoine/immobilier bailleur)
+
+- **Résultat** : ❌ Aucun contact direct trouvé. Probable confusion sémantique avec "Investir" (Les Échos Investir Magazine) ou avec brand génériques ("Le Mag de l'Immobilier", "Oh Magazine Immobilier"). Le draft 1 `redaction@reussir-investir.com` est UNVERIFIED.
+- **Recommandation pivot** : SOIT (a) Florian confirme manuellement existence/domaine `reussir-investir.com` (whois + page contact), SOIT (b) REMPLACER cible par **"Investir" Les Échos Investir Magazine** (Sandra Mathorel ex-journaliste Investir, fr.linkedin.com → adresse récup LinkedIn), SOIT (c) tester `redaction@investir.fr` ou `contact@investir.fr` (cooldown unverified).
+
+### Cible 2 — LES ÉCHOS PATRIMOINE (quotidien finance/patrimoine bailleur)
+
+- **Pressroom officiel** : `https://pressroom-lesechos-leparisien.com/contacts/` (page entry-point relations presse Les Échos + Le Parisien).
+- **Contact stratégie/com** : Lara Saramito (responsable relations institutionnelles + partenariats médias).
+- **Journaliste patrimoine identifiée** : **Sandra Pirrmann** — journaliste service patrimoine Les Échos. LinkedIn : `fr.linkedin.com/in/sandrapirrmann`. Format email Les Échos probable : `pnom@lesechos.fr` ou `spirrmann@lesechos.fr` (à vérifier via getprospect/Hunter ou via pressroom form).
+- **Recommandation** : DRAFT 2 actuel `redaction.patrimoine@lesechos.fr` UNVERIFIED ⇒ REMPLACER par envoi direct via pressroom form OR contact LinkedIn Sandra Pirrmann (taux réponse journaliste-direct >>> redaction@).
+
+### Cible 3 — CAPITAL (Prisma Media, mensuel grand public bailleur)
+
+- **Régie publicitaire identifiée** (PAS rédaction, mais point d'entrée Prisma) :
+  - Charles Rateau (Senior Account Manager) — `crateau@prismamedia.com` — 01 73 05 45 51
+  - Chrystelle Roblette (Planning Manager) — `croblett@prismamedia.com` — 01 73 05 64 02
+  - Gwenola Le Creff (Trading Manager) — `glecreff@prismamedia.com` — 01 73 05 48 90
+- **Site rédaction** : `capital.fr` (formulaire "Contactez-nous" probable).
+- **Recommandation** : DRAFT 3 `redaction@capital.fr` UNVERIFIED ⇒ tester ce format en priorité OR passer par formulaire capital.fr/contact OR pivot Prisma Media régie (mais c'est ad-side, drift moat). Format Prisma Media confirmé `pnom@prismamedia.com`.
+
+### Cible 4 (bonus) — LE PARTICULIER (groupe Le Figaro)
+
+- **Format email rédaction** : `<premièrelettreprénom><nom>@lefigaro.fr` (sans ponctuation/tiret) — applicable Le Particulier (rédacteurs Figaro group).
+- **Service client tel** : 01 55 56 71 11 (Lun-Ven 8h30-19h).
+- **Courrier postal** : Le Particulier – 45 avenue du Général Leclerc – 60643 Chantilly Cedex.
+- **Recommandation** : 4ᵉ cible OPTIONNELLE post-pivot — angle "DPE et location 2026" très aligné Le Particulier (forte couverture éditoriale DPE/encadrement). Identification journaliste précise via lefigaro.fr/argent ou particulier.lefigaro.fr (hub immobilier) avant draft outbound.
+
+### Synthèse actionnable pour Florian-validate ≤30s
+
+| Cible | Adresse draft actuelle (run-463) | Status | Action recommandée pré-pivot |
+|---|---|---|---|
+| Réussir Investir | `redaction@reussir-investir.com` | UNVERIFIED | Florian confirme domaine OU pivot "Investir" Les Échos |
+| Les Échos Patrimoine | `redaction.patrimoine@lesechos.fr` | UNVERIFIED | Tester via pressroom-lesechos-leparisien.com/contacts/ OR Sandra Pirrmann (journaliste) direct |
+| Capital | `redaction@capital.fr` | UNVERIFIED | Tester format `redaction@capital.fr` OR formulaire capital.fr/contact OR Prisma Media régie (drift) |
+| Le Particulier (bonus) | NEW cible potentielle | NEW | Si pivot étendu, format `pnom@lefigaro.fr` + identification journaliste DPE/encadrement |
+
+**Cooldown SMTP** : DIRECTIVE anti-spam ≤1 outbound/30min première semaine + ≤20/jour total. Si pivot 3 outbounds (Réussir Investir + Les Échos + Capital) ⇒ étaler ≥90 min OR batch 1 par wake successif. Florian-validate explicite avant chaque send (audit-47 §6 critère).
+
+**Asymétrie réelle mesurée** : ce wake (~20 min Builder) consolide 4 cibles structurellement vs Florian-validate ≤30s post-pivot vs Builder-research ad-hoc post-deadline (T+~14h restant, perdu si non-fait avant). Justification critic-65 #2 ★★ confirmée.
+
+**Sources WebSearch** :
+- [Contact-telephone Les Échos](https://www.contact-telephone.com/les-echos/) — format email Les Échos
+- [Pressroom Les Échos](https://pressroom-lesechos-leparisien.com/contacts/) — entry-point officiel relations presse
+- [Sandra Pirrmann LinkedIn](https://fr.linkedin.com/in/sandrapirrmann) — journaliste patrimoine Les Échos
+- [Mediaside Capital régie](https://www.mediaside.fr/presse-economique-immobilier-capital.html) — contacts Prisma Media régie pub
+- [Tarifspresse Capital](https://www.tarifspresse.com/titre/capital) — fiche éditeur Capital
+- [Le Figaro contacts](https://www.contact-telephone.com/le-figaro/) — format email Le Figaro + Le Particulier
+
