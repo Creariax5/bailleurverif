@@ -854,3 +854,26 @@ Sample `RealEstateListing` block sur page index `paris-75/location.html` = minim
 - [Tarifspresse Capital](https://www.tarifspresse.com/titre/capital) — fiche éditeur Capital
 - [Le Figaro contacts](https://www.contact-telephone.com/le-figaro/) — format email Le Figaro + Le Particulier
 
+
+---
+
+## 2026-06-07T19:42Z — FxiOS aggregate pattern investigation (critic-66 #1 ★★★ honor)
+
+**Data** (`grep FxiOS visits.jsonl`, N=10 over 06-05T07:07Z→06-07T19:15Z, ~60h window) :
+- **4 ip_hashes distinct** (NOT 5 critic estimate) : `3781036445`×5 / `44156020`×2 / `6106156241`×2 / `127390801`×1
+- **9/10 referrer = `mentions-legales.html`** ; 1/10 direct (44156020 t0 puis mentions-legales 3min après)
+- **100% path=`/` home_visit only** ; 0% funnel reach (0 q1 / 0 verdict / 0 email / 0 share)
+- **Pattern temporel 3781036445** : 06-06T20:58 → 06-07T06:03 (+9h05) → 13:00 (+6h57) → 18:28 (+5h28) → **19:15 (+47min)** = 5 sessions 22h17, intervalles décroissants atypique humain
+- **NEW 4ᵉ session 19:15:58Z** post-run-474 = 5ᵉ visit cumul 3781036445 (critic-66 #2 ★★ STOP "PAS 3ᵉ FYI inbox HEAD" RESPECTÉ run-475)
+
+**Réfutation (b) Apple Private Relay** : Apple iCloud Private Relay couvre **Safari + DNS uniquement** ([Apple docs](https://support.apple.com/en-us/102602)). Firefox iOS (FxiOS) utilise networking stack Mozilla, PAS routé Private Relay ⇒ same ip_hash sur multi-visits FxiOS = same NAT/origin, PAS rotation Private Relay. **REFUTED 0%**.
+
+**Bayésien révisé post-data** (vs critic-66 estimates) :
+- (a) **bot scanner mimicking FxiOS** : ≈**55-70%** (RENFORCÉ vs 45-60% : 4 ip_hashes distincts entrée identique mentions-legales→/ = scanner suivant footer-link pattern, plus 3781036445 intervalle 47min final inhabituel humain)
+- (b) Apple Private Relay : **0% REFUTED**
+- (c) single-user VPN multi-IP : ≈**10-15%** (DOWN vs 15-25% : VPN rotate typically faster, 4 ip_hashes sur 60h = pas pattern VPN rotatif)
+- (d) coordinated security testing : ≈**10-20%** UNCHANGED
+- (e) persona-vetting aggregate genuine : ≈**5-10%** (DOWN vs 5-15% : multi-user same exotic path mentions-legales→/ statistiquement improbable spontané)
+
+**Conclusion** : aggregate FxiOS dominé (a)/(d) ≈65-90% cumul ⇒ **NE PAS compter `returning_visitors_count=1`** (anti-vanity critic-66 #3) ; **NE PAS écrire "persona bailleur vetting consolidé"** (critic-66 STOP #1) ; **3781036445 retirer comm "returning humain"** inbox prochains wakes (subject change ≠ returning unique sans funnel par STOP #3). Discrimination confidence ≥70% atteinte. NEW signal substantive = 4ᵉ/5ᵉ session avec funnel reach (q1/verdict/email), PAS visits home_only répétés.
+
