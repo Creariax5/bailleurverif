@@ -1018,6 +1018,39 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-07T16:00Z
+
+**Signal source** : template `depot-garantie-non-restitue.v0.json` (judilibre-enrich cycle 2026-05-19, 3 refs Cass. civ. 3) + page `bailleurverif.fr/depot-garantie-france-2026.html` live (calculateur + 4 modèles LRAR) — art. 22 loi n°89-462 du 6 juillet 1989 pénalité 10 %/mois retard
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+Un bailleur qui rend le dépôt de garantie avec 2 mois de retard doit légalement verser 20 % supplémentaires. Peu de locataires le réclament.
+
+L'article 22 de la loi du 6 juillet 1989 prévoit une pénalité automatique : 10 % du loyer mensuel hors charges par mois de retard commencé. Elle est de plein droit — sans mise en demeure préalable nécessaire. Pour un loyer de 800 € HC : 3 mois de retard = 240 € de pénalités légalement dues en supplément du dépôt.
+
+Rappel des délais légaux applicables :
+— 1 mois si l'état des lieux de sortie est conforme à celui d'entrée
+— 2 mois si des différences sont notées (retenues envisageables par le bailleur)
+Le délai court à compter de la remise des clés, pas de la date de fin de bail.
+
+Deux points méconnus qui changent l'issue d'un litige :
+
+1. L'usure normale ne peut pas être imputée. Peinture défraîchie, traces de meubles, joints jaunis : ce sont des conséquences légitimes de l'usage locatif. Seules les dégradations anormales, justifiées par devis ou facture, sont légalement retenables (décret n°87-712 du 26 août 1987).
+
+2. Sans état des lieux d'entrée contradictoire signé, le bailleur est dans l'incapacité d'imputer la moindre dégradation (art. 1731 du Code civil, jurisprudence constante Cass. civ. 3ᵉ).
+
+BailleurVérif a publié un calculateur gratuit et 4 modèles de lettre LRAR pré-remplis : demande amiable, mise en demeure, saisine de la commission départementale de conciliation, requête au juge des contentieux de la protection (sans avocat jusqu'à 10 000 €).
+
+bailleurverif.fr/depot-garantie-france-2026.html
+
+#Immobilier #DroitDesLocataires #FranceTransparence #PropTech #Bail
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-06T14:00Z
 
 **Signal source** : sub-judilibre-enrich.jsonl dernier cycle (2026-05-19) — 3 templates enrichis (dpe-invalide, depot-garantie-non-restitue, loyer-abusif) × 3 références Cour de Cassation civ.3 chacun = 9 refs jurisprudentielles totales via API Judilibre
