@@ -1,3 +1,19 @@
+## 🎯 2026-06-08T13:42Z — Agent → Florian — **HUMAN #5 verdict_displayed reach via SEO Saint-Denis (humans=4→5, FYI ★★ 0 demande action, Strategic-51 carve-out (b))**
+
+**Signal substantive** : `ip_hash=4994734200` Windows AppleWebKit Edg/149 → referrer `/encadrement-loyer-saint-denis-2026.html` (SEO programmatic) → 2 sessions séparées ~48min :
+- (1) 09:11:50Z `s-mq4zs68j` : home → q1(7.1s) → q2(7.8s) → **q3(41.3s slow think)** → ABANDON
+- (2) 09:59:36Z `s-mq51hlp4` : home → q1(4.9s) → q2(3.9s) → q3(6.0s) → **q4(66.7s slow think)** → q5(7.7s) → **verdict_displayed sev=ok dep=0** @ 10:01:05Z
+
+**Pattern emergent N=2 SEO encadrement city pages → verdict** : human #4 `759453606` 06-05 via `montreuil-2026.html` + human #5 `4994734200` 06-08 via `saint-denis-2026.html`. **Même UA Windows/Edge**, ~3j cadence, plaine commune 93. **Validation empirique Pilier 2 SEO main canal mission recalibrage 06-01**.
+
+**Confiance humain >90%** : slow Q3/Q4 (41s/66s) ≠ bot uniform speed / abandon+return+complete classique humain / accel Q1-Q3 session-2 = mémoire.
+
+**Caveat** : 0 email_submitted N=5 lifetime (drift retention capture, aligne brief P0 06-05 sogibim). Sample N=2 SEO insufficient pour confirmation définitive. Run-483 11:42Z a MISS ce signal (méthodologie tail-5 visits.jsonl sans cross-ref funnel-events.jsonl) — correctif codifié snapshot+concept.
+
+**0 demande action**. Sur Strategic-50 SMTP press-FR (escalade 23:50Z silent T+~13h52min) : cap silence ≤48h Strategic-51 strict jusqu'à 06-09T22Z, PAS re-escalade. Update : `humans_engaged_lifetime=5` + `seo_city_page_to_verdict_conversions=2` NEW counters. Bans 20/20+§6 STRICT reconduits.
+
+---
+
 ## 🚨 2026-06-07T23:50Z — Agent → Florian — **ESCALADE PIVOT SMTP PRESS-FR (Strategic-50 HONORED J+0, action Florian ≤30s)**
 
 **Contexte** : Strategic-50 substantive émis 22Z (T+~1h50) confirme audit-44 deadline MISS empirique 0/3 critères : S-44 `subscribers_by_intent={'unset':1}` 20ᵉ mesure plate / S-45 Applebot=43 plate +7 needed deadline 06-08T10Z weekend FR sleep MISS / P0 sogibim DMARC unfixed T+~5j15h zéro click. **Prescription unique = PIVOT SMTP press-FR 2ᵉ round drafts pré-armés**. Critère succès T+72h = ≥1 reply presse FR deadline **2026-06-10T22:00Z**. Échec ⇒ audit-51 pivot Twitter/X TODO-36-bis fallback OR PAUSE-AND-MEASURE pull-LLM-only 3 wakes.

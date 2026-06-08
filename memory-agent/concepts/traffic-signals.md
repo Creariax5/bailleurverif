@@ -1,10 +1,44 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Run-371 — 3 NEW home_visits 27T07:11/09:43/11:41Z cross-ref = 2 BOT (YandexRender + GoogleOther) + 1 DEV (GitHub referrer Safari 26) = 0 humain locataire-cible NEW. counter direct_humans_after_ua_filter_lifetime=63 UNCHANGED post-filter (raw 160→163). Run-368 — extension méthodologie 5ᵉ visit Chrome/114 BOT-likely. Run-366 — méthodologie codifiée 40% post-filter ratio.
+description: Snapshot trafic réel humains + bots. Run-484 — HUMAN #5 verdict reach via SEO Saint-Denis programmatic page (humans=4→5). Pattern N=2 SEO encadrement city pages → verdict (Montreuil 06-05 + Saint-Denis 06-08, même UA Windows/Edge ~3j cadence) valide Pilier 2 SEO main canal mission. Run-449 — ChatGPT-User retrieval dominance.
 type: project
 ---
 
 # Traffic Signals — snapshot courant
+
+## Run-484 PATTERN N=2 SEO encadrement city pages → verdict_displayed ★★ (Pilier 2 validation empirique)
+
+**Détection 2026-06-08T13:42Z** : 5ᵉ humain distinct atteint verdict_displayed lifetime, **2ᵉ via SEO programmatic encadrement city page**. Empilage chronologique 5 verdict reaches lifetime :
+
+| # | ip_hash | First verdict | Referrer source | UA |
+|---|---|---|---|---|
+| 1 | `2576024087` | 2026-05-23 04:34Z | (early, pre-SEO push) | mixed |
+| 2 | `9683696272` | 2026-05-29 22:23Z | (early) | mixed |
+| 3 | `6061608912` | 2026-06-02 09:48Z | (sogibim → subscriber) | mixed |
+| **4** | `759453606` | **2026-06-05 08:11Z** | **`/encadrement-loyer-montreuil-2026.html`** | **Windows AppleWebKit Edg/148** |
+| **5** | `4994734200` | **2026-06-08 10:01Z** | **`/encadrement-loyer-saint-denis-2026.html`** | **Windows AppleWebKit Edg/149** |
+
+**Pattern emergent N=2** : 2 dernières conversions verdict_displayed (06-05 + 06-08) = **même UA Windows/Edge** + **même type referrer** (programmatic encadrement city page) + **~3j cadence**. Différentes villes (Montreuil 93 + Saint-Denis 93 = **plaine commune zone encadrement loyers**), différents ip_hash, mais browser+canal identiques. Hypothèse PRIMARY = canal **SEO organique programmatic city page → home → wedge → verdict** = canal Pilier 2 mission recalibrage 06-01.
+
+**Détail session human #5** (`4994734200` 06-08) :
+- Session 1 `s-mq4zs68j-tqy7w` 09:11:50Z : home_visit → q1(7.1s) → q2(7.8s) → q3(41.3s slow think) → **ABANDON Q3**
+- Gap 47min45s
+- Session 2 `s-mq51hlp4-w1tcl` 09:59:36Z : home_visit → q1(4.9s) → q2(3.9s) → q3(6.0s) → q4(66.7s slow think) → q5(7.7s) → **verdict_displayed sev=ok dep=0** @ 10:01:05Z
+
+**Signature humaine forte** (confiance >90%) :
+- Slow Q3 (41s) + slow Q4 (66s) = lecture/réflexion humaine ≠ bot uniform speed
+- Abandonment Q3 + retour 48min plus tard + completion = classique humain (revient finir)
+- Q answer speeds accelerate session-2 sur Q1/Q2/Q3 (already-seen questions = mémoire)
+
+**Implication moat cat-4 + Pilier 2** : SEO compounding = **validation empirique N=2 sur ~3j window**. Pages programmatiques `encadrement-loyer-<ville>-2026.html` = vrai canal acquisition (PAS vanity SEO). Critère mission M3 `gsc_indexed_pages ≥ 30 + humans_engaged ≥ 30 + verdict_displayed/q1 ≥ 70%` = trajectoire encourageante (5 humans ~M0+22j cadence ~3j ⇒ projection M3 humans ~30 atteignable si cadence maintenue + N pages indexées scale).
+
+**Caveat #1 — sample size N=2 insufficient** : 2 conversions ne valide PAS définitivement SEO canal #1. Cadence ~3j peut être coïncidence. Re-évaluer post N=5 verdict via SEO pages distinct.
+
+**Caveat #2 — pas d'email_submitted N=5** : aucun des 5 humans n'a soumis email post-verdict. share=1 lifetime. Funnel `verdict_displayed → email_field_focused` = 7→1 lifetime (14% taux), `email_submitted` = 0. Wedge produit-fit OK mais retention/capture = MIA. Drift produit-fit signal (brief P0 Florian 06-05).
+
+**Caveat #3 — run-483 11:42Z miss** : méthodologie tail-5 visits.jsonl seul (PAS funnel-events cross-ref) = latence détection ≥2h. Future wakes DOIVENT cross-ref funnel-events.jsonl pour TOUTE NEW ip_hash visits, sinon humans count drift.
+
+**Counter dérivé** : `seo_city_page_to_verdict_conversions=1→2 NEW counter run-484` (Montreuil 06-05 + Saint-Denis 06-08). `humans_engaged_lifetime=4→5` (+1 SEO Saint-Denis). `humans_via_seo_programmatic_lifetime=2 NEW counter`.
 
 ## Run-449 SIGNAL ChatGPT-User RETRIEVAL DOMINANCE ★★★ (pull-LLM canal #1 confirmé empirique, sous-mesuré 17 audits)
 
