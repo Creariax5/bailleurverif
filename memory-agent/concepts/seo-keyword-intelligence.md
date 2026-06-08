@@ -77,3 +77,34 @@ Avant chaque ship NEW page OR title rewrite, **mapper la requête cible GSC** (e
 
 - **H1** : title #2 56c + meta 150c → CTR > 0% sur même volume imp (~7-15 imp/14j). Si oui ⇒ propager pattern aux 4 autres URLs flaggées. Si non ⇒ revoir copywriting (pas longueur).
 - **H2** : Florian nouveau batch GSC ≤ 2026-06-10 confirme #2 maintient imp post-rewrite (pas Google-deboost).
+
+## Audit dedup risk city pages programmatic (run-488 wake-8 substantive)
+
+**Contexte** : critic-67 STOP #3 codifié auto-limit wake-8 = basculement substantive research-only non-banni. Wake-8 trigger atteint (M0 cycle 3 wake-7→8). Mission 06-01 binding : *"chaque ville-page = data unique (chiffres locaux observatoire, FAQs locales, arrêté préfectoral exact, jurisprudence locale). Sinon Google déduplique → 1-2 indexées sur 50."*
+
+**Méthode** : `wc -l encadrement-loyer-*-2026.html` sur les 33 pages city + `diff` 2-à-2 sur 4 villes (Montreuil/Saint-Denis/Aubervilliers/Pantin).
+
+**Findings empiriques** :
+
+| Tier | Lignes | N | Villes | Dedup risk |
+|---|---|---|---|---|
+| **Boilerplate strict** | 255L exactes | **21** | Aubervilliers, Bagnolet, Bobigny, Bondy, Epinay-sur-Seine, Hellemmes, Ile-Saint-Denis, La-Courneuve, Le-Pre-Saint-Gervais, Les-Lilas, Lomme, Montpellier, **Montreuil**, Noisy-le-Sec, Pantin, Pierrefitte-sur-Seine, Romainville, **Saint-Denis**, Saint-Ouen, Stains, Villetaneuse | **MAX (probable Google dedup ≥80%)** |
+| **Light diff** | 260-262L | 5 | Lille, Eybens, Fontaine, Grenoble, Saint-Martin-d-Heres | MOYEN |
+| **Différencié substantif** | 306-383L | 7 | Paris, Marseille, Echirolles, Villeurbanne, Bordeaux, Lyon, France (hub) | FAIBLE |
+
+**Diff Montreuil ↔ Saint-Denis (255L vs 255L)** : 12 chunks de diff isolant uniquement (a) city name (b) prix €/m² nu+meublé (c) date "1er X 2021" (d) ancres `?q=City`. Aucune FAQ locale, aucune référence arrêté préfectoral numéro, aucune jurisprudence locale, aucune donnée observatoire ville-spécifique. Texte ELAN boilerplate identique 90%+.
+
+**Cohérence avec GSC live (5 requêtes 16j)** : seule Villeurbanne (330L, enrich strategic-34) est dans les requêtes captées. Aucune des 21 boilerplate-255L n'apparaît en GSC ⇒ **dedup déjà actif Google probable**.
+
+**Conséquence Mission Pilier 2 SEO compounding** : objectif 50+ pages indexées @ M3 INATTEIGNABLE en l'état si 21/33 city pages sont dedup-éligibles. Cible binding mission = data unique par ville (FAQs locales DILA-grounded / arrêté préfectoral numéro+date / jurisprudence locale Cass. + ECLI / chiffres observatoire ville-spécifique).
+
+**Lien candidate humans #4+#5** : reach via Montreuil + Saint-Denis (les 2 boilerplate-255L) ⇒ si signal réel (post-caveat self-test ≥50%), Google sert encore les pages mais dedup peut frapper anytime. Si self-test, no real signal SEO city programmatic actuellement.
+
+**Actions queue NEXT cycle (bans-lift dependent — PAS ship ce wake)** :
+- C1 : enrich 4 plus prioritaires des 21 boilerplate (Saint-Denis / Montreuil / Aubervilliers / Pantin = cluster 93 où humans #4+#5 sont arrivés) à pattern Villeurbanne (FAQ locale + arrêté préfectoral + observatoire local).
+- C2 : audit Bondy/Romainville/Bagnolet (les plus boilerplate-pur, dedup imminent).
+- C3 : critère ship-gate `€X` par ville = "would they (locataire 93) pay €X" si verdict + LRAR pré-rempli local-specific.
+
+**Discipline** : ship-gate Mission §1.1 + bans 20/20 audit-51 strict ⇒ pas de ship ce wake. Documenté pour exploitation post-lift (Florian-validate ou audit-52 06-10T22Z carve-out).
+
+**Reference** : `decisions/2026-05-19-strategic-9-loyer-legal-paris-shipped.md` (1ʳᵉ proof-of-pattern Paris différencié) + `concepts/competitive-positioning.md` (city-page data unique = différenciateur vs ANIL/SP-fr).

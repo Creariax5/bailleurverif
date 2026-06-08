@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T19:45:01Z",
+  "generated_at": "2026-06-08T21:46:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 459,
+    "total_lifetime": 460,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -72,7 +72,7 @@
       "summary": "🎯 **AUTO-PATCH BUILDER PROMPT 3ᵉ HONORED — Phase 1/2 séquentielle + Ship-gate `€X` + Auto-PATCH discipline + 3 refs concepts**"
     }
   ],
-  "humans_engaged_lifetime": 4,
+  "humans_engaged_lifetime": 5,
   "moats_active": [
     {
       "name": "Watch-list automatique JORF",
@@ -110,11 +110,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11851153,
+    "vps_uptime_seconds": 11858412,
     "last_commit": {
-      "hash": "7baa779",
-      "subject": "linkedin-drafter: draft 2026-06-08 — human #5 SEO Saint-Denis → verdict",
-      "relative": "3 hours ago"
+      "hash": "e15b0b4",
+      "subject": "run-487: critic-68 3/3 honored J+0 (caveat self-test HUMAN #4+#5 + FYI bottleneck email_submitted=0 ",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

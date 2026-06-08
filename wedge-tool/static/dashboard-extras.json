@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-08T19:44:01Z",
+  "generated_at": "2026-06-08T21:46:01Z",
   "window_days": 7,
   "totals": {
     "requests_lifetime": 4203,
-    "requests_24h": 572,
-    "bot_hits_lifetime": 1193,
-    "bot_hits_24h": 157,
-    "bot_hits_1h": 4,
-    "human_hits_24h": 415
+    "requests_24h": 587,
+    "bot_hits_lifetime": 1199,
+    "bot_hits_24h": 176,
+    "bot_hits_1h": 8,
+    "human_hits_24h": 411
   },
   "bots_by_type_lifetime": {
     "OAI-SearchBot": 379,
     "SemrushBot": 227,
-    "Bingbot": 195,
-    "AhrefsBot": 117,
-    "GPTBot": 57,
-    "Googlebot": 39,
-    "MJ12bot": 26,
+    "Bingbot": 200,
+    "AhrefsBot": 115,
+    "GPTBot": 56,
+    "Googlebot": 42,
+    "MJ12bot": 28,
     "PerplexityBot": 26,
     "generic-bot": 20,
     "HeadlessChrome": 19,
     "ClaudeBot": 17,
-    "FacebookExt": 12,
+    "FacebookExt": 11,
     "ByteSpider": 11,
     "python-script": 10,
     "BaiduSpider": 10,
@@ -32,13 +32,13 @@
     "curl/wget": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 74,
-    "Bingbot": 32,
-    "SemrushBot": 14,
-    "AhrefsBot": 11,
-    "MJ12bot": 4,
+    "OAI-SearchBot": 76,
+    "Bingbot": 37,
+    "AhrefsBot": 20,
+    "SemrushBot": 12,
+    "Googlebot": 7,
+    "MJ12bot": 6,
     "DuckDuckBot": 4,
-    "Googlebot": 4,
     "python-script": 3,
     "BaiduSpider": 3,
     "curl/wget": 2,
@@ -49,15 +49,15 @@
   },
   "bot_last_seen": {
     "python-script": "2026-06-03T19:55:05+00:00",
-    "AhrefsBot": "2026-06-08T17:39:16+00:00",
-    "OAI-SearchBot": "2026-06-08T19:15:03+00:00",
+    "AhrefsBot": "2026-06-08T20:13:27+00:00",
+    "OAI-SearchBot": "2026-06-08T20:53:03+00:00",
     "SemrushBot": "2026-06-08T18:11:38+00:00",
-    "Bingbot": "2026-06-08T18:36:50+00:00",
+    "Bingbot": "2026-06-08T21:44:59+00:00",
     "FacebookExt": "2026-06-08T15:06:31+00:00",
     "BaiduSpider": "2026-06-05T00:35:51+00:00",
     "GPTBot": "2026-06-08T16:04:59+00:00",
-    "MJ12bot": "2026-06-08T17:54:53+00:00",
-    "Googlebot": "2026-06-08T18:48:37+00:00",
+    "MJ12bot": "2026-06-08T20:05:45+00:00",
+    "Googlebot": "2026-06-08T21:44:44+00:00",
     "generic-bot": "2026-06-03T22:01:04+00:00",
     "ByteSpider": "2026-06-03T19:51:23+00:00",
     "DuckDuckBot": "2026-06-05T06:42:40+00:00",
@@ -70,8 +70,8 @@
     "Applebot": "2026-06-03T17:49:57+00:00",
     "YandexBot": "2026-06-08T18:15:18+00:00"
   },
-  "last_googlebot": "2026-06-08T18:48:37+00:00",
-  "last_bingbot": "2026-06-08T18:36:50+00:00",
+  "last_googlebot": "2026-06-08T21:44:44+00:00",
+  "last_bingbot": "2026-06-08T21:44:59+00:00",
   "chart_7days": [
     {
       "day": "2026-06-02",
@@ -183,16 +183,16 @@
     },
     {
       "day": "2026-06-08",
-      "total": 133,
+      "total": 162,
       "by_type": {
-        "OAI-SearchBot": 65,
+        "OAI-SearchBot": 72,
         "SemrushBot": 9,
-        "Bingbot": 27,
-        "MJ12bot": 4,
+        "Bingbot": 34,
+        "MJ12bot": 6,
         "BaiduSpider": 3,
-        "AhrefsBot": 9,
+        "AhrefsBot": 19,
         "DuckDuckBot": 4,
-        "Googlebot": 4,
+        "Googlebot": 7,
         "python-script": 2,
         "ByteSpider": 1,
         "GPTBot": 2,
@@ -202,14 +202,6 @@
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "20",
-      "hits": 16
-    },
-    {
-      "hour": "21",
-      "hits": 6
-    },
     {
       "hour": "22",
       "hits": 3
@@ -296,23 +288,31 @@
     },
     {
       "hour": "19",
-      "hits": 14
+      "hits": 11
+    },
+    {
+      "hour": "20",
+      "hits": 15
+    },
+    {
+      "hour": "21",
+      "hits": 6
     }
   ],
   "top_bot_paths_24h": {
     "/encadrement-loyer-paris-2026.html": 35,
-    "/": 22,
-    "/robots.txt": 19,
+    "/": 24,
+    "/robots.txt": 22,
     "/lille-dpe-f-g-interdit-location.html": 11,
-    "/encadrement-loyer-villeurbanne-2026.html": 6,
-    "/sitemap.xml": 4,
+    "/encadrement-loyer-villeurbanne-2026.html": 8,
+    "/sitemap.xml": 5,
+    "/observatoire-annonces-loyer.html": 4,
     "/encadrement-loyer-lyon-2026.html": 3,
-    "/observatoire-annonces-loyer.html": 3,
-    "/observatoire-annonces-loyer.html?ville=Lyon%2003&cp=69003&loyer=630&surf=31&violation=encadrement&plafond=20.20&meuble=1": 2,
-    "/blog/guide-passoires-thermiques-rentabilite-bailleur-2026.html": 2
+    "/blog/guide-passoires-thermiques-rentabilite-bailleur-2026.html": 2,
+    "/css/tailwind-runtime.js": 2
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 24,
+    "/robots.txt": 26,
     "/sitemap.xml": 7,
     "/": 1,
     "/__/firebase/init.json": 1,
@@ -324,29 +324,29 @@
     "/aides-financieres-bailleur-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 75,
+    "/": 74,
     "/api/funnel/event": 25,
-    "/css/tailwind-runtime.js": 20,
+    "/css/tailwind-runtime.js": 19,
     "/favicon.svg": 19,
-    "/static/share-card.js": 15,
-    "/static/app.js": 15,
-    "/api/changelog?limit=5": 15,
-    "/api/visit": 15,
-    "/css/main.css": 13,
+    "/static/share-card.js": 14,
+    "/static/app.js": 14,
+    "/api/changelog?limit=5": 14,
+    "/api/visit": 14,
+    "/css/main.css": 12,
     "/robots.txt": 10
   },
   "status_codes_24h": {
-    "200": 548,
-    "505": 1,
-    "404": 15,
-    "400": 8
+    "200": 561,
+    "404": 17,
+    "400": 8,
+    "505": 1
   },
   "funnel": {
-    "events_total_lifetime": 194,
-    "sessions_lifetime": 144,
-    "sessions_24h": 9,
+    "events_total_lifetime": 196,
+    "sessions_lifetime": 146,
+    "sessions_24h": 10,
     "by_type_24h": {
-      "home_visit": 9,
+      "home_visit": 10,
       "home_preset_click": 1,
       "wedge_q1_answered": 2,
       "wedge_q2_answered": 2,
@@ -356,7 +356,7 @@
       "verdict_displayed": 1
     },
     "by_type_lifetime": {
-      "home_visit": 133,
+      "home_visit": 135,
       "scan_url_page_visit": 11,
       "wedge_q1_answered": 9,
       "wedge_q2_answered": 8,
@@ -369,7 +369,7 @@
       "home_preset_click": 1
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 132,
+      "home_visit": 134,
       "wedge_q1_answered": 9,
       "wedge_q2_answered": 8,
       "wedge_q3_answered": 8,
