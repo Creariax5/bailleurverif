@@ -1,10 +1,20 @@
 ---
 name: Traffic Signals (état courant)
-description: Snapshot trafic réel humains + bots. Run-484 — HUMAN #5 verdict reach via SEO Saint-Denis programmatic page (humans=4→5). Pattern N=2 SEO encadrement city pages → verdict (Montreuil 06-05 + Saint-Denis 06-08, même UA Windows/Edge ~3j cadence) valide Pilier 2 SEO main canal mission. Run-449 — ChatGPT-User retrieval dominance.
+description: Snapshot trafic réel humains + bots. Run-489 — ENRICH Aubervilliers 255→313L (FAQ 5Q/R+observatoire+Cass+scan-url preset) honor Strategic-52 J+0 pour amplifier P2 cluster 93 + escape dedup risk 21/33 boilerplate. Run-484 — HUMAN #5 verdict reach via SEO Saint-Denis programmatic page (humans=4→5). Pattern N=2 SEO encadrement city pages → verdict (Montreuil 06-05 + Saint-Denis 06-08, même UA Windows/Edge ~3j cadence) valide Pilier 2 SEO main canal mission. Run-449 — ChatGPT-User retrieval dominance.
 type: project
 ---
 
 # Traffic Signals — snapshot courant
+
+## Run-489 ENRICH Aubervilliers honor Strategic-52 — counter `humans_via_seo_cluster_93_post_audit52` (T+72h tracking)
+
+**Action 2026-06-08T23:42Z** : Aubervilliers `/encadrement-loyer-aubervilliers-2026.html` enrichi 255→313L (+58L sous cap +75L) miroir Villeurbanne 330L = **2ᵉ city page enrichie lifetime** (post Villeurbanne 06-05-31). Spec Strategic-52 honored 5/5 composants : FAQPage JSON-LD 5 Q/R DILA-sourcées Plaine Commune / observatoire BV N=2 sample préliminaire violations 100% +51,6% avg / 3 Cass. 3ᵉ civ ressort Cour d'appel Paris / scan-url preset `?ville=Aubervilliers` / cross-link `/api/recourse/loyer-abusif` + sitemap lastmod + Indexing API ping 1 URL.
+
+**Counter NEW T+72h tracking** : `humans_via_seo_cluster_93_post_audit52=0/3 cible deadline 2026-06-11T22:00Z`. Méthodologie codifiée run-484 = cross-ref funnel-events.jsonl + visits.jsonl pour TOUTE NEW ip_hash via referrer `/encadrement-loyer-{commune-plaine-commune}-2026.html` ⇒ comptabiliser dans counter cluster 93.
+
+**Asymétrie escape dedup risk** : Aubervilliers = boilerplate STRICT 255L pré-PATCH (1/21 identifiés cluster dedup-éligible run-488). Enrich = 313L différencié data unique (5 Q/R 93-spécifique + observatoire data réelle 2 annonces + ressort Cour Paris distinct vs Villeurbanne Cour Lyon). Hypothèse : escape dedup post crawl Google + indexation FAQPage + LLM-bot citationnel. Trigger audit-53 ≥1 critère (humans_via_seo_cluster_93 ≥ 3 OR humans_engaged_lifetime ≥ 6 OR Florian SEND drafts press-FR audit-50).
+
+**Caveat self-test bornage hierarchy** : post-PATCH, si HUMAN #6+ atteint verdict_displayed via referrer Aubervilliers UA Windows/Edge même pattern cluster 93 → discount 50% (raw counter +1, confidence-adjusted counter +0,5) selon Caveat #1-bis run-487. UA distincte (iOS/Android/non-Edge) OU referrer distinct (autre cluster) ⇒ confidence-adjusted +1 plein.
 
 ## Run-484 PATTERN N=2 SEO encadrement city pages → verdict_displayed ★★ (Pilier 2 validation empirique)
 
