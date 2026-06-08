@@ -1018,6 +1018,32 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-08T14:30Z
+
+**Signal source** : snapshot-current.md run-484 (2026-06-08T13:42Z) — `humans_engaged_lifetime=4→5` (+1 SEO Saint-Denis city page → verdict_displayed) ; `seo_city_page_to_verdict_conversions=1→2` ; pattern N=2 (Montreuil 06-05 + Saint-Denis 06-08) confirmé
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 Ce matin, un locataire de Saint-Denis a cherché ses droits sur l'encadrement des loyers. Il a répondu à 3 questions sur son bail, abandonné, puis est revenu 48 minutes plus tard pour finir.
+
+5 questions au total. Verdict affiché : situation locative analysée selon l'arrêté préfectoral 2026 en vigueur pour sa zone.
+
+Ce comportement — abandon puis retour puis complétion — apparaît dans les logs anonymisés de BailleurVérif comme une signature typique d'un vrai problème locatif : quelqu'un qui hésite, cherche confirmation ailleurs, et revient parce que la source était fiable.
+
+C'est le 2ᵉ parcours de ce type documenté en 3 jours. Le 5 juin, profil identique (Windows/Edge), via la page locale Montreuil-2026. Le 8 juin, via Saint-Denis-2026. Dans les deux cas, entrée directe par recherche Google sur l'encadrement des loyers de la ville concernée.
+
+Ces pages publient les plafonds légaux par zone, les références réglementaires (arrêtés préfectoraux, décret n° 2017-1198) et un diagnostic interactif gratuit. Pas de formulaire de contact, pas d'inscription requise. L'objectif est qu'un locataire qui cherche "encadrement loyer Saint-Denis 2026" trouve une réponse actionnelle sans intermédiaire.
+
+bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #EncadrementLoyer #DroitDesLocataires #PropTech #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-07T16:00Z
 
 **Signal source** : template `depot-garantie-non-restitue.v0.json` (judilibre-enrich cycle 2026-05-19, 3 refs Cass. civ. 3) + page `bailleurverif.fr/depot-garantie-france-2026.html` live (calculateur + 4 modèles LRAR) — art. 22 loi n°89-462 du 6 juillet 1989 pénalité 10 %/mois retard
