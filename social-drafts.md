@@ -1693,3 +1693,80 @@ https://bailleurverif.fr/aides-financieres-bailleur-2026.html
 
 _Validation Florian attendue (30s) : si OK → confirm adresses presse + handle Twitter → drafter ajustera J+1. Drafts NON envoyés. Asymétrie pré-armage = honor J+0 instant si Strategic-48 prescrit pivot._
 
+---
+
+## 📰 PRESSE FR 2ᵉ ROUND DRAFTS PIVOT — critic-67 #1 ★★★ HONORED — added run-481 2026-06-08T07:42Z
+
+**Contexte** : Strategic-50 PIVOT SMTP press-FR émis 06-07T22Z. Adresses 1ʳᵉ round (run-463) UNVERIFIED. Adresses raffinées run-469 `research-notes.md` L802+. 2ᵉ round = pivot cible : Investir Les Échos (vs Réussir-Investir UNVERIFIED) + Sandra Pirrmann LinkedIn (vs redaction.patrimoine@lesechos.fr UNVERIFIED) + Capital format Prisma `pnom@prismamedia.com` (vs redaction@capital.fr UNVERIFIED). Body finalisé prêt copier-coller post-Florian-validate adresse.
+
+### DRAFT 4-A — INVESTIR (Les Échos, mensuel bailleur-trade pivot Réussir-Investir)
+
+**À** : `redaction@investir.fr` OU `contact@investir.fr` (Florian-validate adresse OR formulaire investir.lesechos.fr/contact)
+**Objet (65c)** : Outil gratuit FR bailleurs — observatoire 232 annonces + 9 ECLI Cass.
+
+```
+Bonjour,
+
+Florian Demartini, ingénieur logiciel, fondateur de BailleurVérif (https://bailleurverif.fr) — outil gratuit FR open-source pour bailleurs et locataires : encadrement, DPE F-G 2025/2028/2034, dépôt de garantie, charges récupérables. Use-cases bailleurs spécifiquement adressés (LF2026 + autodiag DPE + recours pré-litige).
+
+Trois data points pour Investir :
+1) Observatoire 232 annonces FR auditées publié sur data.gouv.fr (UUID `annonces-de-location-francaises-non-conformes-observatoire-bailleurverif`, CC-BY-4.0). 60% des annonces parisiennes scrappées dépassent le plafond ALUR (excès médian ~18€/m² = ~540€/mois sur T2 30m²). Méthodologie ouverte (scraper public GitHub, respect robots.txt).
+2) 9 arrêts Cass. vérifiés Judilibre/DILA intégrés dans 3 modèles de recours (loyer abusif / DPE invalide / dépôt non-restitué). Côté bailleur, valeur miroir = anticiper arguments locataire avant litige.
+3) Outil scan-URL 30s : un bailleur colle l'URL d'une annonce, obtient verdict conformité + sources DILA + share-card. Zéro signup, mobile-first.
+
+Angle Investir suggéré : "PropTech FR open-source : un outil gratuit qui désamorce le contentieux locatif côté bailleur". Disponible 15 min visio cette semaine si l'angle intéresse.
+
+Cordialement,
+Florian Demartini
+florian.demartini.dev@gmail.com — https://bailleurverif.fr
+Dataset Etalab : https://www.data.gouv.fr/fr/datasets/r/6a0c30a2a24bbe3d7c2e69d4
+```
+
+### DRAFT 4-B — SANDRA PIRRMANN (Les Échos Patrimoine, LinkedIn DM pivot redaction.patrimoine@)
+
+**À** : Sandra Pirrmann, journaliste patrimoine Les Échos — `fr.linkedin.com/in/sandrapirrmann` (DM LinkedIn) — fallback `spirrmann@lesechos.fr` (format pnom UNVERIFIED)
+**Objet/Hook DM (65c)** : LF2026 bailleurs — outil gratuit FR + data.gouv 232 annonces
+
+```
+Bonjour Sandra,
+
+Florian Demartini, fondateur de BailleurVérif (https://bailleurverif.fr) — outil gratuit FR open-source pour bailleurs et locataires (encadrement, DPE, dépôt, charges).
+
+Je m'adresse à vous parce que le segment patrimoine bailleur que vous couvrez à Les Échos recoupe trois éléments factuels disponibles :
+1) Page bailleurs LF2026 actionable (https://bailleurverif.fr/aides-financieres-bailleur-2026.html) : MaPrimeRénov Sérénité (≤70k€), Denormandie (≤21% IR), Loc'Avantages (15-65% IR), Éco-PTZ 50k€ 0%. Sources ANIL/ANAH/BOFiP citées.
+2) Observatoire 232 annonces publié CC-BY-4.0 data.gouv.fr — 60% Paris hors plafond. Donnée utile pour un papier "efficacité encadrement post-ELAN/Climat".
+3) PropTech FR souveraine open-source (MIT, GitHub Creariax5, hébergé OVH, zéro PII, zéro freemium piège) — angle "alternative aux SaaS B2B agences".
+
+15 min visio possible cette semaine si l'angle Patrimoine vous intéresse, ou je peux fournir données brutes / commentaire écrit.
+
+Cordialement,
+Florian Demartini
+florian.demartini.dev@gmail.com — https://bailleurverif.fr
+Dataset Etalab : https://www.data.gouv.fr/fr/datasets/r/6a0c30a2a24bbe3d7c2e69d4
+```
+
+### DRAFT 4-C — CAPITAL (Prisma Media, format pnom@prismamedia.com généraliste)
+
+**À** : `redaction@capital.fr` (tester) — fallback formulaire `capital.fr/contact` — pivot ad-side `crateau@prismamedia.com` (Charles Rateau régie) si rédac dead
+**Objet (65c)** : Outil gratuit FR bailleur — 60% Paris hors plafond — chiffres exclusifs
+
+```
+Bonjour,
+
+Florian Demartini, fondateur de BailleurVérif (https://bailleurverif.fr) — outil gratuit FR pour bailleurs et locataires (encadrement, DPE, dépôt, charges récupérables).
+
+Trois data points pour Capital :
+1) Observatoire 232 annonces FR auditées, publié data.gouv.fr CC-BY-4.0. 60% des annonces parisiennes scrappées dépassent le plafond ALUR. Excès médian ~18€/m² = ~540€/mois sur T2 30m². Donnée réutilisable Capital sans demande d'autorisation.
+2) Aides bailleurs 2026 consolidées (https://bailleurverif.fr/aides-financieres-bailleur-2026.html) : MaPrimeRénov Sérénité, Denormandie, Loc'Avantages, Éco-PTZ, exonérations TF/IFI. Chiffres officiels ANAH/ANIL/BOFiP.
+3) Outil scan-URL 30s : verdict conformité d'une annonce + share-card, zéro signup, mobile-first. Évite milliers d'euros de litige côté bailleur.
+
+Angle Capital "outil gratuit qui évite le contentieux locatif côté bailleur" — je peux fournir 3 cas anonymisés observatoire + interview 15 min visio.
+
+Cordialement,
+Florian Demartini
+florian.demartini.dev@gmail.com — https://bailleurverif.fr
+Dataset Etalab : https://www.data.gouv.fr/fr/datasets/r/6a0c30a2a24bbe3d7c2e69d4
+```
+
+_Validation Florian ≤30s : reply inbox.md HEAD `SEND draft-4A to <email>` (+B/+C). Builder SMTP J+0 instant, anti-spam ≥30min entre sends. Drafts NON envoyés. Asymétrie carve-out §6 1ʳᵉ application consommée run-477 ; ces 3 drafts = matériau dormant pour réply Florian, PAS escalade nouvelle._
+
