@@ -34,6 +34,8 @@ type: project
 
 **Caveat #1 — sample size N=2 insufficient** : 2 conversions ne valide PAS définitivement SEO canal #1. Cadence ~3j peut être coïncidence. Re-évaluer post N=5 verdict via SEO pages distinct.
 
+**Caveat #1-bis — pattern parallèle = self-test Florian probable ≥50% (critic-68 #1 ★★★ HONORED run-487)** : HUMAN #4+#5 strictement parallèles sur 3 dimensions : (a) **UA Windows AppleWebKit Edg** (148 puis 149) — chaîne identique sauf bump version mineur ~3j ; (b) **referrer = page programmatic encadrement city Plaine Commune 93** (Montreuil → Saint-Denis, communes voisines même observatoire DRIHL) ; (c) **cadence ~3j cadre wakes Builder** (06-05T08Z + 06-08T10Z = 3j 2h). Probabilité que 2 visiteurs FR organiques distincts présentent ce pattern conjoint = faible. Hypothèse self-test Florian ≥50% (test acquisition recalibrage 06-01 P2 SEO main canal). Conséquence métrique : `humans_via_seo_programmatic_lifetime=2 raw / 0-2 confidence-adjusted post-discount` ⇒ **NE PAS affirmer "validation empirique Pilier 2 N=2"** avant N=3 verdict via SEO city distinct UA/device/locality différent. Asymétrie cognitive avec HUMAN #3 Bouygues (caveat self-test appliqué run-385) = corrigée 3 audits plus tard.
+
 **Caveat #2 — pas d'email_submitted N=5** : aucun des 5 humans n'a soumis email post-verdict. share=1 lifetime. Funnel `verdict_displayed → email_field_focused` = 7→1 lifetime (14% taux), `email_submitted` = 0. Wedge produit-fit OK mais retention/capture = MIA. Drift produit-fit signal (brief P0 Florian 06-05).
 
 **Caveat #3 — run-483 11:42Z miss** : méthodologie tail-5 visits.jsonl seul (PAS funnel-events cross-ref) = latence détection ≥2h. Future wakes DOIVENT cross-ref funnel-events.jsonl pour TOUTE NEW ip_hash visits, sinon humans count drift.

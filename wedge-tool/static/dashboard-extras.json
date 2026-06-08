@@ -1,115 +1,78 @@
 {
-  "generated_at": "2026-06-06T23:44:02Z",
+  "generated_at": "2026-06-08T19:44:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4847,
-    "requests_24h": 399,
-    "bot_hits_lifetime": 1400,
-    "bot_hits_24h": 86,
+    "requests_lifetime": 4203,
+    "requests_24h": 572,
+    "bot_hits_lifetime": 1193,
+    "bot_hits_24h": 157,
     "bot_hits_1h": 4,
-    "human_hits_24h": 313
+    "human_hits_24h": 415
   },
   "bots_by_type_lifetime": {
-    "OAI-SearchBot": 365,
-    "AhrefsBot": 273,
-    "SemrushBot": 210,
-    "Bingbot": 185,
-    "Googlebot": 61,
-    "GPTBot": 59,
-    "PerplexityBot": 40,
-    "generic-bot": 39,
-    "ClaudeBot": 33,
-    "HeadlessChrome": 28,
-    "MJ12bot": 22,
-    "FacebookExt": 17,
-    "ByteSpider": 17,
-    "Go-HTTP": 12,
-    "Applebot": 10,
-    "python-script": 7,
-    "BaiduSpider": 7,
+    "OAI-SearchBot": 379,
+    "SemrushBot": 227,
+    "Bingbot": 195,
+    "AhrefsBot": 117,
+    "GPTBot": 57,
+    "Googlebot": 39,
+    "MJ12bot": 26,
+    "PerplexityBot": 26,
+    "generic-bot": 20,
+    "HeadlessChrome": 19,
+    "ClaudeBot": 17,
+    "FacebookExt": 12,
+    "ByteSpider": 11,
+    "python-script": 10,
+    "BaiduSpider": 10,
+    "DuckDuckBot": 10,
     "Amazonbot": 7,
-    "DuckDuckBot": 6,
+    "Applebot": 5,
+    "Go-HTTP": 2,
     "curl/wget": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 39,
-    "Bingbot": 17,
-    "SemrushBot": 5,
-    "AhrefsBot": 5,
-    "Googlebot": 4,
+    "OAI-SearchBot": 74,
+    "Bingbot": 32,
+    "SemrushBot": 14,
+    "AhrefsBot": 11,
+    "MJ12bot": 4,
     "DuckDuckBot": 4,
+    "Googlebot": 4,
+    "python-script": 3,
     "BaiduSpider": 3,
-    "FacebookExt": 2,
-    "MJ12bot": 2,
-    "GPTBot": 1,
-    "generic-bot": 1,
+    "curl/wget": 2,
+    "GPTBot": 2,
+    "YandexBot": 2,
     "ByteSpider": 1,
-    "Go-HTTP": 1,
-    "python-script": 1
+    "FacebookExt": 1
   },
   "bot_last_seen": {
     "python-script": "2026-06-03T19:55:05+00:00",
-    "AhrefsBot": "2026-06-04T02:10:50+00:00",
-    "OAI-SearchBot": "2026-06-04T07:05:18+00:00",
-    "SemrushBot": "2026-06-04T00:53:21+00:00",
-    "Bingbot": "2026-06-04T06:35:56+00:00",
-    "FacebookExt": "2026-06-03T14:39:08+00:00",
+    "AhrefsBot": "2026-06-08T17:39:16+00:00",
+    "OAI-SearchBot": "2026-06-08T19:15:03+00:00",
+    "SemrushBot": "2026-06-08T18:11:38+00:00",
+    "Bingbot": "2026-06-08T18:36:50+00:00",
+    "FacebookExt": "2026-06-08T15:06:31+00:00",
     "BaiduSpider": "2026-06-05T00:35:51+00:00",
-    "GPTBot": "2026-06-03T17:50:14+00:00",
-    "MJ12bot": "2026-06-04T07:03:24+00:00",
-    "Googlebot": "2026-06-04T06:46:39+00:00",
+    "GPTBot": "2026-06-08T16:04:59+00:00",
+    "MJ12bot": "2026-06-08T17:54:53+00:00",
+    "Googlebot": "2026-06-08T18:48:37+00:00",
     "generic-bot": "2026-06-03T22:01:04+00:00",
     "ByteSpider": "2026-06-03T19:51:23+00:00",
     "DuckDuckBot": "2026-06-05T06:42:40+00:00",
-    "Go-HTTP": "2026-05-31T15:53:23+00:00",
+    "Go-HTTP": "2026-06-05T01:08:33+00:00",
+    "curl/wget": "2026-06-07T23:42:25+00:00",
     "HeadlessChrome": "2026-06-03T10:05:18+00:00",
     "PerplexityBot": "2026-06-04T05:02:25+00:00",
-    "curl/wget": "2026-05-31T15:52:34+00:00",
+    "Amazonbot": "2026-06-03T17:49:51+00:00",
     "ClaudeBot": "2026-06-03T17:50:23+00:00",
     "Applebot": "2026-06-03T17:49:57+00:00",
-    "Amazonbot": "2026-06-03T17:49:51+00:00"
+    "YandexBot": "2026-06-08T18:15:18+00:00"
   },
-  "last_googlebot": "2026-06-06T20:11:17+00:00",
-  "last_bingbot": "2026-06-06T22:47:17+00:00",
+  "last_googlebot": "2026-06-08T18:48:37+00:00",
+  "last_bingbot": "2026-06-08T18:36:50+00:00",
   "chart_7days": [
-    {
-      "day": "2026-05-31",
-      "total": 185,
-      "by_type": {
-        "OAI-SearchBot": 48,
-        "Bingbot": 24,
-        "Googlebot": 14,
-        "AhrefsBot": 51,
-        "FacebookExt": 5,
-        "curl/wget": 2,
-        "Go-HTTP": 10,
-        "generic-bot": 12,
-        "PerplexityBot": 2,
-        "GPTBot": 1,
-        "MJ12bot": 2,
-        "ByteSpider": 1,
-        "HeadlessChrome": 9,
-        "SemrushBot": 4
-      }
-    },
-    {
-      "day": "2026-06-01",
-      "total": 317,
-      "by_type": {
-        "AhrefsBot": 151,
-        "OAI-SearchBot": 70,
-        "generic-bot": 10,
-        "Bingbot": 24,
-        "GPTBot": 5,
-        "PerplexityBot": 12,
-        "Googlebot": 12,
-        "FacebookExt": 3,
-        "ByteSpider": 7,
-        "ClaudeBot": 16,
-        "Applebot": 5,
-        "python-script": 2
-      }
-    },
     {
       "day": "2026-06-02",
       "total": 223,
@@ -183,12 +146,12 @@
     },
     {
       "day": "2026-06-06",
-      "total": 85,
+      "total": 87,
       "by_type": {
-        "OAI-SearchBot": 38,
+        "OAI-SearchBot": 39,
         "SemrushBot": 5,
         "FacebookExt": 2,
-        "Bingbot": 17,
+        "Bingbot": 18,
         "AhrefsBot": 5,
         "BaiduSpider": 3,
         "GPTBot": 1,
@@ -200,175 +163,219 @@
         "Go-HTTP": 1,
         "python-script": 1
       }
+    },
+    {
+      "day": "2026-06-07",
+      "total": 108,
+      "by_type": {
+        "Bingbot": 19,
+        "OAI-SearchBot": 57,
+        "MJ12bot": 2,
+        "generic-bot": 3,
+        "AhrefsBot": 9,
+        "GPTBot": 1,
+        "ByteSpider": 1,
+        "SemrushBot": 12,
+        "FacebookExt": 1,
+        "curl/wget": 2,
+        "python-script": 1
+      }
+    },
+    {
+      "day": "2026-06-08",
+      "total": 133,
+      "by_type": {
+        "OAI-SearchBot": 65,
+        "SemrushBot": 9,
+        "Bingbot": 27,
+        "MJ12bot": 4,
+        "BaiduSpider": 3,
+        "AhrefsBot": 9,
+        "DuckDuckBot": 4,
+        "Googlebot": 4,
+        "python-script": 2,
+        "ByteSpider": 1,
+        "GPTBot": 2,
+        "FacebookExt": 1,
+        "YandexBot": 2
+      }
     }
   ],
   "hourly_24h": [
     {
-      "hour": "00",
-      "hits": 1
-    },
-    {
-      "hour": "01",
-      "hits": 6
-    },
-    {
-      "hour": "02",
-      "hits": 3
-    },
-    {
-      "hour": "03",
-      "hits": 2
-    },
-    {
-      "hour": "04",
-      "hits": 4
-    },
-    {
-      "hour": "05",
-      "hits": 6
-    },
-    {
-      "hour": "06",
-      "hits": 0
-    },
-    {
-      "hour": "07",
-      "hits": 7
-    },
-    {
-      "hour": "08",
-      "hits": 9
-    },
-    {
-      "hour": "09",
-      "hits": 0
-    },
-    {
-      "hour": "10",
-      "hits": 116
-    },
-    {
-      "hour": "11",
-      "hits": 5
-    },
-    {
-      "hour": "12",
-      "hits": 34
-    },
-    {
-      "hour": "13",
-      "hits": 8
-    },
-    {
-      "hour": "14",
-      "hits": 12
-    },
-    {
-      "hour": "15",
-      "hits": 2
-    },
-    {
-      "hour": "16",
-      "hits": 41
-    },
-    {
-      "hour": "17",
-      "hits": 9
-    },
-    {
-      "hour": "18",
+      "hour": "20",
       "hits": 16
     },
     {
-      "hour": "19",
-      "hits": 9
-    },
-    {
-      "hour": "20",
-      "hits": 12
-    },
-    {
       "hour": "21",
-      "hits": 3
-    },
-    {
-      "hour": "22",
       "hits": 6
     },
     {
+      "hour": "22",
+      "hits": 3
+    },
+    {
       "hour": "23",
+      "hits": 79
+    },
+    {
+      "hour": "00",
+      "hits": 15
+    },
+    {
+      "hour": "01",
+      "hits": 9
+    },
+    {
+      "hour": "02",
+      "hits": 16
+    },
+    {
+      "hour": "03",
+      "hits": 11
+    },
+    {
+      "hour": "04",
+      "hits": 8
+    },
+    {
+      "hour": "05",
+      "hits": 7
+    },
+    {
+      "hour": "06",
+      "hits": 25
+    },
+    {
+      "hour": "07",
+      "hits": 61
+    },
+    {
+      "hour": "08",
+      "hits": 5
+    },
+    {
+      "hour": "09",
+      "hits": 44
+    },
+    {
+      "hour": "10",
+      "hits": 13
+    },
+    {
+      "hour": "11",
+      "hits": 8
+    },
+    {
+      "hour": "12",
+      "hits": 8
+    },
+    {
+      "hour": "13",
+      "hits": 10
+    },
+    {
+      "hour": "14",
+      "hits": 34
+    },
+    {
+      "hour": "15",
+      "hits": 10
+    },
+    {
+      "hour": "16",
+      "hits": 3
+    },
+    {
+      "hour": "17",
       "hits": 2
+    },
+    {
+      "hour": "18",
+      "hits": 8
+    },
+    {
+      "hour": "19",
+      "hits": 14
     }
   ],
   "top_bot_paths_24h": {
-    "/encadrement-loyer-paris-2026.html": 19,
-    "/": 13,
-    "/robots.txt": 13,
-    "/lille-dpe-f-g-interdit-location.html": 5,
-    "/sitemap.xml": 3,
-    "/observatoire-annonces-loyer.html?ville=Lyon%2009&cp=69009&loyer=560&surf=25&violation=encadrement&plafond=20.20&meuble=1": 2,
-    "/encadrement-loyer-villeurbanne-2026.html": 2,
-    "/observatoire-annonces-loyer.html?ville=Paris%2001&cp=75001&loyer=1200&surf=20&violation=encadrement&plafond=40.00&meuble=1": 2,
-    "/encadrement-loyer-montpellier-2026.html": 2,
-    "/favicon.ico": 2
+    "/encadrement-loyer-paris-2026.html": 35,
+    "/": 22,
+    "/robots.txt": 19,
+    "/lille-dpe-f-g-interdit-location.html": 11,
+    "/encadrement-loyer-villeurbanne-2026.html": 6,
+    "/sitemap.xml": 4,
+    "/encadrement-loyer-lyon-2026.html": 3,
+    "/observatoire-annonces-loyer.html": 3,
+    "/observatoire-annonces-loyer.html?ville=Lyon%2003&cp=69003&loyer=630&surf=31&violation=encadrement&plafond=20.20&meuble=1": 2,
+    "/blog/guide-passoires-thermiques-rentabilite-bailleur-2026.html": 2
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 26,
-    "/sitemap.xml": 9,
-    "/": 4,
-    "/api/funnel/event": 3,
-    "/api/visit": 2,
-    "/static/share-card.js": 1,
-    "/static/app.js": 1,
-    "/api/changelog?limit=5": 1,
-    "/encadrement-loyer-paris-2026.html": 1,
-    "/vault.env": 1
+    "/robots.txt": 24,
+    "/sitemap.xml": 7,
+    "/": 1,
+    "/__/firebase/init.json": 1,
+    "/env.json": 1,
+    "/api/v1/settings": 1,
+    "/app/.env": 1,
+    "/config.json": 1,
+    "/api/settings": 1,
+    "/aides-financieres-bailleur-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 47,
-    "/robots.txt": 13,
-    "/css/tailwind-runtime.js": 13,
-    "/css/main.css": 10,
-    "/favicon.svg": 10,
-    "/api/funnel/event": 7,
-    "/static/share-card.js": 6,
-    "/observatoire-annonces-loyer.html": 6,
-    "/.env": 5,
-    "/encadrement-loyer-paris-2026.html": 4
+    "/": 75,
+    "/api/funnel/event": 25,
+    "/css/tailwind-runtime.js": 20,
+    "/favicon.svg": 19,
+    "/static/share-card.js": 15,
+    "/static/app.js": 15,
+    "/api/changelog?limit=5": 15,
+    "/api/visit": 15,
+    "/css/main.css": 13,
+    "/robots.txt": 10
   },
   "status_codes_24h": {
-    "200": 327,
-    "404": 71,
-    "505": 1
+    "200": 548,
+    "505": 1,
+    "404": 15,
+    "400": 8
   },
   "funnel": {
-    "events_total_lifetime": 168,
-    "sessions_lifetime": 128,
-    "sessions_24h": 7,
+    "events_total_lifetime": 194,
+    "sessions_lifetime": 144,
+    "sessions_24h": 9,
     "by_type_24h": {
-      "scan_url_page_visit": 4,
-      "home_visit": 3
+      "home_visit": 9,
+      "home_preset_click": 1,
+      "wedge_q1_answered": 2,
+      "wedge_q2_answered": 2,
+      "wedge_q3_answered": 2,
+      "wedge_q4_answered": 1,
+      "wedge_q5_answered": 1,
+      "verdict_displayed": 1
     },
     "by_type_lifetime": {
-      "home_visit": 119,
-      "scan_url_page_visit": 9,
-      "wedge_q1_answered": 7,
-      "wedge_q2_answered": 6,
-      "wedge_q3_answered": 6,
-      "wedge_q4_answered": 6,
-      "wedge_q5_answered": 6,
-      "verdict_displayed": 6,
+      "home_visit": 133,
+      "scan_url_page_visit": 11,
+      "wedge_q1_answered": 9,
+      "wedge_q2_answered": 8,
+      "wedge_q3_answered": 8,
+      "wedge_q4_answered": 7,
+      "wedge_q5_answered": 7,
+      "verdict_displayed": 7,
       "email_field_focused": 2,
-      "signup_confirmed": 1
+      "signup_confirmed": 1,
+      "home_preset_click": 1
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 118,
-      "wedge_q1_answered": 7,
-      "wedge_q2_answered": 6,
-      "wedge_q3_answered": 6,
-      "wedge_q4_answered": 6,
-      "wedge_q5_answered": 6,
-      "verdict_displayed": 6,
+      "home_visit": 132,
+      "wedge_q1_answered": 9,
+      "wedge_q2_answered": 8,
+      "wedge_q3_answered": 8,
+      "wedge_q4_answered": 7,
+      "wedge_q5_answered": 7,
+      "verdict_displayed": 7,
       "email_field_focused": 1,
       "email_submitted": 0
     }

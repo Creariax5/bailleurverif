@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-06T05:52:48.489277+00:00",
+  "generated_at": "2026-06-08T05:52:44.150462+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -39,32 +39,42 @@
       "n": 329
     },
     {
+      "date": "2026-06-07",
+      "n": 329
+    },
+    {
+      "date": "2026-06-08",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 1079
+      "n": 1166
     }
   ],
-  "wave_count": 10,
+  "wave_count": 12,
   "presence_distribution": {
-    "1_waves": 294,
+    "1_waves": 278,
     "2_waves": 180,
-    "3_waves": 142,
-    "4_waves": 252,
-    "5_waves": 132,
-    "6_waves": 81,
-    "7_waves": 30,
-    "8_waves": 8,
-    "9_waves": 6,
-    "10_waves": 3
+    "3_waves": 131,
+    "4_waves": 223,
+    "5_waves": 142,
+    "6_waves": 137,
+    "7_waves": 57,
+    "8_waves": 27,
+    "9_waves": 20,
+    "10_waves": 3,
+    "11_waves": 3,
+    "12_waves": 2
   },
-  "persistence_rate_full_chain_pct": 0.3,
-  "persistence_rate_full_chain_note": "3 listings present in all 10 waves / 1079 listings in last wave = 0.3% of last-wave non-conform listings have persisted unchanged for 10 consecutive days.",
+  "persistence_rate_full_chain_pct": 0.2,
+  "persistence_rate_full_chain_note": "2 listings present in all 12 waves / 1166 listings in last wave = 0.2% of last-wave non-conform listings have persisted unchanged for 12 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
     {
       "url_hash": "0d0246510c1c22db",
       "ville_label": "Toulouse (31000)",
       "code_dept": "31",
-      "loyer_eur_total": "520",
+      "loyer_eur_total": "519",
       "surface_m2": "22",
       "dpe_letter": "C",
       "violation_type": "none"
@@ -77,15 +87,6 @@
       "surface_m2": "45",
       "dpe_letter": "E",
       "violation_type": "none"
-    },
-    {
-      "url_hash": "5ee55aca3951ea09",
-      "ville_label": "Paris 01 (75001)",
-      "code_dept": "75",
-      "loyer_eur_total": "1280",
-      "surface_m2": "25",
-      "dpe_letter": "D",
-      "violation_type": "encadrement"
     }
   ]
 }

@@ -1,3 +1,23 @@
+## 🚨 2026-06-08T19:42Z — Agent → Florian — **BOTTLENECK CAPTURE FORM : email_submitted=0 N=5 humains verdict_displayed lifetime (FYI ★★★, critic-68 #2 honored J+0, action Florian ≤30s validation hypothèse)**
+
+**Finding empirique** : `grep email_field_focused funnel-events.jsonl` = **2 events lifetime** (1 humain seul, ip_hash=6061608912 Bouygues HUMAN #3, double-fire same session 06-02T09:48Z = focus+blur+focus). `grep email_submitted` = **0 events lifetime**. 5/5 humains reach verdict_displayed MAIS **1/5 focus email (20%) ET 0/5 submit (0%)**. Funnel verdict→capture = MORT empirique 7 verdict events / 5 distinct ip_hashes / 0.0% conversion email.
+
+**Drift critique vs Brief P0 06-05T08:15Z** : nurture email loop infra deployed run-446 (8 NURTURE_TEMPLATES + `/api/cron/nurture` + `send_topic_nurture` + crontab `17 * * * *`) = 0 trigger 4 jours. `email_confirm_rate=0.0` N=1 (sogibim seul subscriber lifetime PENDING T+5j32h DMARC unfixed). Le retention loop est branché sur un robinet vide.
+
+**4 hypothèses non-exclusives** (ordre subjective prior) :
+1. **UX friction post-verdict** : email field invisible/sous le verdict-card / scroll requis / pas de CTA visible "recevoir analyse complète"
+2. **Wording mismatch** : copy email-gate ne propose pas de valeur claire (vs verdict déjà affiché = "j'ai mon info gratuite, no need")
+3. **GDPR label trop alarmant** : opt-in checkbox + RGPD long peut friction-tuer >50% conversion FR
+4. **Signal "j'ai ce que je veux"** : verdict gratuit suffit à utilisateur (intent ≠ engagement long), retention loop = mauvaise hypothèse fondatrice (alors revoir Phase 2 SaaS dépend de cette boucle)
+
+**Asymétrie action Florian** : ≤30s = valider quelle hypothèse tu juges prior (a/b/c/d ou autre) ⇒ Builder ship fix 5-15min wake suivant (UI tweak + smoke + observe). Alternative : `SKIP capture-debug` ⇒ je continue pause-and-measure Strategic-51 sans diverger.
+
+**Pourquoi ★★★ malgré carve-out (b) Strategic-51 explicit ≤★★** : critic-68 #2 ★★ flag "bottleneck = exception ★★★" vs anti-noise default. C'est inverse exact brief P0 nurture loop hypothèse fondatrice — la prescription Strategic pause-and-measure mesure un signal mort (capture=0) sans tester l'hypothèse causale. Discipline 11 build-vs-escalate respectée car friction Florian ≤30s vs Builder-only blind UI guessing.
+
+**Bans 20/20 audit-51 + §6 reconduits intacts** (FYI ★★★ legitime cas exception bottleneck explicit critic-68, PAS NEW FILE / monétisation / Reddit / sub-agent / SMTP / IndexNow / re-escalade press-FR).
+
+---
+
 ## 🎯 2026-06-08T13:42Z — Agent → Florian — **HUMAN #5 verdict_displayed reach via SEO Saint-Denis (humans=4→5, FYI ★★ 0 demande action, Strategic-51 carve-out (b))**
 
 **Signal substantive** : `ip_hash=4994734200` Windows AppleWebKit Edg/149 → referrer `/encadrement-loyer-saint-denis-2026.html` (SEO programmatic) → 2 sessions séparées ~48min :
