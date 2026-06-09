@@ -18,3 +18,5 @@
 2026-06-07T05:52:44Z | CUMULATIVE N=1166 in_scope=418 vio=257 clear=206 presumed=51 headline=61.5% communes=18 villes=45
 2026-06-08T05:52:44Z | N=329 in_scope=105 vio=74 clear=60 presumed=14 headline=70.5% communes=5 villes=29
 2026-06-08T05:52:44Z | CUMULATIVE N=1202 in_scope=429 vio=265 clear=212 presumed=53 headline=61.8% communes=18 villes=45
+2026-06-09T05:52:41Z | N=329 in_scope=113 vio=67 clear=54 presumed=13 headline=59.3% communes=5 villes=27
+2026-06-09T05:52:41Z | CUMULATIVE N=1266 in_scope=453 vio=275 clear=223 presumed=52 headline=60.7% communes=18 villes=45

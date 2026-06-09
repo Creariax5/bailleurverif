@@ -1,3 +1,17 @@
+## 🎯 2026-06-09T09:45Z — Agent → Florian — **HUMAN #6 candidat verdict_displayed via FxiOS bailleur-vetting (humans=5→6 raw / 4-6 conf-adj, FYI ★★ carve-out (b) Strategic-52, 0 demande action)**
+
+**Signal substantive — empirique cross-ref funnel-events.jsonl** : ip_hash=`4533926228` UA iPhone FxiOS/151.2 iOS 18.7 → referrer `mentions-legales.html → /` (3ᵉ pattern FxiOS vetting bailleur après 3781036445 + 212268637) → **2 sessions 16h24 apart** : (1) 06-08T14:53:57Z `s-mq5c001l` home_visit ONLY (bounce) (2) 06-09T07:17:46Z `s-mq6b574h` → q1=**72.1s slow think** → q2=18.0s → q3=15.8s → q4=9.5s → q5=8.9s → **verdict_displayed sev=ok dep=0** @ 07:19:50Z.
+
+**Pattern humain confiance ≥90%** : abandon J0 + return J+1 + slow Q1 72s (vs bot uniform speed) + temps décélération Q1→Q5 (real human après initial think) + sev=ok complete flow. Référentiel SEO city pages MISS = `mentions-legales.html` referrer ⇒ **PAS cluster 93 SEO**, ne compte PAS dans Strategic-52 critère T+72h `humans_via_seo_cluster_93 ≥ 3` (deadline 06-11T22Z compteur reste 0/3). Mais légitime **humans_engaged_lifetime=5→6** ★ stagnation 50ᵉ wake CASSÉE post audit-52 wake-2 (T+~11h27 post Aubervilliers ship `55991a8`).
+
+**Détection MISS run-493** : run-493 (07:42Z) emis T+~22min post verdict_displayed 4533926228, focus 100% critic-69 honor (ROLLBACK Aubervilliers ECLI / intent_signal UI doc / Strategic-52 MISS doc) ⇒ pas vu tail funnel-events. Correctif méthodologique = cross-ref tail-N funnel-events.jsonl wake-baseline systématique (codifié run-484 déjà, oubli ce wake post-rollback ECLI).
+
+**Signal #2 borderline (0 count humans+1 conservative)** : ip_hash=`2181181357` Linux X11 Chrome 148.0 → 06-09T08:46:21Z direct → `home_preset_click` obs_id 75015-2012573 Paris 15e → q1=22.6s + q2=1.9s + q3=4.0s + q4=3.5s + q5=3.0s **uniform fast Q2-Q5** → verdict_displayed sev=warn dep=0 → 08:48:58Z retour home via preavis-bail.html referrer (2 sessions same IP). Linux desktop X11 + uniform fast + direct = signature dev/probe synthetic ~50% confidence humain. **PAS humans+1** (anti-misclassif critic-65 STOP #2 strict, ≥90% required). Counter `home_preset_click_consumed_lifetime` +1 = 1ʳᵉ utilisation hero preset block depuis ship 2026-05-31 run-376 (T+9j) — strategic-29 critère T+72h `home_preset_click ≥ 5` deadline 06-31 expiré 0/5 mais NEW signal après MISS.
+
+**Bans 21/21 audit-52 + §6 STRICT 7ᵉ application reconduits intacts** : 0 NEW FILE / 0 touch 6 surfaces / 0 spawn / 0 SMTP / 0 IndexNow / 0 Indexing API ping / 0 patch sub-agent / 0 méta-Q / 0 Reddit-HN-X-TikTok / 0 re-escalade. Carve-out (b) audit-52 explicit "NEW signal humain ⇒ FYI ≤★★" = case nominal. Pas re-FYI bottleneck (cap consommée run-487). Pas auto-narration trophée (STOP #3 critic-69). DMARC unfixed / Florian silent (sans timer per STOP #1 critic-69). `strategic_critic_recommendations_followed_cumul=52/52 UNCHANGED` (FYI ≠ ship). `tactical_critic_recommendations_honored_cumul=74 UNCHANGED`.
+
+---
+
 ## 🚨 2026-06-09T07:46Z — Agent → Florian — **ROLLBACK 3 fausses ECLI Aubervilliers (SB-2 2ᵉ application post-Marseille) + intent_signal UI 2/184 pages = bottleneck structurel persona-mesure (FYI ★★ critic-69 #1+#2+#3 honored J+0 T+~46min, 1 action Florian ≤2min optionnelle)**
 
 **1. ROLLBACK Aubervilliers ECLI (critic-69 #2 ★★ HONORED, mission-critical trust juridique)**
