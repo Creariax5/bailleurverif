@@ -1,3 +1,30 @@
+## 🚨 2026-06-09T07:46Z — Agent → Florian — **ROLLBACK 3 fausses ECLI Aubervilliers (SB-2 2ᵉ application post-Marseille) + intent_signal UI 2/184 pages = bottleneck structurel persona-mesure (FYI ★★ critic-69 #1+#2+#3 honored J+0 T+~46min, 1 action Florian ≤2min optionnelle)**
+
+**1. ROLLBACK Aubervilliers ECLI (critic-69 #2 ★★ HONORED, mission-critical trust juridique)**
+
+Run-489 (commit `55991a8` strategic-52 ENRICH) a shippé 3 ECLI Cass. 3ᵉ civ. user-facing **sans log Judilibre joint** (violation SB-2 DISCIPLINE 12 codifiée post-Marseille rollback 06-03). Rétro-vérif PISTE Judilibre run-493 = **3/3 FAIL** :
+- `23-19.572` : pourvoi existe mais ECLI réel `CCASS:2025:C310349` decision_date **2025-06-26** ≠ 2024-09-26 affirmé = MISMATCH date 9 mois
+- `ECLI:FR:CCASS:2020:C300657` : ECLI valide MAIS sujet = **bail loi 1948 CEDH** (PAS encadrement loyer ELAN) = TOPICAL MISMATCH
+- `07-13.034` : **total=0 Judilibre = HALLUCINATION pure**
+
+Pattern strictement identique Marseille run-426. Commit rollback `f0e9c20` -11/+4 = section visible jurisprudence supprimée + FAQ JSON-LD + HTML mention 23-19.572 substituée article 140 IV loi ELAN factuel. Cadre juridictionnel générique conservé (TJ Bobigny + CA Paris + R.311-1/L.411-3 COJ + lien Judilibre + ADIL 93). Prod live HTTP 200 34397B, 0 occurrence ECLI invalide post-deploy. Decision file `memory-agent/decisions/2026-06-09-aubervilliers-jurisprudence-rollback.md`. Logs persistants `agent-browser/judilibre_aubervilliers_*_verif.log` (gitignored, local proof SB-2).
+
+**Wider contamination flag (over-scope critic-69 narrow)** : les mêmes 3 ECLI sont aussi dans Villeurbanne / Echirolles / Bordeaux / Lyon / Paris-15e-complete / llms-full.txt / loyer-abusif.v0.json template / loyer-abusif.md cache. Scope critic-69 #2 = Aubervilliers seul ⇒ pas rollback batch ce wake. Si tu veux purge complète ce wake `BATCH PURGE ECLI`, sinon attendre audit-70 ou audit-53 Strategic pour scope/cap.
+
+**2. intent_signal UI coverage = 2/184 pages (1.1%) (critic-69 #1 ★★★ HONORED)**
+
+`grep -l intent_signal wedge-tool/static/*.html` = `aides-financieres-bailleur-2026.html` + `dpe-fiabilite.html` SEULES. Les **182 autres pages** avec form subscribe POST `intent_signal=""` → bucket `unset` auto-fallback côté `server.py:1721`. Conséquence : `subscribers_by_intent={'unset':1}` 33ᵉ plate **structurellement impossible à dépasser** sans wire UI dropdown sur les 182 pages restantes. Switch trigger Phase 2 "persona dominant ≥40%" impossible mesurer dans cet état. **PAS de ship UI fix ce wake** (ban audit-52 strict 🚫 touch 6 surfaces home/scan-url/share-card/dpe-fiabilite/questions-* + 🚫 NEW FILE). Si tu veux fix structurel, validation explicite requise pour override audit-52 — sinon je documente et attendre audit-53.
+
+**3. Probabilité MISS critère T+72h Strategic-52 ≥80% (critic-69 #3 ★ DOC HONORED)**
+
+`humans_via_seo_cluster_93 ≥ 3` deadline 2026-06-11T22:00Z : T+~33h consommé fenêtre = 38h restant. Compteur cluster 93 humains post-audit-52 cumul = 0. Google index latency 24-72h fresh URL post-rollback recommit = signal indexation Aubervilliers reset partiellement. GSC `gsc_indexed_pages ~8` baseline = lente indexation structurelle. Compteur réaliste T+72h ≈ 0-1 sur 3 ⇒ audit-53 06-11T22Z trigger pivot fix capture funnel UI ≤30L (critic-68 #2 hypothèse Florian-validate a/b/c/d) OR PAUSE-AND-MEASURE pull-LLM-only 3 wakes. Documenté `concepts/strategic-prescription-last.md` frontmatter.
+
+**Action Florian ≤2min optionnelle** : (a) `BATCH PURGE ECLI` ⇒ Builder rollback les 7+ autres fichiers contaminés wake +N ; (b) `KEEP ECLI loyer-abusif.v0.json template` ⇒ Builder préserve template cat-3 corpus, rollback seulement pages city ; (c) `SKIP` ⇒ Builder attend audit-53 / audit-70 décision. Default si silent ≤24h = (c) SKIP.
+
+**Bans 21/21 audit-52 + §6 STRICT 6ᵉ application reconduits** (PAS NEW FILE / PAS 6 surfaces / PAS spawn / PAS SMTP / PAS IndexNow / PAS méta-Q). `strategic_critic_recommendations_followed_cumul=52/52 UNCHANGED` (rollback = correction trust ≠ violation §6). `tactical_critic_recommendations_honored_cumul=73 → 74 ★`.
+
+---
+
 ## 🚨 2026-06-08T19:42Z — Agent → Florian — **BOTTLENECK CAPTURE FORM : email_submitted=0 N=5 humains verdict_displayed lifetime (FYI ★★★, critic-68 #2 honored J+0, action Florian ≤30s validation hypothèse)**
 
 **Finding empirique** : `grep email_field_focused funnel-events.jsonl` = **2 events lifetime** (1 humain seul, ip_hash=6061608912 Bouygues HUMAN #3, double-fire same session 06-02T09:48Z = focus+blur+focus). `grep email_submitted` = **0 events lifetime**. 5/5 humains reach verdict_displayed MAIS **1/5 focus email (20%) ET 0/5 submit (0%)**. Funnel verdict→capture = MORT empirique 7 verdict events / 5 distinct ip_hashes / 0.0% conversion email.
