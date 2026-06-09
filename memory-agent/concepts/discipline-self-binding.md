@@ -47,6 +47,25 @@ URLs `courdecassation.fr/decision/{id}` shippées pointaient vers IDs inexistant
 
 **Anti-loophole** : NE PAS contourner via affirmation "vérifié PISTE OAuth" sans log persistant. Trace ledger = preuve. Run-426 = exemple anti-pattern.
 
+## Règle SB-3 light — DIR 10 §b file integrity (run-N.md MUST exist post-commit ledger)
+
+**Effective** : 2026-06-09T19:43Z run-499+, sans cap (discipline permanente hygiène audit-trail).
+
+**Texte** : *"Chaque wake qui append une ligne `ledger.md` DOIT créer le fichier correspondant `runs/run-${N}-*.md` AVANT ou DANS le même commit. Pré-commit check : `ls runs/run-${N}-*.md` doit retourner ≥1 fichier. Si run-N file manquant post-commit ledger ⇒ reactive-correction wake-suivant + 1 mention NEXT plan (PAS compteur tracker METRIC vanity, codification = solution structurelle)."*
+
+**Source** : critic-70 #3 ★ 2026-06-09T19:00Z post run-498. Précédent : run-497 commit `96f09d0` 15:43Z = ledger-append-only sans `runs/run-497-*.md` créé = ritual DIR 10 step 7 partiel. Reactive-corrected run-498 file créé. Rétro-création **interdite** (faisifierait timing). STOP critic-70 #3 anti-vanity METRIC : NE PAS propager compteur `wake_file_missed_cumul=N` propagation verbose ledger (1 mention NEXT plan suffit). Codification SB-3 light = solution structurelle > METRIC incrémental.
+
+**Triggers anti-récidive** :
+- ❌ Si Builder s'apprête à `git commit` ledger sans run-N.md créé → STOP, `Write` run-${N}-${TIMESTAMP}.md d'abord, puis commit combiné.
+- ✅ Si run-N.md créé pré-commit + ledger append + 1-shot commit → OK.
+- ✅ Cas exception explicite (ex: rollback wake d'urgence où run-N file rédigé pas encore committé) → mention NEXT plan + reactive-correction wake-suivant max.
+
+**Cooldown override** : aucun. Discipline permanente. Tactical critic peut flagger ≥1 récidive futur (run-N.md absent post-commit ledger).
+
+**Anti-loophole** : NE PAS contourner via "ledger seul = source of truth". Mémoire-agent MEMORY.md L6 explicite : `inbox.md + runs/ restent archives append-only GitHub-public (transparence + rollback)` ⇒ run-N.md = audit-trail public obligatoire en plus du ledger.
+
+**Why "light"** : pas Full ritual SB-1 (≥100L user-facing) ni SB-2 (ECLI Judilibre log) — juste check pré-commit `ls` 1 ligne shell, donc tag "light".
+
 ## Update protocol
 
 Si Florian patch HUMAN_DIRECTIVE.md L160 → archiver cette règle SB-1 (déprécié), keep historical reference. Si nouvelle règle SB-N émerge audit futur → append section.
@@ -55,3 +74,4 @@ Si Florian patch HUMAN_DIRECTIVE.md L160 → archiver cette règle SB-1 (dépré
 
 - 2026-05-21T21:37Z run-336 — concept créé, règle SB-1 binding ce wake. Flag inbox.md HEAD avec 3 options Florian arbitrage.
 - 2026-06-03T19:50Z run-427 — SB-2 ECLI Judilibre log persistant codifié post-rollback 3 fausses ECLI Marseille (decisions/2026-06-03-marseille-jurisprudence-rollback.md).
+- 2026-06-09T19:43Z run-499 — SB-3 light file integrity codifié post run-497 ledger-only commit `96f09d0` (run-497 file missed reactive-corrected run-498). Critic-70 #3 ★ STOP anti-vanity METRIC `wake_file_missed_cumul` substitué codification structurelle.

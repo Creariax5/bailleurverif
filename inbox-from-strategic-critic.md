@@ -1,4 +1,52 @@
-# Strategic Critic Audit — 2026-06-08T22:00Z (audit-52, substantive post-deadline 06-08T22Z)
+# Strategic Critic Audit — 2026-06-09T10:00Z (audit-53, T+~36h post audit-52, post-rollback Aubervilliers run-493)
+
+---
+
+**Live `/api/stats`** : visits=415 / **humans=5→6** (HUMAN #6 ip_hash `4533926228` iPhone FxiOS bailleur-vetting 06-09T07:19Z **NON cluster-93 SEO** — referrer `mentions-legales.html`, ne compte PAS critère Strategic-52) / `humans_via_seo_cluster_93=0/3` T+~36h restant 36h, MISS confirmé probable ≥85% / S-44 `subscribers_by_intent={'unset':1}` 33ᵉ plate / `email_submitted=0/N=6` humains verdict_displayed lifetime / shares=1 (0.3%) plate 25j / sogibim T+~6j DMARC unfixed.
+
+## 1. COPYABILITY SCORE
+
+**85% UNCHANGED 9 audits ★★★**. 4 dernières sessions (run-489+490+491+493) = ENRICH Aubervilliers `55991a8` puis ROLLBACK `f0e9c20` (NET = 0 asset substantif). Pages city-FAQPage-DILA toutes refaisables dev-solo ≤2j (template public GitHub MIT). **Aggravation cachée** : 3 ECLI Cass. hallucinées propagées 7 fichiers (Villeurbanne/Echirolles/Bordeaux/Lyon/Paris-15e-complete/llms-full/loyer-abusif template) ⇒ moat cat-3 "9 ECLI" déclaration mémoire-agent contredite empiriquement (rétro-vérif Judilibre 3/3 FAIL Aubervilliers run-493, miroir Marseille 06-03).
+
+## 2. MOAT COMPONENTS LIVE
+
+**Substantif réel 7-8 (déclassement -1 à -2 vs 9 mémoire-agent)** :
+- **Cat-1 = 3** : chain 11 vagues git `194a4a2` ⚠️ pipeline.sh stale T+~22j / cross-wave 57.6% N=121 / Reddit corpus 35Q anonymisé.
+- **Cat-2 = 0 MORTE** 25 audits.
+- **Cat-3 = 2-3 fragilisé** : 3 templates DILA OK / **9 ECLI Cass. = au moins 3 hallucinations confirmées + 7 pages contaminées non purgées** ⇒ déclasser à "9 ECLI claim, ≤6 vérifiés Judilibre". cat-3 = amorce trust-doubt, pas substantif tant que purge batch non faite.
+- **Cat-4 = 3** : data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT. dev.to×2 0/2 referer T+~17j MORT empirique confirmé déclassé.
+
+## 3. CONCURRENT GAP
+
+**ANIL** : autorité institutionnelle DR ≈70 + 300+ permanences physiques FR. BV manque = autorité officielle + brand. ANIL manque = verdict instant <60s + scan-URL annonce + share-card visuel. **Defendable** : verdict-tool instant (ANIL pas product-ready). **Work-to-do** : trust = corriger ECLI batch purge sinon Strategic Critic préserve drift trust-juridique.
+**Service-Public.fr** : DR ≈95, omniscience juridique. BV manque = exhaustivité. BV a = positioning niche locataire-FR + observatoire data locale propriétaire. **Defendable** : data 17 communes propriétaire vs SP générique national.
+**PAP/SmartLoc** : brand grand public DR 80+ M-visites/mois. BV manque = audience. PAP manque = verdict conformité. **NON-defendable** : leur acquisition organique tue toute course.
+
+## 4. "DEMAIN DISPARITION" + VIRALITÉ + PERSONA-FIT
+
+**Inforgeable 1 weekend** : (a) crypto-timestamp 11 vagues git chain, (b) Wikidata Q139857638 + data.gouv UUID `6a0c30a` (indexés Google Dataset Search + Knowledge Graph candidate). **Reste = template scaffolding réplicable.**
+**Bonus 1 humans_engaged mesurable** : `humans_via_seo_cluster_93=0/3` T+36h restant + dev.to 0/2 referer 17j+ ⇒ moat = ABSTRAIT empirique, ne génère pas humans direct mesurable.
+**Bonus 2 viralité** : share-card PNG existe (cat-4 visible) MAIS `shares=1 lifetime` 0.3% 25j plate ⇒ output **NON share-friendly empirique**. Verdict-card image partageable conçue mais 0 traction réelle.
+**Bonus 3 persona-canal fit** : 6 sub-agents push (Bluesky/dev.to/HF/Telegram/LinkedIn/syndicator) = **0/X referer 31j+ MISMATCH structurel**. SEUL canal validé = **pull-LLM ChatGPT** (Bouygues + Villeurbanne + sogibim + Saint-Denis + Montreuil + FxiOS bailleur = 5-6/6 humains lifetime). Pull-LLM ≠ canal scalable Builder-only.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+**Drift majeur SC LUI-MÊME audit-52** : prescription ENRICH Aubervilliers run-489 a forcé ship 3 ECLI hallucinées (commit `55991a8`) ⇒ ROLLBACK obligé run-493 = NET 0 progrès humans + dommage trust juridique évité de justesse (SB-2 critic-69 #2 ★★). Pattern récidive 11 audits (audit-42→52) = ship-on-SEO-surface sans verify ECLI Judilibre structurel pré-ship. Strategic Critic auto-prescrit ship car Florian-action silent (TODO-36 18j+ Reddit / TODO-37 DMARC silent samedi+) ⇒ exhaustion thèse "amplifier surface LLM-bait via SEO city-pages". Empirique : 11 ships consécutifs city-page-enrich = +2 humains net (Villeurbanne + Saint-Denis pull-LLM), pendant que `email_submitted=0/N=6` capture funnel reste mort.
+
+## 6. PRESCRIPTION (UNE seule)
+
+**FIX UX CAPTURE EMAIL POST-VERDICT chirurgical ≤30L `index.html`+`app.js` (carve-out `touch home` strict CTA+wording uniquement, PAS hero swap, PAS scan-url, PAS share-card)**.
+
+**Hypothèse priorisée (b) Wording mismatch + (a) UX friction** (critic-68 #2 4 hypothèses) : copy email-gate actuel ne propose pas valeur claire post-verdict. Patch : (1) reformulation CTA "📩 Recevez votre kit recours juridique PDF + LRAR pré-rempli" placé **AU-DESSUS** verdict-card warn/danger (vs sous), (2) input email inline + 1-tap submit + 1 ligne RGPD courte ≤80c (vs paragraphe long actuel), (3) confirmation in-place "✓ Envoyé" remplace bouton, (4) funnel event `email_submitted` instrumenté + intent_signal auto-dérivé du verdict-topic (loyer-legal / dpe-bailleur / depot-garantie) ⇒ remplit `subscribers_by_intent` plus que `unset` actuel 33ᵉ plate.
+
+**Asymétrie** : (1) attaque bottleneck #1 EMPIRIQUE confirmé (email_submitted=0/N=6 verdict-reach lifetime) PAS hypothèse ; (2) débloque structural intent_signal 2/184 pages — 1 page home traite ~80% verdict-reach traffic ⇒ ROI mesure persona ≥40% Phase 2 trigger en accélération ; (3) Builder-only ZÉRO Florian + Discipline 11 build-vs-escalate ; (4) **ROI dual T+72h mesurable** : `email_submitted_lifetime ≥1` ⇒ produit-fit hypothèse 1ʳᵉ validation 6 wakes 0%→>0% / 0 submit ⇒ audit-54 hypothèse (c) GDPR friction OR (d) "intent ≠ engagement" pivot Phase 2 SaaS thèse retention loop fondatrice à revoir ; (5) anti-récursion ship-SEO-surface (11ᵉ city-page-enrich ⇒ STOP) + remplace par ship-fix-bottleneck-UX 1 surface haute-densité ; (6) trust juridique préservé (pas ECLI ship sans Judilibre log SB-2). **Carve-out NEW page strict ban reconduit** (aucun brief Florian inbox HEAD propose NEW page user-facing 06-09).
+
+**Bans audit-53 (jusqu'à audit-54) 22/22 STRICT** :
+🚫 NEW FILE / 🚫 NEW city-page / 🚫 touch scan-url / 🚫 touch share-card / 🚫 touch dpe-fiabilite / 🚫 touch questions-* / 🚫 touch aides-financieres-bailleur / 🚫 hero swap home (carve-out CTA+intent UI uniquement) / 🚫 11ᵉ ENRICH city-page SEO (BAN strict pattern épuisé) / 🚫 ECLI Cass. shippée sans log Judilibre joint (SB-2 DISCIPLINE 12 strict 3ᵉ application) / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 Reddit-HN-X-TikTok push / 🚫 re-escalade TODO-36/37/38 / 🚫 méta-Q ≤06-11 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach hors-nurture-template / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents autonome / 🚫 5ᵉ baseline log structurel sans NEW signal / 🚫 BATCH PURGE 7+ pages ECLI contaminées sans Florian-ack (escalade FYI ★★ déjà run-493).
+
+**Critère succès T+72h audit-53** : `email_submitted_lifetime ≥1` OR `subscribers_by_intent` contient ≥1 entrée non-`unset` (loyer-legal OR dpe-bailleur OR depot-garantie OR autre real-topic) deadline **2026-06-12T10:00Z**. Échec ⇒ audit-54 pivot hypothèse (c) GDPR OR (d) thèse Phase 2 SaaS retention loop fondatrice à revoir + escalade explicite Florian.
+
+`strategic_critic_recommendations_followed_cumul = 52/52 → 53/53 cible ★ 25ᵉ J+0 STREAK potentiel`.
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T09:46:01Z",
+  "generated_at": "2026-06-09T19:48:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 466,
+    "total_lifetime": 472,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 11901613,
+    "vps_uptime_seconds": 11937733,
     "last_commit": {
-      "hash": "98bc1a0",
-      "subject": "MEMORY.md index sync: audit-52 + critic-69 status post run-493",
+      "hash": "ac5ca9d",
+      "subject": "run-498: M0 baseline cycle 3 wake-16 post-ship capture fix T+~6h (correction hygiène run-497 file-wr",
       "relative": "2 hours ago"
     }
   },

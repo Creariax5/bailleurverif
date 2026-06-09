@@ -1,10 +1,72 @@
 ---
 name: Tactical Warnings (last critic audit)
-description: **Audit-69 2026-06-09T07:00Z 8.1/10 (+0.1 vs critic-68) post run-492.** Critic-69 3 actions traitées run-493 J+0 T+~1h : **#1 ★★★ intent_signal UI coverage = 2/184 pages (1.1%) confirmé empirique** (aides-financieres-bailleur + dpe-fiabilite seules POST `intent_signal` non-vide ; 182 autres → bucket `unset` auto = subscribers_by_intent={'unset':1} 33ᵉ plate structurellement impossible à dépasser sans wire UI dropdown) → DOC + FYI inbox HEAD ★★ Florian 0-demande-action (PAS shipper fix UI car ban audit-52 strict 6 surfaces). **#2 ★★ HONORED rétro-vérif Judilibre 3 ECLI Aubervilliers run-489 = 3/3 FAIL** (23-19.572 wrong date 2025-06-26 ≠ 2024-09-26 / C300657 topical mismatch loi 1948 / 07-13.034 HALLUCINATION total=0 Judilibre) → ROLLBACK commit `f0e9c20` 2026-06-09T07:46Z section visible+FAQ+JSON-LD prune, logs persistants `agent-browser/judilibre_aubervilliers_*.log` 3 fichiers. **SB-2 DISCIPLINE 12 2ᵉ application** post-Marseille run-426. **#3 ★ DOC probabilité MISS Strategic-52 T+72h ≥80%** = ajout strategic-prescription-last.md (Google index latency 24-72h + Aubervilliers fresh URL post-rollback recommit = compteur cluster 93 vraisemblable 0-1/3 cible humans_via_seo_cluster_93 deadline 06-11T22Z). **3 STOPS audit-69 respectés run-493** (#1 stop auto-narration DMARC/Florian silent verbose 4ᵉ récidive substitué compteur 1L sans timer, #2 stop 3ᵉ city enrich = 0 city enrich run-493, #3 stop dir7/why_streak ★★★ emphasis trophée = condensation snapshot frontmatter). `tactical_critic_recommendations_honored_cumul=73 → 74 ★`. Wider contamination Villeurbanne/Echirolles/Lyon/Bordeaux/Paris-15e/llms-full = scope FYI Florian séparée (over-scope critic-69 #2 narrow Aubervilliers). Body audit-34 historical conservé.
+description: **Audit-70 2026-06-09T19:00Z 8.3/10 (+0.2 vs critic-69) post run-498.** Verdict = Strategic-53 capture patch honored J+0 T+~1h42 propre (26L ≤30L cap STRICT) + critic-69 3/3 honored J+0 T+~46min + 5 STOPS critic-69 propagés. **MAIS** 4 fichiers prod ECLI hallucinées persist non-purgés. **Critic-70 3 actions** : **#1 ★★ DOCUMENTER 4 fichiers prod ECLI contaminés** (Villeurbanne 6 hits + Echirolles 7 hits + Bordeaux 6 hits + Lyon 7 hits, pattern 23-19.572 + 07-13.034 + CCASS:2020:C300657 confirmé `grep -c`) + cap silence Florian a/b/c expire 06-10T07:46Z + default SKIP holds STRICT (ban audit-53 🚫 BATCH PURGE sans Florian-ack). **#2 ★★ SURVEILLER fenêtre T+24h post-capture-patch** via cross-ref tail-N obligatoire wake-baseline AVANT verdict carve-out (b) match. Sample size attendu T+24h ≥30 visits humains. Probabilité ≥1 email_submitted | verdict_displayed ~10-20% / vraie fenêtre détection effet = T+48-72h (15-20 verdict humains cumul). **#3 ★ CODIFIER SB-3 light hygiène DIR 10 §b file integrity** (run-N.md MUST exist post-commit, check pré-commit). **3 STOPS audit-70** : STOP propagation prédiction "critic-70 ETA ~Xh" NEXT plan (5-récidive runs 494-498) substitué "critic-71 ETA ~2026-06-10T07Z probable cron Tactical externe ~12h interval pas certifiable" ; STOP narration verbose "cycle 3 wake-N" incrémental runs 494/496/497/498 substitué "M0 baseline strict (post-ship surveillance T+72h fenêtre N%)" sans numéro ; STOP introduire compteur tracker neuf `wake_file_missed_cumul=N` propagation verbose ledger (1 mention NEXT plan suffit, codifier SB-3 light > METRIC incrémental). Hypothèse vérifier urgence : capture patch effet T+24h sample 0-1 humain probable ⇒ critère T+72h MISS hautement probable T+24h alone, vraie fenêtre = T+48-72h. Si T+48h N=0 email_submitted post ≥10 verdict humains → escalade FYI ★★★ Florian "capture patch effet=0 sample suffisant" hypothèse (c) GDPR OR (d) intent ≠ engagement Phase 2 SaaS retention loop fondatrice à revoir. Body audit-69+34 conservés.
 type: project
 ---
 
 # Concept : Tactical Warnings (last critic audit)
+
+## Audit-70 2026-06-09T19:00Z (post run-498) — courant
+
+**Source** : `inbox-from-critic.md` audit-70, file `audit-2026-06-09-1900.md`. Wake-fenêtre runs 493→498 (6 wakes ~12h depuis critic-69 07:00Z).
+
+### Verdict 8.3/10 (+0.2 vs critic-69)
+
+(+) Strategic-53 capture patch HONORED J+0 T+~1h42 propre (26L ≤30L cap STRICT). (+) Critic-69 3/3 HONORED J+0 T+~46min substantive. (+) 5 STOPS critic-69 propagés. (−) 🔴 **4 fichiers prod ECLI hallucinées persist non-purgés** (Villeurbanne / Echirolles / Bordeaux / Lyon) = trust juridique drift cumulatif structurel. (−) Capture patch T+~7h trop tôt mesurer effet (fenêtre 9.7%/72h consommée).
+
+### Action #1 ★★ DOCUMENTER 4 fichiers prod ECLI contaminés
+
+**Statut** : ✅ HONORÉ run-499 (édit ce concept). Données empiriques `grep -c -E "23-19\.572|07-13\.034|CCASS:2020:C300657"` :
+
+| Fichier | Hits | Pattern |
+|---|---|---|
+| `wedge-tool/static/encadrement-loyer-villeurbanne-2026.html` | 6 | 23-19.572 + 07-13.034 + CCASS:2020:C300657 |
+| `wedge-tool/static/encadrement-loyer-echirolles-2026.html` | 7 | idem (1 occurrence extra) |
+| `wedge-tool/static/encadrement-loyer-bordeaux-2026.html` | 6 | idem |
+| `wedge-tool/static/encadrement-loyer-lyon-2026.html` | 7 | idem (1 occurrence extra) |
+
+**Pattern contamination** : 3 ECLI hallucinées Cass. 3ᵉ civ. propagées 4 city-pages city-FAQPage-DILA via copy-template paste pre-SB-2 codification (run-427 2026-06-03). Aubervilliers rollback `f0e9c20` (run-493) = scope critic-69 narrow. Critic-70 #1 = explicit over-scope documentation pour mémoire-agent + audit-trail.
+
+**Cap silence Florian a/b/c** : escalade inbox HEAD run-493 07:46Z 06-09 propose `BATCH PURGE ECLI` / `KEEP ECLI loyer-abusif.v0.json template` / `SKIP`. Cooldown 24h default SKIP expire **2026-06-10T07:46Z**. PAS escalade neuve inbox HEAD (Florian-ack silent T+~11h = default SKIP holds STRICT). Ban audit-53 🚫 BATCH PURGE 7+ pages ECLI contaminées sans Florian-ack reconduit.
+
+**Wider contamination flag** : 7+ fichiers connus contaminés (4 city ci-dessus + Paris-15e-complete + llms-full.txt + loyer-abusif.v0.json template + loyer-abusif.md cache). Scope critic-70 = 4 city seul = subset over-scope critic-69 narrow Aubervilliers. Audit-71 ou Strategic ≥54 décidera scope final.
+
+### Action #2 ★★ SURVEILLER fenêtre T+24h post-capture-patch (méthodologie)
+
+**Statut** : ✅ CODIFIÉ ce concept (méthodologie reconductible) + reflété SB-3 light. Méthodologie obligatoire désormais :
+
+- AVANT chaque verdict carve-out (b) audit-52 hérité audit-53 "NEW signal humain ⇒ FYI ≤★★", cross-ref tail-15 `funnel-events.jsonl` + tail-10 `visits.jsonl` wake-baseline systématique.
+- Codifié run-484 (oubli run-493 post-rollback ECLI corrigé run-494 +12h latence).
+- Sample size attendu T+24h post-ship capture patch (run-495 11:42Z) ≥30 visits humains. Sample observé T+~8h = 0 humain qualifying.
+- Probabilité conditionnelle empirique `email_submitted | verdict_displayed` ≈ 10-20% (estimation pré-patch sample N=5 humains → 0 submit lifetime = 0%, post-patch hypothèse base-rate FR SaaS B2C verdict-tool ~10-20%).
+- Vraie fenêtre détection effet = **T+48-72h** (cumul 15-20 verdict humains requis statistical power). T+24h alone = insufficient.
+- Échec critère T+72h critère audit-53 `email_submitted_lifetime ≥1` deadline 06-12T10:00Z ⇒ audit-54 hypothèse (c) GDPR friction OR (d) intent ≠ engagement Phase 2 SaaS retention loop fondatrice à revoir.
+
+**Trigger escalade FYI ★★★ Florian** : si T+48h N=0 `email_submitted` post ≥10 verdict humains cumul ⇒ "capture patch effet=0 sample suffisant".
+
+### Action #3 ★ CODIFIER hygiène DIR 10 §b file integrity SB-3 light
+
+**Statut** : ✅ HONORÉ run-499 (édit `concepts/discipline-self-binding.md` → règle SB-3 light). Précédent : run-497 commit `96f09d0` ledger-only PAS de `runs/run-497-*.md` créé = ritual DIR 10 step 7 partiel. Reactive-corrected run-498 file CRÉÉ. SB-3 light = check `ls runs/run-${N}-*.md` pré-commit + run-N.md MUST exist post-commit ledger. Substituer compteur `wake_file_missed_cumul` (STOP #3 critic-70 anti-vanity METRIC neuf).
+
+### 3 STOPS audit-70 (à appliquer wake +N)
+
+1. **STOP propagation prédiction "critic-70 ETA ~Xh"** chaque NEXT plan (5-récidive runs 494-498). Substituer "critic-71 ETA ~2026-06-10T07Z probable (cron Tactical externe ~12h interval, pas certifiable côté Builder)".
+2. **STOP narration verbose "cycle 3 wake-N" incrémental** (runs 494/496/497/498 = wake-13/14/15/16). Pattern flavor identique critic-68 STOP #3 M0_cycle3 METRIC mais reflété TEXTE narratif. Substituer "M0 baseline strict (post-ship surveillance T+72h fenêtre N%)" sans numéro.
+3. **STOP introduire compteur tracker neuf `wake_file_missed_cumul=N` propagation verbose ledger** : 1 mention NEXT plan suffit, codifier SB-3 light hygiène > METRIC incrémental.
+
+### Hypothèse à vérifier d'urgence audit-70
+
+**Capture patch effet T+24h** : sample 5-6 humans / 25j+ ≈ 0.25/jour ⇒ T+24h sample 0-1 humain verdict probable ⇒ critère T+72h MISS hautement probable T+24h alone. **Vraie fenêtre détection = T+48-72h** (15-20 verdict humains cumul). Cross-ref tail-N obligatoire AVANT chaque verdict carve-out (b) match. Si T+48h N=0 `email_submitted` post ≥10 verdict humains → escalade FYI ★★★ Florian.
+
+---
+
+## Audit-69 2026-06-09T07:00Z (post run-492) — archive
+
+**Verdict 8.1/10** (+0.1 vs critic-68). Critic-69 3 actions HONORED J+0 T+~46min run-493 : #1 ★★★ intent_signal UI coverage 2/184 pages (1.1%) DOC + FYI inbox HEAD ★★ ; #2 ★★ rétro-vérif Judilibre 3 ECLI Aubervilliers 3/3 FAIL → ROLLBACK commit `f0e9c20` SB-2 DISCIPLINE 12 2ᵉ application post-Marseille run-426 + decision file `2026-06-09-aubervilliers-jurisprudence-rollback.md` + 3 logs persistants `agent-browser/judilibre_aubervilliers_*_verif.log` ; #3 ★ DOC probabilité MISS Strategic-52 T+72h ≥80% ajout strategic-prescription-last.md. 3 STOPS audit-69 respectés (#1 stop auto-narration DMARC verbose, #2 stop 3ᵉ city enrich, #3 stop dir7/why_streak ★★★ emphasis trophée). `tactical_critic_recommendations_honored_cumul=73→74 ★`.
+
+---
+
+# Concept : Tactical Warnings (audit-34 historical) — archive consolidée
 
 **Source** : `inbox-from-critic.md` **audit-34 2026-05-22T18:55Z** (post run-341 monitoring discipliné).
 
