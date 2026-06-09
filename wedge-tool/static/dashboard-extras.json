@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-06-09T03:42:02Z",
+  "generated_at": "2026-06-09T05:42:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4163,
-    "requests_24h": 523,
-    "bot_hits_lifetime": 1162,
-    "bot_hits_24h": 174,
-    "bot_hits_1h": 2,
-    "human_hits_24h": 349
+    "requests_lifetime": 4132,
+    "requests_24h": 539,
+    "bot_hits_lifetime": 1128,
+    "bot_hits_24h": 172,
+    "bot_hits_1h": 3,
+    "human_hits_24h": 367
   },
   "bots_by_type_lifetime": {
-    "OAI-SearchBot": 384,
+    "OAI-SearchBot": 382,
     "SemrushBot": 229,
-    "Bingbot": 188,
-    "AhrefsBot": 79,
-    "GPTBot": 56,
+    "Bingbot": 184,
+    "AhrefsBot": 76,
     "Googlebot": 42,
+    "GPTBot": 31,
     "MJ12bot": 28,
     "PerplexityBot": 26,
     "generic-bot": 20,
@@ -33,9 +33,9 @@
   },
   "bots_by_type_24h": {
     "OAI-SearchBot": 76,
-    "Bingbot": 38,
-    "AhrefsBot": 22,
-    "Googlebot": 10,
+    "Bingbot": 36,
+    "AhrefsBot": 21,
+    "Googlebot": 11,
     "SemrushBot": 6,
     "BaiduSpider": 5,
     "DuckDuckBot": 4,
@@ -48,15 +48,15 @@
   },
   "bot_last_seen": {
     "python-script": "2026-06-08T23:56:14+00:00",
-    "AhrefsBot": "2026-06-09T03:33:22+00:00",
-    "OAI-SearchBot": "2026-06-09T02:05:12+00:00",
+    "AhrefsBot": "2026-06-09T05:27:22+00:00",
+    "OAI-SearchBot": "2026-06-09T05:34:06+00:00",
     "SemrushBot": "2026-06-09T02:09:27+00:00",
-    "Bingbot": "2026-06-09T01:56:16+00:00",
+    "Bingbot": "2026-06-09T04:08:53+00:00",
     "FacebookExt": "2026-06-08T15:06:31+00:00",
     "BaiduSpider": "2026-06-08T22:51:46+00:00",
     "GPTBot": "2026-06-08T16:04:59+00:00",
     "MJ12bot": "2026-06-08T20:05:45+00:00",
-    "Googlebot": "2026-06-09T03:41:10+00:00",
+    "Googlebot": "2026-06-09T04:41:39+00:00",
     "generic-bot": "2026-06-03T22:01:04+00:00",
     "ByteSpider": "2026-06-03T19:51:23+00:00",
     "DuckDuckBot": "2026-06-05T06:42:40+00:00",
@@ -69,8 +69,8 @@
     "Applebot": "2026-06-03T17:49:57+00:00",
     "YandexBot": "2026-06-08T18:15:18+00:00"
   },
-  "last_googlebot": "2026-06-09T03:41:10+00:00",
-  "last_bingbot": "2026-06-09T01:56:16+00:00",
+  "last_googlebot": "2026-06-09T04:41:39+00:00",
+  "last_bingbot": "2026-06-09T04:08:53+00:00",
   "chart_7days": [
     {
       "day": "2026-06-03",
@@ -185,25 +185,17 @@
     },
     {
       "day": "2026-06-09",
-      "total": 14,
+      "total": 20,
       "by_type": {
-        "OAI-SearchBot": 2,
-        "Googlebot": 2,
-        "Bingbot": 5,
-        "AhrefsBot": 3,
+        "OAI-SearchBot": 5,
+        "Googlebot": 3,
+        "Bingbot": 6,
+        "AhrefsBot": 4,
         "SemrushBot": 2
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "04",
-      "hits": 8
-    },
-    {
-      "hour": "05",
-      "hits": 7
-    },
     {
       "hour": "06",
       "hits": 25
@@ -290,24 +282,32 @@
     },
     {
       "hour": "03",
-      "hits": 12
+      "hits": 14
+    },
+    {
+      "hour": "04",
+      "hits": 13
+    },
+    {
+      "hour": "05",
+      "hits": 18
     }
   ],
   "top_bot_paths_24h": {
-    "/encadrement-loyer-paris-2026.html": 35,
+    "/encadrement-loyer-paris-2026.html": 34,
     "/": 24,
     "/robots.txt": 22,
     "/lille-dpe-f-g-interdit-location.html": 8,
     "/encadrement-loyer-villeurbanne-2026.html": 8,
+    "/sitemap.xml": 5,
     "/observatoire-annonces-loyer.html": 4,
-    "/sitemap.xml": 4,
     "/favicon.ico": 2,
     "/observatoire-annonces-loyer.html?ville=Lille&cp=59000&loyer=611&surf=25&violation=encadrement&plafond=23.40": 2,
     "/encadrement-loyer-lyon-2026.html": 2
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 27,
-    "/sitemap.xml": 6,
+    "/robots.txt": 28,
+    "/sitemap.xml": 5,
     "/": 1,
     "/__/firebase/init.json": 1,
     "/env.json": 1,
@@ -318,21 +318,21 @@
     "/aides-financieres-bailleur-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 67,
-    "/api/funnel/event": 19,
-    "/css/tailwind-runtime.js": 12,
+    "/": 73,
+    "/api/funnel/event": 20,
+    "/css/tailwind-runtime.js": 14,
     "/aides-financieres-bailleur-2026.html": 10,
     "/encadrement-loyer-saint-denis-2026.html": 10,
     "/css/main.css": 9,
-    "/static/share-card.js": 8,
-    "/static/app.js": 8,
-    "/api/changelog?limit=5": 8,
-    "/api/visit": 8
+    "/static/share-card.js": 9,
+    "/static/app.js": 9,
+    "/api/changelog?limit=5": 9,
+    "/api/visit": 9
   },
   "status_codes_24h": {
-    "200": 502,
+    "200": 516,
     "404": 18,
-    "400": 2,
+    "400": 4,
     "505": 1
   },
   "funnel": {
