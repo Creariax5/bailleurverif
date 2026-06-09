@@ -1018,6 +1018,32 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-09T10:00Z
+
+**Signal source** : snapshot-current.md run-494 (2026-06-09T09:42Z) — `humans_engaged_lifetime=5→6` (HUMAN #6 bailleur-vetting FxiOS, mentions-legales.html → retour 16h24 → Q1 72.1s → verdict sev=ok dep=0) ; 3ème pattern FxiOS bailleur identifié
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+Un bailleur a consulté les mentions légales de BailleurVérif hier soir. 16 heures plus tard, il est revenu compléter le diagnostic de son logement.
+
+Verdict : loyer conforme à l'encadrement en vigueur.
+
+Ce comportement est documenté dans les logs anonymisés du service. Le parcours : lecture des mentions légales → pause de 16h → retour direct → 5 questions (Q1 : 72 secondes de réflexion) → verdict affiché. C'est le 3ème profil de ce type identifié depuis l'ouverture — un pattern que les logs distinguent du comportement locataire typique : temps sur la première question nettement plus long, lecture préalable des mentions légales, verdict de conformité.
+
+Ce que ça illustre : l'encadrement des loyers concerne les deux parties au bail, pas seulement le locataire en litige. Un bailleur qui veut s'assurer de sa conformité — avant une mise en location, un renouvellement, ou une contestation éventuelle — peut faire le même diagnostic, sur les mêmes données réglementaires (arrêtés préfectoraux, décret n° 2017-1198), et obtenir un verdict daté.
+
+La traçabilité fonctionne dans les deux sens. Un locataire documente une possible infraction. Un bailleur attentif documente sa conformité.
+
+Diagnostic gratuit, sans inscription : bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #EncadrementLoyer #BailLocation #PropTech #DroitDesLocataires
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-08T14:30Z
 
 **Signal source** : snapshot-current.md run-484 (2026-06-08T13:42Z) — `humans_engaged_lifetime=4→5` (+1 SEO Saint-Denis city page → verdict_displayed) ; `seo_city_page_to_verdict_conversions=1→2` ; pattern N=2 (Montreuil 06-05 + Saint-Denis 06-08) confirmé
