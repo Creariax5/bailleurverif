@@ -309,11 +309,13 @@ function showResult() {
     if (lnk) lnk.addEventListener("click", () => { try { if (typeof trackFunnel === "function") trackFunnel("cta_secondary_clicked", { source: "warn_subcta" }); } catch(e){} });
   }
 
-  // Reframe email-gate + verdict-topic auto-dérivé pour /api/subscribe (strategic-40)
+  // Reframe email-gate + verdict-topic auto-dérivé pour /api/subscribe (strategic-40 + strategic-53 intent_signal UI wiring)
   let verdictTopic = "";
-  if (depassement > 0) verdictTopic = "loyer-legal";
-  else if (state.answers.dpe === "F" || state.answers.dpe === "G") verdictTopic = "dpe-bailleur";
-  else if (severity === "warn" || severity === "danger") verdictTopic = "veille-reglementaire";
+  let intentSignal = "";
+  if (depassement > 0) { verdictTopic = "loyer-legal"; intentSignal = "loyer-trop-cher"; }
+  else if (state.answers.dpe === "F" || state.answers.dpe === "G") { verdictTopic = "dpe-bailleur"; intentSignal = "bailleur-conformite"; }
+  else if (severity === "warn" || severity === "danger") { verdictTopic = "veille-reglementaire"; intentSignal = "bailleur-conformite"; }
+  else { intentSignal = "curiosite"; }
   const gate = document.getElementById("email-gate");
   if (gate) {
     const h3 = gate.querySelector("h3");
@@ -321,6 +323,7 @@ function showResult() {
     const btn = gate.querySelector("button[type=submit]");
     const form = gate.querySelector("form");
     if (form && verdictTopic) form.dataset.subscribeTopic = verdictTopic;
+    if (form) form.dataset.intentSignal = intentSignal;
     if (depassement > 0) {
       if (h3) h3.innerHTML = "📩 Recevez votre lettre de baisse de loyer (LRAR pré-remplie) + barèmes officiels";
       if (p) p.innerHTML = `Modèle LRAR pré-rempli avec votre calcul exact (~${depassement.toLocaleString('fr-FR')} €/mois trop-perçu) + références arrêté préfectoral + procédure étape par étape. Gratuit, 1 email, on ne spamme pas.`;
@@ -392,14 +395,17 @@ function captureEmail(ev, kind) {
       msg.style.color = "var(--accent)";
       // strategic-40 : double opt-in alerts via /api/subscribe topic verdict-dérivé (idempotent côté serveur)
       const topic = form.dataset.subscribeTopic;
+      const intent = form.dataset.intentSignal || "";
       if (topic) {
         fetch("/api/subscribe", { method: "POST", headers: {"Content-Type":"application/json"},
-          body: JSON.stringify({ email, topic, source: "home-verdict-cta", consent: true })
+          body: JSON.stringify({ email, topic, source: "home-verdict-cta", consent: true, intent_signal: intent })
         }).catch(()=>{});
       }
       form.querySelector("input").value = "";
-      form.querySelector("button").disabled = true;
-      form.querySelector("button").style.opacity = "0.5";
+      const submitBtn = form.querySelector("button");
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = "0.7";
+      submitBtn.textContent = "✓ Envoyé";
     } else {
       msg.textContent = "Erreur — réessayez dans quelques minutes.";
       msg.style.color = "var(--danger)";
