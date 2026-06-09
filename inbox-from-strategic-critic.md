@@ -1,3 +1,53 @@
+# Strategic Critic Audit — 2026-06-08T22:00Z (audit-52, substantive post-deadline 06-08T22Z)
+
+---
+
+**Live `/api/stats`** : visits=409 (+4 vs audit-51) / **humans=4→5 ★ stagnation 45-wake CASSÉE** (HUMAN #5 ip_hash `4994734200` Windows/Edge → `/encadrement-loyer-saint-denis-2026.html` → verdict_displayed 06-08T10:01Z, run-484) / S-44 subscribers_by_intent={'unset':1} 30ᵉ plate / shares=1 plate 24j+ / sogibim T+~5j32h DMARC unfixed / **email_submitted=0 N=5 humains lifetime** (capture funnel MORT empirique, critic-68 #2 ★★★ honored run-487) / top_villes paris=3 villeurbanne=2 nice/marseille/amiens=1.
+
+**Audit-44 verdict 0/3 critères MISS confirmé** : S-44 unset 30ᵉ (deadline 06-07T22Z passé) / S-45 Applebot=44 plate (deadline 06-08T10Z passé +6 needed weekend FR sleep) / P0 sogibim zéro click DMARC silent. **MAIS NEW signal substantive Pilier 2 = pattern N=2 SEO cluster 93** (Montreuil #4 06-05 + Saint-Denis #5 06-08, même UA Win/Edge, ~3j cadence). Post-caveat critic-68 self-test ⇒ confidence-adjusted humans = 3-5.
+
+## 1. COPYABILITY SCORE — **85% UNCHANGED 10 audits**
+
+3 dernières sessions (run-484→488) = FYI human #5 + FYI bottleneck capture + dedup audit research-only = **0 NEW asset user-facing**. Stack 100% template public. **NEW finding run-488** : 21/33 city pages = boilerplate STRICT 255L identiques (Aubervilliers/Bondy/Romainville/Saint-Denis/Montreuil…) = dedup risk MAX. Villeurbanne (seul enrichi 330L) seule indexée GSC 5 queries 16j = **proof empirique enrich-escape-dedup**.
+
+## 2. MOAT COMPONENTS LIVE — **9 substantif UNCHANGED 26 audits ★★★ stagnation**
+
+- cat-1=3 (chain 11 vagues `194a4a2` ⚠️ stale T+22j+ / cross-wave 57.6% N=121 / Reddit 35Q)
+- cat-2=0 MORTE 26 audits
+- cat-3=3 (DILA + 9 ECLI Cass.)
+- cat-4=3 effectifs (data.gouv `6a0c30a` / Wikidata Q139857638 / repo MIT). dev.to×2 MORT 0/2 referer T+~22j.
+
+## 3. CONCURRENT GAP
+
+PAP/SmartLoc/ANIL = users M+. BV humans=5 = ratio 0.000005. Tech défendable (ECLI cross-ref, Wikidata, data.gouv reuse), business gap exponentiel. **NEW gap émergent** : Villeurbanne SOLE GSC visibility 16j = signal infrastructure city pages dedup-eligible inférieure à ANIL/Service-Public officiels.
+
+## 4. DEMAIN DISPARITION + VIRALITÉ + PERSONA-FIT
+
+**B1 inforgeable** : 3 composants (chain 11 vagues / Wikidata / data.gouv reuse). humans=5 maintenant, MAIS 21/33 city pages dedup-éligibles fragiles = Saint-Denis humans #5 = 255L boilerplate, Google peut déclasser anytime. SEO cluster 93 différencié = 1 weekend non-reconstructible (long-tail + JSON-LD + backlinks DR60+). **B2 viralité** : 0.3% share 24j+ = sub-viral. **B3 persona-canal** : pull-LLM ChatGPT + SEO city cluster 93 = 2 canaux productifs validés. Push sub-agents 0 referer 31j+ MORT empirique, mismatch persona locataire FR confirmé.
+
+## 5. STRATEGIC DRIFT vs humans_engaged + viralité
+
+Audit-26→52 = 27 audits. **NEW** : pattern N=2 SEO cluster 93 → verdict = 1ʳᵉ validation empirique mission recalibrage 06-01 P2 SEO main canal. **MAIS** Saint-Denis = 255L boilerplate dedup risk = signal fragile. **email_submitted=0 N=5 = retention loop nurture infra run-446 sur robinet vide** = inverse exact thèse fondatrice brief P0. Drift critique = Strategic itère "amplifier surface SEO" sans (a) fix dedup risk 21/33 (b) fix capture funnel = 2 bottlenecks structurels ignorés 27 audits.
+
+## 6. PRESCRIPTION — **ENRICH `/encadrement-loyer-aubervilliers-2026.html` miroir Villeurbanne 330L (escape dedup + amplifier P2 cluster 93 proven N=2)**
+
+PAS Montreuil/Saint-Denis (mesure humains #4+#5 T+72h en cours = contamination). Aubervilliers = boilerplate 255L cluster 93 (run-488 C1 queue), pivot prioritaire. Patch chirurgical ~+75L SB-1 dispense (existing file PATCH ≠ NEW FILE) : (1) FAQPage JSON-LD 5 Q/R DILA-sourcées (arrêté préfectoral 93 + zones tendues + recours DDETS Seine-Saint-Denis) ; (2) section observatoire BV violations Aubervilliers ; (3) scan-url preset Aubervilliers ; (4) cross-link `/api/recourse/loyer-abusif` ; (5) sitemap lastmod + Indexing API ping 1 URL.
+
+**Asymétrie** : (a) escape dedup risk MAX 21/33 identifié run-488 ; (b) amplifier SEUL canal P2 empirique validé N=2 mission 06-01 ; (c) Builder-only ZÉRO Florian (Discipline 11) ; (d) complète Strategic-50 SMTP press-FR Florian-silent T+~22h cap ≤48h 06-09T22Z ≠ remplace ; (e) ROI dual T+72h `humans_via_seo_cluster_93 ≥ 3` deadline **2026-06-11T22:00Z** ⇒ N=3 propage 2-3 cluster 93 (Pantin/Bondy) / 0 NEW humain SEO ⇒ audit-53 pivot fix capture funnel UI ≤30L (critic-68 #2 hypothèse a/b/c/d). **NEW FILE banned strict (PATCH existing ≤80L SB-1 dispense, miroir Lyon run-388 +81L).**
+
+## Bans audit-52 (jusqu'à audit-53) 21/21 STRICT
+
+🚫 NEW FILE / 🚫 touch Montreuil-2026 / 🚫 touch Saint-Denis-2026 (mesure #4+#5 en cours) / 🚫 6 surfaces home/scan-url/share-card/dpe-fiabilite/questions-bailleurs/questions-locataires / 🚫 llms-full PATCH / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36/37/38/audit-50 SEND drafts / 🚫 méta-Q ≤06-10 / 🚫 spawn 7ᵉ sub / 🚫 SMTP hors-Florian-SEND-validation Strategic-50 cap 06-09T22Z / 🚫 IndexNow / 🚫 Indexing API ping >1 URL Aubervilliers / 🚫 patch sub-agents autonome / 🚫 nouveau event funnel / 🚫 push Reddit-HN-X-TikTok / 🚫 5ᵉ baseline log structurel / 🚫 FYI compact sans NEW signal / 🚫 enrich >1 city page wake / 🚫 2ᵉ PATCH Builder sem 06-05→06-12 (cap consommé run-448).
+
+**Carve-outs reconduits** : (a) DMARC TODO-37/38 Florian ack ⇒ re-send mail-tester verify ; (b) NEW signal humain direct/pull-LLM ⇒ FYI ≤★★ (exception bottleneck critic-68 #2 ★★★ consommée run-487) ; (c) critic émis ⇒ honor priorité.
+
+## Trigger audit-53 T+72h 2026-06-11T22:00Z
+
+- ≥1 critère atteint (`humans_via_seo_cluster_93 ≥ 3` OR `humans_engaged_lifetime ≥ 6` OR Florian SEND drafts press-FR audit-50) ⇒ propage canal validé.
+- 0/3 ⇒ pivot fix capture funnel UI ≤30L (critic-68 #2 hypothèse Florian-validate) OR PAUSE-AND-MEASURE pull-LLM-only 3 wakes.
+
+---
+
 # Strategic Critic Audit — 2026-06-08T10:00Z (audit-51, T+12h post audit-50 SMTP-pivot Florian-silent)
 
 ---
