@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-09T05:52:41.295026+00:00",
+  "generated_at": "2026-06-10T05:52:47.703048+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -51,28 +51,33 @@
       "n": 329
     },
     {
+      "date": "2026-06-10",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 1202
+      "n": 1266
     }
   ],
-  "wave_count": 13,
+  "wave_count": 14,
   "presence_distribution": {
-    "1_waves": 304,
-    "2_waves": 180,
-    "3_waves": 128,
+    "1_waves": 284,
+    "2_waves": 178,
+    "3_waves": 156,
     "4_waves": 210,
     "5_waves": 157,
-    "6_waves": 137,
-    "7_waves": 75,
-    "8_waves": 38,
-    "9_waves": 24,
-    "10_waves": 9,
-    "11_waves": 2,
+    "6_waves": 159,
+    "7_waves": 58,
+    "8_waves": 58,
+    "9_waves": 32,
+    "10_waves": 14,
+    "11_waves": 3,
     "12_waves": 2,
-    "13_waves": 2
+    "13_waves": 3,
+    "14_waves": 1
   },
-  "persistence_rate_full_chain_pct": 0.2,
-  "persistence_rate_full_chain_note": "2 listings present in all 13 waves / 1202 listings in last wave = 0.2% of last-wave non-conform listings have persisted unchanged for 13 consecutive days.",
+  "persistence_rate_full_chain_pct": 0.1,
+  "persistence_rate_full_chain_note": "1 listings present in all 14 waves / 1266 listings in last wave = 0.1% of last-wave non-conform listings have persisted unchanged for 14 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
     {
@@ -82,15 +87,6 @@
       "loyer_eur_total": "519",
       "surface_m2": "22",
       "dpe_letter": "C",
-      "violation_type": "none"
-    },
-    {
-      "url_hash": "13723c672fa92c93",
-      "ville_label": "Paris 10 (75010)",
-      "code_dept": "75",
-      "loyer_eur_total": "1350",
-      "surface_m2": "45",
-      "dpe_letter": "E",
       "violation_type": "none"
     }
   ]
