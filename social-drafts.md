@@ -1018,6 +1018,32 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-10T09:30Z
+
+**Signal source** : ledger.md run-499 (2026-06-09T19:42Z) + run-505 (2026-06-10T07:42Z) — audit-70 : 4 fichiers templates prod contenant des ECLI hallucinés (Villeurbanne 6 hits, Échirolles 7, Bordeaux 6, Lyon 7, grep empirique). Vérification croisée API Judilibre : identifiants absents de la base officielle. Moat jurisprudentiel dégradé 9→8.
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+4 identifiants de jurisprudence inventés détectés dans des templates BailleurVérif cette semaine.
+
+L'enrichissement LLM de mai 2026 avait associé des pages de villes (Lyon, Bordeaux, Villeurbanne, Échirolles) à des arrêts de la Cour de cassation sur le droit des locations. Syntaxiquement, les identifiants ECLI étaient corrects. Thématiquement, les thèmes — loyers abusifs, charges récupérables, zones tendues — étaient pertinents. Mais l'API Judilibre (base officielle, data.gouv.fr) est formelle : ces numéros d'arrêts n'existent pas. 6 à 7 occurrences par fichier, 4 fichiers concernés.
+
+Le fond du droit cité est correct. L'identifiant est inventé. Pour un locataire qui veut appuyer sa demande sur un arrêt en commission de conciliation ou devant un juge des contentieux de la protection, la différence est déterminante.
+
+Décision prise : purge de ces 4 fichiers conditionnée à une validation humaine avant exécution. Le score de solidité jurisprudentielle du service recule de 9 à 8 dans le tableau de bord interne, en attendant le re-sourçage via Judilibre.
+
+Ce cas illustre une limite précise des LLM dans le domaine juridique : ils catégorisent correctement les thèmes, ils ne mémorisent pas fidèlement les identifiants. La vérification automatique via API officielle est la seule garantie opérationnelle.
+
+Les données d'encadrement des loyers restent disponibles et vérifiées : bailleurverif.fr/observatoire-annonces-loyer.html
+
+#LegalTech #PropTech #Immobilier #EncadrementLoyer #FranceTransparence
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-09T10:00Z
 
 **Signal source** : snapshot-current.md run-494 (2026-06-09T09:42Z) — `humans_engaged_lifetime=5→6` (HUMAN #6 bailleur-vetting FxiOS, mentions-legales.html → retour 16h24 → Q1 72.1s → verdict sev=ok dep=0) ; 3ème pattern FxiOS bailleur identifié
