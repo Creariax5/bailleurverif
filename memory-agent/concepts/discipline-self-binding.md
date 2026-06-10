@@ -21,6 +21,22 @@ type: project
 - ✅ Si fichier ≥100L mais 100% scaffold/internal (test, fixture, doc concept memory-agent/, dataset csv, sub-agent prompt déjà existant patch) → variante §a/§b OK avec justification §a substance.
 - ✅ Si fichier <100L user-facing → variante §a/§b OK per L161 fix chirurgical ≤50L (zone 50-99L = gris, default variante §a/§b avec mention §a).
 
+### Sub-règle SB-1.1 — ENRICH file existant ⇒ même seuil Full ritual que NEW FILE
+
+**Effective** : 2026-06-10T19:42Z run-511, codifiée post critic-72 #3 ★ verdict "ENRICH +103L variante §a/§b sans Copyability+Moat+€X = drift DIR 10 §b" (Saint-Ouen ENRICH run-507).
+
+**Texte** : *"ENRICH d'un fichier existant user-facing déclenche le même seuil Full ritual qu'un NEW FILE : si net-add ≥100L user-facing au fichier (mesuré post-Edit), Builder DOIT inclure Copyability% + Moat category + ship-gate €X dans le WHY, MÊME pour un ENRICH validé par prescription Strategic-N §6 (carve-out de ban NEW FILE)."*
+
+**Triggers anti-récidive** :
+- ❌ Si Builder ENRICH +100L user-facing en variante §a/§b sans Copyability+Moat+€X (même sur ENRICH explicit-autorisé Strategic) → STOP, switch Full ritual obligatoire au moment du WHY pré-ship.
+- ✅ Si ENRICH 50-99L user-facing avec WHY substantive (nouvelle section différenciée, FAQPage JSON-LD nouveau, données moat ajoutées) → variante §a/§b OK avec mention §a substance MAIS Copyability+Moat+€X RECOMMANDÉS (zone gris).
+- ✅ Si ENRICH ≤50L fix chirurgical (typo, lien, métadonnée seule, 1 section refactor sans data add) → variante §a/§b OK sans Copyability+Moat+€X (L161 cohérent).
+- ✅ Si ENRICH ≥100L mais 100% scaffold/internal (memory-agent/, dataset, ledger, doc) → variante §a/§b OK avec §a substance.
+
+**Anti-loophole** : NE PAS contourner via "Strategic-N §6 autorisé ENRICH ⇒ pas Full ritual nécessaire". Le carve-out §6 lève le **ban NEW FILE** PAS le seuil discipline §b DIR 10. L'autorisation Strategic = quoi shipper, pas comment justifier.
+
+### Règle SB-1 (originale, conservée intacte ci-dessous)
+
 **Cooldown override** : si Florian reply inbox.md HEAD options (b) ou (c) → override immédiat self-bind, codifier nouvelle règle. Si silent ≥48h ≥2026-05-23T21:37Z → escalade audit-33 tactical pour confirmation default (a) tient.
 
 **Anti-loophole** : NE PAS différer cette règle sous prétexte "PAS 3 piliers recalibrés". Discipline méta = compose 3 piliers (qualité code + audit trail moat-builder). Patch §b NE PAS différé.
@@ -75,3 +91,4 @@ Si Florian patch HUMAN_DIRECTIVE.md L160 → archiver cette règle SB-1 (dépré
 - 2026-05-21T21:37Z run-336 — concept créé, règle SB-1 binding ce wake. Flag inbox.md HEAD avec 3 options Florian arbitrage.
 - 2026-06-03T19:50Z run-427 — SB-2 ECLI Judilibre log persistant codifié post-rollback 3 fausses ECLI Marseille (decisions/2026-06-03-marseille-jurisprudence-rollback.md).
 - 2026-06-09T19:43Z run-499 — SB-3 light file integrity codifié post run-497 ledger-only commit `96f09d0` (run-497 file missed reactive-corrected run-498). Critic-70 #3 ★ STOP anti-vanity METRIC `wake_file_missed_cumul` substitué codification structurelle.
+- 2026-06-10T19:42Z run-511 — Sub-règle SB-1.1 ENRICH file existant codifiée post critic-72 #3 ★ verdict drift Saint-Ouen ENRICH +103L variante §a/§b sans Copyability+Moat+€X (run-507). Clarif seuil Full ritual = même critère que NEW FILE pour ENRICH user-facing net-add ≥100L. Carve-out Strategic §6 lève ban NEW FILE pas seuil discipline §b.
