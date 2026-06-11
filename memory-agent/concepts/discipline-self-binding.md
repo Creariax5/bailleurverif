@@ -63,6 +63,25 @@ URLs `courdecassation.fr/decision/{id}` shippées pointaient vers IDs inexistant
 
 **Anti-loophole** : NE PAS contourner via affirmation "vérifié PISTE OAuth" sans log persistant. Trace ledger = preuve. Run-426 = exemple anti-pattern.
 
+## Règle SB-4 — IndexNow ship-time strict cap 1 URL (anti-théâtre cumulatif)
+
+**Effective** : 2026-06-11T15:45Z run-521+, sans cap (discipline permanente affinement ban).
+
+**Texte** : *"IndexNow ping autorisé UNIQUEMENT au ship-time d'une NEW page user-facing OR PATCH substantive ≥+50L FAQ/section utility, cap STRICT 1 URL ship-time, 0 batch ≥3 URLs hors-ship, 0 round wake-only re-ping même URL. Symétrie 1:1 avec pattern Indexing API Google. Si Builder PATCH ≥+50L section substantive utility d'une page existante OR ship NEW page user-facing → `agent-browser/indexnow_ping.py <url-unique>` autorisé au moment du commit ship. Sinon 0 IndexNow."*
+
+**Source** : brief Florian 2026-06-11T08:00Z inbox.md HEAD (T+~7h45). Affinement verdict run-315 "IndexNow théâtre confirmé" qui mesurait mauvais signal (0 hit Bingbot T+6h server.log ≠ ping inutile, mécanisme alimente crawl queue priority Bing, hit peut arriver H+18/36 outside window). Symétrie avec pattern Indexing API Google ship-time 1 URL spec (audit-52 §11). Bing+Yandex+DuckDuckGo+Seznam = ~5-7% SERP FR — coût marginal 1 ligne code POST `api.indexnow.org/indexnow` avec `bailleurverif-key.txt` (clé `b0d2add1441ec161a5ba4ad975987bc8` active depuis run-XX, 0 secret nouveau).
+
+**Triggers anti-récidive** :
+- ❌ Si Builder s'apprête à ping IndexNow ≥2 URLs même wake OR re-ping URL déjà ping ≤7j OR ping batch hors ship-time → STOP, ban théâtre cumulatif préservé.
+- ❌ Si Builder ping IndexNow sur PATCH ≤+50L typo/lien/métadonnée seule (non-substantive) → STOP, hors-cap critère substantive.
+- ✅ Si Builder ship NEW user-facing page (≥100L Full ritual) + commit → `python3 agent-browser/indexnow_ping.py <url-nouvelle>` 1 ligne post-commit OK.
+- ✅ Si Builder PATCH +≥50L section substantive utility (nouvelle FAQ JSON-LD, section data différenciée, ECLI cat-3 enrichi) → `python3 agent-browser/indexnow_ping.py <url-patchée>` 1 ligne post-commit OK.
+- ✅ Si bans Strategic-N audit explicitent "🚫 IndexNow" intégralement (ex: audit-57 bans 19/19) → SB-4 SUSPENDU temporairement durant l'audit, attendre audit suivant pour réactivation (hiérarchie Strategic > SB Builder, sauf brief Florian explicit override).
+
+**Cooldown override** : aucun. Affinement permanent. Si Florian patch HUMAN_DIRECTIVE.md restrict IndexNow → archiver SB-4. Si Strategic Critic ban explicit IndexNow audit-N → SB-4 dormant durant audit-N window.
+
+**Anti-loophole** : NE PAS contourner via "batch 2 URLs autorisé car 1+1 ships" — 1 URL/ship STRICT, jamais cumul. NE PAS contourner via "re-ping même URL après 7j" — 1 ping/URL/lifetime strict (re-ping = théâtre cumulatif confirmé run-315).
+
 ## Règle SB-3 light — DIR 10 §b file integrity (run-N.md MUST exist post-commit ledger)
 
 **Effective** : 2026-06-09T19:43Z run-499+, sans cap (discipline permanente hygiène audit-trail).
@@ -92,3 +111,4 @@ Si Florian patch HUMAN_DIRECTIVE.md L160 → archiver cette règle SB-1 (dépré
 - 2026-06-03T19:50Z run-427 — SB-2 ECLI Judilibre log persistant codifié post-rollback 3 fausses ECLI Marseille (decisions/2026-06-03-marseille-jurisprudence-rollback.md).
 - 2026-06-09T19:43Z run-499 — SB-3 light file integrity codifié post run-497 ledger-only commit `96f09d0` (run-497 file missed reactive-corrected run-498). Critic-70 #3 ★ STOP anti-vanity METRIC `wake_file_missed_cumul` substitué codification structurelle.
 - 2026-06-10T19:42Z run-511 — Sub-règle SB-1.1 ENRICH file existant codifiée post critic-72 #3 ★ verdict drift Saint-Ouen ENRICH +103L variante §a/§b sans Copyability+Moat+€X (run-507). Clarif seuil Full ritual = même critère que NEW FILE pour ENRICH user-facing net-add ≥100L. Carve-out Strategic §6 lève ban NEW FILE pas seuil discipline §b.
+- 2026-06-11T15:45Z run-521 — SB-4 IndexNow ship-time strict cap 1 URL codifiée post brief Florian 08:00Z (decisions/2026-06-11-indexnow-ban-affined.md). Affinement verdict run-315 "IndexNow théâtre confirmé" : ban global → cap 1 URL/ship-time NEW page OR PATCH ≥+50L substantive. Symétrie 1:1 Indexing API Google. SB-4 dormant durant Strategic-N ban explicit (audit-57 bans 19/19 = SB-4 suspendu jusqu'audit-58).

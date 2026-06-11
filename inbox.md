@@ -1,3 +1,19 @@
+## ✅ 2026-06-11T15:45Z — Agent → Florian — **BRIEF 08:00Z IndexNow honored J+0 T+~7h45 (3 actions Builder, 0 use ce wake)**
+
+Cap PAR CIBLE concept-doc 1/1 consommé sem 06-05→06-12 (cible distincte vs Builder prompt déjà consommé). Audit-57 bans 19/19 respectés.
+
+- **(a) SB-4 codifié** `concepts/discipline-self-binding.md` section nouvelle "IndexNow ship-time strict cap 1 URL" : ❌ rounds répétés / ❌ batch ≥3 / ✅ 1 URL ship-time NEW page / ✅ 1 URL ship-time PATCH ≥+50L substantive. Symétrie 1:1 Indexing API Google. SB-4 dormant durant audit-57 ban window.
+- **(b) `agent-browser/indexnow_ping.py` créé** 113L Python stdlib mirror `indexing_api_ping.py` CLI signature. Refuse 0-arg + N≥2 args + URLs hors host + déjà ping ≤lifetime. Test 0-arg = ERROR cap STRICT ✅. Universal/Bing/Yandex endpoints. Log persistant `wedge-tool/data/indexnow-pings.jsonl`. Clé `.indexnow_key` réutilisée.
+- **(c) Decision file** `2026-06-11-indexnow-ban-affined.md` audit-trail Florian brief + matrix 4 lignes + asymétrie ROI + cap PAR CIBLE détaillé + audit-57 compat.
+
+**0 USE ce wake** (audit-57 ban 🚫 IndexNow STRICT actif, SB-4 dormant). Hierarchy Strategic > SB sauf brief Florian explicit override — ici brief explicit autorise auto-PATCH PAR CIBLE concept-doc (≠ engage use). 1ʳᵉ application SB-4 = au prochain ship NEW user-facing/PATCH ≥+50L substantive post audit-58 (si ban IndexNow levé OR maintenu pour next audit).
+
+**SMOKE Saint-Ouen audit-73 #1 ★★ T+~28h** (06-10T11:42Z ship → 06-11T15:42Z) : **0 Googlebot/Bingbot/YandexBot** sur `/encadrement-loyer-saint-ouen-2026.html`. 22 hits cumul = self-curl + LLM crawlers (ChatGPT-User 06-06 / NuggetsBot 06-10 / SkyWatch / SleepBot) + SEO bots (Semrush) + 1 corp Zscaler proxy. Strategic-55 amplification deadline 06-13T22Z T+~55h **MISS ≥80% conf** pré-indexation Google baseline.
+
+`florian_briefs_honored_j0_lifetime` +1 ★. `strategic_cumul=57/57` UNCHANGED. `tactical_cumul=78→79` (audit-73 #1 honored J+0).
+
+---
+
 ## 🎯 2026-06-11T08:00Z — Florian → Builder — **AFFINER BAN INDEXNOW : autoriser 1 URL ship-time NEW page (symétrie Indexing API Google)**
 
 **Contexte** : Bing Webmaster Tools flag HIGH severity sur `encadrement-loyer-paris-2026.html` "not submitted via IndexNow". Ton verdict run-315 "IndexNow théâtre confirmé" était basé sur **1 spot-check, 1 page, fenêtre 6h** = statistiquement insignifiant. Bing possède le protocole (co-créé avec Yandex, repris par Cloudflare 25M+ sites) → ils ont de la data qu'on n'a pas. L'industrie SEO 2023-2025 confirme : impact marginal mais réel sur **indexation de NEW pages** (pas accélération crawl immédiat, mais boost queue priority).
