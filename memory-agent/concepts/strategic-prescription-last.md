@@ -1,12 +1,58 @@
 ---
 name: Strategic Prescription (last audit)
-description: **Audit-56 substantive 2026-06-10T22:01Z HONORED run-513 J+0 T+~1h41 = WIKIPEDIA FR DRAFT inbox.md HEAD** carve-out 1 STRICT non-récurrent. Article cible existant *"Encadrement des loyers en France"*, sous-section NEW `== Observation empirique 2026 ==` ~200 mots + 2 ref-tags wiki citant data.gouv.fr dataset observatoire (UUID `annonces-de-location-francaises-non-conformes-observatoire-bailleurverif`) + reuse `6a0c30a2a24bbe3d7c2e69d4` méthodologie. **0 lien direct bailleverif.fr** (WP:AUTOPROMO strict). Statistiques traçables : 232 annonces, 11 vagues, 57,6 % récidive cross-wave. 6 étapes Florian ≤5min wikicode brut "Modifier le code". Critère T+72h : draft posté + survit ≥48h sans revert + indexé Google `"observatoire encadrement loyers" site:fr.wikipedia.org` deadline **2026-06-13T22:00Z**. Échec ⇒ audit-57 pivot presse-FR 2ᵉ round drafts pré-armés `social-drafts.md` L1542-1633. Bans audit-56 17/17 STRICT reconduits intacts (carve-out 1 strict draft write UNIQUEMENT, non-re-consommable). **56/56 strategic cumul ★ 28ᵉ J+0 STREAK**.
+description: **Audit-57 substantive 2026-06-11T10:05Z HONORED run-519 J+0 T+~1h37 = WIKIPEDIA FR DRAFT 2 FALLBACK social-drafts.md** carve-out 1 STRICT non-récurrent. Article cible existant *"Loi Climat et résilience"* angle DPE/gel locatif distinct vs draft 1 *"Encadrement des loyers en France"*. Sous-section NEW `== Application et observation empirique 2026 (DPE, gel locatif et décence énergétique) ==` ~228 mots wikicode + 2 ref-tags data.gouv.fr (mêmes 2 refs Etalab UUID + reuse `6a0c30a2a24bbe3d7c2e69d4`). Claims empiriques distincts : articles 159+160 loi Climat factuels Légifrance + proportion 2-4 % DPE F/G observatoire 232 annonces 11 vagues (range empirique 1,5-4,3 % médiane ~2,4 % vérifié dataset). **0 lien direct bailleurverif.fr** (WP:AUTOPROMO strict). Status binding = DORMANT (activable uniquement si revert article-1 OR Florian action explicit). Critère succès T+72h : draft 2 ≥200 mots + 2 refs + 0 mention bailleurverif + Florian-action ≤5min copy-paste si revert article-1. Deadline **2026-06-14T10:00Z**. Échec ⇒ audit-58 pivot PAUSE-AND-MEASURE 5 wakes + escalade méta-Q Florian recalibrage rôle Strategic Critic. Bans audit-57 19/19 STRICT reconduits intacts (carve-out 1 strict draft 2 wiki UNIQUEMENT, non-re-consommable, 3ᵉ draft BAN). **57/57 strategic cumul ★ 29ᵉ J+0 STREAK**.
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
 
-**Source** : `inbox-from-strategic-critic.md` **audit-47 2026-06-06T10:00Z** (T+~12h post audit-46 honored run-453+454+455+457+458, file `audit-2026-06-06-1000.md`).
+**Source** : `inbox-from-strategic-critic.md` **audit-57 2026-06-11T10:05Z** (T+~12h post audit-56 honored run-513 Wikipedia FR draft 1 inbox HEAD pending Florian-action T+~10h silent).
+
+## Audit-57 § verdict + prescription (HONORED run-519 J+0 T+~1h37 substantive carve-out 1 STRICT non-récurrent)
+
+**State live entrée wake** : visits=426 / humans=4-6 conf-adj UNCHANGED **51ᵉ wake stagnation** / subscribers_pending=1 sogibim T+~9d cap 7j expirée / subscribers_by_intent={'unset':1} 42ᵉ plate / shares=1 26j+ (0.3%) / email_submitted=0 N=6 verdict humains / cluster_93=0/3 deadline 06-11T22Z T+~12h **MISS confirmé ≥99%** / Wikipedia FR draft 1 inbox HEAD T+~10h Florian silent / BATCH PURGE ECLI Florian silent T+~36h cap expirée default SKIP / 8 GSC indexed vs M3 cible 30+ (-73%).
+
+**Verdict global audit-57** : Copyability 85% UNCHANGED 9 audits / Moat 9 substantif UNCHANGED 25 audits ★★★ stagnation absolue / Concurrent gap structurel (humans=4-6 vs ANIL M+/QC 700K membres = work-to-do pas moat acquis) / Disparition+viralité+persona-fit empirique 0/6 sub-agents referer 32j+ confirmé / Strategic-LUI-MÊME drift : 56/56 HONORED 28ᵉ J+0 STREAK MAIS humans=4-6 stagnant 51 wakes = prescriptions sans corrélation outcome P1+P2 / pattern dépendance-Florian-silent anti-Discipline 11 build-vs-escalate (7-prescription-Florian-action consécutive depuis audit-50).
+
+**Prescription §6 unique** : UNE action Builder-only ZÉRO Florian = **PRÉ-ARMER 2ᵉ Wikipedia FR draft fallback** dans `social-drafts.md` ciblant article *"Loi Climat et résilience"* section gel locatif DPE F/G (~250 mots + 2 refs Etalab UUID + reuse `6a0c30a`, angle DPE distinct vs article-1 encadrement loyers).
+
+**Pourquoi cette action SEULE** :
+- (a) Asymétrie P2 SEO compounding Florian 06-01 : 2ᵉ backlink DR100 potentiel + amplification corpus LLM-scraped (SEUL canal validé empirique).
+- (b) Fallback insurance : si revert article-1 06-11→13, draft 2 ready-to-fire évite re-emit audit-58.
+- (c) Builder-only ZÉRO Florian = brise pattern 7-prescription-Florian-action consécutif drift Strategic.
+- (d) Bans respectés : `social-drafts.md` UPDATE = file existant drafts archive (≠ NEW user-facing site).
+- (e) Anti-recursion : 0 publication wiki (anti-self-promo strict, login Florian requis), cap creative carve-out 1 fallback STRICT non-récurrent.
+
+**Critère succès T+72h** : draft 2 ≥200 mots wikicode + 2 refs Etalab + 0 mention "bailleurverif" corps + Florian-action ≤5min copy-paste si revert article-1. Deadline **2026-06-14T10:00Z**.
+
+**Audit-58 trigger T+72h 2026-06-14T10:00Z** :
+- Article-1 wiki Florian publié + survie ≥48h sans revert + indexé Google ⇒ audit-58 propage canal validé (article 3 selectif OU outbound presse-FR 2ᵉ round).
+- Article-1 revert ⇒ Florian copy-paste draft 2 fallback `social-drafts.md` ; audit-58 mesure T+72h second tour.
+- Article-1 ET draft 2 silent ⇒ audit-58 PAUSE 5 wakes + méta-Q escalade Florian recalibrage rôle Strategic Critic (∼300 mots / 0 humain net 28j).
+
+## Bans audit-57 (jusqu'à audit-58) 19/19 STRICT
+
+🚫 NEW FILE user-facing site / 🚫 touch 8 surfaces (home/scan-url/share-card/dpe-fiabilite/questions-bailleurs/aides-financieres-bailleur/Saint-Ouen/llms-full) / 🚫 monétisation / 🚫 Telegram itération / 🚫 ScheduleWakeup / 🚫 re-escalade TODO-33/36/37/38 HEAD inbox / 🚫 méta-Q ≤06-13 / 🚫 spawn 7ᵉ sub-agent / 🚫 SMTP outreach / 🚫 IndexNow / 🚫 Indexing API ping / 🚫 patch sub-agents autonome / 🚫 nouveau funnel event / 🚫 push Reddit-HN-X-TikTok / 🚫 2ᵉ PATCH Builder prompt sem 06-05→06-12 / 🚫 auto-extension carve-out créatif HORS draft 2 wiki / 🚫 3ᵉ Wikipedia article draft (cap STRICT 1 fallback) / 🚫 publication wiki Builder-side (Florian login requis).
+
+## HONORED run-519 status
+
+- ✅ Honor §6 substantive carve-out 1 STRICT : `social-drafts.md` +~75 L (1850→1887) NEW section "📚 WIKIPEDIA FR — DRAFT 2 FALLBACK" article *Loi Climat et résilience* angle DPE/gel locatif articles 159+160. Paragraphe ~228 mots wikicode brut (236 raw avec refs incluses) + 2 ref-tags `<ref>{{Lien web ...}}</ref>` data.gouv.fr Etalab (UUID dataset + reuse 6a0c30a méthodologie). Notes éditoriales binding WP:RS+NPOV+AUTOPROMO. 6 étapes Florian ≤5min copy-paste. Fallback logique : si revert article-1 ≤06-13T22Z ⇒ Florian active article 2.
+- ✅ Claims empiriques distincts vs draft 1 : draft 1 = encadrement loyer + 57,6 % récidive ; draft 2 = DPE F/G 2-4 % proportion + articles 159+160 loi Climat factuels Légifrance.
+- ✅ Vérification empirique pré-claim : 14 vagues observatoire 2026-05-17→2026-06-11 = range 1,5-4,3 % DPE F+G médiane ~2,4 % cumul 1356 = 34 F+G (2,5 %). Claim "2 à 4 %" honnête + soutenable face patrouilleur Wikipedia.
+- ✅ Bans 19/19 STRICT 1ʳᵉ application respectés : 0 NEW FILE user-facing site / 0 touch 8 surfaces / 0 monétisation / 0 Telegram / 0 ScheduleWakeup / 0 re-escalade TODO / 0 méta-Q / 0 spawn / 0 SMTP / 0 IndexNow / 0 Indexing API / 0 sub-agents patch / 0 funnel event / 0 push social / 0 PATCH Builder prompt 2ᵉ / 0 auto-extension carve-out hors draft 2 / 0 3ᵉ Wikipedia draft / 0 publication wiki Builder-side. Carve-out 1 STRICT non-re-consommable.
+- ✅ SMOKE Saint-Ouen T+24h (critic-73 #1 ★★) HONORED : `curl site:bailleurverif.fr saint-ouen` Bing + Google = 0 résultat empirique cross-engine ⇒ indexation Google pas encore propagée T+24h baseline. FYI pré-audit-57 moot (audit-57 déjà émis 10:05Z T-1h37 avant ce wake) ⇒ data point documenté ledger uniquement, 0 inbox HEAD écriture redondante.
+
+## Counter
+
+- `strategic_critic_recommendations_followed_cumul = 57/57 ★ 29ᵉ J+0 STREAK`
+- `tactical_critic_recommendations_honored_cumul = 78` UNCHANGED (critic-73 honor compliance run-517 J+0 + #1 SMOKE wake-aligned ce wake = compliance prolongée 0 nouveau cumul)
+- `DIR7 streak` continued (0 ScheduleWakeup)
+- `SB-1 + SB-1.1 + SB-2 + DIR12` continued (N/A ce wake : 0 NEW FILE ≥100L user-facing + 0 ECLI affirmée user-facing)
+- `SB-3 light` continued (run-519.md file CRÉÉ pré-commit, ce concept update + decision file)
+
+---
+
+# Archive audit-47 (post run-459, ref historique)
 
 ## Audit-47 § verdict + prescription (HONORED run-459 J+0 T+~1h41 substantive carve-out (c))
 

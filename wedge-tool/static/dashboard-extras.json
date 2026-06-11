@@ -1,72 +1,71 @@
 {
-  "generated_at": "2026-06-11T07:44:02Z",
+  "generated_at": "2026-06-11T11:52:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3333,
-    "requests_24h": 420,
-    "bot_hits_lifetime": 855,
+    "requests_lifetime": 3188,
+    "requests_24h": 436,
+    "bot_hits_lifetime": 856,
     "bot_hits_24h": 140,
-    "bot_hits_1h": 3,
-    "human_hits_24h": 280
+    "bot_hits_1h": 6,
+    "human_hits_24h": 296
   },
   "bots_by_type_lifetime": {
     "OAI-SearchBot": 387,
-    "Bingbot": 180,
-    "AhrefsBot": 63,
-    "Googlebot": 44,
-    "SemrushBot": 36,
+    "Bingbot": 182,
+    "AhrefsBot": 56,
+    "Googlebot": 49,
+    "SemrushBot": 41,
     "MJ12bot": 24,
     "BaiduSpider": 23,
+    "DuckDuckBot": 18,
     "GPTBot": 17,
-    "DuckDuckBot": 16,
-    "generic-bot": 13,
+    "generic-bot": 15,
     "PerplexityBot": 11,
     "python-script": 10,
     "FacebookExt": 9,
-    "HeadlessChrome": 9,
-    "ByteSpider": 6,
+    "ByteSpider": 7,
     "Go-HTTP": 3,
     "curl/wget": 2,
     "YandexBot": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 67,
-    "Bingbot": 31,
-    "Googlebot": 11,
+    "OAI-SearchBot": 60,
+    "Bingbot": 29,
+    "Googlebot": 14,
     "PerplexityBot": 9,
     "BaiduSpider": 5,
+    "SemrushBot": 5,
     "MJ12bot": 4,
+    "DuckDuckBot": 4,
     "generic-bot": 3,
-    "FacebookExt": 2,
     "AhrefsBot": 2,
-    "DuckDuckBot": 2,
-    "ByteSpider": 1,
-    "GPTBot": 1,
     "python-script": 1,
-    "Go-HTTP": 1
+    "Go-HTTP": 1,
+    "FacebookExt": 1,
+    "ByteSpider": 1,
+    "GPTBot": 1
   },
   "bot_last_seen": {
     "python-script": "2026-06-10T11:54:55+00:00",
     "AhrefsBot": "2026-06-10T20:04:15+00:00",
-    "OAI-SearchBot": "2026-06-11T07:39:58+00:00",
-    "SemrushBot": "2026-06-09T21:49:48+00:00",
-    "Bingbot": "2026-06-11T06:14:40+00:00",
+    "OAI-SearchBot": "2026-06-11T11:40:34+00:00",
+    "SemrushBot": "2026-06-11T11:12:17+00:00",
+    "Bingbot": "2026-06-11T11:02:47+00:00",
     "FacebookExt": "2026-06-11T06:51:01+00:00",
     "BaiduSpider": "2026-06-11T06:35:24+00:00",
-    "GPTBot": "2026-06-10T09:44:52+00:00",
+    "GPTBot": "2026-06-11T09:48:21+00:00",
     "MJ12bot": "2026-06-11T06:00:53+00:00",
-    "Googlebot": "2026-06-11T06:04:01+00:00",
-    "generic-bot": "2026-06-10T14:21:28+00:00",
-    "ByteSpider": "2026-06-10T08:54:33+00:00",
-    "DuckDuckBot": "2026-06-11T00:43:34+00:00",
+    "Googlebot": "2026-06-11T10:59:29+00:00",
+    "generic-bot": "2026-06-11T09:39:29+00:00",
+    "ByteSpider": "2026-06-11T09:46:38+00:00",
+    "DuckDuckBot": "2026-06-11T10:16:48+00:00",
     "Go-HTTP": "2026-06-10T15:16:17+00:00",
     "curl/wget": "2026-06-07T23:42:25+00:00",
-    "HeadlessChrome": "2026-06-04T08:37:07+00:00",
     "PerplexityBot": "2026-06-10T21:08:31+00:00",
     "YandexBot": "2026-06-08T18:15:18+00:00"
   },
-  "last_googlebot": "2026-06-11T06:04:01+00:00",
-  "last_bingbot": "2026-06-11T06:14:40+00:00",
+  "last_googlebot": "2026-06-11T10:59:29+00:00",
+  "last_bingbot": "2026-06-11T11:02:47+00:00",
   "chart_7days": [
     {
       "day": "2026-06-05",
@@ -180,35 +179,23 @@
     },
     {
       "day": "2026-06-11",
-      "total": 24,
+      "total": 60,
       "by_type": {
-        "OAI-SearchBot": 9,
-        "DuckDuckBot": 2,
-        "Bingbot": 7,
-        "Googlebot": 2,
+        "OAI-SearchBot": 22,
+        "DuckDuckBot": 4,
+        "Bingbot": 13,
+        "Googlebot": 8,
         "MJ12bot": 2,
         "BaiduSpider": 1,
-        "FacebookExt": 1
+        "FacebookExt": 1,
+        "generic-bot": 2,
+        "ByteSpider": 1,
+        "GPTBot": 1,
+        "SemrushBot": 5
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "08",
-      "hits": 6
-    },
-    {
-      "hour": "09",
-      "hits": 5
-    },
-    {
-      "hour": "10",
-      "hits": 3
-    },
-    {
-      "hour": "11",
-      "hits": 18
-    },
     {
       "hour": "12",
       "hits": 10
@@ -287,45 +274,63 @@
     },
     {
       "hour": "07",
-      "hits": 5
+      "hits": 8
+    },
+    {
+      "hour": "08",
+      "hits": 16
+    },
+    {
+      "hour": "09",
+      "hits": 12
+    },
+    {
+      "hour": "10",
+      "hits": 6
+    },
+    {
+      "hour": "11",
+      "hits": 11
     }
   ],
   "top_bot_paths_24h": {
-    "/encadrement-loyer-paris-2026.html": 32,
-    "/": 22,
-    "/robots.txt": 15,
-    "/lille-dpe-f-g-interdit-location.html": 9,
-    "/encadrement-loyer-villeurbanne-2026.html": 6,
+    "/encadrement-loyer-paris-2026.html": 28,
+    "/": 20,
+    "/robots.txt": 17,
+    "/lille-dpe-f-g-interdit-location.html": 11,
     "/sitemap.xml": 5,
-    "/encadrement-loyer-grenoble-2026.html": 4,
-    "/encadrement-loyer-lille-2026.html": 3,
-    "/atom.xml": 3,
-    "/aides-financieres-bailleur-2026.html": 3
+    "/atom.xml": 4,
+    "/encadrement-loyer-villeurbanne-2026.html": 3,
+    "/aides-financieres-bailleur-2026.html": 3,
+    "/encadrement-loyer-lille-2026.html": 2,
+    "/observatoire-annonces-loyer.html": 2
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 39,
+    "/robots.txt": 41,
     "/encadrement-loyer-villeurbanne-2026.html": 2,
+    "/lille-dpe-f-g-interdit-location.html": 2,
     "/observatoire-annonces-loyer.html": 1,
-    "/lille-dpe-f-g-interdit-location.html": 1,
-    "/encadrement-loyer-echirolles-2026.html": 1
+    "/encadrement-loyer-echirolles-2026.html": 1,
+    "/loyer-legal-paris.html": 1,
+    "/encadrement-loyer-paris-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 37,
-    "/css/main.css": 17,
-    "/css/tailwind-runtime.js": 17,
-    "/robots.txt": 13,
+    "/": 42,
+    "/css/tailwind-runtime.js": 23,
+    "/css/main.css": 22,
+    "/robots.txt": 12,
+    "/favicon.svg": 11,
     "/encadrement-loyer-saint-ouen-2026.html": 10,
-    "/favicon.ico": 7,
-    "/favicon.svg": 7,
-    "/data/encadrement-loyer-france-2026.json": 4,
+    "/favicon.ico": 6,
+    "/api/visit": 5,
     "/?q=assurance": 4,
-    "/api/visit": 4
+    "/api/funnel/event": 4
   },
   "status_codes_24h": {
-    "200": 389,
-    "404": 28,
-    "400": 2,
-    "505": 1
+    "200": 409,
+    "404": 24,
+    "505": 2,
+    "400": 1
   },
   "funnel": {
     "events_total_lifetime": 223,
