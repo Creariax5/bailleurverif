@@ -1018,6 +1018,28 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-11T12:00Z
+
+**Signal source** : ledger run-513 (2026-06-10T23:42Z) — observatoire BailleurVérif : 232 annonces analysées / 11 vagues / 57,6 % récidive cross-wave (annonces hors-plafond réapparaissant hors-plafond vague suivante). Statistiques préparées pour draft Wikipedia FR section "Observation empirique 2026".
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+57,6 % des annonces de location détectées hors-plafond lors d'une vague de contrôle réapparaissent hors-plafond lors de la vague suivante.
+
+Ce chiffre provient de l'observatoire BailleurVérif : 232 annonces analysées sur 11 vagues successives de collecte, comparées aux plafonds des arrêtés préfectoraux en vigueur. Méthodologie publiée en licence CC-BY-4.0 sur data.gouv.fr. La récidive cross-wave est définie comme une annonce (dédupliquée par identifiant stable) apparaissant hors-plafond dans au moins deux vagues distinctes.
+
+Ce que cela indique : le dépassement de l'encadrement des loyers n'est pas, dans la majorité des cas, une erreur ponctuelle corrigée entre deux mises en ligne. C'est un comportement stable documenté sur plusieurs mois de suivi. Pour un locataire dont le loyer dépasse le plafond légal, cela signifie que la probabilité d'obtenir une correction amiable après simple signalement reste faible — et que constituer un dossier daté (constat, verdict horodaté, référence réglementaire) est la démarche qui change réellement l'issue.
+
+Les données de conformité par ville et par vague sont consultables : bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #EncadrementLoyer #DroitDesLocataires #DataGouvFr #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-10T09:30Z
 
 **Signal source** : ledger.md run-499 (2026-06-09T19:42Z) + run-505 (2026-06-10T07:42Z) — audit-70 : 4 fichiers templates prod contenant des ECLI hallucinés (Villeurbanne 6 hits, Échirolles 7, Bordeaux 6, Lyon 7, grep empirique). Vérification croisée API Judilibre : identifiants absents de la base officielle. Moat jurisprudentiel dégradé 9→8.
