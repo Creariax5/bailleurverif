@@ -1,3 +1,39 @@
+## 🎯 2026-06-11T08:00Z — Florian → Builder — **AFFINER BAN INDEXNOW : autoriser 1 URL ship-time NEW page (symétrie Indexing API Google)**
+
+**Contexte** : Bing Webmaster Tools flag HIGH severity sur `encadrement-loyer-paris-2026.html` "not submitted via IndexNow". Ton verdict run-315 "IndexNow théâtre confirmé" était basé sur **1 spot-check, 1 page, fenêtre 6h** = statistiquement insignifiant. Bing possède le protocole (co-créé avec Yandex, repris par Cloudflare 25M+ sites) → ils ont de la data qu'on n'a pas. L'industrie SEO 2023-2025 confirme : impact marginal mais réel sur **indexation de NEW pages** (pas accélération crawl immédiat, mais boost queue priority).
+
+**Affinement ban audit-XX→audit-N+1** (à porter dans la prochaine prescription strategic OU auto-PATCH discipline-self-binding) :
+
+| Usage IndexNow | Statut nouveau |
+|---|---|
+| 🚫 **IndexNow ping rounds répétés** (re-ping même URL chaque wake) | INTERDIT (théâtre cumulatif confirmé) |
+| 🚫 **IndexNow batch ≥3 URLs** wake hors-ship | INTERDIT (vanity métrique) |
+| ✅ **IndexNow 1 URL au ship-time NEW page user-facing** | AUTORISÉ (symétrie avec ton pattern Indexing API Google 1 URL spec) |
+| ✅ **IndexNow 1 URL au ship-time PATCH substantive** (≥+50L FAQ/section utility) | AUTORISÉ même règle |
+
+**Pourquoi cette nuance** :
+1. **Symétrie avec ton propre pattern existant** : tu ping Indexing API Google 1 URL strict au ship NEW page (audit-52 §11 spec verbatim "Indexing API ping 1 URL"). Aucune raison d'asymétrie Bing vs Google si même contrainte 1 URL strict.
+2. **Le test run-315 mesurait le mauvais signal** : 0 hit Bingbot T+6h server.log ≠ "ping inutile". Le mécanisme IndexNow alimente la crawl queue priority Bing, pas un fetch instantané (hit peut arriver H+18/36 outside window mesuré).
+3. **Coût marginal = 1 ligne code, 0 risque** : `curl POST api.indexnow.org/indexnow` avec `bailleurverif-key.txt` existante (clé déjà active depuis run-XX). 0 secret nouveau, 0 dépense, 0 dépendance.
+4. **ROI asymétrique** : Bing+Yandex+DuckDuckGo+Seznam = ~5-7% SERP FR. Marginal mais coût marginal aussi. Pas-utiliser = laisser sur la table sans raison.
+5. **Garde-fou anti-théâtre intacte** : ban "ping rounds répétés" conserve la discipline anti-vanity du Builder run-315. C'est juste le binaire 100% ban → 100% autorisé qui était trop large.
+
+**Action concrète Builder ce wake OU next** :
+- **(a)** Auto-PATCH `concepts/discipline-self-binding.md` ou équivalent : remplacer "🚫 IndexNow" par les 4 lignes du tableau ci-dessus
+- **(b)** Documenter dans `decisions/2026-06-11-indexnow-ban-affined.md` raison + référence verdict run-315 + cette brief
+- **(c)** Au prochain ship NEW user-facing page : appliquer `agent-browser/indexnow_ping.py <url>` (à créer si pas existant, miroir 30L de `indexing_api_ping.py` Google)
+- **(d)** Cap strict 1 URL/ship, 0 batch, 0 round wake-only
+
+**WHY auto-PATCH OU prescription strategic** : si audit-57 / critic-71+ en cours pédagogique, le strategic peut intégrer naturellement. Sinon Builder applique cap PAR CIBLE (Strategic récent = OK, Builder 1/sem disponible si DIRECTIVE 10 §c-bis applicable).
+
+**NON-actions explicit** : 0 IndexNow batch rétroactif sur 184 pages existantes (= théâtre cumulatif confirmé, anti-pattern préservé). 0 re-ping pages déjà indexées Bing (Paris-2026 du flag = ignore Bing nudge, pas substantive).
+
+**Compatible bans actifs** : aucun ban audit-52→56 explicite "🚫 IndexNow NEW page ship-time" = nouvelle interprétation cohérente. Si conflit perçu, escalader Strategic-57 décision finale.
+
+**Asymétrie ROI** : 1 ligne code + 1 ligne ban refined → débloque indexation Bing 5-7% SERP FR sur futures pages NEW + fait taire warnings Bing récurrents.
+
+---
+
 ## 📝 2026-06-10T23:42Z — Agent → Florian — **WIKIPEDIA FR DRAFT READY-TO-FIRE (Strategic-56 carve-out 1 STRICT non-récurrent HONORED J+0, action Florian ≤5min connecté wiki)**
 
 **Pourquoi cette action** : audit-56 22:01Z prescrit ÉDITION article EXISTANT Wikipedia FR comme seul levier P2 SEO compounding aligné brief 06-01 (P2 canal #1) tant que humans<100. Asymétrie : (1) backlink DR100 permanent ; (2) corpus Wikipedia FR scrapé tous LLMs ⇒ amplifie seul canal validé pull-LLM (Bouygues+Villeurbanne+sogibim+FxiOS) ; (3) NEW cat-4 substantif remplace dev.to mort (0/2 referer 32j+) ; (4) zéro push social (≠ Reddit/HN/X dépriorité explicit 06-01). **Anti self-promo Wikipedia policy strict** = data.gouv.fr UNIQUEMENT comme secondary source institutionnelle Etalab, **aucun lien direct bailleverif.fr** dans le paragraphe ou les refs.
