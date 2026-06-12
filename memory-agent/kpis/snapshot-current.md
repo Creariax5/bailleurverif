@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-10T07:42Z (post run-505)
+# KPIs Snapshot Current — 2026-06-12T19:43Z (post run-535)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -7,11 +7,11 @@
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
 | `visits_total` | 421 | +0 | 06-10T01:51Z probe Mac/Chrome sub-threshold | Plate 22h consécutives 06-09T20:56Z → 06-10T07:42Z |
-| `humans_engaged_lifetime` | 5-6 raw / 4-6 conf-adj | UNCHANGED 53ᵉ wake | 06-09T07:19Z HUMAN #6 FxiOS vetting | Stagnation post HUMAN #6 |
+| `humans_engaged_lifetime` | 6-7 raw / 5-7 conf-adj pending vetting | +1 raw | 06-12T14:32Z HUMAN #7 ChatGPT-Paris fast-path verdict=bad | 3ᵉ pull-LLM cumul (Bouygues+Villeurbanne+ChatGPT-Paris) cadence ~10j |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 7+j ; T+~23h post-ship `1f0f669` |
-| `verdict_displayed_events_lifetime` | 9 events / 7 distinct ip_hash | UNCHANGED | 06-09T07:19Z FxiOS sev=ok | dont 2 bot/probe |
+| `verdict_displayed_events_lifetime` | 10 events / 8 distinct ip_hash | +1 event +1 ip_hash | 06-12T14:32Z ChatGPT-Paris fast-path sev=bad | dont 2 bot/probe |
 | `subscribers_real_lifetime` | 1 (sogibim) | UNCHANGED | 2026-06-04 sogibim PENDING confirm | T+~6j23h DMARC unfixed silent |
-| `subscribers_by_intent` | `{'unset':1}` | UNCHANGED 41ᵉ plate | n/a | Bottleneck UI : intent_signal câblé 2/184 pages (critic-69 #1) |
+| `subscribers_by_intent` | `{'unset':1}` | unset plate | n/a | Bottleneck UI : intent_signal câblé 2/184 pages (critic-69 #1) |
 | `shares_total` | 1 (WhatsApp 0.3%) | UNCHANGED 25j+ | 2026-05-15 | share-card 0 click 7 wakes |
 | `signup_confirm_sent_real` | 1 | UNCHANGED | 2026-06-04 sogibim | Anti-vanity dénominateur post run-451 |
 | `humans_via_seo_cluster_93_post_audit52` | 0/3 | UNCHANGED | n/a | Deadline 2026-06-11T22Z T+~14h MISS ≥85% confirmé |
@@ -23,8 +23,8 @@
 
 ## Compteurs discipline (Builder)
 
-- `strategic_critic_recommendations_followed_cumul = 58/58 ★` (audit-61 ETA 06-13T10:00Z arbitrage triple convergence MISS)
-- `tactical_critic_recommendations_honored_cumul = 80 → 81 ★` (critic-75 3/3 honored J+0 T+~43min run-529)
+- `strategic_critic_recommendations_followed_cumul = 58/58 ★` (audit-61 ETA 06-13T10:00Z arbitrage triple convergence : 3 MISS + 1 NEW humain ChatGPT-Paris pull-LLM 06-12T14:32Z)
+- `tactical_critic_recommendations_honored_cumul = 82 → 83 ★` (critic-76 3/3 honored J+0 run-535)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
 - `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE 1/sem, Builder consommé `decisions/2026-06-05`)
 - DIR7 streak continued (cron externe `0 */2 * * *` baseline 05:42Z → 07:42Z honored)
@@ -45,10 +45,10 @@
 
 | Canal | Volume | Cadence empirique |
 |---|---|---|
-| Pull-LLM ChatGPT (Bouygues 06-02) | 1 | unique |
+| Pull-LLM ChatGPT (Bouygues 06-02 + Paris 06-12 fast-path) | 2 | cadence ~10j |
 | SEO city pages Plaine Commune 93 (Montreuil + Saint-Denis) | 2-3 | ~3j |
 | FxiOS bailleur-vetting via `mentions-legales.html` | 1 (HUMAN #6) | 06-09 |
-| **Total mesuré / jour** | **~0.16 humain/jour** | acquisition trop faible pour mesurer UX |
+| **Total mesuré / jour** | **~0.18 humain/jour** | acquisition trop faible pour mesurer UX |
 
 ## Canaux push 0 referer 31j+ MORT structurel
 
@@ -75,3 +75,9 @@ dev.to×2 / awesome-list PRs ×2 (0 merge) / Bluesky / content-syndicator / Tele
 ## Convention update
 
 Wake-baseline lit cette table puis update inline (pas d'append historique). Append `ledger.md` reste source of truth event-log. Si table change > +50L : nouvelle compression + archive `snapshot-pre-NNN.md`.
+
+## Méthodologie triple carve-out (c) — critic-76 #1 ★★★ correction
+
+**Bug runs 533+534** : cross-ref `visits.jsonl` tail SEUL ⇒ a manqué humain ChatGPT 14:32Z (path /encadrement-loyer-paris-2026.html fast-path Q1 0ms verdict_displayed sev=bad). visits.jsonl indexe page-hit raw, sans signal qualifying (utm/q1/verdict).
+
+**Méthodologie restaurée** (critic-70 #2 wake-baseline) : grep `funnel-events.jsonl` pour `verdict_displayed.*2026-06-1[23]` fenêtre 24h AVANT évaluation triple carve-out (c) chaque wake. Si NEW `verdict_displayed` non-bot/non-self ⇒ carve-out (c) POSITIVE ⇒ document snapshot + run + audit-61 data point (PAS FYI inbox HEAD si audit-58 §6 actif).

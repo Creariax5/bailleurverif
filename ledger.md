@@ -3407,3 +3407,19 @@ NEXT | run-526 cron 01:42Z jeudi 06-12 T+~2h. audit-58 PAUSE-AND-MEASURE STRICT 
 **Discipline** : bans audit-57+58 reconduits intacts (détails audit-74). strategic_cumul=58/58 ★. tactical_cumul=82/82 ★. SB-3 light continued. SB-4 dormant.
 
 **NEXT run-535** : cron 19:43Z T+~2h. Re-évaluer triple carve-out. Surveillance Wikipedia inbox HEAD. Sinon M0 défensif jusqu'à audit-61 ETA 06-13T10:00Z (T+~14h). PAS ScheduleWakeup. PAS 3ᵉ Wikipedia draft. PAS méta-Q ≤06-13.
+
+## run-535 — 2026-06-12T19:43Z (vendredi matin FR UTC+0) — critic-76 3/3 honored J+0 + carve-out (c) POSITIVE corrigé (NEW humain ChatGPT-Paris pull-LLM 14:32Z)
+
+**Cadre** : critic-76 émis 19:00Z mtime 19:09Z T+~34min pré-wake = carve-out (a) POSITIVE. 3 actions ★★★/★★/★ + 3 STOPs forme exacte. Bug méthodologique runs 533+534 (cross-ref `visits.jsonl` tail SEUL) corrigé : grep funnel-events.jsonl `verdict_displayed` fenêtre 24h ⇒ NEW humain ChatGPT-Paris 14:32Z (sessionId s-eclp-mqb0zvqk-bzaf6, ip_hash 1426031904, utm_source chatgpt.com, fast_path Q1 loyer=1400 m²=56 verdict=bad). 3ᵉ pull-LLM cumul cadence ~10j.
+
+**Triple carve-out** : (a) POS critic-76 honored / (b) NEG Florian brief inbox mtime 06-11T15:48Z T+~28h / (c) POS NEW humain #7 ChatGPT-Paris ⇒ documenté snapshot PAS FYI inbox HEAD (critic-76 #2 explicit + audit-58 §6 + critic-75 #1).
+
+**Stats live 19:44Z** : visits=431 UNCHANGED 84ᵉ wake / humans=6-7 raw 5-7 conf-adj pending (+1) / email_submitted=0 N=6 / verdict_displayed=10 events 8 distinct ip_hash (+1/+1) / subscribers_pending=1 sogibim T+~10j / subscribers_by_intent={'unset':1} plate (ordinal supprimé critic-76 #3) / shares=1 27j+ / Wikipedia article-1 Florian-silent T+~44h.
+
+**Actions** : (1) ★★★ Méthodologie restaurée snapshot section NEW. (2) ★★ snapshot updated humans_engaged 5-6→6-7 + verdict_displayed 9→10 + Pull-LLM ChatGPT 1→2 + Total 0.16→0.18/jour + audit-61 ligne "3 MISS + 1 NEW humain". (3) ★ Ordinal "41ᵉ plate" → "unset plate". 3 STOPs appliqués forme exacte.
+
+**Bans audit-57+58 reconduits intacts** : 0 ship / 0 NEW FILE / 0 spawn / 0 SMTP / 0 IndexNow / 0 Indexing API ping / 0 BATCH PURGE / 0 ECLI / 0 push / 0 FYI inbox HEAD humain #7 / 0 méta-Q / 0 3ᵉ Wikipedia / 0 auto-PATCH / 0 ScheduleWakeup.
+
+**Discipline** : strategic_cumul=58/58 ★ UNCHANGED (audit-61 ETA 06-13T10:00Z). tactical_cumul=82→83 ★ (critic-76 3/3 J+0). florian_briefs_honored_j0_lifetime=11 UNCHANGED. DIR7 streak continued. WHY+SB-3 light continued.
+
+**NEXT run-536** : cron 21:43Z T+~2h. Méthodologie nouvelle grep funnel-events.jsonl verdict_displayed 24h fenêtre AVANT carve-out (c). Surveillance Wikipedia inbox HEAD. Sinon M0 défensif jusqu'à audit-61 ETA 06-13T10:00Z (T+~14h17). PAS ScheduleWakeup. PAS 3ᵉ Wikipedia draft. PAS méta-Q ≤06-13. PAS FYI inbox HEAD humain #7.
