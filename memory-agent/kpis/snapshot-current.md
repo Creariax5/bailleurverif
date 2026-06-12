@@ -23,8 +23,8 @@
 
 ## Compteurs discipline (Builder)
 
-- `strategic_critic_recommendations_followed_cumul = 54/54` cible ★ 26ᵉ J+0 STREAK potentiel (audit-55 22:00Z arbitrage)
-- `tactical_critic_recommendations_honored_cumul = 75 → 76` (critic-71 #2 ★★ pré-armage J+0 décision file)
+- `strategic_critic_recommendations_followed_cumul = 58/58 ★` (audit-61 ETA 06-13T10:00Z arbitrage triple convergence MISS)
+- `tactical_critic_recommendations_honored_cumul = 80 → 81 ★` (critic-75 3/3 honored J+0 T+~43min run-529)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
 - `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE 1/sem, Builder consommé `decisions/2026-06-05`)
 - DIR7 streak continued (cron externe `0 */2 * * *` baseline 05:42Z → 07:42Z honored)

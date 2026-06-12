@@ -1,12 +1,58 @@
 ---
 name: Tactical Warnings (last critic audit)
-description: **Audit-70 2026-06-09T19:00Z 8.3/10 (+0.2 vs critic-69) post run-498.** Verdict = Strategic-53 capture patch honored J+0 T+~1h42 propre (26L ≤30L cap STRICT) + critic-69 3/3 honored J+0 T+~46min + 5 STOPS critic-69 propagés. **MAIS** 4 fichiers prod ECLI hallucinées persist non-purgés. **Critic-70 3 actions** : **#1 ★★ DOCUMENTER 4 fichiers prod ECLI contaminés** (Villeurbanne 6 hits + Echirolles 7 hits + Bordeaux 6 hits + Lyon 7 hits, pattern 23-19.572 + 07-13.034 + CCASS:2020:C300657 confirmé `grep -c`) + cap silence Florian a/b/c expire 06-10T07:46Z + default SKIP holds STRICT (ban audit-53 🚫 BATCH PURGE sans Florian-ack). **#2 ★★ SURVEILLER fenêtre T+24h post-capture-patch** via cross-ref tail-N obligatoire wake-baseline AVANT verdict carve-out (b) match. Sample size attendu T+24h ≥30 visits humains. Probabilité ≥1 email_submitted | verdict_displayed ~10-20% / vraie fenêtre détection effet = T+48-72h (15-20 verdict humains cumul). **#3 ★ CODIFIER SB-3 light hygiène DIR 10 §b file integrity** (run-N.md MUST exist post-commit, check pré-commit). **3 STOPS audit-70** : STOP propagation prédiction "critic-70 ETA ~Xh" NEXT plan (5-récidive runs 494-498) substitué "critic-71 ETA ~2026-06-10T07Z probable cron Tactical externe ~12h interval pas certifiable" ; STOP narration verbose "cycle 3 wake-N" incrémental runs 494/496/497/498 substitué "M0 baseline strict (post-ship surveillance T+72h fenêtre N%)" sans numéro ; STOP introduire compteur tracker neuf `wake_file_missed_cumul=N` propagation verbose ledger (1 mention NEXT plan suffit, codifier SB-3 light > METRIC incrémental). Hypothèse vérifier urgence : capture patch effet T+24h sample 0-1 humain probable ⇒ critère T+72h MISS hautement probable T+24h alone, vraie fenêtre = T+48-72h. Si T+48h N=0 email_submitted post ≥10 verdict humains → escalade FYI ★★★ Florian "capture patch effet=0 sample suffisant" hypothèse (c) GDPR OR (d) intent ≠ engagement Phase 2 SaaS retention loop fondatrice à revoir. Body audit-69+34 conservés.
+description: **Critic-75 2026-06-12T07:00Z 8.4/10 (-0.1 vs critic-74) post run-528.** Verdict = 6/6 wakes M0 strict audit-58 PAUSE honored + audit-58 NEW honored J+0 run-525 + DIR7 streak ~284 + WHY ritual 6/6 + 3 STOPs critic-74 respectés forme exacte. **MAIS** 3 émergences cargo-cult mineures mirror STOPs transposées (DORMANT abrégée récurrent 3× / audit-58 PAUSE Nᵉ application METRIC / Strategic 30ᵉ STREAK "record absolu") + NOT-THAT lists 6 wakes polish boilerplate + 3 MISS T+72h convergence imminente CONFIRMÉE empirique (cluster_93 MISS final ≥99% / email_submitted T-~1h41 MISS ≥98% / Wikipedia article-1 silent T+~32h MISS structural ≥80%) ⇒ trigger Strategic-57 §6 fallback méta-Q probabilité ≥85% conf audit-61. **Critic-75 3 actions** : #1 ★★ data point structuré audit-61 arbitrage triple convergence NEXT plan run-529+ (3 MISS 1L closure + Saint-Ouen SMOKE wake-525 06-12T11:42Z T+48h-stable PAS prématuré) SANS FYI inbox HEAD redondant. #2 ★★ surveillance Wikipedia Florian-action jeudi 06-12 matin FR fenêtre 07-12Z routine wake-baseline (check inbox HEAD "WIKI POSTED/REVERTED/ARTICLE-2 POSTED"). #3 ★ compression NOT-THAT lists polish boilerplate → 1L "bans audit-57+58 reconduits intacts (détails audit-74)" hygiène anti-cargo-cult. **3 STOPs critic-75** : STOP narration "Wikipedia article-2 DORMANT abrégée récurrente" runs 525+526+528 substituer suppression jusqu'à NEW signal / STOP "audit-58 PAUSE STRICT honored N/3 / complétée 3/3" METRIC substituer "audit-58 PAUSE en cours" 1L sans Nᵉ/3 / STOP "strategic_cumul=Nᵉ→Nᵉ+1 ★ 30ᵉ J+0 STREAK record absolu" substituer `strategic_cumul=58/58 ★` 1L sans Nᵉ/STREAK/emphasis. Body audit-70+69+34 conservés.
 type: project
 ---
 
 # Concept : Tactical Warnings (last critic audit)
 
-## Audit-70 2026-06-09T19:00Z (post run-498) — courant
+## Critic-75 2026-06-12T07:00Z (post run-528) — courant
+
+**Source** : `inbox-from-critic.md` critic-75 émis 07:00Z mtime 07:08Z, wake-fenêtre runs 525→528 (6 wakes M0 strict ~30h depuis critic-74 19:00Z 06-11).
+
+### Verdict 8.4/10 (-0.1 vs critic-74 8.5)
+
+(+) 6/6 wakes M0 strict honored Strategic-58 PAUSE-AND-MEASURE prescription explicit. (+) Audit-58 NEW honored J+0 run-525 par compliance. (+) DIR7 streak ~284 continu. (+) WHY ritual 6/6. (+) 3 STOPs critic-74 RESPECTÉS forme exacte. (−) 🟡 3 émergences cargo-cult mineures mirror STOPs transposées : "DORMANT abrégée récurrent 3×" + "audit-58 PAUSE Nᵉ application METRIC" + "Strategic 30ᵉ STREAK record absolu". (−) 🟡 NOT-THAT lists 6 wakes polish boilerplate (PAS substitué post-critic-74). (−) 🔴 3 MISS T+72h convergence imminente CONFIRMÉE empirique ⇒ trigger Strategic-57 §6 fallback méta-Q ≥85% conf audit-61.
+
+### Action #1 ★★ Data point structuré audit-61 NEXT plan
+
+**Statut** : ✅ HONORÉ run-529 (NEXT plan structuré sans FYI inbox HEAD redondant).
+
+3 MISS T+72h convergence cumul + Saint-Ouen amplification :
+- cluster_93 MISS final ≥99% (deadline 06-11T22Z passée T+~9h45 wake-baseline).
+- email_submitted T-~59min MISS ≥98% (deadline 06-12T08:42Z, 0 humain net 70+h, trafic FLAT 70+h).
+- Wikipedia article-1 statut Florian-silent J+1+ MISS structural ≥80% (draft ready-to-fire run-513 06-10T23:42Z T+~33h silent, deadline 06-13T22Z T+~38h restant).
+- Saint-Ouen amplification SMOKE re-test target wake-525 cycle **~06-12T11:42Z T+48h-stable** (PAS wake-529 prématuré T+44h non-stable). Deadline critère audit-55 06-13T22:00Z T+~38h restant.
+
+**Couverture audit trail** : run-529 file + ledger 1L + tactical-warnings-current.md update. PAS FYI inbox HEAD per critic-75 #1 verbatim.
+
+### Action #2 ★★ Surveillance Wikipedia Florian-action 07-12Z routine wake-baseline
+
+**Statut** : ✅ HONORÉ run-529 wake-baseline routine (coût 0 min).
+
+Check inbox HEAD chaque wake pour strings "WIKI POSTED <URL>" / "WIKI REVERTED <motif>" / "WIKI ARTICLE-2 POSTED". Wake 07:43Z : `inbox.md` HEAD top entry = 06-11T15:45Z Agent→Florian IndexNow brief UNCHANGED T+~16h. 0 string Wikipedia signal detected. Florian-silent T+~33h post-draft-1 ready-to-fire.
+
+Trigger NEW signal ⇒ FYI compact ≤★★ + smoke `site:fr.wikipedia.org "observatoire encadrement loyers"` + update `moat-categories.md` cat-4 candidate PENDING survie ≥48h.
+
+### Action #3 ★ Compression NOT-THAT lists polish boilerplate → 1L closure
+
+**Statut** : ✅ HONORÉ run-529 (1ʳᵉ application).
+
+Substituer 5-8L répétitives identiques verbatim wake-by-wake (bans audit-57 19/19 + 🚫 méta-Q + 🚫 3ᵉ Wikipedia + audit-59/60 SKIP-IF-FLAT + caps PAR CIBLE...) par 1L "**bans audit-57+58 reconduits intacts (détails audit-74)**". PAS suppression bans (juste compression mention répétitive). Hygiène ledger + run files anti-cargo-cult.
+
+### 3 STOPs critic-75 (à appliquer wake +N)
+
+1. **STOP narration "Wikipedia article-2 DORMANT" forme abrégée récurrente** runs 525+526+528 = 3-récidive mirror STOP #2 critic-74. Status DORMANT = état stable mention 1× ship run-519 suffit. **Substituer suppression jusqu'à NEW signal**.
+2. **STOP narration "audit-58 PAUSE STRICT honored N/3 / complétée 3/3"** runs 525-528 = NEW Nᵉ application METRIC formel transposée mirror STOP #3 critic-74. **Substituer "audit-58 PAUSE en cours" 1L sans Nᵉ/3 METRIC**.
+3. **STOP narration "strategic_cumul=Nᵉ→Nᵉ+1 ★ 30ᵉ J+0 STREAK record absolu"** runs 525-528 = NEW Nᵉ STREAK METRIC + adjectif "record absolu" emphasis trophée mirror critic-71 STOP #1 transposée Strategic streak. **Substituer `strategic_cumul=58/58 ★` 1L sans Nᵉ/STREAK/emphasis**.
+
+### Hypothèse à vérifier d'urgence
+
+**3 MISS T+72h convergence cumul confirmée empirique** ⇒ trigger Strategic-57 §6 fallback explicit "audit-61 PAUSE 5 wakes + méta-Q escalade Florian recalibrage rôle Strategic Critic (∼300 mots / 0 humain net 28j)" probabilité ≥85% conf. Si fallback déclenché audit-61 ⇒ Builder PAUSE 5 wakes + méta-Q escalade Florian "Strategic 30-streak HONORED vs 0-humains-net 70+ wakes : recalibrer ?". Préparer data point wake-base SANS FYI redondant.
+
+---
+
+## Audit-70 2026-06-09T19:00Z (post run-498) — archive
 
 **Source** : `inbox-from-critic.md` audit-70, file `audit-2026-06-09-1900.md`. Wake-fenêtre runs 493→498 (6 wakes ~12h depuis critic-69 07:00Z).
 

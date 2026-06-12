@@ -3327,3 +3327,15 @@ NEXT | run-526 cron 01:42Z jeudi 06-12 T+~2h. audit-58 PAUSE-AND-MEASURE STRICT 
 **Discipline** : audit-58 PAUSE complétée 3/3 ⇒ post-PAUSE M0 défensif. bans audit-57 reconduits + 🚫 méta-Q ≤06-13 + 🚫 3ᵉ Wikipedia draft + SB-4 dormant + caps PAR CIBLE respectés. strategic_cumul=58/58 UNCHANGED. tactical_cumul=80 UNCHANGED.
 
 **NEXT run-529** : T+~2h cron 07:42Z. Re-évaluer triple carve-out audit-58. Email_submitted deadline 06-12T08:42Z dans T-~1h après run-529 closure 1L silent attendue MISS final. audit-59 ETA ~10:00Z 06-12 SKIP-IF-FLAT default sauf override. Sinon M0 reconduit jusqu'à audit-61 ETA 06-13T10:00Z.
+
+## run-529 — 2026-06-12T07:43Z (jeudi matin FR) — Critic-75 honored J+0 T+~43min 3/3 substantive (carve-out (a) POS / (b) NEG / (c) NEG)
+
+**WHY** : critic-75 émis 07:00Z mtime 07:08Z T+~43min ⇒ carve-out (a) audit-58 POS ⇒ honor J+0. 3 actions : #1 ★★ data point structuré audit-61 NEXT plan run-529 / #2 ★★ surveillance Wikipedia Florian-action routine 07-12Z / #3 ★ compression NOT-THAT 1L "bans audit-57+58 reconduits intacts (détails audit-74)". (b) Florian inbox 06-11T15:48Z UNCHANGED T+~16h silent. (c) visits=431 UNCHANGED 75ᵉ wake (tail visits.jsonl 5/5 bots).
+
+**Stats live 07:43Z** : visits=431 / humans=4-6 conf-adj 75ᵉ wake / email_submitted=0 N=6 deadline 06-12T08:42Z T-~59min MISS final ≥98% conf / cluster_93=0/3 deadline 06-11T22Z passée T+~9h45 MISS final / subscribers_by_intent={'unset':1} 62ᵉ plate / shares=1 27j+ / Wikipedia article-1 Florian-silent T+~33h deadline 06-13T22Z T+~38h restant.
+
+**Actions** : 3/3 critic-75 honored substantive (run-529 + concept update tactical-warnings-current.md + ledger 1L) + 3 STOPs critic-75 appliqués (DORMANT 0 mention / "audit-58 PAUSE en cours" 1L / `strategic_cumul=58/58 ★` 1L sans Nᵉ/STREAK/emphasis). PAS FYI inbox HEAD per critic-75 #1 explicit. 0 ship code prod / 0 NEW FILE user-facing / 0 spawn / 0 SMTP / 0 IndexNow / 0 Indexing API / 0 SMOKE prématurée / bans audit-57+58 reconduits intacts (détails audit-74).
+
+**Discipline** : audit-58 PAUSE en cours. strategic_cumul=58/58 ★. tactical_cumul=80→81 ★ (critic-75 honor J+0 3/3 substantive). SB-3 light continued (run-529 file CRÉÉ pré-commit). WHY ritual continued.
+
+**NEXT run-530** : cron 09:42Z T+~2h. Re-évaluer triple carve-out audit-58 : (a) critic-76 ETA externe non-prévisible ; (b) Florian brief ; (c) NEW humain. Email_submitted closure 1L silent attendue MISS final post-08:42Z. Audit-59 ETA ~10:00Z 06-12 SKIP-IF-FLAT default sauf override. SMOKE Saint-Ouen target wake-cycle 11:42Z T+48h-stable (PAS run-530 prématuré T+46h). audit-61 ETA 06-13T10:00Z T+~24h. Sinon M0 défensif. PAS ScheduleWakeup. PAS 3ᵉ Wikipedia draft. PAS méta-Q ≤06-13.
