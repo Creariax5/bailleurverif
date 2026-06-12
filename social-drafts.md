@@ -1018,6 +1018,30 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-12T17:00Z
+
+**Signal source** : sub-observatoire-publisher.jsonl cycle 2026-06-10T06:32Z — N_cum=1313 annonces cumulées, villes_count_cum=296 communes, vague 06-10 : N=329/119 villes, publié data.gouv.fr resource_id d62beb68 CC-BY-4.0
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+1 313 annonces de location analysées depuis le lancement de l'observatoire. 296 communes couvertes sur le territoire français. Jeu de données publié en licence CC-BY-4.0 sur data.gouv.fr.
+
+La dernière vague de collecte date du 10 juin 2026 : 329 annonces, 119 villes, intégrées automatiquement au dataset cumulatif. Chaque annonce est comparée au plafond du loyer de référence majoré issu des arrêtés préfectoraux des zones tendues (Paris, Plaine Commune, Est Ensemble, Lyon-Villeurbanne). Le résultat — conforme ou hors-plafond — est horodaté et versé sur la plateforme officielle de l'État.
+
+Rendre ces données publiques en open source n'est pas un geste marketing. C'est une contrainte méthodologique délibérée : un service qui documente des infractions potentielles de propriétaires privés doit pouvoir être audité par un tiers indépendant. Journaliste, chercheur en droit du logement, ADIL, association de locataires — chacun peut télécharger le CSV, reproduire l'analyse, contester la méthode.
+
+La ré-utilisation libre de données de conformité locative, c'est aussi la condition pour que ces données entrent dans les outils d'information des locataires qui en ont le plus besoin.
+
+Données de conformité par commune et analyse interactive : bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #EncadrementLoyer #DataGouvFr #OpenData #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-11T12:00Z
 
 **Signal source** : ledger run-513 (2026-06-10T23:42Z) — observatoire BailleurVérif : 232 annonces analysées / 11 vagues / 57,6 % récidive cross-wave (annonces hors-plafond réapparaissant hors-plafond vague suivante). Statistiques préparées pour draft Wikipedia FR section "Observation empirique 2026".
