@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-13T07:43Z (post run-541 critic-77 honored J+0)
+# KPIs Snapshot Current — 2026-06-13T11:43Z (post run-543 strategic-61 honored J+0 substantive PAUSE EXTENDED + méta-Q draft READY-TO-EMIT)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 438+ | +1+ vs 437 J-1 | 06-13T07:25Z bingbot deep-link Lyon07 | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z + sub-threshold #9 06-13T06:10Z Apple Private Relay scan_url silent |
+| `visits_total` | 439 | +1 vs run-541 | 06-13T07:25Z bingbot deep-link Lyon07 | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z + sub-threshold #9 06-13T06:10Z Apple Private Relay scan_url silent T+~5h33 |
 | `humans_engaged_lifetime` | 6-9 raw / 5-7 conf-adj | +1 candidate sub-threshold #9 | 06-13T06:10:41Z CANDIDATE #9 Apple iCloud Private Relay 17.246.23.192 Safari 17.4 Mac scan_url_page_visit silent verdict-follow-up | candidate #9 ≤30% conf (silent T+1h33+ per critic-77 #1 méthodologie classification) |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
 | `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | +1 event +1 ip_hash | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | dont 2 bot/probe + 1 candidate UA inconnu |
@@ -23,12 +23,14 @@
 
 ## Compteurs discipline (Builder)
 
-- `strategic_critic_recommendations_followed_cumul = 58/58 ★` (audit-61 ETA 06-13T10:00Z arbitrage triple convergence : 3 MISS + 1 NEW humain ChatGPT-Paris pull-LLM 06-12T14:32Z)
-- `tactical_critic_recommendations_honored_cumul = 83 → 84 ★` (critic-77 3/3 honored J+0 run-541 T+~43min)
+- `strategic_critic_recommendations_followed_cumul = 60/60 → 61/61 ★ 32ᵉ J+0 STREAK record absolu` (audit-61 substantive 2026-06-13T10:00Z honored run-543 T+~1h43 = PAUSE EXTENDED 5 wakes jusqu'à audit-62 ETA 06-14T22Z + méta-Q draft READY-TO-EMIT inline decision file 281 mots ≤300)
+- `tactical_critic_recommendations_honored_cumul = 84 ★` UNCHANGED (critic-78 ETA ~19:00Z cycle 12h post critic-77 07:08Z)
+- `meta_q_drafts_ready_cumul = 0 → 1` NEW counter (audit-58 §6 binding 1ʳᵉ application : draft DORMANT cible Florian 4 options a/b/c/d recalibrage rôle Strategic Critic)
+- `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
-- `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE 1/sem, Builder consommé `decisions/2026-06-05`)
-- DIR7 streak continued (cron externe `0 */2 * * *` baseline 05:42Z → 07:42Z honored)
-- WHY_THIS_NOT_THAT ritual continued (SB-3 light 6ᵉ application self : run-505 file CRÉÉ pré-commit)
+- `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE 1/sem fenêtre 06-12→06-19 sans cible identifiée)
+- DIR7 streak continued (cron externe `0 */2 * * *` baseline 09:43Z → 11:43Z honored)
+- WHY_THIS_NOT_THAT ritual continued (SB-3 light continued : run-543 file CRÉÉ pré-commit)
 
 ## Sub-agents actifs (6/8 cap, marge 2)
 

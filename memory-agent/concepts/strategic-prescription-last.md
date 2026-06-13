@@ -1,8 +1,59 @@
 ---
 name: Strategic Prescription (last audit)
-description: **Audit-57 substantive 2026-06-11T10:05Z HONORED run-519 J+0 T+~1h37 = WIKIPEDIA FR DRAFT 2 FALLBACK social-drafts.md** carve-out 1 STRICT non-récurrent. Article cible existant *"Loi Climat et résilience"* angle DPE/gel locatif distinct vs draft 1 *"Encadrement des loyers en France"*. Sous-section NEW `== Application et observation empirique 2026 (DPE, gel locatif et décence énergétique) ==` ~228 mots wikicode + 2 ref-tags data.gouv.fr (mêmes 2 refs Etalab UUID + reuse `6a0c30a2a24bbe3d7c2e69d4`). Claims empiriques distincts : articles 159+160 loi Climat factuels Légifrance + proportion 2-4 % DPE F/G observatoire 232 annonces 11 vagues (range empirique 1,5-4,3 % médiane ~2,4 % vérifié dataset). **0 lien direct bailleurverif.fr** (WP:AUTOPROMO strict). Status binding = DORMANT (activable uniquement si revert article-1 OR Florian action explicit). Critère succès T+72h : draft 2 ≥200 mots + 2 refs + 0 mention bailleurverif + Florian-action ≤5min copy-paste si revert article-1. Deadline **2026-06-14T10:00Z**. Échec ⇒ audit-58 pivot PAUSE-AND-MEASURE 5 wakes + escalade méta-Q Florian recalibrage rôle Strategic Critic. Bans audit-57 19/19 STRICT reconduits intacts (carve-out 1 strict draft 2 wiki UNIQUEMENT, non-re-consommable, 3ᵉ draft BAN). **57/57 strategic cumul ★ 29ᵉ J+0 STREAK**.
+description: **Audit-61 substantive 2026-06-13T10:00Z HONORED run-543 J+0 T+~1h43 = (1) PAUSE-AND-MEASURE EXTENDED STRICT 5 wakes jusqu'à audit-62 ETA 2026-06-14T22:00Z + (2) méta-Q ≤300 mots draft READY-TO-EMIT** inline `decisions/2026-06-13-strategic-61-honored-meta-q-drafted.md` (ban lift préparation durant PAUSE explicite audit-61 §Bans). 4 options soumises Florian : (a) hard-stop Strategic Critic / (b) role swap tactical-surveillance only / (c) délégation Builder non-binding / (d) recalibrage radical seuils+cadence. Status DORMANT : 0 émission inbox HEAD avant Florian-ack OR audit-62 trigger 06-14T22Z. Triple carve-out audit-61 : (a) Florian Wikipedia article-1 publié+survie 48h ⇒ audit-62 propage / (b) NEW humain ≥1 confirmé ⇒ FYI ≤★★ / (c) critic émis ⇒ honor J+0. Bans audit-57 19/19 + audit-58 STRICT + 🚫 publication Wikipedia + 🚫 3ᵉ Wikipedia draft + 🚫 FYI inbox HEAD candidates sub-threshold #7/#8/#9 reconduits intacts. **61/61 strategic cumul ★ 32ᵉ J+0 STREAK record absolu**.
 type: project
 ---
+
+# Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-61 2026-06-13T10:00Z** (mtime 10:01:53Z, lecture run-543 11:43Z T+~1h43).
+
+## Audit-61 § verdict + prescription (HONORED run-543 J+0 T+~1h43 substantive)
+
+**State live entrée wake** : visits=439 (+1 vs run-542 438, bingbot deep-link Lyon07 07:25Z) / humans=6-9 raw / 5-7 conf-adj UNCHANGED (#7 ChatGPT-Paris 06-12T14:32Z + #8 direct fast-path 06-13T02:16Z sub-threshold + #9 Apple PR scan_url 06-13T06:10Z sub-threshold) / email_submitted=0 N=6 UNCHANGED 67h+ / verdict_displayed=11 events 9 distinct UNCHANGED depuis #8 02:16Z (T+~9h27) / subscribers_pending=1 sogibim T+~11j7h / subscribers_by_intent={'unset':1} 43ᵉ plate / shares=1 28j+ (0.3 %) / cluster_93=0/3 deadline 06-11T22Z MISS final / Wikipedia article-1 Florian-silent T+~58h deadline 06-13T22Z T+~10h17 / draft 2 fallback DORMANT / 8 GSC indexed -73 % vs M3 cible 30+.
+
+**Verdict global audit-61** : Copyability 85 % UNCHANGED 13 audits / Moat 9 substantif UNCHANGED 29 audits ★★★ stagnation absolue / Concurrent gap structurel (humans=6-7 vs ANIL 700K+ membres = work-to-do pas moat acquis) / Disparition+viralité+persona-fit empirique 0/6 sub-agents referer 34j+ / Strategic-LUI-MÊME drift saturé : **5ᵉ prescription canal-NEW null-outcome cumul** (Show HN audit-36 / dev.to / press FR 4 outbound / Wikidata indirect / Wikipedia triple) MAIS 58/58 HONORED 31ᵉ J+0 STREAK ⇒ saturation indéniable.
+
+**Prescription §6 unique** : EXTENDED PAUSE-AND-MEASURE STRICT 5 wakes jusqu'à audit-62 ETA 2026-06-14T22:00Z + Builder-side draft méta-Q ≤300 mots ready-to-emit cible Florian recalibrage rôle Strategic Critic. 4 options binding : (a) hard-stop / (b) role swap tactical-only / (c) délégation Builder non-binding / (d) recalibrage radical seuils+cadence.
+
+**Triple carve-out audit-61** : (a) Florian publie Wikipedia article-1 ≤06-13T22Z + survie 48h ⇒ audit-62 propage canal validé OR pivot presse FR 2ᵉ round / (b) NEW signal humain ≥1 confirmé (non sub-threshold) ⇒ FYI ≤★★ / (c) critic émis ⇒ honor J+0.
+
+**Lift explicite** : "Méta-Q lift ban effective audit-62 post-06-13 (préparation Builder draft autorisée durant PAUSE)" ⇒ draft READY-TO-EMIT autorisé ce wake DORMANT, émission audit-62.
+
+## Bans audit-61 (jusqu'à audit-62) STRICT
+
+19/19 bans audit-57 reconduits intacts + bans audit-58 STRICT + 🚫 publication Wikipedia Builder-side / 🚫 3ᵉ Wikipedia draft (cap 1 fallback STRICT consommé) / 🚫 FYI inbox HEAD candidates sub-threshold #7/#8/#9 (audit-58 §6 binding parallèle). **Méta-Q lift ban effective audit-62 post-06-13** (préparation Builder draft autorisée durant PAUSE).
+
+## HONORED run-543 status
+
+- ✅ Honor §6 (1) PAUSE-AND-MEASURE EXTENDED STRICT acknowledged : 5 wakes M0 jusqu'à audit-62 ETA 06-14T22Z (~~11 wakes cron baseline T+~35h).
+- ✅ Honor §6 (2) méta-Q draft READY-TO-EMIT : inline `decisions/2026-06-13-strategic-61-honored-meta-q-drafted.md` §"Draft verbatim ↓" 281 mots corps draft ≤300 ✅. 4 options (a/b/c/d) + (e) ouverte. Status DORMANT explicit binding : 0 émission inbox HEAD avant Florian-ack OR audit-62 trigger 2026-06-14T22:00Z.
+- ✅ Vérification claims empiriques 7/7 cross-référencés (snapshot-current.md + audit-58 §5 + audit-36 §5) : strategic 61/61 ✓ / 32-streak ✓ / humans 6-7 stagnant 76+ wakes ✓ / audit-50→61 = +1 humain net ✓ / 5 prescriptions canal-NEW null ✓ / 8 prescriptions Florian-action audit-50→57 ✓ / audit-26→34 = 9 ships +1 humain net ✓. 0 hallucination jurisprudentielle (SB-2 DISCIPLINE 12 N/A).
+- ✅ Bans STRICT respectés (NEW FILE user-facing site 0 / 8 surfaces 0 / monétisation 0 / Telegram 0 / SW 0 / re-escalade TODO 0 / spawn 0 / SMTP 0 / IndexNow 0 / Indexing API 0 / sub-agents patch 0 / funnel event 0 / push Reddit-HN-X 0 / 2ᵉ PATCH Builder prompt 0 / auto-extension hors méta-Q 0 / publication Wikipedia 0 / 3ᵉ Wikipedia draft 0 / FYI inbox HEAD #7/#8/#9 0). Decision file = `memory-agent/decisions/` ≠ user-facing site.
+
+## Counter
+
+- `strategic_critic_recommendations_followed_cumul = 60/60 → 61/61 ★ 32ᵉ J+0 STREAK record absolu`
+- `tactical_critic_recommendations_honored_cumul = 84` UNCHANGED (critic-78 ETA ~19:00Z cycle 12h post critic-77 07:08Z)
+- `meta_q_drafts_ready_cumul = 0 → 1` NEW counter (audit-58 binding 1ʳᵉ application)
+- `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 + draft 2 dormant, draft 3 BAN STRICT)
+- `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
+- `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE fenêtre 06-12→06-19 sans cible)
+- `DIR7 streak` continued (0 ScheduleWakeup)
+- `SB-1 + SB-1.1 + SB-2 + DIR12` continued (N/A : 0 NEW FILE ≥100L user-facing + 0 ECLI affirmée user-facing)
+- `SB-3 light` continued (run-543.md file CRÉÉ pré-commit, ce concept update + decision file)
+- `SB-4 dormant` (audit-57 window prolongée audit-61 reconduit STRICT)
+
+## Audit-62 trigger T+~35h 2026-06-14T22:00Z
+
+- **(a) Wikipedia article-1 publié + survie 48h sans revert + indexé Google** ⇒ audit-62 propage canal validé OR pivot presse FR 2ᵉ round + méta-Q DORMANT non-émis (succès Strategic = drift recalibré post-facto).
+- **(b) Article-1 revert OR silent total post-deadline 06-13T22Z** ⇒ Florian-ack méta-Q OR émission inbox HEAD draft READY-TO-EMIT par Builder (binding audit-58 §6 + audit-61 §6 + lift ban effectif post-06-13).
+- **(c) NEW signal humain ≥1 confirmé non-sub-threshold** ⇒ FYI compact ≤★★ + révision triple carve-out audit-62 (méta-Q DORMANT préservé).
+- **(d) Critic émis intercalaire** ⇒ honor J+0 priorité hierarchy §c-bis.
+
+---
+
+# Archive audit-57 (post run-519, ref historique)
 
 # Concept : Strategic Prescription (last audit)
 
