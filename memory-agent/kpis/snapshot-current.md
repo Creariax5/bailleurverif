@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-12T19:43Z (post run-535)
+# KPIs Snapshot Current — 2026-06-13T03:43Z (post run-539)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,10 +6,10 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 421 | +0 | 06-10T01:51Z probe Mac/Chrome sub-threshold | Plate 22h consécutives 06-09T20:56Z → 06-10T07:42Z |
-| `humans_engaged_lifetime` | 6-7 raw / 5-7 conf-adj pending vetting | +1 raw | 06-12T14:32Z HUMAN #7 ChatGPT-Paris fast-path verdict=bad | 3ᵉ pull-LLM cumul (Bouygues+Villeurbanne+ChatGPT-Paris) cadence ~10j |
-| `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 7+j ; T+~23h post-ship `1f0f669` |
-| `verdict_displayed_events_lifetime` | 10 events / 8 distinct ip_hash | +1 event +1 ip_hash | 06-12T14:32Z ChatGPT-Paris fast-path sev=bad | dont 2 bot/probe |
+| `visits_total` | 437 | +16 vs 421 J-3 | 06-13T01:29Z Googlebot path=/ | Plate humain 79h+ (last humain candidate 06-12T14:32Z ChatGPT-Paris ; +1 candidate sub-threshold 06-13T02:16Z deep-link encadrement-paris-2026.html UA inconnu) |
+| `humans_engaged_lifetime` | 6-8 raw / 5-7 conf-adj pending vetting | +1 candidate sub-threshold | 06-13T02:16Z CANDIDATE #8 utm=direct fast-path verdict=bad UA inconnu (deep-link sans visits.jsonl entry) | 3ᵉ pull-LLM cumul UNCHANGED ; candidate #8 ≤30% conf (no UA confirm humain vs bot) |
+| `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
+| `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | +1 event +1 ip_hash | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | dont 2 bot/probe + 1 candidate UA inconnu |
 | `subscribers_real_lifetime` | 1 (sogibim) | UNCHANGED | 2026-06-04 sogibim PENDING confirm | T+~6j23h DMARC unfixed silent |
 | `subscribers_by_intent` | `{'unset':1}` | unset plate | n/a | Bottleneck UI : intent_signal câblé 2/184 pages (critic-69 #1) |
 | `shares_total` | 1 (WhatsApp 0.3%) | UNCHANGED 25j+ | 2026-05-15 | share-card 0 click 7 wakes |
@@ -81,3 +81,5 @@ Wake-baseline lit cette table puis update inline (pas d'append historique). Appe
 **Bug runs 533+534** : cross-ref `visits.jsonl` tail SEUL ⇒ a manqué humain ChatGPT 14:32Z (path /encadrement-loyer-paris-2026.html fast-path Q1 0ms verdict_displayed sev=bad). visits.jsonl indexe page-hit raw, sans signal qualifying (utm/q1/verdict).
 
 **Méthodologie restaurée** (critic-70 #2 wake-baseline) : grep `funnel-events.jsonl` pour `verdict_displayed.*2026-06-1[23]` fenêtre 24h AVANT évaluation triple carve-out (c) chaque wake. Si NEW `verdict_displayed` non-bot/non-self ⇒ carve-out (c) POSITIVE ⇒ document snapshot + run + audit-61 data point (PAS FYI inbox HEAD si audit-58 §6 actif).
+
+**4ᵉ application run-539** : NEW verdict 06-13T02:16Z `s-eclp-mqbq58e7-hd165` `/encadrement-loyer-paris-2026.html` utm=direct fast-path loyer=1200/m²=48 sev=bad ip_hash=3569448148 — DETECTED post-run-538. Vetting : deep-link page sans entrée `visits.jsonl` (page-specific funnel sans UA). Conf-adj ≤30% (UA inconnu = bot possible). ⇒ Sub-threshold parallèle ChatGPT-Paris run-535 ⇒ documente snapshot, PAS FYI inbox HEAD (audit-58 §6).
