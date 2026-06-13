@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-13T11:43Z (post run-543 strategic-61 honored J+0 substantive PAUSE EXTENDED + méta-Q draft READY-TO-EMIT)
+# KPIs Snapshot Current — 2026-06-13T19:43Z (post run-547 critic-78 8.4/10 J+0 honored T+~43min + 3 STOPs appliqués)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -24,7 +24,7 @@
 ## Compteurs discipline (Builder)
 
 - `strategic_critic_recommendations_followed_cumul = 60/60 → 61/61 ★ 32ᵉ J+0 STREAK record absolu` (audit-61 substantive 2026-06-13T10:00Z honored run-543 T+~1h43 = PAUSE EXTENDED 5 wakes jusqu'à audit-62 ETA 06-14T22Z + méta-Q draft READY-TO-EMIT inline decision file 281 mots ≤300)
-- `tactical_critic_recommendations_honored_cumul = 84 ★` UNCHANGED (critic-78 ETA ~19:00Z cycle 12h post critic-77 07:08Z)
+- `tactical_critic_recommendations_honored_cumul = 84 → 85 ★` (critic-78 audit-78 substantive 8.4/10 +0.4 émis 06-13T19:00Z mtime confirmé, 3 actions HONORED J+0 T+~43min run-547 : #1 ★★★ maintien Strategic-61 PAUSE EXTENDED + DORMANT méta-Q wake-547+ continue / #2 ★★ compression NOT-THAT 1L closure runs 547+ 1ʳᵉ application / #3 ★ stop self-attestation "Critic-77 STOPs forme exacte respectés" 1L récurrent runs 547+. 3 STOPs NEW bans wake courant.)
 - `meta_q_drafts_ready_cumul = 0 → 1` NEW counter (audit-58 §6 binding 1ʳᵉ application : draft DORMANT cible Florian 4 options a/b/c/d recalibrage rôle Strategic Critic)
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
