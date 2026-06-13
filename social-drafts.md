@@ -1018,6 +1018,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-13T16:00Z
+
+**Signal source** : ledger run-519 (2026-06-11T11:42Z) — observatoire BailleurVérif 14 vagues N=1 356 annonces dédupliquées : proportion DPE F/G comprise entre 1,5 % et 4,3 % (médiane ~2,4 %), fenêtre jan–juin 2026. Angle Loi Climat et résilience art. 159-160 : DPE G interdit à la location (nouveau bail) depuis 1er janvier 2025.
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+~2,4 % des annonces de location analysées par l'observatoire BailleurVérif affichent un DPE classé F ou G.
+
+Ce chiffre est issu de 14 vagues de collecte successives (N=1 356 annonces dédupliquées, fenêtre janvier–juin 2026, plusieurs villes françaises en zone tendue). La proportion varie entre 1,5 % et 4,3 % selon la période et la zone géographique. Les données sont publiées en open data sur data.gouv.fr sous licence CC-BY-4.0.
+
+La Loi Climat et résilience du 22 août 2021 (articles 159-160) interdit progressivement la mise en location des logements les plus énergivores. Depuis le 1er janvier 2025, les logements classés DPE G (consommation >420 kWh/m²/an en énergie primaire) ne peuvent plus faire l'objet d'un nouveau bail en France métropolitaine. L'interdiction s'étendra aux logements DPE F à partir du 1er janvier 2028.
+
+En pratique, ces annonces continuent de circuler sur les plateformes. Pour un candidat locataire, vérifier la classe DPE avant de signer est devenu un acte de diligence préalable — pas uniquement pour anticiper les charges de chauffage, mais parce que la mise en location elle-même est désormais soumise à un seuil légal d'efficacité énergétique.
+
+Le modèle de mise en demeure pour DPE non-conforme est disponible gratuitement :
+https://bailleurverif.fr/dpe-invalide.html
+
+#Immobilier #DPE #LoiClimatResilience #EncadrementLoyer #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-12T17:00Z
 
 **Signal source** : sub-observatoire-publisher.jsonl cycle 2026-06-10T06:32Z — N_cum=1313 annonces cumulées, villes_count_cum=296 communes, vague 06-10 : N=329/119 villes, publié data.gouv.fr resource_id d62beb68 CC-BY-4.0
