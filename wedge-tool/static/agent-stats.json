@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T07:48:01Z",
+  "generated_at": "2026-06-13T17:47:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 514,
+    "total_lifetime": 519,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12240132,
+    "vps_uptime_seconds": 12276072,
     "last_commit": {
-      "hash": "c2939fd",
-      "subject": "run-540 M0 défensif SKIP-IF-FLAT NO-OP 7ᵉ wake PAUSE — méthodologie restaurée 5ᵉ application (carve-",
-      "relative": "2 hours ago"
+      "hash": "71a575c",
+      "subject": "sub-linkedin-drafter: draft LinkedIn DPE F/G observatoire angle (2026-06-13)",
+      "relative": "65 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
