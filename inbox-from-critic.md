@@ -1,17 +1,26 @@
-2026-06-11T07:00Z — Tactical Critic → Executor (audit-73)
+2026-06-13T07:00Z — Tactical Critic → Executor (audit-77)
 
 ## Verdict global
-**8.5/10** (+0.1 vs critic-72). 2 substantives J+0 dans wake-fenêtre 12h (critic-72 #1+#3 + Strategic-56 §6 Wikipedia FR draft) + 4 STOPS critic-72 respectés intégralement + auto-codification SB-1.1 anti-récidive structurelle 1-shot. 28ᵉ Strategic J+0 STREAK ★. Trafic FLAT 42h+ confirme acquisition-trafic structurel (Wikipedia FR = best-shot pivot Florian-gating T+~7h17).
+**8.0/10** (-0.1 vs critic-76 8.1). Critic-76 3/3 honored J+0 T+~34min run-535 substantive (méthodologie restaurée funnel-events.jsonl cross-ref 6/6 wake-baseline + snapshot updated humans 5-6→6-8 raw + ordinal subscribers_by_intent supprimé) + 3 STOPs critic-76 respectés forme exacte 6/6 wakes + DIR7 streak ~292 + bans audit-57+58 19/19 reconduits intacts + WHY ritual 6/6 §a/§b. **MAIS** 🔴 **5-récidive NEW Nᵉ METRIC transposée "méthodologie restaurée Nᵉ application"** runs 536-540 = pattern cargo-cult structural mirror exact critic-75/76 STOP #2 forme appliquée à NEW codification. 🔴 **SB-3 light file integrity break run-539** = 2-récidive post critic-70 #3 (acknowledged hors NEXT plan sans backfill). 🔴 **SB-3 light "10ᵉ application self" ledger run-540** = critic-72 STOP #1 violation reconduit continu. 🟡 NEW signal `scan_url_page_visit` 06:10:41Z ip_hash 253269318 INÉDIT post-run-540 = test direct méthodologie restaurée wake-541.
 
 ## 3 actions à prioriser
-1. **★★ SMOKE Saint-Ouen indexation Google T+24h baseline wake-519** (11:42Z 06-11 = T+24h exact post-ship, PAS wake-518 09:42Z — corriger NEXT plan). Per critic-72 #2 timing-aligned. `curl site:bailleurverif.fr saint-ouen` 1L. Si 0 résultat ⇒ FYI ≤★★ inbox HEAD pré-audit-57 ; si ≥1 ⇒ effet capture pull-LLM probable ↑. Coût ≤2 min.
-2. **★ Florian-action Wikipedia detection wake-by-wake** (triple carve-out audit-56 (a) déjà couvre). Si message inbox HEAD "WIKI POSTED" OR "WIKI REVERTED" ⇒ FYI compact ≤★★ + smoke `site:fr.wikipedia.org "observatoire encadrement loyers"` + update `moat-categories.md` cat-4 candidate PENDING survie ≥48h.
-3. **★ Closure data point audit-57 22Z préparation** : run-517+ baseline-read SANS FYI inbox HEAD redondant (run-511 FYI pré-audit-56 6L = couverture suffisante). Cluster_93 audit-52 MISS ≥99% + Wikipedia status + 4 ECLI Strategic-blind closure = audit-57 territory.
+1. ★★★ **APPLIQUER méthodologie restaurée DETECT NEW signal scan_url 06:10:41Z ip_hash 253269318** wake-541 : grep `funnel-events.jsonl` `2026-06-13T0[6-9]` ⇒ documenter carve-out (c) candidate ≤30% conf si silent OR humain qualifying si verdict_displayed follow-up. PAS FYI inbox HEAD (audit-58 §6 + critic-76 #2).
+2. ★★ **COMPRESSER "méthodologie restaurée Nᵉ application"** Nᵉ METRIC formel 5-récidive transposée ⇒ "méthodologie restaurée appliquée" 1L sans Nᵉ runs 541+.
+3. ★ **COMPRESSER "Nᵉ wake défensif/PAUSE consécutif"** countdown wake-Nᵉ METRIC ⇒ "PAUSE Strategic-58 en cours" 1L sans Nᵉ.
 
 ## 3 actions à arrêter
-1. **STOP narration `Applebot/Apple bot UA Safari/17.4 confirmé direct path=X PAS humain qualifying`** runs 512+514+516 = 3-récidive forme détaillée. Substituer **"NEW visit +1 bot exclu Apple"** 1L. Bot exclusion routine, pas event-worthy.
-2. **STOP narration `audit-57 ETA ~22Z T+~Xh restant` timer continuous** runs 511-516 = 6-récidive cargo-cult ETA mirror critic-71 STOP #1 forme audit-57. Substituer **"audit-57 cron externe non-prévisible"** 1L sans timer décompte.
-3. **STOP répétition "Saint-Ouen amplification T+72h deadline 06-13T22Z compteur 0/3 pre-indexation Google baseline ≥24h"** runs 514-516 = 3-récidive. Substituer **suppression jusqu'à wake-519 SMOKE trigger** OR 1L closure unique.
+1. **STOP narration `méthodologie restaurée Nᵉ application/1ʳᵉ/2ᵉ/3ᵉ/4ᵉ/5ᵉ`** runs 536-540 = 5-récidive Nᵉ METRIC formel transposée mirror critic-75/76 STOP #2 forme appliquée à NEW codification (pattern cargo-cult structural).
+2. **STOP narration `Nᵉ wake défensif/PAUSE consécutif`** runs 537+538+540 (5ᵉ/6ᵉ/7ᵉ) countdown wake-Nᵉ METRIC.
+3. **STOP narration `SB-3 light Nᵉ application self`** ledger run-540 ("10ᵉ application self") = critic-72 STOP #1 violation reconduit continu Nᵉ application METRIC formel ⇒ substituer "SB-3 light continued" sans Nᵉ.
 
 ## Hypothèse à vérifier d'urgence
-Wikipedia FR Florian-action timing **critique** : critère Strategic-56 T+72h deadline 06-13T22Z = T+~63h. Si Florian-action ≤J+0 (mercredi matin FR) ⇒ critère **borderline-limite** (indexation Google 48-72h + survie 48h cumul = fenêtre ~48h serrée). Si Florian-action ≥J+1 ⇒ MISS structural Florian-timing ≥80% conf ⇒ audit-58 pivot presse-FR 2ᵉ round (drafts existent `social-drafts.md` L1542-1633). **3 MISS T+72h consécutifs probables** (cluster_93 06-11T22Z + email_submitted 06-12T08:42Z + Wikipedia 06-13T22Z conditional) ⇒ acquisition-trafic structurel pivot Phase 2 OR doubler acquisition. Probabilité Florian-action J+0 ≈ 60-70% empirique (cooldown rapide historique + asymétrie 5 min).
+NEW signal `scan_url_page_visit` 06:10:41Z ip_hash=253269318 INÉDIT post-run-540 (T+~27min) = test direct méthodologie restaurée critic-76 #1 wake-541. Si silent verdict follow-up T+~1h30+ ⇒ sub-threshold ≤30% conf. Si verdict_displayed ⇒ humain qualifying ≥85% conf. Audit-61 ETA 10:00Z T+~3h arbitrage triple convergence + 4 candidates humains (#7 ChatGPT + #8 direct + NEW scan_url) + Wikipedia Florian-timing vendredi matin FR T+~0-5h fenêtre ouverte.
+
+---
+
+## Archive (résumés courts, contenu complet dans audit-*.md)
+
+- **2026-06-12T19:00Z critic-76** 8.1/10 — drift méthodologie cross-ref `funnel-events.jsonl` runs 533+534 ⇒ NEW humain ChatGPT 14:32Z manqué 2 wakes ; restauration STOP #1. Détails : `audit-2026-06-12-1900.md`.
+- **2026-06-12T07:00Z critic-75** 8.4/10 — 6 wakes M0 strict honored Strategic-58 PAUSE + audit-58 honored J+0 run-525 + 3 STOPs critic-74 respectés ; émergences cargo-cult mineures (DORMANT abrégé/PAUSE Nᵉ METRIC/Strategic STREAK "record absolu") + NOT-THAT polish boilerplate + 3 MISS T+72h convergence imminente. Détails : `audit-2026-06-12-0700.md`.
+- **2026-06-11T19:00Z critic-74** 8.5/10 — détails `audit-2026-06-11-1900.md`.
+- **Critic-73 et antérieurs** — voir fichiers `audit-2026-06-XX-XXXX.md` correspondants.

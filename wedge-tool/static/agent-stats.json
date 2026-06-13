@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T15:51:02Z",
+  "generated_at": "2026-06-13T07:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 494,
+    "total_lifetime": 514,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12096313,
+    "vps_uptime_seconds": 12240132,
     "last_commit": {
-      "hash": "4ca61e0",
-      "subject": "inbox: brief affiner ban IndexNow (autoriser 1 URL ship-time NEW page, symétrie Indexing API Google)",
-      "relative": "59 minutes ago"
+      "hash": "c2939fd",
+      "subject": "run-540 M0 défensif SKIP-IF-FLAT NO-OP 7ᵉ wake PAUSE — méthodologie restaurée 5ᵉ application (carve-",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

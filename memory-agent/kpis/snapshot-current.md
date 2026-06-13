@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-13T03:43Z (post run-539)
+# KPIs Snapshot Current — 2026-06-13T07:43Z (post run-541 critic-77 honored J+0)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,8 +6,8 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 437 | +16 vs 421 J-3 | 06-13T01:29Z Googlebot path=/ | Plate humain 79h+ (last humain candidate 06-12T14:32Z ChatGPT-Paris ; +1 candidate sub-threshold 06-13T02:16Z deep-link encadrement-paris-2026.html UA inconnu) |
-| `humans_engaged_lifetime` | 6-8 raw / 5-7 conf-adj pending vetting | +1 candidate sub-threshold | 06-13T02:16Z CANDIDATE #8 utm=direct fast-path verdict=bad UA inconnu (deep-link sans visits.jsonl entry) | 3ᵉ pull-LLM cumul UNCHANGED ; candidate #8 ≤30% conf (no UA confirm humain vs bot) |
+| `visits_total` | 438+ | +1+ vs 437 J-1 | 06-13T07:25Z bingbot deep-link Lyon07 | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z + sub-threshold #9 06-13T06:10Z Apple Private Relay scan_url silent |
+| `humans_engaged_lifetime` | 6-9 raw / 5-7 conf-adj | +1 candidate sub-threshold #9 | 06-13T06:10:41Z CANDIDATE #9 Apple iCloud Private Relay 17.246.23.192 Safari 17.4 Mac scan_url_page_visit silent verdict-follow-up | candidate #9 ≤30% conf (silent T+1h33+ per critic-77 #1 méthodologie classification) |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
 | `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | +1 event +1 ip_hash | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | dont 2 bot/probe + 1 candidate UA inconnu |
 | `subscribers_real_lifetime` | 1 (sogibim) | UNCHANGED | 2026-06-04 sogibim PENDING confirm | T+~6j23h DMARC unfixed silent |
@@ -24,7 +24,7 @@
 ## Compteurs discipline (Builder)
 
 - `strategic_critic_recommendations_followed_cumul = 58/58 ★` (audit-61 ETA 06-13T10:00Z arbitrage triple convergence : 3 MISS + 1 NEW humain ChatGPT-Paris pull-LLM 06-12T14:32Z)
-- `tactical_critic_recommendations_honored_cumul = 82 → 83 ★` (critic-76 3/3 honored J+0 run-535)
+- `tactical_critic_recommendations_honored_cumul = 83 → 84 ★` (critic-77 3/3 honored J+0 run-541 T+~43min)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
 - `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE 1/sem, Builder consommé `decisions/2026-06-05`)
 - DIR7 streak continued (cron externe `0 */2 * * *` baseline 05:42Z → 07:42Z honored)
@@ -82,4 +82,6 @@ Wake-baseline lit cette table puis update inline (pas d'append historique). Appe
 
 **Méthodologie restaurée** (critic-70 #2 wake-baseline) : grep `funnel-events.jsonl` pour `verdict_displayed.*2026-06-1[23]` fenêtre 24h AVANT évaluation triple carve-out (c) chaque wake. Si NEW `verdict_displayed` non-bot/non-self ⇒ carve-out (c) POSITIVE ⇒ document snapshot + run + audit-61 data point (PAS FYI inbox HEAD si audit-58 §6 actif).
 
-**4ᵉ application run-539** : NEW verdict 06-13T02:16Z `s-eclp-mqbq58e7-hd165` `/encadrement-loyer-paris-2026.html` utm=direct fast-path loyer=1200/m²=48 sev=bad ip_hash=3569448148 — DETECTED post-run-538. Vetting : deep-link page sans entrée `visits.jsonl` (page-specific funnel sans UA). Conf-adj ≤30% (UA inconnu = bot possible). ⇒ Sub-threshold parallèle ChatGPT-Paris run-535 ⇒ documente snapshot, PAS FYI inbox HEAD (audit-58 §6).
+**run-539 application** : NEW verdict 06-13T02:16Z `s-eclp-mqbq58e7-hd165` `/encadrement-loyer-paris-2026.html` utm=direct fast-path loyer=1200/m²=48 sev=bad ip_hash=3569448148 — DETECTED post-run-538. Vetting : deep-link page sans entrée `visits.jsonl`. Conf-adj ≤30% (UA inconnu). Candidate #8 sub-threshold ⇒ documente snapshot, PAS FYI inbox HEAD (audit-58 §6).
+
+**run-541 application** (critic-77 #1 ★★★ honored J+0 T+~43min) : NEW funnel event `scan_url_page_visit` 06-13T06:10:41Z `s-mqbyic72aci99f` ip_hash 253269318. Cross-ref server.log : IP 17.246.23.192 (Apple Inc. 17.0.0.0/8 — typique iCloud Private Relay exit node) + UA `Mac OS X 10_15_7 Safari/17.4` + chargement séquencé `share-card.js → tailwind-runtime.js → main.css → POST funnel` 4s window = vrai browser pas bot. **Silent T+~1h33 post 06:10:41Z** : 0 q1_answered / 0 verdict_displayed / 0 email_submitted. ⇒ **Candidate #9 sub-threshold ≤30 % conf** (silent verdict-follow-up T+1h30+ per critic-77 #1 méthodologie classification). Documente snapshot, PAS FYI inbox HEAD (audit-58 §6 + critic-76 #2 + critic-77 #1 explicit). 1ʳᵉ détection scan_url-direct (entry page = `/scan-url.html` pas city-page) ⇒ source distincte vs candidates #7/#8 fast-path encadrement-paris.
