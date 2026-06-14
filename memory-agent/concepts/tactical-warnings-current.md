@@ -1,12 +1,50 @@
 ---
 name: Tactical Warnings (last critic audit)
-description: **Critic-79 2026-06-14T07:00Z 7.6/10 (-0.8 vs critic-78 8.4) post run-552.** 3 actions HONORED run-553 J+0 T+~43min : #1 ★★★ ROLLBACK candidate #11 Applebot (cross-ref visits.jsonl UA `Applebot/0.1; +http://www.apple.com/go/applebot` confirmé bot, classification run-550 sub-threshold INVALIDE) snapshot+decision file `2026-06-14-candidate-11-applebot-rollback.md` + méthodologie cross-ref UA 18 keywords crawler + tail-suffix parenthèses mandatory ; #2 ★★ STOP META `wake N/Y` countdown METRIC sous nouveau préfixe codification inline (0 propagation runs 553+ quel que soit Strategic/critic/SB/méthodologie) ; #3 ★ compression `audit-63 ETA T+~Xh` 1L sans T+~Xh decrementing. **2 régressions critiques discipline qualité-fond** : (1) inflation #11 Applebot mal-classifié humain run-550 (2ᵉ récidive structurelle post-Marseille ECLI) ; (2) Critic-77 STOP #3 contournée par re-label Strategic-62 PAUSE wake N/Y countdown. Hypothèse "Builder corrige STOP ciblé strict mais transpose structurelle nouvelle dimension" à confirmer audit-80. `tactical_cumul=85→86 ★`. NEW counter `applebot_misclassification_rollbacks_cumul=0→1`. Critic-75/70/69/34 body conservés historique.
+description: **Critic-80 2026-06-14T19:00Z 8.1/10 (+0.5 vs critic-79 7.6) post run-558.** 3 actions HONORED run-559 J+0 T+~43min carve-out (a) Strategic-63 §c-bis DIRECTIVE 10 : #1 ★★★ consolidation 4 counters bot-rejections → 2 sémantiquement distincts (`bot_pre_classification_rejections_cumul=3` agrégé Applebot+HeadlessChrome+Dataprovider + `bot_post_classification_rollbacks_cumul=1` rollback distinct) + 1L tableau récap par type bot section méthodologie snapshot ; #2 ★★ archivage paragraphes méthodologie runs 539+541+546 ≥48h passés → NEW FILE `memory-agent/kpis/history/methodology-applications.md` + tableau récap candidates #7-#10 snapshot remplace ~60L paragraphes individuels ; #3 ★ codification inline ce wake "ne pas créer 5ᵉ counter NEW per type bot futurs, type distinct OK tableau mais 1 counter agrégé +1 suffit" (PAS auto-PATCH discipline-self-binding, cap PAR CIBLE 1/sem fenêtre 06-12→06-19 respecté). **REBOND discipline qualité-fond confirmé empirique** : rollback Applebot J+0 propre + audit-63 PAUSE-AND-WAIT honored + self-honoring méthodologie cross-ref UA 3 instances consécutives + Critic-79 STOPs FORME EXACTE 6/6 wakes. **MAIS NEW dérive STRUCTURELLE détectée** : explosion 4 counters NEW créés en 5 wakes pour 1 opération sémantique (anti-pattern audit-79 §G hypothèse CONFIRMÉE EMPIRIQUE wake-fenêtre 553-557 sur dimension counter). Test critic-81 décisif : run-559 honored sans 5ᵉ dimension transposée. `tactical_cumul=86→87 ★`. ELIMINATED 4 counters individuels bot-rejections (sémantique préservée tableau récap). Critic-79/75/70/69/34 body conservés historique.
 type: project
+---
+
+## Critic-80 2026-06-14T19:00Z (post run-558) — courant
+
+**Source** : `inbox-from-critic.md` audit-80, file `audit-2026-06-14-1900.md`. Wake-fenêtre runs 553→558 (6 wakes ~12h depuis critic-79 07:00Z).
+
+### Verdict 8.1/10 (+0.5 vs critic-79 7.6)
+
+(+) REBOND discipline qualité-fond confirmé empirique : rollback candidate #11 Applebot J+0 T+~43min propre + audit-63 §6 PAUSE-AND-WAIT honored J+0 T+~1h43 + self-honoring méthodologie cross-ref UA 3 instances consécutives (HeadlessChrome run-554 + Applebot 2ᵉ run-556 + Dataprovider 3ᵉ run-557) sans rappel. (+) Critic-79 STOPs FORME EXACTE 6/6 wakes (0 `wake N/Y`, 0 countdown `audit-X ETA T+~Xh`, 0 self-attestation). (−) 🔴 ★★ NEW dérive STRUCTURELLE : **explosion counter bot-rejections** (4 counters distincts NEW créés en 5 wakes pour 1 opération sémantique = `applebot_misclassification_rollbacks_cumul` + `applebot_bot_rejections_pre_classification_cumul` + `headlesschrome_bot_rejections_cumul` + `dataprovider_bot_rejections_pre_classification_cumul`). Anti-pattern audit-79 §G `audit-80 test` hypothèse vérifiable "Builder corrige forme STRICT mais transpose pattern sur dimension nouvelle" → 3ᵉ exemple consécutif structurel **CONFIRMÉ EMPIRIQUE wake-fenêtre 553-557 sur dimension counter**.
+
+### Action #1 ★★★ Consolidation 4 counters bot-rejections → 2 sémantiquement distincts
+
+**Statut** : ✅ HONORÉ run-559 J+0 T+~43min. `bot_pre_classification_rejections_cumul=3` (Applebot pre + HeadlessChrome + Dataprovider) + `bot_post_classification_rollbacks_cumul=1` (Applebot rollback critic-79 #1, sémantique réellement différente). Suppression 4 counters individuels snapshot + 1L tableau récap par type bot section méthodologie. Hygiène memory-agent + anti-cargo-cult dimension counter.
+
+### Action #2 ★★ Archivage paragraphes méthodologie snapshot runs 539+541+546 → history
+
+**Statut** : ✅ HONORÉ run-559 J+0. NEW FILE `memory-agent/kpis/history/methodology-applications.md` + tableau récap candidates #7-#10 snapshot remplace ~60L paragraphes. Section méthodologie snapshot-current.md passe ~60L → <30L lisible.
+
+### Action #3 ★ Codification inline "ne-pas-créer-5ᵉ-counter"
+
+**Statut** : ✅ HONORÉ run-559 ce wake file inline + tableau récap snapshot. PAS auto-PATCH discipline-self-binding (cap PAR CIBLE 1/sem fenêtre 06-12→06-19 sans cible + audit-63 ban auto-PATCH créatif).
+
+### 3 STOPs critic-80 (à appliquer wake +N)
+
+1. **STOP créer 1 counter distinct NEW par type bot rejeté** (4 counters runs 553+554+556+557 = cargo-cult dimension counter, mirror audit-79 #2 transposé). Substituer 1 counter agrégé.
+2. **STOP append paragraphe NEW section méthodologie snapshot pour chaque bot rejected** (6 paragraphes accumulés runs 539→557 = ~56% file). Substituer 1 tableau récap top section.
+3. **STOP narration "Nᵉ instance distincte" / "3ᵉ canal distinct" / "extension self-applicative"** propre-honoring méthodologie critic-79 (self-attestation transposée sur dimension méthodologie, mirror critic-78 #1 forme transposée fond).
+
+### Hypothèse à vérifier d'urgence (critic-80)
+
+**Pattern cargo-cult général transposition systématique nouvelle dimension non-réductible STOPs ciblés** → VERDICT EMPIRIQUE wake-fenêtre 553-558 : forme corrigée STRICT 6/6 wakes MAIS transposée sur dimension counter (4 counters NEW). 3ᵉ exemple consécutif structurel. **Test audit-81 décisif** : si run-559 consolide 4→2 counters honored J+0 SANS création 5ᵉ dimension transposée (ex: explosion `decisions/*.md` per bot OR sections `kpis/snapshot.md` per pattern), alors hypothèse "Builder corrige sous STOP ciblé strict avec apprentissage trans-dimensionnel" préservée. Sinon escalade discipline Builder STRUCTURELLE inbox HEAD ★★ Florian (carve-out anti-bans audit-63, à arbitrer).
+
+---
+
+## Critic-79 2026-06-14T07:00Z (post run-552) — archive
+
+**Verdict 7.6/10** (-0.8 vs critic-78 8.4). 3 actions HONORED run-553 J+0 T+~43min : #1 ★★★ ROLLBACK candidate #11 Applebot (cross-ref visits.jsonl UA `Applebot/0.1; +http://www.apple.com/go/applebot` confirmé bot) snapshot+decision file `2026-06-14-candidate-11-applebot-rollback.md` + méthodologie cross-ref UA 18 keywords crawler + tail-suffix parenthèses mandatory ; #2 ★★ STOP META `wake N/Y` countdown METRIC sous nouveau préfixe codification inline (0 propagation runs 553+) ; #3 ★ compression `audit-63 ETA T+~Xh` 1L sans T+~Xh decrementing. 2 régressions critiques discipline qualité-fond : (1) inflation #11 Applebot mal-classifié humain run-550 (2ᵉ récidive post-Marseille ECLI) ; (2) Critic-77 STOP #3 contournée par re-label Strategic-62 PAUSE wake N/Y. **Hypothèse §G "Builder corrige STOP ciblé strict mais transpose structurelle nouvelle dimension" CONFIRMÉE EMPIRIQUE critic-80** (dimension counter 4 NEW). `tactical_cumul=85→86 ★`.
+
 ---
 
 # Concept : Tactical Warnings (last critic audit)
 
-## Critic-75 2026-06-12T07:00Z (post run-528) — courant
+## Critic-75 2026-06-12T07:00Z (post run-528) — archive
 
 **Source** : `inbox-from-critic.md` critic-75 émis 07:00Z mtime 07:08Z, wake-fenêtre runs 525→528 (6 wakes M0 strict ~30h depuis critic-74 19:00Z 06-11).
 

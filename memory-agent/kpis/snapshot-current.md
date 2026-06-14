@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-14T17:43Z (post run-558 Strategic-63 PAUSE-AND-WAIT continue J+1 SKIP-IF-FLAT)
+# KPIs Snapshot Current — 2026-06-14T19:43Z (post run-559 critic-80 #1+#2+#3 honored J+0 T+~43min)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -23,15 +23,15 @@
 
 ## Compteurs discipline (Builder)
 
-- `strategic_critic_recommendations_followed_cumul = 63/63 ★ 37ᵉ J+0 STREAK record absolu` (audit-63 substantive 2026-06-14T10:00Z prescription §6 PAUSE-AND-WAIT honored runs 555-556-557-558, deadline T+72h Florian-ack 2026-06-16T22Z fenêtre ouverte)
-- `tactical_critic_recommendations_honored_cumul = 86` UNCHANGED (critic-80 ETA ~19:00Z 06-14 cycle 12h post critic-79 07:00Z)
+- `strategic_critic_recommendations_followed_cumul = 63/63 ★` (audit-63 substantive 2026-06-14T10:00Z PAUSE-AND-WAIT honored, deadline T+72h Florian-ack 2026-06-16T22Z fenêtre ouverte ; carve-out (a) critic-80 émis 19:00Z trigger honor J+0 §c-bis ⇒ run-559 substantive)
+- `tactical_critic_recommendations_honored_cumul = 86→87 ★` (critic-80 8.1/10 +0.5 vs critic-79 7.6 émis 19:00Z, 3 actions #1+#2+#3 honored J+0 T+~43min run-559)
+- `wakes_critic_80_action_1_consolidation = 4→2 counters` (apllebot_misclassification_rollbacks + applebot_bot_rejections_pre_classification + headlesschrome_bot_rejections + dataprovider_bot_rejections_pre_classification consolidés → bot_pre_classification_rejections_cumul + bot_post_classification_rollbacks_cumul, anti-cargo-cult dimension counter)
 - `meta_q_acks_received_cumul = 0` UNCHANGED (Florian silent post-émission inbox HEAD 06-13T23:50Z T+~17h53, fenêtre ouverte deadline 06-16T22Z T+~52h restant)
 - `meta_q_drafts_emitted_cumul = 1` ÉMIS DORMANT (1ʳᵉ émission lifetime audit-58 §6 binding effective run-549, cap STRICT consommé)
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
-- `applebot_misclassification_rollbacks_cumul = 1` UNCHANGED (run-553 critic-79 #1 ★★★ ROLLBACK candidate #11 post-classification)
-- `applebot_bot_rejections_pre_classification_cumul = 1` UNCHANGED (run-556 12:25Z home_visit ip_hash 1775964682 UA tail-suffix `Applebot/0.1` pré-empêché classification méthodologie critic-79 #1 self-application 2ᵉ instance)
-- `headlesschrome_bot_rejections_cumul = 1` UNCHANGED
-- `dataprovider_bot_rejections_pre_classification_cumul = 0→1` NEW counter (run-557 14:18Z home_visit ip_hash 8460642236 UA `Mozilla/5.0 (compatible; Dataprovider.com)` data aggregation bot, 3ᵉ canal pré-classification rejet distinct vs Applebot tail-suffix + HeadlessChrome préfixe)
+- `bot_pre_classification_rejections_cumul = 3` (Applebot tail-suffix + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; consolidation 4 counters → 2 critic-80 #1 ★★★ honored run-559)
+- `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
+- Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
 - `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE 1/sem fenêtre 06-12→06-19 sans cible identifiée)
 - DIR7 streak continued (cron externe `0 */2 * * *` baseline 11:43Z → 13:43Z honored)
@@ -83,17 +83,28 @@ dev.to×2 / awesome-list PRs ×2 (0 merge) / Bluesky / content-syndicator / Tele
 
 Wake-baseline lit cette table puis update inline (pas d'append historique). Append `ledger.md` reste source of truth event-log. Si table change > +50L : nouvelle compression + archive `snapshot-pre-NNN.md`.
 
-## Méthodologie triple carve-out (c) — critic-76 #1 ★★★ correction
+## Méthodologie triple carve-out (c) + cross-ref UA (critic-76+77+79+80)
 
-**Bug runs 533+534** : cross-ref `visits.jsonl` tail SEUL ⇒ a manqué humain ChatGPT 14:32Z (path /encadrement-loyer-paris-2026.html fast-path Q1 0ms verdict_displayed sev=bad). visits.jsonl indexe page-hit raw, sans signal qualifying (utm/q1/verdict).
+**Méthodologie restaurée** (critic-70 #2 wake-baseline) : grep `funnel-events.jsonl` pour `verdict_displayed.*2026-06-1[X]` fenêtre 24h AVANT évaluation triple carve-out (c) chaque wake. Si NEW `verdict_displayed` non-bot/non-self ⇒ document snapshot + run + audit data point (PAS FYI inbox HEAD si audit Strategic ban actif). Bug runs 533+534 = cross-ref `visits.jsonl` tail SEUL insuffisant (manqué ChatGPT humain 06-12T14:32Z).
 
-**Méthodologie restaurée** (critic-70 #2 wake-baseline) : grep `funnel-events.jsonl` pour `verdict_displayed.*2026-06-1[23]` fenêtre 24h AVANT évaluation triple carve-out (c) chaque wake. Si NEW `verdict_displayed` non-bot/non-self ⇒ carve-out (c) POSITIVE ⇒ document snapshot + run + audit-61 data point (PAS FYI inbox HEAD si audit-58 §6 actif).
+**Candidates archivés** (runs 539+541+546 ≥48h passés migrés `kpis/history/methodology-applications.md` critic-80 #2 ★★ honored run-559) :
 
-**run-539 application** : NEW verdict 06-13T02:16Z `s-eclp-mqbq58e7-hd165` `/encadrement-loyer-paris-2026.html` utm=direct fast-path loyer=1200/m²=48 sev=bad ip_hash=3569448148 — DETECTED post-run-538. Vetting : deep-link page sans entrée `visits.jsonl`. Conf-adj ≤30% (UA inconnu). Candidate #8 sub-threshold ⇒ documente snapshot, PAS FYI inbox HEAD (audit-58 §6).
+| # | Date/heure | Path / referrer | Conf-adj | Source distincte |
+|---|---|---|---|---|
+| #7 | 06-12T14:32Z | encadrement-paris ChatGPT | ≤30% | Pull-LLM ChatGPT 2ᵉ |
+| #8 | 06-13T02:16Z | encadrement-paris direct fast-path | ≤30% | Direct deep-link |
+| #9 | 06-13T06:10Z | scan-url Apple PR iCloud Relay | ≤30% | scan_url-direct 1ʳᵉ |
+| #10 | 06-13T16:08Z | home GitHub-referrer Chrome | ≤30% | GitHub MIT repo 1ʳᵉ |
 
-**run-541 application** (critic-77 #1 ★★★ honored J+0 T+~43min) : NEW funnel event `scan_url_page_visit` 06-13T06:10:41Z `s-mqbyic72aci99f` ip_hash 253269318. Cross-ref server.log : IP 17.246.23.192 (Apple Inc. 17.0.0.0/8 — typique iCloud Private Relay exit node) + UA `Mac OS X 10_15_7 Safari/17.4` + chargement séquencé `share-card.js → tailwind-runtime.js → main.css → POST funnel` 4s window = vrai browser pas bot. **Silent T+~1h33 post 06:10:41Z** : 0 q1_answered / 0 verdict_displayed / 0 email_submitted. ⇒ **Candidate #9 sub-threshold ≤30 % conf** (silent verdict-follow-up T+1h30+ per critic-77 #1 méthodologie classification). Documente snapshot, PAS FYI inbox HEAD (audit-58 §6 + critic-76 #2 + critic-77 #1 explicit). 1ʳᵉ détection scan_url-direct (entry page = `/scan-url.html` pas city-page) ⇒ source distincte vs candidates #7/#8 fast-path encadrement-paris.
+**Tableau récap bot rejected pre-classification** (critic-80 #1 ★★★ consolidation 4 counters → 2 + tableau récap) :
 
-**run-546 application** : NEW funnel event `home_visit` 06-13T16:08:05Z `s-mqcjumff-uwm5m` ip_hash 2601781522 INÉDIT, referrer `https://github.com/Creariax5/bailleurverif` (entrée depuis repo public Creariax5/bailleurverif), UA `Chrome/148 Windows desktop`. **Silent T+~1h35 post 16:08:05Z** : 0 q1_answered / 0 verdict_displayed / 0 scan_url_page_visit / 0 email_submitted (home_visit isolé). ⇒ **Candidate #10 sub-threshold ≤30 % conf** (méthodologie classification critic-77 #1 silent suite). Documente snapshot, PAS FYI inbox HEAD (audit-58 §6 + critic-76 #2 + critic-77 #1 + audit-61 §Bans). 1ʳᵉ détection GitHub-repo-referrer cumul ⇒ source distincte vs candidates #7/#8/#9 (cat-4 GitHub MIT DR ≈90 produit 1ʳᵉ humain mesuré, asymétrie observable canal moat existant). Candidate #9 06:10Z silent T+~11h35 maintenu sub-threshold.
+| Type bot | Détection | Run instance | Pattern UA |
+|---|---|---|---|
+| Applebot tail-suffix | `(Applebot/0.1; +http://www.apple.com/go/applebot)` parenthèses | run-556 12:25Z + #11 rollback run-553 | préfixe Safari-mimicking + suffixe `(Applebot/...)` |
+| HeadlessChrome préfixe | `HeadlessChrome/` keyword | run-554 08:38Z | UA préfixe explicite |
+| Dataprovider self-id | `(compatible; X.com)` self-declaration | run-557 14:18Z | format RFC `(compatible; <domain>)` |
+
+Consolidation `bot_pre_classification_rejections_cumul=3` agrégé. Type distinct OK noté tableau mais 1 counter agrégé +1 suffit (critic-80 STOP #1+#3). Apprentissage pattern : extension méthodologie cross-ref UA inclut auto-detection `(compatible; <domain>.com|.net|.io|.org)` (RFC bot self-declaration).
 
 **run-553 ROLLBACK candidate #11 Applebot** (critic-79 #1 ★★★ honored J+0 T+~43min) : run-550 a classifié event 06-13T22:49:13Z `s-mqcy6ehf-fp3ai` ip_hash 2935856004 path `/` referrer direct comme "Safari/17.4 Mac direct humain sub-threshold". **Cross-ref visits.jsonl** révèle UA complet `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15 (Applebot/0.1; +http://www.apple.com/go/applebot)` ⇒ **Applebot crawler** non-humain. Classification empirique sub-threshold INVALIDE (méthodologie critic-77 #1 cross-ref UA tail-suffix oubliée sur préfixe Safari-mimicking). 2ᵉ récidive structurelle après bug Marseille ECLI hallucination (decisions/2026-06-03-marseille-jurisprudence-rollback.md SB-2 DISCIPLINE 12 codifié). Rollback : (a) titre + L9/11 humans 6-10 raw 5-7 conf-adj UNCHANGED depuis #10 16:08Z run-546 + #11 supprimé ; (b) cette section méthodologie. Decision file `decisions/2026-06-14-candidate-11-applebot-rollback.md`. **Pattern enseignement** : UA "Applebot/" / "Googlebot" / "bot" / crawler keywords DOIVENT être grep'd dans UA STRING ENTIÈRE (incluant suffixe parenthèses), pas seulement préfixe.
 
