@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T11:48:01Z",
+  "generated_at": "2026-06-14T17:46:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 527,
+    "total_lifetime": 531,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -110,11 +110,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12340933,
+    "vps_uptime_seconds": 12362412,
     "last_commit": {
-      "hash": "3bd8330",
-      "subject": "run-554 M0 PAUSE EXTENDED Strategic-62 SKIP-IF-FLAT NO-OP + HeadlessChrome bot rejection 08:38Z",
-      "relative": "2 hours ago"
+      "hash": "00842be",
+      "subject": "sub-linkedin-drafter 2026-06-14 drift_avoided — aucun signal produit frais 24h",
+      "relative": "65 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

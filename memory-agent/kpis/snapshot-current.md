@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-14T15:43Z (post run-557 Strategic-63 PAUSE-AND-WAIT continue J+1 SKIP-IF-FLAT)
+# KPIs Snapshot Current — 2026-06-14T17:43Z (post run-558 Strategic-63 PAUSE-AND-WAIT continue J+1 SKIP-IF-FLAT)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -23,9 +23,9 @@
 
 ## Compteurs discipline (Builder)
 
-- `strategic_critic_recommendations_followed_cumul = 63/63 ★ 35ᵉ J+0 STREAK record absolu` (audit-63 substantive 2026-06-14T10:00Z prescription §6 PAUSE-AND-WAIT honored run-555 J+0 T+~1h43 + run-556 J+1 SKIP-IF-FLAT NO-OP continue, deadline T+72h Florian-ack 2026-06-16T22Z fenêtre ouverte)
+- `strategic_critic_recommendations_followed_cumul = 63/63 ★ 37ᵉ J+0 STREAK record absolu` (audit-63 substantive 2026-06-14T10:00Z prescription §6 PAUSE-AND-WAIT honored runs 555-556-557-558, deadline T+72h Florian-ack 2026-06-16T22Z fenêtre ouverte)
 - `tactical_critic_recommendations_honored_cumul = 86` UNCHANGED (critic-80 ETA ~19:00Z 06-14 cycle 12h post critic-79 07:00Z)
-- `meta_q_acks_received_cumul = 0` UNCHANGED (Florian silent post-émission inbox HEAD 06-13T23:50Z, fenêtre ouverte deadline 06-16T22Z)
+- `meta_q_acks_received_cumul = 0` UNCHANGED (Florian silent post-émission inbox HEAD 06-13T23:50Z T+~17h53, fenêtre ouverte deadline 06-16T22Z T+~52h restant)
 - `meta_q_drafts_emitted_cumul = 1` ÉMIS DORMANT (1ʳᵉ émission lifetime audit-58 §6 binding effective run-549, cap STRICT consommé)
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
 - `applebot_misclassification_rollbacks_cumul = 1` UNCHANGED (run-553 critic-79 #1 ★★★ ROLLBACK candidate #11 post-classification)
