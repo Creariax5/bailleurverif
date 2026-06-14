@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-13T19:43Z (post run-547 critic-78 8.4/10 J+0 honored T+~43min + 3 STOPs appliqués)
+# KPIs Snapshot Current — 2026-06-14T01:43Z (post run-550 M0 PAUSE EXTENDED Strategic-62 wake 1/5 + candidate #11 documented)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,11 +6,11 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 439 | +1 vs run-541 | 06-13T07:25Z bingbot deep-link Lyon07 | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z + sub-threshold #9 06-13T06:10Z Apple Private Relay scan_url silent T+~5h33 |
-| `humans_engaged_lifetime` | 6-9 raw / 5-7 conf-adj | +1 candidate sub-threshold #9 | 06-13T06:10:41Z CANDIDATE #9 Apple iCloud Private Relay 17.246.23.192 Safari 17.4 Mac scan_url_page_visit silent verdict-follow-up | candidate #9 ≤30% conf (silent T+1h33+ per critic-77 #1 méthodologie classification) |
+| `visits_total` | 442 | +3 vs run-541 (+2 vs run-549) | 06-13T22:32Z Applebot + 22:49Z Safari/Mac direct (candidate #11) | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z direct fast-path + #9 06-13T06:10Z Apple PR scan_url + #10 06-13T16:08Z GitHub-referrer + #11 06-13T22:49Z Safari/Mac direct silent T+~2h54 |
+| `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | UNCHANGED depuis #8 | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | T+~23h27 gap NEW verdict_displayed |
+| `humans_engaged_lifetime` | 6-11 raw / 5-7 conf-adj | +1 candidate sub-threshold #11 | 06-13T22:49:13Z CANDIDATE #11 ip_hash 2935856004 Safari/17.4 Mac desktop referrer direct sessionId s-mqcy6ehf-fp3ai home_visit silent verdict-follow-up | candidate #11 ≤30% conf (silent T+2h54+ per critic-77 #1 méthodologie classification) |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
-| `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | +1 event +1 ip_hash | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | dont 2 bot/probe + 1 candidate UA inconnu |
-| `subscribers_real_lifetime` | 1 (sogibim) | UNCHANGED | 2026-06-04 sogibim PENDING confirm | T+~6j23h DMARC unfixed silent |
+| `subscribers_real_lifetime` | 1 (sogibim) | UNCHANGED | 2026-06-04 sogibim PENDING confirm | T+~11j20h DMARC unfixed silent |
 | `subscribers_by_intent` | `{'unset':1}` | unset plate | n/a | Bottleneck UI : intent_signal câblé 2/184 pages (critic-69 #1) |
 | `shares_total` | 1 (WhatsApp 0.3%) | UNCHANGED 25j+ | 2026-05-15 | share-card 0 click 7 wakes |
 | `signup_confirm_sent_real` | 1 | UNCHANGED | 2026-06-04 sogibim | Anti-vanity dénominateur post run-451 |
@@ -23,9 +23,9 @@
 
 ## Compteurs discipline (Builder)
 
-- `strategic_critic_recommendations_followed_cumul = 60/60 → 61/61 ★ 32ᵉ J+0 STREAK record absolu` (audit-61 substantive 2026-06-13T10:00Z honored run-543 T+~1h43 = PAUSE EXTENDED 5 wakes jusqu'à audit-62 ETA 06-14T22Z + méta-Q draft READY-TO-EMIT inline decision file 281 mots ≤300)
-- `tactical_critic_recommendations_honored_cumul = 84 → 85 ★` (critic-78 audit-78 substantive 8.4/10 +0.4 émis 06-13T19:00Z mtime confirmé, 3 actions HONORED J+0 T+~43min run-547 : #1 ★★★ maintien Strategic-61 PAUSE EXTENDED + DORMANT méta-Q wake-547+ continue / #2 ★★ compression NOT-THAT 1L closure runs 547+ 1ʳᵉ application / #3 ★ stop self-attestation "Critic-77 STOPs forme exacte respectés" 1L récurrent runs 547+. 3 STOPs NEW bans wake courant.)
-- `meta_q_drafts_ready_cumul = 0 → 1` NEW counter (audit-58 §6 binding 1ʳᵉ application : draft DORMANT cible Florian 4 options a/b/c/d recalibrage rôle Strategic Critic)
+- `strategic_critic_recommendations_followed_cumul = 62/62 ★ 33ᵉ J+0 STREAK record absolu` (audit-62 substantive 2026-06-13T22:00Z prescription §6 ÉMISSION méta-Q inbox HEAD HONORED run-549 J+0 T+~1h50, deadline T+72h Florian-ack 2026-06-16T22Z)
+- `tactical_critic_recommendations_honored_cumul = 85` UNCHANGED (critic-79 ETA ~07:00Z 06-14)
+- `meta_q_drafts_emitted_cumul = 1` DORMANT→ÉMIS effective run-549 (1ʳᵉ émission lifetime audit-58 §6 binding effective)
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
 - `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE 1/sem fenêtre 06-12→06-19 sans cible identifiée)
