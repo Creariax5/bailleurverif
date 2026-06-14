@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T21:47:01Z",
+  "generated_at": "2026-06-14T23:47:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -110,10 +110,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12376873,
+    "vps_uptime_seconds": 12384072,
     "last_commit": {
-      "hash": "480d1f9",
-      "subject": "run-559: critic-80 8.1/10 (+0.5) honored J+0 T+~43min carve-out (a) Strategic-63 §c-bis",
+      "hash": "92b6273",
+      "subject": "run-560 PAUSE-AND-WAIT NO-OP M0 (triple carve-out tous NEG, 8/8 bots, 0 humain)",
       "relative": "2 hours ago"
     }
   },

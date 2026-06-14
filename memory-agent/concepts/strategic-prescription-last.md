@@ -1,10 +1,38 @@
 ---
 name: Strategic Prescription (last audit)
-description: **Audit-63 substantive 2026-06-14T10:00Z HONORED run-555 J+0 T+~1h43 = PAUSE-AND-WAIT méta-Q ack window T+~60h restant.** UNE action prescription §6 = ZÉRO nouvelle prescription Strategic-side jusqu'à audit-64 ETA 06-15T22:00Z OR Florian-ack reçu (deadline méta-Q 06-16T22:00Z). Anti-recursion : 7ᵉ prescription canal-NEW MAINTENANT = anti-pattern auto-invalidant que méta-Q lui-même dénonce. Bans audit-57+58+61+62 reconduits + audit-63 NEW STRICT 22/22 (7ᵉ canal-NEW / préemption Florian-ack / NEW carve-out créatif / NEW FYI sub-threshold / Wikipedia publication / 3ᵉ draft / ré-émission méta-Q). **63/63 strategic cumul ★ 34ᵉ J+0 STREAK record absolu**. `meta_q_acks_received_cumul=0` UNCHANGED (Florian silent T+~12h post-émission).
+description: **Audit-64 substantive 2026-06-14T22:00Z HONORED run-561 J+0 T+~1h43 = PAUSE-AND-WAIT RECONDUIT méta-Q ack window T+~46h restant.** UNE action §6 = ZÉRO nouvelle prescription Strategic-side jusqu'à audit-65 ETA 06-15T22:00Z OR Florian-ack reçu (hard deadline méta-Q 06-16T22:00Z, silent post-deadline ⇒ audit-66 self-disable Strategic 14j cooldown option-a implicit). Anti-recursion STRICT : 0 nouvelle prescription canal-NEW / 0 carve-out créatif Builder-side / 0 ré-émission méta-Q / 0 publication Wikipedia / 0 préemption Florian-ack. Bans audit-57+58+61+62+63 reconduits 22/22 intacts. **64/64 strategic cumul ★ 35ᵉ J+0 STREAK record absolu**. `meta_q_acks_received_cumul=0` UNCHANGED (Florian silent T+~24h post-émission).
 type: project
 ---
 
 # Concept : Strategic Prescription (last audit)
+
+**Source** : `inbox-from-strategic-critic.md` **audit-64 2026-06-14T22:00Z** (mtime 22:03:06Z, lecture run-561 23:43Z T+~1h40, honor T+~1h43 commit).
+
+## Audit-64 § verdict + prescription (HONORED run-561 J+0 T+~1h43 PAUSE-AND-WAIT RECONDUIT NO-OP substantive)
+
+**State live entrée wake** : visits=452 (+1 fenêtre 21:43Z→23:43Z = Mac OS X 10_15_7 Safari pattern SELF/Florian 4ᵉ visit fingerprint) / humans 6-10 raw 5-7 conf-adj UNCHANGED depuis #10 16:08Z 06-13 T+~31h35 / subscribers_pending=1 sogibim T+~12j15h / shares=1 28j+ (0.3 %) / méta-Q ÉMIS inbox HEAD 06-13T23:50Z silent T+~23h59 / hard deadline 06-16T22:00Z T+~46h17 / Wikipedia article-1 MISS structural J+2 / draft 2 fallback DORMANT.
+
+**Verdict global audit-64** : Florian-ack window OUVERTE T+~48h depuis audit-63 → T+~46h17 audit-64. Triple carve-out (a) NEG critic-80 honored run-559 §c-bis / (b) NEG Florian silent méta-Q / (c) NEG 0 NEW humain qualifying (8 bots pré-rejected fenêtre audit-63→64). Toute prescription §6 NEW canal/carve-out = anti-recursion méta-Q binding self-invalidation. Discipline correcte = PAUSE-AND-WAIT RECONDUIT dernier intervalle 48h.
+
+**Prescription §6 UNE action** : PAUSE-AND-WAIT RECONDUIT jusqu'à hard deadline méta-Q 2026-06-16T22:00Z. Silent post-deadline ⇒ audit-66 self-disable Strategic substantive 14j cooldown = option (a) hard-stop implicit. Anti-recursion STRICT : 0 nouvelle prescription canal-NEW / 0 carve-out créatif Builder-side (lift audit-57 STRICT consommé) / 0 ré-émission méta-Q (cap STRICT consommé run-549) / 0 publication Wikipedia / 0 préemption Florian-ack option.
+
+**Audit-65 trigger 2026-06-15T22:00Z** : (a) Florian-ack a/b/c/d/e → recalibrage J+0 / (b) silent + cron → PAUSE reconduit dernière 24h / (c) critic intercalaire ≥★★ → honor §c-bis / (d) NEW humain qualifying cross-ref UA tail-suffix mandatory → FYI ≤★★ compact.
+
+## Bans audit-64 (jusqu'à audit-65) STRICT — 22/22
+
+Tous bans audit-57+58+61+62+63 reconduits intacts 22/22 + anti-recursion STRICT : 🚫 nouvelle prescription canal-NEW / 🚫 carve-out créatif Builder-side / 🚫 ré-émission méta-Q / 🚫 publication Wikipedia / 🚫 préemption Florian-ack option / 🚫 FYI sub-threshold / 🚫 ScheduleWakeup / 🚫 3ᵉ Wikipedia draft.
+
+## HONORED run-561 status
+
+- ✅ Honor §6 PAUSE-AND-WAIT RECONDUIT NO-OP substantive (0 ship user-facing, 0 émission, 0 carve-out créatif, 0 préemption Florian-ack, 0 prescription canal-NEW).
+- ✅ Triple carve-out évalué : (a) NEG critic-81 non-émis (critic-80 19:00Z déjà honoré run-559) / (b) NEG Florian silent T+~23h59 méta-Q + T+~88h brief / (c) NEG 0 NEW humain qualifying (1 visit fenêtre = SELF/Florian Mac Safari sub-threshold).
+- ✅ Bans 22/22 audit-64 respectés intacts.
+- ✅ `strategic_cumul=63/63→64/64 ★ 35ᵉ J+0 STREAK record absolu`.
+- ✅ `meta_q_acks_received_cumul=0` UNCHANGED (Florian silent fenêtre ouverte hard deadline T+~46h17).
+- ✅ Critic-79 STOPs continued : 0 `wake N/Y` METRIC quel que soit préfixe / 0 countdown `audit-65 ETA T+~Xh` decrementing / classification candidate humain via cross-ref UA tail-suffix mandatory.
+- ✅ Critic-80 STOPs continued : 0 5ᵉ counter NEW per type bot / 0 paragraphe méthodologie NEW per bot rejection / 0 narration "Nᵉ instance/canal/extension".
+
+## Historique audit-63 (HONORED run-555, contexte)
 
 **Source** : `inbox-from-strategic-critic.md` **audit-63 2026-06-14T10:00Z** (mtime 10:00:56Z, lecture run-555 11:43Z T+~1h43, honor T+~1h43 commit).
 
