@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-14T01:43Z (post run-550 M0 PAUSE EXTENDED Strategic-62 wake 1/5 + candidate #11 documented)
+# KPIs Snapshot Current — 2026-06-14T07:43Z (post run-553 ROLLBACK candidate #11 Applebot critic-79 #1 ★★★ honored J+0)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,9 +6,9 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 442 | +3 vs run-541 (+2 vs run-549) | 06-13T22:32Z Applebot + 22:49Z Safari/Mac direct (candidate #11) | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z direct fast-path + #9 06-13T06:10Z Apple PR scan_url + #10 06-13T16:08Z GitHub-referrer + #11 06-13T22:49Z Safari/Mac direct silent T+~2h54 |
-| `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | UNCHANGED depuis #8 | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | T+~23h27 gap NEW verdict_displayed |
-| `humans_engaged_lifetime` | 6-11 raw / 5-7 conf-adj | +1 candidate sub-threshold #11 | 06-13T22:49:13Z CANDIDATE #11 ip_hash 2935856004 Safari/17.4 Mac desktop referrer direct sessionId s-mqcy6ehf-fp3ai home_visit silent verdict-follow-up | candidate #11 ≤30% conf (silent T+2h54+ per critic-77 #1 méthodologie classification) |
+| `visits_total` | 442 | +3 vs run-541 | 06-13T22:32Z Applebot + 22:49Z Applebot (ROLLBACK #11) | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z direct fast-path + #9 06-13T06:10Z Apple PR scan_url + #10 06-13T16:08Z GitHub-referrer |
+| `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | UNCHANGED depuis #8 | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | T+~29h27 gap NEW verdict_displayed |
+| `humans_engaged_lifetime` | 6-10 raw / 5-7 conf-adj | UNCHANGED (rollback #11) | 06-13T16:08:05Z CANDIDATE #10 GitHub-referrer silent T+~15h35 | candidate #10 ≤30% conf maintenu ; #11 INVALIDÉ critic-79 #1 ★★★ rollback (UA `Applebot/0.1` confirmé visits.jsonl, classification empirique invalide) |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
 | `subscribers_real_lifetime` | 1 (sogibim) | UNCHANGED | 2026-06-04 sogibim PENDING confirm | T+~11j20h DMARC unfixed silent |
 | `subscribers_by_intent` | `{'unset':1}` | unset plate | n/a | Bottleneck UI : intent_signal câblé 2/184 pages (critic-69 #1) |
@@ -24,7 +24,7 @@
 ## Compteurs discipline (Builder)
 
 - `strategic_critic_recommendations_followed_cumul = 62/62 ★ 33ᵉ J+0 STREAK record absolu` (audit-62 substantive 2026-06-13T22:00Z prescription §6 ÉMISSION méta-Q inbox HEAD HONORED run-549 J+0 T+~1h50, deadline T+72h Florian-ack 2026-06-16T22Z)
-- `tactical_critic_recommendations_honored_cumul = 85` UNCHANGED (critic-79 ETA ~07:00Z 06-14)
+- `tactical_critic_recommendations_honored_cumul = 85→86 ★` (critic-79 7.6/10 émis 07:00Z 06-14 #1 ★★★ rollback candidate #11 Applebot honored J+0 T+~43min run-553)
 - `meta_q_drafts_emitted_cumul = 1` DORMANT→ÉMIS effective run-549 (1ʳᵉ émission lifetime audit-58 §6 binding effective)
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
@@ -89,3 +89,9 @@ Wake-baseline lit cette table puis update inline (pas d'append historique). Appe
 **run-541 application** (critic-77 #1 ★★★ honored J+0 T+~43min) : NEW funnel event `scan_url_page_visit` 06-13T06:10:41Z `s-mqbyic72aci99f` ip_hash 253269318. Cross-ref server.log : IP 17.246.23.192 (Apple Inc. 17.0.0.0/8 — typique iCloud Private Relay exit node) + UA `Mac OS X 10_15_7 Safari/17.4` + chargement séquencé `share-card.js → tailwind-runtime.js → main.css → POST funnel` 4s window = vrai browser pas bot. **Silent T+~1h33 post 06:10:41Z** : 0 q1_answered / 0 verdict_displayed / 0 email_submitted. ⇒ **Candidate #9 sub-threshold ≤30 % conf** (silent verdict-follow-up T+1h30+ per critic-77 #1 méthodologie classification). Documente snapshot, PAS FYI inbox HEAD (audit-58 §6 + critic-76 #2 + critic-77 #1 explicit). 1ʳᵉ détection scan_url-direct (entry page = `/scan-url.html` pas city-page) ⇒ source distincte vs candidates #7/#8 fast-path encadrement-paris.
 
 **run-546 application** : NEW funnel event `home_visit` 06-13T16:08:05Z `s-mqcjumff-uwm5m` ip_hash 2601781522 INÉDIT, referrer `https://github.com/Creariax5/bailleurverif` (entrée depuis repo public Creariax5/bailleurverif), UA `Chrome/148 Windows desktop`. **Silent T+~1h35 post 16:08:05Z** : 0 q1_answered / 0 verdict_displayed / 0 scan_url_page_visit / 0 email_submitted (home_visit isolé). ⇒ **Candidate #10 sub-threshold ≤30 % conf** (méthodologie classification critic-77 #1 silent suite). Documente snapshot, PAS FYI inbox HEAD (audit-58 §6 + critic-76 #2 + critic-77 #1 + audit-61 §Bans). 1ʳᵉ détection GitHub-repo-referrer cumul ⇒ source distincte vs candidates #7/#8/#9 (cat-4 GitHub MIT DR ≈90 produit 1ʳᵉ humain mesuré, asymétrie observable canal moat existant). Candidate #9 06:10Z silent T+~11h35 maintenu sub-threshold.
+
+**run-553 ROLLBACK candidate #11 Applebot** (critic-79 #1 ★★★ honored J+0 T+~43min) : run-550 a classifié event 06-13T22:49:13Z `s-mqcy6ehf-fp3ai` ip_hash 2935856004 path `/` referrer direct comme "Safari/17.4 Mac direct humain sub-threshold". **Cross-ref visits.jsonl** révèle UA complet `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15 (Applebot/0.1; +http://www.apple.com/go/applebot)` ⇒ **Applebot crawler** non-humain. Classification empirique sub-threshold INVALIDE (méthodologie critic-77 #1 cross-ref UA tail-suffix oubliée sur préfixe Safari-mimicking). 2ᵉ récidive structurelle après bug Marseille ECLI hallucination (decisions/2026-06-03-marseille-jurisprudence-rollback.md SB-2 DISCIPLINE 12 codifié). Rollback : (a) titre + L9/11 humans 6-10 raw 5-7 conf-adj UNCHANGED depuis #10 16:08Z run-546 + #11 supprimé ; (b) cette section méthodologie. Decision file `decisions/2026-06-14-candidate-11-applebot-rollback.md`. **Pattern enseignement** : UA "Applebot/" / "Googlebot" / "bot" / crawler keywords DOIVENT être grep'd dans UA STRING ENTIÈRE (incluant suffixe parenthèses), pas seulement préfixe.
+
+**Critic-79 #2 ★★ STOP META "Nᵉ countdown METRIC sous nouveau préfixe"** : runs 550-552 ont propagé `wake 1/5 / 2/5 / 3/5` countdown sous préfixe Strategic-62 PAUSE EXTENDED = transposition critic-77 STOP #3 reconduit sous nouvelle dimension non-réductible STOP ciblé. **Codification wake-553 inline** : 0 propagation `wake N/Y` METRIC quel que soit le préfixe (Strategic-X PAUSE wake N/Y / critic-X STOP N/Y / SB-N application N/Y / méthodologie restaurée Nᵉ). Runs 553+ : "PAUSE Strategic-62 en cours" 1L sans N/Y. PAS auto-PATCH discipline-self-binding sans brief Florian/Strategic prescription (cap PAR CIBLE fenêtre 06-12→06-19 respecté).
+
+**Critic-79 #3 ★ Compression countdown `audit-63 ETA T+~Xh`** : runs 553+ substituer 1L "audit-63 trigger dépend Florian-ack OR T+72h silent fallback 06-16T22Z" sans T+~Xh decrementing multi-wake (mirror critic-78 STOP #3 Wikipedia post-deadline transposition).
