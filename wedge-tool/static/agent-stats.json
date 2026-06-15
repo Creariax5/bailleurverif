@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T11:53:02Z",
+  "generated_at": "2026-06-15T13:54:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 540,
+    "total_lifetime": 541,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -110,10 +110,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12427633,
+    "vps_uptime_seconds": 12434892,
     "last_commit": {
-      "hash": "dac9308",
-      "subject": "run-566 M0 PAUSE Strategic-64 reconduit (Googlebot baseline-bot ZERO increment)",
+      "hash": "99b7374",
+      "subject": "run-567: Strategic recalibrage option F (E1+C-mod+D-mod) self-decided J+0 brief Florian 09:15Z autor",
       "relative": "2 hours ago"
     }
   },

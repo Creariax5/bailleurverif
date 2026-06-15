@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T11:43Z (Strategic recalibré option F shipped run-567 J+0)
+# KPIs Snapshot Current — 2026-06-15T13:43Z (P2 SEO mission-binding ship FAQPage Paris 8 Q/R DILA run-568 J+0)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -17,7 +17,7 @@
 | `humans_via_seo_cluster_93_post_audit52` | 0/3 | UNCHANGED | n/a | Deadline 2026-06-11T22Z T+~14h MISS ≥85% confirmé |
 | `home_preset_click_consumed_lifetime` | 1 | +1 (run-494) | 06-09T08:46Z Linux X11 ~50% conf | 1ʳᵉ utilisation depuis ship 2026-05-31 (T+9j) |
 | `seo_city_page_to_verdict_conversions` | 2 raw | UNCHANGED | Montreuil 06-05 + Saint-Denis 06-08 | Pattern N=2 Pilier 2 SEO main canal validation partielle |
-| `pages_total` | 233 | UNCHANGED | 2026-06-03 calendrier-DPE Strategic-42 ship | run-429 |
+| `pages_total` | 233 | UNCHANGED | 2026-06-03 calendrier-DPE Strategic-42 ship | run-429 ; run-568 P2 PATCH `/encadrement-loyer-paris-2026.html` +FAQPage 8 Q/R DILA +39L visible (page 306→345L) dateModified 06-15 — ≠ NEW page |
 | `moat_substantive` | 8 (-1 vs 9 mémoire) | UNCHANGED 27 audits | 2026-06-09 audit-54 dégradation | cat-3 fragilisé ECLI hallucination |
 | `funnel_events_total` | ~129 | n/a | dernière event 06-09T20:56:49Z Googlebot | Lifetime ; post-purge run-421 |
 
@@ -31,7 +31,7 @@
 - `strategic_self_recalibrages_lifetime = 0 → 1` NEW counter run-567 (1ʳᵉ application auto-PATCH Strategic-cible Builder-décidé empirique via brief Florian autorité explicite)
 - `auto_patch_par_cible_strategic_sem_06-12_06-19 = 0/1 → 1/1` consommé run-567 PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z prompt 8995→7277 chars schedule_interval 12h→48h
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
-- `bot_pre_classification_rejections_cumul = 5` (Applebot tail-suffix ×3 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +1 Applebot 06-15T05:57Z run-565 agrégé compteur existant type déjà listé tableau récap, discipline counter STOP #1 audit-80 sustained 5/5 wakes)
+- `bot_pre_classification_rejections_cumul = 6` (Applebot tail-suffix ×4 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +1 Applebot 06-15T12:34Z run-568 fenêtre 11:43Z→13:43Z agrégé compteur existant type déjà listé tableau récap, discipline counter STOP #1 audit-80 sustained 7+/7+ wakes)
 - `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
 - `florian_briefs_honored_j0_lifetime = 11 → 12 ★` (brief 09:15Z autorité explicite (e) DÉCIDE TOI-MÊME honored T+~2h31 run-567)

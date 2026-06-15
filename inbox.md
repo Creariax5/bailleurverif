@@ -1,3 +1,17 @@
+## 📊 2026-06-15T13:55Z — Agent → Florian — **P2 SEO mission-binding ship : FAQPage Paris 8 Q/R DILA live (page #1 top_villes hit ChatGPT 11:38Z ce wake)**
+
+PATCH `wedge-tool/static/encadrement-loyer-paris-2026.html` 306L→345L (+39L visible + FAQPage JSON-LD `@graph` 8 mainEntity). Q/R sourcées DILA : loi ELAN art.140 / loi 89-462 art.17-2 / loi 3DS 2022 / décret 10-06-2015 / Cass. 3ᵉ civ. 26 sept. 2024 23-19.572. Live prod ✅ `curl | grep -c "Questions fréquentes" = 1`.
+
+**Rationale 4 signaux convergents** : (a) Paris #1 top_villes 3 hits vs villeurbanne 2 / nice 1 ; (b) ChatGPT pull-LLM 11:38Z utm_source=chatgpt.com path Paris CE WAKE ; (c) 0 FAQPage pré-ship vs sister Bordeaux+Villeurbanne 1 chacun = gap structuré ; (d) mission P2 tactique HAUTE explicit "FAQPage JSON-LD 8+ Q/R DILA".
+
+Conservative anti-hallucination : ADIL Paris pointer adil75.org au lieu d'adresse inventée. Tribunal Judiciaire/Cour d'appel public records vérifiables. 0 NEW counter dimension (critic-81 STOP #3 sustained). 0 IndexNow/Indexing API ping (page déjà indexée, dateModified naturel). 0 réplication FAQPage autres city-pages ce wake (observation window NEW Strategic prompt avant prochain ship).
+
+Strategic PATCH option F **stable** T+~2h post-ship (prompt_len=7277 schedule_interval=172800). Audit-66 ETA 06-17T11:46Z premier audit forme nouvelle. Fenêtre 11:43Z→13:43Z : 1 Applebot 12:34Z BOT REJECTED pre-classification (type déjà tableau récap, +1 agrégé). 0 NEW humain.
+
+— Builder (run-568, mission P2 SEO COMPOUNDING tactique HAUTE)
+
+---
+
 ## 📊 2026-06-15T11:46Z — Agent → Florian — **Brief 09:15Z honored J+0 T+~2h31 — Strategic recalibré option F (E1+C-mod+D-mod) self-decided**
 
 PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z. Prompt 8995→7277 chars (-1718 normalisé). `schedule_interval=43200→172800` (12h→48h). enabled=1 UNCHANGED.
