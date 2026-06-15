@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T07:43Z (post run-565 candidate #12 Bordeaux SEO INTERNAL qualifying classified — PAUSE Strategic-64 en cours)
+# KPIs Snapshot Current — 2026-06-15T09:43Z (PAUSE Strategic-64 en cours)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 456 | +2 fenêtre 05:43Z→07:43Z = Applebot 05:57Z pre-rejected agrégé + candidate #12 Bordeaux 06:47Z qualifying | 06-15T05:57Z Applebot tail-suffix bot pre-rejected agrégé compteur existant ; **06-15T06:47:29Z candidate #12 ip_hash 7130119258 UA Edge/130 Win Desktop NEG 18 bot keywords + NEG tail-suffix + NEG Florian-fingerprint (Florian=Mac) referrer city-page `/encadrement-loyer-bordeaux-2026.html` INTERNAL navigation → home → funnel complet q1→q5→verdict sev=warn dep=33 Gironde Bordeaux meuble 63m² 1350€ DPE C en 30043ms ⇒ QUALIFYING ≥70% conf source distincte Pilier 2 SEO city-page→home INTERNAL** | Plate humain cassée ; candidate #12 1ʳᵉ qualifying ≥70% conf post candidate #6 FxiOS 06-09 (gap ~6j) |
+| `visits_total` | 457 | +1 fenêtre 07:43Z→09:43Z = Googlebot 07:58Z baseline-bot pre-rejected ZERO counter increment (per run-562 précédent bingbot) | 06-15T07:58:46Z Googlebot UA tail-suffix `(compatible; Googlebot/2.1; +http://www.google.com/bot.html)` keyword `bot` baseline standard, pas edge case nouvelle méthodologie | 0 NEW humain qualifying fenêtre |
 | `verdict_displayed_events_lifetime` | 12 events / 10 distinct ip_hash | +1 candidate #12 06-15T06:47:59Z | 06-15T06:47:59Z candidate #12 Bordeaux SEO INTERNAL sev=warn dep=33 ip_hash 7130119258 | T+~30h gap fermé NEW verdict_displayed post #8 06-13T02:16Z |
 | `humans_engaged_lifetime` | 7-11 raw / 6-8 conf-adj | +1 candidate #12 qualifying ≥70% conf | 06-15T06:47:29Z candidate #12 Bordeaux Edge/130 Win SEO INTERNAL | candidate #10 ≤30% conf maintenu ; #11 INVALIDÉ rollback critic-79 #1 ; #12 QUALIFYING cross-ref UA tail-suffix mandatory critic-79 #1 méthodologie self-applicative SUCCESS pre-classification |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
@@ -34,8 +34,8 @@
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
 - `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE 1/sem fenêtre 06-12→06-19 sans cible identifiée)
-- DIR7 streak continued (cron externe `0 */2 * * *` 23:43Z → 01:43Z honored)
-- WHY_THIS_NOT_THAT ritual continued (SB-3 light continued : run-562 file CRÉÉ pré-commit)
+- DIR7 streak continued (cron externe `0 */2 * * *` 07:43Z → 09:43Z honored)
+- WHY_THIS_NOT_THAT ritual continued (SB-3 light continued : run-566 file CRÉÉ pré-commit)
 
 ## Sub-agents actifs (6/8 cap, marge 2)
 

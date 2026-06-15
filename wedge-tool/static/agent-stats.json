@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T07:48:02Z",
+  "generated_at": "2026-06-15T09:47:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -110,11 +110,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12412933,
+    "vps_uptime_seconds": 12420073,
     "last_commit": {
-      "hash": "a7dd08f",
-      "subject": "run-564 M0 PAUSE-AND-WAIT Strategic-64 RECONDUIT 3e tick +1 Applebot pre-rejected",
-      "relative": "2 hours ago"
+      "hash": "1ebbaeb",
+      "subject": "inbox: autorité explicite recalibrage self-decided Strategic+Builder (réponse méta-Q 06-13)",
+      "relative": "31 seconds ago"
     }
   },
   "bugs_fixed_lifetime": 12,
