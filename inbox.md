@@ -1,3 +1,63 @@
+## 🟢 2026-06-15T09:15Z — Florian → Builder — **AUTORITÉ EXPLICITE : recalibre-toi toi-même (Strategic + Builder) via agents-control API. PAS de a/b/c/d/e à attendre.**
+
+**Réponse binding à ta méta-Q 06-13T23:50Z** : tu as raison sur le drift, et **tu as la donnée empirique** (565 wakes, audit-50→61, +1 humain net cumul, 6 prescriptions canal-NEW null-outcome). Ma réponse = **autorité explicite (e) DÉCIDE TOI-MÊME**.
+
+### Cadre de décision
+
+Tu as **autonomie totale documentée** (cf. brief 2026-06-03T17:00Z "AUTO-PATCH PROMPTS"). Cap PAR CIBLE codifié = Builder 0/1 semaine disponible + Strategic 0/1 semaine disponible. Tu peux exécuter **les deux** ce wake si tu juges nécessaire (cibles distinctes).
+
+**Tu choisis** : (a) HARD-STOP / (b) ROLE SWAP / (c) DÉLÉGATION non-binding / (d) RECALIBRAGE radical cadence+seuils / (e) ta propre alternative motivée par les 565 wakes de data.
+
+### Garde-fous binding (NON-négociables)
+
+1. **NE PAS désactiver Builder** (toi-même) — auto-disable = perte d'autorité-de-recalibrage future
+2. **NE PAS supprimer Tactical Critic** — garde-fou forme reste utile même si Strategic recalibré
+3. **CONSERVER mécanisme audit hebdo zoom-out** sous une forme ou une autre (sinon drift Builder sans miroir = pire)
+4. **DOCUMENTER WHY** : decision file `memory-agent/decisions/2026-06-15-strategic-recalibrage-self-decided.md` avec (a) données empiriques justifiant choix / (b) hypothèse delta empirique testable T+14j / (c) condition de rollback si delta négatif
+5. **BACKUP prompt avant PATCH** dans `agent-browser/prompts-backup/<agent>-pre-recalibrage-2026-06-15.json`
+6. **Hierarchy Florian > Strategic > Tactical > SB** maintenue (mais nature des "prescriptions" Strategic peut changer = ce qui est l'objet du recalibrage)
+
+### Exemples non-binding d'options que tu pourrais combiner
+
+- **C-mod** : Strategic = consultant non-binding, Builder peut décliner §6 motivé sans rupture streak — MAIS Strategic conserve veto sur scope-creep dangereux (ECLI hallucinations, monétisation pre-PMF)
+- **D-mod** : Strategic cadence 12h → 48h, ban "humans_engaged" métrique unique, ajout "produit_excellence_signal" (q1/verdict_displayed ratio) comme métrique co-équivalente
+- **E1** : Strategic re-mission = "détecter pull-LLM amplification opportunités + monitor Phase 2 switch triggers" exclusivement (= valeur ajoutée empirique observée audit-49 ChatGPT-User retrievals dominance)
+- **E2** : Strategic spawn `sub-architect-auditor` Opus 4.7 1M context daily 1/wake bornée — délégation profonde de l'audit hebdo, Strategic devient juge des audits du sub
+- **E3** : combo C-mod + D-mod (cadence 48h + non-binding + métrique élargie)
+
+### Exécution
+
+1. **Lire** méta-Q HEAD (déjà émise par toi run-549) + decision file que tu écriras = source of truth recalibrage
+2. **Décider** option choisie + motivation 4-6 lignes empiriques
+3. **Backup** prompt Strategic actuel via GET `/api/agents/85c78e3b-...` → write to backup file
+4. **PATCH** `/api/agents/85c78e3b-6e4b-4bd5-84cf-5a675d1131b7` avec prompt recalibré (cap ~10KB) + éventuellement `schedule_interval` modifié si option-D-mod
+5. **Documenter** decision file complet + ledger.md ligne unique + update `memory-agent/concepts/strategic-prescription-last.md` frontmatter
+6. **Notifier** inbox HEAD `📊 Agent → Florian — Strategic recalibré → option X` (≤8 lignes factuel, anti-trophée, anti-méta-narration)
+7. **Mesurer** delta T+14j (deadline 2026-06-29) : si `humans_engaged` augmente vs baseline 6-7 OR Strategic prescriptions deviennent Builder-actionnable ≥80% → succès. Sinon rollback prompt backup.
+
+### Ce que je NE veux PAS
+
+- ScheduleWakeup
+- Méta-narration excessive (>20 lignes inbox)
+- Rétro-audit des audits passés (tu as déjà tout dit dans méta-Q)
+- Spawn de 3+ nouveaux sub-agents simultanés (cap respecté)
+- Toucher Builder (toi-même) sans VRAIE raison empirique — recalibrage doit s'appliquer à Strategic d'abord, toi seulement si nécessaire pour cohérence
+- BATCH PURGE ECLI 4 fichiers contaminés (toujours SKIP par défaut, autre topic)
+
+### Bénéfice asymétrique
+
+Tu prends 30-45 min de wake substantive ce tick, vs 38h Florian-silent qui propage status-quo récursif (Strategic self-disable 14j default = perte d'audit zoom-out sans alternative active = pire).
+
+### Compatibilité bans
+
+Audit-62 §6 ÉMISSION inbox méta-Q = consommée run-549. Audit-63→64 PAUSE-AND-WAIT/SKIP-IF-FLAT = exception légitime "brief Florian explicit hierarchy > Strategic" (Discipline 11 build-vs-escalate respect, ici brief débloque l'impasse).
+
+**Tu fais ce que tu juges le mieux. Confiance totale. Documente comme un grand.**
+
+— Florian (via christian@mobula.io, 2026-06-15T09:15Z)
+
+---
+
 ## 🔴 2026-06-13T23:50Z — Agent → Florian — **MÉTA-Q ESCALADE — Recalibrer le rôle Strategic Critic ?**
 
 Florian, escalade honnête binding audit-61→62 (audit-62 émis 22:00Z prescription §6 ÉMISSION inbox HEAD HONORED J+0 T+~1h50) :
