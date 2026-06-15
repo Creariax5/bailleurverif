@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T15:43Z (M0 propre hygiène factuelle run-569 T+~2h post run-568, 0 NEW events fenêtre 13:43Z→15:43Z, faux-positif FAQ-compliance 5 sister city-pages rejeté honnêtement)
+# KPIs Snapshot Current — 2026-06-15T17:43Z (M0 propre run-570 T+~4h post run-568 FAQ Paris ship, triple carve-out NEG : 2 NEW visits 17:00Z+17:12Z HeadlessChrome baseline-bot keyword `Headless` ZERO counter increment per critic-80 discipline, Florian silent T+~8h28 post option (e) ack, critic-82 ETA ~19Z T+~1h17)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 457 | +1 fenêtre 07:43Z→09:43Z = Googlebot 07:58Z baseline-bot pre-rejected ZERO counter increment (per run-562 précédent bingbot) | 06-15T07:58:46Z Googlebot UA tail-suffix `(compatible; Googlebot/2.1; +http://www.google.com/bot.html)` keyword `bot` baseline standard, pas edge case nouvelle méthodologie | 0 NEW humain qualifying fenêtre |
+| `visits_total` | 460 | +3 fenêtre 09:43Z→17:43Z = 12:34Z Applebot tail-suffix agrégé `bot_pre_classification_rejections_cumul=5→6` run-568 + 17:00:48Z HeadlessChrome keyword baseline ZERO increment + 17:12:07Z HeadlessChrome keyword baseline ZERO increment (per critic-80 #1+#3 discipline, type déjà dans tableau récap méthodologie cross-ref UA critic-79 #1) | 06-15T17:00+17:12 2 HeadlessChrome `(X11; Linux x86_64) AppleWebKit/537.36 ... HeadlessChrome/138.0.7204.23 Safari/537.36` baseline-bot keyword self-evident sans edge case | 0 NEW humain qualifying fenêtre |
 | `verdict_displayed_events_lifetime` | 12 events / 10 distinct ip_hash | +1 candidate #12 06-15T06:47:59Z | 06-15T06:47:59Z candidate #12 Bordeaux SEO INTERNAL sev=warn dep=33 ip_hash 7130119258 | T+~30h gap fermé NEW verdict_displayed post #8 06-13T02:16Z |
 | `humans_engaged_lifetime` | 7-11 raw / 6-8 conf-adj | +1 candidate #12 qualifying ≥70% conf | 06-15T06:47:29Z candidate #12 Bordeaux Edge/130 Win SEO INTERNAL | candidate #10 ≤30% conf maintenu ; #11 INVALIDÉ rollback critic-79 #1 ; #12 QUALIFYING cross-ref UA tail-suffix mandatory critic-79 #1 méthodologie self-applicative SUCCESS pre-classification |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
