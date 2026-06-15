@@ -1,8 +1,44 @@
 ---
-name: Strategic Prescription (last audit)
-description: **Audit-64 substantive 2026-06-14T22:00Z HONORED run-561 J+0 T+~1h43 = PAUSE-AND-WAIT RECONDUIT méta-Q ack window T+~46h restant.** UNE action §6 = ZÉRO nouvelle prescription Strategic-side jusqu'à audit-65 ETA 06-15T22:00Z OR Florian-ack reçu (hard deadline méta-Q 06-16T22:00Z, silent post-deadline ⇒ audit-66 self-disable Strategic 14j cooldown option-a implicit). Anti-recursion STRICT : 0 nouvelle prescription canal-NEW / 0 carve-out créatif Builder-side / 0 ré-émission méta-Q / 0 publication Wikipedia / 0 préemption Florian-ack. Bans audit-57+58+61+62+63 reconduits 22/22 intacts. **64/64 strategic cumul ★ 35ᵉ J+0 STREAK record absolu**. `meta_q_acks_received_cumul=0` UNCHANGED (Florian silent T+~24h post-émission).
+name: Strategic Prescription (last audit) + RECALIBRAGE OPTION F shipped run-567
+description: **NEW STATE 2026-06-15T11:46Z run-567 : Strategic recalibré option F (E1+C-mod+D-mod) self-decided Builder via brief Florian 09:15Z autorité explicite (e).** PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z. Prompt 8995→7277 chars (-1718 normalisé). schedule_interval 43200→172800 (12h→48h). Re-mission 4 axes : (a) pull-LLM amplification monitoring / (b) Phase 2 switch triggers monitoring / (c) VETO scope-creep BINDING / (d) produit-excellence signal. Prescriptions §6 consultatives non-binding sauf §c VETO STRICT. Audit-65 trigger 1er test in-vivo ETA 06-17T11:46Z. Hypothèse rollback T+14j 2026-06-29 : succès SI humans≥8 OR Builder-actionable≥80 % OR florian_hours_mtd↓ ; échec=rollback prompt backup. **64/64 strategic cumul ★ 35ᵉ J+0 STREAK** UNCHANGED (audit-64 NO-OP substantive maintenu jusqu'à audit-65 NEW prompt actif). `meta_q_acks_received_cumul=0→1` (Florian brief 09:15Z = ack option (e) explicit). Backup `agent-browser/prompts-backup/strategic-critic-2026-06-15-pre-recalibrage.json` 65 KB. Decision file `decisions/2026-06-15-strategic-recalibrage-self-decided.md`.
 type: project
 ---
+
+# Recalibrage Strategic option F shipped run-567 (NEW STATE 2026-06-15T11:46Z)
+
+**Brief Florian** : `inbox.md` HEAD 🟢 2026-06-15T09:15Z "AUTORITÉ EXPLICITE : recalibre-toi toi-même via agents-control API. PAS de a/b/c/d/e à attendre" option (e) DÉCIDE TOI-MÊME → Builder self-decided option F = E1 (re-mission 4 axes) + C-mod (consultatives non-binding sauf §c VETO) + D-mod (cadence 12h→48h + métriques 4 co-équivalentes).
+
+**PATCH state** : `prompt_len=7277` (vs 8995 prev, -1718 normalisé) / `schedule_interval=172800` (48h vs 43200=12h prev) / `enabled=1` UNCHANGED / `model=` (héritage default UNCHANGED) / `updated_at=2026-06-15 11:46:56`.
+
+**Nouvelle structure mission Strategic 4 axes** :
+- (a) PULL-LLM AMPLIFICATION MONITORING : crawler LLM UA hits cumul + llms.txt/llms-full.txt + Wikidata sameAs + opportunités RAG-friendly
+- (b) PHASE 2 SWITCH TRIGGERS MONITORING : 5 triggers cumulatifs binding (humans≥100 + sub≥20 + persona≥40 % + GSC≥30 + Florian-ack) progress %
+- (c) VETO SCOPE-CREEP DANGEREUX (seul binding §6 restant) : ECLI hallucination / monétisation pre-PMF / push canaux dépriorité / BATCH purge ≥3 / auto-disable Builder-Tactical
+- (d) PRODUIT-EXCELLENCE SIGNAL : verdict_displayed/q1_answered ratio + copyability factuel + cat-3 DILA verification
+
+**Format output Strategic NEW** : ≤400 mots, 5 sections (1. PULL-LLM / 2. PHASE 2 / 3. VETO si signal / 4. PRODUIT-EXCELLENCE / 5. PRESCRIPTION CONSULTATIVE ≤1 ou "0 prescription ce wake — Builder libre").
+
+**Hypothèse testable T+14j deadline 2026-06-29T11:46Z** : succès SI ≥1 parmi (a) humans_engaged_lifetime ≥ 8 (+1 vs baseline 6-7) / (b) Strategic prescriptions Builder-actionable ≥80 % accepted ratio / (c) florian_hours_consumed_mtd diminue mesurable. Échec aucun des 3 ⇒ rollback prompt backup `agent-browser/prompts-backup/strategic-critic-2026-06-15-pre-recalibrage.json` + NEW decision file rollback.
+
+**Condition rollback prématuré (avant T+14j)** :
+- Strategic émet ≥1 prescription canal-NEW push pré base SEO solide ≥2 audits consécutifs → re-PATCH section ❌ canal-NEW renforcée.
+- Strategic auto-disable substantif ≥3 audits consécutifs → re-PATCH section "tu DOIS prescriber ≥1 action consultative par audit" renforcée.
+
+**Compatibilité bans audit-57+58+61+62+63+64** : brief Florian 09:15Z = exception légitime hierarchy "brief Florian explicit > Strategic bans" (Discipline 11 build-vs-escalate respect). Bans Strategic audit-64 22/22 ZÉRO violation Builder-side (PATCH agent =/= action Builder dans les bans qui concernent ship/canal/carve-out Builder-site).
+
+**Counters affectés** :
+- `florian_briefs_honored_j0_lifetime=11→12 ★`
+- `strategic_self_recalibrages_lifetime=0→1` NEW counter (1ʳᵉ application auto-PATCH Strategic-cible Builder-décidé)
+- `builder_auto_patches_lifetime=3→4 ★`
+- `auto_patch_par_cible_strategic_sem_06-12_06-19=0/1→1/1` consommé
+- `meta_q_acks_received_cumul=0→1` (Florian brief 09:15Z explicit ack option (e))
+- `strategic_critic_recommendations_followed_cumul=64/64 UNCHANGED` (audit-64 §6 PAUSE-AND-WAIT NO-OP substantive maintenu jusqu'à audit-65 NEW prompt actif 06-17T11:46Z)
+
+---
+
+# Historique pré-recalibrage (archive immutable)
+
+
 
 # Concept : Strategic Prescription (last audit)
 

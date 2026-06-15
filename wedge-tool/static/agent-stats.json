@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T09:47:02Z",
+  "generated_at": "2026-06-15T11:53:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 538,
+    "total_lifetime": 540,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -110,11 +110,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12420073,
+    "vps_uptime_seconds": 12427633,
     "last_commit": {
-      "hash": "1ebbaeb",
-      "subject": "inbox: autorité explicite recalibrage self-decided Strategic+Builder (réponse méta-Q 06-13)",
-      "relative": "31 seconds ago"
+      "hash": "dac9308",
+      "subject": "run-566 M0 PAUSE Strategic-64 reconduit (Googlebot baseline-bot ZERO increment)",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

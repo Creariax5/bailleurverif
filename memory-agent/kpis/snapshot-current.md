@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T09:43Z (PAUSE Strategic-64 en cours)
+# KPIs Snapshot Current — 2026-06-15T11:43Z (Strategic recalibré option F shipped run-567 J+0)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -26,16 +26,19 @@
 - `strategic_critic_recommendations_followed_cumul = 64/64 ★ 35ᵉ J+0 STREAK record absolu` UNCHANGED (audit-64 même prescription PAUSE-AND-WAIT RECONDUIT continued run-564 J+0 cron tick 3ᵉ M0 consécutif, triple carve-out (a/b/c) tous NEG ⇒ default outcome ; hard deadline méta-Q Florian-ack 2026-06-16T22Z fenêtre OUVERTE ; audit-65 trigger 06-15T22:00Z dépend Florian-ack OR silent + cron OR critic intercalaire OR NEW humain qualifying)
 - `tactical_critic_recommendations_honored_cumul = 87` UNCHANGED (critic-80 8.1/10 honoré run-559, critic-81 trigger cycle 12h ~07:00Z 06-15 OR plus tôt si dérive structurelle)
 - `wakes_critic_80_action_1_consolidation = 4→2 counters` (apllebot_misclassification_rollbacks + applebot_bot_rejections_pre_classification + headlesschrome_bot_rejections + dataprovider_bot_rejections_pre_classification consolidés → bot_pre_classification_rejections_cumul + bot_post_classification_rollbacks_cumul, anti-cargo-cult dimension counter)
-- `meta_q_acks_received_cumul = 0` UNCHANGED (Florian silent post-émission inbox HEAD 06-13T23:50Z, fenêtre ouverte hard deadline 06-16T22Z)
-- `meta_q_drafts_emitted_cumul = 1` ÉMIS DORMANT (1ʳᵉ émission lifetime audit-58 §6 binding effective run-549, cap STRICT consommé)
+- `meta_q_acks_received_cumul = 0 → 1` (Florian brief 09:15Z 06-15 "AUTORITÉ EXPLICITE recalibre-toi toi-même PAS de a/b/c/d/e à attendre" = ack option (e) self-decide explicit run-567)
+- `meta_q_drafts_emitted_cumul = 1` ÉMIS RESOLVED option (e) self-decided (status update : ÉMIS DORMANT → ACK-ED RESOLVED par option (e) run-567)
+- `strategic_self_recalibrages_lifetime = 0 → 1` NEW counter run-567 (1ʳᵉ application auto-PATCH Strategic-cible Builder-décidé empirique via brief Florian autorité explicite)
+- `auto_patch_par_cible_strategic_sem_06-12_06-19 = 0/1 → 1/1` consommé run-567 PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z prompt 8995→7277 chars schedule_interval 12h→48h
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
 - `bot_pre_classification_rejections_cumul = 5` (Applebot tail-suffix ×3 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +1 Applebot 06-15T05:57Z run-565 agrégé compteur existant type déjà listé tableau récap, discipline counter STOP #1 audit-80 sustained 5/5 wakes)
 - `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
-- `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
-- `builder_auto_patches_lifetime = 3` UNCHANGED (cap PAR CIBLE 1/sem fenêtre 06-12→06-19 sans cible identifiée)
-- DIR7 streak continued (cron externe `0 */2 * * *` 07:43Z → 09:43Z honored)
-- WHY_THIS_NOT_THAT ritual continued (SB-3 light continued : run-566 file CRÉÉ pré-commit)
+- `florian_briefs_honored_j0_lifetime = 11 → 12 ★` (brief 09:15Z autorité explicite (e) DÉCIDE TOI-MÊME honored T+~2h31 run-567)
+- `builder_auto_patches_lifetime = 3 → 4 ★` (PATCH Strategic prompt + schedule_interval cap PAR CIBLE 1/1 consommé fenêtre 06-12→06-19, cible distincte vs Builder prompt cap 0/1 disponible)
+- `strategic_critic_recommendations_followed_cumul = 64/64 ★ 35ᵉ J+0 STREAK record absolu` UNCHANGED (audit-64 §6 PAUSE-AND-WAIT NO-OP substantive maintenu jusqu'à audit-65 NEW prompt option F actif 06-17T11:46Z)
+- DIR7 streak continued (cron externe `0 */2 * * *` 09:43Z → 11:43Z honored)
+- WHY_THIS_NOT_THAT ritual continued (SB-3 substantive : run-567 file CRÉÉ pré-commit decision file + ledger + concept + inbox HEAD + MEMORY.md cumulés)
 
 ## Sub-agents actifs (6/8 cap, marge 2)
 

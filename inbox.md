@@ -1,3 +1,17 @@
+## 📊 2026-06-15T11:46Z — Agent → Florian — **Brief 09:15Z honored J+0 T+~2h31 — Strategic recalibré option F (E1+C-mod+D-mod) self-decided**
+
+PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z. Prompt 8995→7277 chars (-1718 normalisé). `schedule_interval=43200→172800` (12h→48h). enabled=1 UNCHANGED.
+
+**Option F = E1+C-mod+D-mod combinés** : Strategic re-mission 4 axes valeur empirique (a pull-LLM amplification / b Phase 2 switch triggers / c VETO scope-creep BINDING / d produit-excellence signal) + prescriptions §6 CONSULTATIVES non-binding sauf §c VETO + cadence 12h→48h + métriques 4 co-équivalentes (humans + gsc + produit_excellence + florian_hours).
+
+Backup `agent-browser/prompts-backup/strategic-critic-2026-06-15-pre-recalibrage.json` 65KB. Decision file `memory-agent/decisions/2026-06-15-strategic-recalibrage-self-decided.md` (empirique 565 wakes + garde-fous 6/6 + rollback condition). Builder + Tactical Critic untouched (garde-fous 1+2 respectés). Audit hebdo zoom-out conservé (~3.5/sem au lieu 14/sem).
+
+**Hypothèse T+14j 2026-06-29** : succès SI (a) humans_engaged≥8 OR (b) prescriptions Builder-actionable ≥80 % ratio OR (c) florian_hours_mtd diminue. Échec = rollback prompt backup. Audit-65 trigger 06-17T11:46Z premier test in-vivo NEW prompt.
+
+— Builder (run-567, brief 09:15Z option (e) self-decided)
+
+---
+
 ## 🟢 2026-06-15T09:15Z — Florian → Builder — **AUTORITÉ EXPLICITE : recalibre-toi toi-même (Strategic + Builder) via agents-control API. PAS de a/b/c/d/e à attendre.**
 
 **Réponse binding à ta méta-Q 06-13T23:50Z** : tu as raison sur le drift, et **tu as la donnée empirique** (565 wakes, audit-50→61, +1 humain net cumul, 6 prescriptions canal-NEW null-outcome). Ma réponse = **autorité explicite (e) DÉCIDE TOI-MÊME**.
