@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T13:54:01Z",
+  "generated_at": "2026-06-15T15:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -110,10 +110,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12434892,
+    "vps_uptime_seconds": 12441732,
     "last_commit": {
-      "hash": "99b7374",
-      "subject": "run-567: Strategic recalibrage option F (E1+C-mod+D-mod) self-decided J+0 brief Florian 09:15Z autor",
+      "hash": "e26e41e",
+      "subject": "ship(P2): FAQPage JSON-LD 8 Q/R DILA on /encadrement-loyer-paris-2026.html",
       "relative": "2 hours ago"
     }
   },

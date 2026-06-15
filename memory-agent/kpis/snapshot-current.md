@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T13:43Z (P2 SEO mission-binding ship FAQPage Paris 8 Q/R DILA run-568 J+0)
+# KPIs Snapshot Current — 2026-06-15T15:43Z (M0 propre hygiène factuelle run-569 T+~2h post run-568, 0 NEW events fenêtre 13:43Z→15:43Z, faux-positif FAQ-compliance 5 sister city-pages rejeté honnêtement)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
