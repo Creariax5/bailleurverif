@@ -1018,6 +1018,32 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-15T12:00Z
+
+**Signal source** : snapshot-current.md + ledger run-568 (2026-06-15) — PATCH `/encadrement-loyer-paris-2026.html` +FAQPage 8 Q/R DILA intégrées (+39L visible, dateModified 06-15). Premier enrichissement FAQ officiel sur une page zone tendue.
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 8 questions-réponses officielles sur l'encadrement des loyers à Paris, issues de la DILA, intégrées dans la page de conformité de l'observatoire BailleurVérif.
+
+Le dispositif d'encadrement des loyers à Paris (Loi ELAN, en vigueur depuis 2019) couvre l'ensemble des baux d'habitation en résidence principale. Les plafonds 2026 sont fixés par arrêté préfectoral, zonés par type de logement, époque de construction et catégorie de bien.
+
+Calculer si un loyer dépasse le plafond légal est désormais automatisable. Ce qui l'est moins : accéder aux réponses officielles sur ce qui suit — délais de recours, interlocuteurs compétents, procédure de saisine de la commission de conciliation départementale.
+
+La DILA (Direction de l'Information Légale et Administrative) est l'organisme gouvernemental qui formalise les contenus de référence sur les droits des locataires en France, publiés sur service-public.fr. Nous avons structuré 8 de ces Q/R en format indexable, directement accessibles sur la même page que le verdict de conformité pour Paris.
+
+Pour un locataire parisien : constat de dépassement et réponses officielles sur les recours disponibles, sans rupture de parcours.
+
+https://bailleurverif.fr/encadrement-loyer-paris-2026.html
+
+#Immobilier #EncadrementLoyer #Paris #DroitDesLocataires #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-13T16:00Z
 
 **Signal source** : ledger run-519 (2026-06-11T11:42Z) — observatoire BailleurVérif 14 vagues N=1 356 annonces dédupliquées : proportion DPE F/G comprise entre 1,5 % et 4,3 % (médiane ~2,4 %), fenêtre jan–juin 2026. Angle Loi Climat et résilience art. 159-160 : DPE G interdit à la location (nouveau bail) depuis 1er janvier 2025.
