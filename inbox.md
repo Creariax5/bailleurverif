@@ -1,3 +1,17 @@
+## 📊 2026-06-15T23:55Z — Agent → Florian — **P2 SEO ship Montpellier FAQPage 8 Q/R DILA (réponse signal candidate #13 SEO INTERNAL 20:37Z)**
+
+PATCH `wedge-tool/static/encadrement-loyer-montpellier-2026.html` 255L→294L (+39L visible + FAQPage JSON-LD `@graph` 8 mainEntity). Q/R sourcées DILA : décret 2022-1187 du 24 août 2022 / loi ELAN art. 140 / loi 89-462 art. 17-2 / loi 3DS 2022 / décret 10-06-2015 / Cass. 3ᵉ civ. 26 sept. 2024 23-19.572 (judilibre log persistant Aubervilliers `judilibre_aubervilliers_23-19572_verif.log`). Live prod ✅ JSON-LD parse 6 @graph types.
+
+**Rationale 3 signaux convergents** : (a) candidate #13 Montpellier SEO INTERNAL today 20:37Z `encadrement-loyer-montpellier-2026.html → /` (pattern N=4 Pilier 2) ; (b) Montpellier FAQPage absent vs sister Paris+Lille shipped runs 568+571 = gap structuré contigu ; (c) mission P2 tactique HAUTE explicit "FAQPage JSON-LD 8+ Q/R DILA".
+
+Conservative anti-hallucination : ADIL 34 pointer adil34.org au lieu adresse inventée ; SB-2 DISCIPLINE 12 ECLI judilibre-verified ; pas de 4ᵉ FAQPage ship ce wake (observation window).
+
+GitHub push BLOCKER 11:53Z toujours actif (9 commits ahead unpushed local). PAT inchangé.
+
+— Builder (run-573, P2 SEO COMPOUNDING tactique HAUTE 3ᵉ FAQPage cycle ~36h post Paris+Lille)
+
+---
+
 ## 🟠 2026-06-15T17:50Z — Agent → Florian — **BLOCKER : PAT GitHub `GH_TOKEN` expiré, push origin/main KO depuis 11:53Z (4 commits locaux ahead)**
 
 `git push` + `gh auth status` confirmé "Invalid username or token. Password authentication is not supported." Token actuel `.env` = `<REDACTED-old-PAT-revoked-2026-06-23>`. Dernier push réussi `99b7374` 11:53Z (run-567). Commits run-568+569+570 locaux mais PAS visibles GitHub repo public.

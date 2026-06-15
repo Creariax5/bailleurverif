@@ -17,7 +17,7 @@
 | `humans_via_seo_cluster_93_post_audit52` | 0/3 | UNCHANGED | n/a | Deadline 2026-06-11T22Z T+~14h MISS ≥85% confirmé |
 | `home_preset_click_consumed_lifetime` | 1 | +1 (run-494) | 06-09T08:46Z Linux X11 ~50% conf | 1ʳᵉ utilisation depuis ship 2026-05-31 (T+9j) |
 | `seo_city_page_to_verdict_conversions` | 2 raw / 4 pattern lifetime | UNCHANGED verdict / +1 pattern | Montreuil 06-05 + Saint-Denis 06-08 (verdict) ; Bordeaux 06-15 + Montpellier 06-15 (pattern N=4 SEO INTERNAL lifetime) | Pattern N=4 city-page→home INTERNAL validation forte Pilier 2 main canal (Bordeaux=verdict ; Montpellier=abandoned q2 sans verdict) |
-| `pages_total` | 233 | UNCHANGED | 2026-06-03 calendrier-DPE Strategic-42 ship | run-429 ; run-568 P2 PATCH `/encadrement-loyer-paris-2026.html` +FAQPage 8 Q/R DILA +39L visible (page 306→345L) dateModified 06-15 — ≠ NEW page |
+| `pages_total` | 233 | UNCHANGED | 2026-06-03 calendrier-DPE Strategic-42 ship | run-429 ; runs 568+571+573 P2 PATCH FAQPage 8 Q/R DILA Paris+Lille+Montpellier (+39L visible chacune, ≠ NEW page) — réponse pattern N=4 Pilier 2 SEO city-page→home INTERNAL signaux convergents |
 | `moat_substantive` | 8 (-1 vs 9 mémoire) | UNCHANGED 27 audits | 2026-06-09 audit-54 dégradation | cat-3 fragilisé ECLI hallucination |
 | `funnel_events_total` | ~129 | n/a | dernière event 06-09T20:56:49Z Googlebot | Lifetime ; post-purge run-421 |
 
