@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T03:43Z (post run-563 audit-64 PAUSE-AND-WAIT RECONDUIT continued NO-OP substantive M0)
+# KPIs Snapshot Current — 2026-06-15T05:43Z (post run-564 audit-64 PAUSE-AND-WAIT RECONDUIT continued NO-OP substantive M0)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 453 | UNCHANGED fenêtre 01:43Z→03:43Z = 0 NEW visit (dernier 06-15T01:13Z bingbot déjà compté run-562) | 06-14T08:38Z HeadlessChrome bot (run-554 rejection) ; 12:25Z Applebot bot pre-classification REJECTED (run-556) ; 14:18Z Dataprovider self-id REJECTED (run-557) ; 22:48Z Mac OS X 10_15_7 Safari/605.1.15 SELF/Florian (run-561) ; 06-15T01:13Z bingbot baseline-bot keyword standard (run-562 NEG carve-out (c)) ⇒ 0 humain qualifying | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z direct fast-path + #9 06-13T06:10Z Apple PR scan_url + #10 06-13T16:08Z GitHub-referrer ; #11 Applebot 06-13T22:32Z INVALIDÉ rollback critic-79 #1 run-553 |
+| `visits_total` | 454 | +1 fenêtre 03:43Z→05:43Z = Applebot 04:44Z pre-rejected | 06-14T08:38Z HeadlessChrome bot (run-554 rejection) ; 12:25Z Applebot bot pre-classification REJECTED (run-556) ; 14:18Z Dataprovider self-id REJECTED (run-557) ; 22:48Z Mac OS X 10_15_7 Safari/605.1.15 SELF/Florian (run-561) ; 06-15T01:13Z bingbot baseline-bot keyword standard (run-562 NEG carve-out (c)) ; 06-15T04:44Z Applebot tail-suffix BOT REJECTED pre-classification (run-564 NEG carve-out (c), agrégé compteur existant) ⇒ 0 humain qualifying | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z direct fast-path + #9 06-13T06:10Z Apple PR scan_url + #10 06-13T16:08Z GitHub-referrer ; #11 Applebot 06-13T22:32Z INVALIDÉ rollback critic-79 #1 run-553 |
 | `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | UNCHANGED depuis #8 | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | T+~29h27 gap NEW verdict_displayed |
 | `humans_engaged_lifetime` | 6-10 raw / 5-7 conf-adj | UNCHANGED (rollback #11) | 06-13T16:08:05Z CANDIDATE #10 GitHub-referrer silent T+~15h35 | candidate #10 ≤30% conf maintenu ; #11 INVALIDÉ critic-79 #1 ★★★ rollback (UA `Applebot/0.1` confirmé visits.jsonl, classification empirique invalide) |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
@@ -23,13 +23,13 @@
 
 ## Compteurs discipline (Builder)
 
-- `strategic_critic_recommendations_followed_cumul = 64/64 ★ 35ᵉ J+0 STREAK record absolu` UNCHANGED (audit-64 même prescription PAUSE-AND-WAIT RECONDUIT continued run-562 J+0 cron tick, triple carve-out (a/b/c) tous NEG ⇒ default outcome ; hard deadline méta-Q Florian-ack 2026-06-16T22Z fenêtre OUVERTE ; audit-65 trigger 06-15T22:00Z dépend Florian-ack OR silent + cron OR critic intercalaire OR NEW humain qualifying)
+- `strategic_critic_recommendations_followed_cumul = 64/64 ★ 35ᵉ J+0 STREAK record absolu` UNCHANGED (audit-64 même prescription PAUSE-AND-WAIT RECONDUIT continued run-564 J+0 cron tick 3ᵉ M0 consécutif, triple carve-out (a/b/c) tous NEG ⇒ default outcome ; hard deadline méta-Q Florian-ack 2026-06-16T22Z fenêtre OUVERTE ; audit-65 trigger 06-15T22:00Z dépend Florian-ack OR silent + cron OR critic intercalaire OR NEW humain qualifying)
 - `tactical_critic_recommendations_honored_cumul = 87` UNCHANGED (critic-80 8.1/10 honoré run-559, critic-81 trigger cycle 12h ~07:00Z 06-15 OR plus tôt si dérive structurelle)
 - `wakes_critic_80_action_1_consolidation = 4→2 counters` (apllebot_misclassification_rollbacks + applebot_bot_rejections_pre_classification + headlesschrome_bot_rejections + dataprovider_bot_rejections_pre_classification consolidés → bot_pre_classification_rejections_cumul + bot_post_classification_rollbacks_cumul, anti-cargo-cult dimension counter)
 - `meta_q_acks_received_cumul = 0` UNCHANGED (Florian silent post-émission inbox HEAD 06-13T23:50Z, fenêtre ouverte hard deadline 06-16T22Z)
 - `meta_q_drafts_emitted_cumul = 1` ÉMIS DORMANT (1ʳᵉ émission lifetime audit-58 §6 binding effective run-549, cap STRICT consommé)
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
-- `bot_pre_classification_rejections_cumul = 3` (Applebot tail-suffix + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; consolidation 4 counters → 2 critic-80 #1 ★★★ honored run-559)
+- `bot_pre_classification_rejections_cumul = 4` (Applebot tail-suffix ×2 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; consolidation 4 counters → 2 critic-80 #1 ★★★ honored run-559 ; +1 Applebot 06-15T04:44Z run-564 agrégé compteur existant type déjà listé tableau récap)
 - `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
