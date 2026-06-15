@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T17:43Z (M0 propre run-570 T+~4h post run-568 FAQ Paris ship, triple carve-out NEG : 2 NEW visits 17:00Z+17:12Z HeadlessChrome baseline-bot keyword `Headless` ZERO counter increment per critic-80 discipline, Florian silent T+~8h28 post option (e) ack, critic-82 ETA ~19Z T+~1h17)
+# KPIs Snapshot Current — 2026-06-15T19:43Z (SUBSTANTIVE P2 SEO ship Lille FAQPage 8 Q/R DILA run-571 T+~43min post critic-82 émission 19:00Z #2 ★★ honored J+0, FAQPage live 4 pages narratif (Bordeaux + Villeurbanne + Paris + Lille), Florian silent T+~10h28 post option (e) ack)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
