@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T19:43Z (SUBSTANTIVE P2 SEO ship Lille FAQPage 8 Q/R DILA run-571 T+~43min post critic-82 émission 19:00Z #2 ★★ honored J+0, FAQPage live 4 pages narratif (Bordeaux + Villeurbanne + Paris + Lille), Florian silent T+~10h28 post option (e) ack)
+# KPIs Snapshot Current — 2026-06-15T21:43Z (NEW candidate #13 Montpellier SEO INTERNAL qualifying raw +1 conf-adj UNCHANGED, Pattern N=4 SEO city-page→home INTERNAL : Montreuil + Saint-Denis + Bordeaux + Montpellier — Pilier 2 main canal validation forte ; M0 hygiène post-ship Lille T+~2h self-binding reconduit ; Florian silent T+~12h28)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,9 +6,9 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 460 | +3 fenêtre 09:43Z→17:43Z = 12:34Z Applebot tail-suffix agrégé `bot_pre_classification_rejections_cumul=5→6` run-568 + 17:00:48Z HeadlessChrome keyword baseline ZERO increment + 17:12:07Z HeadlessChrome keyword baseline ZERO increment (per critic-80 #1+#3 discipline, type déjà dans tableau récap méthodologie cross-ref UA critic-79 #1) | 06-15T17:00+17:12 2 HeadlessChrome `(X11; Linux x86_64) AppleWebKit/537.36 ... HeadlessChrome/138.0.7204.23 Safari/537.36` baseline-bot keyword self-evident sans edge case | 0 NEW humain qualifying fenêtre |
-| `verdict_displayed_events_lifetime` | 12 events / 10 distinct ip_hash | +1 candidate #12 06-15T06:47:59Z | 06-15T06:47:59Z candidate #12 Bordeaux SEO INTERNAL sev=warn dep=33 ip_hash 7130119258 | T+~30h gap fermé NEW verdict_displayed post #8 06-13T02:16Z |
-| `humans_engaged_lifetime` | 7-11 raw / 6-8 conf-adj | +1 candidate #12 qualifying ≥70% conf | 06-15T06:47:29Z candidate #12 Bordeaux Edge/130 Win SEO INTERNAL | candidate #10 ≤30% conf maintenu ; #11 INVALIDÉ rollback critic-79 #1 ; #12 QUALIFYING cross-ref UA tail-suffix mandatory critic-79 #1 méthodologie self-applicative SUCCESS pre-classification |
+| `visits_total` | 464 | +4 fenêtre 19:43Z→21:43Z = 18:16Z Applebot tail-suffix agrégé (déjà tableau récap) + 19:19Z bingbot keyword baseline ZERO increment + 20:37Z candidate #13 Montpellier SEO INTERNAL qualifying + 20:58Z Dataprovider `(compatible; X.com)` self-id agrégé (déjà tableau récap) | 06-15T20:37 candidate #13 raw +1 (cross-ref UA tail-suffix mandatory NEG bot keywords/tail-suffix/Florian-fingerprint) | conf-adj UNCHANGED (abandoned q2 no verdict_displayed) |
+| `verdict_displayed_events_lifetime` | 12 events / 10 distinct ip_hash | UNCHANGED | 06-15T06:47:59Z candidate #12 Bordeaux SEO INTERNAL sev=warn dep=33 ip_hash 7130119258 | candidate #13 abandoned q2 = NO verdict_displayed event |
+| `humans_engaged_lifetime` | 8-12 raw / 6-8 conf-adj | raw +1 candidate #13 / conf-adj UNCHANGED | 06-15T20:37:08Z candidate #13 Montpellier Android Chrome/148 Mobile SEO INTERNAL referrer `/encadrement-loyer-montpellier-2026.html` | funnel: home + q1 (20.5s read) + q2 (2.5s) puis abandon avant q3-q5-verdict ⇒ raw qualifying ≥70% conf (cross-ref UA OK) MAIS conf-adj sub-threshold (no verdict_displayed depth) ; classification standard critic-79 #1 méthodologie self-applicative SUCCESS |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
 | `subscribers_real_lifetime` | 1 (sogibim) | UNCHANGED | 2026-06-04 sogibim PENDING confirm | T+~11j20h DMARC unfixed silent |
 | `subscribers_by_intent` | `{'unset':1}` | unset plate | n/a | Bottleneck UI : intent_signal câblé 2/184 pages (critic-69 #1) |
@@ -16,7 +16,7 @@
 | `signup_confirm_sent_real` | 1 | UNCHANGED | 2026-06-04 sogibim | Anti-vanity dénominateur post run-451 |
 | `humans_via_seo_cluster_93_post_audit52` | 0/3 | UNCHANGED | n/a | Deadline 2026-06-11T22Z T+~14h MISS ≥85% confirmé |
 | `home_preset_click_consumed_lifetime` | 1 | +1 (run-494) | 06-09T08:46Z Linux X11 ~50% conf | 1ʳᵉ utilisation depuis ship 2026-05-31 (T+9j) |
-| `seo_city_page_to_verdict_conversions` | 2 raw | UNCHANGED | Montreuil 06-05 + Saint-Denis 06-08 | Pattern N=2 Pilier 2 SEO main canal validation partielle |
+| `seo_city_page_to_verdict_conversions` | 2 raw / 4 pattern lifetime | UNCHANGED verdict / +1 pattern | Montreuil 06-05 + Saint-Denis 06-08 (verdict) ; Bordeaux 06-15 + Montpellier 06-15 (pattern N=4 SEO INTERNAL lifetime) | Pattern N=4 city-page→home INTERNAL validation forte Pilier 2 main canal (Bordeaux=verdict ; Montpellier=abandoned q2 sans verdict) |
 | `pages_total` | 233 | UNCHANGED | 2026-06-03 calendrier-DPE Strategic-42 ship | run-429 ; run-568 P2 PATCH `/encadrement-loyer-paris-2026.html` +FAQPage 8 Q/R DILA +39L visible (page 306→345L) dateModified 06-15 — ≠ NEW page |
 | `moat_substantive` | 8 (-1 vs 9 mémoire) | UNCHANGED 27 audits | 2026-06-09 audit-54 dégradation | cat-3 fragilisé ECLI hallucination |
 | `funnel_events_total` | ~129 | n/a | dernière event 06-09T20:56:49Z Googlebot | Lifetime ; post-purge run-421 |
@@ -58,8 +58,8 @@
 | Pull-LLM ChatGPT (Bouygues 06-02 + Paris 06-12 fast-path) | 2 | cadence ~10j |
 | SEO city pages Plaine Commune 93 (Montreuil + Saint-Denis verdict-on-city) | 2-3 | ~3j |
 | FxiOS bailleur-vetting via `mentions-legales.html` | 1 (HUMAN #6) | 06-09 |
-| **Pilier 2 SEO city-page→home INTERNAL navigation** (Bordeaux 06-15 Edge/130 Win, verdict-sur-home post nav `/encadrement-loyer-bordeaux-2026.html`) | 1 (candidate #12) | 06-15 |
-| **Total mesuré / jour** | **~0.21 humain/jour** | acquisition trop faible pour mesurer UX |
+| **Pilier 2 SEO city-page→home INTERNAL navigation** (Bordeaux 06-15 Edge/130 Win verdict + Montpellier 06-15 Android Chrome/148 Mobile q2-abandon) | 2 (candidates #12 + #13) | 06-15 (2 mêmes jour) |
+| **Total mesuré / jour** | **~0.24 humain/jour** | acquisition trop faible pour mesurer UX |
 
 ## Canaux push 0 referer 31j+ MORT structurel
 

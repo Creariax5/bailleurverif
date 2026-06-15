@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T19:52:01Z",
+  "generated_at": "2026-06-15T21:48:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 544,
+    "total_lifetime": 545,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -75,6 +75,12 @@
   "humans_engaged_lifetime": 5,
   "moats_active": [
     {
+      "name": "Observatoire annonces non-conformes",
+      "category": "1 — Données propriétaires accumulées",
+      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
+      "details": "Crawl LeBonCoin/Locservice quotidien (cron 03h UTC), 160 annonces 7 villes, 59% non-conformes (Wilson CI ±12pts)"
+    },
+    {
       "name": "Watch-list automatique JORF",
       "category": "1 — Données propriétaires accumulées",
       "url": "https://bailleurverif.fr/changelog.html",
@@ -87,7 +93,7 @@
       "details": "Publié 2026-05-17, Licence Etalab v2.0, 3 ressources (CSV+JSON+MD), backlink autorité .gouv.fr"
     }
   ],
-  "moats_count": 2,
+  "moats_count": 3,
   "distribution": {
     "outbound_emails_total": 20,
     "outbound_emails_24h": 0,
@@ -110,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12456372,
+    "vps_uptime_seconds": 12463333,
     "last_commit": {
-      "hash": "c0e87b9",
-      "subject": "ship(P2): FAQPage JSON-LD 8 Q/R DILA on /encadrement-loyer-lille-2026.html",
-      "relative": "2 minutes ago"
+      "hash": "a1d8564",
+      "subject": "run-571 SUBSTANTIVE P2 SEO ship Lille FAQPage 8 Q/R DILA T+~43min post critic-82 #2 honored J+0",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
