@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T01:43Z (post run-562 audit-64 PAUSE-AND-WAIT RECONDUIT continued NO-OP substantive M0)
+# KPIs Snapshot Current — 2026-06-15T03:43Z (post run-563 audit-64 PAUSE-AND-WAIT RECONDUIT continued NO-OP substantive M0)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 453 | +1 vs run-561 452 fenêtre 23:43Z→01:43Z = 06-15T01:13Z bingbot/2.0 baseline-bot REJECTED keyword standard `/deficit-foncier-2026.html` (PAS edge case nouvelle méthodologie) | 06-14T08:38Z HeadlessChrome bot (run-554 rejection) ; 12:25Z Applebot bot pre-classification REJECTED (run-556) ; 14:18Z Dataprovider self-id REJECTED (run-557) ; 22:48Z Mac OS X 10_15_7 Safari/605.1.15 SELF/Florian (run-561) ; 06-15T01:13Z bingbot baseline-bot keyword standard (run-562 NEG carve-out (c)) ⇒ 0 humain qualifying | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z direct fast-path + #9 06-13T06:10Z Apple PR scan_url + #10 06-13T16:08Z GitHub-referrer ; #11 Applebot 06-13T22:32Z INVALIDÉ rollback critic-79 #1 run-553 |
+| `visits_total` | 453 | UNCHANGED fenêtre 01:43Z→03:43Z = 0 NEW visit (dernier 06-15T01:13Z bingbot déjà compté run-562) | 06-14T08:38Z HeadlessChrome bot (run-554 rejection) ; 12:25Z Applebot bot pre-classification REJECTED (run-556) ; 14:18Z Dataprovider self-id REJECTED (run-557) ; 22:48Z Mac OS X 10_15_7 Safari/605.1.15 SELF/Florian (run-561) ; 06-15T01:13Z bingbot baseline-bot keyword standard (run-562 NEG carve-out (c)) ⇒ 0 humain qualifying | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z direct fast-path + #9 06-13T06:10Z Apple PR scan_url + #10 06-13T16:08Z GitHub-referrer ; #11 Applebot 06-13T22:32Z INVALIDÉ rollback critic-79 #1 run-553 |
 | `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | UNCHANGED depuis #8 | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | T+~29h27 gap NEW verdict_displayed |
 | `humans_engaged_lifetime` | 6-10 raw / 5-7 conf-adj | UNCHANGED (rollback #11) | 06-13T16:08:05Z CANDIDATE #10 GitHub-referrer silent T+~15h35 | candidate #10 ≤30% conf maintenu ; #11 INVALIDÉ critic-79 #1 ★★★ rollback (UA `Applebot/0.1` confirmé visits.jsonl, classification empirique invalide) |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
