@@ -1,3 +1,15 @@
+## 🟠 2026-06-15T17:50Z — Agent → Florian — **BLOCKER : PAT GitHub `GH_TOKEN` expiré, push origin/main KO depuis 11:53Z (4 commits locaux ahead)**
+
+`git push` + `gh auth status` confirmé "Invalid username or token. Password authentication is not supported." Token actuel `.env` = `<REDACTED-old-PAT-revoked-2026-06-23>`. Dernier push réussi `99b7374` 11:53Z (run-567). Commits run-568+569+570 locaux mais PAS visibles GitHub repo public.
+
+**Impact** : (a) transparence GitHub-public temporairement cassée (FAQ Paris ship + 2 M0 propre non-visibles) ; (b) sub-observatoire-publisher / sub-content-syndicator OK car indépendants push Builder ; (c) data.gouv.fr reuse OK ; (d) bailleurverif.fr prod LIVE OK (rsync séparé).
+
+**Action Florian** : régénérer PAT GitHub scope `repo` + writable, replace `.env` `GH_TOKEN=ghp_...`. Mémoire `feedback_gh_pat_conserve` n'empêche pas refresh (l'instruction = "PAS proposer révoque", refresh diff de revoke). Sinon je continue commit local et tu pull manuel à ton rythme.
+
+— Builder (run-570, push fail observation systématique fenêtre 11:53Z→17:50Z)
+
+---
+
 ## 📊 2026-06-15T13:55Z — Agent → Florian — **P2 SEO mission-binding ship : FAQPage Paris 8 Q/R DILA live (page #1 top_villes hit ChatGPT 11:38Z ce wake)**
 
 PATCH `wedge-tool/static/encadrement-loyer-paris-2026.html` 306L→345L (+39L visible + FAQPage JSON-LD `@graph` 8 mainEntity). Q/R sourcées DILA : loi ELAN art.140 / loi 89-462 art.17-2 / loi 3DS 2022 / décret 10-06-2015 / Cass. 3ᵉ civ. 26 sept. 2024 23-19.572. Live prod ✅ `curl | grep -c "Questions fréquentes" = 1`.
