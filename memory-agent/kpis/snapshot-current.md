@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T05:43Z (post run-564 audit-64 PAUSE-AND-WAIT RECONDUIT continued NO-OP substantive M0)
+# KPIs Snapshot Current — 2026-06-15T07:43Z (post run-565 candidate #12 Bordeaux SEO INTERNAL qualifying classified — PAUSE Strategic-64 en cours)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,9 +6,9 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 454 | +1 fenêtre 03:43Z→05:43Z = Applebot 04:44Z pre-rejected | 06-14T08:38Z HeadlessChrome bot (run-554 rejection) ; 12:25Z Applebot bot pre-classification REJECTED (run-556) ; 14:18Z Dataprovider self-id REJECTED (run-557) ; 22:48Z Mac OS X 10_15_7 Safari/605.1.15 SELF/Florian (run-561) ; 06-15T01:13Z bingbot baseline-bot keyword standard (run-562 NEG carve-out (c)) ; 06-15T04:44Z Applebot tail-suffix BOT REJECTED pre-classification (run-564 NEG carve-out (c), agrégé compteur existant) ⇒ 0 humain qualifying | Plate humain ; last humain candidate 06-12T14:32Z ChatGPT-Paris #7 ; sub-threshold #8 06-13T02:16Z direct fast-path + #9 06-13T06:10Z Apple PR scan_url + #10 06-13T16:08Z GitHub-referrer ; #11 Applebot 06-13T22:32Z INVALIDÉ rollback critic-79 #1 run-553 |
-| `verdict_displayed_events_lifetime` | 11 events / 9 distinct ip_hash | UNCHANGED depuis #8 | 06-13T02:16Z direct encadrement-paris fast-path sev=bad ip_hash=3569448148 | T+~29h27 gap NEW verdict_displayed |
-| `humans_engaged_lifetime` | 6-10 raw / 5-7 conf-adj | UNCHANGED (rollback #11) | 06-13T16:08:05Z CANDIDATE #10 GitHub-referrer silent T+~15h35 | candidate #10 ≤30% conf maintenu ; #11 INVALIDÉ critic-79 #1 ★★★ rollback (UA `Applebot/0.1` confirmé visits.jsonl, classification empirique invalide) |
+| `visits_total` | 456 | +2 fenêtre 05:43Z→07:43Z = Applebot 05:57Z pre-rejected agrégé + candidate #12 Bordeaux 06:47Z qualifying | 06-15T05:57Z Applebot tail-suffix bot pre-rejected agrégé compteur existant ; **06-15T06:47:29Z candidate #12 ip_hash 7130119258 UA Edge/130 Win Desktop NEG 18 bot keywords + NEG tail-suffix + NEG Florian-fingerprint (Florian=Mac) referrer city-page `/encadrement-loyer-bordeaux-2026.html` INTERNAL navigation → home → funnel complet q1→q5→verdict sev=warn dep=33 Gironde Bordeaux meuble 63m² 1350€ DPE C en 30043ms ⇒ QUALIFYING ≥70% conf source distincte Pilier 2 SEO city-page→home INTERNAL** | Plate humain cassée ; candidate #12 1ʳᵉ qualifying ≥70% conf post candidate #6 FxiOS 06-09 (gap ~6j) |
+| `verdict_displayed_events_lifetime` | 12 events / 10 distinct ip_hash | +1 candidate #12 06-15T06:47:59Z | 06-15T06:47:59Z candidate #12 Bordeaux SEO INTERNAL sev=warn dep=33 ip_hash 7130119258 | T+~30h gap fermé NEW verdict_displayed post #8 06-13T02:16Z |
+| `humans_engaged_lifetime` | 7-11 raw / 6-8 conf-adj | +1 candidate #12 qualifying ≥70% conf | 06-15T06:47:29Z candidate #12 Bordeaux Edge/130 Win SEO INTERNAL | candidate #10 ≤30% conf maintenu ; #11 INVALIDÉ rollback critic-79 #1 ; #12 QUALIFYING cross-ref UA tail-suffix mandatory critic-79 #1 méthodologie self-applicative SUCCESS pre-classification |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
 | `subscribers_real_lifetime` | 1 (sogibim) | UNCHANGED | 2026-06-04 sogibim PENDING confirm | T+~11j20h DMARC unfixed silent |
 | `subscribers_by_intent` | `{'unset':1}` | unset plate | n/a | Bottleneck UI : intent_signal câblé 2/184 pages (critic-69 #1) |
@@ -29,7 +29,7 @@
 - `meta_q_acks_received_cumul = 0` UNCHANGED (Florian silent post-émission inbox HEAD 06-13T23:50Z, fenêtre ouverte hard deadline 06-16T22Z)
 - `meta_q_drafts_emitted_cumul = 1` ÉMIS DORMANT (1ʳᵉ émission lifetime audit-58 §6 binding effective run-549, cap STRICT consommé)
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
-- `bot_pre_classification_rejections_cumul = 4` (Applebot tail-suffix ×2 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; consolidation 4 counters → 2 critic-80 #1 ★★★ honored run-559 ; +1 Applebot 06-15T04:44Z run-564 agrégé compteur existant type déjà listé tableau récap)
+- `bot_pre_classification_rejections_cumul = 5` (Applebot tail-suffix ×3 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +1 Applebot 06-15T05:57Z run-565 agrégé compteur existant type déjà listé tableau récap, discipline counter STOP #1 audit-80 sustained 5/5 wakes)
 - `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
 - `florian_briefs_honored_j0_lifetime = 11` UNCHANGED
@@ -48,14 +48,15 @@
 | `sub-bluesky-poster` | Haiku 4.5 | 24h | ACTIF |
 | `sub-content-syndicator` | Sonnet 4.6 | 7j | ACTIF (dev.to 0/2 referer T+~22j mort empirique) |
 
-## Sources d'humains validées (32+ derniers jours, N=5-6 cumul)
+## Sources d'humains validées (33+ derniers jours, N=6-7 cumul)
 
 | Canal | Volume | Cadence empirique |
 |---|---|---|
 | Pull-LLM ChatGPT (Bouygues 06-02 + Paris 06-12 fast-path) | 2 | cadence ~10j |
-| SEO city pages Plaine Commune 93 (Montreuil + Saint-Denis) | 2-3 | ~3j |
+| SEO city pages Plaine Commune 93 (Montreuil + Saint-Denis verdict-on-city) | 2-3 | ~3j |
 | FxiOS bailleur-vetting via `mentions-legales.html` | 1 (HUMAN #6) | 06-09 |
-| **Total mesuré / jour** | **~0.18 humain/jour** | acquisition trop faible pour mesurer UX |
+| **Pilier 2 SEO city-page→home INTERNAL navigation** (Bordeaux 06-15 Edge/130 Win, verdict-sur-home post nav `/encadrement-loyer-bordeaux-2026.html`) | 1 (candidate #12) | 06-15 |
+| **Total mesuré / jour** | **~0.21 humain/jour** | acquisition trop faible pour mesurer UX |
 
 ## Canaux push 0 referer 31j+ MORT structurel
 
