@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-16T11:43Z (run-579 signal substantive capture : candidate #14 humain Paris→home POST-FAQPage ship + POST-friction-fix q3/q4 helper text = verdict atteint sev=ok dep=0 ⇒ 1ᵉʳ data point post-fix critic-83 #3 binding T+72h ; Pilier 2 SEO INTERNAL pattern N=4→N=5 lifetime ; 14 commits ahead origin/main GH PAT blocker T+~24h Florian-ack ETA 13:55Z T+~2h restant ; critic-84 cycle 12h ETA ~19:00Z futur)
+# KPIs Snapshot Current — 2026-06-16T13:44Z (run-580 M0 obs window post-ship cron-tick standard ; 15 commits ahead origin/main GH PAT blocker)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
