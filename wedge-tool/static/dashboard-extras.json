@@ -1,94 +1,79 @@
 {
-  "generated_at": "2026-06-15T21:48:02Z",
+  "generated_at": "2026-06-16T07:46:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 5058,
-    "requests_24h": 639,
-    "bot_hits_lifetime": 2378,
-    "bot_hits_24h": 288,
-    "bot_hits_1h": 6,
-    "human_hits_24h": 351
+    "requests_lifetime": 4996,
+    "requests_24h": 509,
+    "bot_hits_lifetime": 2400,
+    "bot_hits_24h": 237,
+    "bot_hits_1h": 7,
+    "human_hits_24h": 272
   },
   "bots_by_type_lifetime": {
-    "generic-bot": 541,
-    "OAI-SearchBot": 468,
-    "Bingbot": 429,
+    "generic-bot": 544,
+    "OAI-SearchBot": 467,
+    "Bingbot": 436,
     "SemrushBot": 217,
-    "AhrefsBot": 194,
+    "AhrefsBot": 212,
     "GPTBot": 180,
-    "Googlebot": 98,
+    "Googlebot": 93,
     "ClaudeBot": 46,
-    "PerplexityBot": 34,
+    "PerplexityBot": 36,
     "HeadlessChrome": 27,
     "ByteSpider": 23,
     "DuckDuckBot": 20,
-    "BaiduSpider": 17,
-    "FacebookExt": 17,
+    "FacebookExt": 18,
     "MJ12bot": 16,
     "Applebot": 16,
+    "BaiduSpider": 14,
     "Amazonbot": 13,
     "Go-HTTP": 11,
-    "python-script": 6,
-    "PetalBot": 3
+    "python-script": 5,
+    "PetalBot": 4
   },
   "bots_by_type_24h": {
-    "AhrefsBot": 120,
-    "OAI-SearchBot": 82,
-    "Bingbot": 26,
+    "OAI-SearchBot": 84,
+    "AhrefsBot": 68,
+    "Bingbot": 30,
     "HeadlessChrome": 18,
-    "generic-bot": 12,
-    "Googlebot": 8,
-    "FacebookExt": 7,
-    "DuckDuckBot": 6,
-    "MJ12bot": 4,
-    "ByteSpider": 2,
-    "python-script": 1,
+    "generic-bot": 14,
+    "Googlebot": 5,
+    "DuckDuckBot": 4,
+    "BaiduSpider": 3,
+    "MJ12bot": 2,
+    "FacebookExt": 2,
+    "SemrushBot": 2,
+    "PerplexityBot": 2,
     "GPTBot": 1,
-    "BaiduSpider": 1
+    "ByteSpider": 1,
+    "PetalBot": 1
   },
   "bot_last_seen": {
-    "OAI-SearchBot": "2026-06-15T21:42:02+00:00",
-    "BaiduSpider": "2026-06-15T17:25:41+00:00",
-    "Bingbot": "2026-06-15T21:36:12+00:00",
-    "Googlebot": "2026-06-15T19:13:00+00:00",
-    "python-script": "2026-06-15T00:16:47+00:00",
-    "AhrefsBot": "2026-06-15T21:18:57+00:00",
-    "SemrushBot": "2026-06-14T11:54:31+00:00",
+    "OAI-SearchBot": "2026-06-16T07:04:15+00:00",
+    "Bingbot": "2026-06-16T07:27:17+00:00",
+    "AhrefsBot": "2026-06-16T05:20:20+00:00",
     "GPTBot": "2026-06-15T10:01:05+00:00",
-    "generic-bot": "2026-06-15T18:52:35+00:00",
+    "generic-bot": "2026-06-16T04:12:28+00:00",
+    "BaiduSpider": "2026-06-16T07:35:01+00:00",
     "DuckDuckBot": "2026-06-15T20:36:54+00:00",
-    "FacebookExt": "2026-06-15T19:27:24+00:00",
+    "Googlebot": "2026-06-15T19:13:00+00:00",
+    "FacebookExt": "2026-06-16T03:57:58+00:00",
+    "python-script": "2026-06-15T00:16:47+00:00",
+    "SemrushBot": "2026-06-16T03:42:06+00:00",
     "ByteSpider": "2026-06-15T15:14:18+00:00",
     "MJ12bot": "2026-06-15T14:51:26+00:00",
     "Go-HTTP": "2026-06-12T04:53:32+00:00",
-    "PerplexityBot": "2026-06-11T22:33:38+00:00",
+    "PerplexityBot": "2026-06-16T07:19:33+00:00",
     "curl/wget": "2026-06-12T04:51:47+00:00",
     "Amazonbot": "2026-06-11T22:33:37+00:00",
     "Applebot": "2026-06-11T22:33:35+00:00",
     "ClaudeBot": "2026-06-11T22:33:47+00:00",
-    "PetalBot": "2026-06-14T02:13:52+00:00",
+    "PetalBot": "2026-06-15T23:47:49+00:00",
     "HeadlessChrome": "2026-06-15T17:12:07+00:00"
   },
   "last_googlebot": "2026-06-15T19:13:00+00:00",
-  "last_bingbot": "2026-06-15T21:36:12+00:00",
+  "last_bingbot": "2026-06-16T07:27:17+00:00",
   "chart_7days": [
-    {
-      "day": "2026-06-09",
-      "total": 147,
-      "by_type": {
-        "OAI-SearchBot": 69,
-        "Googlebot": 13,
-        "Bingbot": 33,
-        "AhrefsBot": 9,
-        "SemrushBot": 5,
-        "GPTBot": 1,
-        "generic-bot": 6,
-        "BaiduSpider": 3,
-        "DuckDuckBot": 4,
-        "FacebookExt": 1,
-        "python-script": 3
-      }
-    },
     {
       "day": "2026-06-10",
       "total": 135,
@@ -192,12 +177,12 @@
     },
     {
       "day": "2026-06-15",
-      "total": 267,
+      "total": 278,
       "by_type": {
-        "AhrefsBot": 106,
+        "AhrefsBot": 109,
         "python-script": 1,
-        "Bingbot": 25,
-        "OAI-SearchBot": 80,
+        "Bingbot": 30,
+        "OAI-SearchBot": 82,
         "FacebookExt": 6,
         "Googlebot": 7,
         "ByteSpider": 2,
@@ -206,51 +191,26 @@
         "GPTBot": 1,
         "MJ12bot": 2,
         "HeadlessChrome": 18,
-        "BaiduSpider": 1
+        "BaiduSpider": 1,
+        "PetalBot": 1
+      }
+    },
+    {
+      "day": "2026-06-16",
+      "total": 54,
+      "by_type": {
+        "OAI-SearchBot": 12,
+        "Bingbot": 12,
+        "AhrefsBot": 20,
+        "generic-bot": 3,
+        "SemrushBot": 2,
+        "FacebookExt": 1,
+        "PerplexityBot": 2,
+        "BaiduSpider": 2
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "22",
-      "hits": 28
-    },
-    {
-      "hour": "23",
-      "hits": 8
-    },
-    {
-      "hour": "00",
-      "hits": 16
-    },
-    {
-      "hour": "01",
-      "hits": 15
-    },
-    {
-      "hour": "02",
-      "hits": 7
-    },
-    {
-      "hour": "03",
-      "hits": 7
-    },
-    {
-      "hour": "04",
-      "hits": 19
-    },
-    {
-      "hour": "05",
-      "hits": 15
-    },
-    {
-      "hour": "06",
-      "hits": 21
-    },
-    {
-      "hour": "07",
-      "hits": 8
-    },
     {
       "hour": "08",
       "hits": 7
@@ -305,23 +265,63 @@
     },
     {
       "hour": "21",
-      "hits": 7
+      "hits": 6
+    },
+    {
+      "hour": "22",
+      "hits": 4
+    },
+    {
+      "hour": "23",
+      "hits": 0
+    },
+    {
+      "hour": "00",
+      "hits": 8
+    },
+    {
+      "hour": "01",
+      "hits": 8
+    },
+    {
+      "hour": "02",
+      "hits": 20
+    },
+    {
+      "hour": "03",
+      "hits": 4
+    },
+    {
+      "hour": "04",
+      "hits": 4
+    },
+    {
+      "hour": "05",
+      "hits": 1
+    },
+    {
+      "hour": "06",
+      "hits": 2
+    },
+    {
+      "hour": "07",
+      "hits": 15
     }
   ],
   "top_bot_paths_24h": {
-    "/encadrement-loyer-paris-2026.html": 30,
-    "/": 24,
-    "/robots.txt": 23,
-    "/lille-dpe-f-g-interdit-location.html": 11,
-    "/encadrement-loyer-villeurbanne-2026.html": 9,
-    "/encadrement-loyer-bordeaux-2026.html": 6,
-    "/favicon.ico": 5,
-    "/data/": 4,
-    "/api/visit": 4,
-    "/preavis-bail-lyon.html": 3
+    "/encadrement-loyer-paris-2026.html": 28,
+    "/": 26,
+    "/robots.txt": 17,
+    "/encadrement-loyer-villeurbanne-2026.html": 11,
+    "/lille-dpe-f-g-interdit-location.html": 10,
+    "/favicon.ico": 4,
+    "/sitemap.xml": 3,
+    "/depot-garantie-france-2026.html": 3,
+    "/observatoire-annonces-loyer.html": 3,
+    "/encadrement-loyer-bordeaux-2026.html": 3
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 68,
+    "/robots.txt": 63,
     "/encadrement-loyer-echirolles-2026.html": 3,
     "/encadrement-loyer-villeurbanne-2026.html": 2,
     "/lille-dpe-f-g-interdit-location.html": 2,
@@ -333,39 +333,35 @@
     "/config.js": 1
   },
   "top_human_paths_24h": {
-    "/": 37,
-    "/css/tailwind-runtime.js": 24,
-    "/css/main.css": 24,
-    "/robots.txt": 19,
-    "/api/funnel/event": 18,
-    "/static/app.js": 9,
-    "/api/visit": 9,
-    "/static/share-card.js": 8,
-    "/api/changelog?limit=5": 7,
-    "/favicon.svg": 7
+    "/": 41,
+    "/css/tailwind-runtime.js": 18,
+    "/css/main.css": 17,
+    "/robots.txt": 15,
+    "/api/funnel/event": 10,
+    "/encadrement-loyer-bordeaux-2026.html": 8,
+    "/api/visit": 7,
+    "/favicon.ico": 6,
+    "/favicon.svg": 6,
+    "/static/app.js": 6
   },
   "status_codes_24h": {
-    "200": 611,
-    "404": 25,
-    "400": 1,
+    "200": 475,
+    "404": 30,
+    "400": 2,
     "505": 1,
     "501": 1
   },
   "funnel": {
-    "events_total_lifetime": 278,
-    "sessions_lifetime": 202,
-    "sessions_24h": 12,
+    "events_total_lifetime": 280,
+    "sessions_lifetime": 204,
+    "sessions_24h": 10,
     "by_type_24h": {
-      "home_visit": 12,
-      "wedge_q1_answered": 2,
-      "wedge_q2_answered": 2,
-      "wedge_q3_answered": 1,
-      "wedge_q4_answered": 1,
-      "wedge_q5_answered": 1,
-      "verdict_displayed": 1
+      "home_visit": 10,
+      "wedge_q1_answered": 1,
+      "wedge_q2_answered": 1
     },
     "by_type_lifetime": {
-      "home_visit": 186,
+      "home_visit": 188,
       "scan_url_page_visit": 17,
       "wedge_q1_answered": 15,
       "wedge_q2_answered": 12,
@@ -378,7 +374,7 @@
       "home_preset_click": 2
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 184,
+      "home_visit": 186,
       "wedge_q1_answered": 15,
       "wedge_q2_answered": 12,
       "wedge_q3_answered": 11,

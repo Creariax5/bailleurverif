@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-16T05:43Z (M0 SKIP-IF-FLAT propre 1ᵉʳ wake observation post-friction-fix run-575, 11 commits ahead origin/main GH PAT blocker T+~18h)
+# KPIs Snapshot Current — 2026-06-16T07:43Z (critic-83 3 actions HONORED J+0 T+~43min run-577 : #1 ★★★ STOP chain-shipping FAQPage observe T+72h + #2 ★★ formalize P2 SEO INTERNAL N=4 sub-composant cat-4 #5 moat-categories.md + #3 ★ post-mortem friction-fix plan codifié inline T+72h critère décision binding ; 0 ship NEW page ; 12 commits ahead origin/main GH PAT blocker T+~20h)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -18,13 +18,13 @@
 | `home_preset_click_consumed_lifetime` | 1 | +1 (run-494) | 06-09T08:46Z Linux X11 ~50% conf | 1ʳᵉ utilisation depuis ship 2026-05-31 (T+9j) |
 | `seo_city_page_to_verdict_conversions` | 2 raw / 4 pattern lifetime | UNCHANGED verdict / +1 pattern | Montreuil 06-05 + Saint-Denis 06-08 (verdict) ; Bordeaux 06-15 + Montpellier 06-15 (pattern N=4 SEO INTERNAL lifetime) | Pattern N=4 city-page→home INTERNAL validation forte Pilier 2 main canal (Bordeaux=verdict ; Montpellier=abandoned q2 sans verdict) |
 | `pages_total` | 233 | UNCHANGED | 2026-06-03 calendrier-DPE Strategic-42 ship | run-429 ; runs 568+571+573 P2 PATCH FAQPage 8 Q/R DILA Paris+Lille+Montpellier (+39L visible chacune, ≠ NEW page) — réponse pattern N=4 Pilier 2 SEO city-page→home INTERNAL signaux convergents |
-| `moat_substantive` | 8 (-1 vs 9 mémoire) | UNCHANGED 27 audits | 2026-06-09 audit-54 dégradation | cat-3 fragilisé ECLI hallucination |
+| `moat_substantive` | 8 (-1 vs 9 mémoire) | UNCHANGED 27 audits | 2026-06-09 audit-54 dégradation | cat-3 fragilisé ECLI hallucination ; **NEW cat-4 #5 sub-composant Pilier 2 SEO city-page→home INTERNAL N=4 FORMALIZED run-577** (Montreuil+Saint-Denis+Bordeaux+Montpellier 06-05→06-15) ratification audit-66 Strategic forme nouvelle option F décide +0 ou +1 substantif |
 | `funnel_events_total` | ~129 | n/a | dernière event 06-09T20:56:49Z Googlebot | Lifetime ; post-purge run-421 |
 
 ## Compteurs discipline (Builder)
 
 - `strategic_critic_recommendations_followed_cumul = 64/64 ★ 35ᵉ J+0 STREAK record absolu` UNCHANGED (audit-64 même prescription PAUSE-AND-WAIT RECONDUIT continued run-564 J+0 cron tick 3ᵉ M0 consécutif, triple carve-out (a/b/c) tous NEG ⇒ default outcome ; hard deadline méta-Q Florian-ack 2026-06-16T22Z fenêtre OUVERTE ; audit-65 trigger 06-15T22:00Z dépend Florian-ack OR silent + cron OR critic intercalaire OR NEW humain qualifying)
-- `tactical_critic_recommendations_honored_cumul = 87` UNCHANGED (critic-80 8.1/10 honoré run-559, critic-81 trigger cycle 12h ~07:00Z 06-15 OR plus tôt si dérive structurelle)
+- `tactical_critic_recommendations_honored_cumul = 88→89 ★` (critic-83 8.4/10 émis 06-16T07:00Z post run-576 ; 3 actions ★★★+★★+★ HONORED J+0 T+~43min run-577 ALL : #1 STOP chain-shipping FAQPage observe T+72h codifié inline + #2 formalize P2 SEO INTERNAL N=4 sub-composant cat-4 #5 moat-categories.md + #3 post-mortem friction-fix plan mesure T+72h binding ; critic-84 trigger cycle 12h ETA ~19:00Z 06-16)
 - `wakes_critic_80_action_1_consolidation = 4→2 counters` (apllebot_misclassification_rollbacks + applebot_bot_rejections_pre_classification + headlesschrome_bot_rejections + dataprovider_bot_rejections_pre_classification consolidés → bot_pre_classification_rejections_cumul + bot_post_classification_rollbacks_cumul, anti-cargo-cult dimension counter)
 - `meta_q_acks_received_cumul = 0 → 1` (Florian brief 09:15Z 06-15 "AUTORITÉ EXPLICITE recalibre-toi toi-même PAS de a/b/c/d/e à attendre" = ack option (e) self-decide explicit run-567)
 - `meta_q_drafts_emitted_cumul = 1` ÉMIS RESOLVED option (e) self-decided (status update : ÉMIS DORMANT → ACK-ED RESOLVED par option (e) run-567)

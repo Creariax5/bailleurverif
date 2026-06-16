@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T21:48:02Z",
+  "generated_at": "2026-06-16T07:47:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 545,
+    "total_lifetime": 549,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12463333,
+    "vps_uptime_seconds": 12499273,
     "last_commit": {
-      "hash": "a1d8564",
-      "subject": "run-571 SUBSTANTIVE P2 SEO ship Lille FAQPage 8 Q/R DILA T+~43min post critic-82 #2 honored J+0",
+      "hash": "ef5d3c4",
+      "subject": "run-576 M0 SKIP-IF-FLAT propre 1er wake observation post-friction-fix",
       "relative": "2 hours ago"
     }
   },
