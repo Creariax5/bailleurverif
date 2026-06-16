@@ -50,6 +50,7 @@ FUNNEL_FILE = os.path.join(DATA_DIR, "funnel-events.jsonl")
 # +2 events strategic-28 run-373 : scan_url_preset_clicked + share_card_post_scan (critère T+72h 2026-05-30T22:00Z).
 # +2 events strategic-29 run-376 : home_preset_click + share_card_post_home (critère T+72h 2026-05-31T10:00Z).
 # +2 events brief Florian P0 2026-06-05T08:15Z run-446 : signup_confirmed + nurture_sent (loop retention email).
+# +3 events critic-84 #1 run-584 : verdict_dwell_ms + email_gate_reached + share_card_post_verdict_clicked (instrumentation post-verdict dropout).
 FUNNEL_EVENT_TYPES = {
     "home_visit",
     "wedge_q1_answered",
@@ -71,6 +72,9 @@ FUNNEL_EVENT_TYPES = {
     "share_card_post_home",
     "signup_confirmed",
     "nurture_sent",
+    "verdict_dwell_ms",
+    "email_gate_reached",
+    "share_card_post_verdict_clicked",
 }
 
 # OVH Zimbra SMTP — provisionné Florian 2026-05-17T13:55Z, mandated patch run-205.

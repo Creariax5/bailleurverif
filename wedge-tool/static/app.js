@@ -294,6 +294,7 @@ function showResult() {
   const shareBtn = document.getElementById("share-verdict-btn");
   if (shareBtn) {
     shareBtn.addEventListener("click", () => {
+      trackFunnel("share_card_post_verdict_clicked", { sev: severity });
       if (window.ShareCard) {
         window.ShareCard.download({ severity, depassement, ville: state.answers.ville, loyerM2 });
       }
@@ -360,6 +361,27 @@ function showResult() {
     timeToCompleteMs: Date.now() - state.startTime
   })}).catch(()=>{});
   trackFunnel("verdict_displayed", { sev: severity, dep: depassement || 0 });
+  // critic-84 #1 post-verdict instrumentation (§a dwell + §b email-gate reach)
+  const verdictDisplayedAt = Date.now();
+  if ("IntersectionObserver" in window && card) {
+    let visibleStart = verdictDisplayedAt;
+    const dwellObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) visibleStart = Date.now();
+        else trackFunnel("verdict_dwell_ms", { ms: Date.now() - visibleStart, sev: severity });
+      });
+    }, { threshold: 0.3 });
+    dwellObs.observe(card);
+    if (gate) {
+      const reachObs = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          trackFunnel("email_gate_reached", { ms_since_verdict: Date.now() - verdictDisplayedAt, sev: severity });
+          reachObs.disconnect();
+        }
+      }, { threshold: 0.5 });
+      reachObs.observe(gate);
+    }
+  }
   document.querySelectorAll("input[type=email]").forEach(el => {
     if (!el.dataset.funnelFocusBound) {
       el.dataset.funnelFocusBound = "1";

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T19:51:02Z",
+  "generated_at": "2026-06-16T21:49:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 556,
+    "total_lifetime": 557,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -72,7 +72,7 @@
       "summary": "🎯 **AUTO-PATCH BUILDER PROMPT 3ᵉ HONORED — Phase 1/2 séquentielle + Ship-gate `€X` + Auto-PATCH discipline + 3 refs concepts**"
     }
   ],
-  "humans_engaged_lifetime": 5,
+  "humans_engaged_lifetime": 9,
   "moats_active": [
     {
       "name": "Observatoire annonces non-conformes",
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12542713,
+    "vps_uptime_seconds": 12549792,
     "last_commit": {
-      "hash": "49e6d44",
-      "subject": "run-582: M0 obs cron-tick 17:44Z, Applebot rejected bot_pre_class 8→9",
+      "hash": "7b160f2",
+      "subject": "run-583: critic-84 3/3 honored J+0 (post-verdict capture analyse + SB-5 + hygiène)",
       "relative": "2 hours ago"
     }
   },

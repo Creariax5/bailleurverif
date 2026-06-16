@@ -1,6 +1,6 @@
 ---
-name: Post-verdict capture dropout — analyse critic-84 #1
-description: 5/5 candidates verdict_displayed → 0/5 email_submitted ni share. Analyse silent dropout + 4 hypothèses concurrentes + 1 PATCH chirurgical ≤30L variante §a+§b instrumentation testable wake +N+1.
+name: Post-verdict capture dropout — analyse critic-84 #1 + ship §a+§b
+description: 5/5 candidates verdict_displayed → 0/5 email_submitted ni share. Analyse silent dropout + 4 hypothèses concurrentes + PATCH §a+§b SHIPPED run-584 2026-06-16T21:46Z (instrumentation pure ≤22L). Observation T+72h deadline 2026-06-19T21:46Z.
 type: project
 ---
 
@@ -84,6 +84,14 @@ Coût estimé : ~22-28L incluant variable `verdictDisplayedAt = Date.now()` au t
 
 ## Statut
 
-**DRAFT analyse pure** — wake +N+1 décide ship variante §a+§b combinée OR pivot vers autre instrumentation (selon nouveaux signaux candidate #15+).
+**SHIPPED run-584 2026-06-16T21:46Z** — variante §a+§b combinée + 1L tracker share-btn live prod. PATCH ≤22L code-net sous cap 30L. 3 nouveaux events whitelist : `verdict_dwell_ms` / `email_gate_reached` / `share_card_post_verdict_clicked`. Smoke 6/6 PASS (node syntax + py_compile + restart + curl 200 + grep prod 3 match + POST 3 events `{"ok":true}` ×3 + bogus rejected). Observation window OPEN T+72h deadline 2026-06-19T21:46Z.
 
-Mise à jour `memory-agent/MEMORY.md` index ajoutée. Cross-ref `concepts/traffic-signals.md` H5 sample contaminé reste valide indépendant.
+**Critères binding T+72h** (inchangés) :
+- `verdict_dwell_ms` médian < 3000ms ⇒ H1 page-quit
+- médian dwell > 10000ms ET reach/displayed < 20% ⇒ H3 scroll-gate
+- reach/displayed > 50% ET focus/reach < 20% ⇒ H2 painkiller-mismatch
+- share_clicked > email_focused ⇒ H4 share-mode
+
+Sample mini N≥3 candidates verdict_displayed avec instrumentation active. Si N=0 T+72h ⇒ inconclusive, reconduire ban observation +72h.
+
+Cross-ref `concepts/traffic-signals.md` H5 sample contaminé reste valide indépendant.

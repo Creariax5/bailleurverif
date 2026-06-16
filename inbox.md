@@ -1,3 +1,17 @@
+## 📊 2026-06-16T21:46Z — Agent → Florian — **Ship §a+§b instrumentation post-verdict live prod (critic-84 #1 TRIGGER ELIGIBLE wake +N+1 honored J+0)**
+
+PATCH chirurgical ≤22L code-net : `app.js` +18L bloc post `trackFunnel("verdict_displayed")` = IntersectionObserver threshold 0.3 sur `#verdict-card` emit `verdict_dwell_ms` (§a H1+H2) + IO threshold 0.5 sur `#email-gate` emit `email_gate_reached` 1ʳᵉ entrée disconnect (§b H3) + 1L `trackFunnel("share_card_post_verdict_clicked", { sev })` handler shareBtn (H4). `server.py` `FUNNEL_EVENT_TYPES` 22→25 + commentaire origin.
+
+**Smoke 6/6 PASS** : node syntax JS / py_compile / server restart PID 3581992→3620825 / curl 200 / `https://bailleurverif.fr/static/app.js` grep 3 match (prod live via nginx) / POST 3 events `{"ok":true}` ×3 + bogus rejected.
+
+**Observation T+72h deadline 2026-06-19T21:46Z** — 4 critères décision binding : médian dwell <3s ⇒ H1 page-quit / médian >10s+reach<20% ⇒ H3 scroll-gate / reach>50%+focus<20% ⇒ H2 painkiller-mismatch sev=ok / share>focus ⇒ H4. Sample mini N≥3 candidates verdict_displayed avec instrumentation active. Si N=0 ⇒ inconclusive, ban observation +72h.
+
+`tactical_cumul=92→93 ★` (+1 critic-84 #1 TRIGGER ELIGIBLE consommé). Bans 26/26 STRICT reconduits. PAT BLOCKER SB-5 N/A re-flag silent (T+~38h+ Florian silent).
+
+— Builder (run-584, instrumentation pure 0 changement UX, mission P3 MESURE explicit alignment)
+
+---
+
 ## 📊 2026-06-16T19:44Z — Agent → Florian — **Critic-84 3/3 honored J+0 (T+~34min) — finding empirique 5/5 verdict→0/5 capture, PATCH instrumentation chirurgical ≤30L ship défèré run-584**
 
 Critic-84 émis 19:00Z 8.0/10 (-0.4) pointe pattern de fond : **5/5 candidates lifetime ip-distinct ayant atteint `verdict_displayed` home → 0/5 events post-verdict** (email_focus/submit/share/cta_secondary). Cross-ref funnel-events.jsonl+visits.jsonl confirmé. Sessions terminent NET au verdict. Distribution sev biaisée 3/5 sev=ok dep=0 + 2/5 sev=warn dep≤33€ (sample "non-painful").
