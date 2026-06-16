@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T07:47:02Z",
+  "generated_at": "2026-06-16T11:49:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 549,
+    "total_lifetime": 553,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12499273,
+    "vps_uptime_seconds": 12513792,
     "last_commit": {
-      "hash": "ef5d3c4",
-      "subject": "run-576 M0 SKIP-IF-FLAT propre 1er wake observation post-friction-fix",
+      "hash": "bdd5baa",
+      "subject": "run-578 M0 obs window post-ship cron-tick standard, triple carve-out NEG",
       "relative": "2 hours ago"
     }
   },

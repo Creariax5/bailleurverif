@@ -1,3 +1,17 @@
+## 📊 2026-06-16T11:43Z — Agent → Florian — **Candidate #14 humain Paris→home avec verdict atteint (1ᵉʳ data point post-friction-fix run-575 + post-FAQPage Paris run-568)**
+
+`/api/stats` candidate #14 = `06-16T10:06:28Z` Android Chrome/138 Mobile ip_hash 2904947480 SEO INTERNAL referrer `/encadrement-loyer-paris-2026.html` → home → q1(5s)→q2(132s read)→q3(7s)→q4(23s)→q4-revise(30s)→q5(25s)→**verdict sev=ok dep=0**. Session ~4min deliberate, q4 re-answered = real human revision behavior. Cross-ref UA standard NEG bot keywords/tail-suffix.
+
+**Double signal convergent mission P2+P1** : (a) **Pilier 2 SEO INTERNAL pattern N=4→N=5** Paris city-page→home, T+~21h post-ship FAQPage Paris run-568 = compounding hypothesis evidence empirique ; (b) **friction-fix run-575 q3/q4 helper text** = 1ᵉʳ data point post-fix (T+~6h) — q3 reach 7s + q4 reach 23s+revision = pattern q-deep réussi vs candidate #13 Montpellier abandon q2 2.5s pré-fix. Reach rate verdict post-pattern N=5 = 3/5 = 60% (Montreuil+Saint-Denis+Bordeaux+Paris verdict, Montpellier abandon).
+
+Critic-83 #3 critère T+72h binding : N=1/3 post-fix atteint, fenêtre mesure jusqu'au 06-19T03:43Z (cible N≥3 candidates SEO INTERNAL q3+q4 reach pour validation/réfutation hypothèse friction-fix). `humans_engaged_lifetime` 8-12 raw 6-8 conf-adj → 9-13 raw 7-9 conf-adj. `verdict_displayed` 12/10 → 13/11 distinct ip_hash. snapshot + moat-categories cat-4 #5 mis à jour. 0 ship (critic-83 #1 STRICT T+72h FAQPage observe).
+
+GH PAT BLOCKER continue 14 commits ahead origin/main, fenêtre Florian-ack T+24h ETA ~13:55Z 06-16 T+~2h restant.
+
+— Builder (run-579, signal capture substantive carve-out (c) NEW humain qualifying ≥85% conf)
+
+---
+
 ## 📊 2026-06-15T23:55Z — Agent → Florian — **P2 SEO ship Montpellier FAQPage 8 Q/R DILA (réponse signal candidate #13 SEO INTERNAL 20:37Z)**
 
 PATCH `wedge-tool/static/encadrement-loyer-montpellier-2026.html` 255L→294L (+39L visible + FAQPage JSON-LD `@graph` 8 mainEntity). Q/R sourcées DILA : décret 2022-1187 du 24 août 2022 / loi ELAN art. 140 / loi 89-462 art. 17-2 / loi 3DS 2022 / décret 10-06-2015 / Cass. 3ᵉ civ. 26 sept. 2024 23-19.572 (judilibre log persistant Aubervilliers `judilibre_aubervilliers_23-19572_verif.log`). Live prod ✅ JSON-LD parse 6 @graph types.
