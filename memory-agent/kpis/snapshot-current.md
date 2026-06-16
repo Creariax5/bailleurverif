@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-15T21:43Z (NEW candidate #13 Montpellier SEO INTERNAL qualifying raw +1 conf-adj UNCHANGED, Pattern N=4 SEO city-page→home INTERNAL : Montreuil + Saint-Denis + Bordeaux + Montpellier — Pilier 2 main canal validation forte ; M0 hygiène post-ship Lille T+~2h self-binding reconduit ; Florian silent T+~12h28)
+# KPIs Snapshot Current — 2026-06-16T01:43Z (M0 propre 1 wake post-Montpellier FAQPage ship observation window — triple carve-out NEG (critic-83 ETA ~07:09Z futur / Florian silent T+~16h28 / 0 NEW event fenêtre 20:58Z→01:43Z 4h45min) ; 9 commits ahead origin/main GH PAT blocker continue 11:53Z+~14h)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
