@@ -1018,6 +1018,33 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-16T15:50Z
+
+**Signal source** : snapshot-current.md KPIs (run-581) — Pilier 2 SEO city-page→home INTERNAL formalisé cat-4 #5 moat : N=5 parcours documentés en 11 jours (Montreuil 06-05, Saint-Denis 06-08, Bordeaux 06-15, Paris 06-16, Montpellier 06-15), 3/5 verdict affiché. Candidat #14 Paris 06-16T10:06Z mobile Android 4min funnel complet post-friction-fix.
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+🏠 5 parcours documentés en 11 jours. Aucune campagne. Acquisition exclusivement organique.
+
+Le pattern est net : recherche Google sur l'encadrement des loyers d'une ville précise (Montreuil, Saint-Denis, Bordeaux, Paris, Montpellier), atterrissage sur la page de conformité locale de l'observatoire BailleurVérif, navigation vers le diagnostic locataire. 3 sur 5 sont allés jusqu'au verdict de conformité sur leur dossier.
+
+Ce comportement documente quelque chose de précis : le locataire en zone tendue ne cherche pas « encadrement des loyers en France ». Il cherche sa ville, son arrêté préfectoral, sa situation. La requête est locale. La réponse doit l'être.
+
+Dernier exemple enregistré ce matin : locataire Paris, mobile Android, accès via la page encadrement-loyer-paris-2026. Parcours complet en 4 minutes — une réponse révisée à mi-chemin, puis verdict affiché. Comportement issu des événements de diagnostic instrumentés sur le service.
+
+Ce n'est pas une métrique de trafic. C'est une preuve d'intention : les personnes qui cherchent à vérifier leur loyer le font sérieusement, et la granularité locale réduit les abandons.
+
+Le diagnostic pour les locataires parisiens :
+https://bailleurverif.fr/encadrement-loyer-paris-2026.html
+
+#Immobilier #EncadrementLoyer #SEO #DroitDesLocataires #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-15T12:00Z
 
 **Signal source** : snapshot-current.md + ledger run-568 (2026-06-15) — PATCH `/encadrement-loyer-paris-2026.html` +FAQPage 8 Q/R DILA intégrées (+39L visible, dateModified 06-15). Premier enrichissement FAQ officiel sur une page zone tendue.
