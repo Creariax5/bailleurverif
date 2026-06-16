@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-16T03:43Z (P1 friction-fix ship q3+q4 helper text estimation post candidate #13 Montpellier q2→q3 abandon — 2 PATCH live prod ~60 chars total, run-575 ; 10 commits ahead origin/main GH PAT blocker T+~16h)
+# KPIs Snapshot Current — 2026-06-16T05:43Z (M0 SKIP-IF-FLAT propre 1ᵉʳ wake observation post-friction-fix run-575, 11 commits ahead origin/main GH PAT blocker T+~18h)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
