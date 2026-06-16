@@ -1,3 +1,19 @@
+## 📊 2026-06-16T19:44Z — Agent → Florian — **Critic-84 3/3 honored J+0 (T+~34min) — finding empirique 5/5 verdict→0/5 capture, PATCH instrumentation chirurgical ≤30L ship défèré run-584**
+
+Critic-84 émis 19:00Z 8.0/10 (-0.4) pointe pattern de fond : **5/5 candidates lifetime ip-distinct ayant atteint `verdict_displayed` home → 0/5 events post-verdict** (email_focus/submit/share/cta_secondary). Cross-ref funnel-events.jsonl+visits.jsonl confirmé. Sessions terminent NET au verdict. Distribution sev biaisée 3/5 sev=ok dep=0 + 2/5 sev=warn dep≤33€ (sample "non-painful").
+
+**Action #1 ★★★** : analyse pure NO ship, NEW concept-doc `post-verdict-capture-dropout-analysis.md` 110L + 4 hypothèses concurrentes (H1 page-quit instantané / H2 verdict ≠ painkiller / H3 email-gate scroll-gate / H4 share-vs-capture share-btn untracked) + PATCH chirurgical ≤30L variante §a+§b combinée (IntersectionObserver dwell verdict-card + email-gate scroll-reach + tracker share-verdict-btn 1L manquant). Ship explicit défèré wake +N+1 = run-584 21:44Z TRIGGER ELIGIBLE.
+
+**Action #2 ★★** : codifié SB-5 discipline-self-binding "Florian-silent post-fallback ack = N/A tactical priorité" anti-flag récurrent récursif PAT GitHub blocker (5+ wakes verbatim 570→582). SB-5 ACTIVÉ ce wake : 0 re-flag PAT inbox HEAD / snapshot / ledger (1L commits ahead silent dans ledger uniquement).
+
+**Action #3 ★** : snapshot frontmatter sync L1 19:44Z + visits 469→470 +1 Applebot 17:56Z + bot_pre_class 9→10 + row 1 visits_total 467→470 sync ; sub-content-syndicator ACTIF→DORMANT audit-trail T+~20j+ silent cycle-2 05-27 (option keep critic-84 #3 alt, cap 6/8 marge 2 UNCHANGED).
+
+`tactical_cumul=89→92 ★` (+3 J+0 même wake record vélocité critic). Strategic option F stable T+~32h. Bans 26/26 STRICT reconduits. NEXT run-584 = (a) critic-85 ETA ~07:00Z 06-17 ; (b) Florian-silent ; (c) NEW humain ; **(d) NEW carve-out critic-84 #1 wake +N+1 TRIGGER ELIGIBLE** ship instrumentation §a+§b.
+
+— Builder (run-583, critic-84 3/3 J+0 record vélocité tactical)
+
+---
+
 ## 📊 2026-06-16T11:43Z — Agent → Florian — **Candidate #14 humain Paris→home avec verdict atteint (1ᵉʳ data point post-friction-fix run-575 + post-FAQPage Paris run-568)**
 
 `/api/stats` candidate #14 = `06-16T10:06:28Z` Android Chrome/138 Mobile ip_hash 2904947480 SEO INTERNAL referrer `/encadrement-loyer-paris-2026.html` → home → q1(5s)→q2(132s read)→q3(7s)→q4(23s)→q4-revise(30s)→q5(25s)→**verdict sev=ok dep=0**. Session ~4min deliberate, q4 re-answered = real human revision behavior. Cross-ref UA standard NEG bot keywords/tail-suffix.

@@ -101,6 +101,20 @@ URLs `courdecassation.fr/decision/{id}` shippées pointaient vers IDs inexistant
 
 **Why "light"** : pas Full ritual SB-1 (≥100L user-facing) ni SB-2 (ECLI Judilibre log) — juste check pré-commit `ls` 1 ligne shell, donc tag "light".
 
+## Règle SB-5 — Florian-silent post-fallback explicit ack = N/A tactical priorité (anti-flag récurrent récursif)
+
+**Codifiée** : 2026-06-16T19:44Z run-583 honored critic-84 #2 ★★ recommandation (b).
+
+**Énoncé** : Lorsqu'un blocker dépendant Florian (ex : PAT GitHub expiré) a déjà reçu un ack-fallback explicite ("commit local + pull manuel" inbox.md 17:50Z 06-15 ack run-570), les wakes subséquents NE re-flag PAS le blocker en HEAD-priorité tactique. Dette transparence GitHub-public (commits ahead unpushed) reconduit silently jusqu'à Florian-action proactive. Counter visits/commits passe en `ledger`-only ; pas de section dédiée snapshot ; pas de mention "BLOCKER" verbatim runs 5+ consécutifs.
+
+**Why** : critic-84 #2 ★★ a observé 5+ wakes consécutifs (runs 570→582) verbatim `GH PAT BLOCKER T+~Xh restant` decrementing = pattern récurrent récursif = surface inutile sustained audit-trail. Florian a déjà choisi le mode (fallback commit local). Re-flag ≠ ajoute information ≠ accélère décision.
+
+**Triggers de réactivation** : (a) Florian-action proactive (PAT replace `.env` GH_TOKEN) → 1 ligne ledger acknowledgment + push reprend ; (b) Florian-message inbox HEAD nouveau topic PAT (override fallback) ; (c) impact opérationnel critique (ex : prod down) — pas dette transparence.
+
+**Anti-loophole** : ne s'applique PAS à blockers OPS impactant prod (server down, scraper KO, dataset perdu) — reste flag HEAD priorité.
+
+**Update protocol** : Si Florian patch HUMAN_DIRECTIVE.md ajoute règle "PAT obligatoire toujours flagué" → archiver SB-5. Sinon affinement permanent.
+
 ## Update protocol
 
 Si Florian patch HUMAN_DIRECTIVE.md L160 → archiver cette règle SB-1 (déprécié), keep historical reference. Si nouvelle règle SB-N émerge audit futur → append section.
@@ -112,3 +126,4 @@ Si Florian patch HUMAN_DIRECTIVE.md L160 → archiver cette règle SB-1 (dépré
 - 2026-06-09T19:43Z run-499 — SB-3 light file integrity codifié post run-497 ledger-only commit `96f09d0` (run-497 file missed reactive-corrected run-498). Critic-70 #3 ★ STOP anti-vanity METRIC `wake_file_missed_cumul` substitué codification structurelle.
 - 2026-06-10T19:42Z run-511 — Sub-règle SB-1.1 ENRICH file existant codifiée post critic-72 #3 ★ verdict drift Saint-Ouen ENRICH +103L variante §a/§b sans Copyability+Moat+€X (run-507). Clarif seuil Full ritual = même critère que NEW FILE pour ENRICH user-facing net-add ≥100L. Carve-out Strategic §6 lève ban NEW FILE pas seuil discipline §b.
 - 2026-06-11T15:45Z run-521 — SB-4 IndexNow ship-time strict cap 1 URL codifiée post brief Florian 08:00Z (decisions/2026-06-11-indexnow-ban-affined.md). Affinement verdict run-315 "IndexNow théâtre confirmé" : ban global → cap 1 URL/ship-time NEW page OR PATCH ≥+50L substantive. Symétrie 1:1 Indexing API Google. SB-4 dormant durant Strategic-N ban explicit (audit-57 bans 19/19 = SB-4 suspendu jusqu'audit-58).
+- 2026-06-16T19:44Z run-583 — SB-5 Florian-silent post-fallback ack = N/A tactical priorité codifiée post critic-84 #2 ★★ recommandation (b). Anti-flag récurrent récursif PAT GitHub blocker (5+ wakes verbatim 570→582). Fallback Florian explicit 17:50Z 06-15 = mode autorisé ; re-flag HEAD ≠ accélère décision. Triggers réactivation 3 carve-outs explicites.

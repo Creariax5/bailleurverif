@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-16T17:44Z (run-582 M0 obs window cron-tick standard ; 17 commits ahead origin/main GH PAT blocker ; visits 468→469 +1 Applebot REJECTED ; bot_pre_class 8→9)
+# KPIs Snapshot Current — 2026-06-16T19:44Z (run-583 critic-84 J+0 3/3 honored : analyse post-verdict capture dropout 5/5 silent + SB-5 codifiée + hygiène snapshot ; 18 commits ahead origin/main [SB-5 N/A reflag] ; visits 469→470 +1 Applebot REJECTED ; bot_pre_class 9→10)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 467 | raw +1 fenêtre 09:43Z→11:43Z | 06-16T10:06:28Z candidate #14 Paris→home Android Chrome/138 Mobile ip_hash 2904947480 SEO INTERNAL referrer `/encadrement-loyer-paris-2026.html` (cross-ref UA tail-suffix mandatory NEG bot keywords/tail-suffix/Florian-fingerprint) | NEW conf-adj humain qualifying ≥85% conf (verdict_displayed depth atteint) |
+| `visits_total` | 470 | raw +3 fenêtre 11:43Z→19:44Z (3 Applebot REJECTED) | 06-16T17:56:43Z Applebot REJECTED tail-suffix `+http://www.apple.com/go/applebot` mandatory ip_hash 646182958 ; précédent 17:24Z Applebot ip 626711535 ; 12:34Z Applebot ip — | sync row 1 vs frontmatter critic-84 #3 ★ honored (469 → 470 +1 Applebot fenêtre 17:44Z→19:44Z) |
 | `verdict_displayed_events_lifetime` | 13 events / 11 distinct ip_hash | +1 (candidate #14) | 06-16T10:10:10Z candidate #14 Paris sev=ok dep=0 ip_hash 2904947480 funnel home→q1(5s)→q2(132s read)→q3(7s NEW helper text)→q4(23s)→q4-revise(30s)→q5(25s)→verdict | session ~4min deliberate q4 re-answered = real human revision behavior |
 | `humans_engaged_lifetime` | 9-13 raw / 7-9 conf-adj | raw +1 / conf-adj +1 candidate #14 | 06-16T10:06Z candidate #14 Paris Android Chrome/138 Mobile SEO INTERNAL referrer `/encadrement-loyer-paris-2026.html` | funnel COMPLETE home + q1 5s + q2 132s read + q3 7s + q4 23s + q4-revise 30s + q5 25s + verdict_displayed sev=ok dep=0 ⇒ raw qualifying + conf-adj qualifying (verdict_displayed depth atteint, T+~21h post FAQPage Paris ship 06-15T13:43Z run-568, T+~6h post friction-fix q3+q4 helper run-575 03:43Z) ; classification cross-ref UA standard critic-79 #1 méthodologie self-applicative SUCCESS |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
@@ -31,7 +31,7 @@
 - `strategic_self_recalibrages_lifetime = 0 → 1` NEW counter run-567 (1ʳᵉ application auto-PATCH Strategic-cible Builder-décidé empirique via brief Florian autorité explicite)
 - `auto_patch_par_cible_strategic_sem_06-12_06-19 = 0/1 → 1/1` consommé run-567 PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z prompt 8995→7277 chars schedule_interval 12h→48h
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
-- `bot_pre_classification_rejections_cumul = 9` (Applebot tail-suffix ×7 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +1 Applebot 06-16T17:24Z run-582 fenêtre 15:44Z→17:44Z agrégé compteur existant type déjà tableau récap, discipline counter STOP #1 audit-80 sustained 10+/10+ wakes)
+- `bot_pre_classification_rejections_cumul = 10` (Applebot tail-suffix ×8 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +1 Applebot 06-16T17:56Z run-583 fenêtre 17:44Z→19:44Z agrégé compteur existant type déjà tableau récap, discipline counter STOP #1 audit-80 sustained 11+/11+ wakes)
 - `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
 - `florian_briefs_honored_j0_lifetime = 11 → 12 ★` (brief 09:15Z autorité explicite (e) DÉCIDE TOI-MÊME honored T+~2h31 run-567)
@@ -49,7 +49,7 @@
 | `sub-linkedin-drafter` | Sonnet 4.6 | 24h | ACTIF (drafts queue Florian validate) |
 | `sub-observatoire-publisher` | Haiku 4.5 | 7j | ACTIF PATCHED v2 run-325 +HF dataset |
 | `sub-bluesky-poster` | Haiku 4.5 | 24h | ACTIF |
-| `sub-content-syndicator` | Sonnet 4.6 | 7j | ACTIF (dev.to 0/2 referer T+~22j mort empirique) |
+| `sub-content-syndicator` | Sonnet 4.6 | 7j | DORMANT audit-trail explicit T+~20j+ silent depuis cycle-2 05-27 (option keep critic-84 #3 ★ honored, cap 6/8 marge 2 inchangé, ré-éval Florian-trigger ou exit-clause schedule_interval) |
 
 ## Sources d'humains validées (33+ derniers jours, N=6-7 cumul)
 
