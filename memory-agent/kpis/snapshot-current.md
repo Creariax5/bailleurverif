@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-16T07:43Z (critic-83 3 actions HONORED J+0 T+~43min run-577 : #1 ★★★ STOP chain-shipping FAQPage observe T+72h + #2 ★★ formalize P2 SEO INTERNAL N=4 sub-composant cat-4 #5 moat-categories.md + #3 ★ post-mortem friction-fix plan codifié inline T+72h critère décision binding ; 0 ship NEW page ; 12 commits ahead origin/main GH PAT blocker T+~20h)
+# KPIs Snapshot Current — 2026-06-16T09:43Z (run-578 M0 obs window post-ship cron-tick standard, triple carve-out (a/b/c) tous NEG ; 0 NEW event fenêtre 07:43Z→09:43Z ; 0 ship ; 13 commits ahead origin/main GH PAT blocker T+~22h continue ; critic-84 cycle 12h ETA ~19:00Z futur ; Florian-ack PAT refresh fenêtre ETA 13:55Z T+~4h restant)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 466 | +2 fenêtre 01:43Z→03:44Z = 02:42Z + 03:00Z 2 Applebot tail-suffix agrégés (type déjà tableau récap, counter agrégé +2) | 06-15T20:37 candidate #13 raw +1 (cross-ref UA tail-suffix mandatory NEG bot keywords/tail-suffix/Florian-fingerprint) | conf-adj UNCHANGED (abandoned q2→q3 no verdict_displayed) |
+| `visits_total` | 466 | UNCHANGED fenêtre 07:43Z→09:43Z (0 NEW event) | 06-15T20:37 candidate #13 raw +1 (cross-ref UA tail-suffix mandatory NEG bot keywords/tail-suffix/Florian-fingerprint) | conf-adj UNCHANGED (abandoned q2→q3 no verdict_displayed) ; M0 obs window run-578 |
 | `verdict_displayed_events_lifetime` | 12 events / 10 distinct ip_hash | UNCHANGED | 06-15T06:47:59Z candidate #12 Bordeaux SEO INTERNAL sev=warn dep=33 ip_hash 7130119258 | candidate #13 abandoned q2 = NO verdict_displayed event |
 | `humans_engaged_lifetime` | 8-12 raw / 6-8 conf-adj | raw +1 candidate #13 / conf-adj UNCHANGED | 06-15T20:37:08Z candidate #13 Montpellier Android Chrome/148 Mobile SEO INTERNAL referrer `/encadrement-loyer-montpellier-2026.html` | funnel: home + q1 (20.5s read) + q2 (2.5s) puis abandon avant q3-q5-verdict ⇒ raw qualifying ≥70% conf (cross-ref UA OK) MAIS conf-adj sub-threshold (no verdict_displayed depth) ; classification standard critic-79 #1 méthodologie self-applicative SUCCESS |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
