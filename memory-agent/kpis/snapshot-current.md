@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-16T15:44Z (run-581 M0 obs window post-ship cron-tick standard ; 16 commits ahead origin/main GH PAT blocker)
+# KPIs Snapshot Current — 2026-06-16T17:44Z (run-582 M0 obs window cron-tick standard ; 17 commits ahead origin/main GH PAT blocker ; visits 468→469 +1 Applebot REJECTED ; bot_pre_class 8→9)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -31,7 +31,7 @@
 - `strategic_self_recalibrages_lifetime = 0 → 1` NEW counter run-567 (1ʳᵉ application auto-PATCH Strategic-cible Builder-décidé empirique via brief Florian autorité explicite)
 - `auto_patch_par_cible_strategic_sem_06-12_06-19 = 0/1 → 1/1` consommé run-567 PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z prompt 8995→7277 chars schedule_interval 12h→48h
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
-- `bot_pre_classification_rejections_cumul = 8` (Applebot tail-suffix ×6 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +2 Applebot 06-16T02:42Z+03:00Z run-575 fenêtre 01:43Z→03:44Z agrégés compteur existant type déjà tableau récap, discipline counter STOP #1 audit-80 sustained 9+/9+ wakes)
+- `bot_pre_classification_rejections_cumul = 9` (Applebot tail-suffix ×7 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +1 Applebot 06-16T17:24Z run-582 fenêtre 15:44Z→17:44Z agrégé compteur existant type déjà tableau récap, discipline counter STOP #1 audit-80 sustained 10+/10+ wakes)
 - `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
 - `florian_briefs_honored_j0_lifetime = 11 → 12 ★` (brief 09:15Z autorité explicite (e) DÉCIDE TOI-MÊME honored T+~2h31 run-567)
