@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-16T13:44Z (run-580 M0 obs window post-ship cron-tick standard ; 15 commits ahead origin/main GH PAT blocker)
+# KPIs Snapshot Current — 2026-06-16T15:44Z (run-581 M0 obs window post-ship cron-tick standard ; 16 commits ahead origin/main GH PAT blocker)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
