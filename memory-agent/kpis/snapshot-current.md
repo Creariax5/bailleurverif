@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-16T01:43Z (M0 propre 1 wake post-Montpellier FAQPage ship observation window — triple carve-out NEG (critic-83 ETA ~07:09Z futur / Florian silent T+~16h28 / 0 NEW event fenêtre 20:58Z→01:43Z 4h45min) ; 9 commits ahead origin/main GH PAT blocker continue 11:53Z+~14h)
+# KPIs Snapshot Current — 2026-06-16T03:43Z (P1 friction-fix ship q3+q4 helper text estimation post candidate #13 Montpellier q2→q3 abandon — 2 PATCH live prod ~60 chars total, run-575 ; 10 commits ahead origin/main GH PAT blocker T+~16h)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 464 | +4 fenêtre 19:43Z→21:43Z = 18:16Z Applebot tail-suffix agrégé (déjà tableau récap) + 19:19Z bingbot keyword baseline ZERO increment + 20:37Z candidate #13 Montpellier SEO INTERNAL qualifying + 20:58Z Dataprovider `(compatible; X.com)` self-id agrégé (déjà tableau récap) | 06-15T20:37 candidate #13 raw +1 (cross-ref UA tail-suffix mandatory NEG bot keywords/tail-suffix/Florian-fingerprint) | conf-adj UNCHANGED (abandoned q2 no verdict_displayed) |
+| `visits_total` | 466 | +2 fenêtre 01:43Z→03:44Z = 02:42Z + 03:00Z 2 Applebot tail-suffix agrégés (type déjà tableau récap, counter agrégé +2) | 06-15T20:37 candidate #13 raw +1 (cross-ref UA tail-suffix mandatory NEG bot keywords/tail-suffix/Florian-fingerprint) | conf-adj UNCHANGED (abandoned q2→q3 no verdict_displayed) |
 | `verdict_displayed_events_lifetime` | 12 events / 10 distinct ip_hash | UNCHANGED | 06-15T06:47:59Z candidate #12 Bordeaux SEO INTERNAL sev=warn dep=33 ip_hash 7130119258 | candidate #13 abandoned q2 = NO verdict_displayed event |
 | `humans_engaged_lifetime` | 8-12 raw / 6-8 conf-adj | raw +1 candidate #13 / conf-adj UNCHANGED | 06-15T20:37:08Z candidate #13 Montpellier Android Chrome/148 Mobile SEO INTERNAL referrer `/encadrement-loyer-montpellier-2026.html` | funnel: home + q1 (20.5s read) + q2 (2.5s) puis abandon avant q3-q5-verdict ⇒ raw qualifying ≥70% conf (cross-ref UA OK) MAIS conf-adj sub-threshold (no verdict_displayed depth) ; classification standard critic-79 #1 méthodologie self-applicative SUCCESS |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
@@ -31,7 +31,7 @@
 - `strategic_self_recalibrages_lifetime = 0 → 1` NEW counter run-567 (1ʳᵉ application auto-PATCH Strategic-cible Builder-décidé empirique via brief Florian autorité explicite)
 - `auto_patch_par_cible_strategic_sem_06-12_06-19 = 0/1 → 1/1` consommé run-567 PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z prompt 8995→7277 chars schedule_interval 12h→48h
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
-- `bot_pre_classification_rejections_cumul = 6` (Applebot tail-suffix ×4 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +1 Applebot 06-15T12:34Z run-568 fenêtre 11:43Z→13:43Z agrégé compteur existant type déjà listé tableau récap, discipline counter STOP #1 audit-80 sustained 7+/7+ wakes)
+- `bot_pre_classification_rejections_cumul = 8` (Applebot tail-suffix ×6 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +2 Applebot 06-16T02:42Z+03:00Z run-575 fenêtre 01:43Z→03:44Z agrégés compteur existant type déjà tableau récap, discipline counter STOP #1 audit-80 sustained 9+/9+ wakes)
 - `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
 - `florian_briefs_honored_j0_lifetime = 11 → 12 ★` (brief 09:15Z autorité explicite (e) DÉCIDE TOI-MÊME honored T+~2h31 run-567)
