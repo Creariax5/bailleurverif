@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-17T07:44Z (run-589 critic-85 #2 ★ + #3 ★ honored J+0 ≤45min cycle = analyse pure FLAG GAP catch-22 cadence vs deadline T+72h + hygiène snapshot sync ; #1 ★★ Strategic audit-66 ETA 06-17T11:46Z premier test option F deferred wake +N+1 ; concept post-verdict-capture-dropout-analysis.md extension +50L Poisson P(N≥3) baseline 3-24% trop bas ⇒ recommandation extension deadline T+72h→T+10j 2026-06-26T21:46Z + 3 options (extension/inconclusive/proxy nginx) + L95 ban récursif DEPRECATED ; visits 479→481 +2 fenêtre 05:44Z→07:44Z 2/2 Applebot tail-suffix REJECTED méthodologie critic-79 #1 self-applicative ; bot_pre_class 12→14 agrégé compteur existant Applebot type tableau récap UNCHANGED ; tactical_cumul=94→96 ★ J+0)
+# KPIs Snapshot Current — 2026-06-17T09:44Z (run-590 M0 propre cron-tick ≤1L critic-85 STOP #3 anti-analytic-streak respecté pré-audit-66 ; Strategic audit-66 ETA 06-17T11:46Z premier test option F ; visits 481→483 +2 fenêtre 07:44Z→09:44Z 2/2 Applebot tail-suffix REJECTED 08:37Z ip 2439292427 + 08:40Z ip 7778299153 méthodologie critic-79 #1 self-applicative 13ᵉ+14ᵉ instances ; bot_pre_class 14→16 agrégé compteur existant Applebot type tableau récap UNCHANGED ; 0 NEW humain qualifying ; 0 post-verdict instrumentation event prod-side T+~12h post-ship 06-16T21:46Z run-584 = cohérent cadence ~0.24/jour critic-85 hypothèse, test décisif T+48h 06-18T21:46Z)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 481 | raw +2 fenêtre 05:44Z→07:44Z (2/2 Applebot tail-suffix REJECTED 05:51Z ip 9361437006 + 06:33Z ip 7760338589 méthodologie critic-79 #1 self-applicative 11ᵉ + 12ᵉ instances) | 06-17T06:33:39Z Applebot ip 7760338589 REJECTED ; précédent 05:51Z Applebot ip 9361437006 REJECTED | sync row 1 run-589 (479 → 481 +2 fenêtre 2h) ; wc -l visits.jsonl=481 = API match |
+| `visits_total` | 483 | raw +2 fenêtre 07:44Z→09:44Z (2/2 Applebot tail-suffix REJECTED 08:37Z ip 2439292427 + 08:40Z ip 7778299153 méthodologie critic-79 #1 self-applicative 13ᵉ + 14ᵉ instances) | 06-17T08:40:21Z Applebot ip 7778299153 REJECTED ; précédent 08:37Z Applebot ip 2439292427 REJECTED | sync row 1 run-590 (481 → 483 +2 fenêtre 2h) ; wc -l visits.jsonl=483 = API match |
 | `verdict_displayed_events_lifetime` | 13 events / 11 distinct ip_hash | +1 (candidate #14) | 06-16T10:10:10Z candidate #14 Paris sev=ok dep=0 ip_hash 2904947480 funnel home→q1(5s)→q2(132s read)→q3(7s NEW helper text)→q4(23s)→q4-revise(30s)→q5(25s)→verdict | session ~4min deliberate q4 re-answered = real human revision behavior |
 | `humans_engaged_lifetime` | 9-13 raw / 7-9 conf-adj | raw +1 / conf-adj +1 candidate #14 | 06-16T10:06Z candidate #14 Paris Android Chrome/138 Mobile SEO INTERNAL referrer `/encadrement-loyer-paris-2026.html` | funnel COMPLETE home + q1 5s + q2 132s read + q3 7s + q4 23s + q4-revise 30s + q5 25s + verdict_displayed sev=ok dep=0 ⇒ raw qualifying + conf-adj qualifying (verdict_displayed depth atteint, T+~21h post FAQPage Paris ship 06-15T13:43Z run-568, T+~6h post friction-fix q3+q4 helper run-575 03:43Z) ; classification cross-ref UA standard critic-79 #1 méthodologie self-applicative SUCCESS |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
@@ -31,13 +31,13 @@
 - `strategic_self_recalibrages_lifetime = 0 → 1` NEW counter run-567 (1ʳᵉ application auto-PATCH Strategic-cible Builder-décidé empirique via brief Florian autorité explicite)
 - `auto_patch_par_cible_strategic_sem_06-12_06-19 = 0/1 → 1/1` consommé run-567 PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z prompt 8995→7277 chars schedule_interval 12h→48h
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
-- `bot_pre_classification_rejections_cumul = 14` (Applebot tail-suffix ×12 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +2 Applebot 06-17T05:51Z + 06:33Z run-589 fenêtre 05:44Z→07:44Z agrégé compteur existant type déjà tableau récap, discipline counter STOP #1 audit-80 sustained 15+/15+ wakes)
+- `bot_pre_classification_rejections_cumul = 16` (Applebot tail-suffix ×14 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id ; +2 Applebot 06-17T08:37Z + 08:40Z run-590 fenêtre 07:44Z→09:44Z agrégé compteur existant type déjà tableau récap, discipline counter STOP #1 audit-80 sustained 16+/16+ wakes)
 - `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
 - `florian_briefs_honored_j0_lifetime = 11 → 12 ★` (brief 09:15Z autorité explicite (e) DÉCIDE TOI-MÊME honored T+~2h31 run-567)
 - `builder_auto_patches_lifetime = 3 → 4 ★` (PATCH Strategic prompt + schedule_interval cap PAR CIBLE 1/1 consommé fenêtre 06-12→06-19, cible distincte vs Builder prompt cap 0/1 disponible)
 - `strategic_critic_recommendations_followed_cumul = 64/64 ★ 35ᵉ J+0 STREAK record absolu` UNCHANGED (audit-64 §6 PAUSE-AND-WAIT NO-OP substantive maintenu jusqu'à audit-65 NEW prompt option F actif 06-17T11:46Z)
-- DIR7 streak continued (cron externe `0 */2 * * *` 09:43Z → 11:43Z honored)
+- DIR7 streak continued (cron externe `0 */2 * * *` 07:44Z → 09:44Z honored)
 - WHY_THIS_NOT_THAT ritual continued (SB-3 substantive : run-567 file CRÉÉ pré-commit decision file + ledger + concept + inbox HEAD + MEMORY.md cumulés)
 
 ## Sub-agents actifs (6/8 cap, marge 2)
