@@ -362,16 +362,29 @@ function showResult() {
   })}).catch(()=>{});
   trackFunnel("verdict_displayed", { sev: severity, dep: depassement || 0 });
   // critic-84 #1 post-verdict instrumentation (§a dwell + §b email-gate reach)
+  // run-593 fix: visibilitychange/pagehide capture le cas "lit verdict puis ferme page" (transition manquante dans v1)
   const verdictDisplayedAt = Date.now();
   if ("IntersectionObserver" in window && card) {
-    let visibleStart = verdictDisplayedAt;
+    let visibleStart = null;
+    let wasIntersecting = false;
     const dwellObs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
-        if (e.isIntersecting) visibleStart = Date.now();
-        else trackFunnel("verdict_dwell_ms", { ms: Date.now() - visibleStart, sev: severity });
+        if (e.isIntersecting && !wasIntersecting) { visibleStart = Date.now(); wasIntersecting = true; }
+        else if (!e.isIntersecting && wasIntersecting) {
+          trackFunnel("verdict_dwell_ms", { ms: Date.now() - visibleStart, sev: severity });
+          wasIntersecting = false;
+        }
       });
     }, { threshold: 0.3 });
     dwellObs.observe(card);
+    const emitFinalDwell = () => {
+      if (wasIntersecting && visibleStart) {
+        trackFunnel("verdict_dwell_ms", { ms: Date.now() - visibleStart, sev: severity, src: "hide" });
+        wasIntersecting = false;
+      }
+    };
+    document.addEventListener("visibilitychange", () => { if (document.hidden) emitFinalDwell(); });
+    window.addEventListener("pagehide", emitFinalDwell);
     if (gate) {
       const reachObs = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
