@@ -23,6 +23,16 @@
     return String(s).replace(/[<>&"']/g, c => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&apos;" }[c]));
   }
 
+  // WebKit/iOS Safari ne rend pas <foreignObject> via drawImage→canvas — wrap natif <text>+<tspan>
+  function wrapAt(s, maxChars) {
+    s = String(s);
+    if (s.length <= maxChars) return [s];
+    let i = maxChars;
+    while (i > 0 && s[i] !== " ") i--;
+    if (i === 0) i = maxChars;
+    return [s.slice(0, i).trim(), s.slice(i).trim()];
+  }
+
   // Construit le SVG verdict-card (1200×630)
   function buildSvg(verdict) {
     const sev = verdict.severity || "warn";
@@ -51,9 +61,7 @@
   <rect x="0" y="0" width="1200" height="8" fill="${pal.accent}"/>
   <text x="60" y="120" font-family="system-ui,-apple-system,sans-serif" font-size="28" font-weight="700" fill="${pal.accent}" letter-spacing="2">${pal.emoji}  ${pal.label}</text>
   <text x="60" y="240" font-family="system-ui,-apple-system,sans-serif" font-size="64" font-weight="800" fill="#fff" text-rendering="optimizeLegibility">${esc(headline)}</text>
-  <foreignObject x="60" y="280" width="1080" height="200">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font:400 32px/1.4 system-ui,-apple-system,sans-serif;color:#fff;opacity:.92;">${esc(subline)}</div>
-  </foreignObject>
+  <text x="60" y="340" font-family="system-ui,-apple-system,sans-serif" font-size="32" font-weight="400" fill="#fff" opacity="0.92">${wrapAt(subline, 46).map((line, idx) => `<tspan x="60" dy="${idx === 0 ? 0 : 42}">${esc(line)}</tspan>`).join("")}</text>
   <line x1="60" y1="510" x2="1140" y2="510" stroke="${pal.accent}" stroke-opacity=".3" stroke-width="1"/>
   <text x="60" y="570" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="600" fill="${pal.accent}">bailleurverif.fr</text>
   <text x="60" y="600" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="400" fill="#fff" opacity=".7">Vérification gratuite • Sources : INSEE OLAP + DILA + ADEME</text>
