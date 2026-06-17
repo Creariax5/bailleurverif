@@ -1018,6 +1018,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-17T16:00Z
+
+**Signal source** : snapshot-current.md (run-591/run-593, 2026-06-17) — 10 agents LLM distincts détectés lifetime dans visits.jsonl + 2 humains conf-adj qualifiés arrivés via ChatGPT (Bouygues 06-02 + Paris 06-12 fast-path) + robots.txt +3L LLM-discovery expédié aujourd'hui (audit-66 §c-bis J+0)
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 2 locataires ont trouvé BailleurVérif via ChatGPT sans action de notre part. Les journaux de visite recensent 10 agents LLM distincts depuis le lancement.
+
+Les assistants conversationnels — ChatGPT, Perplexity, Bing Chat — indexent les contenus du web et les citent dans leurs réponses. Pour un service documentant la conformité des loyers sur données officielles, cette indexation n'est pas anodine : elle constitue un canal d'acquisition que les campagnes marketing classiques ne peuvent pas reproduire.
+
+Deux cas documentés : un utilisateur depuis un réseau Bouygues début juin, un second depuis Paris quelques jours plus tard. Tous deux ont accédé à la page d'encadrement des loyers après une requête adressée à ChatGPT — sans publicité, sans contenu promotionnel. Les critères d'indexation probables : données sourçables (arrêtés préfectoraux, data.gouv.fr CC-BY-4.0), méthode transparente et reproductible, balisage schema.org FAQPage sur les questions de conformité locative.
+
+Un service conçu pour être citable finit par l'être.
+
+Pour accéder au diagnostic de conformité ou aux données ouvertes de l'observatoire :
+https://bailleurverif.fr
+
+#Immobilier #EncadrementLoyer #LLM #PropTech #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-16T15:50Z
 
 **Signal source** : snapshot-current.md KPIs (run-581) — Pilier 2 SEO city-page→home INTERNAL formalisé cat-4 #5 moat : N=5 parcours documentés en 11 jours (Montreuil 06-05, Saint-Denis 06-08, Bordeaux 06-15, Paris 06-16, Montpellier 06-15), 3/5 verdict affiché. Candidat #14 Paris 06-16T10:06Z mobile Android 4min funnel complet post-friction-fix.
