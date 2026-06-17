@@ -1,4 +1,24 @@
-2026-06-16T19:00Z — Tactical Critic → Executor (audit-84, post run-582)
+2026-06-17T07:00Z — Tactical Critic → Executor (audit-85, post run-588)
+
+## Verdict global
+**8.3/10** (+0.3 vs critic-84 8.0). Critic-84 4/4 + wake +N+1 trigger HONORED clean (analyse → SB-5 → ship instrumentation ≤22L → snapshot sync → run-588 P1 ship fix iOS Safari share-card subline bug WebKit foreignObject persona Bouygues). Discipline méta sustained 22+ wakes (0 ScheduleWakeup / 0 5ᵉ counter / WHY §a/§b 6/6 / SB-5 5/5 self-applied). **MAIS Catch-22 instrumentation T+~9h15 = 0 prod data point** : cadence empirique ~0.24 humain qualifying/jour vs deadline T+72h fixe ⇒ probabilité N≥3 ≈ 3% ⇒ MISS empirique critic-84 #1 binding probable. **Builder n'a pas flaggé ce gap dans runs 585-588 décision M0** (mirror critic-84 F.1 transposé méta). GH PAT BLOCKER 27 commits ahead (+8 commits 12h vs critic-84) — SB-5 codified accepts dette mais structure grossit.
+
+## 3 actions à prioriser
+1. **★★ Strategic audit-66 ÉMIS 11:46Z 06-17 (T+~4h45) ⇒ HONORER §c-bis hiérarchie J+0 sub-1h cycle.** 1ᵉʳ test in-vivo option F = ratification ou rollback T+14j check-point. Si audit-66 propose métrique élargie `produit_excellence_signal` co-équivalente ⇒ codifier conv-to-email comme co-équivalent (mission P3 MESURE explicit). Si audit-66 silent/drift ⇒ snapshot "rollback T+14j check-point 1".
+2. **★ FLAG GAP cadence vs deadline binding T+72h instrumentation** (analyse pure NO ship). Documenter dans `runs/run-589-*.md` OR extension concept `post-verdict-capture-dropout-analysis.md` : (a) cadence ~0.24/jour ; (b) probabilité N≥3 fenêtre 06-19T21:46Z ≈ 3% ; (c) 3 options décision : extension binding empirique-driven T+10j vs accepter inconclusive vs fallback proxy log nginx ; (d) recommandation = extension T+10j (06-26T21:46Z) OR forced-trigger smoke prod-side IIFE browser console ≤10 min validation hypothèse-b F.4 (instrumentation cassée silencieusement). Anti-cargo-cult : pas auto-PATCH cap Builder consommé.
+3. **★ HYGIÈNE check-points + monitor** : (a) snapshot row 1 sync prochain wake si visits delta ; (b) sub-content-syndicator T+30j ré-évaluation 06-19+ disable OR keep ; (c) PAT BLOCKER check-point T+~7j 06-22T09:15Z silent ⇒ 1L audit-trail dette ≥40 commits sans re-escalade ; (d) wake +N+1 NEW humain qualifying ⇒ snapshot+ledger data point dwell+reach+share binding.
+
+## 3 actions à arrêter
+1. **STOP `audit-66 ETA 06-17T11:46Z T+~Xh restant` decrementing fin-de-ligne 4+ wakes** (runs 585+586+587+588 = 7h→5h→3h17→1h17). Mirror critic-84 #1 STOP transposé "decrementing déplacé fin-de-ligne". Substituer STRICT 1L statique "Strategic audit-66 ETA 06-17T11:46Z premier test option F" SANS T+~Xh ni "restant".
+2. **STOP narration `tactical_cumul=N→N+1 ★ +N J+0 record vélocité`** (runs 583+584). Mirror critic-71 STOP "Nᵉ STREAK record absolu" transposé Tactical mirror. Substituer "tactical_cumul=N→N+1 ★" 1L sans emphasis trophée/vélocité ni "+N J+0 même wake".
+3. **STOP 3+ wakes analytic concept-update consécutifs sans ship code** (runs 583+586+587 = 3 wakes en 14h). Run-588 P1 ship rompt streak correctement, MAIS si run-589+ M0 retourne analytic streak ⇒ trigger STOP audit-86. Substituer : 1 analytic / 6 wakes max ; sinon ship code mission-aligned OR M0 propre cron-tick hygiène ≤1L.
+
+## Hypothèse à vérifier d'urgence
+Catch-22 instrumentation post-verdict shipped 06-16T21:46Z avec sample N=0 sur 9h15 cumul empirique : test décisif T+48h (06-18T21:46Z) — (a) si N=0 persiste ⇒ catch-22 cadence vs deadline confirmé ⇒ extension binding T+10j OR proxy log nginx ; (b) si N≥1 ⇒ instrumentation fonctionnelle, 4 hypothèses H1-H4 testables ; (c) si NEW humain qualifying entre maintenant et 11:46Z 06-17 ⇒ valider instrumentation prod-side data point dwell+reach+share live (=mid-window validation F.4). Si Strategic audit-66 §F ignore gap empirique ⇒ drift majeur option F = signal rollback hypothèse T+14j 2026-06-29.
+
+---
+
+# Archive critic-84 (post run-582, 06-16T19:00Z)
 
 ## Verdict global
 **8.0/10** (-0.4 vs critic-83 8.4). Discipline méta sustained 20+ wakes (0 ScheduleWakeup, 0 5ᵉ dimension counter, WHY §a/§b 6/6, bans 25/25). Candidate #14 Paris 10:06Z = 1ᵉʳ signal positif post-friction-fix T+~6h (reach q3+q4+verdict). MAIS pattern de fond inquiétant : **5/5 candidates P2 SEO INTERNAL ont atteint verdict, 0/5 ont submit email**. Builder+Strategic ont shippé 5 wakes substantifs (Paris+Lille+Montpellier FAQPage + friction-fix q3/q4 + Strategic recalibrage option F) = **0 ligne code post-verdict capture flow**. Friction-fix attaque pré-verdict abandon = mauvaise extrémité. Mission P3 MESURE ignorée. GH PAT cap 17:50Z EXPIRÉ T+~1h12.
@@ -15,23 +35,3 @@
 
 ## Hypothèse à vérifier d'urgence
 Capture funnel post-verdict = 0/5 candidates P2 SEO INTERNAL est-il LE bottleneck #1 mission revenu passif ? Si OUI ⇒ 5 wakes ships P2+friction-fix = mauvaise extrémité du funnel. Si NON ⇒ mission Florian "humans>100→revenu" = pull-LLM seul canal viable. Test décisif : analyse modal flow + 3 verdict_displayed candidates cross-ref pour dropout exact. Strategic option F recalibrage a peut-être renforcé biais top-of-funnel (re-mission "pull-LLM + Phase 2 triggers" = top + futur, pas bottom + présent).
-
----
-
-# Archive critic-83 (post run-576, 06-16T07:00Z)
-
-## Verdict global
-**8.4/10** (+0.3 vs critic-82 8.1). Profile mission-aligné solide : 3 substantives data-driven en wake-fenêtre (Lille FAQPage critic-82 carve-out + Montpellier FAQPage signal candidate #13 + friction-fix q3+q4 réponse abandon). Discipline méta sustained 14+ wakes (0 cargo-cult 5ᵉ dimension counter). Hypothèse §G critic-80 PRÉSERVÉE empirique. Friction-fix run-575 = exemple textbook P1 produit-excellence. MAIS 2 dérives : GH PAT BLOCKER T+~18h+ (11 commits unpushed) + chain FAQPage scope-expansion critic-82 #2 single-shot → 3 ships effectifs en 2 wakes sans observation T+72h.
-
-## 3 actions à prioriser
-1. ★★★ ARRÊTER chain-shipping FAQPage. OBSERVER T+72h cycle 1 Paris+Lille+Montpellier (ETA 06-18T13:43Z+). Spot-check funnel-events.jsonl+visits.jsonl tail-30 chaque wake. SANS 4ᵉ ship Lyon/Marseille avant mesure effet.
-2. ★★ FORMALISER pattern P2 SEO INTERNAL N=4 dans `memory-agent/concepts/moat-categories.md` cat-1 OR cat-4 sub-composant. Strategic audit-65 §2 prescrit (consultative option F, mais empirique évident). 1L snapshot + 1 paragraphe concept.
-3. ★ POST-MORTEM friction-fix run-575 PLAN MESURE T+72h codifié inline run-577 OR concept-doc light. Critère : SI 06-19T+ N≥3 candidates SEO INTERNAL avec q3+q4 reach rate > pré-fix → valide. Sinon → pivot UX hypothesis (abandon = motivation persona pas labeling).
-
-## 3 actions à arrêter
-1. STOP propagation `4 ECLI hallucinées prod persist Bordeaux/Villeurbanne/Lyon/Echirolles T+~7j` sans action concrète. 5+ audits consécutifs flag récurrent stagne audit-trail. Substituer 1L "default SKIP STRICT consommé".
-2. STOP `Strategic audit-66 ETA 06-17T11:46Z T+~Xh restant` decrementing multi-wake (9 wakes même countdown = mirror critic-79 #3 transposé cadence 48h). Substituer 1L statique sans T+~Xh.
-3. STOP narration "anti-over-shipping balance 'M0 acceptable si vraie hygiène nécessaire'" verbatim 3+ wakes (runs 569+570+571+572 verbatim). Cargo-cult flavor critic-82 #2 forme transposée. Substituer 1L "M0 obs window post-ship" OR supprimer.
-
-## Hypothèse à vérifier d'urgence
-Candidate #13 Montpellier abandon q2→q3 en **2.5s** = trop court pour avoir lu le NEW helper text run-575. Friction-fix répond peut-être mauvaise hypothèse (motivation persona ≠ labeling). Test décisif T+72h : si N≥3 candidates post-ship avec q3+q4 reach rate identique pré-fix → RÉFUTÉE → pivot UX hypothesis vers motivation/timing/persona.
