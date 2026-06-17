@@ -136,6 +136,14 @@ Cross-ref `concepts/traffic-signals.md` H5 sample contaminé reste valide indép
 
 **Forced-trigger smoke prod-side IIFE browser console** (critic-85 #2 option alternative F.4 validation hypothèse-b "instrumentation cassée silencieusement") : non-actionable ce wake faute d'accès console browser réel persona Bouygues (Playwright local possible mais sample synthétique = équivalent run-584 smoke `test-run-584` sessionId déjà PASS). Si signal continue 0/0 T+~5j 06-22 ⇒ reconsidérer Playwright headless DOM-driven IntersectionObserver validation in-vivo.
 
+### F.4 = REJETÉE empirique (run-595 2026-06-17T19:48Z)
+
+Smoke Playwright headless `agent-browser/smoke_v2_instrumentation_run595.py` walk wedge end-to-end (Paris/meublé/20m²/1500€/F → sev=warn dep) + scrollIntoView verdict-card + dispatch `visibilitychange` (hidden=true) + `pagehide` ⇒ `verdict_dwell_ms` event live `funnel-events.jsonl` sessionId `s-mqihgt7a-8bt6d` `ms=4031 src=hide sev=warn` cross-ref confirmé. **8/8 events session écrits propre** (home_visit + wedge_q1-5 + verdict_displayed + verdict_dwell_ms). UA self-tag `BailleurVerifSmoke/run-595` ajouté `BOT_PATTERNS` `build_dashboard_extras.py` ligne 53 ⇒ session auto-classifiée bot dashboard render + flag pre_classification snapshot (+1 counter type smoke distinct natif). Result JSON `data/smoke-v2-instrumentation-run595.json`.
+
+**Implication 4 hypothèses** : F.4 (`v1 instrumentation bug catch signaux perdus` — variante "instrumentation v2 cassée silencieusement post-ship") = **REJETÉE**. Hooks `visibilitychange` + `pagehide` + `IntersectionObserver` v2 fonctionnent côté client + side serveur écrit propre. Reste 3 hypothèses concurrentes pour N=0 cadence flat post-ship 06-16T21:46Z → 06-17T19:48Z (T+22h cumul) : (a) variance Poisson normale λ=0.69 P(0)=50% / (b) post-FAQPage decay structurel / (c) Strategic prompt-impact indirect. Wake +N+1 cadence empirique check : 0 NEW humain qualifying ⇒ option (a) variance Poisson reste plus probable.
+
+Wall-clock 7.82s. Coût total smoke ~15min (dev + run + analyse), conforme cap ≤15min critic-86 #1 budget.
+
 **Note méthodologie** : ce FLAG = analyse pure, 0 ship code, 0 PATCH server.py/app.js. Modifications binding strictes = (a) deadline 06-19T21:46Z → 06-26T21:46Z dans présent doc + ledger + run-589 ; (b) L95 ban reconduit récursif DEPRECATED. Cap PAR CIBLE concept-doc Builder ce wake = consommé (cap 1/sem fenêtre 06-12→06-19, mais ce cap concerne auto-PATCH prompts agents-control, pas concept-doc → N/A).
 
 **Nouvelle deadline binding** : **2026-06-26T21:46Z** (T+10j post-ship instrumentation 06-16T21:46Z). Critères H1-H4 inchangés. Sample mini N≥3 visé. Si N=0 06-26 ⇒ ré-évaluation structurelle (extension T+10j 2ᵉ cycle OR pivot proxy log OR forced-trigger Playwright).

@@ -1,3 +1,15 @@
+## 📊 2026-06-17T19:48Z — Agent → Florian — **Smoke forced-trigger Playwright v2 instrumentation PASS — hypothèse F.4 REJETÉE empirique (critic-86 #1 ★★ honored J+0 T+~48min)**
+
+Test in-vivo via `agent-browser/smoke_v2_instrumentation_run595.py` 154L Python Playwright headless walk wedge end-to-end (Paris/meublé/20m²/1500€/F→sev=warn) + scrollIntoView verdict-card + dispatch `visibilitychange` (hidden=true) + `pagehide`. Cross-ref `funnel-events.jsonl` sessionId `s-mqihgt7a-8bt6d` = **8/8 events propre dont `verdict_dwell_ms ms=4031 src=hide sev=warn` LIVE**. Wall-clock 7.82s.
+
+**Implication** : F.4 (instrumentation v2 cassée silencieusement post-ship run-593) = REJETÉE 100% conf. Hooks IO + visibilitychange + pagehide fonctionnent client + serveur écrit propre. Reste 3 hypothèses concurrentes pour N=0 cadence flat post-ship (T+22h cumul natural traffic) : (a) variance Poisson normale P(0)=50% / (b) post-FAQPage decay structurel / (c) Strategic prompt-impact indirect. Option (a) reste plus probable empirique.
+
+**Hygiène** : UA self-tag `BailleurVerifSmoke/run-595` → pattern ajouté `build_dashboard_extras.py` L53 BOT auto-classification ⇒ session smoke NEG humans_engaged metric. `bot_pre_class=25` agrégé. `tactical_cumul=98 ★`. PAT BLOCKER 33 commits ahead silent (SB-5 active T+~58h+).
+
+— Builder (run-595, critic-86 #1 ★★ HONORED J+0 + critic-85 STOP #3 anti-M0-streak respecté fenêtre 591-596 = 3/6 substantive)
+
+---
+
 ## 📊 2026-06-16T21:46Z — Agent → Florian — **Ship §a+§b instrumentation post-verdict live prod (critic-84 #1 TRIGGER ELIGIBLE wake +N+1 honored J+0)**
 
 PATCH chirurgical ≤22L code-net : `app.js` +18L bloc post `trackFunnel("verdict_displayed")` = IntersectionObserver threshold 0.3 sur `#verdict-card` emit `verdict_dwell_ms` (§a H1+H2) + IO threshold 0.5 sur `#email-gate` emit `email_gate_reached` 1ʳᵉ entrée disconnect (§b H3) + 1L `trackFunnel("share_card_post_verdict_clicked", { sev })` handler shareBtn (H4). `server.py` `FUNNEL_EVENT_TYPES` 22→25 + commentaire origin.
