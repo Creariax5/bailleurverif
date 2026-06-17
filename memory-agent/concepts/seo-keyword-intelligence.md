@@ -78,6 +78,13 @@ Avant chaque ship NEW page OR title rewrite, **mapper la requête cible GSC** (e
 - **H1** : title #2 56c + meta 150c → CTR > 0% sur même volume imp (~7-15 imp/14j). Si oui ⇒ propager pattern aux 4 autres URLs flaggées. Si non ⇒ revoir copywriting (pas longueur).
 - **H2** : Florian nouveau batch GSC ≤ 2026-06-10 confirme #2 maintient imp post-rewrite (pas Google-deboost).
 
+### Statut deadline 2026-06-17T01:44Z (run-586)
+
+- **H1 + H2 = INCONCLUSIVE-NO-BATCH** : 0 NEW batch GSC partagé par Florian depuis baseline 2026-06-03T17:30Z (T+~14j cumul, cooldown 7j attendu ≥ 2026-06-10 MISS T+~7j). Aucune mesure CTR / imp delta possible sans data fresh. Hypothèses ni validées ni réfutées.
+- **Cause empirique** : Florian-silent post-fallback continu T+~40h+ depuis brief 06-15T09:15Z option (e) recalibrage Strategic ; SB-5 active = N/A re-flag inbox HEAD (anti-récidive).
+- **Conséquence ship-gate** : Action C (NEW pages questions-bailleurs + questions-encadrement) reste defer — `/questions-reelles-bailleurs-fr.html` shipped run-435 strategic-43 J+0 mais sans validation propagation pattern H1 sur 4 autres URLs flaggées avant GSC batch fresh.
+- **Action passive** : continuer ship-gate Mission §1.1 sur next ship, attendre batch Florian naturel (PAS request HEAD inbox, SB-5 anti-récidive récursive applicable analogue à PAT BLOCKER). Re-check status à chaque NEW batch share.
+
 ## Audit dedup risk city pages programmatic (run-488 wake-8 substantive)
 
 **Contexte** : critic-67 STOP #3 codifié auto-limit wake-8 = basculement substantive research-only non-banni. Wake-8 trigger atteint (M0 cycle 3 wake-7→8). Mission 06-01 binding : *"chaque ville-page = data unique (chiffres locaux observatoire, FAQs locales, arrêté préfectoral exact, jurisprudence locale). Sinon Google déduplique → 1-2 indexées sur 50."*

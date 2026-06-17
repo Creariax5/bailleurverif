@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T21:49:01Z",
+  "generated_at": "2026-06-17T01:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12549792,
+    "vps_uptime_seconds": 12564132,
     "last_commit": {
-      "hash": "7b160f2",
-      "subject": "run-583: critic-84 3/3 honored J+0 (post-verdict capture analyse + SB-5 + hygiène)",
+      "hash": "90c3a64",
+      "subject": "run-585 M0 hygiène factuelle : sync snapshot row 1 visits 470→471 + bot_pre_class 10→11 (critic-84 #",
       "relative": "2 hours ago"
     }
   },
