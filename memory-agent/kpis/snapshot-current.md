@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-17T21:44Z (run-596 M0 propre cron-tick post-substantive run-595 ; fenêtre 591-596 close = 3/6 substantive 591+593+595 + 3/6 M0 592+594+596 cap critic-85 STOP #3 ≥1/2 satisfait via 595 substantive ; triple carve-out NEG = critic-86 3/3 satisfaits (smoke 595 + post-verdict concept couvre 4 hypothèses cadence gap + hygiène snapshot sync OK 595 sub-content-syndicator+PAT NEG) / Florian inbox HEAD UNCHANGED 19:48Z self-entry / fenêtre 19:44Z→21:44Z = 0 NEW humain qualifying (scan_url_page_visit 20:30Z ip 2995465181 single-event sub-threshold ≤30% conf snapshot doc PAS FYI) ; visits API stats UNCHANGED 492 ; humans_engaged 9-13 raw/7-9 conf-adj UNCHANGED depuis #14 Paris 06-16T10:06Z gap 35h38min T+~12h22 avant seuil 48h critic-86 #2 FYI trigger ; SB-5 PAT silent T+~60h+ post-brief 06-15T09:15Z ; 0 ship 0 NEW counter 0 émission)
+# KPIs Snapshot Current — 2026-06-17T23:44Z (run-597 M0 propre cron-tick standard, nouvelle fenêtre 597-602 ouverte cap ≥1/2 substantive surveillée wake +1 à +5 ; triple carve-out NEG = (a) critic-87 ETA ~07:00Z 06-18 T+~7h16 futur NEG / (b) Florian silent T+~62h+ post-brief 09:15Z option (e) NEG SB-5 active / (c) fenêtre 21:44Z→23:44Z 3 events visits tous BOT REJECTED pre-classification = Applebot tail-suffix ×2 (21:49Z + 22:42Z) + Googlebot tail-suffix `+http://www.google.com/bot.html` ×1 (23:02Z) 4ᵉ type distinct ⇒ 0 NEW humain qualifying ; visits 492→498 +6 brute API stats (3 BOT tail-visits + 3 sub-sources non-tail) ; humans_engaged 9-13 raw/7-9 conf-adj UNCHANGED depuis #14 Paris 06-16T10:06Z gap **37h34min** T+~10h26 avant seuil 48h critic-86 #2 FYI trigger 06-18T10:10Z ; SB-5 PAT silent T+~62h+ post-brief 06-15T09:15Z ; 0 ship 0 NEW counter dimension 0 émission)
 
 > **Compressed run-505** : critic-71 #3 ★ honored J+0 = 297L >58K tokens → core KPI table <100L (gain ~70% tokens wake-baseline read). Archive complète : `kpis/history/snapshot-pre-505.md`. Hygiène memory-agent.
 
@@ -6,7 +6,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 492 | raw +1 run-595 smoke session UA `BailleurVerifSmoke/run-595` BOT pre-classified (+1 dashboard render ban via build_dashboard_extras BOT_PATTERNS L53 ajout pattern) | 06-17T19:48Z smoke sessionId `s-mqihgt7a-8bt6d` BOT (forced-trigger critic-86 #1 ★★) | API stats=492 ; smoke counted brute mais auto-classified BOT post-pattern-fix, NEG humans_engaged |
+| `visits_total` | 498 | +6 fenêtre 21:44Z→23:44Z (3 BOT tail-visits documentés + 3 sub-sources non-tail) | 06-17T23:44Z run-597 cron tick standard | API stats=498 ; 3 tail BOT auto-classified pre-classification rejection (Applebot ×2 + Googlebot ×1) NEG humans_engaged ; reste 3 sub-sources non-tail probable scan-url path déjà comptés autre source nginx + cron sub-agents |
 | `verdict_displayed_events_lifetime` | 13 events / 11 distinct ip_hash | +1 (candidate #14) | 06-16T10:10:10Z candidate #14 Paris sev=ok dep=0 ip_hash 2904947480 funnel home→q1(5s)→q2(132s read)→q3(7s NEW helper text)→q4(23s)→q4-revise(30s)→q5(25s)→verdict | session ~4min deliberate q4 re-answered = real human revision behavior |
 | `humans_engaged_lifetime` | 9-13 raw / 7-9 conf-adj | raw +1 / conf-adj +1 candidate #14 | 06-16T10:06Z candidate #14 Paris Android Chrome/138 Mobile SEO INTERNAL referrer `/encadrement-loyer-paris-2026.html` | funnel COMPLETE home + q1 5s + q2 132s read + q3 7s + q4 23s + q4-revise 30s + q5 25s + verdict_displayed sev=ok dep=0 ⇒ raw qualifying + conf-adj qualifying (verdict_displayed depth atteint, T+~21h post FAQPage Paris ship 06-15T13:43Z run-568, T+~6h post friction-fix q3+q4 helper run-575 03:43Z) ; classification cross-ref UA standard critic-79 #1 méthodologie self-applicative SUCCESS |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
@@ -32,7 +32,7 @@
 - `strategic_self_recalibrages_lifetime = 0 → 1` NEW counter run-567 (1ʳᵉ application auto-PATCH Strategic-cible Builder-décidé empirique via brief Florian autorité explicite)
 - `auto_patch_par_cible_strategic_sem_06-12_06-19 = 0/1 → 1/1` consommé run-567 PATCH `/api/agents/85c78e3b...` HTTP 200 11:46:56Z prompt 8995→7277 chars schedule_interval 12h→48h
 - `wikipedia_fr_drafts_armed_cumul = 2` UNCHANGED (article-1 *Encadrement loyers en France* + article-2 *Loi Climat et résilience* dormant, 3ᵉ draft BAN STRICT cap consommé)
-- `bot_pre_classification_rejections_cumul = 24 → 25` (Applebot tail-suffix ×22 + HeadlessChrome préfixe + Dataprovider `(compatible; X.com)` self-id + BailleurVerifSmoke self-tag run-595 forced-trigger ★ NEW type smoke distinct natif self-induced ; type tableau récap mis à jour, anti-cargo-cult dimension counter audit-80 STOP #1 préservé un seul counter agrégé)
+- `bot_pre_classification_rejections_cumul = 25 → 28` (+3 fenêtre 21:44Z→23:44Z run-597 : Applebot tail-suffix ×2 ip 7460441709+9223405519 + **Googlebot tail-suffix** `+http://www.google.com/bot.html` ip 5994649058 4ᵉ type distinct ; tableau récap mis à jour, anti-cargo-cult dimension counter audit-80 STOP #1 préservé un seul counter agrégé)
 - `instrumentation_design_fixes_lifetime = 1` UNCHANGED (run-593 fix design flaw v1 catch ; run-595 forced-trigger valide v2 fix empirique sans ajouter design dimension ni NEW counter — agrégé `tactical_cumul=98 ★` suffit anti-cargo-cult critic-80 STOP #1+#3 + critic-85 STOP #2 0-NEW-counter-dimension sustained)
 - `bot_post_classification_rollbacks_cumul = 1` (Applebot rollback critic-79 #1 ★★★ run-553 candidate #11 — sémantique distincte vs pre-classification : rollback ≠ pré-empêché)
 - Tableau récap type bot rejeté → cf. section méthodologie ci-dessous (1L par type, anti-cargo-cult dimension counter critic-80 STOP #1)
@@ -105,9 +105,10 @@ Wake-baseline lit cette table puis update inline (pas d'append historique). Appe
 
 | Type bot | Détection | Run instance | Pattern UA |
 |---|---|---|---|
-| Applebot tail-suffix | `(Applebot/0.1; +http://www.apple.com/go/applebot)` parenthèses | run-556 12:25Z + #11 rollback run-553 | préfixe Safari-mimicking + suffixe `(Applebot/...)` |
+| Applebot tail-suffix | `(Applebot/0.1; +http://www.apple.com/go/applebot)` parenthèses | run-556 12:25Z + #11 rollback run-553 + run-597 21:49Z+22:42Z | préfixe Safari-mimicking + suffixe `(Applebot/...)` |
 | HeadlessChrome préfixe | `HeadlessChrome/` keyword | run-554 08:38Z | UA préfixe explicite |
 | Dataprovider self-id | `(compatible; X.com)` self-declaration | run-557 14:18Z | format RFC `(compatible; <domain>)` |
+| Googlebot tail-suffix | `(compatible; Googlebot/2.1; +http://www.google.com/bot.html)` | run-597 23:02Z ip 5994649058 | mobile-Nexus5X préfixe + suffixe `(compatible; Googlebot/...)` officiel Google |
 
 Consolidation `bot_pre_classification_rejections_cumul=3` agrégé. Type distinct OK noté tableau mais 1 counter agrégé +1 suffit (critic-80 STOP #1+#3). Apprentissage pattern : extension méthodologie cross-ref UA inclut auto-detection `(compatible; <domain>.com|.net|.io|.org)` (RFC bot self-declaration).
 
