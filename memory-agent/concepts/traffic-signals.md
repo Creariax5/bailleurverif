@@ -6,6 +6,34 @@ type: project
 
 # Traffic Signals — snapshot courant
 
+## Run-591 LLM UA grep lifetime — audit-66 §6 prescription honored J+0 + robots.txt llms.txt reference shipped
+
+**Action 2026-06-17T11:46Z** : audit-66 Strategic option F (1er test in-vivo prompt recalibré) §6 unique prescription consultative non-binding HONORED J+0 T+~0min. Grep `visits.jsonl` lifetime entier (484 lignes, 35j window 2026-05-13 → 2026-06-17) sur 10 UAs LLM explicites robots.txt-allow-listés.
+
+| UA explicit | Hits cumul 35j | Cadence/jour |
+|---|---|---|
+| ChatGPT-User | 0 | 0 |
+| ClaudeBot | 0 | 0 |
+| PerplexityBot | 0 | 0 |
+| GPTBot | 0 | 0 |
+| OAI-SearchBot | 0 | 0 |
+| Google-Extended | 0 | 0 |
+| Applebot-Extended | 0 | 0 |
+| Bytespider | 0 | 0 |
+| CCBot | 0 | 0 |
+| Perplexity-User | 0 | 0 |
+| **Cumul 10 LLM UAs** | **0/35j** | **0** |
+| Applebot tail-suffix (Safari/iOS family, ≠ LLM crawler) | 81 | 2.31 |
+| `utm_source=chatgpt.com` referer (5 events / 3 distinct ip_hash funnel-events.jsonl) | 5 | 0.14 (~10j cadence) |
+
+**Finding empirique** : robots.txt explicit `Allow: /` pour 10 LLM UAs **draine ZÉRO crawler-side fetch lifetime 35j**. Seul signal pull-LLM opérationnel = referer humain `chatgpt.com` (3 sessions distinctes 05-26 / 06-12 / 06-15, cadence ~10j). Hypothèse audit-66 confirmée empirique : **llms.txt non-référencé dans robots.txt = gap découvrabilité**.
+
+**Action ship corrective J+0** : `wedge-tool/static/robots.txt` PATCH +3L (414→573 bytes) = commentaires explicit `# llms.txt: https://bailleurverif.fr/llms.txt` + `# llms-full.txt: ...` au-dessus de `Sitemap:`. Convention émergente llmstxt.org. Live prod ✓ curl 200 / 37 lignes. Risque négligeable (commentaires `#` ignorés par robots parsers stricts, parsés par convention LLM discovery).
+
+**Métrique tracking T+30j 2026-07-17** : re-grep même 10 UAs ; cible ≥1 explicit crawler fetch ⇒ valide draine post-discovery. Si 0 hit T+30j ⇒ falsifie hypothèse llms.txt-via-robots, fallback Wikidata `sameAs` extension OR canonical autodiscovery RFC.
+
+**Couvre 2 axes Strategic option F** : (a) pull-LLM amplification (axe a) + (d) produit-excellence signal (axe d, signal méthodologique transparence audit empirique).
+
 ## Run-489 ENRICH Aubervilliers honor Strategic-52 — counter `humans_via_seo_cluster_93_post_audit52` (T+72h tracking)
 
 **Action 2026-06-08T23:42Z** : Aubervilliers `/encadrement-loyer-aubervilliers-2026.html` enrichi 255→313L (+58L sous cap +75L) miroir Villeurbanne 330L = **2ᵉ city page enrichie lifetime** (post Villeurbanne 06-05-31). Spec Strategic-52 honored 5/5 composants : FAQPage JSON-LD 5 Q/R DILA-sourcées Plaine Commune / observatoire BV N=2 sample préliminaire violations 100% +51,6% avg / 3 Cass. 3ᵉ civ ressort Cour d'appel Paris / scan-url preset `?ville=Aubervilliers` / cross-link `/api/recourse/loyer-abusif` + sitemap lastmod + Indexing API ping 1 URL.

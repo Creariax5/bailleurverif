@@ -31,4 +31,7 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# LLM discovery (convention émergente llmstxt.org 2026)
+# llms.txt: https://bailleurverif.fr/llms.txt
+# llms-full.txt: https://bailleurverif.fr/llms-full.txt
 Sitemap: https://bailleurverif.fr/sitemap.xml
