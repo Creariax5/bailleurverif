@@ -105,8 +105,8 @@ Ajouter `share_card_downloaded` à la whitelist 10 events `/api/funnel/event` :
 ## Risques connus + mitigations
 
 1. **iOS Safari `canvas.toBlob` partial support** → fallback `canvas.toDataURL("image/png")` à ajouter v1 si Safari users ratio >20%
-2. **Emoji rendering Linux Chrome dépend fonts système** → SVG embed via foreignObject = HTML rendering, emojis fallback noir & blanc possible ; cosmétique seulement
-3. **Foreign object accessibility** : Safari pré-15 limited support — testable share-card-demo.html via Florian iPhone
+2. **Emoji rendering Linux Chrome dépend fonts système** → SVG embed `<text>` natif, emojis fallback noir & blanc possible ; cosmétique seulement
+3. **~~Foreign object accessibility~~ RÉSOLU run-588 2026-06-17T05:44Z** : `<foreignObject>` ne rend pas via WebKit drawImage→canvas (subline disparaissait du PNG sur iPhone Safari = persona Bouygues target). Fix: remplacement par `<text>` natif + `<tspan>` 2-lignes word-boundary wrap (helper `wrapAt(s, 46)`). Smoke 3/3 PASS (danger/warn/ok). +12L net commit `d066a28`.
 4. **Anti-leak PII** : adresse exclue volontairement (juste ville). Tester aucune fuite avant ship homepage.
 
 ## Lien avec funnel T+24h décision (strategic-14)
