@@ -85,6 +85,28 @@ Avant chaque ship NEW page OR title rewrite, **mapper la requête cible GSC** (e
 - **Conséquence ship-gate** : Action C (NEW pages questions-bailleurs + questions-encadrement) reste defer — `/questions-reelles-bailleurs-fr.html` shipped run-435 strategic-43 J+0 mais sans validation propagation pattern H1 sur 4 autres URLs flaggées avant GSC batch fresh.
 - **Action passive** : continuer ship-gate Mission §1.1 sur next ship, attendre batch Florian naturel (PAS request HEAD inbox, SB-5 anti-récidive récursive applicable analogue à PAT BLOCKER). Re-check status à chaque NEW batch share.
 
+## Audit internal-linking depth + FAQPage gap pattern N=5 (run-587 03:43Z micro-action P2 substantive)
+
+**Contexte** : pattern N=5 city-page→home INTERNAL formalisé moat cat-4 #5 run-577 (Montreuil 06-05 + Saint-Denis 06-08 + Bordeaux 06-15 + Paris 06-16 verdict + Montpellier 06-15 abandoned q2). Mission P2 tactique HAUTE explicit "≥2 hubs + ≥3 connexes" internal-linking depth + "FAQPage JSON-LD 8+ Q/R DILA-verified".
+
+**Findings empirique 7 pages crossref** (5 candidates pattern + Lille+Villeurbanne backstop comparaison) :
+
+| Page | Hubs | Connexes-city | FAQPage JSON-LD | Status pattern |
+|---|---|---|---|---|
+| Paris-2026 | 9 | 7 | ✅ (run-568) | Candidate #14 verdict 06-16 |
+| Bordeaux-2026 | 8 | 6 | ✅ (antérieur) | Candidate #12 verdict 06-15 |
+| Lille-2026 | 8 | 6 | ✅ (run-571) | Backstop comparaison |
+| Montpellier-2026 | 8 | 6 | ✅ (run-573) | Candidate #13 abandon q2 06-15 |
+| Villeurbanne-2026 | 9 | 7 | ✅ (strategic-34 antérieur) | Backstop comparaison |
+| **Montreuil-2026** | 7 | 6 | ❌ | **Candidate #1 06-05 (1ᵉʳ pattern)** |
+| **Saint-Denis-2026** | 7 | 6 | ❌ | **Candidate #2 06-08 (2ᵉ pattern)** |
+
+**Findings** : (1) internal-linking depth SUSTAINED 7/7 satisfaction mission tactique HAUTE (hubs 7-9 ≥2 ✅ ; connexes-city 6-7 ≥3 ✅) ; (2) **gap FAQPage Montreuil + Saint-Denis** = 2 PREMIERS candidats du pattern N=5 SANS FAQPage JSON-LD vs 5/7 autres ✅ ; (3) audit dedup risk run-488 documenté ces 2 villes en tier **boilerplate strict** = dédup-risk MAX cumul ⇒ ajout FAQPage = différenciation prioritaire double-justifiée (signal empirique pattern + tier dedup).
+
+**Action queued post-observation T+72h cycle 1** : ETA ≥ 06-18T13:43Z+ (Paris+Lille+Montpellier observation deadline run-577 critic-83 #1 binding). SI cycle 1 valide signal compounding ⇒ ship Montreuil + Saint-Denis FAQPage 8 Q/R DILA (Seine-Saint-Denis arrêté préfectoral + Cass. ECLI judilibre-verified SB-2 strict). SI cycle 1 invalide ⇒ pivot UX hypothesis vs FAQPage replication (anti-cargo-cult).
+
+**Ban active** : critic-83 #1 STRICT "STOP chain-shipping FAQPage SANS 4ᵉ ship Lyon/Marseille avant mesure effet" → applicable Montreuil + Saint-Denis same logic (4ᵉ + 5ᵉ ship FAQPage = chain-shipping pre-observation). 0 ship ce wake. 0 NEW counter (critic-81 STOP #3 sustained). Action passive : ledger run-587 + concept snapshot statique.
+
 ## Audit dedup risk city pages programmatic (run-488 wake-8 substantive)
 
 **Contexte** : critic-67 STOP #3 codifié auto-limit wake-8 = basculement substantive research-only non-banni. Wake-8 trigger atteint (M0 cycle 3 wake-7→8). Mission 06-01 binding : *"chaque ville-page = data unique (chiffres locaux observatoire, FAQs locales, arrêté préfectoral exact, jurisprudence locale). Sinon Google déduplique → 1-2 indexées sur 50."*
