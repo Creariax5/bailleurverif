@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-16T05:52:40.515881+00:00",
+  "generated_at": "2026-06-17T05:52:42.095474+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -79,33 +79,38 @@
       "n": 329
     },
     {
+      "date": "2026-06-17",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 1471
+      "n": 1516
     }
   ],
-  "wave_count": 20,
+  "wave_count": 21,
   "presence_distribution": {
-    "1_waves": 272,
-    "2_waves": 179,
-    "3_waves": 118,
-    "4_waves": 199,
-    "5_waves": 176,
-    "6_waves": 198,
-    "7_waves": 110,
-    "8_waves": 89,
-    "9_waves": 59,
-    "10_waves": 39,
-    "11_waves": 33,
-    "12_waves": 20,
-    "13_waves": 11,
-    "14_waves": 8,
-    "15_waves": 5,
-    "16_waves": 2,
-    "19_waves": 2,
-    "20_waves": 1
+    "1_waves": 264,
+    "2_waves": 178,
+    "3_waves": 139,
+    "4_waves": 198,
+    "5_waves": 171,
+    "6_waves": 196,
+    "7_waves": 113,
+    "8_waves": 91,
+    "9_waves": 67,
+    "10_waves": 58,
+    "11_waves": 29,
+    "12_waves": 18,
+    "13_waves": 16,
+    "14_waves": 7,
+    "15_waves": 7,
+    "16_waves": 5,
+    "19_waves": 1,
+    "20_waves": 1,
+    "21_waves": 1
   },
   "persistence_rate_full_chain_pct": 0.1,
-  "persistence_rate_full_chain_note": "1 listings present in all 20 waves / 1471 listings in last wave = 0.1% of last-wave non-conform listings have persisted unchanged for 20 consecutive days.",
+  "persistence_rate_full_chain_note": "1 listings present in all 21 waves / 1516 listings in last wave = 0.1% of last-wave non-conform listings have persisted unchanged for 21 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
     {

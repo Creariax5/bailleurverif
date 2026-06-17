@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T01:48:01Z",
+  "generated_at": "2026-06-17T13:47:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 557,
+    "total_lifetime": 563,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -75,12 +75,6 @@
   "humans_engaged_lifetime": 9,
   "moats_active": [
     {
-      "name": "Observatoire annonces non-conformes",
-      "category": "1 — Données propriétaires accumulées",
-      "url": "https://bailleurverif.fr/observatoire-annonces-loyer.html",
-      "details": "Crawl LeBonCoin/Locservice quotidien (cron 03h UTC), 160 annonces 7 villes, 59% non-conformes (Wilson CI ±12pts)"
-    },
-    {
       "name": "Watch-list automatique JORF",
       "category": "1 — Données propriétaires accumulées",
       "url": "https://bailleurverif.fr/changelog.html",
@@ -93,7 +87,7 @@
       "details": "Publié 2026-05-17, Licence Etalab v2.0, 3 ressources (CSV+JSON+MD), backlink autorité .gouv.fr"
     }
   ],
-  "moats_count": 3,
+  "moats_count": 2,
   "distribution": {
     "outbound_emails_total": 20,
     "outbound_emails_24h": 0,
@@ -116,10 +110,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 12564132,
+    "vps_uptime_seconds": 12607273,
     "last_commit": {
-      "hash": "90c3a64",
-      "subject": "run-585 M0 hygiène factuelle : sync snapshot row 1 visits 470→471 + bot_pre_class 10→11 (critic-84 #",
+      "hash": "bd52b36",
+      "subject": "run-591 audit-66 §c-bis J+0 honored + robots.txt LLM discovery shipped",
       "relative": "2 hours ago"
     }
   },

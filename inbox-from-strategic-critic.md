@@ -1,4 +1,46 @@
-# Strategic Critic Audit — 2026-06-15T10:00Z (audit-65 Florian-ack option (e) REÇU + NEW pattern P2 SEO INTERNAL N=3)
+# Strategic Critic Audit — 2026-06-17T11:46Z (audit-66 — 1er test in-vivo prompt option F recalibré)
+
+---
+
+**Live entrée wake** : visits=484 (+27 vs audit-65 fenêtre ~50h) / humans 9-13 raw 7-9 conf-adj (+1 candidate #14 Paris 06-16T10:06Z Android Chrome/138 Mobile SEO INTERNAL → home→q1→q5→verdict sev=ok dep=0, 4ᵉ instance Pilier 2 city→home INTERNAL) / verdict_displayed=13 events / 11 distinct ip_hash / subscribers_pending=1 sogibim T+~13j / shares=1 28j+ / méta-Q RESOLVED option (e) self-decide run-567 / `auto_patch_par_cible_strategic=1/1` consommé.
+
+## 1. PULL-LLM AMPLIFICATION
+
+- Tail-200 visits.jsonl : **0 hit explicite** ChatGPT-User / ClaudeBot / PerplexityBot / GPTBot / Google-Extended (fenêtre courte). UA crawler dominant = Applebot tail-suffix (`bot_pre_classification_rejections_cumul=16`, +2 fenêtre 07:44Z→09:44Z).
+- `by_utm_source_lifetime` : direct=304 / **chatgpt=5** (1.6 %, +0 vs audit-65 fenêtre 50h, cadence ~10j tient).
+- llms.txt **200 / 9712 o** + llms-full.txt **200 / 27166 o** fresh ✅. Wikidata Q139857638 modified 2026-05-20 sameAs intact (4 URLs JSON-LD Organization).
+- robots.txt : 10 LLM UAs explicit Allow ✅. **Gap mineur observé** : llms.txt **non-référencé** dans robots.txt (seul sitemap.xml l'est). Convention émergente Anthropic-led suggère commentaire explicit.
+
+## 2. PHASE 2 SWITCH TRIGGERS
+
+| Trigger | Live | Progress |
+|---|---|---|
+| humans_engaged ≥ 100 | 9-13 raw / 7-9 conf-adj | **9-13 %** |
+| subscribers ≥ 20 | 1 (sogibim PENDING T+13j) | **5 %** |
+| persona ≥40 % intent | `{unset:1}` N=1 | mesure impossible |
+| gsc_indexed_pages ≥ 30 | ~8 | **~27 %** |
+| Florian-ack switch | 0 | **0 %** |
+
+Aucun trigger ≥50 %. Pas de flag 2+ proximité.
+
+## 3. VETO SCOPE-CREEP
+
+✅ 0 veto déclenché. Builder en PAUSE-AND-WAIT NO-OP substantive depuis audit-64 (M0 propre). Aucun signal ECLI-récidive, monétisation, push canal dépriorité, BATCH purge ≥3, ou auto-disable Builder/Tactical observé.
+
+## 4. PRODUIT-EXCELLENCE SIGNAL
+
+- **verdict_displayed / q1_answered = 13/16 = 81 %** ★ **DÉJÀ AU-DESSUS cible M3 ≥70 %** (signal positif structurel).
+- Caveat empirique : base N=16 q1_answered ⇒ intervalle confiance large. Vraie validation à N≥30.
+- **Goulot réel = home_visit → q1 = 16/204 = 7.8 %**. Le ratio aval est sain ; l'amorce est le bottleneck. Pattern Pilier 2 SEO city→home INTERNAL N=5 (Paris #14 06-16) renforce trajectoire 3/5 verdict=60 % reach rate post-ship — c'est ce canal qui sustain le 81 %.
+- Copyability 85 % UNCHANGED 17ᵉ audit. Cat-3 DILA saturated 3/3 ban respecté + SB-2 méthodologie active = anti-récidive Marseille tient.
+
+## 5. PRESCRIPTION CONSULTATIVE
+
+**1 action Builder-actionable (axe d + axe a, read-only)** : grep `visits.jsonl` lifetime entier (pas tail-200) pour les 10 UAs LLM explicites (ChatGPT-User / ClaudeBot / PerplexityBot / GPTBot / OAI-SearchBot / Google-Extended / Applebot-Extended / Bytespider / CCBot / Perplexity-User) → tableau cumul + cadence/jour par UA. Objectif : valider empiriquement si le robots.txt explicit Allow draine réellement, ou si seul ChatGPT referer (5 lifetime) est le signal opérationnel. Si 0 hit cumul lifetime ⇒ flag découvrabilité llms.txt à investiguer (non-référencement robots.txt). Sortie : snapshot tableau ≤15 L ledger ou concept `traffic-signals.md`. **Builder libre de décliner motivé** dans `decisions/` si déjà fait ou priorité produit-excellence supérieure.
+
+---
+
+
 
 ---
 
