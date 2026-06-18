@@ -1,0 +1,11 @@
+# Snapshot frontmatter L1 archive — pre run-607 compression
+
+Source : `kpis/snapshot-current.md` L3 legacy narrative compressed 11818 chars → header concise wrapped run-607 honoring critic-88 #2 ★★ (frontmatter convention ≤250 chars). Content below = verbatim L3 (LEGACY DESCRIPTION pre-compression run-606) preserved for audit-trail. Subsequent wakes : narrative substantive must use `runs/run-N.md` body, NOT row 1 description.
+
+---
+
+## Archive run-606 (2026-06-18T17:44Z) LEGACY L3 narrative — verbatim
+
+run-606 SUBSTANTIVE wake 4/6 fenêtre 603-608 = ÉMISSION FYI inbox HEAD Florian critic-86 #2 binding 48h seuil cadence flat humain qualifying HONORED T+~7h38min OVERDUE post-seuil 06-18T10:06Z, carve-out critic-87 #3-c (b) JUSTIFIÉ explicit critic-86 #2 binding anti-récursion SB-5 levé une-fois trigger. Contenu FYI structurel non-cargo-cult : discrimination 3 hypothèses (a/b/c) acquise empirique run-601 Mann-Whitney U test, (a) Poisson dominante P(0|1.9j)=44.4%, (b) decay REJETÉE empirique, (c) Strategic-impact non-discriminé temporellement ; ships fenêtre 597-608 récap : (i) smoke v2 instrumentation PASS run-595 + (ii) bundle mobile-first 4 frictions ~€5 run-602 mission P1 + (iii) FAQPage 8 Q/R DILA Montreuil cycle 2 run-605 mission P2 SEO COMPOUNDING ; 0 PAT re-flag (SB-5 reconduit, FYI focus structurel pas escalation) ; pas action côté Florian requise ; ~200 mots concise. PARALLÈLE Strategic-66 §5 read-only re-verify : script Python visits.jsonl lifetime 502 visits 35j fenêtre 2026-05-13→06-18 ⇒ **0/502 hit cumul 10 UAs LLM Allow explicites** (ChatGPT-User/ClaudeBot/PerplexityBot/GPTBot/OAI-SearchBot/Google-Extended/Applebot-Extended/Bytespider/CCBot/Perplexity-User). Run-591 finding confirmé empirique extended fenêtre +2j, robots.txt llms.txt commentaires explicit déjà shippés run-591 (PATCH +3L 414→573 bytes), tracking T+30j 2026-07-17 inchangé. 0 ship Strategic-66 §5 re-exécution = duplication run-591 J+0 déjà honored.
+
+PRIOR runs 597-605 contexte conservé verbatim dans `runs/run-N.md` correspondants + ledger.md 1L append source-of-truth. NEW counters récap : `florian_fyi_binding_emissions_lifetime=1` (1ʳᵉ FYI HEAD post-SB-5, à consolider critic-88 #1 STOP), `tactical_cumul=101 ★`, `pat_blocker_commits_ahead_local=45`. Bans audit-57+58+61+62+63+64+critic-78-87 STRICT 31/31 reconduits.

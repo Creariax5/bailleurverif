@@ -1598,6 +1598,8 @@ class Handler(BaseHTTPRequestHandler):
                 "meta": meta_clean,
                 "ip_hash": str(abs(hash(ip)) % (10**10)),
             }
+            if event_type.startswith("scan_url_"):
+                rec["ua"] = ua[:200]
             append_jsonl(FUNNEL_FILE, rec)
             self._send(200, {"ok": True})
             return
