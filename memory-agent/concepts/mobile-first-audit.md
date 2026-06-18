@@ -119,3 +119,44 @@ Cumul ~€5 low-conf = mid-range "ship+observe" (€2-5 seuil mission). Test emp
 ### Coût comptable
 
 `tactical_critic_recommendations_honored_cumul=99→100 ★` MILESTONE 100ᵉ critic action honored J+0 (cf. ledger run-602 1L). 0 NEW counter dimension (audit-80+85+86 STOPs sustained). 0 NEW page (`pages_total=233` UNCHANGED, PATCH inline).
+
+---
+
+## EXTENDED run-609 2026-06-18T23:44Z — friction iOS auto-zoom inputs/textarea form fields (item dérivé ledger run-608 (o) consumé)
+
+### Trigger
+
+Item ledger run-608 dérivé (o) "audit /scan-url.html mobile différé" CONSUMÉ. Hypothèse pre-audit : potentielle friction iOS Safari auto-zoom sur input focus (font-size < 16px seuil règle Safari).
+
+### Méthodologie
+
+`grep -n "font-size: \.[0-9]" wedge-tool/static/*.html` filter inputs/textarea/select.
+
+### Findings 4 pages (1 shippé + 3 queued)
+
+| Page | Sélecteur | Font-size actuel | iOS auto-zoom | Status |
+|---|---|---|---|---|
+| `scan-url.html` L62 | `.url-input` (input type=url) | `.95rem` (~15.2px) | OUI | **SHIPPED run-609** → `1rem` |
+| `colocation-2026.html` L47-48 | `.input-line input/select` | `.9rem` (~14.4px) | OUI | **QUEUED** |
+| `irl-revision-loyer.html` L61 | `textarea.lrar` (LRAR pre-remplie) | `0.78rem` (~12.5px) | OUI | **QUEUED** |
+| `widget-bailleurverif.html` L34 | `select,input` | `14px` | OUI (14<16 seuil) | **QUEUED** |
+
+### Ship discipline scope STRICT
+
+- **Shippé** : scan-url.html uniquement (item ledger pointe scan-url explicit).
+- **NOT shippé bundle 4 pages** : critic-88 #1 STRICT 0 cargo-cult mobile-first dimension. Queue dérivé ledger run-609 (z) ship conditionnel triggers explicits (Florian-ack OR critic-trigger OR signal data-driven post-instrumentation scan-url).
+
+### Ship-gate scan-url isolé
+
+~€2 (1 page tool Pilier 1 cible target iPhone Bouygues persona empirique candidate #11 Marseille 2026-06-09 + scan-url instrumentation active run-607 mesure indirect). Diff effective = 1 caractère net `.95rem`→`1rem`.
+
+### Smoke 2/2 PASS 2026-06-18T23:44Z
+
+| Check | Result |
+|---|---|
+| Local file grep `font-size: 1rem` url-input L62 | ✓ |
+| Prod https://bailleurverif.fr/scan-url.html curl grep `font-size: 1rem` | ✓ (nginx serve static direct) |
+
+### Coût comptable
+
+`tactical_critic_recommendations_honored_cumul=102→103 ★`. 0 NEW counter dimension (critic-88 #1 STRICT sustained). 0 NEW page (`pages_total=233` UNCHANGED, PATCH inline). PAT 46→47 commits ahead (SB-5 N/A reflag).

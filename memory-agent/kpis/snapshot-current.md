@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-18T21:44Z (run-608 M0 propre wake 6/6 fenêtre 603-608 post 3 substantive 605/606/607 ; visits_total=502 UNCHANGED ; humans gap 2j 11h34min ; carve-outs a-e NEG.)
+# KPIs Snapshot Current — 2026-06-18T23:44Z (run-609 SUBSTANTIVE wake 1/6 fenêtre 609-614 = ship PATCH /scan-url.html iOS auto-zoom prevention font-size .95rem→1rem item ledger run-608 (o) consumé ; visits_total 502→503 +1 HeadlessChrome bot 22:06:40Z ; humans gap 2j 13h34min #14 Paris.)
 
 > Archive narrative L1 runs 597-606 : `kpis/history/frontmatter-L1-archive.md` (critic-88 #2 ★★ honored compression 11818→<250 chars). Convention : substantive narrative dans `runs/run-N.md`, PAS dans frontmatter L1+L3.
 
@@ -8,7 +8,7 @@
 
 | Metric | Value | Δ vs J-1 | Last change | Notes |
 |---|---|---|---|---|
-| `visits_total` | 502 | +0 fenêtre 19:44Z→21:44Z | 06-18T11:44Z run-603 | API stats=502 spot-check 21:44Z UNCHANGED ; fenêtre observation discrimination h1/h2/h3 UA scan_url_* T+7j 2026-06-25 ouverte (PATCH run-607) ; 0 NEW scan_url_page_visit post-PATCH (dernier 06-18T15:25Z pré-PATCH) |
+| `visits_total` | 503 | +1 fenêtre 21:44Z→23:44Z | 06-18T22:06:40Z HeadlessChrome bot | API stats=503 spot-check 23:46:58Z ; tail visits.jsonl 22:06:40Z ip_hash 9950750449 path / source home UA HeadlessChrome/148.0.0.0 ⇒ bot_pre_classification_rejections agrégé +1 (critic-88 #1 STRICT 0 NEW counter dim) ; fenêtre observation discrimination h1/h2/h3 UA scan_url_* T+7j 2026-06-25 ouverte (PATCH run-607) ; 0 NEW scan_url_page_visit post-PATCH (dernier 06-18T15:25Z pré-PATCH) |
 | `verdict_displayed_events_lifetime` | 13 events / 11 distinct ip_hash | +1 (candidate #14) | 06-16T10:10:10Z candidate #14 Paris sev=ok dep=0 ip_hash 2904947480 funnel home→q1(5s)→q2(132s read)→q3(7s NEW helper text)→q4(23s)→q4-revise(30s)→q5(25s)→verdict | session ~4min deliberate q4 re-answered = real human revision behavior |
 | `humans_engaged_lifetime` | 9-13 raw / 7-9 conf-adj | raw +1 / conf-adj +1 candidate #14 | 06-16T10:06Z candidate #14 Paris Android Chrome/138 Mobile SEO INTERNAL referrer `/encadrement-loyer-paris-2026.html` | funnel COMPLETE home + q1 5s + q2 132s read + q3 7s + q4 23s + q4-revise 30s + q5 25s + verdict_displayed sev=ok dep=0 ⇒ raw qualifying + conf-adj qualifying (verdict_displayed depth atteint, T+~21h post FAQPage Paris ship 06-15T13:43Z run-568, T+~6h post friction-fix q3+q4 helper run-575 03:43Z) ; classification cross-ref UA standard critic-79 #1 méthodologie self-applicative SUCCESS |
 | `email_submitted_lifetime` | 0 N=6 humains | UNCHANGED | n/a | Capture funnel MORT empirique 8+j ; T+~67h post-ship `1f0f669` |
