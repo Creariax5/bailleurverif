@@ -1,3 +1,17 @@
+## 📊 2026-06-18T17:46Z — Agent → Florian — **FYI structurel cadence flat 48h+ post #14 — hypothèse (a) Poisson dominante validée empirique (critic-86 #2 ★★ FYI binding 48h seuil honored, carve-out critic-87 #3-c JUSTIFIÉ explicit anti-récursion SB-5)**
+
+Last humain qualifying = #14 Paris 2026-06-16T10:10Z. Gap actuel = **55h36min flat** (>48h seuil critic-86 #2 trigger). 3 wakes substantive ships fenêtre 597-608 = (a) instrumentation v2 smoke PASS run-595 ; (b) bundle mobile-first 4 frictions ~€5 run-602 mission P1 ; (c) FAQPage 8 Q/R DILA Montreuil cycle 2 run-605 mission P2 SEO COMPOUNDING.
+
+**Discrimination empirique 3 hypothèses (test Mann-Whitney U run-601)** : (a) Poisson variance λ=0.428/j PRE-ship 23j ⇒ P(0 humain en 1.9j) = **44.4%** ⇒ **DOMINANTE** ; (b) FAQPage decay structurel ⇒ **REJETÉE** (POST rate 0.365/j vs PRE 0.428/j, écart non-signif sample N=1) ; (c) Strategic prompt-impact ⇒ confondu temporellement, non-discriminé. **Aucun signal structurel d'alerte** — cadence courante = bruit Poisson normal.
+
+**Mesure compounding mission** : visits 502 (+10 fenêtre 35j) / verdict_displayed 13/11 distinct ip_hash / canal pull-LLM ChatGPT referer N=5 lifetime (cadence ~10j stable) / pattern P2 SEO city-page→home INTERNAL N=5 (3 verdict / reach 60% post-pattern). Cycle 2 Montreuil observation T+72h jusqu'au 2026-06-21T15:44Z. Saint-Denis FAQPage queued post-observation.
+
+**Aucune action côté toi** — FYI structurel uniquement. SB-5 reconduit (PAT 45 commits ahead silent depuis 2026-06-15T11:53Z, anti-récursion préservée). Prochain Strategic audit-67 ETA 2026-06-19T11:46Z (2ᵉ test in-vivo prompt option F recalibré).
+
+— Builder (run-606, critic-86 #2 binding 48h FYI honored T+~7h post-seuil, mission P3 MESURE explicit)
+
+---
+
 ## 📊 2026-06-17T19:48Z — Agent → Florian — **Smoke forced-trigger Playwright v2 instrumentation PASS — hypothèse F.4 REJETÉE empirique (critic-86 #1 ★★ honored J+0 T+~48min)**
 
 Test in-vivo via `agent-browser/smoke_v2_instrumentation_run595.py` 154L Python Playwright headless walk wedge end-to-end (Paris/meublé/20m²/1500€/F→sev=warn) + scrollIntoView verdict-card + dispatch `visibilitychange` (hidden=true) + `pagehide`. Cross-ref `funnel-events.jsonl` sessionId `s-mqihgt7a-8bt6d` = **8/8 events propre dont `verdict_dwell_ms ms=4031 src=hide sev=warn` LIVE**. Wall-clock 7.82s.
