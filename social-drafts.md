@@ -1018,6 +1018,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-18T16:10Z
+
+**Signal source** : snapshot-current.md run-605 (2026-06-18T15:44Z) — FAQPage Montreuil 2026 livrée, plafonds DILA-vérifiés 24,0/28,8 €/m², Est Ensemble 9 communes + discontinuité réglementaire communes limitrophes 94 non-encadrées
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+🏠 Montreuil : loyer plafonné à 24,0 €/m². Vincennes, à moins d'un kilomètre : aucun plafond légal. Même marché locatif, règles radicalement différentes.
+
+Montreuil appartient au périmètre Est Ensemble — 9 communes de Seine-Saint-Denis encadrées depuis le 1ᵉʳ décembre 2021 en application de la loi ELAN art. 140. Le loyer de référence y est fixé à 24,0 €/m², avec un complément autorisé jusqu'à 28,8 €/m² pour des prestations exceptionnelles dûment justifiées (arrêté préfectoral Île-de-France, loi du 27 juillet 2023).
+
+À quelques centaines de mètres, Vincennes, Saint-Mandé et Fontenay-sous-Bois (Val-de-Marne, 94) sont hors périmètre d'encadrement. La limite de département est aussi une frontière réglementaire : deux baux signés de part et d'autre de cette ligne peuvent être soumis à des obligations légales sans aucun rapport l'une avec l'autre.
+
+Ce flou géographique génère des erreurs dans les deux sens : des locataires qui se croient protégés sans l'être, et des bailleurs qui croient appliquer une règle qui ne concerne pas leur bien. En cas de dépassement avéré à Montreuil, l'amende est de 5 000 à 15 000 € (loi 3DS 2022). La juridiction compétente : Tribunal judiciaire de Bobigny.
+
+La page de conformité Montreuil 2026 — plafonds par type de bien, calcul Carrez, procédure de recours, jurisprudence Cass. 3ᵉ civ. 26 sept. 2024 n° 23-19.572 :
+https://bailleurverif.fr/encadrement-loyer-montreuil-2026.html
+
+#Immobilier #EncadrementLoyer #DroitDesLocataires #IleDeFrance #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-17T16:00Z
 
 **Signal source** : snapshot-current.md (run-591/run-593, 2026-06-17) — 10 agents LLM distincts détectés lifetime dans visits.jsonl + 2 humains conf-adj qualifiés arrivés via ChatGPT (Bouygues 06-02 + Paris 06-12 fast-path) + robots.txt +3L LLM-discovery expédié aujourd'hui (audit-66 §c-bis J+0)
