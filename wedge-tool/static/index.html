@@ -180,7 +180,7 @@
         </button>
       </div>
       <div class="flex gap-2 mt-5">
-        <button class="text-[color:var(--text-dim)] px-4 py-3" onclick="prev()">← Retour</button>
+        <button class="text-[color:var(--text-dim)] px-4 py-3 min-h-[44px]" onclick="prev()">← Retour</button>
         <button id="btn-2" class="flex-1 sm:flex-none bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl opacity-50 cursor-not-allowed" disabled onclick="next(2)">Suivant →</button>
       </div>
     </div>
@@ -191,7 +191,7 @@
       <p class="text-sm text-[color:var(--text-dim)] mb-4">Surface habitable (bail ou annonce). Une estimation suffit pour un premier verdict.</p>
       <input id="q-surface" type="number" min="5" max="500" inputmode="numeric" placeholder="Ex : 35" class="w-full px-4 py-3 rounded-xl text-base">
       <div class="flex gap-2 mt-5">
-        <button class="text-[color:var(--text-dim)] px-4 py-3" onclick="prev()">← Retour</button>
+        <button class="text-[color:var(--text-dim)] px-4 py-3 min-h-[44px]" onclick="prev()">← Retour</button>
         <button class="flex-1 sm:flex-none bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl" onclick="next(3)">Suivant →</button>
       </div>
     </div>
@@ -202,7 +202,7 @@
       <p class="text-sm text-[color:var(--text-dim)] mb-4">Loyer principal seul (sans charges). Si vous comparez une annonce, prenez le prix affiché.</p>
       <input id="q-loyer" type="number" min="100" max="20000" inputmode="numeric" placeholder="Ex : 850" class="w-full px-4 py-3 rounded-xl text-base">
       <div class="flex gap-2 mt-5">
-        <button class="text-[color:var(--text-dim)] px-4 py-3" onclick="prev()">← Retour</button>
+        <button class="text-[color:var(--text-dim)] px-4 py-3 min-h-[44px]" onclick="prev()">← Retour</button>
         <button class="flex-1 sm:flex-none bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl" onclick="next(4)">Suivant →</button>
       </div>
     </div>
@@ -222,7 +222,7 @@
       </div>
       <p class="text-xs text-[color:var(--text-dim)] mt-3">Je ne sais pas ? <button class="underline" onclick="document.getElementById('q-dpe').value='unknown'; next(5);">Continuer sans le DPE</button></p>
       <div class="flex gap-2 mt-5">
-        <button class="text-[color:var(--text-dim)] px-4 py-3" onclick="prev()">← Retour</button>
+        <button class="text-[color:var(--text-dim)] px-4 py-3 min-h-[44px]" onclick="prev()">← Retour</button>
         <button id="btn-5" class="flex-1 sm:flex-none bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl opacity-50 cursor-not-allowed" disabled onclick="next(5)">Voir mon verdict →</button>
       </div>
     </div>
@@ -279,7 +279,7 @@
         <form id="feedback-form" onsubmit="submitFeedback(event)">
           <textarea id="fb-message" required minlength="3" maxlength="1500" rows="3" placeholder="Ex : « ma colocation meublée est-elle concernée ? » ou « le verdict ne tient pas compte de… »" class="w-full px-4 py-3 rounded-xl text-sm"></textarea>
           <div class="flex flex-col sm:flex-row gap-2 mt-2">
-            <input id="fb-email" type="email" inputmode="email" autocomplete="email" enterkeyhint="send" placeholder="email (facultatif)" class="flex-1 px-4 py-2 rounded-xl text-sm">
+            <input id="fb-email" type="email" inputmode="email" autocomplete="email" enterkeyhint="send" placeholder="email (facultatif)" class="flex-1 px-4 py-3 rounded-xl text-base">
             <button type="submit" class="bg-[color:var(--panel-2)] border border-[color:var(--border)] hover:border-[color:var(--accent)] px-5 py-2 rounded-xl text-sm font-medium">Envoyer</button>
           </div>
         </form>

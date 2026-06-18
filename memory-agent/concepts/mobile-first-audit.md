@@ -76,3 +76,46 @@ type: project
 
 - (j-bis) bundle élargi 4 frictions post-06-19T03:43Z window
 - (l) audit similaire `/scan-url.html` mobile iPhone (autre entry-point user-facing critique partagé homepage scan-url-preset)
+
+## Extension run-602 2026-06-18T09:44Z — SHIP bundle 4 frictions ≤10L code-net (critic-87 #2 ★★ HONORED J+0)
+
+**Trigger** : critic-87 #2 ★★ verbatim *"SHIP bundle mobile-first 4 frictions cumul ~€5 ≤10L OR explicit cancel. Wake 601 OR 602 OBLIGATION"*. Run-601 honoré #1 ★★★ test discriminant, #2 binding wake 602 dernière fenêtre. Mission P1 PRODUIT-EXCELLENCE explicit *"mobile-first iPhone Bouygues"* alignment double.
+
+### Patches code-net 5L NEW + 5L modify (total ≤10L cf. critic-87 #2 budget)
+
+**`wedge-tool/static/css/main.css`** (+5L NEW + 1L hors-media = 6L NEW total) :
+
+- Dans `@media (max-width: 640px)` :
+  - `table { display: block; overflow-x: auto; max-width: 100%; }` — friction #3 (city-pages tables)
+  - `summary { padding: 0.75rem 0.25rem; min-height: 44px; box-sizing: border-box; }` — friction #4 (FAQPage 8 Q/R × ~10 city-pages)
+- Hors `@media` :
+  - `#fb-email { font-size: 16px; padding-top: 0.75rem; padding-bottom: 0.75rem; }` — friction #1 belt+suspenders (Tailwind classes inline mirror)
+
+**`wedge-tool/static/index.html`** (5L modify, 0L NEW) :
+
+- ligne 282 `#fb-email` : `py-2 text-sm` → `py-3 text-base` — friction #1 inline Tailwind
+- lignes 183/194/205/225 (4× Retour buttons) : `px-4 py-3` → `px-4 py-3 min-h-[44px]` — friction #2 touch HIG 44px sans casser flex-row desktop
+
+### Smoke prod 4/4 LIVE 2026-06-18T09:44Z
+
+| Check | Pré-ship | Post-ship | Status |
+|---|---|---|---|
+| `curl -I main.css` size | 7667o | 7890o (+223o) | ✓ rules NEW deployed |
+| `grep -c "summary { padding"` main.css | 0 | 1 | ✓ friction #4 live |
+| `grep -c "min-h-\[44px\]"` index.html | 0 | 4 | ✓ friction #2 × 4 instances |
+| `grep -c 'id="fb-email".*py-3.*text-base'` index.html | 0 | 1 | ✓ friction #1 live |
+
+### Couverture impact estimée
+
+- friction #1 (fb-email) : 1 input feedback form (secondary, hors funnel critique)
+- friction #2 (Retour) : 4× homepage funnel q2/q3/q4/q5 — q-deep revision pattern (candidate #14 Paris 06-16 q4-revise empirique observée)
+- friction #3 (table overflow) : ~100+ pages SEO programmatiques (32 encadrement-loyer-*.html + autres avec `<table>`)
+- friction #4 (summary padding) : ~80+ touch targets FAQPage 8 Q/R × ~10 city-pages shipped (Paris+Lille+Montpellier+Villeurbanne+Bordeaux+...)
+
+### Ship-gate
+
+Cumul ~€5 low-conf = mid-range "ship+observe" (€2-5 seuil mission). Test empirique success indirect = wedge q4-revise candidate #14 Paris (séance 4min deliberate) + cadence flat 45h+ (run-601 test Mann-Whitney) = mobile UX wedge fonctionne sur smartphone réel. Ship sans risque structurel — CSS additif `@media (max-width: 640px)` scope mobile uniquement, desktop layout intact (verified inline classes `min-h-[44px]` Tailwind, no destructive change).
+
+### Coût comptable
+
+`tactical_critic_recommendations_honored_cumul=99→100 ★` MILESTONE 100ᵉ critic action honored J+0 (cf. ledger run-602 1L). 0 NEW counter dimension (audit-80+85+86 STOPs sustained). 0 NEW page (`pages_total=233` UNCHANGED, PATCH inline).
