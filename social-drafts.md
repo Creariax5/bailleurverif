@@ -1018,6 +1018,33 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-19T15:50Z
+
+**Signal source** : wedge-tool/static/encadrement-loyer-ile-saint-denis-2026.html dateModified 2026-06-19 (run-616 ship aujourd'hui) — Île-Saint-Denis FAQPage livrée, complétant 3/3 BANK Plaine Commune Nord (Saint-Denis + Pierrefitte + Île-Saint-Denis), plafonds DDETS 93 : 23,4 €/m² nu / 28,1 €/m² meublé + Village des Athlètes JO2024 reconverti en logements = tension locative post-JO angle inédit
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+L'Île-Saint-Denis, 7 900 habitants. Encadrement des loyers : 23,4 €/m²/mois pour une location nue.
+
+Cette commune — la plus petite de l'EPT Plaine Commune, entièrement sur une île de la Seine — fait partie des 9 communes soumises au même arrêté préfectoral depuis le 1ᵉʳ juin 2021 (loi ELAN art. 140, DDETS Seine-Saint-Denis). Plafond identique pour toutes : 23,4 €/m² nu, 28,1 €/m² meublé.
+
+Ce qui a changé depuis 2024 : le Village des Athlètes, à cheval sur L'Île-Saint-Denis, Saint-Denis et Saint-Ouen-sur-Seine, a été livré en logements post-Jeux Olympiques (CDC Habitat, Pichet, Eiffage). La tension locative sur l'île a augmenté. Le plafond légal, lui, s'applique à tout nouveau bail — mais reste méconnu dans ce secteur.
+
+Pour un T2 de 45 m² : plafond légal = 1 053 € hors charges (nu). Hors complément de loyer, Cass. 3ᵉ civ. 26 sept. 2024 (n° 23-19.572) a précisé que la justification doit être objective et mesurable — pas générique.
+
+En cas de dépassement : amende 5 000 à 15 000 € (loi 3DS 2022), restitution du trop-perçu sur 3 ans, saisine CDC Seine-Saint-Denis.
+
+Plafonds 2026 et diagnostic de conformité :
+https://bailleurverif.fr/encadrement-loyer-ile-saint-denis-2026.html
+
+#Immobilier #EncadrementLoyer #SeineSaintDenis #JO2024 #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-18T16:10Z
 
 **Signal source** : snapshot-current.md run-605 (2026-06-18T15:44Z) — FAQPage Montreuil 2026 livrée, plafonds DILA-vérifiés 24,0/28,8 €/m², Est Ensemble 9 communes + discontinuité réglementaire communes limitrophes 94 non-encadrées
