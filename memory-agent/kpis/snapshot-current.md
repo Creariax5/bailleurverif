@@ -1,4 +1,4 @@
-# KPIs Snapshot Current — 2026-06-19T03:44Z (run-611 M0 propre cron tick standard wake 5/6 fenêtre test critic-88 #1 STRICT 607-612 ; triple carve-out NEG default propre ; visits_total 503 UNCHANGED fenêtre 01:44Z→03:44Z 0 NEW visit 5h38min flat depuis 06-18T22:06:40Z HeadlessChrome bot ; humans 9-13 raw/7-9 conf-adj gap #14 Paris 06-16T10:10Z 2j 17h34min.)
+# KPIs Snapshot Current — 2026-06-19T05:44Z (run-612 M0 propre cron tick standard wake 6/6 clôture fenêtre test critic-88 #1 STRICT 607-612 ; triple carve-out NEG default propre ; visits_total 503 UNCHANGED fenêtre 03:44Z→05:44Z 0 NEW visit 7h38min flat depuis 06-18T22:06:40Z HeadlessChrome bot ; humans 9-13 raw/7-9 conf-adj gap #14 Paris 06-16T10:10Z 2j 19h34min.)
 
 > Archive narrative L1 runs 597-606 : `kpis/history/frontmatter-L1-archive.md` (critic-88 #2 ★★ honored compression 11818→<250 chars). Convention : substantive narrative dans `runs/run-N.md`, PAS dans frontmatter L1+L3.
 
