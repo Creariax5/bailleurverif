@@ -1,83 +1,65 @@
 {
-  "generated_at": "2026-06-18T05:48:02Z",
+  "generated_at": "2026-06-19T01:48:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4573,
-    "requests_24h": 0,
-    "bot_hits_lifetime": 2225,
-    "bot_hits_24h": 0,
-    "bot_hits_1h": 0,
-    "human_hits_24h": 0
+    "requests_lifetime": 3719,
+    "requests_24h": 188,
+    "bot_hits_lifetime": 1709,
+    "bot_hits_24h": 26,
+    "bot_hits_1h": 5,
+    "human_hits_24h": 162
   },
   "bots_by_type_lifetime": {
-    "generic-bot": 542,
-    "OAI-SearchBot": 388,
-    "Bingbot": 385,
-    "SemrushBot": 218,
-    "AhrefsBot": 209,
-    "GPTBot": 179,
-    "Googlebot": 76,
-    "ClaudeBot": 46,
-    "PerplexityBot": 27,
-    "HeadlessChrome": 27,
-    "ByteSpider": 23,
-    "DuckDuckBot": 18,
-    "FacebookExt": 17,
-    "Applebot": 16,
+    "generic-bot": 500,
+    "Bingbot": 367,
+    "OAI-SearchBot": 312,
+    "AhrefsBot": 198,
+    "GPTBot": 97,
+    "SemrushBot": 68,
+    "Googlebot": 51,
+    "HeadlessChrome": 36,
+    "FacebookExt": 16,
+    "DuckDuckBot": 16,
     "MJ12bot": 14,
-    "Amazonbot": 13,
     "Go-HTTP": 11,
-    "BaiduSpider": 9,
-    "PetalBot": 4,
-    "curl/wget": 2
+    "BaiduSpider": 10,
+    "ByteSpider": 6,
+    "PetalBot": 3,
+    "PerplexityBot": 2,
+    "curl/wget": 1,
+    "python-script": 1
   },
-  "bots_by_type_24h": {},
+  "bots_by_type_24h": {
+    "HeadlessChrome": 9,
+    "OAI-SearchBot": 6,
+    "Bingbot": 6,
+    "MJ12bot": 2,
+    "BaiduSpider": 2,
+    "Googlebot": 1
+  },
   "bot_last_seen": {
-    "MJ12bot": "2026-06-15T14:51:26+00:00",
     "Googlebot": "2026-06-16T21:14:29+00:00",
-    "Bingbot": "2026-06-16T21:41:41+00:00",
+    "MJ12bot": "2026-06-15T14:51:26+00:00",
     "OAI-SearchBot": "2026-06-16T21:43:58+00:00",
-    "BaiduSpider": "2026-06-16T18:55:30+00:00",
-    "FacebookExt": "2026-06-16T15:31:47+00:00",
-    "generic-bot": "2026-06-16T14:51:13+00:00",
-    "ByteSpider": "2026-06-16T15:20:22+00:00",
-    "GPTBot": "2026-06-16T10:02:28+00:00",
-    "DuckDuckBot": "2026-06-16T12:41:12+00:00",
-    "SemrushBot": "2026-06-16T20:37:17+00:00",
-    "AhrefsBot": "2026-06-16T12:57:25+00:00",
-    "curl/wget": "2026-06-12T04:51:47+00:00",
-    "PerplexityBot": "2026-06-16T07:19:33+00:00",
-    "Amazonbot": "2026-06-11T22:33:37+00:00",
-    "Applebot": "2026-06-11T22:33:35+00:00",
-    "ClaudeBot": "2026-06-11T22:33:47+00:00",
-    "PetalBot": "2026-06-15T23:47:49+00:00",
-    "Go-HTTP": "2026-06-16T18:57:17+00:00",
+    "Bingbot": "2026-06-16T21:41:41+00:00",
     "HeadlessChrome": "2026-06-15T17:12:07+00:00",
-    "python-script": "2026-06-15T00:16:47+00:00"
+    "BaiduSpider": "2026-06-16T18:55:30+00:00",
+    "SemrushBot": "2026-06-16T20:37:17+00:00",
+    "FacebookExt": "2026-06-16T15:31:47+00:00",
+    "curl/wget": "2026-06-12T04:51:47+00:00",
+    "Go-HTTP": "2026-06-16T18:57:17+00:00",
+    "AhrefsBot": "2026-06-16T12:57:25+00:00",
+    "GPTBot": "2026-06-16T10:02:28+00:00",
+    "generic-bot": "2026-06-16T14:51:13+00:00",
+    "DuckDuckBot": "2026-06-16T12:41:12+00:00",
+    "ByteSpider": "2026-06-16T15:20:22+00:00",
+    "PetalBot": "2026-06-15T23:47:49+00:00",
+    "python-script": "2026-06-15T00:16:47+00:00",
+    "PerplexityBot": "2026-06-16T07:19:33+00:00"
   },
-  "last_googlebot": "2026-06-16T21:14:29+00:00",
-  "last_bingbot": "2026-06-16T21:41:41+00:00",
+  "last_googlebot": "2026-06-18T20:01:12+00:00",
+  "last_bingbot": "2026-06-19T01:38:27+00:00",
   "chart_7days": [
-    {
-      "day": "2026-06-12",
-      "total": 501,
-      "by_type": {
-        "SemrushBot": 57,
-        "PetalBot": 1,
-        "Googlebot": 17,
-        "Bingbot": 245,
-        "OAI-SearchBot": 63,
-        "FacebookExt": 1,
-        "curl/wget": 1,
-        "Go-HTTP": 10,
-        "AhrefsBot": 3,
-        "GPTBot": 89,
-        "generic-bot": 7,
-        "MJ12bot": 4,
-        "DuckDuckBot": 2,
-        "ByteSpider": 1
-      }
-    },
     {
       "day": "2026-06-13",
       "total": 360,
@@ -163,11 +145,42 @@
     },
     {
       "day": "2026-06-18",
-      "total": 0,
-      "by_type": {}
+      "total": 20,
+      "by_type": {
+        "Googlebot": 1,
+        "MJ12bot": 2,
+        "OAI-SearchBot": 5,
+        "Bingbot": 3,
+        "HeadlessChrome": 9
+      }
+    },
+    {
+      "day": "2026-06-19",
+      "total": 6,
+      "by_type": {
+        "OAI-SearchBot": 1,
+        "Bingbot": 3,
+        "BaiduSpider": 2
+      }
     }
   ],
   "hourly_24h": [
+    {
+      "hour": "02",
+      "hits": 0
+    },
+    {
+      "hour": "03",
+      "hits": 0
+    },
+    {
+      "hour": "04",
+      "hits": 0
+    },
+    {
+      "hour": "05",
+      "hits": 0
+    },
     {
       "hour": "06",
       "hits": 0
@@ -226,19 +239,19 @@
     },
     {
       "hour": "20",
-      "hits": 0
+      "hits": 20
     },
     {
       "hour": "21",
-      "hits": 0
+      "hits": 8
     },
     {
       "hour": "22",
-      "hits": 0
+      "hits": 8
     },
     {
       "hour": "23",
-      "hits": 0
+      "hits": 122
     },
     {
       "hour": "00",
@@ -246,58 +259,60 @@
     },
     {
       "hour": "01",
-      "hits": 0
-    },
-    {
-      "hour": "02",
-      "hits": 0
-    },
-    {
-      "hour": "03",
-      "hits": 0
-    },
-    {
-      "hour": "04",
-      "hits": 0
-    },
-    {
-      "hour": "05",
-      "hits": 0
+      "hits": 4
     }
   ],
-  "top_bot_paths_24h": {},
-  "googlebot_paths_lifetime": {
-    "/robots.txt": 50,
-    "/loyer-legal-paris.html": 2,
-    "/encadrement-loyer-echirolles-2026.html": 2,
-    "/lille-dpe-f-g-interdit-location.html": 1,
-    "/encadrement-loyer-paris-2026.html": 1,
-    "/.env.local": 1,
-    "/admin/.env": 1,
-    "/api/v1/settings": 1,
-    "/config.js": 1,
-    "/api/v1/env": 1
+  "top_bot_paths_24h": {
+    "/encadrement-loyer-paris-2026.html": 5,
+    "/": 4,
+    "/css/tailwind-runtime.js": 2,
+    "/robots.txt": 1,
+    "/sitemap.xml": 1,
+    "/encadrement-loyer-les-lilas-2026.html": 1,
+    "/css/main.css": 1,
+    "/static/share-card.js": 1,
+    "/static/app.js": 1,
+    "/api/changelog?limit=5": 1
   },
-  "top_human_paths_24h": {},
-  "status_codes_24h": {},
+  "googlebot_paths_lifetime": {
+    "/robots.txt": 39,
+    "/": 2,
+    "/static/share-card.js": 1,
+    "/api/funnel/event": 1,
+    "/api/visit": 1,
+    "/favicon.svg": 1,
+    "/favicon.ico": 1,
+    "/questions-reelles-bailleurs-fr.html": 1,
+    "/data/observatoire-annonces-loyer-2026-05-17.csv": 1,
+    "/loyer-legal-paris.html": 1
+  },
+  "top_human_paths_24h": {
+    "/": 13,
+    "/robots.txt": 3,
+    "/aides-financieres-locataire-2026.html": 3,
+    "/atom.xml": 2,
+    "/css/tailwind-runtime.js": 2,
+    "/?q=Rennes": 2,
+    "/static/app.js": 2,
+    "/wp-admin/setup-config.php?step=1&language=en_GB": 1,
+    "/wp-admin/install.php?step=1&language=en_GB": 1,
+    "/observatoire-annonces-loyer.html?ville=Lille&cp=59000&loyer=790&surf=33&violation=encadrement&plafond=23.40": 1
+  },
+  "status_codes_24h": {
+    "200": 69,
+    "404": 119
+  },
   "funnel": {
-    "events_total_lifetime": 334,
-    "sessions_lifetime": 242,
-    "sessions_24h": 23,
+    "events_total_lifetime": 339,
+    "sessions_lifetime": 247,
+    "sessions_24h": 5,
     "by_type_24h": {
-      "home_visit": 21,
-      "verdict_dwell_ms": 2,
-      "wedge_q1_answered": 1,
-      "wedge_q2_answered": 1,
-      "wedge_q3_answered": 1,
-      "wedge_q4_answered": 1,
-      "wedge_q5_answered": 1,
-      "verdict_displayed": 1,
-      "scan_url_page_visit": 1
+      "home_visit": 3,
+      "scan_url_page_visit": 2
     },
     "by_type_lifetime": {
-      "home_visit": 222,
-      "scan_url_page_visit": 19,
+      "home_visit": 225,
+      "scan_url_page_visit": 21,
       "wedge_q1_answered": 17,
       "wedge_q2_answered": 14,
       "wedge_q3_answered": 13,
@@ -312,7 +327,7 @@
       "share_card_post_verdict_clicked": 1
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 220,
+      "home_visit": 223,
       "wedge_q1_answered": 17,
       "wedge_q2_answered": 14,
       "wedge_q3_answered": 13,

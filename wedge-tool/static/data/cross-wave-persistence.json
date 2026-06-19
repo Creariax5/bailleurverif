@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-17T05:52:42.095474+00:00",
+  "generated_at": "2026-06-18T05:52:35.498565+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -83,34 +83,39 @@
       "n": 329
     },
     {
+      "date": "2026-06-18",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 1516
+      "n": 1555
     }
   ],
-  "wave_count": 21,
+  "wave_count": 22,
   "presence_distribution": {
-    "1_waves": 264,
-    "2_waves": 178,
-    "3_waves": 139,
-    "4_waves": 198,
-    "5_waves": 171,
+    "1_waves": 258,
+    "2_waves": 177,
+    "3_waves": 131,
+    "4_waves": 221,
+    "5_waves": 167,
     "6_waves": 196,
-    "7_waves": 113,
+    "7_waves": 115,
     "8_waves": 91,
-    "9_waves": 67,
-    "10_waves": 58,
-    "11_waves": 29,
-    "12_waves": 18,
-    "13_waves": 16,
-    "14_waves": 7,
-    "15_waves": 7,
+    "9_waves": 75,
+    "10_waves": 61,
+    "11_waves": 43,
+    "12_waves": 17,
+    "13_waves": 14,
+    "14_waves": 9,
+    "15_waves": 8,
     "16_waves": 5,
+    "17_waves": 3,
     "19_waves": 1,
-    "20_waves": 1,
-    "21_waves": 1
+    "21_waves": 1,
+    "22_waves": 1
   },
   "persistence_rate_full_chain_pct": 0.1,
-  "persistence_rate_full_chain_note": "1 listings present in all 21 waves / 1516 listings in last wave = 0.1% of last-wave non-conform listings have persisted unchanged for 21 consecutive days.",
+  "persistence_rate_full_chain_note": "1 listings present in all 22 waves / 1555 listings in last wave = 0.1% of last-wave non-conform listings have persisted unchanged for 22 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": [
     {
