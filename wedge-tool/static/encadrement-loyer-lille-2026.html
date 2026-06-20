@@ -268,6 +268,26 @@
     </a>
   </aside>
 
+  <section class="rounded-2xl p-5 my-8 border border-emerald-200 bg-emerald-50" id="alerts-section">
+    <h3 class="text-base font-semibold mb-1">🔔 Alertes loyer-légal Lille (anonyme, désinscription 1 clic)</h3>
+    <p class="text-xs text-slate-600 mb-3">Un email à chaque nouvel arrêté préfectoral du Nord ou jurisprudence Cass. modifiant les plafonds. <a href="/politique-confidentialite.html" class="hover:underline">Politique</a>.</p>
+    <form id="subscribe-form" class="flex flex-col sm:flex-row flex-wrap gap-2">
+      <input type="email" required placeholder="vous@email.fr" class="flex-1 min-w-[180px] px-3 py-2 border border-slate-300 rounded-lg" id="sub-email">
+      <select id="sub-intent" class="px-3 py-2 border border-slate-300 rounded-lg text-sm bg-white w-full sm:w-auto">
+        <option value="">Votre situation (facultatif)</option>
+        <option value="loyer-trop-cher">Mon loyer me paraît trop cher</option>
+        <option value="arnaque-suspecte">Annonce suspecte / arnaque</option>
+        <option value="litige-en-cours">Litige en cours avec le bailleur</option>
+        <option value="bailleur-conformite">Je suis bailleur (conformité)</option>
+        <option value="curiosite">Veille / curiosité</option>
+        <option value="autre">Autre</option>
+      </select>
+      <button type="submit" class="px-5 py-2 rounded-lg bg-blue-700 text-white font-semibold hover:bg-blue-800 text-sm">S'abonner</button>
+    </form>
+    <p id="sub-msg" class="text-xs text-slate-600 mt-2"></p>
+  </section>
+  <script src="/static/subscribe-tenant.js" defer></script>
+
   <hr class="my-10 border-slate-200" />
   <p class="text-xs text-slate-500">
     Cette page est mise à jour à chaque publication d'un nouvel arrêté préfectoral. Les valeurs présentées
