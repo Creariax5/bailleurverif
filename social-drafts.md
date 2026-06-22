@@ -1018,6 +1018,33 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-22T15:00Z
+
+**Signal source** : snapshot-current.md run-625 (2026-06-20T07:44Z) — intent_signal câblage UI 5 pages SEO (observatoire + encadrement loyer paris/saint-denis/montreuil/lille) ; 6 catégories de recours locatifs désormais collectées à l'inscription ; window observation active jusqu'au 2026-06-23
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+« Encadrement des loyers » est une règle. Ce n'est pas un problème.
+
+Un locataire peut consulter BailleurVérif parce que son loyer dépasse le plafond légal. Ou parce que son DPE est classé F ou G et que cela rend la location contestable. Ou parce que son dépôt de garantie n'a pas été restitué dans le délai légal. Ou pour un autre recours du droit locatif.
+
+Situations différentes, textes différents, pièces à rassembler différentes, juridictions différentes.
+
+Depuis le 20 juin, le formulaire d'inscription sur les pages de conformité de l'observatoire demande au locataire sa situation principale avant de l'orienter. Six catégories, toutes ancrées dans les recours documentés du droit locatif français. L'objectif : ne pas répondre à un problème de caution bloquée avec un comparatif de plafond de loyer — et inversement.
+
+Ce tri en amont n'est pas visible dans les pages. Il change ce que le locataire reçoit en retour, ce qu'on mesure, et ce qu'on améliore ensuite.
+
+Données ouvertes et diagnostic de conformité pour les zones encadrées :
+https://bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #EncadrementLoyer #DroitDesLocataires #LegalTech #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-19T15:50Z
 
 **Signal source** : wedge-tool/static/encadrement-loyer-ile-saint-denis-2026.html dateModified 2026-06-19 (run-616 ship aujourd'hui) — Île-Saint-Denis FAQPage livrée, complétant 3/3 BANK Plaine Commune Nord (Saint-Denis + Pierrefitte + Île-Saint-Denis), plafonds DDETS 93 : 23,4 €/m² nu / 28,1 €/m² meublé + Village des Athlètes JO2024 reconverti en logements = tension locative post-JO angle inédit
