@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T19:51:01Z",
+  "generated_at": "2026-06-22T21:49:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13061112,
+    "vps_uptime_seconds": 13068193,
     "last_commit": {
-      "hash": "5a62285",
-      "subject": "run-629: enrich Paris DPE page w/ per-arrondissement F:G breakdown (observatoire data, acquisition P",
-      "relative": "22 seconds ago"
+      "hash": "a9a6d4c",
+      "subject": "run-629: compact snapshot H1 pointer",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

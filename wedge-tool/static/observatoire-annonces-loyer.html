@@ -139,6 +139,37 @@
     </p>
   </section>
 
+  <section id="depassement-moyen" class="mb-10">
+    <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">De combien dépassent les loyers non conformes ?</h2>
+    <p class="text-sm mb-3" style="color:var(--text-secondary)">
+      Le taux de non-conformité dépend de l'échantillon (annonces scrapées, non tirées au sort) — il n'est <em>pas</em> une prévalence nationale. En revanche, <strong>l'ampleur du dépassement parmi les annonces non conformes est un signal robuste, indépendant de la taille du sample</strong> : c'est le surcoût médian qu'un locataire paierait au-dessus du plafond préfectoral. Médiane préférée à la moyenne (insensible aux extrêmes type Paris 4ᵉ +175 %).
+    </p>
+    <div class="overflow-x-auto -mx-2 px-2">
+    <table class="w-full text-sm border-collapse" style="color:var(--text-primary)">
+      <thead>
+        <tr style="border-bottom:2px solid var(--border)">
+          <th class="text-left py-2 pr-3 font-semibold">Ville (in-scope)</th>
+          <th class="text-right py-2 px-2 font-semibold whitespace-nowrap">Annonces sample</th>
+          <th class="text-right py-2 px-2 font-semibold whitespace-nowrap">Non conformes <em>clear</em></th>
+          <th class="text-right py-2 px-2 font-semibold whitespace-nowrap">Dépassement médian</th>
+          <th class="text-right py-2 pl-2 font-semibold whitespace-nowrap">Surcoût médian /m²</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--border)"><td class="py-2 pr-3 font-medium">Paris</td><td class="text-right px-2">264</td><td class="text-right px-2">133 (50 %)</td><td class="text-right px-2 font-bold" style="color:#dc2626">+33,9 %</td><td class="text-right pl-2 whitespace-nowrap">+13,6 €/m²</td></tr>
+        <tr style="border-bottom:1px solid var(--border)"><td class="py-2 pr-3 font-medium">Lyon</td><td class="text-right px-2">124</td><td class="text-right px-2">69 (56 %)</td><td class="text-right px-2 font-bold" style="color:#dc2626">+39,1 %</td><td class="text-right pl-2 whitespace-nowrap">+7,9 €/m²</td></tr>
+        <tr style="border-bottom:1px solid var(--border)"><td class="py-2 pr-3 font-medium">Lille (MEL)</td><td class="text-right px-2">109</td><td class="text-right px-2">36 (33 %)</td><td class="text-right px-2 font-bold" style="color:#d97706">+26,4 %</td><td class="text-right pl-2 whitespace-nowrap">+6,2 €/m²</td></tr>
+        <tr style="border-bottom:1px solid var(--border)"><td class="py-2 pr-3 font-medium">Bordeaux</td><td class="text-right px-2">78</td><td class="text-right px-2">43 (55 %)</td><td class="text-right px-2 font-bold" style="color:#dc2626">+33,6 %</td><td class="text-right pl-2 whitespace-nowrap">+7,0 €/m²</td></tr>
+        <tr style="border-bottom:1px solid var(--border)"><td class="py-2 pr-3 font-medium">Villeurbanne</td><td class="text-right px-2">38</td><td class="text-right px-2">22 (58 %)</td><td class="text-right px-2 font-bold" style="color:#dc2626">+44,4 %</td><td class="text-right pl-2 whitespace-nowrap">+8,8 €/m²</td></tr>
+        <tr style="border-top:2px solid var(--border);font-weight:600"><td class="py-2 pr-3">Cumul 632 in-scope</td><td class="text-right px-2">632</td><td class="text-right px-2">314 (50 %)</td><td class="text-right px-2 font-bold" style="color:#dc2626">+35,1 %</td><td class="text-right pl-2 whitespace-nowrap">+9,3 €/m²</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="text-xs mt-3" style="color:var(--text-secondary)">
+      Lecture : à Paris, la moitié des annonces non conformes dépassent le plafond préfectoral de <strong>plus de +33,9 %</strong>, soit <strong>+13,6 €/m²</strong> — sur un 30 m², ≈ 408 €/mois indûment facturés, récupérables sur 3 ans via action en restitution (<a href="/api/recourse/loyer-abusif" class="underline" style="color:var(--accent)">procédure + lettre LRAR</a>). Calcul reproductible sur le <a href="https://github.com/Creariax5/bailleurverif/blob/main/wedge-tool/static/data/observatoire-annonces-loyer-cumulative.csv" class="underline" style="color:var(--accent)">CSV cumulatif</a> (colonnes <code>encadrement_excess_pct</code> / <code>encadrement_excess_eur_m2</code>, filtre <code>encadrement_violation=clear</code>), N=632 in-scope, CC-BY 4.0 Etalab v2.0.
+    </p>
+  </section>
+
   <section id="top-violations" class="mb-10">
     <h2 class="text-xl font-bold mb-3" style="color:var(--text-primary)">Top 5 violations <em>clear</em> du sample</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">

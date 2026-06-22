@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-22T19:50:02Z",
+  "generated_at": "2026-06-22T21:48:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3969,
-    "requests_24h": 743,
-    "bot_hits_lifetime": 2156,
-    "bot_hits_24h": 325,
-    "bot_hits_1h": 15,
-    "human_hits_24h": 418
+    "requests_lifetime": 3916,
+    "requests_24h": 709,
+    "bot_hits_lifetime": 2153,
+    "bot_hits_24h": 297,
+    "bot_hits_1h": 6,
+    "human_hits_24h": 412
   },
   "bots_by_type_lifetime": {
     "GPTBot": 678,
-    "OAI-SearchBot": 312,
+    "OAI-SearchBot": 310,
     "DataForSEO": 296,
     "generic-bot": 275,
-    "Bingbot": 151,
+    "Bingbot": 150,
     "Googlebot": 95,
     "ByteSpider": 94,
-    "PetalBot": 86,
-    "AhrefsBot": 58,
+    "PetalBot": 88,
+    "AhrefsBot": 56,
     "BaiduSpider": 25,
     "HeadlessChrome": 18,
     "SemrushBot": 17,
-    "MJ12bot": 14,
-    "DuckDuckBot": 12,
+    "MJ12bot": 16,
+    "DuckDuckBot": 10,
     "Go-HTTP": 7,
     "PerplexityBot": 7,
     "FacebookExt": 6,
@@ -31,16 +31,16 @@
     "python-script": 2
   },
   "bots_by_type_24h": {
-    "ByteSpider": 82,
-    "OAI-SearchBot": 79,
-    "PetalBot": 62,
-    "Bingbot": 27,
+    "OAI-SearchBot": 82,
+    "PetalBot": 64,
+    "ByteSpider": 52,
+    "Bingbot": 24,
     "Googlebot": 14,
-    "generic-bot": 12,
+    "MJ12bot": 10,
+    "generic-bot": 10,
     "SemrushBot": 9,
     "GPTBot": 9,
     "HeadlessChrome": 9,
-    "MJ12bot": 8,
     "AhrefsBot": 7,
     "BaiduSpider": 5,
     "python-script": 1,
@@ -48,7 +48,7 @@
   },
   "bot_last_seen": {
     "Googlebot": "2026-06-16T21:14:29+00:00",
-    "MJ12bot": "2026-06-22T16:04:24+00:00",
+    "MJ12bot": "2026-06-22T21:37:41+00:00",
     "OAI-SearchBot": "2026-06-16T21:43:58+00:00",
     "Bingbot": "2026-06-16T21:41:41+00:00",
     "HeadlessChrome": "2026-06-22T13:27:06+00:00",
@@ -68,7 +68,7 @@
     "SemrushBot": "2026-06-16T20:37:17+00:00"
   },
   "last_googlebot": "2026-06-22T18:49:05+00:00",
-  "last_bingbot": "2026-06-22T19:39:15+00:00",
+  "last_bingbot": "2026-06-22T21:40:45+00:00",
   "chart_7days": [
     {
       "day": "2026-06-16",
@@ -167,13 +167,13 @@
     },
     {
       "day": "2026-06-22",
-      "total": 271,
+      "total": 284,
       "by_type": {
-        "MJ12bot": 6,
-        "Bingbot": 18,
+        "MJ12bot": 8,
+        "Bingbot": 20,
         "Googlebot": 14,
-        "OAI-SearchBot": 70,
-        "PetalBot": 62,
+        "OAI-SearchBot": 77,
+        "PetalBot": 64,
         "AhrefsBot": 7,
         "BaiduSpider": 5,
         "SemrushBot": 9,
@@ -185,14 +185,6 @@
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "20",
-      "hits": 7
-    },
-    {
-      "hour": "21",
-      "hits": 5
-    },
     {
       "hour": "22",
       "hits": 6
@@ -280,19 +272,27 @@
     {
       "hour": "19",
       "hits": 2
+    },
+    {
+      "hour": "20",
+      "hits": 5
+    },
+    {
+      "hour": "21",
+      "hits": 1
     }
   ],
   "top_bot_paths_24h": {
-    "/encadrement-loyer-paris-2026.html": 28,
-    "/": 28,
+    "/encadrement-loyer-paris-2026.html": 29,
+    "/": 29,
     "/robots.txt": 23,
-    "/api/stats": 11,
-    "/api/visit": 10,
-    "/css/tailwind-runtime.js": 9,
-    "/static/subscribe-tenant.js": 8,
-    "/lille-dpe-f-g-interdit-location.html": 8,
-    "/css/main.css": 6,
-    "/static/share-card.js": 5
+    "/api/stats": 8,
+    "/lille-dpe-f-g-interdit-location.html": 7,
+    "/api/visit": 7,
+    "/css/tailwind-runtime.js": 5,
+    "/static/subscribe-tenant.js": 5,
+    "/encadrement-loyer-lille-2026.html": 4,
+    "/static/share-card.js": 4
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 25,
@@ -307,28 +307,28 @@
     "/encadrement-loyer-paris-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 39,
-    "/robots.txt": 11,
-    "/css/tailwind-runtime.js": 8,
+    "/": 34,
+    "/robots.txt": 10,
+    "/css/tailwind-runtime.js": 9,
+    "/css/main.css": 8,
     "/favicon.svg": 7,
-    "/css/main.css": 7,
-    "/questions-reelles-bailleurs-fr.html": 5,
     "/api/visit": 5,
     "/observatoire-annonces-loyer.html": 5,
     "/guide-colocataire-2026.html": 4,
-    "/api/funnel/event": 4
+    "/api/funnel/event": 4,
+    "/?q=Saint-Martin-D-Heres": 4
   },
   "status_codes_24h": {
-    "200": 616,
-    "404": 122,
+    "200": 583,
+    "404": 121,
     "304": 5
   },
   "funnel": {
     "events_total_lifetime": 376,
     "sessions_lifetime": 271,
-    "sessions_24h": 12,
+    "sessions_24h": 11,
     "by_type_24h": {
-      "home_visit": 12,
+      "home_visit": 11,
       "wedge_q1_answered": 2,
       "recourse_viewed": 2,
       "wedge_q2_answered": 1,
