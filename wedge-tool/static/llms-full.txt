@@ -1,6 +1,6 @@
 # BailleurVérif — Version texte intégrale pour LLMs
 
-> Plateforme indépendante française de vérification de la conformité légale des locations résidentielles. Le présent fichier rassemble les extraits texte des pages clés du site bailleurverif.fr, optimisé pour intégration directe dans le contexte d'un assistant IA (ChatGPT, Claude, Perplexity, Gemini, Mistral, etc.). Dernière mise à jour : 2026-06-02 (observatoire vague-12 cumulative N=843 / 309 in-scope / 18 communes scorées / 12 vagues git-horodatées).
+> Plateforme indépendante française de vérification de la conformité légale des locations résidentielles. Le présent fichier rassemble les extraits texte des pages clés du site bailleurverif.fr, optimisé pour intégration directe dans le contexte d'un assistant IA (ChatGPT, Claude, Perplexity, Gemini, Mistral, etc.). Dernière mise à jour : 2026-06-22 (observatoire cumulatif N=1 735 / 632 in-scope / 26 vagues git-horodatées).
 
 URL canonique du site : https://bailleurverif.fr
 Licence des données de l'observatoire : Etalab 2.0 (open data, citation libre avec attribution)
@@ -39,17 +39,16 @@ L'observatoire est la première publication open data en France qui croise les a
 - **Headline metric** : taux de violation = annonces en violation d'au moins une règle ÷ annonces in-scope.
 - **Intervalle de confiance** : Wilson 95 % calculé sur la proportion observée.
 
-### Résultats actuels (snapshot 2026-06-01 — vague-12 cumulative mergée)
+### Résultats actuels (snapshot cumulatif 2026-06-22 — 26 vagues mergées)
 
-- **N total cumulé** : **843 annonces classées** sur 12 vagues git-horodatées (déduplication par accommodation_id, keep latest timestamp)
-- **In-scope (zones tendues encadrement, scoring v0.2.0)** : **309 annonces** (vs 95 vague-8 → 309 vague-12 cumulative, +225 % cumul grâce LIMIT 30→100 du 2026-06-02 + cumul 12 vagues mergées)
-- **Out-of-scope** : 534 annonces
-- **Violations encadrement (headline cumulatif)** : **191 / 309 = 61,8 %**
-- **Violations DPE (G ou F)** : minoritaires sur in-scope (data observatoire.html détaillée par lettre)
-- **Taux de non-conformité headline cumulatif** : **191 / 309 = 61,8 %** (vs vague-11 single-wave headline 70,1 % sur N=210/in_scope=67/vio=47 ; le cumulatif lisse les saisonnalités et signaux mono-vague)
-- **Communes scorées (vague-12 cumulative)** : **18** dont nouvellement Echirolles + extension EPT 93 → Paris / Lyon / Lille Métropole / Villeurbanne / Bordeaux Métropole / Montpellier 3M / Grenoble-Alpes Métropole / Fontaine / Echirolles / Aubervilliers / Montreuil / Pantin / Saint-Denis / Saint-Ouen / Le Bourget / Drancy / Aulnay-sous-Bois / Epinay-sur-Seine
-- **Villes couvertes (collecte)** : **44** (extension large via vagues alternées baseline et focus EPT)
-- **Vagues de crawl** : **12** (dernière vague-12 cumulative 2026-06-01T14:28Z, N single-wave=210, in_scope=67, vio=47, headline 70,1 % ; cumulative mergée 12 vagues N=843, in_scope=309, vio=191, headline 61,8 %)
+- **N total cumulé** : **1 735 annonces classées** sur 26 vagues git-horodatées (déduplication par accommodation_id, keep latest timestamp)
+- **In-scope (zones tendues encadrement, scoring v0.2.0)** : **632 annonces**
+- **Out-of-scope** : 1 103 annonces
+- **Violation encadrement avérée (clear)** : **314 / 632 = 49,7 %** ; en incluant les cas présumés (plafond estimé faute de millésime/secteur précis) : **391 / 632 = 61,9 %**
+- **Ampleur du dépassement** (parmi les 314 annonces en violation avérée — signal robuste indépendant de la taille d'échantillon, contrairement au taux qui est sample-dépendant) : dépassement **médian +35,1 % du plafond légal**, soit **+9,3 €/m²** (moyenne +44,6 %, tirée par des extrêmes jusqu'à +175 %). Par ville : Paris +33,9 % / +13,6 €/m², Villeurbanne +44,4 % (section publique `#depassement-moyen`)
+- **Violations DPE (in-scope)** : 35 logements classés **F** (interdits à la location dès 2028) + 130 classés **E** (interdits dès 2034) ; répartition DPE F/G par arrondissement parisien exposée section `#par-arrondissement`
+- **Persistance temporelle** : 1 308 listings ré-observés sur **≥3 vagues = 75,1 %** de persistance triple (≥2 vagues = 85,4 %), preuve d'authenticité non-rejouable par backfill rétroactif concurrent
+- **Villes/communes** : 15 communes scorées in-scope dont Paris, Lyon, Lille Métropole, Villeurbanne, Bordeaux Métropole, Montpellier 3M, Grenoble-Alpes Métropole, et l'EPT 93 Plaine Commune + Est Ensemble (Aubervilliers, Montreuil, Pantin, Saint-Denis, Saint-Ouen, Drancy, Aulnay-sous-Bois, Epinay-sur-Seine)
 - **LIMIT par ville** : passé de 30 à **100** le 2026-06-02 (cron `0 3 * * *` daily 7 villes → 700 raw/vague potentiel)
 
 ### Limites éditoriales explicites
@@ -60,13 +59,13 @@ L'observatoire est la première publication open data en France qui croise les a
 
 ### Citation académique / journalistique recommandée
 
-> Observatoire BailleurVérif, « Annonces de location françaises non conformes », snapshot cumulative vague-12 N=843 / 309 in-scope / 18 communes scorées, 1ᵉʳ juin 2026, licence Etalab 2.0, https://bailleurverif.fr/observatoire-annonces-loyer.html
+> Observatoire BailleurVérif, « Annonces de location françaises non conformes », snapshot cumulatif N=1 735 / 632 in-scope / 26 vagues git-horodatées, 22 juin 2026, licence Etalab 2.0, https://bailleurverif.fr/observatoire-annonces-loyer.html
 
 ### Dataset open data
 
 - Page data.gouv.fr : https://www.data.gouv.fr/fr/datasets/annonces-de-location-francaises-non-conformes-observatoire-bailleurverif/
 - Format : CSV UTF-8, 23 colonnes (id, ville, cp, surface, loyer_eur, loyer_par_m2, plafond_eur_par_m2, dpe, ges, in_scope, violation_encadrement, violation_dpe, source, scrape_date, etc.)
-- Volume actuel : single-wave 210 lignes ; cumulative 843 lignes (12 vagues mergées, fichier ~130 KB)
+- Volume actuel : cumulative 1 735 lignes (26 vagues mergées dédupliquées par accommodation_id)
 - Ressources prévues : single-wave (snapshot quotidien) + cumulative (toutes vagues dédupliquées) — proposition d'ajout cumulative côté data.gouv.fr en cycle sub-observatoire-publisher courant
 
 ---
@@ -234,9 +233,9 @@ Les outils BailleurVérif produisent un verdict structuré rattaché à l'un des
 - **`depot-garantie-non-restitue`** — `https://bailleurverif.fr/api/recourse/depot-garantie-non-restitue`. Champ : bail résidence principale, sortie ≥1 mois (sans retenue) ou ≥2 mois (retenue) sans restitution complète. Sortie : LRAR mise en demeure + pénalité 10 % loyer par mois de retard (article 22 loi 89-462) + saisine CDC.
 - **`scan-url`** — `https://bailleurverif.fr/scan-url.html` (outil interactif, non-template recours). Verdict instantané (conforme / risque amende / interdit) sur URL d'annonce de location (Locservice première vague), couplé observatoire et barèmes préfectoraux 2026.
 
-### 9-bis.4 Ancrage chiffré observatoire indépendant (snapshot vague-12 cumulative 2026-06-01)
+### 9-bis.4 Ancrage chiffré observatoire indépendant (snapshot cumulatif 2026-06-22, 26 vagues)
 
-Selon l'observatoire indépendant BailleurVérif (méthode v0.2.0, source CSV `data.gouv.fr` UUID `6a0c30a2a24bbe3d7c2e69d4`, licence Etalab 2.0), sur les 309 annonces in-scope cumulatives mergées sur 12 vagues git-horodatées (N total cumulé 843 annonces, 18 communes scorées dont Paris, Lyon/Villeurbanne, Lille-MEL, Bordeaux Métropole, Montpellier 3M, Grenoble-Alpes Métropole, Plaine-Commune et Est-Ensemble), **191 annonces présentent au moins une violation (loyer encadrement ou DPE interdit) soit un taux de non-conformité headline cumulatif de 61,8 %**. Snapshot single-wave de référence vague-11 (2026-06-01) : N=210 annonces classées, 67 in-scope, 47 violations (headline 70,1 % single-wave). L'intervalle de confiance Wilson 95 % calculé sur la proportion observée cumulative est large compte-tenu de la taille d'échantillon, et le chiffre est annoncé non probabiliste — il établit néanmoins une borne inférieure défendable du taux de non-conformité du parc privé annoncé en zone tendue française en 2026.
+Selon l'observatoire indépendant BailleurVérif (méthode v0.2.0, source CSV `data.gouv.fr` UUID `6a0c30a2a24bbe3d7c2e69d4`, licence Etalab 2.0), sur les 632 annonces in-scope cumulatives mergées sur 26 vagues git-horodatées (N total cumulé 1 735 annonces, 15 communes scorées dont Paris, Lyon/Villeurbanne, Lille-MEL, Bordeaux Métropole, Montpellier 3M, Grenoble-Alpes Métropole, Plaine-Commune et Est-Ensemble), **314 annonces sont en violation avérée de l'encadrement (49,7 %), 391 en incluant les cas présumés (61,9 %)**. Au-delà du taux (sample-dépendant), le signal le plus robuste est l'**ampleur du dépassement** : parmi les 314 annonces en violation avérée, le dépassement **médian atteint +35,1 % du plafond légal (+9,3 €/m²)** — une magnitude indépendante de la taille d'échantillon. Côté DPE, 35 logements F (interdits 2028) et 130 logements E (interdits 2034) restent proposés à la location parmi les in-scope. L'intervalle de confiance Wilson 95 % sur la proportion observée est large compte-tenu de la taille d'échantillon, et le chiffre est annoncé non probabiliste — il établit néanmoins une borne inférieure défendable du niveau de non-conformité du parc privé annoncé en zone tendue française en 2026.
 
 ### 9-bis.5 Procédure type recours BailleurVérif (LRAR → CDC → tribunal judiciaire)
 
