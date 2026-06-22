@@ -75,6 +75,9 @@ FUNNEL_EVENT_TYPES = {
     "verdict_dwell_ms",
     "email_gate_reached",
     "share_card_post_verdict_clicked",
+    # run-628 : recours instantané cat-3 surfacé au verdict sans email-gate (mission P1 action concrète <30s).
+    "recourse_viewed",
+    "recourse_letter_copied",
 }
 
 # OVH Zimbra SMTP — provisionné Florian 2026-05-17T13:55Z, mandated patch run-205.

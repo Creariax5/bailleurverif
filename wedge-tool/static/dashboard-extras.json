@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-06-22T15:48:01Z",
+  "generated_at": "2026-06-22T17:54:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3961,
-    "requests_24h": 712,
-    "bot_hits_lifetime": 2131,
-    "bot_hits_24h": 274,
-    "bot_hits_1h": 7,
-    "human_hits_24h": 438
+    "requests_lifetime": 3960,
+    "requests_24h": 737,
+    "bot_hits_lifetime": 2149,
+    "bot_hits_24h": 313,
+    "bot_hits_1h": 16,
+    "human_hits_24h": 424
   },
   "bots_by_type_lifetime": {
     "GPTBot": 678,
-    "OAI-SearchBot": 315,
+    "OAI-SearchBot": 314,
     "DataForSEO": 296,
-    "generic-bot": 274,
-    "Bingbot": 148,
+    "generic-bot": 276,
+    "Bingbot": 149,
     "Googlebot": 95,
-    "ByteSpider": 72,
-    "PetalBot": 64,
-    "AhrefsBot": 62,
-    "HeadlessChrome": 36,
-    "BaiduSpider": 24,
+    "ByteSpider": 94,
+    "PetalBot": 72,
+    "AhrefsBot": 63,
+    "BaiduSpider": 25,
+    "HeadlessChrome": 18,
     "SemrushBot": 17,
-    "MJ12bot": 12,
+    "MJ12bot": 14,
     "DuckDuckBot": 12,
     "Go-HTTP": 7,
     "PerplexityBot": 7,
@@ -31,28 +31,27 @@
     "python-script": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 72,
-    "ByteSpider": 60,
-    "PetalBot": 43,
-    "Bingbot": 29,
+    "ByteSpider": 82,
+    "OAI-SearchBot": 77,
+    "PetalBot": 48,
+    "Bingbot": 31,
+    "generic-bot": 13,
     "Googlebot": 13,
-    "generic-bot": 11,
     "SemrushBot": 9,
     "GPTBot": 9,
     "HeadlessChrome": 9,
-    "MJ12bot": 6,
-    "AhrefsBot": 6,
-    "BaiduSpider": 3,
-    "DuckDuckBot": 2,
+    "MJ12bot": 8,
+    "AhrefsBot": 7,
+    "BaiduSpider": 5,
     "python-script": 1,
     "FacebookExt": 1
   },
   "bot_last_seen": {
     "Googlebot": "2026-06-16T21:14:29+00:00",
-    "MJ12bot": "2026-06-22T03:20:20+00:00",
+    "MJ12bot": "2026-06-22T16:04:24+00:00",
     "OAI-SearchBot": "2026-06-16T21:43:58+00:00",
     "Bingbot": "2026-06-16T21:41:41+00:00",
-    "HeadlessChrome": "2026-06-15T17:12:07+00:00",
+    "HeadlessChrome": "2026-06-22T13:27:06+00:00",
     "BaiduSpider": "2026-06-16T18:55:30+00:00",
     "generic-bot": "2026-06-16T14:51:13+00:00",
     "PetalBot": "2026-06-15T23:47:49+00:00",
@@ -69,7 +68,7 @@
     "SemrushBot": "2026-06-16T20:37:17+00:00"
   },
   "last_googlebot": "2026-06-22T15:32:33+00:00",
-  "last_bingbot": "2026-06-22T14:56:55+00:00",
+  "last_bingbot": "2026-06-22T17:45:40+00:00",
   "chart_7days": [
     {
       "day": "2026-06-16",
@@ -168,32 +167,24 @@
     },
     {
       "day": "2026-06-22",
-      "total": 193,
+      "total": 245,
       "by_type": {
-        "MJ12bot": 4,
-        "Bingbot": 12,
+        "MJ12bot": 6,
+        "Bingbot": 15,
         "Googlebot": 13,
-        "OAI-SearchBot": 51,
-        "PetalBot": 40,
-        "AhrefsBot": 6,
-        "BaiduSpider": 3,
+        "OAI-SearchBot": 62,
+        "PetalBot": 48,
+        "AhrefsBot": 7,
+        "BaiduSpider": 5,
         "SemrushBot": 9,
-        "generic-bot": 7,
-        "ByteSpider": 30,
+        "generic-bot": 10,
+        "ByteSpider": 52,
         "GPTBot": 9,
         "HeadlessChrome": 9
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "16",
-      "hits": 6
-    },
-    {
-      "hour": "17",
-      "hits": 18
-    },
     {
       "hour": "18",
       "hits": 16
@@ -281,19 +272,27 @@
     {
       "hour": "15",
       "hits": 5
+    },
+    {
+      "hour": "16",
+      "hits": 1
+    },
+    {
+      "hour": "17",
+      "hits": 9
     }
   ],
   "top_bot_paths_24h": {
-    "/": 25,
-    "/encadrement-loyer-paris-2026.html": 23,
-    "/robots.txt": 21,
+    "/": 28,
+    "/encadrement-loyer-paris-2026.html": 26,
+    "/robots.txt": 22,
+    "/api/visit": 11,
+    "/api/stats": 11,
     "/lille-dpe-f-g-interdit-location.html": 10,
-    "/api/visit": 9,
-    "/css/tailwind-runtime.js": 7,
-    "/static/subscribe-tenant.js": 7,
-    "/api/stats": 7,
-    "/static/app.js": 5,
-    "/static/share-card.js": 5
+    "/css/tailwind-runtime.js": 9,
+    "/static/subscribe-tenant.js": 8,
+    "/static/share-card.js": 6,
+    "/api/funnel/event": 6
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 25,
@@ -308,53 +307,63 @@
     "/encadrement-loyer-paris-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 41,
-    "/robots.txt": 12,
+    "/": 39,
+    "/robots.txt": 13,
     "/css/tailwind-runtime.js": 8,
-    "/favicon.svg": 8,
+    "/favicon.svg": 7,
     "/css/main.css": 7,
     "/questions-reelles-bailleurs-fr.html": 5,
     "/api/visit": 5,
     "/observatoire-annonces-loyer.html": 5,
-    "/colocation-2026.html": 4,
-    "/guide-colocataire-2026.html": 4
+    "/guide-colocataire-2026.html": 4,
+    "/api/funnel/event": 4
   },
   "status_codes_24h": {
-    "200": 586,
-    "404": 122,
-    "304": 4
+    "200": 609,
+    "404": 123,
+    "304": 5
   },
   "funnel": {
-    "events_total_lifetime": 361,
-    "sessions_lifetime": 266,
-    "sessions_24h": 8,
+    "events_total_lifetime": 376,
+    "sessions_lifetime": 271,
+    "sessions_24h": 13,
     "by_type_24h": {
-      "home_visit": 9
+      "home_visit": 13,
+      "wedge_q1_answered": 2,
+      "recourse_viewed": 2,
+      "wedge_q2_answered": 1,
+      "wedge_q3_answered": 1,
+      "wedge_q4_answered": 1,
+      "wedge_q5_answered": 1,
+      "verdict_displayed": 1,
+      "email_gate_reached": 1,
+      "verdict_dwell_ms": 1
     },
     "by_type_lifetime": {
-      "home_visit": 247,
+      "home_visit": 251,
       "scan_url_page_visit": 21,
-      "wedge_q1_answered": 17,
-      "wedge_q2_answered": 14,
-      "wedge_q3_answered": 13,
-      "wedge_q4_answered": 13,
-      "wedge_q5_answered": 12,
-      "verdict_displayed": 14,
+      "wedge_q1_answered": 19,
+      "wedge_q2_answered": 15,
+      "wedge_q3_answered": 14,
+      "wedge_q4_answered": 14,
+      "wedge_q5_answered": 13,
+      "verdict_displayed": 15,
       "email_field_focused": 2,
       "signup_confirmed": 1,
       "home_preset_click": 2,
-      "verdict_dwell_ms": 3,
-      "email_gate_reached": 1,
-      "share_card_post_verdict_clicked": 1
+      "verdict_dwell_ms": 4,
+      "email_gate_reached": 2,
+      "share_card_post_verdict_clicked": 1,
+      "recourse_viewed": 2
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 242,
-      "wedge_q1_answered": 17,
-      "wedge_q2_answered": 14,
-      "wedge_q3_answered": 13,
-      "wedge_q4_answered": 12,
-      "wedge_q5_answered": 12,
-      "verdict_displayed": 14,
+      "home_visit": 246,
+      "wedge_q1_answered": 19,
+      "wedge_q2_answered": 15,
+      "wedge_q3_answered": 14,
+      "wedge_q4_answered": 13,
+      "wedge_q5_answered": 13,
+      "verdict_displayed": 15,
       "email_field_focused": 1,
       "email_submitted": 0
     }

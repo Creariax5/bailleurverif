@@ -310,6 +310,61 @@ function showResult() {
     if (lnk) lnk.addEventListener("click", () => { try { if (typeof trackFunnel === "function") trackFunnel("cta_secondary_clicked", { source: "warn_subcta" }); } catch(e){} });
   }
 
+  // Recours instantané (run-628) : surface le template cat-3 (étapes + lettre LRAR pré-remplie) DIRECTEMENT au verdict,
+  // sans email-gate. Mission P1 produit-excellence : verdict → action concrète <30s, 0 friction. Attaque dropout email_submitted=0/6.
+  (function renderRecourse() {
+    let recourseTag = "";
+    if (depassement > 0) recourseTag = "loyer-abusif";
+    else if (state.answers.dpe === "F" || state.answers.dpe === "G") recourseTag = "dpe-invalide";
+    const host = document.getElementById("recourse-block");
+    if (!host) return;
+    host.innerHTML = "";
+    if (!recourseTag) return;
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "w-full glass rounded-xl p-4 text-left font-semibold accent fade-in";
+    btn.innerHTML = "📄 Vos étapes de recours + modèle de lettre pré-remplie <span style='opacity:.7;font-weight:400'>— gratuit, immédiat, sans email</span>";
+    host.appendChild(btn);
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      btn.innerHTML = "Chargement du dossier de recours…";
+      try { if (typeof trackFunnel === "function") trackFunnel("recourse_viewed", { tag: recourseTag, sev: severity }); } catch (e) {}
+      try {
+        const r = await fetch("/api/recourse/" + recourseTag);
+        const d = await r.json();
+        if (!r.ok || !d || !d.title) throw new Error("indispo");
+        const esc = s => String(s).replace(/[<>&]/g, c => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" }[c]));
+        const stepsHtml = (d.procedure_steps || []).map(s =>
+          `<li class="mb-2"><strong>${esc(s.label || ("Étape " + s.step))}</strong><ul class="list-disc ml-5 mt-1 text-sm" style="opacity:.9">` +
+          (s.actions || []).map(a => `<li>${esc(a)}</li>`).join("") + `</ul></li>`).join("");
+        let letter = d.sample_letter_md || "";
+        if (depassement > 0) letter = letter.replace(/\[MONTANT[^\]]*\]/g, "~" + depassement.toLocaleString("fr-FR") + " €/mois");
+        const juris = (d.jurisprudence_refs || []).length;
+        const panel = document.createElement("div");
+        panel.className = "glass rounded-xl p-4 sm:p-5 mt-3 fade-in";
+        panel.innerHTML = `
+          <h3 class="text-lg font-bold mb-1">${esc(d.title)}</h3>
+          <p class="text-sm mb-3" style="opacity:.8">Délai médian de résolution : <strong>~${esc(d.expected_resolution_p50_days || "?")} jours</strong> · Taux de succès estimé : <strong>${esc(d.success_rate_estimated_pct || "?")} %</strong>${juris ? ` · <strong>${juris}</strong> décision(s) de justice citée(s)` : ""}.</p>
+          <ol class="list-decimal ml-5 mb-4">${stepsHtml}</ol>
+          <div class="mb-1 text-sm font-semibold">✉️ Modèle de lettre (recommandé avec AR) — à personnaliser :</div>
+          <pre id="recourse-letter" class="text-xs whitespace-pre-wrap rounded-lg p-3" style="background:rgba(0,0,0,.05);max-height:280px;overflow:auto">${esc(letter)}</pre>
+          <button id="recourse-copy" type="button" class="mt-2 text-sm font-semibold underline accent">📋 Copier la lettre</button>
+          <p class="text-xs mt-3" style="opacity:.6">Information juridique indicative, ne constitue pas un conseil juridique personnalisé. Pour un accompagnement gratuit : ADIL de votre département.</p>`;
+        host.appendChild(panel);
+        btn.style.display = "none";
+        const cp = panel.querySelector("#recourse-copy");
+        if (cp) cp.addEventListener("click", () => {
+          (navigator.clipboard ? navigator.clipboard.writeText(letter) : Promise.reject()).then(
+            () => { cp.textContent = "✓ Lettre copiée"; }, () => { cp.textContent = "Sélectionnez le texte ci-dessus pour copier"; });
+          try { if (typeof trackFunnel === "function") trackFunnel("recourse_letter_copied", { tag: recourseTag }); } catch (e) {}
+        });
+      } catch (e) {
+        btn.disabled = false;
+        btn.innerHTML = "📄 Vos étapes de recours (réessayer)";
+      }
+    });
+  })();
+
   // Reframe email-gate + verdict-topic auto-dérivé pour /api/subscribe (strategic-40 + strategic-53 intent_signal UI wiring)
   let verdictTopic = "";
   let intentSignal = "";
