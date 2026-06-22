@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-06-22T13:52:01Z",
+  "generated_at": "2026-06-22T15:48:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3972,
-    "requests_24h": 709,
-    "bot_hits_lifetime": 2139,
-    "bot_hits_24h": 266,
-    "bot_hits_1h": 19,
-    "human_hits_24h": 443
+    "requests_lifetime": 3961,
+    "requests_24h": 712,
+    "bot_hits_lifetime": 2131,
+    "bot_hits_24h": 274,
+    "bot_hits_1h": 7,
+    "human_hits_24h": 438
   },
   "bots_by_type_lifetime": {
-    "GPTBot": 671,
-    "OAI-SearchBot": 319,
+    "GPTBot": 678,
+    "OAI-SearchBot": 315,
     "DataForSEO": 296,
-    "generic-bot": 276,
-    "Bingbot": 150,
-    "Googlebot": 94,
-    "ByteSpider": 73,
-    "AhrefsBot": 67,
+    "generic-bot": 274,
+    "Bingbot": 148,
+    "Googlebot": 95,
+    "ByteSpider": 72,
     "PetalBot": 64,
+    "AhrefsBot": 62,
     "HeadlessChrome": 36,
     "BaiduSpider": 24,
     "SemrushBot": 17,
-    "MJ12bot": 14,
+    "MJ12bot": 12,
     "DuckDuckBot": 12,
     "Go-HTTP": 7,
     "PerplexityBot": 7,
@@ -31,25 +31,25 @@
     "python-script": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 70,
+    "OAI-SearchBot": 72,
     "ByteSpider": 60,
-    "PetalBot": 45,
-    "Bingbot": 27,
-    "Googlebot": 12,
-    "generic-bot": 10,
+    "PetalBot": 43,
+    "Bingbot": 29,
+    "Googlebot": 13,
+    "generic-bot": 11,
     "SemrushBot": 9,
+    "GPTBot": 9,
     "HeadlessChrome": 9,
     "MJ12bot": 6,
     "AhrefsBot": 6,
-    "PerplexityBot": 3,
     "BaiduSpider": 3,
     "DuckDuckBot": 2,
-    "GPTBot": 2,
-    "python-script": 1
+    "python-script": 1,
+    "FacebookExt": 1
   },
   "bot_last_seen": {
     "Googlebot": "2026-06-16T21:14:29+00:00",
-    "MJ12bot": "2026-06-15T14:51:26+00:00",
+    "MJ12bot": "2026-06-22T03:20:20+00:00",
     "OAI-SearchBot": "2026-06-16T21:43:58+00:00",
     "Bingbot": "2026-06-16T21:41:41+00:00",
     "HeadlessChrome": "2026-06-15T17:12:07+00:00",
@@ -68,8 +68,8 @@
     "python-script": "2026-06-21T22:19:58+00:00",
     "SemrushBot": "2026-06-16T20:37:17+00:00"
   },
-  "last_googlebot": "2026-06-22T13:08:02+00:00",
-  "last_bingbot": "2026-06-22T12:53:19+00:00",
+  "last_googlebot": "2026-06-22T15:32:33+00:00",
+  "last_bingbot": "2026-06-22T14:56:55+00:00",
   "chart_7days": [
     {
       "day": "2026-06-16",
@@ -168,32 +168,24 @@
     },
     {
       "day": "2026-06-22",
-      "total": 172,
+      "total": 193,
       "by_type": {
         "MJ12bot": 4,
-        "Bingbot": 10,
-        "Googlebot": 11,
-        "OAI-SearchBot": 42,
+        "Bingbot": 12,
+        "Googlebot": 13,
+        "OAI-SearchBot": 51,
         "PetalBot": 40,
         "AhrefsBot": 6,
         "BaiduSpider": 3,
         "SemrushBot": 9,
-        "generic-bot": 6,
+        "generic-bot": 7,
         "ByteSpider": 30,
-        "GPTBot": 2,
+        "GPTBot": 9,
         "HeadlessChrome": 9
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "14",
-      "hits": 17
-    },
-    {
-      "hour": "15",
-      "hits": 7
-    },
     {
       "hour": "16",
       "hits": 6
@@ -280,23 +272,31 @@
     },
     {
       "hour": "13",
-      "hits": 25
+      "hits": 24
+    },
+    {
+      "hour": "14",
+      "hits": 15
+    },
+    {
+      "hour": "15",
+      "hits": 5
     }
   ],
   "top_bot_paths_24h": {
-    "/encadrement-loyer-paris-2026.html": 25,
-    "/": 23,
+    "/": 25,
+    "/encadrement-loyer-paris-2026.html": 23,
     "/robots.txt": 21,
-    "/lille-dpe-f-g-interdit-location.html": 11,
+    "/lille-dpe-f-g-interdit-location.html": 10,
     "/api/visit": 9,
+    "/css/tailwind-runtime.js": 7,
     "/static/subscribe-tenant.js": 7,
     "/api/stats": 7,
-    "/css/tailwind-runtime.js": 6,
-    "/encadrement-loyer-lille-2026.html": 5,
-    "/api/funnel/event": 5
+    "/static/app.js": 5,
+    "/static/share-card.js": 5
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 24,
+    "/robots.txt": 25,
     "/": 3,
     "/mentions-legales.html": 1,
     "/loyer-legal-paris.html": 1,
@@ -308,20 +308,20 @@
     "/encadrement-loyer-paris-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 37,
-    "/robots.txt": 11,
-    "/css/tailwind-runtime.js": 10,
-    "/css/main.css": 9,
-    "/favicon.svg": 9,
-    "/aides-financieres-locataire-2026.html": 5,
-    "/colocation-2026.html": 5,
+    "/": 41,
+    "/robots.txt": 12,
+    "/css/tailwind-runtime.js": 8,
+    "/favicon.svg": 8,
+    "/css/main.css": 7,
+    "/questions-reelles-bailleurs-fr.html": 5,
     "/api/visit": 5,
-    "/static/subscribe-tenant.js": 4,
-    "/api/stats": 4
+    "/observatoire-annonces-loyer.html": 5,
+    "/colocation-2026.html": 4,
+    "/guide-colocataire-2026.html": 4
   },
   "status_codes_24h": {
-    "200": 584,
-    "404": 121,
+    "200": 586,
+    "404": 122,
     "304": 4
   },
   "funnel": {

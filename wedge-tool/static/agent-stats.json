@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T13:52:01Z",
+  "generated_at": "2026-06-22T15:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 597,
-    "today_utc": 0,
+    "total_lifetime": 598,
+    "today_utc": 1,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -117,12 +117,12 @@
   },
   "system": {
     "wedge_server_pid": "305695",
-    "wedge_server_uptime_seconds": 324380,
-    "vps_uptime_seconds": 13039572,
+    "wedge_server_uptime_seconds": 331340,
+    "vps_uptime_seconds": 13046532,
     "last_commit": {
-      "hash": "a409595",
-      "subject": "run-625 SHIP intent_signal câblage UI 5 pages SEO + shared JS",
-      "relative": "2 days ago"
+      "hash": "e0c3d63",
+      "subject": "run-626 SHIP friction-fix homepage chips ville Step 1 (goulot home→q1)",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
