@@ -1,0 +1,330 @@
+ts_score,source,url_hash,accommodation_id,ville_label,code_postal,code_dept,in_scope_encadrement,surface_m2,loyer_eur_total,eur_per_m2,dpe_letter,ges_letter,meuble,commune_slug,plafond_applied_eur_m2,encadrement_violation,encadrement_excess_eur_m2,encadrement_excess_pct,dpe_violation,violation_type,violation_score,score_version
+2026-06-19T05:52:41+00:00,locservice,46fa90da38609015,100239,Lille (59000),59000,59,true,20,570,28.5,D,D,true,lille,23.4,clear,5.1,21.8,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b5c7b5de7c706228,101102,Nantes (44000),44000,44,false,50,940,18.8,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,cb2a96d9e89b4678,105361,Lille (59000),59000,59,true,33,750,22.73,D,D,true,lille,23.4,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,8ba4215e4759b68f,106301,Toulouse (31000),31000,31,false,15,420,28.0,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4932fd4eba71a98e,106807,Lyon 03 (69003),69003,69,true,25,695,27.8,C,A,false,lyon,20.2,clear,7.6,37.6,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5574b35f2be2f533,107079,Frouzins (31270),31270,31,false,160,1650,10.31,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,9c4785c327b491b3,111351,Toulouse (31000),31000,31,false,25,620,24.8,B,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7bec3a9cd15b0ac6,114725,Toulouse (31000),31000,31,false,22,600,27.27,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,66fc37ff8804d425,124159,Ramonville-Saint-Agne (31520),31520,31,false,22,530,24.09,E,C,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1af9a416c214a341,125051,Lille (59000),59000,59,true,25,730,29.2,D,C,true,lille,23.4,clear,5.8,24.8,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,8267bcb54eda7acb,128936,Toulouse (31000),31000,31,false,18,470,26.11,B,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,92f94b2c9050dbd7,129525,Toulouse (31000),31000,31,false,24,600,25.0,E,B,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,623bdfc75f447696,130230,Marcq-en-Barœul (59700),59700,59,false,73,1250,17.12,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b5f8d22662bbace5,131214,Pessac (33600),33600,33,false,39,680,17.44,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,fc506bd4f2588791,131769,Bordeaux (33000),33000,33,true,17,595,35.0,E,E,false,bordeaux,20.9,clear,14.1,67.5,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b10842aea973e661,135561,Paris 07 (75007),75007,75,true,103,4190,40.68,D,B,false,paris,40.0,presumed,0.68,1.7,none,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,37fe7548c8102f23,148282,Paris 16 (75016),75016,75,true,17,690,40.59,F,F,true,paris,40.0,presumed,0.59,1.5,future_F_2028,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5c24e8d5c8f54d89,152690,Villeurbanne (69100),69100,69,true,19,590,31.05,E,A,true,villeurbanne,19.8,clear,11.25,56.8,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,af0b713eb9208c24,154046,Nantes (44000),44000,44,false,39,635,16.28,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7242f4f7dacbc4e6,1547372,Lyon 07 (69007),69007,69,true,33,919,27.85,C,D,true,lyon,20.2,clear,7.65,37.9,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5362dfd19ddfb213,1549138,Nantes (44000),44000,44,false,23,585,25.43,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2f2271f4bbc34e85,155476,Toulouse (31000),31000,31,false,11,475,43.18,C,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c04335a5c5557c32,156713,Paris 11 (75011),75011,75,true,50,2700,54.0,E,B,true,paris,40.0,clear,14.0,35.0,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,9c9e8c92d7285942,1580108,Wambrechies (59118),59118,59,false,16,420,26.25,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c94ed3a18874dbb9,158654,Valenciennes (59300),59300,59,false,22,405,18.41,E,D,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c83efeef1f1fc77d,159179,Lyon 03 (69003),69003,69,true,35,1010,28.86,C,B,true,lyon,20.2,clear,8.66,42.9,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c7e3bf03772343c3,1606162,Toulouse (31000),31000,31,false,25,800,32.0,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c55beea4ce636eb1,1624808,Oullins (69600),69600,69,false,13,450,34.62,E,E,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,150467a838c8756a,1627713,Lille (59000),59000,59,true,50,840,16.8,D,C,false,lille,23.4,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,72a25a07bf66caf9,162887,Paris 12 (75012),75012,75,true,12,980,81.67,C,D,true,paris,40.0,clear,41.67,104.2,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,03eb344af535e5a7,1629401,Marseille 05 (13005),13005,13,false,31,870,28.06,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,9c33c225d5508c64,164961,Paris 13 (75013),75013,75,true,43,1620,37.67,E,B,false,paris,40.0,none,0.0,0.0,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,053b3a0c8eb06b5e,166746,Paris 08 (75008),75008,75,true,50,2500,50.0,E,E,true,paris,40.0,clear,10.0,25.0,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5b9e7ab193e9a612,166967,Bordeaux (33000),33000,33,true,32,670,20.94,B,B,false,bordeaux,20.9,presumed,0.04,0.2,none,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,6cb35c4865235d71,167828,Gradignan (33170),33170,33,false,14,520,37.14,E,F,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,378b3b9e6a92ebf7,1714291,Arles (13104),13104,13,false,31,600,19.35,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4b72926f4582f3b9,176443,Toulouse (31000),31000,31,false,33,600,18.18,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3cbc455c9658d542,1778301,Aucamville (31140),31140,31,false,32,660,20.62,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,bb060a4bb6010b2a,1778310,Marseille 06 (13006),13006,13,false,38,900,23.68,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,64572e1f4b5dcaeb,180846,Toulouse (31000),31000,31,false,50,900,18.0,C,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a8188f7b51d8db8c,1829128,Pornichet (44380),44380,44,false,70,1120,16.0,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2bd34a6ad2b2dfae,184907,Lyon 07 (69007),69007,69,true,18,580,32.22,C,B,true,lyon,20.2,clear,12.02,59.5,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4a13ed06f67d5b8f,185100,Pessac (33600),33600,33,false,23,585,25.43,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,80dfcc878ccf70dc,1906807,Toulouse (31000),31000,31,false,18,595,33.06,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,8fd3a847b6c4cfdf,1906961,Champagne-au-Mont-d&#039;Or (69410),69410,69,false,60,987,16.45,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e1c1ac46445b5378,1926045,Paris 18 (75018),75018,75,true,23,900,39.13,D,D,false,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,55e09b999e5c1dd8,1928935,Mimet (13105),13105,13,false,100,1700,17.0,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,6dd5771075ad93b4,1935177,Gradignan (33170),33170,33,false,63,1170,18.57,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,cd11a48539d22194,193731,Gradignan (33170),33170,33,false,15,540,36.0,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7086a655b98ec8b1,194064,Toulouse (31000),31000,31,false,22,545,24.77,B,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1c805d6c6f47be52,1947624,La Baule-Escoublac (44500),44500,44,false,25,515,20.6,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,51f734649d501c07,1961329,Pornichet (44380),44380,44,false,99,1725,17.42,D,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,decb23c347a3fc44,1993000,Villeurbanne (69100),69100,69,true,12,490,40.83,A,A,true,villeurbanne,19.8,clear,21.03,106.2,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,9104431ef09f1083,199379,Marseille 12 (13012),13012,13,false,18,500,27.78,E,E,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b69f2eb367b81122,2000648,Saint-Priest (69800),69800,69,false,12,490,40.83,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0b16dceb311529d7,2012573,Paris 15 (75015),75015,75,true,16,1195,74.69,E,A,true,paris,40.0,clear,34.69,86.7,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,11480c09c62618af,201683,Valenciennes (59300),59300,59,false,42,635,15.12,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1ac2c2acdfc345ba,2031906,Nantes (44000),44000,44,false,48,795,16.56,E,B,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2e8ba96fe7a3d818,2041072,Lille (59000),59000,59,true,33,700,21.21,D,B,true,lille,23.4,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,fbc9556309e0fccf,2045703,Lyon 09 (69009),69009,69,true,67,1100,16.42,C,C,false,lyon,20.2,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5523b31b6fea5d94,204907,Toulouse (31000),31000,31,false,100,1300,13.0,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,133a8c5ec8102e1b,205729,Mérignac (33700),33700,33,false,11,450,40.91,D,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0c41227a793f3155,2063390,Lyon 08 (69008),69008,69,true,17,498,29.29,D,B,true,lyon,20.2,clear,9.09,45.0,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,75bca3838c8cc884,2071765,Marseille 10 (13010),13010,13,false,30,1100,36.67,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c13745df00a23c05,2081045,Nantes (44000),44000,44,false,26,600,23.08,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,bff918065f8967c4,208302,Paris 09 (75009),75009,75,true,26,1230,47.31,E,D,true,paris,40.0,clear,7.31,18.3,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,8913158f339ea0aa,2090551,Aix-en-Provence (13080),13080,13,false,70,1340,19.14,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,794f591b22ae2bb1,2096255,Tourcoing (59200),59200,59,false,96,1300,13.54,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,eb0c004876d53835,2097606,Bordeaux (33000),33000,33,true,21,505,24.05,C,A,false,bordeaux,20.9,clear,3.15,15.1,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,551ef014f83ae3e7,2104815,Bordeaux (33000),33000,33,true,59,1200,20.34,B,B,true,bordeaux,20.9,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,6d7e872de1f4ea68,2112027,Marseille 08 (13008),13008,13,false,10,520,52.0,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e0107c2654e7db44,2112868,Gradignan (33170),33170,33,false,15,500,33.33,D,E,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4cc89eb5f6926614,2115137,Paris 17 (75017),75017,75,true,64,2400,37.5,D,D,true,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7daf350d6dfc64a7,2120353,Condrieu (69420),69420,69,false,90,870,9.67,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,bd38c2b2ad627a48,2125751,Marseille 08 (13008),13008,13,false,68,1800,26.47,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f7f2a9b7cf156a80,212601,Lille (59000),59000,59,true,32,600,18.75,D,D,false,lille,23.4,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f4467505574dd3c7,212988,Paris 11 (75011),75011,75,true,24,990,41.25,E,C,true,paris,40.0,presumed,1.25,3.1,future_E_2034,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3e9a0fba39642e8a,2134776,Thouaré-sur-Loire (44470),44470,44,false,9,320,35.56,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,91ed4dc627d19af6,2137500,Saint-Nazaire (44600),44600,44,false,12,420,35.0,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,fcd08013e1bd914a,2138697,Saint-Herblain (44800),44800,44,false,34,665,19.56,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,100fafd769e6a563,2205722,Roubaix (59100),59100,59,false,10,340,34.0,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a640cc224a23d4cc,2207469,Bordeaux (33000),33000,33,true,80,1325,16.56,C,C,false,bordeaux,20.9,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3d77e0fd8806011c,2214985,Ronchin (59790),59790,59,false,23,697,30.3,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,68eff22d8d564ccc,221713,Toulouse (31000),31000,31,false,22,545,24.77,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5402c022e8fb5460,2217680,Ronchin (59790),59790,59,false,25,697,27.88,D,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,996bf034c4e0140f,222898,Tourcoing (59200),59200,59,false,35,565,16.14,E,C,false,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,027a7032ece0b786,2231624,Basse-Goulaine (44115),44115,44,false,18,392,21.78,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,541375acb3a1f1a2,2236381,Paris 11 (75011),75011,75,true,21,890,42.38,D,B,true,paris,40.0,presumed,2.38,6.0,none,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4e417cc7e1f90db0,2236387,Paris 11 (75011),75011,75,true,35,1540,44.0,D,B,true,paris,40.0,clear,4.0,10.0,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f6a1d1283b49f039,2246120,Nantes (44000),44000,44,false,27,690,25.56,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4daac3a31dd83131,2270122,La Ciotat (13600),13600,13,false,31,730,23.55,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,585098d3472ae3f5,2270130,Bordeaux (33000),33000,33,true,48,854,17.79,C,A,true,bordeaux,20.9,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,427b92cf99b4f76b,2283346,Treillières (44119),44119,44,false,49,850,17.35,B,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,01b95eff624815d8,2286654,Gardanne (13120),13120,13,false,29,730,25.17,D,F,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,948aba8989a972a1,2292685,Toulouse (31000),31000,31,false,15,150,10.0,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,6386a4eedfa743ff,229804,Marseille 05 (13005),13005,13,false,19,531,27.95,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a57a91677da7af8f,2301087,Paris 20 (75020),75020,75,true,52,1950,37.5,B,C,true,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4490be866087aac7,2305373,Lyon 03 (69003),69003,69,true,71,1295,18.24,D,D,false,lyon,20.2,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1cd6f2346d2d8237,2313608,Douai (59500),59500,59,false,20,560,28.0,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2578e63cf3b803c5,2324826,Arles (13104),13104,13,false,33,530,16.06,E,C,false,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,607583a6e886ea3b,2350782,Paris 14 (75014),75014,75,true,51,1750,34.31,A,A,true,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a68b44c763612779,235083,Bordeaux (33000),33000,33,true,22,450,20.45,D,E,false,bordeaux,20.9,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b7a1ef78dcb2cf1d,235813,Paris 16 (75016),75016,75,true,17,920,54.12,C,D,true,paris,40.0,clear,14.12,35.3,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,03c9210f1db6ac9e,2373895,Aix-en-Provence (13080),13080,13,false,100,1400,14.0,D,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7d85948e8d855e9b,2381267,Nantes (44000),44000,44,false,64,1245,19.45,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,be46a82b98825ebe,2381274,Marseille 08 (13008),13008,13,false,75,1350,18.0,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ad4ea9fc1832a473,2391524,Bordeaux (33000),33000,33,true,20,900,45.0,C,C,true,bordeaux,20.9,clear,24.1,115.3,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,486f56085b1be3de,2391598,Saint-Ciers-sur-Gironde (33820),33820,33,false,38,595,15.66,D,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3858bb41b2aa2a76,2399307,Toulouse (31000),31000,31,false,56,990,17.68,B,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7a275a20af69e6f1,240293,Villeneuve-d&#039;Ascq (59491),59491,59,false,13,460,35.38,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,823c7784bb241b5b,2409419,Toulouse (31000),31000,31,false,25,470,18.8,F,F,true,,,none,,,future_F_2028,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c5b8acdb9a8b2b83,2416848,Paris 18 (75018),75018,75,true,26,1050,40.38,E,E,true,paris,40.0,presumed,0.38,1.0,future_E_2034,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,fede2829283d0490,2427781,Vénissieux (69200),69200,69,false,25,750,30.0,E,B,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,64d53fcc5cbe15dc,2429517,Villeurbanne (69100),69100,69,true,31,920,29.68,D,D,true,villeurbanne,19.8,clear,9.88,49.9,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5f7a3518fff18bde,2432128,Paris 18 (75018),75018,75,true,10,610,61.0,D,D,true,paris,40.0,clear,21.0,52.5,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b5a54047087fea84,2434194,Bordeaux (33000),33000,33,true,35,600,17.14,D,D,true,bordeaux,20.9,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,29270aa5c4727911,2439969,Lille (59000),59000,59,true,15,380,25.33,D,D,true,lille,23.4,presumed,1.93,8.2,none,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b91b1b9f72244f3c,2439995,Saint-Nazaire (44600),44600,44,false,38,650,17.11,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1eab313641b928e7,2439997,Paris 02 (75002),75002,75,true,16,930,58.12,D,D,true,paris,40.0,clear,18.12,45.3,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,81d7b7f799bb516a,2440593,Paris 14 (75014),75014,75,true,26,1250,48.08,E,E,true,paris,40.0,clear,8.08,20.2,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,06284ff5b8b58ddb,2440639,Villeurbanne (69100),69100,69,true,10,399,39.9,D,D,true,villeurbanne,19.8,clear,20.1,101.5,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,09a9329f9f84c85e,2440646,Campbon (44750),44750,44,false,78,830,10.64,B,A,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,95ece9d5f88a53e9,2441061,Talence (33400),33400,33,false,17,600,35.29,E,E,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,68f85a734095a4a9,2444860,Castets et Castillon (33210),33210,33,false,200,1200,6.0,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b179579e18d1b4b0,2444873,Marseille 06 (13006),13006,13,false,25,550,22.0,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f09ab61ff9bbfac0,2444874,Châteaurenard (13160),13160,13,false,42,430,10.24,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,16d646fdfe58ddb3,2444884,Nantes (44000),44000,44,false,10,510,51.0,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,184a36822b2b196b,2446900,Gujan-Mestras (33470),33470,33,false,55,895,16.27,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a3d9f0043ddd44a2,2446907,Toulouse (31000),31000,31,false,16,580,36.25,E,D,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1f7d5176f023fb30,2446922,Villeurbanne (69100),69100,69,true,37,790,21.35,D,B,true,villeurbanne,19.8,presumed,1.55,7.8,none,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0e3d3b65e41956cf,2446956,Marseille 05 (13005),13005,13,false,27,845,31.3,C,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ccfb44403fb66a47,2448832,Châteaurenard (13160),13160,13,false,42,420,10.0,C,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,70edbb2adc41e6f8,2448835,Bordeaux (33000),33000,33,true,40,950,23.75,D,C,true,bordeaux,20.9,clear,2.85,13.6,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,41bcf0b11b5eab06,2448875,Toulouse (31000),31000,31,false,65,1000,15.38,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f038dd0201ed68db,2448877,Nantes (44000),44000,44,false,18,450,25.0,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ef13ac2a02db98af,2448884,Mérignac (33700),33700,33,false,12,550,45.83,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,028bff0837f2ceee,2448893,Plan-d&#039;Orgon (13750),13750,13,false,20,450,22.5,A,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e37b82b03d9b499b,2450565,Saint-Victoret (13700),13700,13,false,59,980,16.61,C,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3523507bd947e9ad,2450576,Aix-en-Provence (13080),13080,13,false,23,640,27.83,D,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e79a9c37be2fa3cf,2450577,Paris 19 (75019),75019,75,true,35,1350,38.57,D,B,true,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,63f936250e37c753,2450605,Toulouse (31000),31000,31,false,25,900,36.0,A,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,696f0d88975f1ed6,2450606,Toulouse (31000),31000,31,false,25,1200,48.0,A,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,53494c0b64295bad,2450609,Aix-en-Provence (13080),13080,13,false,14,650,46.43,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,23cc6ebaa886175b,2451173,Nantes (44000),44000,44,false,23,545,23.7,C,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a2d0013041e0ecaf,2451174,Rillieux-la-Pape (69140),69140,69,false,78,920,11.79,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,27a68e1bf7db587a,2451179,Cabriès (13480),13480,13,false,20,650,32.5,E,C,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,111e0d2fac0124f6,2451183,Lyon 08 (69008),69008,69,true,53,1040,19.62,C,A,true,lyon,20.2,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5beab355dd3d8e87,2451184,Paris 11 (75011),75011,75,true,43,1610,37.44,C,C,true,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7e34a2b3be9fc464,2451193,Bordeaux (33000),33000,33,true,67,1550,23.13,C,C,true,bordeaux,20.9,clear,2.23,10.7,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ecad105edb7a17f4,2451200,Paris 10 (75010),75010,75,true,35,1470,42.0,D,D,true,paris,40.0,presumed,2.0,5.0,none,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2764543f0aeb131d,2451220,Talence (33400),33400,33,false,20,531,26.55,D,A,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0da578eb16866185,2451222,Bordeaux (33000),33000,33,true,20,659,32.95,D,B,true,bordeaux,20.9,clear,12.05,57.7,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,baaac2ec435ca947,2451225,Lyon 08 (69008),69008,69,true,33,755,22.88,D,D,true,lyon,20.2,clear,2.68,13.3,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3569470cbf9a9189,2451232,Saint-Sébastien-sur-Loire (44230),44230,44,false,90,1190,13.22,C,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3de8b49105f924f9,2451233,Saint-Molf (44350),44350,44,false,12,275,22.92,A,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,6e4a0694457473d7,2451249,Nantes (44000),44000,44,false,22,670,30.45,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1dd540e63744b70a,2451250,Paris 17 (75017),75017,75,true,40,1520,38.0,D,C,true,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,20a493935257bd7c,2451553,Le Teich (33470),33470,33,false,77,1000,12.99,B,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,bc1ef5f97848ec65,2451563,Paris 03 (75003),75003,75,true,24,1450,60.42,D,D,true,paris,40.0,clear,20.42,51.1,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,772dbed164c437fd,2451576,Rezé (44400),44400,44,false,13,380,29.23,E,E,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,546358361514c93c,2451584,Valenciennes (59300),59300,59,false,68,650,9.56,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,377e6a95c97ca499,2451627,Lyon 04 (69004),69004,69,true,44,950,21.59,D,A,true,lyon,20.2,presumed,1.39,6.9,none,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,bdfbb455a4528006,2451633,Tassin-la-Demi-Lune (69160),69160,69,false,20,675,33.75,C,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,9bab36943b2f729e,2451634,Nantes (44000),44000,44,false,22,540,24.55,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ac15631d9d58e95e,2451643,Saint-Nazaire (44600),44600,44,false,38,750,19.74,B,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a08a7dd9e2c302b3,2453096,Paris 15 (75015),75015,75,true,37,1380,37.3,D,D,true,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,404014099471a99c,2453105,Bègles (33130),33130,33,false,16,450,28.12,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,303b024f9206ef80,2453115,Villefranche-sur-Saône (69400),69400,69,false,80,1180,14.75,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7fd316ee8711cf83,2453118,Paris 05 (75005),75005,75,true,15,984,65.6,E,A,true,paris,40.0,clear,25.6,64.0,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5c3b8e4e7ad33513,2453127,Plaisance-du-Touch (31830),31830,31,false,13,450,34.62,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,9f06c52b982c5c30,2453142,Marseille 01 (13001),13001,13,false,20,800,40.0,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1647c284ced80a02,2453144,Aix-en-Provence (13080),13080,13,false,30,701,23.37,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1c2a06d184167a67,2453145,Saint-Herblain (44800),44800,44,false,52,785,15.1,C,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e471703d1232a703,2453147,Douai (59500),59500,59,false,38,535,14.08,E,D,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a3c66be8c17813b9,2453154,Toulouse (31000),31000,31,false,21,560,26.67,D,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2f51385c3f33f3d4,2453165,Paris 17 (75017),75017,75,true,11,790,71.82,E,E,true,paris,40.0,clear,31.82,79.5,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,39b748aabec1abbd,2453167,Toulouse (31000),31000,31,false,21,560,26.67,D,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,54eb931be2418649,2453170,Paris 15 (75015),75015,75,true,18,950,52.78,D,D,true,paris,40.0,clear,12.78,31.9,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4144ddda7c13442a,2453180,Paris 19 (75019),75019,75,true,25,897,35.88,E,D,true,paris,40.0,none,0.0,0.0,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,47a96c8606ef5d6f,2453182,Marseille 10 (13010),13010,13,false,47,880,18.72,C,A,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,587ba736cf0b4a0c,2454922,Villeneuve-d&#039;Ascq (59491),59491,59,false,9,380,42.22,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,db1a806eba385e32,2454924,Croix (59170),59170,59,false,62,815,13.15,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,87063e9ae05a2e00,2454929,Miramas (13140),13140,13,false,58,720,12.41,C,A,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,aecb1bca14bfdc7b,2454934,Lille (59000),59000,59,true,26,750,28.85,D,B,true,lille,23.4,clear,5.45,23.3,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,08a5d49ea8cd001b,2454937,Paris 18 (75018),75018,75,true,27,1200,44.44,E,E,true,paris,40.0,clear,4.44,11.1,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ed323787312d2d65,2454947,La Baule-Escoublac (44500),44500,44,false,93,1551,16.68,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,8833073beaf3ac0d,2454948,Cabriès (13480),13480,13,false,35,850,24.29,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2fc2bcfa8495a524,2454950,Nantes (44000),44000,44,false,18,532,29.56,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,91bec8af6ffcbeff,2454954,Ambarès-et-Lagrave (33440),33440,33,false,100,1280,12.8,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0c53642dd671c870,2454957,Nantes (44000),44000,44,false,25,641,25.64,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,fcd50c261f10d928,2454958,Paris 17 (75017),75017,75,true,83,2853,34.37,D,E,false,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,369d27320b4dd92f,2454982,Nantes (44000),44000,44,false,11,470,42.73,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,187b0a6f8715104c,2454985,Lyon 01 (69001),69001,69,true,97,1500,15.46,C,C,true,lyon,20.2,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,8a4dcb475e71c921,2455896,Cambrai (59400),59400,59,false,21,430,20.48,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,fb29013a1446fb0a,2455897,Cambrai (59400),59400,59,false,25,465,18.6,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f0fb878b716efe77,2455903,Nantes (44000),44000,44,false,19,480,25.26,D,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,636ef78019ee8e69,2455911,Saint-Chamas (13250),13250,13,false,30,800,26.67,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,dd80fb84f07ccdaa,2455914,Irigny (69540),69540,69,false,9,395,43.89,B,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,bb78bbb51a0e57b9,2455915,Irigny (69540),69540,69,false,18,565,31.39,A,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c82a53de6aa71157,2455917,Toulouse (31000),31000,31,false,13,500,38.46,B,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,152b2a7ac3b08757,2455924,Paris 12 (75012),75012,75,true,25,805,32.2,D,D,false,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e271f638632be31c,2455925,La Baule-Escoublac (44500),44500,44,false,29,525,18.1,D,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c3f74f417d136b60,2455933,Roubaix (59100),59100,59,false,25,495,19.8,E,E,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f95486d74135d735,2455935,Launaguet (31140),31140,31,false,121,1646,13.6,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,9c27c36adbe858ef,2455937,Nantes (44000),44000,44,false,25,570,22.8,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c98dc8017b5e36b8,2455943,Lille (59000),59000,59,true,20,550,27.5,D,C,true,lille,23.4,clear,4.1,17.5,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1aaa7fca9f367fdf,2455944,Lyon 09 (69009),69009,69,true,69,1130,16.38,D,B,false,lyon,20.2,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e712930497e58c8b,2455949,Saint-Nazaire (44600),44600,44,false,12,350,29.17,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,650cb027fee887a2,2455953,Blanquefort (33290),33290,33,false,19,940,49.47,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c7e55863bebf1166,246208,Lyon 07 (69007),69007,69,true,70,1100,15.71,C,D,true,lyon,20.2,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,96504280c524e8c7,250353,Paris 05 (75005),75005,75,true,40,1800,45.0,C,A,true,paris,40.0,clear,5.0,12.5,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,713b548e6f9fb873,254923,Aix-en-Provence (13080),13080,13,false,50,850,17.0,C,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,61f06b35761fce15,255299,Saint-Fons (69190),69190,69,false,40,740,18.5,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,8129954cfeee683a,260941,Toulouse (31000),31000,31,false,60,820,13.67,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1ea6576c413c74b3,271247,Aix-en-Provence (13080),13080,13,false,24,750,31.25,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,14e2209f33bb85a1,273013,Marseille 07 (13007),13007,13,false,22,700,31.82,B,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,daa7f70e6e4329cb,275534,Bordeaux (33000),33000,33,true,52,870,16.73,C,D,false,bordeaux,20.9,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e9d6909ff27c013e,275931,Pessac (33600),33600,33,false,20,550,27.5,B,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3beed9b5a4048643,276535,Marseille 05 (13005),13005,13,false,30,710,23.67,C,A,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c684b1544aefeab6,281105,Nantes (44000),44000,44,false,50,860,17.2,C,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c7d08943a94ef8d7,281893,Lille (59000),59000,59,true,32,720,22.5,E,B,true,lille,23.4,none,0.0,0.0,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b54877fae871c7f9,284674,La Tour-de-Salvagny (69890),69890,69,false,42,640,15.24,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7854031edb4e7686,285214,Paris 05 (75005),75005,75,true,16,1314,82.12,C,C,true,paris,40.0,clear,42.12,105.3,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,46ad4f16e35a2b4d,287196,Lille (59000),59000,59,true,49,950,19.39,D,D,true,lille,23.4,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,70014cffea8ce0c6,287925,Marseille 14 (13014),13014,13,false,36,750,20.83,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4d1e16770f842bbc,296985,Aix-en-Provence (13080),13080,13,false,45,970,21.56,E,B,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2c4b61ec6ff7dc63,305397,Marseille 03 (13003),13003,13,false,44,770,17.5,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e8a06f43825effbd,309988,Toulouse (31000),31000,31,false,18,445,24.72,E,C,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,28c70e53638b26ec,311372,Les Sorinières (44840),44840,44,false,20,490,24.5,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ea64eef95adceb38,311855,Lyon 05 (69005),69005,69,true,33,580,17.58,C,D,false,lyon,20.2,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,76c50bfa10dc3775,313844,Villeurbanne (69100),69100,69,true,95,1650,17.37,D,C,true,villeurbanne,19.8,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0e211315582edb75,317477,Aix-en-Provence (13080),13080,13,false,14,495,35.36,E,C,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,6dbd01d9dd295dc1,319345,Bron (69500),69500,69,false,62,900,14.52,E,F,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0f22ebb8148b9c29,319657,Lyon 03 (69003),69003,69,true,27,800,29.63,D,C,true,lyon,20.2,clear,9.43,46.7,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,48249a7a7c1ea59b,321179,Cambrai (59400),59400,59,false,10,300,30.0,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f3ded83b9aadc965,321842,Mérignac (33700),33700,33,false,11,415,37.73,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,330baa1677c0bac0,323368,Toulouse (31000),31000,31,false,17,485,28.53,C,E,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0dca21e6d48a3d96,324464,Lyon 03 (69003),69003,69,true,20,700,35.0,C,C,true,lyon,20.2,clear,14.8,73.3,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,324ddce0551f65cb,326135,Frouzins (31270),31270,31,false,102,980,9.61,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b18f2d0b8092a066,327461,Lille (59000),59000,59,true,42,860,20.48,E,B,true,lille,23.4,none,0.0,0.0,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,57e26ab6eab2b61b,327609,Fontaines-sur-Saône (69270),69270,69,false,45,678,15.07,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,6a55f87970b11fb0,334107,Saint-Nazaire (44600),44600,44,false,30,450,15.0,E,D,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5f290797d2dd4d2e,338451,Marseille 05 (13005),13005,13,false,35,750,21.43,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,acb1ecbb5ea687ee,339570,Paris 13 (75013),75013,75,true,18,1250,69.44,D,B,true,paris,40.0,clear,29.44,73.6,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1a3b4fa18aaa18c7,343037,Bruay-sur-l&#039;Escaut (59860),59860,59,false,130,950,7.31,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7e69cd87d93169f8,350635,Douai (59500),59500,59,false,31,480,15.48,B,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,8ebfa50c9ee40355,352417,Valenciennes (59300),59300,59,false,69,780,11.3,C,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,d24c45a71b88f7d4,352441,Nantes (44000),44000,44,false,11,420,38.18,E,E,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,866f572165d44521,353469,Paris 18 (75018),75018,75,true,26,975,37.5,C,C,false,paris,40.0,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2d33346aad8403d2,353518,Villeneuve-d&#039;Ascq (59491),59491,59,false,21,470,22.38,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,48f843fc052f0919,357194,Meyzieu (69330),69330,69,false,61,850,13.93,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a132b9968dc54bc4,358826,Lille (59000),59000,59,true,10,290,29.0,F,F,false,lille,23.4,clear,5.6,23.9,future_F_2028,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ad0e8ba42f4dc889,360717,Bordeaux (33000),33000,33,true,16,420,26.25,C,C,true,bordeaux,20.9,clear,5.35,25.6,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4a3602879735e46e,366886,Remouillé (44140),44140,44,false,80,750,9.38,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,231c5652508f5ba7,367562,Toulouse (31000),31000,31,false,27,590,21.85,E,B,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,75960504a9c9b3c4,369207,Toulouse (31000),31000,31,false,25,625,25.0,D,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,996f978ed5bc31a9,375143,Mérignac (33700),33700,33,false,46,556,12.09,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0696081a4f2d259a,380894,Lille (59000),59000,59,true,38,850,22.37,D,B,true,lille,23.4,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,52118f2f1cb24081,381420,Paris 14 (75014),75014,75,true,12,794,66.17,C,B,true,paris,40.0,clear,26.17,65.4,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ff908709d19627c1,382051,Bordeaux (33000),33000,33,true,59,929,15.75,D,C,false,bordeaux,20.9,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,6de0b61e67603010,385154,Lyon 03 (69003),69003,69,true,48,1130,23.54,C,B,true,lyon,20.2,clear,3.34,16.5,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3681a85a27b3c02c,390909,Villeurbanne (69100),69100,69,true,18,595,33.06,C,C,true,villeurbanne,19.8,clear,13.26,67.0,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b73c344d3315505f,391666,Lille (59000),59000,59,true,32,580,18.12,E,E,false,lille,23.4,none,0.0,0.0,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f26c30ee81246fbe,393502,Marseille 13 (13013),13013,13,false,18,540,30.0,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ddb380bec53e1925,396320,Marseille 13 (13013),13013,13,false,18,540,30.0,C,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f00b5fb8ed2c2e3e,396655,Nantes (44000),44000,44,false,65,850,13.08,A,A,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,facb3c5583163a0f,397199,Lyon 08 (69008),69008,69,true,35,900,25.71,B,B,false,lyon,20.2,clear,5.51,27.3,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,d6a4053647560912,397210,Mérignac (33700),33700,33,false,11,415,37.73,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,05cb50bd02d7cc63,398113,Paris 02 (75002),75002,75,true,20,1100,55.0,C,A,true,paris,40.0,clear,15.0,37.5,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2447ad177e2d860c,398440,Lille (59000),59000,59,true,21,530,25.24,E,E,false,lille,23.4,presumed,1.84,7.9,future_E_2034,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,08d9740116781b4a,401303,Paris 11 (75011),75011,75,true,34,1465,43.09,D,E,false,paris,40.0,presumed,3.09,7.7,none,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,416828af68ee8a92,403913,Bordeaux (33000),33000,33,true,77,1539,19.99,C,D,false,bordeaux,20.9,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c1bc5e42a1050b81,405944,Eysines (33320),33320,33,false,11,490,44.55,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,63d533835c42269c,406121,Aix-en-Provence (13080),13080,13,false,11,700,63.64,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a591ce6e28f28643,406345,Lyon 06 (69006),69006,69,true,62,1000,16.13,C,C,true,lyon,20.2,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e33deac606033f5d,412942,Lyon 07 (69007),69007,69,true,50,1170,23.4,D,B,true,lyon,20.2,clear,3.2,15.8,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2d6e7fc018f79c08,414955,Villenave-d&#039;Ornon (33140),33140,33,false,31,540,17.42,E,C,true,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,3e9774d53f45588c,415930,Paris 12 (75012),75012,75,true,13,850,65.38,F,E,true,paris,40.0,clear,25.38,63.4,future_F_2028,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,4a4088f745d9d6de,416323,Hazebrouck (59190),59190,59,false,51,660,12.94,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7c532ea6fe151785,417297,Toulouse (31000),31000,31,false,38,980,25.79,A,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,6a8ea6194ec5ce8f,417829,Toulouse (31000),31000,31,false,70,1500,21.43,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ddc1832c6123aac9,418529,Lille (59000),59000,59,true,37,760,20.54,D,B,true,lille,23.4,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5534980bb2ffe051,421258,Nantes (44000),44000,44,false,19,560,29.47,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5c0f7342015d585f,421602,Nantes (44000),44000,44,false,17,400,23.53,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,39d689877a2a6b72,421901,Muret (31600),31600,31,false,10,410,41.0,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a2372abb5eb07098,423295,Toulouse (31000),31000,31,false,35,580,16.57,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2fe5febd6bde4826,423629,Paris 05 (75005),75005,75,true,18,900,50.0,C,C,true,paris,40.0,clear,10.0,25.0,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,bf6782d69c2a14d0,425167,Cambrai (59400),59400,59,false,13,370,28.46,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,35c7644cde1e2025,426628,Gradignan (33170),33170,33,false,40,1070,26.75,A,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,80420bf51bdddc56,426861,Lille (59000),59000,59,true,15,500,33.33,D,D,true,lille,23.4,clear,9.93,42.4,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,750f7b6b2891c344,430632,Paris 05 (75005),75005,75,true,31,1350,43.55,E,B,true,paris,40.0,presumed,3.55,8.9,future_E_2034,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0e116becf1ba5a58,430954,Villariès (31380),31380,31,false,43,530,12.33,D,B,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7c807f1a3c9140c6,433186,Aix-en-Provence (13080),13080,13,false,15,595,39.67,C,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1f9d5729ea0bebf7,433499,Castanet-Tolosan (31320),31320,31,false,60,390,6.5,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2e2297d4df1e0f7a,434611,Drémil-Lafage (31280),31280,31,false,48,810,16.88,C,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,f4b024b4f8fa690f,436534,Aix-en-Provence (13080),13080,13,false,40,900,22.5,A,A,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,fb75d2ba8c606f65,439601,Toulouse (31000),31000,31,false,54,950,17.59,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,689bbd4b36665b88,444363,Nantes (44000),44000,44,false,40,720,18.0,D,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,7f30e33dc06d2b24,444949,Bordeaux (33000),33000,33,true,29,680,23.45,C,A,true,bordeaux,20.9,clear,2.55,12.2,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a04e10b3952a6dad,445777,Toulouse (31000),31000,31,false,46,820,17.83,D,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,c146b250d5c70772,446050,Talence (33400),33400,33,false,19,464,24.42,E,C,false,,,none,,,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,fe3a1e30e1ea4a0d,446882,Paris 15 (75015),75015,75,true,15,650,43.33,E,E,true,paris,40.0,presumed,3.33,8.3,future_E_2034,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,40fe2d6c257cc3bd,447508,Rezé (44400),44400,44,false,69,925,13.41,C,C,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2930790a68dbca82,447706,Toulouse (31000),31000,31,false,27,480,17.78,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,1ee1360fdc8594d7,448650,Aix-en-Provence (13080),13080,13,false,35,895,25.57,B,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a4b72b4141545880,585350,Aix-en-Provence (13080),13080,13,false,22,645,29.32,C,A,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,30872b5db701b591,594965,Lyon 06 (69006),69006,69,true,35,840,24.0,D,D,true,lyon,20.2,clear,3.8,18.8,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,e90cfa45d63ac5a8,596811,Bordeaux (33000),33000,33,true,12,420,35.0,D,D,true,bordeaux,20.9,clear,14.1,67.5,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,828b3416974a5f28,597970,Paris 20 (75020),75020,75,true,10,600,60.0,B,C,true,paris,40.0,clear,20.0,50.0,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,838c30e0182962bb,626534,Saint-Fons (69190),69190,69,false,14,600,42.86,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,715d0db09f18e263,645570,Rezé (44400),44400,44,false,22,350,15.91,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ae53bfe4545297ef,652813,Toulouse (31000),31000,31,false,100,1470,14.7,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,8c5dd4ce3fec0632,657325,Lille (59000),59000,59,true,19,465,24.47,F,D,true,lille,23.4,presumed,1.07,4.6,future_F_2028,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,5333b015740d8812,721930,Paris 12 (75012),75012,75,true,12,800,66.67,D,A,true,paris,40.0,clear,26.67,66.7,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,b6eebf967b636443,728689,Lille (59000),59000,59,true,16,500,31.25,D,D,true,lille,23.4,clear,7.85,33.5,none,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,0bbd9b35194d0256,729287,Talence (33400),33400,33,false,30,670,22.33,D,D,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,d14dd40c90811915,816001,Bordeaux (33000),33000,33,true,27,630,23.33,E,B,false,bordeaux,20.9,clear,2.43,11.6,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,04a22d9ed4d32b66,822847,Pessac (33600),33600,33,false,27,730,27.04,C,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,972de25bd78b0491,829874,Lyon 01 (69001),69001,69,true,43,955,22.21,E,B,true,lyon,20.2,presumed,2.01,10.0,future_E_2034,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a2e56a53db7b2606,840533,Toulouse (31000),31000,31,false,100,1126,11.26,D,D,false,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,40b51aa097c3fceb,87784,Lyon 03 (69003),69003,69,true,21,625,29.76,E,C,true,lyon,20.2,clear,9.56,47.3,future_E_2034,encadrement,2,0.2.0
+2026-06-19T05:52:41+00:00,locservice,2d65fe0056764497,889613,Paris 16 (75016),75016,75,true,52,1440,27.69,E,E,true,paris,40.0,none,0.0,0.0,future_E_2034,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,edb5023c5798d124,89926,Lille (59000),59000,59,true,92,1420,15.43,D,E,false,lille,23.4,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ab1cf35a64d8a70a,910105,La Ciotat (13600),13600,13,false,18,700,38.89,C,C,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a4666133deee00eb,93069,Toulouse (31000),31000,31,false,21,480,22.86,D,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,bacc45c210248b61,95026,Lille (59000),59000,59,true,21,505,24.05,E,B,false,lille,23.4,presumed,0.65,2.8,future_E_2034,encadrement,1,0.2.0
+2026-06-19T05:52:41+00:00,locservice,ecc3d6db37d34d65,96390,Nantes (44000),44000,44,false,42,750,17.86,B,B,true,,,none,,,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,752ae1187da69d9c,97102,Villeurbanne (69100),69100,69,true,60,920,15.33,B,C,false,villeurbanne,19.8,none,0.0,0.0,none,none,0,0.2.0
+2026-06-19T05:52:41+00:00,locservice,a0b8ad024c37ac08,97737,Bordeaux (33000),33000,33,true,40,900,22.5,E,C,false,bordeaux,20.9,presumed,1.6,7.7,future_E_2034,encadrement,1,0.2.0

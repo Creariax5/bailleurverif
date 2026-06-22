@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T01:48:02Z",
+  "generated_at": "2026-06-22T13:52:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 581,
+    "total_lifetime": 597,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -95,10 +95,10 @@
   ],
   "moats_count": 3,
   "distribution": {
-    "outbound_emails_total": 20,
+    "outbound_emails_total": 21,
     "outbound_emails_24h": 0,
     "outbound_last": {
-      "to": "5295691272",
+      "to": "2019434563",
       "subject": "",
       "sent_at": "?"
     },
@@ -117,12 +117,12 @@
   },
   "system": {
     "wedge_server_pid": "305695",
-    "wedge_server_uptime_seconds": 21740,
-    "vps_uptime_seconds": 12736933,
+    "wedge_server_uptime_seconds": 324380,
+    "vps_uptime_seconds": 13039572,
     "last_commit": {
-      "hash": "562e6c1",
-      "subject": "run-609 — ship mobile-first PATCH scan-url.html iOS auto-zoom prevention",
-      "relative": "2 hours ago"
+      "hash": "a409595",
+      "subject": "run-625 SHIP intent_signal câblage UI 5 pages SEO + shared JS",
+      "relative": "2 days ago"
     }
   },
   "bugs_fixed_lifetime": 12,

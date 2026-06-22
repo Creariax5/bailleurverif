@@ -1,3 +1,44 @@
+# Strategic Critic Audit — 2026-06-19T10:00Z (audit-67 — 2ᵉ cycle prompt option F recalibré)
+
+---
+
+**Live entrée wake** : visits=503 (+19 vs audit-66 fenêtre ~46h, flat 11h+ depuis 06-18T22:06Z HeadlessChrome bot) / humans 9-13 raw 7-9 conf-adj **UNCHANGED 71h+** depuis Paris #14 06-16T10:06Z / verdict_displayed=14 events 11 distinct (+1) / wedge_q1_answered=17 (+1) / subscribers_pending=1 sogibim T+~15j / shares=1 0.3 % 28j+ / méta-Q RESOLVED option (e) self-decide run-567.
+
+## 1. PULL-LLM AMPLIFICATION
+
+- **EMPIRIQUE NEW (axe a, audit-66 prescription Strategic-side honored)** : grep lifetime 10 UAs LLM explicites (ChatGPT-User / ClaudeBot / PerplexityBot / GPTBot / OAI-SearchBot / Google-Extended / Applebot-Extended / Bytespider / CCBot / Perplexity-User) sur 503 visits = **0 hit lifetime** ★. Seuls crawlers actifs : Applebot search-only=95 / Googlebot=38 / GoogleOther=8 / AhrefsBot=9 / YandexRender=6.
+- `by_utm_source_lifetime` : direct=334 / **chatgpt=5 UNCHANGED** 7j+ (cadence ~10j tient mais dernier referer 06-12).
+- llms.txt 200/9712o + llms-full.txt 200/27166o fresh ✅ UNCHANGED. Wikidata Q139857638 modified 2026-05-20 sameAs intact (4 URLs JSON-LD).
+- **Flag axe a** : robots.txt Allow 10 LLM UAs ⇒ 0/10 empirique drainage. Hypothèses : (i) llms.txt non-référencé robots.txt → découvrabilité gap ; (ii) site sub-threshold autorité pour LLM training crawl ; (iii) opérationnel = ChatGPT referer pull (5 lifetime), pas crawler push.
+
+## 2. PHASE 2 SWITCH TRIGGERS
+
+| Trigger | Live | Progress | Δ vs audit-66 |
+|---|---|---|---|
+| humans ≥ 100 | 9-13 raw | 9-13 % | +0 |
+| subscribers ≥ 20 | 1 | 5 % | +0 |
+| persona ≥40 % | unset N=1 | impossible mesurer | +0 |
+| gsc ≥ 30 pages | ~8 | ~27 % | +0 |
+| Florian-ack switch | 0 | 0 % | +0 |
+
+Aucun trigger ≥50 %. **0 progression nette 46h.** Pas de flag 2+ proximité.
+
+## 3. VETO SCOPE-CREEP
+
+✅ 0 veto déclenché. Builder PAUSE-AND-WAIT NO-OP M0 confirmé ledger run-614 (3ᵉ cron tick consécutif M0). Pages=233 UNCHANGED. Aucun signal ECLI-récidive / monétisation / push canal dépriorité / BATCH purge ≥3 / auto-disable Builder/Tactical.
+
+## 4. PRODUIT-EXCELLENCE SIGNAL
+
+- **verdict_displayed / q1_answered = 14/17 = 82.4 %** ★ AU-DESSUS cible M3 ≥70 % (16ᵉ audit consécutif sain, +1.4pp vs audit-66 81 %).
+- **Goulot structurel persistant** : home→q1 = 17/225 = **7.6 %**. Amorce homepage = bottleneck réel, ratio aval reste sain. humans 71h+ flat = signal trafic structural ≠ UX.
+- Copyability 85 % UNCHANGED 18ᵉ audit. Cat-3 DILA saturated 3/3 ban respecté + SB-2 anti-récidive Marseille tient. Pattern P2 SEO city→home INTERNAL N=5 reach rate verdict 60 % UNCHANGED.
+
+## 5. PRESCRIPTION CONSULTATIVE
+
+**0 prescription ce wake — Builder libre.** Justification : (i) audit-66 prescription axe-a grep lifetime UAs LLM honored Strategic-side ce wake = empirique flag §1 émis ; (ii) 0 trigger Phase 2 ≥50 % ; (iii) humans 71h+ flat = signal trafic-acquisition structural, pas levier prescription ponctuelle ; (iv) anti-recursion drift audit-64 acknowledged. **Builder peut continuer M0 produit-excellence focus** ou exécuter brief Florian en attente. Hypothèse T+10j (06-29) inchangée.
+
+---
+
 # Strategic Critic Audit — 2026-06-17T11:46Z (audit-66 — 1er test in-vivo prompt option F recalibré)
 
 ---

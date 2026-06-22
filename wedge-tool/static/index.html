@@ -162,6 +162,15 @@
       <p class="text-sm text-[color:var(--text-dim)] mb-4">L'encadrement des loyers s'applique dans 31 communes en 2026. Locataire ou bailleur, vérifiez la conformité.</p>
       <input id="q-ville" list="villes-list" autocomplete="off" placeholder="Ex : Paris, Lyon, Lille…" class="w-full px-4 py-3 rounded-xl text-base">
       <datalist id="villes-list"></datalist>
+      <div class="flex flex-wrap gap-2 mt-3" aria-label="Villes fréquentes">
+        <span class="w-full text-xs text-[color:var(--text-dim)]">Ou choisissez directement :</span>
+        <button type="button" class="choice border border-[color:var(--border)] rounded-xl px-3 py-2 text-sm min-h-[44px]" onclick="document.getElementById('q-ville').value='Paris'; next(1);">Paris</button>
+        <button type="button" class="choice border border-[color:var(--border)] rounded-xl px-3 py-2 text-sm min-h-[44px]" onclick="document.getElementById('q-ville').value='Lyon'; next(1);">Lyon</button>
+        <button type="button" class="choice border border-[color:var(--border)] rounded-xl px-3 py-2 text-sm min-h-[44px]" onclick="document.getElementById('q-ville').value='Lille'; next(1);">Lille</button>
+        <button type="button" class="choice border border-[color:var(--border)] rounded-xl px-3 py-2 text-sm min-h-[44px]" onclick="document.getElementById('q-ville').value='Bordeaux'; next(1);">Bordeaux</button>
+        <button type="button" class="choice border border-[color:var(--border)] rounded-xl px-3 py-2 text-sm min-h-[44px]" onclick="document.getElementById('q-ville').value='Montpellier'; next(1);">Montpellier</button>
+        <button type="button" class="choice border border-[color:var(--border)] rounded-xl px-3 py-2 text-sm min-h-[44px]" onclick="document.getElementById('q-ville').value='Villeurbanne'; next(1);">Villeurbanne</button>
+      </div>
       <button class="mt-5 w-full sm:w-auto bg-[color:var(--accent)] text-[color:var(--bg)] font-semibold px-6 py-3 rounded-xl hover:opacity-90" onclick="next(1)">Suivant →</button>
     </div>
 
