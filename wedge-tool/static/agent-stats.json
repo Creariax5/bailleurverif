@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T13:54:01Z",
+  "generated_at": "2026-06-23T15:52:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13126092,
+    "vps_uptime_seconds": 13133173,
     "last_commit": {
-      "hash": "f405d56",
-      "subject": "run-637: acquisition data-unique — bloc observatoire réel Paris N=264/62,1% (Tactical critic-92 #1 ★",
-      "relative": "17 seconds ago"
+      "hash": "9b2425d",
+      "subject": "run-637: snapshot KPI — Paris 7e city-page bloc observatoire enrichie",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
