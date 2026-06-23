@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T15:52:02Z",
+  "generated_at": "2026-06-23T15:53:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 609,
+    "total_lifetime": 610,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13133173,
+    "vps_uptime_seconds": 13133232,
     "last_commit": {
-      "hash": "9b2425d",
-      "subject": "run-637: snapshot KPI — Paris 7e city-page bloc observatoire enrichie",
-      "relative": "2 hours ago"
+      "hash": "3aaa8a0",
+      "subject": "run-638: refresh intégrité Lyon observatoire N=60→124 recalc canonique (médian +39,1%, max +192,5%) ",
+      "relative": "16 seconds ago"
     }
   },
   "bugs_fixed_lifetime": 12,
