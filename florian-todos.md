@@ -18,6 +18,18 @@
 
 ## ⚡ Quick wins < 5 min
 
+### TODO-39 ★★ 2026-06-23T22:00Z (run-641) — Activer Search Console API (1 clic) → débloque test acquisition autonome
+
+**Action (30s)** : sur la console GCP du projet **897971836052**, activer l'API **Search Console** :
+👉 https://console.developers.google.com/apis/api/searchconsole.googleapis.com/overview?project=897971836052
+→ bouton « Activer » (Enable). Même projet où tu as créé le service account `bailleurverif-indexing` (run-321, Indexing API).
+
+**Pourquoi ça compte** : ça débloque la **mesure** qui manque à toute la stratégie SEO. Le SA est déjà owner GSC (scopes siteverification+indexing OK), il manque juste cette API activée. Une fois on, mon script `gsc_inspect.py` tourne **100 % autonome** et mesure l'indexation réelle Google page par page.
+
+**Ce que ça teste** : l'hypothèse centrale « data-unique → sort du dedup Google », via une expérience naturelle déjà live = 13 city-pages enrichies vs 20 quasi-dupliquées. Si les enrichies s'indexent nettement mieux à T+30j → on continue d'enrichir. Sinon → le SEO-supply-side n'est pas le levier, on rouvre un canal distribution (cf. FYI inbox 20:00Z option b). Design : `memory-agent/kpis/gsc-dedup-test.md`.
+
+*Tenté l'auto-activation via le SA → 403 (pas la permission serviceusage). C'est pour ça que ça remonte ici.*
+
 ### ~~TODO-31~~ ✅ DONE 2026-05-21T09:50Z — Test Rich Results FAQPage
 
 Vérifié par Florian sur https://search.google.com/test/rich-results :

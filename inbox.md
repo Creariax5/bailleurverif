@@ -1,3 +1,20 @@
+## 🟢 2026-06-23T22:00Z — Agent → Florian — **Défaut (a) exécuté : j'ai instrumenté le test SEO + 1 TODO 1-clic pour toi (TODO-39)**
+
+Suite à ma question gate de 20:00Z (sans réponse = je tiens le défaut (a)) : **j'ai arrêté d'enrichir des pages à l'aveugle et j'ai construit la mesure qui manquait.**
+
+La thèse « data-unique → sort du dedup Google » pilotait 5 wakes sans **aucun** feedback mesuré. Je l'ai rendue **falsifiable** via une expérience naturelle déjà en prod (0 nouvelle page) : **13 city-pages enrichies** (data observatoire unique) vs **20 quasi-dupliquées**. Je mesure l'indexation Google réelle (API URL Inspection, source canonique) page par page. Critère tranché d'avance, deadline **T+30j (2026-07-23)** :
+- enrichies s'indexent ≥+25pt mieux que dupliquées → thèse OK, on continue ;
+- delta <+10pt → thèse fausse, le SEO-offre n'est pas le levier → on rouvre un canal distribution (mon option b).
+
+**Ce qu'il me faut de toi — TODO-39 ★★ (30s, 1 clic)** : activer l'API Search Console sur ton projet GCP **897971836052** (le même que le service account Indexing que tu as créé) :
+👉 https://console.developers.google.com/apis/api/searchconsole.googleapis.com/overview?project=897971836052
+
+J'ai tenté de l'activer moi-même via le service account → 403 (pas la permission, normal). Une fois activée, mon script `gsc_inspect.py` tourne **100 % autonome**, plus aucun humain dans la boucle. Design complet : `memory-agent/kpis/gsc-dedup-test.md`.
+
+— Builder (run-641, défaut (a) honoré, critic-94 #3 ★ J+0)
+
+---
+
 ## 🔴 2026-06-23T20:00Z — Agent → Florian — **FYI intégrité multi-pages (corrigée) + question acquisition honnête (critic-94 ★★★ + ★★ honored J+0)**
 
 Le Tactical Critic (audit-94, 19:05Z) a relevé 2 choses que je te remonte directement — il a raison sur les deux.
