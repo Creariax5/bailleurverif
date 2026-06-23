@@ -1,60 +1,60 @@
 {
-  "generated_at": "2026-06-23T03:52:01Z",
+  "generated_at": "2026-06-23T05:52:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3906,
-    "requests_24h": 674,
-    "bot_hits_lifetime": 2149,
-    "bot_hits_24h": 290,
-    "bot_hits_1h": 9,
-    "human_hits_24h": 384
+    "requests_lifetime": 3917,
+    "requests_24h": 682,
+    "bot_hits_lifetime": 2157,
+    "bot_hits_24h": 305,
+    "bot_hits_1h": 12,
+    "human_hits_24h": 377
   },
   "bots_by_type_lifetime": {
     "GPTBot": 678,
-    "OAI-SearchBot": 306,
+    "OAI-SearchBot": 305,
     "DataForSEO": 296,
-    "generic-bot": 274,
-    "Bingbot": 148,
-    "Googlebot": 96,
-    "PetalBot": 96,
+    "generic-bot": 273,
+    "Bingbot": 146,
+    "PetalBot": 106,
+    "Googlebot": 97,
     "ByteSpider": 95,
-    "AhrefsBot": 35,
+    "AhrefsBot": 33,
+    "SemrushBot": 30,
     "BaiduSpider": 28,
-    "SemrushBot": 26,
     "HeadlessChrome": 18,
     "MJ12bot": 16,
     "DuckDuckBot": 10,
     "Go-HTTP": 8,
     "PerplexityBot": 7,
-    "FacebookExt": 7,
+    "FacebookExt": 6,
     "curl/wget": 3,
     "python-script": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 76,
-    "PetalBot": 61,
+    "OAI-SearchBot": 79,
+    "PetalBot": 71,
     "ByteSpider": 53,
-    "Bingbot": 21,
-    "SemrushBot": 20,
-    "Googlebot": 13,
-    "generic-bot": 11,
+    "Bingbot": 24,
+    "SemrushBot": 21,
+    "Googlebot": 14,
+    "generic-bot": 10,
     "GPTBot": 9,
     "HeadlessChrome": 9,
-    "BaiduSpider": 6,
-    "AhrefsBot": 5,
+    "BaiduSpider": 5,
+    "AhrefsBot": 4,
     "MJ12bot": 4,
     "Go-HTTP": 1,
     "FacebookExt": 1
   },
   "bot_last_seen": {
-    "Googlebot": "2026-06-16T21:14:29+00:00",
+    "Googlebot": "2026-06-23T05:12:34+00:00",
     "MJ12bot": "2026-06-22T21:37:41+00:00",
-    "OAI-SearchBot": "2026-06-16T21:43:58+00:00",
-    "Bingbot": "2026-06-16T21:41:41+00:00",
+    "OAI-SearchBot": "2026-06-23T05:22:51+00:00",
+    "Bingbot": "2026-06-23T05:43:37+00:00",
     "HeadlessChrome": "2026-06-22T13:27:06+00:00",
     "BaiduSpider": "2026-06-16T18:55:30+00:00",
     "generic-bot": "2026-06-16T14:51:13+00:00",
-    "PetalBot": "2026-06-23T03:26:29+00:00",
+    "PetalBot": "2026-06-23T05:13:41+00:00",
     "ByteSpider": "2026-06-16T15:20:22+00:00",
     "Go-HTTP": "2026-06-16T18:57:17+00:00",
     "GPTBot": "2026-06-16T10:02:28+00:00",
@@ -65,10 +65,10 @@
     "FacebookExt": "2026-06-16T15:31:47+00:00",
     "curl/wget": "2026-06-21T12:16:04+00:00",
     "python-script": "2026-06-21T22:19:58+00:00",
-    "SemrushBot": "2026-06-16T20:37:17+00:00"
+    "SemrushBot": "2026-06-23T05:34:48+00:00"
   },
-  "last_googlebot": "2026-06-22T21:52:06+00:00",
-  "last_bingbot": "2026-06-23T02:52:40+00:00",
+  "last_googlebot": "2026-06-23T05:12:34+00:00",
+  "last_bingbot": "2026-06-23T05:43:37+00:00",
   "chart_7days": [
     {
       "day": "2026-06-17",
@@ -168,25 +168,19 @@
     },
     {
       "day": "2026-06-23",
-      "total": 19,
+      "total": 41,
       "by_type": {
         "ByteSpider": 1,
-        "SemrushBot": 7,
-        "Bingbot": 2,
-        "PetalBot": 8,
-        "generic-bot": 1
+        "SemrushBot": 11,
+        "Bingbot": 5,
+        "PetalBot": 18,
+        "generic-bot": 1,
+        "OAI-SearchBot": 4,
+        "Googlebot": 1
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "04",
-      "hits": 6
-    },
-    {
-      "hour": "05",
-      "hits": 9
-    },
     {
       "hour": "06",
       "hits": 6
@@ -273,7 +267,15 @@
     },
     {
       "hour": "03",
+      "hits": 5
+    },
+    {
+      "hour": "04",
       "hits": 4
+    },
+    {
+      "hour": "05",
+      "hits": 3
     }
   ],
   "top_bot_paths_24h": {
@@ -286,14 +288,14 @@
     "/static/subscribe-tenant.js": 5,
     "/css/main.css": 5,
     "/css/tailwind-runtime.js": 5,
-    "/static/share-card.js": 4
+    "/depot-garantie-france-2026.html": 4
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 26,
     "/": 3,
+    "/aides-financieres-bailleur-2026.html": 2,
     "/mentions-legales.html": 1,
     "/loyer-legal-paris.html": 1,
-    "/aides-financieres-bailleur-2026.html": 1,
     "/guide-bailleur-2026.html": 1,
     "/questions-reelles-locataires-fr.html": 1,
     "/observatoire-annonces-loyer.html": 1,
@@ -301,20 +303,20 @@
     "/encadrement-loyer-paris-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 32,
+    "/": 30,
     "/robots.txt": 12,
-    "/css/tailwind-runtime.js": 10,
-    "/css/main.css": 9,
+    "/css/tailwind-runtime.js": 11,
+    "/css/main.css": 10,
     "/favicon.svg": 6,
+    "/static/subscribe-tenant.js": 6,
     "/observatoire-annonces-loyer.html": 5,
-    "/static/subscribe-tenant.js": 5,
+    "/api/stats": 5,
     "/api/funnel/event": 5,
-    "/api/visit": 5,
-    "/?q=Saint-Martin-D-Heres": 4
+    "/api/visit": 5
   },
   "status_codes_24h": {
-    "200": 557,
-    "304": 4,
+    "200": 566,
+    "304": 3,
     "404": 113
   },
   "funnel": {

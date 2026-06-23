@@ -112,7 +112,7 @@ success_rate_estimated_pct: 80
 
 - Le bailleur d'un local d'habitation peut retenir, sur le dépôt de garantie versé par le locataire, le montant de l'indemnité d'occupation due par celui-ci lorsqu'il se maintient dans les lieux au-delà du terme du bail _( ECLI ECLI:FR:CCASS:2026:C300075 · Troisième chambre civile · 2026-01-29 )_
 - Il résulte de l'article 3-2 de la loi n° 89-462 du 6 juillet 1989 que, lorsque les parties n'ont pas été convoquées par lettre recommandée avec demande d'avis de réception adressée au moins sept jours à l'avance, celle qui a pris l'initiati _( ECLI ECLI:FR:CCASS:2023:C300706 · Troisième chambre civile · 2023-10-26 )_
-- La restitution du dépôt de garantie consécutive à la nullité d¿un bail commercial ne constitue pas, en soi, un préjudice indemnisable. _( ECLI ECLI:FR:CCASS:2015:C101179 · Première chambre civile · 2015-10-28 )_
+- Il incombe au bailleur de justifier des sommes lui restant dues venant en déduction du montant du dépôt de garantie qu'il est tenu de restituer au locataire au départ des lieux loués. _( ECLI ECLI:FR:CCASS:2012:C300216 · Troisième chambre civile · 2012-02-15 )_
 
 
 ## Références corpus

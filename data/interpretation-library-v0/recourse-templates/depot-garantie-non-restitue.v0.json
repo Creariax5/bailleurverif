@@ -243,13 +243,13 @@
       "relevance_to_template": "Pertinence: Il résulte de l'article 3-2 de la loi n° 89-462 du 6 juillet 1989 que, lorsque les parties n'ont pas été convoquées par lettre recommandée avec demande d'avis de réception adressée au moins sept jours"
     },
     {
-      "ecli": "ECLI:FR:CCASS:2015:C101179",
-      "decision_id": "607987699ba5988459c4a5f4",
-      "decision_date": "2015-10-28",
-      "chamber": "Première chambre civile",
+      "ecli": "ECLI:FR:CCASS:2012:C300216",
+      "decision_id": "60796e179ba5988459c49c05",
+      "decision_date": "2012-02-15",
+      "chamber": "Troisième chambre civile",
       "jurisdiction": "Cour de cassation",
-      "summary": "La restitution du dépôt de garantie consécutive à la nullité d¿un bail commercial ne constitue pas, en soi, un préjudice indemnisable.",
-      "relevance_to_template": "Pertinence: La restitution du dépôt de garantie consécutive à la nullité d¿un bail commercial ne constitue pas, en soi, un préjudice indemnisable."
+      "summary": "Il incombe au bailleur de justifier des sommes lui restant dues venant en déduction du montant du dépôt de garantie qu'il est tenu de restituer au locataire au départ des lieux loués.",
+      "relevance_to_template": "Pertinence: pierre angulaire du recours — c'est au BAILLEUR (non au locataire) de prouver et justifier chaque somme déduite du dépôt de garantie ; à défaut de justificatifs, le dépôt doit être intégralement restitué."
     }
   ],
   "jurisprudence_refs_note": "Section vide v0 — PISTE judilibre api-key requis (TODO Florian futur, lié TODO-26 ANTHROPIC_API_KEY indirectement). Wave +1 ouverture sur 5-8 décisions Cass civ 3ème et CA portant sur restitution dépôt de garantie et présomption art. 1731 (ex: Cass. civ. 3ème, 17 nov. 2004, n°03-15.288 ; Cass. civ. 3ème, 9 juill. 2014, n°13-15.071 ; CA Paris pôle 4 ch. 3 nombreuses 2020-2024).",

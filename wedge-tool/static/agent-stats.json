@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T03:53:02Z",
+  "generated_at": "2026-06-23T05:52:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 605,
+    "total_lifetime": 606,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13090033,
+    "vps_uptime_seconds": 13097172,
     "last_commit": {
-      "hash": "42dde85",
-      "subject": "run-633: purge intégrité moat cat-3 — 2 réf. jurisprudence assurance hors-sujet → 2 décisions civ3 l",
-      "relative": "20 seconds ago"
+      "hash": "37d57b3",
+      "subject": "run-633: snapshot frontmatter sync",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,

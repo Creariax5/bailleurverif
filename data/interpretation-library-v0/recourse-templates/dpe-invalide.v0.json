@@ -223,22 +223,22 @@
       "relevance_to_template": "Pertinence: Selon le II de l'article L. 271-4 du code de la construction et de l'habitation, le diagnostic de performance énergétique mentionné au 6° de ce texte n'a, à la différence des autres documents constitu"
     },
     {
-      "ecli": "ECLI:FR:CCASS:2019:C300182",
-      "decision_id": "5fca769f0165796406559b55",
-      "decision_date": "2019-03-07",
+      "ecli": "ECLI:FR:CCASS:2014:C300721",
+      "decision_id": "60797e389ba5988459c4a258",
+      "decision_date": "2014-06-04",
       "chamber": "Troisième chambre civile",
       "jurisdiction": "Cour de cassation",
-      "summary": "Les juges du fond apprécie souverainement si la proposition de reprise du constructeur constitue une offre consistant en l'obligation de réparer au sens de l'article 1642-1 du code civil",
-      "relevance_to_template": "Pertinence: Les juges du fond apprécie souverainement si la proposition de reprise du constructeur constitue une offre consistant en l'obligation de réparer au sens de l'article 1642-1 du code civil"
+      "summary": "La seule alimentation en électricité ne peut être considérée comme un équipement ou une installation permettant un chauffage normal du logement au sens de l'article 3 du décret du 30 janvier 2002 relatif aux caractéristiques du logement décent.",
+      "relevance_to_template": "Pertinence: appuie l'angle décence énergétique d'un logement F/G — un logement insuffisamment chauffé/isolé ne répond pas aux caractéristiques du logement décent (décret 2002-120, art. 3), fondement du recours locataire quand le DPE révèle une passoire."
     },
     {
-      "ecli": "ECLI:FR:CCASS:2023:C300425",
-      "decision_id": "648aaca602075b05db402419",
-      "decision_date": "2023-06-15",
+      "ecli": "ECLI:FR:CCASS:2026:C300339",
+      "decision_id": "6a211638cdc6046d470a99b9",
+      "decision_date": "2026-06-04",
       "chamber": "Troisième chambre civile",
       "jurisdiction": "Cour de cassation",
-      "summary": "La mise à disposition, par l'effet d'un bail emphytéotique consenti par une commune à une société, d'une centrale hydroélectrique, en vue de la production et de la vente d'électricité à un fournisseur d'énergie",
-      "relevance_to_template": "Pertinence: La mise à disposition, par l'effet d'un bail emphytéotique consenti par une commune à une société, d'une centrale hydroélectrique, en vue de la production et de la vente d'électricité à un fournisseur"
+      "summary": "Le locataire d'un local à usage d'habitation est recevable, d'une part, à poursuivre l'exécution forcée en nature de l'obligation de délivrance d'un logement décent tant que le manquement perdure, d'autre part à obtenir la réparation des conséquences de ce manquement.",
+      "relevance_to_template": "Pertinence: confirme les voies de recours du locataire face à un logement non décent (dont l'indécence énergétique F/G) — exécution forcée de l'obligation de délivrance d'un logement décent tant que le manquement dure + réparation du préjudice."
     }
   ],
   "jurisprudence_refs_note": "Section vide — PISTE judilibre api-key requis (TODO Florian futur, lié TODO-26 ANTHROPIC_API_KEY indirectement). Wave +1 ouverture sur 3-5 décisions Cass civ 3ème et CA portant sur DPE et décence post-Loi Climat 2021 (recherche manuelle Cour de cassation + CA Paris/Versailles/Lyon).",

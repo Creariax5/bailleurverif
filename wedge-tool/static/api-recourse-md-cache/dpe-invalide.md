@@ -107,8 +107,8 @@ success_rate_estimated_pct: 65
 ## Jurisprudence (Judilibre PISTE OAuth)
 
 - Selon le II de l'article L. 271-4 du code de la construction et de l'habitation, le diagnostic de performance énergétique mentionné au 6° de ce texte n'a, à la différence des autres documents constituant le dossier de diagnostic technique, _( ECLI ECLI:FR:CCASS:2019:C300983 · Troisième chambre civile · 2019-11-21 )_
-- Les juges du fond apprécie souverainement si la proposition de reprise du constructeur constitue une offre consistant en l'obligation de réparer au sens de l'article 1642-1 du code civil _( ECLI ECLI:FR:CCASS:2019:C300182 · Troisième chambre civile · 2019-03-07 )_
-- La mise à disposition, par l'effet d'un bail emphytéotique consenti par une commune à une société, d'une centrale hydroélectrique, en vue de la production et de la vente d'électricité à un fournisseur d'énergie _( ECLI ECLI:FR:CCASS:2023:C300425 · Troisième chambre civile · 2023-06-15 )_
+- La seule alimentation en électricité ne peut être considérée comme un équipement ou une installation permettant un chauffage normal du logement au sens de l'article 3 du décret du 30 janvier 2002 relatif aux caractéristiques du logement décent. _( ECLI ECLI:FR:CCASS:2014:C300721 · Troisième chambre civile · 2014-06-04 )_
+- Le locataire d'un local à usage d'habitation est recevable, d'une part, à poursuivre l'exécution forcée en nature de l'obligation de délivrance d'un logement décent tant que le manquement perdure, d'autre part à obtenir la réparation des conséquences de ce manquement. _( ECLI ECLI:FR:CCASS:2026:C300339 · Troisième chambre civile · 2026-06-04 )_
 
 
 ## Références corpus
