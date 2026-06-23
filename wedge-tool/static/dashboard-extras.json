@@ -1,74 +1,73 @@
 {
-  "generated_at": "2026-06-23T11:52:02Z",
+  "generated_at": "2026-06-23T13:52:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4243,
-    "requests_24h": 809,
-    "bot_hits_lifetime": 2189,
-    "bot_hits_24h": 279,
-    "bot_hits_1h": 27,
-    "human_hits_24h": 530
+    "requests_lifetime": 4260,
+    "requests_24h": 765,
+    "bot_hits_lifetime": 2207,
+    "bot_hits_24h": 276,
+    "bot_hits_1h": 21,
+    "human_hits_24h": 489
   },
   "bots_by_type_lifetime": {
     "GPTBot": 695,
-    "OAI-SearchBot": 310,
+    "OAI-SearchBot": 307,
     "DataForSEO": 296,
     "generic-bot": 275,
-    "Bingbot": 137,
-    "PetalBot": 111,
-    "Googlebot": 101,
+    "Bingbot": 136,
+    "PetalBot": 130,
+    "Googlebot": 100,
     "ByteSpider": 98,
-    "SemrushBot": 42,
+    "SemrushBot": 46,
     "AhrefsBot": 32,
     "BaiduSpider": 26,
+    "MJ12bot": 18,
     "HeadlessChrome": 18,
-    "MJ12bot": 16,
     "Go-HTTP": 8,
-    "DuckDuckBot": 8,
+    "DuckDuckBot": 6,
     "FacebookExt": 6,
     "PerplexityBot": 5,
     "curl/wget": 3,
     "python-script": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 79,
-    "PetalBot": 48,
-    "SemrushBot": 29,
-    "ByteSpider": 27,
+    "OAI-SearchBot": 70,
+    "PetalBot": 67,
+    "SemrushBot": 31,
+    "ByteSpider": 26,
     "GPTBot": 25,
-    "Bingbot": 20,
-    "Googlebot": 17,
+    "Bingbot": 21,
     "generic-bot": 11,
-    "HeadlessChrome": 9,
+    "Googlebot": 9,
+    "MJ12bot": 6,
     "BaiduSpider": 5,
-    "MJ12bot": 4,
     "AhrefsBot": 3,
     "Go-HTTP": 1,
     "FacebookExt": 1
   },
   "bot_last_seen": {
     "Googlebot": "2026-06-23T11:00:15+00:00",
-    "MJ12bot": "2026-06-22T21:37:41+00:00",
-    "OAI-SearchBot": "2026-06-23T11:40:48+00:00",
-    "Bingbot": "2026-06-23T11:41:26+00:00",
+    "MJ12bot": "2026-06-23T12:39:10+00:00",
+    "OAI-SearchBot": "2026-06-23T13:18:17+00:00",
+    "Bingbot": "2026-06-23T13:16:09+00:00",
     "HeadlessChrome": "2026-06-22T13:27:06+00:00",
     "BaiduSpider": "2026-06-16T18:55:30+00:00",
     "generic-bot": "2026-06-23T09:44:48+00:00",
-    "PetalBot": "2026-06-23T08:19:25+00:00",
+    "PetalBot": "2026-06-23T13:51:35+00:00",
     "ByteSpider": "2026-06-23T11:16:09+00:00",
     "Go-HTTP": "2026-06-16T18:57:17+00:00",
     "GPTBot": "2026-06-23T11:23:18+00:00",
     "DataForSEO": "2026-06-19T10:25:37+00:00",
     "PerplexityBot": "2026-06-21T15:36:53+00:00",
-    "DuckDuckBot": "2026-06-16T12:41:12+00:00",
-    "AhrefsBot": "2026-06-16T12:57:25+00:00",
+    "DuckDuckBot": "2026-06-21T15:54:08+00:00",
+    "AhrefsBot": "2026-06-23T12:17:23+00:00",
     "FacebookExt": "2026-06-16T15:31:47+00:00",
     "curl/wget": "2026-06-21T12:16:04+00:00",
     "python-script": "2026-06-21T22:19:58+00:00",
-    "SemrushBot": "2026-06-23T10:56:42+00:00"
+    "SemrushBot": "2026-06-23T12:16:22+00:00"
   },
   "last_googlebot": "2026-06-23T11:00:15+00:00",
-  "last_bingbot": "2026-06-23T11:41:26+00:00",
+  "last_bingbot": "2026-06-23T13:16:09+00:00",
   "chart_7days": [
     {
       "day": "2026-06-17",
@@ -168,28 +167,22 @@
     },
     {
       "day": "2026-06-23",
-      "total": 116,
+      "total": 149,
       "by_type": {
         "ByteSpider": 4,
-        "SemrushBot": 23,
-        "Bingbot": 6,
-        "PetalBot": 23,
+        "SemrushBot": 27,
+        "Bingbot": 8,
+        "PetalBot": 42,
         "generic-bot": 7,
-        "OAI-SearchBot": 30,
+        "OAI-SearchBot": 34,
         "Googlebot": 5,
-        "GPTBot": 18
+        "GPTBot": 18,
+        "AhrefsBot": 2,
+        "MJ12bot": 2
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "12",
-      "hits": 26
-    },
-    {
-      "hour": "13",
-      "hits": 24
-    },
     {
       "hour": "14",
       "hits": 15
@@ -276,23 +269,31 @@
     },
     {
       "hour": "11",
-      "hits": 71
+      "hits": 66
+    },
+    {
+      "hour": "12",
+      "hits": 5
+    },
+    {
+      "hour": "13",
+      "hits": 9
     }
   ],
   "top_bot_paths_24h": {
-    "/": 28,
-    "/robots.txt": 26,
-    "/encadrement-loyer-paris-2026.html": 25,
-    "/lille-dpe-f-g-interdit-location.html": 6,
-    "/css/tailwind-runtime.js": 5,
-    "/api/visit": 4,
-    "/css/main.css": 4,
+    "/": 26,
+    "/robots.txt": 24,
+    "/encadrement-loyer-paris-2026.html": 23,
+    "/sitemap.xml": 5,
+    "/encadrement-loyer-villeurbanne-2026.html": 5,
     "/encadrement-loyer-lyon-2026.html": 4,
+    "/css/tailwind-runtime.js": 4,
+    "/lille-dpe-f-g-interdit-location.html": 4,
     "/api/stats": 4,
     "/encadrement-loyer-france-2026.html": 4
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 28,
+    "/robots.txt": 27,
     "/": 3,
     "/aides-financieres-bailleur-2026.html": 2,
     "/favicon.ico": 2,
@@ -304,28 +305,28 @@
     "/aides-financieres-locataire-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 43,
-    "/css/main.css": 26,
-    "/css/tailwind-runtime.js": 26,
-    "/api/changelog?limit=5": 20,
-    "/api/funnel/event": 19,
-    "/api/visit": 19,
-    "/static/app.js": 19,
-    "/static/share-card.js": 17,
-    "/robots.txt": 12,
-    "/favicon.svg": 9
+    "/": 41,
+    "/css/main.css": 24,
+    "/css/tailwind-runtime.js": 24,
+    "/static/app.js": 18,
+    "/api/changelog?limit=5": 18,
+    "/api/funnel/event": 16,
+    "/static/share-card.js": 16,
+    "/api/visit": 15,
+    "/robots.txt": 11,
+    "/static/subscribe-tenant.js": 6
   },
   "status_codes_24h": {
-    "200": 796,
-    "404": 11,
-    "304": 2
+    "200": 755,
+    "404": 9,
+    "304": 1
   },
   "funnel": {
     "events_total_lifetime": 392,
     "sessions_lifetime": 287,
-    "sessions_24h": 26,
+    "sessions_24h": 21,
     "by_type_24h": {
-      "home_visit": 25,
+      "home_visit": 20,
       "wedge_q1_answered": 2,
       "recourse_viewed": 2,
       "wedge_q2_answered": 1,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T11:52:02Z",
+  "generated_at": "2026-06-23T13:53:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13118773,
+    "vps_uptime_seconds": 13126033,
     "last_commit": {
-      "hash": "fc1ca9d",
-      "subject": "run-635: clôture TODO-38 DMARC (brief Florian J+0) — dig re-confirmé + send end-to-end OK, read-side",
+      "hash": "1daab8a",
+      "subject": "run-636: acquisition data-unique — bloc observatoire réel Lille N=109/46,8% (Tactical critic-92 #1 ★",
       "relative": "2 hours ago"
     }
   },
