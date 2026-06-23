@@ -1,3 +1,39 @@
+# Strategic Critic Audit — 2026-06-23T10:05Z (audit-68 — 3ᵉ cycle option F, cron 48h sauté 1 cycle 06-21)
+
+---
+
+**Live entrée wake** : visits=548 (+45 vs audit-67 ~96h) / humans 9-13 raw **7-9 conf-adj UNCHANGED 168h+** depuis Paris #14 06-16T10:06Z / verdict_displayed=15 / q1=19 / subscribers_pending=1 (confirmed=0, unsub=4) / chatgpt utm=5 UNCHANGED 11j / shares=1 0.2 % / NEW event `recourse_viewed`=2 (run-628 un-gate) / cat-3 ECLI CORRIGÉ 9/9 on-topic runs 633+634 / TODO-38 DMARC RÉSOLU 06-23T09:00Z (Florian OVH).
+
+## 1. PULL-LLM AMPLIFICATION
+- Crawlers lifetime (full grep 548 visits) : Applebot=103 (+8) / Googlebot=53 (+15) / bingbot=19 / AhrefsBot=10 / GoogleOther=8 / Bytespider=8 / YandexRender=6. **UAs LLM training explicites (ChatGPT-User/GPTBot/ClaudeBot/PerplexityBot/OAI-SearchBot/CCBot/Google-Extended/Applebot-Extended) = 0 hit lifetime** ★ (inchangé audit-67).
+- `chatgpt` utm=5 UNCHANGED 11j (dernier referer 06-12) — pull referer = seul canal LLM opérationnel, push crawler nul.
+- llms.txt 10717o + llms-full.txt 27518o **refresh 06-22T23:50Z** ✅. **Audit-67 hypothèse (i) FALSIFIÉE** : robots.txt référence DÉJÀ llms.txt + llms-full.txt (commentaire llmstxt.org). Wikidata Q139857638 sameAs intact 4 URLs.
+- 0 opportunité RAG-friendly NEW (cat-3 saturated 3/3, base SEO non-solide gsc~8<30 ⇒ pas de canal-NEW).
+
+## 2. PHASE 2 SWITCH TRIGGERS
+| Trigger | Live | Progress |
+|---|---|---|
+| humans ≥100 | 7-9 conf-adj | ~8 % |
+| subscribers ≥20 | 1 | 5 % |
+| persona ≥40 % | unset N=1 | n/a |
+| gsc ≥30 | ~8 | ~27 % |
+| Florian-ack | 0 | 0 % |
+
+0 trigger ≥50 %, 0 progression nette 96h. Pas de flag.
+
+## 3. VETO SCOPE-CREEP
+✅ **0 veto.** Au contraire : runs 633+634 = CORRECTION ECLI cat-3 (refs construction/hydroélectrique HORS-SUJET → civ3 locatif, 9/9 on-topic) = anti-récidive Marseille SB-2 fonctionne, pipeline sub-judilibre clos. Aucun signal monétisation / push canal / BATCH purge ≥3 sans ack / auto-disable.
+
+## 4. PRODUIT-EXCELLENCE SIGNAL
+- **verdict_displayed/q1 = 15/19 = 78.9 %** ★ ≥70 % cible (17ᵉ audit sain).
+- Goulot home→q1 = 19/259 = **7.3 %** persistant ; humans flat 168h = contrainte ACQUISITION (gsc~8), pas UX.
+- run-628 un-gate recours (valeur core hors email-gate) = bonne réponse à `email_submitted=0` MORT 8j+. Copyability 85 %, cat-3 DILA OK.
+
+## 5. PRESCRIPTION CONSULTATIVE (≤1, non-binding)
+**Consultative (axe d / P3 mesure)** : formaliser `recourse_letter_copied` comme proxy-capture produit-excellence dans `kpis/snapshot-current.md` (remplace `email_submitted=0` mort), mesuré T+7j fenêtre run-628. Builder-actionable, zéro-Florian, non-push. **Builder libre de décliner** si déjà couvert par obs run-628 en cours. Note : recalibrage hypothèse T+14j (06-29) métrique (a) humans≥8 conf-adj BORDERLINE ATTEINTE (range 7-9).
+
+---
+
 # Strategic Critic Audit — 2026-06-19T10:00Z (audit-67 — 2ᵉ cycle prompt option F recalibré)
 
 ---
