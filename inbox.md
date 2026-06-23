@@ -1,3 +1,29 @@
+## 🔴 2026-06-23T20:00Z — Agent → Florian — **FYI intégrité multi-pages (corrigée) + question acquisition honnête (critic-94 ★★★ + ★★ honored J+0)**
+
+Le Tactical Critic (audit-94, 19:05Z) a relevé 2 choses que je te remonte directement — il a raison sur les deux.
+
+**1. Incident intégrité multi-pages (corrigé runs 638-640).** En refresh-ant les city-pages observatoire depuis le CSV canonique, j'ai trouvé des chiffres faux servis en prod sur des actifs publics du moat :
+- **Lyon** : affichait « max +244 % » — ce chiffre n'existe plus dans la donnée (réel max +192,5 %). Corrigé run-638.
+- **Bordeaux** : affichait 76,2 % de violations — réel dédoublonné = 71,8 % (surestimation +21pt sur le taux « clair »). Corrigé run-639.
+- **Marseille** : affichait N=36 — réel canonique = **N=92**, et la DPE F était attribuée au 13ᵉ alors qu'elle est au 6ᵉ. Corrigé run-640 (ce wake).
+
+Cause racine : pages générées début juin sur un scrape figé, jamais re-synchronisées au CSV cumulatif qui a grossi. Je corrige au fil de l'eau (recalc reproductible source canonique), mais le critic a raison : **corriger ça en silence = mauvais réflexe**, donc je te le signale. Aucune action requise de ta part, c'est de l'hygiène que je prends en charge.
+
+**Résolution Marseille (le critic me demandait de "trancher")** : mon run-639 disait « Marseille absente du CSV » — **c'était faux**. 92 lignes Marseille existent, mais toutes `in_scope_encadrement=false` (Marseille n'est PAS en zone d'encadrement — juridiquement correct, la page le dit bien). Mon filtre cherchait un `commune_slug` vide. Tranché : page juste sur le fond, chiffres N actualisés 36→92.
+
+**2. Question acquisition (la vraie).** Le critic pointe que mes **4 derniers wakes sont 100 % supply-side** (enrichissement pages) pendant que la contrainte liante prouvée est l'acquisition : **0 humain réel depuis 7j, 0 conversion, ~8 pages indexées GSC**. La thèse mission « data-unique → sort du dedup Google » n'a **aucun feedback mesuré** à ce jour. Je ne veux pas empiler de l'offre si le canal est mort.
+
+Décision qui t'appartient (gate actuel = monétisation/push gelés tant que humans<100) :
+- **(a)** On garde le cap SEO-compounding pur, mais j'instrumente un vrai test (GSC indexation avant/après sur 1 page, deadline 30j) au lieu d'enrichir à l'aveugle.
+- **(b)** On rouvre un canal distribution actif (le gate « humans>50 » bloque Reddit/HN/X — or on est à ~8 indexées, le SEO seul ne décolle pas en 7j). Tu m'avais gelé ces canaux ; je propose de revisiter ce gate.
+- **(c)** Autre / tu tranches.
+
+Sans réponse, je tiens **(a)** par défaut mais j'arrête le refresh-pages-en-boucle : 1 wake = 1 test mesurable, pas N wakes d'offre aveugle.
+
+— Builder (run-640, critic-94 #1 ★★★ + #2 ★★ honored J+0)
+
+---
+
 ## ✅ 2026-06-23T10:00Z — Agent → Florian — **TODO-38 DMARC clos J+18 — vérif partielle (read-side Gmail MCP down)**
 
 Brief 09:00Z honoré J+0. Fait :

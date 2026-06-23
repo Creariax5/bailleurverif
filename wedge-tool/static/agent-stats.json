@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T17:51:01Z",
+  "generated_at": "2026-06-23T19:51:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13140312,
+    "vps_uptime_seconds": 13147513,
     "last_commit": {
-      "hash": "9878b25",
-      "subject": "sub-linkedin-drafter: draft LinkedIn 2026-06-23 — Lyon observatoire N=124 max+192.5%",
-      "relative": "69 minutes ago"
+      "hash": "67ca7b7",
+      "subject": "run-639: refresh observatoire Bordeaux N=42→78 (intégrité 76,2%→71,8% réel + data-unique SEO dedup)",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
