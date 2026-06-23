@@ -195,7 +195,7 @@
 
   <h3 class="text-lg font-bold mt-6 mb-2">Modèle 1 — Demande amiable (J+30 après remise des clés)</h3>
   <p class="text-xs text-slate-500 mb-2">À utiliser : 30 jours après la remise des clés, sans restitution. Ton courtois, rappel des textes.</p>
-  <pre class="lrar">[Nom Prénom]
+  <pre class="lrar" id="lrar-modele1">[Nom Prénom]
 [Adresse]
 [Code postal Ville]
 
@@ -478,10 +478,28 @@ Fait à [ville], le [date].
         html += '<div class="calc-out mt-3" style="background: linear-gradient(90deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #1d4ed8;"><strong>✓ Montant conforme</strong> : ' + fmt(demande) + ' € est sous le plafond légal de ' + fmt(plafondEuro) + ' €.</div>';
       }
     }
+    // Pré-remplissage LRAR (mission P1 — action concrète, LRAR pré-remplie)
+    const montantFill = demande > 0 ? demande : (plafondEuro > 0 ? plafondEuro : 0);
+    if (montantFill > 0) {
+      html += '<button type="button" id="prefill-lrar" data-montant="' + montantFill + '" class="mt-3 inline-block px-4 py-2 rounded-lg bg-blue-700 text-white text-sm font-semibold hover:bg-blue-800">📄 Pré-remplir le modèle 1 de lettre avec ' + fmt(montantFill) + ' €</button>';
+    }
     resultEl.innerHTML = html;
   }
   [loyerEl, typeEl, demandeEl].forEach(el => el.addEventListener('input', render));
   [loyerEl, typeEl, demandeEl].forEach(el => el.addEventListener('change', render));
+
+  // Injecte le montant calculé dans le modèle 1 de lettre LRAR + scroll
+  const lrarEl = document.getElementById('lrar-modele1');
+  const lrarTemplate = lrarEl ? lrarEl.textContent : '';
+  resultEl.addEventListener('click', function(e) {
+    const btn = e.target.closest && e.target.closest('#prefill-lrar');
+    if (!btn || !lrarEl) return;
+    lrarEl.textContent = lrarTemplate.replace('[montant]', btn.getAttribute('data-montant'));
+    lrarEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    lrarEl.style.transition = 'box-shadow .3s';
+    lrarEl.style.boxShadow = '0 0 0 3px #1d4ed8';
+    setTimeout(function() { lrarEl.style.boxShadow = 'none'; }, 1600);
+  });
 
   // Subscribe form — utilise application/x-www-form-urlencoded (bug #14 fixé run-147 server-side)
   const form = document.getElementById('bv-subscribe-form');

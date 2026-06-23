@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T23:51:01Z",
+  "generated_at": "2026-06-23T01:51:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,8 +8,8 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 602,
-    "today_utc": 5,
+    "total_lifetime": 603,
+    "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
   },
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13075513,
+    "vps_uptime_seconds": 13082712,
     "last_commit": {
-      "hash": "d3988b3",
-      "subject": "run-630: observatoire #depassement-moyen — dépassement médian loyer encadré par ville (N=632 in-scop",
+      "hash": "89b724e",
+      "subject": "run-631: MAJ llms.txt + llms-full.txt observatoire 1735/632 + dimensions data uniques (dépassement m",
       "relative": "2 hours ago"
     }
   },

@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-22T23:50:02Z",
+  "generated_at": "2026-06-23T01:50:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3940,
-    "requests_24h": 724,
-    "bot_hits_lifetime": 2156,
-    "bot_hits_24h": 299,
-    "bot_hits_1h": 10,
-    "human_hits_24h": 425
+    "requests_lifetime": 3921,
+    "requests_24h": 697,
+    "bot_hits_lifetime": 2146,
+    "bot_hits_24h": 298,
+    "bot_hits_1h": 4,
+    "human_hits_24h": 399
   },
   "bots_by_type_lifetime": {
     "GPTBot": 678,
-    "OAI-SearchBot": 309,
+    "OAI-SearchBot": 307,
     "DataForSEO": 296,
-    "generic-bot": 275,
-    "Bingbot": 148,
+    "generic-bot": 273,
+    "Bingbot": 147,
     "Googlebot": 96,
-    "ByteSpider": 94,
+    "ByteSpider": 95,
     "PetalBot": 88,
-    "AhrefsBot": 53,
+    "AhrefsBot": 44,
     "BaiduSpider": 28,
-    "SemrushBot": 20,
+    "SemrushBot": 23,
     "HeadlessChrome": 18,
     "MJ12bot": 16,
     "DuckDuckBot": 10,
@@ -33,16 +33,16 @@
   "bots_by_type_24h": {
     "OAI-SearchBot": 78,
     "PetalBot": 65,
-    "ByteSpider": 52,
-    "Bingbot": 24,
-    "Googlebot": 15,
-    "SemrushBot": 12,
+    "ByteSpider": 53,
+    "Bingbot": 22,
+    "SemrushBot": 15,
+    "Googlebot": 14,
     "generic-bot": 10,
     "GPTBot": 9,
     "HeadlessChrome": 9,
-    "MJ12bot": 8,
     "BaiduSpider": 8,
     "AhrefsBot": 7,
+    "MJ12bot": 6,
     "Go-HTTP": 1,
     "FacebookExt": 1
   },
@@ -68,27 +68,8 @@
     "SemrushBot": "2026-06-16T20:37:17+00:00"
   },
   "last_googlebot": "2026-06-22T21:52:06+00:00",
-  "last_bingbot": "2026-06-22T23:38:01+00:00",
+  "last_bingbot": "2026-06-23T01:44:44+00:00",
   "chart_7days": [
-    {
-      "day": "2026-06-16",
-      "total": 148,
-      "by_type": {
-        "OAI-SearchBot": 64,
-        "Bingbot": 26,
-        "AhrefsBot": 23,
-        "generic-bot": 10,
-        "SemrushBot": 6,
-        "FacebookExt": 2,
-        "PerplexityBot": 2,
-        "BaiduSpider": 4,
-        "DuckDuckBot": 4,
-        "GPTBot": 1,
-        "Googlebot": 4,
-        "ByteSpider": 1,
-        "Go-HTTP": 1
-      }
-    },
     {
       "day": "2026-06-17",
       "total": 0,
@@ -167,7 +148,7 @@
     },
     {
       "day": "2026-06-22",
-      "total": 298,
+      "total": 299,
       "by_type": {
         "MJ12bot": 8,
         "Bingbot": 23,
@@ -176,7 +157,7 @@
         "PetalBot": 65,
         "AhrefsBot": 7,
         "BaiduSpider": 8,
-        "SemrushBot": 12,
+        "SemrushBot": 13,
         "generic-bot": 10,
         "ByteSpider": 52,
         "GPTBot": 9,
@@ -184,17 +165,18 @@
         "Go-HTTP": 1,
         "FacebookExt": 1
       }
+    },
+    {
+      "day": "2026-06-23",
+      "total": 4,
+      "by_type": {
+        "ByteSpider": 1,
+        "SemrushBot": 2,
+        "Bingbot": 1
+      }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "00",
-      "hits": 18
-    },
-    {
-      "hour": "01",
-      "hits": 15
-    },
     {
       "hour": "02",
       "hits": 10
@@ -281,12 +263,20 @@
     },
     {
       "hour": "23",
-      "hits": 8
+      "hits": 11
+    },
+    {
+      "hour": "00",
+      "hits": 1
+    },
+    {
+      "hour": "01",
+      "hits": 3
     }
   ],
   "top_bot_paths_24h": {
-    "/": 29,
     "/encadrement-loyer-paris-2026.html": 28,
+    "/": 28,
     "/robots.txt": 24,
     "/api/stats": 8,
     "/lille-dpe-f-g-interdit-location.html": 7,
@@ -309,28 +299,28 @@
     "/encadrement-loyer-paris-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 35,
+    "/": 32,
     "/robots.txt": 13,
-    "/css/tailwind-runtime.js": 10,
+    "/css/tailwind-runtime.js": 11,
     "/css/main.css": 9,
     "/favicon.svg": 7,
-    "/api/funnel/event": 6,
-    "/api/visit": 6,
-    "/static/subscribe-tenant.js": 5,
     "/observatoire-annonces-loyer.html": 5,
-    "/api/stats": 4
+    "/static/subscribe-tenant.js": 5,
+    "/api/funnel/event": 5,
+    "/api/visit": 5,
+    "/?q=Saint-Martin-D-Heres": 4
   },
   "status_codes_24h": {
-    "200": 597,
-    "404": 122,
-    "304": 5
+    "200": 579,
+    "304": 5,
+    "404": 113
   },
   "funnel": {
     "events_total_lifetime": 378,
     "sessions_lifetime": 273,
     "sessions_24h": 13,
     "by_type_24h": {
-      "home_visit": 13,
+      "home_visit": 12,
       "wedge_q1_answered": 2,
       "recourse_viewed": 2,
       "wedge_q2_answered": 1,
