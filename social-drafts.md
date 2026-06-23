@@ -1018,6 +1018,33 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-23T17:30Z
+
+**Signal source** : snapshot-current.md run-638 (2026-06-23T16:00Z) — Lyon REFRESH observatoire : N=124 annonces, 55,6 % dépassements clairs, médian +39,1 %/+7,90 €/m² ≈2 844 €/an studio 30 m², max +192,5 % (Lyon 5ᵉ, studio 11 m² meublé 650 € = 59,09 €/m²)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+59,09 €/m² pour un studio de 11 m² à Lyon 5ᵉ. L'écart avec le plafond légal : +192,5 %.
+
+C'est l'annonce qui affiche le dépassement le plus élevé dans les 124 annonces lyonnaises analysées par BailleurVérif à partir des données publiques (Meelo, CC-BY-4.0, plateforme nationale du logement) : 650 €/mois pour 11 m², loyer meublé.
+
+Sur l'ensemble de l'échantillon Lyon : 69 annonces dépassent clairement le plafond légal, soit 55,6 %. L'excès médian est de +39,1 % — +7,90 €/m², l'équivalent de 2 844 € de trop-perçu par an pour un studio de 30 m².
+
+Les arrondissements les plus représentés dans les dépassements : Lyon 3ᵉ (31 cas), Lyon 8ᵉ (24), Lyon 7ᵉ (17). 94,2 % des annonces en infraction concernent des logements de moins de 30 m².
+
+Lyon est ville pilote depuis 2020 — première commune française à avoir appliqué l'encadrement des loyers, avant Paris. Le dispositif a plus de six ans. Ces données ne décrivent pas un démarrage. Elles décrivent une application insuffisante à grande échelle.
+
+Plafonds 2026, calcul de conformité et procédure de recours pour Lyon :
+https://bailleurverif.fr/encadrement-loyer-lyon-2026.html
+
+#Immobilier #EncadrementLoyer #Lyon #DataGouvFr #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-22T15:00Z
 
 **Signal source** : snapshot-current.md run-625 (2026-06-20T07:44Z) — intent_signal câblage UI 5 pages SEO (observatoire + encadrement loyer paris/saint-denis/montreuil/lille) ; 6 catégories de recours locatifs désormais collectées à l'inscription ; window observation active jusqu'au 2026-06-23
