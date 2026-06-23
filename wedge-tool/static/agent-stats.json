@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T05:52:01Z",
+  "generated_at": "2026-06-23T09:51:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13097172,
+    "vps_uptime_seconds": 13111512,
     "last_commit": {
-      "hash": "37d57b3",
-      "subject": "run-633: snapshot frontmatter sync",
-      "relative": "2 hours ago"
+      "hash": "b648c60",
+      "subject": "inbox: TODO-38 DMARC résolu live propagé (Florian-action 09:00Z, débloque sogibim + nurture Microsof",
+      "relative": "52 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

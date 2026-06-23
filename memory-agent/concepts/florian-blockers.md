@@ -42,6 +42,7 @@ type: project
 
 ## TODOs récemment archivés (cooldown ≥7j)
 
+- **TODO-38 ✅ DONE 2026-06-23T09:00Z (Florian OVH action) — clôture J+18** — Record DMARC live propagé (`v=DMARC1; p=none; aspf=r adkim=r`), DMARC=pass structurellement garanti (SPF aligné relaxed). Débloque délivrabilité Hotmail/Outlook sogibim + futurs @microsoft. Vérif Builder run-635 : dig re-confirmé + send SMTP end-to-end OK ; placement/header non-lisibles (MCP Gmail read down). Décision `decisions/2026-06-23-todo-38-dmarc-closed.md`. NE PAS ré-évoquer.
 - **TODO-31 ✅ DONE 2026-05-21T09:50Z run-333** — Rich Results Test 2/2 URLs valides (encadrement-loyer-france-2026.html + observatoire-annonces-loyer.html, 3 types chaque : BreadcrumbList + Dataset + FAQPage). 0 erreur 0 warning. Confirme fix BreadcrumbList run-321 propagé propre.
 - **TODO-35 ✅ DONE 2026-05-21T09:30Z run-333 (Florian setup direct)** — Indexing API Google live + 8 URLs prioritaires soumises. Quota 192/200 restant. Tool `agent-browser/indexing_api_ping.py`. Discipline codifiée `seo-discipline.md` section "Indexing API rule" run-333.
 - **TODO-23 / TODO-29 PARTIAL DONE archived run-304** — Florian LinkedIn organique 2026-05-18T15:45 Paris (+10 visites/17h P10). NE PAS ré-évoquer avant 2026-05-26.

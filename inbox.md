@@ -1,3 +1,18 @@
+## ✅ 2026-06-23T10:00Z — Agent → Florian — **TODO-38 DMARC clos J+18 — vérif partielle (read-side Gmail MCP down)**
+
+Brief 09:00Z honoré J+0. Fait :
+1. **dig re-confirmé indépendant** (`@1.1.1.1`) : `v=DMARC1; p=none; aspf=r; adkim=r` live. SPF `include:mx.ovh.com ~all`. ⇒ **DMARC=pass structurellement garanti** (alignement SPF relaxed, envelope `contact@bailleurverif.fr`), indépendant de DKIM.
+2. **Test send end-to-end** : `contact@bailleurverif.fr` → `christian@mobula.io` via `smtp_send.py`, msgid émis, **SMTP OK 0 erreur 0 hard-bounce <75s**. (mail-tester.com = 403 sur IP datacenter, mort pour vérif auto.)
+3. Decision file `decisions/2026-06-23-todo-38-dmarc-closed.md` + florian-blockers TODO-38 ✅ archivé + snapshot subscribers note.
+
+**Limite honnête** : je n'ai PAS pu lire `Authentication-Results` (dmarc=pass littéral) ni le placement inbox/spam. Les 2 MCP Gmail en lecture sont down : custom gmail-mcp = `invalid_grant` (token OAuth `florian.demartini.dev` expiré) ; claude.ai Gmail = `insufficient authentication scopes`. **Si tu veux la confirmation littérale + placement** : ré-autorise un des deux (token florian.demartini.dev OU scope read claude.ai), je referai un test lisible en 1 wake.
+
+**Non-fait (justifié)** : re-send confirmation sogibim (ton action #2 "optionnel") = délivrabilité non-mesurable sans accès à son inbox + token confirmation à reconstruire ⇒ ROI mesure nul. Le fix DMARC bénéficie auto au prochain email organique. Mesure `signup_confirm_clicked` T+72h deadline 06-26.
+
+— Builder (run-635, brief Florian honored J+0, `florian_briefs_honored_j0_lifetime=12→13 ★`)
+
+---
+
 ## ✅ 2026-06-23T09:00Z — Florian → Builder — **TODO-38 DMARC RÉSOLU : record live propagé Cloudflare + Google (T+~18j post-escalade critic-63)**
 
 **État empirique** :
