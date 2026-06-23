@@ -1,3 +1,31 @@
+## ✅ 2026-06-23T09:00Z — Florian → Builder — **TODO-38 DMARC RÉSOLU : record live propagé Cloudflare + Google (T+~18j post-escalade critic-63)**
+
+**État empirique** :
+- `dig +short TXT _dmarc.bailleurverif.fr @1.1.1.1` = `"v=DMARC1; p=none; rua=mailto:dmarc-rua@bailleurverif.fr; pct=100; aspf=r; adkim=r;"`
+- Idem `@8.8.8.8` Google public DNS
+- Propagation globale confirmée 09:00Z
+- Florian-action OVH Web Cloud → Zone DNS bailleurverif.fr → record TXT `_dmarc` ajouté ~08:55Z
+
+**Débloque structurellement** :
+- delivery sogibim@hotmail subscriber #1 pending T+~21j (06-02T09:49Z)
+- nurture loop `send_topic_nurture` shipped run-446 vers tout futur @hotmail/@outlook (~50% mailboxes FR consumer)
+- Microsoft Outlook reconnaît domaine managé → -50-70% spam-fold probabilité empirique 2024-2026
+- Mail-tester score 10/10 + DMARC=pass attendu (vs 10/10 + DMARC=fail pre-fix)
+
+**Actions Builder suggérées (priorité libre)** :
+1. **Re-send mail-tester.com** ≤2 min : générer adresse jetable, send test depuis `contact@bailleurverif.fr` via `agent-browser/smtp_send.py`, attendre rapport, confirmer DMARC=pass
+2. **Send test sogibim** (optionnel) : envoyer email "rappel confirmation T+21j" ou direct nurture topic dpe-bailleur (premier template `NURTURE_TEMPLATES` ship run-446) → mesure empirique délivrabilité Hotmail post-DMARC
+3. **Update concept** `concepts/florian-blockers.md` ou équivalent : TODO-38 closed J+18, document delta empirique attendu
+4. **Mesure T+72h** : monitor `signup_confirm_clicked_lifetime` (sogibim seul candidat actuel) + tout futur subscriber @microsoft
+
+**Compatible bans audit actifs** : test smtp ≤2 outbound = sous quota DIRECTIVE (20/jour). Pas NEW FILE user-facing, pas patch sub-agents, pas push social. SB-5 / ScheduleWakeup respect.
+
+**Asymétrie** : 2 min Florian-action = débloque potentiel ~50% futur delivery + signal trust positif (1ʳᵉ TODO Florian-action consommée 06-2026, anti-pattern "Florian-silent T+N indéfini" cassé). Strategic option F §3 produit_excellence_signal indirect : delivery email = composant excellence livraison valeur post-signup.
+
+**Decision file recommandé** : `memory-agent/decisions/2026-06-23-todo-38-dmarc-closed.md` audit-trail brief 06-06T07:55Z → escalade T+~18j → résolution.
+
+---
+
 ## 📊 2026-06-18T17:46Z — Agent → Florian — **FYI structurel cadence flat 48h+ post #14 — hypothèse (a) Poisson dominante validée empirique (critic-86 #2 ★★ FYI binding 48h seuil honored, carve-out critic-87 #3-c JUSTIFIÉ explicit anti-récursion SB-5)**
 
 Last humain qualifying = #14 Paris 2026-06-16T10:10Z. Gap actuel = **55h36min flat** (>48h seuil critic-86 #2 trigger). 3 wakes substantive ships fenêtre 597-608 = (a) instrumentation v2 smoke PASS run-595 ; (b) bundle mobile-first 4 frictions ~€5 run-602 mission P1 ; (c) FAQPage 8 Q/R DILA Montreuil cycle 2 run-605 mission P2 SEO COMPOUNDING.
