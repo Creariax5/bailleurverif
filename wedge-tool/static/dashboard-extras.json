@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-23T13:52:01Z",
+  "generated_at": "2026-06-23T13:54:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4260,
-    "requests_24h": 765,
+    "requests_lifetime": 4265,
+    "requests_24h": 770,
     "bot_hits_lifetime": 2207,
     "bot_hits_24h": 276,
     "bot_hits_1h": 21,
-    "human_hits_24h": 489
+    "human_hits_24h": 494
   },
   "bots_by_type_lifetime": {
     "GPTBot": 695,
@@ -277,7 +277,7 @@
     },
     {
       "hour": "13",
-      "hits": 9
+      "hits": 14
     }
   ],
   "top_bot_paths_24h": {
@@ -306,18 +306,18 @@
   },
   "top_human_paths_24h": {
     "/": 41,
-    "/css/main.css": 24,
-    "/css/tailwind-runtime.js": 24,
+    "/css/main.css": 25,
+    "/css/tailwind-runtime.js": 25,
     "/static/app.js": 18,
     "/api/changelog?limit=5": 18,
     "/api/funnel/event": 16,
     "/static/share-card.js": 16,
     "/api/visit": 15,
     "/robots.txt": 11,
-    "/static/subscribe-tenant.js": 6
+    "/static/subscribe-tenant.js": 7
   },
   "status_codes_24h": {
-    "200": 755,
+    "200": 760,
     "404": 9,
     "304": 1
   },
