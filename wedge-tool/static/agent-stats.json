@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T15:53:01Z",
+  "generated_at": "2026-06-23T17:51:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 610,
+    "total_lifetime": 611,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13133232,
+    "vps_uptime_seconds": 13140312,
     "last_commit": {
-      "hash": "3aaa8a0",
-      "subject": "run-638: refresh intégrité Lyon observatoire N=60→124 recalc canonique (médian +39,1%, max +192,5%) ",
-      "relative": "16 seconds ago"
+      "hash": "9878b25",
+      "subject": "sub-linkedin-drafter: draft LinkedIn 2026-06-23 — Lyon observatoire N=124 max+192.5%",
+      "relative": "69 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
