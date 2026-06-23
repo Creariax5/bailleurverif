@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-23T01:50:02Z",
+  "generated_at": "2026-06-23T03:52:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 3921,
-    "requests_24h": 697,
-    "bot_hits_lifetime": 2146,
-    "bot_hits_24h": 298,
-    "bot_hits_1h": 4,
-    "human_hits_24h": 399
+    "requests_lifetime": 3906,
+    "requests_24h": 674,
+    "bot_hits_lifetime": 2149,
+    "bot_hits_24h": 290,
+    "bot_hits_1h": 9,
+    "human_hits_24h": 384
   },
   "bots_by_type_lifetime": {
     "GPTBot": 678,
-    "OAI-SearchBot": 307,
+    "OAI-SearchBot": 306,
     "DataForSEO": 296,
-    "generic-bot": 273,
-    "Bingbot": 147,
+    "generic-bot": 274,
+    "Bingbot": 148,
     "Googlebot": 96,
+    "PetalBot": 96,
     "ByteSpider": 95,
-    "PetalBot": 88,
-    "AhrefsBot": 44,
+    "AhrefsBot": 35,
     "BaiduSpider": 28,
-    "SemrushBot": 23,
+    "SemrushBot": 26,
     "HeadlessChrome": 18,
     "MJ12bot": 16,
     "DuckDuckBot": 10,
@@ -31,18 +31,18 @@
     "python-script": 2
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 78,
-    "PetalBot": 65,
+    "OAI-SearchBot": 76,
+    "PetalBot": 61,
     "ByteSpider": 53,
-    "Bingbot": 22,
-    "SemrushBot": 15,
-    "Googlebot": 14,
-    "generic-bot": 10,
+    "Bingbot": 21,
+    "SemrushBot": 20,
+    "Googlebot": 13,
+    "generic-bot": 11,
     "GPTBot": 9,
     "HeadlessChrome": 9,
-    "BaiduSpider": 8,
-    "AhrefsBot": 7,
-    "MJ12bot": 6,
+    "BaiduSpider": 6,
+    "AhrefsBot": 5,
+    "MJ12bot": 4,
     "Go-HTTP": 1,
     "FacebookExt": 1
   },
@@ -54,7 +54,7 @@
     "HeadlessChrome": "2026-06-22T13:27:06+00:00",
     "BaiduSpider": "2026-06-16T18:55:30+00:00",
     "generic-bot": "2026-06-16T14:51:13+00:00",
-    "PetalBot": "2026-06-22T21:57:14+00:00",
+    "PetalBot": "2026-06-23T03:26:29+00:00",
     "ByteSpider": "2026-06-16T15:20:22+00:00",
     "Go-HTTP": "2026-06-16T18:57:17+00:00",
     "GPTBot": "2026-06-16T10:02:28+00:00",
@@ -68,7 +68,7 @@
     "SemrushBot": "2026-06-16T20:37:17+00:00"
   },
   "last_googlebot": "2026-06-22T21:52:06+00:00",
-  "last_bingbot": "2026-06-23T01:44:44+00:00",
+  "last_bingbot": "2026-06-23T02:52:40+00:00",
   "chart_7days": [
     {
       "day": "2026-06-17",
@@ -168,23 +168,17 @@
     },
     {
       "day": "2026-06-23",
-      "total": 4,
+      "total": 19,
       "by_type": {
         "ByteSpider": 1,
-        "SemrushBot": 2,
-        "Bingbot": 1
+        "SemrushBot": 7,
+        "Bingbot": 2,
+        "PetalBot": 8,
+        "generic-bot": 1
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "02",
-      "hits": 10
-    },
-    {
-      "hour": "03",
-      "hits": 11
-    },
     {
       "hour": "04",
       "hits": 6
@@ -271,20 +265,28 @@
     },
     {
       "hour": "01",
+      "hits": 2
+    },
+    {
+      "hour": "02",
       "hits": 3
+    },
+    {
+      "hour": "03",
+      "hits": 4
     }
   ],
   "top_bot_paths_24h": {
-    "/encadrement-loyer-paris-2026.html": 28,
-    "/": 28,
-    "/robots.txt": 24,
+    "/": 27,
+    "/encadrement-loyer-paris-2026.html": 26,
+    "/robots.txt": 22,
     "/api/stats": 8,
     "/lille-dpe-f-g-interdit-location.html": 7,
     "/api/visit": 7,
-    "/css/tailwind-runtime.js": 6,
     "/static/subscribe-tenant.js": 5,
     "/css/main.css": 5,
-    "/encadrement-loyer-lille-2026.html": 4
+    "/css/tailwind-runtime.js": 5,
+    "/static/share-card.js": 4
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 26,
@@ -300,10 +302,10 @@
   },
   "top_human_paths_24h": {
     "/": 32,
-    "/robots.txt": 13,
-    "/css/tailwind-runtime.js": 11,
+    "/robots.txt": 12,
+    "/css/tailwind-runtime.js": 10,
     "/css/main.css": 9,
-    "/favicon.svg": 7,
+    "/favicon.svg": 6,
     "/observatoire-annonces-loyer.html": 5,
     "/static/subscribe-tenant.js": 5,
     "/api/funnel/event": 5,
@@ -311,8 +313,8 @@
     "/?q=Saint-Martin-D-Heres": 4
   },
   "status_codes_24h": {
-    "200": 579,
-    "304": 5,
+    "200": 557,
+    "304": 4,
     "404": 113
   },
   "funnel": {

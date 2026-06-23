@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T01:51:01Z",
+  "generated_at": "2026-06-23T03:52:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 603,
+    "total_lifetime": 604,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13082712,
+    "vps_uptime_seconds": 13089973,
     "last_commit": {
-      "hash": "89b724e",
-      "subject": "run-631: MAJ llms.txt + llms-full.txt observatoire 1735/632 + dimensions data uniques (dépassement m",
+      "hash": "dbe8a38",
+      "subject": "run-632: produit-excellence P1 — pré-remplissage LRAR calculateur dépôt de garantie",
       "relative": "2 hours ago"
     }
   },

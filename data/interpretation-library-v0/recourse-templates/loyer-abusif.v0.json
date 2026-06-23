@@ -230,27 +230,34 @@
       "source_url": "https://www.courdecassation.fr/decision/5fca33d50c7b4623bd8b0b2f"
     },
     {
-      "ecli": "ECLI:FR:CCASS:2019:C200810",
-      "decision_id": "5fca6d0a7e0ae057f1fa44f4",
-      "decision_date": "2019-06-13",
-      "chamber": "civ2",
+      "ecli": "ECLI:FR:CCASS:2025:C300584",
+      "decision_date": "2025-12-04",
+      "chamber": "civ3",
       "jurisdiction": "Cour de cassation",
-      "summary": "Justifie légalement sa décision ordonnant la restitution des sommes versées à un assuré qui a exercé sa faculté de renonciation prorogée prévue à l'article L. 132-5-2 du code des assurances, une cour d'appel qui, ayant relevé que l'assuré était demandeur.",
-      "relevance_to_template": "Jurisprudence sur l'exercice des droits contractuels et la restitution de sommes indûment retenues ; applicable par analogie aux questions d'encadrement et restitution en matière locative.",
-      "source_url": "https://www.courdecassation.fr/decision/5fca6d0a7e0ae057f1fa44f4"
+      "pourvoi": "24-15.589",
+      "summary": "Le bailleur ne peut appliquer un complément de loyer (au-delà du loyer de référence majoré) que si le logement présente des caractéristiques déterminantes de confort ou de localisation non prises en compte par le loyer de référence et n'existant pas dans les logements comparables du même secteur géographique (art. 140 III B loi n° 2018-1021 / art. 17 loi 89-462). En l'espèce le complément a été validé (vue dégagée sur un monument historique).",
+      "relevance_to_template": "Pose le test légal opposable du complément de loyer : c'est au bailleur de démontrer une caractéristique déterminante ; à défaut, le complément est injustifié et le locataire peut en demander la suppression devant le juge. Cadre directement le check-4-complement-loyer-justifie du template.",
+      "source_url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000053135177",
+      "verified_run": "run-633",
+      "verified_ts": "2026-06-23T03:45Z",
+      "verification_note": "ECLI + sommaire vérifiés sur Légifrance (JURITEXT000053135177), Cass civ3 04/12/2025 pourvoi 24-15.589."
     },
     {
-      "ecli": "ECLI:FR:CCASS:2019:C200808",
-      "decision_id": "5fca6d0a7e0ae057f1fa44f3",
-      "decision_date": "2019-06-13",
-      "chamber": "civ2",
+      "ecli": "ECLI:FR:CCASS:2016:C300036",
+      "decision_date": "2016-01-14",
+      "chamber": "civ3",
       "jurisdiction": "Cour de cassation",
-      "summary": "A eux seuls les manquements de l'assureur à son obligation d'information lors de la souscription du contrat d'assurance vie ne suffisent pas à exclure un détournement de la finalité de l'exercice par l'assuré de la faculté de renonciation.",
-      "relevance_to_template": "Éclaire les devoirs informationnels du contractant fort (assureur/bailleur) et les limits de la bonne foi contractuelle ; éclaire la question de l'abus de droit dans l'encadrement contractuel.",
-      "source_url": "https://www.courdecassation.fr/decision/5fca6d0a7e0ae057f1fa44f3"
+      "pourvoi": "14-24.681",
+      "publication": "Publié au bulletin",
+      "summary": "Est nulle en son entier la clause d'indexation qui exclut la réciprocité de variation et stipule que le loyer ne peut être révisé qu'à la hausse (art. L. 112-1 du code monétaire et financier). Le locataire a obtenu la restitution du trop-perçu (53 264,31 €).",
+      "relevance_to_template": "Fonde la restitution du trop-perçu de loyer en cas de clause d'indexation déséquilibrée (révision uniquement à la hausse) — appui direct pour la demande de remboursement à l'étape 2/5 du template. Décision rendue en bail commercial mais le principe (art. L. 112-1 CMF) est transposable au bail d'habitation.",
+      "source_url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000031863639",
+      "verified_run": "run-633",
+      "verified_ts": "2026-06-23T03:45Z",
+      "verification_note": "ECLI + sommaire vérifiés sur Légifrance (JURITEXT000031863639), Cass civ3 14/01/2016 pourvoi 14-24.681, Publié au bulletin."
     }
   ],
-  "jurisprudence_refs_note": "1 décision Cass civ3 ECLI:FR:CCASS:2020:C300657 enrichie via Judilibre v1.0 PRODUCTION run-287 (query 'encadrement loyer' chambre civ3 date_start 2010-01-01). Pipeline PISTE OAuth+search validé from-agent. Enrichissement progressif : queries restantes (complément loyer ALUR / zone tendue post-2014 spécifiquement) à raffiner runs +N pour atteindre cible 3-5 décisions/template (TODO-28 Florian directive 2026-05-19T08:05Z).",
+  "jurisprudence_refs_note": "3 décisions Cass civ3 toutes directement relatives au loyer d'habitation : C300657 (régime d'encadrement non contraire à la CEDH), C300584 (test du complément de loyer, 2025), C300036 (nullité clause d'indexation non réciproque + restitution trop-perçu, Publié au bulletin). PURGE INTÉGRITÉ run-633 : retrait de 2 anciennes réf. ECLI:FR:CCASS:2019:C200810 et C200808 (chambre civ2, assurance-vie / renonciation L.132-5-2 code des assurances) rattachées par analogie forcée run-sub-1 — hors sujet pour l'encadrement locatif, présentation trompeuse d'un actif moat publié. Remplacées par 2 décisions civ3 vérifiées sur Légifrance. Enrichissement futur : action en diminution post-ALUR / saisine CDC publiée.",
   "limitations_disclaimers": [
     "Ce template est un outil d'information ne remplaçant pas un conseil juridique personnalisé d'un avocat ou de l'ADIL.",
     "Le contenu reflète l'état du droit au 2026-05-18 (corpus SP.fr F1314 vérifié 01/04/2026, F1311 vérifié 08/08/2025, ANIL fiche màj 26/11/2024). Vérifier toute évolution réglementaire avant action.",
@@ -334,6 +341,6 @@
   "legal_basis_note": "Articles loi/code extraits du bulk DILA Open Data (https://echanges.dila.gouv.fr/OPENDATA/LEGI/), Licence Ouverte Etalab v2.0, archives quotidiennes XML. Provenance vérifiable : chaque entrée précise archive_name + archive_path + fetched_ts. Citations verbatim depuis BLOC_TEXTUEL/CONTENU (XML schema DILA). Cadence ingestion hebdomadaire prévue via crawler/legifrance_dila_fetch.py --latest-delta + filtre keywords. Différent de legal_basis_citations[] (construction historique depuis vocabulaire SP.fr/ANIL, partiellement non-vérifié).",
   "legal_basis_first_authored_run": "run-265",
   "legal_basis_first_authored_ts": "2026-05-18T16:40Z",
-  "jurisprudence_refs_last_enriched_run": "sub-1",
-  "jurisprudence_refs_last_enriched_ts": "2026-05-19T16:29:42.502029+00:00"
+  "jurisprudence_refs_last_enriched_run": "run-633",
+  "jurisprudence_refs_last_enriched_ts": "2026-06-23T03:45:00+00:00"
 }
