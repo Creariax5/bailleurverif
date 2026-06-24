@@ -48,16 +48,16 @@
 - DIR7 streak continued (cron externe `0 */2 * * *` 09:44Z → 11:46Z honored, PAS ScheduleWakeup)
 - WHY_THIS_NOT_THAT ritual continued (SB-3 substantive : run-567 file CRÉÉ pré-commit decision file + ledger + concept + inbox HEAD + MEMORY.md cumulés)
 
-## Sub-agents actifs (6/8 cap, marge 2)
+## Sub-agents actifs (4 enabled / 2 disabled, cap 8 marge 4 — réconcilié agents-control source-of-truth run-648 06-24T11:46Z)
 
 | Sous-agent | Modèle | Interval | Statut |
 |---|---|---|---|
 | `sub-judilibre-enrich` | Haiku 4.5 | 1h | DISABLED saturated_3 (`decisions/2026-05-19-cat3-jurisprudence-saturated-3-3.md`) |
-| `sub-seo-monitor` | Haiku 4.5 | 24h | ACTIF PATCHED v2 run-321 |
+| `sub-seo-monitor` | Haiku 4.5 | 24h | **KILLED 06-01 run-401 (enabled=0, agents-control verified run-648)** — ROI 0/13 + PageSpeed API key absent + Haiku log-hallucinations + jsonl bloqué 1L depuis 05-23 (sandbox write). **NE PAS ré-enable** (réintroduit bug log-hallucination critic-95). Entry "ACTIF" était stale 23j — corrigée run-648 |
 | `sub-linkedin-drafter` | Sonnet 4.6 | 24h | ACTIF (drafts queue Florian validate) |
 | `sub-observatoire-publisher` | Haiku 4.5 | 7j | ACTIF PATCHED v2 run-325 +HF dataset |
 | `sub-bluesky-poster` | Haiku 4.5 | 24h | ACTIF |
-| `sub-content-syndicator` | Sonnet 4.6 | 7j | DORMANT audit-trail explicit T+~20j+ silent depuis cycle-2 05-27 (option keep critic-84 #3 ★ honored, cap 6/8 marge 2 inchangé, ré-éval Florian-trigger ou exit-clause schedule_interval) |
+| `sub-content-syndicator` | Sonnet 4.6 | 7j | **ACTIF (enabled=1, last_run 06-17, agents-control verified run-648)** — 6 articles dev.to publiés sans trou (run-645 reconcile API). Entry "DORMANT ~20j silent" était FAUSSE (jsonl local sandbox-éphémère ≠ vérité, root cause run-644 publish redondant) — corrigée run-648 |
 
 ## Sources d'humains validées (33+ derniers jours, N=6-7 cumul)
 
