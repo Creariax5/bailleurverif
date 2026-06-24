@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-06-23T23:50:01Z",
+  "generated_at": "2026-06-24T01:50:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4195,
-    "requests_24h": 881,
-    "bot_hits_lifetime": 2304,
-    "bot_hits_24h": 296,
-    "bot_hits_1h": 9,
-    "human_hits_24h": 585
+    "requests_lifetime": 4228,
+    "requests_24h": 902,
+    "bot_hits_lifetime": 2328,
+    "bot_hits_24h": 315,
+    "bot_hits_1h": 11,
+    "human_hits_24h": 587
   },
   "bots_by_type_lifetime": {
     "GPTBot": 699,
-    "OAI-SearchBot": 308,
+    "OAI-SearchBot": 310,
     "DataForSEO": 296,
     "generic-bot": 277,
-    "PetalBot": 154,
-    "Bingbot": 138,
+    "PetalBot": 155,
+    "Bingbot": 142,
+    "SemrushBot": 112,
     "Googlebot": 99,
     "ByteSpider": 98,
-    "SemrushBot": 95,
     "AhrefsBot": 42,
     "BaiduSpider": 26,
     "MJ12bot": 20,
@@ -31,15 +31,15 @@
     "python-script": 2
   },
   "bots_by_type_24h": {
-    "SemrushBot": 81,
-    "PetalBot": 66,
-    "OAI-SearchBot": 63,
+    "SemrushBot": 95,
+    "PetalBot": 67,
+    "OAI-SearchBot": 65,
     "GPTBot": 22,
-    "Bingbot": 16,
+    "Bingbot": 19,
     "generic-bot": 12,
     "AhrefsBot": 12,
     "Googlebot": 7,
-    "ByteSpider": 5,
+    "ByteSpider": 4,
     "MJ12bot": 4,
     "BaiduSpider": 2,
     "FacebookExt": 2,
@@ -49,12 +49,12 @@
   "bot_last_seen": {
     "Googlebot": "2026-06-23T15:57:49+00:00",
     "MJ12bot": "2026-06-23T16:11:00+00:00",
-    "OAI-SearchBot": "2026-06-23T22:19:39+00:00",
-    "Bingbot": "2026-06-23T21:11:49+00:00",
+    "OAI-SearchBot": "2026-06-24T00:08:53+00:00",
+    "Bingbot": "2026-06-24T01:17:06+00:00",
     "HeadlessChrome": "2026-06-22T13:27:06+00:00",
     "BaiduSpider": "2026-06-23T15:17:24+00:00",
     "generic-bot": "2026-06-23T16:49:40+00:00",
-    "PetalBot": "2026-06-23T23:29:51+00:00",
+    "PetalBot": "2026-06-23T23:56:30+00:00",
     "ByteSpider": "2026-06-23T18:14:03+00:00",
     "Go-HTTP": "2026-06-22T22:57:58+00:00",
     "GPTBot": "2026-06-23T22:53:36+00:00",
@@ -65,16 +65,11 @@
     "FacebookExt": "2026-06-23T18:16:46+00:00",
     "curl/wget": "2026-06-21T12:16:04+00:00",
     "python-script": "2026-06-21T22:19:58+00:00",
-    "SemrushBot": "2026-06-23T23:42:49+00:00"
+    "SemrushBot": "2026-06-24T01:47:39+00:00"
   },
   "last_googlebot": "2026-06-23T15:57:49+00:00",
-  "last_bingbot": "2026-06-23T21:11:49+00:00",
+  "last_bingbot": "2026-06-24T01:17:06+00:00",
   "chart_7days": [
-    {
-      "day": "2026-06-17",
-      "total": 0,
-      "by_type": {}
-    },
     {
       "day": "2026-06-18",
       "total": 20,
@@ -168,14 +163,14 @@
     },
     {
       "day": "2026-06-23",
-      "total": 295,
+      "total": 298,
       "by_type": {
         "ByteSpider": 5,
-        "SemrushBot": 80,
+        "SemrushBot": 81,
         "Bingbot": 16,
-        "PetalBot": 66,
+        "PetalBot": 67,
         "generic-bot": 12,
-        "OAI-SearchBot": 63,
+        "OAI-SearchBot": 64,
         "Googlebot": 7,
         "GPTBot": 22,
         "AhrefsBot": 12,
@@ -185,17 +180,18 @@
         "PerplexityBot": 2,
         "DuckDuckBot": 2
       }
+    },
+    {
+      "day": "2026-06-24",
+      "total": 21,
+      "by_type": {
+        "SemrushBot": 16,
+        "OAI-SearchBot": 1,
+        "Bingbot": 4
+      }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "00",
-      "hits": 1
-    },
-    {
-      "hour": "01",
-      "hits": 2
-    },
     {
       "hour": "02",
       "hits": 3
@@ -282,18 +278,26 @@
     },
     {
       "hour": "23",
-      "hits": 7
+      "hits": 3
+    },
+    {
+      "hour": "00",
+      "hits": 5
+    },
+    {
+      "hour": "01",
+      "hits": 4
     }
   ],
   "top_bot_paths_24h": {
     "/robots.txt": 32,
-    "/": 22,
-    "/encadrement-loyer-paris-2026.html": 20,
+    "/": 23,
+    "/encadrement-loyer-paris-2026.html": 21,
     "/encadrement-loyer-villeurbanne-2026.html": 7,
     "/lille-dpe-f-g-interdit-location.html": 5,
     "/sitemap.xml": 5,
-    "/preavis-bail-lyon.html": 4,
-    "/encadrement-loyer-lyon-2026.html": 3,
+    "/preavis-bail-lyon.html": 5,
+    "/aides-financieres-bailleur-2026.html": 4,
     "/data/": 3,
     "/depot-garantie-france-2026.html": 3
   },
@@ -310,9 +314,9 @@
     "/aides-financieres-locataire-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 41,
-    "/css/tailwind-runtime.js": 24,
-    "/css/main.css": 24,
+    "/": 45,
+    "/css/main.css": 23,
+    "/css/tailwind-runtime.js": 23,
     "/static/app.js": 17,
     "/api/changelog?limit=5": 17,
     "/static/share-card.js": 16,
@@ -322,7 +326,7 @@
     "/favicon.svg": 6
   },
   "status_codes_24h": {
-    "200": 871,
+    "200": 892,
     "404": 10
   },
   "funnel": {

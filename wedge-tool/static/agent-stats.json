@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T23:50:02Z",
+  "generated_at": "2026-06-24T01:51:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 613,
+    "total_lifetime": 614,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13161853,
+    "vps_uptime_seconds": 13169113,
     "last_commit": {
-      "hash": "c5ca6ac",
-      "subject": "run-641: instrument GSC dedup-test (data-unique thesis falsifiable) + TODO-39 enable Search Console ",
+      "hash": "706176d",
+      "subject": "run-642: GSC test integrity guard (no error-row pollution) + formalize recourse_capture_funnel proxy",
       "relative": "2 hours ago"
     }
   },
