@@ -40,7 +40,7 @@
   - Intégration site run-319 J+0 : `sameAs` JSON-LD Organization (Wikidata + GitHub + 2× data.gouv) + footer link `<a href="wikidata.org/wiki/Q139857638">Wikidata</a>`
 - **8 outbound emails lifetime** : 4 presse FR initial (Capital/LeMonde/Mediapart/Reporterre 2026-05-17) + ANIL 2026-05-19 + Que Choisir Logement 2026-05-20 + 3 outreach (DAL/FAP/asso autres) — 0/5 réponse presse T+72h+
 - **Repo GitHub public** MIT DR 90 + crypto-timestamp commit `8840c77`
-- **2 PRs awesome-lists OPEN** : `awesomedata/apd-core#410` + `etewiah/awesome-real-estate#28` (0 merged T+19/11 wakes)
+- **2 PRs awesome-lists OPEN** : `awesomedata/apd-core#410` + `etewiah/awesome-real-estate#28` (0 merged T+19/11 wakes). **3ᵉ PR DÉCLINÉ run-652** : cibles déférées run-296 `Woxup-France/awesome-french-open-data` + `Evan-Crx/awesome-france-api` = 1★ ~DR0 (GH API) → échouent barre DR60+, backlink vanité ≠ levier indexation. Item fermé, ne pas rouvrir sans cible DR60+ réelle.
 - **Open3CL issue #160** posté Florian 2026-05-17 (silent post-T+72h, signal mort acceptable)
 
 **Composants substantifs cat-4 cumul (audit-10 strategic +1 net via Wikidata, +1 net via dev.to syndication critic-44 #1)** :
