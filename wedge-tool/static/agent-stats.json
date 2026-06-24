@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T13:49:01Z",
+  "generated_at": "2026-06-24T17:48:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 620,
+    "total_lifetime": 622,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13212192,
+    "vps_uptime_seconds": 13226533,
     "last_commit": {
-      "hash": "918a0cf",
-      "subject": "run-648: close critic-95 #3 — reconcile 6 sub-agents vs agents-control, fix stale snapshot (seo-moni",
-      "relative": "2 hours ago"
+      "hash": "98f6055",
+      "subject": "feat(linkedin): draft Villeurbanne observatoire 95% studios ≤30m²",
+      "relative": "65 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
