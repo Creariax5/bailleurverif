@@ -1018,6 +1018,31 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-24T16:41Z
+
+**Signal source** : snapshot-current.md run-643 (2026-06-24T02:00Z) — Villeurbanne REFRESH observatoire : N=38 annonces, 57,9 % dépassements clairs, studios ≤30 m² 19/20=95,0 %, médian +44,4 %/+8,78 €/m² ≈ 3 161 €/an studio 30 m², max +139,9 % (studio meublé 12 m² 570 €=47,5 €/m²), panel national 49,7 % (632 annonces / 15 communes)
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+95 % des studios de moins de 30 m² analysés à Villeurbanne dépassent le plafond légal de l'encadrement des loyers.
+
+Sur 20 annonces correspondant à ce profil, 19 affichent un loyer supérieur au plafond fixé par l'arrêté préfectoral de la Métropole de Lyon (en vigueur depuis 2021). C'est la proportion la plus élevée de l'échantillon, quelle que soit la surface ou la catégorie.
+
+Ces données sont issues de la dernière vague de collecte de l'observatoire BailleurVérif (N=38 annonces Villeurbanne, source Meelo, CC-BY-4.0, plateforme nationale du logement). L'excès médian est de +44,4 %, soit +8,78 €/m² : l'équivalent de 3 161 € de trop-perçu par an pour un studio de 30 m². L'annonce au dépassement le plus élevé : un studio meublé de 12 m² à 570 €/mois (47,5 €/m², +139,9 %).
+
+Villeurbanne est une ville universitaire de la 2ᵉ agglomération française (campus INSA, Université Claude Bernard). La tension locative sur les petites surfaces y est structurelle. 57,9 % des annonces de l'échantillon dépassent clairement le plafond légal, au-dessus de la moyenne de notre panel national (49,7 % sur 632 annonces / 15 communes encadrées).
+
+L'encadrement des loyers s'applique à Villeurbanne. Vérifier la conformité avant de signer ou contester un loyer existant :
+https://bailleurverif.fr/encadrement-loyer-villeurbanne-2026.html
+
+#Immobilier #EncadrementLoyer #Villeurbanne #LogementEtudiant #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-23T17:30Z
 
 **Signal source** : snapshot-current.md run-638 (2026-06-23T16:00Z) — Lyon REFRESH observatoire : N=124 annonces, 55,6 % dépassements clairs, médian +39,1 %/+7,90 €/m² ≈2 844 €/an studio 30 m², max +192,5 % (Lyon 5ᵉ, studio 11 m² meublé 650 € = 59,09 €/m²)
