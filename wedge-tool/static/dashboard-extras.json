@@ -1,56 +1,58 @@
 {
-  "generated_at": "2026-06-24T03:50:02Z",
+  "generated_at": "2026-06-24T05:52:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4278,
-    "requests_24h": 931,
-    "bot_hits_lifetime": 2364,
-    "bot_hits_24h": 336,
-    "bot_hits_1h": 15,
-    "human_hits_24h": 595
+    "requests_lifetime": 4317,
+    "requests_24h": 940,
+    "bot_hits_lifetime": 2401,
+    "bot_hits_24h": 351,
+    "bot_hits_1h": 19,
+    "human_hits_24h": 589
   },
   "bots_by_type_lifetime": {
     "GPTBot": 699,
-    "OAI-SearchBot": 310,
+    "OAI-SearchBot": 314,
     "DataForSEO": 296,
     "generic-bot": 277,
+    "SemrushBot": 163,
     "PetalBot": 162,
-    "Bingbot": 145,
-    "SemrushBot": 137,
+    "Bingbot": 147,
     "Googlebot": 99,
     "ByteSpider": 99,
     "AhrefsBot": 42,
     "BaiduSpider": 26,
     "MJ12bot": 20,
     "HeadlessChrome": 18,
-    "DuckDuckBot": 8,
+    "DuckDuckBot": 10,
     "Go-HTTP": 7,
     "PerplexityBot": 7,
     "FacebookExt": 7,
     "curl/wget": 3,
+    "Amazonbot": 3,
     "python-script": 2
   },
   "bots_by_type_24h": {
-    "SemrushBot": 115,
-    "PetalBot": 66,
+    "SemrushBot": 137,
     "OAI-SearchBot": 65,
+    "PetalBot": 56,
     "GPTBot": 22,
-    "Bingbot": 21,
+    "Bingbot": 20,
     "AhrefsBot": 12,
     "generic-bot": 11,
-    "Googlebot": 7,
+    "Googlebot": 6,
     "ByteSpider": 5,
     "MJ12bot": 4,
+    "DuckDuckBot": 4,
+    "Amazonbot": 3,
     "BaiduSpider": 2,
     "FacebookExt": 2,
-    "PerplexityBot": 2,
-    "DuckDuckBot": 2
+    "PerplexityBot": 2
   },
   "bot_last_seen": {
     "Googlebot": "2026-06-23T15:57:49+00:00",
     "MJ12bot": "2026-06-23T16:11:00+00:00",
-    "OAI-SearchBot": "2026-06-24T00:08:53+00:00",
-    "Bingbot": "2026-06-24T02:37:35+00:00",
+    "OAI-SearchBot": "2026-06-24T05:28:11+00:00",
+    "Bingbot": "2026-06-24T05:48:27+00:00",
     "HeadlessChrome": "2026-06-22T13:27:06+00:00",
     "BaiduSpider": "2026-06-23T15:17:24+00:00",
     "generic-bot": "2026-06-23T16:49:40+00:00",
@@ -60,15 +62,16 @@
     "GPTBot": "2026-06-23T22:53:36+00:00",
     "DataForSEO": "2026-06-19T10:25:37+00:00",
     "PerplexityBot": "2026-06-23T19:22:27+00:00",
-    "DuckDuckBot": "2026-06-23T20:41:15+00:00",
+    "DuckDuckBot": "2026-06-24T04:09:43+00:00",
     "AhrefsBot": "2026-06-23T18:08:36+00:00",
     "FacebookExt": "2026-06-23T18:16:46+00:00",
     "curl/wget": "2026-06-21T12:16:04+00:00",
     "python-script": "2026-06-21T22:19:58+00:00",
-    "SemrushBot": "2026-06-24T03:48:40+00:00"
+    "SemrushBot": "2026-06-24T05:48:21+00:00",
+    "Amazonbot": "2026-06-24T04:05:02+00:00"
   },
   "last_googlebot": "2026-06-23T15:57:49+00:00",
-  "last_bingbot": "2026-06-24T02:37:35+00:00",
+  "last_bingbot": "2026-06-24T05:48:27+00:00",
   "chart_7days": [
     {
       "day": "2026-06-18",
@@ -183,25 +186,19 @@
     },
     {
       "day": "2026-06-24",
-      "total": 57,
+      "total": 94,
       "by_type": {
-        "SemrushBot": 41,
-        "OAI-SearchBot": 1,
-        "Bingbot": 7,
+        "SemrushBot": 67,
+        "OAI-SearchBot": 5,
+        "Bingbot": 9,
         "ByteSpider": 1,
-        "PetalBot": 7
+        "PetalBot": 7,
+        "Amazonbot": 3,
+        "DuckDuckBot": 2
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "04",
-      "hits": 4
-    },
-    {
-      "hour": "05",
-      "hits": 3
-    },
     {
       "hour": "06",
       "hits": 6
@@ -288,20 +285,28 @@
     },
     {
       "hour": "03",
-      "hits": 8
+      "hits": 6
+    },
+    {
+      "hour": "04",
+      "hits": 1
+    },
+    {
+      "hour": "05",
+      "hits": 2
     }
   ],
   "top_bot_paths_24h": {
-    "/robots.txt": 33,
-    "/": 23,
-    "/encadrement-loyer-paris-2026.html": 21,
+    "/robots.txt": 35,
+    "/": 24,
+    "/encadrement-loyer-paris-2026.html": 22,
     "/encadrement-loyer-villeurbanne-2026.html": 7,
     "/sitemap.xml": 6,
     "/lille-dpe-f-g-interdit-location.html": 5,
     "/preavis-bail-lyon.html": 5,
-    "/aides-financieres-bailleur-2026.html": 4,
-    "/versailles-dpe-f-g-interdit-location.html": 3,
-    "/depot-garantie-france-2026.html": 3
+    "/encadrement-loyer-bondy-2026.html": 3,
+    "/encadrement-loyer-grenoble-2026.html": 3,
+    "/preavis-bail-bordeaux.html": 3
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 26,
@@ -316,9 +321,9 @@
     "/aides-financieres-locataire-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 42,
-    "/css/main.css": 25,
-    "/css/tailwind-runtime.js": 25,
+    "/": 43,
+    "/css/tailwind-runtime.js": 24,
+    "/css/main.css": 24,
     "/static/app.js": 17,
     "/api/changelog?limit=5": 17,
     "/static/share-card.js": 16,
@@ -328,8 +333,8 @@
     "/favicon.svg": 6
   },
   "status_codes_24h": {
-    "200": 921,
-    "404": 10
+    "200": 929,
+    "404": 11
   },
   "funnel": {
     "events_total_lifetime": 393,
