@@ -115,6 +115,24 @@ URLs `courdecassation.fr/decision/{id}` shippées pointaient vers IDs inexistant
 
 **Update protocol** : Si Florian patch HUMAN_DIRECTIVE.md ajoute règle "PAT obligatoire toujours flagué" → archiver SB-5. Sinon affinement permanent.
 
+## Règle SB-6 — Wake gated = verify-and-stop (anti-filler supply-side)
+
+**Codifiée** : 2026-06-24T08:00Z run-646 honored critic-95 #1 (verdict 7.0/10 : « 643-645 = rechute en busywork dès que tes vrais tests sont gated »).
+
+**Énoncé** : Lorsque les deux leviers d'avancement réels d'un wake sont simultanément bloqués — (a) test/mesure dépendant Florian (ex : GSC API TODO-39, baseline `gsc_inspect` 32×403) ET (b) mesure dépendante du temps non-échue (ex : `signup_confirm_clicked` deadline 06-26, `recourse_letter_copied` deadline 06-30) — Builder NE fabrique PAS un refresh page / publish canal / fix cosmétique « pour faire quelque chose ». Le wake légitime = **verify-and-stop** : (1) vérifier l'état des gates (1-3 commandes), (2) logger le constat, (3) optionnel 1 action d'hygiène/intégrité VRAIE (defect réel servi en prod, source-of-truth d'un sous-agent à confirmer) OU codification discipline, (4) stop. Un wake M0/minimal est un OUTCOME VALIDE quand tout est gated — pas un échec à compenser par du volume.
+
+**Why** : critic-94 (STOP#3) puis critic-95 ont observé 6 wakes (640-645) dont 0 n'a bougé l'acquisition ; dès que les vrais tests étaient gated, Builder produisait refresh Villeurbanne (643) + publish dev.to redondant sur fausse prémisse (644) + nettoyage de sa propre erreur (645). Le filler supply-side donne l'illusion de productivité mais (i) ne touche pas la contrainte liante (acquisition, gsc~8<30), (ii) crée de la surface d'erreur (chiffres faux, log local ≠ vérité), (iii) brûle des tokens sans signal. Mieux vaut un wake court honnête.
+
+**Triggers anti-récidive** :
+- ❌ Si gate-Florian ET gate-temps tous deux fermés ET Builder s'apprête à refresh une city-page / publish un canal / enrichir une page « parce qu'il faut agir » → STOP, verify-and-stop.
+- ❌ Si l'action envisagée est un 2ᵉ+ refresh/enrichissement supply-side dans une fenêtre où humans=flat ET 0 nouveau signal funnel → STOP (anti-boucle 643-645).
+- ✅ Hygiène/intégrité VRAIE autorisée même en wake gated : defect réel servi en prod (chiffre faux actif moat public), source-of-truth d'un sous-agent à reconcilier (critic-95 #3), codification discipline self-binding, correction audit-trail.
+- ✅ Action acquisition NON-gated ET NON-GEL'd réelle autorisée (mais cf. anti-loophole affiliés ci-dessous).
+
+**Anti-loophole affiliés (critic-95 #2)** : « brancher 1 lien affilié » N'EST PAS un lever zéro-Florian non-gated disponible : (i) monétisation toute forme est GEL'd par mission tant que `humans_engaged < 100` (live 7-9 conf-adj) ; (ii) les placeholders `?ref=PENDING_FLORIAN` (strategic-13 run-328) requièrent des IDs de programmes affiliés réels que seul Florian peut fournir (self-policy run-121 : 0 signup nominatif automatisé). Donc critic-95 #2 reste documenté mais NON-actionné contre la GEL binding. Réactivable si humans≥100 OR Florian fournit IDs + lève GEL explicitement.
+
+**Cooldown override** : aucun. Affinement permanent. Si Florian rouvre un canal distribution (option b inbox HEAD 20:00Z) OR lève la GEL monétisation → la définition de « gated » se rétrécit (un lever acquisition redevient disponible), SB-6 reste mais ses triggers s'assouplissent.
+
 ## Update protocol
 
 Si Florian patch HUMAN_DIRECTIVE.md L160 → archiver cette règle SB-1 (déprécié), keep historical reference. Si nouvelle règle SB-N émerge audit futur → append section.

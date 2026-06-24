@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T05:52:01Z",
+  "generated_at": "2026-06-24T07:49:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 616,
+    "total_lifetime": 617,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13183572,
+    "vps_uptime_seconds": 13190593,
     "last_commit": {
-      "hash": "b10a6ab",
-      "subject": "run-644: revive dead P2 acquisition channel (dev.to backlink) + channel audit",
-      "relative": "2 hours ago"
+      "hash": "3d65d64",
+      "subject": "sub-observatoire-publisher cycle: ok csv=2026-06-24 N=329",
+      "relative": "76 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,

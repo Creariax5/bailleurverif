@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-22T05:52:47.187331+00:00",
+  "generated_at": "2026-06-24T05:52:39.137980+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -103,38 +103,48 @@
       "n": 329
     },
     {
+      "date": "2026-06-23",
+      "n": 329
+    },
+    {
+      "date": "2026-06-24",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 1698
+      "n": 1735
     }
   ],
-  "wave_count": 26,
+  "wave_count": 28,
   "presence_distribution": {
-    "1_waves": 254,
-    "2_waves": 179,
-    "3_waves": 124,
-    "4_waves": 209,
-    "5_waves": 204,
-    "6_waves": 209,
-    "7_waves": 138,
-    "8_waves": 121,
-    "9_waves": 84,
-    "10_waves": 64,
+    "1_waves": 258,
+    "2_waves": 224,
+    "3_waves": 100,
+    "4_waves": 211,
+    "5_waves": 190,
+    "6_waves": 224,
+    "7_waves": 154,
+    "8_waves": 120,
+    "9_waves": 107,
+    "10_waves": 70,
     "11_waves": 51,
-    "12_waves": 29,
+    "12_waves": 28,
     "13_waves": 21,
-    "14_waves": 15,
-    "15_waves": 14,
-    "16_waves": 8,
-    "17_waves": 3,
-    "18_waves": 7,
-    "19_waves": 4,
+    "14_waves": 22,
+    "15_waves": 13,
+    "16_waves": 11,
+    "17_waves": 7,
+    "18_waves": 6,
+    "19_waves": 6,
+    "20_waves": 2,
     "21_waves": 1,
-    "22_waves": 1,
-    "25_waves": 1,
-    "26_waves": 0
+    "23_waves": 1,
+    "24_waves": 1,
+    "27_waves": 1,
+    "28_waves": 0
   },
   "persistence_rate_full_chain_pct": 0.0,
-  "persistence_rate_full_chain_note": "0 listings present in all 26 waves / 1698 listings in last wave = 0.0% of last-wave non-conform listings have persisted unchanged for 26 consecutive days.",
+  "persistence_rate_full_chain_note": "0 listings present in all 28 waves / 1735 listings in last wave = 0.0% of last-wave non-conform listings have persisted unchanged for 28 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": []
 }
