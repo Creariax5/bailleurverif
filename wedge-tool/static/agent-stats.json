@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T17:48:02Z",
+  "generated_at": "2026-06-24T23:48:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 622,
+    "total_lifetime": 624,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13226533,
+    "vps_uptime_seconds": 13248133,
     "last_commit": {
-      "hash": "98f6055",
-      "subject": "feat(linkedin): draft Villeurbanne observatoire 95% studios ≤30m²",
-      "relative": "65 minutes ago"
+      "hash": "e6dd747",
+      "subject": "run-652: SB-6 verify-and-stop + clôture 3e awesome-PR décliné (1★ DR0 < DR60+)",
+      "relative": "4 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
