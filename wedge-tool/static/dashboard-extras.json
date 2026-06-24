@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-06-24T01:52:02Z",
+  "generated_at": "2026-06-24T03:50:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4230,
-    "requests_24h": 904,
-    "bot_hits_lifetime": 2330,
-    "bot_hits_24h": 317,
-    "bot_hits_1h": 12,
-    "human_hits_24h": 587
+    "requests_lifetime": 4278,
+    "requests_24h": 931,
+    "bot_hits_lifetime": 2364,
+    "bot_hits_24h": 336,
+    "bot_hits_1h": 15,
+    "human_hits_24h": 595
   },
   "bots_by_type_lifetime": {
     "GPTBot": 699,
     "OAI-SearchBot": 310,
     "DataForSEO": 296,
     "generic-bot": 277,
-    "PetalBot": 155,
-    "Bingbot": 143,
-    "SemrushBot": 113,
+    "PetalBot": 162,
+    "Bingbot": 145,
+    "SemrushBot": 137,
     "Googlebot": 99,
-    "ByteSpider": 98,
+    "ByteSpider": 99,
     "AhrefsBot": 42,
     "BaiduSpider": 26,
     "MJ12bot": 20,
@@ -31,15 +31,15 @@
     "python-script": 2
   },
   "bots_by_type_24h": {
-    "SemrushBot": 96,
-    "PetalBot": 67,
+    "SemrushBot": 115,
+    "PetalBot": 66,
     "OAI-SearchBot": 65,
     "GPTBot": 22,
-    "Bingbot": 20,
-    "generic-bot": 12,
+    "Bingbot": 21,
     "AhrefsBot": 12,
+    "generic-bot": 11,
     "Googlebot": 7,
-    "ByteSpider": 4,
+    "ByteSpider": 5,
     "MJ12bot": 4,
     "BaiduSpider": 2,
     "FacebookExt": 2,
@@ -50,12 +50,12 @@
     "Googlebot": "2026-06-23T15:57:49+00:00",
     "MJ12bot": "2026-06-23T16:11:00+00:00",
     "OAI-SearchBot": "2026-06-24T00:08:53+00:00",
-    "Bingbot": "2026-06-24T01:51:38+00:00",
+    "Bingbot": "2026-06-24T02:37:35+00:00",
     "HeadlessChrome": "2026-06-22T13:27:06+00:00",
     "BaiduSpider": "2026-06-23T15:17:24+00:00",
     "generic-bot": "2026-06-23T16:49:40+00:00",
-    "PetalBot": "2026-06-23T23:56:30+00:00",
-    "ByteSpider": "2026-06-23T18:14:03+00:00",
+    "PetalBot": "2026-06-24T03:39:22+00:00",
+    "ByteSpider": "2026-06-24T01:55:57+00:00",
     "Go-HTTP": "2026-06-22T22:57:58+00:00",
     "GPTBot": "2026-06-23T22:53:36+00:00",
     "DataForSEO": "2026-06-19T10:25:37+00:00",
@@ -65,10 +65,10 @@
     "FacebookExt": "2026-06-23T18:16:46+00:00",
     "curl/wget": "2026-06-21T12:16:04+00:00",
     "python-script": "2026-06-21T22:19:58+00:00",
-    "SemrushBot": "2026-06-24T01:50:27+00:00"
+    "SemrushBot": "2026-06-24T03:48:40+00:00"
   },
   "last_googlebot": "2026-06-23T15:57:49+00:00",
-  "last_bingbot": "2026-06-24T01:51:38+00:00",
+  "last_bingbot": "2026-06-24T02:37:35+00:00",
   "chart_7days": [
     {
       "day": "2026-06-18",
@@ -183,23 +183,17 @@
     },
     {
       "day": "2026-06-24",
-      "total": 23,
+      "total": 57,
       "by_type": {
-        "SemrushBot": 17,
+        "SemrushBot": 41,
         "OAI-SearchBot": 1,
-        "Bingbot": 5
+        "Bingbot": 7,
+        "ByteSpider": 1,
+        "PetalBot": 7
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "02",
-      "hits": 3
-    },
-    {
-      "hour": "03",
-      "hits": 5
-    },
     {
       "hour": "04",
       "hits": 4
@@ -287,18 +281,26 @@
     {
       "hour": "01",
       "hits": 4
+    },
+    {
+      "hour": "02",
+      "hits": 8
+    },
+    {
+      "hour": "03",
+      "hits": 8
     }
   ],
   "top_bot_paths_24h": {
-    "/robots.txt": 32,
+    "/robots.txt": 33,
     "/": 23,
     "/encadrement-loyer-paris-2026.html": 21,
     "/encadrement-loyer-villeurbanne-2026.html": 7,
+    "/sitemap.xml": 6,
     "/lille-dpe-f-g-interdit-location.html": 5,
-    "/sitemap.xml": 5,
     "/preavis-bail-lyon.html": 5,
     "/aides-financieres-bailleur-2026.html": 4,
-    "/data/": 3,
+    "/versailles-dpe-f-g-interdit-location.html": 3,
     "/depot-garantie-france-2026.html": 3
   },
   "googlebot_paths_lifetime": {
@@ -314,19 +316,19 @@
     "/aides-financieres-locataire-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 45,
-    "/css/main.css": 23,
-    "/css/tailwind-runtime.js": 23,
+    "/": 42,
+    "/css/main.css": 25,
+    "/css/tailwind-runtime.js": 25,
     "/static/app.js": 17,
     "/api/changelog?limit=5": 17,
     "/static/share-card.js": 16,
     "/api/visit": 15,
     "/api/funnel/event": 14,
-    "/robots.txt": 9,
+    "/robots.txt": 12,
     "/favicon.svg": 6
   },
   "status_codes_24h": {
-    "200": 894,
+    "200": 921,
     "404": 10
   },
   "funnel": {
