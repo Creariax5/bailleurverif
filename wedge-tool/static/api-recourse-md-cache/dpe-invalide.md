@@ -108,7 +108,7 @@ success_rate_estimated_pct: 65
 
 - Selon le II de l'article L. 271-4 du code de la construction et de l'habitation, le diagnostic de performance énergétique mentionné au 6° de ce texte n'a, à la différence des autres documents constituant le dossier de diagnostic technique, _( ECLI ECLI:FR:CCASS:2019:C300983 · Troisième chambre civile · 2019-11-21 )_
 - La seule alimentation en électricité ne peut être considérée comme un équipement ou une installation permettant un chauffage normal du logement au sens de l'article 3 du décret du 30 janvier 2002 relatif aux caractéristiques du logement décent. _( ECLI ECLI:FR:CCASS:2014:C300721 · Troisième chambre civile · 2014-06-04 )_
-- Le locataire d'un local à usage d'habitation est recevable, d'une part, à poursuivre l'exécution forcée en nature de l'obligation de délivrance d'un logement décent tant que le manquement perdure, d'autre part à obtenir la réparation des conséquences de ce manquement. _( ECLI ECLI:FR:CCASS:2026:C300339 · Troisième chambre civile · 2026-06-04 )_
+- Le locataire d'un local à usage d'habitation est recevable, d'une part, à poursuivre l'exécution forcée en nature de l'obligation de délivrance d'un logement décent tant que le manquement perdure, d'autre part à obtenir la réparation des conséquences de ce manquement (dans la limite de la prescription triennale, art. 7-1 loi 89-462). _( Cour de cassation, 3ᵉ chambre civile, 4 juin 2026, pourvoi n° 24-11.437 · Publié au bulletin )_
 
 
 ## Références corpus
