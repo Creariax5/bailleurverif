@@ -110,9 +110,9 @@ success_rate_estimated_pct: 80
 
 ## Jurisprudence (Judilibre PISTE OAuth)
 
-- Le bailleur d'un local d'habitation peut retenir, sur le dépôt de garantie versé par le locataire, le montant de l'indemnité d'occupation due par celui-ci lorsqu'il se maintient dans les lieux au-delà du terme du bail _( ECLI ECLI:FR:CCASS:2026:C300075 · Troisième chambre civile · 2026-01-29 )_
-- Il résulte de l'article 3-2 de la loi n° 89-462 du 6 juillet 1989 que, lorsque les parties n'ont pas été convoquées par lettre recommandée avec demande d'avis de réception adressée au moins sept jours à l'avance, celle qui a pris l'initiati _( ECLI ECLI:FR:CCASS:2023:C300706 · Troisième chambre civile · 2023-10-26 )_
-- Il incombe au bailleur de justifier des sommes lui restant dues venant en déduction du montant du dépôt de garantie qu'il est tenu de restituer au locataire au départ des lieux loués. _( ECLI ECLI:FR:CCASS:2012:C300216 · Troisième chambre civile · 2012-02-15 )_
+- Le bailleur d'un local d'habitation peut retenir, sur le dépôt de garantie versé par le locataire, le montant de l'indemnité d'occupation due par celui-ci lorsqu'il se maintient dans les lieux au-delà du terme du bail _( ECLI ECLI:FR:CCASS:2026:C300075 · Troisième chambre civile · 2026-01-29 · pourvoi n° 24-12.185 )_
+- Il résulte de l'article 3-2 de la loi n° 89-462 du 6 juillet 1989 que, lorsque les parties n'ont pas été convoquées par lettre recommandée avec demande d'avis de réception adressée au moins sept jours à l'avance, celle qui a pris l'initiati _( ECLI ECLI:FR:CCASS:2023:C300706 · Troisième chambre civile · 2023-10-26 · pourvoi n° 22-20.183 · Publié au bulletin )_
+- Il incombe au bailleur de justifier des sommes lui restant dues venant en déduction du montant du dépôt de garantie qu'il est tenu de restituer au locataire au départ des lieux loués. _( ECLI ECLI:FR:CCASS:2012:C300216 · Troisième chambre civile · 2012-02-15 · pourvoi n° 11-13.014 · Publié au bulletin )_
 
 
 ## Références corpus
@@ -142,7 +142,7 @@ success_rate_estimated_pct: 80
 ## Taux de succès estimé
 
 - **Estimation initiale** : 80 %
-- _Estimation initiale fondée sur jurisprudence constante (Cass. civ. 3ème, 17 nov. 2004, n°03-15.288 ; nombreuses CA Paris/Versailles/Lyon 2018-2024), littérature ADIL et statistiques UFC-Que Choisir. Variable selon : (a) présence EDL d'entrée contradictoire (sans EDL d'entrée signé = ~95 % succès locataire via art. 1731 Code civil), (b) devis/facture conformes joints (sans devis = ~90 % retenue annulée), (c) bailleur professionnel (taux succès amiable ~70 % avant saisine) vs particulier informé (~50 %) vs particulier de mauvaise foi (~85 % en jugement)._
+- _Estimation initiale fondée sur jurisprudence constante sur la charge de la preuve au bailleur (Cass. 3ᵉ civ. 15 févr. 2012, n° 11-13.014, Publié au bulletin ; nombreuses CA Paris/Versailles/Lyon 2018-2024), littérature ADIL et statistiques UFC-Que Choisir. Variable selon : (a) présence EDL d'entrée contradictoire (sans EDL d'entrée signé = ~95 % succès locataire via art. 1731 Code civil), (b) devis/facture conformes joints (sans devis = ~90 % retenue annulée), (c) bailleur professionnel (taux succès amiable ~70 % avant saisine) vs particulier informé (~50 %) vs particulier de mauvaise foi (~85 % en jugement)._
 
 
 ## Courrier type (RAR)

@@ -100,7 +100,7 @@ success_rate_estimated_pct: 60
 
 ## Jurisprudence (Judilibre PISTE OAuth)
 
-- L'acquéreur d'un logement donné à bail sous le régime de la loi n° 48-1360 du 1er septembre 1948 ne peut se prévaloir d'une atteinte disproportionnée portée par ce régime locatif au droit au respect de ses biens garanti par l'article 1er du premier protocole additionnel à la CEDH. _( ECLI ECLI:FR:CCASS:2020:C300657 · civ3 · 2020-09-24 · [source](https://www.courdecassation.fr/decision/5fca33d50c7b4623bd8b0b2f) )_
+- L'acquéreur d'un logement donné à bail sous le régime de la loi n° 48-1360 du 1er septembre 1948 ne peut se prévaloir d'une atteinte disproportionnée portée par ce régime locatif au droit au respect de ses biens garanti par l'article 1er du premier protocole additionnel à la CEDH. _( ECLI ECLI:FR:CCASS:2020:C300657 · civ3 · 2020-09-24 · pourvoi n° 19-17.068 · Publié au bulletin · [source](https://www.legifrance.gouv.fr/juri/id/JURITEXT000042579712) )_
 
 
 ## Références corpus
