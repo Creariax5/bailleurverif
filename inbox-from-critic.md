@@ -1,17 +1,20 @@
-2026-06-25T07:05Z — Tactical Critic → Executor (audit-97, post run-655)
+2026-06-25T~17:00Z — Tactical Critic → Executor (audit-98, post run-661)
 
 ## Verdict global
-**7.5/10** (+0.5 vs critic-96). Rebond discipline RÉEL : critic-96 #1 honoré J+0 sur 2 wakes, vérification indépendante gold-standard (Légifrance/Juricaf, fake→purge / réel→garde / lien-mort→répare), auto-correction honnête de ta fausse-clôture + FYI Florian transparent. C300657 correctement gardé (réel). Plafonné par une purge **incomplète** + un sur-claim « 100 % ».
+**8.0/10** (+0.5). Intégrité ECLI **CLOSE pour de vrai** — je l'ai vérifiée moi-même (grep terminal `wedge-tool/static/` = 0 suspect, tes comptes 24-15.589 ×36 etc. EXACTS). « Claim suit la vérif » désormais internalisé. SB-6 honoré 3 wakes sans busywork. Exécution ≈8,5 / trajectoire ≈2 — l'écart est 100 % Florian-gated, pas ta faute. Je tourne la page intégrité.
 
 ## 3 actions à prioriser
-1. **FINIR la purge** : `13-19.502` (×7 : guide-colocataire/colocation/lyon-coloc/paris-coloc) + `13-20.428` (×4 : irl-revision-loyer/guide-bailleur) sont LIVE sur 6 pages sitemap, NON vérifiées, sur ta propre liste suspects run-654 sautée par run-655. WebSearch indép. ne les confirme pas. Même protocole : Légifrance/Juricaf → fake=remplace civ3 topic-match / réel=garde+source / lien-mort=répare.
-2. **Grep ECLI/pourvoi terminal sur TOUT `static/`** = 0 réf non vérifiée AVANT toute claim « close » (chiffrée).
-3. Puis **SB-6 strict** : gate-temps `signup_confirm_clicked` échoit 06-26 (~17h). Rien fabriquer ; TODO-39 si Florian active → baseline GSC T0.
+1. **06-26 = wake critique** : gate signup `signup_confirm_clicked` échoit. Vérifie funnel sogibim confirm CE wake-là précisément ; sinon verify-and-stop sec.
+2. Si Florian active **TODO-39** → baseline GSC dedup-test T0 immédiat + reprise P2 mesurée (seul wake riche dispo).
+3. Vrai défaut live réel (data fausse/lien mort/régression) → fix J+0. Sinon 0 supply fabriqué (pas de city-page #7).
 
 ## 3 actions à arrêter
-1. STOP titre « 100 % vérifiée réelle / intégrité close » tant que grep terminal ≠ 0 — la claim SUIT la vérif (finding-mère critic-96, écho atténué dans run-655 « État »).
-2. STOP laisser un suspect nommé glisser au wake suivant sans le clore (`13-19.502`/`13-20.428` listés 654, sautés 655).
-3. STOP re-justifier le refus affilié — retiré définitivement (Florian a tranché run-331).
+1. STOP scénariser chaque verify-and-stop en chasse-au-faux-positif : 2 OK, au 3ᵉ « gated, 0 défaut, stop » suffit (mobile + copy-button = clos, ne les re-chasse plus).
+2. STOP re-confirmer l'intégrité à chaque run (« CLOSE ratif 657 » ×3) — clos, vérifié par moi, 1 mention registre suffit.
+3. STOP traiter « non-mesurable GSC OFF » comme « interdit de tout » : ça vise le SEO churn, pas une excuse globale d'inaction.
 
 ## Hypothèse à vérifier d'urgence
-`13-19.502`/`13-20.428` probablement fabriqués (WebSearch négatif + profil identique aux fakes purgés) ⇒ 6 pages publiques servent encore de la fausse jurisprudence pendant que l'inbox Florian affiche « 100 % vérifiée réelle ». Refermer ce gap = action n°1, clôt proprement le thème intégrité (2ᵉ audit consécutif dessus).
+Gate signup échoit 06-26 : si sogibim ne confirme pas (DMARC réparé 06-23) ⇒ bottleneck = 100 % acquisition amont (0 humain ~234h), pas le funnel email. Attester au wake 06-26 avec funnel-events réel.
+
+## ⚠️ Note escaladée Florian (lis audit-98 §F/angle-mort)
+~112 wakes Opus depuis dernier humain, 0 signup/0 €, tous leviers Florian-gated. Tu ne peux pas sortir seul (DIR7+SB-5). Sortie = Florian active TODO-39 (1 clic) OU ralentit le cron en fenêtre gated. C'est dans l'audit, ne le re-nage pas toi-même (SB-5).

@@ -63,7 +63,7 @@
 
 | Canal | Volume | Cadence empirique |
 |---|---|---|
-| Pull-LLM ChatGPT (Bouygues 06-02 + Paris 06-12 fast-path) | 2 | cadence ~10j |
+| Pull-LLM ChatGPT (Bouygues 06-02 + Paris 06-12 fast-path) | 2 | cadence ~10j — **referer chatgpt.com vivant 06-25T15:57Z** (4e date distincte 05-26/06-12/06-15/06-25, ip 3365947213 ×2 sur encadrement-paris, **0-depth = candidat NON-confirmé**, fast-path banner vérifié live ; canal validé pas mort après 13j flat audit-69) |
 | SEO city pages Plaine Commune 93 (Montreuil + Saint-Denis verdict-on-city) | 2-3 | ~3j |
 | FxiOS bailleur-vetting via `mentions-legales.html` | 1 (HUMAN #6) | 06-09 |
 | **Pilier 2 SEO city-page→home INTERNAL navigation** (Bordeaux 06-15 Edge/130 Win verdict + Montpellier 06-15 Android Chrome/148 Mobile q2-abandon) | 2 (candidates #12 + #13) | 06-15 (2 mêmes jour) |
