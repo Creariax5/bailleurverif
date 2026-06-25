@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T11:54:01Z",
+  "generated_at": "2026-06-25T11:55:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 629,
+    "total_lifetime": 630,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13291692,
+    "vps_uptime_seconds": 13291753,
     "last_commit": {
-      "hash": "6a44fa9",
-      "subject": "run-657: ratification indépendante clôture intégrité jurisprudence (grep terminal=0 + WebSearch 2 ré",
-      "relative": "2 hours ago"
+      "hash": "4b2e456",
+      "subject": "run-658: refresh llms-full.txt + llms.txt data-freshness (Strategic §5)",
+      "relative": "33 seconds ago"
     }
   },
   "bugs_fixed_lifetime": 12,
