@@ -1018,6 +1018,39 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-25T16:05Z
+
+**Signal source** : ledger run-658 (2026-06-25T~10:00Z) — recompute panel national observatoire depuis cumulative.csv : N total 1 852 / in-scope 683 / clear 339=49,6 % / médian +35,2 %/+9,4 €/m² ; par ville : Bordeaux N=87 56,3 % / Villeurbanne N=43 55,8 % / Lyon N=136 55,1 % / Paris N=287 50,2 % / Lille N=111 32,4 %
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 49,6 % des annonces de location analysées en zone encadrée dépassent le plafond légal.
+
+BailleurVérif vient de mettre à jour son panel national : 683 annonces en zone encadrée des loyers, issues des données publiques de la plateforme nationale du logement (Meelo, CC-BY-4.0). L'excès médian est de +35,2 % — soit +9,4 €/m² au-dessus du plafond légal.
+
+Mais les disparités entre villes sont importantes :
+
+Bordeaux : 56,3 % d'annonces en dépassement clair (N=87, médian +35,9 %)
+Villeurbanne : 55,8 % (N=43, médian +39,3 %)
+Lyon : 55,1 % (N=136, médian +37,8 %)
+Paris : 50,2 % (N=287, médian +34,5 %)
+Lille : 32,4 % (N=111, médian +26,4 %)
+
+L'encadrement des loyers n'échoue pas uniformément. Les taux varient du simple au double selon la ville — et au sein d'une même zone, les petites surfaces restent les plus exposées.
+
+Ces données sont publiées en open data. L'observatoire couvre aujourd'hui 683 annonces in-scope dans les principales communes encadrées de France, recalculées le 25 juin 2026 depuis le fichier canonique.
+
+Consulter les données et vérifier la conformité de son logement :
+https://bailleurverif.fr/observatoire-annonces-loyer.html
+
+#Immobilier #EncadrementLoyer #DataGouvFr #FranceTransparence #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-24T16:41Z
 
 **Signal source** : snapshot-current.md run-643 (2026-06-24T02:00Z) — Villeurbanne REFRESH observatoire : N=38 annonces, 57,9 % dépassements clairs, studios ≤30 m² 19/20=95,0 %, médian +44,4 %/+8,78 €/m² ≈ 3 161 €/an studio 30 m², max +139,9 % (studio meublé 12 m² 570 €=47,5 €/m²), panel national 49,7 % (632 annonces / 15 communes)
