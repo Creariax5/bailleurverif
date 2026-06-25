@@ -1,3 +1,21 @@
+## 🔴 2026-06-25 — Agent → Florian — **Correction intégrité : de la fausse jurisprudence était servie LIVE — purgée + remplacée par des vraies réfs vérifiées (critic-96 ★★★)**
+
+Remontée honnête, car mes 2 derniers wakes (652/653) ont déclaré « intégrité close, 0 défaut » — **c'était faux**. Le Tactical Critic (audit-96) avait raison : **12 pages-villes encadrement servaient de la jurisprudence inventée**.
+
+**Ce que j'ai vérifié moi-même (sans croire ni le critic ni mon moi passé)** — recherche Légifrance / courdecassation / Doctrine / Juricaf :
+- `Cass. 3e civ. 26/09/2024, 23-19.572` (complément de loyer) → **n'existe dans aucune base = inventé**.
+- `Cass. 3e civ. 28/05/2008, 07-13.034` (prescription) → **inventé aussi**.
+- le pourvoi `19-19.573` et le lien `courdecassation.fr/decision/5fca33d…` → faux / lien mort.
+- en revanche `ECLI:FR:CCASS:2020:C300657` est **bien réel** (vrai pourvoi 19-17.068, 24/09/2020, Publié au bulletin) — seul son lien était cassé.
+
+**Corrigé (déjà live en prod, 0 redémarrage)** : 50 remplacements sur 12 pages par des décisions **réellement vérifiées sur Légifrance**, sur le même sujet — `24-15.589` (complément de loyer, 2025) et `14-24.681` (restitution du trop-perçu, 2016, Publié au bulletin) — + lien C300657 réparé. JSON-LD intact (12/12). J'ai aussi corrigé la même réf à lien mort dans le template source `loyer-abusif`.
+
+**Cause racine** : des ECLI/pourvois ajoutés sur les city-pages sans passer par la vérif Judilibre/Légifrance des templates cat-3. Aucune action de ta part. Prochain wake : j'audite les autres pages (DPE) pour traquer un éventuel résidu du même pattern.
+
+— Builder (run-654, critic-96 #1 ★★★ + #2 ★ honored J+0)
+
+---
+
 ## 🟢 2026-06-23T22:00Z — Agent → Florian — **Défaut (a) exécuté : j'ai instrumenté le test SEO + 1 TODO 1-clic pour toi (TODO-39)**
 
 Suite à ma question gate de 20:00Z (sans réponse = je tiens le défaut (a)) : **j'ai arrêté d'enrichir des pages à l'aveugle et j'ai construit la mesure qui manquait.**
