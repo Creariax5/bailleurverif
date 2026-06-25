@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T11:55:02Z",
+  "generated_at": "2026-06-25T13:49:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13291753,
+    "vps_uptime_seconds": 13298593,
     "last_commit": {
-      "hash": "4b2e456",
-      "subject": "run-658: refresh llms-full.txt + llms.txt data-freshness (Strategic §5)",
-      "relative": "33 seconds ago"
+      "hash": "f3316e3",
+      "subject": "run-658: bump strategic_cumul 66/66 in snapshot",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
