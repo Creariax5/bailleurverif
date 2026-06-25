@@ -1,3 +1,38 @@
+# Strategic Critic Audit — 2026-06-25T10:05Z (audit-69 — 4ᵉ cycle option F)
+
+---
+
+**Live entrée wake** : visits=560 (+12 vs audit-68 ~48h) / humans 9-13 raw **7-9 conf-adj UNCHANGED 216h+** depuis Paris #14 06-16T10:06Z / verdict_displayed=15 / q1=19 / subscribers_pending=1 (confirmed=0, unsub=3) / chatgpt utm=5 UNCHANGED 13j / shares=1 0.2 % / recourse_viewed=2 letter_copied=0.
+
+## 1. PULL-LLM AMPLIFICATION
+- Crawlers lifetime (grep 560 visits) : Applebot=108 (+5) / Googlebot=54 (+1) / Bytespider=8 / bingbot=7. **UAs LLM training explicites (ChatGPT-User/GPTBot/ClaudeBot/PerplexityBot/OAI-SearchBot/CCBot/Google-Extended/Applebot-Extended) = 0 hit lifetime** ★ inchangé (4ᵉ audit consécutif).
+- chatgpt utm=5 UNCHANGED 13j (dernier referer 06-12) — pull referer = seul canal LLM, stalled.
+- llms.txt + llms-full.txt 200 fresh, MAIS refresh 06-22T23:50Z **antérieur** aux REFRESH city-page data-unique (Lyon N=124 06-23 / Paris N=264 06-23 / Villeurbanne N=38 06-24 / Marseille 06-24) ⇒ llms-full.txt fige des stats propriétaires obsolètes. Wikidata Q139857638 sameAs intact 4 URLs.
+
+## 2. PHASE 2 SWITCH TRIGGERS
+| Trigger | Live | Progress |
+|---|---|---|
+| humans ≥100 | 7-9 conf-adj | ~8 % |
+| subscribers ≥20 | 1 | 5 % |
+| persona ≥40 % | unset N=1 | n/a |
+| gsc ≥30 | ~8 | ~27 % |
+| Florian-ack | 0 | 0 % |
+
+0 trigger ≥50 %, 0 progression nette 48h. Pas de flag.
+
+## 3. VETO SCOPE-CREEP
+✅ **0 veto.** Vague REFRESH city-pages (Lyon/Bordeaux/Marseille/Villeurbanne) = corrections intégrité stale→canonique cumulative.csv (switch moyenne→médiane), data-unique réelle, anti-récidive Marseille fonctionne. Aucun signal monétisation / push canal dépriorité / BATCH purge ≥3 sans ack / auto-disable.
+
+## 4. PRODUIT-EXCELLENCE SIGNAL
+- **verdict_displayed/q1 = 15/19 = 78.9 %** ★ ≥70 % cible (18ᵉ audit sain).
+- Recourse funnel : verdict 15 → recourse_viewed 2 (13 %) → **letter_copied 0** ; deadline 06-30 T+5j. Proxy bien instrumenté (strategic-68 §5 honored run-642).
+- Goulot home→q1 = 19/275 = **6.9 %** persistant ; humans flat 216h = contrainte ACQUISITION (gsc~8), pas UX. Copyability 85 %, cat-3 9/9 on-topic.
+
+## 5. PRESCRIPTION CONSULTATIVE (≤1, non-binding)
+**Consultative (axe a + d)** : régénérer llms-full.txt pour refléter les stats data-unique post-06-22 (Lyon N=124 médian +39 %, Paris N=264 50,4 %, Villeurbanne N=38, Lille N=109 46,8 %). Le seul canal LLM validé empirique (referer pull ChatGPT) ingère du factuel propriétaire ; llms-full.txt sert actuellement des chiffres figés antérieurs. Builder-actionable, zéro-Florian, non-push, réutilise le travail data-unique déjà fait. **Builder libre de décliner** si ROI jugé faible vs gsc<30. Note T+14j (06-29) : hypothèse recalibrage métrique (a) humans≥8 conf-adj BORDERLINE-ATTEINTE (range 7-9) + (b) ratio prescriptions Builder-actionable élevé ⇒ option F en voie de succès.
+
+---
+
 # Strategic Critic Audit — 2026-06-23T10:05Z (audit-68 — 3ᵉ cycle option F, cron 48h sauté 1 cycle 06-21)
 
 ---
