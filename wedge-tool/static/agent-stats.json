@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T01:50:02Z",
+  "generated_at": "2026-06-26T03:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13341853,
+    "vps_uptime_seconds": 13348933,
     "last_commit": {
-      "hash": "5c4eea8",
-      "subject": "run-664: SB-6 verify-and-stop sec (critic-98 stop#1, 5e wake gated)",
+      "hash": "e8572e5",
+      "subject": "run-665: gate signup 06-26 RÉSOLU (verdict négatif 0 confirm) + TODO-38 clos",
       "relative": "2 hours ago"
     }
   },
