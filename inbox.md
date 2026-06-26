@@ -1,3 +1,85 @@
+## 🎯 2026-06-26T08:00Z — Florian → Builder — **BRIEF GSC INDEXATION : attaquer le mur 177 "Détectée non-indexée" (5 actions Builder-only, prio P0/P1/P2)**
+
+**Contexte empirique** : GSC dump 2026-06-12 = **2 indexées / 189 non-indexées (1.1%)**. Cat principale **"Détectée, actuellement non indexée" = 177 pages** (Google connaît via sitemap, refuse de crawler par budget rationné). 10 "canonical correct" = comportement normal ignorer. 1 noindex intentionnel. 1 "Explorée non-indexée" = borderline qualité.
+
+**Diagnostic structurel** (poids décroissant) :
+1. Sandbox Google domaine <120j créé ~02-2026 → trust score low → crawl budget rationné
+2. Backlinks externes pointant sous-pages ≈ 0 (3 DR60+ existants vers home/observatoire/data.gouv)
+3. Pages programmatiques templates similaires perçues thin pré-crawl → Google déduplique mentalement avant même de crawler (50 DPE-ville + 30 encadrement-2026)
+4. Internal linking depth insuffisante : pattern N=5 FAQPage gap mentionné run-587 mais sweep N=233 incomplet
+5. Signaux engagement faibles : 206 visits/30j sur 233 pages = ~0.9 visit/page/mois = "site dormant" Google
+
+### **Actions P0 (Builder-only, sequencing libre, cap PAR CIBLE applicable)**
+
+**1. ★★★ Sitemap segmentation 3-5 sub-sitemaps** (~30 min effort)
+- Split `sitemap.xml` actuel en : `sitemap-villes-encadrement.xml` (~30 URLs) + `sitemap-dpe.xml` (~50 URLs) + `sitemap-blog-recourse.xml` (~20 URLs) + `sitemap-tools.xml` (~10 URLs) + `sitemap-observatoire.xml` (~5 URLs)
+- Index sitemap principal `sitemap.xml` = sitemapindex référence les 5 sub-sitemaps
+- Resubmit dans GSC chaque sub-sitemap distinctement
+- **Bénéfice empirique attendu** : Google traite chaque sub-sitemap comme namespace distinct → +crawl-budget par section → 30-60 pages additionnelles indexées M+1.5
+- **Smoke** : 5 URLs sub-sitemap HTTP 200 + sitemapindex parse OK + GSC accept
+
+**2. ★★★ Internal linking sweep COMPLET N=233 pages** (~45 min effort)
+- Audit deterministe Python : pour chaque feuille programmatique, vérifier (a) ≥2 liens depuis hubs majeurs (home + observatoire + blog hub si pertinent) + (b) ≥3 liens depuis pages connexes (sister villes / DPE liée / FAQ liée)
+- Patch deterministique des pages manquantes : append section "Voir aussi" 3-5 cross-links + breadcrumb retour hub
+- Run-587 a fait pattern N=5 partial = compléter sweep coverage 100%
+- **Bénéfice** : link equity propagation + crawl path discoverable + signal "page importante" Google
+- **Smoke** : `python3 agent-browser/audit_internal_linking.py` (créer 30L) report avant/après coverage %
+
+**3. ★★ Audit thin pages → 301 redirect candidates** (~30 min effort)
+- Auditer les 50 DPE-ville templates : identifier les 10-15 avec data observatoire unique substantive (run-629 pattern Paris per-arrondissement = exemple)
+- Les **35-40 restantes sans data unique** → 301 redirect vers hub commun `/dpe-fiabilite.html` ou `/calendrier-interdiction-dpe-2025-2028-2034.html`
+- **Quality > quantity** = règle Google empirique 2024-2026. Mieux 50 pages riches indexées que 233 thin que Google snobe
+- **NE PAS** rediriger les pages avec data unique (Paris/Lyon/Lille/Bordeaux DPE per-arrondissement déjà shippées)
+- Documenter `decisions/2026-06-26-thin-pages-pruning.md` audit-trail
+
+**4. ★ IndexNow + Indexing API ping stratégique 1 URL/jour** (~5 min/jour cumulé)
+- SB-4 codifié (brief Florian 06-11 honored) : ✅ IndexNow 1 URL ship-time NEW page + PATCH ≥+50L substantive
+- **Extension proposée** : 1 URL/jour stratégique top-20 pages (Paris/Lyon/Lille/Marseille/observatoire/calendrier-DPE/aides-bailleur/etc.) via `indexnow_ping.py` + `indexing_api_ping.py` Google
+- Rotation hebdomadaire = chaque page top-20 pingée 1× sem
+- **Argument anti-théâtre** : 1 URL/jour ≠ rounds répétés (codifié SB-4) + cible stratégique pas spam
+- Si tu juges théâtre = skip cette action, SB-4 reste sans extension
+
+**5. ★ Dataset Search exposure post-fix DILA** (~10 min effort)
+- Fix DILA description shippé `a2ea33c` (GSC re-crawl 24-72h)
+- Quand validé : auditer les 3 autres Datasets JSON-LD (observatoire-annonces-loyer, changelog, encadrement-bareme) → assurer tous ont `description` + `creator` + `license` + `distribution` + `temporalCoverage` complets
+- Soumettre les Datasets à `datasetsearch.research.google.com` (sitemap rss Dataset ou bouton submit s'il existe)
+- **Bénéfice** : canal discovery Dataset Search niche academic/journaliste/data-scientist
+
+### **Actions Florian-only (pas brief Builder, mais utile)**
+
+- 🟡 **Relancer maintainers awesome PRs** apd-core#410 + awesome-real-estate#28 (silent 30+j) via commentaire poli "Any update? Happy to address feedback" → backlinks DR55-70 si merge
+- 🟡 **GSC "Marquer résolu"** sur catégorie "Autre page canonique correcte" (10) + "Exclue noindex" (1) = signal positif facile à GSC
+
+### **NON-actions explicit Builder**
+
+- 🚫 NE PAS créer NEW pages programmatiques (catalogue 233 = saturé Google trust budget)
+- 🚫 NE PAS toucher home/scan-url/share-card sans signal nouveau
+- 🚫 NE PAS spam IndexNow rounds (SB-4 cap strict)
+- 🚫 NE PAS Reddit/HN/Twitter push (audit bans actifs)
+- 🚫 NE PAS escalader Florian avant T+72h sweep complet (asymétrie respect)
+
+### **Cap PAR CIBLE applicable**
+- Builder 0/1 semaine concept-doc disponible (sweep internal linking = patch concept compatible)
+- Strategic option F = consultatif non-binding sauf VETO scope-creep
+- Tactical = quality gate, non-prescriptif
+- Cap NEW FILE strict respecté : sitemap segmentation = 4-5 NEW XML files (acceptable car non-user-facing HTML), audit Python = 1 NEW utility script ≤50L
+
+### **Cible mesure T+14j (deadline 2026-07-10)**
+- `gsc_indexed_pages` : 2-16 → 30-50 (cible empirique réaliste)
+- `gsc_detected_not_indexed` : 177 → 130-150 (-15-25%)
+- `humans_engaged` : 9-13 raw → +2-3 NEW via SEO long-tail découvrabilité
+- Si delta négatif T+14j → rollback redirects + revoir hypothèse sandbox
+
+**Asymétrie ROI** : ~2h Builder cumulé pour 5 actions = potentiel +25-40 pages indexées M+1.5 = unblocking acquisition canal #1 Phase 1. Mieux ROI que Google Ads €300-500 (cf brief 06-23 décliné).
+
+**Compatible bans audit actifs** : sitemap = utility XML pas user-facing ; internal linking = patch existing pas NEW page ; thin redirect = quality > quantity = Google empirique ; IndexNow extension = SB-4-aware ; Dataset Search = post-fix shippé déjà.
+
+**Hierarchy Florian brief > Strategic option F consultatif > Tactical quality > bans audit-N** (Discipline 11 build-vs-escalate respect : ces 5 actions cassent dépendance Florian-silent + restaurent agency Builder pure-code).
+
+— Florian (christian@mobula.io, 2026-06-26T08:00Z)
+
+---
+
 ## 🟢 2026-06-26 — Agent → Florian — **Clôture TODO-38 : le test DMARC est terminé (résultat : 0 confirmation, mais pour une raison « en amont »)**
 
 Ton fix DMARC du 06-23 (record OVH) était la dernière action attendue sur TODO-38. La fenêtre de mesure (72h) tombait aujourd'hui — voici le verdict honnête, vérifié dans les données brutes :
