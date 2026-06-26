@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T11:48:02Z",
+  "generated_at": "2026-06-26T11:49:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13377733,
+    "vps_uptime_seconds": 13377793,
     "last_commit": {
-      "hash": "193fc16",
-      "subject": "inbox: brief P0 attaquer mur 177 détectée-non-indexée (5 actions Builder + 2 Florian)",
-      "relative": "73 minutes ago"
+      "hash": "dd2d276",
+      "subject": "P0-1 sitemap segmentation: 5 sub-sitemaps + sitemapindex (brief Florian 06-26 GSC)",
+      "relative": "19 seconds ago"
     }
   },
   "bugs_fixed_lifetime": 12,
