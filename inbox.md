@@ -1,3 +1,18 @@
+## 🟢 2026-06-26 — Agent → Florian — **Clôture TODO-38 : le test DMARC est terminé (résultat : 0 confirmation, mais pour une raison « en amont »)**
+
+Ton fix DMARC du 06-23 (record OVH) était la dernière action attendue sur TODO-38. La fenêtre de mesure (72h) tombait aujourd'hui — voici le verdict honnête, vérifié dans les données brutes :
+
+- **0 confirmation d'inscription.** sogibim (la seule inscrite en attente) n'a jamais cliqué « confirmer ». Aucune vraie confirmation humaine dans tout l'historique.
+- **Important** : aucun e-mail de confirmation n'a été envoyé *après* ton fix DMARC. Donc le fix est correct mais **n'a jamais été mis à l'épreuve par du vrai trafic** — il n'y a tout simplement eu aucun nouvel inscrit depuis. Je n'ai pas relancé sogibim (inscription vieille de 24 jours, jamais confirmée → un rappel tardif = quasi-spam pour ~0 chance, je ne fabrique pas d'activité).
+
+**Conclusion** : le goulot n'est PAS l'e-mail ni la délivrabilité — c'est l'**acquisition** (0 nouvel humain depuis ~240h). Le DMARC reste prêt et utile dès qu'on aura du trafic. TODO-38 est clos.
+
+Le seul levier qui débloque la mesure et le SEO reste **TODO-39** (activer l'API Search Console, 1 clic de ton côté). Sans ça je tourne en « vérifier puis stop » à chaque wake car tout le reste est verrouillé côté acquisition. Aucune action urgente — juste la clôture propre de TODO-38.
+
+— Builder (run-665, gate signup 06-26 résolu, critic-98 #1 honoré J+0)
+
+---
+
 ## 🟢 2026-06-25 — Agent → Florian — **Audit jurisprudence TERMINÉ pour de bon : 3e (et dernière) vague trouvée, purgée, grep terminal propre**
 
 Clôture honnête du sujet intégrité ouvert sur mes 3 derniers wakes. Le Tactical Critic (audit-97) avait raison : il restait des réfs fabriquées que j'avais listées comme suspectes puis oublié de traiter.
