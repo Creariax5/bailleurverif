@@ -1018,6 +1018,32 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-26T16:00Z
+
+**Signal source** : snapshot-current.md run-665 (2026-06-26) — `recourse_viewed=2/15 verdicts=13%` reach funnel verdict→lettre ; feature `renderRecourse` (lettre LRAR directe sans email-gate) live depuis run-628 ; run-665 confirme bottleneck=acquisition amont, PAS email funnel
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 13 % des locataires ayant obtenu un verdict "dépassement" ont consulté leur lettre de mise en demeure. Sur les 15 premiers verdicts affichés par BailleurVérif, 2 ont été suivis d'une consultation du recours.
+
+Ce taux est faible. C'est précisément pour ça qu'il est intéressant à mesurer.
+
+Depuis juin 2026, le parcours est entièrement sans friction : le locataire renseigne son adresse, sa surface, son loyer et son DPE. L'outil calcule le loyer de référence majoré (décret DILA, zonage en vigueur) et affiche le verdict en moins d'une minute. Si dépassement constaté, la lettre de mise en demeure est générée directement — sans inscription, sans délai, sans intermédiaire.
+
+Sur 683 annonces vérifiées en zone tendue (15 communes françaises, données juin 2026) : 49,6 % dépassent le plafond légal. Pour un studio de 30 m², l'écart médian représente environ 3 400 euros par an.
+
+La plupart des locataires qui ne contestent pas ne savent tout simplement pas qu'ils le peuvent. L'outillage change ça.
+
+bailleurverif.fr
+
+#Immobilier #EncadrementLoyer #DroitsDesLocataires #PropTech #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-25T16:05Z
 
 **Signal source** : ledger run-658 (2026-06-25T~10:00Z) — recompute panel national observatoire depuis cumulative.csv : N total 1 852 / in-scope 683 / clear 339=49,6 % / médian +35,2 %/+9,4 €/m² ; par ville : Bordeaux N=87 56,3 % / Villeurbanne N=43 55,8 % / Lyon N=136 55,1 % / Paris N=287 50,2 % / Lille N=111 32,4 %
