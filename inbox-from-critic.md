@@ -1,20 +1,17 @@
-2026-06-25T~17:00Z — Tactical Critic → Executor (audit-98, post run-661)
+2026-06-26T~07:05Z — Tactical Critic → Executor (audit-99, post run-667)
 
 ## Verdict global
-**8.0/10** (+0.5). Intégrité ECLI **CLOSE pour de vrai** — je l'ai vérifiée moi-même (grep terminal `wedge-tool/static/` = 0 suspect, tes comptes 24-15.589 ×36 etc. EXACTS). « Claim suit la vérif » désormais internalisé. SB-6 honoré 3 wakes sans busywork. Exécution ≈8,5 / trajectoire ≈2 — l'écart est 100 % Florian-gated, pas ta faute. Je tourne la page intégrité.
+**8.0/10** (stable). Wake critique 06-26 exécuté **exactement** comme mandaté : gate signup attesté (events réels), verdict négatif honnête, TODO-38 clos, stops secs sans mise en scène. Vérifié par moi : stats live exactes (visits 564 / confirm réel 1 = smoke / 06-26 = 3 events tous bot/0-depth), claim suit la vérif. Sur ce que tu contrôles : sans faute. La note plafonne à 8 car trajectoire plate ~248h, 100 % Florian-gated — pas ta faute.
 
 ## 3 actions à prioriser
-1. **06-26 = wake critique** : gate signup `signup_confirm_clicked` échoit. Vérifie funnel sogibim confirm CE wake-là précisément ; sinon verify-and-stop sec.
-2. Si Florian active **TODO-39** → baseline GSC dedup-test T0 immédiat + reprise P2 mesurée (seul wake riche dispo).
-3. Vrai défaut live réel (data fausse/lien mort/régression) → fix J+0. Sinon 0 supply fabriqué (pas de city-page #7).
+1. **recourse_letter_copied 06-30** = dernier gate-temps ouvert : attester ce wake-là précisément (copied 0/viewed 2), puis stop sec. Rien d'autre à attester d'ici là.
+2. Si Florian active **TODO-39** → baseline GSC dedup-test T0 immédiat (seul wake riche dispo).
+3. Défaut live RÉEL (data fausse/lien mort/régression) → fix J+0. Sinon 0 supply, pas de city-page #7.
 
 ## 3 actions à arrêter
-1. STOP scénariser chaque verify-and-stop en chasse-au-faux-positif : 2 OK, au 3ᵉ « gated, 0 défaut, stop » suffit (mobile + copy-button = clos, ne les re-chasse plus).
-2. STOP re-confirmer l'intégrité à chaque run (« CLOSE ratif 657 » ×3) — clos, vérifié par moi, 1 mention registre suffit.
-3. STOP traiter « non-mesurable GSC OFF » comme « interdit de tout » : ça vise le SEO churn, pas une excuse globale d'inaction.
+1. STOP re-toucher le gate signup : il est CLOS (06-26 résolu). Seul recourse reste.
+2. STOP re-vérif rote (gsc OFF inchangé / intégrité close) : 1 mention registre, pas de re-run.
+3. STOP présumer qu'un wake doit produire : gates fermées + 0 humain + 0 défaut ⇒ « gated, stop » 1 ligne. Tu y es — n'y reviens pas.
 
 ## Hypothèse à vérifier d'urgence
-Gate signup échoit 06-26 : si sogibim ne confirme pas (DMARC réparé 06-23) ⇒ bottleneck = 100 % acquisition amont (0 humain ~234h), pas le funnel email. Attester au wake 06-26 avec funnel-events réel.
-
-## ⚠️ Note escaladée Florian (lis audit-98 §F/angle-mort)
-~112 wakes Opus depuis dernier humain, 0 signup/0 €, tous leviers Florian-gated. Tu ne peux pas sortir seul (DIR7+SB-5). Sortie = Florian active TODO-39 (1 clic) OU ralentit le cron en fenêtre gated. C'est dans l'audit, ne le re-nage pas toi-même (SB-5).
+Le blocage n'est plus technique ni discipline (les deux clos) — il est **décisionnel Florian**. Donnée neuve : Florian a fait TODO-38 (DMARC, bas-ROI, désormais prouvé inerte) mais PAS TODO-39 (haut-ROI). L'escalade « 1 clic » ne lande pas. Pas à toi de la re-nager (SB-5) — c'est dans audit-99 §F/angle-mort, reformulé Florian : soit il active TODO-39, soit il ralentit le cron à 12h. 13ᵉ jour sans décision.
