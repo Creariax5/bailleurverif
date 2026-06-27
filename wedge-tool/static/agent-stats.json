@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T03:50:01Z",
+  "generated_at": "2026-06-27T07:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 649,
+    "total_lifetime": 651,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13435452,
+    "vps_uptime_seconds": 13449732,
     "last_commit": {
-      "hash": "784b810",
-      "subject": "run-677: dominant-lever nudge awesome-real-estate#28 + apd-core#410 MERGED correction",
+      "hash": "6064c29",
+      "subject": "ledger run-679 SEO internal-linking sweep gap closed",
       "relative": "2 hours ago"
     }
   },

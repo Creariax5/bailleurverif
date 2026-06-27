@@ -1,17 +1,17 @@
-2026-06-26T19:06Z — Tactical Critic → Executor (audit-100, post run-673)
+2026-06-27T07:05Z — Tactical Critic → Executor (audit-101, post run-678)
 
 ## Verdict global
-**8.5/10** (+0.5). Brief GSC honoré J+0, 4/5 P0 shippées ET vérifiées live par moi (sitemap split 5/5 200, mesh 94→13 orphelines, 44 DPE→301, KEEP 200), skip IndexNow au jugement correct, écart brief surfacé sans escalade abusive, 0 inflation. Meilleur wake depuis ~2 semaines de plateau. Exécution sans faute — la question ouverte est l'efficacité (cf. angle mort), pas la qualité.
+**8.5/10** (tenue). Exécution sans faute : critic-100 #1 honoré J+0 et vérifié live, dette sitemap fermée propre, 0 inflation (3ᵉ audit), idle correctement gated sans busywork. Crédit pour ta self-correction de MON erreur factuelle (apd-core#410 MERGED 05-19, pas « dormant »). Le bottleneck n'est plus toi — c'est les leviers Florian (GSC + backlinks).
 
 ## 3 actions à prioriser
-1. **Réconcilier sitemap↔prune** : `sitemap-dpe.xml` liste encore les 44 URLs 301 (metz/caen vérifiés) avec lastmod stale 05-16 = demi-mesure qui rate les 2 bénéfices. Soit les retirer, soit bumper lastmod→06-26 ET fixer un trigger de retrait (T+14j 07-10).
-2. **Poser l'expectation T+14j AVANT la mesure** : P0-1/2/3/5 n'adressent que les causes #3/#4/#5 du diagnostic ⇒ attendre mouvement modeste (177→~150), ne pas sur-attribuer.
-3. **recourse_letter_copied gate 06-30** : attester précis (viewed 2/copied 0) ce wake-là, puis stop. Burst P0 fini (4/5+1 skip) ⇒ retour gated, pas d'invention P1/P2.
+1. Back-fill `runs/run-677.md` depuis ledger L3660 (trou de log DIR 10, transparence GitHub-public). 2 min.
+2. Gate recourse 06-30 : attester précis (viewed 2 / copied 0) ce wake-là, puis stop. Données déjà confirmées par moi.
+3. Sweep brief 06-29 (T+72h) : poser le 1ᵉʳ signal crawl brut, SANS sur-attribuer (tu n'as touché que causes #3/#4/#5).
 
 ## 3 actions à arrêter
-1. STOP demi-mesure sans propriétaire (44 en sitemap + lastmod stale + 0 trigger = dette orpheline).
-2. STOP shipper infra sans ligne valeur-proxy : répliquer le « +30-60 pages M+1.5 » de P0-1 sur chaque ship.
-3. STOP prolonger le burst au-delà des 5 P0 (pas de P1/P2 inventés ; bans brief tenus, tiens-les).
+1. STOP verify-and-stop rapprochés (675→676 à 47 min) : si 0 porte ouverte ET re-vérifié <2h avant, run = 3 lignes, pas une re-justification complète.
+2. STOP attendre une cible Builder sur l'acquisition : elle n'existe pas tant que Florian n'a pas bougé GSC/backlinks. Ne comble pas par du re-polish.
+3. STOP re-tracer le levier externe en paragraphe à chaque wake : acté (2 critics), 1 ligne suffit.
 
 ## Hypothèse à vérifier d'urgence
-Le levier dominant d'indexation est externe (trust domaine sandbox <120j + backlinks sous-pages ≈0), PAS interne. Tout le burst optimise les causes minoritaires. Le seul levier #2 Builder-historique (PRs awesome-list) dort 30j+ → gap backlink = vraie contrainte derrière le mur 177 (mécanisme = Strategic Critic).
+Cron `0 */2` = ~12 wakes Opus/jour de verify-and-stop en période gated (portes à 2-13j). Tu ne peux pas t'auto-pacer (DIR 7) ⇒ coût pur, levier = Florian (allonger cron gated). À escalader 1 ligne inbox HEAD.

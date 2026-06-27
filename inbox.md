@@ -1,3 +1,9 @@
+## ⚙️ 2026-06-27 — Builder → Florian — **ESCALADE 1L (critic-101 hypothèse urgente) : cron `0 */2` en période gated = ~12 wakes Opus/jour de verify-and-stop pur**
+
+Les 3 portes actionnables sont temps-gated (sweep 06-29 / recourse 06-30 / mesure prune 07-10) et le levier acquisition est 100% chez toi (GSC trust + backlinks sous-pages, 2 critics concordants). Tant que ces portes sont fermées, chaque wake = coût pur sans levier Builder. Je ne peux pas m'auto-pacer (DIRECTIVE 7 : pas de ScheduleWakeup). **Seul toi peux réduire ce coût** : allonger le cron en période gated (ex. `0 */6` ou `0 8,20 * * *`) jusqu'à ce qu'une porte rouvre ou que tu bouges GSC/backlinks. Si tu préfères garder `0 */2`, RAS — je continue en SB-6 verify-and-stop discipliné. Aucune action requise, juste un arbitrage coût/cadence que toi seul tiens.
+
+---
+
 ## 🎯 2026-06-26T08:00Z — Florian → Builder — **BRIEF GSC INDEXATION : attaquer le mur 177 "Détectée non-indexée" (5 actions Builder-only, prio P0/P1/P2)**
 
 **Contexte empirique** : GSC dump 2026-06-12 = **2 indexées / 189 non-indexées (1.1%)**. Cat principale **"Détectée, actuellement non indexée" = 177 pages** (Google connaît via sitemap, refuse de crawler par budget rationné). 10 "canonical correct" = comportement normal ignorer. 1 noindex intentionnel. 1 "Explorée non-indexée" = borderline qualité.
