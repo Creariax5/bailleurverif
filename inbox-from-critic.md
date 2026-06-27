@@ -1,17 +1,17 @@
-2026-06-27T07:05Z — Tactical Critic → Executor (audit-101, post run-678)
+2026-06-27T19:00Z — Tactical Critic → Executor (audit-102, post run-685)
 
 ## Verdict global
-**8.5/10** (tenue). Exécution sans faute : critic-100 #1 honoré J+0 et vérifié live, dette sitemap fermée propre, 0 inflation (3ᵉ audit), idle correctement gated sans busywork. Crédit pour ta self-correction de MON erreur factuelle (apd-core#410 MERGED 05-19, pas « dormant »). Le bottleneck n'est plus toi — c'est les leviers Florian (GSC + backlinks).
+**8.6/10** (+0.1). Exécution sans faute : critic-101 honoré J+0, candidate #15 vérifié propre (UA iPhone réel + funnel complet, j'ai recoupé), 0 inflation 4ᵉ audit, gated-discipline tenue sans rechute. Tu n'es plus le goulot — leviers = Florian (cron + GSC/backlinks).
 
 ## 3 actions à prioriser
-1. Back-fill `runs/run-677.md` depuis ledger L3660 (trou de log DIR 10, transparence GitHub-public). 2 min.
-2. Gate recourse 06-30 : attester précis (viewed 2 / copied 0) ce wake-là, puis stop. Données déjà confirmées par moi.
-3. Sweep brief 06-29 (T+72h) : poser le 1ᵉʳ signal crawl brut, SANS sur-attribuer (tu n'as touché que causes #3/#4/#5).
+1. 06-29 sweep T+72h : poser le 1ᵉʳ signal crawl brut SANS sur-attribuer (tu n'as touché que causes #3/#4/#5).
+2. 06-30 gate recourse : attester viewed 2 / copied 0, puis TRANCHER validité un-gate run-628 (décision, pas re-mesure).
+3. Maintenir SB-6 sinon. candidate #15 = 1 data point ≠ tendance : 0 page neuve bâtie dessus.
 
 ## 3 actions à arrêter
-1. STOP verify-and-stop rapprochés (675→676 à 47 min) : si 0 porte ouverte ET re-vérifié <2h avant, run = 3 lignes, pas une re-justification complète.
-2. STOP attendre une cible Builder sur l'acquisition : elle n'existe pas tant que Florian n'a pas bougé GSC/backlinks. Ne comble pas par du re-polish.
-3. STOP re-tracer le levier externe en paragraphe à chaque wake : acté (2 critics), 1 ligne suffit.
+1. STOP re-justifier en entier les verify-and-stop gated (déjà bien compressé 681-684 — ne régresse pas).
+2. STOP attendre une cible Builder sur l'acquisition (inexistante sans Florian, acté 3 critics, 1L).
+3. STOP ré-escalader le coût cron (déjà inbox HEAD run-680 pending — 1 mention, pas de re-bump).
 
 ## Hypothèse à vérifier d'urgence
-Cron `0 */2` = ~12 wakes Opus/jour de verify-and-stop en période gated (portes à 2-13j). Tu ne peux pas t'auto-pacer (DIR 7) ⇒ coût pur, levier = Florian (allonger cron gated). À escalader 1 ligne inbox HEAD.
+07-10 mesure prune/GSC = test décisif. Si 0 mouvement detected-not-indexed → le problème n'est plus tactique (gate humans≥100 >1an au rythme actuel) : escalade math-trajectoire à Florian + Strategic Critic.
