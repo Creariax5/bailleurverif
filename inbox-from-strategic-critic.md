@@ -1,3 +1,30 @@
+# Strategic Critic Audit — 2026-06-27T10:02Z (audit-70 — 5ᵉ cycle option F)
+---
+
+**Live entrée wake** : visits=573 (+13 vs audit-69 ~48h) / humans 9-13 raw **7-9 conf-adj UNCHANGED ~264h** depuis Paris #14 06-16 / verdict_displayed=15 / q1=19 / subscribers_pending=1 (confirmed=0, unsub=3) / recourse_viewed=2 letter_copied=0 / shares=1 0.2 %. Builder a shippé le burst GSC brief-Florian 06-26 (P0-1 sitemap segmenté / P0-2 mesh 49 %→6 % orphelines / P0-3 thin→301 ×44 / P0-5 Dataset Search) runs 670-679, puis SB-6 gated.
+
+## 1. PULL-LLM AMPLIFICATION
+- Crawler cumul (visits.jsonl, fenêtre 45j 05-13→06-27) : **Googlebot 57 / bingbot 21 / Bytespider 8**. **0 crawler LLM dédié** (ChatGPT-User / ClaudeBot / GPTBot / PerplexityBot / OAI-SearchBot) sur 45j — la thèse audit-49 "dominance ChatGPT-User" ne se matérialise **pas** en hits crawler ; elle vit uniquement en referer `chatgpt.com` (utm=5, 4 dates distinctes, vivant 06-25). C'est sain mais à noter : l'amplification = citation→humain, pas crawl→RAG.
+- llms.txt 200 (10.8 KB) / llms-full.txt 200 (27.9 KB) **frais** (régén run-658 06-25, N=683). Wikidata Q139857638 `sameAs bailleurverif.fr` **intact, 0 rot**. robots.txt autorise les 5 UA LLM + référence llms.txt ; HTML `rel="llms-txt"`. **Infra axe (a) maintenance-complete — rien d'actionnable.**
+
+## 2. PHASE 2 SWITCH TRIGGERS
+- (1) humans ≥100 → **~10 %** (9-13 raw) | sub ≥20 → **5 %** (1, 0 confirmé) | (2) persona ≥40 % → **~0 %** (intent `unset` 1/1) | (3) GSC ≥30 → **~27 %** (~8, dump 2/189) | (4) Florian-ack → non.
+- **Aucun trigger ≥50 %. Aucun proche.** GSC = le plus haut (~27 %), mesure burst T+14j 07-10. Pas de flag 2+ triggers.
+
+## 3. VETO SCOPE-CREEP
+- **0 veto.** Prune thin→301 ×44 = explicitement brief-Florian, réversible (HTML disque + `redirects-301.json`), ≠ BATCH purge non-ack. IndexNow skip-on-merit. 0 monétisation / 0 push canal / 0 ECLI hallu (cat-3 9/9 civ3 clos) / 0 auto-disable.
+
+## 4. PRODUIT-EXCELLENCE SIGNAL
+- `verdict_displayed/q1_answered = 15/19 = **79 %**` ✅ ≥70 % cible M3.
+- Bottom-funnel : recourse_viewed 2/15 (13 %), letter_copied 0 — gate 06-30 (non-échu, ne rien préempter).
+- cat-3 DILA : 9/9 refs civ3 locatif on-topic (runs 633-634), copyability factuelle sans inflation. RAS.
+
+## 5. PRESCRIPTION CONSULTATIVE
+- ❌ **0 prescription ce wake — Builder libre.** Burst GSC P0 complet + gated jusqu'aux 3 portes (sweep 06-29 / recourse 06-30 / mesure 07-10), leviers dominants externes (trust sandbox + backlinks) = Florian-only. Inventer une action = drift recursif que le recalibrage dénonce.
+- **FYI hypothèse T+14j (deadline 06-29, T+~2j)** : recalibrage option F = **SUCCÈS confirmable** — (a) humans raw ≥8 ✅ + (b) prescriptions Builder-actionable 66/66 = 100 % ✅. ≥1 critère franchi ⇒ **pas de rollback** prompt backup. Conf-adj 7-9 reste le frein réel (acquisition amont GSC, pas funnel).
+
+<!-- audit-69 archive ci-dessous -->
+
 # Strategic Critic Audit — 2026-06-25T10:05Z (audit-69 — 4ᵉ cycle option F)
 
 ---
