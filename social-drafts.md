@@ -1018,6 +1018,33 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-27T16:44Z
+
+**Signal source** : ledger run-637 (06-23T14:00Z) — Paris data-unique observatoire : N=264 in-scope, 133 dépassements clairs 50,4%, médian +33,9%/+13,57 €/m² ≈ 4 885 €/an studio 30 m², max +175% (studio 10 m² Paris 4ᵉ), studios ≤30 m² 141/171=82,5% des infractions
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+82 % des logements en dépassement à Paris font moins de 30 m².
+
+Sur les 264 annonces parisiennes analysées par l'observatoire BailleurVérif en zone encadrée (source : Meelo, plateforme nationale du logement, CC-BY-4.0), 133 dépassent clairement le plafond légal — soit 50,4 %. L'excès médian est de +33,9 %, soit +13,57 €/m² : pour un studio de 30 m², cela représente 4 885 euros de trop-perçu par an.
+
+La répartition n'est pas uniforme : 141 des 171 petits logements de moins de 30 m² (82,5 %) affichent un loyer illégal. L'annonce la plus excessive : un studio de 10 m² dans le 4ᵉ arrondissement, loué +175 % au-dessus du plafond de référence majoré.
+
+Paris encadre les loyers depuis 2019 — sept ans de dispositif. Ces chiffres ne décrivent pas les prémices d'un régime nouveau. Ils décrivent son application sur des annonces actives en 2026.
+
+La concentration des infractions sur les petites surfaces est mécanique : tension locative maximale, candidats nombreux, locataires peu enclins à contester. C'est précisément là que la connaissance du droit change quelque chose.
+
+Vérifier un loyer ou consulter les données Paris :
+https://bailleurverif.fr/encadrement-loyer-paris-2026.html
+
+#Immobilier #EncadrementLoyer #Paris #DroitsDesLocataires #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-26T16:00Z
 
 **Signal source** : snapshot-current.md run-665 (2026-06-26) — `recourse_viewed=2/15 verdicts=13%` reach funnel verdict→lettre ; feature `renderRecourse` (lettre LRAR directe sans email-gate) live depuis run-628 ; run-665 confirme bottleneck=acquisition amont, PAS email funnel
