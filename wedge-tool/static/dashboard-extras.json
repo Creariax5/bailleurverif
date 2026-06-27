@@ -1,76 +1,76 @@
 {
-  "generated_at": "2026-06-27T15:48:02Z",
+  "generated_at": "2026-06-27T17:50:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 5061,
-    "requests_24h": 583,
-    "bot_hits_lifetime": 2864,
-    "bot_hits_24h": 343,
-    "bot_hits_1h": 15,
-    "human_hits_24h": 240
+    "requests_lifetime": 5076,
+    "requests_24h": 634,
+    "bot_hits_lifetime": 2884,
+    "bot_hits_24h": 356,
+    "bot_hits_1h": 12,
+    "human_hits_24h": 278
   },
   "bots_by_type_lifetime": {
     "GPTBot": 677,
-    "OAI-SearchBot": 555,
+    "OAI-SearchBot": 565,
     "generic-bot": 299,
-    "PetalBot": 268,
+    "PetalBot": 267,
     "SemrushBot": 262,
-    "Amazonbot": 233,
-    "Bingbot": 211,
-    "ByteSpider": 111,
+    "Amazonbot": 243,
+    "Bingbot": 208,
+    "ByteSpider": 112,
     "Googlebot": 67,
-    "AhrefsBot": 54,
-    "BaiduSpider": 35,
+    "AhrefsBot": 56,
+    "BaiduSpider": 39,
     "MJ12bot": 24,
     "DuckDuckBot": 18,
-    "curl/wget": 10,
     "FacebookExt": 10,
-    "python-script": 9,
     "HeadlessChrome": 9,
+    "curl/wget": 8,
+    "python-script": 8,
     "ClaudeBot": 6,
     "PerplexityBot": 5,
     "Go-HTTP": 1
   },
   "bots_by_type_24h": {
-    "Amazonbot": 145,
-    "OAI-SearchBot": 82,
+    "Amazonbot": 149,
+    "OAI-SearchBot": 87,
     "Bingbot": 37,
     "PetalBot": 26,
     "SemrushBot": 14,
-    "AhrefsBot": 9,
+    "AhrefsBot": 11,
+    "BaiduSpider": 10,
     "curl/wget": 7,
-    "BaiduSpider": 6,
     "ByteSpider": 4,
     "generic-bot": 4,
-    "DuckDuckBot": 4,
     "ClaudeBot": 2,
     "GPTBot": 2,
+    "DuckDuckBot": 2,
     "FacebookExt": 1
   },
   "bot_last_seen": {
-    "OAI-SearchBot": "2026-06-26T15:27:01+00:00",
-    "Bingbot": "2026-06-26T15:25:33+00:00",
-    "PetalBot": "2026-06-26T15:21:14+00:00",
-    "curl/wget": "2026-06-27T07:25:49+00:00",
-    "python-script": "2026-06-26T11:53:47+00:00",
     "Googlebot": "2026-06-26T12:59:35+00:00",
+    "Bingbot": "2026-06-26T15:25:33+00:00",
+    "OAI-SearchBot": "2026-06-26T15:27:01+00:00",
     "AhrefsBot": "2026-06-26T10:15:07+00:00",
     "generic-bot": "2026-06-26T15:17:03+00:00",
     "GPTBot": "2026-06-26T10:28:54+00:00",
     "BaiduSpider": "2026-06-26T00:23:30+00:00",
+    "PetalBot": "2026-06-26T15:21:14+00:00",
     "FacebookExt": "2026-06-26T00:44:30+00:00",
     "ByteSpider": "2026-06-26T09:40:16+00:00",
     "MJ12bot": "2026-06-26T10:56:36+00:00",
     "DuckDuckBot": "2026-06-26T15:49:10+00:00",
     "SemrushBot": "2026-06-25T22:38:54+00:00",
+    "curl/wget": "2026-06-27T07:25:49+00:00",
     "PerplexityBot": "2026-06-23T19:22:27+00:00",
+    "python-script": "2026-06-26T11:53:47+00:00",
     "HeadlessChrome": "2026-06-22T13:27:06+00:00",
     "Go-HTTP": "2026-06-22T22:57:58+00:00",
     "Amazonbot": "2026-06-26T15:28:24+00:00",
     "ClaudeBot": "2026-06-26T14:41:35+00:00"
   },
   "last_googlebot": "2026-06-26T12:59:35+00:00",
-  "last_bingbot": "2026-06-27T15:11:17+00:00",
+  "last_bingbot": "2026-06-27T16:34:18+00:00",
   "chart_7days": [
     {
       "day": "2026-06-21",
@@ -198,32 +198,25 @@
     },
     {
       "day": "2026-06-27",
-      "total": 253,
+      "total": 283,
       "by_type": {
-        "Amazonbot": 114,
+        "Amazonbot": 124,
         "PetalBot": 24,
-        "Bingbot": 25,
-        "OAI-SearchBot": 53,
-        "BaiduSpider": 4,
-        "ByteSpider": 2,
+        "Bingbot": 26,
+        "OAI-SearchBot": 65,
+        "BaiduSpider": 8,
+        "ByteSpider": 3,
         "SemrushBot": 14,
         "generic-bot": 4,
         "curl/wget": 7,
         "ClaudeBot": 2,
         "GPTBot": 2,
-        "DuckDuckBot": 2
+        "DuckDuckBot": 2,
+        "AhrefsBot": 2
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "16",
-      "hits": 0
-    },
-    {
-      "hour": "17",
-      "hits": 2
-    },
     {
       "hour": "18",
       "hits": 5
@@ -310,20 +303,28 @@
     },
     {
       "hour": "15",
-      "hits": 7
+      "hits": 9
+    },
+    {
+      "hour": "16",
+      "hits": 5
+    },
+    {
+      "hour": "17",
+      "hits": 33
     }
   ],
   "top_bot_paths_24h": {
-    "/calendrier-interdiction-dpe-2025-2028-2034.html": 30,
-    "/encadrement-loyer-paris-2026.html": 20,
-    "/": 19,
-    "/robots.txt": 15,
-    "/encadrement-loyer-lille-2026.html": 5,
-    "/depot-garantie-france-2026.html": 4,
-    "/sitemap.xml": 4,
-    "/data/": 4,
-    "/encadrement-loyer-france-2026.html": 4,
-    "/data/encadrement-loyer-france-2026.csv": 4
+    "/calendrier-interdiction-dpe-2025-2028-2034.html": 34,
+    "/encadrement-loyer-paris-2026.html": 22,
+    "/": 18,
+    "/robots.txt": 16,
+    "/encadrement-loyer-france-2026.html": 6,
+    "/depot-garantie-france-2026.html": 5,
+    "/css/tailwind-runtime.js": 4,
+    "/api/visit": 4,
+    "/encadrement-loyer-lille-2026.html": 4,
+    "/sitemap.xml": 4
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 42,
@@ -338,54 +339,61 @@
     "/marseille-coloc-2026.html": 1
   },
   "top_human_paths_24h": {
-    "/": 20,
+    "/": 21,
     "/robots.txt": 11,
+    "/api/funnel/event": 11,
     "/guide-locataire-2026.html": 9,
     "/observatoire-annonces-loyer.html": 8,
     "/data/": 8,
     "/calendrier-interdiction-dpe-2025-2028-2034.html": 7,
+    "/colocation-2026.html": 5,
     "/favicon.ico": 5,
-    "/colocation-2026.html": 4,
-    "/css/main.css": 4,
-    "/css/tailwind-runtime.js": 4
+    "/css/main.css": 5
   },
   "status_codes_24h": {
-    "200": 524,
-    "301": 29,
-    "404": 30
+    "200": 572,
+    "301": 31,
+    "404": 31
   },
   "funnel": {
-    "events_total_lifetime": 417,
-    "sessions_lifetime": 311,
-    "sessions_24h": 5,
+    "events_total_lifetime": 425,
+    "sessions_lifetime": 312,
+    "sessions_24h": 6,
     "by_type_24h": {
-      "home_visit": 5
+      "home_visit": 6,
+      "wedge_q1_answered": 1,
+      "wedge_q2_answered": 1,
+      "wedge_q3_answered": 1,
+      "wedge_q4_answered": 1,
+      "wedge_q5_answered": 1,
+      "verdict_displayed": 1,
+      "verdict_dwell_ms": 1
     },
     "by_type_lifetime": {
-      "home_visit": 290,
+      "home_visit": 291,
       "scan_url_page_visit": 23,
-      "wedge_q1_answered": 19,
-      "wedge_q2_answered": 15,
-      "wedge_q3_answered": 14,
-      "wedge_q4_answered": 14,
-      "wedge_q5_answered": 13,
-      "verdict_displayed": 15,
+      "wedge_q1_answered": 20,
+      "wedge_q2_answered": 16,
+      "wedge_q3_answered": 15,
+      "wedge_q4_answered": 15,
+      "wedge_q5_answered": 14,
+      "verdict_displayed": 16,
       "email_field_focused": 2,
       "signup_confirmed": 1,
       "home_preset_click": 2,
-      "verdict_dwell_ms": 4,
+      "verdict_dwell_ms": 5,
       "email_gate_reached": 2,
       "share_card_post_verdict_clicked": 1,
       "recourse_viewed": 2
     },
     "sessions_reaching_step_lifetime": {
-      "home_visit": 284,
-      "wedge_q1_answered": 19,
-      "wedge_q2_answered": 15,
-      "wedge_q3_answered": 14,
-      "wedge_q4_answered": 13,
-      "wedge_q5_answered": 13,
-      "verdict_displayed": 15,
+      "home_visit": 285,
+      "wedge_q1_answered": 20,
+      "wedge_q2_answered": 16,
+      "wedge_q3_answered": 15,
+      "wedge_q4_answered": 14,
+      "wedge_q5_answered": 14,
+      "verdict_displayed": 16,
       "email_field_focused": 1,
       "email_submitted": 0
     }
