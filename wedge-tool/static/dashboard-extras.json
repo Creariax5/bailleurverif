@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-06-27T23:48:01Z",
+  "generated_at": "2026-06-28T01:48:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4322,
-    "requests_24h": 736,
-    "bot_hits_lifetime": 2102,
-    "bot_hits_24h": 393,
-    "bot_hits_1h": 19,
-    "human_hits_24h": 343
+    "requests_lifetime": 4357,
+    "requests_24h": 774,
+    "bot_hits_lifetime": 2109,
+    "bot_hits_24h": 390,
+    "bot_hits_1h": 2,
+    "human_hits_24h": 384
   },
   "bots_by_type_lifetime": {
-    "OAI-SearchBot": 578,
-    "Amazonbot": 301,
+    "OAI-SearchBot": 576,
+    "Amazonbot": 310,
     "PetalBot": 279,
     "SemrushBot": 262,
-    "Bingbot": 205,
+    "Bingbot": 204,
     "ByteSpider": 113,
-    "generic-bot": 86,
+    "generic-bot": 84,
     "Googlebot": 68,
-    "AhrefsBot": 46,
+    "AhrefsBot": 45,
     "GPTBot": 42,
-    "BaiduSpider": 35,
+    "BaiduSpider": 37,
     "MJ12bot": 24,
     "DuckDuckBot": 18,
+    "curl/wget": 10,
     "HeadlessChrome": 9,
-    "curl/wget": 8,
     "python-script": 8,
     "FacebookExt": 8,
     "ClaudeBot": 6,
@@ -32,13 +32,13 @@
     "Go-HTTP": 1
   },
   "bots_by_type_24h": {
-    "Amazonbot": 182,
-    "OAI-SearchBot": 88,
-    "PetalBot": 37,
-    "Bingbot": 30,
+    "Amazonbot": 189,
+    "OAI-SearchBot": 86,
+    "PetalBot": 33,
+    "Bingbot": 26,
     "SemrushBot": 14,
-    "BaiduSpider": 8,
-    "curl/wget": 7,
+    "curl/wget": 9,
+    "BaiduSpider": 6,
     "generic-bot": 5,
     "GPTBot": 5,
     "Googlebot": 5,
@@ -48,19 +48,19 @@
     "DuckDuckBot": 2
   },
   "bot_last_seen": {
-    "OAI-SearchBot": "2026-06-26T15:27:01+00:00",
-    "generic-bot": "2026-06-26T15:17:03+00:00",
-    "AhrefsBot": "2026-06-26T10:15:07+00:00",
     "Bingbot": "2026-06-26T15:25:33+00:00",
     "Googlebot": "2026-06-26T12:59:35+00:00",
+    "AhrefsBot": "2026-06-26T10:15:07+00:00",
     "PetalBot": "2026-06-26T15:21:14+00:00",
+    "OAI-SearchBot": "2026-06-26T15:27:01+00:00",
     "BaiduSpider": "2026-06-26T00:23:30+00:00",
+    "generic-bot": "2026-06-26T15:17:03+00:00",
     "ByteSpider": "2026-06-26T09:40:16+00:00",
     "MJ12bot": "2026-06-26T10:56:36+00:00",
     "DuckDuckBot": "2026-06-26T15:49:10+00:00",
     "GPTBot": "2026-06-26T10:28:54+00:00",
     "SemrushBot": "2026-06-25T22:38:54+00:00",
-    "curl/wget": "2026-06-27T07:25:49+00:00",
+    "curl/wget": "2026-06-28T00:58:11+00:00",
     "PerplexityBot": "2026-06-23T19:22:27+00:00",
     "python-script": "2026-06-26T11:53:47+00:00",
     "FacebookExt": "2026-06-26T00:44:30+00:00",
@@ -70,30 +70,8 @@
     "ClaudeBot": "2026-06-26T14:41:35+00:00"
   },
   "last_googlebot": "2026-06-27T23:25:02+00:00",
-  "last_bingbot": "2026-06-27T22:43:41+00:00",
+  "last_bingbot": "2026-06-28T00:16:03+00:00",
   "chart_7days": [
-    {
-      "day": "2026-06-21",
-      "total": 194,
-      "by_type": {
-        "OAI-SearchBot": 56,
-        "generic-bot": 16,
-        "AhrefsBot": 5,
-        "Bingbot": 34,
-        "Googlebot": 9,
-        "PetalBot": 17,
-        "BaiduSpider": 4,
-        "ByteSpider": 34,
-        "MJ12bot": 6,
-        "DuckDuckBot": 4,
-        "GPTBot": 1,
-        "SemrushBot": 2,
-        "curl/wget": 1,
-        "PerplexityBot": 3,
-        "python-script": 1,
-        "FacebookExt": 1
-      }
-    },
     {
       "day": "2026-06-22",
       "total": 299,
@@ -215,17 +193,19 @@
         "AhrefsBot": 4,
         "Googlebot": 5
       }
+    },
+    {
+      "day": "2026-06-28",
+      "total": 14,
+      "by_type": {
+        "Bingbot": 1,
+        "Amazonbot": 9,
+        "BaiduSpider": 2,
+        "curl/wget": 2
+      }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "00",
-      "hits": 7
-    },
-    {
-      "hour": "01",
-      "hits": 9
-    },
     {
       "hour": "02",
       "hits": 9
@@ -313,19 +293,27 @@
     {
       "hour": "23",
       "hits": 15
+    },
+    {
+      "hour": "00",
+      "hits": 8
+    },
+    {
+      "hour": "01",
+      "hits": 49
     }
   ],
   "top_bot_paths_24h": {
-    "/calendrier-interdiction-dpe-2025-2028-2034.html": 37,
-    "/encadrement-loyer-paris-2026.html": 22,
+    "/calendrier-interdiction-dpe-2025-2028-2034.html": 33,
+    "/encadrement-loyer-paris-2026.html": 21,
     "/robots.txt": 18,
-    "/": 16,
+    "/": 18,
     "/encadrement-loyer-france-2026.html": 6,
     "/depot-garantie-france-2026.html": 5,
     "/observatoire-annonces-loyer.html": 4,
     "/dpe-f-g-interdit-location.html": 4,
     "/data/encadrement-loyer-france-2026.csv": 4,
-    "/atom.xml": 3
+    "/data/": 3
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 46,
@@ -340,21 +328,22 @@
     "/": 1
   },
   "top_human_paths_24h": {
-    "/": 27,
-    "/api/funnel/event": 11,
-    "/robots.txt": 9,
+    "/": 35,
+    "/api/funnel/event": 15,
+    "/favicon.svg": 12,
+    "/robots.txt": 10,
+    "/css/tailwind-runtime.js": 9,
     "/guide-locataire-2026.html": 9,
     "/data/": 8,
-    "/encadrement-loyer-paris-2026.html": 7,
-    "/calendrier-interdiction-dpe-2025-2028-2034.html": 6,
-    "/colocation-2026.html": 5,
-    "/observatoire-annonces-loyer.html": 5,
-    "/favicon.ico": 5
+    "/api/changelog?limit=5": 8,
+    "/api/visit": 8,
+    "/static/share-card.js": 7
   },
   "status_codes_24h": {
-    "200": 657,
-    "301": 37,
-    "404": 42
+    "200": 692,
+    "404": 42,
+    "301": 36,
+    "400": 4
   },
   "funnel": {
     "events_total_lifetime": 425,
