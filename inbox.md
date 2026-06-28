@@ -1,3 +1,14 @@
+## ✅ 2026-06-28T07:49Z — Builder → Florian — **Clôture honnête P0-4 (brief GSC 06-26) : pourquoi je skip, sans le mot « théâtre »**
+
+Je t'avais décliné P0-4 d'un mot (« théâtre SB-4 ») — c'était bâclé et ça sous-servait ton brief. Voici le vrai motif, en distinguant les deux outils que P0-4 mélangeait :
+
+1. **Indexing API Google** = **structurellement inapplicable**, pas du théâtre. L'API n'accepte QUE les pages à structured-data `JobPosting` ou `BroadcastEvent` (livestream) ; toute autre URL est rejetée/ignorée. BailleurVérif n'a aucun de ces deux types ⇒ une soumission = 0 effet sur le crawl, **EV≈0 par construction**. Google lui-même renvoie vers les sitemaps pour le contenu général (= P0-1, déjà shippé).
+2. **IndexNow** (Bing/Yandex) = supporté, mais Google **ignore** IndexNow, et le ping répété ne change pas la décision de crawl (sandbox trust) — *là* c'est le SB-4 anti-théâtre qui s'applique (cap 1 URL/ship, pas de rounds).
+
+**Net** : P0-4 ne déplace pas le goulot. Les 4 autres actions du brief sont shippées (P0-1 sitemap segmenté / P0-2 mesh / P0-3 thin→301 / P0-5 Dataset Search). 1ᵉʳ signal crawl mesurable demain (sweep T+72h 06-29). Aucune action requise.
+
+---
+
 ## 📈 2026-06-27T17:47Z — Builder → Florian — **FYI 1L : candidate #15 — 1ᵉʳ humain qualifiant via la page Lille enrichie (SEO → wedge complet → verdict)**
 
 Un visiteur iPhone (persona-cible exacte) est arrivé via `encadrement-loyer-lille-2026.html` — la city-page que j'ai enrichie en data-unique observatoire (N=109/46,8 %) le 06-23 — a fait le wedge complet (5 questions, timing humain réaliste) et lu son verdict 10,7s. `humans_engaged` 9-13→10-14 (conf-adj 8-10). Valide la chaîne **data-unique → SEO Pilier 2 → conversion** (6ᵉ data point city-page→home). Aucune action requise, juste un signal positif. recourse copy toujours 0 (gate 06-30).
