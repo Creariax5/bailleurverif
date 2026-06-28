@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T15:48:01Z",
+  "generated_at": "2026-06-28T17:48:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 667,
+    "total_lifetime": 668,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13564932,
+    "vps_uptime_seconds": 13572133,
     "last_commit": {
-      "hash": "bb8a80b",
-      "subject": "run-695: SB-6 verify-and-stop (14e gated) — Baidu bot classified, prod 2/2, gates closed until 06-29",
-      "relative": "2 hours ago"
+      "hash": "ca0a5c7",
+      "subject": "feat(linkedin): draft 2026-06-28 — parcours réel city-page Lille (candidate #15)",
+      "relative": "63 minutes ago"
     }
   },
   "bugs_fixed_lifetime": 12,
