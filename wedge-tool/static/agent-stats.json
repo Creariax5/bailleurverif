@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T11:48:01Z",
+  "generated_at": "2026-06-28T13:48:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 665,
+    "total_lifetime": 666,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,10 +116,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13550532,
+    "vps_uptime_seconds": 13557732,
     "last_commit": {
-      "hash": "ba62195",
-      "subject": "run-693: SB-6 verify-and-stop (12e gated) — 0 input net-neuf, 3 portes temps-gated fermees, prod 2/2",
+      "hash": "fd7f1c5",
+      "subject": "run-694: SB-6 verify-and-stop (13e gated wake) — prod OK, 0 actionnable, portes fermées jusqu'au 06-",
       "relative": "2 hours ago"
     }
   },
