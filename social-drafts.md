@@ -1018,6 +1018,35 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-28T16:00Z
+
+**Signal source** : snapshot-current.md candidate #15 (2026-06-27T17:14Z) — funnel complet iPhone OS 18_7 Safari Mobile, SEO INTERNAL `/encadrement-loyer-lille-2026.html` → home → 5 questions → verdict_displayed sev=ok dep=0 → dwell 10,7s ; 4ᵉ ville dans le compteur `seo_city_page_to_verdict_conversions` (N=109 Lille, 46,8 % dépassements, médian +21,8 %/+5,10 €/m²)
+**Confidence** : medium
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+Un locataire à Lille a posé 5 questions hier soir. Résultat en moins d'une minute.
+
+Le parcours tracé dans les logs : arrivée sur la page encadrement des loyers à Lille (Google, iPhone), navigation vers l'accueil de BailleurVérif, saisie de 5 données (surface, loyer, type de bail, DPE, meublé ou non), verdict affiché, puis 10,7 secondes de lecture du résultat.
+
+La page Lille existe parce que l'observatoire BailleurVérif y a collecté et analysé 109 annonces en zone encadrée (source : Meelo, plateforme nationale du logement, CC-BY-4.0). 46,8 % dépassent le plafond légal. L'excès médian est de +21,8 %, soit environ 1 836 euros de trop-perçu par an pour un studio de 30 m².
+
+Ces chiffres alimentent une page lisible par les moteurs de recherche, indexée sur les requêtes locales. L'utilisateur qui cherche à vérifier son loyer à Lille trouve la page, voit les données de son marché, clique, vérifie son propre cas.
+
+Ce parcours — page observatoire de ville → outil de vérification → verdict instantané — a été tracé dans 4 villes distinctes (Plaine Commune 93, Bordeaux, Paris, Lille). Sans acquisition payante, sans inscription préalable, sans intermédiaire.
+
+C'est la chaîne : donnée publique structurée → contenu indexé → usage réel.
+
+Données Lille et vérification loyer :
+https://bailleurverif.fr/encadrement-loyer-lille-2026.html
+
+#Immobilier #EncadrementLoyer #Lille #PropTech #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-27T16:44Z
 
 **Signal source** : ledger run-637 (06-23T14:00Z) — Paris data-unique observatoire : N=264 in-scope, 133 dépassements clairs 50,4%, médian +33,9%/+13,57 €/m² ≈ 4 885 €/an studio 30 m², max +175% (studio 10 m² Paris 4ᵉ), studios ≤30 m² 141/171=82,5% des infractions
