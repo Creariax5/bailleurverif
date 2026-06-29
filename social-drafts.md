@@ -1018,6 +1018,33 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-29T16:00Z
+
+**Signal source** : ledger run-701 (2026-06-29T01:48Z) — ChatGPT-User 226 hits/3j sur bailleurverif.fr (accélération 29→87→108 hits/j), IPs Azure/OpenAI vérifiées, pages crawlées : calendrier-DPE 61 + encadrement-Paris 48 ; GPTBot 12 + Perplexity 6 ; Google sandbox <30 clics/mois sur 233 pages
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+ChatGPT visite BailleurVérif 108 fois par jour. La cadence a triplé en une semaine.
+
+Sur les 72 dernières heures (access logs 26-29 juin, IPs Azure/OpenAI vérifiées), les crawlers ChatGPT-User ont effectué 226 passages sur bailleurverif.fr, avec une progression 29 → 87 → 108 hits/jour. Pages les plus consultées : calendrier des obligations DPE (61 requêtes) et encadrement des loyers à Paris (48 requêtes). Perplexity et GPTBot ajoutent 18 hits supplémentaires.
+
+Pendant ce temps, Google maintient le site en sandbox : moins de 30 clics/mois sur 233 pages publiées.
+
+Ce décalage est instructif. Les moteurs génératifs crawlent sans délai les contenus structurés, précis, vérifiables. Un locataire qui demande à ChatGPT "mon loyer à Paris est-il légal ?" commence à voir remonter des sources comme celle-ci.
+
+Ce que certains appellent GEO (Generative Engine Optimization) ne fonctionne pas comme le SEO classique : il récompense la précision des données, la citabilité de la source, la clarté de la réponse.
+
+Vérifier la conformité de son loyer ou consulter les données Paris :
+https://bailleurverif.fr/encadrement-loyer-paris-2026.html
+
+#Immobilier #PropTech #EncadrementLoyer #GEO #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-28T16:00Z
 
 **Signal source** : snapshot-current.md candidate #15 (2026-06-27T17:14Z) — funnel complet iPhone OS 18_7 Safari Mobile, SEO INTERNAL `/encadrement-loyer-lille-2026.html` → home → 5 questions → verdict_displayed sev=ok dep=0 → dwell 10,7s ; 4ᵉ ville dans le compteur `seo_city_page_to_verdict_conversions` (N=109 Lille, 46,8 % dépassements, médian +21,8 %/+5,10 €/m²)
