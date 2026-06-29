@@ -34,6 +34,27 @@ type: project
 
 **Couvre 2 axes Strategic option F** : (a) pull-LLM amplification (axe a) + (d) produit-excellence signal (axe d, signal méthodologique transparence audit empirique).
 
+## Run-701 SWEEP 06-29 T+72h post-burst GSC — correction méthodo : access log ≠ visits.jsonl pour crawlers LLM
+
+**Action 2026-06-29T01:48Z** : sweep crawl T+72h (porte ouverte) sur **`server.log.run-672-restart.log`** (fenêtre 06-26 → 06-29, = fenêtre exacte du burst GSC P0). **Constat CLÉ** : le grep 06-17 ci-dessus mesurait `visits.jsonl` (beacon JS, aveugle aux crawlers non-JS) → 0 LLM. Le **log d'accès** capture toute requête HTTP, y compris les fetch LLM statiques → résultat radicalement différent.
+
+| UA (access log, 3j) | Hits | Tendance/jour | Vérif |
+|---|---|---|---|
+| **ChatGPT-User** | **226** | 29→87→**108** (accélère) | IPs Azure/OpenAI (20.x / 68.221.x / 23.98.x) ✓ non-spoof |
+| Amazonbot | 252 | — | — |
+| bingbot | 140 | — | Bing crawle ~15× plus que Google |
+| GPTBot | 12 | — | LLM training/RAG |
+| PerplexityBot | 6 | — | LLM RAG |
+| **Googlebot** | **9** (dont 6 robots.txt) | **3 pages contenu / 3j** | sandbox confirmé |
+
+**Finding 1 — Googlebot quasi-immobile** : 3 pages contenu crawlées en 3j (calendrier-DPE / arnaque-Strasbourg / css). Le burst GSC P0 (sitemap segmenté + mesh + thin→301) n'a **PAS** débloqué le budget crawl Google à T+72h. **Sans sur-attribuer** (consigne tactical audit-104) : 0 lift mesurable imputable aux causes Builder #3/#4/#5 ; cause #1 (sandbox domaine <120j, **Florian-only**) reste dominante. Re-mesure burst T+14j = 07-10.
+
+**Finding 2 — pull-LLM se matérialise dans le log d'accès** : ChatGPT-User 226/3j **en accélération** (108 le 06-28), concentré sur pages topicales (calendrier-DPE 61 / encadrement-Paris 48 / home 36 / france 11). + GPTBot 12 + Perplexity 6. La thèse strategic audit-70 §1 « 0 crawler LLM dédié sur 45j » est un **artefact de mesure** (visits.jsonl front-JS) — corrigée ici. C'est un signal crawler→RAG/citation, **leading indicator** (fetch ≠ humain engagé, mais c'est le canal qui a produit Bouygues N=1).
+
+**Implication channel** : tant que Google sandbox tient (Florian-only : trust + backlinks sous-pages), le canal SEO live mesurable = **pull-LLM / GEO**, pas Google. Renforce priorité llms.txt/llms-full.txt fraîcheur + Wikidata `sameAs` (déjà maintenus). Cohérent avec thèse Florian « SEO main channel » mais re-pondère vers GEO court-terme.
+
+**Métrique tracking** : re-sweep access log au prochain restart serveur (le log courant repart à chaque restart → fenêtre glissante). Cible : ChatGPT-User maintient ≥30/j ⇒ canal pull-LLM stable. Googlebot pages-contenu/jour = proxy sortie sandbox (07-10 décisif).
+
 ## Run-489 ENRICH Aubervilliers honor Strategic-52 — counter `humans_via_seo_cluster_93_post_audit52` (T+72h tracking)
 
 **Action 2026-06-08T23:42Z** : Aubervilliers `/encadrement-loyer-aubervilliers-2026.html` enrichi 255→313L (+58L sous cap +75L) miroir Villeurbanne 330L = **2ᵉ city page enrichie lifetime** (post Villeurbanne 06-05-31). Spec Strategic-52 honored 5/5 composants : FAQPage JSON-LD 5 Q/R DILA-sourcées Plaine Commune / observatoire BV N=2 sample préliminaire violations 100% +51,6% avg / 3 Cass. 3ᵉ civ ressort Cour d'appel Paris / scan-url preset `?ville=Aubervilliers` / cross-link `/api/recourse/loyer-abusif` + sitemap lastmod + Indexing API ping 1 URL.

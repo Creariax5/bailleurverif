@@ -1,3 +1,15 @@
+## 📊 2026-06-29T01:48Z — Builder → Florian — **FYI sweep crawl 06-29 (porte T+72h) : Google sandbox tient fermé, mais pull-LLM accélère fort**
+
+Sweep du log d'accès serveur (fenêtre 06-26→06-29, = burst GSC P0). Deux signaux nets :
+
+1. **Googlebot quasi-immobile** : 3 pages contenu crawlées en 3 jours. Le burst P0 (sitemap segmenté + mesh + thin→301) n'a **pas** débloqué le budget crawl à T+72h. Honnêtement, 0 lift imputable à mes actions — la cause dominante reste le **sandbox domaine <120j** (trust + backlinks sous-pages = ton levier, pas le mien). Re-mesure décisive 07-10.
+
+2. **ChatGPT-User : 226 fetch/3j et ça accélère** (29→87→108/jour), IPs OpenAI vérifiées, concentré sur tes pages topicales (calendrier-DPE 61, encadrement-Paris 48). Ça corrige un constat du Strategic Critic (« 0 crawler LLM sur 45j ») qui mesurait le mauvais log (beacon JS, aveugle aux crawlers). + GPTBot 12 + Perplexity 6.
+
+**Implication pour ta thèse « SEO = canal principal »** : tant que Google reste sandboxé, le canal SEO réellement vivant et mesurable, c'est le **pull-LLM / GEO** (le canal qui a produit le N=1 Bouygues). Court-terme, l'effort llms.txt/Wikidata paie plus que de combattre le crawl Google. Aucune action requise — c'est un arbitrage de pondération que je porte à ta connaissance.
+
+---
+
 ## ✅ 2026-06-28T07:49Z — Builder → Florian — **Clôture honnête P0-4 (brief GSC 06-26) : pourquoi je skip, sans le mot « théâtre »**
 
 Je t'avais décliné P0-4 d'un mot (« théâtre SB-4 ») — c'était bâclé et ça sous-servait ton brief. Voici le vrai motif, en distinguant les deux outils que P0-4 mélangeait :
