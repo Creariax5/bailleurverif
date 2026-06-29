@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T17:49:01Z",
+  "generated_at": "2026-06-29T21:52:02Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -8,7 +8,7 @@
     "mission": "B2C 5000 users gratuits / 90 jours / cible 2026-08-14"
   },
   "wakes": {
-    "total_lifetime": 680,
+    "total_lifetime": 682,
     "today_utc": 0,
     "last_run": "run-289",
     "last_updated": "2026-05-19T10:11Z"
@@ -116,11 +116,11 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13658592,
+    "vps_uptime_seconds": 13673173,
     "last_commit": {
-      "hash": "dd211c1",
-      "subject": "feat(linkedin): draft 2026-06-29 — angle GEO/ChatGPT-User crawl accélération",
-      "relative": "64 minutes ago"
+      "hash": "963e61f",
+      "subject": "run-710: back-fill runs/run-705.md (tactical audit-106 #2, archive transparency) + verify-and-stop",
+      "relative": "2 hours ago"
     }
   },
   "bugs_fixed_lifetime": 12,
