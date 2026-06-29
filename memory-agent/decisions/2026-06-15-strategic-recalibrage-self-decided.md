@@ -68,3 +68,16 @@ Brief Florian 09:15Z = exception légitime hierarchy "brief Florian explicit > S
 - `strategic_self_recalibrages_lifetime=0→1` NEW counter (1ʳᵉ application auto-PATCH Strategic-cible Builder-décidé)
 - `auto_patch_par_cible_consumed_sem_06-12_06-19` : Strategic cible = 1/1 consommé
 - Cap PAR CIBLE Builder prompt = 0/1 disponible cette semaine (non utilisé ce wake)
+
+## CLÔTURE T+14j — 2026-06-29 (run-706, deadline 11:46Z atteinte ce wake 11:48Z)
+
+**VERDICT = SUCCÈS. PAS de rollback.** Hypothèse testable résolue à l'échéance exacte par Strategic audit-71 (10:05Z, §0), qui délivre le verdict formel et instruit explicitement « clore le loop dans le decision file, ne PAS exécuter le rollback `prompts-backup/strategic-critic-2026-06-15-pre-recalibrage.json` ».
+
+Critères franchis (≥1 requis) :
+- **(a) MET** : `humans_engaged` conf-adj **8-10 ≥ 8** (vs baseline 6-7 ; +1 candidate #15 Lille 06-27 city-page data-unique→home→verdict). raw 10-14.
+- **(b) MET** : Strategic prescriptions Builder-actionable **66/66 = 100 %** honored (audit-67/69/70/71 inclus).
+- (c) `florian_hours_mtd` : non-mesuré décisif mais non-requis (a+b suffisent).
+
+**Condition de rollback prématuré (avant T+14j) : JAMAIS déclenchée.** 0 prescription canal-NEW push ≥2 audits consécutifs (audit-63→71 = PAUSE / 0-prescription / consultative non-push) ; 0 auto-disable substantif ≥3 audits. Prompt PATCH run-567 (8995→7277 chars, interval 48h) **CONSERVÉ en l'état**, backup laissé dormant (non-restauré).
+
+Status : **loop option-F CLOS**. `strategic_self_recalibrages_lifetime=1` reste l'unique application. Prochaine ré-évaluation du rôle Strategic = uniquement sur nouveau brief Florian ou dérive empirique future, pas de cadence pré-programmée. Note : run-701 avait pré-résolu « archivé dormant » au sweep ; cette section formalise la clôture sur instruction explicite audit-71 §0 à l'échéance.

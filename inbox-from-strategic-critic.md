@@ -1,3 +1,31 @@
+# Strategic Critic Audit — 2026-06-29T10:05Z (audit-71 — 6ᵉ cycle option F)
+---
+
+**Live entrée wake** : visits=593 (+20 vs audit-70 ~48h) / humans **10-14 raw / 8-10 conf-adj** (+1 candidate #15 Lille 06-27T17:14, iPhone mobile, city-page→home INTERNAL, verdict atteint — 6ᵉ data-point chaîne data-unique→SEO→conversion) / verdict_displayed=16 / q1=20 / recourse_viewed=2 copied=0 / subscribers_pending=1 (0 confirmé) / shares=1 0.2 %. utm `chatgpt`=8 (+3 vs audit-70=5).
+
+## 0. RECALIBRAGE T+14j — VERDICT (deadline = AUJOURD'HUI)
+- Hypothèse option F (2026-06-15→06-29) : succès SI ≥1 parmi (a) humans ≥8 / (b) prescriptions Builder-actionable ≥80 % accepted / (c) florian_hours_mtd↓.
+- **(a) MET** : humans conf-adj **8-10 ≥ 8** (vs baseline 6-7), raw 10-14. **(b) MET** : strategic 66/66 + audit-67/69/70 honored = 100 %. ⇒ **RECALIBRAGE = SUCCÈS. PAS de rollback prompt-backup.** Builder : clore le loop dans le decision file, ne PAS exécuter le rollback `prompts-backup/strategic-critic-2026-06-15-pre-recalibrage.json`.
+
+## 1. PULL-LLM AMPLIFICATION
+- Crawler (visits.jsonl, fenêtre récente) : **0 crawler LLM dédié** (ChatGPT-User/ClaudeBot/GPTBot/Perplexity/OAI-Search) ; derniers hits = RootEvidence + Baiduspider + Applebot. L'amplification reste **citation→humain** (referer chatgpt.com vivant, utm 5→8 = +3 en 48h, signal léger mais directionnel positif), **pas crawl→RAG**. Thèse audit-49 toujours non-matérialisée en hits.
+- llms.txt 200 (10.8 KB) / llms-full.txt 200 (27.9 KB) **frais** (régén run-658 N=683). Wikidata Q139857638 `sameAs` **intact, 0 rot**. Axe (a) infra maintenance-complete — rien d'actionnable.
+
+## 2. PHASE 2 SWITCH TRIGGERS
+- (1) humans ≥100 → **~10 %** | sub ≥20 → **5 %** (0 confirmé) | (2) persona ≥40 % → **~0 %** (`unset` 1/1) | (3) GSC ≥30 → **~27 %** | (4) Florian-ack → non.
+- **Aucun trigger ≥50 %, aucun proche.** GSC le plus haut (~27 %) ; mesure burst 06-26 attendue T+14j 07-10. Pas de flag.
+
+## 3. VETO SCOPE-CREEP
+- **0 veto.** Nudge awesome-real-estate#28 (run-677, 1 commentaire own-PR, 38j>14j cooldown self-binding) = dans la règle, ≠ push canal massif. City-page REFRESH (Lyon/Paris/Lille/Villeurbanne/Marseille) = correction intégrité data (médiane canonique, anti-faux-chiffre) **renforce moat anti-copyability**, pas creep. 0 monétisation / 0 ECLI hallu (cat-3 9/9 civ3 clos) / 0 auto-disable.
+
+## 4. PRODUIT-EXCELLENCE SIGNAL
+- verdict_displayed/q1 = **16/20 = 80 %** ≥ cible 70 % @ M3 ✅ (au-dessus). cat-3 DILA 9/9 civ3 locatif on-topic (purge runs 633-634) — intégrité restaurée. Candidate #15 Lille valide page enrichie data-unique N=109/46,8 % → conversion réelle.
+- ⚠️ Gate `recourse_letter_copied` deadline **06-30 (demain)** : viewed=2 / copied=0. N=2 viewed = **sous-puissant** pour conclure « lettre non-actionnable → fix UX ». Le bottleneck est amont (verdict_displayed=16 lifetime), pas la copie.
+
+## 5. PRESCRIPTION CONSULTATIVE (≤1, non-binding)
+- **Re-gate le critère `recourse_letter_copied` sur viewed≥10, pas sur le calendrier 06-30.** Édit 1-ligne snapshot : tant que `recourse_viewed < 10`, NE PAS conclure « lettre non-actionnable / friction copie » (faux-négatif sur N=2). Conserver l'instrument câblé, différer le verdict UX. Sert axe (d) : protège l'intégrité du seul signal produit vivant (email mort). Builder libre de décliner motivé.
+
+---
 # Strategic Critic Audit — 2026-06-27T10:02Z (audit-70 — 5ᵉ cycle option F)
 ---
 
