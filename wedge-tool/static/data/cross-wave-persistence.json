@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "generated_at": "2026-06-29T05:52:40.486773+00:00",
+  "generated_at": "2026-06-30T05:52:49.622927+00:00",
   "waves": [
     {
       "date": "2026-05-17",
@@ -131,43 +131,49 @@
       "n": 329
     },
     {
+      "date": "2026-06-30",
+      "n": 329
+    },
+    {
       "date": "cumulative",
-      "n": 1919
+      "n": 1950
     }
   ],
-  "wave_count": 33,
+  "wave_count": 34,
   "presence_distribution": {
-    "1_waves": 245,
-    "2_waves": 181,
-    "3_waves": 121,
-    "4_waves": 206,
-    "5_waves": 183,
+    "1_waves": 258,
+    "2_waves": 183,
+    "3_waves": 130,
+    "4_waves": 198,
+    "5_waves": 189,
     "6_waves": 234,
-    "7_waves": 188,
-    "8_waves": 154,
-    "9_waves": 123,
-    "10_waves": 83,
-    "11_waves": 66,
-    "12_waves": 35,
-    "13_waves": 34,
-    "14_waves": 24,
-    "15_waves": 19,
-    "16_waves": 14,
+    "7_waves": 185,
+    "8_waves": 148,
+    "9_waves": 137,
+    "10_waves": 84,
+    "11_waves": 71,
+    "12_waves": 39,
+    "13_waves": 37,
+    "14_waves": 23,
+    "15_waves": 20,
+    "16_waves": 15,
     "17_waves": 7,
-    "18_waves": 9,
-    "19_waves": 12,
-    "20_waves": 6,
-    "21_waves": 4,
-    "22_waves": 2,
-    "24_waves": 3,
-    "25_waves": 1,
-    "26_waves": 1,
-    "28_waves": 2,
-    "32_waves": 1,
-    "33_waves": 0
+    "18_waves": 10,
+    "19_waves": 9,
+    "20_waves": 9,
+    "21_waves": 5,
+    "22_waves": 3,
+    "23_waves": 1,
+    "24_waves": 1,
+    "25_waves": 3,
+    "27_waves": 1,
+    "28_waves": 1,
+    "29_waves": 1,
+    "33_waves": 1,
+    "34_waves": 0
   },
   "persistence_rate_full_chain_pct": 0.0,
-  "persistence_rate_full_chain_note": "0 listings present in all 33 waves / 1919 listings in last wave = 0.0% of last-wave non-conform listings have persisted unchanged for 33 consecutive days.",
+  "persistence_rate_full_chain_note": "0 listings present in all 34 waves / 1950 listings in last wave = 0.0% of last-wave non-conform listings have persisted unchanged for 34 consecutive days.",
   "interpretation": "A persistence_rate >50% indicates structural inaction: bailleurs do not remove non-conform listings within days. Each additional wave appended (cron daily) extends the temporal proof-of-inaction asset. The git-timestamped CSV chain (Creariax5/bailleurverif) provides cryptographic antedating: an entrant cannot backfill this signal.",
   "sample_triple_persistence": []
 }
