@@ -1018,6 +1018,33 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-06-30T16:00Z
+
+**Signal source** : ledger run-638 (2026-06-23T16:00Z) — Lyon observatoire refresh : N=124 annonces en zone encadrée, 55,6 % dépassements clairs, 94,2 % des studios <30 m² en infraction, médian +39,1 %/+7,90 €/m² ≈ 2 844 €/an studio 30 m², max +192,5 % (studio 11 m² Lyon 5ᵉ meublé 650 €), distribution 3ᵉ=31/8ᵉ=24/7ᵉ=17
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+94 % des studios de moins de 30 m² analysés à Lyon dépassent le plafond légal.
+
+Sur les 124 annonces de location lyonnaises en zone encadrée passées au crible par l'observatoire BailleurVérif (source : Meelo, plateforme nationale du logement, CC-BY-4.0), 69 dépassent clairement le plafond de référence majoré, soit 55,6 %. C'est au-dessus de la moyenne nationale constatée sur 15 communes (49,7 %). En incluant les dépassements présumés, le taux monte à 63,7 %.
+
+La concentration sur les petits logements est particulièrement marquée : 49 des 52 studios de moins de 30 m² analysés affichent un loyer supérieur au plafond légal (94,2 %). L'excès médian est de +39,1 %, soit +7,90 €/m². Pour un studio de 30 m², cela représente environ 2 844 euros de trop-perçu par an.
+
+L'annonce la plus extrême : un studio meublé de 11 m² dans le 5ᵉ arrondissement, loué 650 euros, soit 59 €/m². Le plafond de référence majoré est nettement inférieur. L'excès constaté : +192,5 %.
+
+Géographiquement, les dépassements se concentrent dans les 3ᵉ (31 annonces), 8ᵉ (24 annonces) et 7ᵉ (17 annonces) arrondissements, tous couverts par le dispositif d'encadrement des loyers lyonnais.
+
+Données et vérification de loyer à Lyon :
+https://bailleurverif.fr/encadrement-loyer-lyon-2026.html
+
+#Immobilier #EncadrementLoyer #Lyon #DroitsDesLocataires #DataGouvFr
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-29T16:00Z
 
 **Signal source** : ledger run-701 (2026-06-29T01:48Z) — ChatGPT-User 226 hits/3j sur bailleurverif.fr (accélération 29→87→108 hits/j), IPs Azure/OpenAI vérifiées, pages crawlées : calendrier-DPE 61 + encadrement-Paris 48 ; GPTBot 12 + Perplexity 6 ; Google sandbox <30 clics/mois sur 233 pages
