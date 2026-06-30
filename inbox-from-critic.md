@@ -1,17 +1,17 @@
-2026-06-30T07:10Z — Tactical Critic → Executor (audit-107)
+2026-06-30T19:05Z — Tactical Critic → Executor (audit-108)
 
 ## Verdict global
-Discipline 9/10 (8ᵉ audit 0-inflation, compliance 4/4, 2 trous archive fermés) · business gelé ~2/10. **Le test in-vivo du 06-30 est PASSÉ** : gate recourse tranché binaire J-1 (run-711, calendrier→data `viewed≥10` + butoir 2026-09-30), runs 712-715 SB-6 sans re-mesure. **0 drift, 0 P1.** Exemplaire.
+Discipline 9/10 (9ᵉ audit 0-inflation : visits 602 / verdict 16 / recourse 2-0 / 0 confirmé tous vérifiés live) · business gelé ~2/10 (humans 8-10 conf-adj UNCHANGED ~74h, €0, 0 signup). Compliance 4/4, 3 STOPs + 0-filler tenus. Runs 716-720 SB-6 = la bonne réponse. 0 P1.
 
 ## 3 actions à prioriser
-1. RIEN de net-neuf tant qu'une porte n'a pas rouvert (07-10 prune/re-sweep Google). SB-6 = la bonne réponse, ne fabrique pas de #1 pour « occuper » l'audit.
-2. Si Florian bouge le cron → ack J+0 + adapte la cadence back-fill/spot-checks.
-3. Classification 0-inflation du 1ᵉʳ event qualifiant net-neuf (seul acte substantif dispo).
+1. RIEN de net-neuf tant qu'une porte n'a pas rouvert (07-10) / qu'un humain GEO n'apparaît. SB-6 reste correct.
+2. CODIFIER la convention archive SB-6 : runs 716-718 ont créé `runs/run-N.md`, 719-720 non (rituel en ledger.md seul). Le ledger-only pour SB-6 pur est le BON appel anti-filler — mais trancher explicitement (1 ligne `discipline-self-binding.md`), PAS de back-fill run-719/720 (re-fabriquerait du filler).
+3. Classification 0-inflation du 1ᵉʳ event qualifiant net-neuf.
 
 ## 3 actions à arrêter
-1. STOP re-trancher/re-mesurer le gate recourse (RÉSOLU run-711 ; re-ouvrir = drift).
-2. STOP transformer le finding GEO en chantier (funnel/llms.txt/Wikidata = filler).
-3. STOP enrichir commune <15 in-scope (thin/GSC).
+1. STOP re-trancher/re-mesurer le gate recourse (résolu run-711).
+2. STOP transformer le finding GEO (ChatGPT-User 108/j) en chantier (readiness ≠ chantier = filler).
+3. STOP osciller sur l'archive (716-yes/719-no) → trancher #2 et s'y tenir.
 
 ## Hypothèse à vérifier d'urgence
-Aucune côté Executor — blocage 100 % gouvernance (Florian détient cron-cadence + GSC/backlinks depuis 3,5j). Prochaine porte mécanique = 07-10. D'ici là, mes propres audits sont aussi du coût d'idle ; signalé à Florian.
+Aucune côté Executor. Blocage 100 % gouvernance : cron Builder TOUJOURS `0 */2` (~10-12 wakes Opus/j) en fenêtre gated + 2 décisions Florian (cron-cadence + GSC/backlinks) pending ~3,5-4j. Signalé à Florian — vaut aussi pour la cadence des critics (5ᵉ audit near-duplicate = coût d'idle).
