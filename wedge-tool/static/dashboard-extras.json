@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-06-30T09:50:02Z",
+  "generated_at": "2026-06-30T11:48:02Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4649,
-    "requests_24h": 920,
-    "bot_hits_lifetime": 2478,
-    "bot_hits_24h": 460,
-    "bot_hits_1h": 22,
-    "human_hits_24h": 460
+    "requests_lifetime": 4592,
+    "requests_24h": 919,
+    "bot_hits_lifetime": 2500,
+    "bot_hits_24h": 474,
+    "bot_hits_1h": 20,
+    "human_hits_24h": 445
   },
   "bots_by_type_lifetime": {
-    "OAI-SearchBot": 687,
+    "OAI-SearchBot": 695,
     "Amazonbot": 343,
-    "PetalBot": 290,
+    "PetalBot": 292,
     "AhrefsBot": 245,
-    "SemrushBot": 228,
-    "Bingbot": 221,
-    "GPTBot": 128,
-    "generic-bot": 100,
-    "Googlebot": 54,
+    "SemrushBot": 226,
+    "Bingbot": 222,
+    "generic-bot": 114,
+    "GPTBot": 111,
+    "Googlebot": 53,
     "BaiduSpider": 51,
-    "ByteSpider": 38,
+    "ByteSpider": 37,
+    "ClaudeBot": 24,
     "DuckDuckBot": 22,
     "MJ12bot": 18,
+    "PerplexityBot": 11,
     "FacebookExt": 10,
     "curl/wget": 9,
-    "ClaudeBot": 9,
     "HeadlessChrome": 9,
-    "PerplexityBot": 8,
     "python-script": 8
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 121,
+    "OAI-SearchBot": 125,
     "GPTBot": 95,
-    "PetalBot": 75,
-    "AhrefsBot": 72,
-    "Bingbot": 40,
-    "generic-bot": 19,
-    "BaiduSpider": 8,
+    "AhrefsBot": 67,
+    "PetalBot": 65,
+    "Bingbot": 38,
+    "generic-bot": 29,
+    "ClaudeBot": 18,
     "Googlebot": 8,
+    "BaiduSpider": 7,
     "ByteSpider": 7,
+    "PerplexityBot": 5,
     "DuckDuckBot": 4,
     "MJ12bot": 4,
-    "ClaudeBot": 3,
-    "PerplexityBot": 2,
     "python-script": 1,
     "FacebookExt": 1
   },
@@ -69,7 +69,7 @@
     "python-script": "2026-06-26T11:53:47+00:00"
   },
   "last_googlebot": "2026-06-30T08:39:03+00:00",
-  "last_bingbot": "2026-06-30T09:41:53+00:00",
+  "last_bingbot": "2026-06-30T11:01:20+00:00",
   "chart_7days": [
     {
       "day": "2026-06-24",
@@ -200,33 +200,26 @@
     },
     {
       "day": "2026-06-30",
-      "total": 207,
+      "total": 261,
       "by_type": {
-        "OAI-SearchBot": 33,
-        "Bingbot": 13,
+        "OAI-SearchBot": 50,
+        "Bingbot": 15,
         "AhrefsBot": 24,
         "Googlebot": 3,
         "ByteSpider": 3,
-        "generic-bot": 7,
+        "generic-bot": 21,
         "FacebookExt": 1,
         "MJ12bot": 2,
         "BaiduSpider": 6,
-        "PetalBot": 17,
-        "GPTBot": 94,
+        "PetalBot": 19,
+        "GPTBot": 95,
         "DuckDuckBot": 2,
-        "ClaudeBot": 2
+        "ClaudeBot": 17,
+        "PerplexityBot": 3
       }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "10",
-      "hits": 16
-    },
-    {
-      "hour": "11",
-      "hits": 9
-    },
     {
       "hour": "12",
       "hits": 26
@@ -313,23 +306,31 @@
     },
     {
       "hour": "09",
-      "hits": 11
+      "hits": 10
+    },
+    {
+      "hour": "10",
+      "hits": 10
+    },
+    {
+      "hour": "11",
+      "hits": 1
     }
   ],
   "top_bot_paths_24h": {
-    "/calendrier-interdiction-dpe-2025-2028-2034.html": 52,
-    "/robots.txt": 29,
-    "/encadrement-loyer-paris-2026.html": 28,
-    "/": 24,
-    "/depot-garantie-france-2026.html": 8,
-    "/charges-recuperables-2026.html": 7,
-    "/encadrement-loyer-villeurbanne-2026.html": 7,
-    "/guide-bailleur-2026.html": 6,
+    "/calendrier-interdiction-dpe-2025-2028-2034.html": 50,
+    "/robots.txt": 32,
+    "/encadrement-loyer-paris-2026.html": 29,
+    "/": 27,
+    "/guide-bailleur-2026.html": 7,
+    "/depot-garantie-france-2026.html": 7,
+    "/aides-financieres-bailleur-2026.html": 7,
+    "/encadrement-loyer-france-2026.html": 6,
     "/api/visit": 6,
     "/css/main.css": 6
   },
   "googlebot_paths_lifetime": {
-    "/robots.txt": 41,
+    "/robots.txt": 40,
     "/changelog.html": 3,
     "/encadrement-loyer-villeurbanne-2026.html": 2,
     "/observatoire-annonces-loyer.html": 2,
@@ -343,20 +344,20 @@
   "top_human_paths_24h": {
     "/aides-financieres-bailleur-2026.html": 102,
     "/encadrement-loyer-paris-2026.html": 89,
-    "/": 36,
-    "/css/main.css": 15,
-    "/css/tailwind-runtime.js": 15,
+    "/": 38,
+    "/css/main.css": 14,
+    "/css/tailwind-runtime.js": 14,
     "/favicon.svg": 14,
-    "/robots.txt": 12,
+    "/robots.txt": 11,
     "/guide-colocataire-2026.html": 6,
     "/aides-financieres-locataire-2026.html": 6,
-    "/api/funnel/event": 5
+    "/static/subscribe-tenant.js": 5
   },
   "status_codes_24h": {
-    "200": 858,
-    "400": 5,
-    "301": 21,
-    "404": 36
+    "200": 861,
+    "301": 18,
+    "404": 36,
+    "400": 4
   },
   "funnel": {
     "events_total_lifetime": 441,
