@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-06-30T19:50:02Z",
+  "generated_at": "2026-07-01T03:48:01Z",
   "window_days": 7,
   "totals": {
-    "requests_lifetime": 4552,
-    "requests_24h": 747,
-    "bot_hits_lifetime": 2512,
-    "bot_hits_24h": 452,
-    "bot_hits_1h": 15,
-    "human_hits_24h": 295
+    "requests_lifetime": 4397,
+    "requests_24h": 523,
+    "bot_hits_lifetime": 2430,
+    "bot_hits_24h": 391,
+    "bot_hits_1h": 4,
+    "human_hits_24h": 132
   },
   "bots_by_type_lifetime": {
-    "OAI-SearchBot": 728,
+    "OAI-SearchBot": 743,
     "Amazonbot": 343,
-    "PetalBot": 287,
+    "PetalBot": 257,
     "AhrefsBot": 242,
-    "Bingbot": 222,
-    "SemrushBot": 200,
-    "generic-bot": 120,
-    "GPTBot": 115,
+    "Bingbot": 223,
+    "SemrushBot": 128,
+    "generic-bot": 122,
+    "GPTBot": 114,
     "Googlebot": 52,
     "BaiduSpider": 49,
-    "ByteSpider": 37,
+    "ByteSpider": 38,
     "ClaudeBot": 34,
-    "DuckDuckBot": 22,
-    "MJ12bot": 16,
+    "DuckDuckBot": 20,
+    "MJ12bot": 18,
     "curl/wget": 11,
+    "HeadlessChrome": 11,
     "PerplexityBot": 9,
-    "HeadlessChrome": 9,
     "FacebookExt": 8,
     "python-script": 8
   },
   "bots_by_type_24h": {
-    "OAI-SearchBot": 131,
+    "OAI-SearchBot": 128,
     "GPTBot": 102,
-    "PetalBot": 61,
-    "AhrefsBot": 39,
-    "generic-bot": 33,
-    "Bingbot": 29,
+    "PetalBot": 35,
+    "generic-bot": 32,
+    "Bingbot": 27,
     "ClaudeBot": 27,
-    "Googlebot": 6,
+    "AhrefsBot": 14,
     "MJ12bot": 6,
     "BaiduSpider": 6,
-    "ByteSpider": 4,
     "PerplexityBot": 3,
+    "ByteSpider": 3,
+    "Googlebot": 2,
     "DuckDuckBot": 2,
     "curl/wget": 2,
-    "FacebookExt": 1
+    "HeadlessChrome": 2
   },
   "bot_last_seen": {
     "OAI-SearchBot": "2026-06-26T15:27:01+00:00",
@@ -65,31 +65,12 @@
     "Googlebot": "2026-06-26T12:59:35+00:00",
     "MJ12bot": "2026-06-26T10:56:36+00:00",
     "PerplexityBot": "2026-06-30T10:44:35+00:00",
-    "HeadlessChrome": "2026-06-29T03:53:36+00:00",
+    "HeadlessChrome": "2026-07-01T02:35:10+00:00",
     "python-script": "2026-06-26T11:53:47+00:00"
   },
   "last_googlebot": "2026-06-30T12:39:32+00:00",
-  "last_bingbot": "2026-06-30T19:06:18+00:00",
+  "last_bingbot": "2026-07-01T02:38:19+00:00",
   "chart_7days": [
-    {
-      "day": "2026-06-24",
-      "total": 353,
-      "by_type": {
-        "SemrushBot": 140,
-        "OAI-SearchBot": 79,
-        "Bingbot": 28,
-        "ByteSpider": 7,
-        "PetalBot": 57,
-        "Amazonbot": 3,
-        "DuckDuckBot": 4,
-        "generic-bot": 11,
-        "BaiduSpider": 8,
-        "FacebookExt": 1,
-        "Googlebot": 12,
-        "GPTBot": 1,
-        "AhrefsBot": 2
-      }
-    },
     {
       "day": "2026-06-25",
       "total": 254,
@@ -200,16 +181,16 @@
     },
     {
       "day": "2026-06-30",
-      "total": 388,
+      "total": 417,
       "by_type": {
-        "OAI-SearchBot": 110,
-        "Bingbot": 23,
+        "OAI-SearchBot": 125,
+        "Bingbot": 32,
         "AhrefsBot": 33,
         "Googlebot": 4,
-        "ByteSpider": 4,
-        "generic-bot": 32,
+        "ByteSpider": 5,
+        "generic-bot": 34,
         "FacebookExt": 1,
-        "MJ12bot": 4,
+        "MJ12bot": 6,
         "BaiduSpider": 6,
         "PetalBot": 35,
         "GPTBot": 102,
@@ -218,41 +199,19 @@
         "PerplexityBot": 3,
         "curl/wget": 2
       }
+    },
+    {
+      "day": "2026-07-01",
+      "total": 12,
+      "by_type": {
+        "OAI-SearchBot": 8,
+        "HeadlessChrome": 2,
+        "Bingbot": 1,
+        "ByteSpider": 1
+      }
     }
   ],
   "hourly_24h": [
-    {
-      "hour": "20",
-      "hits": 22
-    },
-    {
-      "hour": "21",
-      "hits": 17
-    },
-    {
-      "hour": "22",
-      "hits": 8
-    },
-    {
-      "hour": "23",
-      "hits": 1
-    },
-    {
-      "hour": "00",
-      "hits": 12
-    },
-    {
-      "hour": "01",
-      "hits": 10
-    },
-    {
-      "hour": "02",
-      "hits": 77
-    },
-    {
-      "hour": "03",
-      "hits": 38
-    },
     {
       "hour": "04",
       "hits": 2
@@ -315,20 +274,52 @@
     },
     {
       "hour": "19",
+      "hits": 4
+    },
+    {
+      "hour": "20",
+      "hits": 3
+    },
+    {
+      "hour": "21",
+      "hits": 3
+    },
+    {
+      "hour": "22",
+      "hits": 3
+    },
+    {
+      "hour": "23",
+      "hits": 3
+    },
+    {
+      "hour": "00",
+      "hits": 0
+    },
+    {
+      "hour": "01",
+      "hits": 2
+    },
+    {
+      "hour": "02",
+      "hits": 4
+    },
+    {
+      "hour": "03",
       "hits": 8
     }
   ],
   "top_bot_paths_24h": {
-    "/calendrier-interdiction-dpe-2025-2028-2034.html": 49,
-    "/": 31,
-    "/robots.txt": 29,
-    "/encadrement-loyer-paris-2026.html": 25,
-    "/aides-financieres-bailleur-2026.html": 9,
+    "/calendrier-interdiction-dpe-2025-2028-2034.html": 45,
+    "/": 34,
+    "/robots.txt": 27,
+    "/encadrement-loyer-paris-2026.html": 26,
+    "/encadrement-loyer-villeurbanne-2026.html": 8,
     "/sitemap.xml": 8,
-    "/encadrement-loyer-villeurbanne-2026.html": 7,
-    "/charges-recuperables-2026.html": 5,
-    "/encadrement-loyer-lille-2026.html": 5,
-    "/encadrement-loyer-paris-15eme-2026-faq-complete.html": 5
+    "/aides-financieres-bailleur-2026.html": 7,
+    "/lille-dpe-f-g-interdit-location.html": 5,
+    "/depot-garantie-france-2026.html": 5,
+    "/encadrement-loyer-france-2026.html": 5
   },
   "googlebot_paths_lifetime": {
     "/robots.txt": 39,
@@ -343,30 +334,28 @@
     "/preavis-bail-saint-denis.html": 1
   },
   "top_human_paths_24h": {
-    "/aides-financieres-bailleur-2026.html": 102,
-    "/": 36,
-    "/favicon.svg": 17,
-    "/robots.txt": 13,
-    "/css/main.css": 10,
-    "/css/tailwind-runtime.js": 9,
-    "/encadrement-loyer-paris-2026.html": 8,
+    "/": 34,
+    "/favicon.svg": 14,
+    "/robots.txt": 14,
     "/aides-financieres-locataire-2026.html": 8,
-    "/observatoire-annonces-loyer.html": 5,
-    "/calendrier-interdiction-dpe-2025-2028-2034.html": 3
+    "/css/tailwind-runtime.js": 4,
+    "/calendrier-interdiction-dpe-2025-2028-2034.html": 4,
+    "/arnaque-location-strasbourg.html": 3,
+    "/css/main.css": 3,
+    "/observatoire-annonces-loyer.html": 3,
+    "/..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd": 1
   },
   "status_codes_24h": {
-    "200": 708,
-    "404": 19,
-    "301": 17,
-    "400": 3
+    "200": 498,
+    "404": 7,
+    "400": 2,
+    "301": 16
   },
   "funnel": {
     "events_total_lifetime": 441,
     "sessions_lifetime": 328,
-    "sessions_24h": 1,
-    "by_type_24h": {
-      "home_visit": 1
-    },
+    "sessions_24h": 0,
+    "by_type_24h": {},
     "by_type_lifetime": {
       "home_visit": 307,
       "scan_url_page_visit": 23,
