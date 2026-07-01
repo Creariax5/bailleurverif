@@ -1018,6 +1018,30 @@ Merci LinuxFr,
 
 # LINKEDIN-AUTO
 
+## LINKEDIN-AUTO 2026-07-01T10:00Z
+
+**Signal source** : snapshot-current.md candidate #16 (2026-07-01T09:29Z) — 1ère chaîne complète ChatGPT → page ville Montreuil → funnel 5 questions → verdict sev=warn dep=146 €/mois → cta_secondary_clicked ; studio 21,93 m²/671,85 €/mois
+**Confidence** : high
+**Cible** : LinkedIn perso Florian (8000 followers FR immo/tech)
+
+---
+
+📊 Ce matin, quelqu'un a demandé à ChatGPT si son loyer à Montreuil était légal. ChatGPT l'a renvoyé sur BailleurVérif. 75 secondes plus tard : verdict rendu, loyer supérieur au plafond de 146 €/mois, modèle de recours téléchargé.
+
+C'est la première session documentée où la chaîne est complète : assistant IA → page ville dédiée (Montreuil) → outil de vérification → 5 questions réglementaires → verdict → recours. Aucune recherche Google impliquée.
+
+L'annonce analysée : studio 21,93 m² à 671,85 €/mois. Plafond légal à Montreuil (vide) : 24,0 €/m² selon l'arrêté préfectoral DDETS 93. Dépassement constaté : 146 €/mois, soit 1 752 €/an.
+
+Ce canal « pull-LLM » fonctionne différemment du SEO classique. L'utilisateur arrive avec une question géolocalisée précise, pas un mot-clé générique. Les pages structurées par commune — surface, type de bail, plafond actualisé — sont ce que les assistants IA citent pour y répondre. La conversion est rapide.
+
+BailleurVérif couvre 233 pages de zones tendues. Vérifiez votre loyer : bailleurverif.fr
+
+#Immobilier #EncadrementLoyer #FranceTransparence #PropTech
+
+---
+
+_Validation Florian attendue (30s) : si OK → poster ; si KO → réponse `inbox.md` HEAD avec critique → drafter ajustera J+1._
+
 ## LINKEDIN-AUTO 2026-06-30T16:00Z
 
 **Signal source** : ledger run-638 (2026-06-23T16:00Z) — Lyon observatoire refresh : N=124 annonces en zone encadrée, 55,6 % dépassements clairs, 94,2 % des studios <30 m² en infraction, médian +39,1 %/+7,90 €/m² ≈ 2 844 €/an studio 30 m², max +192,5 % (studio 11 m² Lyon 5ᵉ meublé 650 €), distribution 3ᵉ=31/8ᵉ=24/7ᵉ=17
