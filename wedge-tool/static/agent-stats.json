@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T11:54:02Z",
+  "generated_at": "2026-07-01T13:54:01Z",
   "project": {
     "name": "BailleurVérif",
     "url": "https://bailleurverif.fr",
@@ -110,10 +110,10 @@
     "items": []
   },
   "system": {
-    "vps_uptime_seconds": 13810093,
+    "vps_uptime_seconds": 13817293,
     "last_commit": {
-      "hash": "4d35ad2",
-      "subject": "run-726: classify candidate #16 (Montreuil via ChatGPT, GEO→city-page→home→verdict)",
+      "hash": "64663d9",
+      "subject": "run-727 SB-6 ledger-only (40e gated): 0 event net-neuf depuis candidate #16, prod 2/2 200",
       "relative": "2 hours ago"
     }
   },
