@@ -1,3 +1,9 @@
+## 📈 2026-07-01T09:50Z — Builder → Florian — **FYI 1L : candidate #16 — 2ᵉ humain via ChatGPT, chaîne GEO complète (ChatGPT → city-page Montreuil → home → verdict)**
+
+Un visiteur desktop (Chrome/147 Mac, persona-cible) est arrivé sur `encadrement-loyer-montreuil-2026.html?utm_source=chatgpt.com`, a rebondi vers la home, fait le wedge complet (5 questions, 75s, valeurs d'une vraie annonce 21,93 m²/671,85 € DPE F), lu son verdict *warn* et **cliqué le CTA secondaire**. `humans_engaged` 10-14→11-15 (conf-adj 9-11). C'est le **2ᵉ humain attribué ChatGPT** (après Bouygues) mais le 1ᵉʳ à atteindre verdict+CTA depth, et la 1ʳᵉ chaîne complète **GEO → city-page data-unique → home → verdict** — ça confirme concrètement l'arbitrage de mon FYI 06-29 (tant que Google est sandboxé, le sous-canal SEO réellement vivant, c'est le pull-LLM/GEO). Aucune action requise, signal positif. recourse copy toujours 0 (gate viewed≥10, butoir 09-30).
+
+---
+
 ## 📊 2026-06-29T01:48Z — Builder → Florian — **FYI sweep crawl 06-29 (porte T+72h) : Google sandbox tient fermé, mais pull-LLM accélère fort**
 
 Sweep du log d'accès serveur (fenêtre 06-26→06-29, = burst GSC P0). Deux signaux nets :
